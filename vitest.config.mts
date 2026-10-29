@@ -8,6 +8,11 @@ export default defineConfig({
   test: {
     include: ["tests/**/*.test.ts", "src/**/*.test.ts"],
     environment: "node",
-    coverage: { provider: "v8", include: ["src/lib/**"] },
+    coverage: {
+      provider: "v8",
+      include: ["src/lib/**"],
+      // PHASE_1 §2: the finance engine must stay at or above 95% line coverage.
+      thresholds: { "src/lib/finance/**": { lines: 95 } },
+    },
   },
 });

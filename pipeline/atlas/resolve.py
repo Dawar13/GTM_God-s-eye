@@ -19,7 +19,8 @@ ALIASES = {
 }
 
 # Priority of where a name came from when picking the display name.
-ORIGIN_RANK = {"seed_list": 0, "fund_list": 1, "round_list": 2}
+# Research confirms the official name, so it beats every list.
+ORIGIN_RANK = {"research": -1, "seed_list": 0, "fund_list": 1, "round_list": 2}
 
 
 @dataclass

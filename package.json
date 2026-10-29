@@ -13,7 +13,8 @@
     "validate:data": "tsx scripts/validate-data.ts",
     "gen:schema": "tsx scripts/gen-json-schema.ts",
     "pipeline": "cd pipeline && uv run python -m atlas.run",
-    "research:check": "tsx scripts/check-research.ts"
+    "research:check": "tsx scripts/check-research.ts",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@react-sigma/core": "6.0.0",

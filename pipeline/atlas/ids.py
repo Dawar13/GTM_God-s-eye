@@ -30,7 +30,7 @@ def company_id(name: str) -> str:
 
 
 def round_id(company_slug: str, date: str | None, stage: str) -> str:
-    when = date[:7] if date else "undated"
+    when = date[:7].lower() if date else "undated"
     return f"rnd_{company_slug}_{when}_{stage}"
 
 

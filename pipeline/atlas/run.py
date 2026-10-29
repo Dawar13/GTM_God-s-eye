@@ -4,9 +4,12 @@ pnpm pipeline                (from the repo root)
 uv run python -m atlas.run   (from pipeline/)
 """
 
+import json
 import sys
 
 from atlas import build
+from atlas.config import RESEARCH
+from atlas.enrich import research as research_files
 from atlas.export.write_json import DATASET_NAMES, now_iso, write_dataset
 from atlas.geo import region_for_location
 from atlas.ingest import goldman_pdf, seeds
@@ -72,7 +75,13 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
     seed_rows = ingest_seed_investors(resolver)
     round_inputs = ingest_seed_rounds(resolver)
 
+    loaded = research_files.load() if research else research_files.Loaded()
+    research_files.register(resolver, loaded)
+
     duplicate_rounds = build.build(store, resolver, goldman, round_inputs)
+    research_stats = research_files.apply(store, loaded, {})
+    if research:
+        set_tiers(store, loaded)
 
     regions = build.region_counts(store)
     investors = store.investors.values()
@@ -90,7 +99,27 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         "investors india": regions["india"],
         "investors other": regions["other"],
         "investors region unknown": regions["unknown"],
+        **research_stats,
     }
+
+
+def set_tiers(store: Store, loaded: research_files.Loaded) -> None:
+    """Tier A/B from the research queue; every other investor is Tier C."""
+    queue_path = RESEARCH / "queue.json"
+    entries = (
+        json.loads(queue_path.read_text(encoding="utf-8"))["entries"] if queue_path.exists() else []
+    )
+    by_id = {e["investor_id"]: e for e in entries if e["investor_id"]}
+    by_key = {e["key"]: e for e in entries}
+    for inv in store.investors.values():
+        entry = by_id.get(inv["id"])
+        inv["tier"] = entry["tier"] if entry else "C"
+        inv["tier_score"] = entry["score"] if entry else None
+    for key, group in loaded.groups.items():
+        entry = by_key.get(key)
+        inv = store.investors[group.investor_id]
+        if entry:
+            inv["tier"], inv["tier_score"] = entry["tier"], entry["score"]
 
 
 def export(store: Store) -> dict[str, int]:

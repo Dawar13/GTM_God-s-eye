@@ -206,6 +206,59 @@ PLACE_REGION: dict[str, str] = {
 }
 
 
+# ISO 3166-1 alpha-2 -> region (PROJECT_CONTEXT §3): US, Canada, UK, EU,
+# Switzerland, Nordics, Israel, Australia/NZ are western; India is india.
+WESTERN_COUNTRIES = {
+    "US",
+    "CA",
+    "GB",
+    "IE",
+    "CH",
+    "IL",
+    "AU",
+    "NZ",
+    "NO",
+    "IS",
+    "AT",
+    "BE",
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "DE",
+    "GR",
+    "HU",
+    "IT",
+    "LV",
+    "LT",
+    "LU",
+    "MT",
+    "NL",
+    "PL",
+    "PT",
+    "RO",
+    "SK",
+    "SI",
+    "ES",
+    "SE",
+}
+
+
+def region_for_country(code: str | None) -> str | None:
+    if not code:
+        return None
+    code = code.upper()
+    if code in WESTERN_COUNTRIES:
+        return WESTERN
+    if code == "IN":
+        return INDIA
+    return OTHER
+
+
 def _normalise(part: str) -> str:
     part = re.sub(r"[.()]", " ", part.lower())
     part = re.sub(r"\bhq\b", " ", part)
