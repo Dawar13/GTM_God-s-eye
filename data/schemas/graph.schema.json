@@ -1,0 +1,242 @@
+{
+  "$id": "capital-atlas/graph.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+    },
+    "layout": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "algorithm": {
+              "type": "string"
+            },
+            "iterations": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "seed": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "algorithm",
+            "iterations",
+            "seed"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Set by scripts/layout-graph.ts"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+                "description": "Stable id, `inv_<slug>`"
+              },
+              {
+                "type": "string",
+                "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+                "description": "Stable id, `co_<slug>`"
+              }
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "investor",
+              "company"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "is_competitor": {
+            "type": "boolean"
+          },
+          "x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "degree": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "weighted_degree": {
+            "type": "number",
+            "minimum": 0
+          },
+          "betweenness": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "label",
+          "is_competitor",
+          "x",
+          "y",
+          "degree",
+          "weighted_degree",
+          "betweenness"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `co_<slug>`"
+          },
+          "round_id": {
+            "type": "string",
+            "pattern": "^rnd_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `rnd_<slug>`"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "lead",
+              "participant",
+              "unspecified"
+            ]
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "pre_seed",
+              "seed",
+              "series_a",
+              "series_b",
+              "series_c_plus",
+              "growth",
+              "strategic",
+              "undisclosed"
+            ]
+          },
+          "amount_usd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "description": "US dollars (not millions)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "round_id",
+          "role",
+          "stage",
+          "amount_usd",
+          "date"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coinvest_edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "weight": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 9007199254740991,
+            "description": "Shared rounds"
+          },
+          "round_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^rnd_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `rnd_<slug>`"
+            }
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "weight",
+          "round_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "layout",
+    "nodes",
+    "edges",
+    "coinvest_edges"
+  ],
+  "additionalProperties": false,
+  "description": "Investor ↔ company graph with metrics and precomputed layout"
+}

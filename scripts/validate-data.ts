@@ -10,6 +10,9 @@ import { z } from "zod";
 import {
   DATASETS,
   DATASET_NAMES,
+  DOCUMENTS,
+  DOCUMENT_NAMES,
+  checkDocuments,
   checkIntegrity,
   datasetOf,
   type AllRecords,
@@ -36,7 +39,7 @@ async function main() {
   );
 
   for (const name of present) {
-    if (!(name in DATASETS)) {
+    if (!(name in DATASETS) && !(name in DOCUMENTS)) {
       problems.push({ file: `${name}.json`, where: "(file)", message: "not a known dataset" });
     }
   }
@@ -77,9 +80,28 @@ async function main() {
     counts.push(`${name} ${result.data.records.length}`);
   }
 
+  // Analytics documents (graph, competitor overlap): optional until the analytics run.
+  const docs: Record<string, unknown> = {};
+  for (const name of DOCUMENT_NAMES) {
+    const file = `${name}.json`;
+    if (!present.has(name)) continue;
+    const raw: unknown = JSON.parse(await readFile(path.join(DATA_DIR, file), "utf8"));
+    const result = DOCUMENTS[name].safeParse(raw);
+    if (!result.success) {
+      for (const issue of result.error.issues.slice(0, MAX_ISSUES_PER_FILE))
+        problems.push({ file, where: issue.path.join(".") || "(file)", message: issue.message });
+      continue;
+    }
+    docs[name] = result.data;
+    counts.push(`${name} ✓`);
+  }
+
   // Cross-file checks only make sense once every file parsed.
   if (DATASET_NAMES.every((n) => parsed[n])) {
-    for (const issue of checkIntegrity(parsed as AllRecords)) {
+    for (const issue of [
+      ...checkIntegrity(parsed as AllRecords),
+      ...checkDocuments(parsed as AllRecords, docs),
+    ]) {
       problems.push({ file: `${issue.dataset}.json`, where: issue.id, message: issue.message });
     }
   }

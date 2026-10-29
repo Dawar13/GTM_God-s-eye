@@ -175,6 +175,17 @@ async function main() {
     JSON.stringify(enums, null, 2) + "\n",
   );
 
+  for (const name of S.DOCUMENT_NAMES) {
+    await writeFile(
+      path.join(SCHEMA_DIR, `${name}.schema.json`),
+      JSON.stringify(
+        { $id: `capital-atlas/${name}.schema.json`, ...toJson(S.DOCUMENTS[name]) },
+        null,
+        2,
+      ) + "\n",
+    );
+  }
+
   // Research inputs (data/research/), validated by the pipeline before merging.
   const research: [string, z.ZodType][] = [
     ["research_investor", S.InvestorResearch],
@@ -194,7 +205,7 @@ async function main() {
 
   await writeFile(path.join(ROOT, "docs", "DATA_DICTIONARY.md"), dictionary());
   console.log(
-    `gen:schema wrote ${S.DATASET_NAMES.length + research.length + 1} schemas and docs/DATA_DICTIONARY.md`,
+    `gen:schema wrote ${S.DATASET_NAMES.length + S.DOCUMENT_NAMES.length + research.length + 1} schemas and docs/DATA_DICTIONARY.md`,
   );
 }
 

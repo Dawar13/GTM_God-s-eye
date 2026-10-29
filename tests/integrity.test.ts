@@ -15,6 +15,9 @@ function data(overrides: Partial<AllRecords> = {}): AllRecords {
     benchmarks: [],
     legal_notes: [],
     fit_features: [],
+    layout_thesis: [],
+    clusters: [],
+    layout_bubbles: [],
     ...overrides,
   };
 }

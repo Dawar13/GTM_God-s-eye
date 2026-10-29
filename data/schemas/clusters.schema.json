@@ -1,0 +1,95 @@
+{
+  "$id": "capital-atlas/clusters.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^cl_\\d+$"
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "name": {
+            "type": "string",
+            "description": "From the centroid's top three sectors"
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "top_sectors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sector": {
+                  "type": "string",
+                  "enum": [
+                    "ai_infra",
+                    "ai_apps_agents",
+                    "industrial_manufacturing",
+                    "robotics_physical_ai",
+                    "defense_dual_use",
+                    "hardware_deeptech",
+                    "space",
+                    "climate_energy",
+                    "mobility_ev",
+                    "supply_chain_logistics",
+                    "enterprise_saas",
+                    "dev_tools",
+                    "fintech",
+                    "health_bio",
+                    "consumer",
+                    "crypto_web3"
+                  ]
+                },
+                "weight": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "sector",
+                "weight"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "index",
+          "name",
+          "size",
+          "top_sectors"
+        ],
+        "additionalProperties": false,
+        "description": "A k-means thesis cluster"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

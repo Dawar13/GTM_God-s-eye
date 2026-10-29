@@ -12,9 +12,10 @@
     "format": "prettier --write .",
     "validate:data": "tsx scripts/validate-data.ts",
     "gen:schema": "tsx scripts/gen-json-schema.ts",
-    "pipeline": "cd pipeline && uv run python -m atlas.run",
+    "pipeline": "cd pipeline && uv run python -m atlas.run && cd .. && tsx scripts/layout-graph.ts",
     "research:check": "tsx scripts/check-research.ts",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "layout:graph": "tsx scripts/layout-graph.ts"
   },
   "dependencies": {
     "@react-sigma/core": "6.0.0",

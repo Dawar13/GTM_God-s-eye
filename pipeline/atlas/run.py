@@ -7,10 +7,16 @@ uv run python -m atlas.run   (from pipeline/)
 import json
 import sys
 
-from atlas import build, research_log
-from atlas.config import RESEARCH
+from atlas import analyze, build, research_log
+from atlas.config import RESEARCH, SCHEMA_VERSION
 from atlas.enrich import research as research_files
-from atlas.export.write_json import DATASET_NAMES, now_iso, write_dataset
+from atlas.export.write_json import (
+    DATASET_NAMES,
+    DOCUMENT_NAMES,
+    now_iso,
+    write_dataset,
+    write_document,
+)
 from atlas.geo import region_for_location
 from atlas.ingest import goldman_pdf, seeds
 from atlas.model import Store
@@ -122,8 +128,7 @@ def set_tiers(store: Store, loaded: research_files.Loaded) -> None:
             inv["tier"], inv["tier_score"] = entry["tier"], entry["score"]
 
 
-def export(store: Store) -> dict[str, int]:
-    generated_at = now_iso()
+def export(store: Store, generated_at: str, analytics: dict) -> dict[str, int]:
     collections = {
         "investors": list(store.investors.values()),
         "partners": list(store.partners.values()),
@@ -134,12 +139,20 @@ def export(store: Store) -> dict[str, int]:
         "benchmarks": store.benchmarks,
         "legal_notes": store.legal_notes,
         "fit_features": store.fit_features,
+        "layout_thesis": analytics["layout_thesis"],
+        "clusters": analytics["clusters"],
+        "layout_bubbles": analytics["layout_bubbles"],
         "anomalies": store.anomalies,
         "merges": store.merges,
     }
     for name in DATASET_NAMES:
         write_dataset(name, collections[name], generated_at)
-    return {name: len(collections[name]) for name in DATASET_NAMES}
+    for name in DOCUMENT_NAMES:
+        write_document(name, analytics[name])
+    counts = {name: len(collections[name]) for name in DATASET_NAMES}
+    counts["graph nodes"] = len(analytics["graph"]["nodes"])
+    counts["co-investment edges"] = len(analytics["graph"]["coinvest_edges"])
+    return counts
 
 
 def print_summary(counts: dict[str, int], extras: dict[str, int]) -> None:
@@ -158,7 +171,9 @@ def print_summary(counts: dict[str, int], extras: dict[str, int]) -> None:
 def main() -> int:
     store = Store()
     extras = run(store)
-    counts = export(store)
+    generated_at = now_iso()
+    analytics = analyze.run_all(store, generated_at, SCHEMA_VERSION)
+    counts = export(store, generated_at, analytics)
     loaded = research_files.load()
     research_log.write_log([*loaded.investors, *loaded.competitors, *loaded.rounds])
     print_summary(counts, extras)

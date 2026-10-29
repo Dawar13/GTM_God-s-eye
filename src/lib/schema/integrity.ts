@@ -1,6 +1,7 @@
+import type { CompetitorOverlapDocument, DocumentName, GraphDocument } from "./analytics";
 import type { DatasetName, DatasetRecord } from "./datasets";
 
-export type IntegrityIssue = { dataset: DatasetName; id: string; message: string };
+export type IntegrityIssue = { dataset: DatasetName | DocumentName; id: string; message: string };
 
 export type AllRecords = { [K in DatasetName]: DatasetRecord<K>[] };
 
@@ -57,6 +58,12 @@ export function checkIntegrity(data: AllRecords): IntegrityIssue[] {
     }
   }
 
+  for (const name of ["layout_thesis", "layout_bubbles"] as const) {
+    for (const p of data[name]) {
+      if (!investors.has(p.id)) add(name, p.id, "investor does not exist");
+    }
+  }
+
   for (const fit of data.fit_features) {
     if (!investors.has(fit.investor_id))
       add("fit_features", fit.id, `investor_id ${fit.investor_id} does not exist`);
@@ -103,5 +110,52 @@ export function checkIntegrity(data: AllRecords): IntegrityIssue[] {
       add("merges", merge.id, `investor_id ${merge.investor_id} does not exist`);
   }
 
+  return issues;
+}
+
+/** Analytics documents must point at records that exist. */
+export function checkDocuments(data: AllRecords, docs: Record<string, unknown>): IntegrityIssue[] {
+  const issues: IntegrityIssue[] = [];
+  const investors = new Set(data.investors.map((i) => i.id));
+  const companies = new Set([...data.companies, ...data.competitors].map((c) => c.id));
+  const rounds = new Set(data.rounds.map((r) => r.id));
+  const graph = docs.graph as GraphDocument | undefined;
+  if (graph) {
+    const nodes = new Set(graph.nodes.map((n) => n.id));
+    for (const n of graph.nodes) {
+      const known = n.kind === "investor" ? investors.has(n.id) : companies.has(n.id);
+      if (!known) issues.push({ dataset: "graph", id: n.id, message: "node has no record" });
+    }
+    for (const e of [...graph.edges, ...graph.coinvest_edges]) {
+      if (!nodes.has(e.source) || !nodes.has(e.target))
+        issues.push({
+          dataset: "graph",
+          id: `${e.source}→${e.target}`,
+          message: "edge end is not a node",
+        });
+    }
+    for (const e of graph.edges) {
+      if (!rounds.has(e.round_id))
+        issues.push({ dataset: "graph", id: e.round_id, message: "edge round does not exist" });
+    }
+  }
+  const overlap = docs.competitor_overlap as CompetitorOverlapDocument | undefined;
+  if (overlap) {
+    for (const row of overlap.rows) {
+      if (!investors.has(row.investor_id))
+        issues.push({
+          dataset: "competitor_overlap",
+          id: row.investor_id,
+          message: "investor does not exist",
+        });
+      for (const c of row.competitor_ids)
+        if (!companies.has(c))
+          issues.push({
+            dataset: "competitor_overlap",
+            id: c,
+            message: "competitor does not exist",
+          });
+    }
+  }
   return issues;
 }

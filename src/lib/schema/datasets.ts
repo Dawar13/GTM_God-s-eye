@@ -6,8 +6,10 @@ import { Benchmark, FitFeatures, LegalNote } from "./reference";
 import { Anomaly, Merge } from "./review";
 import { Round } from "./round";
 
-/** Bump when a processed file's shape changes in a way old files won't parse. */
-export const SCHEMA_VERSION = 2;
+import { SCHEMA_VERSION } from "./version";
+import { BubblePoint, Cluster, ThesisPoint } from "./analytics";
+
+export { SCHEMA_VERSION };
 
 export function datasetOf<T extends z.ZodType>(record: T) {
   return z.strictObject({
@@ -28,6 +30,9 @@ export const DATASETS = {
   benchmarks: Benchmark,
   legal_notes: LegalNote,
   fit_features: FitFeatures,
+  layout_thesis: ThesisPoint,
+  clusters: Cluster,
+  layout_bubbles: BubblePoint,
   anomalies: Anomaly,
   merges: Merge,
 } as const;

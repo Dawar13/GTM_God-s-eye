@@ -17,7 +17,7 @@ from datetime import date
 from rapidfuzz import fuzz, process
 
 from atlas import names
-from atlas.config import FRESHNESS_CUTOFF, RESEARCH, SEED_DIR
+from atlas.config import FRESHNESS_CUTOFF, RESEARCH, RESEARCH_CACHE, SEED_DIR
 from atlas.model import Store
 
 QUEUE_PATH = RESEARCH / "queue.json"
@@ -201,7 +201,10 @@ def build_queue(store: Store, today: str | None = None) -> dict:
                     if prev.get("status") in ("done", "in_progress")
                     else tier,
                     "score": c.score,
-                    "status": prev.get("status", "todo"),
+                    # A research file on disk means the entity is done.
+                    "status": "done"
+                    if (RESEARCH_CACHE / f"{key}.json").exists()
+                    else prev.get("status", "todo"),
                     "blocked_reason": prev.get("blocked_reason"),
                     "last_touched": prev.get("last_touched"),
                 }

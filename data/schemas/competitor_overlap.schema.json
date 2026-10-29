@@ -1,0 +1,75 @@
+{
+  "$id": "capital-atlas/competitor_overlap.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+    },
+    "competitor_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+        "description": "Stable id, `co_<slug>`"
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "investor_id": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "competitor_ids": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `co_<slug>`"
+            }
+          },
+          "round_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^rnd_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `rnd_<slug>`"
+            }
+          },
+          "latest_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "investor_id",
+          "competitor_ids",
+          "round_ids",
+          "latest_date"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "competitor_ids",
+    "rows"
+  ],
+  "additionalProperties": false,
+  "description": "Which investors back which competitors"
+}

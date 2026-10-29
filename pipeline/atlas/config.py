@@ -121,3 +121,96 @@ ROUND_STAGES = (
     "undisclosed",
 )
 SOURCE_KINDS = ("primary", "secondary", "user_supplied")
+
+# --- Phase 1 analytics (PHASE_1 §8, PROJECT_CONTEXT §4) -------------------------
+
+RANDOM_STATE = 42
+REFERENCE_DATE = "2026-10-30"
+
+# Our planned round. Unknown (PROJECT_CONTEXT §1): the default is an assumption.
+RAISE_SIZE_USD = 1_000_000
+
+STAGE_SCORES = {
+    "pre_seed": 1.0,
+    "seed": 0.8,
+    "series_a": 0.6,
+    "series_b": 0.4,
+    "series_c_plus": 0.2,
+    "growth": 0.1,
+}
+
+GENERALIST_ENTROPY = 0.85
+CLUSTER_K_RANGE = (4, 10)
+
+# Layers that count as "our space" for portfolio adjacency.
+OUR_LAYERS = frozenset({"design_intent", "process_planning", "plant_ops", "quality_vision"})
+NEIGHBOUR_LAYERS = frozenset({"autonomy_tooling", "robotics", "full_stack_factory"})
+
+# Keyword map for the stated-thesis vector: sector -> phrases (lower case).
+# Matched against thesis text and listed focus; every hit is logged in `inputs`.
+THESIS_KEYWORDS: dict[str, tuple[str, ...]] = {
+    "ai_infra": (
+        "ai infrastructure",
+        "infra software",
+        "compute",
+        "model infrastructure",
+        "data infrastructure",
+    ),
+    "ai_apps_agents": (
+        "applied ai",
+        "ai-native",
+        "ai native",
+        "vertical ai",
+        "ai agents",
+        "agentic",
+        "ai-first",
+        "generative ai",
+        "ai apps",
+    ),
+    "industrial_manufacturing": (
+        "manufactur",
+        "industrial",
+        "factory",
+        "factories",
+        "industry 4.0",
+    ),
+    "robotics_physical_ai": (
+        "robot",
+        "physical ai",
+        "embodied",
+        "autonomous systems",
+        "automation",
+    ),
+    "defense_dual_use": ("defense", "defence", "dual-use", "dual use", "national security"),
+    "hardware_deeptech": (
+        "hardware",
+        "deep tech",
+        "deeptech",
+        "hard tech",
+        "semiconductor",
+        "frontier tech",
+    ),
+    "space": ("space", "aerospace", "satellite"),
+    "climate_energy": ("climate", "energy", "decarbon", "sustainab", "cleantech"),
+    "mobility_ev": ("mobility", "electric vehicle", " ev ", "automotive", "transportation"),
+    "supply_chain_logistics": ("supply chain", "logistics", "procurement", "freight"),
+    "enterprise_saas": (
+        "saas",
+        "b2b software",
+        "enterprise software",
+        "enterprise",
+        "future of work",
+    ),
+    "dev_tools": ("developer", "dev tools", "devtools", "open source"),
+    "fintech": ("fintech", "financial services", "payments", "insurtech"),
+    "health_bio": ("health", "bio", "medical", "life science", "pharma"),
+    "consumer": ("consumer", "d2c", "brands", "gaming", "media", "edtech"),
+    "crypto_web3": ("crypto", "web3", "blockchain", "defi"),
+}
+AGNOSTIC_PHRASES = (
+    "sector-agnostic",
+    "sector agnostic",
+    "generalist",
+    "industry-agnostic",
+    "agnostic",
+)

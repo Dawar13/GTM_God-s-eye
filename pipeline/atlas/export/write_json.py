@@ -19,6 +19,9 @@ DATASET_NAMES = (
     "benchmarks",
     "legal_notes",
     "fit_features",
+    "layout_thesis",
+    "clusters",
+    "layout_bubbles",
     "anomalies",
     "merges",
 )
@@ -76,5 +79,20 @@ def write_dataset(
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{name}.json"
     text = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    path.write_text(text, encoding="utf-8", newline="\n")
+    return path
+
+
+DOCUMENT_NAMES = ("graph", "competitor_overlap")
+
+
+def write_document(name: str, doc: dict, out_dir: Path = PROCESSED) -> Path:
+    """Analytics files that aren't record datasets (graph, competitor overlap)."""
+    if name not in DOCUMENT_NAMES:
+        raise ValueError(f"unknown document {name}")
+    validate_dataset(name, doc)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / f"{name}.json"
+    text = json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
     path.write_text(text, encoding="utf-8", newline="\n")
     return path
