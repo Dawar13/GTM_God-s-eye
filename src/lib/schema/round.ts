@@ -2,6 +2,8 @@ import { z } from "zod";
 import { DatePrecision, RoundStage } from "./enums";
 import {
   CompanyId,
+  FieldSources,
+  FxUsed,
   InvestorId,
   PartialDate,
   RecordConfidence,
@@ -20,18 +22,23 @@ export const Round = z
     stage: RoundStage,
     stage_raw: z.string().nullable().describe("Round label as the source gives it"),
     amount_usd: Usd.nullable(),
+    amount_original: z.number().nonnegative().nullable().describe("Amount in announced currency"),
+    currency_original: z.string().length(3).nullable(),
+    fx: FxUsed.nullable(),
     valuation_post_usd: Usd.nullable(),
     lead_investor_ids: z.array(InvestorId),
     participant_investor_ids: z.array(InvestorId),
     unspecified_investor_ids: z
       .array(InvestorId)
       .describe("Investors the source names without saying whether they led"),
+    contested: z.boolean().describe("Sources disagree on amount, date, stage or investors"),
     notes: z.string().nullable(),
     sources: Sources,
+    field_sources: FieldSources,
     confidence: RecordConfidence,
   })
   .refine((r) => partialDateMatchesPrecision(r.date, r.date_precision), {
-    message: "date length must match date_precision",
+    message: "date must match date_precision",
     path: ["date"],
   })
   .refine(

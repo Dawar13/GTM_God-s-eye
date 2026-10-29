@@ -27,14 +27,24 @@ describe("Investor", () => {
   });
 
   it("requires sector weights to sum to 1", () => {
-    const ok = investor({ sector_weights: { industrial_manufacturing: 0.6, ai_apps_agents: 0.4 } });
-    const bad = investor({ sector_weights: { industrial_manufacturing: 0.6 } });
+    const ok = investor({
+      sector_weights: {
+        value: { industrial_manufacturing: 0.6, ai_apps_agents: 0.4 },
+        method: "stated",
+        inputs: ["thesis_text"],
+      },
+    });
+    const bad = investor({
+      sector_weights: { value: { industrial_manufacturing: 0.6 }, method: "stated", inputs: [] },
+    });
     expect(Investor.safeParse(ok).success).toBe(true);
     expect(Investor.safeParse(bad).success).toBe(false);
   });
 
   it("rejects sectors outside the taxonomy", () => {
-    const bad = investor({ sector_weights: { biotech: 1 } as never });
+    const bad = investor({
+      sector_weights: { value: { biotech: 1 } as never, method: "stated", inputs: [] },
+    });
     expect(Investor.safeParse(bad).success).toBe(false);
   });
 

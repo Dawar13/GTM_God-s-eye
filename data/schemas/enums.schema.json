@@ -97,6 +97,7 @@
       "enum": [
         "day",
         "month",
+        "quarter",
         "year"
       ]
     },
@@ -120,9 +121,11 @@
     },
     "SizeClass": {
       "enum": [
-        "early",
-        "growth",
-        "incumbent"
+        "under_5m",
+        "from_5m_to_25m",
+        "from_25m_to_100m",
+        "from_100m_to_1b",
+        "over_1b"
       ]
     },
     "RevenueBasis": {
@@ -139,7 +142,80 @@
     "FitFlag": {
       "enum": [
         "conflict",
-        "sparse_data"
+        "sparse"
+      ]
+    },
+    "YesNoUnknown": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "ResearchTier": {
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "SectorClassifiedBy": {
+      "enum": [
+        "source",
+        "model"
+      ]
+    },
+    "BenchmarkMetric": {
+      "enum": [
+        "median_round_size",
+        "median_pre_money",
+        "median_post_money",
+        "median_dilution",
+        "safe_cap_median",
+        "safe_share_of_rounds",
+        "note_share_of_rounds",
+        "time_between_rounds",
+        "deal_count",
+        "capital_invested",
+        "fund_count",
+        "capital_raised_by_funds",
+        "median_fund_size"
+      ]
+    },
+    "BenchmarkUnit": {
+      "enum": [
+        "usd",
+        "fraction",
+        "days",
+        "months",
+        "count"
+      ]
+    },
+    "Geography": {
+      "enum": [
+        "us",
+        "india",
+        "europe",
+        "global"
+      ]
+    },
+    "LegalTopic": {
+      "enum": [
+        "india_flip",
+        "reverse_flip",
+        "fema_pricing",
+        "angel_tax",
+        "india_convertible_note",
+        "isafe",
+        "ccps",
+        "delaware_requirement"
+      ]
+    },
+    "Jurisdiction": {
+      "enum": [
+        "india",
+        "us",
+        "us_delaware"
       ]
     }
   }

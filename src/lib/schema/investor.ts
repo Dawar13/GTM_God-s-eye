@@ -1,15 +1,26 @@
 import { z } from "zod";
 import {
-  FitFlag,
   Freshness,
   InvestorFlag,
   InvestorStage,
   InvestorType,
   Maturity,
   Region,
+  ResearchTier,
   Sector,
+  YesNoUnknown,
 } from "./enums";
-import { FundId, InvestorId, RecordConfidence, Sources, Url, Usd } from "./common";
+import {
+  FieldSources,
+  FundId,
+  InvestorId,
+  PartnerId,
+  RecordConfidence,
+  Sources,
+  Url,
+  Usd,
+  derivedOf,
+} from "./common";
 
 const SUM_TOLERANCE = 1e-6;
 
@@ -24,26 +35,7 @@ export const SectorWeights = z
   )
   .describe("Thesis vector over the sector taxonomy; weights sum to 1");
 
-/** Points earned per fit component, out of that component's weight (PROJECT_CONTEXT §4). */
-const FitPoints = z.number().min(0).max(100).nullable();
-
-export const Fit = z
-  .strictObject({
-    total: z.number().min(0).max(100).describe("Fit score, 0–100"),
-    components: z
-      .strictObject({
-        thesis: FitPoints,
-        stage: FitPoints,
-        check: FitPoints,
-        portfolio_adjacency: FitPoints,
-        geography: FitPoints,
-        dry_powder: FitPoints,
-      })
-      .describe("Points earned per component; null where inputs were missing"),
-    flags: z.array(FitFlag).describe("Shown next to the score, never scored"),
-  })
-  .describe("Fit score and its breakdown");
-export type Fit = z.infer<typeof Fit>;
+const Unit = z.number().min(0).max(1);
 
 export const InvestorCategory = z
   .strictObject({
@@ -55,11 +47,10 @@ export const InvestorCategory = z
       .nullable()
       .describe("Normalised entropy of sector_weights ≥ 0.85, or stated sector-agnostic"),
     cluster_id: z.number().int().nonnegative().nullable().describe("k-means cluster"),
-    industrial_affinity: z.number().min(0).max(1).nullable().describe("PROJECT_CONTEXT §4"),
-    stage_earliness: z.number().min(0).max(1).nullable().describe("Mean of stage scores"),
-    fit: Fit.nullable(),
+    industrial_affinity: derivedOf(Unit).nullable().describe("PROJECT_CONTEXT §4"),
+    stage_earliness: derivedOf(Unit).nullable().describe("Mean of stage scores"),
   })
-  .describe("Computed by the pipeline; all null until Phase 1");
+  .describe("Computed by the pipeline (Phase 1 analytics)");
 export type InvestorCategory = z.infer<typeof InvestorCategory>;
 
 export const SeedHint = z
@@ -92,14 +83,28 @@ export const Investor = z
     check_min_usd: Usd.nullable(),
     check_max_usd: Usd.nullable(),
     leads: z.boolean().nullable().describe("Whether they lead rounds"),
-    thesis_text: z.string().nullable().describe("Short, paraphrased thesis"),
-    sector_weights: SectorWeights.nullable(),
+    thesis_text: z.string().nullable().describe("Paraphrased thesis (≤ 60 words)"),
+    sector_weights: derivedOf(SectorWeights).nullable(),
     website: Url.nullable(),
     linkedin: Url.nullable(),
+    application_url: Url.nullable().describe("Public pitch or application form"),
+    accepts_cold_inbound: YesNoUnknown,
+    invests_in_indian_founders: YesNoUnknown,
+    requires_us_entity: YesNoUnknown,
+    portfolio_count_reported: z
+      .number()
+      .int()
+      .nonnegative()
+      .nullable()
+      .describe("Portfolio size as the firm reports it"),
     funds: z.array(FundId).describe("Fund ids, any order"),
+    partners: z.array(PartnerId).describe("Partner ids"),
     sources: Sources,
+    field_sources: FieldSources,
     confidence: RecordConfidence,
     category: InvestorCategory,
+    tier: ResearchTier.nullable().describe("Research tier (PHASE_1 §4.2)"),
+    tier_score: z.number().nullable().describe("Preliminary score used to set the tier"),
     seed_list_count: z
       .number()
       .int()
@@ -116,3 +121,17 @@ export const Investor = z
   )
   .describe("A firm, fund manager or individual that invests");
 export type Investor = z.infer<typeof Investor>;
+
+export const Partner = z
+  .strictObject({
+    id: PartnerId,
+    investor_id: InvestorId,
+    name: z.string().min(1),
+    title: z.string().nullable(),
+    focus_sectors: z.array(Sector),
+    linkedin_url: Url.nullable().describe("Public profile URL only; no emails or phone numbers"),
+    sources: Sources,
+    confidence: RecordConfidence,
+  })
+  .describe("A partner at an investor, public professional information only");
+export type Partner = z.infer<typeof Partner>;

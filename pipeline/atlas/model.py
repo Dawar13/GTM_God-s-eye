@@ -36,7 +36,6 @@ def empty_category() -> dict:
         "cluster_id": None,
         "industrial_affinity": None,
         "stage_earliness": None,
-        "fit": None,
     }
 
 
@@ -66,10 +65,19 @@ def new_investor(
         "sector_weights": None,
         "website": None,
         "linkedin": None,
+        "application_url": None,
+        "accepts_cold_inbound": "unknown",
+        "invests_in_indian_founders": "unknown",
+        "requires_us_entity": "unknown",
+        "portfolio_count_reported": None,
         "funds": [],
+        "partners": [],
         "sources": sources,
+        "field_sources": {},
         "confidence": confidence,
         "category": empty_category(),
+        "tier": None,
+        "tier_score": None,
         "seed_list_count": 0,
         "seed_source_ids": [],
         "seed_hints": [],
@@ -84,26 +92,66 @@ def new_company(
     sources: list[dict],
     confidence: str,
     sector: str | None = None,
+    sector_classified_by: str | None = None,
     description_short: str | None = None,
 ) -> dict:
     return {
         "id": id,
         "name": name,
+        "website": None,
         "hq_country": None,
         "founded_year": None,
         "sector": sector,
+        "sector_classified_by": sector_classified_by if sector else None,
+        "layer": None,
         "description_short": description_short,
         "total_raised_usd": None,
         "is_competitor": False,
         "sources": sources,
+        "field_sources": {},
         "confidence": confidence,
     }
 
 
-def add_source(record: dict, src: dict) -> None:
-    """Append a source unless the same URL is already there."""
-    if all(s["url"] != src["url"] for s in record["sources"]):
-        record["sources"].append(src)
+def new_round(
+    id: str, company_id: str, *, stage: str, sources: list[dict], confidence: str
+) -> dict:
+    return {
+        "id": id,
+        "company_id": company_id,
+        "date": None,
+        "date_precision": None,
+        "stage": stage,
+        "stage_raw": None,
+        "amount_usd": None,
+        "amount_original": None,
+        "currency_original": None,
+        "fx": None,
+        "valuation_post_usd": None,
+        "lead_investor_ids": [],
+        "participant_investor_ids": [],
+        "unspecified_investor_ids": [],
+        "contested": False,
+        "notes": None,
+        "sources": sources,
+        "field_sources": {},
+        "confidence": confidence,
+    }
+
+
+def add_source(record: dict, src: dict) -> int:
+    """Append a source unless the same URL is already there. Returns its index."""
+    for i, s in enumerate(record["sources"]):
+        if s["url"] == src["url"]:
+            return i
+    record["sources"].append(src)
+    return len(record["sources"]) - 1
+
+
+def cite(record: dict, field_name: str, indexes: list[int]) -> None:
+    """Point a field at the sources (by index) that support it."""
+    current = record["field_sources"].get(field_name, [])
+    record["field_sources"][field_name] = sorted(set(current) | set(indexes))
 
 
 @dataclass
@@ -111,10 +159,14 @@ class Store:
     """Everything the pipeline will export, keyed by record id."""
 
     investors: dict[str, dict] = field(default_factory=dict)
+    partners: dict[str, dict] = field(default_factory=dict)
     funds: dict[str, dict] = field(default_factory=dict)
     companies: dict[str, dict] = field(default_factory=dict)
     competitors: dict[str, dict] = field(default_factory=dict)
     rounds: dict[str, dict] = field(default_factory=dict)
+    benchmarks: list[dict] = field(default_factory=list)
+    legal_notes: list[dict] = field(default_factory=list)
+    fit_features: list[dict] = field(default_factory=list)
     anomalies: list[dict] = field(default_factory=list)
     merges: list[dict] = field(default_factory=list)
 

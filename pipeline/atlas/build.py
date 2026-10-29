@@ -8,7 +8,7 @@ from atlas.geo import region_for_location
 from atlas.ingest.goldman_pdf import SOURCE_ID as GOLDMAN_ID
 from atlas.ingest.goldman_pdf import GoldmanFund
 from atlas.ingest.seeds import LIST_SECTOR, SeedRound
-from atlas.model import Store, add_source, new_company, new_investor, user_source
+from atlas.model import Store, add_source, new_company, new_investor, new_round, user_source
 from atlas.resolve import Group, InvestorResolver
 
 ROLE_RANK = {"lead": 0, "participant": 1, "unspecified": 2}
@@ -71,6 +71,7 @@ def fund_record(fund: GoldmanFund, investor_id: str, fund_id: str) -> dict:
         "size_usd": fund.size_usd,
         "currency_original": "USD" if fund.size_usd is not None else None,
         "size_original": fund.size_usd,
+        "fx": None,
         "close_date": fund.date_iso,
         "close_date_precision": fund.date_precision,
         "vintage_year": fund.year,
@@ -82,6 +83,7 @@ def fund_record(fund: GoldmanFund, investor_id: str, fund_id: str) -> dict:
                 "title": f"{GOLDMAN_ID} row {fund.row_ref}",
             }
         ],
+        "field_sources": {},
         "confidence": fund.confidence,
     }
 
@@ -130,33 +132,29 @@ def build_companies_and_rounds(store: Store, rounds: list[RoundInput]) -> int:
                 sources=[src],
                 confidence="low",
                 sector=LIST_SECTOR.get(r.source_id),
+                sector_classified_by="source",
                 description_short=r.description,
             )
             store.companies[co_id] = company
         else:
             add_source(company, src)
-            company["sector"] = company["sector"] or LIST_SECTOR.get(r.source_id)
+            if company["sector"] is None and LIST_SECTOR.get(r.source_id):
+                company["sector"] = LIST_SECTOR[r.source_id]
+                company["sector_classified_by"] = "source"
             company["description_short"] = company["description_short"] or r.description
 
         key = (co_id, "2026", r.amount_usd)
         record = by_key.get(key)
         if record is None:
-            record = {
-                "id": "",
-                "company_id": co_id,
-                "date": "2026",
-                "date_precision": "year",
-                "stage": r.stage,
-                "stage_raw": r.stage_raw,
-                "amount_usd": r.amount_usd,
-                "valuation_post_usd": None,
-                "lead_investor_ids": [],
-                "participant_investor_ids": [],
-                "unspecified_investor_ids": [],
-                "notes": None,
-                "sources": [src],
-                "confidence": "low",
-            }
+            record = new_round("", co_id, stage=r.stage, sources=[src], confidence="low")
+            record.update(
+                date="2026",
+                date_precision="year",
+                stage_raw=r.stage_raw,
+                amount_usd=r.amount_usd,
+                amount_original=r.amount_usd,
+                currency_original="USD" if r.amount_usd is not None else None,
+            )
             by_key[key] = record
             roles_by_round[id(record)] = {}
             notes: list[str] = []

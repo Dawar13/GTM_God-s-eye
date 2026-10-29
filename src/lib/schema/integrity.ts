@@ -29,6 +29,38 @@ export function checkIntegrity(data: AllRecords): IntegrityIssue[] {
   indexById("rounds");
   indexById("anomalies");
   indexById("merges");
+  const partners = indexById("partners");
+  indexById("benchmarks");
+  indexById("legal_notes");
+  indexById("fit_features");
+
+  // field_sources must point at sources the record actually has.
+  const withFieldSources = ["investors", "funds", "companies", "competitors", "rounds"] as const;
+  for (const name of withFieldSources) {
+    for (const record of data[name]) {
+      for (const [field, indexes] of Object.entries(record.field_sources)) {
+        if (indexes.some((i) => i >= record.sources.length))
+          add(name, record.id, `field_sources.${field} points past the last source`);
+      }
+    }
+  }
+
+  for (const partner of data.partners) {
+    const owner = investors.get(partner.investor_id);
+    if (!owner) add("partners", partner.id, `investor_id ${partner.investor_id} does not exist`);
+    else if (!owner.partners.includes(partner.id))
+      add("partners", partner.id, `investor ${owner.id} does not list this partner`);
+  }
+  for (const investor of data.investors) {
+    for (const pid of investor.partners) {
+      if (!partners.has(pid)) add("investors", investor.id, `partner ${pid} does not exist`);
+    }
+  }
+
+  for (const fit of data.fit_features) {
+    if (!investors.has(fit.investor_id))
+      add("fit_features", fit.id, `investor_id ${fit.investor_id} does not exist`);
+  }
 
   for (const id of companies.keys()) {
     if (competitors.has(id)) add("competitors", id, "id is also used in companies.json");

@@ -14,12 +14,14 @@ SEED_DIR = DATA / "seed"
 INTERIM = DATA / "interim"
 PROCESSED = DATA / "processed"
 SCHEMAS = DATA / "schemas"
+RESEARCH = DATA / "research"
+RESEARCH_CACHE = RESEARCH / "cache"
 
 GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
 SEED_ROUNDS_CSV = SEED_DIR / "seed_rounds.csv"
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 # A fund is "fresh" if it closed on or after this date (24 months before 2026-10-29).
 FRESHNESS_CUTOFF = "2024-10-29"

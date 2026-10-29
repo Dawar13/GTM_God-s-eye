@@ -11,6 +11,10 @@ function data(overrides: Partial<AllRecords> = {}): AllRecords {
     rounds: [round()],
     anomalies: [],
     merges: [],
+    partners: [],
+    benchmarks: [],
+    legal_notes: [],
+    fit_features: [],
     ...overrides,
   };
 }

@@ -49,22 +49,33 @@ const ENUMS = {
   RevenueBasis: S.REVENUE_BASIS,
   InvestorFlag: S.INVESTOR_FLAGS,
   FitFlag: S.FIT_FLAGS,
+  YesNoUnknown: S.YES_NO_UNKNOWN,
+  ResearchTier: S.RESEARCH_TIERS,
+  SectorClassifiedBy: S.SECTOR_CLASSIFIED_BY,
+  BenchmarkMetric: S.BENCHMARK_METRICS,
+  BenchmarkUnit: S.BENCHMARK_UNITS,
+  Geography: S.GEOGRAPHIES,
+  LegalTopic: S.LEGAL_TOPICS,
+  Jurisdiction: S.JURISDICTIONS,
 } as const;
 
 /** Nested objects documented once under their own name. */
 const NAMED_OBJECTS = new Map<string | undefined, string>([
   [S.Source.description, "Source"],
-  [S.Fit.description, "Fit"],
   [S.InvestorCategory.description, "InvestorCategory"],
   [S.SeedHint.description, "SeedHint"],
 ]);
 
 const RECORDS: [string, z.ZodType, string][] = [
   ["Investor", S.Investor, "investors.json"],
+  ["Partner", S.Partner, "partners.json"],
   ["Fund", S.Fund, "funds.json"],
   ["Company", S.Company, "companies.json"],
   ["Competitor", S.Competitor, "competitors.json"],
   ["Round", S.Round, "rounds.json"],
+  ["Benchmark", S.Benchmark, "benchmarks.json"],
+  ["LegalNote", S.LegalNote, "legal_notes.json"],
+  ["FitFeatures", S.FitFeatures, "fit_features.json"],
   ["Anomaly", S.Anomaly, "anomalies.json"],
   ["Merge", S.Merge, "merges.json"],
 ];
@@ -164,8 +175,27 @@ async function main() {
     JSON.stringify(enums, null, 2) + "\n",
   );
 
+  // Research inputs (data/research/), validated by the pipeline before merging.
+  const research: [string, z.ZodType][] = [
+    ["research_investor", S.InvestorResearch],
+    ["research_competitor", S.CompetitorResearch],
+    ["research_round", S.RoundResearch],
+    ["research_queue", S.ResearchQueue],
+    ["research_benchmarks", z.array(S.Benchmark)],
+    ["research_legal_notes", z.array(S.LegalNote)],
+  ];
+  for (const [name, schema] of research) {
+    await writeFile(
+      path.join(SCHEMA_DIR, `${name}.schema.json`),
+      JSON.stringify({ $id: `capital-atlas/${name}.schema.json`, ...toJson(schema) }, null, 2) +
+        "\n",
+    );
+  }
+
   await writeFile(path.join(ROOT, "docs", "DATA_DICTIONARY.md"), dictionary());
-  console.log(`gen:schema wrote ${S.DATASET_NAMES.length + 1} schemas and docs/DATA_DICTIONARY.md`);
+  console.log(
+    `gen:schema wrote ${S.DATASET_NAMES.length + research.length + 1} schemas and docs/DATA_DICTIONARY.md`,
+  );
 }
 
 main().catch((e: unknown) => {

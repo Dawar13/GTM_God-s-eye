@@ -1,0 +1,289 @@
+{
+  "$id": "capital-atlas/fit_features.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^fit_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `fit_<slug>`"
+          },
+          "investor_id": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "features": {
+            "type": "object",
+            "properties": {
+              "thesis": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "stage": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "check": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "adjacency": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "geography": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "dry_powder": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "method": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "How it was computed, e.g. stated_and_portfolio"
+                      },
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Which inputs existed, e.g. thesis_text, 12 rounds"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "method",
+                      "inputs"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "thesis",
+              "stage",
+              "check",
+              "adjacency",
+              "geography",
+              "dry_powder"
+            ],
+            "additionalProperties": false
+          },
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "conflict",
+                "sparse"
+              ]
+            }
+          },
+          "raise_size_usd": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Our round size the check feature used (an assumption)"
+          }
+        },
+        "required": [
+          "id",
+          "investor_id",
+          "features",
+          "flags",
+          "raise_size_usd"
+        ],
+        "additionalProperties": false,
+        "description": "Fit features, each 0–1; the weighted total is computed in the app"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

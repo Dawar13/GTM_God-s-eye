@@ -5,5 +5,7 @@ export * from "./fund";
 export * from "./company";
 export * from "./round";
 export * from "./review";
+export * from "./reference";
 export * from "./datasets";
+export * from "./research";
 export { checkIntegrity, type AllRecords, type IntegrityIssue } from "./integrity";

@@ -54,8 +54,11 @@ def ingest_seed_rounds(resolver: InvestorResolver) -> list[build.RoundInput]:
     return inputs
 
 
-def run(store: Store) -> dict[str, int]:
-    """Fill the store from every source. Returns extra counts for the summary."""
+def run(store: Store, research: bool = True) -> dict[str, int]:
+    """Fill the store from every source. Returns extra counts for the summary.
+
+    research=False builds the Phase 0 view only (used to compute research tiers).
+    """
     resolver = InvestorResolver()
 
     funds, fallbacks = goldman_pdf.parse_pdf()
@@ -94,10 +97,14 @@ def export(store: Store) -> dict[str, int]:
     generated_at = now_iso()
     collections = {
         "investors": list(store.investors.values()),
+        "partners": list(store.partners.values()),
         "funds": list(store.funds.values()),
         "companies": list(store.companies.values()),
         "competitors": list(store.competitors.values()),
         "rounds": list(store.rounds.values()),
+        "benchmarks": store.benchmarks,
+        "legal_notes": store.legal_notes,
+        "fit_features": store.fit_features,
         "anomalies": store.anomalies,
         "merges": store.merges,
     }

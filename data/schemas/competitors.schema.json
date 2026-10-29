@@ -5,7 +5,7 @@
   "properties": {
     "version": {
       "type": "number",
-      "const": 1
+      "const": 2
     },
     "generated_at": {
       "type": "string",
@@ -26,6 +26,19 @@
           "name": {
             "type": "string",
             "minLength": 1
+          },
+          "website": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^https?:\\/\\/\\S+$",
+                "description": "Absolute http(s) URL"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Own site; companies are de-duplicated by its domain"
           },
           "hq_country": {
             "description": "ISO 3166-1 alpha-2",
@@ -73,6 +86,34 @@
                 "type": "null"
               }
             ]
+          },
+          "sector_classified_by": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "source",
+                  "model"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "source: the company's own description says so; model: classified by the researcher"
+          },
+          "layer": {
+            "type": "string",
+            "enum": [
+              "design_intent",
+              "process_planning",
+              "plant_ops",
+              "quality_vision",
+              "autonomy_tooling",
+              "robotics",
+              "full_stack_factory"
+            ],
+            "description": "Position on the layer map (PROJECT_CONTEXT §2)"
           },
           "description_short": {
             "description": "One line, paraphrased",
@@ -146,6 +187,22 @@
             },
             "description": "At least one source; first is primary"
           },
+          "field_sources": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "description": "Field name -> indexes into sources"
+          },
           "confidence": {
             "type": "string",
             "enum": [
@@ -153,7 +210,7 @@
               "medium",
               "low"
             ],
-            "description": "high: primary source; medium: single secondary or user list with link; low: unverified lead"
+            "description": "high: primary source or two independent secondaries agree; medium: one reputable secondary; low: user-supplied list or database page only"
           },
           "is_competitor": {
             "type": "boolean",
@@ -167,19 +224,6 @@
               "remote"
             ]
           },
-          "layer": {
-            "type": "string",
-            "enum": [
-              "design_intent",
-              "process_planning",
-              "plant_ops",
-              "quality_vision",
-              "autonomy_tooling",
-              "robotics",
-              "full_stack_factory"
-            ],
-            "description": "Position on the layer map (PROJECT_CONTEXT §2)"
-          },
           "layer_detail": {
             "description": "Finer layer, e.g. maintenance / condition monitoring",
             "type": [
@@ -192,15 +236,31 @@
               {
                 "type": "string",
                 "enum": [
-                  "early",
-                  "growth",
-                  "incumbent"
+                  "under_5m",
+                  "from_5m_to_25m",
+                  "from_25m_to_100m",
+                  "from_100m_to_1b",
+                  "over_1b"
                 ]
               },
               {
                 "type": "null"
               }
-            ]
+            ],
+            "description": "By total raised"
+          },
+          "founders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "named_customers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Customers the company names publicly"
           },
           "headcount_est": {
             "anyOf": [
@@ -271,7 +331,7 @@
                 "type": "null"
               }
             ],
-            "description": "Headcount estimate, only with a source (e.g. LinkedIn page)"
+            "description": "Approximate headcount, only with a source (e.g. LinkedIn page)"
           },
           "revenue_usd": {
             "anyOf": [
@@ -294,6 +354,7 @@
             ]
           },
           "product_summary": {
+            "description": "≤ 50 words",
             "type": [
               "string",
               "null"
@@ -310,18 +371,23 @@
         "required": [
           "id",
           "name",
+          "website",
           "hq_country",
           "founded_year",
           "sector",
+          "sector_classified_by",
+          "layer",
           "description_short",
           "total_raised_usd",
           "sources",
+          "field_sources",
           "confidence",
           "is_competitor",
           "category",
-          "layer",
           "layer_detail",
           "size_class",
+          "founders",
+          "named_customers",
           "headcount_est",
           "revenue_usd",
           "revenue_basis",

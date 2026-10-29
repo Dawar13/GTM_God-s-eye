@@ -11,10 +11,14 @@ from atlas.config import PROCESSED, SCHEMA_VERSION, SCHEMAS
 
 DATASET_NAMES = (
     "investors",
+    "partners",
     "funds",
     "companies",
     "competitors",
     "rounds",
+    "benchmarks",
+    "legal_notes",
+    "fit_features",
     "anomalies",
     "merges",
 )

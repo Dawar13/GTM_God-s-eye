@@ -1,12 +1,13 @@
 import { z } from "zod";
 import { Company, Competitor } from "./company";
 import { Fund } from "./fund";
-import { Investor } from "./investor";
+import { Investor, Partner } from "./investor";
+import { Benchmark, FitFeatures, LegalNote } from "./reference";
 import { Anomaly, Merge } from "./review";
 import { Round } from "./round";
 
 /** Bump when a processed file's shape changes in a way old files won't parse. */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export function datasetOf<T extends z.ZodType>(record: T) {
   return z.strictObject({
@@ -16,13 +17,17 @@ export function datasetOf<T extends z.ZodType>(record: T) {
   });
 }
 
-/** Every file in data/processed/ and the record schema it holds. */
+/** Every record dataset in data/processed/ and the record schema it holds. */
 export const DATASETS = {
   investors: Investor,
+  partners: Partner,
   funds: Fund,
   companies: Company,
   competitors: Competitor,
   rounds: Round,
+  benchmarks: Benchmark,
+  legal_notes: LegalNote,
+  fit_features: FitFeatures,
   anomalies: Anomaly,
   merges: Merge,
 } as const;

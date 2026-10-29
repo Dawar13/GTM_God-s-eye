@@ -1,134 +1,232 @@
-# Phase 1 — Research, data & engines
+# Phase 1 — Research, data and engines
 
-Read `docs/PROJECT_CONTEXT.md`, then `docs/PHASE_0_REPORT.md`, then the latest entries of `docs/DECISIONS.md`. This phase fills the data with sourced facts, computes the analytics in the pipeline, and builds the finance math engine. **No new UI in this phase** beyond what's needed to check data (Phase 2 builds the views).
+Read `docs/PROJECT_CONTEXT.md`, `docs/PHASE_0_REPORT.md` and the latest `docs/DECISIONS.md` entries first. If Phase 0 found something that contradicts this file (schema shape, counts, source quality), follow the Phase 0 reality and log the deviation in DECISIONS.md.
 
-Work in order. After each numbered step: run the checks listed, commit with a conventional message, then continue. If a step fails twice, stop and report instead of improvising around it. There are two **human checkpoints** (steps 3 and 6): stop and wait for approval there.
+Goal: turn seeds into a verified, sourced dataset; compute every analytic the UI needs; build and test the finance engine. **Still no UI polish** — only the minimum wiring needed to eyeball data.
+
+Workstreams, in this order:
+
+| # | Workstream | Can run in parallel with |
+|---|---|---|
+| 1 | Schema additions + research tooling | — |
+| 2 | Finance engine (pure math + tests) | 3–7 |
+| 3 | Pilot: 5 investors end to end | 2 |
+| 4 | Investor research (Tier A, then B) | 2 |
+| 5 | Portfolio rounds + companies | 4 |
+| 6 | Competitors | 4 |
+| 7 | Benchmarks + India / structure research | 4 |
+| 8 | Pipeline analytics | after 4–6 have ≥ 50% coverage, re-run at the end |
+| 9 | QA, coverage and audit | last |
+| 10 | Hand-off | last |
+
+Commit after every batch. Never hold research only in context; write to files as you go so a new session can resume.
 
 ---
 
-## 0. Preconditions (human does this before starting)
+## 1. Schema additions and research tooling
 
-- Phase 0 reviewed; `phase-0` merged to `main`; a `phase-1` branch created.
-- Answers to the Phase 0 open questions recorded in `docs/DECISIONS.md`: raise size and instrument, pitch lean (design intent vs plant ops), frontier-list flag policy, bare "Accel", whether `data/raw/customers/` stays in git.
-- Missing inputs added: infographic images and `data/raw/sources/linkedin_posts.md`; One Way Summit SF list 1; the two investor spreadsheets in `data/raw/incoming/`.
-- Web access (search and fetch) available to Claude Code.
+### 1.1 New / extended schemas (Zod first, then `pnpm gen:schema`)
+- `Partner`: id, investor_id, name, title, focus_sectors, linkedin_url (nullable), sources. Public professional info only. No personal emails or phone numbers.
+- `Investor` add: `application_url` (nullable), `accepts_cold_inbound` (`yes | no | unknown`), `invests_in_indian_founders` (`yes | no | unknown`), `requires_us_entity` (`yes | no | unknown`), `portfolio_count_reported` (nullable), `seed_hints` (from Phase 0).
+- `Round` add: `date_precision` (`day | month | quarter | year`).
+- `Company` add: `sector_classified_by` (`source | model`), `layer` (nullable, same enum as competitors).
+- `Benchmark`: id, metric (`median_round_size | median_pre_money | median_post_money | median_dilution | safe_cap_median | safe_share_of_rounds | time_between_rounds | …`), stage, geography, period, value, unit, sources.
+- `LegalNote`: id, topic (`india_flip | reverse_flip | fema_pricing | angel_tax | india_convertible_note | isafe | ccps | delaware_requirement`), summary (paraphrased, ≤ 80 words), effective_date (nullable), jurisdiction, sources, `last_verified`.
+- Derived fields must say how they were made: `{ value, method, inputs }` for `sector_weights`, `industrial_affinity`, `stage_earliness`, `fit_features`.
 
-Claude Code: verify these. List what's missing and continue with the rest.
+### 1.2 Research queue and cache
+- `data/interim/research_queue.json`: one entry per entity `{ entity_type, id, tier, status: todo | in_progress | done | blocked, blocked_reason, last_touched }`. Always pick up `in_progress`, then `todo`. This is what makes the work resumable across sessions.
+- `data/interim/research_cache/<entity_id>.json`: every page fetched for that entity — url, title, retrieved_at, and the specific fields extracted with a ≤ 25-word supporting snippet each. Snippets are for internal verification only; the dataset stores paraphrases.
+- Use subagents (Task tool) for batches of ~5 entities in parallel when available; each subagent writes only its own cache files. The main agent merges into `data/processed/`.
 
-## 1. Contracts first
+### 1.3 Research protocol (applies to every fact)
+1. Search → open the page → extract. Never record a fact from a search snippet alone.
+2. Source priority: (a) the firm's / company's own site, fund announcement, SEC Form D, regulator site; (b) reputable press (TechCrunch, Axios, Fortune, WSJ, Bloomberg, Reuters, Sifted, Inc42, Entrackr, The Economic Times); (c) public pages of databases (Crunchbase, Tracxn, PitchBook profiles) as hints only, then confirm in (a) or (b).
+3. Confidence: `high` = primary source, or two independent secondary sources agree. `medium` = one reputable secondary. `low` = user-supplied infographic or database page only.
+4. Amounts: store in USD with `size_original` + `currency_original` and the FX rate + date used (`atlas/fx.py`, fixed rates table with a source). INR crore: 1 Cr = 10,000,000 INR.
+5. No login-walled scraping (LinkedIn, PitchBook, Crunchbase Pro). Use what is publicly visible.
+6. Disambiguate names before recording. Several names in this project are ambiguous (e.g. Meridian, Covalent, Omni, Activate, Expeditions, Spark). Confirm the entity by domain + description before saving; log the check.
+7. Anything published after June 2026 is outside the model's own knowledge. Treat every 2026 claim from seeds as unverified until fetched.
+8. Log each entity in `data/RESEARCH_LOG.md`: date, entity, questions, sources checked, result, conflicts, open items.
 
-Research output needs somewhere reviewable to live before any research starts. The pipeline overwrites `data/processed/`, so research must not be written there by hand.
+---
 
-1. **Research cards.** Add Zod schemas and a folder `data/research/`:
-   - `investors/<inv_id>.json` and `companies/<co_id>.json`: `{ entity_id, researched_at, fields: { <field>: { value, sources: Source[], confidence } }, funds: [...], rounds: [...], notes }`. Rounds and funds inside a card use the same shapes as the processed records, with sources.
-   - The pipeline's `enrich/` step merges cards over Phase 0 records: a card field wins over a seed hint, and conflicts are logged.
-2. **Per-field provenance.** PROJECT_CONTEXT §5.7 wants a source icon on every number. Decide how a field points at its sources (for example `field_sources: { check_min_usd: [0, 2] }` indexing into `sources`), add it to Investor, Fund, Company, Competitor and Round, and log the choice.
-3. **New datasets:** `benchmarks.json` (metric, stage, region, period, value, unit, sample size, sources), `layout.json` (thesis-map coordinates per investor), `graph.json` (nodes, edges, metrics, precomputed positions).
-4. Extend `validate:data`: every non-null numeric field on a record must be covered by `field_sources`; cards must point at existing ids.
+## 2. Finance engine — `src/lib/finance/`
 
-Check: `pnpm gen:schema && pnpm validate:data && pnpm test` pass; the dictionary shows the new fields.
+Pure, deterministic TypeScript. No React, no I/O. Every function has JSDoc with the formula, the assumptions, and a citation (Brad Feld & Jason Mendelson, *Venture Deals*; Y Combinator SAFE user guides; NVCA model documents). Internally use full precision; round only in `lib/format`. Tests use tolerance 1e-6 on fractions and 0.01 on dollars/shares.
 
-## 2. Remaining user inputs
-
-1. Inspect each incoming spreadsheet, map its columns, and ingest it as `user_supplied` hints with a new `source_id` (added to PROJECT_CONTEXT §6).
-2. Transcribe anything in `linkedin_posts.md` and the infographics that `data/seed/` doesn't already hold; flag logo-read names.
-3. Re-run the pipeline. **Review every new entry in `merges.json`**; add wrong merges to `DO_NOT_MERGE` with a one-line reason (as Phase 0 did).
-
-Check: `pnpm pipeline`, `uv run pytest`, `pnpm validate:data`; new merges reviewed and logged in DECISIONS.
-
-## 3. Pick the research tiers — human checkpoint
-
-Targets (PROJECT_CONTEXT §10): **Tier A ≥ 60 Western early-stage investors fully profiled**, each with ≥ 8 sourced portfolio rounds; **Tier B ≥ 200 shallow profiles**.
-
-1. Candidate pools: seed-list investors (191), the 82 Goldman funds closed since the 2024-10-29 cutoff and other debut/emerging managers, investors in the robotics and physical-AI rounds, backers of the §7 competitors, and the incoming spreadsheets.
-2. Rank candidates on cheap signals already in the data: region western or unknown, early-stage hints, `seed_list_count`, fresh Goldman fund, industrial/robotics/physical-AI hints, not flagged late-stage.
-3. Write `data/research/TIER_CANDIDATES.md`: about 90 Tier A candidates (expect some to drop out as not early stage or not active) and about 250 Tier B, one line of reasoning each.
-
-**Stop. The human approves or edits the Tier A list before deep research starts.**
-
-## 4. Research protocol (every entity)
-
-Sources, in order of preference: the firm's own site (thesis, team, portfolio page), fund announcements, SEC Form D on EDGAR (fund size and date), company press releases, then secondary sources (TechCrunch, Axios, Fortune, Crunchbase public pages, LinkedIn).
-
-Rules (PROJECT_CONTEXT §5, restated because they decide everything):
-
-- No fact without a URL and `retrieved_at`. If it can't be found, the field stays `null`.
-- Never fill from memory. Anything after June 2026 must be verified on the web.
-- An amount from a single secondary source is `confidence: medium`.
-- When sources conflict, keep both, pick the primary, and add a row to `data/RESEARCH_LOG.md`.
-- Every research action (including searches that found nothing) is a row in `RESEARCH_LOG.md`.
-
-Per **Tier A** investor: name, aliases, parent brand, type, HQ city and country, region, stages, check range, leads (yes/no), thesis (paraphrased, 40 words or fewer), website, LinkedIn, every fund found (number, size, close date), at least 8 portfolio rounds (company, date, stage, amount, lead or participant), and sector evidence for the thesis vector.
-Per **Tier B** investor: type, HQ and region, stages, latest fund, website, one-line thesis, at least 2 portfolio companies.
-
-While doing this, verify or reject every `seed_hint` and every Goldman anomaly on the investors touched.
-
-Work in batches of 10 investors. After each batch: write the cards, run the pipeline and validation, update `data/research/STATUS.md` (done / in progress / dropped and why), and commit.
-
-Check per batch: `pnpm pipeline && pnpm validate:data && uv run pytest`.
-
-## 5. Competitors
-
-1. Profile every company in PROJECT_CONTEXT §7: what it does (confirm layer and category against its own site), HQ, founded year, rounds with sources, total raised (sum of sourced rounds, or a reported total), headcount estimate (labelled, with its source), revenue only if publicly reported, public pricing, investors.
-2. Identify Covalent, Meridian, Galvant, SalesPatriot and Parallax Worlds first. Several names are common; record how each was identified.
-3. Move verified competitors (including Atoms and Machina Labs) from `companies.json` to `competitors.json`.
-4. Re-check `category: direct` against the pitch-lean answer from step 0.
-
-Check: every competitor has at least one primary source; `validate:data` passes.
-
-## 6. Benchmarks and structure research — human checkpoint
-
-1. **Round benchmarks:** median pre-seed and seed round size, valuation and dilution, US and India where published (Carta, PitchBook-NVCA Venture Monitor, AngelList, Peter Walker / Carta posts). Latest period available, written to `benchmarks.json` with period and sample size.
-2. **India instruments:** CCPS, CCD, iSAFE, the FEMA pricing rules for non-resident investment, and the current status of angel tax. Write `docs/research/INDIA_INSTRUMENTS.md`, every rule with its regulation and date.
-3. **India flip:** what US investors expect, mechanics (share swap, FEMA/ODI, tax), cost, time, and alternatives. Write `docs/research/INDIA_FLIP.md` as trade-offs, **no recommendation** (PROJECT_CONTEXT §1).
-
-**Stop. The human reviews the two research notes before the India calculator rules are coded.**
-
-## 7. Pipeline analytics (`pipeline/atlas/analyze/`)
-
-Add `scikit-learn umap-learn networkx httpx`. Every step is deterministic (fixed seeds) and tested against hand-computed cases.
-
-1. `categorise.py`: freshness (cutoff from config), maturity, `is_early_stage`, `is_generalist` (normalised Shannon entropy of `sector_weights` ≥ 0.85, or a stated sector-agnostic thesis).
-2. `thesis.py`: `sector_weights` = 0.5 × stated thesis + 0.5 × portfolio share by sector; record which inputs existed.
-3. `cluster.py`: k-means on non-generalists, k from 4 to 10 by silhouette; generalists assigned to the nearest cluster for colour only; UMAP to 2D (PCA fallback) → `layout.json`.
-4. `affinity.py`: industrial affinity and stage earliness exactly as PROJECT_CONTEXT §4.
-5. `fit.py`: the six components with default weights 30/20/15/15/10/10; flags `conflict` (backed a direct competitor in the last 24 months) and `sparse_data` (unknown share > 40%). Our round size comes from config, labelled as an assumption until answered.
-6. `graph.py`: nodes and edges from rounds (lead, participant, role not stated); degree, weighted degree, betweenness, VC↔VC co-investment counts → `graph.json`. Precompute ForceAtlas2 positions with a small `scripts/layout-graph.ts` using `graphology-layout-forceatlas2` (already installed), so Phase 2 doesn't lay out at runtime.
-
-Check: `uv run pytest`, `pnpm pipeline`, `pnpm validate:data`; the same input twice gives byte-identical outputs.
-
-## 8. Finance engine (`src/lib/finance/`)
-
-Pure TypeScript functions, Vitest, 100% coverage on this folder. Decide the money and share rounding rules first (for example: shares floor to whole shares, money to cents) and log them.
-
-Each tool gets the worked example below **and** at least one example from a published source, cited in the test name (for example YC's Post-Money SAFE user guide). The examples below were computed by hand; if one disagrees with a published method, stop and flag it rather than adjusting the test to pass.
-
-| Function | Worked example |
+### 2.1 Modules and functions
+| File | Functions |
 |---|---|
-| Round builder | Pre-money $8M + new money $2M → post-money $10M, investor 20.0%. With 10,000,000 pre-round shares: price $0.80, 2,500,000 new shares. |
-| Option pool shuffle | Pre-money $8M, raise $2M, 10% post-money pool created before the round → effective pre-money $7M. |
-| Post-money SAFE | Founders 9,000,000 shares; $1M SAFE at $10M post-money cap → 1,000,000 SAFE shares (10%). Series A $5M at $20M pre-money (pre-money includes SAFE shares): price $2.00, 2,500,000 new shares. After: founders 72.0%, SAFE holder 8.0%, Series A 20.0%. |
-| Pre-money SAFE | The same inputs side by side with the post-money SAFE, showing the difference in founder dilution; take the pre-money mechanics from a published source. |
-| Convertible note | $500K at 8% simple interest for 18 months → $560,000 converting; price = lower of cap price and discounted round price. |
-| Liquidation waterfall | $10M invested for 20%. 1x non-participating: exit $30M → investor $10M, common $20M; exit $80M → investor converts, $16M. 1x participating: exit $30M → $10M + 20% × $20M = $14M. Participating capped at 3x ($30M): exit $200M → investor converts, $40M. Add a two-series case for seniority vs pari passu. |
-| VC method | Exit $500M, target 10x, 50% expected dilution → post-money $25M; with a $5M investment → pre-money $20M. |
-| Fund math | $50M fund, 10% at entry, 50% follow-on dilution → 5% at exit; the exit needed to return the fund is $1B. Same ownership in a $1B fund → $20B. |
-| Power law simulation | Seeded random generator; the same seed gives the same histogram; document the outcome distribution used. |
-| India instruments | Only after step 6 is approved: CCPS/CCD conversion and a check against the FEMA pricing floor. |
+| `priced-round.ts` | `pricedRound({ preMoney?, postMoney?, investment, preMoneyFDShares })` → post, pre, price per share, new shares, ownership map |
+| `option-pool.ts` | `poolShuffle({ headlinePreMoney, investment, existingShares, existingPool, targetPostPoolPct })` → pool shares to add, price, effective pre-money, post cap table |
+| `safe.ts` | `convertPostMoneySafes(...)`, `convertPreMoneySafes(...)`, discount, MFN handling; conversion at a priced round with or without pool top-up |
+| `note.ts` | `accrue({ principal, rate, compounding: 'simple' \| 'annual' \| 'monthly', start, end })`, `convertNote({ accrued, cap, capBasis, discount, roundPrice, capitalization })` |
+| `cap-table.ts` | `simulate(rounds[])` applying a sequence of SAFEs / notes / priced rounds / pool top-ups; returns a snapshot per step |
+| `waterfall.ts` | `distribute({ exitValue, classes[] })` supporting 1x/2x, non-participating, participating, capped participating, seniority stack vs pari passu, conversion decisions; `payoutCurve(exitRange)` |
+| `vc-method.ts` | `vcMethod({ exitValue, targetMultiple, retention, investment })` → required ownership, post, pre |
+| `fund-math.ts` | `exitOwnership(entry, dilutions[])`, `exitNeededToReturnFund(fundSize, exitOwnership, multiple = 1)` |
+| `pro-rata.ts` | `proRata({ ownership, roundSize })`, ownership after with / without pro-rata |
+| `power-law.ts` | `simulatePortfolio({ n, distribution, params, trials, seed })` with a seeded PRNG (e.g. mulberry32) so results are reproducible |
+| `india.ts` | No math beyond FX and INR formatting. Holds typed references to `LegalNote` ids |
 
-Check: `pnpm test` with coverage at 100% on `src/lib/finance/`; lint and typecheck pass.
+Shared invariants (property tests with fast-check or hand-rolled loops): ownership sums to 1; shares never negative; founders' % never rises in a financing without buybacks; post = pre + new money for priced rounds.
 
-## 9. Exit checklist
+### 2.2 Worked examples to encode as tests (all independently checkable)
+1. **Priced round**: pre $8M, invest $2M, 8,000,000 pre shares → post $10M, price $1.00, 2,000,000 new shares, investor 20%.
+2. **Option pool shuffle**: same, plus 10% post-money pool created pre-money, no existing pool → pool 1,142,857.14 shares, price $0.875, new shares 2,285,714.29, post FD 11,428,571.43; founders 70%, investor 20%, pool 10%; effective pre-money $7M.
+3. **Post-money SAFE → Series A**: founders 9,000,000 shares; SAFE $1M at $10M post-money cap; A at $20M pre, $5M new, no pool change → SAFE converts to 1,000,000 shares at $1.00; A price $2.00; 2,500,000 new shares; post 12,500,000; founders 72%, SAFE 8%, A 20%. With a 20% discount the cap still wins ($1.00 < $1.60).
+4. **Convertible note**: $500K, 8% simple, converts after 18 months; A price $2.00; 20% discount; $8M cap on 10,000,000 pre-money shares → accrued $560,000; cap price $0.80 beats discount price $1.60; 700,000 shares.
+5. **Liquidation preference**: investor $5M for 25%, 1x non-participating → exit $10M: investor $5M, common $5M; exit $40M: converts, investor $10M, common $30M; breakpoint $20M. Participating uncapped at $40M → $13.75M. Participating capped at 3x ($15M): exit $40M → $13.75M; exit $80M → converts, $20M.
+6. **Fund math**: 10% at entry, two later rounds at 20% dilution each → 6.4% at exit. To return a $50M fund: $781.25M exit. A $1B fund needs $15.625B.
+7. **VC method**: exit $200M, 20x target, retention 0.5, invest $1M → required ownership 20%, post $5M, pre $4M.
+8. **Pro-rata**: 10% owner, round $5M selling 20% → pro-rata $500K; without it ownership drops to 8%.
+9. **YC examples**: fetch Y Combinator's current Post-Money SAFE user guide, and encode its worked examples verbatim as additional tests (numbers only; cite the URL in the test file). If your implementation disagrees with YC's example, YC wins — fix the code, log in DECISIONS.md.
 
-- [ ] Tier A: at least 60 Western early-stage investors fully profiled, each with at least 8 sourced portfolio rounds
-- [ ] Tier B: at least 200 shallow profiles
-- [ ] Every competitor in PROJECT_CONTEXT §7 profiled; verified ones in `competitors.json`
-- [ ] Every non-null number has a source (`validate:data` enforces it)
-- [ ] `benchmarks.json`, `layout.json`, `graph.json` and fit scores exist and validate
-- [ ] Finance functions pass worked-example and published-example tests, 100% coverage
-- [ ] `data/RESEARCH_LOG.md` complete; every new merge reviewed
+Exit for this workstream: `pnpm test` green, coverage ≥ 95% lines on `src/lib/finance`.
+
+---
+
+## 3. Pilot (calibrate before scaling)
+
+Fully profile 5 investors end to end — pick 2 from the seeds with clear industrial/physical-AI focus, 1 generalist seed fund, 1 debut fund, 1 India fund. For each: investor, funds, partners, ≥ 8 portfolio rounds, companies. Run validation. Then write a short note in RESEARCH_LOG.md: time per investor, which sources worked, which fields were consistently unfindable. Adjust Tier A/B field lists if a field is unfindable for 4 of 5. Commit, then scale.
+
+---
+
+## 4. Investor research
+
+### 4.1 Build the candidate pool
+Start from all Phase 0 investors (Goldman + seeds), then add these **candidates to check** (names from general knowledge; include only if research confirms they exist, are active and fit):
+
+- *Industrial / hard tech / physical AI early-stage (Western)*: Root Ventures, Eclipse, Lux Capital, Construct Capital, 8VC, Prime Movers Lab, Playground Global, Ubiquity Ventures, Bee Partners, Engineering Capital, Scout Ventures, Shield Capital, Supply Change Capital, Mavka Ventures, Riceberg Ventures, OneSixOne Ventures, Asimov Ventures, Venturetech Alliance, Transition VC, Kadmos Capital, Denver Ventures, Pritzker Group VC, Catamaran Ventures, Premji Invest, Bezos Expeditions, Lockheed Martin Ventures, In-Q-Tel.
+- *AI-first / B2B seed (Western)*: Conviction, Air Street Capital, Gradient, Haystack, 2048 Ventures, Crane Venture Partners, Index Ventures (seed), Merantix Capital, Earlybird, seed+speed, Cleo Ventures, Curiosity, Seven Stars, Folklore Ventures, Cornerstone VC, Spark Growth Ventures.
+- *Investors in our competitors*: Foundation Capital, Also Capital, Antler, Genius Ventures (Tandem); Valor Equity Partners, Atreides (Flow Engineering); plus whoever Phase 1 competitor research finds.
+- *Accelerators / platforms*: Y Combinator, Techstars, Antler, Entrepreneur First, South Park Commons, Neo, Pear VC.
+- *Cross-border / immigrant-founder friendly*: Orion VC, Unshackled Ventures, One Way Ventures, Geek Ventures, Hustle Fund.
+- *India (toggle, lower priority)*: ajvc, 100X.VC, Speciale Invest, pi Ventures, Ideaspring Capital, Stellaris, Blume, Peak XV (Surge), Accel India, Elevation, Kalaari, Antler India.
+
+### 4.2 Tiering (compute, don't hand-pick)
+Preliminary score per candidate:
+- +3 Western and early-stage (by seed hints or Goldman fund size ≤ $200M)
+- +3 industrial / robotics / hardware / deep tech / supply chain / defence / physical AI signal in hints
+- +2 backed a competitor or any company in `seed_rounds.csv` robotics list
+- +2 fund closed on/after the freshness cutoff
+- +1 per additional seed list it appears in (max +3)
+- +1 AI-first thesis
+
+Tier A = top 60–80 Western + top 10 India. Tier B = next ~200. Tier C = everything else (Goldman data only, no research). Save tier + score in the queue. Log the cut lines in DECISIONS.md.
+
+### 4.3 Fields per tier
+| Field | Tier A | Tier B |
+|---|---|---|
+| name, aliases, parent_brand, type, region, HQ, website | ✓ | ✓ |
+| stages, leads?, check range | ✓ | ✓ (if stated) |
+| thesis (paraphrased, ≤ 60 words) | ✓ | ✓ (≤ 25 words) |
+| funds: all known (number, size, close date) | ✓ | latest only |
+| partners relevant to industrial / AI / hardware | ✓ | — |
+| application_url, cold inbound, Indian founders, US entity requirement | ✓ | if easy |
+| portfolio rounds | ≥ 8, prefer last 24 months, prefer our sectors | ≥ 3 notable |
+| co-investors on each round | ✓ | — |
+
+Batch size 10. After each batch: merge, `pnpm validate:data`, update queue, commit `data: tier A batch N`.
+
+### 4.4 Incoming spreadsheets
+If files exist in `data/raw/incoming/`: write `atlas/ingest/incoming.py` (schema-sniff columns, map to Investor, keep `kind: user_supplied`), merge, re-tier. Log column mapping in DECISIONS.md.
+
+---
+
+## 5. Portfolio rounds and companies
+
+- Every round found in §4 becomes a Round + Company (dedupe companies by domain first, then fuzzy name ≥ 92).
+- Verify all 50 rounds in `seed_rounds.csv`: confirm amount, date (month), stage, leads, participants. Upgrade confidence or mark `contested`.
+- Company sector: from the company's own description; if classifying with the model, set `sector_classified_by: "model"`.
+- Company `layer` only for companies in our space (industrial / robotics / hardware tooling).
+- Target: ≥ 600 rounds, ≥ 400 companies by end of phase. Quality over count — never pad.
+
+---
+
+## 6. Competitors
+
+Profile every company in PROJECT_CONTEXT §7, then search for missing ones (queries like "AI agents for manufacturing startup seed", "requirements management hardware AI startup", "factory copilot WhatsApp", "industrial AI India startup funding 2026") and add any that genuinely overlap. For each:
+- identity check (domain, founders, HQ, founded year)
+- full funding history (all rounds, leads, participants) → Rounds
+- category, layer, size_class (by total raised: < $5M, $5–25M, $25–100M, $100M–1B, > $1B)
+- product summary (≤ 50 words), publicly named customers, public pricing
+- headcount with source (label as approximate), revenue only if publicly reported
+- investors → link to Investor records (this feeds the conflict flag and the overlap matrix)
+
+---
+
+## 7. Benchmarks and India / structure research
+
+### 7.1 Benchmarks (→ `benchmarks.json`)
+Find the latest available editions and record each metric with period and geography:
+- Carta: State of Private Markets (quarterly), pre-seed / SAFE reports — median round size and valuation by stage, median dilution, SAFE vs note share, valuation caps.
+- PitchBook-NVCA Venture Monitor — deal counts, median pre-money by stage.
+- India: Tracxn / Inc42 / Bain India VC report — pre-seed and seed medians.
+- Fund-level: Q3 2026 stats from the Freesbee post (debut 22 funds, $774M, median $33M; established median $105M) as `user_supplied`, plus Carta/PitchBook fund data if available.
+
+### 7.2 Legal / structural notes (→ `legal_notes.json`)
+Facts with sources and dates, no recommendations. Mark every note "not legal or tax advice — confirm with your CA / counsel".
+- India flip: how it's done (share swap vs. new Delaware parent), Overseas Investment rules, tax consequences, typical cost and timeline ranges if published.
+- Reverse flip trend (Indian startups moving domicile back before IPO) and why.
+- Whether YC and typical US seed funds require a Delaware parent; how they treat India-operating companies.
+- FEMA pricing for non-resident investment in Indian unlisted companies.
+- Current status of India's angel tax (Section 56(2)(viib)).
+- Convertible notes for DPIIT-recognised startups (minimum ticket, tenure).
+- India SAFE variants (e.g. iSAFE) and CCPS / CCD basics.
+- Each topic gets ≥ 2 sources, at least one primary (RBI, Income Tax Dept, DPIIT, Ministry of Finance) where one exists.
+
+---
+
+## 8. Pipeline analytics — `pipeline/atlas/analyze/`
+
+Add deps: `scikit-learn umap-learn networkx`. All randomness seeded (`random_state=42`). Each module writes to `data/processed/` and is idempotent.
+
+| Module | Output |
+|---|---|
+| `categorize.py` | freshness, maturity, is_early_stage, region fill-ins (PROJECT_CONTEXT §3) |
+| `thesis.py` | sector_weights = 0.5 × stated-thesis vector (keyword map in `config.py`, logged hits) + 0.5 × portfolio sector share (recency-weighted: last 24 months × 1.0, older × 0.5). If one input is missing use the other, record `method`. Normalised entropy → `is_generalist` (threshold 0.85) |
+| `cluster.py` | k-means on non-generalists, k ∈ [4, 10] by silhouette; cluster names generated from top-3 sectors of each centroid; UMAP 2D (fallback PCA) → `layout_thesis.json` |
+| `axes.py` | industrial_affinity, stage_earliness, typical check (geometric mean of min/max), latest fund size → `layout_bubbles.json` (x, y, z, size, colour key) |
+| `graph.py` | nodes (investors, companies), edges (round participation; attrs: lead, stage, amount, date); metrics: degree, weighted degree, betweenness; VC↔VC co-investment edges (weight = shared rounds, keep weight ≥ 2) → `graph.json` |
+| `competitors.py` | investor × competitor overlap matrix → `competitor_overlap.json` |
+| `fit.py` | fit **features** only (each 0–1): thesis, stage, check (uses raise size from `config.py`, default $1.0M, overridable), adjacency (recency-weighted count of portfolio companies in our layers), geography/structure, dry powder; flags: conflict (backed a direct competitor in last 24 months), sparse (> 40% of inputs null) → `fit_features.json`. Weighted total is computed in TypeScript so UI sliders work live |
+
+Graph layout: `scripts/layout-graph.ts` (Node, graphology + ForceAtlas2, fixed iterations and seed) writes x/y into `graph.json`. Doing it in Node keeps layout identical to what Sigma renders.
+
+Also add `src/lib/fit/score.ts`: `fitScore(features, weights)` with tests (weights normalised, monotonic in each feature, flags pass through).
+
+---
+
+## 9. QA, coverage and audit
+
+1. `scripts/coverage-report.ts` → `docs/COVERAGE.md`: per tier, % non-null per field; source kind mix; confidence mix; counts of investors, funds, partners, rounds, companies, competitors, benchmarks, legal notes.
+2. **Self-audit**: randomly sample 30 facts (fixed seed) across types. Re-open each source and check the value. Record precision in COVERAGE.md. If precision < 95%, find the failure pattern, fix the batch it came from, re-sample.
+3. Conflicts list: every field with disagreeing sources and which one won.
+4. Minimal sanity UI (no styling): Directory shows tier, fit features and sources; a raw table page for rounds; a debug page that dumps cluster sizes and graph metrics. This is only to eyeball data; Phase 2 replaces it.
+
+---
+
+## 10. Exit criteria
+
+- [ ] Finance engine: all worked examples + YC examples pass; coverage ≥ 95%
+- [ ] Tier A: ≥ 60 Western + ≥ 10 India investors fully profiled; each with ≥ 8 sourced rounds
+- [ ] Tier B: ≥ 200 investors with required fields
+- [ ] All §7 competitors profiled (plus any new ones found), with funding history and investor links
+- [ ] Benchmarks and legal notes recorded with ≥ 2 sources per legal topic
+- [ ] All analytics files generated, deterministic on re-run (diff-clean)
 - [ ] `pnpm lint && pnpm typecheck && pnpm test && pnpm validate:data` and `uv run pytest` pass
+- [ ] Self-audit precision ≥ 95%; COVERAGE.md and RESEARCH_LOG.md complete
 
-## 10. Hand-off
+## 11. Hand-off
 
-Write `docs/PHASE_1_REPORT.md`: what was researched, counts per tier, coverage gaps, conflicts found, decisions made, and open questions. Then draft `docs/PHASE_2.md` from PROJECT_CONTEXT §10: every view and calculator on real data, the gamified layer, the inspector with per-number provenance, responsiveness, and performance (including the Directory payload noted in the Phase 0 report). Also cover the protected Vercel deploy. Stop and wait for review.
+Write `docs/PHASE_1_REPORT.md`:
+- final counts and coverage; audit precision
+- top 25 investors by default fit score, with feature breakdown (table, no prose)
+- clusters found (name, size, example members)
+- surprises in the data (e.g. investors who back several competitors, connector investors with high betweenness)
+- what could not be found and why
+- open questions for the human (raise size, instrument, entity, pitch direction)
+
+Then draft `docs/PHASE_2.md` (all views, calculators, graph interactions, gamified layer, performance, accessibility, deploy), based on what the data actually looks like. Stop and wait for review.

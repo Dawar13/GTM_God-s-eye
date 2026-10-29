@@ -80,7 +80,7 @@ export const MATURITY = ["debut", "emerging", "established"] as const;
 export const Maturity = z.enum(MATURITY);
 export type Maturity = z.infer<typeof Maturity>;
 
-export const DATE_PRECISION = ["day", "month", "year"] as const;
+export const DATE_PRECISION = ["day", "month", "quarter", "year"] as const;
 export const DatePrecision = z.enum(DATE_PRECISION);
 export type DatePrecision = z.infer<typeof DatePrecision>;
 
@@ -101,7 +101,14 @@ export const COMPETITOR_LAYERS = [
 export const CompetitorLayer = z.enum(COMPETITOR_LAYERS);
 export type CompetitorLayer = z.infer<typeof CompetitorLayer>;
 
-export const SIZE_CLASSES = ["early", "growth", "incumbent"] as const;
+/** By total raised (PHASE_1 §6): <$5M, $5–25M, $25–100M, $100M–1B, >$1B. */
+export const SIZE_CLASSES = [
+  "under_5m",
+  "from_5m_to_25m",
+  "from_25m_to_100m",
+  "from_100m_to_1b",
+  "over_1b",
+] as const;
 export const SizeClass = z.enum(SIZE_CLASSES);
 export type SizeClass = z.infer<typeof SizeClass>;
 
@@ -115,6 +122,59 @@ export const InvestorFlag = z.enum(INVESTOR_FLAGS);
 export type InvestorFlag = z.infer<typeof InvestorFlag>;
 
 /** Flags on the fit score; shown, never scored (PROJECT_CONTEXT §4). */
-export const FIT_FLAGS = ["conflict", "sparse_data"] as const;
+export const FIT_FLAGS = ["conflict", "sparse"] as const;
 export const FitFlag = z.enum(FIT_FLAGS);
 export type FitFlag = z.infer<typeof FitFlag>;
+
+export const YES_NO_UNKNOWN = ["yes", "no", "unknown"] as const;
+export const YesNoUnknown = z.enum(YES_NO_UNKNOWN);
+export type YesNoUnknown = z.infer<typeof YesNoUnknown>;
+
+export const RESEARCH_TIERS = ["A", "B", "C"] as const;
+export const ResearchTier = z.enum(RESEARCH_TIERS);
+export type ResearchTier = z.infer<typeof ResearchTier>;
+
+export const SECTOR_CLASSIFIED_BY = ["source", "model"] as const;
+export const SectorClassifiedBy = z.enum(SECTOR_CLASSIFIED_BY);
+export type SectorClassifiedBy = z.infer<typeof SectorClassifiedBy>;
+
+export const BENCHMARK_METRICS = [
+  "median_round_size",
+  "median_pre_money",
+  "median_post_money",
+  "median_dilution",
+  "safe_cap_median",
+  "safe_share_of_rounds",
+  "note_share_of_rounds",
+  "time_between_rounds",
+  "deal_count",
+  "capital_invested",
+  "fund_count",
+  "capital_raised_by_funds",
+  "median_fund_size",
+] as const;
+export const BenchmarkMetric = z.enum(BENCHMARK_METRICS);
+export type BenchmarkMetric = z.infer<typeof BenchmarkMetric>;
+
+export const BENCHMARK_UNITS = ["usd", "fraction", "days", "months", "count"] as const;
+export const BenchmarkUnit = z.enum(BENCHMARK_UNITS);
+
+export const GEOGRAPHIES = ["us", "india", "europe", "global"] as const;
+export const Geography = z.enum(GEOGRAPHIES);
+export type Geography = z.infer<typeof Geography>;
+
+export const LEGAL_TOPICS = [
+  "india_flip",
+  "reverse_flip",
+  "fema_pricing",
+  "angel_tax",
+  "india_convertible_note",
+  "isafe",
+  "ccps",
+  "delaware_requirement",
+] as const;
+export const LegalTopic = z.enum(LEGAL_TOPICS);
+export type LegalTopic = z.infer<typeof LegalTopic>;
+
+export const JURISDICTIONS = ["india", "us", "us_delaware"] as const;
+export const Jurisdiction = z.enum(JURISDICTIONS);
