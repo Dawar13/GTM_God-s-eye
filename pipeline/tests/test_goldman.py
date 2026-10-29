@@ -95,6 +95,13 @@ def test_overflowing_links_are_rejoined(funds):
     assert " " not in forward.link
 
 
+def test_links_wrapped_inside_a_cell_are_rejoined(funds):
+    primary = next(f for f in funds if f.row_index == 792)
+    assert primary.link.startswith("http://pevc.dowjones.com/")
+    assert "%3d" not in (primary.notes or "")
+    assert primary.notes.startswith("1st close")
+
+
 def test_unindexed_rows_are_kept_and_flagged(funds):
     extra = [f for f in funds if f.row_index is None]
     assert {f.fund_name for f in extra} == {"Hyperstition", "BBG Ventures"}

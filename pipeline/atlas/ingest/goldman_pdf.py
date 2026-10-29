@@ -83,13 +83,22 @@ class GoldmanFund:
 # --- extraction ---------------------------------------------------------------------------
 
 
+def _unwrap_urls(text: str) -> str:
+    """Re-join links the PDF wrapped onto a new line inside a cell."""
+    pattern = re.compile(r"(https?://\S+)\n(\S)")
+    while pattern.search(text):
+        text = pattern.sub(r"\1\2", text)
+    return text
+
+
 def _from_table_row(cells: list[str | None]) -> RawRow | None:
     vals = [clean(c or "") if i < 7 else (c or "") for i, c in enumerate(cells)]
     while len(vals) < 9:
         vals.append("")
     idx, name, amount, date_raw, year, number, location = vals[:7]
     # Long links overflow into a ninth cell; it continues the URL, so join without a space.
-    notes = clean((cells[7] or "") + (cells[8] or "") if len(cells) > 8 else (cells[7] or ""))
+    notes = (cells[7] or "") + (cells[8] or "") if len(cells) > 8 else (cells[7] or "")
+    notes = clean(_unwrap_urls(notes))
     if idx.isdigit():
         return RawRow(idx, int(idx), [name, amount, date_raw, year, number, location, notes])
     # A few rows were added above row 1 without an index. Keep real fund rows
