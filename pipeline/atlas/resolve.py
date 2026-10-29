@@ -38,6 +38,11 @@ class Group:
     extra_aliases: set[str] = field(default_factory=set)
     investor_id: str | None = None
     display_name: str | None = None
+    # Filled by the seed lists.
+    seed_hints: list[dict] = field(default_factory=list)
+    type_guess: str | None = None
+    region_hints: set[str] = field(default_factory=set)
+    on_frontier_list: bool = False
 
     def choose_display_name(self) -> str:
         """Seed lists name firms, so they win. Otherwise the earliest-read name

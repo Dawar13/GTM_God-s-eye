@@ -1,5 +1,1349 @@
 {
   "version": 1,
-  "generated_at": "2026-10-29T17:10:20+00:00",
-  "records": []
+  "generated_at": "2026-10-29T17:18:49+00:00",
+  "records": [
+    {
+      "id": "rnd_adaption-labs_2026_seed",
+      "company_id": "co_adaption-labs",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 50000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_emergence-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_mozilla"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_ai_2026_seed",
+      "company_id": "co_ai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 50000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": "lead not disclosed in the list",
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_ami-labs_2026_seed",
+      "company_id": "co_ami-labs",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 1030000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_cathay-innovation"
+      ],
+      "participant_investor_ids": [
+        "inv_samsung",
+        "inv_temasek",
+        "inv_toyota"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": "+4 co-leads not named in the list",
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_apptronik_2026_undisclosed",
+      "company_id": "co_apptronik",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 520000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_b-capital",
+        "inv_google",
+        "inv_john-deere"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_atoms_2026_undisclosed",
+      "company_id": "co_atoms",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 1700000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_andreessen-horowitz"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_bedrock-robotics_2026_undisclosed",
+      "company_id": "co_bedrock-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 270000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_capitalg",
+        "inv_valor-atreides"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_callosum_2026_seed",
+      "company_id": "co_callosum",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 100000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_atomico"
+      ],
+      "participant_investor_ids": [
+        "inv_uk-sovereign-ai-fund"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_corma_2026_seed",
+      "company_id": "co_corma",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 60000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sequoia-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_cornerstone-robotics_2026_undisclosed",
+      "company_id": "co_cornerstone-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 700000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_medtronic"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_dconstruct_2026_undisclosed",
+      "company_id": "co_dconstruct",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 125000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": "no investors listed",
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_elorian-ai_2026_seed",
+      "company_id": "co_elorian-ai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 55000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_altimeter",
+        "inv_menlo-ventures",
+        "inv_striker-venture-partners"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_engineai_2026_undisclosed",
+      "company_id": "co_engineai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_henan-investment-group",
+        "inv_luxshare"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_enigma_2026_seed",
+      "company_id": "co_enigma",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 71000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_index-ventures",
+        "inv_ribbit-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_ent-ai_2026_seed",
+      "company_id": "co_ent-ai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 100000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_decibel"
+      ],
+      "participant_investor_ids": [
+        "inv_in-q-tel"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_entire_2026_seed",
+      "company_id": "co_entire",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 60000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_felicis-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_microsoft"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_factify_2026_seed",
+      "company_id": "co_factify",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 63000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_valley-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_fish-audio_2026_seed",
+      "company_id": "co_fish-audio",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 52000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_capital-today",
+        "inv_coreline"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_flapping-airplanes_2026_seed",
+      "company_id": "co_flapping-airplanes",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 180000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_gv",
+        "inv_index-ventures",
+        "inv_sequoia-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_gravis-robotics_2026_undisclosed",
+      "company_id": "co_gravis-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_softbank"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_hone_2026_seed",
+      "company_id": "co_hone",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 60000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_benchmark",
+        "inv_index-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_humanoid_2026_undisclosed",
+      "company_id": "co_humanoid",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 152000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_prime-movers-lab"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_humans_2026_seed",
+      "company_id": "co_humans",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 480000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sv-angel"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_icon_2026_undisclosed",
+      "company_id": "co_icon",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_baillie-gifford",
+        "inv_blackrock"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_ineffable-intelligence_2026_seed",
+      "company_id": "co_ineffable-intelligence",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 1100000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lightspeed-venture-partners",
+        "inv_sequoia-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_google",
+        "inv_uk-government"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_inferact_2026_seed",
+      "company_id": "co_inferact",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 150000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_andreessen-horowitz",
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_databricks"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_inherent_2026_seed",
+      "company_id": "co_inherent",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 50000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_index-ventures",
+        "inv_radical-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_limx-dynamics_2026_undisclosed",
+      "company_id": "co_limx-dynamics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 400000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_idg-capital",
+        "inv_jd",
+        "inv_stone-venture"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_machina-labs_2026_undisclosed",
+      "company_id": "co_machina-labs",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 124000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_lockheed-martin",
+        "inv_woven-capital"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_merge-labs_2026_seed",
+      "company_id": "co_merge-labs",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 252000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_bain-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_openai"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_microagi_2026_seed",
+      "company_id": "co_microagi",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 55000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_hummingbird"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_mind-robotics_2026_undisclosed",
+      "company_id": "co_mind-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 900000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_accel",
+        "inv_andreessen-horowitz",
+        "inv_kleiner-perkins"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_mirendil_2026_seed",
+      "company_id": "co_mirendil",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_andreessen-horowitz",
+        "inv_kleiner-perkins"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_mmi_2026_undisclosed",
+      "company_id": "co_mmi",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 125000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_biostar-capital"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_mytra_2026_undisclosed",
+      "company_id": "co_mytra",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 120000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_avenir-growth"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_neura-robotics_2026_undisclosed",
+      "company_id": "co_neura-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 1400000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_amazon",
+        "inv_nvidia",
+        "inv_tether"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_physical-superintelligence_2026_seed",
+      "company_id": "co_physical-superintelligence",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 58000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_breakthrough-energy-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_pragmatik-labs_2026_seed",
+      "company_id": "co_pragmatik-labs",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 220000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_gaorong",
+        "inv_hsg"
+      ],
+      "participant_investor_ids": [
+        "inv_shanghai-government",
+        "inv_tencent"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_pudu-robotics_2026_undisclosed",
+      "company_id": "co_pudu-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 150000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_longping-financial"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_radical-numerics_2026_seed",
+      "company_id": "co_radical-numerics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 50000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_emergence-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_radixark_2026_seed",
+      "company_id": "co_radixark",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 100000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_accel",
+        "inv_spark-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_amd-ventures",
+        "inv_databricks"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_river-ai_2026_seed",
+      "company_id": "co_river-ai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 1100000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_amp",
+        "inv_general-catalyst"
+      ],
+      "participant_investor_ids": [
+        "inv_amd-ventures",
+        "inv_temasek"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_robot-era_2026_undisclosed",
+      "company_id": "co_robot-era",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_hsg",
+        "inv_idg-capital",
+        "inv_sf-group"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_standard-bots_2026_undisclosed",
+      "company_id": "co_standard-bots",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 200000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_robostrategy"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_sunday_2026_undisclosed",
+      "company_id": "co_sunday",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "undisclosed",
+      "stage_raw": "2026 round (type not listed)",
+      "amount_usd": 165000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_coatue"
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_sycamore_2026_seed",
+      "company_id": "co_sycamore",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 65000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_coatue",
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_dell"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_trase_2026_seed",
+      "company_id": "co_trase",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 107000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_arch-venture-partners"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_veeda-ai_2026_seed",
+      "company_id": "co_veeda-ai",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 90000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_khosla-ventures",
+        "inv_radical-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_walden-robotics_2026_seed",
+      "company_id": "co_walden-robotics",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 round (type not listed) | 2026 seed (mega-seed)",
+      "amount_usd": 300000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_deviation-capital",
+        "inv_toyota"
+      ],
+      "participant_investor_ids": [
+        "inv_boeing",
+        "inv_samsung"
+      ],
+      "unspecified_investor_ids": [],
+      "notes": "also listed in freesbee_ai_megaseeds_2026",
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_zyg_2026_seed",
+      "company_id": "co_zyg",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "2026 seed (mega-seed)",
+      "amount_usd": 58000000,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_bessemer-venture-partners",
+        "inv_lightspeed-venture-partners",
+        "inv_viola-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "notes": null,
+      "sources": [
+        {
+          "url": "user_supplied:freesbee_ai_megaseeds_2026",
+          "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "confidence": "low"
+    }
+  ]
 }

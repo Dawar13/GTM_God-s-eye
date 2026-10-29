@@ -157,6 +157,10 @@ WESTERN_NON_US = {
     "ontario",
     "australia",
     "new zealand",
+    "denmark",
+    # regions named by regional arms ("Accel Europe & Israel")
+    "europe",
+    "nordics",
 }
 
 OTHER_PLACES = {
@@ -186,6 +190,11 @@ OTHER_PLACES = {
     "mexico",
     "mexico city",
     "buenos aires",
+    # regions named by regional arms ("Partech Africa")
+    "africa",
+    "asia",
+    "latam",
+    "mena",
 }
 
 INDIA_PLACES = {"india", "bangalore", "bengaluru", "mumbai", "delhi", "new delhi", "pune"}

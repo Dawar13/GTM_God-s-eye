@@ -113,14 +113,39 @@ def typo_tokens(name: str) -> list[tuple[str, str]]:
     return found
 
 
+# Keys shorter than this are too generic to match on ("AI Seed" -> "ai",
+# "Capital F" -> "f"); stripping stops before a key gets that short.
+MIN_KEY_CHARS = 3
+MIN_KEY_CHARS_AFTER_VEHICLE = 3
+
+
+def _key_len(toks: list[str]) -> int:
+    return len(" ".join(toks))
+
+
+def _without_stopwords(toks: list[str]) -> list[str]:
+    return [t for t in toks if t not in NAME_MATCH_STOPWORDS]
+
+
 def match_tokens(name: str) -> list[str]:
     typos = dict(typo_tokens(name))
     toks = [typos.get(t, t) for t in tokens(name)]
-    kept = [t for t in toks if t not in NAME_MATCH_STOPWORDS]
-    while len(kept) > 1 and kept[-1] in VEHICLE_QUALIFIERS:
-        kept.pop()
-    # A name made only of generic words ("Capital Partners") keeps them all.
-    return kept or toks
+    # A name made (almost) only of generic words ("Capital Partners", "Capital F") keeps them all.
+    if _key_len(_without_stopwords(toks)) < MIN_KEY_CHARS:
+        return toks
+    # Vehicle words count only at the very end of the written name, optionally
+    # followed by "Fund": "Sequoia Capital Seed Fund", "Greycroft Growth" — but
+    # not "Spark Growth Ventures", where Growth is part of the firm's name.
+    tail = list(toks)
+    while tail and tail[-1] in ("fund", "funds"):
+        tail.pop()
+    while (
+        len(tail) > 1
+        and tail[-1] in VEHICLE_QUALIFIERS
+        and _key_len(_without_stopwords(tail[:-1])) >= MIN_KEY_CHARS_AFTER_VEHICLE
+    ):
+        tail.pop()
+    return _without_stopwords(tail) or toks
 
 
 def has_vehicle_words(name: str) -> bool:
@@ -128,8 +153,16 @@ def has_vehicle_words(name: str) -> bool:
     if re.search(r"(?i)\bco-?investment\b", name):
         return True
     typos = dict(typo_tokens(name))
-    kept = [t for t in (typos.get(t, t) for t in tokens(name)) if t not in NAME_MATCH_STOPWORDS]
-    return kept != match_tokens(name)
+    return _without_stopwords([typos.get(t, t) for t in tokens(name)]) != match_tokens(name)
+
+
+def region_words(display_name: str) -> list[str]:
+    """Trailing region words: 'Accel (Europe & Israel)' -> ['Europe', 'Israel']."""
+    toks = match_tokens(display_name)
+    out = []
+    while len(toks) > 1 and toks[-1] in REGION_QUALIFIERS:
+        out.insert(0, REGION_QUALIFIERS[toks.pop()])
+    return out
 
 
 def match_key(name: str) -> str:
@@ -137,13 +170,20 @@ def match_key(name: str) -> str:
 
 
 def parent_brand(display_name: str) -> str | None:
-    """'Antler US Fund' -> 'Antler'; None unless the key ends in a region."""
+    """'Antler US Fund' -> 'Antler', 'Accel (Europe & Israel)' -> 'Accel'.
+
+    None unless the key ends in region words; the parent is the text before the
+    first of them.
+    """
     toks = match_tokens(display_name)
-    if len(toks) < 2 or toks[-1] not in REGION_QUALIFIERS:
+    i = len(toks)
+    while i > 1 and toks[i - 1] in REGION_QUALIFIERS:
+        i -= 1
+    if i == len(toks):
         return None
-    word = REGION_QUALIFIERS[toks[-1]]
+    word = REGION_QUALIFIERS[toks[i]]
     m = re.search(rf"\b{re.escape(word)}\b", display_name, flags=re.IGNORECASE)
     if not m:
         return None
-    parent = display_name[: m.start()].strip(" -,")
+    parent = display_name[: m.start()].strip(" -,(&")
     return parent or None
