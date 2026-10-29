@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "fund_10d_ii",
@@ -20450,8 +20450,8 @@
       "currency_original": "USD",
       "size_original": 40000000,
       "fx": null,
-      "close_date": "2025-06-11",
-      "close_date_precision": "day",
+      "close_date": "2025-06",
+      "close_date_precision": "month",
       "vintage_year": 2025,
       "location": "Bay Area",
       "notes": null,
@@ -20462,10 +20462,61 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/seven-stars-announces-first-fund-to-back-the-visionaries-shaping-ais-future",
+          "title": "Seven Stars Announces First Fund to Back the Visionaries Shaping AI's Future (Business Wire release)",
+          "publisher": "Silicon UK / Business Wire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2057902/000205790225000001/xslFormDX01/primary_doc.xml",
+          "title": "Form D: Seven Stars Ventures I, L.P. (filed 2025-02-27)",
+          "publisher": "SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_seven-stars_ii",
+      "investor_id": "inv_seven-stars",
+      "name": "Seven Stars Ventures II, L.P.",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2127148/000212714826000001/xslFormDX01/primary_doc.xml",
+          "title": "Form D: Seven Stars Ventures II, L.P. (filed 2026-04-06)",
+          "publisher": "SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_seventysix-capital_i",

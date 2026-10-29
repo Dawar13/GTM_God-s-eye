@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -797,6 +797,78 @@
     {
       "id": "anom_research_0089",
       "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "facts.stages",
+      "raw_value": "pre_seed, seed, series_a (sevenstars.vc FAQ, 2026) | pre_seed, seed (Business Wire release and Fortune, Jun 2025)",
+      "reason": "sources disagree: Current firm site is the newest primary statement; the 2025 launch materials describe the debut fund only.",
+      "resolution": "chose pre_seed, seed, series_a"
+    },
+    {
+      "id": "anom_research_0090",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "partners[Steven Lee].title",
+      "raw_value": "Founder (sevenstars.vc team card) | Founder and General Partner (Business Wire release) | founder and managing partner (Fortune) | Managing Director of the Issuer's General Partner (Form D)",
+      "reason": "sources disagree: Firm's own release gives the fullest title; the others are consistent variants.",
+      "resolution": "chose Founder & General Partner"
+    },
+    {
+      "id": "anom_research_0091",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "facts.portfolio_count_reported",
+      "raw_value": "12 (companies listed on sevenstars.vc; Goldilocks AI 'Portfolio 12') | 9 (Tracxn, as of Aug 2026)",
+      "reason": "sources disagree: Matches the firm's own company list; Tracxn is a lagging database count. Neither source covers every press-reported deal (Flashpass is on Goldilocks/Tracxn but not on the site).",
+      "resolution": "chose 12"
+    },
+    {
+      "id": "anom_research_0092",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "name",
+      "raw_value": "Seven Stars | Seven Stars Ventures | Seven Stars Capital",
+      "reason": "sources disagree: The firm's site and launch release use 'Seven Stars'; 'Seven Stars Ventures' is the fund LP name in Form D; 'Seven Stars Capital' appears only in Longeye coverage.",
+      "resolution": "chose Seven Stars"
+    },
+    {
+      "id": "anom_research_0093",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "rounds[Origin Lab].date",
+      "raw_value": "2026-05-13 (GamesBeat / Pulse 2.0 announcement) | Jan 2026 (Goldilocks AI)",
+      "reason": "sources disagree: Press announcement date; the database date is unexplained (possibly a close date) and no round page supports it.",
+      "resolution": "chose 2026-05-13"
+    },
+    {
+      "id": "anom_research_0094",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "rounds[Pomo].date",
+      "raw_value": "2026-04-08 (Pulse 2.0) | Jan 2026 (Goldilocks AI)",
+      "reason": "sources disagree: Press announcement date; the database date has no supporting round page.",
+      "resolution": "chose 2026-04-08"
+    },
+    {
+      "id": "anom_research_0095",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "rounds[Corgi $108M].stage",
+      "raw_value": "seed + new Series A combined, $108M (Pulse 2.0, Jan 2026) | Series D $108M at $2.6B, Jan 2026; also Series B $106M (Goldilocks AI)",
+      "reason": "sources disagree: Pulse 2.0 reports the company's own description; the database labels conflict with each other.",
+      "resolution": "chose series_a (seed + Series A combined)"
+    },
+    {
+      "id": "anom_research_0096",
+      "source_id": "research",
+      "row_ref": "seven-stars",
+      "field": "rounds[Doctronic Series B].participants",
+      "raw_value": "includes Wittington Ventures (Torys deal note) | Union Square Ventures, Seven Stars, Mantis, Tusk Ventures only (Pulse 2.0)",
+      "reason": "sources disagree: Torys acted as Wittington's counsel on the round; Pulse lists a subset.",
+      "resolution": "chose includes Wittington Ventures"
+    },
+    {
+      "id": "anom_research_0097",
+      "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "funds[Supply Change Capital Fund I LP].size_original",
       "raw_value": "40000000 (PR Newswire / TechCrunch, 2023-07-24 close) | 36814475 sold (SEC Form D/A filed 2023-05-31, offering 'Indefinite')",
@@ -804,7 +876,7 @@
       "resolution": "chose 40000000"
     },
     {
-      "id": "anom_research_0090",
+      "id": "anom_research_0098",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "hq_city",
@@ -813,7 +885,7 @@
       "resolution": "chose Los Angeles"
     },
     {
-      "id": "anom_research_0091",
+      "id": "anom_research_0099",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "check_max_usd",
@@ -822,7 +894,7 @@
       "resolution": "chose 500000-1000000"
     },
     {
-      "id": "anom_research_0092",
+      "id": "anom_research_0100",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "accepts_cold_inbound",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "ptr_ajvc_aviral-bhatnagar",
@@ -224,6 +224,76 @@
           "publisher": "Icebreaker",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_seven-stars_oscar-wong",
+      "investor_id": "inv_seven-stars",
+      "name": "Oscar Wong",
+      "title": "Partner & Head of Operations",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/oscarwong/",
+      "sources": [
+        {
+          "url": "https://www.sevenstars.vc/",
+          "title": "Seven Stars",
+          "publisher": "Seven Stars",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_seven-stars_steven-lee",
+      "investor_id": "inv_seven-stars",
+      "name": "Steven Lee",
+      "title": "Founder & General Partner",
+      "focus_sectors": [
+        "ai_apps_agents"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/stevenlee6/",
+      "sources": [
+        {
+          "url": "https://www.sevenstars.vc/",
+          "title": "Seven Stars",
+          "publisher": "Seven Stars",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/seven-stars-announces-first-fund-to-back-the-visionaries-shaping-ais-future",
+          "title": "Seven Stars Announces First Fund to Back the Visionaries Shaping AI's Future (Business Wire release)",
+          "publisher": "Silicon UK / Business Wire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2025/06/11/term-sheet-next-steven-lee-an-sv-angel-alum-launches-seven-stars-with-40-million-vc-fund-for-seed-and-pre-seed-ai-startups/",
+          "title": "Term Sheet Next: Steven Lee, an SV Angel alum, launches Seven Stars with $40 million VC fund for seed and pre-seed AI startups",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_seven-stars_zhou-yu",
+      "investor_id": "inv_seven-stars",
+      "name": "Zhou Yu",
+      "title": "Partner & Head of AI",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/zhouyustanford/",
+      "sources": [
+        {
+          "url": "https://www.sevenstars.vc/",
+          "title": "Seven Stars",
+          "publisher": "Seven Stars",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "confidence": "high"

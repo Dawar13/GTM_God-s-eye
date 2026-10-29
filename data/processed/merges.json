@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "merge_0001",
@@ -445,6 +445,17 @@
     },
     {
       "id": "merge_0041",
+      "investor_id": "inv_mantis",
+      "kept_name": "Mantis",
+      "merged_name": "Mantis VC",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0042",
       "investor_id": "inv_xfund",
       "kept_name": "Xfund",
       "merged_name": "xFund",
@@ -455,7 +466,7 @@
       ]
     },
     {
-      "id": "merge_0042",
+      "id": "merge_0043",
       "investor_id": "inv_notation-capital",
       "kept_name": "Notation Capital",
       "merged_name": "Notation",
@@ -466,7 +477,7 @@
       ]
     },
     {
-      "id": "merge_0043",
+      "id": "merge_0044",
       "investor_id": "inv_kickstart",
       "kept_name": "Kickstart",
       "merged_name": "Kickstart Fund",
@@ -477,7 +488,7 @@
       ]
     },
     {
-      "id": "merge_0044",
+      "id": "merge_0045",
       "investor_id": "inv_kickstart",
       "kept_name": "Kickstart",
       "merged_name": "Kickstart Seed Fund",
@@ -488,7 +499,7 @@
       ]
     },
     {
-      "id": "merge_0045",
+      "id": "merge_0046",
       "investor_id": "inv_zetta-ventures",
       "kept_name": "Zetta Ventures",
       "merged_name": "Zetta Venture Partners",
@@ -499,7 +510,7 @@
       ]
     },
     {
-      "id": "merge_0046",
+      "id": "merge_0047",
       "investor_id": "inv_tlv-ventures",
       "kept_name": "TLV Ventures",
       "merged_name": "TLV Partners",
@@ -510,7 +521,7 @@
       ]
     },
     {
-      "id": "merge_0047",
+      "id": "merge_0048",
       "investor_id": "inv_boldstart-ventures",
       "kept_name": "BoldStart Ventures",
       "merged_name": "BoldStart Ventures Opportunity Fund",
@@ -521,7 +532,7 @@
       ]
     },
     {
-      "id": "merge_0048",
+      "id": "merge_0049",
       "investor_id": "inv_indicator-ventures",
       "kept_name": "Indicator Ventures",
       "merged_name": "Indicator Ventues",
@@ -532,7 +543,7 @@
       ]
     },
     {
-      "id": "merge_0049",
+      "id": "merge_0050",
       "investor_id": "inv_inovia-capital",
       "kept_name": "iNovia Capital",
       "merged_name": "iNovia",
@@ -543,7 +554,7 @@
       ]
     },
     {
-      "id": "merge_0050",
+      "id": "merge_0051",
       "investor_id": "inv_212",
       "kept_name": "212",
       "merged_name": "212 Ventures",
@@ -554,7 +565,18 @@
       ]
     },
     {
-      "id": "merge_0051",
+      "id": "merge_0052",
+      "investor_id": "inv_contrary-captal",
+      "kept_name": "Contrary Captal",
+      "merged_name": "Contrary",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0053",
       "investor_id": "inv_homebrew",
       "kept_name": "Homebrew",
       "merged_name": "Homebrew Ventures",
@@ -565,7 +587,7 @@
       ]
     },
     {
-      "id": "merge_0052",
+      "id": "merge_0054",
       "investor_id": "inv_crosscut",
       "kept_name": "CrossCut",
       "merged_name": "CrossCut Ventures",
@@ -576,7 +598,7 @@
       ]
     },
     {
-      "id": "merge_0053",
+      "id": "merge_0055",
       "investor_id": "inv_viola-ventures",
       "kept_name": "Viola Ventures",
       "merged_name": "Viola",
@@ -587,7 +609,7 @@
       ]
     },
     {
-      "id": "merge_0054",
+      "id": "merge_0056",
       "investor_id": "inv_costanoa-ventures",
       "kept_name": "Costanoa Ventures",
       "merged_name": "Constanoa Venture Capital",
@@ -598,7 +620,7 @@
       ]
     },
     {
-      "id": "merge_0055",
+      "id": "merge_0057",
       "investor_id": "inv_costanoa-ventures",
       "kept_name": "Costanoa Ventures",
       "merged_name": "Costanoa Venture Capital",
@@ -609,7 +631,7 @@
       ]
     },
     {
-      "id": "merge_0056",
+      "id": "merge_0058",
       "investor_id": "inv_pivotnorth",
       "kept_name": "PivotNorth",
       "merged_name": "PivotNorth Capital",
@@ -620,7 +642,7 @@
       ]
     },
     {
-      "id": "merge_0057",
+      "id": "merge_0059",
       "investor_id": "inv_samsung-next",
       "kept_name": "Samsung NEXT",
       "merged_name": "Samsung Next",
@@ -631,7 +653,7 @@
       ]
     },
     {
-      "id": "merge_0058",
+      "id": "merge_0060",
       "investor_id": "inv_chicago-ventures",
       "kept_name": "Chicago Ventures",
       "merged_name": "Chicago Ventues",
@@ -642,7 +664,7 @@
       ]
     },
     {
-      "id": "merge_0059",
+      "id": "merge_0061",
       "investor_id": "inv_binary-capital",
       "kept_name": "Binary Capital",
       "merged_name": "Binary",
@@ -653,7 +675,18 @@
       ]
     },
     {
-      "id": "merge_0060",
+      "id": "merge_0062",
+      "investor_id": "inv_liquid-2-ventures",
+      "kept_name": "Liquid 2 Ventures",
+      "merged_name": "Liquid 2",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0063",
       "investor_id": "inv_sherpa-ventures",
       "kept_name": "Sherpa Ventures",
       "merged_name": "Sherpa",
@@ -664,7 +697,7 @@
       ]
     },
     {
-      "id": "merge_0061",
+      "id": "merge_0064",
       "investor_id": "inv_felicis-ventures",
       "kept_name": "Felicis Ventures",
       "merged_name": "Felicis",
@@ -675,7 +708,7 @@
       ]
     },
     {
-      "id": "merge_0062",
+      "id": "merge_0065",
       "investor_id": "inv_greycroft-partners",
       "kept_name": "Greycroft Partners",
       "merged_name": "Greycroft Growth",
@@ -686,7 +719,7 @@
       ]
     },
     {
-      "id": "merge_0063",
+      "id": "merge_0066",
       "investor_id": "inv_greycroft-partners",
       "kept_name": "Greycroft Partners",
       "merged_name": "Greycroft",
@@ -697,7 +730,7 @@
       ]
     },
     {
-      "id": "merge_0064",
+      "id": "merge_0067",
       "investor_id": "inv_idg-ventures",
       "kept_name": "IDG Ventures",
       "merged_name": "IDG",
@@ -708,7 +741,7 @@
       ]
     },
     {
-      "id": "merge_0065",
+      "id": "merge_0068",
       "investor_id": "inv_cendana-capital",
       "kept_name": "Cendana Capital",
       "merged_name": "Cendana Co-Investment Fund",
@@ -719,7 +752,7 @@
       ]
     },
     {
-      "id": "merge_0066",
+      "id": "merge_0069",
       "investor_id": "inv_wing-venture-partners",
       "kept_name": "Wing Venture Partners",
       "merged_name": "Wing Venture Capital",
@@ -730,7 +763,7 @@
       ]
     },
     {
-      "id": "merge_0067",
+      "id": "merge_0070",
       "investor_id": "inv_earlybird",
       "kept_name": "Earlybird",
       "merged_name": "Earlybird Ventures",
@@ -741,7 +774,7 @@
       ]
     },
     {
-      "id": "merge_0068",
+      "id": "merge_0071",
       "investor_id": "inv_upfront",
       "kept_name": "Upfront",
       "merged_name": "Upfront Ventures",
@@ -752,7 +785,7 @@
       ]
     },
     {
-      "id": "merge_0069",
+      "id": "merge_0072",
       "investor_id": "inv_nvidia",
       "kept_name": "NVIDIA",
       "merged_name": "Nvidia",
@@ -763,7 +796,7 @@
       ]
     },
     {
-      "id": "merge_0070",
+      "id": "merge_0073",
       "investor_id": "inv_andreessen-horowitz",
       "kept_name": "Andreessen Horowitz",
       "merged_name": "a16z",
@@ -775,7 +808,7 @@
       ]
     },
     {
-      "id": "merge_0071",
+      "id": "merge_0074",
       "investor_id": "inv_lightspeed-venture-partners",
       "kept_name": "Lightspeed Venture Partners",
       "merged_name": "Lightspeed",
@@ -786,7 +819,7 @@
       ]
     },
     {
-      "id": "merge_0072",
+      "id": "merge_0075",
       "investor_id": "inv_cisco-investments",
       "kept_name": "Cisco Investments",
       "merged_name": "Cisco",
@@ -797,7 +830,7 @@
       ]
     },
     {
-      "id": "merge_0073",
+      "id": "merge_0076",
       "investor_id": "inv_amd-ventures",
       "kept_name": "AMD Ventures",
       "merged_name": "AMD",
@@ -808,7 +841,7 @@
       ]
     },
     {
-      "id": "merge_0074",
+      "id": "merge_0077",
       "investor_id": "inv_bessemer-venture-partners",
       "kept_name": "Bessemer Venture Partners",
       "merged_name": "Bessemer",
@@ -819,7 +852,7 @@
       ]
     },
     {
-      "id": "merge_0075",
+      "id": "merge_0078",
       "investor_id": "inv_avenir",
       "kept_name": "Avenir",
       "merged_name": "Avenir Growth",
@@ -830,7 +863,18 @@
       ]
     },
     {
-      "id": "merge_0076",
+      "id": "merge_0079",
+      "investor_id": "inv_databricks",
+      "kept_name": "Databricks",
+      "merged_name": "Databricks Ventures",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0080",
       "investor_id": "inv_overmatch-ventures",
       "kept_name": "Overmatch Ventures",
       "merged_name": "Overmatch",

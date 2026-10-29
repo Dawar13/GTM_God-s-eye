@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "inv_10d",
@@ -1254,6 +1254,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -1544,6 +1551,57 @@
           "notes": "NY Venture Summit Nov 18-19 2026, Javits Center"
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_abe-bachrach",
+      "name": "Abe Bachrach",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -2322,6 +2380,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_adam-bry",
+      "name": "Adam Bry",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -3450,6 +3559,57 @@
       "flags": []
     },
     {
+      "id": "inv_alpha-square-group",
+      "name": "Alpha Square Group",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_alpha-ventures-partnes",
       "name": "Alpha Ventures Partnes",
       "aliases": [],
@@ -4030,6 +4190,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -4180,6 +4347,57 @@
       "flags": [
         "not_early_stage_target_by_default"
       ]
+    },
+    {
+      "id": "inv_ame-cloud-ventures",
+      "name": "AME Cloud Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
     },
     {
       "id": "inv_ameba-capital",
@@ -4647,6 +4865,57 @@
       "flags": [
         "not_early_stage_target_by_default"
       ]
+    },
+    {
+      "id": "inv_andreessen-horowitz-s-american-dynamism-fund",
+      "name": "Andreessen Horowitz's American Dynamism Fund",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
     },
     {
       "id": "inv_angeles-vc",
@@ -5472,6 +5741,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_apollo-ono",
+      "name": "Apollo Ono",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -6410,6 +6730,57 @@
     {
       "id": "inv_audaz-capital",
       "name": "Audaz Capital",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_audeo-ventures",
+      "name": "Audeo Ventures",
       "aliases": [],
       "parent_brand": null,
       "type": null,
@@ -14710,7 +15081,9 @@
     {
       "id": "inv_contrary-captal",
       "name": "Contrary Captal",
-      "aliases": [],
+      "aliases": [
+        "Contrary"
+      ],
       "parent_brand": null,
       "type": null,
       "region": "western",
@@ -14737,6 +15110,13 @@
         {
           "url": "user_supplied:goldman_sub200m_funds",
           "title": "goldman_sub200m_funds",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -16560,7 +16940,9 @@
     {
       "id": "inv_databricks",
       "name": "Databricks",
-      "aliases": [],
+      "aliases": [
+        "Databricks Ventures"
+      ],
       "parent_brand": null,
       "type": null,
       "region": null,
@@ -16585,6 +16967,13 @@
         {
           "url": "user_supplied:freesbee_ai_megaseeds_2026",
           "title": "freesbee_ai_megaseeds_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -17984,6 +18373,57 @@
       "flags": []
     },
     {
+      "id": "inv_dr-fei-fei-li",
+      "name": "Dr. Fei-Fei Li",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_draper-associates",
       "name": "Draper Associates",
       "aliases": [],
@@ -18995,6 +19435,57 @@
       "flags": []
     },
     {
+      "id": "inv_energy-impact-partners",
+      "name": "Energy Impact Partners",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_engineering-capital",
       "name": "Engineering Capital",
       "aliases": [],
@@ -19086,6 +19577,13 @@
         {
           "url": "user_supplied:goldman_sub200m_funds",
           "title": "goldman_sub200m_funds",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -20042,6 +20540,57 @@
       "flags": []
     },
     {
+      "id": "inv_fellows-fund",
+      "name": "Fellows Fund",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_female-founders-fund",
       "name": "Female Founders Fund",
       "aliases": [],
@@ -20485,6 +21034,57 @@
           "notes": null
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_first-order-fund",
+      "name": "First Order Fund",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -21706,6 +22306,57 @@
       ]
     },
     {
+      "id": "inv_fpv-ventures",
+      "name": "FPV Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_framework-ventures",
       "name": "Framework Ventures",
       "aliases": [],
@@ -22564,6 +23215,57 @@
       "flags": []
     },
     {
+      "id": "inv_glade-brook-capital-partners",
+      "name": "Glade Brook Capital Partners",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_global-bridge-capital",
       "name": "Global Bridge Capital",
       "aliases": [],
@@ -22621,6 +23323,57 @@
           "notes": null
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_global-growth-fund",
+      "name": "Global Growth Fund",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -24493,6 +25246,57 @@
       "flags": []
     },
     {
+      "id": "inv_hayk-martiros",
+      "name": "Hayk Martiros",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_haystack",
       "name": "Haystack",
       "aliases": [
@@ -25051,6 +25855,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_hexa-capital",
+      "name": "Hexa Capital",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -27910,6 +28765,57 @@
       "flags": []
     },
     {
+      "id": "inv_jay-desai",
+      "name": "Jay Desai",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_jd",
       "name": "JD",
       "aliases": [],
@@ -28163,6 +29069,57 @@
         {
           "url": "user_supplied:startupriders_robotics_20m_plus_2026",
           "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_john-doerr",
+      "name": "John Doerr",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -28913,6 +29870,108 @@
       "flags": []
     },
     {
+      "id": "inv_kevin-lin",
+      "name": "Kevin Lin",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_kevin-mullins",
+      "name": "Kevin Mullins",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_khosla-ventures",
       "name": "Khosla Ventures",
       "aliases": [],
@@ -29109,6 +30168,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -29245,6 +30311,57 @@
           "notes": "attending One Way Summit SF Oct 28-29 2026 (list 2 of 2; list 1 not provided)"
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_kyle-vogt",
+      "name": "Kyle Vogt",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -29559,6 +30676,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_leblon-capital",
+      "name": "Leblon Capital",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -30321,7 +31489,9 @@
     {
       "id": "inv_liquid-2-ventures",
       "name": "Liquid 2 Ventures",
-      "aliases": [],
+      "aliases": [
+        "Liquid 2"
+      ],
       "parent_brand": null,
       "type": null,
       "region": "western",
@@ -30348,6 +31518,13 @@
         {
           "url": "user_supplied:goldman_sub200m_funds",
           "title": "goldman_sub200m_funds",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -31479,6 +32656,57 @@
       "flags": []
     },
     {
+      "id": "inv_maiora-ventures",
+      "name": "Maiora Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_makers-fund",
       "name": "Makers Fund",
       "aliases": [],
@@ -31734,7 +32962,9 @@
     {
       "id": "inv_mantis",
       "name": "Mantis",
-      "aliases": [],
+      "aliases": [
+        "Mantis VC"
+      ],
       "parent_brand": null,
       "type": null,
       "region": null,
@@ -31761,6 +32991,13 @@
         {
           "url": "user_supplied:goldman_sub200m_funds",
           "title": "goldman_sub200m_funds",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -31987,6 +33224,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_massimo-mascaro",
+      "name": "Massimo Mascaro",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -32463,6 +33751,57 @@
         {
           "url": "user_supplied:startupriders_robotics_20m_plus_2026",
           "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_mehdi-ghissassi",
+      "name": "Mehdi Ghissassi",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -33030,6 +34369,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_metrodora-chelsea-clinton",
+      "name": "Metrodora (Chelsea Clinton)",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -34202,6 +35592,57 @@
       "flags": []
     },
     {
+      "id": "inv_nate-robert",
+      "name": "Nate Robert",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_neotribe-ventures",
       "name": "NeoTribe Ventures",
       "aliases": [],
@@ -34798,6 +36239,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_nordstar",
+      "name": "Nordstar",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -35717,6 +37209,57 @@
       "flags": []
     },
     {
+      "id": "inv_oliver-jung",
+      "name": "Oliver Jung",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_ollin-ventures",
       "name": "Ollin Ventures",
       "aliases": [],
@@ -36534,6 +38077,57 @@
       "flags": []
     },
     {
+      "id": "inv_ourcrowd",
+      "name": "OurCrowd",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_outpost-capital",
       "name": "Outpost Capital",
       "aliases": [],
@@ -36861,6 +38455,57 @@
     {
       "id": "inv_ovo-fund",
       "name": "OVO Fund",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_ovtr-vc",
+      "name": "OVTR.VC",
       "aliases": [],
       "parent_brand": null,
       "type": null,
@@ -37824,6 +39469,57 @@
       },
       "tier": "B",
       "tier_score": 3,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_phosphor-capital",
+      "name": "Phosphor Capital",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
       "seed_list_count": 0,
       "seed_source_ids": [],
       "seed_hints": [],
@@ -39736,6 +41432,57 @@
       ]
     },
     {
+      "id": "inv_quadri-ventures",
+      "name": "Quadri Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_questa-capital",
       "name": "Questa Capital",
       "aliases": [],
@@ -40702,6 +42449,57 @@
       "flags": []
     },
     {
+      "id": "inv_refract-ventures",
+      "name": "Refract Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_regba-agriculture",
       "name": "Regba Agriculture",
       "aliases": [],
@@ -41028,6 +42826,57 @@
       },
       "tier": "B",
       "tier_score": 3,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_repeat-vc",
+      "name": "Repeat VC",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
       "seed_list_count": 0,
       "seed_source_ids": [],
       "seed_hints": [],
@@ -43312,6 +45161,57 @@
       "flags": []
     },
     {
+      "id": "inv_scott-belsky",
+      "name": "Scott Belsky",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_scout-ventures",
       "name": "Scout Ventures",
       "aliases": [],
@@ -44076,6 +45976,57 @@
       ]
     },
     {
+      "id": "inv_seth-forsgren",
+      "name": "Seth Forsgren",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_seven-peaks-ventures",
       "name": "Seven Peaks Ventures",
       "aliases": [],
@@ -44184,29 +46135,41 @@
     {
       "id": "inv_seven-stars",
       "name": "Seven Stars",
-      "aliases": [],
+      "aliases": [
+        "Seven Stars Capital",
+        "Seven Stars Ventures"
+      ],
       "parent_brand": null,
-      "type": null,
+      "type": "vc",
       "region": "western",
-      "hq_country": null,
-      "hq_city": null,
-      "stages": [],
+      "hq_country": "US",
+      "hq_city": "San Francisco",
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
       "check_min_usd": null,
       "check_max_usd": null,
-      "leads": null,
-      "thesis_text": null,
+      "leads": false,
+      "thesis_text": "Backs AI-native founders at pre-seed and seed, sometimes Series A, across consumer and enterprise software such as healthcare, infrastructure, marketing, vertical AI and applied research. Lee argues AI should lift the wider eight billion people, not just knowledge workers. Co-invests beside other VCs and angels, often as the first check, adding fundraising, hiring and advisor-network help.",
       "sector_weights": null,
-      "website": null,
-      "linkedin": null,
+      "website": "https://www.sevenstars.vc/",
+      "linkedin": "https://www.linkedin.com/company/seven-stars-vc",
       "application_url": null,
-      "accepts_cold_inbound": "unknown",
+      "accepts_cold_inbound": "yes",
       "invests_in_indian_founders": "unknown",
       "requires_us_entity": "unknown",
-      "portfolio_count_reported": null,
+      "portfolio_count_reported": 12,
       "funds": [
-        "fund_seven-stars_i"
+        "fund_seven-stars_i",
+        "fund_seven-stars_ii"
       ],
-      "partners": [],
+      "partners": [
+        "ptr_seven-stars_steven-lee",
+        "ptr_seven-stars_zhou-yu",
+        "ptr_seven-stars_oscar-wong"
+      ],
       "sources": [
         {
           "url": "user_supplied:goldman_sub200m_funds",
@@ -44221,10 +46184,113 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/seven-stars-announces-first-fund-to-back-the-visionaries-shaping-ais-future",
+          "title": "Seven Stars Announces First Fund to Back the Visionaries Shaping AI's Future (Business Wire release)",
+          "publisher": "Silicon UK / Business Wire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sevenstars.vc/",
+          "title": "Seven Stars",
+          "publisher": "Seven Stars",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2057902/000205790225000001/xslFormDX01/primary_doc.xml",
+          "title": "Form D: Seven Stars Ventures I, L.P. (filed 2025-02-27)",
+          "publisher": "SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2127148/000212714826000001/xslFormDX01/primary_doc.xml",
+          "title": "Form D: Seven Stars Ventures II, L.P. (filed 2026-04-06)",
+          "publisher": "SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2025/06/11/term-sheet-next-steven-lee-an-sv-angel-alum-launches-seven-stars-with-40-million-vc-fund-for-seed-and-pre-seed-ai-startups/",
+          "title": "Term Sheet Next: Steven Lee, an SV Angel alum, launches Seven Stars with $40 million VC fund for seed and pre-seed AI startups",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://goldi.ai/intelligence/vc/seven-stars",
+          "title": "Goldilocks AI — Seven Stars — Investment Portfolio & Profile",
+          "publisher": "Goldilocks AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium",
+      "field_sources": {
+        "type": [
+          3,
+          4
+        ],
+        "website": [
+          3,
+          4
+        ],
+        "linkedin": [
+          4
+        ],
+        "hq_city": [
+          4,
+          5,
+          6
+        ],
+        "hq_country": [
+          4,
+          5,
+          6
+        ],
+        "stages": [
+          3,
+          4,
+          7
+        ],
+        "leads": [
+          3,
+          4
+        ],
+        "thesis_text": [
+          3,
+          4,
+          7
+        ],
+        "accepts_cold_inbound": [
+          4
+        ],
+        "invests_in_indian_founders": [
+          4
+        ],
+        "requires_us_entity": [
+          4
+        ],
+        "portfolio_count_reported": [
+          4,
+          8
+        ],
+        "region": [
+          4,
+          5,
+          6
+        ]
+      },
+      "confidence": "high",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -47281,6 +49347,57 @@
       "flags": []
     },
     {
+      "id": "inv_stepstone",
+      "name": "StepStone",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_stone-venture",
       "name": "Stone Venture",
       "aliases": [],
@@ -48235,6 +50352,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -48764,6 +50888,57 @@
           "notes": null
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_tcv",
+      "name": "TCV",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -49422,6 +51597,57 @@
       "flags": []
     },
     {
+      "id": "inv_the-tornante-company",
+      "name": "the Tornante Company",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_the-trendlines-group",
       "name": "The Trendlines Group",
       "aliases": [],
@@ -50000,6 +52226,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_timeless-partners",
+      "name": "Timeless Partners",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,
@@ -50767,6 +53044,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -51164,6 +53448,57 @@
       "flags": []
     },
     {
+      "id": "inv_uncommon-projects",
+      "name": "Uncommon Projects",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_uncork",
       "name": "Uncork",
       "aliases": [
@@ -51367,6 +53702,13 @@
         {
           "url": "user_supplied:goldman_sub200m_funds",
           "title": "goldman_sub200m_funds",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
@@ -53366,6 +55708,57 @@
       "flags": []
     },
     {
+      "id": "inv_vocal-ventures",
+      "name": "Vocal Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_vorn-vc",
       "name": "VORN VC",
       "aliases": [],
@@ -54127,6 +56520,13 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
         }
       ],
       "field_sources": {},
@@ -54598,6 +56998,57 @@
       "flags": []
     },
     {
+      "id": "inv_y-combinator",
+      "name": "Y Combinator",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_yash-banwani",
       "name": "Yash Banwani",
       "aliases": [],
@@ -54759,6 +57210,57 @@
     {
       "id": "inv_york-ie",
       "name": "York IE",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_yosemite",
+      "name": "Yosemite",
       "aliases": [],
       "parent_brand": null,
       "type": null,
@@ -55030,6 +57532,57 @@
       ],
       "field_sources": {},
       "confidence": "medium",
+      "category": {
+        "freshness": null,
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_zone-2-ventures",
+      "name": "Zone 2 Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "user_supplied:research",
+          "title": "research",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "low",
       "category": {
         "freshness": null,
         "maturity": null,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "co_adaption-labs",
@@ -606,6 +606,47 @@
       "confidence": "high"
     },
     {
+      "id": "co_corgi",
+      "name": "Corgi",
+      "website": "https://www.corgi.insure",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Licensed, AI-native full-stack insurance carrier selling coverage to startups.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/corgi-160-million-series-b-raised-to-expand-ai-native-insurance-platform/",
+          "title": "Corgi: $160 Million Series B Raised To Expand AI-Native Insurance Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/corgi-108-million-funding/",
+          "title": "Corgi: $108 Million Raised And Regulatory Approval Won To Launch AI-Native Insurance Carrier For Startups",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_corma",
       "name": "Corma",
       "website": null,
@@ -676,6 +717,131 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_dialogue-ai",
+      "name": "Dialogue AI",
+      "website": "https://www.dialogueai.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native customer research platform whose live conversational AI interviewer runs studies from design and recruiting through analysis.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://martechseries.com/?p=388537",
+          "title": "Dialogue AI Closes $6M Seed Round to Bring Live, AI-led Customer Research to Every Team",
+          "publisher": "MarTech Series",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.research-live.com/article/news/customer-research-startup-dialogue-raises-6m/id/5144313",
+          "title": "Customer research startup Dialogue raises $6m",
+          "publisher": "Research Live (MRS)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/dialogue-ai-6-million-seed-funding-closed-for-ai-based-customer-research/",
+          "title": "Dialogue AI: $6 Million Seed Funding Closed For AI-Based Customer Research",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_doctronic",
+      "name": "Doctronic",
+      "website": "https://www.doctronic.ai",
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "health_bio",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI doctor platform offering free personalized health guidance, autonomous prescription renewals and low-cost video visits with licensed physicians.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.torys.com/en/work/2026/03/efec594a-2c5e-44fd-89ab-5a376792999e",
+          "title": "Doctronic raises US$40 million in Series B financing",
+          "publisher": "Torys LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/doctronic-40-million-raised-for-ai-based-prescription-renewal-and-autonomous-clinical-care-platform",
+          "title": "Doctronic: $40 Million Raised For AI-Based Prescription Renewal And Autonomous Clinical Care Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://hitconsultant.net/2025/09/18/doctronic-secures-20m-to-scale-personalized-ai-doctor/",
+          "title": "Doctronic Secures $20M to Scale Personalized AI Doctor",
+          "publisher": "HIT Consultant",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.hcinnovationgroup.com/analytics-ai/news/55318011/doctronic-raises-20-million-to-expand-ai-driven-health-guidance-platform",
+          "title": "Doctronic Raises $20 Million to Expand AI-Driven Health Guidance Platform",
+          "publisher": "Healthcare Innovation (HCI Innovation Group)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_elorian-ai",
@@ -1393,6 +1559,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_longeye",
+      "name": "Longeye",
+      "website": "https://longeye.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI investigation software that ingests and ranks audio, video and document evidence for police detectives and the justice system.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/longeye-5-million-seed-funding-raised-for-ai-based-investigative-tools-for-law-enforcement",
+          "title": "Longeye: $5 Million Seed Funding Raised For AI-Based Investigative Tools For Law Enforcement",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_machina-labs",
       "name": "Machina Labs",
       "website": null,
@@ -1894,6 +2094,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_origin-lab",
+      "name": "Origin Lab",
+      "website": "https://www.originlab.ai",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Licenses video game worlds from publishers and packages them as structured, rights-cleared training data for world models and multimodal AI.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/origin-lab-8-million-seed-raised-to-turn-video-game-worlds-into-ai-training-data/",
+          "title": "Origin Lab: $8 Million Seed Raised To Turn Video Game Worlds Into AI Training Data",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://gamesbeat.com/origin-lab-raises-8-million-turns-game-worlds-data-ai/",
+          "title": "Origin Lab raises $8 million to glean AI training data from game worlds",
+          "publisher": "GamesBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_pangram",
       "name": "Pangram",
       "website": "http://pangram.com",
@@ -2066,6 +2310,54 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_pomo",
+      "name": "Pomo",
+      "website": "https://www.usepomo.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Agentic marketing-intelligence platform that watches market signals, ranks recommended actions and can execute them within team-set guardrails.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/pomo-4-5-million-raised-for-ai-marketing-intelligence-platform",
+          "title": "Pomo: $4.5 Million Raised For AI Marketing Intelligence Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.contentgrip.com/pomo-seed-ai-marketing-intelligence/",
+          "title": "Pomo's $4.5M seed targets AI-led marketing decisions",
+          "publisher": "ContentGrip",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_pragmatik-labs",
@@ -2241,6 +2533,58 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_sage-care",
+      "name": "Sage Care",
+      "website": "https://www.sage.care",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "health_bio",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI care-navigation system for health systems that triages patient calls and messages, matches specialists and books appointments.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/sage-care-20-million-closed-to-transform-healthcare-navigation-using-ai/",
+          "title": "Sage Care: $20 Million Closed To Transform Healthcare Navigation Using AI",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://hitconsultant.net/2025/10/17/sage-care-launches-with-20m-to-deliver-ai-powered-care-navigation-and-boost-revenue/",
+          "title": "Sage Care Launches with $20M to Deliver AI-Powered Care Navigation and Boost Revenue",
+          "publisher": "HIT Consultant",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_scooter",
@@ -2718,6 +3062,70 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_voya-energy",
+      "name": "Voya Energy",
+      "website": "https://www.voya.energy",
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "climate_energy",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds an aluminum-based metal fuel and electrochemical generator that supplies firm, combustion-free power to data centers and industrial sites.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://offshoresource.com/business-wire/voya-energy-unveils-metal-fuels-energy-system-closes-35-million-series-a/",
+          "title": "Voya Energy Unveils Metal Fuels Energy System, Closes $35 Million Series A (Business Wire release)",
+          "publisher": "Offshore Source / Business Wire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/voya-energy-raises-35-million-series-a-as-metal-fuel-system-targets-100-mw-and-10-gwh-per-acre/",
+          "title": "Voya Energy Raises $35 Million Series A As Metal Fuel System Targets 100 MW And 10 GWh Per Acre",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://mercomindia.com/voya-energy-raises-35-million-to-scale-aluminum-based-energy-system",
+          "title": "Voya Energy Raises $35 Million to Scale Aluminum-Based Energy System",
+          "publisher": "Mercom India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_walden-robotics",

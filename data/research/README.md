@@ -39,7 +39,8 @@ Required for every tier: `key`, `entity_type`, `tier`, `name` (official, as the 
 | stated_sectors | from the firm's own description, using the 16 sector ids | same |
 | funds | all known (number, size, close date) | latest only |
 | partners | those relevant to industrial / AI / hardware | — |
-| application_url, cold inbound, Indian founders, US entity | required (use `unknown` only after looking) | if easy |
+| application_url, cold inbound, US entity | required (use `unknown` only after looking) | if easy |
+| Indian founders | if stated (pilot: unfindable for 4 of 5 Western firms) | if stated |
 | rounds | ≥ 8; prefer the last 24 months and our sectors; with co-investors | ≥ 3 notable |
 
 Each round: `company` (`name, website, description, hq_country, founded_year, sector, sector_classified_by, layer`), `stage`, `stage_raw`, `date` + `date_precision` (`YYYY-MM-DD` day, `YYYY-MM` month, `YYYY-Qn` quarter, `YYYY` year), `amount_original`, `currency_original`, `valuation_post_original`, `leads`, `participants`, `unspecified` (investor names as the source gives them; the researched investor must appear in one of the three), `pages`, `snippet`.
@@ -54,3 +55,23 @@ Each round: `company` (`name, website, description, hq_country, founded_year, se
 ## Stages and types
 
 Stages: `pre_seed, seed, series_a, series_b, series_c_plus, growth` (rounds may also be `strategic, undisclosed`). Investor types: `vc, cvc, angel, syndicate, family_office, sovereign, asset_manager, accelerator, strategic, individual`.
+
+## Competitor file (`entity_type: "competitor"`, `cache/<key>.json`)
+
+`key, entity_type, researched_at, identity_check, pages, conflicts, open_items` plus:
+
+- `company`: `name, website, description` (one line, paraphrased), `hq_country` (ISO-2), `founded_year, sector, sector_classified_by, layer`.
+- `category`: `direct | adjacent | remote` relative to Utopian Autonomy (AI agents for factory functions — procurement, maintenance, process stability, RFQ / BOM / engineering drawings — used by plant staff over WhatsApp; also requirements / design-intent tooling for hardware teams). Start from PROJECT_CONTEXT §7 and change it only with evidence; say why in `identity_check`.
+- `layer`: `design_intent, process_planning, plant_ops, quality_vision, autonomy_tooling, robotics, full_stack_factory`; `layer_detail` free text.
+- `founders` (names), `named_customers` (only customers the company names publicly), `product_summary` (≤ 50 words, paraphrased), `pricing` (only if public, as stated).
+- `headcount_est`: a fact `{value, pages, snippet}` from a public page (e.g. the company's LinkedIn page header), or null. Label approximate in the snippet.
+- `revenue_reported_usd`: a fact only if revenue is **publicly reported**; never estimate. Otherwise null.
+- `rounds`: the full funding history found, same round shape as investor files. For PE buyouts or acquisitions use stage `strategic` and say so in `stage_raw`.
+
+## Seed-round check (`entity_type: "round"`, `cache/round-<company-slug>.json`)
+
+Verifies one row of `data/seed/seed_rounds.csv`: `key, entity_type, researched_at, identity_check, pages, conflicts, open_items`, `seed_company` (name exactly as in the CSV), `verdict` (`confirmed` = the CSV is right; `corrected` = the round exists but the CSV is wrong somewhere; `contested` = sources disagree; `not_found`), and `round` (the round as the sources describe it, or null if not found). Date to the month at least, if published.
+
+## Benchmarks (`benchmarks.json`) and legal notes (`legal_notes.json`)
+
+Arrays of final records; schemas `Benchmark` and `LegalNote` in `src/lib/schema/reference.ts`. Ids `bm_<slug>` and `legal_<topic>-<n>`. Every legal note carries `"disclaimer": "Not legal or tax advice — confirm with your CA / counsel."`, a paraphrased `summary` of ≤ 80 words, `last_verified`, and ≥ 2 sources per topic with at least one primary (RBI, Income Tax Department, DPIIT, Ministry of Finance, Delaware, SEC) where one exists. Facts only, no recommendations. Sources here are final `Source` records: `{url, title, publisher, retrieved_at, kind: "primary" | "secondary"}`.

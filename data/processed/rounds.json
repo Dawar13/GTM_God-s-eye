@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:01:43+00:00",
+  "generated_at": "2026-10-29T19:04:51+00:00",
   "records": [
     {
       "id": "rnd_adaption-labs_2026_seed",
@@ -706,6 +706,113 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_corgi_2026-01_series_a",
+      "company_id": "co_corgi",
+      "date": "2026-01",
+      "date_precision": "month",
+      "stage": "series_a",
+      "stage_raw": "new Series A combined with an earlier seed round ($108M total)",
+      "amount_usd": 108000000,
+      "amount_original": 108000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_alumni-ventures",
+        "inv_contrary-captal",
+        "inv_fellows-fund",
+        "inv_glade-brook-capital-partners",
+        "inv_kindred-ventures",
+        "inv_leblon-capital",
+        "inv_oliver-jung",
+        "inv_phosphor-capital",
+        "inv_quadri-ventures",
+        "inv_seven-stars",
+        "inv_sv-angel",
+        "inv_vocal-ventures",
+        "inv_y-combinator"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/corgi-108-million-funding/",
+          "title": "Corgi: $108 Million Raised And Regulatory Approval Won To Launch AI-Native Insurance Carrier For Startups",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_corgi_2026-05_series_b",
+      "company_id": "co_corgi",
+      "date": "2026-05",
+      "date_precision": "month",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 160000000,
+      "amount_original": 160000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_tcv"
+      ],
+      "participant_investor_ids": [
+        "inv_alpha-square-group",
+        "inv_alumni-ventures",
+        "inv_audeo-ventures",
+        "inv_first-order-fund",
+        "inv_global-growth-fund",
+        "inv_gsbackers",
+        "inv_hexa-capital",
+        "inv_kindred-ventures",
+        "inv_leblon-capital",
+        "inv_maiora-ventures",
+        "inv_nordstar",
+        "inv_oliver-jung",
+        "inv_ourcrowd",
+        "inv_quadri-ventures",
+        "inv_repeat-vc",
+        "inv_seven-stars",
+        "inv_vocal-ventures",
+        "inv_zone-2-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/corgi-160-million-series-b-raised-to-expand-ai-native-insurance-platform/",
+          "title": "Corgi: $160 Million Series B Raised To Expand AI-Native Insurance Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_corma_2026_seed",
       "company_id": "co_corma",
       "date": "2026",
@@ -795,6 +902,175 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_dialogue-ai_2025-10_seed",
+      "company_id": "co_dialogue-ai",
+      "date": "2025-10-17",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 6000000,
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_seven-stars",
+        "inv_the-tornante-company",
+        "inv_uncommon-projects"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://martechseries.com/?p=388537",
+          "title": "Dialogue AI Closes $6M Seed Round to Bring Live, AI-led Customer Research to Every Team",
+          "publisher": "MarTech Series",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.research-live.com/article/news/customer-research-startup-dialogue-raises-6m/id/5144313",
+          "title": "Customer research startup Dialogue raises $6m",
+          "publisher": "Research Live (MRS)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/dialogue-ai-6-million-seed-funding-closed-for-ai-based-customer-research/",
+          "title": "Dialogue AI: $6 Million Seed Funding Closed For AI-Based Customer Research",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_doctronic_2025-09_series_a",
+      "company_id": "co_doctronic",
+      "date": "2025-09",
+      "date_precision": "month",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 20000000,
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_dr-fei-fei-li",
+        "inv_jay-desai",
+        "inv_mantis",
+        "inv_scott-belsky",
+        "inv_seven-stars",
+        "inv_tusk-ventures",
+        "inv_union-square-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://hitconsultant.net/2025/09/18/doctronic-secures-20m-to-scale-personalized-ai-doctor/",
+          "title": "Doctronic Secures $20M to Scale Personalized AI Doctor",
+          "publisher": "HIT Consultant",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.hcinnovationgroup.com/analytics-ai/news/55318011/doctronic-raises-20-million-to-expand-ai-driven-health-guidance-platform",
+          "title": "Doctronic Raises $20 Million to Expand AI-Driven Health Guidance Platform",
+          "publisher": "Healthcare Innovation (HCI Innovation Group)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_doctronic_2026-03_series_b",
+      "company_id": "co_doctronic",
+      "date": "2026-03-24",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 40000000,
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_abstract",
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_mantis",
+        "inv_seven-stars",
+        "inv_tusk-ventures",
+        "inv_union-square-ventures",
+        "inv_wittington-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.torys.com/en/work/2026/03/efec594a-2c5e-44fd-89ab-5a376792999e",
+          "title": "Doctronic raises US$40 million in Series B financing",
+          "publisher": "Torys LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/doctronic-40-million-raised-for-ai-based-prescription-renewal-and-autonomous-clinical-care-platform",
+          "title": "Doctronic: $40 Million Raised For AI-Based Prescription Renewal And Autonomous Clinical Care Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_elorian-ai_2026_seed",
@@ -1719,6 +1995,52 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_longeye_2025_seed",
+      "company_id": "co_longeye",
+      "date": "2025",
+      "date_precision": "year",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 5000000,
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_andreessen-horowitz-s-american-dynamism-fund"
+      ],
+      "participant_investor_ids": [
+        "inv_abe-bachrach",
+        "inv_adam-bry",
+        "inv_hayk-martiros",
+        "inv_kevin-mullins",
+        "inv_nate-robert",
+        "inv_seth-forsgren",
+        "inv_seven-stars"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/longeye-5-million-seed-funding-raised-for-ai-based-investigative-tools-for-law-enforcement",
+          "title": "Longeye: $5 Million Seed Funding Raised For AI-Based Investigative Tools For Law Enforcement",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_machina-labs_2026_undisclosed",
       "company_id": "co_machina-labs",
       "date": "2026",
@@ -2334,6 +2656,60 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_origin-lab_2026-05_seed",
+      "company_id": "co_origin-lab",
+      "date": "2026-05-13",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 8000000,
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_eniac-ventures",
+        "inv_fpv-ventures",
+        "inv_kevin-lin",
+        "inv_kyle-vogt",
+        "inv_seven-stars",
+        "inv_sv-angel"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/origin-lab-8-million-seed-raised-to-turn-video-game-worlds-into-ai-training-data/",
+          "title": "Origin Lab: $8 Million Seed Raised To Turn Video Game Worlds Into AI Training Data",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://gamesbeat.com/origin-lab-raises-8-million-turns-game-worlds-data-ai/",
+          "title": "Origin Lab raises $8 million to glean AI training data from game worlds",
+          "publisher": "GamesBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_pangram_2026-07_undisclosed",
       "company_id": "co_pangram",
       "date": "2026-07-29",
@@ -2534,6 +2910,62 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "rnd_pomo_2026-04_seed",
+      "company_id": "co_pomo",
+      "date": "2026-04-08",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 4500000,
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_kindred-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_645-ventures",
+        "inv_databricks",
+        "inv_massimo-mascaro",
+        "inv_mehdi-ghissassi",
+        "inv_scott-belsky",
+        "inv_seven-stars",
+        "inv_sv-angel",
+        "inv_timeless-partners"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/pomo-4-5-million-raised-for-ai-marketing-intelligence-platform",
+          "title": "Pomo: $4.5 Million Raised For AI Marketing Intelligence Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.contentgrip.com/pomo-seed-ai-marketing-intelligence/",
+          "title": "Pomo's $4.5M seed targets AI-led marketing decisions",
+          "publisher": "ContentGrip",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_pragmatik-labs_2026_seed",
@@ -2773,6 +3205,63 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_sage-care_2025-10_undisclosed",
+      "company_id": "co_sage-care",
+      "date": "2025-10",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "amount_usd": 20000000,
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_yosemite"
+      ],
+      "participant_investor_ids": [
+        "inv_ame-cloud-ventures",
+        "inv_apollo-ono",
+        "inv_general-catalyst",
+        "inv_liquid-2-ventures",
+        "inv_metrodora-chelsea-clinton",
+        "inv_ovtr-vc",
+        "inv_refract-ventures",
+        "inv_seven-stars",
+        "inv_sv-angel"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/sage-care-20-million-closed-to-transform-healthcare-navigation-using-ai/",
+          "title": "Sage Care: $20 Million Closed To Transform Healthcare Navigation Using AI",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://hitconsultant.net/2025/10/17/sage-care-launches-with-20m-to-deliver-ai-powered-care-navigation-and-boost-revenue/",
+          "title": "Sage Care Launches with $20M to Deliver AI-Powered Care Navigation and Boost Revenue",
+          "publisher": "HIT Consultant",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_scooter_2026-10_pre_seed",
@@ -3293,6 +3782,69 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_voya-energy_2026-08_series_a",
+      "company_id": "co_voya-energy",
+      "date": "2026-08-26",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 35000000,
+      "amount_original": 35000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_energy-impact-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_founders-fund",
+        "inv_john-doerr",
+        "inv_mantis",
+        "inv_overmatch-ventures",
+        "inv_seven-stars",
+        "inv_stepstone"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://offshoresource.com/business-wire/voya-energy-unveils-metal-fuels-energy-system-closes-35-million-series-a/",
+          "title": "Voya Energy Unveils Metal Fuels Energy System, Closes $35 Million Series A (Business Wire release)",
+          "publisher": "Offshore Source / Business Wire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/voya-energy-raises-35-million-series-a-as-metal-fuel-system-targets-100-mw-and-10-gwh-per-acre/",
+          "title": "Voya Energy Raises $35 Million Series A As Metal Fuel System Targets 100 MW And 10 GWh Per Acre",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://mercomindia.com/voya-energy-raises-35-million-to-scale-aluminum-based-energy-system",
+          "title": "Voya Energy Raises $35 Million to Scale Aluminum-Based Energy System",
+          "publisher": "Mercom India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_walden-robotics_2026_seed",
