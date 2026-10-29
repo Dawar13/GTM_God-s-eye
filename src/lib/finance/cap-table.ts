@@ -91,14 +91,23 @@ export function simulate(args: {
     const label = step.label ?? `${step.kind.replace(/_/g, " ")} ${i + 1}`;
     switch (step.kind) {
       case "post_money_safe": {
-        const { kind: _k, label: _l, ...safe } = step;
-        postSafes.push(safe);
+        postSafes.push({
+          holder: step.holder,
+          amount: step.amount,
+          postMoneyCap: step.postMoneyCap,
+          discount: step.discount,
+          mfn: step.mfn,
+        });
         out.push(snapshot(label));
         break;
       }
       case "pre_money_safe": {
-        const { kind: _k, label: _l, ...safe } = step;
-        preSafes.push(safe);
+        preSafes.push({
+          holder: step.holder,
+          amount: step.amount,
+          preMoneyCap: step.preMoneyCap,
+          discount: step.discount,
+        });
         out.push(snapshot(label));
         break;
       }
