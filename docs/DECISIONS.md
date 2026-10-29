@@ -76,3 +76,11 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **Review datasets.** `anomalies.json` (rows flagged, not fixed) and `merges.json` (every name merge) are processed datasets too, so the Command page can count them and reviewers can read them without running the pipeline.
 - **Enums not given in §3** are provisional and can change here: `layer` uses the seven layers of the §2 layer map; `size_class` is `early | growth | incumbent`.
 - **Loaders are async and use `"use cache"`.** Under Cache Components, uncached file reads would make every page dynamic. Async also matches the later move to an API. Restart `pnpm dev` after re-running the pipeline.
+
+## 2026-10-29 — Pipeline setup
+
+- **Python.** `requires-python = ">=3.11"`; uv resolved CPython 3.13.15. Locked in `pipeline/uv.lock`: pdfplumber 0.11, pandas 3.1, jsonschema 4.26, python-slugify 9.1, rapidfuzz 3.14; dev: pytest 9.2, ruff 0.17.
+- **Id scheme** (`pipeline/atlas/ids.py`): `inv_<slug>`, `fund_<inv-slug>_<number or year>` with the Roman numeral lower-cased (`fund_root-ventures_iv`), `co_<slug>`, `rnd_<co-slug>_<yyyy-mm>_<stage>`, using `yyyy` when only the year is known (`rnd_atoms_2026_undisclosed`). Slugs come from python-slugify. Collisions get `-2`, `-3`, … in order of appearance.
+- **`retrieved_at` for user-supplied files is fixed at 2026-10-29**, the day they were handed over (`USER_SOURCES_RECEIVED`), not the run date. Otherwise every re-run rewrites every record and buries real changes in the diff. Only `generated_at` changes per run.
+- **Freshness cutoff** is `FRESHNESS_CUTOFF = "2024-10-29"` in `atlas/config.py` (24 months before 2026-10-29).
+- **Export validates first.** `write_json.py` checks each dataset against `data/schemas/*.schema.json` (Draft 2020-12 with format checking) before writing, and refuses to write on failure. `pnpm validate:data` then re-checks with Zod plus cross-file integrity.
