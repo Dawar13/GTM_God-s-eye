@@ -133,3 +133,8 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **Directory** is a plain TanStack Table v9 table (`tableFeatures` + `createColumnHelper` + `useTable`, row sorting only). Unknown values sort last in both directions (`sortUndefined: "last"` on accessors that map `null` to `undefined`). Each name is a button, so keyboard users can open the inspector; rows also open it on click. The inspector shows the investor's raw record.
 - **Known cost:** the Directory page inlines all 929 investor records for the inspector (~1.4 MB HTML in `next build`). Fine for Phase 0; Phase 2 must page or fetch records on demand to meet Lighthouse ≥ 85.
 - **`next build` passes**, with every route static or partially prerendered; `"use cache"` loaders revalidate on Next's default 15-minute profile.
+
+## 2026-10-29 — Phase 0 complete; current phase: waiting for Phase 0 review
+
+- Exit checklist (PHASE_0 §10) passes; see `docs/PHASE_0_REPORT.md` for counts, source-data problems and open questions.
+- `docs/PHASE_1.md` is drafted. Phase 1 does not start until the human has reviewed Phase 0, answered the open questions here, and merged `phase-0`.
