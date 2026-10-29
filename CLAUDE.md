@@ -8,3 +8,4 @@ Rules:
 - Run lint, typecheck, test, validate:data before every commit.
 - Log non-obvious choices in docs/DECISIONS.md with date and reason.
 - Design: follow PROJECT_CONTEXT §9; no all-caps labels, no generic card grids, tabular numbers.
+- Next.js here is 16.4 with Cache Components; read AGENTS.md and the bundled docs it points to before writing Next code.
