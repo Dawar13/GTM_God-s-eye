@@ -1,0 +1,65 @@
+import type {
+  Freshness,
+  InvestorStage,
+  InvestorType,
+  Region,
+  RoundStage,
+  Sector,
+} from "@/lib/schema/enums";
+
+export const SECTOR_LABELS: Record<Sector, string> = {
+  ai_infra: "AI infrastructure",
+  ai_apps_agents: "AI apps and agents",
+  industrial_manufacturing: "Industrial and manufacturing",
+  robotics_physical_ai: "Robotics and physical AI",
+  defense_dual_use: "Defence and dual use",
+  hardware_deeptech: "Hardware and deep tech",
+  space: "Space",
+  climate_energy: "Climate and energy",
+  mobility_ev: "Mobility and EV",
+  supply_chain_logistics: "Supply chain and logistics",
+  enterprise_saas: "Enterprise SaaS",
+  dev_tools: "Developer tools",
+  fintech: "Fintech",
+  health_bio: "Health and bio",
+  consumer: "Consumer",
+  crypto_web3: "Crypto and web3",
+};
+
+export const ROUND_STAGE_LABELS: Record<RoundStage, string> = {
+  pre_seed: "Pre-seed",
+  seed: "Seed",
+  series_a: "Series A",
+  series_b: "Series B",
+  series_c_plus: "Series C+",
+  growth: "Growth",
+  strategic: "Strategic",
+  undisclosed: "Undisclosed",
+};
+
+export const INVESTOR_STAGE_LABELS: Record<InvestorStage, string> = ROUND_STAGE_LABELS;
+
+export const INVESTOR_TYPE_LABELS: Record<InvestorType, string> = {
+  vc: "VC",
+  cvc: "Corporate VC",
+  angel: "Angel",
+  syndicate: "Syndicate",
+  family_office: "Family office",
+  sovereign: "Sovereign",
+  asset_manager: "Asset manager",
+  accelerator: "Accelerator",
+  strategic: "Strategic",
+  individual: "Individual",
+};
+
+export const REGION_LABELS: Record<Region, string> = {
+  western: "Western",
+  india: "India",
+  other: "Other",
+};
+
+export const FRESHNESS_LABELS: Record<Freshness, string> = {
+  fresh: "Fresh fund",
+  older: "Older fund",
+  unknown: "Unknown",
+};

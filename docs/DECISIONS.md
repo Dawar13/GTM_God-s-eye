@@ -48,3 +48,14 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **`typecheck` runs `next typegen` first.** Next 16 generates the global `PageProps` / `LayoutProps` types into `.next/types`. Without typegen, `tsc --noEmit` fails on a fresh clone.
 - **Build scripts.** pnpm 10 blocks dependency install scripts by default. `esbuild` is allowed (tsx and vitest need its binary); `es5-ext`, `sharp`, `unrs-resolver` stay blocked.
 - **Line endings.** `.gitattributes` forces LF in the repo, so Windows `core.autocrlf` doesn't churn diffs.
+
+## 2026-10-29 — Design tokens and shell
+
+- **Token names.** §9 calls the secondary text colour "muted", but shadcn already uses `muted` for a background surface (`bg-muted` on slider tracks, tab lists, hovers). Two meanings for one class is a trap, so Atlas tokens are `canvas, panel, panel-raised, rule, ink, ink-muted, amber, on-amber, focus, cat-1..7, co-1..5` (Tailwind: `bg-panel`, `text-ink-muted`, …). shadcn's semantic variables (`--background`, `--muted`, `--ring`, …) are aliased to these in `globals.css`, so shadcn components follow the theme.
+- **Added tokens not in §9.** `panel-raised` (hover / selected surface, dark `#252930`, light `#ECEEF2`). Light `ink-muted` = `#5B616B` (6:1 on white). Light `focus` = `#A86B00`, because `#F2B134` is under 2:1 on light surfaces and the focus ring needs 3:1. Company greys `co-1..5` interpolate `#5B616B → #C9CDD4` in five steps.
+- **Theme is `data-theme` on `<html>`**, default `dark`. An inline script in `<head>` applies the stored choice (`localStorage["atlas-theme"]`) before first paint. The `dark:` Tailwind variant is remapped to `data-theme`, so shadcn's `dark:` styles follow the toggle. The toggle's icon and label switch by CSS, so the server render never mismatches.
+- **Western is the default region filter** (PROJECT_CONTEXT §2). In Phase 0 the filters are wired to Zustand but don't filter any view yet, and the bar says so.
+- **Section layouts own title and sub-tabs.** `vc-math/layout.tsx` and `investors/layout.tsx` render the title and sub-tab links; the active tab comes from `usePathname` in a client component. Pages read `params` inside `<Suspense>`, which Next 16.4's instant-navigation validation requires with Cache Components. Trade-off: an unknown slug (`/vc-math/nope`) renders the not-found view with `noindex` but an HTTP 200, because the check runs after the shell has streamed. Acceptable for an internal tool; revisit if it matters.
+- **Index routes redirect.** `/vc-math` → `/vc-math/round-builder`, `/investors` → `/investors/directory`.
+- **Rail labels.** Sentence case per §9: "VC math", and "Strategy" for the raise strategy tab. Narrow screens always show the icon rail; labels stay in the accessibility tree.
+- **Next dev indicator moved to bottom-right** so it doesn't cover the rail's theme and collapse buttons.
