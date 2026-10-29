@@ -1,0 +1,76 @@
+{
+  "$id": "capital-atlas/anomalies.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^anom_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `anom_<slug>`"
+          },
+          "source_id": {
+            "type": "string",
+            "description": "Source list, e.g. goldman_sub200m_funds"
+          },
+          "row_ref": {
+            "type": "string",
+            "description": "Row index or name in the source"
+          },
+          "field": {
+            "type": "string",
+            "description": "Column the problem is in"
+          },
+          "raw_value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "description": "What looks wrong"
+          },
+          "resolution": {
+            "description": "What the pipeline did instead, if anything",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "source_id",
+          "row_ref",
+          "field",
+          "raw_value",
+          "reason",
+          "resolution"
+        ],
+        "additionalProperties": false,
+        "description": "Flagged problem in a source; for human review"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

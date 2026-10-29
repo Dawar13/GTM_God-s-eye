@@ -1,0 +1,229 @@
+{
+  "$id": "capital-atlas/funds.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^fund_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `fund_<slug>`"
+          },
+          "investor_id": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Fund name as the source gives it"
+          },
+          "number": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[IVXLC]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Fund number in Roman numerals: I, II, …"
+          },
+          "size_usd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "description": "US dollars (not millions)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "currency_original": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 3,
+                "maxLength": 3
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "ISO 4217 code as announced"
+          },
+          "size_original": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Size in the announced currency"
+          },
+          "close_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\\d|3[01]))?)?$",
+                "description": "YYYY, YYYY-MM or YYYY-MM-DD; precision is given alongside"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Announced or closed"
+          },
+          "close_date_precision": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "vintage_year": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1900,
+                "maximum": 2100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "location": {
+            "description": "Location as the source gives it",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "description": "Source notes that are not a link",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "pattern": "^(https?:\\/\\/\\S+|user_supplied:[a-z0-9_.-]+)$",
+                  "description": "Where the fact came from: an http(s) URL, or `user_supplied:<source_id>` for a user list with no link"
+                },
+                "title": {
+                  "description": "Page or document title, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "publisher": {
+                  "description": "Publisher or site, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "retrieved_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+                  "description": "Date the source was read"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "user_supplied"
+                  ],
+                  "description": "primary, secondary or user_supplied (PROJECT_CONTEXT §5)"
+                }
+              },
+              "required": [
+                "url",
+                "title",
+                "publisher",
+                "retrieved_at",
+                "kind"
+              ],
+              "additionalProperties": false,
+              "description": "Provenance for a record or a single fact"
+            },
+            "description": "At least one source; first is primary"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "high: primary source; medium: single secondary or user list with link; low: unverified lead"
+          }
+        },
+        "required": [
+          "id",
+          "investor_id",
+          "name",
+          "number",
+          "size_usd",
+          "currency_original",
+          "size_original",
+          "close_date",
+          "close_date_precision",
+          "vintage_year",
+          "location",
+          "notes",
+          "sources",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "description": "One fund (vehicle) raised by an investor"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

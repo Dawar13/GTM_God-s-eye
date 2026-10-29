@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capital-atlas/enums.schema.json",
+  "$defs": {
+    "Sector": {
+      "enum": [
+        "ai_infra",
+        "ai_apps_agents",
+        "industrial_manufacturing",
+        "robotics_physical_ai",
+        "defense_dual_use",
+        "hardware_deeptech",
+        "space",
+        "climate_energy",
+        "mobility_ev",
+        "supply_chain_logistics",
+        "enterprise_saas",
+        "dev_tools",
+        "fintech",
+        "health_bio",
+        "consumer",
+        "crypto_web3"
+      ]
+    },
+    "InvestorStage": {
+      "enum": [
+        "pre_seed",
+        "seed",
+        "series_a",
+        "series_b",
+        "series_c_plus",
+        "growth"
+      ]
+    },
+    "RoundStage": {
+      "enum": [
+        "pre_seed",
+        "seed",
+        "series_a",
+        "series_b",
+        "series_c_plus",
+        "growth",
+        "strategic",
+        "undisclosed"
+      ]
+    },
+    "InvestorType": {
+      "enum": [
+        "vc",
+        "cvc",
+        "angel",
+        "syndicate",
+        "family_office",
+        "sovereign",
+        "asset_manager",
+        "accelerator",
+        "strategic",
+        "individual"
+      ]
+    },
+    "Region": {
+      "enum": [
+        "western",
+        "india",
+        "other"
+      ]
+    },
+    "Confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "SourceKind": {
+      "enum": [
+        "primary",
+        "secondary",
+        "user_supplied"
+      ]
+    },
+    "Freshness": {
+      "enum": [
+        "fresh",
+        "older",
+        "unknown"
+      ]
+    },
+    "Maturity": {
+      "enum": [
+        "debut",
+        "emerging",
+        "established"
+      ]
+    },
+    "DatePrecision": {
+      "enum": [
+        "day",
+        "month",
+        "year"
+      ]
+    },
+    "CompetitorCategory": {
+      "enum": [
+        "direct",
+        "adjacent",
+        "remote"
+      ]
+    },
+    "CompetitorLayer": {
+      "enum": [
+        "design_intent",
+        "process_planning",
+        "plant_ops",
+        "quality_vision",
+        "autonomy_tooling",
+        "robotics",
+        "full_stack_factory"
+      ]
+    },
+    "SizeClass": {
+      "enum": [
+        "early",
+        "growth",
+        "incumbent"
+      ]
+    },
+    "RevenueBasis": {
+      "enum": [
+        "reported",
+        "none"
+      ]
+    },
+    "InvestorFlag": {
+      "enum": [
+        "not_early_stage_target_by_default"
+      ]
+    },
+    "FitFlag": {
+      "enum": [
+        "conflict",
+        "sparse_data"
+      ]
+    }
+  }
+}

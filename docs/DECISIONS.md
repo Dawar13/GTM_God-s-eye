@@ -59,3 +59,20 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **Index routes redirect.** `/vc-math` → `/vc-math/round-builder`, `/investors` → `/investors/directory`.
 - **Rail labels.** Sentence case per §9: "VC math", and "Strategy" for the raise strategy tab. Narrow screens always show the icon rail; labels stay in the accessibility tree.
 - **Next dev indicator moved to bottom-right** so it doesn't cover the rail's theme and collapse buttons.
+
+## 2026-10-29 — Data contracts
+
+- **JSON Schema comes from Zod 4's built-in `z.toJSONSchema` (draft 2020-12), not `zod-to-json-schema`.** Version 3.25.2 accepts Zod 4 schemas but silently emits an empty schema (`{"$schema": …}` only), so Python validation would accept anything. The package was removed. Refinements (sector weights summing to 1, date precision, check min ≤ max) aren't expressible in JSON Schema; `pnpm validate:data` enforces them.
+- **Strict objects.** Every record rejects unknown fields, so a pipeline typo fails validation instead of shipping.
+- **Fields added beyond PROJECT_CONTEXT §3**, each because Phase 0 data needed somewhere honest to go:
+  - every record: `confidence`.
+  - Investor: `parent_brand`, `aliases`, `category` (PHASE_0 §4); `seed_list_count`, `seed_source_ids`, `seed_hints`, `flags` (PHASE_0 §7).
+  - Fund: `close_date_precision` (Goldman dates are often month-only), `notes` (Goldman notes that aren't links, e.g. "Targeting $40M").
+  - Round: `date_precision`, `stage_raw` (label as listed), `notes`, and `unspecified_investor_ids` for investors a source names without saying whether they led. The robotics list mixes leads and participants in one column; filing them as leads would draw false solid edges in the network.
+  - Competitor: `layer_detail` (free text under the fixed layer), `headcount_est` as `{ value, source }` so the estimate always carries its source.
+- **Partial dates.** Dates are `YYYY`, `YYYY-MM` or `YYYY-MM-DD` with a precision field, checked to agree. Seed rounds are `"2026"` / `year` (PHASE_0 §7.4).
+- **Source URL** is an http(s) URL or `user_supplied:<source_id>` (PHASE_0 §6.5). Bare domains are rejected; the pipeline adds `https://` when a link is clearly a domain.
+- **Competitors live in `competitors.json`**, companies in `companies.json`; ids are unique across both and rounds may point at either.
+- **Review datasets.** `anomalies.json` (rows flagged, not fixed) and `merges.json` (every name merge) are processed datasets too, so the Command page can count them and reviewers can read them without running the pipeline.
+- **Enums not given in §3** are provisional and can change here: `layer` uses the seven layers of the §2 layer map; `size_class` is `early | growth | incumbent`.
+- **Loaders are async and use `"use cache"`.** Under Cache Components, uncached file reads would make every page dynamic. Async also matches the later move to an API. Restart `pnpm dev` after re-running the pipeline.

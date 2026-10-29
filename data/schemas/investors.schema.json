@@ -1,0 +1,606 @@
+{
+  "$id": "capital-atlas/investors.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^inv_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `inv_<slug>`"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Display name"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Other names seen for this investor, e.g. a16z"
+          },
+          "parent_brand": {
+            "description": "Shared brand across regional firms, e.g. Accel for Accel US and Accel India",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "vc",
+                  "cvc",
+                  "angel",
+                  "syndicate",
+                  "family_office",
+                  "sovereign",
+                  "asset_manager",
+                  "accelerator",
+                  "strategic",
+                  "individual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "western",
+                  "india",
+                  "other"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "western, india or other (PROJECT_CONTEXT §3)"
+          },
+          "hq_country": {
+            "description": "ISO 3166-1 alpha-2",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hq_city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "pre_seed",
+                "seed",
+                "series_a",
+                "series_b",
+                "series_c_plus",
+                "growth"
+              ]
+            },
+            "description": "Stages they write checks at"
+          },
+          "check_min_usd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "description": "US dollars (not millions)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "check_max_usd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "description": "US dollars (not millions)"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "leads": {
+            "description": "Whether they lead rounds",
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "thesis_text": {
+            "description": "Short, paraphrased thesis",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sector_weights": {
+            "anyOf": [
+              {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string",
+                  "enum": [
+                    "ai_infra",
+                    "ai_apps_agents",
+                    "industrial_manufacturing",
+                    "robotics_physical_ai",
+                    "defense_dual_use",
+                    "hardware_deeptech",
+                    "space",
+                    "climate_energy",
+                    "mobility_ev",
+                    "supply_chain_logistics",
+                    "enterprise_saas",
+                    "dev_tools",
+                    "fintech",
+                    "health_bio",
+                    "consumer",
+                    "crypto_web3"
+                  ]
+                },
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "description": "Thesis vector over the sector taxonomy; weights sum to 1"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "website": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^https?:\\/\\/\\S+$",
+                "description": "Absolute http(s) URL"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "linkedin": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^https?:\\/\\/\\S+$",
+                "description": "Absolute http(s) URL"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "funds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^fund_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `fund_<slug>`"
+            },
+            "description": "Fund ids, any order"
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "pattern": "^(https?:\\/\\/\\S+|user_supplied:[a-z0-9_.-]+)$",
+                  "description": "Where the fact came from: an http(s) URL, or `user_supplied:<source_id>` for a user list with no link"
+                },
+                "title": {
+                  "description": "Page or document title, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "publisher": {
+                  "description": "Publisher or site, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "retrieved_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+                  "description": "Date the source was read"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "user_supplied"
+                  ],
+                  "description": "primary, secondary or user_supplied (PROJECT_CONTEXT §5)"
+                }
+              },
+              "required": [
+                "url",
+                "title",
+                "publisher",
+                "retrieved_at",
+                "kind"
+              ],
+              "additionalProperties": false,
+              "description": "Provenance for a record or a single fact"
+            },
+            "description": "At least one source; first is primary"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "high: primary source; medium: single secondary or user list with link; low: unverified lead"
+          },
+          "category": {
+            "type": "object",
+            "properties": {
+              "freshness": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "fresh",
+                      "older",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "fresh if latest fund closed on/after the cutoff"
+              },
+              "maturity": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "debut",
+                      "emerging",
+                      "established"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "debut = Fund I, emerging = II–III, established = IV+"
+              },
+              "is_early_stage": {
+                "description": "Stages include pre-seed, seed or Series A",
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "is_generalist": {
+                "description": "Normalised entropy of sector_weights ≥ 0.85, or stated sector-agnostic",
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "cluster_id": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "k-means cluster"
+              },
+              "industrial_affinity": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "PROJECT_CONTEXT §4"
+              },
+              "stage_earliness": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Mean of stage scores"
+              },
+              "fit": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "total": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 100,
+                        "description": "Fit score, 0–100"
+                      },
+                      "components": {
+                        "type": "object",
+                        "properties": {
+                          "thesis": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "stage": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "check": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "portfolio_adjacency": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "geography": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "dry_powder": {
+                            "anyOf": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 100
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "thesis",
+                          "stage",
+                          "check",
+                          "portfolio_adjacency",
+                          "geography",
+                          "dry_powder"
+                        ],
+                        "additionalProperties": false,
+                        "description": "Points earned per component; null where inputs were missing"
+                      },
+                      "flags": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "conflict",
+                            "sparse_data"
+                          ]
+                        },
+                        "description": "Shown next to the score, never scored"
+                      }
+                    },
+                    "required": [
+                      "total",
+                      "components",
+                      "flags"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Fit score and its breakdown"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "freshness",
+              "maturity",
+              "is_early_stage",
+              "is_generalist",
+              "cluster_id",
+              "industrial_affinity",
+              "stage_earliness",
+              "fit"
+            ],
+            "additionalProperties": false,
+            "description": "Computed by the pipeline; all null until Phase 1"
+          },
+          "seed_list_count": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991,
+            "description": "How many user seed lists named this investor"
+          },
+          "seed_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Seed lists that named this investor"
+          },
+          "seed_hints": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "description": "User list the hint came from (PROJECT_CONTEXT §6)"
+                },
+                "listed_focus": {
+                  "description": "Focus as the list states it; unverified",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "listed_check_or_fund": {
+                  "description": "Check or fund size as listed; unverified",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "source_id",
+                "listed_focus",
+                "listed_check_or_fund",
+                "notes"
+              ],
+              "additionalProperties": false,
+              "description": "What a user-supplied list claims; Phase 1 verifies before it becomes a fact"
+            }
+          },
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "not_early_stage_target_by_default"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "aliases",
+          "parent_brand",
+          "type",
+          "region",
+          "hq_country",
+          "hq_city",
+          "stages",
+          "check_min_usd",
+          "check_max_usd",
+          "leads",
+          "thesis_text",
+          "sector_weights",
+          "website",
+          "linkedin",
+          "funds",
+          "sources",
+          "confidence",
+          "category",
+          "seed_list_count",
+          "seed_source_ids",
+          "seed_hints",
+          "flags"
+        ],
+        "additionalProperties": false,
+        "description": "A firm, fund manager or individual that invests"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}
