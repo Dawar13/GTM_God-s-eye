@@ -126,3 +126,10 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **Company sector** is `robotics_physical_ai` for companies from the robotics list (the list's own scope) and null for mega-seed companies. `total_raised_usd` stays null; one listed round isn't a total.
 - **Competitors stay companies in Phase 0.** Atoms and Machina Labs are in PROJECT_CONTEXT §7 but nothing there is verified; Phase 1 moves verified competitors into `competitors.json`.
 - **Investor stubs from rounds** (Tether, Amazon, Toyota, "UK government", …) get the round list as source, `confidence: low` and no type.
+
+## 2026-10-29 — Minimal data views
+
+- **Command** lists raw counts from the loaders (investors, funds, rounds, companies, competitors, anomalies, merges) to prove the data path; no charts until Phase 2.
+- **Directory** is a plain TanStack Table v9 table (`tableFeatures` + `createColumnHelper` + `useTable`, row sorting only). Unknown values sort last in both directions (`sortUndefined: "last"` on accessors that map `null` to `undefined`). Each name is a button, so keyboard users can open the inspector; rows also open it on click. The inspector shows the investor's raw record.
+- **Known cost:** the Directory page inlines all 929 investor records for the inspector (~1.4 MB HTML in `next build`). Fine for Phase 0; Phase 2 must page or fetch records on demand to meet Lighthouse ≥ 85.
+- **`next build` passes**, with every route static or partially prerendered; `"use cache"` loaders revalidate on Next's default 15-minute profile.
