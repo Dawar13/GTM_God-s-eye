@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:04:51+00:00",
+  "generated_at": "2026-10-29T19:05:46+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -699,13 +699,31 @@
       "id": "anom_research_0078",
       "source_id": "research",
       "row_ref": "haystack",
+      "field": "fund.number",
+      "raw_value": "VIII vs VII",
+      "reason": "fund list numbers Haystack Ventures differently",
+      "resolution": "research number VII kept"
+    },
+    {
+      "id": "anom_research_0079",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "fund",
+      "raw_value": "fund_haystack_v",
+      "reason": "duplicate of researched Fund V",
+      "resolution": "row removed"
+    },
+    {
+      "id": "anom_research_0080",
+      "source_id": "research",
+      "row_ref": "haystack",
       "field": "check_min_usd / check_max_usd",
       "raw_value": "$1M-$3M initial check (homepage body and About Us FAQ) | $500K-$2M in initial rounds (homepage meta description) | median initial check around $700K (founder blog, Sept 2023)",
       "reason": "sources disagree: Visible page text and the FAQ both say $1M-$3M and match the larger $85M Fund VIII; the meta description and the 2023 median reflect earlier, smaller funds.",
       "resolution": "chose $1M-$3M"
     },
     {
-      "id": "anom_research_0079",
+      "id": "anom_research_0081",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.IV",
@@ -714,7 +732,7 @@
       "resolution": "chose size and close date left null"
     },
     {
-      "id": "anom_research_0080",
+      "id": "anom_research_0082",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.V",
@@ -723,7 +741,7 @@
       "resolution": "chose one Fund V, $50M, fully sold per Form D/A filed 2019-07-05"
     },
     {
-      "id": "anom_research_0081",
+      "id": "anom_research_0083",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds numbering (2023 fund)",
@@ -732,7 +750,7 @@
       "resolution": "chose Haystack Ventures VII"
     },
     {
-      "id": "anom_research_0082",
+      "id": "anom_research_0084",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.VIII close_date",
@@ -741,7 +759,7 @@
       "resolution": "chose $85M, closed in 2026 (year precision)"
     },
     {
-      "id": "anom_research_0083",
+      "id": "anom_research_0085",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.Needles III size",
@@ -750,7 +768,7 @@
       "resolution": "chose $25M"
     },
     {
-      "id": "anom_research_0084",
+      "id": "anom_research_0086",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "partners (Aashay Sanghvi)",
@@ -759,7 +777,7 @@
       "resolution": "chose Aashay Sanghvi, Partner"
     },
     {
-      "id": "anom_research_0085",
+      "id": "anom_research_0087",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "hq_city",
@@ -768,7 +786,7 @@
       "resolution": "chose San Francisco"
     },
     {
-      "id": "anom_research_0086",
+      "id": "anom_research_0088",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "portfolio_count_reported",
@@ -777,7 +795,7 @@
       "resolution": "chose 290"
     },
     {
-      "id": "anom_research_0087",
+      "id": "anom_research_0089",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "rounds.Pangram stage",
@@ -786,7 +804,7 @@
       "resolution": "chose undisclosed"
     },
     {
-      "id": "anom_research_0088",
+      "id": "anom_research_0090",
       "source_id": "research",
       "row_ref": "mavka-ventures",
       "field": "partners[Vitaly Golomb].title",
@@ -795,7 +813,7 @@
       "resolution": "chose General Partner"
     },
     {
-      "id": "anom_research_0089",
+      "id": "anom_research_0091",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.stages",
@@ -804,7 +822,7 @@
       "resolution": "chose pre_seed, seed, series_a"
     },
     {
-      "id": "anom_research_0090",
+      "id": "anom_research_0092",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "partners[Steven Lee].title",
@@ -813,7 +831,7 @@
       "resolution": "chose Founder & General Partner"
     },
     {
-      "id": "anom_research_0091",
+      "id": "anom_research_0093",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.portfolio_count_reported",
@@ -822,7 +840,7 @@
       "resolution": "chose 12"
     },
     {
-      "id": "anom_research_0092",
+      "id": "anom_research_0094",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "name",
@@ -831,7 +849,7 @@
       "resolution": "chose Seven Stars"
     },
     {
-      "id": "anom_research_0093",
+      "id": "anom_research_0095",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Origin Lab].date",
@@ -840,7 +858,7 @@
       "resolution": "chose 2026-05-13"
     },
     {
-      "id": "anom_research_0094",
+      "id": "anom_research_0096",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Pomo].date",
@@ -849,7 +867,7 @@
       "resolution": "chose 2026-04-08"
     },
     {
-      "id": "anom_research_0095",
+      "id": "anom_research_0097",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Corgi $108M].stage",
@@ -858,7 +876,7 @@
       "resolution": "chose series_a (seed + Series A combined)"
     },
     {
-      "id": "anom_research_0096",
+      "id": "anom_research_0098",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Doctronic Series B].participants",
@@ -867,7 +885,7 @@
       "resolution": "chose includes Wittington Ventures"
     },
     {
-      "id": "anom_research_0097",
+      "id": "anom_research_0099",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "funds[Supply Change Capital Fund I LP].size_original",
@@ -876,7 +894,7 @@
       "resolution": "chose 40000000"
     },
     {
-      "id": "anom_research_0098",
+      "id": "anom_research_0100",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "hq_city",
@@ -885,7 +903,7 @@
       "resolution": "chose Los Angeles"
     },
     {
-      "id": "anom_research_0099",
+      "id": "anom_research_0101",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "check_max_usd",
@@ -894,7 +912,7 @@
       "resolution": "chose 500000-1000000"
     },
     {
-      "id": "anom_research_0100",
+      "id": "anom_research_0102",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "accepts_cold_inbound",

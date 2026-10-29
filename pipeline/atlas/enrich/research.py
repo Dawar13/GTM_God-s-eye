@@ -282,10 +282,12 @@ def _apply_funds(store: Store, inv: dict, f: dict) -> None:
     registry = ids.IdRegistry()
     for fid in store.funds:
         registry.claim(fid)
+    matched: set[str] = set()
     for rf in f["funds"]:
         year = int(rf["close_date"][:4]) if rf["close_date"] else None
         usd, fx_used = fx.to_usd(rf["size_original"], rf["currency_original"], year)
-        match = _match_fund(existing, rf, year)
+        candidates = [e for e in existing if e["id"] not in matched]
+        match = _match_fund(candidates, rf, year, usd)
         if match is None:
             fid = registry.claim(ids.fund_id(ids.slug_of(inv["id"]), rf["number"], year))
             match = {
@@ -309,7 +311,17 @@ def _apply_funds(store: Store, inv: dict, f: dict) -> None:
             store.funds[fid] = match
             inv["funds"].append(fid)
             existing.append(match)
+        matched.add(match["id"])
         idx = _attach(match, pages, rf["pages"])
+        if rf["number"] and match["number"] not in (None, rf["number"]):
+            store.add_anomaly(
+                SOURCE_ID,
+                f["key"],
+                "fund.number",
+                f"{match['number']} vs {rf['number']}",
+                f"fund list numbers {match['name']} differently",
+                f"research number {rf['number']} kept",
+            )
         if rf["number"]:
             match["number"] = rf["number"]
         if rf["size_original"] is not None:
@@ -338,19 +350,40 @@ def _apply_funds(store: Store, inv: dict, f: dict) -> None:
             cite(match, "close_date", idx)
         match["confidence"] = confidence_for([pages[i] for i in rf["pages"]])
 
+    # A fund-list row left unmatched that carries the number of a researched fund
+    # is a duplicate (e.g. the same Fund V listed twice): retire it and say so.
+    researched_numbers = {store.funds[i]["number"] for i in matched if store.funds[i]["number"]}
+    for e in list(existing):
+        if e["id"] in matched or e["number"] not in researched_numbers:
+            continue
+        store.add_anomaly(
+            SOURCE_ID,
+            f["key"],
+            "fund",
+            e["id"],
+            f"duplicate of researched Fund {e['number']}",
+            "row removed",
+        )
+        del store.funds[e["id"]]
+        inv["funds"].remove(e["id"])
 
-def _match_fund(existing: list[dict], rf: dict, year: int | None) -> dict | None:
-    if rf["number"]:
-        same = [e for e in existing if e["number"] == rf["number"]]
-        if len(same) == 1:
-            return same[0]
-        # Two rows with the same number (a fund-list error): prefer the same year.
-        for e in same:
-            if e["vintage_year"] == year:
-                return e
-    for e in existing:
-        if year and e["vintage_year"] == year and (e["number"] in (None, rf["number"])):
+
+def _match_fund(existing: list[dict], rf: dict, year: int | None, usd: float | None) -> dict | None:
+    same_number = [e for e in existing if rf["number"] and e["number"] == rf["number"]]
+    for e in same_number:
+        if year is None or e["vintage_year"] in (None, year):
             return e
+    if len(same_number) == 1 and year is None:
+        return same_number[0]
+    # Same year and size: the same fund numbered differently by the fund list.
+    for e in existing:
+        if year and e["vintage_year"] == year and _amounts_close(e["size_usd"], usd):
+            return e
+    for e in existing:
+        if year and e["vintage_year"] == year and e["number"] in (None, rf["number"]):
+            return e
+    if len(same_number) == 1:
+        return same_number[0]
     return None
 
 

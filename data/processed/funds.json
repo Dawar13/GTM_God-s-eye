@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:04:51+00:00",
+  "generated_at": "2026-10-29T19:05:46+00:00",
   "records": [
     {
       "id": "fund_10d_ii",
@@ -11589,32 +11589,6 @@
       "confidence": "high"
     },
     {
-      "id": "fund_haystack_v",
-      "investor_id": "inv_haystack",
-      "name": "Haystack Ventures",
-      "number": "V",
-      "size_usd": 50000000,
-      "currency_original": "USD",
-      "size_original": 50000000,
-      "fx": null,
-      "close_date": "2020-02-02",
-      "close_date_precision": "day",
-      "vintage_year": 2020,
-      "location": "Bay Area",
-      "notes": null,
-      "sources": [
-        {
-          "url": "https://twitter.com/semil/status/1224026347602755584",
-          "title": "goldman_sub200m_funds row 335",
-          "publisher": null,
-          "retrieved_at": "2026-10-29",
-          "kind": "user_supplied"
-        }
-      ],
-      "field_sources": {},
-      "confidence": "medium"
-    },
-    {
       "id": "fund_haystack_v-2",
       "investor_id": "inv_haystack",
       "name": "Haystack Ventures",
@@ -11699,57 +11673,6 @@
       "confidence": "high"
     },
     {
-      "id": "fund_haystack_vii",
-      "investor_id": "inv_haystack",
-      "name": "Haystack Ventures VII, L.P.",
-      "number": "VII",
-      "size_usd": 75000000,
-      "currency_original": "USD",
-      "size_original": 75000000,
-      "fx": null,
-      "close_date": "2023-06-26",
-      "close_date_precision": "day",
-      "vintage_year": 2023,
-      "location": null,
-      "notes": null,
-      "sources": [
-        {
-          "url": "https://semilshah.com/2023/09/10/announcing-haystack-vii-same-model-fresh-funds-and-new-era/",
-          "title": "Announcing Haystack VII: Same Model, Fresh Funds, And New Era",
-          "publisher": "Semil Shah (semilshah.com)",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://aashay.substack.com/p/haystack-vii",
-          "title": "Haystack VII",
-          "publisher": "Aashay Sanghvi (Substack)",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://www.sec.gov/Archives/edgar/data/1977264/000197980523000002/primary_doc.xml",
-          "title": "Form D - Haystack Ventures VII, L.P. (filed 2023-06-26)",
-          "publisher": "U.S. SEC EDGAR",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        }
-      ],
-      "field_sources": {
-        "size_usd": [
-          0,
-          1,
-          2
-        ],
-        "close_date": [
-          0,
-          1,
-          2
-        ]
-      },
-      "confidence": "high"
-    },
-    {
       "id": "fund_haystack_viii",
       "investor_id": "inv_haystack",
       "name": "Haystack Ventures",
@@ -11813,12 +11736,12 @@
       "id": "fund_haystack_viii-2",
       "investor_id": "inv_haystack",
       "name": "Haystack Ventures",
-      "number": "VIII",
+      "number": "VII",
       "size_usd": 75000000,
       "currency_original": "USD",
       "size_original": 75000000,
       "fx": null,
-      "close_date": "2023-09-10",
+      "close_date": "2023-06-26",
       "close_date_precision": "day",
       "vintage_year": 2023,
       "location": "Bay Area",
@@ -11830,10 +11753,35 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://aashay.substack.com/p/haystack-vii",
+          "title": "Haystack VII",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1977264/000197980523000002/primary_doc.xml",
+          "title": "Form D - Haystack Ventures VII, L.P. (filed 2023-06-26)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_haywire_i",
