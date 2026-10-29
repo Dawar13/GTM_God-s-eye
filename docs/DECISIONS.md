@@ -84,3 +84,30 @@ Toolchain: Node 24.13.0, pnpm 10.33.0, Python 3.12.4, uv 0.12.19, git 2.47.1.
 - **`retrieved_at` for user-supplied files is fixed at 2026-10-29**, the day they were handed over (`USER_SOURCES_RECEIVED`), not the run date. Otherwise every re-run rewrites every record and buries real changes in the diff. Only `generated_at` changes per run.
 - **Freshness cutoff** is `FRESHNESS_CUTOFF = "2024-10-29"` in `atlas/config.py` (24 months before 2026-10-29).
 - **Export validates first.** `write_json.py` checks each dataset against `data/schemas/*.schema.json` (Draft 2020-12 with format checking) before writing, and refuses to write on failure. `pnpm validate:data` then re-checks with Zod plus cross-file integrity.
+
+## 2026-10-29 — Goldman PDF ingest
+
+- **Extraction.** pdfplumber table extraction finds all 971 indexed rows (1–971, none missing or duplicated) on all 11 pages, so the line-regex fallback never fires on this file; it stays in place, tested on a synthetic line, for future versions of the PDF. Two more fund rows sit above row 1 with no index (Hyperstition, BBG Ventures); they are kept as `unindexed-1/2` and flagged. 973 funds in total.
+- **Long links overflow into a ninth cell** (14 rows). The overflow is always the tail of the URL, so it is joined without a space.
+- **Flag, don't fix.** Anomalies go to `data/interim/goldman_anomalies.csv` and `data/processed/anomalies.json`. Where a value is unusable the field is null and the anomaly says so:
+  - amount blank or not a number (`93/3`) → `size_usd` null.
+  - amount over $1,000M (`$4,100` for Anthology Fund) → null as implausible for this list; amounts between $200M and $1,000M (AIX $202M, Blockchain Capital $250M, Benhamou $480M) are kept and flagged as above the list's ceiling.
+  - date malformed, nonexistent, before 2000 or after 2026-10-29 (`9/10/2925`, `715/2025`, `6/27/0203`, `12/23/2106`, `78/2021`) → `close_date` = the year column with precision `year`.
+  - valid date whose year disagrees with the year column (Prudence, Tenzing) → both kept as listed and flagged; `vintage_year` is the year column.
+  - fund number `1` → read as `I`; `Opp Fund` → number null, text kept in `notes`.
+  - notes that say the amount is a target, a first close, unconfirmed or a guess → fund `confidence: low`.
+  - name tokens within edit distance of a generic word (`Ventrues`, `Ventues`, `Capial`, `Partnes`, `Venturesq`, …) → flagged as possible typos, kept as written, matched as the generic word.
+- **Sizes** are stored in dollars (`$160` → 160,000,000) with `currency_original: USD`; the list's column is USD.
+- **Source per fund**: the row's link when present, else `user_supplied:goldman_sub200m_funds`; `kind: user_supplied`; `title` records the row (`goldman_sub200m_funds row 42`) so every fund traces back to its line in the PDF.
+- **Investor type is left null** for Goldman investors. The list is mostly VCs but includes corporate arms (Salesforce, SAP.iO, Grab), accelerators (Techstars) and fund-of-funds (Cendana); Phase 1 classifies.
+
+## 2026-10-29 — Name matching (investors)
+
+- **Display names keep generic words**; only the matching key drops them (PHASE_0 §6.4). The key also drops: `fund`, `the`, `and`, `llc`, `lp`, `inc`, `co`, `group`, `management`, `investment(s)`; trailing vehicle words (`seed`, `opportunity`, `opp`, `growth`, `scout`, `climate`, `creator`, `select`, `early`, `diversity`, `hardware`, `secondary`); and likely typos of generic words. So `Sequoia Seed Fund`, `Sequoia Capital Seed Fund` and `Sequoia Ventues - Scout Fund` share the key `sequoia`.
+- **The firm is cut from the fund name** before matching: ` - climate fund`, `, Liquid Value Fund` and parentheticals are removed; `(fka Carmel Ventures)` becomes an alias.
+- **Threshold**: rapidfuzz `token_sort_ratio` ≥ 92 on keys (`NAME_MATCH_THRESHOLD`). Exact key matches merge without a score.
+- **Aliases** (`atlas/resolve.py`): `a16z` ↔ Andreessen Horowitz, `USV` ↔ Union Square Ventures. Short and reviewable on purpose.
+- **Display name**: a seed-list name wins (seed lists name firms; Goldman names funds). Otherwise the most recent Goldman name without typos or vehicle words.
+- **Every merge is logged** in `data/processed/merges.json`. All 54 merges from the first run were reviewed by hand. Five were wrong and are now blocked by `DO_NOT_MERGE` in `atlas/config.py`, which applies to exact and fuzzy matches alike: Collide Capital ≠ Collider Ventures (NYC vs Israel), Corigin Ventures ≠ Origin Ventures (NYC vs Chicago), House Capital ≠ The House Fund (Launch House vs Berkeley), Amplify Ventures ≠ Amplify Partners (LA vs Bay Area), ATX Seed Ventures ≠ ATX Venture Partners. 49 merges remain.
+- **Accel split rule.** Regional arms of one brand are separate investors with a shared `parent_brand` (Accel US / Accel Europe & Israel / Accel India → `parent_brand: "Accel"`). In the pipeline, a name whose key ends in a region word (US, Europe, India, Israel, Korea, Africa, Japan, …) keeps its own key and gets `parent_brand` = the name before the region word: `Antler US Fund` → Antler, `Altos Ventures Korea Fund` → Altos Ventures, `500 Startups Japan` → 500 Startups. "SEA" is deliberately not a region word (it turned "Red Sea Ventures" into parent "Red").
+- **Region from location** (`atlas/geo.py`) only when every place in the location string is in the table and all agree. Mixed (`Bay Area, China`), unlisted or vague (`Global`) locations → null for Phase 1. Known misspellings in the list (`Chicaog`, `Vancover`, `Israe`, …) are in the table explicitly.

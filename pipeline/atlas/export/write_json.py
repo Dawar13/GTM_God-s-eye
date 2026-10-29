@@ -71,5 +71,6 @@ def write_dataset(
     validate_dataset(name, payload)
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{name}.json"
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    text = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    path.write_text(text, encoding="utf-8", newline="\n")
     return path

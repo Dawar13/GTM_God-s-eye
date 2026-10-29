@@ -1,5 +1,636 @@
 {
   "version": 1,
-  "generated_at": "2026-10-29T16:58:35+00:00",
-  "records": []
+  "generated_at": "2026-10-29T17:10:20+00:00",
+  "records": [
+    {
+      "id": "anom_goldman_sub200m_funds_0001",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "9",
+      "field": "fund_name",
+      "raw_value": "Bridgewest Ventrues",
+      "reason": "possible typo 'ventrues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0002",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "unindexed-1",
+      "field": "row_index",
+      "raw_value": null,
+      "reason": "row has no index number",
+      "resolution": "kept as an extra row"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0003",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "unindexed-2",
+      "field": "row_index",
+      "raw_value": null,
+      "reason": "row has no index number",
+      "resolution": "kept as an extra row"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0004",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "unindexed-2",
+      "field": "amount",
+      "raw_value": "",
+      "reason": "no amount listed",
+      "resolution": "size left null"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0005",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "38",
+      "field": "fund_name",
+      "raw_value": "Crystal Ventture Partners",
+      "reason": "possible typo 'ventture'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0006",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "42",
+      "field": "date",
+      "raw_value": "9/10/2925",
+      "reason": "date is in the future",
+      "resolution": "used year column (2025)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0007",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "44",
+      "field": "amount",
+      "raw_value": "93/3",
+      "reason": "amount is not a number",
+      "resolution": "size left null"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0008",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "46",
+      "field": "date",
+      "raw_value": "715/2025",
+      "reason": "date is malformed",
+      "resolution": "used year column (2025)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0009",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "55",
+      "field": "fund_name",
+      "raw_value": "Scribble Ventrues",
+      "reason": "possible typo 'ventrues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0010",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "77",
+      "field": "fund_name",
+      "raw_value": "Divergent Ventrues",
+      "reason": "possible typo 'ventrues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0011",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "84",
+      "field": "fund_name",
+      "raw_value": "Diagram Venturesq",
+      "reason": "possible typo 'venturesq'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0012",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "100",
+      "field": "amount",
+      "raw_value": "$4,100",
+      "reason": "implausible for a list of funds ≤ $200M",
+      "resolution": "size left null"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0013",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "129",
+      "field": "year",
+      "raw_value": "2023",
+      "reason": "year column disagrees with date 3/7/2024",
+      "resolution": "kept both as listed"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0014",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "140",
+      "field": "date",
+      "raw_value": "213/2024",
+      "reason": "date is malformed",
+      "resolution": "used year column (2024)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0015",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "141",
+      "field": "amount",
+      "raw_value": "$202",
+      "reason": "above the list's $200M ceiling",
+      "resolution": "kept as listed"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0016",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "171",
+      "field": "date",
+      "raw_value": "6/27/0203",
+      "reason": "year 203 is before 2000",
+      "resolution": "used year column (2023)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0017",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "190",
+      "field": "year",
+      "raw_value": "2023",
+      "reason": "year column disagrees with date 12/31/2022",
+      "resolution": "kept both as listed"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0018",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "212",
+      "field": "date",
+      "raw_value": "7/30/32022",
+      "reason": "date is malformed",
+      "resolution": "used year column (2022)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0019",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "242",
+      "field": "fund_name",
+      "raw_value": "Burnt Island Ventrues",
+      "reason": "possible typo 'ventrues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0020",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "277",
+      "field": "date",
+      "raw_value": "78/2021",
+      "reason": "date does not exist",
+      "resolution": "used year column (2021)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0021",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "313",
+      "field": "fund_number",
+      "raw_value": "1",
+      "reason": "Arabic numeral",
+      "resolution": "read as Fund I"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0022",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "344",
+      "field": "date",
+      "raw_value": "10/272020",
+      "reason": "date is malformed",
+      "resolution": "used year column (2020)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0023",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "365",
+      "field": "notes",
+      "raw_value": "previous fund was $75M, so assumption is that it is a similar size",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0024",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "408",
+      "field": "fund_name",
+      "raw_value": "ATX Seed Ventrues",
+      "reason": "possible typo 'ventrues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0025",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "410",
+      "field": "fund_name",
+      "raw_value": "Sorenson Capital Ventues",
+      "reason": "possible typo 'ventues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0026",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "411",
+      "field": "fund_name",
+      "raw_value": "Blossom Capial",
+      "reason": "possible typo 'capial'",
+      "resolution": "kept as written; matched as 'capital'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0027",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "445",
+      "field": "fund_name",
+      "raw_value": "Primary Venure Partners",
+      "reason": "possible typo 'venure'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0028",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "451",
+      "field": "fund_name",
+      "raw_value": "Contrary Captal",
+      "reason": "possible typo 'captal'",
+      "resolution": "kept as written; matched as 'capital'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0029",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "458",
+      "field": "date",
+      "raw_value": "5/2/22018",
+      "reason": "date is malformed",
+      "resolution": "used year column (2018)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0030",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "475",
+      "field": "amount",
+      "raw_value": "$250",
+      "reason": "above the list's $200M ceiling",
+      "resolution": "kept as listed"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0031",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "503",
+      "field": "fund_name",
+      "raw_value": "Sequoia Ventues - Scout Fund",
+      "reason": "possible typo 'ventues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0032",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "525",
+      "field": "fund_name",
+      "raw_value": "Maryland Innovation Opportuniy Fund",
+      "reason": "possible typo 'opportuniy'",
+      "resolution": "kept as written; matched as 'opportunity'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0033",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "540",
+      "field": "notes",
+      "raw_value": "targeting $100M fund",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0034",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "557",
+      "field": "notes",
+      "raw_value": "raising $50M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0035",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "561",
+      "field": "notes",
+      "raw_value": "crowberrycapital.com",
+      "reason": "link without a scheme",
+      "resolution": "read as https://"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0036",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "561",
+      "field": "fund_name",
+      "raw_value": "Crowberry Capial",
+      "reason": "possible typo 'capial'",
+      "resolution": "kept as written; matched as 'capital'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0037",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "569",
+      "field": "amount",
+      "raw_value": "$480",
+      "reason": "above the list's $200M ceiling",
+      "resolution": "kept as listed"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0038",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "611",
+      "field": "notes",
+      "raw_value": "SAP.io",
+      "reason": "link without a scheme",
+      "resolution": "read as https://"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0039",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "641",
+      "field": "amount",
+      "raw_value": "",
+      "reason": "no amount listed",
+      "resolution": "size left null"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0040",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "641",
+      "field": "notes",
+      "raw_value": "fund size not disclosed but likely sub $100M based on previous funds",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0041",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "652",
+      "field": "date",
+      "raw_value": "12/23/2106",
+      "reason": "date is in the future",
+      "resolution": "used year column (2016)"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0042",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "658",
+      "field": "notes",
+      "raw_value": "$75M target - per Term Sheet",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0043",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "667",
+      "field": "fund_name",
+      "raw_value": "Chicago Ventues",
+      "reason": "possible typo 'ventues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0044",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "669",
+      "field": "notes",
+      "raw_value": "1st close was $100M, target is $250M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0045",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "685",
+      "field": "notes",
+      "raw_value": "targeting $50M, have $20M already commited",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0046",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "699",
+      "field": "notes",
+      "raw_value": "1st close per SEC",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0047",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "762",
+      "field": "notes",
+      "raw_value": "raising Fund II per SEC filing",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0048",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "766",
+      "field": "notes",
+      "raw_value": "raised $50M, not closed",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0049",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "767",
+      "field": "notes",
+      "raw_value": "raising up to $200M, not clear if has closed yet",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0050",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "772",
+      "field": "fund_number",
+      "raw_value": "Opp Fund",
+      "reason": "not a fund number",
+      "resolution": "number left null; text kept in notes"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0051",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "792",
+      "field": "notes",
+      "raw_value": "1st close - $60M target - 26from%3dalert%26pid%3d22",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0052",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "799",
+      "field": "fund_name",
+      "raw_value": "Indicator Ventues",
+      "reason": "possible typo 'ventues'",
+      "resolution": "kept as written; matched as 'ventures'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0053",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "847",
+      "field": "notes",
+      "raw_value": "targeting $100M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0054",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "857",
+      "field": "fund_name",
+      "raw_value": "Alpha Ventures Partnes",
+      "reason": "possible typo 'partnes'",
+      "resolution": "kept as written; matched as 'partners'"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0055",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "857",
+      "field": "notes",
+      "raw_value": "$10M first close, $20M target",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0056",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "871",
+      "field": "notes",
+      "raw_value": "unconfirmed - per Fortune article",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0057",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "872",
+      "field": "notes",
+      "raw_value": "unconfirmed - per Fortune article",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0058",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "880",
+      "field": "amount",
+      "raw_value": "",
+      "reason": "no amount listed",
+      "resolution": "size left null"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0059",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "898",
+      "field": "notes",
+      "raw_value": "Targeting $30M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0060",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "902",
+      "field": "notes",
+      "raw_value": "according to Fortune, they are having a 1st close soon",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0061",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "912",
+      "field": "notes",
+      "raw_value": "Targeting $15M, not clear how much they have raised so far",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0062",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "913",
+      "field": "notes",
+      "raw_value": "Looks like the target is $40M, unclear how much they have raised to date",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0063",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "916",
+      "field": "notes",
+      "raw_value": "First close, targeting $75M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0064",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "917",
+      "field": "notes",
+      "raw_value": "First close, targeting $100M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0065",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "926",
+      "field": "notes",
+      "raw_value": "Targeting $40M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0066",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "931",
+      "field": "notes",
+      "raw_value": "Targeting $35M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0067",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "933",
+      "field": "notes",
+      "raw_value": "Targeting $100M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0068",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "934",
+      "field": "notes",
+      "raw_value": "First close, targeting $57M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0069",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "948",
+      "field": "notes",
+      "raw_value": "First close, targeting $50M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    },
+    {
+      "id": "anom_goldman_sub200m_funds_0070",
+      "source_id": "goldman_sub200m_funds",
+      "row_ref": "959",
+      "field": "notes",
+      "raw_value": "Targeting $40M",
+      "reason": "notes say the amount may not be a final close",
+      "resolution": "confidence low"
+    }
+  ]
 }

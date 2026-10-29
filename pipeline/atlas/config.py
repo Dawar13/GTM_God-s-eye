@@ -56,8 +56,20 @@ NAME_MATCH_STOPWORDS = frozenset(
     }
 )
 
-# Pairs that normalise alike but are different firms. Checked before any merge.
-DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset()
+# Names (lower-case, as written in a source) that normalise alike but are
+# different firms. Checked before every merge, exact or fuzzy. Each pair was
+# found reviewing data/processed/merges.json; see docs/DECISIONS.md.
+DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
+    frozenset(pair)
+    for pair in [
+        ("collide capital", "collider ventures"),  # NYC fintech vs Israel
+        ("corigin ventures", "origin ventures"),  # NYC vs Chicago
+        ("house capital", "the house fund"),  # Launch House vs Berkeley
+        ("house capital", "house fund"),
+        ("amplify ventures", "amplify partners"),  # Amplify.LA vs Bay Area
+        ("atx seed ventrues", "atx ventures"),  # ATX Seed Ventures vs ATX Venture Partners
+    ]
+)
 
 SECTORS = (
     "ai_infra",
