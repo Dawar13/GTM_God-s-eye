@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T18:46:26+00:00",
+  "generated_at": "2026-10-29T19:01:43+00:00",
   "records": [
     {
       "id": "fund_10d_ii",
@@ -1197,6 +1197,88 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_ajvc_i",
+      "investor_id": "inv_ajvc",
+      "name": "AJVC Trust",
+      "number": "I",
+      "size_usd": 18936568,
+      "currency_original": "INR",
+      "size_original": 1650000000,
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "close_date": "2025-09",
+      "close_date_precision": "month",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/aviral-bhatnagars-ajvc-closes-maiden-fund-at-rs-200-cr-10066975",
+          "title": "Aviral Bhatnagar's AJVC closes maiden fund at Rs 200 Cr",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/aviral-bhatnagars-ajvc-closes-maiden-fund-at-inr-200-cr/496925",
+          "title": "Aviral Bhatnagar's AJVC closes maiden fund at INR 200 Cr",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/pre-seed-focused-ajvc-closes-maiden-fund-at-rs.165-cr",
+          "title": "Pre-seed focused AJVC closes maiden fund at Rs.165 Cr",
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/aviral-bhatnagars-ajvc-closes-debut-fund-at-inr-200-cr",
+          "title": "Aviral Bhatnagar's AJVC Closes Debut Fund At INR 200 Cr",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/aviral-bhatnagars-ajvc-closes-inr-100-cr-fund-to-back/487821",
+          "title": "Aviral Bhatnagar's AJVC Closes INR 100 Cr Fund to Back India's Pre-Seed Startups",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://media.dealstreetasia.com/stories/ajvc-closes-debut-fund-432707",
+          "title": "Indian solo-GP venture fund AJVC closes $12m debut vehicle to bet on pre-seed stages",
+          "publisher": "DealStreetAsia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_akkadian-ventures_iii",
@@ -11365,6 +11447,108 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_haystack_i",
+      "investor_id": "inv_haystack",
+      "name": "HMC Needles I, L.P.",
+      "number": "I",
+      "size_usd": 23977600,
+      "currency_original": "USD",
+      "size_original": 23977600,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1892751/000189275125000001/primary_doc.xml",
+          "title": "Form D/A - HMC Needles I, L.P. (filed 2025-01-13)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_haystack_ii",
+      "investor_id": "inv_haystack",
+      "name": "HMC Needles II, L.P.",
+      "number": "II",
+      "size_usd": 16150000,
+      "currency_original": "USD",
+      "size_original": 16150000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1983366/000198336625000001/primary_doc.xml",
+          "title": "Form D/A - HMC Needles II, L.P. (filed 2025-01-13)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_haystack_iii",
+      "investor_id": "inv_haystack",
+      "name": "HMC Needles III, L.P.",
+      "number": "III",
+      "size_usd": 25000000,
+      "currency_original": "USD",
+      "size_original": 25000000,
+      "fx": null,
+      "close_date": "2026",
+      "close_date_precision": "year",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://semilshah.com/2026/04/26/new-funds-for-haystack/",
+          "title": "New Funds For Haystack",
+          "publisher": "Semil Shah (semilshah.com)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2071272/000207127825000002/primary_doc.xml",
+          "title": "Form D - HMC Needles III, L.P. (filed 2025-06-12)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_haystack_iv",
       "investor_id": "inv_haystack",
       "name": "Haystack",
@@ -11385,10 +11569,24 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1701533/000170153317000001/primary_doc.xml",
+          "title": "Form D - Haystack Ventures IV, L.P. (filed 2017-03-30)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/sec-filing-haystack-ventures-closed-50-million-for-oversubscribed-fifth-flagship-fund/",
+          "title": "SEC Filing: Haystack Ventures Closed $50 Million For Oversubscribed Fifth Flagship Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_haystack_v",
@@ -11437,10 +11635,119 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754548/000175454818000001/primary_doc.xml",
+          "title": "Form D - Haystack Ventures V, L.P. (filed 2018-10-04)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1754548/000175454819000001/primary_doc.xml",
+          "title": "Form D/A - Haystack Ventures V, L.P. (filed 2019-07-05)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/sec-filing-haystack-ventures-closed-50-million-for-oversubscribed-fifth-flagship-fund/",
+          "title": "SEC Filing: Haystack Ventures Closed $50 Million For Oversubscribed Fifth Flagship Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_haystack_vi",
+      "investor_id": "inv_haystack",
+      "name": "Haystack Ventures VI, L.P.",
+      "number": "VI",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1855992/000185599221000002/primary_doc.xml",
+          "title": "Form D - Haystack Ventures VI, L.P. (filed 2021-04-12)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "id": "fund_haystack_vii",
+      "investor_id": "inv_haystack",
+      "name": "Haystack Ventures VII, L.P.",
+      "number": "VII",
+      "size_usd": 75000000,
+      "currency_original": "USD",
+      "size_original": 75000000,
+      "fx": null,
+      "close_date": "2023-06-26",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://semilshah.com/2023/09/10/announcing-haystack-vii-same-model-fresh-funds-and-new-era/",
+          "title": "Announcing Haystack VII: Same Model, Fresh Funds, And New Era",
+          "publisher": "Semil Shah (semilshah.com)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://aashay.substack.com/p/haystack-vii",
+          "title": "Haystack VII",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1977264/000197980523000002/primary_doc.xml",
+          "title": "Form D - Haystack Ventures VII, L.P. (filed 2023-06-26)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_haystack_viii",
@@ -11451,8 +11758,8 @@
       "currency_original": "USD",
       "size_original": 85000000,
       "fx": null,
-      "close_date": "2026-04-26",
-      "close_date_precision": "day",
+      "close_date": "2026",
+      "close_date_precision": "year",
       "vintage_year": 2026,
       "location": "SF",
       "notes": null,
@@ -11463,10 +11770,44 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://aashay.substack.com/p/haystack-new-funds-new-era",
+          "title": "Haystack: New Funds, New Era",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://haystack.vc/about-us",
+          "title": "Haystack | About Us",
+          "publisher": "Haystack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2071278/000207127825000001/primary_doc.xml",
+          "title": "Form D - Haystack Ventures VIII, L.P. (filed 2025-06-12)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_haystack_viii-2",
@@ -21581,6 +21922,97 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_supply-change-capital_i",
+      "investor_id": "inv_supply-change-capital",
+      "name": "Supply Change Capital Fund I LP",
+      "number": "I",
+      "size_usd": 40000000,
+      "currency_original": "USD",
+      "size_original": 40000000,
+      "fx": null,
+      "close_date": "2023-07-24",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://prnewswire.com/news-releases/supply-change-capital-closes-debut-40m-fund-to-invest-in-the-future-of-food-301883552.html",
+          "title": "Supply Change Capital Closes Debut $40M Fund to Invest in the Future of Food",
+          "publisher": "PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/?p=2573060",
+          "title": "Supply Change Capital is latest women-led VC to raise substantial debut fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1863949/000186394923000001/primary_doc.xml",
+          "title": "Form D/A: Supply Change Capital Fund I LP (filed 2023-05-31)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_supply-change-capital_ii",
+      "investor_id": "inv_supply-change-capital",
+      "name": "Supply Change Capital Fund II LP",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2064181/000194104025000665/primary_doc.xml",
+          "title": "Form D: Supply Change Capital Fund II LP (filed 2025-11-25)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://supplychangecapital.substack.com/p/2025-year-in-review",
+          "title": "2025 Year in Review",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://supplychangecapital.substack.com/p/2024-year-in-review",
+          "title": "2024 Year in Review",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
     },
     {
       "id": "fund_susa-ventures_i",

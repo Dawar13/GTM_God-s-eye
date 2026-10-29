@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T18:46:26+00:00",
+  "generated_at": "2026-10-29T19:01:43+00:00",
   "records": [
     {
       "id": "co_adaption-labs",
@@ -49,6 +49,123 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_alchemic",
+      "name": "Alchemic",
+      "website": "https://thealchemic.com/",
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI agents that run customer interviews and surveys at scale and produce research reports.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/alchemic-raises-rs-25-cr-pre-seed-round-led-by-ajvc-12142326",
+          "title": "Alchemic raises Rs 2.5 Cr pre-seed round led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/alchemic",
+          "title": "Portfolio Companies: Alchemic",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_alphaxiv",
+      "name": "alphaXiv",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Platform that helps AI researchers and practitioners find, evaluate and work with research papers and their code.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://pulse2.com/alphaxiv-7-million-seed-funding/",
+          "title": "alphaXiv: $7 Million Seed Funding Closed To Bridge The AI Research To Practice Divide",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_alveo-technologies",
+      "name": "Alveo Technologies",
+      "website": "https://www.alveotechnologies.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Portable molecular diagnostics platform for early pathogen detection, starting with avian influenza testing in poultry.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-alveo-technologies",
+          "title": "Our Investment in Alveo Technologies",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_ami-labs",
@@ -147,6 +264,140 @@
       "confidence": "low"
     },
     {
+      "id": "co_beijan",
+      "name": "Beijan",
+      "website": "https://beijan.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "source",
+      "layer": "autonomy_tooling",
+      "description_short": "Modular GPS-denied autonomy for defence drones, artillery positioning and UAV ground stations.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-flam-to-verifaix-indian-startups-raised-about-59-mn-this-week/",
+          "title": "Indian Startup Funding — Startups Raised $59 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/beijan",
+          "title": "Portfolio Companies: Beijan",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_blockit",
+      "name": "Blockit",
+      "website": "https://www.blockit.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI scheduling assistant built on a calendar network that books meetings end to end without human help.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://aashay.substack.com/p/the-story-behind-haystacks-investment-9cf",
+          "title": "The Story Behind Haystack's Investment in Blockit",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_bubble-me",
+      "name": "Bubble Me",
+      "website": "https://bubbleme.in/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Magnesium-based wellness brand for sleep, stress relief and muscle recovery.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/bubble-me-raises-rs-15-cr-in-pre-seed-round-led-by-ajvc-11171125",
+          "title": "Bubble Me raises Rs 1.5 Cr in pre-seed round led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/bubble-me",
+          "title": "Portfolio Companies: Bubble Me",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_callosum",
       "name": "Callosum",
       "website": null,
@@ -169,6 +420,190 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_care-dale",
+      "name": "Care Dale",
+      "website": "https://caredale.in",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Home water-filtration products, starting with tap and shower filters against hard water.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/water-wellness-startup-care-dale-raises-pre-seed-funding-led-by-ajvc-11017614",
+          "title": "Water wellness startup Care Dale raises pre-seed funding led by ajvc",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/caredale",
+          "title": "Portfolio Companies: Caredale",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_cargologik",
+      "name": "Cargologik",
+      "website": "https://www.cargologik.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Low-cost supply chain visibility and orchestration software (tracking, quoting, rates, CO2 reporting) for small and mid-sized importers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-cargologik",
+          "title": "Our Investment in Cargologik",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_celleste-bio",
+      "name": "Celleste Bio",
+      "website": "https://celleste-bio.com/",
+      "hq_country": null,
+      "founded_year": 2022,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Grows cocoa ingredients from plant cell culture under controlled conditions, without cocoa trees.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://prnewswire.com/news-releases/cocoa-tech-company-celleste-bio-closes-4-5m-seed-round-to-scale-production-of-cell-cultured-cocoa-302322497.html",
+          "title": "Cocoa-Tech Company Celleste Bio Closes $4.5M Seed Round to Scale Production of Cell Cultured Cocoa",
+          "publisher": "PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://supplychangecapital.substack.com/p/investing-in-the-future-of-chocolate",
+          "title": "Investing in the Future of Chocolate: Why We Backed Celleste Bio",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_conductorai",
+      "name": "ConductorAI",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Dual-use software company using AI to compress government approval and document-review processes, working with DoD customers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://venturebeat.com/business/conductorai-raises-15m-to-accelerate-growth-and-cut-through-government-red-tape",
+          "title": "ConductorAI Raises $15M to Accelerate Growth and Cut Through Government Red Tape",
+          "publisher": "VentureBeat (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/conductorai-15-million-series-a-raised-to-improve-government-efficiency/",
+          "title": "ConductorAI: $15 Million (Series A) Raised To Improve Government Efficiency",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://haystack.vc/about-us",
+          "title": "Haystack | About Us",
+          "publisher": "Haystack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_corma",
@@ -363,6 +798,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_eradrive",
+      "name": "EraDrive",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Stanford spinout building vision- and AI-based autonomy modules that let satellites avoid collisions and maneuver with little ground control.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://payloadspace.com/eradrive-raises-5-3m-seed-to-bring-self-driving-tech-to-orbit",
+          "title": "EraDrive Raises $5.3M Seed to Bring Self Driving Tech to Orbit",
+          "publisher": "Payload",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.startupbusiness.it/en/eradrive-the-stanford-space-tech-company-raises-5-3-million/148832/",
+          "title": "EraDrive, the Stanford space tech company, raises $5.3 million",
+          "publisher": "StartupBusiness",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_factify",
       "name": "Factify",
       "website": null,
@@ -435,6 +918,88 @@
       "confidence": "low"
     },
     {
+      "id": "co_foodhealth-company-formerly-bitewell",
+      "name": "FoodHealth Company (formerly bitewell)",
+      "website": "https://www.foodhealth.co/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Nutrition-scoring company whose FoodHealth Score rates foods to steer consumers and partners toward healthier choices.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.ingredients-insight.com/news/foodhealth-raises-7-5m-to-advance-nutrition-transparency/",
+          "title": "FoodHealth raises $7.5m to advance nutrition transparency",
+          "publisher": "Ingredients Insight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_gaadimech",
+      "name": "GaadiMech",
+      "website": "http://www.gaadimech.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "mobility_ev",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Express car-servicing platform with service centres, transparent pricing and genuine parts.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/car-servicing-startup-gaadimech-raises-pre-seed-round-led-by-ajvc-10504385",
+          "title": "Car servicing startup GaadiMech raises pre-seed round led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/gaadimech",
+          "title": "Portfolio Companies: GaadiMech",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_gravis-robotics",
       "name": "Gravis Robotics",
       "website": null,
@@ -457,6 +1022,98 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_handypanda",
+      "name": "HandyPanda",
+      "website": "https://www.handypanda.in/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Quick-commerce delivery of building and renovation materials for homeowners and contractors.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/construction-tech-startup-handypanda-raises-rs-2-cr-led-by-ajvc-10996918",
+          "title": "Construction-tech startup HandyPanda raises Rs 2 Cr led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/handy-panda",
+          "title": "Portfolio Companies: Handy Panda",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_helios-ai",
+      "name": "Helios AI",
+      "website": "https://www.helios.sc/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI multi-agent platform that forecasts commodity prices and climate and supply risk for food and agriculture buyers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.producemarketguide.com/news/helios-ai-raises-4-7m-launches-ai-co-pilot-food-supply-chains",
+          "title": "Helios AI Raises $4.7M, Launches AI Co-Pilot for Food Supply Chains",
+          "publisher": "The Packer / Produce Market Guide",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://prnewswire.com/news-releases/helios-launches-cersi-the-worlds-first-ai-analyst-for-the-agricultural-supply-chain-raises-1-85-million-in-pre-seed-funding-301945407.html",
+          "title": "Helios Launches Cersi, the World's First AI Analyst for the Agricultural Supply Chain; Raises $1.85 Million in Pre-Seed Funding",
+          "publisher": "PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_hone",
@@ -627,6 +1284,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_kinetic-age",
+      "name": "Kinetic Age",
+      "website": "https://kinetic-age.in/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Doctor-led at-home fitness and preventive health service for seniors.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-dailyobjects-to-stockgro-indian-startups-raised-about-123-mn-this-week/",
+          "title": "Indian Startups Raised About $123 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/kinetic-age",
+          "title": "Portfolio Companies: Kinetic Age",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_limx-dynamics",
       "name": "LimX Dynamics",
       "website": null,
@@ -649,6 +1354,43 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_loamy",
+      "name": "Loamy",
+      "website": "https://getloamy.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-enabled, mobile-first ERP that runs food safety, inventory, compliance, logistics and pricing for food growers, manufacturers and distributors.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-loamy",
+          "title": "Our Investment in Loamy",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_machina-labs",
@@ -747,6 +1489,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_mindcase",
+      "name": "Mindcase",
+      "website": "https://mindcase.co/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI agents and workflows that turn unstructured market and consumer data into business insights.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/market-intelligence-startup-mindcase-raises-seed-funding-led-by-ajvc-11069641",
+          "title": "Market intelligence startup Mindcase raises seed funding led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/mindcase",
+          "title": "Portfolio Companies: Mindcase",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_mirendil",
       "name": "Mirendil",
       "website": null,
@@ -793,6 +1583,106 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_moromaa",
+      "name": "MoroMaa",
+      "website": "https://moromaa.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Moroccan hammam-inspired skin, hair and body care brand for India.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-flam-to-verifaix-indian-startups-raised-about-59-mn-this-week/",
+          "title": "Indian Startup Funding — Startups Raised $59 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/moromaa",
+          "title": "Portfolio Companies: MoroMaa",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_multibagg-ai",
+      "name": "Multibagg AI",
+      "website": "https://www.multibagg.ai/",
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native equity research and analytics platform for retail investors in Indian listed stocks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/equity-research-startup-multibagg-ai-raises-rs-15-cr-in-pre-seed-round-led-by-ajvc-10980823",
+          "title": "Equity research startup Multibagg AI raises Rs 1.5 Cr in pre-seed round led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/multibagg-ai",
+          "title": "Portfolio Companies: Multibagg AI",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_mytra",
@@ -843,6 +1733,283 @@
       "confidence": "low"
     },
     {
+      "id": "co_nominal",
+      "name": "Nominal",
+      "website": "https://nominal.io",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "autonomy_tooling",
+      "description_short": "Software platform for hardware test and evaluation that ingests, monitors and analyzes high-rate test data from physical systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://nominalinc.substack.com/p/nominal-raises-75m-series-b",
+          "title": "Nominal raises $75M Series B",
+          "publisher": "Nominal (company Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://haystack.vc/about-us",
+          "title": "Haystack | About Us",
+          "publisher": "Haystack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/nominal-75-million-raised-for-real-time-test-stack-for-physical-systems/amp/",
+          "title": "Nominal: $75 Million Raised For Real-Time Test Stack For Physical Systems",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/03/05/hardware-testing-startup-nominal-raises-80m-1b-valuation/",
+          "title": "Hardware testing startup Nominal raises $80M at $1B valuation",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://aashay.substack.com/p/haystack-new-funds-new-era",
+          "title": "Haystack: New Funds, New Era",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://semilshah.com/2024/04/22/the-story-behind-haystacks-investment-in-nominal/",
+          "title": "The Story Behind Haystack's Investment in Nominal",
+          "publisher": "Semil Shah (semilshah.com)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/nominal-emerges-from-stealth-with-backing-from-general-catalyst-lux-capital-founders-fund-for-navigating-mission-critical-data-analytics",
+          "title": "Nominal Emerges From Stealth With Backing From General Catalyst, Lux Capital, Founders Fund for Navigating Mission-Critical Data Analytics",
+          "publisher": "Silicon UK (press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "founded_year": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "layer": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_nuyug",
+      "name": "Nuyug",
+      "website": "https://nuyug.com/",
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Mass-premium fashion jewellery brand positioned between imitation and fine jewellery.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/jewellery-brand-nuyug-raises-pre-seed-round-led-by-ajvc-9758459",
+          "title": "Jewellery brand Nuyug raises pre-seed round led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/nuyug",
+          "title": "Portfolio Companies: Nuyug",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_pangram",
+      "name": "Pangram",
+      "website": "http://pangram.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Detects AI-generated text and images, sold through a subscription, browser extension and API.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+          "title": "As AI content floods the internet, Pangram raises $9M to detect it",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/pangram-raises-9-million-to-expand-ai-text-and-image-detection-technology/",
+          "title": "Pangram Raises $9 Million To Expand AI Text And Image Detection Technology",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_peltier-technology",
+      "name": "Peltier Technology",
+      "website": "https://peltierpro.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Modular solid-state (thermoelectric) refrigeration totes, racks and IoT software for grocery, pharma and logistics cold chains.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-peltier-technology",
+          "title": "Our Investment in Peltier Technology",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_people-science",
+      "name": "People Science",
+      "website": "https://peoplescience.health/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Virtual clinical research platform (Chloe) that runs at-home studies to back health claims for wellness and nutrition products.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-people-science",
+          "title": "Our Investment in People Science",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_physical-superintelligence",
       "name": "Physical Superintelligence",
       "website": null,
@@ -865,6 +2032,40 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_polyphron",
+      "name": "Polyphron",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Grows and simulates living human tissue as a physical testbed for AI-generated drug and biology predictions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://alleywatch.com/2026/09/the-alleywatch-startup-daily-funding-report-9-17-2026/",
+          "title": "The AlleyWatch Startup Daily Funding Report: 9/17/2026",
+          "publisher": "AlleyWatch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_pragmatik-labs",
@@ -963,6 +2164,37 @@
       "confidence": "low"
     },
     {
+      "id": "co_reveal-foods",
+      "name": "Reveal Foods",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Antibody-based lateral-flow device that screens food for multiple chemical contaminants at the point of use in about 20 minutes.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-reveal-foods",
+          "title": "Our Investment in Reveal Foods",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_river-ai",
       "name": "River AI",
       "website": null,
@@ -1009,6 +2241,118 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_scooter",
+      "name": "Scooter",
+      "website": "https://www.thescooter.ai/",
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI hiring platform that assesses sales candidates on real sales scenarios rather than CVs.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/sales-hiring-startup-scooter-raises-rs-15-cr-pre-seed-round-12624249",
+          "title": "Sales hiring startup Scooter raises Rs 1.5 Cr pre-seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/from-dailyobjects-to-stockgro-indian-startups-raised-about-123-mn-this-week/",
+          "title": "Indian Startups Raised About $123 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/scooter",
+          "title": "Portfolio Companies: Scooter",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_slayd",
+      "name": "Slayd",
+      "website": "https://slayd.in/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-driven fashion discovery platform for Gen Z shoppers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-flam-to-verifaix-indian-startups-raised-about-59-mn-this-week/",
+          "title": "Indian Startup Funding — Startups Raised $59 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/slayd",
+          "title": "Portfolio Companies: Slayd",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_standard-bots",
@@ -1059,6 +2403,43 @@
       "confidence": "low"
     },
     {
+      "id": "co_supply-pay",
+      "name": "Supply Pay",
+      "website": "https://supplypay.io/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-underwritten trade finance for small and mid-sized Mexican fresh-produce exporters selling into the US.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://supplychangecapital.substack.com/p/our-investment-in-supply-pay",
+          "title": "Our investment in Supply Pay",
+          "publisher": "Supply Change Capital (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_sycamore",
       "name": "Sycamore",
       "website": null,
@@ -1083,6 +2464,132 @@
       "confidence": "low"
     },
     {
+      "id": "co_synthefy",
+      "name": "Synthefy",
+      "website": "https://www.synthefy.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds foundation models trained on numerical and tabular data for prediction tasks such as fraud detection and pricing.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://siliconangle.com/?p=812870",
+          "title": "Exclusive: Synthefy raises $6.5M for its number-crunching models trained on numerical data instead of words",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_terrantic",
+      "name": "Terrantic",
+      "website": "https://www.terrantic.com/",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI data-contextualization platform giving growers, packers and food processors operational visibility to cut waste and raise yields.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://globalaginvesting.com/agtech-terrantic-clinches-3-5m-for-digitized-supply-chain-in-oversubscribed-seed-round/",
+          "title": "Agtech Terrantic Clinches $3.5M for Digitized Supply Chain in Oversubscribed Seed Round",
+          "publisher": "Global AgInvesting",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_thread-factory",
+      "name": "Thread Factory",
+      "website": "https://threadfactory.in/",
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "B2B platform connecting independent apparel retailers with manufacturers across India.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/fashion-supply-startup-thread-factory-raises-pre-seed-funding-led-by-ajvc-11261936",
+          "title": "Fashion supply startup Thread Factory raises pre-seed funding led by AJVC",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/thread-factory",
+          "title": "Portfolio Companies: Thread Factory",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_trase",
       "name": "Trase",
       "website": null,
@@ -1105,6 +2612,88 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_type-five",
+      "name": "Type Five",
+      "website": "https://www.typefive.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": null,
+      "sector_classified_by": null,
+      "layer": null,
+      "description_short": "Tech-enabled homebuilder whose parametric design software lets local contractors build ADUs and starter homes from standard building blocks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://aashay.substack.com/p/the-story-behind-haystacks-investment-ffe",
+          "title": "The Story Behind Haystack's Investment in Type Five",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_unveilr-ai",
+      "name": "Unveilr AI",
+      "website": "https://unveilrai.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Managed service that helps brands win organic leads from AI assistants and Google search.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-simple-energy-to-arivihan-indian-startups-raised-over-233-mn-this-week/",
+          "title": "From Simple To Arivihan - Indian Startups Raised $233 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/unveilr",
+          "title": "Portfolio Companies: Unveilr",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_veeda-ai",
@@ -1160,6 +2749,54 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_wudhomes",
+      "name": "wudhomes",
+      "website": "https://wudhomes.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Design-led contemporary furniture brand using tech-enabled workflows to make custom furniture.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/",
+          "title": "From Boldfit To Origin — Indian Startups Raised About $236 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajuniorvc.com/portfolio-companies/wudhomes",
+          "title": "Portfolio Companies: Wudhomes",
+          "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_zyg",

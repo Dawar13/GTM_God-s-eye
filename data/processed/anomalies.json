@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T18:46:26+00:00",
+  "generated_at": "2026-10-29T19:01:43+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -631,6 +631,204 @@
       "raw_value": "Targeting $40M",
       "reason": "notes say the amount may not be a final close",
       "resolution": "confidence low"
+    },
+    {
+      "id": "anom_research_0071",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "funds[AJVC Trust].size_original",
+      "raw_value": "INR 100 Cr (Mar 2025; first close per Inc42) | nearly INR 165 Cr (founder quote, Sep 2025) | INR 200 Cr (Sep 2025 headlines; commitments surpassing Rs 200 crore)",
+      "reason": "sources disagree: Entrackr and Entrepreneur India quote the founder saying the fund closed at nearly Rs 165 Cr after commitments passed Rs 200 Cr; Venture Intelligence also gives Rs 165 Cr. Inc42 says 'closed ... at INR 200 Cr', which matches commitments, not the capped size.",
+      "resolution": "chose INR 165 Cr"
+    },
+    {
+      "id": "anom_research_0072",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "deals_per_year_target (no schema field)",
+      "raw_value": "28 pre-seed deals/yr (user-supplied LinkedIn post) | 12-15 pre-seed startups annually (Entrepreneur India, Mar 2025) | almost 90 startups by February 2028 (Inc42, Sep 2025)",
+      "reason": "sources disagree: The 28/yr figure did not appear on any fetched page; the only stated targets are 12-15/yr (Mar 2025) and ~90 by Feb 2028 (Sep 2025).",
+      "resolution": "chose not recorded"
+    },
+    {
+      "id": "anom_research_0073",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "stated_sectors",
+      "raw_value": "AI, defence, consumer tech and brands (user-supplied LinkedIn post) | SaaS, AI, consumer tech, consumer brands, B2B (Inc42 Sep 2025) | AI, SaaS, consumer technology (Entrepreneur India Mar 2025)",
+      "reason": "sources disagree: Defence is not stated as a focus on ajvc's site or in fund press; the only defence link found is one portfolio company (Beijan, tagged Defense/Robotics, 26C1 batch). The FAQ says it is open to any Indian company raising pre-seed.",
+      "resolution": "chose ai_apps_agents, enterprise_saas, consumer"
+    },
+    {
+      "id": "anom_research_0074",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "portfolio_count_reported",
+      "raw_value": "32 investments to date (Inc42, 15 Sep 2026) | 26 companies listed on ajuniorvc.com/portfolio (read 2026-10-30)",
+      "reason": "sources disagree: The site's homepage counter loads dynamically and the portfolio list is likely incomplete; Inc42 reports a total count.",
+      "resolution": "chose 32"
+    },
+    {
+      "id": "anom_research_0075",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "rounds[GaadiMech].company.founded_year",
+      "raw_value": "2024 (Entrackr body: 'Co-founded in 2024') | 2020 (Entrackr subheadline)",
+      "reason": "sources disagree: Same page gives two years; left blank.",
+      "resolution": "chose null"
+    },
+    {
+      "id": "anom_research_0076",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "rounds[Mindcase].stage",
+      "raw_value": "seed (Entrackr headline) | pre-seed (Entrackr body)",
+      "reason": "sources disagree: Body text says 'pre-seed funding round', matching ajvc's pre-seed-only mandate.",
+      "resolution": "chose pre_seed"
+    },
+    {
+      "id": "anom_research_0077",
+      "source_id": "research",
+      "row_ref": "ajvc",
+      "field": "rounds[Scooter].date",
+      "raw_value": "5 Oct 2926 (Inc42 table, typo) | 05 Oct 2026 (Entrackr publish date)",
+      "reason": "sources disagree: Inc42 entry is an obvious typo for 2026.",
+      "resolution": "chose 2026-10-05"
+    },
+    {
+      "id": "anom_research_0078",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "check_min_usd / check_max_usd",
+      "raw_value": "$1M-$3M initial check (homepage body and About Us FAQ) | $500K-$2M in initial rounds (homepage meta description) | median initial check around $700K (founder blog, Sept 2023)",
+      "reason": "sources disagree: Visible page text and the FAQ both say $1M-$3M and match the larger $85M Fund VIII; the meta description and the 2023 median reflect earlier, smaller funds.",
+      "resolution": "chose $1M-$3M"
+    },
+    {
+      "id": "anom_research_0079",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "funds.IV",
+      "raw_value": "Haystack IV, $23M, 2018-01-31 (Shai Goldman list, no source) | Haystack Ventures IV, L.P. $25M offering, $0 sold at filing (Form D 2017-03-30); Crunchbase News: fourth fund 'targeted $25 million'",
+      "reason": "sources disagree: Only the $25M target is documented; no amended Form D or announcement gives the final size or close date, and the $23M figure could not be found on any page.",
+      "resolution": "chose size and close date left null"
+    },
+    {
+      "id": "anom_research_0080",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "funds.V",
+      "raw_value": "Haystack Ventures V, $50M, 2019-07-05 (Form D/A, Crunchbase News) | second 'Haystack Ventures V', $50M, 2020-02-02 (tweet in Shai Goldman list)",
+      "reason": "sources disagree: EDGAR has a single Haystack Ventures V, L.P. entity; the Feb 2020 tweet (X, login wall, not fetched) is most likely the public announcement of the same fund, not a separate vehicle.",
+      "resolution": "chose one Fund V, $50M, fully sold per Form D/A filed 2019-07-05"
+    },
+    {
+      "id": "anom_research_0081",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "funds numbering (2023 fund)",
+      "raw_value": "'Haystack Ventures VIII', $75M, 2023-09-10 (Shai Goldman list) | Haystack VII, $75M (Semil Shah and Aashay Sanghvi posts of 2023-09-10; Form D for Haystack Ventures VII, L.P.)",
+      "reason": "sources disagree: Both the founder's and the partner's announcements and the SEC entity name call the 2023 $75M fund VII; VIII is the 2025-26 $85M fund.",
+      "resolution": "chose Haystack Ventures VII"
+    },
+    {
+      "id": "anom_research_0082",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "funds.VIII close_date",
+      "raw_value": "Form D filed 2025-06-12: $79.15M sold of $85M offering, first sale 2025-05-19 | Founder blog 2026-04-26: 'We raised new funds earlier this year', core fund $85M",
+      "reason": "sources disagree: The Form D shows a mid-2025 first close; the founder's post places the final close in early 2026 without a day.",
+      "resolution": "chose $85M, closed in 2026 (year precision)"
+    },
+    {
+      "id": "anom_research_0083",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "funds.Needles III size",
+      "raw_value": "$25M (founder blog 2026-04-26) | $19.8M offering, fully sold, 10 investors (Form D 2025-06-12)",
+      "reason": "sources disagree: The later announcement states $25M; the 2025 Form D likely reflects a first close with no amendment filed since.",
+      "resolution": "chose $25M"
+    },
+    {
+      "id": "anom_research_0084",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "partners (Aashay Sanghvi)",
+      "raw_value": "Partner / 'now a full partner in the fund' (semilshah.com 2026-04-26; Aashay's own 2026-04-26 post) | live haystack.vc/team page lists only Semil Shah (Founding Partner) and Divya Dhulipala (Principal)",
+      "reason": "sources disagree: Dated announcements from the founder and from Aashay describe him as a partner; the team page appears incomplete. Not resolved whether he has since left.",
+      "resolution": "chose Aashay Sanghvi, Partner"
+    },
+    {
+      "id": "anom_research_0085",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "hq_city",
+      "raw_value": "San Francisco (Form D VII and VIII, 548 Market Street) | Mill Valley (Form D V and VI) | Menlo Park (Form D IV, 2017; Tracxn)",
+      "reason": "sources disagree: The two most recent filings use a San Francisco address (a PMB mailbox) and the Alignment Summit is in San Francisco; the older addresses are from earlier funds.",
+      "resolution": "chose San Francisco"
+    },
+    {
+      "id": "anom_research_0086",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "portfolio_count_reported",
+      "raw_value": "about 290 pre-seed/seed investments (founder blog, Sept 2023) | 263 portfolio companies (Tracxn, Oct 2026)",
+      "reason": "sources disagree: The firm's own figure is preferred over the database count.",
+      "resolution": "chose 290"
+    },
+    {
+      "id": "anom_research_0087",
+      "source_id": "research",
+      "row_ref": "haystack",
+      "field": "rounds.Pangram stage",
+      "raw_value": "no stage label (TechCrunch, Pulse 2.0) | Series A (Tracxn)",
+      "reason": "sources disagree: Neither press page names a stage, and Tracxn is a database hint only.",
+      "resolution": "chose undisclosed"
+    },
+    {
+      "id": "anom_research_0088",
+      "source_id": "research",
+      "row_ref": "mavka-ventures",
+      "field": "partners[Vitaly Golomb].title",
+      "raw_value": "General Partner (mavkaventures.com/about; mavkacap.com/team bio) | Managing Partner, Mavka Ventures (Icebreaker mirror of his LinkedIn; Nov 2025 Mavka Report sign-off 'Managing Partner | Mavka Ventures and Mavka Capital')",
+      "reason": "sources disagree: The fund's own site (mavkaventures.com/about) lists him as General Partner, and so does the affiliate's team page. 'Managing Partner' appears only on a database mirror and in a newsletter sign-off.",
+      "resolution": "chose General Partner"
+    },
+    {
+      "id": "anom_research_0089",
+      "source_id": "research",
+      "row_ref": "supply-change-capital",
+      "field": "funds[Supply Change Capital Fund I LP].size_original",
+      "raw_value": "40000000 (PR Newswire / TechCrunch, 2023-07-24 close) | 36814475 sold (SEC Form D/A filed 2023-05-31, offering 'Indefinite')",
+      "reason": "sources disagree: The Form D/A came before the announced final close. The press release and TechCrunch report the closed fund size.",
+      "resolution": "chose 40000000"
+    },
+    {
+      "id": "anom_research_0090",
+      "source_id": "research",
+      "row_ref": "supply-change-capital",
+      "field": "hq_city",
+      "raw_value": "Los Angeles and Chicago (PR Newswire 2023 boilerplate) | North Hills, CA (Los Angeles) address on both SEC Form D filings",
+      "reason": "sources disagree: Both Form Ds (2023, 2025) give a Los Angeles address. Chicago is a second base named only in the 2023 release.",
+      "resolution": "chose Los Angeles"
+    },
+    {
+      "id": "anom_research_0091",
+      "source_id": "research",
+      "row_ref": "supply-change-capital",
+      "field": "check_max_usd",
+      "raw_value": "$500K-$1M average initial check (deal-process post, 2025) | $1.3M average check across the three led new 2024 deals (2024 Year in Review)",
+      "reason": "sources disagree: The deal-process post is the stated Fund II policy. The 2024 figure is the realized average for led Fund I deals.",
+      "resolution": "chose 500000-1000000"
+    },
+    {
+      "id": "anom_research_0092",
+      "source_id": "research",
+      "row_ref": "supply-change-capital",
+      "field": "accepts_cold_inbound",
+      "raw_value": "yes: intake form, every submission reviewed within 7 days (deal-process post) | all five 2025 new investments came through investor referrals (2025 Year in Review)",
+      "reason": "sources disagree: The firm explicitly takes cold inbound, but recent deals all came from referrals, so a warm intro is materially better.",
+      "resolution": "chose yes"
     }
   ]
 }

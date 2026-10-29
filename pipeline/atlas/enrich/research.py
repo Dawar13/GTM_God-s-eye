@@ -231,6 +231,16 @@ def _apply_investor(store: Store, inv: dict, f: dict) -> None:
         if region:
             inv["region"] = region
             inv["field_sources"]["region"] = inv["field_sources"]["hq_country"]
+    # A check size stated in another currency is converted at the research year's rate.
+    rng = facts.get("check_range")
+    if rng and "check_min_usd" not in facts and "check_max_usd" not in facts:
+        year = int(f["researched_at"][:4])
+        idx = _attach(inv, pages, rng["pages"])
+        for bound, field in (("min", "check_min_usd"), ("max", "check_max_usd")):
+            usd, _ = fx.to_usd(rng["value"][bound], rng["value"]["currency"], year)
+            if usd is not None:
+                inv[field] = usd
+                cite(inv, field, idx)
     if (
         inv["check_min_usd"]
         and inv["check_max_usd"]

@@ -421,6 +421,70 @@
           ],
           "additionalProperties": false
         },
+        "check_range": {
+          "description": "Check size in the currency the firm states it in (e.g. INR); converted by the pipeline",
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "object",
+              "properties": {
+                "min": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "max": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "currency": {
+                  "type": "string",
+                  "minLength": 3,
+                  "maxLength": 3
+                }
+              },
+              "required": [
+                "min",
+                "max",
+                "currency"
+              ],
+              "additionalProperties": false
+            },
+            "pages": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "description": "Indexes into pages"
+            },
+            "snippet": {
+              "type": "string",
+              "description": "Supporting text from the page, ≤ 25 words, internal verification only"
+            }
+          },
+          "required": [
+            "value",
+            "pages",
+            "snippet"
+          ],
+          "additionalProperties": false
+        },
         "leads": {
           "type": "object",
           "properties": {

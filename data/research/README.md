@@ -29,7 +29,7 @@ Schemas for every file are in `data/schemas/research_*.schema.json`, generated f
 
 Required for every tier: `key`, `entity_type`, `tier`, `name` (official, as the firm writes it), `status` (`active | inactive | not_found | not_an_investor`), `researched_at`, `identity_check`, `pages`, `facts`, `funds`, `partners`, `rounds`, `conflicts`, `open_items`.
 
-`facts` holds any of: `aliases, type, website, linkedin, hq_city, hq_country (ISO-2), stages, check_min_usd, check_max_usd, leads, thesis_text, stated_sectors, application_url, accepts_cold_inbound, invests_in_indian_founders, requires_us_entity, portfolio_count_reported`. Each is `{ "value": …, "pages": [indexes into pages], "snippet": "≤ 25 words" }`. Leave a fact out rather than guess.
+`facts` holds any of: `aliases, type, website, linkedin, hq_city, hq_country (ISO-2), stages, check_min_usd, check_max_usd` (USD only) or `check_range` (`{min, max, currency}` for checks stated in another currency, e.g. INR in rupees), `leads, thesis_text, stated_sectors, application_url, accepts_cold_inbound, invests_in_indian_founders, requires_us_entity, portfolio_count_reported`. Each is `{ "value": …, "pages": [indexes into pages], "snippet": "≤ 25 words" }`. Leave a fact out rather than guess.
 
 | | Tier A | Tier B |
 |---|---|---|

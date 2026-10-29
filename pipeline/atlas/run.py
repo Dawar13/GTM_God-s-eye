@@ -7,7 +7,7 @@ uv run python -m atlas.run   (from pipeline/)
 import json
 import sys
 
-from atlas import build
+from atlas import build, research_log
 from atlas.config import RESEARCH
 from atlas.enrich import research as research_files
 from atlas.export.write_json import DATASET_NAMES, now_iso, write_dataset
@@ -159,6 +159,8 @@ def main() -> int:
     store = Store()
     extras = run(store)
     counts = export(store)
+    loaded = research_files.load()
+    research_log.write_log([*loaded.investors, *loaded.competitors, *loaded.rounds])
     print_summary(counts, extras)
     return 0
 

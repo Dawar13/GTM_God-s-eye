@@ -139,6 +139,17 @@ export const InvestorResearch = z.strictObject({
     stages: fact(z.array(InvestorStage)).optional(),
     check_min_usd: fact(Money).optional(),
     check_max_usd: fact(Money).optional(),
+    check_range: fact(
+      z.strictObject({
+        min: Money.nullable(),
+        max: Money.nullable(),
+        currency: z.string().length(3),
+      }),
+    )
+      .optional()
+      .describe(
+        "Check size in the currency the firm states it in (e.g. INR); converted by the pipeline",
+      ),
     leads: fact(z.boolean()).optional(),
     thesis_text: fact(z.string()).optional(),
     stated_sectors: fact(z.array(Sector)).optional(),
