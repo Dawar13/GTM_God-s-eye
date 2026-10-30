@@ -712,8 +712,10 @@ def _apply_seed_round_check(store: Store, companies: CompanyIndex, f: dict, role
         ),
         None,
     )
-    if seed is None:
-        return
+    if seed is None:  # a check that matches no listed round would be lost silently
+        raise ResearchFileError(
+            f"{f['key']}: seed_company {f['seed_company']!r} matches no seed-list round"
+        )
     if f["verdict"] == "not_found":
         seed["notes"] = "; ".join(
             filter(None, [seed["notes"], "no public source found in Phase 1"])
