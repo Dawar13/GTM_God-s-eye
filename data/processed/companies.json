@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T06:12:00+00:00",
+  "generated_at": "2026-10-30T06:28:11+00:00",
   "records": [
     {
       "id": "co_adaption-labs",
@@ -27,6 +27,130 @@
       "confidence": "low"
     },
     {
+      "id": "co_agentuity",
+      "name": "Agentuity",
+      "website": "https://www.agentuity.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Cloud platform built from scratch for deploying and managing autonomous AI agents at scale.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://refreshmiami.com/news/agentuity-raises-4m-seed-round-to-build-an-ai-first-cloud-for-autonomous-agents/",
+          "title": "Agentuity raises $4M seed round to build an AI-first cloud for autonomous agents",
+          "publisher": "Refresh Miami",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://refreshmiami.com/news/meet-the-vc-duo-shaking-up-miamis-tech-scene/",
+          "title": "How OneSixOne Ventures is making early-stage investing a community-driven effort (Meet the VC duo shaking up Miami's tech scene)",
+          "publisher": "Refresh Miami",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pitchbook.com/profiles/fund/21349-27F",
+          "title": "Onesixone Founders Fund: Performance | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_agile-space-industries",
+      "name": "Agile Space Industries",
+      "website": "https://agilespaceindustries.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds in-space propulsion systems (thrusters, propellant tanks) and test stands for spacecraft makers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://payloadspace.com/agile-space-industries-closes-17m-series-a/",
+          "title": "Agile Space Industries Closes $17M Series A",
+          "publisher": "Payload",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://spacenexus.us/investors/lockheed-martin-ventures",
+          "title": "Lockheed Martin Ventures (investor profile)",
+          "publisher": "SpaceNexus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_ai",
       "name": "ai&",
       "website": null,
@@ -49,6 +173,60 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_akashalabdhi",
+      "name": "AkashaLabdhi",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops expandable space habitats (ANTARIKSHAB) and dual-use orbital and defence infrastructure; incubated at IISc and IIT Roorkee.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/space-tech-startup-akashalabdhi-raises-12-mn-in-pre-seed-round-10501032",
+          "title": "Space tech startup Akashalabdhi raises $1.2 Mn in pre seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://riceberg.vc/resources",
+          "title": "Resources · riceberg",
+          "publisher": "Riceberg Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/akashalabdhi/financials",
+          "title": "AkashaLabdhi Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_alchemic",
@@ -101,6 +279,95 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_allgood",
+      "name": "allGood",
+      "website": "https://allgoodhq.com/",
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI marketing-operations assistant that builds campaigns, uploads lists and prioritises leads for marketing teams.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://allgoodhq.com/blog/introducing-mary-an-ai-marketing-operations-assistant",
+          "title": "We Raised $3M. Introducing Mary, AI MOps Assistant | allGood",
+          "publisher": "allGood",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.engineeringcapital.com/",
+          "title": "Engineering Capital",
+          "publisher": "Engineering Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_allspice",
+      "name": "AllSpice",
+      "website": "https://allspice.io",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Collaboration, revision-control and design-review hub for hardware and electrical engineering teams.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/01/31/allspice-thinks-hardware-developers-lack-their-own-github-so-it-is-building-one/",
+          "title": "AllSpice thinks hardware developers lack their own 'GitHub,' so it is building one",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "layer": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_alphaxiv",
@@ -192,6 +459,110 @@
       "confidence": "low"
     },
     {
+      "id": "co_antaris",
+      "name": "Antaris",
+      "website": "https://antaris.space/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI software platform for designing, simulating, building and operating ISR and communications satellite missions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://antaris.space/news/antaris-raises-28-million-series-a-to-accelerate-ai-driven-space-missions",
+          "title": "Antaris Raises $28 Million Series A to Accelerate AI-Driven Space Missions",
+          "publisher": "Antaris",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://globalventuring.com/corporate/industrial/defence-company-lockheed-martin-bumps-up-vc-investment-fund-to-1bn/",
+          "title": "Defence company Lockheed Martin bumps up VC investment fund to $1bn",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://spacenexus.us/investors/lockheed-martin-ventures",
+          "title": "Lockheed Martin Ventures (investor profile)",
+          "publisher": "SpaceNexus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_aperturedata",
+      "name": "ApertureData",
+      "website": "https://aperturedata.io",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Database purpose-built for managing images and video used in data science and machine learning.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/02/08/aperturedata-is-building-a-database-focussed-on-images-with-3m-seed/",
+          "title": "ApertureData is building a database focused on images with $3M seed",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_apptronik",
       "name": "Apptronik",
       "website": null,
@@ -214,6 +585,58 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_arch0",
+      "name": "Arch0",
+      "website": "https://arch0.com",
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Identity-first access management and AI-based cloud security for multi-cloud systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/arch0/financials",
+          "title": "Arch0 Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/arch0-bags-funding-to-offer-ai-solutions-in-fighting-cloud-security-risks",
+          "title": "Arch0 Bags Funding To Offer AI Solutions For Cloud Security Risks",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_aseon-labs",
@@ -275,6 +698,54 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_atom-computing",
+      "name": "Atom Computing",
+      "website": "https://atom-computing.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds gate-based quantum computers from arrays of optically trapped neutral atoms.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://atom-computing.com/atom-computing-raises-60m-series-b-to-build-second-generation-quantum-computing-systems/",
+          "title": "Atom Computing Raises $60M Series B to Build Second-Generation Quantum Computing Systems",
+          "publisher": "Atom Computing",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -356,6 +827,54 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_auditoria-ai",
+      "name": "Auditoria.AI",
+      "website": "https://www.auditoria.ai/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Agentic AI automation for corporate finance teams, covering collections, invoicing and financial analysis.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.auditoria.ai/pr-auditoria-ai-raises-38m-in-series-b-funding-to-usher-agentic-ai-era-for-enterprise-finance-teams/",
+          "title": "Auditoria.AI Raises $38M in Series B Funding to Usher Agentic AI Era for Enterprise Finance Teams",
+          "publisher": "Auditoria.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.engineeringcapital.com/",
+          "title": "Engineering Capital",
+          "publisher": "Engineering Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_beacon-ai",
@@ -650,6 +1169,65 @@
       "confidence": "low"
     },
     {
+      "id": "co_cambium",
+      "name": "Cambium",
+      "website": "https://cambiumglobal.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops and manufactures advanced materials such as high-temperature composites and coatings for defense and aerospace.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://cambiumglobal.com/newsroom/cambium-secures-100m-series-b",
+          "title": "Cambium secures $100M Series B to accelerate the discovery and scaling of advanced materials",
+          "publisher": "Cambium",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://massinvestordatabase.com/Lockheed+Martin+Ventures/investmentfirm.php",
+          "title": "Lockheed Martin Ventures - Massinvestor Venture Capital and Private Equity Database",
+          "publisher": "Massinvestor",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_care-dale",
       "name": "Care Dale",
       "website": "https://caredale.in",
@@ -823,6 +1401,210 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_chargelab",
+      "name": "ChargeLab",
+      "website": "https://chargelab.co",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "mobility_ev",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Hardware-agnostic software for running electric-vehicle charging networks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2021/02/23/chargelab-raises-seed-capital-to-be-the-software-provider-powering-ev-charging-infrastructure/",
+          "title": "ChargeLab raises seed capital to be the software provider powering EV charging infrastructure",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_cligent-aerospace",
+      "name": "Cligent Aerospace",
+      "website": "https://www.cligent.com",
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "mobility_ev",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops a hybrid-electric short-takeoff-and-landing aircraft for short and remote airstrips.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.caplight.com/company/cligentaerospace",
+          "title": "Cligent Aerospace Valuation & Funding History | Caplight",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "co_clockout",
+      "name": "Clockout",
+      "website": "https://www.joinclockout.com",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "fintech",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Embedded earned-wage-access infrastructure that banks and credit unions offer inside their mobile banking apps.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.joinclockout.com/blogs/clockout-raises-2-million-seed-round-to-transform-earned-wage-access-for-financial-institutions",
+          "title": "Clockout Raises $2M Seed for EWA at Financial Institutions",
+          "publisher": "Clockout",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://refreshmiami.com/news/clockout-secures-2m-to-bring-earned-wage-access-to-community-banks/",
+          "title": "Clockout secures $2M to bring earned wage access to banks and credit unions",
+          "publisher": "Refresh Miami",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_coderabbit",
+      "name": "CodeRabbit",
+      "website": "https://coderabbit.ai/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI code review platform that checks code changes for software teams and open-source maintainers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techstartups.com/2026/08/12/coderabbit-raises-143m-at-1-5b-valuation-to-manage-the-ai-generated-code-explosion/",
+          "title": "CodeRabbit raises $143M at $1.5B valuation to manage the AI-generated code explosion",
+          "publisher": "Tech Startups",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.coderabbit.ai/blog/introducing-agentic-change-management",
+          "title": "Introducing Agentic Change Management",
+          "publisher": "CodeRabbit (company blog)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.engineeringcapital.com/",
+          "title": "Engineering Capital",
+          "publisher": "Engineering Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2024/08/15/coderabbit-raises-16m-to-bring-ai-to-code-reviews/",
+          "title": "CodeRabbit raises $16M to bring AI to code reviews",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -1039,6 +1821,50 @@
       "confidence": "low"
     },
     {
+      "id": "co_deepweave",
+      "name": "DeepWeave",
+      "website": "https://deepweave.ai",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI tooling for semiconductor backend design that co-optimizes power, performance and area inside existing chip-design flows.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.deepweave.ai/",
+          "title": "DeepWeave (news: DeepWeave Raises Pre-Seed Investment to Advance AI-Native Backend Design, March 23, 2026)",
+          "publisher": "DeepWeave",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/root-ventures",
+          "title": "Root Ventures - CB Insights investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_dialogue-ai",
       "name": "Dialogue AI",
       "website": "https://www.dialogueai.com",
@@ -1096,6 +1922,54 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_dirac-labs",
+      "name": "Dirac Labs",
+      "website": "https://diraclabs.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Quantum-sensing navigation that positions vehicles from Earth's magnetic field where GPS fails or is jammed.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/dirac-labs/financials",
+          "title": "Dirac Labs Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/riceberg-ventures",
+          "title": "Riceberg Ventures Portfolio Investments, Riceberg Ventures Funds, Riceberg Ventures Exits",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "co_doctronic",
@@ -1164,6 +2038,46 @@
       "confidence": "high"
     },
     {
+      "id": "co_dusty-robotics",
+      "name": "Dusty Robotics",
+      "website": "https://dustyrobotics.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Builds mobile robots that print construction layout directly onto job-site floors.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2021/06/15/construction-robotics-firm-dusty-raises-16-5m/",
+          "title": "Construction robotics firm Dusty raises $16.5M",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "layer": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_elorian-ai",
       "name": "Elorian AI",
       "website": null,
@@ -1186,6 +2100,113 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_elroy-air",
+      "name": "Elroy Air",
+      "website": "https://elroyair.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops autonomous hybrid-electric VTOL drones that carry heavy cargo for defense, disaster response and commercial logistics; merging with a SPAC.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://elroyair.com/company/news/press-releases/PIPE-upsizing-to-175-million-with-lockheed-martin-ventures/",
+          "title": "Elroy Air Announces Upsizing of PIPE Investments to $175 Million with Participation from Lockheed Martin Ventures",
+          "publisher": "Elroy Air",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_emobi",
+      "name": "Emobi",
+      "website": "https://www.emobi.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "mobility_ev",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Cloud-based EV charging roaming and Plug & Charge platform (JustPlug) linking automakers, fleets and charging networks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/emobi-secures-3-4-million-in-seed-funding-to-expand-justplug-technology-and-simplify-ev-charging-302672597.html",
+          "title": "Emobi Secures $3.4 Million in Seed Funding to Expand JustPlug Technology and Simplify EV Charging",
+          "publisher": "PR Newswire (Emobi release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/onesixone-ventures",
+          "title": "OneSixOne Ventures Investments, Funds, Exits | CB Insights",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_encharge-ai",
@@ -1432,6 +2453,140 @@
       "confidence": "high"
     },
     {
+      "id": "co_etherealx",
+      "name": "EtherealX",
+      "website": "https://www.etherealx.space",
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Building a fully reusable medium-lift orbital launch vehicle (Razor Crest Mk-1); legal name Ethereal Exploration Guild, since rebranded The Guild.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/etherealx-bags-20-5m-to-advance-reusable-rocket-development/",
+          "title": "EtherealX Bags $20.5 Mn To Advance Reusable Rocket Development",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://yourstory.com/2026/01/the-guild-series-a-tdk-ventures-big-capital-valuation-jumps",
+          "title": "The Guild raises $20.5M in Series A round led by TDK Ventures, BIG Capital; co's valuation jumps 5.5x",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/decoding/spacetech-startup-etherealxs-valuation-jumps-6x-in-series-a-11095657",
+          "title": "Spacetech startup EtherealX's valuation jumps 6X in Series A",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.entrepreneur.com/en-in/news-and-trends/spacetech-startup-etherealx-secures-usd-205-mn-in-series-a/501988",
+          "title": "Spacetech Startup EtherealX Secures USD 20.5 Mn in Series A Round",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://riceberg.vc/resources",
+          "title": "Resources · riceberg",
+          "publisher": "Riceberg Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/12/18/tdk-ventures-accel-set-to-back-indias-etherealx-in-reusable-launch-vehicle-push-sources/",
+          "title": "TDK Ventures, Accel set to back India's EtherealX in reusable launch vehicle push: Sources",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "founded_year": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_evinced",
+      "name": "Evinced",
+      "website": "https://www.evinced.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Developer tools that use AI to find and fix digital accessibility problems in software.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/12/12/evinceds-55m-c-round-will-help-bring-its-accessibility-dev-tools-and-ai-to-europe/",
+          "title": "Evinced's $55M C round will help bring its accessibility dev tools (and AI) to Europe",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_expanse",
       "name": "Expanse",
       "website": "https://expanse.sh/",
@@ -1558,6 +2713,82 @@
       "confidence": "low"
     },
     {
+      "id": "co_focused-energy",
+      "name": "Focused Energy",
+      "website": "https://www.focused-energy.co",
+      "hq_country": "DE",
+      "founded_year": 2021,
+      "sector": "climate_energy",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops laser-driven inertial fusion technology aimed at commercial fusion power plants; a TU Darmstadt spin-off.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://markets.financialcontent.com/ibtimes/article/bizwire-2026-5-27-focused-energy-raises-240-million-in-series-a-financing",
+          "title": "Focused Energy Raises $240 Million in Series A Financing",
+          "publisher": "FinancialContent / IBTimes (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.focused-energy.co/news-release/lowercarbon-capital-joins-focused-energys-series-a----the-largest-fully-secured-series-a-in-global-fusion",
+          "title": "Lowercarbon Capital Joins Focused Energy's Series A - the Largest Fully Secured Series A in Global Fusion",
+          "publisher": "Focused Energy",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_foodhealth-company-formerly-bitewell",
       "name": "FoodHealth Company (formerly bitewell)",
       "website": "https://www.foodhealth.co/",
@@ -1664,6 +2895,113 @@
       "confidence": "low"
     },
     {
+      "id": "co_guickly",
+      "name": "Guickly",
+      "website": "https://www.guickly.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Measurement layer that tracks and attributes enterprise AI spend, usage, access and return on investment.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/ex-google-applied-ai-expert-120000941.html",
+          "title": "Ex-Google Applied AI Expert Launches Guickly with $4.2M in Seed Funding to Give Enterprises Control of AI Investments",
+          "publisher": "Yahoo Finance (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.engineeringcapital.com/",
+          "title": "Engineering Capital",
+          "publisher": "Engineering Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_halo-industries",
+      "name": "Halo Industries",
+      "website": "https://www.halo-industries.com",
+      "hq_country": null,
+      "founded_year": 2014,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Stanford spin-out building laser-based systems for slicing and fabricating semiconductor wafers and advanced materials.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.halo-industries.com/",
+          "title": "Halo Industries",
+          "publisher": "Halo Industries",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_handypanda",
       "name": "HandyPanda",
       "website": "https://www.handypanda.in/",
@@ -1712,15 +3050,69 @@
       "confidence": "high"
     },
     {
-      "id": "co_havoc",
-      "name": "Havoc",
-      "website": "https://www.havocai.com",
-      "hq_country": "US",
+      "id": "co_hark",
+      "name": "Hark",
+      "website": "https://hark.com",
+      "hq_country": null,
       "founded_year": null,
-      "sector": "defense_dual_use",
+      "sector": "ai_apps_agents",
       "sector_classified_by": "model",
       "layer": null,
-      "description_short": "Software and software-defined hardware that lets one operator command large fleets of autonomous surface vessels and other uncrewed systems.",
+      "description_short": "AI lab building personal-assistant foundation models paired with its own AI-native hardware.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://hark.com/articles/hark-announces-usd700-million-fundraising-round",
+          "title": "Hark announces $700 million fundraising round",
+          "publisher": "Hark",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_havoc",
+      "name": "Havoc",
+      "website": "https://www.havocai.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds collaborative autonomy software and autonomous surface vessels so fleets of drones, boats and vehicles can operate together for defense.",
       "total_raised_usd": null,
       "is_competitor": false,
       "sources": [
@@ -1728,6 +3120,13 @@
           "url": "https://www.havocai.com/news/havoc-raises-100m-series-a-for-all-domain-collaborative-autonomy",
           "title": "Havoc Raises $100M Series A to Power the Future of All-Domain Collaborative Autonomy",
           "publisher": "Havoc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         },
@@ -1763,6 +3162,54 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_hawcx",
+      "name": "Hawcx",
+      "website": "https://www.hawcx.com/",
+      "hq_country": null,
+      "founded_year": 2023,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Passwordless authentication engine for apps, since extended to authorising the actions of AI agents.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.hawcx.com/blog/pre-seed-funding",
+          "title": "Announcing our first round of funding! | Hawcx",
+          "publisher": "Hawcx",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/03/11/some-say-passkeys-are-clunky-this-startup-wants-to-change-that/",
+          "title": "Some say passkeys are clunky — this startup wants to change that",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
           0,
           1
         ],
@@ -1818,6 +3265,54 @@
       "confidence": "high"
     },
     {
+      "id": "co_holocron-technologies",
+      "name": "Holocron Technologies",
+      "website": "https://holocron.tech/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "NLP analytics platform that tracks global science and technology developments from open-source data for government and military users.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.thesaasnews.com/news/holocron-technologies-raises-1-5-million-in-pre-seed-round",
+          "title": "Holocron Technologies Raises $1.5 Million in Pre-Seed Round",
+          "publisher": "The SaaS News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_hone",
       "name": "Hone",
       "website": null,
@@ -1844,12 +3339,12 @@
     {
       "id": "co_humanoid",
       "name": "Humanoid",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://thehumanoid.ai",
+      "hq_country": "GB",
+      "founded_year": 2024,
       "sector": "robotics_physical_ai",
       "sector_classified_by": "source",
-      "layer": null,
+      "layer": "robotics",
       "description_short": "Industrial humanoid robots",
       "total_raised_usd": null,
       "is_competitor": false,
@@ -1860,10 +3355,52 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://thehumanoid.ai/humanoid-raises-152-million-at-1-35-billion-post-money-valuation-becoming-europes-first-pure-play-humanoid-robotics-unicorn/",
+          "title": "Humanoid Raises $152 Million at $1.35 Billion Post-Money Valuation, Becoming Europe's First Pure-Play Humanoid Robotics Unicorn",
+          "publisher": "Humanoid (SKL Robotics Ltd)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "low"
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          1,
+          2,
+          3
+        ],
+        "layer": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_humans",
@@ -1912,6 +3449,50 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_illoca",
+      "name": "Illoca",
+      "website": "https://illoca.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native design engine that lets architects develop building designs from sketches, markups and natural-language instructions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://aithority.com/machine-learning/illoca-raises-13-million-seed-led-by-bessemer-venture-partners-to-launch-the-first-intelligent-interface-for-architectural-design/",
+          "title": "Illoca Raises $13 Million Seed Led by Bessemer Venture Partners to Launch the First Intelligent Interface for Architectural Design",
+          "publisher": "AiThority (GlobeNewswire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/root-ventures",
+          "title": "Root Ventures - CB Insights investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_immix",
@@ -2115,6 +3696,163 @@
       "confidence": "high"
     },
     {
+      "id": "co_knowlify",
+      "name": "Knowlify",
+      "website": "https://knowlify.net",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "University of Florida-born startup, now in San Francisco, using AI to turn training materials into videos.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.floridatrend.com/nextgen/2026/02/09/early-believers/",
+          "title": "Early Believers",
+          "publisher": "Florida Trend",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pitchbook.com/profiles/fund/21349-27F",
+          "title": "Onesixone Founders Fund: Performance | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_kognitos",
+      "name": "Kognitos",
+      "website": "https://www.kognitos.com/",
+      "hq_country": "US",
+      "founded_year": 2020,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Neurosymbolic AI platform that automates back-office business processes described in plain English.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.kognitos.com/news/kognitos-launches-neurosymbolic-ai-platform-for-automating-business-operations-backed-by-25m-series-b/",
+          "title": "Kognitos Launches Neurosymbolic AI Platform for Automating Business Operations, Backed by $25M Series B",
+          "publisher": "Kognitos",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.kognitos.com/news/kognitos-raises-20m-in-series-a-funding-round-led-by-khosla-ventures/",
+          "title": "Kognitos Raises $20M in Series A Funding to Automate Businesses using Generative AI",
+          "publisher": "Kognitos",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/11/30/kognitos-raises-35m-to-help-businesses-automate-back-office-processes/",
+          "title": "Kognitos raises $20M to help businesses automate back-office processes",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kognitos.com/news/kognitos-raises-6-75m-seed-to-bring-the-power-of-generative-ai-to-enterprise-automation/",
+          "title": "Kognitos Raises $6.75M Seed to Bring the Power of Generative AI to Enterprise Automation",
+          "publisher": "Kognitos",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_latent-technology",
+      "name": "Latent Technology",
+      "website": "https://latent-technology.com",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "London game-tech startup using generative, physics-based AI so characters and environments react to gameplay in real time.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/06/06/londons-latent-technology-secures-8m-to-transform-game-animation-with-generative-physic/",
+          "title": "London's Latent Technology secures $8M to supercharge gaming with generative physics",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_limx-dynamics",
       "name": "LimX Dynamics",
       "website": null,
@@ -2210,14 +3948,132 @@
       "confidence": "medium"
     },
     {
-      "id": "co_machina-labs",
-      "name": "Machina Labs",
-      "website": null,
-      "hq_country": null,
+      "id": "co_lygenesis",
+      "name": "LyGenesis",
+      "website": "https://www.lygenesis.com",
+      "hq_country": "US",
       "founded_year": null,
-      "sector": "robotics_physical_ai",
+      "sector": "health_bio",
       "sector_classified_by": "source",
       "layer": null,
+      "description_short": "Cell-therapy developer that grows ectopic liver tissue in patients' lymph nodes to treat end-stage liver disease.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://longevity.technology/news/lygenesis-bags-19m-to-complete-key-clinical-trial-and-advance-cell-therapy-pipeline",
+          "title": "LyGenesis bags $19m to complete key clinical trial and advance cell therapy pipeline",
+          "publisher": "Longevity.Technology",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_lyten",
+      "name": "Lyten",
+      "website": "https://lyten.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "climate_energy",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops lithium-sulfur batteries for EVs and other uses, made on its own production lines.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/09/12/lyten-is-the-latest-ev-battery-startup-to-score-hundreds-of-millions/",
+          "title": "Lyten is the latest EV battery startup to score hundreds of millions",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_machina-labs",
+      "name": "Machina Labs",
+      "website": "https://machinalabs.ai/",
+      "hq_country": "US",
+      "founded_year": 2019,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
       "description_short": "Robots that shape sheet metal",
       "total_raised_usd": null,
       "is_competitor": false,
@@ -2228,10 +4084,122 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://woven.vc/machina-labs-raises-124-million-to-scale-manufacturing-infrastructure-for-defense-and-advanced-mobility/",
+          "title": "Machina Labs Raises $124 Million to Scale Manufacturing Infrastructure for Defense and Advanced Mobility",
+          "publisher": "Woven Capital (company release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/machina-labs-124-million-series-c/",
+          "title": "Machina Labs: $124 Million Series C Closed For Large-Scale Intelligent Factory",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "low"
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          1,
+          2,
+          3
+        ],
+        "layer": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_manastu-space",
+      "name": "Manastu Space",
+      "website": "https://manastuspace.com",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Makes green in-space propulsion and debris-collision-avoidance systems for satellites.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://yourstory.com/2023/09/manastu-space-tech-startup-funding-debris-avoidance-satellites",
+          "title": "Manastu Space secures $3M led by Capital 2B, BIG Capital, E2MC",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://economictimes.indiatimes.com/tech/funding/space-startup-manastu-raises-3-million-in-pre-series-a-funding/articleshow/103401778.cms",
+          "title": "Space startup Manastu raises $3 million in pre-series A funding",
+          "publisher": "The Economic Times",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://riceberg.vc/resources",
+          "title": "Resources · riceberg",
+          "publisher": "Riceberg Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrepreneur.economictimes.indiatimes.com/news/ventures/it-started-with-one-bet-and-grew-into-a-global-deeptech-fund/134383949",
+          "title": "It started with one bet and grew into a global deeptech fund",
+          "publisher": "The Economic Times (ETEntrepreneur)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_memories-ai",
@@ -2560,6 +4528,65 @@
       "confidence": "low"
     },
     {
+      "id": "co_nerd-apply",
+      "name": "Nerd Apply",
+      "website": "https://nerdapply.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Privacy-first data platform giving college counselors de-identified admissions outcomes from real applications.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/nerd-apply-raises-3-2m-seed-round-to-power-outcome-driven-college-counseling-302670697.html",
+          "title": "Nerd Apply Raises $3.2M Seed Round to Power Outcome-Driven College Counseling",
+          "publisher": "PR Newswire (Nerd Apply release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.onesixone.ventures/",
+          "title": "OneSixOne Ventures",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pitchbook.com/profiles/fund/21349-27F",
+          "title": "Onesixone Founders Fund: Performance | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_neura-robotics",
       "name": "NEURA Robotics",
       "website": null,
@@ -2741,6 +4768,58 @@
       "confidence": "high"
     },
     {
+      "id": "co_ntopology",
+      "name": "nTopology",
+      "website": "https://ntopology.com",
+      "hq_country": null,
+      "founded_year": 2015,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Engineering design software combining generative, manual and simulation-driven tools for aerospace, automotive, medical and industrial parts.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://siliconangle.com/2021/11/18/engineering-software-form-ntopologoy-raises-65m-expand-application-reach/",
+          "title": "Engineering software firm nTopology raises $65M to expand application reach",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.alleywatch.com/2021/11/ntopology-engineering-design-software-advanced-manufacturing-bradley-rothenberg/",
+          "title": "nTopology Raises $65M for its Next Generation Engineering Design Software Platform",
+          "publisher": "AlleyWatch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_nuyug",
       "name": "Nuyug",
       "website": "https://nuyug.com/",
@@ -2791,6 +4870,40 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_okteto",
+      "name": "Okteto",
+      "website": "https://okteto.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Platform for spinning up Kubernetes-based development environments quickly.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/02/24/kubernetes-development-platform-okteto-raises-15m-series-a/",
+          "title": "Kubernetes development platform Okteto raises $15M Series A",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_olix",
@@ -2887,6 +5000,42 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_otto-sales-ai",
+      "name": "Otto Sales AI",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": null,
+      "sector_classified_by": null,
+      "layer": null,
+      "description_short": "Business/productivity software company (database listing only; product not confirmed on a company page).",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/onesixone-ventures",
+          "title": "OneSixOne Ventures Investments, Funds, Exits | CB Insights",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.pitchbook.com/profiles/investor/495379-90",
+          "title": "OneSixOne Ventures investment portfolio | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "co_pangram",
@@ -3251,6 +5400,43 @@
       "confidence": "high"
     },
     {
+      "id": "co_quantum-space",
+      "name": "Quantum Space",
+      "website": "https://quantumspace.us",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds maneuverable spacecraft (the Ranger platform) for multi-orbit national-security missions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://quantumspace.us/blog/quantum-space-secures-40-million-series-a-extension-to-accelerate-development-of-maneuverable-spacecraft-for-national-defense",
+          "title": "Quantum Space Secures $40M Series A for Defense Spacecraft",
+          "publisher": "Quantum Space",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_radical",
       "name": "Radical",
       "website": "https://www.radicalaero.com",
@@ -3347,6 +5533,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_regent",
+      "name": "REGENT",
+      "website": "https://www.regentcraft.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "mobility_ev",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Designs and manufactures Seagliders, high-speed hydrofoiling wing-in-ground-effect craft for military and commercial maritime transport.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.regentcraft.com/news/regent-secures-240-million-series-b-funding-to-scale-seaglider-manufacturing-and-transform-maritime-mobility",
+          "title": "REGENT secures $240 million Series B funding to scale Seaglider manufacturing and transform maritime mobility",
+          "publisher": "REGENT",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_reveal-foods",
       "name": "Reveal Foods",
       "website": null,
@@ -3376,6 +5610,43 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_rigor-ai",
+      "name": "Rigor AI",
+      "website": "https://rigor.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-driven cybersecurity platform for enterprises.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/rigor-ai/financials",
+          "title": "Rigor AI Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "co_riven-systems",
@@ -3530,6 +5801,42 @@
       "confidence": "high"
     },
     {
+      "id": "co_scholar-education",
+      "name": "Scholar Education",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": null,
+      "sector_classified_by": null,
+      "layer": null,
+      "description_short": "Education software company (described only by database industry tags).",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/onesixone-ventures",
+          "title": "OneSixOne Ventures Investments, Funds, Exits | CB Insights",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.pitchbook.com/profiles/investor/495379-90",
+          "title": "OneSixOne Ventures investment portfolio | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
+    },
+    {
       "id": "co_scooter",
       "name": "Scooter",
       "website": "https://www.thescooter.ai/",
@@ -3592,6 +5899,46 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_signatur-biosciences",
+      "name": "Signatur Biosciences",
+      "website": "https://www.signatur.bio",
+      "hq_country": "GB",
+      "founded_year": 2022,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "PCR-based blood tests that read gene-expression signatures, starting with breast cancer prognosis, for use on standard lab machines.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.preqin.com/data/profile/asset/signatur-biosciences/722410",
+          "title": "Signatur Biosciences Asset Profile | Preqin",
+          "publisher": "Preqin",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "co_silverflow",
@@ -3680,6 +6027,43 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_sleepiz",
+      "name": "Sleepiz",
+      "website": "https://sleepiz.com",
+      "hq_country": "CH",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Contactless, medical-grade monitoring of vital signs and sleep at home.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/sleepiz/financials",
+          "title": "Sleepiz Stock Price, Funding, Valuation, Revenue & Financial Statements",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "co_sre-ai-now-laminar",
@@ -3879,6 +6263,119 @@
       "confidence": "medium"
     },
     {
+      "id": "co_tandemn",
+      "name": "Tandemn",
+      "website": "https://tandemn.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Open-source, self-hosted planner that places AI inference workloads across mixed GPUs, clouds and on-prem clusters.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.floridatrend.com/nextgen/2026/02/09/early-believers/",
+          "title": "Early Believers",
+          "publisher": "Florida Trend",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pitchbook.com/profiles/fund/21349-27F",
+          "title": "Onesixone Founders Fund: Performance | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tandemn.com/",
+          "title": "GPU Orchestration Software for LLM Inference | Tandemn",
+          "publisher": "Tandemn",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_teradar",
+      "name": "Teradar",
+      "website": "https://www.teradar.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Makes a solid-state terahertz-band sensor combining radar's all-weather range with lidar-like resolution for driver assistance and autonomy.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/11/12/teradar-exits-stealth-with-an-all-weather-sensor-for-autonomy-and-150m-in-funding/",
+          "title": "Teradar raises $150M for a sensor it says beats lidar and radar",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://massinvestordatabase.com/Lockheed+Martin+Ventures/investmentfirm.php",
+          "title": "Lockheed Martin Ventures - Massinvestor Venture Capital and Private Equity Database",
+          "publisher": "Massinvestor",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_terrantic",
       "name": "Terrantic",
       "website": "https://www.terrantic.com/",
@@ -3917,6 +6414,60 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_the-path",
+      "name": "The Path",
+      "website": "https://www.thepath.ai",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI mental-health app that blends evidence-based therapy with coaching; Tony Robbins is a co-founder.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/21/the-path-founded-by-tony-robbins-and-calm-alums-wants-to-offer-safer-ai-therapy/",
+          "title": "The Path, founded by Tony Robbins and Calm alums, hopes to offer safer AI therapy",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/news",
+          "title": "Prime Movers Lab | News",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primemoverslab.com/portfolio",
+          "title": "Prime Movers Lab | Portfolio",
+          "publisher": "Prime Movers Lab",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_thread-factory",
@@ -3960,6 +6511,58 @@
           1
         ],
         "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_tignis",
+      "name": "Tignis",
+      "website": "https://tignis.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Machine-learning-as-a-service analytics that use edge data to help manufacturers, utilities and smart buildings monitor operations and predict problems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.geekwire.com/2019/seattle-startup-led-former-vmware-execs-raises-4-7m-machine-learning-box-service/",
+          "title": "Seattle startup led by former VMware execs raises $4.7M for 'machine-learning-in-a-box' service",
+          "publisher": "GeekWire",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.engineeringcapital.com/",
+          "title": "Engineering Capital",
+          "publisher": "Engineering Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
           0,
           1
         ],
@@ -4173,6 +6776,70 @@
       "confidence": "high"
     },
     {
+      "id": "co_vatn-systems",
+      "name": "Vatn Systems",
+      "website": "https://www.vatnsystems.com/",
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds low-cost autonomous underwater vehicles and GPS-free inertial navigation for the US military and allies.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/vatn-systems-raises-60-million-series-a-to-redefine-underwater-naval-warfare-at-scale-302637203.html",
+          "title": "Vatn Systems Raises $60 Million Series A to Redefine Underwater Naval Warfare at Scale",
+          "publisher": "Vatn Systems (PR Newswire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://massinvestordatabase.com/Lockheed+Martin+Ventures/investmentfirm.php",
+          "title": "Lockheed Martin Ventures - Massinvestor Venture Capital and Private Equity Database",
+          "publisher": "Massinvestor",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_veeda-ai",
       "name": "Veeda AI",
       "website": null,
@@ -4195,6 +6862,104 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_venus-aerospace",
+      "name": "Venus Aerospace",
+      "website": "https://www.venusaero.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops a rotating detonation rocket engine for defense and commercial space missions, with high-speed aviation as a later goal.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://payloadspace.com/venus-aerospace-raises-91m-series-b-to-scale-rdre-production/",
+          "title": "Venus Aerospace Raises $91M Series B to Scale RDRE Production",
+          "publisher": "Payload",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://spacenexus.us/investors/lockheed-martin-ventures",
+          "title": "Lockheed Martin Ventures (investor profile)",
+          "publisher": "SpaceNexus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_volund-manufacturing",
+      "name": "Volund Manufacturing",
+      "website": "https://www.volundmfg.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds low-cost, attritable turbine propulsion for defense in a vertically integrated factory designed for high-rate production.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/root-ventures",
+          "title": "Root Ventures - CB Insights investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.volundmfg.com/",
+          "title": "Volund Manufacturing — Propulsion at Scale",
+          "publisher": "Volund Manufacturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_voya-energy",
@@ -4382,6 +7147,84 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_x-bow-systems",
+      "name": "X-Bow Systems",
+      "website": "https://www.xbowsystems.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops and manufactures solid rocket motors and rockets for defense and space customers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.defensedaily.com/lockheed-martin-ventures-leads-investment-round-in-x-bow-systems/business-financial/",
+          "title": "Lockheed Martin Ventures Leads Investment Round In X-Bow Systems",
+          "publisher": "Defense Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_zed",
+      "name": "Zed",
+      "website": "https://zed.dev",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "High-performance native code editor built for real-time collaboration between developers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/03/15/zed-code-editor-raises-10m/",
+          "title": "Zed raises $10M for a code editor built for collaboration",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_zyg",

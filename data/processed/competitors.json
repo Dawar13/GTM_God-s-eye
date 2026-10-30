@@ -1,7 +1,157 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T06:12:00+00:00",
+  "generated_at": "2026-10-30T06:28:11+00:00",
   "records": [
+    {
+      "id": "co_apprentice-io",
+      "name": "Apprentice.io",
+      "website": "https://apprentice.io",
+      "hq_country": "US",
+      "founded_year": 2014,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Jersey City maker of cloud MES and AI agents for regulated (pharma / biotech) and general manufacturing.",
+      "total_raised_usd": 207000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.apprentice.io/about/who-we-are",
+          "title": "Apprentice | Who We Are",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://apprentice.io",
+          "title": "Apprentice | The Manufacturing AI Company",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.apprentice.io/about/customers",
+          "title": "Apprentice | Customers",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.newswire.com/news/apprentice-io-raises-8m-series-a-for-first-conversational-ar-and-ai-20642149",
+          "title": "Apprentice.io Raises $8M Series A for First Conversational AR and AI Platform",
+          "publisher": "Apprentice.io via Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.vcnewsdaily.com/access/getarticle.php?aid=hlffjnzkwg",
+          "title": "Apprentice.io Receives $24M Series B Round",
+          "publisher": "VC News Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://vcnewsdaily.com/apprentice.io/venture-capital-funding/fhywgygjfj",
+          "title": "Apprentice Snares $100M Series C",
+          "publisher": "VC News Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://vcnewsdaily.com/Apprentice.io/venture-funding.php",
+          "title": "Apprentice.io venture funding",
+          "publisher": "VC News Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://auth.startupintros.com/news/2020-06-18-apprentice-io-other-equity",
+          "title": "Apprentice.io $7.5M Venture Round",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://auth.startupintros.com/news/2023-03-24-apprentice-io-other-equity",
+          "title": "Apprentice.io $65M Venture Round",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://getlatka.com/companies/apprentice/contacts",
+          "title": "Apprentice revenue, funding and team",
+          "publisher": "GetLatka",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/apprentice-io",
+          "title": "Apprentice.io | LinkedIn",
+          "publisher": "LinkedIn (company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.apprentice.io/learn/newsroom",
+          "title": "Apprentice | Newsroom",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.apprentice.io/industries/general-manufacturing",
+          "title": "Apprentice | General Manufacturing",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.apprentice.io/ai-agents/process-agent",
+          "title": "Apprentice | Process Agent",
+          "publisher": "Apprentice.io",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "MES / electronic batch records for GMP (pharma, biotech) plus A1 manufacturing agents (process, quality, maintenance, supply chain, scheduling)",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Angelo Stracquatanio",
+        "Gary Pignata",
+        "Alexandra Buttke"
+      ],
+      "named_customers": [
+        "Moderna",
+        "Catalent",
+        "Gilead",
+        "Synthego",
+        "Minaris Regenerative Medicine",
+        "CSL",
+        "BMS"
+      ],
+      "headcount_est": {
+        "value": 111,
+        "source": {
+          "url": "https://www.linkedin.com/company/apprentice-io",
+          "title": "Apprentice.io | LinkedIn",
+          "publisher": "LinkedIn (company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Cloud manufacturing suite for GMP production (MES with electronic batch records, lab execution, a network linking sites and partners, analytics) plus A1, an agent on its own Apprentice 4.1 model that handles alarms, exceptions, paperwork and runs steps within set guardrails, with maintenance, supply-chain and quality sub-agents.",
+      "pricing": null
+    },
     {
       "id": "co_arda",
       "name": "Arda",

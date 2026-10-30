@@ -15,7 +15,8 @@
     "pipeline": "cd pipeline && uv run python -m atlas.run && cd .. && tsx scripts/layout-graph.ts",
     "research:check": "tsx scripts/check-research.ts",
     "test:coverage": "vitest run --coverage",
-    "layout:graph": "tsx scripts/layout-graph.ts"
+    "layout:graph": "tsx scripts/layout-graph.ts",
+    "coverage:report": "tsx scripts/coverage-report.ts"
   },
   "dependencies": {
     "@react-sigma/core": "6.0.0",

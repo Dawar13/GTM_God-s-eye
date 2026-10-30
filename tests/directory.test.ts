@@ -34,7 +34,7 @@ describe("toDirectoryRows", () => {
       [investor({ seed_list_count: 2 }), investor({ id: "inv_new", name: "New", funds: [] })],
       [fund()],
     );
-    expect(rows).toEqual([
+    expect(rows).toMatchObject([
       {
         id: "inv_root-ventures",
         name: "Root Ventures",
@@ -42,6 +42,9 @@ describe("toDirectoryRows", () => {
         latestFundSizeUsd: 190_000_000,
         latestFundYear: 2025,
         seedListCount: 2,
+        fit: null,
+        sourceCount: 1,
+        confidence: "medium",
       },
       {
         id: "inv_new",
@@ -50,7 +53,35 @@ describe("toDirectoryRows", () => {
         latestFundSizeUsd: null,
         latestFundYear: null,
         seedListCount: 0,
+        fit: null,
       },
     ]);
+  });
+
+  it("adds the default-weight fit score and flags", () => {
+    const f = (value: number) => ({ value, method: "test", inputs: [] });
+    const [row] = toDirectoryRows(
+      [investor()],
+      [fund()],
+      [
+        {
+          id: "fit_root-ventures",
+          investor_id: "inv_root-ventures",
+          features: {
+            thesis: f(1),
+            stage: f(1),
+            check: null,
+            adjacency: f(1),
+            geography: f(1),
+            dry_powder: f(1),
+          },
+          flags: ["conflict"],
+          raise_size_usd: 1_000_000,
+        },
+      ],
+    );
+    expect(row!.fit).toBeCloseTo(100, 6);
+    expect(row!.fitCoverage).toBeCloseTo(0.85, 6);
+    expect(row!.fitFlags).toEqual(["conflict"]);
   });
 });

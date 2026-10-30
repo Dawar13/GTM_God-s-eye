@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T06:12:00+00:00",
+  "generated_at": "2026-10-30T06:28:11+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -770,6 +770,60 @@
     {
       "id": "anom_research_0086",
       "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "hq_city",
+      "raw_value": "Mountain View (contact page; Form D for Funds IV and V) | Palo Alto (Form D for Funds I and II; TechCrunch 2020; StartupIntros) | Menlo Park (Form D for Fund III)",
+      "reason": "sources disagree: The firm's own contact page gives 745 Burgoyne Street, Mountain View as the registered address, matching the two latest Form Ds (2022, 2025). Palo Alto and Menlo Park are earlier addresses.",
+      "resolution": "chose Mountain View"
+    },
+    {
+      "id": "anom_research_0087",
+      "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "funds.I.size_original",
+      "raw_value": "$31,375,000 (Form D, offering fully sold) | $32M (StrictlyVC, Global Venturing, Shai Goldman fund list)",
+      "reason": "sources disagree: The Form D gives the exact amount sold; press rounded it to $32M.",
+      "resolution": "chose 31375000"
+    },
+    {
+      "id": "anom_research_0088",
+      "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "funds.II.size_original",
+      "raw_value": "$47,500,000 (Form D, filed 2017-11-15) | $50M (Fortune, 2018-08-30) | $48M dated 2017-11-16 (Shai Goldman fund list)",
+      "reason": "sources disagree: The Form D reports $47.5M offered and fully sold; Fortune's $50M looks like a rounded figure.",
+      "resolution": "chose 47500000"
+    },
+    {
+      "id": "anom_research_0089",
+      "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "funds.V.size_original",
+      "raw_value": "$63,000,000 (Form D, first sale 2025-10-29, filed 2025-11-07) | $65M dated 2025-10-29 (Shai Goldman fund list; VC Partners)",
+      "reason": "sources disagree: The Form D reports $63M offered and fully sold. The fund list's 2025-10-29 date is the Form D date of first sale. The $65M figure appears only on database pages.",
+      "resolution": "chose 63000000"
+    },
+    {
+      "id": "anom_research_0090",
+      "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "funds (count and numbering)",
+      "raw_value": "4 funds labelled I, II, III, V (Shai Goldman fund list) | 5 funds, Engineering Capital Fund I-V, L.P. (SEC EDGAR)",
+      "reason": "sources disagree: EDGAR lists Engineering Capital Fund IV, L.P. ($76.6M, Form D 2022-11-09), which the fund list misses. The list's I, II, III and V labels are otherwise correct. The Neon Show (March 2026) also refers to Fund One through Fund Five.",
+      "resolution": "chose 5 funds, I-V"
+    },
+    {
+      "id": "anom_research_0091",
+      "source_id": "research",
+      "row_ref": "engineering-capital",
+      "field": "aum (not recorded)",
+      "raw_value": "about $100M across four funds (StartupIntros) | '$250M across funds' (Neon Show chapter title, March 2026) | $278.475M, the sum of the five Form D amounts sold",
+      "reason": "sources disagree: This file has no AUM field. The Form D total is the best primary figure; StartupIntros predates Fund V.",
+      "resolution": "chose not recorded"
+    },
+    {
+      "id": "anom_research_0092",
+      "source_id": "research",
       "row_ref": "haystack",
       "field": "fund.number",
       "raw_value": "VIII vs VII",
@@ -777,7 +831,7 @@
       "resolution": "research number VII kept"
     },
     {
-      "id": "anom_research_0087",
+      "id": "anom_research_0093",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "fund",
@@ -786,7 +840,7 @@
       "resolution": "row removed"
     },
     {
-      "id": "anom_research_0088",
+      "id": "anom_research_0094",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "check_min_usd / check_max_usd",
@@ -795,7 +849,7 @@
       "resolution": "chose $1M-$3M"
     },
     {
-      "id": "anom_research_0089",
+      "id": "anom_research_0095",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.IV",
@@ -804,7 +858,7 @@
       "resolution": "chose size and close date left null"
     },
     {
-      "id": "anom_research_0090",
+      "id": "anom_research_0096",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.V",
@@ -813,7 +867,7 @@
       "resolution": "chose one Fund V, $50M, fully sold per Form D/A filed 2019-07-05"
     },
     {
-      "id": "anom_research_0091",
+      "id": "anom_research_0097",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds numbering (2023 fund)",
@@ -822,7 +876,7 @@
       "resolution": "chose Haystack Ventures VII"
     },
     {
-      "id": "anom_research_0092",
+      "id": "anom_research_0098",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.VIII close_date",
@@ -831,7 +885,7 @@
       "resolution": "chose $85M, closed in 2026 (year precision)"
     },
     {
-      "id": "anom_research_0093",
+      "id": "anom_research_0099",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.Needles III size",
@@ -840,7 +894,7 @@
       "resolution": "chose $25M"
     },
     {
-      "id": "anom_research_0094",
+      "id": "anom_research_0100",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "partners (Aashay Sanghvi)",
@@ -849,7 +903,7 @@
       "resolution": "chose Aashay Sanghvi, Partner"
     },
     {
-      "id": "anom_research_0095",
+      "id": "anom_research_0101",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "hq_city",
@@ -858,7 +912,7 @@
       "resolution": "chose San Francisco"
     },
     {
-      "id": "anom_research_0096",
+      "id": "anom_research_0102",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "portfolio_count_reported",
@@ -867,7 +921,7 @@
       "resolution": "chose 290"
     },
     {
-      "id": "anom_research_0097",
+      "id": "anom_research_0103",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "rounds.Pangram stage",
@@ -876,7 +930,52 @@
       "resolution": "chose undisclosed"
     },
     {
-      "id": "anom_research_0098",
+      "id": "anom_research_0104",
+      "source_id": "research",
+      "row_ref": "lockheed-martin",
+      "field": "partners.Chris Moran.title",
+      "raw_value": "Vice President and General Manager (team page; July 2026 release; Machina Labs and Elroy Air releases) | Executive Director and General Manager (his bio page on lockheedmartin.com)",
+      "reason": "sources disagree: The team page and every 2026 release use VP and GM; the bio page text appears not to have been updated.",
+      "resolution": "chose Vice President and General Manager"
+    },
+    {
+      "id": "anom_research_0105",
+      "source_id": "research",
+      "row_ref": "lockheed-martin",
+      "field": "rounds.Fortem Technologies Series B",
+      "raw_value": "Lockheed Martin Ventures round: $50M Series B, 2026-09-30 (Massinvestor database) | Led by 'Lockheed Martin', which committed the $25M initial tranche announced 2026-04-22 by Lockheed Martin with the Rotary and Mission Systems president quoted; neither Fortem release names Lockheed Martin Ventures",
+      "reason": "sources disagree: The primary releases attribute the investment to the parent and its RMS business area, not the venture arm; Fortem is on LMV's portfolio page from an earlier investment, so the attribution can't be settled from public pages.",
+      "resolution": "chose not recorded as a Lockheed Martin Ventures round"
+    },
+    {
+      "id": "anom_research_0106",
+      "source_id": "research",
+      "row_ref": "lockheed-martin",
+      "field": "portfolio_count_reported",
+      "raw_value": "more than 120 companies (April and July 2026 releases; LMV page) | 90 company names on the LMV portfolio page",
+      "reason": "sources disagree: The firm's stated cumulative count is preferred; the portfolio page appears to omit exited or older holdings and some 2026 additions (e.g. Diffraqtion, Living Optics shown at Demo Day 2026).",
+      "resolution": "chose 120"
+    },
+    {
+      "id": "anom_research_0107",
+      "source_id": "research",
+      "row_ref": "lockheed-martin",
+      "field": "funds.size history",
+      "raw_value": "$100M at founding in 2007, $200M in 2018, $400M from 2022-08-02, $1B authorized 2026-04-14 (releases, 2022 feature, Global Venturing) | LMV page: 'our $100 million fund has grown to be a $1 billion evergreen fund'",
+      "reason": "sources disagree: The sources describe capacity increases to a single evergreen corporate fund, not separate vintage funds; the April release frames $1B as capacity to be used over future periods.",
+      "resolution": "chose one evergreen fund, $1B capacity as of 2026-04-14"
+    },
+    {
+      "id": "anom_research_0108",
+      "source_id": "research",
+      "row_ref": "lockheed-martin",
+      "field": "rounds dates (Havoc, Venus Aerospace, REGENT)",
+      "raw_value": "Havoc 2026-05-12, Venus 2026-07-08, REGENT 2026-08-27 (company releases / Payload) | Havoc 2026-05-18, Venus 2026-07-13, REGENT 2026-08-31 (Massinvestor database)",
+      "reason": "sources disagree: The company releases and Payload are dated announcements; the database dates appear to be later filing or entry dates.",
+      "resolution": "chose release / press dates"
+    },
+    {
+      "id": "anom_research_0109",
       "source_id": "research",
       "row_ref": "mavka-ventures",
       "field": "partners[Vitaly Golomb].title",
@@ -885,7 +984,241 @@
       "resolution": "chose General Partner"
     },
     {
-      "id": "anom_research_0099",
+      "id": "anom_research_0110",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "check_min_usd / check_max_usd",
+      "raw_value": "$500K - $1.5M check size (firm's Fund II page) | $50,000 to $100,000 typical Fund I check; Fund II checks 'will be bigger' (Florida Trend, Feb 2026)",
+      "reason": "sources disagree: It is the firm's own current statement, but it describes Fund II, which the site says is still being raised; until Fund II closes, new checks may still be Fund I size ($50K-$100K).",
+      "resolution": "chose $500K-$1.5M"
+    },
+    {
+      "id": "anom_research_0111",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "hq_city",
+      "raw_value": "Gainesville, FL (LinkedIn company page; PitchBook and CB Insights: 201 SE 2nd Ave, Gainesville 32601) | Pembroke Pines, FL (issuer and GP address on the 2022 Form D for ONESIXONE Founders Fund LP) | Miami ('Now in Miami', Refresh Miami, April 2024)",
+      "reason": "sources disagree: The firm's LinkedIn page and both databases give Gainesville; the Form D address is the fund vehicle's mailing address and the Miami mention describes where the founders were living.",
+      "resolution": "chose Gainesville"
+    },
+    {
+      "id": "anom_research_0112",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "portfolio_count_reported",
+      "raw_value": "30 portfolio companies (Florida Trend, Feb 2026) | 20+ active companies (LinkedIn company page) | 21 portfolio companies (Refresh Miami, Mar 2025) | 39 investments, 5 exits (PitchBook profile); 25 investments for the Founders Fund (PitchBook fund profile) | 11 investments (CB Insights) | 28 companies on the firm's homepage portfolio carousel",
+      "reason": "sources disagree: Most recent figure stated by the founders in press; the firm's own site lists 28 companies without a count.",
+      "resolution": "chose 30"
+    },
+    {
+      "id": "anom_research_0113",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "funds.I (size and vintage)",
+      "raw_value": "Assets 'a little over $4 million' (Refresh Miami, Mar 2025; LinkedIn 'over $4M') | $5 million across 30 portfolio companies (Florida Trend, Feb 2026) | Form D: indefinite offering, $415,000 sold to 8 investors, first sale 2021-12-15 (filed 2022-04-14) | PitchBook fund profile: vintage 2023, status Closed, size blank; LinkedIn: flagship fund launched February 2022",
+      "reason": "sources disagree: The $4M-$5M figures are firm-level assets, not a stated Fund I final size, and no final-close date or amended Form D was found.",
+      "resolution": "chose size and close date left null"
+    },
+    {
+      "id": "anom_research_0114",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "stated_sectors",
+      "raw_value": "AI and cloud infrastructure, dual-use technology (LinkedIn); AI & Machine Learning, Climate Technology, Enterprise Software (Fund II page) | pre-seed GovTech & B2B SaaS (CB Insights description)",
+      "reason": "sources disagree: The firm's own pages take priority over the database description.",
+      "resolution": "chose ai_infra, ai_apps_agents, defense_dual_use, enterprise_saas, climate_energy"
+    },
+    {
+      "id": "anom_research_0115",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "rounds.Nerd Apply.date",
+      "raw_value": "2026-01-27 (PR Newswire release) | 03-Dec-2025 (PitchBook deal date)",
+      "reason": "sources disagree: Announcement date from the company's release; PitchBook may record the closing or OneSixOne's check date.",
+      "resolution": "chose 2026-01-27"
+    },
+    {
+      "id": "anom_research_0116",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "rounds.Clockout (date and participants)",
+      "raw_value": "2025-06-18; led by Cofounders Capital with Brickyard VC, Front Porch Capital, Market Square Ventures, Launch TN, OneSixOne Ventures, Erez Capital (Clockout release) | Refresh Miami: Cofounders Capital ($1M, board seat), Porch Ventures, One Six One Ventures, Market Square Ventures, Launch Tennessee | PitchBook deal date 24-Jul-2025",
+      "reason": "sources disagree: The company's own announcement is the primary source and the most complete list.",
+      "resolution": "chose Clockout release (2025-06-18 and its investor list)"
+    },
+    {
+      "id": "anom_research_0117",
+      "source_id": "research",
+      "row_ref": "onesixone-ventures",
+      "field": "rounds.Scholar Education.date / rounds.Otto Sales AI.date",
+      "raw_value": "Scholar Education seed 2026-09-24 (CB Insights) vs 03-Oct-2026 (PitchBook) | Otto Sales AI seed 2026-04-30 (CB Insights) vs 27-Apr-2026 (PitchBook)",
+      "reason": "sources disagree: CB Insights gives stage and amount with the date; PitchBook's preview shows only a date. Both are database-only.",
+      "resolution": "chose CB Insights dates"
+    },
+    {
+      "id": "anom_research_0118",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "hq_city",
+      "raw_value": "Jackson, WY (firm press-release datelines 2020-2023; Fund I Form D at 320 E Broadway, Jackson) | Teton Village, WY (Form Ds 2020-2023 at 6765 Crystal Springs Road; IAPD office city for the adviser, ADV filed 2026-03-17) | Miami, FL (Form Ds for Prime Movers Fund IV LP, Feb 2026, and Early Growth Fund II LP, Aug 2026, at 2121 Biscayne Blvd; ADV mailing address PO Box, Miami Beach)",
+      "reason": "sources disagree: The firm's own releases use Jackson, and the SEC adviser record (March 2026) still puts the principal office in Teton Village, part of the Jackson Hole area. The 2026 fund filings point to a move or second office in Miami. No firm page confirms a move, so this is flagged rather than changed.",
+      "resolution": "chose Jackson"
+    },
+    {
+      "id": "anom_research_0119",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "funds.I.size_original",
+      "raw_value": "approximately $100 million (2020 release) | nearly $100 million (March 2021 release) | $89,750,000 sold to 106 investors (Form D/A filed 2019-09-12)",
+      "reason": "sources disagree: The fund announcement is the firm's stated final size and is later than the Form D/A; the Form D/A is the last EDGAR amendment and may predate the final close.",
+      "resolution": "chose 100000000"
+    },
+    {
+      "id": "anom_research_0120",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "funds.III.size_original",
+      "raw_value": "$245 million (July 2023 release) | $237,460,000 sold of a $250,000,000 offering (Fund III LP Form D/A, 2023-01-19) plus $992,500 sold (Fund III-A LP Form D/A, 2023-06-16)",
+      "reason": "sources disagree: The release announces the closed fund, six months after the Form D/A. The release also calls it the 'fourth overall fund', which counts the Early Growth Fund.",
+      "resolution": "chose 245000000"
+    },
+    {
+      "id": "anom_research_0121",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "rounds.The Path.amount_original",
+      "raw_value": "$14.3 million (TechCrunch, 2026-05-21) | $14 million (summary on primemoverslab.com/news)",
+      "reason": "sources disagree: TechCrunch is the original report; the firm's news page rounds it down.",
+      "resolution": "chose 14300000"
+    },
+    {
+      "id": "anom_research_0122",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "rounds.Hark.participants",
+      "raw_value": "Align Ventures (Hark announcement) | Aligned Ventures (summary on primemoverslab.com/news)",
+      "reason": "sources disagree: Used the company's own spelling.",
+      "resolution": "chose Align Ventures"
+    },
+    {
+      "id": "anom_research_0123",
+      "source_id": "research",
+      "row_ref": "prime-movers-lab",
+      "field": "rounds.Humanoid.role",
+      "raw_value": "investor in the $152M round (user-supplied robotics list; firm news page lists 'investments from Prime Movers Lab, Schaeffler, and Bosch') | lead investor (Humanoid press release, 2026-07-21)",
+      "reason": "sources disagree: Humanoid's own release says the round was led by Prime Movers Lab and quotes General Partner Zia Huque.",
+      "resolution": "chose lead"
+    },
+    {
+      "id": "anom_research_0124",
+      "source_id": "research",
+      "row_ref": "riceberg-ventures",
+      "field": "check_min_usd / check_max_usd",
+      "raw_value": "$100K-$500K per startup (Mredul Sarda, Hindu BusinessLine, June 2026) | average cheque about $500K (Inc42, Outlook Business, CXO Digitalpulse, Jan 2025; ETEntrepreneur, Sept 2026) | $250K-$1M (F4 database estimate derived from the $500K average)",
+      "reason": "sources disagree: Most recent explicit range stated by a partner. The $500K average from the January 2025 fund launch is the upper end of that range, and F4's range is the database's own inference.",
+      "resolution": "chose $100K-$500K"
+    },
+    {
+      "id": "anom_research_0125",
+      "source_id": "research",
+      "row_ref": "riceberg-ventures",
+      "field": "funds (Fund I size)",
+      "raw_value": "$20M debut fund announced January 2025 (Inc42, Outlook Business, CXO Digitalpulse, ETEntrepreneur, Hindu BusinessLine) | Riceberg Ventures Premier Fund I, LP: $5,000,000 offering, $3,376,260 sold from 55 investors (Form D/A filed 2026-01-05)",
+      "reason": "sources disagree: The Delaware Premier Fund I (first sale 2023-12-31) may be only one vehicle of the announced $20M programme. No source links the two or reports a final close.",
+      "resolution": "chose Both recorded as separate rows"
+    },
+    {
+      "id": "anom_research_0126",
+      "source_id": "research",
+      "row_ref": "riceberg-ventures",
+      "field": "hq_city",
+      "raw_value": "Zurich (CB Insights, Deep Tech Week, F4; Ankit Anand listed as Zurich / San Francisco) | Adliswil, Switzerland (Form D principal place of business) | Hubs in SF, London, Zurich, Mumbai and Bangalore (riceberg.vc contact page); teams in Zurich, London, Boston, Amsterdam and New York (ETEntrepreneur)",
+      "reason": "sources disagree: Database profiles name Zurich. The Form D address is in Adliswil, Switzerland. The firm's own site lists hubs but does not name a headquarters.",
+      "resolution": "chose Zurich"
+    },
+    {
+      "id": "anom_research_0127",
+      "source_id": "research",
+      "row_ref": "riceberg-ventures",
+      "field": "rounds[EtherealX Series A].leads",
+      "raw_value": "Co-led by TDK Ventures and BIG Capital (Inc42, YourStory, Entrepreneur India, TechCrunch) | Led by existing investor BIG Capital ($6M) with TDK Ventures ($5M) participating (Entrackr, from regulatory filings)",
+      "reason": "sources disagree: Four outlets and Riceberg's own resources page describe a co-lead. Entrackr's breakdown is by cheque size.",
+      "resolution": "chose TDK Ventures and BIG Capital as co-leads"
+    },
+    {
+      "id": "anom_research_0128",
+      "source_id": "research",
+      "row_ref": "riceberg-ventures",
+      "field": "planned portfolio size (first fund)",
+      "raw_value": "25-30 startups (Inc42, CXO Digitalpulse, Jan 2025) | about 30 startups (Outlook Business, Jan 2025) | 20-25 companies through the first fund (Hindu BusinessLine, June 2026)",
+      "reason": "sources disagree: No schema field. Noted because the June 2026 figure is lower than the launch figure.",
+      "resolution": "chose Not recorded as a fact"
+    },
+    {
+      "id": "anom_research_0129",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "check_min_usd / check_max_usd",
+      "raw_value": "$3-5M initial investments (root.vc, 2026) | up to $5M (root.vc site config) | $1-3M first checks (Fund III post, Aug 2022) | $1-2M, up from $500K in Fund I (TechCrunch, July 2018) | $2-3M (CB Insights)",
+      "reason": "sources disagree: The firm's current site is the most recent primary statement; the smaller figures describe earlier funds, and CB Insights is a database hint.",
+      "resolution": "chose 3000000-5000000"
+    },
+    {
+      "id": "anom_research_0130",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "funds.Root Ventures I size",
+      "raw_value": "31415927 sold (Form D/A, 2015-06-11) | $31,415,926.53 (Root's Fund II post) | $30 million (TechCrunch 2018)",
+      "reason": "sources disagree: The Form D/A reports the offering fully sold at that amount; Root's own post gives the same pi-based figure to the cent; TechCrunch rounded.",
+      "resolution": "chose 31415927"
+    },
+    {
+      "id": "anom_research_0131",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "funds.Root Ventures II size and close_date",
+      "raw_value": "$77M, 2018-03-01 (Phase 1 fund list, Shai Goldman) | $76,726,900 announced 2018-07-26 (Root's Medium post; TechCrunch) | $75M offering, first sale yet to occur (Form D, 2017-11-27)",
+      "reason": "sources disagree: Root's own announcement and TechCrunch agree on $76.7269M and the July 26, 2018 date; no fetched page supports 2018-03-01.",
+      "resolution": "chose 76726900, 2018-07-26"
+    },
+    {
+      "id": "anom_research_0132",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "funds.Root Ventures III close_date",
+      "raw_value": "2022-08-23 (Root's Medium announcement) | 2022-08-25 (Cooley news item) | 2021-08-02 (initial Form D, $150M offering, no sales yet)",
+      "reason": "sources disagree: The firm's own announcement date; the Form D is the start of the offering, not its close.",
+      "resolution": "chose 2022-08-23"
+    },
+    {
+      "id": "anom_research_0133",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "funds.Root Ventures IV size and close_date",
+      "raw_value": "$190M (root.vc fundSize; Newcomer, Nov 10, 2025) | $250M offering (Form D, 2025-01-10) | 2025-10-10 (Phase 1 fund list, Shai Goldman)",
+      "reason": "sources disagree: The firm's site and Newcomer both give $190M; $250M was the Form D target. The earliest dated report of the close is Newcomer's Nov 10, 2025 exclusive; no fetched page supports 2025-10-10.",
+      "resolution": "chose 190000000, 2025-11"
+    },
+    {
+      "id": "anom_research_0134",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "rounds.DeepWeave date and amount",
+      "raw_value": "2026-03-23, amount undisclosed (DeepWeave news post) | 2026-04-07, $6.21M, 'Unattributed VC' (CB Insights)",
+      "reason": "sources disagree: The company's own announcement is primary and does not state an amount; CB Insights is a database hint only.",
+      "resolution": "chose 2026-03-23, amount null"
+    },
+    {
+      "id": "anom_research_0135",
+      "source_id": "research",
+      "row_ref": "root-ventures",
+      "field": "rounds.Illoca date",
+      "raw_value": "2026-05-07 (AiThority / GlobeNewswire) | 2026-05-06 (CB Insights)",
+      "reason": "sources disagree: Date shown on the press-release page; the one-day difference is likely time-zone or filing lag.",
+      "resolution": "chose 2026-05-07"
+    },
+    {
+      "id": "anom_research_0136",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "check_min_usd / check_max_usd",
@@ -894,7 +1227,7 @@
       "resolution": "chose $2M-$5M"
     },
     {
-      "id": "anom_research_0100",
+      "id": "anom_research_0137",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "funds.I (fund list row 886)",
@@ -903,7 +1236,7 @@
       "resolution": "chose BHV vehicles recorded from Form D with size null; $4.3M not used"
     },
     {
-      "id": "anom_research_0101",
+      "id": "anom_research_0138",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "funds (fund list row 503)",
@@ -912,7 +1245,7 @@
       "resolution": "chose excluded from this firm"
     },
     {
-      "id": "anom_research_0102",
+      "id": "anom_research_0139",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "funds.IV timing and size",
@@ -921,7 +1254,7 @@
       "resolution": "chose $94M, closed 2024-05-01"
     },
     {
-      "id": "anom_research_0103",
+      "id": "anom_research_0140",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "funds.V",
@@ -930,7 +1263,7 @@
       "resolution": "chose Fund V $125M (V + V-A) closed 2026-03-10; sidecar recorded separately"
     },
     {
-      "id": "anom_research_0104",
+      "id": "anom_research_0141",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "founding year",
@@ -939,7 +1272,7 @@
       "resolution": "chose not recorded (no schema field); predecessor BHV noted in identity_check"
     },
     {
-      "id": "anom_research_0105",
+      "id": "anom_research_0142",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "hq_city",
@@ -948,7 +1281,7 @@
       "resolution": "chose Austin"
     },
     {
-      "id": "anom_research_0106",
+      "id": "anom_research_0143",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "partners (Cody Huggins title)",
@@ -957,7 +1290,7 @@
       "resolution": "chose Partner"
     },
     {
-      "id": "anom_research_0107",
+      "id": "anom_research_0144",
       "source_id": "research",
       "row_ref": "scout-ventures",
       "field": "portfolio_count_reported",
@@ -966,7 +1299,7 @@
       "resolution": "chose 85"
     },
     {
-      "id": "anom_research_0108",
+      "id": "anom_research_0145",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.stages",
@@ -975,7 +1308,7 @@
       "resolution": "chose pre_seed, seed, series_a"
     },
     {
-      "id": "anom_research_0109",
+      "id": "anom_research_0146",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "partners[Steven Lee].title",
@@ -984,7 +1317,7 @@
       "resolution": "chose Founder & General Partner"
     },
     {
-      "id": "anom_research_0110",
+      "id": "anom_research_0147",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.portfolio_count_reported",
@@ -993,7 +1326,7 @@
       "resolution": "chose 12"
     },
     {
-      "id": "anom_research_0111",
+      "id": "anom_research_0148",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "name",
@@ -1002,7 +1335,7 @@
       "resolution": "chose Seven Stars"
     },
     {
-      "id": "anom_research_0112",
+      "id": "anom_research_0149",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Origin Lab].date",
@@ -1011,7 +1344,7 @@
       "resolution": "chose 2026-05-13"
     },
     {
-      "id": "anom_research_0113",
+      "id": "anom_research_0150",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Pomo].date",
@@ -1020,7 +1353,7 @@
       "resolution": "chose 2026-04-08"
     },
     {
-      "id": "anom_research_0114",
+      "id": "anom_research_0151",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Corgi $108M].stage",
@@ -1029,7 +1362,7 @@
       "resolution": "chose series_a (seed + Series A combined)"
     },
     {
-      "id": "anom_research_0115",
+      "id": "anom_research_0152",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Doctronic Series B].participants",
@@ -1038,7 +1371,7 @@
       "resolution": "chose includes Wittington Ventures"
     },
     {
-      "id": "anom_research_0116",
+      "id": "anom_research_0153",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "funds[Supply Change Capital Fund I LP].size_original",
@@ -1047,7 +1380,7 @@
       "resolution": "chose 40000000"
     },
     {
-      "id": "anom_research_0117",
+      "id": "anom_research_0154",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "hq_city",
@@ -1056,7 +1389,7 @@
       "resolution": "chose Los Angeles"
     },
     {
-      "id": "anom_research_0118",
+      "id": "anom_research_0155",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "check_max_usd",
@@ -1065,7 +1398,7 @@
       "resolution": "chose 500000-1000000"
     },
     {
-      "id": "anom_research_0119",
+      "id": "anom_research_0156",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "accepts_cold_inbound",

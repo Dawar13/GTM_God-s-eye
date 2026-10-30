@@ -46,15 +46,19 @@ class Group:
     on_frontier_list: bool = False
 
     def choose_display_name(self) -> str:
-        """Seed lists name firms, so they win. Otherwise the earliest-read name
-        (the Goldman list runs newest first) without typos or vehicle words."""
+        """Research and seed lists name firms, so they win. Among fund-list and
+        round names, a name without vehicle words or typos beats one with them
+        ("Intel Capital" over "Intel Capital Diversity Fund"); then fund list
+        over rounds; then the earliest read (the Goldman list runs newest first)."""
         order = {id(m): i for i, m in enumerate(self.members)}
 
         def rank(m: Member) -> tuple:
+            names_firms = m.origin in ("research", "seed_list")
             return (
-                ORIGIN_RANK[m.origin],
-                1 if names.typo_tokens(m.name) else 0,
+                ORIGIN_RANK[m.origin] if names_firms else len(ORIGIN_RANK),
                 1 if names.has_vehicle_words(m.name) else 0,
+                1 if names.typo_tokens(m.name) else 0,
+                ORIGIN_RANK[m.origin],
                 order[id(m)],
             )
 

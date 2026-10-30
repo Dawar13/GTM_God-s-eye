@@ -51,9 +51,39 @@ const columns = helper.columns([
     cell: (info) => info.getValue() ?? UNKNOWN,
   }),
   helper.accessor("seedListCount", { header: "Seed lists", sortFn: "basic" }),
+  // Phase 1 sanity columns (PHASE_1 §9.4); Phase 2 designs the real directory.
+  helper.accessor((r) => r.tier ?? undefined, {
+    id: "tier",
+    header: "Tier",
+    sortFn: "text",
+    sortUndefined: "last",
+    cell: (info) => info.getValue() ?? UNKNOWN,
+  }),
+  helper.accessor((r) => r.fit ?? undefined, {
+    id: "fit",
+    header: "Fit",
+    sortFn: "basic",
+    sortUndefined: "last",
+    cell: (info) => {
+      const row = info.row.original;
+      if (row.fit === null) return UNKNOWN;
+      const coverage =
+        row.fitCoverage === null ? "" : ` (${Math.round(row.fitCoverage * 100)}% known)`;
+      const flags = row.fitFlags.length ? ` · ${row.fitFlags.join(", ")}` : "";
+      return `${row.fit.toFixed(1)}${coverage}${flags}`;
+    },
+  }),
+  helper.accessor("sourceCount", { header: "Sources", sortFn: "basic" }),
+  helper.accessor("confidence", { header: "Confidence", sortFn: "text" }),
 ]);
 
-const NUMERIC = new Set(["latestFundSizeUsd", "latestFundYear", "seedListCount"]);
+const NUMERIC = new Set([
+  "latestFundSizeUsd",
+  "latestFundYear",
+  "seedListCount",
+  "fit",
+  "sourceCount",
+]);
 
 export function DirectoryTable({
   rows,

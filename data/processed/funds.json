@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T06:12:00+00:00",
+  "generated_at": "2026-10-30T06:28:11+00:00",
   "records": [
     {
       "id": "fund_10d_ii",
@@ -6377,8 +6377,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_contrary-captal_i",
-      "investor_id": "inv_contrary-captal",
+      "id": "fund_contrary_i",
+      "investor_id": "inv_contrary",
       "name": "Contrary Captal",
       "number": "I",
       "size_usd": 2000000,
@@ -8778,12 +8778,12 @@
       "investor_id": "inv_engineering-capital",
       "name": "Engineering Capital",
       "number": "I",
-      "size_usd": 32000000,
+      "size_usd": 31375000,
       "currency_original": "USD",
-      "size_original": 32000000,
+      "size_original": 31375000,
       "fx": null,
-      "close_date": "2015-02",
-      "close_date_precision": "month",
+      "close_date": "2015-02-24",
+      "close_date_precision": "day",
       "vintage_year": 2015,
       "location": "Bay Area",
       "notes": null,
@@ -8794,21 +8794,62 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1633192/000163319215000001/primary_doc.xml",
+          "title": "Form D - Engineering Capital Fund I, L.P. (filed 2015-02-24)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=engineering+capital&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ENGINEERING CAPITAL",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://strictlyvc.com/2015/02/24/a-team-player-strikes-out-on-his-own/",
+          "title": "A Team Player Strikes Out on His Own",
+          "publisher": "StrictlyVC",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://globalventuring.com/vc-engineers-32m-fund",
+          "title": "VC engineers $32m fund",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_engineering-capital_ii",
       "investor_id": "inv_engineering-capital",
       "name": "Engineering Capital",
       "number": "II",
-      "size_usd": 48000000,
+      "size_usd": 47500000,
       "currency_original": "USD",
-      "size_original": 48000000,
+      "size_original": 47500000,
       "fx": null,
-      "close_date": "2017-11-16",
+      "close_date": "2017-11-15",
       "close_date_precision": "day",
       "vintage_year": 2017,
       "location": "Bay Area",
@@ -8820,10 +8861,42 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1722713/000172271317000001/primary_doc.xml",
+          "title": "Form D - Engineering Capital Fund II, L.P. (filed 2017-11-15)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=engineering+capital&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ENGINEERING CAPITAL",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2018/08/30/venture-engineering-capital/",
+          "title": "Why Venture Capital Is No Longer a 'Lifecycle Business'",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_engineering-capital_iii",
@@ -8846,21 +8919,88 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1816487/000181648720000001/primary_doc.xml",
+          "title": "Form D - Engineering Capital Fund III, L.P. (filed 2020-07-08)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=engineering+capital&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ENGINEERING CAPITAL",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_engineering-capital_iv",
+      "investor_id": "inv_engineering-capital",
+      "name": "Engineering Capital Fund IV, L.P.",
+      "number": "IV",
+      "size_usd": 76600000,
+      "currency_original": "USD",
+      "size_original": 76600000,
+      "fx": null,
+      "close_date": "2022-11-09",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1952819/000195281922000001/primary_doc.xml",
+          "title": "Form D - Engineering Capital Fund IV, L.P. (filed 2022-11-09)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=engineering+capital&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ENGINEERING CAPITAL",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_engineering-capital_v",
       "investor_id": "inv_engineering-capital",
       "name": "Engineering Capital",
       "number": "V",
-      "size_usd": 65000000,
+      "size_usd": 63000000,
       "currency_original": "USD",
-      "size_original": 65000000,
+      "size_original": 63000000,
       "fx": null,
-      "close_date": "2025-10-29",
+      "close_date": "2025-11-07",
       "close_date_precision": "day",
       "vintage_year": 2025,
       "location": "Bay Area",
@@ -8872,10 +9012,42 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2094899/000209489925000001/primary_doc.xml",
+          "title": "Form D - Engineering Capital Fund V, L.P. (filed 2025-11-07)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=engineering+capital&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ENGINEERING CAPITAL",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.buzzsprout.com/1601695/episodes/18910765-investor-who-hasn-t-changed-his-thesis-in-5-funds-saw-the-ai-wave-before-chatgpt-ashmeet-sidana-engineering-capital",
+          "title": "Investor who hasn't Changed His Thesis in 5 Funds & Saw the AI Wave Before ChatGPT | Ashmeet Sidana, Engineering Capital",
+          "publisher": "The Neon Show (Buzzsprout)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_eniac-ventures_ii",
@@ -13453,8 +13625,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_intel-capital-diversity-fund_i",
-      "investor_id": "inv_intel-capital-diversity-fund",
+      "id": "fund_intel-capital_i",
+      "investor_id": "inv_intel-capital",
       "name": "Intel Capital Diversity Fund",
       "number": "I",
       "size_usd": 125000000,
@@ -14855,6 +15027,75 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_lockheed-martin-ventures_2026",
+      "investor_id": "inv_lockheed-martin-ventures",
+      "name": "Lockheed Martin Ventures (evergreen corporate venture fund)",
+      "number": null,
+      "size_usd": 1000000000,
+      "currency_original": "USD",
+      "size_original": 1000000000,
+      "fx": null,
+      "close_date": "2026-04-14",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://news.lockheedmartin.com/2026-04-14-Lockheed-Martin-Authorizes-Increase-to-Venture-Capital-Fund-up-to-1-Billion",
+          "title": "Lockheed Martin Authorizes Increase to Venture Capital Fund up to $1 Billion",
+          "publisher": "Lockheed Martin (PR Newswire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures.html",
+          "title": "Lockheed Martin Ventures | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.lockheedmartin.com/2026-07-16-Lockheed-Martin-Earmarks-100-Million-for-Venture-Capital-Investments-in-U-K-,-Europe",
+          "title": "Lockheed Martin Earmarks $100 Million for Venture Capital Investments in U.K., Europe",
+          "publisher": "Lockheed Martin (PR Newswire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/news/features/2022/doubling-our-venture-capital-fund.html",
+          "title": "Doubling Our Venture Capital Fund",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://globalventuring.com/corporate/industrial/defence-company-lockheed-martin-bumps-up-vc-investment-fund-to-1bn/",
+          "title": "Defence company Lockheed Martin bumps up VC investment fund to $1bn",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_long-ventures-partners_i",
@@ -17067,6 +17308,100 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_onesixone-ventures_i",
+      "investor_id": "inv_onesixone-ventures",
+      "name": "ONESIXONE Founders Fund LP",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1864970/000139372522000122/primary_doc.xml",
+          "title": "Form D - ONESIXONE FOUNDERS FUND LP (filed 2022-04-14)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=onesixone&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: ONESIXONE",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.floridatrend.com/nextgen/2026/02/09/early-believers/",
+          "title": "Early Believers",
+          "publisher": "Florida Trend",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://refreshmiami.com/news/miami-tech-month-where-developers-get-their-own-conference-vcs-take-the-stage-and-anything-is-possible/",
+          "title": "Miami Tech Month, where developers get their own conference, VCs take the stage, and anything is POSSIBLE",
+          "publisher": "Refresh Miami",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pitchbook.com/profiles/fund/21349-27F",
+          "title": "Onesixone Founders Fund: Performance | PitchBook",
+          "publisher": "PitchBook (public profile preview)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/onesixone-ventures/",
+          "title": "OneSixOne Ventures | LinkedIn",
+          "publisher": "LinkedIn (company page, public header)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_onesixone-ventures_ii",
+      "investor_id": "inv_onesixone-ventures",
+      "name": "Fund II",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.onesixone.ventures/fund-ii",
+          "title": "OneSixOne Ventures - Fund II",
+          "publisher": "OneSixOne Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.floridatrend.com/nextgen/2026/02/09/early-believers/",
+          "title": "Early Believers",
+          "publisher": "Florida Trend",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
       "id": "fund_open-ocean_i",
       "investor_id": "inv_open-ocean",
       "name": "Open Ocean",
@@ -18341,6 +18676,330 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_prime-movers-lab_i",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Lab Fund I LP",
+      "number": "I",
+      "size_usd": 100000000,
+      "currency_original": "USD",
+      "size_original": 100000000,
+      "fx": null,
+      "close_date": "2020-01-29",
+      "close_date_precision": "day",
+      "vintage_year": 2020,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-100-million-300995218.html",
+          "title": "Prime Movers Lab Raises $100 Million",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1751631/000156761918001977/primary_doc.xml",
+          "title": "Form D - Prime Movers Lab Fund I LP (filed 2018-08-31)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1751631/000156761919018161/primary_doc.xml",
+          "title": "Form D/A - Prime Movers Lab Fund I LP (filed 2019-09-12)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-adds-two-investment-veterans-to-help-fuel-scientific-based-company-growth-301243199.html",
+          "title": "Prime Movers Lab Adds Two Investment Veterans to Help Fuel Scientific-Based Company Growth",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://globalventuring.com/university/prime-movers-lab-245m-fund-2/?format=md",
+          "title": "Prime Movers Lab proceeds to $245m Fund II",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_prime-movers-lab_i-2",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Lab Early Growth Fund",
+      "number": "I",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": "2022-09-14",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-500-million-early-growth-fund-301623845.html",
+          "title": "Prime Movers Lab Raises $500 Million Early Growth Fund",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-named-to-incs-2022-list-of-founder-friendly-investors-301641789.html",
+          "title": "Prime Movers Lab Named to Inc.'s 2022 List of Founder-Friendly Investors",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html",
+          "title": "Prime Movers Lab Raises $245 Million Early-Stage Fund to Advance Breakthrough Science Startups",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_prime-movers-lab_ii",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Lab Fund II LP (with parallel Prime Movers Lab Fund II-A LP)",
+      "number": "II",
+      "size_usd": 245000000,
+      "currency_original": "USD",
+      "size_original": 245000000,
+      "fx": null,
+      "close_date": "2021-01-27",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html",
+          "title": "Prime Movers Lab Launches Second Scientific Startup Fund",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2021/01/27/prime-movers-lab-raises-245-million-for-second-fund-to-invest-in-early-stage-science-startups/",
+          "title": "Prime Movers Lab raises $245 million for second fund to invest in early stage science startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://globalventuring.com/university/prime-movers-lab-245m-fund-2/?format=md",
+          "title": "Prime Movers Lab proceeds to $245m Fund II",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-adds-two-investment-veterans-to-help-fuel-scientific-based-company-growth-301243199.html",
+          "title": "Prime Movers Lab Adds Two Investment Veterans to Help Fuel Scientific-Based Company Growth",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1807277/000156761920006982/primary_doc.xml",
+          "title": "Form D - Prime Movers Lab Fund II LP (filed 2020-03-25)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1807259/000156761920006988/primary_doc.xml",
+          "title": "Form D - Prime Movers Lab Fund II-A LP (filed 2020-03-25)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_prime-movers-lab_ii-2",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Early Growth Fund II LP",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1955169/000112329226001098/primary_doc.xml",
+          "title": "Form D - Prime Movers Early Growth Fund II LP (filed 2026-08-13)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=prime+movers&type=D&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: PRIME MOVERS (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_prime-movers-lab_iii",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Lab Fund III LP (with parallel Prime Movers Lab Fund III-A LP)",
+      "number": "III",
+      "size_usd": 245000000,
+      "currency_original": "USD",
+      "size_original": 245000000,
+      "fx": null,
+      "close_date": "2023-07-26",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html",
+          "title": "Prime Movers Lab Raises $245 Million Early-Stage Fund to Advance Breakthrough Science Startups",
+          "publisher": "PR Newswire (Prime Movers Lab release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1904014/000156761922001311/primary_doc.xml",
+          "title": "Form D - Prime Movers Lab Fund III LP and Prime Movers Early Growth Fund III LP (filed 2022-01-19)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1904014/000156761923001002/primary_doc.xml",
+          "title": "Form D/A - Prime Movers Lab Fund III LP (filed 2023-01-19)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1928000/000156761923006362/primary_doc.xml",
+          "title": "Form D/A - Prime Movers Lab Fund III-A LP (filed 2023-06-16)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_prime-movers-lab_iv",
+      "investor_id": "inv_prime-movers-lab",
+      "name": "Prime Movers Fund IV LP",
+      "number": "IV",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2110755/000112329226000257/primary_doc.xml",
+          "title": "Form D - Prime Movers Fund IV LP (filed 2026-02-27)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=prime+movers&type=D&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: PRIME MOVERS (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
       "id": "fund_procyon-ventures_i",
       "investor_id": "inv_procyon-ventures",
       "name": "Procyon Ventures",
@@ -19537,6 +20196,180 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_riceberg-ventures_2026",
+      "investor_id": "inv_riceberg-ventures",
+      "name": "Riceberg Ventures 1 a series of Allocations 2025 Master, LLC",
+      "number": null,
+      "size_usd": 423928,
+      "currency_original": "USD",
+      "size_original": 423928,
+      "fx": null,
+      "close_date": "2026-01-09",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2103148/000210314826000001/primary_doc.xml",
+          "title": "Form D - Riceberg Ventures 1 a series of Allocations 2025 Master, LLC (filed 2026-01-09)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_riceberg-ventures_2026-2",
+      "investor_id": "inv_riceberg-ventures",
+      "name": "Riceberg Ventures SPV a Series of CGF2021 LLC",
+      "number": null,
+      "size_usd": 195000,
+      "currency_original": "USD",
+      "size_original": 195000,
+      "fx": null,
+      "close_date": "2026-10-23",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2151237/000215123726000001/primary_doc.xml",
+          "title": "Form D - Riceberg Ventures SPV a Series of CGF2021 LLC (filed 2026-10-23)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_riceberg-ventures_i",
+      "investor_id": "inv_riceberg-ventures",
+      "name": "Riceberg Ventures debut fund ($20M, announced January 2025)",
+      "number": "I",
+      "size_usd": 20000000,
+      "currency_original": "USD",
+      "size_original": 20000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/riceberg-ventures-floats-20-mn-fund-for-deeptech-startups/",
+          "title": "Riceberg Ventures Floats $20 Mn Fund For Deeptech Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.outlookbusiness.com/deeptech/riceberg-ventures-launches-20-million-fund-for-deeptech-start-ups-key-focus-on-spacetech",
+          "title": "Riceberg Ventures Launches $20 Million Fund for DeepTech Start-Ups, Key Focus on SpaceTech",
+          "publisher": "Outlook Business",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cxodigitalpulse.com/riceberg-ventures-launches-20-million-deeptech-innovation-fund",
+          "title": "Riceberg Ventures Launches $20 Million Deeptech Innovation Fund",
+          "publisher": "CXO Digitalpulse",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrepreneur.economictimes.indiatimes.com/news/ventures/it-started-with-one-bet-and-grew-into-a-global-deeptech-fund/134383949",
+          "title": "It started with one bet and grew into a global deeptech fund",
+          "publisher": "The Economic Times (ETEntrepreneur)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/commerce-of-cutting-edge-rd/article71074111.ece",
+          "title": "Commerce of cutting-edge R&D",
+          "publisher": "The Hindu BusinessLine",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_riceberg-ventures_i-2",
+      "investor_id": "inv_riceberg-ventures",
+      "name": "Riceberg Ventures Premier Fund I, LP",
+      "number": "I",
+      "size_usd": 3376260,
+      "currency_original": "USD",
+      "size_original": 3376260,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2007022/000200702226000001/primary_doc.xml",
+          "title": "Form D/A - Riceberg Ventures Premier Fund I, LP (filed 2026-01-05)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2007022/000200702224000002/primary_doc.xml",
+          "title": "Form D/A - Riceberg Ventures Premier Fund I, LP (filed 2024-12-31)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2007022/000200702224000001/primary_doc.xml",
+          "title": "Form D - Riceberg Ventures Premier Fund I, LP (filed 2024-01-05)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_riot-ventures_ii",
       "investor_id": "inv_riot-ventures",
       "name": "Riot Ventures",
@@ -19771,15 +20604,75 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_root-ventures_i",
+      "investor_id": "inv_root-ventures",
+      "name": "Root Ventures I, L.P.",
+      "number": "I",
+      "size_usd": 31415927,
+      "currency_original": "USD",
+      "size_original": 31415927,
+      "fx": null,
+      "close_date": "2015-06-11",
+      "close_date_precision": "day",
+      "vintage_year": 2015,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1627221/000162722115000003/primary_doc.xml",
+          "title": "Form D/A - Root Ventures I, L.P. (filed 2015-06-11)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1627221/000162722114000002/primary_doc.xml",
+          "title": "Form D - Lion Wells Ventures I, L.P. (filed 2014-12-16)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://medium.com/feed/root-ventures",
+          "title": "Root Ventures on Medium (RSS feed: 'Announcing Root Ventures Fund III: $150M for technical founders', 'Root Ventures' Second Act')",
+          "publisher": "Root Ventures (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/",
+          "title": "Root Ventures, a young SF firm focused on 'hard tech,' just closed a much bigger second fund with $76.7 million",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_root-ventures_ii",
       "investor_id": "inv_root-ventures",
       "name": "Root Ventures",
       "number": "II",
-      "size_usd": 77000000,
+      "size_usd": 76726900,
       "currency_original": "USD",
-      "size_original": 77000000,
+      "size_original": 76726900,
       "fx": null,
-      "close_date": "2018-03-01",
+      "close_date": "2018-07-26",
       "close_date_precision": "day",
       "vintage_year": 2018,
       "location": "Bay Area, LA",
@@ -19791,10 +20684,93 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://medium.com/feed/root-ventures",
+          "title": "Root Ventures on Medium (RSS feed: 'Announcing Root Ventures Fund III: $150M for technical founders', 'Root Ventures' Second Act')",
+          "publisher": "Root Ventures (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/",
+          "title": "Root Ventures, a young SF firm focused on 'hard tech,' just closed a much bigger second fund with $76.7 million",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1721982/000172198217000001/primary_doc.xml",
+          "title": "Form D - Root Ventures II, L.P. (filed 2017-11-27)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_root-ventures_iii",
+      "investor_id": "inv_root-ventures",
+      "name": "Root Ventures III, L.P.",
+      "number": "III",
+      "size_usd": 150000000,
+      "currency_original": "USD",
+      "size_original": 150000000,
+      "fx": null,
+      "close_date": "2022-08-23",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://medium.com/feed/root-ventures",
+          "title": "Root Ventures on Medium (RSS feed: 'Announcing Root Ventures Fund III: $150M for technical founders', 'Root Ventures' Second Act')",
+          "publisher": "Root Ventures (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2022/2022-08-25-root-ventures-closes-third-fund-at-$150-million",
+          "title": "Root Ventures Closes Third Fund at $150 Million",
+          "publisher": "Cooley",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1875799/000187579921000002/primary_doc.xml",
+          "title": "Form D - Root Ventures III, L.P. (filed 2021-08-02)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_root-ventures_iv",
@@ -19805,8 +20781,8 @@
       "currency_original": "USD",
       "size_original": 190000000,
       "fx": null,
-      "close_date": "2025-10-10",
-      "close_date_precision": "day",
+      "close_date": "2025-11",
+      "close_date_precision": "month",
       "vintage_year": 2025,
       "location": "Bay Area",
       "notes": null,
@@ -19817,10 +20793,51 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.newcomer.co/p/exclusive-root-ventures-raises-190",
+          "title": "EXCLUSIVE: Root Ventures Raises $190 Million Fourth Fund for Early Bets on Wonky Startups",
+          "publisher": "Newcomer",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://root.vc/js/app.bundle.js",
+          "title": "Root Ventures website terminal bundle (firm, portfolio and team config)",
+          "publisher": "Root Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rootvc/cli-website/main/config/firm.js",
+          "title": "rootvc/cli-website config/firm.js",
+          "publisher": "Root Ventures (GitHub)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2049975/000204997525000001/primary_doc.xml",
+          "title": "Form D - Root Ventures IV, L.P. (filed 2025-01-10)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_router-ventures_i",
