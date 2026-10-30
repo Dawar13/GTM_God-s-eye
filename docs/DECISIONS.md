@@ -193,3 +193,9 @@ Phase 0 open questions are still unanswered; Phase 1 proceeds on the stated defa
 - **Stopped at the user's request** ("don't waste too many tokens… cut short the research to a good enough level"). Running agents were told to keep what they had saved, make it pass `research:check`, and stop; no new research was started.
 - **Where it landed:** Tier A Western with ≥ 8 sourced rounds 60 / 60 (counting rounds other files attribute to them); Tier A India 11 / 10; Tier B 175 / 200 profiled (104 with ≥ 3 rounds); 25 Tier B names were never researched and stay Tier C-depth records. Competitors 44, all seed-list rounds verified, 1,246 rounds with a web source, 1,078 companies.
 - **About 150 research-agent runs** in total, with Tier B and round checks on Sonnet. One 5-hour usage limit was hit; interrupted agents were resumed with their context, and none lost saved work.
+
+## 2026-10-30 — Phase 1 complete; current phase: waiting for Phase 1 review
+
+- See `docs/PHASE_1_REPORT.md`: exit checklist, counts, top 25 by fit, clusters, surprises, gaps and open questions. Self-audit precision 96.7% (one wrong fact, removed).
+- Short of target: Tier B 175 of 200 profiled (research stopped early at the user's request).
+- `docs/PHASE_2.md` is drafted. Phase 2 does not start until the human has reviewed Phase 1, answered the open questions, and merged `phase-1`.

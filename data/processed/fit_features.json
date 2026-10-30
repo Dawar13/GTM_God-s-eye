@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T17:14:17+00:00",
+  "generated_at": "2026-10-30T17:19:38+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -80702,13 +80702,7 @@
             "ai weight 0.09"
           ]
         },
-        "stage": {
-          "value": 0.4,
-          "method": "earliest stage vs our pre-seed",
-          "inputs": [
-            "stages: series_a, series_b"
-          ]
-        },
+        "stage": null,
         "check": {
           "value": 0.8,
           "method": "check range vs raise of $1,000,000 (assumption); leads +0.2",

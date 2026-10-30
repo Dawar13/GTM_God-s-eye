@@ -30,7 +30,7 @@ Share of investors in the tier with the field known. Tier A and B are researched
 | region | 99% | 94% | 16% |
 | hq_country | 99% | 54% | 0% |
 | website | 100% | 68% | 0% |
-| stages | 99% | 61% | 0% |
+| stages | 98% | 61% | 0% |
 | check size | 74% | 26% | 0% |
 | leads | 94% | 19% | 0% |
 | thesis_text | 100% | 78% | 0% |
@@ -73,4 +73,39 @@ Share of investors in the tier with the field known. Tier A and B are researched
 <!-- self-audit -->
 ## Self-audit
 
-Not run yet (`pnpm self-audit`).
+30 facts sampled with seed 20261030 on 2026-10-30, re-checked against their sources on 2026-10-30 (`data/research/audit/sample.json`).
+
+**Precision 96.7%** (29 correct, 1 wrong; 0 unverifiable, not counted). Target ≥ 95%: met.
+
+| # | Type | Record | Field | Value | Verdict | Note |
+|---|---|---|---|---|---|---|
+| 1 | round | Ciridae seed 2026-05-13 | date | 2026-05-13 | correct | Page dated May 13, 2026. |
+| 2 | round | Latent Technology seed 2025-06-06 | date | 2025-06-06 | correct | Announced 6 June 2025 per byline and URL. |
+| 3 | round | Ivo series_b 2026-01-21 | lead investors | Blackbird Ventures | correct | Blackbird "proud to lead the US$55M Series B round into Ivo". |
+| 4 | round | AudioShake series_a 2025-10-01 | amount | 14000000 USD | correct | $14 million Series A, announced October 1, 2025. |
+| 5 | round | Rain series_b 2025-04-08 | date | 2025-04-08 | correct | TechCrunch article dated April 8, 2025. |
+| 6 | round | AssetWatch series_b 2024-05-15 | date | 2024-05-15 | correct | Series B announcement dated May 15, 2024. |
+| 7 | round | Rebuild undisclosed 2026-09-16 | date | 2026-09-16 | correct | thesaasnews dates the $13M raise September 16, 2026; round type not stated. Orrick page returned 403. |
+| 8 | round | Reco series_b 2026-02-10 | lead investors | Zeev Ventures | correct | Zeev Ventures led the $30M Series B. |
+| 9 | round | Kascaid pre_seed 2025-07-09 | amount | 2300000 USD | correct | Kascaid pre-seed $2.3M, announced July 9, 2025. |
+| 10 | investor | Collab Capital | check_max_usd | 2000000 | correct | "Collab will deploy $1 to $2 million into approximately 30 companies". |
+| 11 | investor | Supply Change Capital | portfolio_count_reported | 28 | correct | "Portfolio Size: 28 (24 active)". |
+| 12 | investor | Boost VC | check_max_usd | 500000 | correct | Page says "$500k Checks"; not explicitly labelled maximum, accepted. |
+| 13 | investor | VentureTech Alliance | stages | series_a, series_b | wrong | Page says only "early to mid-stage" funding; names no Series A or Series B. |
+| 14 | investor | Ubiquity Ventures | website | https://www.ubiquity.vc | correct | Page is Ubiquity Ventures' site, footer 2026; contact email at ubiquity.vc. |
+| 15 | investor | Elevation Capital | leads | true | correct | Dextr AI seed "led by Elevation Capital". |
+| 16 | investor | Propel Venture Partners | check_min_usd | 1000000 | correct | "They primarily invest $1-4 million in pre-seed and seed rounds"; $1M floor of typical range. |
+| 17 | fund | Cleo Ventures — Cleo Ventures fund | close_date | 2026-05-22 | correct | Article dated May 22, 2026; page gives no separate close date. |
+| 18 | fund | Dynamo Ventures — Dynamo Ventures | size | 54000000 USD | correct | Fund III closed at $54 million. |
+| 19 | fund | Blackbird Ventures — Blackbird Fund III (2018 vintage) | close_date | 2018 | correct | Page lists a 2018 vintage ($261M); does not name it Fund III. |
+| 20 | fund | Air Street Capital — Air Street Capital II LP | close_date | 2023-09-06 | correct | Fund II announcement dated September 6, 2023. |
+| 21 | fund | Creator Ventures — Creator Ventures | close_date | 2025-05-20 | correct | Fund II close announced May 20, 2025. |
+| 22 | partner | Tim Kopra (Scout Ventures) | title | Venture Partner | correct | Title listed as "Venture Partner". |
+| 23 | partner | Will Bruey (Also Capital) | title | Venture Partner (co-founder of Also Capital; CEO, Varda Space Industries) | correct | Page says Venture Partner and "Will is a co-founder of Also Capital"; CEO Varda not checked. |
+| 24 | partner | Michelle Volz (Pax) | title | Founder and Managing Partner | correct | "Founder and Managing Partner of Pax VC". |
+| 25 | company | Pomo | website | https://www.usepomo.ai | correct | Contentgrip links Pomo to https://usepomo.ai/ (Pulse2 gave no URL). |
+| 26 | company | Apptronik | hq_country | US | correct | Dateline "Austin, Texas"; HQ not stated explicitly. |
+| 27 | company | Arda Biomaterials | hq_country | GB | correct | Dateline "London, UK"; HQ in London implied, not stated outright. |
+| 28 | benchmark | bm_entrackr_india_seed_deal_count_2026q3 | value | 88 count (deal_count, 2026-Q3) | correct | "Seed-stage startups recorded the highest deal count at 88". |
+| 29 | benchmark | bm_carta_safe_cap_500k_1m_us_2026q2 | value | 10000000 usd (safe_cap_median, 2026-Q2) | correct | Page lists $10M median SAFE cap for $500K-$999K rounds, citing Carta Q2 2026. |
+| 30 | legal_note | Overseas Investment Rules 2022: limits on resident individuals holding a foreign parent | effective_date | 2022-08-22 | correct | Notified August 22, 2022 (G.S.R. 646(E)); in force on Gazette publication, date not stated. Accepted. |

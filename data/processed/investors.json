@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T17:14:17+00:00",
+  "generated_at": "2026-10-30T17:19:38+00:00",
   "records": [
     {
       "id": "inv_01a",
@@ -221549,10 +221549,7 @@
       "region": "western",
       "hq_country": "US",
       "hq_city": "San Jose",
-      "stages": [
-        "series_a",
-        "series_b"
-      ],
+      "stages": [],
       "check_min_usd": 1000000,
       "check_max_usd": 3000000,
       "leads": false,
@@ -221683,10 +221680,6 @@
           6,
           7
         ],
-        "stages": [
-          8,
-          9
-        ],
         "check_min_usd": [
           8
         ],
@@ -221720,7 +221713,7 @@
       "category": {
         "freshness": "unknown",
         "maturity": "emerging",
-        "is_early_stage": true,
+        "is_early_stage": null,
         "is_generalist": false,
         "cluster_id": 7,
         "industrial_affinity": {
@@ -221730,13 +221723,7 @@
             "sector_weights (stated_and_portfolio)"
           ]
         },
-        "stage_earliness": {
-          "value": 0.5,
-          "method": "mean of stage scores",
-          "inputs": [
-            "stages: series_a, series_b"
-          ]
-        }
+        "stage_earliness": null
       },
       "tier": "A",
       "tier_score": 7,
