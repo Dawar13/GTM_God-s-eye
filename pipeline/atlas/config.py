@@ -98,6 +98,19 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         # A bare "Amplify" in a release can be either firm; it stays its own record.
         ("amplify ventures", "amplify"),
         ("amplify partners", "amplify"),
+        ("mercato partners", "mercator partners"),  # different firms (fuzzy 93.3)
+        ("shasta ventures", "shastra vc"),  # different firms (fuzzy 92.3)
+        ("space vc", "space capital"),  # different firms
+        # Parent company vs its venture arm.
+        ("toyota", "toyota ventures"),
+        ("rtx", "rtx ventures"),
+        ("point72", "point72 ventures"),
+        ("ms&ad", "ms&ad ventures"),
+        # Bare names that fit more than one firm (SBI Investment / State Bank of India;
+        # NGP Capital / NGP Energy; several Ascends).
+        ("sbi", "sbi ventures"),
+        ("ngp", "ngp capital"),
+        ("ascend", "ascend venture capital"),
     ]
 )
 
