@@ -1,0 +1,80 @@
+{
+  "key": "round-mytra",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Mytra = Brisbane, California warehouse robotics company founded 2022 by Chris Walti and Ahmad Baitalmal (Fortune, The Robot Report). Not any other Mytra.",
+  "pages": [
+    {
+      "url": "https://fortune.com/2026/01/15/mytra-raises-120-million-series-c-scale-supply-chain-robotics/",
+      "title": "Mytra raises $120 million Series C",
+      "publisher": "Fortune",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.therobotreport.com/mytra-closes-150m-series-c-funding-pallet-storing-robots/",
+      "title": "Mytra closes Series C funding for pallet-storing robots",
+      "publisher": "The Robot Report",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic investors",
+      "values": [
+        "RyderVentures (Fortune)",
+        "Lineage and RyderVentures (The Robot Report)"
+      ],
+      "chosen": "both listed as unspecified",
+      "reason": "Fortune names only RyderVentures; The Robot Report adds Lineage."
+    }
+  ],
+  "open_items": [
+    "The Robot Report URL slug says 150m but its text says $120M; $120M used.",
+    "Website and valuation not on pages read. Round date is the article date, 15 Jan 2026."
+  ],
+  "seed_company": "Mytra",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Mytra",
+      "website": null,
+      "description": "Warehouse robotics that move cases and heavy pallets in dense storage systems to automate whole facilities.",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_c_plus",
+    "stage_raw": "Series C",
+    "date": "2026-01-15",
+    "date_precision": "day",
+    "amount_original": 120000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Avenir Growth"
+    ],
+    "participants": [
+      "Kivu Ventures",
+      "Liquid 2",
+      "D. E. Shaw",
+      "Offline Ventures",
+      "Eclipse",
+      "Greenoaks",
+      "Abstract Ventures",
+      "Promus Ventures"
+    ],
+    "unspecified": [
+      "RyderVentures",
+      "Lineage"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "Avenir Growth led Mytra's Series C round, which brought its total funding to more than $200 million."
+  }
+}

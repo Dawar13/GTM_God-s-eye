@@ -1,0 +1,57 @@
+{
+  "key": "round-sunday",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Sunday Inc. = home-robot company (Memo robot, glove-based training data), site sunday.ai, per SiliconANGLE. Not any other business called Sunday.",
+  "pages": [
+    {
+      "url": "https://siliconangle.com/2026/03/12/sunday-raises-165m-1-15b-valuation-launch-memo-household-robot/",
+      "title": "Sunday raises $165M at $1.15B valuation to launch Memo household robot",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ not stated on the page read. Only one fetched press page; GlobeNewswire release (aimagazine.com) returned 403.",
+    "Valuation $1.15B reported; pre/post not stated, so null."
+  ],
+  "seed_company": "Sunday",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Sunday",
+      "website": "https://www.sunday.ai",
+      "description": "Builds the Memo household robot for chores such as clearing dishes and loading appliances, trained from human motion captured with a glove.",
+      "hq_country": null,
+      "founded_year": 2023,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_b",
+    "stage_raw": "Series B",
+    "date": "2026-03-12",
+    "date_precision": "day",
+    "amount_original": 165000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Coatue Management"
+    ],
+    "participants": [
+      "Bain Capital Ventures",
+      "Fidelity Management & Research Co.",
+      "Tiger Global Management",
+      "Benchmark Capital Management Co.",
+      "Conviction Capital",
+      "Xtal Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "The Series B funding round was led by Coatue Management."
+  }
+}

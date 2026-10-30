@@ -1,0 +1,65 @@
+{
+  "key": "belief-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Belief Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Kevin Costa's solo-GP fund Belief Capital, which closed a $20M fund for pre-seed and seed AI, robotics and infrastructure in Europe and the US (Startup Rise, 23 Dec 2025). Not Belief Capital Management, LLC (an SEC-registered adviser listed on Altss as growth-stage/control, which appears to be a different entity; not fetched). Own website not fetched.",
+  "pages": [
+    { "url": "https://startuprise.co.uk/solo-gp-kevin-costa-closes-20m-fund-for-ai-robotics-and-infrastructure-investments/", "title": "Solo GP Kevin Costa Closes $20m Fund For AI, Robotics And Infrastructure Investments", "publisher": "Startup Rise", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://dabafinance.com/en/news/Terra-Industries-clture-un-tour-de-table-initial-de-52-millions", "title": "Terra Industries cloture un tour de table initial de 52 millions", "publisher": "Daba Finance", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "solo GP fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "pre-seed and seed" },
+    "thesis_text": { "value": "Backs technical pre-seed and seed founders in AI, robotics and infrastructure across Europe and the US, committing a fixed share of the fund to each company.", "pages": [0], "snippet": "committing around 5–10% of the fund to each company" },
+    "stated_sectors": { "value": ["ai_infra", "robotics_physical_ai"], "pages": [0], "snippet": "AI, robotics, and infrastructure" }
+  },
+  "funds": [
+    {
+      "name": "Belief Capital Fund I",
+      "number": null,
+      "size_original": 20000000,
+      "currency_original": "USD",
+      "close_date": "2025-12-23",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$20m final close for a solo GP fund (article dated 23 Dec 2025)"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Terra Industries",
+        "website": null,
+        "description": "Nigeria-based defence technology company building infrastructure and autonomous systems to monitor and respond to threats in Africa.",
+        "hq_country": "NG",
+        "founded_year": 2024,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed (later tranche bringing the seed total to $52M)",
+      "date": "2026-08-17",
+      "date_precision": "day",
+      "amount_original": 18000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["8VC", "Silent Ventures", "Nova Global", "Belief Capital", "SV Angel", "Norleo Space Investments"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Nova Global, Belief Capital et SV Angel ont participé à ce tour de table"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round recorded (need 3). Ark Robotics (Tallinn) and Popcorn (New York) are named as portfolio companies (Startup Rise) but no fetched page gives round details; Nordic 9's Ark Robotics seed article returned HTTP 403 (search summary: ~$7.5M seed, July 2025, with Inflection, Adjacent, Asylum Ventures, NP-Hard Ventures).",
+    "Terra Industries Feb 2026 $22M extension (Lux Capital lead): TechCrunch and Techeconomy fetched pages do not name Belief Capital, so not recorded; only the Aug 2026 $18M tranche names it. Lead for that tranche not stated.",
+    "HQ not stated on fetched pages (search results conflict: London vs New York). Fund name/number not stated; close date is the article date. Website, check size in USD (article: 5-10% of fund per company), application URL not found.",
+    "Backers named by Startup Rise: GPs from Hummingbird, Point Nine, Adjacent; Taavet Hinrikus; Christian Reber; GREE (not recorded as structured data)."
+  ]
+}

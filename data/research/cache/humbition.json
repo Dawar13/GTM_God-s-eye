@@ -1,0 +1,186 @@
+{
+  "key": "humbition",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Humbition",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as humbition.com, an early-stage deep tech fund 'built by founders', started by the founders of Indiegogo (Slava Rubin) and Zocdoc (Cyrus Massoumi) per TechCrunch (2018) and the site. Portfolio page lists Chef Robotics, Hone, Allara, Previvor Edge, Redcar, River Markets and others. Not Humba Ventures (a separate pre-seed/seed fund, sister firm of Susa Ventures), not Humble Robotics (autonomous freight startup), not Humble Holdings.",
+  "pages": [
+    { "url": "https://humbition.com", "title": "humbition", "publisher": "Humbition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://humbition.com/portfolio", "title": "humbition portfolio", "publisher": "Humbition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/?p=1728701", "title": "Humbition fund (Slava Rubin and Cyrus Massoumi)", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.biospace.com/allara-raises-10m-in-series-a-funding-led-by-gv-google-ventures-to-bridge-the-care-gap-for-women-with-chronic-hormonal-conditions", "title": "Allara raises $10M in Series A funding led by GV", "publisher": "BioSpace", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/hone-health-33-million-series-a-raised-and-ivee-acquisition", "title": "Hone Health: $33 Million (Series A) Raised And ivee Acquisition", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.cbinsights.com/company/humbition/financials", "title": "humbition - financials", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "humbition is an early-stage deep tech fund built by founders."
+    },
+    "website": {
+      "value": "https://humbition.com",
+      "pages": [0],
+      "snippet": "humbition is an early-stage deep tech fund built by founders."
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [2],
+      "snippet": "aimed at early stage, founder-led companies in New York"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [2],
+      "snippet": "aimed at early stage, founder-led companies in New York"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "pages": [0],
+      "snippet": "Inception and pre-seed."
+    },
+    "thesis_text": {
+      "value": "Early-stage deep tech fund built by founders that backs exceptional founders at inception and pre-seed, adding hands-on support on hires, financing and customers.",
+      "pages": [0],
+      "snippet": "Backing exceptional founders before the market recognizes exceptional companies."
+    },
+    "stated_sectors": {
+      "value": ["robotics_physical_ai", "defense_dual_use", "space", "hardware_deeptech"],
+      "pages": [0, 1],
+      "snippet": "Chef Robotics, UForce, Perle, Braid Robotics, Rendezvous Robotics, and Wild West Systems"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "We prefer warm introductions through mutual connections"
+    }
+  },
+  "funds": [
+    {
+      "name": "Humbition",
+      "number": null,
+      "size_original": 30000000,
+      "currency_original": "USD",
+      "close_date": "2018-10-08",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "a new $30 million fund called Humbition"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Allara",
+        "website": null,
+        "description": "Virtual care company for women with chronic hormonal conditions, linking patients with specialist physicians and dietitians.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2023-10-18",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["GV (Google Ventures)"],
+      "participants": ["Great Oaks Venture Capital", "Humbition", "Vanterra", "Gaingels"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "$10 million in Series A funding led by GV (Google Ventures), with participation from Great Oaks Venture Capital, Humbition, Vanterra, Gaingels"
+    },
+    {
+      "company": {
+        "name": "Hone Health",
+        "website": null,
+        "description": "Telehealth clinic specializing in preventative and proactive longevity care.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-01",
+      "date_precision": "month",
+      "amount_original": 33000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Tribe Capital", "PIF", "Republic Capital", "Vibe VC", "Humbition", "Hanwha", "Gaingels", "Looking Glass Capital", "FJ Labs", "Agent Capital"],
+      "pages": [4],
+      "snippet": "Tribe Capital, PIF, Republic Capital, Vibe VC, Humbition, Hanwha, Gaingels, Looking Glass Capital, FJ Labs, and Agent Capital"
+    },
+    {
+      "company": {
+        "name": "Previvor Edge",
+        "website": null,
+        "description": "Listed on Humbition's portfolio page; round details come from a database page only.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": null,
+        "sector_classified_by": null,
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-Seed",
+      "date": "2025-10-09",
+      "date_precision": "day",
+      "amount_original": 3300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Humbition", "CoFound Partners", "Designer Fund", "Max Ventures", "Red Swan Ventures"],
+      "pages": [5, 1],
+      "snippet": "10/9/2025 Pre-Seed Previvor Edge $3.3M CoFound Partners, Designer Fund, Max Ventures, Red Swan Ventures"
+    },
+    {
+      "company": {
+        "name": "River Markets",
+        "website": null,
+        "description": "Listed on Humbition's portfolio page; round details come from a database page only.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": null,
+        "sector_classified_by": null,
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed VC",
+      "date": "2026-07-01",
+      "date_precision": "day",
+      "amount_original": 8500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Humbition", "Cherry Ventures", "Coinbase Ventures", "Haun Ventures", "Kima Ventures", "Y Combinator"],
+      "pages": [5, 1],
+      "snippet": "7/1/2026 Seed VC River Markets $8.5M Cherry Ventures, Coinbase Ventures, Haun Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["New York (TechCrunch 2018: fund aimed at founder-led companies in New York; lead from fund list says NYC)", "Miami address (Private Equity International profile, seen only in a search result, not fetched)"],
+      "chosen": "New York",
+      "reason": "Founders' original base and the fund list agree; the humbition.com homepage states no HQ."
+    }
+  ],
+  "open_items": [
+    "Fund II ($45M, 2026-04-26, per the lead from Shai Goldman's fund list) could not be confirmed on any fetched page; only the original $30M fund (TechCrunch, 2018-10-08) is recorded. CB Insights reports 40 investments.",
+    "humbition.com states no HQ city, check size or application form; HQ New York rests on the 2018 TechCrunch article.",
+    "Previvor Edge and River Markets rounds come only from a CB Insights database page (low confidence); no announcement naming Humbition was found. River Markets is a 2026 round with Humbition marked as a non-new investor.",
+    "Hone Health date is a month: Pulse 2.0 article is dated 2025-02-02, BusinessWire release URL in search results is dated 2025-01-22 (not fetched). Lead not named by Pulse 2.0 (other outlets say Tribe Capital).",
+    "Chef Robotics Series A (2025, led by Avataar) fetched pages (Built In, CNBC) do not name Humbition, so it is not recorded as a round.",
+    "No announcement found for a 2026 round led by Humbition; robotics-heavy portfolio (Chef Robotics, Braid, Rendezvous, Wild West Systems, UForce, Perle) not tied to rounds on any fetched page. Rendezvous Robotics pre-seed (Mintz release) does not name Humbition."
+  ]
+}

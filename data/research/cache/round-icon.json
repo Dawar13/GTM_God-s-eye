@@ -1,0 +1,60 @@
+{
+  "key": "round-icon",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "ICON = Austin, Texas 3D-printed construction company with the Titan printer and Build/Tech/Prime segments (Construction Dive, Bisnow). Not the other ICONs (e.g. ICON plc, ICON Health). Website iconbuild.com was inferred by the fetch tool from article links, so not recorded.",
+  "pages": [
+    {
+      "url": "https://www.constructiondive.com/news/3d-printing-giant-icon-raises-funding/833001/",
+      "title": "3D printing giant Icon raises funding",
+      "publisher": "Construction Dive",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.bisnow.com/news/national/proptech/blackrock-baillie-gifford-icon-series-d-valuation",
+      "title": "BlackRock invests in 3D-printing construction startup valued at $1.4B",
+      "publisher": "Bisnow",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Website and founding year not stated on pages read.",
+    "Bisnow reports $1.4B valuation after the round and $700M total funding; stored as null here (pre/post not stated).",
+    "Other participants (Capital Factory, Tiger Global, Norwest etc.) appear in a search summary only, not on a fetched page."
+  ],
+  "seed_company": "ICON",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "ICON",
+      "website": null,
+      "description": "Austin company making large robotic machines that 3D-print buildings, with Build, Tech and Prime (defense and space) segments.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_c_plus",
+    "stage_raw": "Series D",
+    "date": "2026-10-13",
+    "date_precision": "day",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Baillie Gifford",
+      "BlackRock"
+    ],
+    "participants": [],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "BlackRock and Scotland-based investment firm Baillie Gifford co-led a $200M Series D funding round for Icon"
+  }
+}

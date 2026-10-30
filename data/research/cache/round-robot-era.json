@@ -1,0 +1,91 @@
+{
+  "key": "round-robot-era",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Robot Era = Chinese humanoid maker styled ROBOTERA in releases (humanoids and dexterous hands, deployments with China Post and SF Group per Pulse2). The company's domain was not stated on pages read, so identity rests on description and investor match (SF Group, IDG Capital) with the CSV.",
+  "pages": [
+    {
+      "url": "https://pulse2.com/robotera-raises-over-200-million-to-scale-humanoid-robotics-commercialization/",
+      "title": "ROBOTERA Raises Over $200 Million To Scale Humanoid Robotics Commercialization",
+      "publisher": "Pulse 2",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.caixinglobal.com/2026-04-27/robot-era-raises-more-than-200-million-as-chinas-humanoid-robot-race-heats-up-102438549.html",
+      "title": "Robot Era raises more than $200 million as China's humanoid robot race heats up",
+      "publisher": "Caixin Global",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "SF Group (Pulse2 body, Caixin)",
+        "SF Group, HSG and IDG Capital (wire headline seen in search results, not fetched)"
+      ],
+      "chosen": "SF Group",
+      "reason": "Body text of fetched pages names only SF Group as lead and calls HSG and IDG new participants"
+    },
+    {
+      "field": "date",
+      "values": [
+        "2026-04-27 (Caixin)",
+        "2026-05-08 (Pulse2 article)"
+      ],
+      "chosen": "2026-04",
+      "reason": "Earliest publication; month precision"
+    }
+  ],
+  "open_items": [
+    "Amount is 'more than $200 million'.",
+    "HQ, founding year and website not stated on pages read; CN assumed from 'Chinese' description.",
+    "HSG presumably HongShan (Caixin lists HongShan Capital Group); not confirmed. Caixin's investor list comes from an AI-generated page digest, so it is not used for participants."
+  ],
+  "seed_company": "Robot Era",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Robot Era",
+      "website": null,
+      "description": "Chinese developer of humanoid robots and dexterous-hand hardware for logistics and industrial use.",
+      "hq_country": "CN",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "undisclosed",
+    "stage_raw": "New financing round (name not stated)",
+    "date": "2026-04",
+    "date_precision": "month",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "SF Group"
+    ],
+    "participants": [
+      "HSG",
+      "IDG Capital",
+      "Hillhouse Investment",
+      "CICC Capital",
+      "Jingming Capital",
+      "SparkEdge Capital",
+      "Luxin Venture Capital Group",
+      "Unite Pioneers Capital",
+      "Longqi Investment",
+      "Tsinghua Holding",
+      "Tiancheng Asset Management",
+      "Horizon Investment"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "ROBOTERA announced it has raised more than $200 million in a new financing round led by SF Group"
+  }
+}

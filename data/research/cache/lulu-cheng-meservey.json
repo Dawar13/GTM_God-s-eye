@@ -1,0 +1,38 @@
+{
+  "key": "lulu-cheng-meservey",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Lulu Cheng Meservey",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Lulu Cheng Meservey is the communications strategist and founder of Rostra (founded March 2024); The Information reports she raised a $40M VC fund. No fetched page gives the fund's or firm's official name, so the person is used as the name. Not Rostra Capital (a New Jersey single-family office, unrelated per search results), not Lulu Chang, not Ulu Ventures.",
+  "pages": [
+    { "url": "https://www.theinformation.com/briefings/tech-prs-lulu-cheng-meservey-raises-40-million-vc-fund", "title": "Tech PR's Lulu Cheng Meservey Raises $40 Million VC Fund", "publisher": "The Information", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://yespress.io/lulu-cheng-meservey", "title": "Lulu Cheng Meservey - Silicon Valley's Most Dangerous Communicator", "publisher": "Yespress", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "individual", "pages": [0, 1], "snippet": "Raises $40 Million VC Fund" },
+    "hq_city": { "value": "Washington", "pages": [1], "snippet": "Washington, D.C." },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Washington, D.C." }
+  },
+  "funds": [
+    {
+      "name": "Lulu Cheng Meservey VC fund (name not published)",
+      "number": null,
+      "size_original": 40000000,
+      "currency_original": "USD",
+      "close_date": "2025-12",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "Tech PR's Lulu Cheng Meservey Raises $40 Million VC Fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "Official fund/firm name not found: Axios (2025-12-07) returned HTTP 403, The Information is paywalled, and a private-equity-list entry calling it 'Lulu Cheng Meservey VC Fund' appeared in a search snippet only. Alias linking person to a named firm therefore not recorded.",
+    "Zero rounds found: no fetched page names a portfolio company. Yespress says Palmer Luckey's Anduril exposure 'eventually seeded' the fund, which is not a fund holding.",
+    "Stages, check size, thesis, sectors, website, HQ of the fund (Washington DC is her profile location, not confirmed as the fund's HQ), LPs and filing details (Form D) not found. Yespress is an aggregator profile, so the December 2025 date is low confidence."
+  ]
+}

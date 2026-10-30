@@ -1,0 +1,76 @@
+{
+  "key": "deep33",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Deep33",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the US-Israel deep-tech fund Deep33 (Deep33 Ventures), chaired by Lior Susan of Eclipse Ventures and led by Lior Prosor and Michael Broukhim, with offices in Tel Aviv, New York and Los Angeles (Globes, Quantum Insider). Not DeepDAO, not Deep Instinct, not Deepgram. Own website (deep33.com) was not fetched.",
+  "pages": [
+    { "url": "https://en.globes.co.il/en/article-1001532520", "title": "Deep33 Ventures launches $150m deep tech fund", "publisher": "Globes", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thequantuminsider.com/2026/01/23/deep33-emerges-with-150-million-to-back-quantum-and-hard-tech-infrastructure/", "title": "Deep33 Emerges With $150 Million to Back Quantum And Hard-Tech Infrastructure", "publisher": "The Quantum Insider", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://en.globes.co.il/en/article-1001546983", "title": "Deep33 closes $200m deep-tech VC fund", "publisher": "Globes", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thequantuminsider.com/2026/04/06/q-factor/", "title": "Q-Factor Emerges From Stealth With $24 Million and Backing From Intel Capital", "publisher": "The Quantum Insider", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Deep33 Ventures"], "pages": [0, 1], "snippet": "Deep33 Ventures launches $150m deep tech fund" },
+    "type": { "value": "vc", "pages": [0, 2], "snippet": "Deep33 closes $200m deep-tech VC fund" },
+    "hq_city": { "value": "Tel Aviv", "pages": [0, 1], "snippet": "offices in Tel Aviv, New York, and Los Angeles" },
+    "hq_country": { "value": "IL", "pages": [0, 1], "snippet": "offices in Tel Aviv, New York, and Los Angeles" },
+    "thesis_text": { "value": "Backs deep-tech companies that remove infrastructure bottlenecks in energy, compute and manpower, linking Israeli research with US and allied industrial and government demand.", "pages": [0, 1], "snippet": "critical technologies for infrastructures in the US and its allies" },
+    "stated_sectors": { "value": ["hardware_deeptech", "ai_infra", "climate_energy", "robotics_physical_ai"], "pages": [0, 1], "snippet": "quantum computing, AI infrastructure, advanced energy, and robotics" }
+  },
+  "funds": [
+    {
+      "name": "Deep33 Fund I",
+      "number": "I",
+      "size_original": 200000000,
+      "currency_original": "USD",
+      "close_date": "2026-06",
+      "date_precision": "month",
+      "pages": [2],
+      "snippet": "has closed a $200 million first fund - well above the target of $150 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Q-Factor",
+        "website": null,
+        "description": "Developing a neutral-atom quantum computing architecture meant to scale from thousands to over a million qubits.",
+        "hq_country": "IL",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2026-04-06",
+      "date_precision": "day",
+      "amount_original": 24000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["NFX", "TPY Capital"],
+      "participants": ["Intel Capital", "Korea Investment Partners", "Deep33", "Matias family"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "with participation from Intel Capital, Korea Investment Partners, Deep33, and the Matias family"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "fund size",
+      "values": ["$150M (launch target; $100M first close, Jan 2026)", "$200M (first fund closed, Globes 24 Jun 2026)"],
+      "chosen": "$200M",
+      "reason": "Later Globes report says the first fund closed above the $150M target; the lead list's $150M is the January target. Single source for $200M."
+    }
+  ],
+  "open_items": [
+    "Only one round recorded (need 3). Portfolio named by Globes: Particle, QuamCore, Seabridge, OHR (Quamcore and CyberRidge also in the January article); no fetched page describes Deep33's role in those rounds. F4 (database) also links Deep33 to a DualBird $25M raise: not fetched.",
+    "Exact close date of the $200M fund not stated (article published 2026-06-24); recorded to the month.",
+    "Stages not stated as a standard stage ('from the post-research stage to commercial breakthrough'); check size, application URL and cold-inbound policy not found. deep33.com not fetched.",
+    "HQ: no single headquarters named; Tel Aviv taken as first-listed office and the Israeli framing of the fund."
+  ]
+}

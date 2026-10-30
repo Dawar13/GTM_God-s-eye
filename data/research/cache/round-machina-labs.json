@@ -1,0 +1,62 @@
+{
+  "key": "round-machina-labs",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Machina Labs = Los Angeles RoboCraftsman / RoboForming metal-shaping firm, machinalabs.ai (Woven Capital post). Not any other company with that name.",
+  "pages": [
+    {
+      "url": "https://3dprint.com/323727/machina-labs-raises-124-million/",
+      "title": "Machina Labs raises $124 million",
+      "publisher": "3DPrint.com",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://woven.vc/?p=5815",
+      "title": "Machina Labs Raises $124 Million",
+      "publisher": "Woven Capital",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "No source names a lead; all four investors recorded as unspecified. Business Wire release returned 403.",
+    "Stage Series C per the Woven Capital page; 3DPrint does not state it.",
+    "Date 2026-02-04 from the Woven URL path; not stated on a read page, 3DPrint is dated 6 Feb."
+  ],
+  "seed_company": "Machina Labs",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Machina Labs",
+      "website": "https://machinalabs.ai",
+      "description": "Robotic manufacturing company using its RoboCraftsman cells and RoboForming process to shape metal for defense, aerospace and automotive.",
+      "hq_country": "US",
+      "founded_year": 2019,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_c_plus",
+    "stage_raw": "Series C",
+    "date": "2026-02-04",
+    "date_precision": "day",
+    "amount_original": 124000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [],
+    "unspecified": [
+      "Woven Capital",
+      "Lockheed Martin Ventures",
+      "Balerion Space Ventures",
+      "Strategic Development Fund"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "Investors include Woven Capital, Lockheed Martin Ventures, Balerion Space Ventures, and Strategic Development Fund (SDF)."
+  }
+}

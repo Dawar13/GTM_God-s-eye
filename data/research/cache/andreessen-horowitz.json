@@ -1,0 +1,80 @@
+{
+  "key": "andreessen-horowitz",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Andreessen Horowitz",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Andreessen Horowitz (a16z), the firm founded in 2009 by Marc Andreessen and Ben Horowitz, at a16z.com (about page; offices page lists Menlo Park, San Francisco, New York, Washington DC, Santa Monica, Seoul, Tokyo). Not any unrelated 'Horowitz' firm.",
+  "pages": [
+    { "url": "https://a16z.com/about/", "title": "About | Andreessen Horowitz", "publisher": "Andreessen Horowitz", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://a16z.com/offices/", "title": "Offices | Andreessen Horowitz", "publisher": "Andreessen Horowitz", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://convergedigest.com/a16z-details-15b-fundraise-with-focus-on-ai-crypto-and-infrastructure/?amp=1", "title": "a16z details $15B fundraise with focus on AI, crypto and infrastructure", "publisher": "Converge Digest", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://roboticsandautomationnews.com/2026/03/23/mind-robotics-raises-500-million-to-build-ai-powered-industrial-robots-for-real-world-deployment/100033", "title": "Mind Robotics raises $500 million to build AI-powered industrial robots", "publisher": "Robotics & Automation News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.startuphub.ai/news/a16z-leads-westmag-seed-round", "title": "a16z Leads Westmag Seed Round", "publisher": "StartupHub.ai", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techbytes.app/posts/travis-kalanicks-robotics-company-raises-17b-led-by-a16z/", "title": "Travis Kalanick's robotics company raises $1.7B led by a16z", "publisher": "Tech Bytes", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/", "title": "Eka Robotics raises $150M to scale vision-force-action model for robots", "publisher": "The Robot Report", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["a16z"], "pages": [0], "snippet": "Andreessen Horowitz (a16z), founded in 2009 by Marc Andreessen and Ben Horowitz" },
+    "type": { "value": "vc", "pages": [0], "snippet": "over $100B+ under management across multiple funds" },
+    "website": { "value": "https://a16z.com", "pages": [0], "snippet": "over $100B+ under management across multiple funds" },
+    "hq_city": { "value": "Menlo Park", "pages": [1], "snippet": "Menlo Park: 2865 Sand Hill Road, Suite 101 Menlo Park, CA 94025" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Menlo Park: 2865 Sand Hill Road, Suite 101 Menlo Park, CA 94025" },
+    "stages": { "value": ["seed", "growth"], "pages": [0], "snippet": "seed, venture, and growth-stage technology companies" },
+    "leads": { "value": true, "pages": [3, 6, 4], "snippet": "co-led by Accel and Andreessen Horowitz" },
+    "thesis_text": { "value": "Backs builders at seed, venture and growth stages across technology, starting from the conviction that software would eat the world and the biggest tech companies would become far more valuable than expected.", "pages": [0], "snippet": "the future belongs to builders, and our job is to make sure they have what they need to build it" },
+    "stated_sectors": { "value": ["ai_apps_agents", "ai_infra", "defense_dual_use", "health_bio", "consumer", "crypto_web3", "enterprise_saas", "fintech"], "pages": [0], "snippet": "AI, American Dynamism, bio and healthcare, consumer, crypto, enterprise, fintech, games, and infrastructure" }
+  },
+  "funds": [
+    {
+      "name": "a16z 2025-26 funds (Growth, Apps, Infrastructure, American Dynamism, Bio + Health, other)",
+      "number": null,
+      "size_original": 15000000000,
+      "currency_original": "USD",
+      "close_date": "2026-01",
+      "date_precision": "month",
+      "pages": [2],
+      "snippet": "Andreessen Horowitz disclosed that it raised more than $15 billion across multiple new funds in 2025"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Mind Robotics", "website": null, "description": "Builds AI-enabled industrial robots for factory tasks needing dexterity and reasoning; founded by Rivian's CEO.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-03", "date_precision": "month",
+      "amount_original": 500000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Accel", "Andreessen Horowitz"], "participants": [], "unspecified": [],
+      "pages": [3], "snippet": "co-led by Accel and Andreessen Horowitz"
+    },
+    {
+      "company": { "name": "Eka Robotics", "website": null, "description": "Building a vision-force-action model giving robots physical intuition for dexterous manipulation, trained largely in simulation.", "hq_country": "US", "founded_year": 2024, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-10", "date_precision": "month",
+      "amount_original": 150000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz", "F-Prime"], "participants": ["Obvious Ventures", "E14 Fund", "MFV Partners", "Bison Ventures", "Glasswing Ventures", "Samsung Next"], "unspecified": [],
+      "pages": [6], "snippet": "Raghu Raghuram, a general partner at a16z"
+    },
+    {
+      "company": { "name": "Atoms", "website": null, "description": "Travis Kalanick's industrial AI company focused on modernizing physical industry, with a robotics emphasis.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "undisclosed", "stage_raw": null, "date": "2026-07", "date_precision": "month",
+      "amount_original": 1700000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz"], "participants": ["Uber"], "unspecified": [],
+      "pages": [5], "snippet": "led by Andreessen Horowitz (a16z)"
+    },
+    {
+      "company": { "name": "Westmag", "website": null, "description": "Builds US-based manufacturing of motors and actuators for drones and robots, serving defense and robotics customers.", "hq_country": "US", "founded_year": null, "sector": "hardware_deeptech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed", "date": "2026-06-02", "date_precision": "day",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz"], "participants": [], "unspecified": [],
+      "pages": [4], "snippet": "Andreessen Horowitz (a16z) is leading the seed funding round for Westmag"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "The offices page lists Menlo Park first but does not label any office as headquarters; Menlo Park used on that basis.",
+    "Check-size range, application URL and cold-inbound policy not found (Tier B, not pursued).",
+    "Axios report of the January 2026 raise returned 403; fund total taken from Converge Digest (one press page). Its breakdown: Growth $6.75B, Apps $1.7B, Infrastructure $1.7B, American Dynamism $1.176B, Bio + Health $700M.",
+    "Atoms stage and exact date not stated (Tech Bytes post dated 2026-08-04 cites a TechCrunch piece reportedly dated 2026-07-22). Westmag amount not disclosed. Eka article dated 2026-10-24 ('this week'). Mind Robotics date is the article date; close expected later in March.",
+    "The about page's 'venture' stage has no mapped stage id; only seed and growth recorded."
+  ]
+}

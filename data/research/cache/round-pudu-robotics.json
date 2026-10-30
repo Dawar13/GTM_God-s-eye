@@ -1,0 +1,76 @@
+{
+  "key": "round-pudu-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Pudu Robotics = Shenzhen commercial service-robot maker, site pudurobotics.com/en (Kyodo PR Wire release). Not another Pudu entity.",
+  "pages": [
+    {
+      "url": "https://kyodonewsprwire.jp/index.php/release/202604238036",
+      "title": "Pudu Robotics Raises Nearly USD 150 Million, Exceeds USD 1.5 Billion Valuation",
+      "publisher": "Pudu Robotics via Kyodo News PR Wire",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://autonews.gasgoo.com/articles/icv/seeds-pudu-robotics-closes-nearly-1-billion-yuan-funding-round-valuation-exceeds-10-billion-yuan-2047305274711334912",
+      "title": "Pudu Robotics closes nearly 1 billion yuan funding round",
+      "publisher": "Gasgoo",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "investors",
+      "values": [
+        "Longping Financial (CSV)",
+        "Longgang Financial Holding and Ya Capital co-led (Gasgoo)",
+        "no investors named (company release)"
+      ],
+      "chosen": "Gasgoo's co-leads",
+      "reason": "Longping is not named on any page read; Longgang Financial Holding is the nearest name and may be a mix-up, but that is unverified."
+    }
+  ],
+  "open_items": [
+    "Company release names no investors, only 'strategic investors and industrial partners'; the investor list rests on one press page (Gasgoo). A DealStreetAsia page was login-walled.",
+    "Amount is 'nearly' $150M (about 1 billion yuan); 150,000,000 recorded as the nearest stated figure. Round name and founding year not stated.",
+    "A search summary mentions a $200M 'Series G' report from one outlet; not read and not used.",
+    "Date 2026-04-23 is the release dateline."
+  ],
+  "seed_company": "Pudu Robotics",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Pudu Robotics",
+      "website": "https://www.pudurobotics.com/en",
+      "description": "Commercial service robots: food delivery, commercial cleaning, industrial delivery and embodied AI.",
+      "hq_country": "CN",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "undisclosed",
+    "stage_raw": "New funding round, name not stated",
+    "date": "2026-04-23",
+    "date_precision": "day",
+    "amount_original": 150000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Longgang Financial Holding",
+      "Ya Capital"
+    ],
+    "participants": [
+      "BAIC Industrial Investment",
+      "Lens Technology",
+      "Highlight Capital"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "The round was co-led by Longgang Financial Holding and Ya Capital."
+  }
+}

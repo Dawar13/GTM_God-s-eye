@@ -1,0 +1,65 @@
+{
+  "key": "round-atoms",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Atoms = the Travis Kalanick-led industrial-AI and robotics group: atoms.co lists CloudKitchens, Pronto AI and Lab37 and describes physical automation for food, mining and transport; TNW describes Atoms Food, Mining and Transport units and an a16z-led round. Not any unrelated company named Atoms; the Kalanick, a16z and three-vertical description matches the CSV text.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/travis-kalanick-atoms-1-7-billion-industrial-ai-a16z-uber",
+      "title": "Travis Kalanick raised $1.7B for his robotics comeback, and Uber chipped in",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://atoms.co",
+      "title": "Atoms",
+      "publisher": "Atoms",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Verbatim funding sentence not captured (the fetch tool returned a summary); the snippet is the only verbatim quote on the round.",
+    "Date 2026-07-22 is as reported by TNW citing TechCrunch; the TechCrunch page and atoms.co/unfinished-business were not read. Search results also showed October 2026 press releases (unread).",
+    "TNW says the $1.7B is equity with credit facilities from banks secured alongside; some search-result outlets blur this. Not verified further.",
+    "HQ and founding year not stated on pages read. No valuation disclosed per TNW.",
+    "Uber, Bain Capital and Fifth Wall are named as investors without roles; the CSV lists only a16z (incomplete, not wrong)."
+  ],
+  "seed_company": "Atoms",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Atoms",
+      "website": "https://atoms.co",
+      "description": "Industrial-AI and robotics group building specialised machines for food, mining and heavy transport, formed around CloudKitchens, Pronto and Lab37.",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "undisclosed",
+    "stage_raw": "Equity round, series not named; reported alongside bank credit facilities",
+    "date": "2026-07-22",
+    "date_precision": "day",
+    "amount_original": 1700000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Andreessen Horowitz"
+    ],
+    "participants": [],
+    "unspecified": [
+      "Uber",
+      "Bain Capital",
+      "Fifth Wall"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "unfinished business"
+  }
+}

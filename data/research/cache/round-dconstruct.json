@@ -1,0 +1,57 @@
+{
+  "key": "round-dconstruct",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "dConstruct Technologies (parent of dConstruct Robotics), Singapore; d.ASH GPS-denied robotics suite; dconstruct.ai (Raising.fi), JTC news item. Not other firms with a similar name.",
+  "pages": [
+    {
+      "url": "https://www.jtc.gov.sg/about-jtc/news-and-stories/industry-news/pdd-dconstruct-secures-usd125-million-series-a-funding",
+      "title": "dConstruct secures USD125 million Series A funding",
+      "publisher": "JTC Corporation",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://raising.fi/news/dconstruct-technologies-series-a-july-2026",
+      "title": "dConstruct Technologies raises $125M Series A",
+      "publisher": "Raising.fi",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Investors not named; Raising.fi says there was no lead and specifics were not disclosed. Matches the CSV (none listed).",
+    "Founding year not read on a fetched page. TechNode and e27 returned 403.",
+    "Date: JTC item dated 2 Jul 2026, Raising.fi says 3 Jul; month recorded."
+  ],
+  "seed_company": "dConstruct",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "dConstruct",
+      "website": "https://dconstruct.ai",
+      "description": "Singapore company whose d.ASH suite combines 3D scanning and perception so autonomous robots can work where GPS is unavailable.",
+      "hq_country": "SG",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "autonomy_tooling"
+    },
+    "stage": "series_a",
+    "stage_raw": "Series A",
+    "date": "2026-07",
+    "date_precision": "month",
+    "amount_original": 125000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "recently announced the successful close of its USD125 million Series A funding round"
+  }
+}

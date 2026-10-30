@@ -1,0 +1,187 @@
+{
+  "key": "pax",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Pax",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as pax.vc (Pax Ventures / Pax VC), the San Francisco firm founded by Michelle Volz, formerly of Andreessen Horowitz's American Dynamism team, which announced a $50M Fund I in March 2026; its site lists Nominal, Mariana Minerals and Method Security as portfolio. Not Pax, the Brazilian public-safety AI company (Greenoaks/Benchmark-led seed), not Pax Labs, not Pax Technology. The 'PAX Venture Capital' named in Nominal's Series B post is treated as this firm because pax.vc lists Nominal; no page states the name equivalence, so it is flagged. No evidence of any other firm called PAX Venture Capital was found.",
+  "pages": [
+    { "url": "https://pax.vc", "title": "Pax", "publisher": "Pax", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://michellevolz1.substack.com/p/introducing-pax", "title": "Introducing Pax", "publisher": "Michelle Volz (Substack)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tbpn-digest.vercel.app/story/2026-03-09/michelle-volz-launches-pax-a-50m-early-stage-fund-for-hard-tech-and-american-dynamism-founders", "title": "Michelle Volz launches Pax, a $50M early-stage fund for hard tech and American Dynamism founders", "publisher": "TBPN Digest", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.privateequityinternational.com/new-woman-led-firm-pax-vc-raises-50m-for-debut", "title": "New woman-led firm Pax VC raises $50m for debut", "publisher": "Private Equity International", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.cooley.com/news/coverage/2026/2026-08-03-mariana-minerals-raises-%24310-million-series-b", "title": "Mariana Minerals Raises $310 Million Series B", "publisher": "Cooley", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://nominalinc.substack.com/p/nominal-raises-75m-series-b", "title": "Nominal raises $75M Series B", "publisher": "Nominal (company Substack)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/method-security-26-million/amp/", "title": "Method Security: $26 Million Raised To Advance Autonomous Cyber Defense Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": {
+      "value": ["Pax Ventures", "Pax VC", "PAX Venture Capital"],
+      "pages": [0, 4, 5],
+      "snippet": "new participation from Greenoaks, Halo Fund, Pax Ventures, StepStone Group"
+    },
+    "type": {
+      "value": "vc",
+      "pages": [2],
+      "snippet": "a $50,000,000 early stage venture fund"
+    },
+    "website": {
+      "value": "https://pax.vc",
+      "pages": [0],
+      "snippet": "Pax Technica"
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [0],
+      "snippet": "San Francisco, CA (site footer)"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [0],
+      "snippet": "San Francisco, CA (site footer)"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [2],
+      "snippet": "try to be in like the pre-seed seed occasionally a little bit later rounds"
+    },
+    "check_min_usd": {
+      "value": 1000000,
+      "pages": [2],
+      "snippet": "On average, 1 to $2,000,000 checks."
+    },
+    "check_max_usd": {
+      "value": 2000000,
+      "pages": [2],
+      "snippet": "On average, 1 to $2,000,000 checks."
+    },
+    "thesis_text": {
+      "value": "Early-stage fund backing hard tech, defense and foundational infrastructure founders, aiming for technical superiority in the physical world ('Pax Technica').",
+      "pages": [0, 2],
+      "snippet": "rooted in technical superiority of the physical world"
+    },
+    "stated_sectors": {
+      "value": ["defense_dual_use", "climate_energy", "industrial_manufacturing", "space", "robotics_physical_ai", "supply_chain_logistics"],
+      "pages": [1, 0],
+      "snippet": "Defense, energy, manufacturing, aerospace, robotics, logistics, security, and construction"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "Get in touch"
+    }
+  },
+  "funds": [
+    {
+      "name": "Pax Fund I",
+      "number": "I",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2026-03-09",
+      "date_precision": "day",
+      "pages": [1, 2, 3],
+      "snippet": "a $50,000,000 early stage venture fund"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Michelle Volz",
+      "title": "Founder and Managing Partner",
+      "focus_sectors": ["defense_dual_use"],
+      "linkedin_url": null,
+      "pages": [0]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Mariana Minerals",
+        "website": null,
+        "description": "Minerals and mining company; Series B led by Khosla Ventures.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": null,
+        "sector_classified_by": null,
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-08-03",
+      "date_precision": "day",
+      "amount_original": 310000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Khosla Ventures"],
+      "participants": ["Andreessen Horowitz", "Breakthrough Energy Ventures", "Greenoaks", "Halo Fund", "Pax Ventures", "StepStone Group", "BHP Ventures", "Washington Harbour Partners", "Greycroft", "General Innovation Capital Partners", "Mitsubishi Corporation", "In-Q-Tel", "Earthshot Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "new participation from Greenoaks, Halo Fund, Pax Ventures, StepStone Group"
+    },
+    {
+      "company": {
+        "name": "Method Security",
+        "website": null,
+        "description": "Autonomous cyber defense systems for the US government and large enterprises.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Seed and Series A",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 26000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz", "General Catalyst"],
+      "participants": ["Blackstone Innovations Investments", "Crossbeam Ventures", "NFDG", "Forward Deployed Ventures", "Pax Ventures", "WndrCo", "515 Ventures"],
+      "unspecified": [],
+      "pages": [6],
+      "snippet": "Forward Deployed Ventures, Pax Ventures, WndrCo"
+    },
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Software platform for hardware test and evaluation that ingests and analyzes high-rate test data from physical systems.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "autonomy_tooling"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-06-12",
+      "date_precision": "day",
+      "amount_original": 75000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Sequoia Capital"],
+      "participants": ["Lightspeed", "General Catalyst", "Lux Capital", "Founders Fund"],
+      "unspecified": ["Avenir", "XYZ Venture Capital", "Haystack", "Overmatch Ventures", "PAX Venture Capital", "PSP Growth", "Audacious Ventures", "Red Glass Ventures"],
+      "pages": [5, 0],
+      "snippet": "investors who share our vision for the future of hardware engineering"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "stage of Method Security round",
+      "values": ["Seed and Series A combined $26M (Pulse 2.0)", "Seed (one article) vs Series A (another), per search summaries"],
+      "chosen": "series_a, stage_raw 'Seed and Series A'",
+      "reason": "Pulse 2.0 reports one $26M combined round across both stages and does not say which tranche Pax joined."
+    }
+  ],
+  "open_items": [
+    "Pax's own role as lead in any round was not found; all three recorded rounds name Pax as a participant or in an unlabelled investor list.",
+    "pax.vc and the founder's post state no stages or check size; those come from a podcast-style digest (TBPN) of the founder's own words. The Newcomer and PEI articles were paywalled or sparse.",
+    "Fund close date 2026-03-09 is the announcement date (founder's post, Newcomer, TBPN); PEI dates its article 2026-03-10.",
+    "Portfolio rounds not confirmed on a fetched page naming Pax: Northwood Space Series B (Law360 excerpt does not name Pax), Aalo Atomics Series B (search results do not name Pax), and others on the 26-company portfolio list.",
+    "No page states that 'PAX Venture Capital' in Nominal's post is this firm; inferred from pax.vc listing Nominal.",
+    "Mariana Minerals description, HQ and sector were not stated on the Cooley page.",
+    "No partner LinkedIn URL recorded; pax.vc lists a contact address, deliberately not stored."
+  ]
+}

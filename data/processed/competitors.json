@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T06:28:11+00:00",
+  "generated_at": "2026-10-30T07:24:38+00:00",
   "records": [
     {
       "id": "co_apprentice-io",
@@ -230,6 +230,257 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Agent-driven manufacturing-engineering software. It ingests CAD, PDFs, PLM data and requirements, builds a shared product model, then generates assembly order, operations, fixtures, station layouts and visual work instructions for engineers to review. It pushes design revisions to the floor and feeds production data back; robot-programming agents are in prototype.",
+      "pricing": null
+    },
+    {
+      "id": "co_atoms",
+      "name": "Atoms",
+      "website": "https://atoms.co",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.",
+      "total_raised_usd": 2950000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "https://techbytes.app/posts/travis-kalanicks-robotics-company-raises-17b-led-by-a16z/",
+          "title": "Travis Kalanick's robotics company raises $1.7B led by a16z",
+          "publisher": "Tech Bytes",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://thenextweb.com/news/travis-kalanick-atoms-1-7-billion-industrial-ai-a16z-uber",
+          "title": "Travis Kalanick raised $1.7B for his robotics comeback, and Uber chipped in",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://atoms.co",
+          "title": "Atoms",
+          "publisher": "Atoms",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://atoms.co/unfinished-business",
+          "title": "Unfinished business",
+          "publisher": "Atoms",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://atoms.co/vision",
+          "title": "Vision | Atoms",
+          "publisher": "Atoms",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/city-storage-systems/financials",
+          "title": "Atoms (City Storage Systems) - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/CloudKitchens",
+          "title": "CloudKitchens - Wikipedia",
+          "publisher": "Wikipedia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.bloomberglinea.com/english/uber-founder-grows-cloudkitchens-in-brazil-with-capital-boost-from-microsoft/",
+          "title": "Uber founder grows CloudKitchens in Brazil with capital boost from Microsoft",
+          "publisher": "Bloomberg Línea",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2019/02/01/the-next-big-bet-for-former-uber-ceo-travis-kalanick-may-be-cloud-kitchens-in-china/",
+          "title": "The next big bet for former Uber CEO Travis Kalanick may be cloud kitchens — in China",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2019/06/28/a-rare-glimpse-into-the-sweeping-and-potentially-troubling-cloud-kitchens-trend/",
+          "title": "A rare glimpse into the sweeping — and potentially troubling — cloud kitchens trend",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://atoms.co/openroles",
+          "title": "Open roles | Atoms",
+          "publisher": "Atoms",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          3
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "Specialised robots and automation across three verticals: Atoms Food (CloudKitchens facilities, Lab37 kitchen robotics, Otter restaurant software), Atoms Mining (Pronto autonomous haulage, acquired), Atoms Transport (robot wheelbase, not yet announced)",
+      "size_class": "over_1b",
+      "founders": [
+        "Travis Kalanick"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Builds specialised 'gainfully employed' robots and automation: delivery-first CloudKitchens facilities, Otter restaurant software, Lab37 kitchen robotics, Picnic office meals and ProFood real estate in food; Pronto autonomous haulage for mines and quarries; and a transport robot wheelbase still to be announced.",
+      "pricing": null
+    },
+    {
+      "id": "co_cognite",
+      "name": "Cognite",
+      "website": "https://www.cognite.com",
+      "hq_country": "US",
+      "founded_year": 2017,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.",
+      "total_raised_usd": 225000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.se.com/ww/en/assets/pdf/Schneider-Electric-announces-agreement-to-acquire-Cognite",
+          "title": "Schneider Electric announces agreement to acquire Cognite, unlocking a new level of strategic intelligence for Industrial AI",
+          "publisher": "Schneider Electric",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cognite.com/en/company/newsroom/cognite-s-moonshot-and-ai-drive-record-breaking-year",
+          "title": "Cognite's Moonshot and AI Drive Record-Breaking Year",
+          "publisher": "Cognite",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cognite.com/en/company/newsroom/cognite-secures-150-million-investment-from-tcv-to-acceleratedigitalization-of-global-industries",
+          "title": "Cognite secures $150 million investment from TCV to accelerate digitalization of global industries",
+          "publisher": "Cognite",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=547157",
+          "title": "Industrial SaaS startup Cognite raises $150M on a unicorn valuation of $1.6B",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.inderes.fi/en/releases/aker-asa-cognite-announces-usd-150-million-investment-by-tcv",
+          "title": "Aker ASA: Cognite announces USD 150 million investment by TCV",
+          "publisher": "Aker ASA via Inderes",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://airtools-aker.prod-mid-euw3.investis.com/sites/airtools-aker/files/pr/202011044213-2.pdf",
+          "title": "Aker ASA third quarter results 2020",
+          "publisher": "Aker ASA",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://cognite.com/en/press-release/aramco-invests-in-cognite",
+          "title": "Aramco invests in Cognite",
+          "publisher": "Cognite",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.oedigital.com/news/493981-saudi-aramco-buys-stake-in-cognite-from-aker-bp",
+          "title": "Saudi Aramco Buys Stake in Cognite from Aker BP",
+          "publisher": "Offshore Engineer (OE Digital)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.inderes.se/en/releases/aker-asa-agreement-to-sell-cognite-to-schneider-electric",
+          "title": "Aker ASA: Agreement to sell Cognite to Schneider Electric",
+          "publisher": "Aker ASA via Inderes",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://hydrocarbonprocessing.com/news/2026/07/schneider-electric-to-acquire-cognite-in-31-b-all-cash-deal/",
+          "title": "Schneider Electric to acquire Cognite in $3.1 B all-cash deal",
+          "publisher": "Hydrocarbon Processing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cognite.com/en/",
+          "title": "Cognite home page",
+          "publisher": "Cognite",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "revenue_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Industrial data platform: DataOps / knowledge graph (Cognite Data Fusion) plus a low-code industrial AI agent workbench (Atlas AI)",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "John Markus Lervik"
+      ],
+      "named_customers": [
+        "bp",
+        "Saudi Aramco",
+        "Alfa Laval",
+        "Statnett",
+        "Mitsubishi",
+        "NOVA Chemicals",
+        "Koch",
+        "Celanese",
+        "Aker BP",
+        "Marathon Petroleum"
+      ],
+      "headcount_est": {
+        "value": 800,
+        "source": {
+          "url": "https://www.se.com/ww/en/assets/pdf/Schneider-Electric-announces-agreement-to-acquire-Cognite",
+          "title": "Schneider Electric announces agreement to acquire Cognite, unlocking a new level of strategic intelligence for Industrial AI",
+          "publisher": "Schneider Electric",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": 170000000,
+      "revenue_basis": "reported",
+      "product_summary": "Cognite Data Fusion integrates and contextualizes engineering, operational and enterprise data in a unified data model and knowledge graph; Atlas AI is a low-code workbench for building agents that automate industrial workflows on that data, and Flows supports production workflows. Buyers: energy, process-manufacturing, power and renewables operators.",
       "pricing": null
     },
     {
@@ -695,6 +946,482 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Agentic platform for manufacturers that unifies ERP, email, spreadsheet and plant data, then runs supervised workflow agents for RFQ quoting, vendor PO and invoice matching, AR/AP cash application and on-demand reporting, with human approval of each step and deployment in days rather than months.",
+      "pricing": null
+    },
+    {
+      "id": "co_hadrian",
+      "name": "Hadrian",
+      "website": "https://www.hadrian.co",
+      "hq_country": "US",
+      "founded_year": 2020,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Torrance, California manufacturer running highly automated, software-driven factories that make precision parts and assemblies for aerospace and defence.",
+      "total_raised_usd": 1846500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.hadrian.co",
+          "title": "Hadrian",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.hadrian.co/about",
+          "title": "About | Hadrian",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.hadrian.co/press",
+          "title": "News | Hadrian",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.hadrian.co/blog/mission",
+          "title": "$90m in new capital to manufacture the future",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.hadrian.co/blog/series-c",
+          "title": "Hadrian Raises $260M to Build AI-Powered Factories for America, Adds Full Product Manufacturing, Opens Arizona Site",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/07/17/hadrian-raises-260m-to-build-out-automated-factories-for-space-and-defense-parts/",
+          "title": "Hadrian raises $260M to build out automated factories for space and defense parts",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2024/02/21/hadrian-automations-ceo-wants-to-defy-history-and-revitalize-american-industry/",
+          "title": "Hadrian Automation's CEO wants to defy history and revitalize American industry",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2021/04/15/hadrian-is-building-the-factories-of-the-future-for-rocket-ships-and-advanced-manufacturing/",
+          "title": "Hadrian is building the factories of the future for rocket ships and advanced manufacturing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
+          "title": "Hadrian Raises $1.37B Series D to Build Highly Automated Factories to Accelerate America's Industrial Renewal",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-partners-with-t-rowe-price-to-accelerate-the-reindustrialization-of-america-302657125.html",
+          "title": "Hadrian Partners with T. Rowe Price to Accelerate the Reindustrialization of America",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.voxelmatters.com/hadrian-launches-additive-manufacturing-division-to-expand-u-s-defense-production-capacity/",
+          "title": "Hadrian launches additive manufacturing division to expand U.S. defense production capacity",
+          "publisher": "VoxelMatters",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-closes-360-million-revolving-credit-facility-to-accelerate-the-buildout-of-its-us-manufacturing-footprint-302851834.html",
+          "title": "Hadrian Closes $360 Million Revolving Credit Facility to Accelerate the Buildout of Its U.S. Manufacturing Footprint",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-expands-partnership-with-lockheed-martin-to-scale-production-of-critical-missile-systems-302909081.html",
+          "title": "Hadrian Expands Partnership with Lockheed Martin to Scale Production of Critical Missile Systems",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.janes.com/osint-insights/defence-news/industry/lockheed-martin-partners-with-hadrian-to-accelerate-missile-manufacturing",
+          "title": "Lockheed Martin partners with Hadrian to accelerate missile manufacturing",
+          "publisher": "Janes",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.defensedaily.com/anduril-partners-with-advanced-manufacturer-hadrian-to-speed-production/advanced-transformational-technology/",
+          "title": "Anduril Partners with Advanced Manufacturer Hadrian to Speed Production",
+          "publisher": "Defense Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-opens-advanced-manufacturing-facility-in-alabama-to-support-columbia--and-virginia-class-submarine-production-302720156.html",
+          "title": "Hadrian Opens Advanced Manufacturing Facility in Alabama to Support Columbia- and Virginia-Class Submarine Production",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/hadrian-celebrates-ribbon-cutting-of-factory-3-f3-in-mesa-arizona-marking-major-milestone-in-ai-powered-manufacturing-expansion-302674488.html",
+          "title": "Hadrian Celebrates Ribbon Cutting of Factory 3 (F3) in Mesa, Arizona",
+          "publisher": "Hadrian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2024/10/29/hadrian-autonomous-factory-startup-andreessen-horowitz-new-cfo/",
+          "title": "Exclusive: This autonomous factory startup wants to revolutionize aerospace industry. Meet its new CFO",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.hadrian.co/blog/atlas",
+          "title": "Join the invite-only beta for the Atlas Program",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news/hadrian/",
+          "title": "Hadrian news releases",
+          "publisher": "PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Owner-operator of automated machining, inspection and additive factories (two in Torrance CA, Mesa AZ, Cherokee AL) run on its Opus factory-autonomy software; also deploys manufacturing cells inside customer plants and runs Atlas, a vetted-supplier + DFM program for hardware startups",
+      "size_class": "over_1b",
+      "founders": [
+        "Chris Power"
+      ],
+      "named_customers": [
+        "Lockheed Martin",
+        "Anduril",
+        "U.S. Navy (Columbia- and Virginia-class submarine programs)"
+      ],
+      "headcount_est": {
+        "value": 200,
+        "source": {
+          "url": "https://fortune.com/2024/10/29/hadrian-autonomous-factory-startup-andreessen-horowitz-new-cfo/",
+          "title": "Exclusive: This autonomous factory startup wants to revolutionize aerospace industry. Meet its new CFO",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Makes precision components, assemblies and finished products for aerospace, defence and space in highly automated factories run on its Opus AI platform, which reads legacy designs and automates machining and inspection. Also sells dedicated factory capacity or cells inside customer plants, and Atlas, a vetted-supplier and DFM program.",
+      "pricing": null
+    },
+    {
+      "id": "co_ifs",
+      "name": "IFS",
+      "website": "https://www.ifs.com",
+      "hq_country": "SE",
+      "founded_year": 1983,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://eqtgroup.com/news/eqt-hg-and-ta-owned-ifs-valued-at-eur-15-billion-in-minority-stake-sale-following-investment-from-hg-adia-and-cpp-investments-2025-04-09",
+          "title": "EQT, Hg and TA-owned IFS valued at EUR 15 billion in minority stake sale, following investment from Hg, ADIA and CPP Investments",
+          "publisher": "EQT",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ta.com/news/eqt-hg-and-ta-owned-ifs-valued-at-eur-15-billion-in-minority-stake-sale-following-investment-from-hg-adia-and-cpp-investments/",
+          "title": "EQT, Hg and TA-owned IFS valued at EUR 15 billion in minority stake sale, following investment from Hg, ADIA and CPP Investments",
+          "publisher": "TA Associates",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://eqtgroup.com/news/2022/eqt-private-equity-and-ta-to-welcome-hg-as-a-significant-minority-partner-in-ifs-and-workwave-at-a-usd-10bn-valuation/",
+          "title": "EQT Private Equity and TA to welcome Hg as a significant minority partner in IFS and WorkWave at a USD 10bn valuation",
+          "publisher": "EQT",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://eqtgroup.com/news/eqt-vii-to-sell-global-enterprise-software-provider-ifs-to-successor-funds-and-ta-associates-2020-07-14",
+          "title": "EQT VII to sell global enterprise software provider IFS to successor funds and TA Associates",
+          "publisher": "EQT",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.unquote.com/nordics/official-record/3020221/eqt-sells-minority-stake-in-ifs-to-ta-associates",
+          "title": "EQT sells minority stake in IFS to TA Associates",
+          "publisher": "Unquote",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.cision.com/igt-holding-iv-ab/r/eqt-vii-announces-a-mandatory-cash-offer-to-the-shareholders-in-ifs,c9879793",
+          "title": "EQT VII announces a mandatory cash offer to the shareholders in IFS",
+          "publisher": "IGT Holding IV AB (EQT VII) via Cision",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tools.prnewswire.com/en-us/live/20823/release/20260122EN69079",
+          "title": "IFS delivers exceptional FY2025 growth as Industrial AI scales from first deployment to commercial impact",
+          "publisher": "IFS via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "revenue_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "ERP / EAM suite (IFS Cloud: ERP, EAM, SCM, FSM) with industrial AI and agent tooling",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [
+        "ArcelorMittal",
+        "TotalEnergies",
+        "Hitachi Energy",
+        "Collins Aerospace",
+        "Westinghouse",
+        "Japan Airlines",
+        "Tampa Electric (TECO)",
+        "William Grant & Sons",
+        "Callaway"
+      ],
+      "headcount_est": {
+        "value": 7000,
+        "source": {
+          "url": "https://eqtgroup.com/news/eqt-hg-and-ta-owned-ifs-valued-at-eur-15-billion-in-minority-stake-sale-following-investment-from-hg-adia-and-cpp-investments-2025-04-09",
+          "title": "EQT, Hg and TA-owned IFS valued at EUR 15 billion in minority stake sale, following investment from Hg, ADIA and CPP Investments",
+          "publisher": "EQT",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": 1298701299,
+      "revenue_basis": "reported",
+      "product_summary": "IFS Cloud is a composable, AI-enabled enterprise platform spanning ERP, enterprise asset management, supply chain management and field service management for manufacturers, asset-intensive and service businesses; IFS Agent Studio lets enterprises build and deploy agentic 'digital workers', extended by acquisitions in agentic AI, supply-chain optimization and warehouse management.",
+      "pricing": null
+    },
+    {
+      "id": "co_machina-labs",
+      "name": "Machina Labs",
+      "website": "https://machinalabs.ai",
+      "hq_country": "US",
+      "founded_year": 2019,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Los Angeles company running software-defined factories where AI-guided robots form and assemble sheet-metal structures without dedicated tooling.",
+      "total_raised_usd": 170000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "user_supplied:startupriders_robotics_20m_plus_2026",
+          "title": "startupriders_robotics_20m_plus_2026",
+          "publisher": null,
+          "retrieved_at": "2026-10-29",
+          "kind": "user_supplied"
+        },
+        {
+          "url": "https://woven.vc/machina-labs-raises-124-million-to-scale-manufacturing-infrastructure-for-defense-and-advanced-mobility/",
+          "title": "Machina Labs Raises $124 Million to Scale Manufacturing Infrastructure for Defense and Advanced Mobility",
+          "publisher": "Woven Capital (company release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/machina-labs-124-million-series-c/",
+          "title": "Machina Labs: $124 Million Series C Closed For Large-Scale Intelligent Factory",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures/lm-ventures-portfolio-companies.html",
+          "title": "Portfolio Companies | Lockheed Martin",
+          "publisher": "Lockheed Martin",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://3dprint.com/323727/machina-labs-raises-124-million/",
+          "title": "Machina Labs raises $124 million",
+          "publisher": "3DPrint.com",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://woven.vc/?p=5815",
+          "title": "Machina Labs Raises $124 Million",
+          "publisher": "Woven Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://machinalabs.ai",
+          "title": "Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources",
+          "title": "Resources | Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/machina-labs-raises-124-million-to-scale-manufacturing-infrastructure-for-defense-and-advanced-mobility",
+          "title": "Machina Labs Raises $124 Million to Scale Manufacturing Infrastructure for Defense and Advanced Mobility",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/machinas-32m-series-b-fundraise",
+          "title": "Machina's $32M Series B Fundraise",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/10/05/machina-labs-raises-31m-to-make-bring-flexibility-to-manufacturing/",
+          "title": "Machina Labs raises $31M to bring flexibility to manufacturing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2021/11/17/machina-labs-emerges-from-stealth-with-16m-raised-for-on-demand-manufacturing-robotics/",
+          "title": "Machina Labs emerges from stealth with $16M raised for on-demand manufacturing robotics",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/metal-am-advances-in-composite-tooling-part-2-machina-labs",
+          "title": "Lockheed Martin Ventures Invests in On-Demand Manufacturing Pioneer Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://socaltech.com/machina_labs_finds_funding_from_yamaha/s-0083227.html",
+          "title": "Machina Labs Finds Funding From Yamaha",
+          "publisher": "socalTECH",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/machina-labs/financials",
+          "title": "Machina Labs - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/uae-strategic-development-fund-announces-investment-and-initial-partnership-with-machina-labs",
+          "title": "Strategic Development Fund Announces Investment and Initial Agreement with Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/machina-labs-advances-custom-automotive-manufacturing-with-ai-and-robotics",
+          "title": "Machina Labs Advances Custom Automotive Manufacturing with AI and Robotics",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/machina-creates-dedicated-defense-manufacturing-subsidiary-machina-bellator",
+          "title": "Machina Creates Dedicated Defense Manufacturing Subsidiary, Machina Bellator",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/machina-awarded-qualification-contract-from-lockheed-martin-in-support-of-jassm-program",
+          "title": "Machina Awarded Qualification Contract from Lockheed Martin in Support of JASSM Program",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/resources/page/2",
+          "title": "Resources (page 2) | Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://machinalabs.ai/careers",
+          "title": "Careers | Machina Labs",
+          "publisher": "Machina Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          6
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Robotic incremental sheet-metal forming (RoboCraftsman) in Machina-run factories and on-site Edge Factories; defence work via subsidiary Machina Bellator (Jul 2026)",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Edward Mehr"
+      ],
+      "named_customers": [
+        "Lockheed Martin",
+        "U.S. Air Force Research Laboratory",
+        "U.S. Air Force Rapid Sustainment Office",
+        "Warner Robins Air Logistics Complex",
+        "Toyota Motor North America",
+        "NASA"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "RoboCraftsman cells pair industrial robots with AI to form sheet metal straight from CAD without dies, then trim, heat-treat and scan parts. Machina runs them in its own factories and on-site Edge Factories to make airframe, missile, hypersonic, naval and custom automotive panels.",
       "pricing": null
     },
     {
@@ -1362,6 +2089,224 @@
       "pricing": null
     },
     {
+      "id": "co_seeq",
+      "name": "Seeq",
+      "website": "https://www.seeq.com",
+      "hq_country": "US",
+      "founded_year": 2013,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Seattle-based, fully remote maker of self-service advanced analytics and industrial AI software for operational data in process industries.",
+      "total_raised_usd": 157200000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.seeq.com/resources/press-releases/seeq-announces-50-million-series-d-funding-round-led-by-sixth-street-growth/",
+          "title": "Seeq Announces $50 million Series D Funding Round led by Sixth Street Growth",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/resources/press-releases/seeq-announces-50-million-series-c-funding-round-led-by-insight-partners",
+          "title": "Seeq Announces $50 million Series C Funding Round led by Insight Partners",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://in.marketscreener.com/quote/stock/CISCO-SYSTEMS-INC-4862/news/Cisco-Seeq-Closes-Series-B-Funding-and-Adds-Cisco-Investments-as-New-Investor-as-Growth-Accelerate-31259415/",
+          "title": "Seeq Closes Series B Funding and Adds Cisco Investments as New Investor as Growth Accelerates",
+          "publisher": "Seeq via MarketScreener (Business Wire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://globalventuring.com/seeq-extra-24m-series-b-round",
+          "title": "Seeq extra $24m series B round",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.seeq.com/?p=4673",
+          "title": "Seeq Adds Board Member Cameron Myhrvold; Emerging Markets Vice President, Michael Risse",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/",
+          "title": "Seeq home page",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/resources/success-stories/",
+          "title": "Seeq success stories",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/company/team/",
+          "title": "Seeq team",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/resources/press-releases/introducing-seeq-intelligence/",
+          "title": "Introducing Seeq Intelligence",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/company/",
+          "title": "Seeq company",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.seeq.com/resources/press-releases/",
+          "title": "Seeq press releases",
+          "publisher": "Seeq",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Process analytics: self-service analytics, monitoring and AI agents (Seeq Intelligence, Agent Q) over industrial operational data",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Steve Sliwa"
+      ],
+      "named_customers": [
+        "International Paper",
+        "Dominion Energy",
+        "Syensqo",
+        "Merck",
+        "Covestro",
+        "Bristol-Myers Squibb",
+        "Allnex",
+        "TVA",
+        "Pratt Industries"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Self-service analytics platform that lets process engineers and subject-matter experts investigate, monitor and report on operational data from existing plant systems. Seeq Intelligence adds Agent Q, a domain-aware natural-language AI analyst that assembles traceable investigations with recommended actions, and custom agents, for oil and gas, chemicals, pharma, mining and utilities.",
+      "pricing": null
+    },
+    {
+      "id": "co_symphonyai-industrial",
+      "name": "SymphonyAI Industrial",
+      "website": "https://www.symphonyai.com/industrial/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Industrial business of SymphonyAI selling an industrial AI data platform, asset performance management, process optimization and AI agents to manufacturers and energy companies.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.symphonyai.com/news/symphonyai-acquires-industrial-global-a-leader-in-machine-condition-monitoring-reliability-solutions-for-the-process-manufacturing-industries",
+          "title": "SymphonyAI Acquires Industrial Global, a Leader in Machine Condition Monitoring & Reliability Solutions for the Process Manufacturing Industries",
+          "publisher": "SymphonyAI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.bindt.org/News/September-2019/symphonyai-group-acquires-azima-global/",
+          "title": "SymphonyAI Group acquires Azima Global",
+          "publisher": "The British Institute of Non-Destructive Testing (BINDT)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.symphonyai.com/industrial/",
+          "title": "SymphonyAI Industrial",
+          "publisher": "SymphonyAI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.symphonyai.com/news/industrial/leader-ai-analytics-software-2025",
+          "title": "SymphonyAI Named a Leader in Industrial AI Analytics Software for 2025",
+          "publisher": "SymphonyAI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.symphonyai.com/news/industrial/symphonyai-industrial-takes-over-savigent-to-speed-up-digital-factory-and-ai-initiatives-in-manufacturing/",
+          "title": "SymphonyAI Industrial Takes Over Savigent to Speed-Up Digital Factory and AI Initiatives in Manufacturing",
+          "publisher": "SymphonyAI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.symphonyai.com/news/ai/enterprise-ai-leader-symphonyai-turns-profitable-on-accelerating-customer-and-revenue-growth/",
+          "title": "Enterprise AI Leader SymphonyAI Turns Profitable on Accelerating Customer and Revenue Growth",
+          "publisher": "SymphonyAI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.symphonyai.com/wp-content/uploads/2020/02/SAI-Investment-Jan-2020.pdf",
+          "title": "SymphonyAI Group Investments (Jan 2020)",
+          "publisher": "SymphonyAI Group",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/symphonyai-industrial/financials",
+          "title": "SymphonyAI Industrial - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Plant ops AI suite: industrial data platform (IRIS Foundry), APM / condition monitoring, process optimization copilots, factory and frontline-worker AI agents",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [
+        "AGCO",
+        "Novelis",
+        "3M",
+        "FrieslandCampina",
+        "GSK",
+        "Nippon Gases",
+        "Vandemoortele",
+        "Siemens Gamesa Renewable Energy",
+        "SANY",
+        "Seagate"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "A unified data engine connects IT, OT and edge data for an industrial AI platform offering asset performance management, plant-wide process optimization, connected-worker tools and natural-language copilots, plus prebuilt agents for factory operations, data investigation, digital twins, warranty claims, oil and gas operations and utilities.",
+      "pricing": null
+    },
+    {
       "id": "co_tandem",
       "name": "Tandem",
       "website": "https://tandem.inc",
@@ -1371,9 +2316,16 @@
       "sector_classified_by": "model",
       "layer": "design_intent",
       "description_short": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
-      "total_raised_usd": 4900000,
+      "total_raised_usd": 9900000,
       "is_competitor": true,
       "sources": [
+        {
+          "url": "https://www.vcbacked.co/company/tandem-san-francisco",
+          "title": "Tandem (San Francisco) - VCBacked",
+          "publisher": "VCBacked",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
         {
           "url": "https://tandem.inc/",
           "title": "Tandem — AI-Native Hardware Development Platform",
@@ -1415,24 +2367,17 @@
           "publisher": "Antler",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
-        },
-        {
-          "url": "https://www.vcbacked.co/company/tandem-san-francisco",
-          "title": null,
-          "publisher": "VCBacked",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         }
       ],
       "field_sources": {
         "website": [
-          0
+          1
         ]
       },
       "confidence": "high",
       "category": "direct",
       "layer_detail": "Design-intent / requirements traceability context layer for mechanical and hardware engineering; agents draft ECOs, design reviews, drawings, DFM feedback, impact and traceability reports. Lists SolidWorks and Autodesk among the workflows it is used in. Targets aerospace, space, medical devices, robotics & industrial, automotive, heavy machinery.",
-      "size_class": "under_5m",
+      "size_class": "from_5m_to_25m",
       "founders": [
         "Arjun Jain",
         "Kunal Jain",

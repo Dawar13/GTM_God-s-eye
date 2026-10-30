@@ -1,0 +1,57 @@
+{
+  "key": "round-apptronik",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Apptronik = Austin, Texas humanoid maker (Apollo) at apptronik.com; the release on the company's own site names B Capital, Google and John Deere.",
+  "pages": [
+    {
+      "url": "https://www.apptronik.com/news-collection/apptronik-closes-over-935-million-series-a",
+      "title": "Apptronik closes over $935 million Series A",
+      "publisher": "Apptronik",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "No lead named in the release. B Capital, Google, Mercedes-Benz and PEAK6 are existing investors; AT&T Ventures, John Deere and QIA are new.",
+    "Valuation (Bloomberg over $5.5B in search results) not read.",
+    "Founding year not found. Snippet is a short phrase from the fetch summary."
+  ],
+  "seed_company": "Apptronik",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Apptronik",
+      "website": "https://www.apptronik.com",
+      "description": "Austin-based maker of the Apollo humanoid robot for industrial work.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_a",
+    "stage_raw": "Series A-X extension (Series A total over $935M)",
+    "date": "2026-02-11",
+    "date_precision": "day",
+    "amount_original": 520000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [
+      "B Capital",
+      "Google",
+      "Mercedes-Benz",
+      "PEAK6",
+      "AT&T Ventures",
+      "John Deere",
+      "Qatar Investment Authority"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "Series A-X"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "key": "nvidia",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "NVentures (NVIDIA)",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as NVentures, NVIDIA's corporate venture capital arm, per NVIDIA's own page (nvidia.com/en-us/startups/nventures; nventures.ai 301-redirects there). Not NVIDIA Inception (a separate free startup programme) and not NVIDIA's own acquisitions.",
+  "pages": [
+    { "url": "https://www.nvidia.com/en-us/startups/nventures/", "title": "NVentures | NVIDIA", "publisher": "NVIDIA", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.nvidia.com/en-us/startups/", "title": "NVIDIA Startups", "publisher": "NVIDIA", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/?p=729115", "title": "Vention raises $110M Series D", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.crunchbase.com/?p=93709", "title": "Robotics funding roundup incl. Skild AI", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.homburger.ch/en/news/homburger-advised-nventures-nvidia-on-its-investment-in-flexion-robotics/", "title": "Homburger advised NVentures (NVIDIA) on its investment in Flexion Robotics", "publisher": "Homburger", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["NVentures"], "pages": [0], "snippet": "NVentures is NVIDIA's venture capital arm." },
+    "type": { "value": "cvc", "pages": [0], "snippet": "NVentures is NVIDIA's venture capital arm." },
+    "website": { "value": "https://www.nvidia.com/en-us/startups/nventures/", "pages": [0], "snippet": "NVentures is NVIDIA's venture capital arm." },
+    "thesis_text": { "value": "Corporate venture arm investing in technology visionaries and building long-term partnerships with generational teams, adding NVIDIA technical and go-to-market support beyond capital.", "pages": [0], "snippet": "build long-term partnerships with generational teams" },
+    "stated_sectors": { "value": ["ai_infra", "robotics_physical_ai", "health_bio", "ai_apps_agents", "hardware_deeptech"], "pages": [0], "snippet": "AI infrastructure, robotics, digital biology, applied AI, frontier compute, and beyond" },
+    "application_url": { "value": "https://www.nvidia.com/en-us/startups/", "pages": [0, 1], "snippet": "we'd like to hear from you" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Skild AI", "website": null, "description": "Robotics AI startup; reported valuation above $14 billion after the round.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "undisclosed", "stage_raw": null, "date": "2026-01", "date_precision": "month",
+      "amount_original": 1400000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["SoftBank Group"], "participants": ["NVentures"], "unspecified": [],
+      "pages": [3], "snippet": "SoftBank Group led the startup's latest round, which included participation from NVentures, Nvidia's venture capital arm."
+    },
+    {
+      "company": { "name": "Vention", "website": null, "description": "Canadian supplier of customized automation equipment to manufacturers.", "hq_country": "CA", "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "series_c_plus", "stage_raw": "Series D", "date": "2026-01-27", "date_precision": "day",
+      "amount_original": 110000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Investment arm of Quebec's government"], "participants": ["NVentures"], "unspecified": [],
+      "pages": [2], "snippet": "It was joined by Nvidia Corp.’s NVentures and several other institutional backers."
+    },
+    {
+      "company": { "name": "Flexion Robotics", "website": null, "description": "Robotics company; the page records only the funding and the legal advisers.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-11-20", "date_precision": "day",
+      "amount_original": 50000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [], "participants": ["DST Global Partners", "NVentures", "redalpine", "Prosus Ventures", "Moonfire"], "unspecified": [],
+      "pages": [4], "snippet": "Homburger advised NVentures."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city and country not stated on the fetched NVentures or Startups pages; left out rather than filled from memory.",
+    "Stages and check size not disclosed on the NVentures page. Cold-inbound policy not stated beyond an invitation to get in touch.",
+    "Type chosen as cvc because NVIDIA's own page calls NVentures its venture capital arm. No fund vehicle is published.",
+    "Skild AI stage unlabelled in the fetched article (other outlets call it Series C). Skild, Vention and Flexion descriptions and HQs are thin because the fetched pages give little.",
+    "Search listings also pointed to Bedrock Robotics (Series B, Feb 2026), Point2 Technology (Apr 2026), Generalist AI (Jun 2026) and Orbital Industries (May 2026) from aggregators only; not recorded.",
+    "Vention lead is named only as the investment arm of Quebec's government."
+  ]
+}

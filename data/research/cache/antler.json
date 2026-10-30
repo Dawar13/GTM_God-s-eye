@@ -1,0 +1,78 @@
+{
+  "key": "antler",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Antler",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Antler, the day-zero early-stage VC headquartered in Singapore (antler.co about page; the 2024 SEA press release calls it 'Singapore-based'). This is the global parent brand; Antler US and Antler India are separate records. Not Antler Elevate (its separate $285M later-stage fund) and not unrelated 'Antler' companies.",
+  "pages": [
+    { "url": "https://www.antler.co/about", "title": "About | Antler", "publisher": "Antler", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.antler.co/press-releases/antler-leads-5-1m-pre-seed-funding-for-37-startups-in-sea-targets-investments-in-verticalized-ai-and-industry-4-0", "title": "Antler leads $5.1M pre-seed funding for 37 startups in SEA", "publisher": "Antler", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.startupdaily.net/topic/funding/antler-backs-ai-robotics-recycling-startup-oscorp-energy-in-1-3-million-pre-seed/", "title": "Antler backs AI robotics recycling startup Oscorp Energy in $1.3 million pre-Seed", "publisher": "Startup Daily", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.startupdaily.net/topic/funding/best-in-tech-awards-finalist-sophiie-ai-lands-5-million-seed-round/", "title": "Sophiie AI lands $5 million seed round", "publisher": "Startup Daily", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.vcbacked.co/company/tandem-san-francisco", "title": "Tandem (San Francisco) - VCBacked", "publisher": "VCBacked", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "aliases": { "value": [], "pages": [0], "snippet": "Antler was founded on the belief that people innovating is the key to building a better future." },
+    "type": { "value": "vc", "pages": [1], "snippet": "As a multi-stage investor, we recognize the immense potential of early-stage startups in Southeast Asia." },
+    "website": { "value": "https://www.antler.co", "pages": [0], "snippet": "Antler was founded on the belief that people innovating is the key to building a better future." },
+    "hq_city": { "value": "Singapore", "pages": [0, 1], "snippet": "Antler is headquartered" },
+    "hq_country": { "value": "SG", "pages": [0, 1], "snippet": "Antler is headquartered" },
+    "stages": { "value": ["pre_seed"], "pages": [0], "snippet": "from the very beginning—whether it's pre-team or even pre-idea" },
+    "leads": { "value": true, "pages": [1], "snippet": "Antler leads $5.1M pre-seed funding for 37 startups in SEA" },
+    "thesis_text": { "value": "Day-zero investor backing people before a team or idea exists, then supporting them from inception to scale across 20+ locations; a separate Elevate fund invests later.", "pages": [0], "snippet": "from the very beginning—whether it's pre-team or even pre-idea" },
+    "stated_sectors": { "value": ["ai_apps_agents"], "pages": [0], "snippet": "most active investor in AI startups" }
+  },
+  "funds": [
+    {
+      "name": "Antler Elevate",
+      "number": null,
+      "size_original": 285000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [0],
+      "snippet": "$285M emerging growth fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Oscorp Energy", "website": null, "description": "Sydney startup building AI vision and robotic systems that find and remove lithium-ion batteries from waste streams before they cause fires.", "hq_country": "AU", "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "pre_seed", "stage_raw": "pre-Seed", "date": "2026-06-04", "date_precision": "day",
+      "amount_original": 1300000, "currency_original": "AUD", "valuation_post_original": null,
+      "leads": ["Atlas (AI VB fund)"], "participants": ["Antler", "Antipodean Capital"], "unspecified": [],
+      "pages": [2], "snippet": "Antler backed the Sydney startup at the end of the residency and followed on during its pre-Seed raise"
+    },
+    {
+      "company": { "name": "Sophiie AI", "website": null, "description": "Gold Coast company using AI to handle admin and phone reception for tradespeople and service businesses.", "hq_country": "AU", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-08-17", "date_precision": "day",
+      "amount_original": 5000000, "currency_original": "AUD", "valuation_post_original": 30000000,
+      "leads": [], "participants": ["Archangel Ventures", "Admiralty Capital Group", "Antler", "Gandel Invest", "Aussie Angels"], "unspecified": [],
+      "pages": [3], "snippet": "backed by Archangel Ventures, Admiralty Capital Group, Antler, Gandel Invest and Aussie Angels"
+    },
+    {
+      "company": { "name": "Tandem", "website": "https://tandemai.io", "description": "Software using integration, observability and an AI assistant to streamline hardware engineering and handoffs.", "hq_country": "US", "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "pre_seed", "stage_raw": "Pre-Seed", "date": "2025-05", "date_precision": "month",
+      "amount_original": 5000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [], "participants": [], "unspecified": ["Antler"],
+      "pages": [4], "snippet": "Investors: Antler"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.Tandem amount",
+      "values": ["$5.0M pre-seed, May 2025 (VCBacked)", "$200K pre-seed, Sep 2025 (a jobs-site listing seen only in search results)"],
+      "chosen": "$5.0M, May 2025",
+      "reason": "Only the VCBacked page was fetched; it is a database page, so confidence is low. The search-result figure was not opened."
+    }
+  ],
+  "open_items": [
+    "Tandem (tandemai.io, SF) round rests on one database page: no press article fetched; Antler's role and co-investors unknown. Confirm it is the competitor Tandem.",
+    "Check size, application URL and cold-inbound policy not found on the fetched pages; Antler's own page lists no sector focus (AI claim is a Dealroom citation on its page). Stages left as pre_seed because the 'multi-stage' wording is from a 2024 release and Elevate's stage is not stated.",
+    "Latest main Antler fund not found in the fetched part of the about page; Antler Elevate ($285M) is the only fund stated, close date unknown.",
+    "Oscorp amount is A$ per Startup Daily; the lead is 'European VC Atlas, through its AI VB fund'. Sophiie lead not named in the article (another outlet reportedly named Archangel and Admiralty).",
+    "About page mentions 22 locations in the part read; the 30 offices and the 2025 UK/Nordic fund closes appear only in other pages or a Vestbee article not recorded here."
+  ]
+}

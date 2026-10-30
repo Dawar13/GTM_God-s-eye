@@ -1,0 +1,72 @@
+{
+  "key": "sk-telecom-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "SK Telecom Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "SK Telecom Ventures (SKTVC) is SK Telecom's US venture arm. sktvc.com 301-redirects to skta.com, the site of SK Telecom Americas (SKTA), which calls itself the US corporate venture capital arm of SK Telecom, Santa Clara. TechCrunch uses 'SK Telecom Venture Capital (SKTVC)'. skta.com never uses the name 'SK Telecom Ventures', so the identity rests on the redirect and the TechCrunch wording. Not SK Networks, SK Square or SK hynix.",
+  "pages": [
+    { "url": "http://skta.com/", "title": "SK Telecom Americas", "publisher": "SK Telecom Americas", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.caplight.com/investor/sk-telecom-americas", "title": "SK Telecom Americas investor profile", "publisher": "Caplight", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://techcrunch.com/2023/08/14/ai-startup-anthropic-raises-100m-from-korean-telco-giant-sk-telecom/", "title": "AI startup Anthropic raises $100M from Korean telco giant SK Telecom", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.telecomtv.com/content/ai/skt-injects-funds-agentic-ai-smarts-into-timetree-53777/", "title": "SKT injects funds, agentic AI smarts into TimeTree", "publisher": "TelecomTV", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["SKTVC", "SK Telecom Venture Capital", "SK Telecom Americas"], "pages": [0, 2], "snippet": "SKT participated in the Series C round through its venture capital arm, SK Telecom Venture Capital (SKTVC)." },
+    "type": { "value": "cvc", "pages": [0], "snippet": "US-based corporate venture capital investment arm of SK Telecom" },
+    "website": { "value": "http://skta.com/", "pages": [0], "snippet": "US-based corporate venture capital investment arm of SK Telecom" },
+    "hq_city": { "value": "Santa Clara", "pages": [0], "snippet": "4151 Burton Dr, Santa Clara, CA 95054" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "4151 Burton Dr, Santa Clara, CA 95054" },
+    "thesis_text": { "value": "Corporate investor advancing SK Telecom's growth by investing in and partnering with innovative technologies and companies in the global AI market.", "pages": [0], "snippet": "innovative technologies and companies in the global AI market" },
+    "stated_sectors": { "value": ["ai_infra", "hardware_deeptech", "mobility_ev", "enterprise_saas"], "pages": [0], "snippet": "AI/ML, Semiconductor, Infrastructure, Security, Mobility, and Quantum" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Anthropic", "website": null, "description": "AI lab behind the Claude models; SK Telecom also agreed a separate $100M strategic investment and a telco LLM partnership.", "hq_country": "US", "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "series_c_plus", "stage_raw": "Series C", "date": "2023-05", "date_precision": "month",
+      "amount_original": 450000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Spark Capital"], "participants": ["SK Telecom Venture Capital (SKTVC)"], "unspecified": [],
+      "pages": [2], "snippet": "SKT participated in the Series C round through its venture capital arm, SK Telecom Venture Capital (SKTVC)."
+    },
+    {
+      "company": { "name": "GGWP", "website": null, "description": "Game community and moderation platform; the database page gives no description.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-04", "date_precision": "month",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": [], "participants": ["SK Telecom Americas"], "unspecified": [],
+      "pages": [1], "snippet": "GGWP Apr 2026 Series A Co-investor"
+    },
+    {
+      "company": { "name": "Config", "website": null, "description": null, "hq_country": null, "founded_year": null, "sector": null, "sector_classified_by": null, "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-05", "date_precision": "month",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": [], "participants": ["SK Telecom Americas"], "unspecified": [],
+      "pages": [1], "snippet": "Config May 2026 Seed Co-investor"
+    },
+    {
+      "company": { "name": "TimeTree", "website": null, "description": "Calendar-sharing app; SK Telecom is adding AI assistant features and backing overseas expansion.", "hq_country": "JP", "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "strategic", "stage_raw": "strategic investment", "date": "2025-09-08", "date_precision": "day",
+      "amount_original": 2200000000, "currency_original": "JPY", "valuation_post_original": null,
+      "leads": [], "participants": ["SK Telecom"], "unspecified": [],
+      "pages": [3], "snippet": "Now SKT has invested 2.2bn yen ($14.8m) in TimeTree"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.TimeTree investor",
+      "values": ["SK Telecom (parent, per TelecomTV)", "SK Telecom Ventures"],
+      "chosen": "SK Telecom",
+      "reason": "The page names the parent company only; it is recorded as a strategic round by the parent and may not have been made by the venture arm."
+    }
+  ],
+  "open_items": [
+    "skta.com does not use the name 'SK Telecom Ventures'; the link rests on the sktvc.com redirect and TechCrunch's 'SK Telecom Venture Capital (SKTVC)'.",
+    "Stages, check size, fund and application route not stated on skta.com. Portfolio of 15 companies is shown unnamed.",
+    "GGWP Series A (April 2026) and Config seed (May 2026) come from a Caplight database page only: no amount, leads or co-investors. A Korean press report (Asiae) of the GGWP round could not be fetched (connection reset).",
+    "The Anthropic Series C date and amount come from TechCrunch's background line (May 2023, $450M led by Spark Capital); SKTVC's own cheque size is not given.",
+    "Search results also suggested SKT joined an Anthropic round in 2026 (parent, not the venture arm) and that one archive marks SK Telecom Ventures inactive; neither verified on a fetched page.",
+    "Not verified: the One Way Summit SF attendee list lead (focus 'AI; Infrastructure; Deep tech')."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "key": "round-mind-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Mind Robotics = Palo Alto startup founded by Rivian CEO RJ Scaringe building AI robots for factories (Verdict; Texxr quoting Scaringe). Rivian is named as shareholder and operational partner. Not any other Mind robotics firm.",
+  "pages": [
+    {
+      "url": "https://www.verdict.co.uk/mind-robotics-secures-400m/",
+      "title": "Mind Robotics secures $400m to scale AI robotics in factories",
+      "publisher": "Verdict",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://texxr.com/1165040/mind-robotics-raises-500m-for-factory-robots",
+      "title": "Mind Robotics raises $500M for factory robots",
+      "publisher": "Texxr (quoting RJ Scaringe)",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "amount",
+      "values": [
+        "$900M (CSV)",
+        "$400M (May 2026, Kleiner Perkins-led)",
+        "$500M (Mar 2026 Series A, co-led Accel and a16z)"
+      ],
+      "chosen": "$400M recorded for this round",
+      "reason": "$900M is the sum of two rounds; no single $900M round found. Verdict says total funding now exceeds $1bn including a $115m seed."
+    }
+  ],
+  "open_items": [
+    "The $500M Series A (11 Mar 2026, co-led Accel and a16z, about $2B valuation per sources) is a separate round not recorded in this file; Accel and a16z are co-leads there and appear as participants here.",
+    "Website, founding year, stage label and valuation of the $400M round not found on pages read.",
+    "eWeek (WSJ about $3.4B valuation) returned 403. Snippet is a short phrase from the fetch summary."
+  ],
+  "seed_company": "Mind Robotics",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Mind Robotics",
+      "website": null,
+      "description": "Palo Alto startup from Rivian's CEO building AI-driven robots for factory work.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "undisclosed",
+    "stage_raw": "New financing after the $500M Series A (round name not given)",
+    "date": "2026-05-14",
+    "date_precision": "day",
+    "amount_original": 400000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Kleiner Perkins"
+    ],
+    "participants": [
+      "Meritech Capital",
+      "SV Angel",
+      "Redpoint Ventures",
+      "A-Star Capital",
+      "Incharge Capital",
+      "Garuda Ventures",
+      "Accel",
+      "Eclipse",
+      "Andreessen Horowitz",
+      "Bain Capital Ventures",
+      "Prysm Capital",
+      "Greenoaks"
+    ],
+    "unspecified": [
+      "Rivian"
+    ],
+    "pages": [
+      0
+    ],
+    "snippet": "Kleiner Perkins"
+  }
+}

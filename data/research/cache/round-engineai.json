@@ -1,0 +1,52 @@
+{
+  "key": "round-engineai",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "EngineAI = Shenzhen general-purpose humanoid maker founded October 2023 (Humanoids Daily); lead investors Henan Investment Group's Huirong Fund and Luxshare Precision match the CSV. Domain not stated on the page read.",
+  "pages": [
+    {
+      "url": "https://humanoidsdaily.com/news/engineai-secures-200-million-series-b-as-manufacturing-giant-luxshare-joins-the-cap-table",
+      "title": "EngineAI secures $200 million Series B as Luxshare joins the cap table",
+      "publisher": "Humanoids Daily",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Single press page; company release not read.",
+    "Source gives $200M (about 1.4B RMB) and valuation above 10B RMB; valuation not recorded (currency mismatch). Lead is named as the Huirong Fund of Henan Investment Group.",
+    "Website not found. Snippet is a quote about Luxshare's role."
+  ],
+  "seed_company": "EngineAI",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "EngineAI",
+      "website": null,
+      "description": "Shenzhen maker of general-purpose humanoid robots.",
+      "hq_country": "CN",
+      "founded_year": 2023,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_b",
+    "stage_raw": "Series B",
+    "date": "2026-04-09",
+    "date_precision": "day",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Henan Investment Group",
+      "Luxshare Precision"
+    ],
+    "participants": [],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "a strategic addition that could solve the \"delivery battle\" currently plaguing the sector."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "key": "premji-invest",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Premji Invest",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Premji Invest (premjiinvest.com), the Azim Premji-owned investment fund with US (Menlo Park) and India (Bengaluru) offices and a US/IN site toggle. Not the Azim Premji Foundation or Azim Premji University, and not Wipro. Rounds credited to 'Premji Invest' name the same firm.",
+  "pages": [
+    { "url": "https://www.premjiinvest.com/portfolio", "title": "Portfolio | Premji Invest", "publisher": "Premji Invest", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://news.ventureintelligence.com/private-equity/premji-invest-leads-us-based-ai-enabled-networking-tech-startup-upscale%E2%80%99s-%24190-m-series-a-1-extensio", "title": "Premji Invest leads US-based AI-enabled networking tech startup Upscale's $190M Series A-1 extension", "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.robotics247.com/article/rhoda-ai-exits-stealth-mode-with-450m-series-a", "title": "Rhoda AI exits stealth mode with $450M Series A", "publisher": "Robotics 24/7", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://entrackr.com/news/emversity-raises-30-mn-in-series-a-led-by-premji-invest-10999643", "title": "Emversity raises $30 Mn in Series A led by Premji Invest", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.dealstreetasia.com/stories/upscale-ai-valued-at-2b-486420", "title": "Upscale AI valued at $2b after funding extension; Premji Invest leads round", "publisher": "DealStreetAsia", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://analyticsindiamag.com/ai-news-updates/azim-premji-investment-firm-to-invest-over-10-billion-in-ai-says-cio", "title": "Azim Premji investment firm to invest over $10 billion in AI, says CIO", "publisher": "Analytics India Magazine", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "family_office", "pages": [5], "snippet": "Azim Premji-owned private equity fund" },
+    "website": { "value": "https://www.premjiinvest.com", "pages": [0], "snippet": "Our partner teams making their visions a reality." },
+    "stages": { "value": ["seed", "series_a", "growth"], "pages": [0, 3], "snippet": "Early and Growth" },
+    "leads": { "value": true, "pages": [1, 3], "snippet": "Emversity has raised $30 million (Rs 271 crore) in a Series A funding round led by Premji Invest" },
+    "thesis_text": { "value": "Azim Premji-owned fund managing about $10 billion, focused mainly on AI and technology, investing from early stage to growth.", "pages": [5], "snippet": "Azim Premji-owned private equity fund" },
+    "stated_sectors": { "value": ["health_bio", "hardware_deeptech", "ai_apps_agents", "industrial_manufacturing", "consumer", "fintech", "enterprise_saas"], "pages": [0], "snippet": "Biotech, Frontier Tech, Semis, Industrials, AI, Consumer, FinTech, Enterprise, and Healthcare" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Upscale AI", "website": null, "description": "AI networking infrastructure company, Santa Clara with a base in Bangalore.", "hq_country": "US", "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A-1 extension", "date": "2026-06-23", "date_precision": "day",
+      "amount_original": 190000000, "currency_original": "USD", "valuation_post_original": 2000000000,
+      "leads": ["Premji Invest"], "participants": ["NVIDIA", "Salesforce Ventures", "Seligman Ventures", "Temasek", "Maverick Silicon", "Mayfield", "Prosperity7 Ventures", "StepStone Group", "Tiger Global"], "unspecified": [],
+      "pages": [1, 4], "snippet": "Santa Clara, CA (USA)- and Bangalore-based Upscale has raised $190-M in a Series A-1 financing round led by Premji Invest."
+    },
+    {
+      "company": { "name": "Rhoda AI", "website": null, "description": "Exited stealth with a robotics foundation model for industrial robots, raising a $450M Series A.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-03-10", "date_precision": "day",
+      "amount_original": 450000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [], "participants": ["Capricorn Investment Group", "Khosla Ventures", "Leitmotif", "Matter Venture Partners", "Mayfield", "Premji Invest", "Prelude Ventures", "Temasek", "Xora"], "unspecified": [],
+      "pages": [2], "snippet": "At Premji Invest, we take a long-term view and are highly selective in where we partner."
+    },
+    {
+      "company": { "name": "Emversity", "website": null, "description": "Works with universities to embed industry-aligned training in degrees and runs employer-linked skill centres in healthcare and hospitality.", "hq_country": "IN", "founded_year": null, "sector": null, "sector_classified_by": null, "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-01-15", "date_precision": "day",
+      "amount_original": 30000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Premji Invest"], "participants": ["Lightspeed", "Z47"], "unspecified": [],
+      "pages": [3], "snippet": "Emversity has raised $30 million (Rs 271 crore) in a Series A funding round led by Premji Invest"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "type",
+      "values": ["family_office", "asset_manager", "vc"],
+      "chosen": "family_office",
+      "reason": "Only source wording is 'Azim Premji-owned private equity fund'; the fetched pages do not use the term family office. Revisit if a primary page describes the structure."
+    }
+  ],
+  "open_items": [
+    "HQ not stated: the portfolio page lists a Menlo Park, CA office and a Bengaluru office without naming a headquarters. hq_city and hq_country left out.",
+    "Rhoda AI: the fetched Robotics 24/7 page lists Premji Invest among investors but I could not read a sentence naming it lead (Business Wire returned 403); other outlets in search results say Premji led at about $1.7B valuation. Recorded as participant.",
+    "Premji's firm website gave no thesis text, check size, fund size, application route or cold-inbound policy. The ~$10B figure is from one press article. Founder lead 'Physical AI; Infrastructure' from the user list is consistent with Rhoda and Upscale but not stated by the firm.",
+    "Upscale AI amount/stage come from Venture Intelligence; DealStreetAsia showed only a headline ($2B valuation, Premji leads).",
+    "Emversity website, founding year and sector (education) have no matching sector id."
+  ]
+}

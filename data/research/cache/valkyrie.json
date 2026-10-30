@@ -1,0 +1,75 @@
+{
+  "key": "valkyrie",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Valkyrie",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Beth Turner's solo-GP early-stage fund Valkyrie (also written Valkyrie Ventures; ex-SV Angel), which Forbes Argentina and Ecosistema Startup describe as a US$45M fund launched in 2025 and Pulse 2.0 lists as an investor in Cascade Space. valkyrie.vc (Valkyrie Ventures, contact address valkyrieventures@gmail.com) was fetched but never names Turner, so the link between that domain and the fund rests on the shared name only. Ruled out from search results: Valkyrie Investments (crypto asset manager that launched a VC arm, Blockworks/CoinDesk/The Block), Valkyrie Intelligence / Andromeda (Austin AI company), Valkyrie Fund (Mountain View, separate profiles), and the Kratos Valkyrie drone.",
+  "pages": [
+    { "url": "https://www.forbesargentina.com/negocios/crecio-una-familia-fundadores-paso-mit-ahora-lidera-fondo-ya-sedujo-jack-dorsey-marc-andreessen-n82909", "title": "Crecio en una familia de fundadores, paso por MIT y ahora lidera un fondo que ya sedujo a Jack Dorsey y Marc Andreessen", "publisher": "Forbes Argentina", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://ecosistemastartup.com/?p=52470", "title": "Beth Turner y Valkyrie: El fondo que sedujo a Jack Dorsey y Marc Andreessen", "publisher": "Ecosistema Startup", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.valkyrie.vc", "title": "Valkyrie", "publisher": "Valkyrie Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/cascade-space-5-9-million-seed-funding-raised-for-space-communication-platform", "title": "Cascade Space: $5.9 Million Seed Funding Raised For Space Communication Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Valkyrie Ventures", "Beth Turner"], "pages": [0, 2], "snippet": "Valkyrie Ventures" },
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "En 2025, Beth Turner lanza Valkyrie, un fondo de US$ 45 millones" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Icarus, a portfolio company, is based in El Segundo, California" },
+    "thesis_text": { "value": "Early-stage investor in AI, AI infrastructure and strategic industries such as nuclear energy and the power grid, aiming for about 80 companies over two years.", "pages": [0, 1], "snippet": "inversión temprana en startups de inteligencia artificial, energía y robótica" },
+    "stated_sectors": { "value": ["ai_infra", "climate_energy", "robotics_physical_ai"], "pages": [0, 1], "snippet": "inteligencia artificial, energía y robótica" }
+  },
+  "funds": [
+    {
+      "name": "Valkyrie Fund I",
+      "number": "I",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2025-05",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "El fondo se cerró en solo cinco semanas"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Cascade Space",
+        "website": null,
+        "description": "Platform for designing, testing and operating spacecraft communication systems, plus a ground-station network for deep-space and lunar missions.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "space",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-07",
+      "date_precision": "month",
+      "amount_original": 5900000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Valkyrie Ventures", "Karman Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Valkyrie Ventures, Karman Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "fund launch / close date",
+      "values": ["May 2025 (closed after five weeks; Forbes Argentina)", "December 2025 (public launch; articles dated ~5 Dec 2025; lead list 2025-12-04)"],
+      "chosen": "2025-05",
+      "reason": "Forbes Argentina says the fund closed in May; the December date appears to be the press launch. Form D (search summary only) showed $41.5M sold 5 Jun 2025."
+    }
+  ],
+  "open_items": [
+    "Only one round recorded (need 3). Icarus (El Segundo drones; $250K check per Forbes Argentina), ACRONYM and Periodic Labs are named as portfolio companies but no fetched page describes a round with Valkyrie; Cascade Space page lists other investors beyond those recorded (YC, Nova Threshold, Undeterred, Night Capital, Olive Capital in search summary only).",
+    "HQ city not stated on fetched pages (search summaries say San Francisco / Bay Area, unverified). Link between valkyrie.vc and Beth Turner not shown on a fetched page, so website not recorded in facts.",
+    "Stages, check size (only the $250K Icarus check), application URL not found. LPs named by Forbes Argentina: Ron Conway, Jack Dorsey, Marc Andreessen, Diane Greene.",
+    "Forbes original (Dec 4, 2025) and Form D not fetched."
+  ]
+}

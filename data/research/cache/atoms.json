@@ -1,0 +1,136 @@
+{
+  "key": "atoms",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Atoms (atoms.co), Travis Kalanick's physical-automation group: atoms.co lists its units CloudKitchens, Otter, Lab37, Picnic, ProFood (food), Pronto AI (mining) and a transport unit, and Kalanick's 'unfinished business' post on atoms.co announces the $1.7B a16z-led equity investment, the same round verified in cache/round-atoms.json (TNW, same domain). CB Insights' City Storage Systems profile lists atoms.co as the website and calls the company Atoms, and Wikipedia gives Atoms, Inc. as CloudKitchens' parent; Kalanick's post says the businesses were merged into one Atoms equity structure, so City Storage Systems / CloudKitchens rounds are recorded as Atoms' earlier history. Not any unrelated company named Atoms. Category kept remote and layer robotics: Atoms builds specialised robots and automation for food, mining and heavy transport, not software agents for factory functions.",
+  "pages": [
+    { "url": "https://atoms.co", "title": "Atoms", "publisher": "Atoms", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://atoms.co/unfinished-business", "title": "Unfinished business", "publisher": "Atoms", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://atoms.co/vision", "title": "Vision | Atoms", "publisher": "Atoms", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thenextweb.com/news/travis-kalanick-atoms-1-7-billion-industrial-ai-a16z-uber", "title": "Travis Kalanick raised $1.7B for his robotics comeback, and Uber chipped in", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.cbinsights.com/company/city-storage-systems/financials", "title": "Atoms (City Storage Systems) - Funding, Financials, Valuation & Investors", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://en.wikipedia.org/wiki/CloudKitchens", "title": "CloudKitchens - Wikipedia", "publisher": "Wikipedia", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.bloomberglinea.com/english/uber-founder-grows-cloudkitchens-in-brazil-with-capital-boost-from-microsoft/", "title": "Uber founder grows CloudKitchens in Brazil with capital boost from Microsoft", "publisher": "Bloomberg Línea", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2019/02/01/the-next-big-bet-for-former-uber-ceo-travis-kalanick-may-be-cloud-kitchens-in-china/", "title": "The next big bet for former Uber CEO Travis Kalanick may be cloud kitchens — in China", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2019/06/28/a-rare-glimpse-into-the-sweeping-and-potentially-troubling-cloud-kitchens-trend/", "title": "A rare glimpse into the sweeping — and potentially troubling — cloud kitchens trend", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://atoms.co/openroles", "title": "Open roles | Atoms", "publisher": "Atoms", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Atoms",
+    "website": "https://atoms.co",
+    "description": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.",
+    "hq_country": null,
+    "founded_year": null,
+    "sector": "robotics_physical_ai",
+    "sector_classified_by": "source",
+    "layer": "robotics"
+  },
+  "category": "remote",
+  "layer": "robotics",
+  "layer_detail": "Specialised robots and automation across three verticals: Atoms Food (CloudKitchens facilities, Lab37 kitchen robotics, Otter restaurant software), Atoms Mining (Pronto autonomous haulage, acquired), Atoms Transport (robot wheelbase, not yet announced)",
+  "founders": ["Travis Kalanick"],
+  "named_customers": [],
+  "product_summary": "Builds specialised 'gainfully employed' robots and automation: delivery-first CloudKitchens facilities, Otter restaurant software, Lab37 kitchen robotics, Picnic office meals and ProFood real estate in food; Pronto autonomous haulage for mines and quarries; and a transport robot wheelbase still to be announced.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": { "name": "Atoms", "website": "https://atoms.co", "description": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "strategic",
+      "stage_raw": "Purchase of a controlling stake in predecessor City Storage Systems (CloudKitchens' parent) by Kalanick's 10100 fund, ~$150M, mostly buying out earlier backers (CB Insights: Acq - Fin); amount left out as largely secondary",
+      "date": "2018-03",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["10100 Fund"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7, 8, 4, 5],
+      "snippet": "spent $150 million to buy a controlling stake in City Storage Systems"
+    },
+    {
+      "company": { "name": "Atoms", "website": "https://atoms.co", "description": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "undisclosed",
+      "stage_raw": "Minority investment in predecessor City Storage Systems / CloudKitchens by Saudi Arabia's Public Investment Fund (CB Insights: Corporate Minority, 2019)",
+      "date": "2019",
+      "date_precision": "year",
+      "amount_original": 400000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Public Investment Fund"],
+      "pages": [5, 4],
+      "snippet": "$400 million from Saudi Arabia's Public Investment Fund in 2019"
+    },
+    {
+      "company": { "name": "Atoms", "website": "https://atoms.co", "description": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "strategic",
+      "stage_raw": "Corporate minority round in predecessor City Storage Systems / CloudKitchens including Microsoft (CB Insights: Corporate Minority - II, 2022-01-12, $15B valuation)",
+      "date": "2022-01-12",
+      "date_precision": "day",
+      "amount_original": 850000000,
+      "currency_original": "USD",
+      "valuation_post_original": 15000000000,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Microsoft"],
+      "pages": [6, 4, 5],
+      "snippet": "Microsoft Corp. (MSFT) is investing $850 million in CloudKitchens, owned by Uber founder Travis Kalanick"
+    },
+    {
+      "company": { "name": "Atoms", "website": "https://atoms.co", "description": "Travis Kalanick's physical-automation group spanning food (CloudKitchens, Otter, Lab37), mining (Pronto autonomous haulage) and heavy transport.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "undisclosed",
+      "stage_raw": "Equity investment, series not named (CB Insights: Private Equity); bank credit facilities arranged alongside; businesses merged into one Atoms equity structure",
+      "date": "2026-07-22",
+      "date_precision": "day",
+      "amount_original": 1700000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz"],
+      "participants": ["Bain Capital Ventures", "Uber", "Fifth Wall", "Chemistry", "A*", "K5 Global", "Abstract", "SV Angel", "Alpha Square Group"],
+      "unspecified": [],
+      "pages": [1, 3, 4],
+      "snippet": "Today, ATOMS is announcing a $1.7B equity investment with lead investor a16z and Ben Horowitz joining the board."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[2026].date",
+      "values": ["2026-07-22 (CB Insights; round-atoms.json via TNW citing TechCrunch)", "TNW article published 2026-07-23", "atoms.co/unfinished-business carries a 2026-10-28 page date"],
+      "chosen": "2026-07-22",
+      "reason": "The October date looks like a page update date; press and database date the announcement to 22-23 July 2026."
+    },
+    {
+      "field": "rounds[2026].participants",
+      "values": ["a16z, Bain Capital Ventures, Uber, Fifth Wall, Chemistry, A*, K5 Global, Abstract, SV Angel, Alpha Square Group (atoms.co equity partners)", "a16z, Uber, Bain Capital, Fifth Wall and others (TNW)", "CB Insights adds Greycroft and lists 'A* Capital', 'K5 Global Technology'"],
+      "chosen": "atoms.co list",
+      "reason": "Company's own announcement; Greycroft appears only on CB Insights."
+    },
+    {
+      "field": "rounds[850m].date",
+      "values": ["2021 (Wikipedia: '$850 million in 2021 in a round that included Microsoft')", "2022-01-12 (CB Insights, Corporate Minority - II)", "Reported 2022-09-07 as Microsoft 'is investing' (Bloomberg Línea citing the Financial Times)"],
+      "chosen": "2022-01-12",
+      "reason": "Only dated round record; the press page reports the deal later without a date. Low confidence on the date."
+    },
+    {
+      "field": "rounds[850m].valuation",
+      "values": ["$15B (CB Insights, January 2022)", "'an estimated $15 billion by 2021' (Wikipedia)", "Not stated (Bloomberg Línea)"],
+      "chosen": "$15B",
+      "reason": "Database pages agree on the figure; no press page read states it."
+    }
+  ],
+  "open_items": [
+    "HQ and founding year of Atoms itself not stated on any page read; Kalanick's post says Atoms launched a few months before the announcement. Predecessor CloudKitchens was established in 2016 and is Los Angeles-based per Wikipedia.",
+    "Headcount not found for Atoms; Wikipedia cites 'over 4,000' CloudKitchens employees by 2022 (older figure for one unit), not recorded.",
+    "$400M Public Investment Fund round rests on Wikipedia and a CB Insights row (amount hidden); the Business Insider source was unreachable. Low confidence.",
+    "2018 controlling-stake purchase (~$150M by Kalanick's 10100 fund) recorded without an amount because TechCrunch says the money mostly bought out earlier backers.",
+    "Total raised: $2.95B across the recorded rounds with amounts ($1.7B + $850M + $400M), which matches CB Insights' '$2.95B over 8 rounds'; three CB Insights rows are paywalled.",
+    "Debt partners on the 2026 round (Bank of America, Goldman Sachs, Wells Fargo, JP Morgan, Barclays) and the facility size not disclosed; debt not recorded as a round. Valuation not disclosed.",
+    "Pronto acquisition (TNW) terms and date not found; earlier funding of Pronto, Lab37, Otter or other units not recorded as Atoms rounds.",
+    "No customers named on pages read. Revenue not publicly reported. Pricing not public.",
+    "Web-search budget was exhausted; TechCrunch's July 2026 article and October 2026 press releases mentioned in round-atoms.json were not read."
+  ]
+}

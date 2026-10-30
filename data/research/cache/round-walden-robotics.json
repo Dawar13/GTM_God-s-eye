@@ -1,0 +1,76 @@
+{
+  "key": "round-walden-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Walden Robotics = Toyota Research Institute spin-out in the Cambridge, MA area led by MIT's Russ Tedrake (Hoodline); the Gunderson Dettmer page confirms a $300M seed co-led by Toyota and Deviation Capital. Not another Walden firm.",
+  "pages": [
+    {
+      "url": "https://www.gunder.com/en/news-insights/client-news/deviation-capital-co-leads-walden-robotics-dollar300-million-seed-financing",
+      "title": "Deviation Capital Co-Leads Walden Robotics $300 Million Seed Financing",
+      "publisher": "Gunderson Dettmer",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://hoodline.com/2026/07/cambridge-robot-spinout-snags-300m-in-quiet-toyota-fueled-bet/",
+      "title": "Cambridge robot spinout snags $300M in quiet Toyota-fueled bet",
+      "publisher": "Hoodline",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Boeing and Samsung Ventures are both named as investors (Samsung Ventures on the Gunderson page, Boeing on both); the extra names on 'another list' are consistent.",
+    "Form factor 'wheeled two-armed' only partly verified: Hoodline describes a torso with two arms on a wheeled or fixed base, partly humanoid.",
+    "BusinessWire release returned 403; website not found. Hoodline says Cambridge area and founded 2026; US country inferred.",
+    "Valuation $1.1B from Gunderson page, treated as post-money and USD (not stated)."
+  ],
+  "seed_company": "Walden Robotics",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Walden Robotics",
+      "website": null,
+      "description": "Toyota Research Institute spin-out building general-purpose robots for factory tasks.",
+      "hq_country": "US",
+      "founded_year": 2026,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "seed",
+    "stage_raw": "Seed",
+    "date": "2026-07-15",
+    "date_precision": "day",
+    "amount_original": 300000000,
+    "currency_original": "USD",
+    "valuation_post_original": 1100000000,
+    "leads": [
+      "Toyota",
+      "Deviation Capital"
+    ],
+    "participants": [
+      "NVIDIA",
+      "Boeing",
+      "AE Ventures",
+      "Samsung Ventures",
+      "Prologis Ventures",
+      "CoreWeave Ventures",
+      "Calibrate Ventures",
+      "Colle Capital",
+      "Shine Capital",
+      "NextView Ventures",
+      "Squarepoint Capital",
+      "One Madison Group",
+      "KAS Venture Partners",
+      "Menlo Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "Deviation Capital Co-Leads Walden Robotics $300 Million Seed Financing"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "key": "cognite",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Cognite (cognite.com; Cognite AS in the site footer, Cognite Holding B.V. in the Schneider Electric release), the Aker-backed industrial DataOps and AI software company founded in 2017 with Dr. John Markus Lervik as CEO and co-founder; products Cognite Data Fusion, Atlas AI and Flows. Every round page names the same company (Aker as majority shareholder, customers bp / Saudi Aramco / Alfa Laval). Big change since our list was made: on 2026-06-30 Schneider Electric signed a definitive agreement to buy 100% of Cognite for $3.1B all-cash, to be merged into AVEVA; completion was still pending regulatory approvals in every page read. Category kept adjacent, layer plant_ops: Cognite is the contextualized data layer plus an agent workbench (Atlas AI) sold to large energy, process-manufacturing and power operators, which overlaps Utopian's maintenance / process-stability agents in intent but not in buyer, deployment model (enterprise platform) or channel (no procurement / RFQ / WhatsApp front-line agents). HQ recorded as US because the company says it established its global headquarters in Arizona in 2025 (Norwegian origin noted in conflicts).",
+  "pages": [
+    { "url": "https://www.se.com/ww/en/assets/pdf/Schneider-Electric-announces-agreement-to-acquire-Cognite", "title": "Schneider Electric announces agreement to acquire Cognite, unlocking a new level of strategic intelligence for Industrial AI", "publisher": "Schneider Electric", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cognite.com/en/company/newsroom/cognite-s-moonshot-and-ai-drive-record-breaking-year", "title": "Cognite's Moonshot and AI Drive Record-Breaking Year", "publisher": "Cognite", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cognite.com/en/company/newsroom/cognite-secures-150-million-investment-from-tcv-to-acceleratedigitalization-of-global-industries", "title": "Cognite secures $150 million investment from TCV to accelerate digitalization of global industries", "publisher": "Cognite", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/?p=547157", "title": "Industrial SaaS startup Cognite raises $150M on a unicorn valuation of $1.6B", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.inderes.fi/en/releases/aker-asa-cognite-announces-usd-150-million-investment-by-tcv", "title": "Aker ASA: Cognite announces USD 150 million investment by TCV", "publisher": "Aker ASA via Inderes", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://airtools-aker.prod-mid-euw3.investis.com/sites/airtools-aker/files/pr/202011044213-2.pdf", "title": "Aker ASA third quarter results 2020", "publisher": "Aker ASA", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://cognite.com/en/press-release/aramco-invests-in-cognite", "title": "Aramco invests in Cognite", "publisher": "Cognite", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.oedigital.com/news/493981-saudi-aramco-buys-stake-in-cognite-from-aker-bp", "title": "Saudi Aramco Buys Stake in Cognite from Aker BP", "publisher": "Offshore Engineer (OE Digital)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.inderes.se/en/releases/aker-asa-agreement-to-sell-cognite-to-schneider-electric", "title": "Aker ASA: Agreement to sell Cognite to Schneider Electric", "publisher": "Aker ASA via Inderes", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://hydrocarbonprocessing.com/news/2026/07/schneider-electric-to-acquire-cognite-in-31-b-all-cash-deal/", "title": "Schneider Electric to acquire Cognite in $3.1 B all-cash deal", "publisher": "Hydrocarbon Processing", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.cognite.com/en/", "title": "Cognite home page", "publisher": "Cognite", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Cognite",
+    "website": "https://www.cognite.com",
+    "description": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.",
+    "hq_country": "US",
+    "founded_year": 2017,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Industrial data platform: DataOps / knowledge graph (Cognite Data Fusion) plus a low-code industrial AI agent workbench (Atlas AI)",
+  "founders": ["John Markus Lervik"],
+  "named_customers": ["bp", "Saudi Aramco", "Alfa Laval", "Statnett", "Mitsubishi", "NOVA Chemicals", "Koch", "Celanese", "Aker BP", "Marathon Petroleum"],
+  "product_summary": "Cognite Data Fusion integrates and contextualizes engineering, operational and enterprise data in a unified data model and knowledge graph; Atlas AI is a low-code workbench for building agents that automate industrial workflows on that data, and Flows supports production workflows. Buyers: energy, process-manufacturing, power and renewables operators.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 800,
+    "pages": [0, 1],
+    "snippet": "Approximate: Cognite \"today employs more than 800 people\" (Schneider Electric release, June 2026)"
+  },
+  "revenue_reported_usd": {
+    "value": 170000000,
+    "pages": [0, 1],
+    "snippet": "In 2025, the annual revenue exceeded $170 million, marked by 36% growth in ARR bookings"
+  },
+  "rounds": [
+    {
+      "company": { "name": "Cognite", "website": "https://www.cognite.com", "description": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.", "hq_country": "US", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A growth round (first external growth financing; Accel became minority shareholder and took a board seat)",
+      "date": "2020-10",
+      "date_precision": "month",
+      "amount_original": 75000000,
+      "currency_original": "USD",
+      "valuation_post_original": 550000000,
+      "leads": ["Accel"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 3, 6],
+      "snippet": "Accel to become minority shareholder through Series A growth round, giving Cognite a post-money valuation of USD 550 million"
+    },
+    {
+      "company": { "name": "Cognite", "website": "https://www.cognite.com", "description": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.", "hq_country": "US", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "series_b",
+      "stage_raw": "Series B (Aker); called Series A by SiliconANGLE; TCV received 9.4% of the shares, Aker left with 50.5%",
+      "date": "2021-05-19",
+      "date_precision": "day",
+      "amount_original": 150000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1600000000,
+      "leads": ["TCV"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2, 3, 4],
+      "snippet": "Industrial SaaS startup Cognite raises $150M on a unicorn valuation of $1.6B"
+    },
+    {
+      "company": { "name": "Cognite", "website": "https://www.cognite.com", "description": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.", "hq_country": "US", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Secondary share purchase, no new money to Cognite: Saudi Aramco (via Aramco Overseas Company B.V.) bought all of Aker BP's shares, a 7.4% stake, for around NOK 1 billion (about $113M) per OE Digital; company did not state the price",
+      "date": "2022-02-02",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["Saudi Aramco"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [6, 7],
+      "snippet": "Saudi Aramco, Cognite’s long-time digitalization partner in the Middle East, acquired a 7.4% stake in Cognite"
+    },
+    {
+      "company": { "name": "Cognite", "website": "https://www.cognite.com", "description": "Industrial DataOps and AI software company whose platform unifies and contextualizes operational data and hosts AI agents for asset-heavy industries.", "hq_country": "US", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Acquisition (signed, pending regulatory approvals): Schneider Electric to buy 100% of Cognite Holding B.V. in an all-cash deal valued at $3.1B (enterprise value per Aker) from Aker, Aramco, Accel, TCV and other holders; Cognite to be integrated into AVEVA. Recorded as a valuation, not money raised.",
+      "date": "2026-06-30",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": "USD",
+      "valuation_post_original": 3100000000,
+      "leads": ["Schneider Electric"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [0, 8, 9],
+      "snippet": "acquire 100% of Cognite Holding B.V. (“Cognite”), a leading provider of industrial data and AI software, in an all-cash transaction valued at $3.1 billion"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": ["US (Cognite, Jan 2026: in 2025 Cognite 'established its global headquarters in Arizona'; release datelined Phoenix, AZ)", "NO (2021 TCV release datelined Oslo, Norway and Austin, Texas; operating company Cognite AS; described as Norwegian in our list)"],
+      "chosen": "US",
+      "reason": "Company's own most recent statement of its global headquarters; Norwegian origin and Cognite AS entity noted here."
+    },
+    {
+      "field": "company.founded_year",
+      "values": ["2017 (Cognite 2021 TCV release; Schneider Electric release 2026)", "2016 (site footer '2016-2026 © Cognite AS')"],
+      "chosen": "2017",
+      "reason": "Explicit founding statements in the company's and acquirer's releases; the footer date may reflect entity incorporation."
+    },
+    {
+      "field": "rounds[2021-05-19].stage",
+      "values": ["Series B (Aker ASA release)", "Series A (SiliconANGLE)", "unnamed 'investment round' (Cognite release)"],
+      "chosen": "series_b",
+      "reason": "Aker (majority owner) calls the Accel round of 2020 the Series A, so the TCV round is the Series B."
+    },
+    {
+      "field": "rounds[2022-02-02].stake",
+      "values": ["'acquired a 7.4% stake in Cognite' (Cognite release subtitle)", "'purchasing 100% of Aker BP's shares in the company' (Cognite release body)"],
+      "chosen": "7.4% stake = all of Aker BP's holding",
+      "reason": "Both statements are consistent if Aker BP held 7.4%; OE Digital also reports 7.4% bought from Aker BP."
+    }
+  ],
+  "open_items": [
+    "Total equity raised found: $225M (Accel $75M Series A 2020 + TCV $150M Series B 2021), matching Cognite's own '$225 million raised from ... TCV and Accel'. Aker's founding capital and the Aker convertible loan (converted before the TCV close; a NOK 0.62bn convertible is settled in the Schneider deal) were not found as dated rounds.",
+    "Accel round: exact announcement day not confirmed (Business Wire release returned 403); amount $75M comes from SiliconANGLE and Cognite's $225M total; post-money $550M from Aker's Q3 2020 report.",
+    "TCV round: Aker says the round 'values Cognite at USD 1.6 billion' without saying pre- or post-money; recorded as post-money. Aker said closing was expected early June 2021.",
+    "Aramco 2022 secondary: price (around NOK 1bn / ~$113M) and 'just over $1.5 billion' valuation are from OE Digital only; recorded valuation in USD and left amount null because no money went to Cognite. Energy Voice article (403) not read.",
+    "Schneider Electric acquisition: completion not confirmed in any page read on 2026-10-30 ('expected to be completed in the coming quarters'). Aker's stake percentage at sale not disclosed; Aker's estimated cash proceeds USD 1.48bn including the convertible loan settlement.",
+    "Revenue: FY2025 'exceeded $170 million' is described by Cognite as preliminary and unaudited; earlier annual revenue not found.",
+    "Pricing not public in pages read.",
+    "Cognite newsroom index returned ECONNRESET; about-us / company pages returned 404."
+  ]
+}

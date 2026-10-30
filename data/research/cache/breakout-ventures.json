@@ -1,0 +1,157 @@
+{
+  "key": "breakout-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Breakout Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as breakout.vc, the San Francisco science-and-technology seed firm founded in 2016 with managing partners Lindy Fishburne and Julia Moore (Pulse 2.0 Fund III article). Its portfolio page names Cytovale, Twelve, Noetik, Phantom Neuro and ZymoChem. Not Breakout Capital, not Breakthrough Energy Ventures, not Breakout Labs (Thiel Foundation).",
+  "pages": [
+    { "url": "https://www.breakout.vc", "title": "Breakout Ventures", "publisher": "Breakout Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/breakout-ventures-114-million-fund-iii-launched-to-back-science-driven-startups-using-ai/", "title": "Breakout Ventures: $114 Million Fund III Launched To Back Science-Driven Startups Using AI", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/04/15/phantom-neuro-grabs-19m-to-help-amputees-gain-control-of-their-phantom-limbs", "title": "Phantom Neuro grabs $19M to help amputees gain control of their phantom limbs", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.silicon.co.uk/press-release/noetik-secures-40-million-series-a-financing-to-advance-precision-cancer-therapies", "title": "Noetik Secures $40 Million Series A Financing to Advance Precision Cancer Therapies", "publisher": "Silicon UK (press release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "Breakout Ventures closed a $114 million third fund"
+    },
+    "website": {
+      "value": "https://www.breakout.vc",
+      "pages": [0],
+      "snippet": "spent more than a decade investing at this edge"
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [1],
+      "snippet": "Breakout Ventures, San Francisco, announced Fund III"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [1],
+      "snippet": "Breakout Ventures, San Francisco, announced Fund III"
+    },
+    "stages": {
+      "value": ["seed"],
+      "pages": [1],
+      "snippet": "seed-stage companies"
+    },
+    "thesis_text": {
+      "value": "Backs founder-led startups that turn scientific innovation into scalable businesses, using AI to speed discovery in biology, chemistry and advanced technologies.",
+      "pages": [0, 1],
+      "snippet": "spent more than a decade investing at this edge"
+    },
+    "stated_sectors": {
+      "value": ["health_bio", "climate_energy", "hardware_deeptech"],
+      "pages": [0, 1],
+      "snippet": "Cancer therapy AI, carbon-to-chemicals, fertility, neurotech and prosthetics, atmospheric water, lab automation"
+    },
+    "application_url": {
+      "value": "https://www.breakout.vc/contact",
+      "pages": [0],
+      "snippet": "Whether you've launched your company or are doing the heavy lifting to get to the starting line, let's talk."
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "Whether you've launched your company or are doing the heavy lifting to get to the starting line, let's talk."
+    }
+  },
+  "funds": [
+    {
+      "name": "Breakout Ventures Fund III",
+      "number": "III",
+      "size_original": 114000000,
+      "currency_original": "USD",
+      "close_date": "2026-03-10",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Breakout Ventures Fund III: $114 million, announced March 10, 2026"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Phantom Neuro",
+        "website": null,
+        "description": "Developing a small implantable, wristband-worn device that reads nerve signals so people can control prosthetic limbs.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2025-04-15",
+      "date_precision": "day",
+      "amount_original": 19000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Ottobock"],
+      "participants": ["Breakout Ventures", "Draper Associates", "LionBird Ventures", "Time BioVentures", "Risk and Return", "Actual VC", "METIS Innovative", "E1 Ventures", "Jumpspace", "MainSheet Ventures", "Brown Advisory", "Johns Hopkins", "Intel"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "the company’s previous investors Breakout Ventures, Draper Associates, LionBird Ventures"
+    },
+    {
+      "company": {
+        "name": "Noetik",
+        "website": null,
+        "description": "Biotech using self-supervised AI on human multimodal tumour data to find more targeted cancer therapies.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-08-29",
+      "date_precision": "day",
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Polaris Partners"],
+      "participants": ["Khosla Ventures", "Wittington Ventures", "Breakout Ventures", "DCVC", "Zetta Venture Partners", "Catalio Capital Management", "11.2 Capital", "Epic Ventures", "Intermountain Ventures", "North South Ventures", "ApSTAT Technologies", "Linearis Labs"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "an oversubscribed $40 million Series A financing round"
+    },
+    {
+      "company": {
+        "name": "Reach Industries",
+        "website": null,
+        "description": "Agentic computer vision for regulated environments; described as an early Fund III investment.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-03",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Breakout Ventures"],
+      "pages": [1],
+      "snippet": "Reach Industries: agentic computer vision for regulated environments (an early Fund III investment)"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size ($500K-$5M) and a 'pre-seed through Series A' range appear only in search-result summaries of press coverage (Fierce Biotech, Pulse 2.0), not on fetched pages; stages recorded as seed only. breakout.vc states no HQ, stages or check size.",
+    "Fund I ($60M, 2017-09-14) and Fund II from the lead list not confirmed on fetched pages; only Fund III recorded. BusinessWire release for Fund III returned HTTP 403.",
+    "Phantom Neuro round: TechCrunch does not label it Series A (other outlets in search results do); stage left undisclosed.",
+    "Reach Industries seed: amount, exact date and co-investors not found; date is the month of the Fund III announcement.",
+    "Application URL /contact is inferred from the homepage 'Let's Talk' link described as /contact; the contact page itself was not fetched."
+  ]
+}

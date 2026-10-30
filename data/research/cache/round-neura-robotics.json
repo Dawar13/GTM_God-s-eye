@@ -1,0 +1,62 @@
+{
+  "key": "round-neura-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "NEURA Robotics = German cognitive/humanoid robotics company (TNW: 'German company', founder-CEO David Reger). Tether lead with Nvidia and Amazon participating matches the CSV; no other NEURA found. Domain not stated on the page read.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/neura-robotics-1-4b-series-c-physical-ai",
+      "title": "NEURA Robotics raises up to $1.4B in record robotics round backed by Nvidia, Amazon, and Tether",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Amount is 'up to' $1.4B (a ceiling, not a confirmed total).",
+    "Valuation (about $7B per Bloomberg via TNW) not recorded; Bloomberg not read.",
+    "Founding year, website and the company's own release not read.",
+    "Snippet is a short phrase from the fetch summary, not a full sentence."
+  ],
+  "seed_company": "NEURA Robotics",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "NEURA Robotics",
+      "website": null,
+      "description": "German developer of cognitive, humanoid and industrial robots.",
+      "hq_country": "DE",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_c_plus",
+    "stage_raw": "Series C, up to $1.4B",
+    "date": "2026-06-10",
+    "date_precision": "day",
+    "amount_original": 1400000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Tether"
+    ],
+    "participants": [
+      "Qualcomm Technologies",
+      "Amazon",
+      "Nvidia",
+      "Bosch",
+      "Schaeffler",
+      "European Investment Bank",
+      "imec.xpand",
+      "Lingotto Horizon",
+      "InterAlpen Partners"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "Up to $1.4B"
+  }
+}

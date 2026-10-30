@@ -1,0 +1,75 @@
+{
+  "key": "symphonyai-industrial",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as SymphonyAI Industrial, the industrial business of SymphonyAI (symphonyai.com/industrial; President Prateek Kathpal, 'President of Industrial at SymphonyAI'). It was created when SymphonyAI acquired Industrial Global, a machine condition-monitoring and reliability provider, renamed SymphonyAI Industrial (SymphonyAI release, 15 May 2019). Not SymX.ai (a Sudbury, Ontario startup that surfaced in search) and not the parent SymphonyAI / SAIGroup as a whole. Parent funding is NOT recorded: the only capital found is Dr. Romesh Wadhwani's '$1 billion commitment' to the SymphonyAI group (2020 group brochure; 2023 release), which is not attributable to the industrial unit, and CB Insights lists no funding rounds for SymphonyAI Industrial. The unit's own deals are outbound acquisitions (Savigent, March 2021; Proceedix, Dec 2021 per CB Insights) and are not funding. Category kept adjacent, layer plant_ops: the unit sells an industrial data platform (IRIS Foundry), asset performance management, process optimization copilots and AI agents (Intelligent Factory, Frontline Worker, Manufacturing Digital Twin) to large manufacturers and energy firms; this overlaps Utopian's maintenance and process-stability agents but as an enterprise suite delivered via Teams / M365 Copilot rather than procurement / RFQ agents over WhatsApp.",
+  "pages": [
+    { "url": "https://www.symphonyai.com/news/symphonyai-acquires-industrial-global-a-leader-in-machine-condition-monitoring-reliability-solutions-for-the-process-manufacturing-industries", "title": "SymphonyAI Acquires Industrial Global, a Leader in Machine Condition Monitoring & Reliability Solutions for the Process Manufacturing Industries", "publisher": "SymphonyAI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.bindt.org/News/September-2019/symphonyai-group-acquires-azima-global/", "title": "SymphonyAI Group acquires Azima Global", "publisher": "The British Institute of Non-Destructive Testing (BINDT)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.symphonyai.com/industrial/", "title": "SymphonyAI Industrial", "publisher": "SymphonyAI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.symphonyai.com/news/industrial/leader-ai-analytics-software-2025", "title": "SymphonyAI Named a Leader in Industrial AI Analytics Software for 2025", "publisher": "SymphonyAI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.symphonyai.com/news/industrial/symphonyai-industrial-takes-over-savigent-to-speed-up-digital-factory-and-ai-initiatives-in-manufacturing/", "title": "SymphonyAI Industrial Takes Over Savigent to Speed-Up Digital Factory and AI Initiatives in Manufacturing", "publisher": "SymphonyAI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.symphonyai.com/news/ai/enterprise-ai-leader-symphonyai-turns-profitable-on-accelerating-customer-and-revenue-growth/", "title": "Enterprise AI Leader SymphonyAI Turns Profitable on Accelerating Customer and Revenue Growth", "publisher": "SymphonyAI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.symphonyai.com/wp-content/uploads/2020/02/SAI-Investment-Jan-2020.pdf", "title": "SymphonyAI Group Investments (Jan 2020)", "publisher": "SymphonyAI Group", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cbinsights.com/company/symphonyai-industrial/financials", "title": "SymphonyAI Industrial - Funding, Financials, Valuation & Investors", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "SymphonyAI Industrial",
+    "website": "https://www.symphonyai.com/industrial/",
+    "description": "Industrial business of SymphonyAI selling an industrial AI data platform, asset performance management, process optimization and AI agents to manufacturers and energy companies.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Plant ops AI suite: industrial data platform (IRIS Foundry), APM / condition monitoring, process optimization copilots, factory and frontline-worker AI agents",
+  "founders": [],
+  "named_customers": ["AGCO", "Novelis", "3M", "FrieslandCampina", "GSK", "Nippon Gases", "Vandemoortele", "Siemens Gamesa Renewable Energy", "SANY", "Seagate"],
+  "product_summary": "A unified data engine connects IT, OT and edge data for an industrial AI platform offering asset performance management, plant-wide process optimization, connected-worker tools and natural-language copilots, plus prebuilt agents for factory operations, data investigation, digital twins, warranty claims, oil and gas operations and utilities.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": { "name": "SymphonyAI Industrial", "website": "https://www.symphonyai.com/industrial/", "description": "Industrial business of SymphonyAI selling an industrial AI data platform, asset performance management, process optimization and AI agents to manufacturers and energy companies.", "hq_country": "US", "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Acquisition: SymphonyAI acquired Industrial Global (machine condition monitoring and asset reliability), renamed SymphonyAI Industrial and headquartered in Boston; terms not disclosed. BINDT reports the 2019 SymphonyAI Group purchase as Azima Global, renamed Symphony AzimaAI (see conflicts).",
+      "date": "2019-05-15",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["SymphonyAI"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [0, 1],
+      "snippet": "SymphonyAI announced today its recent acquisition of Industrial Global, a provider of machine condition monitoring"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[2019-05-15].acquired company",
+      "values": ["Industrial Global, renamed SymphonyAI Industrial (SymphonyAI release dated 15 May 2019, as it reads today)", "Azima Global, renamed Symphony AzimaAI (BINDT news, 30 Sept 2019)"],
+      "chosen": "Industrial Global (company's own page)",
+      "reason": "Both describe a machine condition-monitoring and asset-reliability provider bought by SymphonyAI in 2019; the company page may have been re-worded after a rebrand, but that is not confirmed, so both names are kept here."
+    },
+    {
+      "field": "company.hq_city",
+      "values": ["Boston, Massachusetts (2019 acquisition release)", "Palo Alto, California (dateline of the Sept 2025 industrial release)"],
+      "chosen": "US (city not recorded)",
+      "reason": "Both US; the 2025 dateline may be the parent's location rather than the unit's."
+    }
+  ],
+  "open_items": [
+    "No funding rounds of the industrial unit found; total raised not applicable. Parent SymphonyAI is backed by 'a $1 billion commitment' from Dr. Romesh Wadhwani (group-level, not attributable to Industrial), so nothing was recorded from the parent.",
+    "Founded year left null: the SymphonyAI Industrial name dates from the May 2019 acquisition, but Industrial Global built its solutions 'over the past decade'; its founding year was not found. No founders for the unit (SymphonyAI group founded by Dr. Romesh Wadhwani).",
+    "Headcount not published for the unit; parent cited '3,000' people in Oct 2023. Not recorded.",
+    "Revenue not reported for the unit; parent expected its 2023 revenue run rate to 'approach $500M' (a run-rate expectation for the whole group). Not recorded.",
+    "Outbound acquisitions by the unit: Savigent (SymphonyAI release, 9 March 2021, terms not stated) and Proceedix (CB Insights only, 21 Dec 2021). Not recorded as rounds.",
+    "No 2025-2026 sale, spin-out or funding of the industrial unit found in the pages and searches run on 2026-10-30.",
+    "Business Wire releases (April 2026 energy apps launch) returned 403; pricing not public."
+  ]
+}

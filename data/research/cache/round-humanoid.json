@@ -1,0 +1,64 @@
+{
+  "key": "round-humanoid",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Humanoid = UK wheeled industrial humanoid maker, domain thehumanoid.ai, KinetIQ platform (Tech.eu, Robotics 24/7). Not a generic term for humanoid robots or other firms called Humanoid.",
+  "pages": [
+    {
+      "url": "https://tech.eu/2026/07/21/uk-robotics-startup-humanoid-hits-135b-valuation-with-152m-series-a/",
+      "title": "UK robotics startup Humanoid hits $1.35B valuation with $152M Series A",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.robotics247.com/article/humanoid-raises-152m-at-1.35-billion-post-money-valuation",
+      "title": "Humanoid raises $152M at $1.35 billion post-money valuation",
+      "publisher": "Robotics 24/7",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "City and founding year not stated on pages read.",
+    "Tech.eu is dated 21 Jul and Robotics 24/7 22 Jul 2026; 21 Jul used.",
+    "Business Wire release not readable; not used."
+  ],
+  "seed_company": "Humanoid",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Humanoid",
+      "website": "https://thehumanoid.ai",
+      "description": "UK company building wheeled industrial humanoid robots with its in-house KinetIQ AI platform, aimed at manufacturing and logistics labour shortages.",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_a",
+    "stage_raw": "Series A",
+    "date": "2026-07-21",
+    "date_precision": "day",
+    "amount_original": 152000000,
+    "currency_original": "USD",
+    "valuation_post_original": 1350000000,
+    "leads": [
+      "Prime Movers Lab"
+    ],
+    "participants": [
+      "Schaeffler",
+      "Bosch",
+      "Fubon Financial Holding Venture Capital",
+      "Aglaé Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "the funding round was led by Prime Movers Lab"
+  }
+}

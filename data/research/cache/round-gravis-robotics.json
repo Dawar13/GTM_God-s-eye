@@ -1,0 +1,59 @@
+{
+  "key": "round-gravis-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Gravis Robotics AG = Swiss ETH Zurich spin-out retrofitting excavators with autonomy; gravisrobotics.com (Tech.eu), spun out of ETH Zurich in 2022 (Construction Dive).",
+  "pages": [
+    {
+      "url": "https://tech.eu/2026/08/17/softbank-invests-200m-in-swiss-robotics-startup-gravis-robotics/",
+      "title": "SoftBank invests $200M in Swiss robotics startup Gravis Robotics",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://constructiondive.com/news/gravis-robotics-raises-200M-zurich-softbank/828123",
+      "title": "Gravis Robotics raises $200M",
+      "publisher": "Construction Dive",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Tech.eu says SoftBank was the sole investor; Construction Dive does not say whether it led. Recorded under unspecified.",
+    "Valuation not disclosed on pages read (a search summary mentions $1bn from Sifted; page not read).",
+    "Date 2026-08-17 is Tech.eu's article date; Construction Dive is dated 18 Aug."
+  ],
+  "seed_company": "Gravis Robotics",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Gravis Robotics",
+      "website": "https://gravisrobotics.com",
+      "description": "Software kits that turn existing excavators and heavy machines into autonomous units for construction sites.",
+      "hq_country": "CH",
+      "founded_year": 2022,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "autonomy_tooling"
+    },
+    "stage": "series_a",
+    "stage_raw": "Series A",
+    "date": "2026-08-17",
+    "date_precision": "day",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [],
+    "unspecified": [
+      "SoftBank"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "the Japanese investor was the sole investor"
+  }
+}

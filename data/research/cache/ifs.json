@@ -1,0 +1,134 @@
+{
+  "key": "ifs",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as IFS (IFS AB, ifs.com), the enterprise software company founded in 1983 that EQT VII took private from Nasdaq Stockholm in 2015 and that EQT, Hg and TA Associates now own; products IFS Cloud (ERP, EAM, SCM, FSM) with 'Industrial AI'. Every ownership page (EQT 2020, 2022, 2025; TA 2025; the 2015 mandatory offer by EQT VII's IGT Holding IV AB) names the same company. Not WorkWave (a separate EQT-owned company that was valued together with IFS in the 2022 Hg deal). Category kept remote, layer plant_ops (ERP / EAM): IFS is the system of record for manufacturers and asset-intensive firms, sold as a large enterprise suite. Watch item: IFS now markets Industrial AI, an Agent Studio for 'Agentic Digital Workers' and the agentic-AI acquisition TheLoops, which moves it toward Utopian's agent layer on top of ERP / EAM; no evidence yet of plant-floor procurement / RFQ agents over chat apps.",
+  "pages": [
+    { "url": "https://eqtgroup.com/news/eqt-hg-and-ta-owned-ifs-valued-at-eur-15-billion-in-minority-stake-sale-following-investment-from-hg-adia-and-cpp-investments-2025-04-09", "title": "EQT, Hg and TA-owned IFS valued at EUR 15 billion in minority stake sale, following investment from Hg, ADIA and CPP Investments", "publisher": "EQT", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.ta.com/news/eqt-hg-and-ta-owned-ifs-valued-at-eur-15-billion-in-minority-stake-sale-following-investment-from-hg-adia-and-cpp-investments/", "title": "EQT, Hg and TA-owned IFS valued at EUR 15 billion in minority stake sale, following investment from Hg, ADIA and CPP Investments", "publisher": "TA Associates", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://eqtgroup.com/news/2022/eqt-private-equity-and-ta-to-welcome-hg-as-a-significant-minority-partner-in-ifs-and-workwave-at-a-usd-10bn-valuation/", "title": "EQT Private Equity and TA to welcome Hg as a significant minority partner in IFS and WorkWave at a USD 10bn valuation", "publisher": "EQT", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://eqtgroup.com/news/eqt-vii-to-sell-global-enterprise-software-provider-ifs-to-successor-funds-and-ta-associates-2020-07-14", "title": "EQT VII to sell global enterprise software provider IFS to successor funds and TA Associates", "publisher": "EQT", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.unquote.com/nordics/official-record/3020221/eqt-sells-minority-stake-in-ifs-to-ta-associates", "title": "EQT sells minority stake in IFS to TA Associates", "publisher": "Unquote", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.cision.com/igt-holding-iv-ab/r/eqt-vii-announces-a-mandatory-cash-offer-to-the-shareholders-in-ifs,c9879793", "title": "EQT VII announces a mandatory cash offer to the shareholders in IFS", "publisher": "IGT Holding IV AB (EQT VII) via Cision", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tools.prnewswire.com/en-us/live/20823/release/20260122EN69079", "title": "IFS delivers exceptional FY2025 growth as Industrial AI scales from first deployment to commercial impact", "publisher": "IFS via PR Newswire", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "IFS",
+    "website": "https://www.ifs.com",
+    "description": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.",
+    "hq_country": "SE",
+    "founded_year": 1983,
+    "sector": "enterprise_saas",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "remote",
+  "layer": "plant_ops",
+  "layer_detail": "ERP / EAM suite (IFS Cloud: ERP, EAM, SCM, FSM) with industrial AI and agent tooling",
+  "founders": [],
+  "named_customers": ["ArcelorMittal", "TotalEnergies", "Hitachi Energy", "Collins Aerospace", "Westinghouse", "Japan Airlines", "Tampa Electric (TECO)", "William Grant & Sons", "Callaway"],
+  "product_summary": "IFS Cloud is a composable, AI-enabled enterprise platform spanning ERP, enterprise asset management, supply chain management and field service management for manufacturers, asset-intensive and service businesses; IFS Agent Studio lets enterprises build and deploy agentic 'digital workers', extended by acquisitions in agentic AI, supply-chain optimization and warehouse management.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 7000,
+    "pages": [0],
+    "snippet": "Approximate: \"IFS has grown into a global leader with over 7,000 employees in 80 countries\" (EQT release, Apr 2025)"
+  },
+  "revenue_reported_usd": {
+    "value": 1298701299,
+    "pages": [0, 1],
+    "snippet": "Total revenue for 2024 was over EUR 1.2 billion"
+  },
+  "rounds": [
+    {
+      "company": { "name": "IFS", "website": "https://www.ifs.com", "description": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.", "hq_country": "SE", "founded_year": 1983, "sector": "enterprise_saas", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Take-private buyout by EQT VII (via IGT Holding IV AB): stake bought from main shareholders (68% per Unquote, for around SEK 5.46bn), then a mandatory cash offer at SEK 362.50 per share, total offer value approximately SEK 9.05bn, fully equity-financed; delisted from Nasdaq Stockholm. Offer value recorded as valuation, not money raised.",
+      "date": "2015-12-07",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": "SEK",
+      "valuation_post_original": 9050000000,
+      "leads": ["EQT VII"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 4, 3],
+      "snippet": "SEK 362.50 in cash per A-share and B-share in IFS"
+    },
+    {
+      "company": { "name": "IFS", "website": "https://www.ifs.com", "description": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.", "hq_country": "SE", "founded_year": 1983, "sector": "enterprise_saas", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Secondary buyout / continuation: EQT VII sold IFS to successor funds EQT VIII and EQT IX, with TA Associates joining as minority partner; transaction value in excess of EUR 3bn (recorded as valuation, not money raised).",
+      "date": "2020-07-14",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": "EUR",
+      "valuation_post_original": 3000000000,
+      "leads": ["EQT VIII", "EQT IX"],
+      "participants": ["TA Associates"],
+      "unspecified": [],
+      "pages": [3, 4],
+      "snippet": "a transaction value in excess of EUR 3 billion"
+    },
+    {
+      "company": { "name": "IFS", "website": "https://www.ifs.com", "description": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.", "hq_country": "SE", "founded_year": 1983, "sector": "enterprise_saas", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Secondary minority sale: EQT VIII sold most of its stake and TA part of its stake to Hg (significant minority); EQT (VIII and IX) kept voting control. USD 10bn valuation covers IFS and WorkWave together, so no IFS-only valuation recorded. Expected to close Q3 2022.",
+      "date": "2022-03-30",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Hg"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "EQT Private Equity and TA to welcome Hg as a significant minority partner in IFS and WorkWave at a USD 10bn valuation"
+    },
+    {
+      "company": { "name": "IFS", "website": "https://www.ifs.com", "description": "Swedish-founded, private-equity-owned provider of IFS Cloud enterprise software (ERP, EAM, supply chain, field service) with embedded industrial AI.", "hq_country": "SE", "founded_year": 1983, "sector": "enterprise_saas", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Secondary minority stake sale: Hg increased its stake to co-control alongside EQT; new minority holders a wholly-owned ADIA subsidiary and CPP Investments; sellers EQT VIII and EQT IX, TA (stays minority) and other minorities. Valuation over EUR 15bn (recorded as valuation, not money raised). Expected to complete end of Q2 2025.",
+      "date": "2025-04-09",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": "EUR",
+      "valuation_post_original": 15000000000,
+      "leads": ["Hg"],
+      "participants": ["Abu Dhabi Investment Authority", "Canada Pension Plan Investment Board"],
+      "unspecified": [],
+      "pages": [0, 1],
+      "snippet": "a valuation of over EUR 15 billion"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": ["SE ('Sweden-based enterprise software provider IFS', Unquote 2020; IFS AB, delisted from Nasdaq Stockholm)", "GB (FY2025 results release datelined London)"],
+      "chosen": "SE",
+      "reason": "A release dateline is not a headquarters statement; no fetched page states a move. IFS's own about pages were rate-limited (429)."
+    },
+    {
+      "field": "rounds[2015].stake",
+      "values": ["68% stake for around SEK 5.46bn (Unquote, 2020 recap)", "76% of votes / 74% of shares held when the mandatory offer was launched (EQT VII offer, 7 Dec 2015)"],
+      "chosen": "Described both in stage_raw",
+      "reason": "Sequential: initial block purchase, then further buying before the mandatory offer."
+    },
+    {
+      "field": "headcount_est",
+      "values": ["over 7,000 employees in 80 countries (EQT / TA, Apr 2025)", "over 4,500 employees (EQT, Mar 2022)", "4,000 employees (EQT, Jul 2020)", "over 2,700 employees (EQT VII offer, Dec 2015)"],
+      "chosen": "7000",
+      "reason": "Most recent public figure; FY2025 release gives no headcount."
+    }
+  ],
+  "open_items": [
+    "No primary capital raise found: every recorded transaction is a buyout or secondary sale, so total raised is not applicable and amounts are null (deal values recorded as valuations).",
+    "revenue_reported_usd is converted, not as-published: IFS reported 'Total revenue for 2024 was over EUR 1.2 billion' (a floor); converted at the pipeline's IRS 2024 average of 0.924 EUR per USD (pipeline/atlas/fx.py) because the field is USD-only. Set to null if converted values are unwanted here. FY2025 release (Jan 2026) gives growth rates only (ARR +23%, cloud revenue +30%, recurring revenue 83% of total), no absolute revenue.",
+    "ARR: 'more than EUR 1 billion in ARR' in 2024 (EQT / TA, Apr 2025), growing over 30% year on year.",
+    "2022 Hg deal: Hg's stake and an IFS-only valuation not disclosed (USD 10bn covers IFS + WorkWave).",
+    "2025 deal: press (Gulfbase, search result only, not read) reported about EUR 3bn of new money citing an anonymous person; not recorded. Completion of the 2025 deal not confirmed from a fetched page.",
+    "2015: IFS's own 30 Nov 2015 release ('EQT VII acquires 68% of votes and 63% of capital in IFS') and EQT's 2016 squeeze-out release were not readable (429 / 404); Elliott stake purchase price not recorded.",
+    "No 2026 ownership change, IPO or new valuation found in searches run on 2026-10-30.",
+    "ifs.com returned 429 for the homepage, financial-information page and 2025 release; product summary is from the EQT boilerplate and the FY2025 release. Founders not researched; pricing not public."
+  ]
+}

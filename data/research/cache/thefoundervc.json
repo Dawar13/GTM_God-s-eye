@@ -1,0 +1,71 @@
+{
+  "key": "thefoundervc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "TheFounderVC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as thefounder.vc (The Founder VC, TFVC), a pre-seed and seed Vertical AI fund based in Seattle and the San Francisco Bay Area; Madrona's Ridge AI post names 'TheFounderVC' as a participant. Not Founders Fund, not Founder Collective, not Founder Institute's fund.",
+  "pages": [
+    { "url": "https://www.thefounder.vc", "title": "The Founder VC", "publisher": "TheFounderVC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://letsdatascience.com/news/tfvc-launches-5-million-vertical-ai-fund-8a76ba6a", "title": "TFVC Launches $5 Million Vertical AI Fund", "publisher": "Lets Data Science", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://madrona.com/embedded-analytics-reimagined-why-we-invested-in-ridge-ai/", "title": "Embedded Analytics Reimagined: Why We Invested in Ridge AI", "publisher": "Madrona", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "pre-seed and seed venture firm" },
+    "website": { "value": "https://www.thefounder.vc", "pages": [0], "snippet": "The Founder VC (TFVC)" },
+    "hq_city": { "value": "Seattle", "pages": [0, 1], "snippet": "Seattle–San Francisco early-stage fund" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "Seattle–San Francisco early-stage fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "Pre-Seed and Seed" },
+    "check_min_usd": { "value": 100000, "pages": [0], "snippet": "$100K to $200K" },
+    "check_max_usd": { "value": 200000, "pages": [0], "snippet": "$100K to $200K" },
+    "thesis_text": { "value": "Backs US pre-seed and seed founders applying vertical AI to build category leaders in specific industries, investing alongside strong venture co-investors.", "pages": [0, 1], "snippet": "visionary Founders leveraging Vertical AI to build the category leaders of tomorrow" },
+    "stated_sectors": { "value": ["ai_apps_agents"], "pages": [0], "snippet": "visionary Founders leveraging Vertical AI to build the category leaders of tomorrow" }
+  },
+  "funds": [
+    {
+      "name": "TheFounderVC inaugural fund",
+      "number": null,
+      "size_original": 5000000,
+      "currency_original": "USD",
+      "close_date": "2026-03",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "inaugural $5 million fund, announced March 2026"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Ridge AI",
+        "website": null,
+        "description": "Embedded analytics and AI data agents that let software companies share data insights with their customers.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2026-04-06",
+      "date_precision": "day",
+      "amount_original": 2600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Madrona"],
+      "participants": ["TheFounderVC", "Chris Stolte", "Carlos Guestrin", "Adrien Truille"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "with participation from TheFounderVC and angels including Chris Stolte"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round recorded (need 3). Potato ($4.5M seed, Apr 2025; Draper page does not name TheFounderVC) and Liminary / Planette / Daydream / Catchouse (listed on thefounder.vc) have no fetched page describing TFVC's role. Third-party aggregators (F4) claim Potato and Liminary participation: unverified.",
+    "GeekWire launch article (geekwire.com/2026/seattles-newest-early-stage-fund-makes-a-bet-on-vertical-ai-startups) returned HTTP 403; search summaries mention 25-30 planned investments, $100K-$250K initial checks, ~60 LPs: not recorded. Business Wire Ridge AI release also 403.",
+    "Fund close date: only month (March 2026) from fetched pages; the lead says 2026-03-03. Fund has no stated name or number.",
+    "Application path not found; site lists only a team contact address and a newsletter signup (address not recorded)."
+  ]
+}

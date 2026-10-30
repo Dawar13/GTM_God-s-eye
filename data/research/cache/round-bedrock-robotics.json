@@ -1,0 +1,64 @@
+{
+  "key": "round-bedrock-robotics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Bedrock Robotics = San Francisco startup building autonomy for excavators (Robot Report: operator-less excavators). CapitalG and Valor Atreides AI Fund as leads match the CSV.",
+  "pages": [
+    {
+      "url": "https://www.therobotreport.com/bedrock-robotics-270m-series-b-paves-way-operator-less-excavators/",
+      "title": "Bedrock Robotics $270M Series B paves way for operator-less excavators",
+      "publisher": "The Robot Report",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Single press page; the company release was not read.",
+    "Valuation (about $1.75B in search results) not read; website and founding year not found.",
+    "Snippet is a CEO quote on the page, not a funding sentence; the amount and leads come from the fetched page text."
+  ],
+  "seed_company": "Bedrock Robotics",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Bedrock Robotics",
+      "website": null,
+      "description": "San Francisco developer of autonomy systems that let excavators run without operators.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "autonomy_tooling"
+    },
+    "stage": "series_b",
+    "stage_raw": "Series B",
+    "date": "2026-02-04",
+    "date_precision": "day",
+    "amount_original": 270000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "CapitalG",
+      "Valor Atreides AI Fund"
+    ],
+    "participants": [
+      "Xora",
+      "8VC",
+      "Eclipse",
+      "Emergence Capital",
+      "Perry Creek Capital",
+      "NVentures",
+      "Tishman Speyer",
+      "Massachusetts Institute of Technology",
+      "Georgian",
+      "Incharge Capital",
+      "C4 Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "We're going to go and deploy our very first driverless deployments this year."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "key": "texas-oncology",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Texas Oncology",
+  "status": "not_an_investor",
+  "researched_at": "2026-10-30",
+  "identity_check": "The fund-list row 'Texas Oncology Fund II, $62M, 2026-04-22, Dallas' is a mislabel. The $62M Fund II closed in April 2026 belongs to Oncology Ventures, an Austin, Texas venture firm (founder and managing partner Ben Freeberg), per Pulse 2.0's reprint of the release; Texas Oncology is only its anchor investor/limited partner. Texas Oncology itself is a physician-led oncology practice (550+ physicians, 300 locations), a healthcare provider, not a venture investor. Not recorded as an investor; Oncology Ventures should get its own queue entry. No Dallas fund of that size was found.",
+  "pages": [
+    { "url": "https://pulse2.com/oncology-ventures-62-million-fund-ii-closes-oversubscribed-nearly-double-the-size-of-fund-i/", "title": "Oncology Ventures: $62 Million Fund II Closes Oversubscribed, Nearly Double The Size Of Fund I", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {},
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    {
+      "field": "fund owner / HQ of 'Texas Oncology Fund II'",
+      "values": ["Texas Oncology Fund II, Dallas, 2026-04-22 (fund list lead)", "Oncology Ventures Fund II, Austin, announced April 2026, Texas Oncology as anchor investor (Pulse 2.0)"],
+      "chosen": "Oncology Ventures is the investor; Texas Oncology is not",
+      "reason": "The release describes Texas Oncology as the anchor investor in a fund run by Oncology Ventures, an Austin firm."
+    }
+  ],
+  "open_items": [
+    "Oncology Ventures (Austin; Fund II $62M vs Fund I $32M, oversubscribed, target $50M; portfolio Risa, IgniteData, Tono, Concr) is not in this queue entry; research it separately. Its release date differs by source (the Pulse 2.0 page says April 24, 2026; the list says 2026-04-22).",
+    "Not fetched (HTTP 403): the BusinessWire original for the Fund II release and oncologyventures.com; Risa Labs $11.1M Series A (Jan 2026, co-led by Cencora Ventures and Optum Ventures, with Oncology Ventures participating) was seen only in a search result."
+  ]
+}

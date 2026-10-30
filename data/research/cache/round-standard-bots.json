@@ -1,0 +1,70 @@
+{
+  "key": "round-standard-bots",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Standard Bots Co. = maker of AI robot arms for factories; website standardbots.com, Glen Cove NY plant being expanded (SiliconANGLE). Not any other company with a similar name.",
+  "pages": [
+    {
+      "url": "https://siliconangle.com/2026/06/09/standard-bots-raises-200m-1b-valuation-revolutionize-ai-native-industrial-robotics/",
+      "title": "Standard Bots raises $200M at $1B valuation",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://roboticsandautomationnews.com/2026/06/09/standard-bots-reaches-1-billion-valuation-after-raising-200-million-series-c/",
+      "title": "Standard Bots reaches $1 billion valuation after raising $200 million Series C",
+      "publisher": "Robotics & Automation News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "RoboStrategy (SiliconANGLE)",
+        "existing investors and RoboStrategy (Robotics & Automation News)"
+      ],
+      "chosen": "RoboStrategy as lead",
+      "reason": "Both name RoboStrategy; only SiliconANGLE names General Catalyst, as an existing investor alongside."
+    }
+  ],
+  "open_items": [
+    "HQ and founding year not stated on pages read (Glen Cove, NY is named as a facility only). Valuation of $1B reported; pre/post not stated, so not recorded.",
+    "Other participants beyond General Catalyst not named in pages read; Amazon and Samsung Next appear in a search summary only, not on a fetched page."
+  ],
+  "seed_company": "Standard Bots",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Standard Bots",
+      "website": "https://standardbots.com",
+      "description": "AI-driven robot arms (and industrial humanoids) for manufacturing and logistics, taught by demonstration instead of coding.",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "series_c_plus",
+    "stage_raw": "Series C",
+    "date": "2026-06-09",
+    "date_precision": "day",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "RoboStrategy"
+    ],
+    "participants": [
+      "General Catalyst"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "RoboStrategy led the Series C funding round alongside existing investors, including General Catalyst"
+  }
+}

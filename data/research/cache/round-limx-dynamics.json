@@ -1,0 +1,100 @@
+{
+  "key": "round-limx-dynamics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "LimX Dynamics = Chinese humanoid / embodied-AI maker; its own site (limxdynamics.com) announces the pre-IPO round and 36Kr's article matches. Not another LimX entity.",
+  "pages": [
+    {
+      "url": "https://www.limxdynamics.com/ja/news/BK000064",
+      "title": "LimX Dynamics Closes US$200 Million Pre-IPO Round",
+      "publisher": "LimX Dynamics",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://eu.36kr.com/en/p/3894764776996103",
+      "title": "LimX Dynamics pre-IPO round (36Kr)",
+      "publisher": "36Kr",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "amount",
+      "values": [
+        "$400M (CSV)",
+        "nearly $200M (this pre-IPO round)"
+      ],
+      "chosen": "about $200M",
+      "reason": "$400M is the company's cumulative six-month total (Feb 2026 Series B plus this round), not one round"
+    },
+    {
+      "field": "investor list",
+      "values": [
+        "Official release: WestSummit, Vitalbridge, CoStone, Nanshan SEI, Shangqi, NIO Capital",
+        "36Kr: Hua Capital, Oasis Capital, Jiwei Capital and others"
+      ],
+      "chosen": "Official release",
+      "reason": "Company's own announcement; 36Kr names differ for some investors"
+    },
+    {
+      "field": "JD",
+      "values": [
+        "JD in CSV",
+        "36Kr: JD.com led a July 2025 strategic round"
+      ],
+      "chosen": "JD not in this round",
+      "reason": "Stone Venture first appeared in the Feb 2026 Series B per 36Kr; JD is not named in the July 2026 round on either page"
+    }
+  ],
+  "open_items": [
+    "Release names no lead and no roles beyond new/existing, so investors are in unspecified.",
+    "Amount is 'nearly' $200M; 200M recorded as the nearest round figure.",
+    "Series B (Feb 2026) amount and investors not read, so the listed Stone Venture / JD pairing could not be tied to a $400M round.",
+    "Valuation 15B yuan post-money (36Kr; its subheading reads '$150 Billion', inconsistent) not recorded.",
+    "HQ and founding year not stated on pages read."
+  ],
+  "seed_company": "LimX Dynamics",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "LimX Dynamics",
+      "website": "https://www.limxdynamics.com",
+      "description": "Chinese developer of full-size humanoid and embodied-intelligence robots.",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "growth",
+    "stage_raw": "Pre-IPO round, nearly US$200 million",
+    "date": "2026-07-14",
+    "date_precision": "day",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [],
+    "unspecified": [
+      "IDG Capital",
+      "Lens Technology",
+      "GGG Group",
+      "Redstone VC",
+      "WestSummit Capital",
+      "Hefei Binhu Industry Development Group",
+      "Stone Venture",
+      "Vitalbridge Capital",
+      "CoStone Capital",
+      "Nanshan SEI Investment",
+      "Shangqi Capital",
+      "NIO Capital"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "The company has raised a total of US$400 million over the past six months"
+  }
+}

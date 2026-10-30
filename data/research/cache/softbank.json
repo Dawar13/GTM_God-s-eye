@@ -1,0 +1,138 @@
+{
+  "key": "softbank",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "SoftBank Vision Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the SoftBank Vision Fund business run by SB Investment Advisers (visionfund.com; page footer names SB Investment Advisers (UK) Limited as copyright holder). Its robotics deals are made via SoftBank Group / SoftBank Vision Fund 1 and 2 (Skild AI release says 'led by SoftBank'; Keenon and Gaussian pages say Vision Fund / Vision Fund 2). Not SoftBank Group Corp the parent as a whole, not SoftBank Corp the telecom operator, and not 'SBG Capital' / sbgcapital.co.uk, which visionfund.com says is unaffiliated. Type chosen as asset_manager because the vehicles are funds run by an investment adviser; a case for cvc/strategic exists since the parent group funds and is an LP in them, but no fetched page states the fund structure.",
+  "pages": [
+    { "url": "https://visionfund.com", "title": "SoftBank Vision Fund", "publisher": "SB Investment Advisers", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.skild.ai/blogs/series-c", "title": "Skild AI raises $1.4B", "publisher": "Skild AI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://kr-asia.com/softbank-makes-fresh-bet-on-chinese-robotics-startup", "title": "SoftBank makes fresh bet on Chinese robotics startup Gaussian Robotics", "publisher": "KrASIA", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://dealstreetasia.com/?p=260661", "title": "SoftBank's Vision Fund leads $200m funding in Chinese service robot maker Keenon", "publisher": "DealStreetAsia", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": {
+      "value": ["SoftBank Investment Advisers", "SBIA", "SoftBank Vision Fund 2", "SoftBank Group"],
+      "pages": [0, 2],
+      "snippet": "co-led by SoftBank Group's Vision Fund 2."
+    },
+    "type": {
+      "value": "asset_manager",
+      "pages": [0],
+      "snippet": "We believe in the transformative power of technology."
+    },
+    "website": {
+      "value": "https://visionfund.com",
+      "pages": [0],
+      "snippet": "We believe in the transformative power of technology."
+    },
+    "hq_country": {
+      "value": "GB",
+      "pages": [0],
+      "snippet": "SB Investment Advisers (UK) Limited"
+    },
+    "leads": {
+      "value": true,
+      "pages": [1, 2, 3],
+      "snippet": "This massive investment, led by SoftBank with participation from NVentures (NVIDIA)"
+    },
+    "thesis_text": {
+      "value": "Technology investor with an AI-economy focus across hardware (semiconductors, compute), data infrastructure software and AI-driven applications, backing ambitious founders.",
+      "pages": [0],
+      "snippet": "We believe in the transformative power of technology."
+    },
+    "stated_sectors": {
+      "value": ["hardware_deeptech", "ai_infra", "ai_apps_agents"],
+      "pages": [0],
+      "snippet": "Hardware: semiconductors and compute. Infrastructure: software for gathering, processing and deploying data. Applications: AI-driven consumer products."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Skild AI",
+        "website": "https://www.skild.ai",
+        "description": "Builds the Skild Brain, a single general-purpose AI model meant to control any robot for any task.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "source",
+        "layer": "robotics"
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-01-14",
+      "date_precision": "day",
+      "amount_original": 1400000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SoftBank"],
+      "participants": ["NVentures (NVIDIA)", "Macquarie Capital", "Bezos Expeditions", "Lightspeed", "Felicis", "Coatue", "Sequoia Capital", "LG", "Schneider Electric", "CommonSpirit", "Salesforce Ventures", "Disruptive", "1789 Capital", "IQT", "TF Capital", "Andra Capital", "Palo Alto Growth Capital", "Alpha Square", "Mirae Asset", "Destiny"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "This massive investment, led by SoftBank with participation from NVentures (NVIDIA)"
+    },
+    {
+      "company": {
+        "name": "Gaussian Robotics",
+        "website": null,
+        "description": "Chinese robotics startup that raised a Series C co-led by SoftBank's Vision Fund 2 and Capital Today.",
+        "hq_country": "CN",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2021-11",
+      "date_precision": "month",
+      "amount_original": 1200000000,
+      "currency_original": "CNY",
+      "valuation_post_original": null,
+      "leads": ["Vision Fund 2", "Capital Today"],
+      "participants": ["Meituan"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "raised RMB 1.2 billion (USD 188 million) from a group of investors co-led by SoftBank Group's Vision Fund 2."
+    },
+    {
+      "company": {
+        "name": "Keenon Robotics",
+        "website": null,
+        "description": "Chinese service robot maker.",
+        "hq_country": "CN",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2021-09-15",
+      "date_precision": "day",
+      "amount_original": 200000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SoftBank's Vision Fund"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "SoftBank's Vision Fund leads $200m funding in Chinese service robot maker Keenon"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ: visionfund.com does not state a city; only the UK legal entity (SB Investment Advisers (UK) Limited) is named in the footer, so country GB is recorded without a city. SoftBank Group's own seat was not confirmed on a fetched page.",
+    "No fund sizes or dates found on fetched pages (Vision Fund 1 / 2 / Latin America funds); funds left empty.",
+    "Stages, check size, application URL and cold-inbound not stated on visionfund.com. Stage for Skild AI not stated on the Skild page (other outlets call it Series C; not fetched); Keenon stage not stated in the article text.",
+    "Only one robotics round in the last 24 months (Skild AI) was confirmed from a fetched page. Reported early talks to anchor a roughly $800M Agile Robots round (Bloomberg, via startupfortune, mid-2026) could not be fetched and no signed deal was found.",
+    "The user's lead was 'top investor on a US robotics-makers map'; no US robotics round beyond Skild AI (HQ not stated on page) was confirmed. Gaussian and Keenon rounds are 2021 and old.",
+    "Skild AI valuation 'over $14 billion' left out of valuation_post_original because no exact figure is given.",
+    "Gaussian Robotics: exact day not confirmed (article published 2021-11-11); company name taken from article title and URL."
+  ]
+}
