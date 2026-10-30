@@ -1,58 +1,86 @@
 /*
- * Capital Atlas design tokens (PROJECT_CONTEXT §9).
- * Dark is the default. Light applies when <html data-theme="light">.
+ * Capital Atlas design tokens (PHASE_2 §1, PROJECT_CONTEXT §9).
+ * Light is the default. Dark applies under [data-theme="dark"], on <html> or on any
+ * wrapper element, so a subtree can be re-themed (the /lab route shows both at once).
  * Tailwind names for these live in src/app/globals.css (@theme inline).
  */
 
 :root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --canvas: #f6f7f9;
+  --panel: #ffffff;
+  --panel-sunk: #f0f2f5;
+  --rule: #e3e6eb;
+  --ink: #1a1f29;
+  --ink-2: #4a5160;
+  --muted: #8a919c;
+  --accent: #4f5bd5;
+  --accent-soft: #eef0fb;
+  --on-accent: #ffffff;
+  --positive: #2f9e6f;
+  --negative: #d1495b;
+}
+
 [data-theme="dark"] {
   color-scheme: dark;
 
   --canvas: #16181d;
   --panel: #1d2026;
-  /* Hover and selected surfaces; sits between panel and rule. */
-  --panel-raised: #252930;
+  --panel-sunk: #191c21;
   --rule: #2c3038;
   --ink: #e6e8eb;
-  --ink-muted: #8a919c;
-
-  /* Selection fill and focus ring. */
-  --amber: #f2b134;
-  --on-amber: #16181d;
-  --focus: #f2b134;
+  --ink-2: #b4bac4;
+  --muted: #8a919c;
+  --accent: #8b94f0;
+  --accent-soft: #262a45;
+  --on-accent: #16181d;
+  --positive: #2f9e6f;
+  --negative: #d1495b;
 }
 
-[data-theme="light"] {
-  color-scheme: light;
-
-  --canvas: #f5f6f8;
-  --panel: #ffffff;
-  --panel-raised: #eceef2;
-  --rule: #dadde3;
-  --ink: #15181e;
-  /* §9 gives no light muted; #5b616b keeps 6:1 on white (WCAG AA). */
-  --ink-muted: #5b616b;
-
-  --amber: #f2b134;
-  --on-amber: #15181e;
-  /* #f2b134 is under 2:1 on light surfaces; a darker amber keeps the focus ring at 3:1+. */
-  --focus: #a86b00;
+/* Elements that carry a data-theme paint their own surface, so a wrapper re-themes its subtree. */
+[data-theme] {
+  background-color: var(--canvas);
+  color: var(--ink);
 }
 
 :root {
-  /* Investor categories: Okabe–Ito, colour-blind safe. */
-  --cat-1: #e69f00;
-  --cat-2: #56b4e9;
-  --cat-3: #009e73;
-  --cat-4: #f0e442;
-  --cat-5: #0072b2;
-  --cat-6: #d55e00;
-  --cat-7: #cc79a7;
+  /* Categorical data palette (Tableau 10 subset, §1.1). Marks use 85% fill + darkened stroke: see src/lib/viz/palette.ts. */
+  --cat-1: #4e79a7;
+  --cat-2: #f28e2b;
+  --cat-3: #59a14f;
+  --cat-4: #e15759;
+  --cat-5: #76b7b2;
+  --cat-6: #edc948;
+  --cat-7: #b07aa1;
+  --cat-8: #9c755f;
 
-  /* Companies: greys, light = more raised. Competitors add an amber outline. */
-  --co-1: #5b616b;
-  --co-2: #777c85;
-  --co-3: #92979f;
-  --co-4: #aeb2ba;
-  --co-5: #c9cdd4;
+  /* Companies: grey ramp, darker = more capital raised. Competitors add a 2px accent ring. */
+  --co-low: #c4c9d1;
+  --co-high: #8a919c;
+
+  /* Sequential ramp for heatmaps: single hue, never rainbow. */
+  --seq-low: #eef0fb;
+  --seq-high: #4f5bd5;
+
+  /* Radius by role. The drawer is square on its attached edge. */
+  --radius-control: 6px;
+  --radius-panel: 10px;
+
+  /* The one shadow: floating things only (menus, palette, tooltips). */
+  --shadow-float: 0 8px 24px rgba(26, 31, 41, 0.08);
+
+  /* Motion. */
+  --dur-open: 160ms;
+  --dur-reorder: 220ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-open: 0ms;
+    --dur-reorder: 0ms;
+  }
 }

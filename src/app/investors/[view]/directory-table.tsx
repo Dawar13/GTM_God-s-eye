@@ -101,7 +101,7 @@ export function DirectoryTable({
 
   return (
     <div className="overflow-x-auto">
-      <p className="mb-3 text-xs text-ink-muted">
+      <p className="mb-3 text-xs text-ink-2">
         {rows.length.toLocaleString("en-US")} investors. Select a name to inspect its record.
       </p>
       <table className="w-full text-sm">
@@ -118,7 +118,7 @@ export function DirectoryTable({
                       sorted === "asc" ? "ascending" : sorted === "desc" ? "descending" : "none"
                     }
                     className={cn(
-                      "py-2 pr-4 font-medium text-ink-muted",
+                      "py-2 pr-4 font-medium text-ink-2",
                       NUMERIC.has(header.column.id) && "text-right",
                     )}
                   >
@@ -142,8 +142,8 @@ export function DirectoryTable({
               key={row.id}
               onClick={() => open(row.original)}
               className={cn(
-                "cursor-pointer border-b border-rule/60 hover:bg-panel-raised",
-                row.original.id === selectedId && "bg-panel-raised",
+                "cursor-pointer border-b border-rule/60 hover:bg-panel-sunk",
+                row.original.id === selectedId && "bg-panel-sunk",
               )}
             >
               {row.getAllCells().map((cell) => (

@@ -21,7 +21,7 @@ export function SubTabs({ label, tabs }: { label: string; tabs: readonly PageTab
             aria-current={active ? "page" : undefined}
             className={cn(
               "shrink-0 border-b-2 pb-2.5 text-sm whitespace-nowrap transition-colors",
-              active ? "border-amber text-ink" : "border-transparent text-ink-muted hover:text-ink",
+              active ? "border-accent text-ink" : "border-transparent text-ink-2 hover:text-ink",
             )}
           >
             {tab.label}

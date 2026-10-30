@@ -68,7 +68,7 @@ IBM Plex Sans (UI) and IBM Plex Sans Condensed (tables, axes, dense labels). Sca
 
 Tick each box when its checks pass.
 
-### S0 — Design system and primitives ☐
+### S0 — Design system and primitives ☑
 - Update tokens to §1, light default, dark via `[data-theme="dark"]`. Update PROJECT_CONTEXT §9 + DECISIONS.md.
 - Primitives in `src/components/ui-atlas/`: `Panel`, `Stat` (value, unit, delta, source dot), `Chip` (filter chip with count), `Metric` (formatted number), `ChartFrame`, `VizTooltip`, `Legend` (categorical, size, sequential), `InspectorSection`, `EmptyState`, `Skeleton`, `SourceBadge` (domain + confidence dot), `Segmented` (view toggles).
 - `src/lib/viz/`: palette helpers, scales (linear, log, sqrt for size), axis formatters.

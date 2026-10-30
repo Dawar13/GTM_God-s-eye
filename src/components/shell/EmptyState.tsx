@@ -9,7 +9,7 @@ export function EmptyState({ phaseNote, children }: { phaseNote: string; childre
     <section className={canvasClass}>
       <div className="max-w-md text-center">
         <p className="text-sm text-ink">{children}</p>
-        <p className="mt-2 text-xs text-ink-muted">{phaseNote}</p>
+        <p className="mt-2 text-xs text-ink-2">{phaseNote}</p>
       </div>
     </section>
   );

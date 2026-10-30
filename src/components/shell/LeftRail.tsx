@@ -27,7 +27,7 @@ const ICONS: Record<SectionKey, LucideIcon> = {
 };
 
 const itemClass =
-  "relative flex h-9 w-full items-center gap-3 rounded-md px-3 text-sm text-ink-muted transition-colors hover:bg-panel-raised hover:text-ink";
+  "relative flex h-9 w-full items-center gap-3 rounded-md px-3 text-sm text-ink-2 transition-colors hover:bg-panel-sunk hover:text-ink";
 
 export function LeftRail() {
   const pathname = usePathname();
@@ -45,7 +45,7 @@ export function LeftRail() {
       )}
     >
       <div className="flex h-12 shrink-0 items-center gap-3 border-b border-rule px-[1.3rem]">
-        <span aria-hidden className="size-2.5 shrink-0 rotate-45 bg-amber" />
+        <span aria-hidden className="size-2.5 shrink-0 rotate-45 bg-accent" />
         <span className={cn("text-sm font-semibold", labelClass)}>Capital Atlas</span>
       </div>
 
@@ -58,12 +58,12 @@ export function LeftRail() {
               <Link
                 href={section.href}
                 aria-current={active ? "page" : undefined}
-                className={cn(itemClass, active && "bg-panel-raised text-ink")}
+                className={cn(itemClass, active && "bg-panel-sunk text-ink")}
               >
                 {active && (
                   <span
                     aria-hidden
-                    className="absolute inset-y-2 -left-2 w-0.5 rounded-full bg-amber"
+                    className="absolute inset-y-2 -left-2 w-0.5 rounded-full bg-accent"
                   />
                 )}
                 <Icon aria-hidden className="size-4 shrink-0" />

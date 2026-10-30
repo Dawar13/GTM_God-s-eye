@@ -204,17 +204,18 @@ Real-time later: all reads go through `src/lib/data/*` loaders. Today they impor
 
 ## 9. Design direction
 
-Audience: founders and finance team making decisions under time pressure. Job: find the right investor and understand the math fast. Reference feel: Palantir-style ops console, not a marketing site.
+Audience: founders and finance team making decisions under time pressure. Job: find the right investor and understand the math fast. Feel: a calm, bright analyst's workspace, not a marketing site. Light surfaces, generous whitespace, colour reserved for data. Full spec in `docs/PHASE_2.md` §1 and §2; this section is the summary.
 
 - **Signature**: every view is a canvas + inspector. The network canvas is the one bold element; everything around it stays quiet.
-- **Colour** (dark default, light supported):
-  - canvas `#16181D`, panel `#1D2026`, rule `#2C3038`, ink `#E6E8EB`, muted `#8A919C`, focus/selection amber `#F2B134`
-  - light: canvas `#F5F6F8`, panel `#FFFFFF`, rule `#DADDE3`, ink `#15181E`
-  - Investor categories: Okabe–Ito colour-blind-safe palette (`#E69F00 #56B4E9 #009E73 #F0E442 #0072B2 #D55E00 #CC79A7`)
-  - Companies: greys `#5B616B → #C9CDD4` (shade by total raised). Competitors: grey fill with amber outline
-- **Type**: IBM Plex Sans (UI), IBM Plex Sans Condensed (tables, axes, dense labels). `font-variant-numeric: tabular-nums` on all numbers. Sentence case. No all-caps eyebrow labels, no monospace for data labels, no "→" on buttons.
-- **Layout**: left rail (icons + labels), top filter bar, main canvas, right inspector (resizable). Panels differ by role, not one card style everywhere.
-- **Numbers**: `$1.2M`, `$740M`, `₹1.5 Cr`; percentages to 1 dp; always show units.
+- **Theme**: light first (default). Dark is optional, under `[data-theme="dark"]`, and any wrapper element can carry `data-theme` to re-theme its subtree.
+- **Colour tokens** (`src/styles/tokens.css`, light / dark): canvas `#F6F7F9` / `#16181D`, panel `#FFFFFF` / `#1D2026`, panel-sunk `#F0F2F5` / `#191C21`, rule `#E3E6EB` / `#2C3038`, ink `#1A1F29` / `#E6E8EB`, ink-2 `#4A5160` / `#B4BAC4`, muted `#8A919C` (both), accent `#4F5BD5` / `#8B94F0`, accent-soft `#EEF0FB` / `#262A45`, positive `#2F9E6F`, negative `#D1495B` (up/down only, never decoration).
+- **Data colour**: categorical Tableau 10 subset `#4E79A7 #F28E2B #59A14F #E15759 #76B7B2 #EDC948 #B07AA1 #9C755F`, fills at 85% opacity with a 1px stroke of the same hue darkened 15%. Companies: greys `#C4C9D1 → #8A919C` (darker = more capital raised); competitors add a 2px accent ring. Sequential (heatmaps): `#EEF0FB → #4F5BD5`, never rainbow.
+- **Type**: IBM Plex Sans (UI), IBM Plex Sans Condensed (tables, axes, dense labels). Scale 12 / 13 / 14 / 16 / 20 / 28, body 14/20. `tabular-nums` on all numbers. Sentence case. No all-caps labels, no monospace for data, no "→" on buttons.
+- **Shape and depth**: 4px spacing base. Radius by role: inputs and chips 6px, panels 10px, drawer square on its attached edge. Borders first; one shadow token (`--shadow-float`) for floating things only (menus, palette, tooltips).
+- **Motion**: 160ms ease-out for open/close, 220ms for list reorders. Only in response to user actions; no entrance animations; `prefers-reduced-motion` falls back to instant.
+- **Layout**: left rail, top bar with filters, main canvas, right inspector (resizable). Panels differ by role, not one card style everywhere.
+- **Numbers**: `$1.2M`, `$740M`, `$1.75B`, `₹1.5 Cr`; percentages to 1 dp; dates `Mar 2026`; always show units. All via `src/lib/format`.
+- **Charts**: the accuracy contract in `docs/PHASE_2.md` §2 applies to every visual. Primitives live in `src/components/ui-atlas/`, palette and scales in `src/lib/viz/`, and `/lab` shows them in both themes.
 - **Quality floor**: responsive to tablet (graphs) and mobile (tables, calculators), keyboard focus visible, `prefers-reduced-motion` respected, WCAG AA contrast.
 - Copy: plain verbs, short. Empty states say what to do next.
 

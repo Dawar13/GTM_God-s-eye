@@ -21,7 +21,7 @@ export function ThemeToggle({ labelClass, className }: { labelClass: string; cla
     <button
       type="button"
       onClick={() =>
-        setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light")
+        setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark")
       }
       className={className}
     >

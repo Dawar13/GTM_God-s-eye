@@ -2,7 +2,7 @@ import { getAcceleratorPrograms, getInvestors } from "@/lib/data";
 import { formatUsd, UNKNOWN } from "@/lib/format";
 
 const cell = "border-b border-rule/60 py-1.5 pr-4 align-top";
-const head = "border-b border-rule py-2 pr-4 text-left font-medium text-ink-muted";
+const head = "border-b border-rule py-2 pr-4 text-left font-medium text-ink-2";
 
 /**
  * Accelerator and residency programmes from a user-supplied 2026 list. Terms
@@ -16,7 +16,7 @@ export async function Accelerators() {
 
   return (
     <div className="overflow-x-auto">
-      <p className="mb-3 max-w-prose text-xs text-ink-muted">
+      <p className="mb-3 max-w-prose text-xs text-ink-2">
         {rows.length} programmes from a user-supplied list of 2026 accelerators. Terms are as the
         list states them and have not been checked against each programme; firms link to their
         investor record where the name matches exactly one.

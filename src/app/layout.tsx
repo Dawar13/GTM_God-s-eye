@@ -4,7 +4,7 @@ import { FilterBar } from "@/components/shell/FilterBar";
 import { Inspector } from "@/components/shell/Inspector";
 import { LeftRail } from "@/components/shell/LeftRail";
 import { Providers } from "@/components/shell/Providers";
-import { THEME_INIT_SCRIPT } from "@/lib/theme";
+import { DEFAULT_THEME, THEME_INIT_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      data-theme="dark"
+      data-theme={DEFAULT_THEME}
       suppressHydrationWarning
       className={`${plexSans.variable} ${plexCondensed.variable}`}
     >

@@ -14,7 +14,7 @@ export const useUi = create<UiState>()((set) => ({
   theme: null,
   railCollapsed: false,
   syncThemeFromDocument: () =>
-    set({ theme: document.documentElement.dataset.theme === "light" ? "light" : "dark" }),
+    set({ theme: document.documentElement.dataset.theme === "dark" ? "dark" : "light" }),
   setTheme: (theme) => {
     document.documentElement.dataset.theme = theme;
     try {

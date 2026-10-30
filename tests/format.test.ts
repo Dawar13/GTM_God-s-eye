@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { formatCount, formatInrCrore, formatPercent, formatUsd, UNKNOWN } from "@/lib/format";
+import {
+  formatCount,
+  formatInrCrore,
+  formatMonthYear,
+  formatPercent,
+  formatUsd,
+  UNKNOWN,
+} from "@/lib/format";
 
 describe("formatUsd", () => {
   it.each([
@@ -44,5 +51,28 @@ describe("formatCount", () => {
   it("groups thousands", () => {
     expect(formatCount(973)).toBe("973");
     expect(formatCount(1234)).toBe("1,234");
+  });
+});
+
+describe("formatUsd billions", () => {
+  it("keeps two decimals under a billion-scale value", () => {
+    expect(formatUsd(1_750_000_000)).toBe("$1.75B");
+    expect(formatUsd(1_600_000_000)).toBe("$1.6B");
+  });
+});
+
+describe("formatMonthYear", () => {
+  it.each([
+    ["2026-03-14", "Mar 2026"],
+    ["2026-03", "Mar 2026"],
+    ["2026", "2026"],
+  ])("%s → %s", (iso, expected) => {
+    expect(formatMonthYear(iso)).toBe(expected);
+  });
+
+  it("shows unknown or malformed values as a dash", () => {
+    expect(formatMonthYear(null)).toBe(UNKNOWN);
+    expect(formatMonthYear("soon")).toBe(UNKNOWN);
+    expect(formatMonthYear("2026-13")).toBe(UNKNOWN);
   });
 });

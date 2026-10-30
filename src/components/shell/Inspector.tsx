@@ -76,12 +76,12 @@ export function Inspector() {
         tabIndex={0}
         onPointerDown={onPointerDown}
         onKeyDown={onHandleKey}
-        className="absolute inset-y-0 left-0 z-10 hidden w-1.5 -translate-x-1/2 cursor-col-resize touch-none transition-colors hover:bg-amber/50 focus-visible:bg-amber focus-visible:outline-none md:block"
+        className="absolute inset-y-0 left-0 z-10 hidden w-1.5 -translate-x-1/2 cursor-col-resize touch-none transition-colors hover:bg-accent/50 focus-visible:bg-accent focus-visible:outline-none md:block"
       />
 
       <header className="flex shrink-0 items-start gap-3 border-b border-rule px-4 py-3">
         <div className="min-w-0 flex-1">
-          <p className="text-xs text-ink-muted">{KIND_LABELS[selection.kind]}</p>
+          <p className="text-xs text-ink-2">{KIND_LABELS[selection.kind]}</p>
           <h2 className="truncate text-sm font-semibold">{selection.title}</h2>
         </div>
         <Button variant="ghost" size="icon-sm" onClick={clear} aria-label="Close inspector">
@@ -90,7 +90,7 @@ export function Inspector() {
       </header>
 
       <ScrollArea className="min-h-0 flex-1">
-        <pre className="p-4 font-mono text-xs leading-relaxed break-words whitespace-pre-wrap text-ink-muted">
+        <pre className="p-4 font-mono text-xs leading-relaxed break-words whitespace-pre-wrap text-ink-2">
           {JSON.stringify(selection.payload, null, 2)}
         </pre>
       </ScrollArea>

@@ -73,7 +73,7 @@ export function FilterBar() {
         const labelId = `filter-${f.key}`;
         return (
           <div key={f.key} className="flex shrink-0 items-center gap-1.5">
-            <span id={labelId} className="text-xs text-ink-muted">
+            <span id={labelId} className="text-xs text-ink-2">
               {f.label}
             </span>
             <Select
@@ -101,7 +101,7 @@ export function FilterBar() {
       })}
 
       <div className="ml-auto flex shrink-0 items-center gap-3">
-        <span className="text-xs text-ink-muted">Filters connect to the views in Phase 2.</span>
+        <span className="text-xs text-ink-2">Filters connect to the views in Phase 2.</span>
         {!isDefault && (
           <Button variant="ghost" size="sm" onClick={filters.reset}>
             <RotateCcw aria-hidden />

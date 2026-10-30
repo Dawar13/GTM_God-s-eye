@@ -13,7 +13,7 @@ import { formatUsd, UNKNOWN } from "@/lib/format";
 export const metadata: Metadata = { title: "Data debug" };
 
 const cell = "border-b border-rule/60 py-1 pr-4 align-top";
-const head = "border-b border-rule py-1 pr-4 text-left font-medium text-ink-muted";
+const head = "border-b border-rule py-1 pr-4 text-left font-medium text-ink-2";
 
 /**
  * Phase 1 sanity page (PHASE_1 §9.4): raw rounds, cluster sizes and graph
