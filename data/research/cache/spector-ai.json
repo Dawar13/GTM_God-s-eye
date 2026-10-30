@@ -1,0 +1,84 @@
+{
+  "key": "spector-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Spector.ai (spector.ai), the industrial-AI company headquartered in Santa Clara, California with offices in Houston, Dubai, Brisbane and Bengaluru, run by CEO Prashant Nedungadi. The company site (Agentic Twin platform, asset and process reliability), Inc42 and Entrepreneur India (January 2026, INR 58 crore led by IvyCap Ventures) and Venture Intelligence all describe the same reliability-agent business and name the same founders (Prashant Nedungadi, Sukrit Goel). Matched by domain and description, not by name alone: the press pages describe the same reliability-agent product and the CEO named on spector.ai/about. Category set to 'direct' (not in the PROJECT_CONTEXT §7 seed list; candidate from a discovery search): Spector sells AI agents for asset reliability (predictive maintenance, time-to-fail, root cause), process reliability (upset and quality-excursion prediction) and set-point optimisation, which are Utopian Autonomy's maintenance and process-stability functions, and its engineering base is in Bengaluru. Differences: it targets continuous-process heavy industry first (oil and gas, refining, LNG, chemicals, power, plus cement and steel), sells to reliability and process engineers through an 'Agentic Twin' fed by DCS / historian data with cloud or air-gapped deployment, and does not touch procurement, RFQ, BOM or engineering drawings; no WhatsApp or messaging interface was seen on its site.",
+  "pages": [
+    { "url": "https://spector.ai/", "title": "Spector.ai home page", "publisher": "Spector.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://spector.ai/about/", "title": "About Spector.ai", "publisher": "Spector.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://spector.ai/manufacturing/", "title": "Spector.ai for Manufacturing", "publisher": "Spector.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://inc42.com/buzz/spector-ai-raises-6-7-mn-to-scale-its-industrial-ai-offerings", "title": "Spector.ai Raises $6.7 Mn To Scale Its Industrial AI Offerings", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://india.entrepreneur.com/news-and-trends/spectorai-raises-inr-58-cr-funding-led-by-ivycap-ventures/501707", "title": "Spector.ai Raises INR 58 Cr Funding Led by IvyCap Ventures", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/company/spector-ai/funding/", "title": "Spector.ai Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://news.ventureintelligence.com/private-equity/industrial-ai-startup-spector.ai-raises-%246.7-m-from-ivycap-ventures", "title": "Industrial AI startup Spector.ai raises $6.7 M from IvyCap Ventures", "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.trysignalbase.com/news/funding/spectorai-raises-900k-seed", "title": "Spector.ai raises $900K seed (Signalbase)", "publisher": "Signalbase", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "company.founded_year",
+      "values": ["2024 (Inc42 article, 8 Jan 2026: 'Founded in 2024 by ex-GoDaddy VP Prashant Nedungadi and InteligenAI CEO Sukrit Goel')", "2023 (Inc42 company profile; Venture Intelligence)"],
+      "chosen": "2024",
+      "reason": "The press article outranks database pages under the protocol. The 2023 year in two databases may be an incorporation date; the company site gives no year."
+    },
+    {
+      "field": "company.hq_country",
+      "values": ["US: Santa Clara, California (spector.ai/about; Entrepreneur India says headquartered in the US with an engineering base in India; Inc42 says California)", "IN: Bengaluru (Entrepreneur India dateline; Venture Intelligence lists Bengaluru and San Jose)"],
+      "chosen": "US",
+      "reason": "The company's own about page gives Santa Clara as headquarters and Bengaluru as one of four other offices."
+    },
+    {
+      "field": "rounds[2026-01] amount",
+      "values": ["INR 58 crore (about $6.7M), led by IvyCap Ventures (Inc42, Entrepreneur India, Venture Intelligence, Inc42 profile)", "$900K 'Seed' published the same day, 8 Jan 2026 (Signalbase, no source cited); other Signalbase headlines give $5.8B and $58M"],
+      "chosen": "INR 58 crore",
+      "reason": "Two press articles from different domains agree. Signalbase cites no source and its other figures for the same story are clearly unit errors, so the $900K entry is not recorded as a separate round."
+    }
+  ],
+  "open_items": [
+    "Round stage not stated anywhere: Inc42 calls it a 'funding round' and its profile labels the stage 'Undisclosed'. Recorded as 'undisclosed'.",
+    "The US strategic investors that joined the January 2026 round are not named in any fetched article.",
+    "No earlier round found. The search snippet for a Preqin listing mentions Blume Ventures as a participant; Preqin was not fetched and Blume is not recorded.",
+    "Named customers come from the home page logo strip headed 'Trusted by leading industrial operators' (logo alt text). The case studies on the manufacturing page are anonymised (East African cement maker, Middle East steel producer, European manufacturer).",
+    "Revenue not publicly reported in any fetched page.",
+    "Headcount (23) is from the Inc42 database profile only; the LinkedIn company page was not checked."
+  ],
+  "company": {
+    "name": "Spector.ai",
+    "website": "https://spector.ai",
+    "description": "Santa Clara-headquartered industrial AI company with a Bengaluru engineering base that sells reliability and performance agents for plant assets and processes.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Reliability and performance agents built on an 'Agentic Twin' per asset or production line: asset reliability (degradation detection, time-to-fail, root cause), process reliability (upset and quality-excursion prediction, e.g. cobbles in a rolling mill), performance optimisation (physics-grounded set points for yield and energy, recommended open-loop to operators) and plant troubleshooting with a GenAI agent using SOPs and event logs. Process industries first (oil and gas, chemicals, power), plus cement, steel and discrete manufacturing. Cloud or on-prem / air-gapped; no WhatsApp channel seen.",
+  "founders": ["Prashant Nedungadi", "Sukrit Goel"],
+  "named_customers": ["Continuum", "Senvion", "Hitachi Energy", "Rossari Biotech", "Long Energy and Resources", "Serikandi Group of Companies", "Jindal Steel", "Shell"],
+  "product_summary": "Agentic Twin: an AI model of each asset and process built from equipment knowledge, physics and plant data, which watches live signals, forecasts failures and process upsets, explains root causes and recommends energy- and yield-optimal set points, delivered as reliability agents for heavy-industry plants.",
+  "pricing": "No prices published. The manufacturing page describes a pilot on 2-6 assets over 4-12 weeks with the implementation fee at cost, then a 12-36 month scale-up on an annual SaaS subscription.",
+  "headcount_est": {
+    "value": 23,
+    "pages": [5],
+    "snippet": "Employee count: 23 (approximate: Inc42 company profile)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Spector.ai", "website": "https://spector.ai", "description": "Industrial reliability and performance agents for heavy-industry plants.", "hq_country": "US", "founded_year": 2024, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "undisclosed",
+      "stage_raw": "Funding round, stage not stated (Inc42 profile: 'Undisclosed'); INR 58 crore (~$6.7M); unnamed US strategic investors also participated",
+      "date": "2026-01-08",
+      "date_precision": "day",
+      "amount_original": 580000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["IvyCap Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3, 4, 5, 6],
+      "snippet": "AI startup Spector.ai has raised INR 58 Cr ($6.7 Mn) in a funding round led by IvyCap Ventures."
+    }
+  ]
+}

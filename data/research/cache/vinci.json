@@ -1,0 +1,129 @@
+{
+  "key": "vinci",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Vinci (Vinci4D Inc., getvinci.ai), the Palo Alto start-up building a physics foundation model for hardware-engineering simulation. Eclipse's post 'The ChatGPT for Physics' (2025-12-05) links https://www.getvinci.ai/ and names the same founder (Hardik Kabaria) and round ($46M seed and Series A from Eclipse, Xora Innovation and Khosla Ventures); getvinci.ai's own release, team page and newsroom match, and SiliconANGLE names the legal entity Vinci4D Inc. (the site's forms also say 'Vinci4d'). Not any other company called Vinci (the name is widely used, including by a large construction group); identity rests on the getvinci.ai domain Eclipse links. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; found through Eclipse's portfolio): Vinci sells design-stage software to hardware engineering teams, the same buyer as Utopian Autonomy's requirements / design-intent tooling, and its stated roadmap is to move from simulation toward telling engineers what to change and 'eventually toward creating designs from human intent'. It is not direct because today it is a CAE / simulation product (thermal, thermo-mechanical, convective flow) sold mainly to semiconductor and electronics-packaging teams, not requirements or design-intent capture, and it does nothing on the plant floor (procurement, maintenance, process stability, RFQ / BOM). Layer design_intent is the nearest fit; there is no simulation layer in the taxonomy.",
+  "pages": [
+    { "url": "https://www.getvinci.ai/", "title": "Vinci | Physics AI for Engineering Simulation", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/team/", "title": "Team | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/newsroom/", "title": "Newsroom | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/news/vinci-emerges-from-stealth-to-transform-semiconductor-design-and-simulation/", "title": "Vinci Emerges from Stealth to Transform Semiconductor Design and Simulation | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/news/reuters-vinci-raises-36-million-to-advance-hardware-simulation/", "title": "Reuters: Vinci Raises $36 Million to Advance Hardware Simulation | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/blog/why-physics-needs-to-move-at-the-pace-of-design/", "title": "Why Physics Needs to Move at the Pace of Design | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/news/vinci-ships-production-grade-thermo-mechanical-simulation-at-manufacturing-scale/", "title": "Vinci Ships Production-Grade Thermo-Mechanical Simulation at Manufacturing Scale | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/faq/", "title": "FAQ | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.getvinci.ai/careers/", "title": "Careers | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://eclipse.capital/blog/The-ChatGPT-for-Physics", "title": "The ChatGPT for Physics", "publisher": "Eclipse", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/2025/12/03/vinci-nabs-46m-speed-chip-simulations-ai/", "title": "Vinci nabs $46M to speed up chip simulations with AI", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/vinci-46-million-funding/", "title": "Vinci: $46 Million Closed To Launch Physics-Driven AI Platform For Semiconductor Design", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2026/10/06/vinci-reels-in-250m-for-its-engineering-simulation-platform/", "title": "Vinci reels in $250M for its engineering simulation platform", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/vinci-raises-250-million-series-b-at-1-5-billion-valuation/", "title": "Vinci Raises $250 Million Series B At $1.5 Billion Valuation To Expand AI-Native Computational Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.getvinci.ai/platform/", "title": "Platform | Vinci", "publisher": "Vinci", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Vinci",
+    "website": "https://www.getvinci.ai/",
+    "description": "Palo Alto start-up whose pre-trained physics foundation model runs fast, solver-accurate thermal and thermo-mechanical simulation of full-resolution hardware designs, starting with semiconductors.",
+    "hq_country": "US",
+    "founded_year": 2023,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "adjacent",
+  "layer": "design_intent",
+  "layer_detail": "Design-stage physics simulation (CAE) rather than requirements or design-intent capture: thermal, thermo-mechanical (warpage, stress) and convective-fluid analysis on native layout and design files (OASIS / GDS / IPC-2581) for chips, advanced packages, PCBs and enclosures, behind the customer's firewall. Users are hardware / packaging engineers at semiconductor and electronics companies. Roadmap: CFD, electromagnetics, mechanics and manufacturability, agentic engineering workflows, then recommending design changes and generating designs from intent; also aiming at vehicles, aircraft and satellites.",
+  "founders": ["Hardik Kabaria", "Sarah Osentoski", "Vincent Rerolle"],
+  "named_customers": [],
+  "product_summary": "Pre-trained physics foundation model that ingests native design and layout files, meshes automatically and returns deterministic, solver-grade thermal, thermo-mechanical (warpage, stress) and convective-flow simulations at manufacturing resolution in minutes, behind the customer's firewall and without training on customer data. First market: semiconductors and electronics packaging.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Vinci", "website": "https://www.getvinci.ai/", "description": "Palo Alto start-up whose pre-trained physics foundation model runs fast, solver-accurate thermal and thermo-mechanical simulation of full-resolution hardware designs, starting with semiconductors.", "hq_country": "US", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "seed",
+      "stage_raw": "Seed (led by Eclipse; amount and close date not disclosed separately; first announced with the Series A at the stealth exit, 2025-12-02, as part of $46M total funding)",
+      "date": "2025-12-02",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Eclipse"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3, 11, 9, 10],
+      "snippet": "announced $46M in total funding, with its Series A led by Xora Innovation and its Seed round led by Eclipse."
+    },
+    {
+      "company": { "name": "Vinci", "website": "https://www.getvinci.ai/", "description": "Palo Alto start-up whose pre-trained physics foundation model runs fast, solver-accurate thermal and thermo-mechanical simulation of full-resolution hardware designs, starting with semiconductors.", "hq_country": "US", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "series_a",
+      "stage_raw": "Series A ($36M per Vinci's summary of the Reuters article; announced at the stealth exit)",
+      "date": "2025-12-02",
+      "date_precision": "day",
+      "amount_original": 36000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Xora Innovation"],
+      "participants": [],
+      "unspecified": ["Khosla Ventures", "Eclipse Ventures"],
+      "pages": [4, 3, 1, 11, 10],
+      "snippet": "In this Reuters article, Vinci discusses its $36 million Series A"
+    },
+    {
+      "company": { "name": "Vinci", "website": "https://www.getvinci.ai/", "description": "Palo Alto start-up whose pre-trained physics foundation model runs fast, solver-accurate thermal and thermo-mechanical simulation of full-resolution hardware designs, starting with semiconductors.", "hq_country": "US", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "series_b",
+      "stage_raw": "Series B (at a $1.5B valuation; pre- or post-money not stated)",
+      "date": "2026-10-06",
+      "date_precision": "day",
+      "amount_original": 250000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["Advent", "Temasek", "Xora"],
+      "participants": ["AMD Ventures", "Madrona", "Eclipse", "Khosla Ventures"],
+      "unspecified": [],
+      "pages": [13, 12, 5, 0],
+      "snippet": "Advent, Temasek and Xora co-led the financing. AMD Ventures and Madrona participated alongside existing investors Eclipse and Khosla Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[seed + series_a].amount",
+      "values": [
+        "$46M total across seed and Series A, no split (Vinci release, Eclipse post, SiliconANGLE 2025-12-03, Pulse 2.0)",
+        "$36M Series A (Reuters 2025-12-02, as summarised on Vinci's own newsroom page; Reuters itself returned 401)"
+      ],
+      "chosen": "Series A $36M; seed amount null",
+      "reason": "The figures are consistent if the seed was about $10M, but no page states the seed amount, so it is left null rather than derived. Note: cache/eclipse-ventures.json records this as one $46M 'seed and Series A' row."
+    },
+    {
+      "field": "rounds[seed, series_a].date",
+      "values": [
+        "2025-12-01 (date shown on the release page and newsroom card)",
+        "December 2, 2025 (release dateline; Reuters; SiliconANGLE says 'announced on Tuesday', published 2025-12-03)",
+        "2025-12-05 (Eclipse blog post)"
+      ],
+      "chosen": "2025-12-02",
+      "reason": "The release dateline and Reuters agree on December 2; the Eclipse post came three days later. The team page says only that the Series A closed in 2025."
+    },
+    {
+      "field": "founders",
+      "values": [
+        "Hardik Kabaria and Sarah Osentoski ('Vinci was founded in 2023 by Dr. Hardik Kabaria and Dr. Sarah Osentoski', team page; also the release and Pulse 2.0)",
+        "Vincent Rerolle is listed as 'Co-Founder & CCO' on the same team page"
+      ],
+      "chosen": "All three listed",
+      "reason": "The company's own team page gives Rerolle the co-founder title; he may have joined after founding. Kabaria is Founder & CEO, Osentoski Co-Founder & CTO."
+    }
+  ],
+  "open_items": [
+    "Total raised: $296M by sum of disclosed funding ($46M seed + Series A, $250M Series B). No page states a running total.",
+    "Seed: amount, date and other investors not stated; only the lead (Eclipse) is named.",
+    "Series A: Khosla Ventures and Eclipse are named as backers ('Vinci closed its Series A in 2025, backed by Khosla Ventures, Eclipse Ventures, and Xora', team page) without roles, so kept in 'unspecified'. Reuters article (401) and New Electronics (403) not readable.",
+    "Series B: valuation stated as '$1.5 billion valuation' without pre/post; recorded as post. 'Other investors' beyond AMD Ventures and Madrona not named. Lead names are given as 'Advent' and 'Xora' as the pages write them; 'Xora' is presumably Xora Innovation, which led the Series A, but no page read says so. Reuters coverage of the Series B (401) not read.",
+    "Customers: none named. Pages say it is deployed at 'three leading semiconductor manufacturers' and benchmarked by 'over half of the top 20 semiconductor companies'; AMD is an investor (AMD Ventures) and an AMD SVP is quoted supporting the round, but AMD is not called a customer.",
+    "Headcount: no public page gives a number (LinkedIn not used). Careers page lists seven open roles, all at the Palo Alto HQ.",
+    "Pricing not public. Revenue not publicly reported.",
+    "Product scope: commercial today in thermal, thermo-mechanical and convective-fluid analysis (founder's 2026-10-06 post); the Eclipse post mentions manufacturability validation and design generation, which the company frames as roadmap."
+  ]
+}

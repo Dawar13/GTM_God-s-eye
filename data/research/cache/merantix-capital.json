@@ -184,7 +184,7 @@
     },
     {
       "url": "https://tech.eu/2024/09/30/ai-startup-briink-raises-3-85-million/",
-      "title": "AI startup Briink raises €3.85 million",
+      "title": "AI-startup Briink raises €3.85 million to help ESG teams verify and benchmark their sustainability data",
       "publisher": "Tech.eu",
       "retrieved_at": "2026-10-30",
       "kind": "press"
@@ -230,6 +230,62 @@
       "publisher": "Tech.eu",
       "retrieved_at": "2026-10-30",
       "kind": "press"
+    },
+    {
+      "url": "https://tech.eu/2026/06/25/almetra-secures-eur163m-series-a-to-drive-smarter-manufacturing/",
+      "title": "Almetra secures €16.3M Series A to drive smarter manufacturing",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2026/06/26/almetra-erhaelt-163-millionen-euro-zelara-bekommt-3-millionen-wakeline-sammelt-21-millionen/",
+      "title": "Almetra erhält 16,3 Millionen Euro - Zelara bekommt 3 Millionen - Wakeline sammelt 2,1 Millionen",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2026/06/05/merantix-capital-liqid-snocks-rewired-energy-robotics-korial/",
+      "title": "+++ Merantix Capital +++ LIQID +++ snocks +++ Rewired +++ Energy Robotics +++ Korial +++",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2024/09/30/dealmonitor-atlas-metrics-briink-foodforecast/",
+      "title": "Atlas Metrics sammelt 12,2 Millionen ein - Briink erhält 3,85 Millionen - foodforecast bekommt 3 Millionen",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2025/09/25/dealmonitor-enadyne-revel8-yasp/",
+      "title": "enaDyne erhält 7 Millionen - revel8 bekommt 5,7 Millionen - yasp erhält 5 Millionen",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2025/09/30/dealmonitor-stratifai-clockin/",
+      "title": "StratifAI erhält 12,5 Millionen - clockin bekommt 10 Millionen",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2025/12/12/limehome-erhaelt-75-millionen-ficus-bekommt-3-millionen-osapiens-kauft-lucent/",
+      "title": "Limehome erhält 75 Millionen – LI.FI sammelt 29 Millionen ein – osapiens kauft Lucent",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.deutsche-startups.de/2026/06/16/cortea-bekommt-12-millionen-causa-prima-erhaelt-10-millionen-qorelo-sammelt-35-millionen-ein/",
+      "title": "Cortea bekommt 12 Millionen – Causa Prima erhält 10 Millionen – Qorelo sammelt 3,5 Millionen ein",
+      "publisher": "deutsche-startups.de",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
     }
   ],
   "facts": {
@@ -266,14 +322,15 @@
         0,
         8
       ],
-      "snippet": "linkedin.com/company/merantix"
+      "snippet": "https://linkedin.com/company/merantix"
     },
     "hq_city": {
       "value": "Berlin",
       "pages": [
         3,
         2,
-        11
+        11,
+        34
       ],
       "snippet": "Merantix Fund Management GmbH Max-Urich-Str. 3, AI Campus 13355 Berlin, Germany"
     },
@@ -378,6 +435,7 @@
       "date_precision": null,
       "pages": [
         11,
+        34,
         10,
         27
       ],
@@ -408,6 +466,7 @@
         11,
         12,
         13,
+        34,
         6
       ],
       "snippet": "Today, we’re announcing the closing of Merantix Capital’s €103 million AI Fund"
@@ -481,9 +540,45 @@
   "rounds": [
     {
       "company": {
-        "name": "Deltia.ai",
-        "website": "https://www.deltia.ai/",
-        "description": "Berlin computer-vision software that digitises manual production steps (assembly, packaging, machine set-up) on factory floors using edge AI.",
+        "name": "Almetra",
+        "website": "https://www.almetra.ai/",
+        "description": "Berlin manufacturing-intelligence platform (formerly Deltia.ai) whose edge-AI cameras over production lines turn video and machine data into cycle-time and output data.",
+        "hq_country": "DE",
+        "founded_year": 2022,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-06-25",
+      "date_precision": "day",
+      "amount_original": 16300000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [
+        "blisce/"
+      ],
+      "participants": [
+        "NAP",
+        "Merantix Capital",
+        "Robin Capital",
+        "Underline",
+        "Critical Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        32,
+        33,
+        4
+      ],
+      "snippet": "has raised €16.3 million in a Series A funding round led by blisce/, with participation from NAP, Merantix Capital, Robin Capital, Underline"
+    },
+    {
+      "company": {
+        "name": "Almetra",
+        "website": "https://www.almetra.ai/",
+        "description": "Berlin manufacturing-intelligence platform (formerly Deltia.ai) whose edge-AI cameras over production lines turn video and machine data into cycle-time and output data.",
         "hq_country": "DE",
         "founded_year": 2022,
         "sector": "industrial_manufacturing",
@@ -491,7 +586,7 @@
         "layer": "plant_ops"
       },
       "stage": "seed",
-      "stage_raw": "seed funding round",
+      "stage_raw": "seed funding round (as Deltia.ai)",
       "date": "2024-05-01",
       "date_precision": "day",
       "amount_original": 4500000,
@@ -503,9 +598,17 @@
       "participants": [
         "Merantix"
       ],
-      "unspecified": [],
+      "unspecified": [
+        "Robin Capital",
+        "Combination",
+        "Nico Peters",
+        "Willi Tscheschner",
+        "Max Viessmann",
+        "Walter Kortschak"
+      ],
       "pages": [
         27,
+        33,
         5,
         4
       ],
@@ -580,6 +683,7 @@
       "unspecified": [],
       "pages": [
         20,
+        36,
         5,
         4
       ],
@@ -613,6 +717,7 @@
       "pages": [
         16,
         17,
+        37,
         9
       ],
       "snippet": "The round was led by Founderful, with participation from Merantix Capital."
@@ -644,7 +749,8 @@
       "unspecified": [],
       "pages": [
         21,
-        22
+        22,
+        38
       ],
       "snippet": "The round was led by European early-stage investor Redstone and supported by Merantix Capital as well as leading industry business angels."
     },
@@ -707,7 +813,8 @@
       ],
       "pages": [
         23,
-        24
+        24,
+        39
       ],
       "snippet": "Berlin-based hiring platform WhyBrilliant has launched publicly with €1 million in pre-seed funding from Merantix."
     },
@@ -740,6 +847,7 @@
       "unspecified": [],
       "pages": [
         25,
+        35,
         4
       ],
       "snippet": "The round was co-led by EquityPitcher Ventures and 13books Capital, with participation from existing investors Merantix, seed + speed Ventures"
@@ -783,10 +891,10 @@
       "field": "check_range",
       "values": [
         "€500k to €4m per ticket (merantix-capital.com/invest)",
-        "€1M to €3M per investment from the new fund (Handelsblatt, 4 Jun 2026)"
+        "€1M to €3M per investment from the new fund (Handelsblatt, 4 Jun 2026; deutsche-startups.de, 5 Jun 2026)"
       ],
       "chosen": "500,000 to 4,000,000 EUR",
-      "reason": "The firm's own investment page is the primary source; Handelsblatt quotes a narrower per-investment range for the new fund."
+      "reason": "The firm's own investment page is the primary source; two press reports quote a narrower typical range for the new fund."
     },
     {
       "field": "stages",
@@ -800,11 +908,29 @@
     {
       "field": "rounds.Deltia.ai amount",
       "values": [
-        "€4.5M seed (Silicon Canals, 1 May 2024)",
+        "€4.5M seed (Silicon Canals, 1 May 2024; deutsche-startups.de, 26 Jun 2026)",
         "$4.5M seed (Merantix Capital build page)"
       ],
       "chosen": "4,500,000 EUR",
       "reason": "The dated press report of the round gives euros; the firm's studio page gives the same figure with a dollar sign and no date."
+    },
+    {
+      "field": "rounds.Almetra seed lead",
+      "values": [
+        "led by Cavalry Ventures, with participation from existing investor Merantix (Silicon Canals, 2024)",
+        "NAP, Merantix, Robin Capital, Combination and angels invested the earlier €4.5M, no roles (deutsche-startups.de, 2026)"
+      ],
+      "chosen": "Lead Cavalry Ventures; Merantix participant; others unspecified",
+      "reason": "Only Silicon Canals gives roles. deutsche-startups.de says in the same article that NAP was formerly known as Cavalry Ventures, so the two lists agree."
+    },
+    {
+      "field": "rounds.FICUS Health amount",
+      "values": [
+        "€3M closed, led by Redstone (Merantix Capital post; deutsche-startups.de)",
+        "seed round 'raising a total of €3 million together with its previous pre-seed financing' (Tech.eu)"
+      ],
+      "chosen": "3,000,000 EUR",
+      "reason": "All three pages give €3M; Tech.eu says that figure includes the earlier pre-seed, so the seed tranche alone may be smaller."
     },
     {
       "field": "funds.first fund",
@@ -822,9 +948,10 @@
     "Merantix AI Fund: €103M final close announced 4 Jun 2026; plans about 40 investments (Tech.eu), split 50/50 between venture-studio companies and direct pre-seed/seed deals. LPs named: Union Investment, Jungheinrich, KPMG Germany, Robert Wood Johnson Foundation, W.K. Kellogg Foundation. The fund was already deploying in 2025 (Droidrun, Arqh).",
     "Handelsblatt (Jun 2026) says Merantix Capital invested only in its own studio companies for ten years and the new fund is its first for direct investments, yet press names Merantix in outside rounds (Briink 2024, Ovom Care 2024) — those companies are also listed on the portfolio page as 'Pre-Idea' studio companies, so they are likely follow-ons in studio companies.",
     "No application form, pitch email or submission route was found on merantix-capital.com (the 'Get started' button points to an on-page anchor). accepts_cold_inbound left unknown. Nothing found on requiring a US entity or on Indian founders, so the latter is omitted.",
-    "No portfolio count is stated. The portfolio page lists 24 entries, including 5 stealth ventures and 3 exits (Libra/libratech acquired by Wolters Kluwer, Kausa by SAP, Clemens Viernickel's company acquired by Scale AI).",
+    "No portfolio count is stated. The portfolio page lists 23 entries, including 5 stealth ventures and 3 exits (Libra/libratech acquired by Wolters Kluwer, Kausa by SAP, and a 'smart data refinery' company acquired by Scale AI). Its 'Partnered' column marks studio companies 'Pre-Idea' and direct deals 'Pre-Seed'.",
     "Partners not recorded: Matthieu Dederichs (Venture Partner; software, AI/ML, fintech, health tech, consumer), Matilda Glynn-Henley and Laetizia Hellmeister (both 'Investor', no focus stated), Pranav Tadikonda (Investment Team). Janette Wiget is a managing director in the imprint but not on the team page. Oliver Schmied is CFO.",
-    "Rounds not recorded: Graph Therapeutics' pre-seed (build page says Merantix Capital co-led a pre-seed extended to $3.1M; no dated press page found) and its Jun 2026 $5M round led by Daphni (Tech.eu names Merantix Capital only as an existing investor); revel8's earlier pre-seed (build page says Merantix-led, undated); Vara's $8.9M (Oct 2024, Merantix not named); METEORIC, Hoshii, Cambrium, Deltia later rounds — no round page found naming Merantix.",
+    "Rounds not recorded: Graph Therapeutics' pre-seed (build page says Merantix Capital co-led a pre-seed extended to $3.1M; no dated press page found) and its Jun 2026 $5M round led by Daphni (Tech.eu names Merantix Capital only as an existing investor); revel8's earlier pre-seed (build page says Merantix-led, undated); Vara's $8.9M (Oct 2024, Merantix not named); METEORIC (energy, studio company), Hoshii (AI workspace for wholesalers, 'Pre-Seed' direct deal) and Cambrium — no round page found naming Merantix.",
+    "Almetra (formerly Deltia.ai): both rounds are recorded under the current name; the seed date is the Silicon Canals article date (the round was announced 'recently' before it). Cavalry Ventures has since renamed itself NAP (deutsche-startups.de). Almetra was co-founded with Merantix in its venture studio.",
     "Outpost Bio and Ovom Care HQ country and founding year, and Droidrun/Arqh/Briink/WhyBrilliant founding years, are not on the fetched pages.",
     "LinkedIn: the only LinkedIn link on merantix-capital.com is the Merantix group page; no separate Merantix Capital company page was verified (LinkedIn is login-walled).",
     "The user list's 'AI' and '2026 fund EUR 103M' leads are confirmed by the firm's own fund post and Tech.eu, Handelsblatt, Pulse 2.0 and Gründerszene."

@@ -1,0 +1,55 @@
+{
+  "key": "factostack",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as FactoStack (factostack.com), manufacturing-operations software 'built for Indian factories' sold by Factostack Technologies, whose terms page gives a registered address in Kaveripattinam, Krishnagiri district, Tamil Nadu. A SoftwareSuggest listing for 'Factostack Technologies' describes the same product. A funding search returned only differently named companies (Factory, Factory.app, FactoryFour); none is this one. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; candidate from a discovery search). FactoStack is a low-cost ERP / MRP for Indian manufacturing MSMEs (quotes, sales orders, inventory, production with BOMs and QR job cards, purchase orders, quality checks, GST invoicing, a Tally handoff), with an 'AI Agents' add-on: a sourcing agent that raises POs at reorder point and chases vendors, auto-reorder, production status ('where is order #X?'), invoice follow-up and quality alerts. Quotes can be sent as PDFs over WhatsApp. That overlaps Utopian Autonomy's procurement and shop-floor status work for the same kind of Indian plant. It is not 'direct' because the agents run inside FactoStack's own system of record as an add-on to an ERP sold against Tally, Zoho and Odoo, rather than as agents plant staff talk to over WhatsApp, and it has no maintenance, process-stability, RFQ or engineering-drawing functions.",
+  "pages": [
+    { "url": "https://factostack.com/", "title": "FactoStack home page", "publisher": "FactoStack", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://factostack.com/ai-agent", "title": "FactoStack AI Agents add-on", "publisher": "FactoStack", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://factostack.com/quotes", "title": "FactoStack Quotation management", "publisher": "FactoStack", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://factostack.com/terms", "title": "FactoStack Terms of Service", "publisher": "FactoStack", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.softwaresuggest.com/comparestatic/factostack-vs-bnbrun", "title": "Factostack vs BnBRun (SoftwareSuggest comparison)", "publisher": "SoftwareSuggest", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "company HQ city",
+      "values": ["Kaveripattinam, Krishnagiri, Tamil Nadu (registered address on factostack.com/terms)", "Bengaluru (SoftwareSuggest listing)"],
+      "chosen": "IN (city not recorded in the schema)",
+      "reason": "Both are in India. The company's own terms page gives the Tamil Nadu registered address; the Bengaluru listing may reflect an operating office."
+    },
+    {
+      "field": "pricing",
+      "values": ["Factory OS ₹2,999/month, Factory ERP ₹4,999/month, HRMS ₹1,999/month (factostack.com)", "Starting at ₹999/month with a free plan (SoftwareSuggest)"],
+      "chosen": "The company site's prices",
+      "reason": "The vendor's own pricing on the date retrieved outranks a directory listing, which is probably older."
+    }
+  ],
+  "open_items": [
+    "No funding found: no round, investor or press coverage turned up, and the site mentions none. Treated as bootstrapped or unannounced, not confirmed.",
+    "Founders and team are not named on the site; no press profile found. LinkedIn was not checked.",
+    "Founding year not found. Legal form unclear: the terms page says 'Factostack Technologies' with no CIN or 'Pvt Ltd'.",
+    "No named customers or testimonials on the site; a vendor blog page mentions adoption by Tirupur garment units (seen only in a search result, not fetched).",
+    "No headcount or revenue on any public page.",
+    "The site shows no RFQ or engineering-drawing handling: quotes are sales quotations (OCR reads catalogue or price-list photos), not supplier RFQs."
+  ],
+  "company": {
+    "name": "FactoStack",
+    "website": "https://factostack.com",
+    "description": "Low-cost factory ERP for Indian manufacturing MSMEs covering quotes, orders, inventory, production, purchasing, quality and GST invoicing, with AI-agent add-ons.",
+    "hq_country": "IN",
+    "founded_year": null,
+    "sector": "enterprise_saas",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "MSME factory ERP / MRP (system of record) rather than agents on top of other systems: Sales and CRM, quotation management with approval routing and WhatsApp PDF sharing, sales orders, inventory, production and MRP with BOM and routing, QR job cards on shop-floor phones or tablets, procurement and vendor management, incoming and in-process quality checks, GST e-invoicing with Tally handoff, and HRMS. AI Agents add-on: Sourcing (raises POs at reorder point, chases vendors), Auto Reorder, Production Status, Invoice Follow-up and Quality Alert, with human review. Industries: food processing, garments, textiles, automotive parts, general MSME.",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "Factory OS: a single web and mobile system for Indian MSME manufacturers that runs quotations, sales orders, stock, production orders with BOMs and QR job cards, purchase orders, quality checks and GST invoices, with optional AI agents that raise purchase orders, reorder stock, answer order-status questions, chase payments and route quality failures.",
+  "pricing": "Factory OS ₹2,999/month (14-day free trial); Factory ERP ₹4,999/month (adds accounting); Manufacturing HRMS ₹1,999/month up to 50 employees, then ₹25 per employee; no per-user charges; Go-Live setup quoted separately (factostack.com, retrieved 2026-10-30).",
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": []
+}

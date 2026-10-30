@@ -1,0 +1,124 @@
+{
+  "key": "edmund",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Edmund s.r.o. (edmundai.com, also styled 'Edmund AI'), the Czech start-up founded in 2023 by Jakub Szlaur (CEO), Benjamin Przeczek (COO) and Miroslav Marek (CSO) that sells an 'AI debugging platform for industrial maintenance'. The domain was confirmed through Tech.eu's link and Vestbee's mention of edmundai.com; the company site and careers page, Tech.eu, TechFundingNews, Vestbee, inforcapital (the lead), AIN, The AI Insider and CzechCrunch (cc.cz) all describe the same founders, product (agents reading PLC projects, schematics, documentation, maintenance logs and live machine data to find fault root causes) and investors (Czech Founders VC, Lighthouse Ventures, Tensor Ventures, FORWARD.one, U2V). The domain is not 'edmund.com' or similar; the name is common, and no other Edmund business is linked. The lead and several articles say Prague; the company's own footer and careers page put the HQ in Ostrava with a Prague office (see conflicts). Not in the PROJECT_CONTEXT §7 seed list; found through a discovery search. Category set to direct: its agents serve maintenance technicians and engineers on the shop floor, diagnosing machine stoppages down to PLC code, schematics and maintenance history and logging repairs by voice. That is Utopian Autonomy's maintenance / process-stability function for plant staff. Differences: maintenance and automation only (no procurement, RFQ / BOM or drawing agents), a chat / voice web interface rather than WhatsApp, and European (Czech, German-owned and multinational) plants rather than Indian SMEs.",
+  "pages": [
+    { "url": "https://www.edmundai.com/", "title": "Edmund (homepage: AI debugging platform for every machine on your line)", "publisher": "Edmund s.r.o.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.edmundai.com/careers", "title": "Edmund careers", "publisher": "Edmund s.r.o.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tech.eu/2026/04/09/edmund-secures-eur25m-to-bring-ai-driven-troubleshooting-to-the-factory-floor/", "title": "Edmund secures €2.5M to bring AI-driven troubleshooting to the factory floor", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techfundingnews.com/edmund-2-5m-factory-ai-prague/", "title": "Edmund grabs €2.5M from FORWARD.one to fix manufacturing's brain drain before an entire generation retires", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.vestbee.com/insights/articles/edmund-raises-2-5-m", "title": "Czech's Edmund raises €2.5M to bring AI-powered industrial troubleshooting to Europe and the US", "publisher": "Vestbee", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/czech-startup-edmund-raises-25-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance", "title": "Edmund Secures €2.5M for AI Industrial Maintenance Platform", "publisher": "Inforcapital", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://theaiinsider.tech/2025/02/16/edmund-secures-e500k-pre-seed-funding-to-drive-ai-innovation-in-manufacturing/", "title": "Edmund Secures €500K Pre-Seed Funding to Drive AI Innovation in Manufacturing", "publisher": "The AI Insider", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://en.ain.ua/2025/02/12/edmund-raises-eur500000", "title": "Edmund raises €500,000 in funding to expand into US and global markets", "publisher": "AIN", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://cc.cz/odhali-poruchu-a-vymysli-reseni-ostravsky-startup-pomaha-v-prumyslu-ziskal-prvni-investici/", "title": "Odhalí poruchu a vymyslí řešení. Ostravský startup pomáhá v průmyslu, získal první investici", "publisher": "CzechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Edmund",
+    "website": "https://www.edmundai.com/",
+    "description": "Ostrava-based start-up (Edmund s.r.o.) whose AI agents diagnose machine faults for maintenance teams by reading PLC code, schematics, manuals, alarms, maintenance logs and live machine data.",
+    "hq_country": "CZ",
+    "founded_year": 2023,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Maintenance and automation troubleshooting on the shop floor: a PLC agent (Siemens TIA Portal, Rockwell Allen-Bradley, Omron; anything compiling to IEC 61131-3; Codesys, Beckhoff, Schneider, WAGO 'coming soon'), robotics intelligence (ABB RAPID; FANUC, KUKA, Yaskawa coming), an ePLAN schematics agent, an SQL / MES agent, a document agent, maintenance journals (technicians dictate notes at the machine) and data-health checks. Root-cause analysis with step-by-step repair guidance via an 'Ask Edmund' chat and voice. Hosting: cloud, hybrid, on-premises or upload-only (AWS EU / US). Distribution partly through machine builders (CzechCrunch, 2024).",
+  "founders": ["Jakub Szlaur", "Benjamin Przeczek", "Miroslav Marek"],
+  "named_customers": ["Amcor Flexibles", "Model Group (Model Obaly)", "MoraviaCANS", "Festo", "Ferrit", "Vitesco Technologies", "Brose", "Schaeffler", "Škoda", "FERMAT", "COMPLETE CZ", "Innomotics", "IKEA Industry", "Wittmann"],
+  "product_summary": "An AI debugging platform for industrial maintenance: agents ingest a line's PLC programs, robot code, electrical schematics, manuals, alarms, MES data and maintenance journals, then trace a stoppage to its root cause and give technicians step-by-step fixes through chat or voice, logging repairs back into the maintenance record.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 18,
+    "pages": [1],
+    "snippet": "Three founders, fifteen engineers, split between an Ostrava HQ and a Prague office. (careers page; approximate, 3 + 15)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Edmund", "website": "https://www.edmundai.com/", "description": "AI agents that diagnose machine faults for maintenance teams from PLC code, schematics, documents and maintenance logs.", "hq_country": "CZ", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "pre_seed",
+      "stage_raw": "Initial validation investment of €40,000 (CZK 1 million) plus acceleration, from Czech Founders VC",
+      "date": "2024-08-07",
+      "date_precision": "day",
+      "amount_original": 40000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Czech Founders VC"],
+      "pages": [8],
+      "snippet": "Kolik a v jakém kole: 40 tisíc eur (jeden milion korun) a akceleraci v úvodním kole"
+    },
+    {
+      "company": { "name": "Edmund", "website": "https://www.edmundai.com/", "description": "AI agents that diagnose machine faults for maintenance teams from PLC code, schematics, documents and maintenance logs.", "hq_country": "CZ", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed (€500,000)",
+      "date": "2025-02-12",
+      "date_precision": "day",
+      "amount_original": 500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Lighthouse Ventures"],
+      "participants": ["Czech Founders VC", "Borovicka Capital", "Tensor Ventures"],
+      "unspecified": [],
+      "pages": [7, 6, 5, 1],
+      "snippet": "closed a €500,000 pre-seed round"
+    },
+    {
+      "company": { "name": "Edmund", "website": "https://www.edmundai.com/", "description": "AI agents that diagnose machine faults for maintenance teams from PLC code, schematics, documents and maintenance logs.", "hq_country": "CZ", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "€2.5M round; called seed by inforcapital, unlabelled by Tech.eu, Vestbee and TFN",
+      "date": "2026-04-09",
+      "date_precision": "day",
+      "amount_original": 2500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["FORWARD.one"],
+      "participants": ["University2Ventures", "Tensor Ventures"],
+      "unspecified": [],
+      "pages": [2, 3, 4, 5, 1],
+      "snippet": "has raised €2.5 million in funding led by FORWARD.one"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq city",
+      "values": [
+        "Ostrava: company footer '© 2026 Edmund s.r.o. · Ostrava'; careers page 'an Ostrava HQ and a Prague office'; CzechCrunch 2024 'Sídlo startupu: Ostrava'",
+        "Prague: inforcapital and Vestbee give Prague as HQ; TFN says it was founded in Prague"
+      ],
+      "chosen": "Ostrava (country CZ either way)",
+      "reason": "The company's own pages name Ostrava as HQ; Prague is its sales office."
+    },
+    {
+      "field": "rounds[2026-04].stage",
+      "values": [
+        "seed (inforcapital: 'closed a €2.5 million seed funding round')",
+        "pre-seed (the company's careers page still says 'We are pre-seed and we ship every week.')",
+        "unlabelled 'funding' (Tech.eu, Vestbee, TFN)"
+      ],
+      "chosen": "seed",
+      "reason": "It follows an explicitly labelled €500K pre-seed; the careers text likely predates the April 2026 round."
+    },
+    {
+      "field": "rounds[2026-04].amount",
+      "values": ["€2.5M (Tech.eu, Vestbee, TFN, inforcapital article text)", "$2.7M (inforcapital deal snapshot)"],
+      "chosen": "2500000 EUR",
+      "reason": "The dollar figure is a currency conversion of the same round; the round was announced in euros."
+    }
+  ],
+  "open_items": [
+    "Total raised: about €3.04M by sum of the three rounds found (€40K + €500K + €2.5M); no page states a total.",
+    "The €40K Czech Founders VC cheque (CzechCrunch, 2024-08-07) is recorded as a separate pre-seed / validation round; Czech Founders VC then joined the €500K pre-seed. A Techleap feed item ('edmund-ai-secures-40k-investment') seen in search was not opened.",
+    "The homepage footer also credits Czech public funding (Technological Incubation programme via CzechInvest, NextGenerationEU / National Recovery Plan); grant amount not stated, not recorded as a round.",
+    "Pre-seed: The AI Insider dated 2025-02-16 and AIN 2025-02-12; AIN date used. A search result showed startupintros listing the pre-seed as $580K (likely conversion); not opened.",
+    "named_customers: Amcor Flexibles, Model Obaly and MoraviaCANS have case studies; the rest appear as logos under 'Trusted by leading European manufacturers' (homepage), plus Festo ČR and Ferrit named by CzechCrunch (2024) and Festo / Vitesco Technologies by The AI Insider (2025). Brose Kopřivnice, IKEA Industry Malacky and Innomotics case studies are marked 'In preparation'. TFN calls Model Group the biggest customer (four Czech factories). The homepage cites '13 production groups · 4 countries'.",
+    "Headcount 18 is the careers page's 'three founders, fifteen engineers' (current at retrieval; may exclude non-engineering staff). LinkedIn not used.",
+    "Revenue not publicly reported; pricing not public (the homepage has a savings calculator, not prices).",
+    "No WhatsApp channel seen; interface is an 'Ask Edmund' chat plus voice dictation at the machine."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "key": "sea12",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Sea12 (Sea12 Technologies Inc., sea12.co; sea12.com serves the same site), a New York start-up (425 Broadway, SoHo) that builds LLM workflow automation for heavy-industry back offices. Also Capital's homepage lists 'Sea12 - Forward-deployed AI engineering for legacy industry automation' linking https://www.sea12.co/; citybiz links sea12.co and The SaaS News gives 'Company Website: https://sea12.co'; both name the same co-founders (Thomas Mosen, Charles Englander) and customer (Basden Steel). An SEC full-text search shows one Form D from 'Sea12 Technologies Inc.' (Delaware, New York, NY) filed 2026-03-17. No other company called Sea12 was seen. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; found through Also Capital's portfolio): Sea12 automates operational paperwork for steel, manufacturing, logistics and construction companies (order documents, routing parts to the right shop, quoting, inventory and reorder points, invoices), which touches Utopian Autonomy's RFQ / procurement-adjacent workflows at the same industrial buyers, and its manufacturing page pitches real-time operations data and safety Q&A for plant teams. It is not direct because its centre of gravity is back-office and finance work delivered as custom forward-deployed builds across several industries, not plant-floor agents for maintenance, process stability or engineering drawings, and no WhatsApp or shop-floor messaging channel was seen. Layer plant_ops is the nearest fit.",
+  "pages": [
+    { "url": "https://www.sea12.co/", "title": "Sea12 Technologies", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.sea12.co/orchestrator", "title": "Orchestrator | Sea12 Technologies", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.sea12.co/industries/manufacturing", "title": "Sea12 for Manufacturing", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.sea12.co/perspectives/revitalizing-american-manufacturing-with-ai-powered-automation", "title": "Revitalizing American manufacturing with AI-powered automation | Sea12 Technologies", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://careers.sea12.com/", "title": "Careers — SEA12", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://careers.sea12.com/jobs/fde", "title": "Forward Deployed Engineer — SEA12 Careers", "publisher": "Sea12", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.citybiz.co/article/863009/sea12-gains-25m-to-push-back-office-ai-operations/", "title": "Sea12 Gains $25M to Push Back Office AI Operations", "publisher": "citybiz", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.thesaasnews.com/news/sea12-raises-25m-series-a/", "title": "Sea12 Raises $25M Series A", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/sea12-technologies-raises-25-million-for-end-to-end-workflow-automation-platform", "title": "Sea12 Technologies Raises $25M for Workflow Automation", "publisher": "Inforcapital", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.trysignalbase.com/news/funding/sea12-raises-250m-series", "title": "Sea12 Raises $25.0M Series | Signalbase", "publisher": "Signalbase", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sea12%22&forms=D", "title": "SEC EDGAR full-text search: Form D filings mentioning 'Sea12'", "publisher": "U.S. Securities and Exchange Commission", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://alsocapital.com/", "title": "Also Capital (homepage portfolio)", "publisher": "Also Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Sea12",
+    "website": "https://www.sea12.co/",
+    "description": "New York start-up that builds LLM automations for back-office workflows (order documents, quoting, inventory, invoicing) at manufacturing, steel, logistics and construction firms, with forward-deployed engineers.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "ai_apps_agents",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Industrial back office rather than the plant floor: the Sea12 Orchestrator sits on a customer's existing applications and data feeds and automates departmental workflows (quoting and proposals, inventory levels and reorder points, invoice creation and payment processing, truck location and load updates in the TMS). At Basden Steel it handles order documents, routes parts to the right shop, processes invoices and catches double billing; construction work includes turning schedules, RFIs, submittals and cost records into a question-answering system. Manufacturing page also offers real-time operations data and a cited, safety-aware knowledge assistant. Delivered by forward-deployed engineers; users are office and operations staff.",
+  "founders": ["Thomas Mosen", "Charles Englander"],
+  "named_customers": ["Basden Steel"],
+  "product_summary": "The Sea12 Orchestrator plus forward-deployed engineers: LLM automations built on a customer's existing applications and data feeds that run whole back-office workflows (order documents, quoting, inventory and reorder points, invoicing and payments, TMS load updates), plus natural-language knowledge search over manufacturing and safety documents.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 14,
+    "pages": [6],
+    "snippet": "Approximate (citybiz, 2026-06-19): The startup says it now has seven-figure annual revenue, 14 employees and another four open roles."
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Sea12", "website": "https://www.sea12.co/", "description": "New York start-up that builds LLM automations for back-office workflows (order documents, quoting, inventory, invoicing) at manufacturing, steel, logistics and construction firms, with forward-deployed engineers.", "hq_country": "US", "founded_year": 2024, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Initial seed round of 'about $4 million' (co-founder's account to citybiz; date and investors not stated)",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [6],
+      "snippet": "He said the company raised an initial seed round of about $4 million, followed by a Series A"
+    },
+    {
+      "company": { "name": "Sea12", "website": "https://www.sea12.co/", "description": "New York start-up that builds LLM automations for back-office workflows (order documents, quoting, inventory, invoicing) at manufacturing, steel, logistics and construction firms, with forward-deployed engineers.", "hq_country": "US", "founded_year": 2024, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A (Form D filed 2026-03-17; first press 2026-06-19; Inforcapital reports 13 investors in the filing)",
+      "date": "2026-03",
+      "date_precision": "month",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Caffeinated Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7, 6, 8, 10, 9],
+      "snippet": "Sea12 raises $25M in Series A funding led by Caffeinated Capital to scale its AI-powered back-office automation software for heavy industry workflows."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[series_a].amount",
+      "values": [
+        "$25M Series A (The SaaS News; Inforcapital, from a regulatory filing; Signalbase)",
+        "A Series A 'that brought total funding to roughly $25 million', after a seed of about $4M, i.e. a Series A of roughly $21M (citybiz, paraphrasing co-founder Thomas Mosen)"
+      ],
+      "chosen": "$25M",
+      "reason": "Two pages give $25M as the round size, one of them tied to the Form D; citybiz's figure is a rounded founder recollection. The Form D itself could not be read (EDGAR refused the request), so this stays open."
+    },
+    {
+      "field": "rounds[series_a].date",
+      "values": [
+        "2026-03-17 (Form D filing date, SEC full-text search)",
+        "2026-03-21 (Inforcapital item on the filing)",
+        "2026-06-19 (citybiz article; The SaaS News lists 'Funding Date: June 19, 2026' and published 2026-06-21)"
+      ],
+      "chosen": "2026-03 (month precision)",
+      "reason": "The Form D filing is the earliest public trace of the round; the June dates are when the press covered it, citing the founders."
+    }
+  ],
+  "open_items": [
+    "Total raised: about $29M by sum of the disclosed rounds ($4M seed + $25M Series A), but citybiz puts total funding at 'roughly $25 million'; see conflicts.",
+    "Form D (SEC accession 0002120919-26-000001, filed 2026-03-17, exemption item '06B' in the search index): amount sold and investor count not read; sec.gov/Archives refused the 'CapitalAtlas research' User-Agent.",
+    "Series A participants other than the lead not named on any page read (Inforcapital: 'thirteen distinct investors ... not disclosed'). Also Capital's homepage lists Sea12 with the tag 'Series A', which suggests Also joined at the Series A, but no page says so; Also is not recorded in the round.",
+    "Seed: date and investors not found; only the co-founder's 'about $4 million' in citybiz.",
+    "Revenue: citybiz says the company has 'seven-figure annual revenue' (June 2026) and wants to pass $15M annual revenue before a Series B; no amount is reported, so revenue_reported is null.",
+    "Headcount 14 is from June 2026 press; the careers page (October 2026) lists two open roles (forward-deployed engineer, platform infrastructure engineer), New York, in person.",
+    "Founded: citybiz says Sea12 launched in May 2024 in New York; The SaaS News and Inforcapital say founded 2024. citybiz opens with 'A New Zealand founder' and then quotes Mosen; which co-founder is meant, and individual roles (CEO etc.), are not stated.",
+    "The site's meta description still calls Sea12 'a custom software development firm'; citybiz says it began with one-off custom AI tools before building its own product.",
+    "Pricing not public. No WhatsApp or shop-floor messaging channel seen."
+  ]
+}

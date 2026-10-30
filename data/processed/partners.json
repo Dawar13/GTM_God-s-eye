@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T08:10:05+00:00",
+  "generated_at": "2026-10-30T08:48:20+00:00",
   "records": [
     {
       "id": "ptr_100x-vc_ninad-karpe",
@@ -1242,10 +1242,45 @@
       "confidence": "high"
     },
     {
+      "id": "ptr_bee-partners_kira-noodleman",
+      "investor_id": "inv_bee-partners",
+      "name": "Kira Noodleman",
+      "title": "Partner",
+      "focus_sectors": [
+        "robotics_physical_ai",
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/07/05/raising-capital-for-robotics-startups-with-bee-partners-and-rapid-robotics/",
+          "title": "Raising capital for robotics startups with Bee Partners and Rapid Robotics",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/",
+          "title": "We are entering a golden age of robotics startups — and not just because of AI",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.vcsheet.com/fund/bee-partners",
+          "title": "Bee Partners",
+          "publisher": "VC Sheet",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
       "id": "ptr_bee-partners_michael-berolzheimer",
       "investor_id": "inv_bee-partners",
       "name": "Michael Berolzheimer",
-      "title": "Managing Partner",
+      "title": "Founder and Managing Partner",
       "focus_sectors": [],
       "linkedin_url": null,
       "sources": [
@@ -1255,9 +1290,30 @@
           "publisher": "TechCrunch",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
+        },
+        {
+          "url": "https://news.crunchbase.com/?p=20412",
+          "title": "Bee Partners Raises $43M For Its Third Pre-Seed Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.vcsheet.com/fund/bee-partners",
+          "title": "Bee Partners",
+          "publisher": "VC Sheet",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/07/10/sourcetable-seed-investment/",
+          "title": "Sourcetable raises $3M, claiming the future of spreadsheets is spreadsheets",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "ptr_bezos-expeditions_jeff-bezos",
@@ -1687,6 +1743,186 @@
       "confidence": "high"
     },
     {
+      "id": "ptr_conviction-partners_bella-garcia-camargo",
+      "investor_id": "inv_conviction-partners",
+      "name": "Bella Garcia-Camargo",
+      "title": null,
+      "focus_sectors": [
+        "dev_tools",
+        "ai_apps_agents"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.conviction.com/",
+          "title": "Conviction Partners",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.conviction.com/launches/corridor.html",
+          "title": "Investing in Corridor",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://colossus.com/article/sarah-guo-conviction/",
+          "title": "Sarah Guo's Wager",
+          "publisher": "Colossus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_conviction-partners_jedd-horowitz",
+      "investor_id": "inv_conviction-partners",
+      "name": "Jedd Horowitz",
+      "title": null,
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/jeddhorowitz/",
+      "sources": [
+        {
+          "url": "https://www.conviction.com/",
+          "title": "Conviction Partners",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_conviction-partners_mike-vernal",
+      "investor_id": "inv_conviction-partners",
+      "name": "Mike Vernal",
+      "title": "General Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "dev_tools"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.conviction.com/",
+          "title": "Conviction Partners",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/01/31/guos-conviction-partners-adds-mike-vernal-as-gp-raises-230m-fund/",
+          "title": "Guo's Conviction Partners adds Mike Vernal as GP, raises $230M fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://colossus.com/article/sarah-guo-conviction/",
+          "title": "Sarah Guo's Wager",
+          "publisher": "Colossus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://corridor.dev/blog/series-a",
+          "title": "Corridor Raises $25M Series A to Secure AI Coding at the Source",
+          "publisher": "Corridor",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_conviction-partners_pranav-reddy",
+      "investor_id": "inv_conviction-partners",
+      "name": "Pranav Reddy",
+      "title": null,
+      "focus_sectors": [
+        "ai_apps_agents",
+        "health_bio"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.conviction.com/",
+          "title": "Conviction Partners",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.conviction.com/launches/sola.html",
+          "title": "Investing in Sola",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.conviction.com/launches/latent.html",
+          "title": "Investing in Latent",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://colossus.com/article/sarah-guo-conviction/",
+          "title": "Sarah Guo's Wager",
+          "publisher": "Colossus",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_conviction-partners_sarah-guo",
+      "investor_id": "inv_conviction-partners",
+      "name": "Sarah Guo",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "ai_infra",
+        "robotics_physical_ai"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.conviction.com/",
+          "title": "Conviction Partners",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.wired.com/story/memo-sunday-robotics-home-robot/",
+          "title": "This Home Robot Clears Tables and Loads the Dishwasher All by Itself",
+          "publisher": "WIRED",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.conviction.com/launching-with-conviction.html",
+          "title": "Launching With Conviction",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://onyx.security/press-release/onyx-security-launches-with-40m-in-funding-to-build-the-secure-ai-control-plane-for-the-agentic-era",
+          "title": "Onyx Security Launches with $40M in Funding to Build the Secure AI Control Plane for the Agentic Era",
+          "publisher": "Onyx Security (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "ptr_crane-venture-partners_anandamoy-roychowdhary",
       "investor_id": "inv_crane-venture-partners",
       "name": "Anandamoy Roychowdhary",
@@ -1875,6 +2111,120 @@
           "url": "https://crane.vc/team",
           "title": "Team - Crane Venture Partners",
           "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_curiosity_akshata-agarwal",
+      "investor_id": "inv_curiosity",
+      "name": "Akshata Agarwal",
+      "title": "Principal",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/akshata-a-84602435/",
+      "sources": [
+        {
+          "url": "https://curiosityvc.com/team",
+          "title": "Team - Curiosity VC",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_curiosity_herman-kienhuis",
+      "investor_id": "inv_curiosity",
+      "name": "Herman Kienhuis",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "ai_infra",
+        "fintech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/hermankienhuis/",
+      "sources": [
+        {
+          "url": "https://curiosityvc.com/team",
+          "title": "Team - Curiosity VC",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/curiosity-vc-closes-eu17m-first-tranche-of-fund-ii-to-back-vertical-ai-startups-across-europe",
+          "title": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/curiosity-leads-15million-pre-seed-round-in-ai-native-sme-credit-provider-duqu",
+          "title": "Curiosity leads €1.5 million pre-seed round in AI-native SME credit provider Duqu",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/orq-ai-closes-eu5m-in-seed-funding-to-help-enterprises-deploy-ai-agents-at-scale",
+          "title": "Orq.ai Closes €5M in Seed Funding to Help Enterprises Deploy AI Agents at Scale",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_curiosity_maurice-beckand-verwee",
+      "investor_id": "inv_curiosity",
+      "name": "Maurice Beckand Verwee",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "enterprise_saas"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/mauricebv",
+      "sources": [
+        {
+          "url": "https://curiosityvc.com/team",
+          "title": "Team - Curiosity VC",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/imperum-funding-round",
+          "title": "Imperum raises seed round to scale its autonomous SOC platform",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/curiosity-vc-closes-eu17m-first-tranche-of-fund-ii-to-back-vertical-ai-startups-across-europe",
+          "title": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_curiosity_sebastian-johansson",
+      "investor_id": "inv_curiosity",
+      "name": "Sebastian Johansson",
+      "title": "Investment manager",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/sebastianljohansson/",
+      "sources": [
+        {
+          "url": "https://curiosityvc.com/team",
+          "title": "Team - Curiosity VC",
+          "publisher": "Curiosity",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -2654,6 +3004,286 @@
       "confidence": "high"
     },
     {
+      "id": "ptr_gradient_andrew-brackin",
+      "investor_id": "inv_gradient",
+      "name": "Andrew Brackin",
+      "title": "Partner",
+      "focus_sectors": [
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/forging-the-future-ai-powered-procurement-for-hardware-companies/",
+          "title": "Forging the Future: AI-Powered Procurement for Hardware Companies",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_clayton-petty",
+      "investor_id": "inv_gradient",
+      "name": "Clayton Petty",
+      "title": "Partner",
+      "focus_sectors": [
+        "supply_chain_logistics",
+        "industrial_manufacturing",
+        "enterprise_saas"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/clayton-petty-partner/",
+          "title": "Gradient Promotes Clayton Petty to Partner",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/backops-series-a/",
+          "title": "BackOps: The Intelligence Layer Warehouse Operators Deserve",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_darian-shirazi",
+      "investor_id": "inv_gradient",
+      "name": "Darian Shirazi",
+      "title": "General Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "robotics_physical_ai"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/fund-5/",
+          "title": "Ten years of AI investing, and just getting started: Introducing Gradient's $220 million Fund 5",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/photon-codes/",
+          "title": "Photon: The Messaging Platform for AI Agents",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/24/meet-feather-the-startup-building-the-android-of-robotics-for-developers/",
+          "title": "Meet Feather, the startup building the 'Android of robotics' for developers",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/gradient-220-million-raised-for-ai-seed-fund/amp/",
+          "title": "Gradient: $220 Million Raised For AI Seed Fund",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://globalventuring.com/corporate/information-technology/google-backed-vc-gradient-launches-220m-al-seed-fund/",
+          "title": "Google-backed VC Gradient launches $220m AI seed fund",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_denise-teng",
+      "investor_id": "inv_gradient",
+      "name": "Denise Teng",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "dev_tools"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/investing-in-zeroset/",
+          "title": "Zeroset: Modeling the Enterprise for Long-Horizon Agents",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/anchor-browser/",
+          "title": "Our Investment in Anchor",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/nango-integration-infrastructure-ai-agents/",
+          "title": "Nango: Open-Source Integration Runtime for Production AI Agents",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_kyle-duffy",
+      "investor_id": "inv_gradient",
+      "name": "Kyle Duffy",
+      "title": "Operating Partner",
+      "focus_sectors": [
+        "ai_infra"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/credible-context-engine-for-enterprise/",
+          "title": "Credible: The Context Engine for Enterprise AI",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_vig-sachidananda",
+      "investor_id": "inv_gradient",
+      "name": "Vig Sachidananda",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "ai_infra"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/photon-codes/",
+          "title": "Photon: The Messaging Platform for AI Agents",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/anchor-browser/",
+          "title": "Our Investment in Anchor",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_gradient_zach-bratun-glennon",
+      "investor_id": "inv_gradient",
+      "name": "Zach Bratun-Glennon",
+      "title": "General Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "supply_chain_logistics",
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.gradient.com/team/",
+          "title": "Gradient | Team",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2026/03/17/google-backed-ai-investors-nobody-took-seriously-2017-raised-220-million-gradient/",
+          "title": "The Google-backed AI investors nobody took seriously in 2017 just raised $220 million",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/fund-5/",
+          "title": "Ten years of AI investing, and just getting started: Introducing Gradient's $220 million Fund 5",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/backops-series-a/",
+          "title": "BackOps: The Intelligence Layer Warehouse Operators Deserve",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/forging-the-future-ai-powered-procurement-for-hardware-companies/",
+          "title": "Forging the Future: AI-Powered Procurement for Hardware Companies",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/blog/posts/nango-integration-infrastructure-ai-agents/",
+          "title": "Nango: Open-Source Integration Runtime for Production AI Agents",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "ptr_haystack_aashay-sanghvi",
       "investor_id": "inv_haystack",
       "name": "Aashay Sanghvi",
@@ -3331,6 +3961,59 @@
         }
       ],
       "confidence": "high"
+    },
+    {
+      "id": "ptr_jump-capital_saaya-pal",
+      "investor_id": "inv_jump-capital",
+      "name": "Saaya Pal",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_infra",
+        "enterprise_saas"
+      ],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.vcaonline.com/news/2026031110/standard-kernel-raises-20m-seed-round-to-let-ai-rewrite-the-software-that-runs-ai/",
+          "title": "Standard Kernel Raises $20M Seed Round to Let AI Rewrite the Software That Runs AI",
+          "publisher": "Venture Capital Access Online",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ynetnews.com/business/article/hj6nn1asze",
+          "title": "Israeli AI cybersecurity startup Pluto emerges from stealth with $42 million",
+          "publisher": "Ynetnews (Calcalist)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_jump-capital_sach-chitnis",
+      "investor_id": "inv_jump-capital",
+      "name": "Sach Chitnis",
+      "title": "Co-founder & Partner",
+      "focus_sectors": [],
+      "linkedin_url": null,
+      "sources": [
+        {
+          "url": "https://www.itiger.com/news/1107379290",
+          "title": "Jump Capital Raises $350 Million Fresh Fund, Targeted at Artificial Intelligence Investments",
+          "publisher": "Deep News via Tiger Brokers",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "medium"
     },
     {
       "id": "ptr_kalaari-capital_jayraj-bharat-patel",
@@ -5001,6 +5684,226 @@
       "confidence": "high"
     },
     {
+      "id": "ptr_primary-venture-partners_brad-svrluga",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Brad Svrluga",
+      "title": "Managing Partner, Co-CIO",
+      "focus_sectors": [
+        "enterprise_saas",
+        "supply_chain_logistics",
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/bradsvrluga/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/brad-svrluga",
+          "title": "Brad Svrluga | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_primary-venture-partners_brian-schechter",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Brian Schechter",
+      "title": "Partner, Compute",
+      "focus_sectors": [
+        "ai_infra",
+        "hardware_deeptech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/brian-schechter-1822ba16/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/brian-schechter",
+          "title": "Brian Schechter | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_primary-venture-partners_cassie-young",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Cassie Young",
+      "title": "Partner, Enterprise AI",
+      "focus_sectors": [
+        "enterprise_saas",
+        "ai_apps_agents"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/cassyoung/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/cassie-young",
+          "title": "Cassie Young | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_primary-venture-partners_emily-man",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Emily Man",
+      "title": "Partner, Enterprise AI",
+      "focus_sectors": [
+        "fintech",
+        "ai_apps_agents",
+        "enterprise_saas"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/emily-man-02a1a486/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/emily-man",
+          "title": "Emily Man | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_primary-venture-partners_jason-shuman",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Jason Shuman",
+      "title": "Partner, Physical AI",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "robotics_physical_ai"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/jasonshuman/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/jason-shuman",
+          "title": "Jason Shuman | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_primary-venture-partners_zach-fredericks",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Zach Fredericks",
+      "title": "Principal, Industrials",
+      "focus_sectors": [
+        "industrial_manufacturing",
+        "supply_chain_logistics",
+        "climate_energy"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/zach-fredericks/",
+      "sources": [
+        {
+          "url": "https://www.primary.vc/team/zach-fredericks",
+          "title": "Zach Fredericks | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/people",
+          "title": "Primary | People",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://thenextweb.com/news/forgepoint-9-8m-seed-ai-quoting-manufacturers-frank",
+          "title": "Forgepoint raises $9.8M to help manufacturers quote faster",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "ptr_prime-movers-lab_andrei-iancu",
       "investor_id": "inv_prime-movers-lab",
       "name": "Andrei Iancu",
@@ -5153,6 +6056,40 @@
           "publisher": "Humanoid (SKL Robotics Ltd)",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_pritzker-group-venture-capital_chris-girgenti",
+      "investor_id": "inv_pritzker-group-venture-capital",
+      "name": "Chris Girgenti",
+      "title": "Managing Partner - Venture Capital",
+      "focus_sectors": [
+        "hardware_deeptech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/cegirgenti",
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20250116125528/https://www.pritzkergroup.com/venture-capital/team/",
+          "title": "Team - Pritzker Group (Internet Archive capture of 2025-01-16)",
+          "publisher": "Pritzker Group",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://web.archive.org/web/20250523184650/https://www.pritzkergroup.com/vc_team/chris-girgenti/",
+          "title": "Chris Girgenti - Pritzker Group (Internet Archive capture of 2025-05-23)",
+          "publisher": "Pritzker Group",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://builtin.com/articles/pritzker-groups-new-world-ventures-expands-focus-changes-name",
+          "title": "Pritzker Groups' New World Ventures expands focus, changes name",
+          "publisher": "Built In (originally posted on PE Hub)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "confidence": "high"
@@ -5740,6 +6677,260 @@
           "url": "https://www.scout.vc/team",
           "title": "Scout Ventures | Team",
           "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_julien-bek",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Julien Bek",
+      "title": "Partner",
+      "focus_sectors": [
+        "robotics_physical_ai",
+        "hardware_deeptech",
+        "ai_apps_agents",
+        "supply_chain_logistics"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/julienbek/?locale=en_US",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/julien-bek",
+          "title": "Julien Bek | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-magentic-ai-driven-savings-for-the-worlds-supply-chains",
+          "title": "Partnering with Magentic: AI-Driven Savings for the World's Supply Chains",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-auctor",
+          "title": "Partnering with Auctor: AI Autopilot for Software Implementation",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_konstantine-buhler",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Konstantine Buhler",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "enterprise_saas",
+        "fintech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/konstantinebuhler/",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/konstantine-buhler",
+          "title": "Konstantine Buhler | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-fund-and-arc-announcement",
+          "title": "Seed Fund V: Forging the Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-rox-every-seller-needs-an-agent-swarm",
+          "title": "Partnering with Rox: Every Seller Needs an Agent Swarm",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-probook-ai-for-the-trades",
+          "title": "Partnering with Probook: AI for the Trades",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_lauren-reeder",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Lauren Reeder",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "ai_infra",
+        "dev_tools",
+        "consumer"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/lauren-reeder",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/lauren-reeder",
+          "title": "Lauren Reeder | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-fund-and-arc-announcement",
+          "title": "Seed Fund V: Forging the Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-pace-making-work-weightless",
+          "title": "Partnering with Pace: Making Work Weightless",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_liam-corrigan",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Liam Corrigan",
+      "title": null,
+      "focus_sectors": [
+        "hardware_deeptech",
+        "climate_energy"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/liamcorrigan1/",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/liam-corrigan",
+          "title": "Liam Corrigan | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_shaun-maguire",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Shaun Maguire",
+      "title": "Partner",
+      "focus_sectors": [
+        "hardware_deeptech",
+        "robotics_physical_ai",
+        "ai_infra",
+        "crypto_web3"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/shaun-maguire-c/",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/shaun-maguire",
+          "title": "Shaun Maguire | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-fund-and-arc-announcement",
+          "title": "Seed Fund V: Forging the Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-sable-closing-the-diffusion-gap",
+          "title": "Partnering with Sable: Closing the Diffusion Gap",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-corma-closing-the-defensive-cybersecurity-gap",
+          "title": "Partnering with Corma: Closing the Defensive Cybersecurity Gap",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_sequoia-capital_stephanie-zhan",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Stephanie Zhan",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_infra",
+        "ai_apps_agents",
+        "robotics_physical_ai",
+        "hardware_deeptech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/stephaniezhan/",
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/people/stephanie-zhan",
+          "title": "Stephanie Zhan | Sequoia Capital",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-fund-and-arc-announcement",
+          "title": "Seed Fund V: Forging the Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-ricursive-intelligence-a-premier-frontier-lab-pioneering-ai-for-chip-design",
+          "title": "Partnering with Ricursive Intelligence: A Premier Frontier Lab Pioneering AI for Chip Design",
+          "publisher": "Sequoia Capital",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -6399,6 +7590,236 @@
           "url": "https://techcrunch.com/2024/01/30/ubiquity-ventures-75m-fund-3-software-beyond-the-screen/",
           "title": "Ubiquity Ventures secures $75M for Fund III to invest in \"software beyond the screen\"",
           "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_catherine-ouellet-dupuis",
+      "investor_id": "inv_white-star-capital",
+      "name": "Catherine Ouellet-Dupuis",
+      "title": "General Partner",
+      "focus_sectors": [
+        "robotics_physical_ai",
+        "industrial_manufacturing",
+        "enterprise_saas"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/catherine-ouellet-dupuis-82463921/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/catherine-ouellet-dupuis/",
+          "title": "Catherine Ouellet-Dupuis - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/bringing-physical-ai-to-the-factory-floor-why-we-invested-in-autonomique-0c9858dfc7f7",
+          "title": "Bringing physical AI to the factory floor: why we invested in Autonomique",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.therobotreport.com/autonomique-deploys-semi-humanoid-robots-canadian-tier-1/",
+          "title": "Autonomique deploys semi-humanoid robots and AI at Canadian Tier 1",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-launches-north-american-seed-fund-cdd69751ff8c",
+          "title": "White Star Capital launches North American Seed Fund",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_christophe-bourque",
+      "investor_id": "inv_white-star-capital",
+      "name": "Christophe Bourque",
+      "title": "General Partner",
+      "focus_sectors": [
+        "industrial_manufacturing",
+        "ai_apps_agents",
+        "enterprise_saas"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/christophe-bourque-97897812/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/christophe-bourque/",
+          "title": "Christophe Bourque - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/escaping-the-pdf-graveyard-why-we-invested-in-tetrix-bbc268932554",
+          "title": "Escaping the PDF graveyard: why we invested in Tetrix",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_eddie-lee",
+      "investor_id": "inv_white-star-capital",
+      "name": "Eddie Lee",
+      "title": "General Partner",
+      "focus_sectors": [
+        "enterprise_saas",
+        "ai_infra",
+        "fintech"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/edwinlee01/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/eddie-lee/",
+          "title": "Eddie Lee - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/the-builders-of-america-deserve-better-software-why-we-invested-in-trayd-137d79964f64",
+          "title": "The builders of America deserve better software: why we invested in Trayd",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/construction-tech-automation-trayd-ai-seriesa/",
+          "title": "Exclusive: YC Doubles Down On Trayd, A Construction Tech Startup That Just Raised $10M In 3 Weeks",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/closing-the-enterprise-personalisation-gap-why-we-invested-in-sequen-698accfde582",
+          "title": "Closing the enterprise personalisation gap: why we invested in Sequen",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/building-the-modern-credit-network-for-b2b-payments-why-we-invested-in-oatfi-0a851a63ea42",
+          "title": "Building the modern credit network for B2B payments: why we invested in OatFi",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_eric-martineau-fortin",
+      "investor_id": "inv_white-star-capital",
+      "name": "Eric Martineau-Fortin",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": [
+        "ai_infra",
+        "consumer",
+        "health_bio"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/ericmartineaufortin/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/eric-martineau-fortin/",
+          "title": "Eric Martineau-Fortin - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-holds-final-close-of-250m-usd-for-fund-iv-0f4b5f5e7d1a",
+          "title": "White Star Capital holds final close of $250m USD for Fund IV",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_jean-francois-marcoux",
+      "investor_id": "inv_white-star-capital",
+      "name": "Jean-Francois Marcoux",
+      "title": "Co-Founder & Managing Partner",
+      "focus_sectors": [
+        "industrial_manufacturing",
+        "robotics_physical_ai",
+        "enterprise_saas"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/jean-francois-marcoux-3875924/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/jean-francois-marcoux/",
+          "title": "Jean-Francois Marcoux - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-holds-final-close-of-250m-usd-for-fund-iv-0f4b5f5e7d1a",
+          "title": "White Star Capital holds final close of $250m USD for Fund IV",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ptr_white-star-capital_sanjay-zimmermann",
+      "investor_id": "inv_white-star-capital",
+      "name": "Sanjay Zimmermann",
+      "title": "General Partner",
+      "focus_sectors": [
+        "enterprise_saas",
+        "dev_tools",
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/sanjayzimmermann/",
+      "sources": [
+        {
+          "url": "https://whitestarcapital.com/team/sanjay-zimmermann/",
+          "title": "Sanjay Zimmermann - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/building-the-future-of-construction-why-we-invested-in-billdr-39f1241fef5f",
+          "title": "Building the future of construction: why we invested in Billdr",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/bridging-the-messy-middle-of-design-why-we-invested-in-falcon-3fc3df10ab2b",
+          "title": "Bridging the messy middle of design: why we invested in Falcon",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-launches-north-american-seed-fund-cdd69751ff8c",
+          "title": "White Star Capital launches North American Seed Fund",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/white-star-capital-wants-to-lead-canadian-seed-rounds-with-new-50-million-usd-fund/",
+          "title": "White Star Capital wants to lead Canadian seed rounds with new $50-million USD fund",
+          "publisher": "BetaKit",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
         }

@@ -1,0 +1,71 @@
+{
+  "key": "1buy-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as 1Buy.AI (1buy.ai; legal entity Sharpbuy Global Solutions Private Limited per Inc42's profile), the Delhi electronics-procurement startup co-founded in 2023 by Visham Sikand, Nitin Jain and Pradeep Paliwal. The site's team page (read from the site's JavaScript bundle because the pages render client-side) names the same three co-founders as Entrackr, Entrepreneur India and Inc42 (January 2026 seed round), and Venture Intelligence links the deal to 1Buy.ai. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; candidate from a discovery search). 1Buy.AI works on manufacturers' bills of materials: it ingests a BOM from the ERP or an upload, flags price gaps, qualified alternates and supply risk (1Data), executes sourcing of high-impact parts with vetted global suppliers (1Source) and liquidates excess and end-of-life stock through a marketplace (1Xcess). That overlaps Utopian Autonomy's procurement and BOM functions for Indian manufacturers. It is not 'direct' because it covers only electronic components (EV, smart meters, industrial and consumer electronics), works partly as a sourcing and resale intermediary that positions itself against distributors rather than as plant-staff agents, and does not touch maintenance, process stability, RFQs for fabricated parts or engineering drawings; no WhatsApp channel was seen.",
+  "pages": [
+    { "url": "https://www.1buy.ai/", "title": "1BUY.AI | AI-Powered Electronics Procurement Intelligence", "publisher": "1Buy.AI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.1buy.ai/static/js/main.637cf61c.js", "title": "1BUY.AI site content bundle (Team, How It Works, Use Cases and About pages, rendered client-side)", "publisher": "1Buy.AI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://entrackr.com/snippets/1buyai-raises-rs-325-cr-in-seed-round-led-by-100unicorns-11039023", "title": "1Buy.AI raises Rs 32.5 Cr in seed round led by 100Unicorns", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://india.entrepreneur.com/news-and-trends/procurement-platform-1buyai-secures-inr-325-cr-seed/502280", "title": "Procurement Platform 1Buy.AI Secures INR 32.5 Cr Seed Funding", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/?p=546756", "title": "1Buy.AI Nets INR 33 Cr To Help Enterprises Procure Electronics Components", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.ventureintelligence.com/private-equity/electronic-items-procurement-enabler-1buy.ai-nets-rs.32.5-cr-led-by-100-unicorns", "title": "Electronic items procurement enabler 1Buy.ai nets Rs.32.5 Cr led by 100 Unicorns", "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/1buy-ai/funding/", "title": "1buy.ai Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "founders",
+      "values": ["Nitin Jain, Visham Sikand, Pradeep Paliwal (site team page; Entrackr; Entrepreneur India)", "Same three, 'later joined by Jaspreet Bhatia' (Inc42)", "Visham Sikand and Nitin Jain only (Venture Intelligence)"],
+      "chosen": "Visham Sikand, Nitin Jain, Pradeep Paliwal",
+      "reason": "The company's own team page lists exactly these three as co-founders; Inc42 describes Jaspreet Bhatia as a later joiner, not a founder."
+    }
+  ],
+  "open_items": [
+    "Revenue not recorded: the Inc42 database profile shows ₹86.0 lakh in FY25, but no fetched press article reports MCA revenue.",
+    "The 'other investors, including existing customers' in the seed round are not named. The Business Wire release (29 Jan 2026) returned HTTP 403.",
+    "No customers are named anywhere fetched; press says it serves several of India's largest electronics makers and large enterprises in India and overseas.",
+    "Headcount (45) is from the Inc42 database profile only; the LinkedIn company page was not checked.",
+    "No public pricing. The site's comparison table positions it against Lytica, distributors and marketplaces.",
+    "No round before January 2026 found; Venture Intelligence calls this the first institutional round."
+  ],
+  "company": {
+    "name": "1Buy.AI",
+    "website": "https://www.1buy.ai",
+    "description": "Delhi startup offering AI cost intelligence, sourcing execution and an excess-inventory marketplace for electronic components on manufacturers' bills of materials.",
+    "hq_country": "IN",
+    "founded_year": 2023,
+    "sector": "supply_chain_logistics",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Direct-material procurement for electronics makers rather than the plant floor (no procurement layer in the taxonomy; plant_ops is the nearest fit, as for Procol and Didero). Five-step flow: upload a BOM or connect the ERP, AI flags price gaps, qualified alternates and risk, the buyer decides to renegotiate, re-source or hold, high-impact parts are sourced through 1Source, and excess or end-of-life stock is sold through 1Xcess. Target segments: EVs, smart meters, industrial and consumer electronics. No WhatsApp channel seen.",
+  "founders": ["Visham Sikand", "Nitin Jain", "Pradeep Paliwal"],
+  "named_customers": [],
+  "product_summary": "Procurement platform for electronic components: it ingests a customer's bill of materials, benchmarks component prices, alternates and supply risk with AI (1Data), runs sourcing for high-impact parts through vetted global suppliers (1Source), and resells excess and obsolete inventory to approved buyers (1Xcess).",
+  "pricing": null,
+  "headcount_est": {
+    "value": 45,
+    "pages": [6],
+    "snippet": "Employee count: 45 (approximate: Inc42 company profile)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "1Buy.AI", "website": "https://www.1buy.ai", "description": "Delhi AI procurement platform for electronic components.", "hq_country": "IN", "founded_year": 2023, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed, INR 32.5 crore (Inc42 headline rounds to INR 33 Cr and gives $3.5M; Venture Intelligence calls it the first institutional round)",
+      "date": "2026-01-29",
+      "date_precision": "day",
+      "amount_original": 325000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["100Unicorns"],
+      "participants": ["Ashish Kacholia", "Gruhas", "FJ Labs"],
+      "unspecified": [],
+      "pages": [2, 3, 4, 5, 6],
+      "snippet": "raised Rs 32.5 crore in a seed funding round led by 100Unicorns"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T08:10:05+00:00",
+  "generated_at": "2026-10-30T08:48:20+00:00",
   "records": [
     {
       "id": "fund_100x-vc_undated",
@@ -4057,12 +4057,12 @@
       "investor_id": "inv_bee-partners",
       "name": "Bee Partners",
       "number": "I",
-      "size_usd": 5000000,
+      "size_usd": 8000000,
       "currency_original": "USD",
-      "size_original": 5000000,
+      "size_original": 8000000,
       "fx": null,
-      "close_date": "2012-07",
-      "close_date_precision": "month",
+      "close_date": "2012-07-31",
+      "close_date_precision": "day",
       "vintage_year": 2012,
       "location": "Bay Area",
       "notes": null,
@@ -4073,10 +4073,77 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://news.crunchbase.com/?p=20412",
+          "title": "Bee Partners Raises $43M For Its Third Pre-Seed Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/bee-partners",
+          "title": "Bee Partners - Investor Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001532841.json",
+          "title": "EDGAR submissions: Bee Partners I, L.P. (CIK 0001532841)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/11/01/bee-partners-venture-capital-pre-seed-deep-tech/",
+          "title": "Bee Partners closes fourth fund to add more capital for pre-seed founders in deep tech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_bee-partners_i-2",
+      "investor_id": "inv_bee-partners",
+      "name": "Bee Partners Opportunities I",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/bee-partners",
+          "title": "Bee Partners - Investor Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "low"
     },
     {
       "id": "fund_bee-partners_ii",
@@ -4087,7 +4154,7 @@
       "currency_original": "USD",
       "size_original": 30000000,
       "fx": null,
-      "close_date": "2016-06-28",
+      "close_date": "2016-06-27",
       "close_date_precision": "day",
       "vintage_year": 2016,
       "location": "Bay Area",
@@ -4099,43 +4166,120 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://news.crunchbase.com/?p=20412",
+          "title": "Bee Partners Raises $43M For Its Third Pre-Seed Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/bee-partners",
+          "title": "Bee Partners - Investor Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001625894.json",
+          "title": "EDGAR submissions: Bee Partners II, L.P. (CIK 0001625894)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Bee%20Partners%22&forms=D,D/A",
+          "title": "EDGAR full-text search: \"Bee Partners\" (Form D, D/A)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_bee-partners_iii",
       "investor_id": "inv_bee-partners",
-      "name": "Bee Partners Fund III",
+      "name": "Bee Partners III, L.P.",
       "number": "III",
       "size_usd": 43000000,
       "currency_original": "USD",
       "size_original": 43000000,
       "fx": null,
-      "close_date": "2019",
-      "close_date_precision": "year",
+      "close_date": "2019-09-12",
+      "close_date_precision": "day",
       "vintage_year": 2019,
       "location": null,
       "notes": null,
       "sources": [
+        {
+          "url": "https://news.crunchbase.com/?p=20412",
+          "title": "Bee Partners Raises $43M For Its Third Pre-Seed Fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
         {
           "url": "https://techcrunch.com/2023/11/01/bee-partners-venture-capital-pre-seed-deep-tech/",
           "title": "Bee Partners closes fourth fund to add more capital for pre-seed founders in deep tech",
           "publisher": "TechCrunch",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/bee-partners",
+          "title": "Bee Partners - Investor Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001726723.json",
+          "title": "EDGAR submissions: Bee Partners III, L.P. (CIK 0001726723)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Bee%20Partners%22&forms=D,D/A",
+          "title": "EDGAR full-text search: \"Bee Partners\" (Form D, D/A)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {
         "size_usd": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4
         ],
         "close_date": [
-          0
+          0,
+          1,
+          2,
+          3,
+          4
         ]
       },
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_bee-partners_iv",
@@ -4158,17 +4302,44 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/bee-partners",
+          "title": "Bee Partners - Investor Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001887932.json",
+          "title": "EDGAR submissions: Bee Partners IV, L.P. (CIK 0001887932)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Bee%20Partners%22&forms=D,D/A",
+          "title": "EDGAR full-text search: \"Bee Partners\" (Form D, D/A)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {
         "size_usd": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "close_date": [
-          0
+          0,
+          1,
+          2,
+          3
         ]
       },
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_behind-geniuus_ii",
@@ -7153,10 +7324,24 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.collab.capital/newsroom/collab-capital-closes-75m-fund-ii-scales-its-vision-for-shared-prosperity",
+          "title": "Collab Capital Closes $75M Fund II, Scales Its Vision for \"Shared Prosperity\"",
+          "publisher": "Collab Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_collaborative-fund_ii",
@@ -7975,16 +8160,16 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_conviction_i",
-      "investor_id": "inv_conviction",
+      "id": "fund_conviction-partners_i",
+      "investor_id": "inv_conviction-partners",
       "name": "Conviction",
       "number": "I",
-      "size_usd": 100000000,
+      "size_usd": 101000000,
       "currency_original": "USD",
-      "size_original": 100000000,
+      "size_original": 101000000,
       "fx": null,
-      "close_date": "2022-10-04",
-      "close_date_precision": "day",
+      "close_date": "2022-10",
+      "close_date_precision": "month",
       "vintage_year": 2022,
       "location": null,
       "notes": null,
@@ -7995,10 +8180,102 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2022/10/14/carving-out-conviction-around-the-future-of-ai-with-sarah-guo/",
+          "title": "Carving out conviction around the future of AI with Sarah Guo",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/01/31/guos-conviction-partners-adds-mike-vernal-as-gp-raises-230m-fund/",
+          "title": "Guo's Conviction Partners adds Mike Vernal as GP, raises $230M fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.conviction.com/launching-with-conviction.html",
+          "title": "Launching With Conviction",
+          "publisher": "Conviction",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.dakota.com/fundraising-news/conviction-partners-closes-second-flagship-fund-at-230m",
+          "title": "Conviction Partners Closes Second Flagship Fund at $230M",
+          "publisher": "Dakota",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_conviction-partners_ii",
+      "investor_id": "inv_conviction-partners",
+      "name": "Conviction Partners Fund II",
+      "number": "II",
+      "size_usd": 230000000,
+      "currency_original": "USD",
+      "size_original": 230000000,
+      "fx": null,
+      "close_date": "2025-01-31",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/01/31/guos-conviction-partners-adds-mike-vernal-as-gp-raises-230m-fund/",
+          "title": "Guo's Conviction Partners adds Mike Vernal as GP, raises $230M fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.gunder.com/en/news-insights/client-news/conviction-partners-secures-230m-second-fund",
+          "title": "Conviction Partners Secures $230M Second Fund",
+          "publisher": "Gunderson Dettmer",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.dakota.com/fundraising-news/conviction-partners-closes-second-flagship-fund-at-230m",
+          "title": "Conviction Partners Closes Second Flagship Fund at $230M",
+          "publisher": "Dakota",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_core-innovation-capital_i",
@@ -9034,8 +9311,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_crowberry-capial_i",
-      "investor_id": "inv_crowberry-capial",
+      "id": "fund_crowberry-capital_i",
+      "investor_id": "inv_crowberry-capital",
       "name": "Crowberry Capial",
       "number": "I",
       "size_usd": 40000000,
@@ -9162,6 +9439,129 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_curiosity_i",
+      "investor_id": "inv_curiosity",
+      "name": "Curiosity Fund I (debut fund)",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.curiosityvc.com/post/curiosity-vc-closes-eu17m-first-tranche-of-fund-ii-to-back-vertical-ai-startups-across-europe",
+          "title": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/brief/the-fast-and-the-curious-new-dutch-vc-unveils-e50-million-fund-for-ai-startups-in-northern-europe/",
+          "title": "The fast and the curious: New Dutch VC unveils €50 million fund for AI startups in Northern Europe",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.unquote.com/benelux/news/3027291/curiosity-vc-eyes-eur-75m-fund-close-in-2023",
+          "title": "Curiosity VC eyes EUR 75m fund close in 2023",
+          "publisher": "Unquote",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.curiosityvc.com/post/new-vc-fund-curiosity-launches-with-first-investment-in-explainable-ai-startup-deeploy",
+          "title": "New VC fund Curiosity launches with first investment in explainable AI startup Deeploy",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_curiosity_ii",
+      "investor_id": "inv_curiosity",
+      "name": "Curiosity Fund II (first close; EUR 30-40M target)",
+      "number": "II",
+      "size_usd": 19038300,
+      "currency_original": "EUR",
+      "size_original": 17000000,
+      "fx": {
+        "rate_to_usd": 1.1199,
+        "rate_period": "2026-10-23",
+        "source_url": "https://www.federalreserve.gov/releases/h10/current/"
+      },
+      "close_date": "2026-06-09",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.curiosityvc.com/post/curiosity-vc-closes-eu17m-first-tranche-of-fund-ii-to-back-vertical-ai-startups-across-europe",
+          "title": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe",
+          "publisher": "Curiosity",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://vestbee.com/insights/articles/curiosity-vc-raises-17-m",
+          "title": "Curiosity VC raises €17M first close of Fund II",
+          "publisher": "Vestbee",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_curiosity_undated",
+      "investor_id": "inv_curiosity",
+      "name": "Curiosity Seed Fund B.V. (RVO Seed Capital vehicle)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": "EUR",
+      "size_original": 12000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.rvo.nl/subsidies-financiering/seed-capital/totaaloverzicht-fondsen/curiosity-seed-fund-bv",
+          "title": "Curiosity Seed Fund B.V. - Seed Capital fondsen",
+          "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_cyberstarts_i",
@@ -14288,7 +14688,7 @@
     {
       "id": "fund_gradient_v",
       "investor_id": "inv_gradient",
-      "name": "Gradient Fund 5",
+      "name": "Gradient Fund V LP (Fund 5)",
       "number": "V",
       "size_usd": 220000000,
       "currency_original": "USD",
@@ -14301,6 +14701,13 @@
       "notes": null,
       "sources": [
         {
+          "url": "https://www.gradient.com/blog/posts/fund-5/",
+          "title": "Ten years of AI investing, and just getting started: Introducing Gradient's $220 million Fund 5",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
           "url": "https://fortune.com/2026/03/17/google-backed-ai-investors-nobody-took-seriously-2017-raised-220-million-gradient/",
           "title": "The Google-backed AI investors nobody took seriously in 2017 just raised $220 million",
           "publisher": "Fortune",
@@ -14308,15 +14715,29 @@
           "kind": "secondary"
         },
         {
-          "url": "https://www.gradient.com/news/",
-          "title": "Gradient | News",
-          "publisher": "Gradient",
+          "url": "https://pulse2.com/gradient-220-million-raised-for-ai-seed-fund/amp/",
+          "title": "Gradient: $220 Million Raised For AI Seed Fund",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://globalventuring.com/corporate/information-technology/google-backed-vc-gradient-launches-220m-al-seed-fund/",
+          "title": "Google-backed VC Gradient launches $220m AI seed fund",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22GRDNT%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"GRDNT\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         },
         {
-          "url": "https://www.gradient.com/",
-          "title": "Gradient | The seed fund designed for founders in AI",
+          "url": "https://www.gradient.com/news/",
+          "title": "Gradient | News",
           "publisher": "Gradient",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
@@ -14326,12 +14747,18 @@
         "size_usd": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ],
         "close_date": [
           0,
           1,
-          2
+          2,
+          3,
+          4,
+          5
         ]
       },
       "confidence": "high"
@@ -17682,6 +18109,82 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_jump-capital_2016",
+      "investor_id": "inv_jump-capital",
+      "name": "JCDP-4 LLC",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": "2016-02-05",
+      "close_date_precision": "day",
+      "vintage_year": 2016,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Jump%20Capital%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"Jump Capital\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_jump-capital_2017",
+      "investor_id": "inv_jump-capital",
+      "name": "JCDP-5 LLC",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": "2017-12-04",
+      "close_date_precision": "day",
+      "vintage_year": 2017,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Jump%20Capital%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"Jump Capital\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_jump-capital_i",
       "investor_id": "inv_jump-capital",
       "name": "Jump Capital",
@@ -17706,6 +18209,195 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_jump-capital_undated",
+      "investor_id": "inv_jump-capital",
+      "name": "JCDP-6 (JCDP-6 AI LLC / JCDP-6 QP LLC)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Jump%20Capital%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"Jump Capital\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_jump-capital_vii",
+      "investor_id": "inv_jump-capital",
+      "name": "Jump Capital Fund VII (JCDP-7 AI LLC / JCDP-7 QP LLC)",
+      "number": "VII",
+      "size_usd": 350000000,
+      "currency_original": "USD",
+      "size_original": 350000000,
+      "fx": null,
+      "close_date": "2021-09-14",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.trysignalbase.com/news/funding/jump-capital-closes-3500",
+          "title": "Jump Capital closes $350.0M fund",
+          "publisher": "Signalbase",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/jump-capital-raises-350m-for-eleventh-fund",
+          "title": "Jump Capital raises $350m for eleventh fund",
+          "publisher": "Venture Capital Journal / Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Jump%20Capital%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"Jump Capital\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.itiger.com/news/1107379290",
+          "title": "Jump Capital Raises $350 Million Fresh Fund, Targeted at Artificial Intelligence Investments",
+          "publisher": "Deep News via Tiger Brokers",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_jump-capital_viii",
+      "investor_id": "inv_jump-capital",
+      "name": "Jump Capital Fund VIII (JCDP-8 LLC)",
+      "number": "VIII",
+      "size_usd": 350000000,
+      "currency_original": "USD",
+      "size_original": 350000000,
+      "fx": null,
+      "close_date": "2026-07",
+      "close_date_precision": "month",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/jump-capital/",
+          "title": "Jump Capital | LinkedIn (company page About section)",
+          "publisher": "LinkedIn",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/investor/jump-capital",
+          "title": "Jump Capital - Investor profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.theinformation.com/articles/jump-capital-raises-350-million-fund-ai-investments",
+          "title": "Jump Capital Raises $350 Million Fund For AI Investments",
+          "publisher": "The Information",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://dealroom.co/news/141694-jump-capital-lands-350m-fund-for-ai-bets/",
+          "title": "Jump Capital lands $350M fund for AI bets",
+          "publisher": "Dealroom",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.itiger.com/news/1107379290",
+          "title": "Jump Capital Raises $350 Million Fresh Fund, Targeted at Artificial Intelligence Investments",
+          "publisher": "Deep News via Tiger Brokers",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kucoin.com/news/flash/jump-capital-closes-350m-fund-viii-for-enterprise-ai-infrastructure-and-security",
+          "title": "Jump Capital Closes $350M Fund VIII for Enterprise AI Infrastructure and Security",
+          "publisher": "KuCoin News (via ChainGPT)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Jump%20Capital%22&forms=D",
+          "title": "SEC EDGAR full-text search: \"Jump Capital\", Form D",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_k2-global_i",
@@ -20300,6 +20992,13 @@
           "kind": "secondary"
         },
         {
+          "url": "https://www.deutsche-startups.de/2026/06/05/merantix-capital-liqid-snocks-rewired-energy-robotics-korial/",
+          "title": "+++ Merantix Capital +++ LIQID +++ snocks +++ Rewired +++ Energy Robotics +++ Korial +++",
+          "publisher": "deutsche-startups.de",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://www.merantix-capital.com/sfdr",
           "title": "SFDR",
           "publisher": "Merantix Capital",
@@ -20314,7 +21013,8 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "close_date": [
           0,
@@ -20322,7 +21022,8 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ]
       },
       "confidence": "high"
@@ -20376,6 +21077,13 @@
           "kind": "secondary"
         },
         {
+          "url": "https://www.deutsche-startups.de/2026/06/05/merantix-capital-liqid-snocks-rewired-energy-robotics-korial/",
+          "title": "+++ Merantix Capital +++ LIQID +++ snocks +++ Rewired +++ Energy Robotics +++ Korial +++",
+          "publisher": "deutsche-startups.de",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://tech.eu/2026/06/04/merantix-capital-launches-eur103m-fund-for-early-stage-european-ai-startups/",
           "title": "Merantix Capital launches €103M fund for early-stage European AI startups",
           "publisher": "Tech.eu",
@@ -20394,7 +21102,8 @@
         "size_usd": [
           0,
           1,
-          2
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -23769,13 +24478,13 @@
       "investor_id": "inv_primary-venture-partners",
       "name": "Primary Venture Partners",
       "number": "I",
-      "size_usd": 30000000,
+      "size_usd": 60000000,
       "currency_original": "USD",
-      "size_original": 30000000,
+      "size_original": 60000000,
       "fx": null,
-      "close_date": "2014-04",
-      "close_date_precision": "month",
-      "vintage_year": 2014,
+      "close_date": "2015",
+      "close_date_precision": "year",
+      "vintage_year": 2015,
       "location": "NYC",
       "notes": "1st close - $60M target",
       "sources": [
@@ -23785,10 +24494,42 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/",
+          "title": "Primary Ventures raises massive $625M Fund V to focus on seed investing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2018/06/12/primary-venture-partnrs-fund-ii/",
+          "title": "Primary Venture Partners raises $100M to invest in NYC startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://web.archive.org/web/20250723060211/https://www.forbes.com/sites/kenrickcai/2022/09/07/primary-vc-fund-iv-425-million-riding-the-nyc-tech-wave/",
+          "title": "Riding The NYC Tech Wave That It Helped Start, Primary Raises $425 Million Across Two New Funds (archived)",
+          "publisher": "Forbes",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "low"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_primary-venture-partners_ii",
@@ -23811,9 +24552,58 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/",
+          "title": "Primary Ventures raises massive $625M Fund V to focus on seed investing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_primary-venture-partners_ii-2",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Primary Select Fund II",
+      "number": "II",
+      "size_usd": 50000000,
+      "currency_original": "USD",
+      "size_original": 50000000,
+      "fx": null,
+      "close_date": "2021-02-24",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2021/02/24/primary-venture-capital-third-fund/",
+          "title": "Primary Venture Partners raises $150M third fund to back NYC startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -23837,10 +24627,186 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2021/02/24/primary-venture-capital-third-fund/",
+          "title": "Primary Venture Partners raises $150M third fund to back NYC startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/",
+          "title": "Primary Ventures raises massive $625M Fund V to focus on seed investing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
       "confidence": "medium"
+    },
+    {
+      "id": "fund_primary-venture-partners_iii-2",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Primary Select Fund III",
+      "number": "III",
+      "size_usd": 150000000,
+      "currency_original": "USD",
+      "size_original": 150000000,
+      "fx": null,
+      "close_date": "2022-09-07",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20250723060211/https://www.forbes.com/sites/kenrickcai/2022/09/07/primary-vc-fund-iv-425-million-riding-the-nyc-tech-wave/",
+          "title": "Riding The NYC Tech Wave That It Helped Start, Primary Raises $425 Million Across Two New Funds (archived)",
+          "publisher": "Forbes",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://web.archive.org/web/20250807231818/https://www.primary.vc/firstedition/posts/fresh-funding-to-continue-fueling-our-longstanding-belief-in-new-york-city/",
+          "title": "$425 Million in Fresh Funding to Continue Fueling Our Longstanding Belief in New York City (archived)",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_primary-venture-partners_iv",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Primary Fund IV",
+      "number": "IV",
+      "size_usd": 275000000,
+      "currency_original": "USD",
+      "size_original": 275000000,
+      "fx": null,
+      "close_date": "2022-09-07",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20250723060211/https://www.forbes.com/sites/kenrickcai/2022/09/07/primary-vc-fund-iv-425-million-riding-the-nyc-tech-wave/",
+          "title": "Riding The NYC Tech Wave That It Helped Start, Primary Raises $425 Million Across Two New Funds (archived)",
+          "publisher": "Forbes",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://web.archive.org/web/20250807231818/https://www.primary.vc/firstedition/posts/fresh-funding-to-continue-fueling-our-longstanding-belief-in-new-york-city/",
+          "title": "$425 Million in Fresh Funding to Continue Fueling Our Longstanding Belief in New York City (archived)",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/",
+          "title": "Primary Ventures raises massive $625M Fund V to focus on seed investing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_primary-venture-partners_v",
+      "investor_id": "inv_primary-venture-partners",
+      "name": "Primary Fund V (two funds combined; split not disclosed)",
+      "number": "V",
+      "size_usd": 625000000,
+      "currency_original": "USD",
+      "size_original": 625000000,
+      "fx": null,
+      "close_date": "2026-02-10",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.primary.vc/articles/scaling-for-the-ai-era-fund-v",
+          "title": "Scaling for the AI era: Fund V",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/",
+          "title": "Primary Ventures raises massive $625M Fund V to focus on seed investing",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.itiger.com/news/2611908588",
+          "title": "Early-Stage Venture Funds Have to Be Big to Compete, VC Says -- Market Talk",
+          "publisher": "Dow Jones Newswires (via Tiger Brokers)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.primary.vc/approach",
+          "title": "Primary | Approach",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_prime-movers-lab_i",
@@ -27055,6 +28021,44 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_sequoia-capital_2021",
+      "investor_id": "inv_sequoia-capital",
+      "name": "The Sequoia Capital Fund (evergreen parent fund, US/Europe)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": "2021-10-26",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/article/the-sequoia-fund-patient-capital-for-building-enduring-companies",
+          "title": "The Sequoia Capital Fund: Patient Capital for Building Enduring Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/10/27/sequoia-unveils-950m-in-new-early-stage-funds-as-it-strives-to-be-only-as-good-as-our-next-investment/",
+          "title": "Sequoia unveils $950M in new early-stage funds as it strives to be 'only as good as our next investment'",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_sequoia-capital_iii",
       "investor_id": "inv_sequoia-capital",
       "name": "Sequoia Ventues - Scout Fund",
@@ -27063,7 +28067,7 @@
       "currency_original": "USD",
       "size_original": 180000000,
       "fx": null,
-      "close_date": "2018-01-18",
+      "close_date": "2018-01-16",
       "close_date_precision": "day",
       "vintage_year": 2018,
       "location": "Bay Area",
@@ -27075,10 +28079,51 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://sequoiacap.com/article/sequoia-and-seed-investing",
+          "title": "Sequoia and Seed Investing",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/sequoia-capitals-jess-lee-on-working-with-young-startups-as-firm-raises-new-195m-seed-fund/",
+          "title": "Sequoia Capital's Jess Lee on working with young startups as firm raises new $195M seed fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://fortune.com/2021/02/25/sequoia-capital-raises-195-million-for-its-newest-seed-fund/",
+          "title": "Sequoia Capital raises $195 million for its newest seed fund",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20Scout&startdt=2016-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" Scout",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_sequoia-capital_iv",
@@ -27089,7 +28134,7 @@
       "currency_original": "USD",
       "size_original": 195000000,
       "fx": null,
-      "close_date": "2021-02-26",
+      "close_date": "2021-02-25",
       "close_date_precision": "day",
       "vintage_year": 2021,
       "location": "Bay Area",
@@ -27101,10 +28146,51 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://sequoiacap.com/article/talking-seed-with-sequoia",
+          "title": "Talking Seed with Sequoia",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://fortune.com/2021/02/25/sequoia-capital-raises-195-million-for-its-newest-seed-fund/",
+          "title": "Sequoia Capital raises $195 million for its newest seed fund",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/sequoia-capitals-jess-lee-on-working-with-young-startups-as-firm-raises-new-195m-seed-fund/",
+          "title": "Sequoia Capital's Jess Lee on working with young startups as firm raises new $195M seed fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20seed&startdt=2020-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" seed",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_sequoia-capital_v",
@@ -27127,16 +28213,48 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-fund-and-arc-announcement",
+          "title": "Seed Fund V: Forging the Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/01/18/sequoia-capital-195-million-seed-pre-seed-fund/",
+          "title": "Sequoia Capital launches $195M seed fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20seed&startdt=2020-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" seed",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_sequoia-capital_vii",
       "investor_id": "inv_sequoia-capital",
       "name": "Sequoia Seed Fund",
-      "number": "VII",
+      "number": "VI",
       "size_usd": 200000000,
       "currency_original": "USD",
       "size_original": 200000000,
@@ -27153,10 +28271,137 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/10/27/sequoia-unveils-950m-in-new-early-stage-funds-as-it-strives-to-be-only-as-good-as-our-next-investment/",
+          "title": "Sequoia unveils $950M in new early-stage funds as it strives to be 'only as good as our next investment'",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/sequoia-capital-950-million-closed-for-new-venture-funds",
+          "title": "Sequoia Capital: $950 Million Closed For New Venture Funds",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20seed&startdt=2020-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" seed",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_sequoia-capital_xix",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Sequoia Venture Fund XIX",
+      "number": "XIX",
+      "size_usd": 750000000,
+      "currency_original": "USD",
+      "size_original": 750000000,
+      "fx": null,
+      "close_date": "2025-10-27",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/article/seed-venture-funds-2025",
+          "title": "Building Tomorrow's Transformational Companies",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/10/27/sequoia-unveils-950m-in-new-early-stage-funds-as-it-strives-to-be-only-as-good-as-our-next-investment/",
+          "title": "Sequoia unveils $950M in new early-stage funds as it strives to be 'only as good as our next investment'",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/sequoia-capital-950-million-closed-for-new-venture-funds",
+          "title": "Sequoia Capital: $950 Million Closed For New Venture Funds",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20%22XIX%22&startdt=2016-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" XIX",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_sequoia-capital_xviii",
+      "investor_id": "inv_sequoia-capital",
+      "name": "Sequoia Capital US/E Venture XVIII (partners and principals vehicles on EDGAR)",
+      "number": "XVIII",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?forms=D&dateRange=custom&enddt=2026-10-30&q=%22Sequoia%20Capital%22%20%22XVIII%22&startdt=2016-01-01",
+          "title": "EDGAR full-text search: Form D filings matching \"Sequoia Capital\" XVIII",
+          "publisher": "U.S. SEC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_serena-ventures_i",
@@ -32306,6 +33551,57 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_white-star-capital_2025",
+      "investor_id": "inv_white-star-capital",
+      "name": "White Star Capital North American Seed Fund (first close; $50M target)",
+      "number": null,
+      "size_usd": 25000000,
+      "currency_original": "USD",
+      "size_original": 25000000,
+      "fx": null,
+      "close_date": "2025-09-04",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-launches-north-american-seed-fund-cdd69751ff8c",
+          "title": "White Star Capital launches North American Seed Fund",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/white-star-capital-wants-to-lead-canadian-seed-rounds-with-new-50-million-usd-fund/",
+          "title": "White Star Capital wants to lead Canadian seed rounds with new $50-million USD fund",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://whitestarcapital.com/north-american-seed-fund/",
+          "title": "North American Seed Fund - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_white-star-capital_i",
       "investor_id": "inv_white-star-capital",
       "name": "White Star Capital",
@@ -32314,8 +33610,8 @@
       "currency_original": "USD",
       "size_original": 70000000,
       "fx": null,
-      "close_date": "2015-11-01",
-      "close_date_precision": "day",
+      "close_date": "2015-11",
+      "close_date_precision": "month",
       "vintage_year": 2015,
       "location": "NYC, UK, Montreal",
       "notes": null,
@@ -32326,10 +33622,93 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://tech.eu/brief/white-star-capital-first-fund/",
+          "title": "White Star Capital closes first fund at $70 million, looks for Series A deals in Europe and North America",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.unquote.com/unquote/official-record/3025324/white-star-holds-usd-360m-final-close-for-fund-iii",
+          "title": "White Star holds USD 360m final close for Fund III",
+          "publisher": "Unquote",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.opalesque.com/688170/Growth_technology_investor_White_Star_Capital_holds817.html",
+          "title": "Growth technology investor White Star Capital holds $360m final close for Fund III",
+          "publisher": "Opalesque",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_white-star-capital_i-2",
+      "investor_id": "inv_white-star-capital",
+      "name": "White Star Capital Digital Asset Fund (DAF I)",
+      "number": "I",
+      "size_usd": 50000000,
+      "currency_original": "USD",
+      "size_original": 50000000,
+      "fx": null,
+      "close_date": "2021-05-20",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://prnewswire.com/news-releases/white-star-capital-closes-50-million-digital-asset-fund-to-make-equity-and-token-investments-in-blockchain-enabled-businesses-and-crypto-networks-301295594.html",
+          "title": "White Star Capital Closes $50 Million Digital Asset Fund to Make Equity and Token Investments in Blockchain-Enabled Businesses and Crypto-Networks",
+          "publisher": "White Star Capital (PR Newswire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://whitestarcapital.com/digital-asset-fund/",
+          "title": "Digital Asset Fund - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/white-star-capital-wants-to-lead-canadian-seed-rounds-with-new-50-million-usd-fund/",
+          "title": "White Star Capital wants to lead Canadian seed rounds with new $50-million USD fund",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_white-star-capital_ii",
@@ -32340,8 +33719,8 @@
       "currency_original": "USD",
       "size_original": 180000000,
       "fx": null,
-      "close_date": "2018-06-04",
-      "close_date_precision": "day",
+      "close_date": "2018-06",
+      "close_date_precision": "month",
       "vintage_year": 2018,
       "location": "London, New York, Montreal, Paris, Tokyo",
       "notes": null,
@@ -32352,10 +33731,177 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.unquote.com/unquote/official-record/3025324/white-star-holds-usd-360m-final-close-for-fund-iii",
+          "title": "White Star holds USD 360m final close for Fund III",
+          "publisher": "Unquote",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.opalesque.com/688170/Growth_technology_investor_White_Star_Capital_holds817.html",
+          "title": "Growth technology investor White Star Capital holds $360m final close for Fund III",
+          "publisher": "Opalesque",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_white-star-capital_ii-2",
+      "investor_id": "inv_white-star-capital",
+      "name": "White Star Capital Digital Asset Fund II (DAF II), first close; $120M stated fund size",
+      "number": "II",
+      "size_usd": 120000000,
+      "currency_original": "USD",
+      "size_original": 120000000,
+      "fx": null,
+      "close_date": "2022-04-11",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://prnewswire.com/news-releases/white-star-capital-announces-second-digital-asset-fund-301522754.html",
+          "title": "White Star Capital Announces Second Digital Asset Fund",
+          "publisher": "White Star Capital (PR Newswire)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/white-star-capital-wants-to-lead-canadian-seed-rounds-with-new-50-million-usd-fund/",
+          "title": "White Star Capital wants to lead Canadian seed rounds with new $50-million USD fund",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_white-star-capital_iii",
+      "investor_id": "inv_white-star-capital",
+      "name": "White Star Capital III",
+      "number": "III",
+      "size_usd": 360000000,
+      "currency_original": "USD",
+      "size_original": 360000000,
+      "fx": null,
+      "close_date": "2021-10",
+      "close_date_precision": "month",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.unquote.com/unquote/official-record/3025324/white-star-holds-usd-360m-final-close-for-fund-iii",
+          "title": "White Star holds USD 360m final close for Fund III",
+          "publisher": "Unquote",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.opalesque.com/688170/Growth_technology_investor_White_Star_Capital_holds817.html",
+          "title": "Growth technology investor White Star Capital holds $360m final close for Fund III",
+          "publisher": "Opalesque",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://betakit.com/white-star-capital-closes-446-million-cad-for-new-fund/",
+          "title": "White Star Capital closes $446 million CAD for new fund",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_white-star-capital_iv",
+      "investor_id": "inv_white-star-capital",
+      "name": "White Star Capital Fund IV",
+      "number": "IV",
+      "size_usd": 250000000,
+      "currency_original": "USD",
+      "size_original": 250000000,
+      "fx": null,
+      "close_date": "2026-08-05",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://whitestarcapital.medium.com/white-star-capital-holds-final-close-of-250m-usd-for-fund-iv-0f4b5f5e7d1a",
+          "title": "White Star Capital holds final close of $250m USD for Fund IV",
+          "publisher": "White Star Capital (Medium)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2026/08/05/white-star-capital-closes-250m-fund-iv-to-back-global-startups-from-series-a-to-b/",
+          "title": "White Star Capital closes $250M Fund IV to back global startups from Series A to B",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://whitestarcapital.com/news",
+          "title": "Newsroom Archive - White Star Capital",
+          "publisher": "White Star Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_wi-harper_viii",

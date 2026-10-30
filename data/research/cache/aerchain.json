@@ -1,0 +1,110 @@
+{
+  "key": "aerchain",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Aerchain (aerchain.io), the Bengaluru procurement-software company whose legal entity is Agillos E-Commerce Private Limited, founded by Harsha Kadimisetty and Himavanth Jasti. The domain is the 'Company website' link on Venture Intelligence's 2021 IndiaMART deal note, and the company site (Bengaluru addresses, procurement AI agents and the Aera assistant), Inc42 and Entrepreneur India (March 2026 Series A), Bar & Bench (legal entity), Entrackr (September 2021 pre-Series A, where it is once misspelt 'Aerochain') and the whalesbook.com lead all describe the same business. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; candidate from a discovery search). Aerchain sells AI agents across intake-to-pay procurement (intake, vendor onboarding, sourcing, evaluation, negotiation, purchase, invoice) to enterprise procurement teams, so it overlaps Utopian Autonomy's procurement wedge in the same home market. It is kept below 'direct', unlike Procol, because it is a horizontal enterprise suite with no manufacturing-specific tooling: its manufacturing industry page is a 'coming soon' placeholder, there are no RFQ, BOM or engineering-drawing tools, its named customers are mostly non-factory (Cars24, WeWork, AB InBev, Manjushree), and it does not touch maintenance or process stability. Users work through a web app and a chat assistant; no WhatsApp channel for plant staff was seen.",
+  "pages": [
+    { "url": "https://www.aerchain.io/", "title": "Aerchain home page", "publisher": "Aerchain", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://inc42.com/?p=552406", "title": "Aerchain Bags $13 Mn To Scale Agentic AI Platform For Enterprise Procurement", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://india.entrepreneur.com/news-and-trends/aerchain-raises-usd-13-mn-in-series-a-funding-round/503533", "title": "Aerchain Raises USD 13 Mn in Series A Funding Round", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.barandbench.com/dealstreet/jsa-acts-on-aerchain-13-million-series-a-fundraise", "title": "JSA acts on Aerchain $13 million Series A fundraise", "publisher": "Bar & Bench", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://entrackr.com/2021/09/indiamart-and-season-two-venture-lead-pre-series-a-round-in-aerchain", "title": "IndiaMart and Season Two Venture lead pre-Series A round in Aerchain", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.ventureintelligence.com/private-equity/indiamart-acquires-over-26-stake-in-saas-firm-agillos-for-rs26cr", "title": "Indiamart acquires over 26% stake in SaaS firm Agillos for Rs 26 Cr", "publisher": "Venture Intelligence (citing The Economic Times)", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.whalesbook.com/news/English/tech/Aerchain-Secures-dollar13M-Series-A-to-Boost-AI-Procurement-Platform/69c4cebc63d6db8f4b4bbff9", "title": "Aerchain Secures $13M Series A to Boost AI Procurement Platform", "publisher": "Whalesbook", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/aerchain/funding/", "title": "Aerchain Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/aerchain/financials/", "title": "Aerchain Financials (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "company.founded_year",
+      "values": ["2019 (Inc42 article, March 2026: 'Founded in 2019 by Harsha Kadimisetty and Himavanth Jasti'; Inc42 profile)", "2021 (Entrepreneur India, March 2026)"],
+      "chosen": "2019",
+      "reason": "Inc42's article and profile agree, and by September 2021 Entrackr already reported clients, about $0.5M ARR and an accelerator stint, which does not fit a 2021 founding."
+    },
+    {
+      "field": "rounds[2021] IndiaMART investment",
+      "values": ["Aug 2021: IndiaMART (through subsidiary Tradezeal Online) acquired a 26.23% stake in Agillos for INR 26 crore, all cash (Venture Intelligence citing ET; Inc42 profile lists 02 Aug 2021, $3.50 Mn, IndiaMART)", "Sep 2021: $3M pre-Series A co-led by IndiaMart and Season Two Ventures (Entrackr; Inc42 profile lists 20 Sept 2021, Seed, $3.00 Mn)"],
+      "chosen": "Both recorded as separate rows",
+      "reason": "Inc42 lists them as two rounds ($19.5M total across three rounds), but no page says whether IndiaMART's INR 26 crore was primary money, secondary purchase or part of the $3M round. They may overlap, so the total raised is uncertain."
+    }
+  ],
+  "open_items": [
+    "Revenue not recorded: the Inc42 database profile (Agillos E-Commerce) shows ₹10.1 Cr in FY25 with a ₹9.4 Cr net loss and ₹5.4 Cr in FY24, but no fetched press article reports these MCA figures. Entrackr (2021) quoted the company's own claim of about $0.5M ARR.",
+    "Other Series A investors are not named ('IndiaMART and other investors'). The lead appears as Pavestone VC (Entrepreneur India), Pavestone (Inc42), Pavestone Technology Fund (Bar & Bench, whalesbook) and Pavestone Capital (Inc42 FAQ); recorded as Pavestone Technology Fund.",
+    "YourStory pages (2021 pre-Series A, March 2026 Series A) returned HTTP 403, so any extra co-investors they name were not checked.",
+    "Inc42's FAQ names Lumis Partners as an investor, while Entrackr describes Lumis Partners, JioGenNext and AB InBev as running an accelerator Aerchain joined; not recorded as a round.",
+    "Named customers come from testimonials on aerchain.io (the site spells one 'WeWorks'); the 'Trusted by Global Enterprises' logos have no readable names. Company claims: 50+ enterprise customers in 30+ countries and about $45B of spend managed (press, March 2026); the site says $15B+ spend and 40+ countries.",
+    "Headcount (121) is from the Inc42 database profile only; the LinkedIn company page was not checked.",
+    "No public pricing (the site's pricing calculator is marked 'soon')."
+  ],
+  "company": {
+    "name": "Aerchain",
+    "website": "https://www.aerchain.io",
+    "description": "Bengaluru procurement platform whose AI agents run enterprise intake, sourcing, negotiation, purchasing and invoice work.",
+    "hq_country": "IN",
+    "founded_year": 2019,
+    "sector": "ai_apps_agents",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Enterprise procurement back office rather than the plant floor (no procurement layer in the taxonomy; plant_ops is the nearest fit, as for Procol, Didero and Galvant). Agents for intake (auto-generated RFPs and evaluation criteria), vendor onboarding, sourcing and supplier discovery, evaluation, negotiation, purchase and invoice, with contract and analytics agents 'coming soon', plus a chat assistant (Aera), ERP and payment integrations and 30+ languages. Spend categories shown include MRO, chemicals, metals and components. No WhatsApp channel seen.",
+  "founders": ["Harsha Kadimisetty", "Himavanth Jasti"],
+  "named_customers": ["Cars24", "WeWork", "AB InBev", "Manjushree"],
+  "product_summary": "A procurement platform pitched as a 'Spend Operating System': specialised AI agents and a chat assistant handle intake, supplier discovery and onboarding, sourcing events, bid evaluation, negotiation, purchasing and invoice processing, with configurable approval workflows and ERP and payment integrations for large enterprises.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 121,
+    "pages": [7],
+    "snippet": "Employee count: 121 (approximate: Inc42 company profile)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Aerchain", "website": "https://www.aerchain.io", "description": "Bengaluru AI-agent procurement platform for enterprises.", "hq_country": "IN", "founded_year": 2019, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "strategic",
+      "stage_raw": "Strategic stake: IndiaMART, through subsidiary Tradezeal Online, bought 26.23% of Agillos (Aerchain) for INR 26 crore, all cash; primary or secondary not stated (Inc42 profile: 02 Aug 2021, Undisclosed, $3.50 Mn)",
+      "date": "2021-08",
+      "date_precision": "month",
+      "amount_original": 260000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["IndiaMART"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 7],
+      "snippet": "acquired a 26.23% stake … for INR 26 crore in an all-cash deal"
+    },
+    {
+      "company": { "name": "Aerchain", "website": "https://www.aerchain.io", "description": "Bengaluru AI-agent procurement platform for enterprises.", "hq_country": "IN", "founded_year": 2019, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Pre-Series A, $3 million (Entrackr, 21 Sep 2021; Inc42 profile labels it Seed, 20 Sept 2021)",
+      "date": "2021-09",
+      "date_precision": "month",
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["IndiaMart", "Season Two Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [4, 1, 2, 7],
+      "snippet": "has raised $3 million in its pre-Series A round co-led by IndiaMart and Season Two Ventures"
+    },
+    {
+      "company": { "name": "Aerchain", "website": "https://www.aerchain.io", "description": "Bengaluru AI-agent procurement platform for enterprises.", "hq_country": "IN", "founded_year": 2019, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A, $13 million (about INR 118 crore); Inc42 article 18 Mar 2026, Entrepreneur India 19 Mar 2026, Inc42 profile 17 Mar 2026",
+      "date": "2026-03",
+      "date_precision": "month",
+      "amount_original": 13000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Pavestone Technology Fund"],
+      "participants": ["IndiaMART"],
+      "unspecified": [],
+      "pages": [1, 2, 3, 6, 7],
+      "snippet": "has raised $13 Mn (about ₹118 Cr) in its Series A round led by venture capital firm Pavestone"
+    }
+  ]
+}

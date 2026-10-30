@@ -1,0 +1,71 @@
+{
+  "key": "ugx-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as UGX.AI (ugx.ai; legal entity UGX Systems Private Limited, Sector 34, Gurugram), the discrete-manufacturing shop-floor platform co-founded in 2023 by Abhishek Kumar, Ankur Singh, Ankit Agarwal and Prakhar Nigam. The company site (Industrial DataOps platform, Gurugram address, UGX Systems Pvt Ltd), Entrepreneur India (October 2025 seed), Venture Intelligence (which gives ugx.ai as the website) and Inc42's profile (linking ugx.ai, same legal name) describe the same business. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; candidate from a discovery search). UGX sells the plant data and MES layer to Indian discrete manufacturers (automotive and electronics): an edge gateway and protocol library for machine connectivity, MES functions (work orders, scheduling, traceability and material genealogy), vision-based quality inspection, and apps for predictive maintenance and machine observability. That covers the same plants and some of the same maintenance and quality problems as Utopian Autonomy, but no AI agents, copilot, chat or WhatsApp interface appear on its site, and it does not touch procurement, RFQ, BOM or engineering drawings. The discovery lead's 'agents' claim (YourStory, November 2025) could not be read (HTTP 403); if UGX ships plant-staff agents it should move to 'direct'.",
+  "pages": [
+    { "url": "https://ugx.ai/", "title": "UGX.AI Industrial DataOps Platform", "publisher": "UGX.AI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://ugx.ai/technology", "title": "UGX.AI Technology", "publisher": "UGX.AI", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://india.entrepreneur.com/news-and-trends/meolaa-reodev-and-ugxai-raise-early-stage-funding/498159", "title": "Meolaa, Reo.Dev, and UGX.ai Raise Early-Stage Funding", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.ventureintelligence.com/private-equity/factory-ops-optimization-platform-ugx.ai-raises-%241-m-led-by-blue-ocean", "title": "Factory ops optimization platform UGX.ai raises $1 M led by Blue Ocean", "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.marcamoney.com/ugx-ai-raises-1-million-in-seed-funding-led-by-blue-ocean-venture-partners/", "title": "UGX.ai raises $1 million in seed funding led by Blue Ocean Venture Partners", "publisher": "Marca Money", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/ugx-ai/funding/", "title": "UGX.AI Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[seed].date",
+      "values": ["17 Sept 2025 (Inc42 profile table; 18 Sept in its FAQ)", "18 Sep 2025 (Venture Intelligence)", "9 Oct 2025 (Entrepreneur India publication; Marca Money updated 10 Oct 2025)"],
+      "chosen": "2025-09",
+      "reason": "Two deal databases put the round in mid-September; the October press coverage reads as the public announcement of the same round (same amount, lead and co-investors)."
+    }
+  ],
+  "open_items": [
+    "The YourStory profile named in the lead ('How UGX.AI is optimising manufacturing with deeptech', November 2025) returned HTTP 403, so its claims (including any AI-agent launch) were not read.",
+    "Revenue not recorded: the Inc42 database profile shows ₹19.5 lakh+ in FY25, but no fetched press article reports MCA revenue. Press quotes only a company claim of 5x growth over two years and 20+ enterprise customers in automotive and electronics.",
+    "Named customers come from the home page logo strip headed 'Trusted by Industry Leaders' (logo alt text); the nature of each relationship is not stated and no case studies are named.",
+    "The protocol count on the technology page is inconsistent ('500+' in the headline, '50+' in the stats).",
+    "Headcount (43) is from the Inc42 database profile only; the LinkedIn company page was not checked.",
+    "No public pricing (the site offers a free proof of concept).",
+    "No round other than the 2025 seed found."
+  ],
+  "company": {
+    "name": "UGX.AI",
+    "website": "https://ugx.ai",
+    "description": "Gurugram shop-floor data platform for discrete manufacturers: machine connectivity, MES and traceability, vision quality inspection and maintenance apps.",
+    "hq_country": "IN",
+    "founded_year": 2023,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Plant data and execution layer: an industrial edge gateway and protocol library (Modbus, OPC-UA, Ethernet/IP, MQTT), a smart MES (work orders, scheduling, traceability and genealogy), vision-based quality inspection with statistical quality control, and out-of-box apps for predictive maintenance, machine observability and performance analytics, with ERP integrations (SAP, Oracle JD Edwards, Dynamics 365, Odoo, Zoho). Shop-floor tablets and barcode scanners; no agents, chat or WhatsApp channel seen.",
+  "founders": ["Abhishek Kumar", "Ankur Singh", "Ankit Agarwal", "Prakhar Nigam"],
+  "named_customers": ["Pangaea Natural Stone", "Magneti Marelli", "Shell", "Bosch", "Rico Auto Industries", "Napino", "VVDN Technologies", "LohiaCorp", "Ajanta Chemicals", "Chemfield Cellulose", "Saint-Gobain", "Imasu", "Rockman", "Hero", "Honda", "Ornate Solar", "PVNA", "Tata Motors", "Amplus Solar", "CG Chaudhary Group", "Dabur", "Inverted", "Continental", "Forace Polymers", "Sigma Engineered Solutions", "TVS", "Indian Oil", "Dhoot Transmission"],
+  "product_summary": "Industrial DataOps platform for discrete factories: an edge gateway and protocol library connect legacy and modern machines, feeding a smart MES for work orders, scheduling and material traceability, AI vision inspection for defects and dimensions, and apps for predictive maintenance, machine monitoring and live production dashboards, integrated with the plant's ERP.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 43,
+    "pages": [5],
+    "snippet": "Employee count: 43 (approximate: Inc42 company profile)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "UGX.AI", "website": "https://ugx.ai", "description": "Gurugram shop-floor data, MES and quality-inspection platform for discrete manufacturers.", "hq_country": "IN", "founded_year": 2023, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed, USD 1 million (Inc42 profile dates it 17 Sept 2025; announced in press 9 Oct 2025); several angels named alongside the funds",
+      "date": "2025-09",
+      "date_precision": "month",
+      "amount_original": 1000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Blue Ocean Venture Partners"],
+      "participants": ["DeVC", "iSeed", "Atrium Ventures", "Point One Capital", "Ramakant Sharma", "Prateek Maheshwari", "Lovleen Bhatia", "Meghna Agarwal", "Varun Pahwa", "Asad Khan", "Dinesh Prasad", "Sai Yagnyamurthy", "Gopi Prashant", "Shekhar Vemuri", "Manish Agarwal"],
+      "unspecified": [],
+      "pages": [2, 3, 4, 5],
+      "snippet": "UGX.ai has raised USD 1 million in a seed round led by Blue Ocean Venture Partners."
+    }
+  ]
+}

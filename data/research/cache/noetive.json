@@ -1,0 +1,75 @@
+{
+  "key": "noetive",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Noetive (noetive.ai), the San Francisco 'AI NeoLab' for the physical economy that Eclipse built with its Chief AI Officer Amir Frenkel and launched from stealth on 2026-09-16 with a $41M Eclipse-led seed. The Eclipse post does not link a company domain, so the domain was confirmed from the other side: noetive.ai's homepage links Eclipse, Craft Ventures, Westly Group, Swish, Factory, Gigascale, Incite, Liquid 2 and Operator Partners under 'Backed by World Class Investors' and hosts the matching launch release; Ctech (Calcalist) describes the same company, round and founders. Not Noetive at noetive.com (a strategy and transformation consultancy; 'Disciplined thinking. Purposeful action. Elevated organisations.'). noetive.co serves the same page as noetive.ai. Category set to 'adjacent' (not in the PROJECT_CONTEXT §7 seed list; found through Eclipse's portfolio): Noetive sells AI agents that run core operational work inside plants and works with plant operators, and its manufacturing wedge is dynamic production planning on the factory floor (Steuben Foods), so it competes for the same 'AI that runs the plant' budget and story. It is not direct because its wedge (production planning / scheduling) is not one of Utopian Autonomy's functions (procurement, maintenance, process stability, RFQ / BOM / drawings), it is horizontal across manufacturing, logistics and construction, it ships its own sensing hardware, and no WhatsApp or plant-staff messaging channel was seen. Layer plant_ops.",
+  "pages": [
+    { "url": "https://noetive.ai/", "title": "The Physical Economy's AI lab", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://noetive.ai/news/noetive-emerges-from-stealth-with-41-million-seed", "title": "Noetive Emerges From Stealth With $41 Million Seed to Build the Intelligence of Record for the Physical Economy", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://noetive.ai/team", "title": "Team", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://noetive.ai/news", "title": "Newsroom", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://noetive.ai/news/welcome-meridian", "title": "Noetive Is Excited to Welcome Meridian", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://noetive.ai/lab", "title": "Lab", "publisher": "Noetive", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://eclipse.capital/blog/operational-intelligence-for-the-physical-economy", "title": "Operational Intelligence for the Physical Economy", "publisher": "Eclipse", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.calcalistech.com/ctechnews/article/hjji2potfx", "title": "Five months old, Noetive raises $41 million Seed to build AI for the physical economy", "publisher": "Ctech by Calcalist", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.noetive.com/", "title": "Noetive (strategy and transformation consultancy; a different company)", "publisher": "Noetive (noetive.com)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Noetive",
+    "website": "https://noetive.ai/",
+    "description": "San Francisco applied-AI lab, built with Eclipse, whose self-improving agents plus on-site sensing pods run core planning work in factories, logistics and construction.",
+    "hq_country": "US",
+    "founded_year": 2026,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Operations 'brain' on top of a business's existing systems of record, fused with data from Noetive's own multimodal sensing pods. Manufacturing entry point is dynamic production planning and replanning from what is actually running on the line (Steuben Foods: monthly planning taking a week became daily planning taking minutes); logistics entry point is manifest / pallet consolidation; construction entry point (via the Meridian acquisition) is plan-versus-site tracking. Users are planners and operators at the site; a forward-deployed, design-partner model. No procurement, maintenance, RFQ / BOM or drawing agents seen.",
+  "founders": ["Amir Frenkel", "Dan Barak"],
+  "named_customers": ["Steuben Foods"],
+  "product_summary": "Self-improving AI agents sit on a firm's existing systems, fuse their data with Noetive's multimodal sensing pods into a live model of the operation, and run core planning work: dynamic production planning (manufacturing), manifest consolidation (logistics) and plan-versus-site tracking (construction).",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Noetive", "website": "https://noetive.ai/", "description": "San Francisco applied-AI lab, built with Eclipse, whose self-improving agents plus on-site sensing pods run core planning work in factories, logistics and construction.", "hq_country": "US", "founded_year": 2026, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed (announced at emergence from stealth)",
+      "date": "2026-09-16",
+      "date_precision": "day",
+      "amount_original": 41000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Eclipse"],
+      "participants": ["Craft Ventures", "The Westly Group", "Swish Ventures", "Factory", "Incite Ventures", "Gigascale Capital", "Operator Partners", "Liquid 2 Ventures", "Zach Frenkel", "Andrew Bosworth", "Ahmad Al-Dahle", "Matt Rogers", "Yaser Sheikh", "Mike Schroepfer", "Boris Sofman", "Dean Leitersdorf", "Moshe Shalev", "Orian Leitersdorf"],
+      "unspecified": [],
+      "pages": [1, 6, 7, 0],
+      "snippet": "today emerged from stealth with $41 million in seed funding led by Eclipse, with participation from Craft Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "design-partner industries",
+      "values": [
+        "food manufacturing and logistics (Eclipse post, 2026-09-16)",
+        "manufacturing, logistics, energy and data centers (Noetive launch release; Ctech)",
+        "manufacturing, logistics and construction (noetive.ai homepage, lab and team pages)"
+      ],
+      "chosen": "manufacturing, logistics and construction, with energy and data centers named as further industries",
+      "reason": "The site's current pages name three starting verticals with a use case each; the release adds energy and data centers without use cases. Not a factual contradiction, just different lists on different dates."
+    }
+  ],
+  "open_items": [
+    "Total raised: $41M (the seed is the only round found). Valuation not disclosed.",
+    "Founded 2026 per the release's 'About Noetive' ('Founded in 2026'); Ctech says the company was five months old at launch (i.e. founded about April 2026). Eclipse co-created the company with Frenkel, who is also Eclipse's Chief AI Officer; Eclipse's equity beyond the seed lead is not stated.",
+    "Acquisition, not a funding round: Noetive acquired Meridian, an early-stage construction-AI platform, announced 2026-06-29 (noetive.ai/news/welcome-meridian); its founder (not named on the page) became GM Construction, West Coast. Terms not disclosed. This looks like a different company from Meridian (usemeridian.io, cache/meridian.json), which describes itself as a New York ops-agent start-up across staffing, logistics, manufacturing and industrial services, but the Noetive page gives no domain, so it is not confirmed either way.",
+    "Headcount: no public page gives a number (LinkedIn not used). The team page lists 17 people (two co-founders, a CBO, 13 technical staff, an operations manager) before a 'load more' button, so the team is larger; four open roles (SF Bay Area, New York, Seattle, remote).",
+    "Steuben Foods is named through its CEO's quote in the launch release and Ctech; the release does not say whether it is a paying customer or a design partner. No other customer is named.",
+    "Not read: WSJ Pro article linked from the Eclipse post (paywalled); PR Newswire original; Sidley Austin's note that it represented Noetive in the seed (seen only as a search result). Search-result pages from Dealroom, Webull and aggregators were not used.",
+    "Pricing not public. Revenue not publicly reported.",
+    "No WhatsApp or messaging-app channel, and no procurement, maintenance, process-stability or engineering-drawing use case, seen on any page read."
+  ]
+}

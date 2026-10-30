@@ -1,0 +1,578 @@
+{
+  "key": "white-star-capital",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "White Star Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as White Star Capital (whitestarcapital.com), which calls itself a global multi-stage technology investment firm, co-founded by managing partners Eric Martineau-Fortin and Jean-Francois Marcoux. Its own Medium blog (whitestarcapital.medium.com, linked from the site's Perspectives page) announced the $250M Fund IV close on 5 Aug 2026, confirming the user-list lead ('Q3 2026 fund close $250M'). The site lists offices in London, New York, Montreal, Paris, Toronto, Guernsey, Berlin, Milan and Abu Dhabi but names no headquarters. Its LinkedIn company page, linked from the site, gives London (W1T postcode) as headquarters, so London is used. BetaKit says it is headquartered in the UK and New York. Fund vehicles found: three earlier flagship funds (White Star Capital I–III), Fund IV (Series A–B), a North American Seed Fund (pre-seed and seed) and two Digital Asset Funds (crypto). Tokyo is not a current office: it appears only in a 2021 press release and in the location of a Tokyo/Seoul venture partner. Founder bios and LinkedIn give earlier founding dates (2007, 2008); see conflicts. Not to be confused with unrelated businesses that use the White Star name.",
+  "pages": [
+    { "url": "https://whitestarcapital.com", "title": "White Star Capital | A global multi-stage technology investment platform", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/", "title": "Team - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/venture-fund/", "title": "Early Growth Fund - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/north-american-seed-fund/", "title": "North American Seed Fund - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/digital-asset-fund/", "title": "Digital Asset Fund - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/companies/", "title": "Companies - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/news", "title": "Newsroom Archive - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/perspectives/", "title": "Perspectives - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.typeform.com/to/ArERfNMc", "title": "Startup Intake Form for Website", "publisher": "White Star Capital (Typeform)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.medium.com/white-star-capital-holds-final-close-of-250m-usd-for-fund-iv-0f4b5f5e7d1a", "title": "White Star Capital holds final close of $250m USD for Fund IV", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tech.eu/2026/08/05/white-star-capital-closes-250m-fund-iv-to-back-global-startups-from-series-a-to-b/", "title": "White Star Capital closes $250M Fund IV to back global startups from Series A to B", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://betakit.com/white-star-capital-wants-to-lead-canadian-seed-rounds-with-new-50-million-usd-fund/", "title": "White Star Capital wants to lead Canadian seed rounds with new $50-million USD fund", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/bringing-physical-ai-to-the-factory-floor-why-we-invested-in-autonomique-0c9858dfc7f7", "title": "Bringing physical AI to the factory floor: why we invested in Autonomique", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.therobotreport.com/autonomique-deploys-semi-humanoid-robots-canadian-tier-1/", "title": "Autonomique deploys semi-humanoid robots and AI at Canadian Tier 1", "publisher": "The Robot Report", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/building-the-future-of-construction-why-we-invested-in-billdr-39f1241fef5f", "title": "Building the future of construction: why we invested in Billdr", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/billdr-relaunches-with-4-4-million-cad-to-build-operating-system-for-construction/", "title": "Billdr relaunches with $4.4 million CAD to build “operating system” for construction", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/the-builders-of-america-deserve-better-software-why-we-invested-in-trayd-137d79964f64", "title": "The builders of America deserve better software: why we invested in Trayd", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://news.crunchbase.com/venture/construction-tech-automation-trayd-ai-seriesa/", "title": "Exclusive: YC Doubles Down On Trayd, A Construction Tech Startup That Just Raised $10M In 3 Weeks", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/closing-the-enterprise-personalisation-gap-why-we-invested-in-sequen-698accfde582", "title": "Closing the enterprise personalisation gap: why we invested in Sequen", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2026/03/18/sequen-snags-16m-to-bring-tiktok-style-personalization-tech-to-any-consumer-company/", "title": "Sequen snags $16M to bring TikTok-style personalization tech to any consumer company", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/escaping-the-pdf-graveyard-why-we-invested-in-tetrix-bbc268932554", "title": "Escaping the PDF graveyard: why we invested in Tetrix", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.axios.com/pro/fintech-deals/2026/06/23/tetrix-series-a-private-market-ai", "title": "Tetrix raises $15M for private-market fund data AI", "publisher": "Axios", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/bridging-the-messy-middle-of-design-why-we-invested-in-falcon-3fc3df10ab2b", "title": "Bridging the messy middle of design: why we invested in Falcon", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/white-star-capital/", "title": "White Star Capital | LinkedIn (company page About section)", "publisher": "LinkedIn", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.medium.com/white-star-capital-launches-north-american-seed-fund-cdd69751ff8c", "title": "White Star Capital launches North American Seed Fund", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/white-star-capital-closes-446-million-cad-for-new-fund/", "title": "White Star Capital closes $446 million CAD for new fund", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.unquote.com/unquote/official-record/3025324/white-star-holds-usd-360m-final-close-for-fund-iii", "title": "White Star holds USD 360m final close for Fund III", "publisher": "Unquote", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.opalesque.com/688170/Growth_technology_investor_White_Star_Capital_holds817.html", "title": "Growth technology investor White Star Capital holds $360m final close for Fund III", "publisher": "Opalesque", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tech.eu/brief/white-star-capital-first-fund/", "title": "White Star Capital closes first fund at $70 million, looks for Series A deals in Europe and North America", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://prnewswire.com/news-releases/white-star-capital-closes-50-million-digital-asset-fund-to-make-equity-and-token-investments-in-blockchain-enabled-businesses-and-crypto-networks-301295594.html", "title": "White Star Capital Closes $50 Million Digital Asset Fund to Make Equity and Token Investments in Blockchain-Enabled Businesses and Crypto-Networks", "publisher": "White Star Capital (PR Newswire)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/white-star-capital-announces-second-digital-asset-fund-301522754.html", "title": "White Star Capital Announces Second Digital Asset Fund", "publisher": "White Star Capital (PR Newswire)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thesaasnews.com/news/fluxco-raises-26m-seed", "title": "FluxCo Raises $26M Seed", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.lemondedudroit.fr/deals/99227-yards-conseille-la-start-up-veesion-dans-le-cadre-de-sa-levee-de-fonds-serie-b-dun-montant-de-38meur.html", "title": "Yards conseille la start-up Veesion dans le cadre de sa levée de fonds Série B d'un montant de 38M€", "publisher": "Le Monde du Droit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thenextweb.com/news/us-shoplifting-epidemic-veesion-french-ai-cameras-startup-funding", "title": "US shoplifting ‘epidemic’ sparks demand for French AI cameras", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://privatecapitaljournal.com/flare-secures-us-30m-series-b-and-debt-funding/", "title": "Flare secures US $30M Series B and debt funding", "publisher": "Private Capital Journal", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/", "title": "Yann LeCun's AMI Labs raises $1.03B to build world models", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://whitestarcapital.medium.com/building-the-modern-credit-network-for-b2b-payments-why-we-invested-in-oatfi-0a851a63ea42", "title": "Building the modern credit network for B2B payments: why we invested in OatFi", "publisher": "White Star Capital (Medium)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/catherine-ouellet-dupuis/", "title": "Catherine Ouellet-Dupuis - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/sanjay-zimmermann/", "title": "Sanjay Zimmermann - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/eddie-lee/", "title": "Eddie Lee - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/christophe-bourque/", "title": "Christophe Bourque - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/jean-francois-marcoux/", "title": "Jean-Francois Marcoux - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://whitestarcapital.com/team/eric-martineau-fortin/", "title": "Eric Martineau-Fortin - White Star Capital", "publisher": "White Star Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/montreal-industrial-ai-scaleup-vention-raises-110-million-usd-series-d/", "title": "Montréal industrial AI scaleup Vention raises $110-million USD Series D", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": {
+      "value": ["White Star"],
+      "pages": [11, 25],
+      "snippet": "White Star intends to focus its investments on these three markets and work closely with founders based in or near each city."
+    },
+    "type": {
+      "value": "vc",
+      "pages": [0, 11],
+      "snippet": "White Star Capital is a global multi-stage technology investment firm that backs exceptional entrepreneurs building ambitious, international businesses."
+    },
+    "website": {
+      "value": "https://whitestarcapital.com",
+      "pages": [0, 23],
+      "snippet": "Website http://www.whitestarcapital.com"
+    },
+    "linkedin": {
+      "value": "https://www.linkedin.com/company/white-star-capital/",
+      "pages": [0, 23],
+      "snippet": "White Star Capital | 28,718 followers on LinkedIn. A global multi-stage technology investment firm."
+    },
+    "hq_city": {
+      "value": "London",
+      "pages": [23, 11],
+      "snippet": "Headquarters London"
+    },
+    "hq_country": {
+      "value": "GB",
+      "pages": [23, 11],
+      "snippet": "It is headquartered in the United Kingdom (UK) and New York, with a strong presence in Canada."
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a", "series_b"],
+      "pages": [9, 24, 10, 4],
+      "snippet": "we have raised more than $350 million in fresh capital to back exceptional founders from Seed through Series B."
+    },
+    "check_min_usd": {
+      "value": 500000,
+      "pages": [24, 11],
+      "snippet": "The team will write lead checks of $0.5m up to $2m"
+    },
+    "check_max_usd": {
+      "value": 20000000,
+      "pages": [26, 25],
+      "snippet": "The fund invests initial tickets of USD 5m-20m, backing Series A rounds for companies in the US, Europe and Asia."
+    },
+    "leads": {
+      "value": true,
+      "pages": [9, 10, 11],
+      "snippet": "We are proud to have already led rounds in teams like Sequen (New York), Veesion (Paris), OatFi (New York)"
+    },
+    "thesis_text": {
+      "value": "Global multi-stage technology investor, founded in 2014, that leads and co-leads rounds for founders aiming to scale internationally. Its core Fund IV backs Series A and B; a North American Seed Fund leads pre-seed and seed rounds in Canada and the US; a separate digital-asset strategy backs crypto companies. Current themes include AI models, vertical AI and physical AI.",
+      "pages": [9, 0, 24, 4, 11],
+      "snippet": "Whether it is pioneering AI models in Paris, specialised vertical AI applications in New York, or physical AI in Montreal, we are actively investing"
+    },
+    "stated_sectors": {
+      "value": ["ai_infra", "ai_apps_agents", "robotics_physical_ai", "enterprise_saas", "fintech", "health_bio", "consumer", "crypto_web3"],
+      "pages": [5, 9, 4],
+      "snippet": "Filter by Business Model Model Consumer Enterprise Filter by Focus Focus Artificial Intelligence Commerce Digital Health Fintech Marketplace SaaS"
+    },
+    "application_url": {
+      "value": "https://whitestarcapital.typeform.com/to/ArERfNMc",
+      "pages": [8, 3],
+      "snippet": "If you are a founder, please feel free to share some details with us about what you're building!"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [9, 8, 3],
+      "snippet": "If you are building a business that can reshape its industry, we want to hear from you."
+    },
+    "requires_us_entity": {
+      "value": "no",
+      "pages": [2, 5, 9],
+      "snippet": "we help founders establish a definitive edge not just in their home countries but also abroad."
+    },
+    "portfolio_count_reported": {
+      "value": 100,
+      "pages": [9, 10, 24],
+      "snippet": "White Star Capital has now achieved 22 exits from a portfolio of 100+ companies."
+    }
+  },
+  "funds": [
+    {
+      "name": "White Star Capital first institutional fund (Fund I)",
+      "number": "I",
+      "size_original": 70000000,
+      "currency_original": "USD",
+      "close_date": "2015-11",
+      "date_precision": "month",
+      "pages": [28, 26, 27],
+      "snippet": "Following two funds of $70 million and $180 million, announced in 2015 and 2018 respectively"
+    },
+    {
+      "name": "White Star Capital II",
+      "number": "II",
+      "size_original": 180000000,
+      "currency_original": "USD",
+      "close_date": "2018-06",
+      "date_precision": "month",
+      "pages": [26, 27],
+      "snippet": "White Star Capital II held a final close in June 2018 on USD 180m, surpassing its USD 150m target."
+    },
+    {
+      "name": "White Star Capital III",
+      "number": "III",
+      "size_original": 360000000,
+      "currency_original": "USD",
+      "close_date": "2021-10",
+      "date_precision": "month",
+      "pages": [26, 27, 25],
+      "snippet": "Growth technology investor White Star Capital has held a final close for White Star Capital III on USD 360m."
+    },
+    {
+      "name": "White Star Capital Digital Asset Fund (DAF I)",
+      "number": "I",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2021-05-20",
+      "date_precision": "day",
+      "pages": [29, 4, 11],
+      "snippet": "today announced the final closing of its $50M Digital Asset Fund (DAF)"
+    },
+    {
+      "name": "White Star Capital Digital Asset Fund II (DAF II), first close; $120M stated fund size",
+      "number": "II",
+      "size_original": 120000000,
+      "currency_original": "USD",
+      "close_date": "2022-04-11",
+      "date_precision": "day",
+      "pages": [30, 11],
+      "snippet": "$120 million second fund will invest in crypto-networks and blockchain-enabled Web3, DeFi, and Gaming companies."
+    },
+    {
+      "name": "White Star Capital North American Seed Fund (first close; $50M target)",
+      "number": null,
+      "size_original": 25000000,
+      "currency_original": "USD",
+      "close_date": "2025-09-04",
+      "date_precision": "day",
+      "pages": [24, 11, 3],
+      "snippet": "with the launch of our dedicated North American Seed Fund, with a first close of $25 million and a target size of 50 million."
+    },
+    {
+      "name": "White Star Capital Fund IV",
+      "number": "IV",
+      "size_original": 250000000,
+      "currency_original": "USD",
+      "close_date": "2026-08-05",
+      "date_precision": "day",
+      "pages": [9, 10, 6],
+      "snippet": "Today, we are thrilled to announce the final close of White Star Capital Fund IV at $250 million."
+    }
+  ],
+  "partners": [
+    {
+      "name": "Catherine Ouellet-Dupuis",
+      "title": "General Partner",
+      "focus_sectors": ["robotics_physical_ai", "industrial_manufacturing", "enterprise_saas"],
+      "linkedin_url": "https://www.linkedin.com/in/catherine-ouellet-dupuis-82463921/",
+      "pages": [37, 12, 13, 24]
+    },
+    {
+      "name": "Jean-Francois Marcoux",
+      "title": "Co-Founder & Managing Partner",
+      "focus_sectors": ["industrial_manufacturing", "robotics_physical_ai", "enterprise_saas"],
+      "linkedin_url": "https://www.linkedin.com/in/jean-francois-marcoux-3875924/",
+      "pages": [41, 9]
+    },
+    {
+      "name": "Christophe Bourque",
+      "title": "General Partner",
+      "focus_sectors": ["industrial_manufacturing", "ai_apps_agents", "enterprise_saas"],
+      "linkedin_url": "https://www.linkedin.com/in/christophe-bourque-97897812/",
+      "pages": [40, 20]
+    },
+    {
+      "name": "Sanjay Zimmermann",
+      "title": "General Partner",
+      "focus_sectors": ["enterprise_saas", "dev_tools", "industrial_manufacturing"],
+      "linkedin_url": "https://www.linkedin.com/in/sanjayzimmermann/",
+      "pages": [38, 14, 22, 24, 11]
+    },
+    {
+      "name": "Eddie Lee",
+      "title": "General Partner",
+      "focus_sectors": ["enterprise_saas", "ai_infra", "fintech"],
+      "linkedin_url": "https://www.linkedin.com/in/edwinlee01/",
+      "pages": [39, 16, 17, 18, 36]
+    },
+    {
+      "name": "Eric Martineau-Fortin",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": ["ai_infra", "consumer", "health_bio"],
+      "linkedin_url": "https://www.linkedin.com/in/ericmartineaufortin/",
+      "pages": [42, 9]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Autonomique",
+        "website": "https://www.autonomique.ai",
+        "description": "Physical-AI startup whose hardware-agnostic software lets industrial robots plan and run manufacturing workflows on their own, deployed at a Tier-1 auto supplier.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-06-17",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": ["Garage Capital", "iNovia Capital", "Innovobot IRV Fund", "Ryan Gariepy", "Matt Rendall", "Bryan Webb"],
+      "unspecified": [],
+      "pages": [13, 12, 37],
+      "snippet": "led by White Star Capital, with Garage Capital, iNovia Capital, and Innovobot IRV Fund."
+    },
+    {
+      "company": {
+        "name": "FluxCo",
+        "website": "https://fluxco.com",
+        "description": "Austin-based AI marketplace that helps buyers write specifications for, source and buy electrical transformers for energy infrastructure.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2026-07",
+      "date_precision": "month",
+      "amount_original": 26000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Congruent Ventures", "8VC"],
+      "participants": ["Cubit Capital", "White Star Capital", "Trust Ventures", "Overture VC", "New System Ventures"],
+      "unspecified": [],
+      "pages": [31, 6, 5],
+      "snippet": "Additional participating investors included Cubit Capital, White Star Capital, Trust Ventures,"
+    },
+    {
+      "company": {
+        "name": "Tetrix",
+        "website": "https://www.tetrix.co/",
+        "description": "AI-native data platform whose agents collect and structure fund-reporting data from GP portals and documents for private-markets limited partners.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-06-23",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": ["Innovation Endeavors"],
+      "unspecified": [],
+      "pages": [20, 21, 40],
+      "snippet": "White Star Capital is co-leading Tetrix’s $15m Series A, with continued support from Innovation Endeavors, who led the prior $5m Seed round."
+    },
+    {
+      "company": {
+        "name": "Trayd",
+        "website": "https://www.buildtrayd.com/",
+        "description": "New York back-office platform for construction trade contractors covering union payroll, compliance, time tracking, dispatch and HR.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-25",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": ["Y Combinator", "Suffolk Technologies", "RXR Realty"],
+      "unspecified": [],
+      "pages": [17, 16, 39],
+      "snippet": "White Star Capital led the company’s Series A, which was raised in just three weeks"
+    },
+    {
+      "company": {
+        "name": "Sequen",
+        "website": "https://www.sequen.ai/",
+        "description": "New York company serving 'large event models' through a low-latency API for real-time ranking and in-session personalisation in consumer apps.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-18",
+      "date_precision": "day",
+      "amount_original": 16000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital", "Threshold Ventures"],
+      "participants": ["Greycroft", "Vinyl Capital"],
+      "unspecified": [],
+      "pages": [19, 18, 39],
+      "snippet": "Sequen’s Series A was co-led by White Star Capital and Threshold Ventures, with participation from its prior investors, including Greycroft"
+    },
+    {
+      "company": {
+        "name": "AMI Labs",
+        "website": "https://amilabs.xyz/",
+        "description": "Paris-headquartered AI lab co-founded by Yann LeCun that is building world models, AI that learns from the physical world rather than only from language.",
+        "hq_country": "FR",
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-03-10",
+      "date_precision": "day",
+      "amount_original": 1030000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Cathay Innovation", "Greycroft", "Hiro Capital", "HV Capital", "Bezos Expeditions"],
+      "participants": ["Aglaé Lab", "Alpha Intelligence Capital", "Artémis", "Bpifrance Digital Venture", "New Legacy Ventures", "SBVA", "ZEBOX Ventures", "Tim Berners-Lee", "Rosemary Berners-Lee", "Jim Breyer", "Mark Cuban", "Mark Leslie", "Xavier Niel", "Eric Schmidt"],
+      "unspecified": ["White Star Capital", "Nvidia", "Samsung", "Sea", "Temasek", "Toyota Ventures", "Association Familiale Mulliez", "Groupe Industriel Marcel Dassault", "Publicis Groupe"],
+      "pages": [35, 9, 42, 2],
+      "snippet": "The round was co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions, with participation from several other funds"
+    },
+    {
+      "company": {
+        "name": "Billdr",
+        "website": "https://www.billdr.ai/",
+        "description": "Montréal vertical-software platform giving small and mid-sized general contractors quoting, scheduling, payments, procurement and project management in one system.",
+        "hq_country": "CA",
+        "founded_year": 2020,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round (relaunch; US$3.2M / CA$4.4M)",
+      "date": "2026-01-26",
+      "date_precision": "day",
+      "amount_original": 3200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": ["Desjardins Capital", "One Way Ventures", "asterX", "Formentera Capital"],
+      "unspecified": [],
+      "pages": [15, 14, 38],
+      "snippet": "Billdr’s all-equity, all-primary seed round, which closed this month, was led by White Star Capital with support from fellow new investor Desjardins Capital"
+    },
+    {
+      "company": {
+        "name": "Falcon",
+        "website": "https://www.designwithfalcon.com/",
+        "description": "Toronto startup building a desktop environment where designers and engineers work on the same live front-end code instead of handing off static mockups.",
+        "hq_country": "CA",
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 1500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital (North American Seed Fund)", "BDC"],
+      "participants": ["MaRS IAF"],
+      "unspecified": [],
+      "pages": [22, 3, 38],
+      "snippet": "Falcon raised a $1.5m pre-seed round co-led by White Star Capital’s North American Seed Fund and BDC, with the participation of MaRS IAF"
+    },
+    {
+      "company": {
+        "name": "Flare",
+        "website": "https://flare.io/",
+        "description": "Montreal threat-exposure-management company that monitors the clear and dark web for high-risk exposures of its customers.",
+        "hq_country": "CA",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B extension: US$15M equity, alongside US$15M debt from BMO (US$30M total)",
+      "date": "2025-11-05",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Inovia Capital's Growth Fund"],
+      "participants": ["Base10 Partners", "White Star Capital"],
+      "unspecified": [],
+      "pages": [34, 2],
+      "snippet": "with participation from Base10 Partners and White Star Capital"
+    },
+    {
+      "company": {
+        "name": "OatFi",
+        "website": "https://oatfi.com/",
+        "description": "New York embedded-finance company that offers working-capital credit by API at the point of B2B payment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-06-03",
+      "date_precision": "day",
+      "amount_original": 24000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": ["QED", "Portage"],
+      "unspecified": [],
+      "pages": [36, 2, 39],
+      "snippet": "White Star Capital is proud to have lead OatFi’s $24m Series A round alongside existing investors QED and Portage"
+    },
+    {
+      "company": {
+        "name": "Veesion",
+        "website": "https://veesion.io/en/",
+        "description": "Paris company whose computer-vision software flags shoplifting gestures in retail security-camera feeds.",
+        "hq_country": "FR",
+        "founded_year": 2018,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Série B",
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "amount_original": 38000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["White Star Capital"],
+      "participants": [],
+      "unspecified": ["Red River West", "Bpifrance", "KPN", "Odyssée Venture", "Verve Ventures", "Founders Future"],
+      "pages": [2, 32, 33, 9],
+      "snippet": "Paris-based Veesion has raised a €38 million Series B round led by White Star Capital."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["London (LinkedIn company page: Headquarters London, postcode W1T 3JH)", "United Kingdom and New York (BetaKit, Sep 2025)", "none named on whitestarcapital.com, which lists London first among nine offices"],
+      "chosen": "London",
+      "reason": "The firm's own LinkedIn page, linked from its site, names London; BetaKit names two HQs, one of them in the UK."
+    },
+    {
+      "field": "founded_year",
+      "values": ["2014 (whitestarcapital.com companies page, Seed Fund launch post, BetaKit)", "2013 (Tech.eu, Nov 2015)", "2008 (LinkedIn company page)", "2007 (Eric Martineau-Fortin's team bio: 'Prior to founding White Star Capital in 2007')"],
+      "chosen": "2014",
+      "reason": "The firm's current pages say it was founded in 2014. The earlier dates probably cover the founder's earlier advisory business, but no page confirms this."
+    },
+    {
+      "field": "funds[Fund I].size_original",
+      "values": ["USD 70M (Tech.eu 2015, Unquote and Opalesque 2021)", "USD 90M 'first institutional fund' (BetaKit, Oct 2021)"],
+      "chosen": "USD 70M",
+      "reason": "Three sources, including the one written at the time of the close, say $70M. BetaKit's figure may include co-investment money, but this is not confirmed."
+    },
+    {
+      "field": "funds[Fund II].size_original",
+      "values": ["USD 180M final close, June 2018 (Unquote; Opalesque)", "USD 232M 'second fund' announced 2018 (BetaKit, Oct 2021)"],
+      "chosen": "USD 180M",
+      "reason": "Unquote gives the final close, the date and the $150M target. BetaKit gives no breakdown for its $232M."
+    },
+    {
+      "field": "offices",
+      "values": ["Brief: New York, Montreal, London, Paris, Tokyo", "Site (Oct 2026): London, New York, Montreal, Paris, Toronto, Guernsey, Berlin, Milan, Abu Dhabi", "PR Newswire (May 2021): Guernsey, New York, London, Paris, Montreal, Toronto, Tokyo, Hong Kong"],
+      "chosen": "Site list (Oct 2026)",
+      "reason": "Tokyo is no longer listed as an office. The only current Tokyo link is a venture partner based in Tokyo and Seoul."
+    },
+    {
+      "field": "rounds[AMI Labs].role",
+      "values": ["White Star led (White Star Fund IV post: 'led rounds in teams like ... AMI Labs (Paris)')", "TechCrunch names five co-leads (Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Bezos Expeditions) and a long backer list that does not include White Star"],
+      "chosen": "unspecified",
+      "reason": "White Star's own pages place AMI Labs in its portfolio and in Eric Martineau-Fortin's investments, but the only round article does not name White Star, so its role is left unspecified."
+    },
+    {
+      "field": "rounds[Tetrix].company.hq_country",
+      "values": ["New York, USA (White Star companies page)", "Montreal (White Star Fund IV post)", "New York-based and Montreal-based team (White Star Tetrix post)"],
+      "chosen": "US",
+      "reason": "The portfolio listing gives New York; the team is split between the two cities."
+    }
+  ],
+  "open_items": [
+    "SEC EDGAR returned 403 to the 'CapitalAtlas research' User-Agent, so Form D filings for White Star fund entities were not checked.",
+    "Fund IV's initial ticket size is not published. check_max_usd ($20M) is the initial-ticket ceiling of Fund III (2021), and check_min_usd ($0.5M) is the North American Seed Fund's minimum lead check.",
+    "North American Seed Fund final close not found; only the $25M first close (Sep 2025) against a $50M target. The Fund IV post (Aug 2026) mentions the Seed Fund but gives no size.",
+    "Digital Asset Fund II: the $120M is the fund size stated at the first-close announcement (Apr 2022); the first-close amount and any final close were not found.",
+    "Indian founders: nothing stated on any page. Sanjay Zimmermann focuses on Canada and Southeast Asia, and no India strategy is mentioned.",
+    "Autonomique seed amount is undisclosed, and its founding year is not on the fetched pages. The Robot Report calls it Menlo Park-based with a Montreal office; White Star lists it as California, USA.",
+    "Tetrix: White Star says it is co-leading, but the other co-lead is not named on the fetched pages (the Axios article is paywalled past the first paragraph).",
+    "FluxCo: only The SaaS News page was fetched. The WSJ article (linked from White Star's newsroom, 23 Jul 2026) is paywalled. One aggregator calls the round a Series A; this is unconfirmed, so 'Seed' is kept. Founding year not found.",
+    "Veesion: the Le Monde du Droit deal note names Red River West, Bpifrance, KPN and existing investors (Odyssée Venture, Verve Ventures, Founders Future) without roles, so they are recorded as unspecified. Only White Star's site says White Star led.",
+    "Vention Series D (US$110M, 27 Jan 2026) appears in White Star's portfolio news, but neither BetaKit nor the press release names White Star in the round (Investissement Québec led), so it is not recorded. White Star is an earlier Vention investor.",
+    "Not recorded because White Star's role was not confirmed on a fetched page: Sequen Series B ($90M, Sep 2026, led by Prysm Capital; Axios paywalled), Spiko Series B ($90M, Oct 2026, led by NEA), Finn Series D (€140M, Jun 2026), Cata seed ($5.3M, Apr 2026), Kulipa seed ($6.2M, Apr 2026) and Alfred Pay Series A ($15M, Jan 2026).",
+    "Standard Electron (Austin) is in the portfolio list, but its round was not researched.",
+    "Founding years are missing for Sequen, Trayd, Tetrix, Falcon, Flare, OatFi and AMI Labs."
+  ]
+}

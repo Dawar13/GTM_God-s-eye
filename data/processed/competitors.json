@@ -1,7 +1,211 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T08:10:05+00:00",
+  "generated_at": "2026-10-30T08:48:20+00:00",
   "records": [
+    {
+      "id": "co_1buy-ai",
+      "name": "1Buy.AI",
+      "website": "https://www.1buy.ai",
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Delhi startup offering AI cost intelligence, sourcing execution and an excess-inventory marketplace for electronic components on manufacturers' bills of materials.",
+      "total_raised_usd": 3423215,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.1buy.ai/",
+          "title": "1BUY.AI | AI-Powered Electronics Procurement Intelligence",
+          "publisher": "1Buy.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.1buy.ai/static/js/main.637cf61c.js",
+          "title": "1BUY.AI site content bundle (Team, How It Works, Use Cases and About pages, rendered client-side)",
+          "publisher": "1Buy.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/1buyai-raises-rs-325-cr-in-seed-round-led-by-100unicorns-11039023",
+          "title": "1Buy.AI raises Rs 32.5 Cr in seed round led by 100Unicorns",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/procurement-platform-1buyai-secures-inr-325-cr-seed/502280",
+          "title": "Procurement Platform 1Buy.AI Secures INR 32.5 Cr Seed Funding",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/?p=546756",
+          "title": "1Buy.AI Nets INR 33 Cr To Help Enterprises Procure Electronics Components",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/electronic-items-procurement-enabler-1buy.ai-nets-rs.32.5-cr-led-by-100-unicorns",
+          "title": "Electronic items procurement enabler 1Buy.ai nets Rs.32.5 Cr led by 100 Unicorns",
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/1buy-ai/funding/",
+          "title": "1buy.ai Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Direct-material procurement for electronics makers rather than the plant floor (no procurement layer in the taxonomy; plant_ops is the nearest fit, as for Procol and Didero). Five-step flow: upload a BOM or connect the ERP, AI flags price gaps, qualified alternates and risk, the buyer decides to renegotiate, re-source or hold, high-impact parts are sourced through 1Source, and excess or end-of-life stock is sold through 1Xcess. Target segments: EVs, smart meters, industrial and consumer electronics. No WhatsApp channel seen.",
+      "size_class": "under_5m",
+      "founders": [
+        "Visham Sikand",
+        "Nitin Jain",
+        "Pradeep Paliwal"
+      ],
+      "named_customers": [],
+      "headcount_est": {
+        "value": 45,
+        "source": {
+          "url": "https://inc42.com/company/1buy-ai/funding/",
+          "title": "1buy.ai Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Procurement platform for electronic components: it ingests a customer's bill of materials, benchmarks component prices, alternates and supply risk with AI (1Data), runs sourcing for high-impact parts through vetted global suppliers (1Source), and resells excess and obsolete inventory to approved buyers (1Xcess).",
+      "pricing": null
+    },
+    {
+      "id": "co_aerchain",
+      "name": "Aerchain",
+      "website": "https://www.aerchain.io",
+      "hq_country": "IN",
+      "founded_year": 2019,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Bengaluru procurement platform whose AI agents run enterprise intake, sourcing, negotiation, purchasing and invoice work.",
+      "total_raised_usd": 19516555,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.aerchain.io/",
+          "title": "Aerchain home page",
+          "publisher": "Aerchain",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/?p=552406",
+          "title": "Aerchain Bags $13 Mn To Scale Agentic AI Platform For Enterprise Procurement",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/aerchain-raises-usd-13-mn-in-series-a-funding-round/503533",
+          "title": "Aerchain Raises USD 13 Mn in Series A Funding Round",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.barandbench.com/dealstreet/jsa-acts-on-aerchain-13-million-series-a-fundraise",
+          "title": "JSA acts on Aerchain $13 million Series A fundraise",
+          "publisher": "Bar & Bench",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/2021/09/indiamart-and-season-two-venture-lead-pre-series-a-round-in-aerchain",
+          "title": "IndiaMart and Season Two Venture lead pre-Series A round in Aerchain",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/indiamart-acquires-over-26-stake-in-saas-firm-agillos-for-rs26cr",
+          "title": "Indiamart acquires over 26% stake in SaaS firm Agillos for Rs 26 Cr",
+          "publisher": "Venture Intelligence (citing The Economic Times)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.whalesbook.com/news/English/tech/Aerchain-Secures-dollar13M-Series-A-to-Boost-AI-Procurement-Platform/69c4cebc63d6db8f4b4bbff9",
+          "title": "Aerchain Secures $13M Series A to Boost AI Procurement Platform",
+          "publisher": "Whalesbook",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/aerchain/funding/",
+          "title": "Aerchain Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/aerchain/financials/",
+          "title": "Aerchain Financials (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Enterprise procurement back office rather than the plant floor (no procurement layer in the taxonomy; plant_ops is the nearest fit, as for Procol, Didero and Galvant). Agents for intake (auto-generated RFPs and evaluation criteria), vendor onboarding, sourcing and supplier discovery, evaluation, negotiation, purchase and invoice, with contract and analytics agents 'coming soon', plus a chat assistant (Aera), ERP and payment integrations and 30+ languages. Spend categories shown include MRO, chemicals, metals and components. No WhatsApp channel seen.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Harsha Kadimisetty",
+        "Himavanth Jasti"
+      ],
+      "named_customers": [
+        "Cars24",
+        "WeWork",
+        "AB InBev",
+        "Manjushree"
+      ],
+      "headcount_est": {
+        "value": 121,
+        "source": {
+          "url": "https://inc42.com/company/aerchain/funding/",
+          "title": "Aerchain Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "A procurement platform pitched as a 'Spend Operating System': specialised AI agents and a chat assistant handle intake, supplier discovery and onboarding, sourcing events, bid evaluation, negotiation, purchasing and invoice processing, with configurable approval workflows and ERP and payment integrations for large enterprises.",
+      "pricing": null
+    },
     {
       "id": "co_applied-intuition",
       "name": "Applied Intuition",
@@ -141,6 +345,20 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://www.vcnewsdaily.com/access/getarticle.php?aid=hlffjnzkwg",
+          "title": "Venture Capital News: Apprentice.io Receives $24M Series B Round",
+          "publisher": "VC News Daily",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.newswire.com/news/apprentice-io-raises-8m-series-a-for-first-conversational-ar-and-ai-20642149",
+          "title": "Apprentice.io Raises $8M Series A for First Conversational AR and AI Platform",
+          "publisher": "Newswire (Apprentice.io release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
           "url": "https://www.apprentice.io/about/who-we-are",
           "title": "Apprentice | Who We Are",
           "publisher": "Apprentice.io",
@@ -160,20 +378,6 @@
           "publisher": "Apprentice.io",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
-        },
-        {
-          "url": "https://www.newswire.com/news/apprentice-io-raises-8m-series-a-for-first-conversational-ar-and-ai-20642149",
-          "title": "Apprentice.io Raises $8M Series A for First Conversational AR and AI Platform",
-          "publisher": "Apprentice.io via Newswire",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://www.vcnewsdaily.com/access/getarticle.php?aid=hlffjnzkwg",
-          "title": "Apprentice.io Receives $24M Series B Round",
-          "publisher": "VC News Daily",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         },
         {
           "url": "https://vcnewsdaily.com/apprentice.io/venture-capital-funding/fhywgygjfj",
@@ -241,7 +445,7 @@
       ],
       "field_sources": {
         "website": [
-          0
+          2
         ]
       },
       "confidence": "high",
@@ -744,6 +948,13 @@
           "kind": "primary"
         },
         {
+          "url": "https://siliconangle.com/2026/02/12/didero-raises-30m-series-expand-agentic-ai-enterprise-procurement/",
+          "title": "Didero raises $30M early-stage round to expand agentic AI for enterprise procurement",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://www.didero.ai/",
           "title": "Didero (homepage: Supply chains on autopilot)",
           "publisher": "Didero",
@@ -819,18 +1030,11 @@
           "publisher": "TechCrunch",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
-        },
-        {
-          "url": "https://siliconangle.com/2026/02/12/didero-raises-30m-series-expand-agentic-ai-enterprise-procurement/",
-          "title": "Didero raises $30M early-stage round to expand agentic AI for enterprise procurement",
-          "publisher": "SiliconANGLE",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         }
       ],
       "field_sources": {
         "website": [
-          2
+          3
         ]
       },
       "confidence": "high",
@@ -854,6 +1058,128 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "AI agents that sit on a company's existing ERP and inbox and execute direct-spend work: supplier communication and follow-ups, PO creation and tracking, sourcing and quoting, contracts and master data, receiving, invoice / AP processing and supplier reporting. Reads emails, WeChat messages, calls, POs and packing lists; suppliers change nothing.",
+      "pricing": null
+    },
+    {
+      "id": "co_edmund",
+      "name": "Edmund",
+      "website": "https://www.edmundai.com/",
+      "hq_country": "CZ",
+      "founded_year": 2023,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Ostrava-based start-up (Edmund s.r.o.) whose AI agents diagnose machine faults for maintenance teams by reading PLC code, schematics, manuals, alarms, maintenance logs and live machine data.",
+      "total_raised_usd": 3407374,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.edmundai.com/",
+          "title": "Edmund (homepage: AI debugging platform for every machine on your line)",
+          "publisher": "Edmund s.r.o.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.edmundai.com/careers",
+          "title": "Edmund careers",
+          "publisher": "Edmund s.r.o.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2026/04/09/edmund-secures-eur25m-to-bring-ai-driven-troubleshooting-to-the-factory-floor/",
+          "title": "Edmund secures €2.5M to bring AI-driven troubleshooting to the factory floor",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techfundingnews.com/edmund-2-5m-factory-ai-prague/",
+          "title": "Edmund grabs €2.5M from FORWARD.one to fix manufacturing's brain drain before an entire generation retires",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.vestbee.com/insights/articles/edmund-raises-2-5-m",
+          "title": "Czech's Edmund raises €2.5M to bring AI-powered industrial troubleshooting to Europe and the US",
+          "publisher": "Vestbee",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inforcapital.com/news/czech-startup-edmund-raises-25-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance",
+          "title": "Edmund Secures €2.5M for AI Industrial Maintenance Platform",
+          "publisher": "Inforcapital",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://theaiinsider.tech/2025/02/16/edmund-secures-e500k-pre-seed-funding-to-drive-ai-innovation-in-manufacturing/",
+          "title": "Edmund Secures €500K Pre-Seed Funding to Drive AI Innovation in Manufacturing",
+          "publisher": "The AI Insider",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.ain.ua/2025/02/12/edmund-raises-eur500000",
+          "title": "Edmund raises €500,000 in funding to expand into US and global markets",
+          "publisher": "AIN",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cc.cz/odhali-poruchu-a-vymysli-reseni-ostravsky-startup-pomaha-v-prumyslu-ziskal-prvni-investici/",
+          "title": "Odhalí poruchu a vymyslí řešení. Ostravský startup pomáhá v průmyslu, získal první investici",
+          "publisher": "CzechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Maintenance and automation troubleshooting on the shop floor: a PLC agent (Siemens TIA Portal, Rockwell Allen-Bradley, Omron; anything compiling to IEC 61131-3; Codesys, Beckhoff, Schneider, WAGO 'coming soon'), robotics intelligence (ABB RAPID; FANUC, KUKA, Yaskawa coming), an ePLAN schematics agent, an SQL / MES agent, a document agent, maintenance journals (technicians dictate notes at the machine) and data-health checks. Root-cause analysis with step-by-step repair guidance via an 'Ask Edmund' chat and voice. Hosting: cloud, hybrid, on-premises or upload-only (AWS EU / US). Distribution partly through machine builders (CzechCrunch, 2024).",
+      "size_class": "under_5m",
+      "founders": [
+        "Jakub Szlaur",
+        "Benjamin Przeczek",
+        "Miroslav Marek"
+      ],
+      "named_customers": [
+        "Amcor Flexibles",
+        "Model Group (Model Obaly)",
+        "MoraviaCANS",
+        "Festo",
+        "Ferrit",
+        "Vitesco Technologies",
+        "Brose",
+        "Schaeffler",
+        "Škoda",
+        "FERMAT",
+        "COMPLETE CZ",
+        "Innomotics",
+        "IKEA Industry",
+        "Wittmann"
+      ],
+      "headcount_est": {
+        "value": 18,
+        "source": {
+          "url": "https://www.edmundai.com/careers",
+          "title": "Edmund careers",
+          "publisher": "Edmund s.r.o.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "An AI debugging platform for industrial maintenance: agents ingest a line's PLC programs, robot code, electrical schematics, manuals, alarms, MES data and maintenance journals, then trace a stoppage to its root cause and give technicians step-by-step fixes through chat or voice, logging repairs back into the maintenance record.",
       "pricing": null
     },
     {
@@ -980,6 +1306,72 @@
       "pricing": null
     },
     {
+      "id": "co_factostack",
+      "name": "FactoStack",
+      "website": "https://factostack.com",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Low-cost factory ERP for Indian manufacturing MSMEs covering quotes, orders, inventory, production, purchasing, quality and GST invoicing, with AI-agent add-ons.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://factostack.com/",
+          "title": "FactoStack home page",
+          "publisher": "FactoStack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://factostack.com/ai-agent",
+          "title": "FactoStack AI Agents add-on",
+          "publisher": "FactoStack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://factostack.com/quotes",
+          "title": "FactoStack Quotation management",
+          "publisher": "FactoStack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://factostack.com/terms",
+          "title": "FactoStack Terms of Service",
+          "publisher": "FactoStack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.softwaresuggest.com/comparestatic/factostack-vs-bnbrun",
+          "title": "Factostack vs BnBRun (SoftwareSuggest comparison)",
+          "publisher": "SoftwareSuggest",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "MSME factory ERP / MRP (system of record) rather than agents on top of other systems: Sales and CRM, quotation management with approval routing and WhatsApp PDF sharing, sales orders, inventory, production and MRP with BOM and routing, QR job cards on shop-floor phones or tablets, procurement and vendor management, incoming and in-process quality checks, GST e-invoicing with Tally handoff, and HRMS. AI Agents add-on: Sourcing (raises POs at reorder point, chases vendors), Auto Reorder, Production Status, Invoice Follow-up and Quality Alert, with human review. Industries: food processing, garments, textiles, automotive parts, general MSME.",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Factory OS: a single web and mobile system for Indian MSME manufacturers that runs quotations, sales orders, stock, production orders with BOMs and QR job cards, purchase orders, quality checks and GST invoices, with optional AI agents that raise purchase orders, reorder stock, answer order-status questions, chase payments and route quality failures.",
+      "pricing": "Factory OS ₹2,999/month (14-day free trial); Factory ERP ₹4,999/month (adds accounting); Manufacturing HRMS ₹1,999/month up to 50 employees, then ₹25 per employee; no per-user charges; Go-Live setup quoted separately (factostack.com, retrieved 2026-10-30)."
+    },
+    {
       "id": "co_flow-engineering",
       "name": "Flow Engineering",
       "website": "https://www.flowengineering.com",
@@ -993,6 +1385,20 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://sequoiacap.com/article/partnering-with-flow-the-agile-hardware-future",
+          "title": "Partnering with Flow: The Agile Hardware Future",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/blog/flow-raises-23m-from-sequoia-to-accelerate-the-future-of-hardware-development",
+          "title": "Announcing Flow's $23M Series A, Led by Sequoia",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
           "url": "https://www.flowengineering.com/",
           "title": "Flow — Requirements Tool for Agentic Teams",
           "publisher": "Flow Engineering",
@@ -1002,13 +1408,6 @@
         {
           "url": "https://www.flowengineering.com/blog/series-b-press-release",
           "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software",
-          "publisher": "Flow Engineering",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://www.flowengineering.com/blog/flow-raises-23m-from-sequoia-to-accelerate-the-future-of-hardware-development",
-          "title": "Announcing Flow's $23M Series A, Led by Sequoia",
           "publisher": "Flow Engineering",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
@@ -1072,7 +1471,7 @@
       ],
       "field_sources": {
         "website": [
-          0
+          2
         ]
       },
       "confidence": "high",
@@ -1117,6 +1516,143 @@
       "revenue_basis": "none",
       "product_summary": "Cloud requirements and systems-engineering tool that acts as the continuously updated record for hardware development, linking requirements, CAD, simulation, code and test. AI agents analyse engineering changes, trace downstream impact and check requirement and test coverage inside engineers' existing tools; ITAR GovCloud option for regulated programs.",
       "pricing": "Published on flowengineering.com/pricing (read 2026-10-30): Basic USD 150 per editor per month (500 requirements, 1 project, all integrations, API); Pro USD 300 per editor per month (5,000 requirements, 5 projects, priority support); Enterprise custom (ITAR AWS GovCloud, custom integrations, SSO/SAML). Viewer licences available."
+    },
+    {
+      "id": "co_forgepoint",
+      "name": "Forgepoint",
+      "website": "https://forgepoint.ai/",
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "process_planning",
+      "description_short": "US start-up selling 'Frank', an AI inside sales rep that turns manufacturers' incoming RFQs (emails, PDFs, CAD) into priced quotes and follows them up.",
+      "total_raised_usd": 9800000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/forgepoint-9-8m-seed-ai-quoting-manufacturers-frank",
+          "title": "Forgepoint raises $9.8M to help manufacturers quote faster",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=850425",
+          "title": "Forgepoint raises $9.8M to automate custom price quotes for manufacturing firms",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.primary.vc/companies/forgepoint",
+          "title": "Forgepoint | Primary",
+          "publisher": "Primary Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://forgepoint.ai/",
+          "title": "Forgepoint (homepage: The AI revenue engine for manufacturers)",
+          "publisher": "Forgepoint",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://forgepoint.ai/company",
+          "title": "Forgepoint company page",
+          "publisher": "Forgepoint",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://forgepoint.ai/product",
+          "title": "Forgepoint product page (Frank)",
+          "publisher": "Forgepoint",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://forgepoint.ai/careers",
+          "title": "Forgepoint careers",
+          "publisher": "Forgepoint",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://forgepoint.ai/press",
+          "title": "Forgepoint press",
+          "publisher": "Forgepoint",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://speedrun.a16z.com/companies/forgepoint",
+          "title": "Meet Forgepoint. AI coworkers for the manufacturing back office.",
+          "publisher": "a16z speedrun",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techfundingnews.com/forgepoint-raises-9-8m-from-primary-and-a16z-speedrun-to-put-ai-on-the-factory-quote-desk/",
+          "title": "Forgepoint raises $9.8M from Primary and a16z speedrun to put AI on the factory quote desk",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://americanbazaaronline.com/2026/10/14/forgepoint-raises-9-8-million-seed-round-to-automate-manufacturing-quotes-with-ai-490040/",
+          "title": "Forgepoint raises $9.8 million seed round to automate manufacturing quotes with AI",
+          "publisher": "American Bazaar",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://microsoftpartners.microsoft.com/abs/Individual-Partner-Success-Story/?title=Forgepoint%20helps%20manufacturers%20accelerate%20revenue%20growth%20with%20AI-powered%20quoting%20on%20Dynamics%20365%20Business%20Central",
+          "title": "Forgepoint helps manufacturers accelerate revenue growth with AI-powered quoting on Dynamics 365 Business Central",
+          "publisher": "Microsoft Partner Network",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          3
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Sell-side quoting / estimating for job shops rather than the plant floor: Frank qualifies inbound RFQs (email, PDF, spreadsheet, CAD), extracts materials, dimensions, tolerances, quantities and due dates from drawings, chases missing specs, drafts a BOM and prices each line against the shop's cost model, routes the quote for human sign-off, sends it, tracks opens and runs follow-ups, and logs everything to the account and job. Integrates with ERPs (Epicor, NetSuite, SAP, Sage, Infor, Syspro, Acumatica, Dynamics 365 Business Central). Industries listed: injection molding, steel mills, foundries, metal service centers, fabricators, stampers, coating and heat treat, CNC machining, forging, fasteners. process_planning is the nearest layer (drawing-to-quote), as for IndustrialMind's quoting agent.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Jack Strauss",
+        "Alex Pareto"
+      ],
+      "named_customers": [
+        "SIP Manufacturing",
+        "Excal Inc.",
+        "Metals of Honor",
+        "Black Label Services",
+        "Gamma Foundries",
+        "Riverside Foundry",
+        "Highland Foundry Ltd",
+        "Premix / Hadlock",
+        "Acra Cast Inc."
+      ],
+      "headcount_est": {
+        "value": 8,
+        "source": {
+          "url": "https://speedrun.a16z.com/companies/forgepoint",
+          "title": "Meet Forgepoint. AI coworkers for the manufacturing back office.",
+          "publisher": "a16z speedrun",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Frank, an AI inside sales rep for manufacturers: reads incoming RFQs and drawings, asks buyers for missing details, drafts a BOM and prices it with the shop's own cost rules, holds the quote for human approval, then sends it, tracks buyer engagement and follows up, logging activity into the ERP / CRM.",
+      "pricing": null
     },
     {
       "id": "co_galvant",
@@ -1784,6 +2320,131 @@
       "pricing": null
     },
     {
+      "id": "co_maneva",
+      "name": "Maneva",
+      "website": "https://maneva.ai/",
+      "hq_country": "US",
+      "founded_year": 2021,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "quality_vision",
+      "description_short": "Palo Alto / Toronto start-up whose 'Video-to-Action' AI agents run on existing factory cameras to catch defects, cut downtime, flag safety hazards and supervise line productivity.",
+      "total_raised_usd": 37000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://maneva.ai/",
+          "title": "Maneva (homepage: Video-to-Action AI Powering Industrial Operations)",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/company/about",
+          "title": "Maneva about",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/resources/news",
+          "title": "Maneva news",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/resources/press",
+          "title": "Maneva press",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/resources/resource/maneva-raises-27m-series-a-tackle-inefficiencies-manufacturing",
+          "title": "Maneva Raises $27M to Tackle Inefficiencies Across the $46T Manufacturing Industry",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/resources/resource/maneva-secures-10m-seed-funding-to-transform-manufacturing-with-ai-powered-automation",
+          "title": "Maneva Secures $10M USD Seed Funding",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://maneva.ai/resources/resource/betakit-maneva-raises-27-million-usd-series-a-to-expand-ai-vision-in-manufacturing",
+          "title": "BetaKit: Maneva raises $27-million USD Series A to expand AI vision in manufacturing (company repost)",
+          "publisher": "Maneva",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/maneva-raises-27-million-usd-series-a-to-expand-ai-vision-in-manufacturing/",
+          "title": "Maneva raises $27-million USD Series A to expand AI vision in manufacturing",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.osler.com/en/about-us/representative-work/maneva/",
+          "title": "Maneva, dans le cadre d'un tour de financement d'amorçage de 10 millions $",
+          "publisher": "Osler, Hoskin & Harcourt",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.osler.com/en/about-us/representative-work/maneva-2/",
+          "title": "Maneva in its $27-million Series A financing",
+          "publisher": "Osler, Hoskin & Harcourt",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.osler.com/fr/a-propos-de-nous/mandats-representatifs/maneva-3/",
+          "title": "Maneva, dans le cadre de son tour de financement de série A de 27 millions $",
+          "publisher": "Osler, Hoskin & Harcourt",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://parsers.vc/news/260616-maneva-secures-27m-to-propel-ai-powered/",
+          "title": "Maneva Secures $27M to Propel AI-Powered Manufacturing Revolution",
+          "publisher": "parsers.vc",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inforcapital.com/news/maneva-raises-27m-in-series-a-funding/",
+          "title": "Maneva Raises $27M for AI Factory Vision Technology",
+          "publisher": "Inforcapital",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Camera-based plant-floor AI: VITA (Video-to-Action agent for quality assurance and downtime reduction) and ALIS (AI Line Supervisor for safety and productivity) run on cameras already installed in the plant (or ones Maneva helps choose), with NVIDIA edge devices; an Orchestration Platform launched July 2026 connects agents across a facility, with 'AI knowledge agent' features planned. Spans quality_vision and plant_ops (downtime, MTBF, line supervision, safety). Industries cited: food and beverage, confectionery, meat processing, pharma, cosmetics, steel, glass, wood / lumber, automotive, electronics, distribution.",
+      "size_class": "from_25m_to_100m",
+      "founders": [
+        "Rae Jeong",
+        "Kelvin Chan"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Computer-vision agents on a plant's existing cameras: VITA watches each product and operator to catch defects and reduce downtime; ALIS acts as an AI line supervisor for safety and productivity; an orchestration platform links agents across the facility. Runs on edge hardware; equipment rental offered in special cases.",
+      "pricing": null
+    },
+    {
       "id": "co_matta",
       "name": "Matta",
       "website": "https://matta.ai",
@@ -2129,6 +2790,105 @@
       "pricing": null
     },
     {
+      "id": "co_noetive",
+      "name": "Noetive",
+      "website": "https://noetive.ai/",
+      "hq_country": "US",
+      "founded_year": 2026,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "San Francisco applied-AI lab, built with Eclipse, whose self-improving agents plus on-site sensing pods run core planning work in factories, logistics and construction.",
+      "total_raised_usd": 41000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/operational-intelligence-for-the-physical-economy",
+          "title": "Operational Intelligence for the Physical Economy",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/",
+          "title": "The Physical Economy's AI lab",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/news/noetive-emerges-from-stealth-with-41-million-seed",
+          "title": "Noetive Emerges From Stealth With $41 Million Seed to Build the Intelligence of Record for the Physical Economy",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/team",
+          "title": "Team",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/news",
+          "title": "Newsroom",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/news/welcome-meridian",
+          "title": "Noetive Is Excited to Welcome Meridian",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://noetive.ai/lab",
+          "title": "Lab",
+          "publisher": "Noetive",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.calcalistech.com/ctechnews/article/hjji2potfx",
+          "title": "Five months old, Noetive raises $41 million Seed to build AI for the physical economy",
+          "publisher": "Ctech by Calcalist",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.noetive.com/",
+          "title": "Noetive (strategy and transformation consultancy; a different company)",
+          "publisher": "Noetive (noetive.com)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          1
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Operations 'brain' on top of a business's existing systems of record, fused with data from Noetive's own multimodal sensing pods. Manufacturing entry point is dynamic production planning and replanning from what is actually running on the line (Steuben Foods: monthly planning taking a week became daily planning taking minutes); logistics entry point is manifest / pallet consolidation; construction entry point (via the Meridian acquisition) is plan-versus-site tracking. Users are planners and operators at the site; a forward-deployed, design-partner model. No procurement, maintenance, RFQ / BOM or drawing agents seen.",
+      "size_class": "from_25m_to_100m",
+      "founders": [
+        "Amir Frenkel",
+        "Dan Barak"
+      ],
+      "named_customers": [
+        "Steuben Foods"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Self-improving AI agents sit on a firm's existing systems, fuse their data with Noetive's multimodal sensing pods into a live model of the operation, and run core planning work: dynamic production planning (manufacturing), manifest consolidation (logistics) and plan-versus-site tracking (construction).",
+      "pricing": null
+    },
+    {
       "id": "co_nowpurchase",
       "name": "NowPurchase",
       "website": "https://www.nowpurchase.com",
@@ -2273,6 +3033,20 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/",
+          "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor",
+          "publisher": "Digital Media Net (ACCESS Newswire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/",
+          "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://pear.vc/companies/",
           "title": "Companies | Pear VC",
           "publisher": "Pear VC",
@@ -2285,20 +3059,6 @@
           "publisher": "Parallax Worlds",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
-        },
-        {
-          "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/",
-          "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor",
-          "publisher": "Digital Media Net (company press release)",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
-        },
-        {
-          "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/",
-          "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots",
-          "publisher": "The Robot Report",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         },
         {
           "url": "https://siliconangle.com/?p=721952",
@@ -2317,7 +3077,7 @@
       ],
       "field_sources": {
         "website": [
-          0
+          2
         ]
       },
       "confidence": "high",
@@ -2835,6 +3595,135 @@
       "pricing": null
     },
     {
+      "id": "co_sea12",
+      "name": "Sea12",
+      "website": "https://www.sea12.co/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "New York start-up that builds LLM automations for back-office workflows (order documents, quoting, inventory, invoicing) at manufacturing, steel, logistics and construction firms, with forward-deployed engineers.",
+      "total_raised_usd": 29000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.sea12.co/",
+          "title": "Sea12 Technologies",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sea12.co/orchestrator",
+          "title": "Orchestrator | Sea12 Technologies",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sea12.co/industries/manufacturing",
+          "title": "Sea12 for Manufacturing",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sea12.co/perspectives/revitalizing-american-manufacturing-with-ai-powered-automation",
+          "title": "Revitalizing American manufacturing with AI-powered automation | Sea12 Technologies",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://careers.sea12.com/",
+          "title": "Careers — SEA12",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://careers.sea12.com/jobs/fde",
+          "title": "Forward Deployed Engineer — SEA12 Careers",
+          "publisher": "Sea12",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.citybiz.co/article/863009/sea12-gains-25m-to-push-back-office-ai-operations/",
+          "title": "Sea12 Gains $25M to Push Back Office AI Operations",
+          "publisher": "citybiz",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.thesaasnews.com/news/sea12-raises-25m-series-a/",
+          "title": "Sea12 Raises $25M Series A",
+          "publisher": "The SaaS News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inforcapital.com/news/sea12-technologies-raises-25-million-for-end-to-end-workflow-automation-platform",
+          "title": "Sea12 Technologies Raises $25M for Workflow Automation",
+          "publisher": "Inforcapital",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.trysignalbase.com/news/funding/sea12-raises-250m-series",
+          "title": "Sea12 Raises $25.0M Series | Signalbase",
+          "publisher": "Signalbase",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sea12%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 'Sea12'",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://alsocapital.com/",
+          "title": "Also Capital (homepage portfolio)",
+          "publisher": "Also Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Industrial back office rather than the plant floor: the Sea12 Orchestrator sits on a customer's existing applications and data feeds and automates departmental workflows (quoting and proposals, inventory levels and reorder points, invoice creation and payment processing, truck location and load updates in the TMS). At Basden Steel it handles order documents, routes parts to the right shop, processes invoices and catches double billing; construction work includes turning schedules, RFIs, submittals and cost records into a question-answering system. Manufacturing page also offers real-time operations data and a cited, safety-aware knowledge assistant. Delivered by forward-deployed engineers; users are office and operations staff.",
+      "size_class": "from_25m_to_100m",
+      "founders": [
+        "Thomas Mosen",
+        "Charles Englander"
+      ],
+      "named_customers": [
+        "Basden Steel"
+      ],
+      "headcount_est": {
+        "value": 14,
+        "source": {
+          "url": "https://www.citybiz.co/article/863009/sea12-gains-25m-to-push-back-office-ai-operations/",
+          "title": "Sea12 Gains $25M to Push Back Office AI Operations",
+          "publisher": "citybiz",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "The Sea12 Orchestrator plus forward-deployed engineers: LLM automations built on a customer's existing applications and data feeds that run whole back-office workflows (order documents, quoting, inventory and reorder points, invoicing and payments, TMS load updates), plus natural-language knowledge search over manufacturing and safety documents.",
+      "pricing": null
+    },
+    {
       "id": "co_seeq",
       "name": "Seeq",
       "website": "https://www.seeq.com",
@@ -3100,6 +3989,114 @@
       "revenue_basis": "none",
       "product_summary": "Sells the Modalix family of machine-learning systems-on-chip and development kits, paired with Palette, a software suite (now with an agentic environment, Palette Neat) that compiles and deploys AI models on the chip. Pitched as low-power on-device inference for robotics, automotive, drones, aerospace, industrial automation and smart vision.",
       "pricing": null
+    },
+    {
+      "id": "co_spector-ai",
+      "name": "Spector.ai",
+      "website": "https://spector.ai",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Santa Clara-headquartered industrial AI company with a Bengaluru engineering base that sells reliability and performance agents for plant assets and processes.",
+      "total_raised_usd": 6109122,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://spector.ai/",
+          "title": "Spector.ai home page",
+          "publisher": "Spector.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://spector.ai/about/",
+          "title": "About Spector.ai",
+          "publisher": "Spector.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://spector.ai/manufacturing/",
+          "title": "Spector.ai for Manufacturing",
+          "publisher": "Spector.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/spector-ai-raises-6-7-mn-to-scale-its-industrial-ai-offerings",
+          "title": "Spector.ai Raises $6.7 Mn To Scale Its Industrial AI Offerings",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/spectorai-raises-inr-58-cr-funding-led-by-ivycap-ventures/501707",
+          "title": "Spector.ai Raises INR 58 Cr Funding Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/spector-ai/funding/",
+          "title": "Spector.ai Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/industrial-ai-startup-spector.ai-raises-%246.7-m-from-ivycap-ventures",
+          "title": "Industrial AI startup Spector.ai raises $6.7 M from IvyCap Ventures",
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.trysignalbase.com/news/funding/spectorai-raises-900k-seed",
+          "title": "Spector.ai raises $900K seed (Signalbase)",
+          "publisher": "Signalbase",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Reliability and performance agents built on an 'Agentic Twin' per asset or production line: asset reliability (degradation detection, time-to-fail, root cause), process reliability (upset and quality-excursion prediction, e.g. cobbles in a rolling mill), performance optimisation (physics-grounded set points for yield and energy, recommended open-loop to operators) and plant troubleshooting with a GenAI agent using SOPs and event logs. Process industries first (oil and gas, chemicals, power), plus cement, steel and discrete manufacturing. Cloud or on-prem / air-gapped; no WhatsApp channel seen.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Prashant Nedungadi",
+        "Sukrit Goel"
+      ],
+      "named_customers": [
+        "Continuum",
+        "Senvion",
+        "Hitachi Energy",
+        "Rossari Biotech",
+        "Long Energy and Resources",
+        "Serikandi Group of Companies",
+        "Jindal Steel",
+        "Shell"
+      ],
+      "headcount_est": {
+        "value": 23,
+        "source": {
+          "url": "https://inc42.com/company/spector-ai/funding/",
+          "title": "Spector.ai Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Agentic Twin: an AI model of each asset and process built from equipment knowledge, physics and plant data, which watches live signals, forecasts failures and process upsets, explains root causes and recommends energy- and yield-optimal set points, delivered as reliability agents for heavy-industry plants.",
+      "pricing": "No prices published. The manufacturing page describes a pilot on 2-6 assets over 4-12 weeks with the implementation fee at cost, then a 12-36 month scale-up on an annual SaaS subscription."
     },
     {
       "id": "co_symphonyai-industrial",
@@ -3514,6 +4511,262 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Plug-and-play sensors capture vibration, ultrasound, temperature, electrical and PLC/process signals; AI detects and diagnoses developing machine failures, prescribes fixes and reports downtime avoided, while a CMMS handles work orders, spare parts, preventive schedules and maintenance KPIs, integrating with SAP, NetSuite and IBM Maximo.",
+      "pricing": null
+    },
+    {
+      "id": "co_ugx-ai",
+      "name": "UGX.AI",
+      "website": "https://ugx.ai",
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Gurugram shop-floor data platform for discrete manufacturers: machine connectivity, MES and traceability, vision quality inspection and maintenance apps.",
+      "total_raised_usd": 1000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://ugx.ai/",
+          "title": "UGX.AI Industrial DataOps Platform",
+          "publisher": "UGX.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://ugx.ai/technology",
+          "title": "UGX.AI Technology",
+          "publisher": "UGX.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/meolaa-reodev-and-ugxai-raise-early-stage-funding/498159",
+          "title": "Meolaa, Reo.Dev, and UGX.ai Raise Early-Stage Funding",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/factory-ops-optimization-platform-ugx.ai-raises-%241-m-led-by-blue-ocean",
+          "title": "Factory ops optimization platform UGX.ai raises $1 M led by Blue Ocean",
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.marcamoney.com/ugx-ai-raises-1-million-in-seed-funding-led-by-blue-ocean-venture-partners/",
+          "title": "UGX.ai raises $1 million in seed funding led by Blue Ocean Venture Partners",
+          "publisher": "Marca Money",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/ugx-ai/funding/",
+          "title": "UGX.AI Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Plant data and execution layer: an industrial edge gateway and protocol library (Modbus, OPC-UA, Ethernet/IP, MQTT), a smart MES (work orders, scheduling, traceability and genealogy), vision-based quality inspection with statistical quality control, and out-of-box apps for predictive maintenance, machine observability and performance analytics, with ERP integrations (SAP, Oracle JD Edwards, Dynamics 365, Odoo, Zoho). Shop-floor tablets and barcode scanners; no agents, chat or WhatsApp channel seen.",
+      "size_class": "under_5m",
+      "founders": [
+        "Abhishek Kumar",
+        "Ankur Singh",
+        "Ankit Agarwal",
+        "Prakhar Nigam"
+      ],
+      "named_customers": [
+        "Pangaea Natural Stone",
+        "Magneti Marelli",
+        "Shell",
+        "Bosch",
+        "Rico Auto Industries",
+        "Napino",
+        "VVDN Technologies",
+        "LohiaCorp",
+        "Ajanta Chemicals",
+        "Chemfield Cellulose",
+        "Saint-Gobain",
+        "Imasu",
+        "Rockman",
+        "Hero",
+        "Honda",
+        "Ornate Solar",
+        "PVNA",
+        "Tata Motors",
+        "Amplus Solar",
+        "CG Chaudhary Group",
+        "Dabur",
+        "Inverted",
+        "Continental",
+        "Forace Polymers",
+        "Sigma Engineered Solutions",
+        "TVS",
+        "Indian Oil",
+        "Dhoot Transmission"
+      ],
+      "headcount_est": {
+        "value": 43,
+        "source": {
+          "url": "https://inc42.com/company/ugx-ai/funding/",
+          "title": "UGX.AI Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Industrial DataOps platform for discrete factories: an edge gateway and protocol library connect legacy and modern machines, feeding a smart MES for work orders, scheduling and material traceability, AI vision inspection for defects and dimensions, and apps for predictive maintenance, machine monitoring and live production dashboards, integrated with the plant's ERP.",
+      "pricing": null
+    },
+    {
+      "id": "co_vinci",
+      "name": "Vinci",
+      "website": "https://www.getvinci.ai/",
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Palo Alto start-up whose pre-trained physics foundation model runs fast, solver-accurate thermal and thermo-mechanical simulation of full-resolution hardware designs, starting with semiconductors.",
+      "total_raised_usd": 296000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/The-ChatGPT-for-Physics",
+          "title": "The ChatGPT for Physics",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/",
+          "title": "Vinci | Physics AI for Engineering Simulation",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/team/",
+          "title": "Team | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/newsroom/",
+          "title": "Newsroom | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/news/vinci-emerges-from-stealth-to-transform-semiconductor-design-and-simulation/",
+          "title": "Vinci Emerges from Stealth to Transform Semiconductor Design and Simulation | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/news/reuters-vinci-raises-36-million-to-advance-hardware-simulation/",
+          "title": "Reuters: Vinci Raises $36 Million to Advance Hardware Simulation | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/blog/why-physics-needs-to-move-at-the-pace-of-design/",
+          "title": "Why Physics Needs to Move at the Pace of Design | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/news/vinci-ships-production-grade-thermo-mechanical-simulation-at-manufacturing-scale/",
+          "title": "Vinci Ships Production-Grade Thermo-Mechanical Simulation at Manufacturing Scale | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/faq/",
+          "title": "FAQ | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.getvinci.ai/careers/",
+          "title": "Careers | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/2025/12/03/vinci-nabs-46m-speed-chip-simulations-ai/",
+          "title": "Vinci nabs $46M to speed up chip simulations with AI",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/vinci-46-million-funding/",
+          "title": "Vinci: $46 Million Closed To Launch Physics-Driven AI Platform For Semiconductor Design",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/10/06/vinci-reels-in-250m-for-its-engineering-simulation-platform/",
+          "title": "Vinci reels in $250M for its engineering simulation platform",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/vinci-raises-250-million-series-b-at-1-5-billion-valuation/",
+          "title": "Vinci Raises $250 Million Series B At $1.5 Billion Valuation To Expand AI-Native Computational Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.getvinci.ai/platform/",
+          "title": "Platform | Vinci",
+          "publisher": "Vinci",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          1
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Design-stage physics simulation (CAE) rather than requirements or design-intent capture: thermal, thermo-mechanical (warpage, stress) and convective-fluid analysis on native layout and design files (OASIS / GDS / IPC-2581) for chips, advanced packages, PCBs and enclosures, behind the customer's firewall. Users are hardware / packaging engineers at semiconductor and electronics companies. Roadmap: CFD, electromagnetics, mechanics and manufacturability, agentic engineering workflows, then recommending design changes and generating designs from intent; also aiming at vehicles, aircraft and satellites.",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Hardik Kabaria",
+        "Sarah Osentoski",
+        "Vincent Rerolle"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Pre-trained physics foundation model that ingests native design and layout files, meshes automatically and returns deterministic, solver-grade thermal, thermo-mechanical (warpage, stress) and convective-flow simulations at manufacturing resolution in minutes, behind the customer's firewall and without training on customer data. First market: semiconductors and electronics packaging.",
       "pricing": null
     }
   ]

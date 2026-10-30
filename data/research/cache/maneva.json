@@ -1,0 +1,111 @@
+{
+  "key": "maneva",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Maneva (maneva.ai), the 'Video-to-Action AI' company for manufacturing founded in 2021 by Rae Jeong (CEO, ex-Google DeepMind) and Kelvin Chan (CTO, ex-Magna), with offices in Palo Alto, CA and North York (Toronto), ON. The company's own about, news and funding pages, BetaKit (2026-06-12), Osler's deal pages (company counsel), parsers.vc and inforcapital all describe the same product (VITA and ALIS agents on existing factory cameras) and the same investors (seed co-led by Bling Capital and Freestyle Capital; Series A led by USVP). Not any other business using the Maneva name; identity tied to the maneva.ai domain. Not in the PROJECT_CONTEXT §7 seed list; found through a discovery search. Category set to adjacent: its agents watch production lines through cameras to catch defects, cut downtime, flag safety hazards and supervise line productivity, which overlaps Utopian Autonomy's process-stability and maintenance (downtime) functions on the plant floor, but it is a computer-vision product, not conversational agents; no procurement, RFQ / BOM / drawing or WhatsApp features were seen.",
+  "pages": [
+    { "url": "https://maneva.ai/", "title": "Maneva (homepage: Video-to-Action AI Powering Industrial Operations)", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/company/about", "title": "Maneva about", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/resources/news", "title": "Maneva news", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/resources/press", "title": "Maneva press", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/resources/resource/maneva-raises-27m-series-a-tackle-inefficiencies-manufacturing", "title": "Maneva Raises $27M to Tackle Inefficiencies Across the $46T Manufacturing Industry", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/resources/resource/maneva-secures-10m-seed-funding-to-transform-manufacturing-with-ai-powered-automation", "title": "Maneva Secures $10M USD Seed Funding", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://maneva.ai/resources/resource/betakit-maneva-raises-27-million-usd-series-a-to-expand-ai-vision-in-manufacturing", "title": "BetaKit: Maneva raises $27-million USD Series A to expand AI vision in manufacturing (company repost)", "publisher": "Maneva", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/maneva-raises-27-million-usd-series-a-to-expand-ai-vision-in-manufacturing/", "title": "Maneva raises $27-million USD Series A to expand AI vision in manufacturing", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.osler.com/en/about-us/representative-work/maneva/", "title": "Maneva, dans le cadre d'un tour de financement d'amorçage de 10 millions $", "publisher": "Osler, Hoskin & Harcourt", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.osler.com/en/about-us/representative-work/maneva-2/", "title": "Maneva in its $27-million Series A financing", "publisher": "Osler, Hoskin & Harcourt", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.osler.com/fr/a-propos-de-nous/mandats-representatifs/maneva-3/", "title": "Maneva, dans le cadre de son tour de financement de série A de 27 millions $", "publisher": "Osler, Hoskin & Harcourt", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://parsers.vc/news/260616-maneva-secures-27m-to-propel-ai-powered/", "title": "Maneva Secures $27M to Propel AI-Powered Manufacturing Revolution", "publisher": "parsers.vc", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inforcapital.com/news/maneva-raises-27m-in-series-a-funding/", "title": "Maneva Raises $27M for AI Factory Vision Technology", "publisher": "Inforcapital", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "Maneva",
+    "website": "https://maneva.ai/",
+    "description": "Palo Alto / Toronto start-up whose 'Video-to-Action' AI agents run on existing factory cameras to catch defects, cut downtime, flag safety hazards and supervise line productivity.",
+    "hq_country": "US",
+    "founded_year": 2021,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "quality_vision"
+  },
+  "category": "adjacent",
+  "layer": "quality_vision",
+  "layer_detail": "Camera-based plant-floor AI: VITA (Video-to-Action agent for quality assurance and downtime reduction) and ALIS (AI Line Supervisor for safety and productivity) run on cameras already installed in the plant (or ones Maneva helps choose), with NVIDIA edge devices; an Orchestration Platform launched July 2026 connects agents across a facility, with 'AI knowledge agent' features planned. Spans quality_vision and plant_ops (downtime, MTBF, line supervision, safety). Industries cited: food and beverage, confectionery, meat processing, pharma, cosmetics, steel, glass, wood / lumber, automotive, electronics, distribution.",
+  "founders": ["Rae Jeong", "Kelvin Chan"],
+  "named_customers": [],
+  "product_summary": "Computer-vision agents on a plant's existing cameras: VITA watches each product and operator to catch defects and reduce downtime; ALIS acts as an AI line supervisor for safety and productivity; an orchestration platform links agents across the facility. Runs on edge hardware; equipment rental offered in special cases.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Maneva", "website": "https://maneva.ai/", "description": "Video-to-Action AI agents on existing factory cameras for quality, downtime, safety and line supervision.", "hq_country": "US", "founded_year": 2021, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "quality_vision" },
+      "stage": "seed",
+      "stage_raw": "Seed ($10M USD), co-led by Ben Ling of Bling Capital and Maria Palma of Freestyle Capital; other venture firms and angels unnamed",
+      "date": "2026-03-07",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Bling Capital", "Freestyle Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 8, 10, 1],
+      "snippet": "co-led by Ben Ling of Bling Capital and Maria Palma of Freestyle Capital."
+    },
+    {
+      "company": { "name": "Maneva", "website": "https://maneva.ai/", "description": "Video-to-Action AI agents on existing factory cameras for quality, downtime, safety and line supervision.", "hq_country": "US", "founded_year": 2021, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "quality_vision" },
+      "stage": "series_a",
+      "stage_raw": "Series A ($27M USD, about $38M CAD per BetaKit); USVP partner Matt Garratt joined the board; Prem Kalevar assembled an SPV for the round",
+      "date": "2026-06-10",
+      "date_precision": "day",
+      "amount_original": 27000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["U.S. Venture Partners (USVP)"],
+      "participants": ["Bling Capital", "Freestyle Capital", "N49P", "Seguin Ventures", "Prem Kalevar (SPV)"],
+      "unspecified": [],
+      "pages": [4, 7, 9, 10, 11, 12, 1],
+      "snippet": "The Series A round was led by U.S. Venture Partners (USVP)"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": [
+        "US: the company site lists its Palo Alto office (650 Page Mill Road) first; parsers.vc calls it 'a Palo Alto AI pioneer'",
+        "CA: BetaKit calls it a 'Toronto AI company'; the company's second office is in North York, Ontario; Osler (Toronto) acted as its counsel"
+      ],
+      "chosen": "US",
+      "reason": "The company's own pages list Palo Alto first and do not name a headquarters; Canadian operations noted in the description. Revisit if a filing or release dateline settles it."
+    },
+    {
+      "field": "rounds[seed].date",
+      "values": [
+        "2026-03-07 (Osler deal page: 'Date annoncée: 7 mars 2026'; repeated on Osler's Series A page)",
+        "Earlier, probably 2024 (the company's about-page timeline puts the $10M seed in its fourth entry, with a separate 2021–2026 year row; the year pairing is an inference, not stated)"
+      ],
+      "chosen": "2026-03-07",
+      "reason": "Osler is the only page read that states a date; the company's seed post is undated. Treat the date with caution: Osler's date may be when the deal page was posted rather than when the round was announced."
+    },
+    {
+      "field": "rounds[series_a].participants (Gokul Rajaram)",
+      "values": [
+        "Gokul Rajaram participated in the Series A as an angel (inforcapital)",
+        "Gokul Rajaram gave 'early seed funding support' (BetaKit)"
+      ],
+      "chosen": "Not listed in either round",
+      "reason": "BetaKit (reputable press) ties him to early seed support, not the Series A; inforcapital is an aggregator. Neither round page from the company names him."
+    }
+  ],
+  "open_items": [
+    "Total raised: the company, BetaKit, parsers.vc and inforcapital all state $38.4M to date. Disclosed rounds sum to $37M ($10M seed + $27M Series A); the remaining ~$1.4M (perhaps early seed money from angels such as Gokul Rajaram, per BetaKit) is not itemised on any page read.",
+    "Seed round date is uncertain (see conflicts); co-investors beyond the two leads not named.",
+    "Series A: 'a group of leading angel investors and funds' unnamed beyond N49P, Seguin Ventures and Prem Kalevar's SPV (BetaKit). Valuation not disclosed. Axios Pro (2026-06-10) and Wilson Sonsini's note were not readable (403 / not opened).",
+    "No customers named on any page read: only an unnamed 'leading wood manufacturer' and 'Fortune 500 industrial manufacturer'; 'SME x Maneva' and 'Tool or Die x Maneva' news items look like media / association features, not customers (not opened).",
+    "Headcount not found on a public page (LinkedIn not used; careers hosted on Workable, not opened).",
+    "Revenue not publicly reported; pricing not public.",
+    "A search result showed a Crunchbase URL slug 'laplace-robotics' tied to a Rae Jeong; not opened, so any former company name is unverified.",
+    "BetaKit says the company was founded by 'a former Alberta welder turned engineer'; the about page describes Jeong as a former Google DeepMind research engineer. Both may be true; not reconciled."
+  ]
+}
