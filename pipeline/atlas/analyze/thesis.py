@@ -4,6 +4,8 @@ Stated: the sectors the firm names (research `stated_sectors`), else keyword hit
 in its thesis text and the user lists' focus (THESIS_KEYWORDS). Portfolio:
 sectors of companies in its rounds, rounds in the last 24 months weighted 1.0,
 older 0.5. If one input is missing the other is used alone; `method` says which.
+A portfolio needs MIN_PORTFOLIO_ROUNDS rounds with a known sector to count: one
+industrial co-investment is not an industrial thesis.
 """
 
 import math
@@ -12,6 +14,7 @@ from datetime import date
 from atlas.config import (
     AGNOSTIC_PHRASES,
     GENERALIST_ENTROPY,
+    MIN_PORTFOLIO_ROUNDS,
     REFERENCE_DATE,
     SECTORS,
     THESIS_KEYWORDS,
@@ -87,6 +90,8 @@ def compute(store: Store) -> None:
     for inv in store.investors.values():
         stated, stated_inputs = stated_vector(store, inv)
         portfolio, n = portfolio_vector(store, inv["id"], by_inv)
+        if n < MIN_PORTFOLIO_ROUNDS:
+            portfolio = {}
         if stated and portfolio:
             sectors = set(stated) | set(portfolio)
             value = {s: 0.5 * stated.get(s, 0) + 0.5 * portfolio.get(s, 0) for s in sectors}
@@ -100,7 +105,14 @@ def compute(store: Store) -> None:
         drift = 1 - sum(value.values())
         top = max(value, key=value.get)
         value[top] = round(value[top] + drift, 6)
-        inputs = stated_inputs + ([f"portfolio: {n} rounds with a known sector"] if n else [])
+        inputs = stated_inputs + (
+            [
+                f"portfolio: {n} rounds with a known sector"
+                + ("" if portfolio else f" (fewer than {MIN_PORTFOLIO_ROUNDS}, not used)")
+            ]
+            if n
+            else []
+        )
         inv["sector_weights"] = {"value": value, "method": method, "inputs": inputs}
         agnostic = any(p in (inv["thesis_text"] or "").lower() for p in AGNOSTIC_PHRASES)
         inv["category"]["is_generalist"] = (

@@ -157,6 +157,8 @@ STAGE_SCORES = {
 }
 
 GENERALIST_ENTROPY = 0.85
+# Rounds with a known company sector a portfolio needs before it shapes a thesis vector.
+MIN_PORTFOLIO_ROUNDS = 3
 CLUSTER_K_RANGE = (4, 10)
 
 # Layers that count as "our space" for portfolio adjacency.

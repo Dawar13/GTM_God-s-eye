@@ -17,7 +17,8 @@
     "test:coverage": "vitest run --coverage",
     "layout:graph": "tsx scripts/layout-graph.ts",
     "coverage:report": "tsx scripts/coverage-report.ts",
-    "self-audit": "tsx scripts/self-audit.ts"
+    "self-audit": "tsx scripts/self-audit.ts",
+    "report:tables": "tsx scripts/report-tables.ts"
   },
   "dependencies": {
     "@react-sigma/core": "6.0.0",
