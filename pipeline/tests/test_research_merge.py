@@ -149,6 +149,33 @@ def test_same_round_from_two_investors_is_one_round_and_lead_wins():
     assert r["confidence"] == "medium"
 
 
+def test_co_investor_named_only_in_research_cites_the_round_page():
+    f = investor_file(
+        "root-ventures",
+        "Root Ventures",
+        rounds=[rnd("Acme", "https://acme.ai", leads=["Root Ventures"], participants=["Lux"])],
+    )
+    store = merge([f])
+    lux = store.investors["inv_lux"]
+    assert [s["url"] for s in lux["sources"]] == ["https://techcrunch.com/a"]
+    assert lux["field_sources"] == {"name": [0]}
+    every = [s["url"] for inv in store.investors.values() for s in inv["sources"]]
+    assert not any(u.startswith("user_supplied:research") for u in every)
+
+
+def test_a_sourced_alias_in_a_round_is_the_firm_itself():
+    f = investor_file(
+        "onesixone-ventures",
+        "OneSixOne Ventures",
+        facts={"aliases": fact(["1.61 Ventures"])},
+        rounds=[rnd("Acme", "https://acme.ai", participants=["1.61 Ventures"])],
+    )
+    store = merge([f], phase0_names=())
+    assert list(store.investors) == ["inv_onesixone-ventures"]
+    r = next(iter(store.rounds.values()))
+    assert r["participant_investor_ids"] == ["inv_onesixone-ventures"]
+
+
 def test_disagreeing_amounts_mark_the_round_contested():
     a = investor_file(
         "root-ventures",

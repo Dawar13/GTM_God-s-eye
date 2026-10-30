@@ -16,6 +16,8 @@ PROCESSED = DATA / "processed"
 SCHEMAS = DATA / "schemas"
 RESEARCH = DATA / "research"
 RESEARCH_CACHE = RESEARCH / "cache"
+# Resolver source id for names that come from research files (not a user list).
+RESEARCH_SOURCE_ID = "research"
 
 GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
@@ -80,6 +82,10 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("eqt", "eqt ventures"),  # PE parent vs its venture arm
         ("b capital", "capital 2b"),  # different firms (fuzzy 94.7)
         ("the veteran fund", "veteran ventures capital"),  # different firms
+        ("anterra capital", "vanterra"),  # different firms (fuzzy 93.3)
+        ("capital f", "tf capital"),  # different firms (fuzzy 94.7)
+        ("intel", "intel capital"),  # parent company vs its venture arm
+        ("intel", "intel capital diversity fund"),  # the fund is Intel Capital's
     ]
 )
 

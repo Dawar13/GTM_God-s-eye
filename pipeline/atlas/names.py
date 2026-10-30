@@ -11,6 +11,7 @@ from rapidfuzz import fuzz
 from slugify import slugify
 
 from atlas.config import NAME_MATCH_STOPWORDS
+from atlas.geo import region_for_location
 
 # Trailing words that name a vehicle, not the firm: "Sequoia Seed Fund",
 # "Greycroft Growth", "BoldStart Ventures Opportunity Fund". Dropped from the
@@ -94,6 +95,48 @@ def firm_from_fund_name(fund_name: str) -> FirmName:
     if m:
         name = m.group(1)
     return FirmName(clean(name), tuple(aliases))
+
+
+def _abbreviates(short: str, long: str) -> bool:
+    """'IQT' abbreviates 'In-Q-Tel', 'SKTVC' 'SK Telecom Venture Capital': an
+    all-caps token whose letters appear in order in the longer name, first letter first."""
+    if not re.fullmatch(r"[A-Z0-9]{2,6}", short) or len(short) >= len(long.replace(" ", "")):
+        return False
+    rest = long.lower()
+    if not rest.startswith(short[0].lower()):
+        return False
+    for ch in short.lower():
+        at = rest.find(ch)
+        if at < 0:
+            return False
+        rest = rest[at + 1 :]
+    return True
+
+
+def investing_name(name: str) -> FirmName:
+    """The investor a round names, without a note in brackets.
+
+    "Jeff Bezos (through Bezos Expeditions)" -> Bezos Expeditions (the vehicle invested)
+    "In-Q-Tel (IQT)"                         -> In-Q-Tel, alias IQT
+    "GV (Google Ventures)"                   -> GV, alias Google Ventures
+    "Range Ventures (Chris Erickson)"        -> Range Ventures
+    "Accel (India)", "Seed Capital (Denmark)" -> unchanged: the place tells firms apart
+    "EQT VIII"                               -> EQT (a numbered fund is the firm's vehicle)
+    """
+    name = clean(name)
+    m = re.match(r"(?i)^.+?\((?:through|via)\s+([^)]+)\)$", name)
+    if m:
+        return FirmName(clean(m.group(1)), ())
+    # Two or more numeral letters only, so "Accel X" or "Fund I"-less names survive.
+    numbered = re.match(r"^(.+?)\s+(?:Fund\s+)?[IVX]{2,5}$", name)
+    if numbered:
+        return FirmName(clean(numbered.group(1)), ())
+    m = re.match(r"^(.+?)\s*\(([^)]+)\)$", name)
+    if not m or region_words(name) or region_for_location(m.group(2)):
+        return FirmName(name, ())
+    outer, inner = clean(m.group(1)), clean(m.group(2))
+    same = _abbreviates(inner, outer) or _abbreviates(outer, inner)
+    return FirmName(outer, (inner,) if same else ())
 
 
 def tokens(name: str) -> list[str]:

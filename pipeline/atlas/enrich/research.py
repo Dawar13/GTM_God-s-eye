@@ -20,12 +20,12 @@ from jsonschema import Draft202012Validator
 from rapidfuzz import fuzz
 
 from atlas import fx, ids, names
-from atlas.config import RESEARCH, RESEARCH_CACHE, SCHEMAS
+from atlas.config import RESEARCH, RESEARCH_CACHE, RESEARCH_SOURCE_ID, SCHEMAS
 from atlas.geo import region_for_country
 from atlas.model import Store, add_source, cite, new_company, new_round
 from atlas.resolve import Group, InvestorResolver
 
-SOURCE_ID = "research"
+SOURCE_ID = RESEARCH_SOURCE_ID
 COMPANY_MATCH_THRESHOLD = 92
 SAME_ROUND_MAX_DAYS = 92
 AMOUNT_TOLERANCE = 0.10
@@ -132,7 +132,8 @@ def register(resolver: InvestorResolver, loaded: Loaded) -> None:
     for f in loaded.investors:
         if f["status"] in ("not_found", "not_an_investor"):
             continue
-        group = resolver.add(f["name"], "research", SOURCE_ID)
+        n = names.investing_name(f["name"])  # "NVentures (NVIDIA)" -> NVentures
+        group = resolver.add(n.name, "research", SOURCE_ID, n.aliases)
         aliases = f["facts"].get("aliases", {}).get("value", [])
         group.extra_aliases.update(aliases)
         loaded.groups[f["key"]] = group
@@ -147,17 +148,22 @@ def register(resolver: InvestorResolver, loaded: Loaded) -> None:
 def _round_roles(resolver, file: dict, r: dict, loaded: Loaded) -> list[tuple[str, Group]]:
     roles = []
     own = loaded.groups.get(file["key"]) if file["entity_type"] == "investor" else None
-    own_key = names.match_key(file["name"]) if own else None
+    # The firm's own name or any sourced alias ("1.61 Ventures" for OneSixOne).
+    own_names = [file["name"], *file["facts"].get("aliases", {}).get("value", [])] if own else []
+    own_keys = {names.match_key(n) for n in own_names} | {
+        names.match_key(names.investing_name(n).name) for n in own_names
+    }
     for role, people in (
         ("lead", r["leads"]),
         ("participant", r["participants"]),
         ("unspecified", r["unspecified"]),
     ):
-        for n in people:
-            if own is not None and names.match_key(n) == own_key:
+        for raw in people:
+            n = names.investing_name(raw)
+            if own is not None and {names.match_key(raw), names.match_key(n.name)} & own_keys:
                 roles.append((role, own))
             else:
-                roles.append((role, resolver.add(n, "round_list", SOURCE_ID)))
+                roles.append((role, resolver.add(n.name, "round_list", SOURCE_ID, n.aliases)))
     return roles
 
 
@@ -192,6 +198,8 @@ def apply(store: Store, loaded: Loaded, tiers: dict[str, str]) -> dict[str, int]
             continue
         inv = store.investors[group.investor_id]
         _apply_investor(store, inv, f)
+        if not inv["sources"]:  # no fact recorded: the identity pages still name it
+            cite(inv, "name", _attach(inv, f["pages"], list(range(len(f["pages"])))))
         inv["tier"] = f["tier"]
         for i, r in enumerate(f["rounds"]):
             merged = _apply_round(store, companies, f, r, loaded.round_roles[(f["key"], i)])
@@ -199,16 +207,41 @@ def apply(store: Store, loaded: Loaded, tiers: dict[str, str]) -> dict[str, int]
     for f in loaded.rounds:
         stats["research files"] += 1
         _apply_seed_round_check(store, companies, f, loaded.round_roles.get((f["key"], 0), []))
+        _log_conflicts(store, f)
     for f in loaded.competitors:
         stats["research files"] += 1
         co = companies.competitor_from(f)
+        _log_conflicts(store, f)
         for i, r in enumerate(f["rounds"]):
             merged = _apply_round(store, companies, f, r, loaded.round_roles[(f["key"], i)], co)
             stats["research rounds merged" if merged else "research rounds new"] += 1
     store.benchmarks = list(loaded.benchmarks)
     store.legal_notes = list(loaded.legal_notes)
     _total_raised(store)
+    stats["unsourced names dropped"] = _drop_unsourced(store)
     return stats
+
+
+def _source_named_investors(store: Store, roles, pages: list[dict], indexes: list[int]) -> None:
+    """An investor known only from a researched round cites that round's pages."""
+    for _, group in roles:
+        inv = store.investors[group.investor_id]
+        if not inv["sources"]:
+            cite(inv, "name", _attach(inv, pages, indexes))
+
+
+def _drop_unsourced(store: Store) -> int:
+    """Names registered for a round that was never applied (e.g. a seed check whose
+    company isn't on the list) have nothing to cite, so they are not exported."""
+    referenced = {
+        i for r in store.rounds.values() for role in ROLE_RANK for i in r[f"{role}_investor_ids"]
+    }
+    dropped = [i for i, inv in store.investors.items() if not inv["sources"]]
+    if bad := [i for i in dropped if i in referenced]:
+        raise ResearchFileError(f"investors in rounds without a source: {bad}")
+    for i in dropped:
+        del store.investors[i]
+    return len(dropped)
 
 
 def _apply_investor(store: Store, inv: dict, f: dict) -> None:
@@ -265,6 +298,11 @@ def _apply_investor(store: Store, inv: dict, f: dict) -> None:
     inv["confidence"] = best if RANK[best] >= RANK[inv["confidence"]] else inv["confidence"]
     _apply_funds(store, inv, f)
     _apply_partners(store, inv, f)
+    _log_conflicts(store, f)
+
+
+def _log_conflicts(store: Store, f: dict) -> None:
+    """Every disagreement a research file records goes to anomalies (the conflicts list)."""
     for c in f["conflicts"]:
         store.add_anomaly(
             SOURCE_ID,
@@ -590,6 +628,7 @@ def _apply_round(
     _merge_round_fields(store, f["key"], match, r, usd, fx_used, post, idx)
     cite(match, "investors", idx)
     _merge_roles(match, roles)
+    _source_named_investors(store, roles, pages, r["pages"])
     conf = confidence_for([pages[i] for i in r["pages"]])
     if RANK[conf] > RANK[match["confidence"]]:
         match["confidence"] = conf
@@ -699,6 +738,7 @@ def _apply_seed_round_check(store: Store, companies: CompanyIndex, f: dict, role
     for role in ROLE_RANK:
         seed[f"{role}_investor_ids"] = []
     _merge_roles(seed, roles)
+    _source_named_investors(store, roles, pages, r["pages"])
     cite(seed, "investors", idx)
     seed["confidence"] = confidence_for([pages[i] for i in r["pages"]])
 

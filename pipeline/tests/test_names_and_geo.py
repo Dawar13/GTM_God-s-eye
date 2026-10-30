@@ -1,8 +1,37 @@
 import pytest
 
 from atlas.geo import region_for_location
-from atlas.names import firm_from_fund_name, has_vehicle_words, match_key, parent_brand
+from atlas.names import (
+    FirmName,
+    firm_from_fund_name,
+    has_vehicle_words,
+    investing_name,
+    match_key,
+    parent_brand,
+)
 from atlas.resolve import InvestorResolver
+
+
+@pytest.mark.parametrize(
+    ("raw", "name", "aliases"),
+    [
+        ("Jeff Bezos (through Bezos Expeditions)", "Bezos Expeditions", ()),
+        ("Jeff Bezos (via Bezos Expeditions Fund)", "Bezos Expeditions Fund", ()),
+        ("In-Q-Tel (IQT)", "In-Q-Tel", ("IQT",)),
+        ("GV (Google Ventures)", "GV", ("Google Ventures",)),
+        ("SK Telecom Venture Capital (SKTVC)", "SK Telecom Venture Capital", ("SKTVC",)),
+        ("NVentures (NVIDIA)", "NVentures", ()),  # parent, not another name
+        ("Range Ventures (Chris Erickson)", "Range Ventures", ()),
+        ("Accel (India)", "Accel (India)", ()),
+        ("Seed Capital (Denmark)", "Seed Capital (Denmark)", ()),
+        ("Lux Capital", "Lux Capital", ()),
+        ("EQT VIII", "EQT", ()),
+        ("Lux Capital Fund VII", "Lux Capital", ()),
+        ("Accel X", "Accel X", ()),
+    ],
+)
+def test_investing_name(raw, name, aliases):
+    assert investing_name(raw) == FirmName(name, aliases)
 
 
 @pytest.mark.parametrize(

@@ -4,6 +4,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 
 from atlas import ids, names
+from atlas.config import RESEARCH_SOURCE_ID
 from atlas.geo import region_for_location
 from atlas.ingest.goldman_pdf import SOURCE_ID as GOLDMAN_ID
 from atlas.ingest.goldman_pdf import GoldmanFund
@@ -32,7 +33,8 @@ def investor_from_group(group: Group, fund_regions: set[str]) -> dict:
     origins = {m.origin for m in group.members}
     sources = [user_source(GOLDMAN_ID)] if "fund_list" in origins else []
     for sid in group.source_ids:
-        if sid != GOLDMAN_ID:
+        # Research names are not a user list: they cite their pages when research is applied.
+        if sid not in (GOLDMAN_ID, RESEARCH_SOURCE_ID):
             sources.append(user_source(sid))
 
     # A regional arm's own name is a location: "Accel (India)" -> india.
