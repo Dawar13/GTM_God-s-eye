@@ -19,11 +19,12 @@ Schemas for every file are in `data/schemas/research_*.schema.json`, generated f
 2. **Source priority:** (a) the entity's own site, fund announcement, SEC Form D, regulator site → page `kind: "primary"`; (b) reputable press (TechCrunch, Axios, Fortune, WSJ, Bloomberg, Reuters, Sifted, Inc42, Entrackr, The Economic Times, Business Insider, The Information, Forbes, VentureBeat, GeekWire, Crunchbase News) → `kind: "press"`; (c) public database pages (Crunchbase, Tracxn, PitchBook profiles, CB Insights) → `kind: "database"`, used as hints and confirmed in (a) or (b) whenever possible.
 3. **Confidence is computed by the pipeline** from the pages behind each fact: any primary page, or two press pages from different domains → high; one press page → medium; database page only → low. So list every page that supports a fact.
 4. **Amounts:** record `amount_original` / `size_original` and `currency_original` as announced. INR in rupees (₹1.5 Cr = 15000000). The pipeline converts to USD with `atlas/fx.py`.
-5. **No login-walled pages** (LinkedIn feeds, PitchBook, Crunchbase Pro). Public pages only. LinkedIn profile URLs may be recorded when the firm's own site links to them.
-6. **Disambiguate** before recording: confirm the entity by its domain and description, and write how in `identity_check` (including what it is *not*, e.g. "Spark Growth Ventures, not Spark Capital").
-7. **Anything published after June 2026 is outside the model's knowledge.** Every 2026 claim must come from a fetched page. Never fill a value from memory; if it can't be found, leave it out and add it to `open_items`.
-8. **Snippets** (≤ 25 words, copied from the page) are for internal verification. Values like `thesis_text`, `description` and `product_summary` are paraphrased in your own words.
-9. **Partners:** public professional information only (name, title, focus, a public profile URL). Never emails or phone numbers.
+5. **No personal data in requests.** Never put anyone's email address or name in a request header, query or form — not the repo owner's, not your own. SEC EDGAR asks for a contact in the User-Agent; use `CapitalAtlas research` and, if EDGAR refuses it, skip EDGAR and use press or the firm's own pages.
+6. **No login-walled pages** (LinkedIn feeds, PitchBook, Crunchbase Pro). Public pages only. LinkedIn profile URLs may be recorded when the firm's own site links to them.
+7. **Disambiguate** before recording: confirm the entity by its domain and description, and write how in `identity_check` (including what it is *not*, e.g. "Spark Growth Ventures, not Spark Capital").
+8. **Anything published after June 2026 is outside the model's knowledge.** Every 2026 claim must come from a fetched page. Never fill a value from memory; if it can't be found, leave it out and add it to `open_items`.
+9. **Snippets** (≤ 25 words, copied from the page) are for internal verification. Values like `thesis_text`, `description` and `product_summary` are paraphrased in your own words.
+10. **Partners:** public professional information only (name, title, focus, a public profile URL). Never emails or phone numbers.
 
 ## Investor file (`entity_type: "investor"`)
 

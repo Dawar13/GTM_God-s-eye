@@ -1,0 +1,212 @@
+{
+  "key": "faclon-labs",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Faclon Labs (faclon.com), the industrial IoT / industrial AI company started in Mumbai in 2016 by IIT-Bombay alumni. The leadership on faclon.com/about-us (Rishi Sharma CEO, Utkarsh Srivastava CTO, Archit Naraniwal Chief Sales Officer) matches the founders named by Entrepreneur India (2021) and Inc42. Offices are in Andheri East, Mumbai and Dublin, California (LinkedIn and Tracxn now give Dublin as HQ). It is not Falkonry, FalconX, Falcon Labs or other similarly spelled companies that appear in searches. Category kept 'direct' and layer 'plant_ops'. Its Faclon Intelligence Platform connects plant machines and monitors energy, maintenance (condition monitoring), production and safety. It adds an AI copilot (Bruce AI) built on SOPs and manuals for diagnostics and root-cause analysis, and the company markets agentic AI for factories in metals, cement, auto parts, chemicals, pharma and FMCG. These are the plant-ops functions Utopian Autonomy targets. The difference is that Faclon delivers through IoT hardware plus dashboards and a copilot; no WhatsApp interface was seen.",
+  "pages": [
+    { "url": "https://india.entrepreneur.com/finance/faclon-labs-raises-pre-series-a-round-from-letsventure/366451", "title": "Faclon Labs Raises Pre-Series A Round From LetsVenture", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/company/faclon-labs/funding/", "title": "Faclon Labs Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/faclon-labs/", "title": "Faclon Labs (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/faclon-labs/captable/", "title": "Faclon Labs Cap Table (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors", "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn", "publisher": "Tracxn", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM", "title": "Faclon Labs - 2026 Company Profile, Team, Funding, Competitors & Financials - Tracxn", "publisher": "Tracxn", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://faclon.com", "title": "Faclon Labs home page", "publisher": "Faclon Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://faclon.com/about-us", "title": "About Faclon Labs", "publisher": "Faclon Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://faclon.com/case-study", "title": "Faclon Labs case studies", "publisher": "Faclon Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/faclon", "title": "Faclon Labs | LinkedIn (company page)", "publisher": "LinkedIn (Faclon Labs company page)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [
+    {
+      "field": "company.founded_year",
+      "values": ["2016 (Entrepreneur India 2021; Inc42 profile; Tracxn)", "2020 (LinkedIn company page)"],
+      "chosen": "2016",
+      "reason": "Contemporaneous press and two databases agree on 2016, and Tracxn says the first round came within a year of incorporation (Oct 2016). The LinkedIn year likely refers to the later US entity (Dublin, CA)."
+    },
+    {
+      "field": "company.hq_country",
+      "values": ["IN: Mumbai (faclon.com/about-us: 'Mumbai headquartered deep tech IoT company'; Entrepreneur India)", "US: Dublin, California (LinkedIn company page; Tracxn, which gives the registered address as Mumbai)"],
+      "chosen": "IN",
+      "reason": "The company's own about page describes it as Mumbai-headquartered, and its operating and registered base is Mumbai. The Dublin, CA suite is its US office."
+    },
+    {
+      "field": "founders",
+      "values": ["Archit Naraniwal, Rishi Sharma, Utkarsh Narain (Entrepreneur India)", "Archit Naraniwal, Rishi Sharma, Utkarsh Srivastava (Inc42 profile; about page lists Utkarsh Srivastava as CTO)", "Utkarsh Narain Srivastava (Inc42 cap table)", "Tracxn also lists Ankit NA, Ravi Sharma, Sanvar Oberoi as founders"],
+      "chosen": "Rishi Sharma, Archit Naraniwal, Utkarsh Narain Srivastava",
+      "reason": "'Utkarsh Narain' and 'Utkarsh Srivastava' are the same person (full name on the Inc42 cap table). Tracxn's extra names are not supported by any other page."
+    },
+    {
+      "field": "rounds / total raised",
+      "values": ["Inc42: undisclosed amount across 4 rounds, last round 02/03 March 2021, stage Seed", "Tracxn: $5.26M over 9 rounds (incl. one grant), latest a Series A on Oct 31, 2025, largest a Series A on Jul 25, 2022"],
+      "chosen": "Both recorded: the press-confirmed 2018 and 2021 rounds, plus the Tracxn-only 2022-2025 entries as low-confidence rounds with amounts left null",
+      "reason": "No press or company page describes the 2022-2025 rounds, and Tracxn masks their amounts. The Tracxn rows labelled 'Series A' are probably allotments or tranches of one Series A, not separate rounds."
+    },
+    {
+      "field": "rounds[first round]",
+      "values": ["First round was the January 2018 angel round led by Vish Sathappan (Entrepreneur India)", "Seed from thinQbate on 19 Oct 2016 (Inc42); Tracxn's first round dated Oct 07, 2016"],
+      "chosen": "Both recorded",
+      "reason": "thinQbate's partner calls himself one of Faclon's first investors in the same Entrepreneur India article, so the 2016 entry is probably an incubator investment that the article does not count as a round."
+    },
+    {
+      "field": "headcount_est",
+      "values": ["172 (LinkedIn 'Discover all 172 employees')", "174 (Inc42 profile card)", "119 (Inc42 FAQ)", "164 as of May 31, 2026 (Tracxn)"],
+      "chosen": "172",
+      "reason": "LinkedIn company-page header, the public page the protocol prefers. All values are approximate."
+    }
+  ],
+  "open_items": [
+    "No press or company page found for the 2022-2025 rounds that Tracxn lists (Jul 2022, Aug 2024, Mar 2025 and Oct 2025 'Series A'; Sep 2023 'Angel'). Amounts are masked on Tracxn, so the total raised is unverified. Tracxn's figure ($5.26M over 9 rounds) is database-only.",
+    "Tracxn also lists unnamed rounds on May 04, 2017 and Feb 17, 2020, and Inc42 lists a separate Seed entry on 18 Dec 2017 ('LetsVenture, +3 more'). These are not recorded separately: the Dec 2017 entry is probably a tranche of the January 2018 angel round, and the other two have no type or investors.",
+    "Grants not recorded as equity rounds: 'ENTICE 2.0 by GEAPP Grant Winners 2025' (about page), which Tracxn lists as Grant (prize money) from Energy Alliance on Aug 29, 2025, and 'UNIDO-CII Pilot Funding Winners 2021' (about page).",
+    "Revenue not recorded. The Inc42 database profile shows ₹11.7 Cr in FY25, down 16.5% from ₹14.0 Cr in FY24, and Tracxn gives a ₹10-50 Cr band as of Mar 31, 2025. No fetched press article reports the MCA revenue: TheKredible's FY24 revenue article returned HTTP 530.",
+    "Valuation not recorded. Inc42 says the 'last known valuation was $2.71 million as of 03 March 2021' (database only), and Tracxn masks its Jan 13, 2026 valuation.",
+    "Investors named by databases but not tied to a round: Neev Angel Advisors (Inc42 FAQ), and Empower India and Street Smart Financial (Tracxn). The BW Disrupt article on the 2018 seed round returned 403.",
+    "Customer logos for LG Electronics, Coca-Cola and SRF appear only as image filenames on faclon.com, so they are not recorded as named customers.",
+    "No public pricing.",
+    "The web-search budget ran out before ET, VCCircle and Moneycontrol could be checked for 2022-2026 Faclon funding news."
+  ],
+  "company": {
+    "name": "Faclon Labs",
+    "website": "https://faclon.com",
+    "description": "Mumbai-founded industrial IoT and AI platform that connects plant equipment, tracks energy, maintenance and production, and adds an AI copilot for diagnostics.",
+    "hq_country": "IN",
+    "founded_year": 2016,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Industrial IoT and AI operations platform (Faclon Intelligence Platform). It covers connectivity over Modbus, OPC, LoRa and HART (I/O Connect), dashboards and alerts (I/O Sense), no-code ML (I/O DeepSense) and the Bruce AI copilot, whose knowledge graph is built from SOPs and manuals. Solutions span energy and utilities, maintenance (condition-based monitoring and a maintenance management system), production and safety, and the company is pushing 'agentic AI' and an 'SEC-RCA Agent'. Delivered through dashboards and a copilot; no WhatsApp channel seen.",
+  "founders": ["Rishi Sharma", "Archit Naraniwal", "Utkarsh Narain Srivastava"],
+  "named_customers": ["Tata Power", "Aditya Birla Group", "Larsen and Toubro", "JUSCO", "Raymonds", "ITC", "Unotelos (Nigeria)", "KNPL Jainpur"],
+  "product_summary": "Faclon Intelligence Platform: modular industrial IoT and AI software that connects machines over industrial protocols, provides dashboards, reports and alerts (I/O Sense), no-code forecasting models (I/O DeepSense) and a conversational copilot (Bruce AI) for diagnostics and root-cause analysis, applied to energy, maintenance, production and safety in plants.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 172,
+    "pages": [9],
+    "snippet": "Discover all 172 employees (approximate: LinkedIn member count; size band 51-200 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed (Inc42 database, 19 Oct 2016); Tracxn dates the first round Oct 07, 2016; likely an incubator investment by thinQbate",
+      "date": "2016-10",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["thinQbate"],
+      "pages": [1, 4, 0],
+      "snippet": "19 Oct 2016 Seed Undisclosed thinQbate"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "First round from angel investors, January 2018 (Entrepreneur India); Inc42 lists Seed on 17 Jan 2018 with 'LetsVenture, +3 more'",
+      "date": "2018-01",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Vish Sathappan", "Sameer Sainani"],
+      "participants": [],
+      "unspecified": ["LetsVenture"],
+      "pages": [0, 1],
+      "snippet": "The company had earlier raised its first round from a clutch of angel investors led by Vish Sathappan"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Pre-Series A (undisclosed amount)",
+      "date": "2021-03-03",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Sarjan Shah"],
+      "participants": [],
+      "unspecified": ["LetsVenture"],
+      "pages": [0, 1],
+      "snippet": "Faclon Labs on Wednesday announced it has raised undisclosed pre-Series A from LetsVenture led by Group Satellite managing director Sarjan Shah"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; Tracxn calls it the largest round, amount masked; no press coverage found)",
+      "date": "2022-07-25",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Faclon Labs' largest funding round was a Series A round held on Jul 25, 2022 for $*****."
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "undisclosed",
+      "stage_raw": "Angel (Tracxn label only; amount masked; no press coverage found)",
+      "date": "2023-09-19",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Harikrishna Ramesh Valiyath"],
+      "pages": [4],
+      "snippet": "Sep 19, 2023 Angel Harikrishna Ramesh Valiyath"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; likely a tranche/allotment; amount masked; '& 3 more' investors unnamed)",
+      "date": "2024-08-08",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Mayank Bist"],
+      "pages": [4],
+      "snippet": "Aug 08, 2024 Series A Mayank Bist & 3 more"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; likely a tranche/allotment; amount masked; '& 2 more' investors unnamed)",
+      "date": "2025-03-19",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Krish Ravi Vaswani"],
+      "pages": [4],
+      "snippet": "Mar 19, 2025 Series A Krish Ravi Vaswani & 2 more"
+    },
+    {
+      "company": { "name": "Faclon Labs", "website": "https://faclon.com", "description": "Mumbai-founded industrial IoT and AI platform for plant operations.", "hq_country": "IN", "founded_year": 2016, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; latest round; amount masked; one investor, unnamed)",
+      "date": "2025-10-31",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 4],
+      "snippet": "Its latest funding round was a Series A round on Oct 31, 2025 for $*****."
+    }
+  ]
+}

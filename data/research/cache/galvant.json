@@ -1,0 +1,83 @@
+{
+  "key": "galvant",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Galvant (galvant.ai), formerly Takt: Pear VC's portfolio page lists 'Galvant - AI workforce for your manufacturing back offices' and links to galvant.ai, whose site banner reads 'Takt is now Galvant'. A Pear-posted job ad for Takt names the same founders (Adhitya Raghavan CEO, Will Zunker CTO) and PearX membership. galvant.ai is a client-side app, so its text was read from the JS bundle the site serves (assets/index-DjVFJB00.js); page URLs below are the routes where that text renders. Ruled out (seen in search results): Galvanick (LA industrial cybersecurity), GALVANY (Berlin heat pumps), Galventa (Swiss pharma services), Galvant Industries (Waterloo hobby electronics, old X profile), Galva.AI (electroplating), Galvia AI (Ireland), Galvan (Utah health). Pear VC also backs SalesPatriot, Parallax Worlds, Covalent and Meridian, which is consistent with the founder's list. Category set to 'direct' (PROJECT_CONTEXT seed said 'adjacent (verify)'): Galvant sells agents for manufacturers' RFQ quoting, procurement (vendor POs, change orders, packing-slip/invoice matching), AR/AP and plant-data reporting, which is the same procurement and RFQ wedge as ours. Differences: it targets back-office staff at small and mid-size US manufacturers through ERP/email, not shop-floor staff over WhatsApp, and it does not cover maintenance or process stability.",
+  "pages": [
+    { "url": "https://pear.vc/companies/", "title": "Companies | Pear VC", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://galvant.ai/", "title": "Galvant", "publisher": "Galvant", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://galvant.ai/careers", "title": "Galvant - Join the Team", "publisher": "Galvant", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://galvant.ai/case-studies/custom-rubber", "title": "Galvant case study - Custom Rubber", "publisher": "Galvant", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/galvant", "title": "Galvant | LinkedIn (company page)", "publisher": "LinkedIn (Galvant company page)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://builtin.com/job/founding-full-stack-engineer-takt/8379637", "title": "Founding Full-Stack Engineer - Takt (Pear VC)", "publisher": "Built In", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Seed date not found: galvant.ai states the $5.5M Pear-led seed but gives no date, and no press release or press coverage of the round was found (web search budget ran out before a deeper search).",
+    "Pear VC's portfolio page tags Galvant 'Pre-seed, Seed'; no separate pre-seed round (amount, date, investors) was found. The PearX investment may be part of the $5.5M seed ('as part of the PearX cohort').",
+    "Other seed participants (if any) not named on any fetched page.",
+    "Founded year not found (LinkedIn page shows none).",
+    "HQ city unclear: the Takt job ad places the role in San Francisco, the site lists a +1 (617) (Boston-area) phone and says it works with Midwest manufacturing associations. hq_country US is safe; city left open.",
+    "No public pricing on galvant.ai (demo-booking only).",
+    "Revenue not publicly reported."
+  ],
+  "company": {
+    "name": "Galvant",
+    "website": "https://galvant.ai",
+    "description": "US start-up (formerly Takt) building AI agents that run quoting, procurement, AR/AP and reporting for small and mid-size manufacturers.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Manufacturing back-office agents on a shared data layer ('Galvant intelligence layer' over ERP, CRM, historian, bank feeds, email and spreadsheets). Named agents: Val (reads RFQs, pulls pricing, checks margin, drafts quotes), Kit (turns vendor emails into master POs, tracks change orders, matches packing slips to invoices), Billy (cash application, AR/AP reconciliation, claims) and Scout (analytics across ERP/historian data). A person approves every step. Claims go-live in days; dedicated Azure instance per customer. Channel is ERP/email/web, no WhatsApp seen.",
+  "founders": ["Adhitya Raghavan", "William Zunker"],
+  "named_customers": [
+    "Custom Rubber Corp",
+    "Overdevest Nurseries (Grown by Overdevest)",
+    "MackayMitchell Envelope",
+    "Symbrosia",
+    "ETI Lighting",
+    "Garland Industries",
+    "Waukesha Metal Products",
+    "Arterex Medical",
+    "Ferrotech"
+  ],
+  "product_summary": "Agentic platform for manufacturers that unifies ERP, email, spreadsheet and plant data, then runs supervised workflow agents for RFQ quoting, vendor PO and invoice matching, AR/AP cash application and on-demand reporting, with human approval of each step and deployment in days rather than months.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 4,
+    "pages": [4],
+    "snippet": "Discover all 4 employees (approximate: LinkedIn member count; size band 2-10 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Galvant",
+        "website": "https://galvant.ai",
+        "description": "AI agents for the manufacturing back office (quoting, procurement, AR/AP, reporting); formerly Takt.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed, led by Pear VC as part of the PearX cohort (company careers page); undated",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 5500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Pear VC"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2, 0, 5],
+      "snippet": "We raised a $5.5M seed led by Pear VC (DoorDash, Gusto) as part of the PearX cohort."
+    }
+  ]
+}

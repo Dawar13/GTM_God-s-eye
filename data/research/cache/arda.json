@@ -1,0 +1,122 @@
+{
+  "key": "arda",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Arda Industries, Inc. (arda.ai; site title 'Arda Industries – AI for Manufacturing'). The privacy policy names Arda Industries, Inc. and gives 'Location: San Francisco, CA, USA'. arda.ai image labels name the co-founders: Bob McGrew (CEO, former OpenAI Chief Research Officer), Augustus Odena (Chief AI Officer, Adept co-founder), Alex Mark (CTO) and Jakob Frick (co-founder). The Next Web (2026-10-20) names the same four and quotes McGrew: 'We started Arda in 2025'. The 'Matt Grimm, co-Founder & COO' shown on arda.ai is Anduril's co-founder and COO, quoted as a customer (The Next Web), not an Arda founder. Matched on domain, founders and the design-to-production description, not on name alone. Category direct and layer process_planning kept from our notes: the homepage says Arda cuts 'the manual work involved in process planning, instructions, and design changes' and supports schedulers, supply-chain teams and technicians on the factory floor, which overlaps Utopian Autonomy's BOM / engineering-drawing and plant-floor agents. Contradiction with our notes: Augustus Odena is one of four co-founders (with Alex Mark and Jakob Frick), not McGrew's only co-founder.",
+  "pages": [
+    { "url": "https://arda.ai/", "title": "Arda Industries – AI for Manufacturing", "publisher": "Arda Industries, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://arda.ai/privacy-policy", "title": "Privacy Policy - Arda", "publisher": "Arda Industries, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing", "title": "Ex-OpenAI research chief Bob McGrew’s Arda raises $232M for US factories", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://letsdatascience.com/news/ex-openai-research-chief-bob-mcgrews-arda-raises-230m-at-15b-f1b22022", "title": "Ex-OpenAI Research Chief Bob McGrew's Arda Raises $230M at $1.5B", "publisher": "Let's Data Science", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://cryptobriefing.com/arda-raises-230-million-ai-manufacturing/", "title": "Arda raises $230 million at $1.5 billion valuation to automate US manufacturing", "publisher": "Crypto Briefing", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://stockanalysis.com/private/arda/", "title": "Arda Valuation, Funding & News", "publisher": "Stock Analysis", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "Arda",
+    "website": "https://arda.ai",
+    "description": "AI software that turns product designs into factory process plans, work instructions and station layouts, and updates them when designs change.",
+    "hq_country": "US",
+    "founded_year": 2025,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "process_planning"
+  },
+  "category": "direct",
+  "layer": "process_planning",
+  "layer_detail": "Design-to-production process planning: builds the bill of process (operations, tools, quality checks, fixtures, stations, visual work instructions) from CAD, PDFs and PLM data; propagates design revisions to the floor; feeds production data back for schedulers, supply-chain teams and technicians. Starting with manual assembly lines in defence and data-centre electrical equipment; prototyping agents that program robots.",
+  "founders": ["Bob McGrew", "Augustus Odena", "Alex Mark", "Jakob Frick"],
+  "named_customers": ["Anduril"],
+  "product_summary": "Agent-driven manufacturing-engineering software. It ingests CAD, PDFs, PLM data and requirements, builds a shared product model, then generates assembly order, operations, fixtures, station layouts and visual work instructions for engineers to review. It pushes design revisions to the floor and feeds production data back; robot-programming agents are in prototype.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Arda",
+        "website": "https://arda.ai",
+        "description": "AI software that turns product designs into factory process plans, work instructions and station layouts, and updates them when designs change.",
+        "hq_country": "US",
+        "founded_year": 2025,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "process_planning"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 72000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Accel", "Founders Fund"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2, 5, 4],
+      "snippet": "It follows a $72 million seed round led by Accel and Founders Fund."
+    },
+    {
+      "company": {
+        "name": "Arda",
+        "website": "https://arda.ai",
+        "description": "AI software that turns product designs into factory process plans, work instructions and station layouts, and updates them when designs change.",
+        "hq_country": "US",
+        "founded_year": 2025,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "process_planning"
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A at a $1.5 billion valuation (announced with launch from stealth)",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "amount_original": 160000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["Altimeter Capital", "Accel", "Khosla Ventures"],
+      "participants": ["XYZ Venture Capital", "8VC", "SV Angel", "Felicis"],
+      "unspecified": [],
+      "pages": [2, 3, 4, 5],
+      "snippet": "The total includes a $160 million Series A at a $1.5 billion valuation, co-led by Altimeter, Accel and Khosla Ventures."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[1].amount_original",
+      "values": [
+        "160000000 USD Series A: McGrew's announcement as quoted by The Next Web; Business Wire headline as summarised by Stock Analysis",
+        "230000000 USD: CNBC as relayed by Let's Data Science and Crypto Briefing ('has raised $230 million at a $1.5 billion valuation')"
+      ],
+      "chosen": "160000000",
+      "reason": "McGrew's own post names a $160M Series A, and The Next Web reports a separate $72M seed ($232M in total). CNBC's $230M matches the combined total, not the Series A alone."
+    },
+    {
+      "field": "rounds[0].amount_original",
+      "values": [
+        "72000000 USD seed led by Accel and Founders Fund: The Next Web",
+        "about 70000000 USD being raised at a 700000000 USD valuation, Founders Fund and Accel co-leading: WSJ (March 2026) as summarised by Stock Analysis and Crypto Briefing (WSJ itself not read)"
+      ],
+      "chosen": "72000000",
+      "reason": "The Next Web gives the final announced seed figure; the WSJ number was a target reported mid-raise. The $700M seed valuation is not confirmed by any page read, so it is not recorded."
+    },
+    {
+      "field": "founders",
+      "values": [
+        "Bob McGrew, Augustus Odena, Alex Mark, Jakob Frick: arda.ai image labels and The Next Web",
+        "'Matt Grimm, co-Founder & COO' shown on arda.ai"
+      ],
+      "chosen": "Bob McGrew, Augustus Odena, Alex Mark, Jakob Frick",
+      "reason": "The Next Web identifies Matt Grimm as Anduril's co-founder and COO, quoted on Arda; the arda.ai entry is a customer testimonial."
+    }
+  ],
+  "open_items": [
+    "Seed close date not published; the WSJ reported the raise in March 2026 (per Stock Analysis and Crypto Briefing), but the WSJ article is paywalled and was not read.",
+    "Seed participants beyond the leads (Accel, Founders Fund) and the seed valuation are not published on any page read.",
+    "The Business Wire release (2026-10-20), CNBC article and Quartz article returned HTTP 403 and were not read; Series A details come from The Next Web, which quotes McGrew's announcement.",
+    "Founding month not published (only 'in 2025').",
+    "arda.ai says Arda runs 'across multiple lines at a large US manufacturer' without naming it; Anduril is the only customer named in press.",
+    "Headcount: no public page with a figure found; LinkedIn not consulted.",
+    "Pricing not published.",
+    "Revenue not publicly reported."
+  ]
+}

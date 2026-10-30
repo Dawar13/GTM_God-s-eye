@@ -1,0 +1,187 @@
+{
+  "key": "covalent",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Covalent (covalentnetworks.com; legal/database name Covalent Networks; LinkedIn also lists covalent.works), the Boston workforce-operations software company for discrete manufacturing. Picked because Pear VC's portfolio page lists 'Covalent - AI workforce platform for industrial frontline operations' and links to covalentnetworks.com, and Covalent's own about page names Pear's Mar Hershenson among its investors and advisors; Pear also backs the other four names on the founder's list. Ruled out: Covalent AI / Covalent Market (covalentmarket.com, Oakland AI purchasing software acquired by Didero in July 2025 per DC Velocity), Covalent by Agnostiq (Toronto AI compute orchestration), and Covalent (Vancouver data infrastructure for AI agents, Tracxn). Category kept 'adjacent' (PROJECT_CONTEXT seed): Covalent serves the same plant-floor audience (mechanics, operators, quality inspectors, frontline supervisors) but the function is workforce capability (training, skills matrix, qualification gating, job assignment), not procurement, maintenance, process stability or RFQ/BOM.",
+  "pages": [
+    { "url": "https://pear.vc/companies/", "title": "Companies | Pear VC", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.covalentnetworks.com/", "title": "Powering the Workforce Behind Industrial Operations | Covalent", "publisher": "Covalent", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.covalentnetworks.com/about-us", "title": "About Us | Covalent", "publisher": "Covalent", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.covalentnetworks.com/post/boeing-selects-covalent-to-provide-streamlined-and-optimized-structured-on-the-job-training-and-resource-management", "title": "Boeing's Defense, Space & Security and Global Services Businesses Select Covalent to Provide Streamlined and Optimized Structured On-the-Job Training and Resource Management", "publisher": "Covalent", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.covalentnetworks.com/case-studies/mastercraft-ramping-to-rate", "title": "MasterCraft: Ramping to Rate", "publisher": "Covalent", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/covalentnetworks/", "title": "Covalent | Workforce Operations | LinkedIn (company page)", "publisher": "LinkedIn (Covalent company page)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cbinsights.com/company/covalent-networks", "title": "Covalent Networks - Company Profile", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.cbinsights.com/company/covalent-networks/financials", "title": "Covalent Networks - Financials", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://startupintros.com/orgs/covalent-networks", "title": "Covalent Networks", "publisher": "StartupIntros", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "company.founded_year",
+      "values": ["2017 (LinkedIn company page; CB Insights; StartupIntros)", "2016 (about page: research project at Harvard's Future of Work Initiative)", "2018 (about page: first on-the-job training app; CB Insights quotes a May 2024 release giving 2018)"],
+      "chosen": "2017",
+      "reason": "The company's own LinkedIn page and two databases give 2017; 2016 is the research project and 2018 the first product launch."
+    },
+    {
+      "field": "rounds (total raised)",
+      "values": ["$6M over 6 rounds (CB Insights)", "$6M raised / 'last round $5M five years ago' (StartupIntros deep dive)", "Raised $0 (StartupIntros quick facts)"],
+      "chosen": "No total recorded; rounds listed individually from CB Insights with amounts null",
+      "reason": "All figures are database-only and inconsistent; per-round amounts are masked on CB Insights."
+    }
+  ],
+  "open_items": [
+    "No press release or press article found for any Covalent funding round; all rounds below come from the CB Insights financials page (amounts masked, most investors behind a subscription). CB Insights says 6 rounds but shows 5. Web search budget ran out before a press search on 'Covalent Networks' funding.",
+    "Investors named publicly but not tied to a specific round: Covalent's about page lists under 'Investors & Advisors' Sundeep Peechu (Felicis), Mar Hershenson (Pear), Jeff Bussgang (HBS), Dave Anderson (Supply Chain Ventures), Frank Britt and Eric Spiegel; CB Insights adds Flybridge Capital Partners and Harvard Venture Incubation Program. Pear's page tags Covalent 'Pre-seed, Seed'.",
+    "Founders: the about page names no founders (Andrew Knez is CEO); only StartupIntros (database) calls Andrew Knez co-founder.",
+    "StartupIntros' headcount (1001-5000) is clearly wrong and was not used; LinkedIn member count used instead.",
+    "No public pricing (demo request and an OLE savings calculator only).",
+    "Revenue not publicly reported."
+  ],
+  "company": {
+    "name": "Covalent",
+    "website": "https://www.covalentnetworks.com",
+    "description": "Boston software company (Covalent Networks) whose workforce-operations platform plans, trains and assigns frontline staff in discrete manufacturing.",
+    "hq_country": "US",
+    "founded_year": 2017,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Frontline workforce operations for complex discrete manufacturing (automotive, aerospace & defence): coverage and skills-gap planning, structured on-the-job, computer-based and instructor-led training (SCORM support), a live skills matrix, audit-ready qualification records, and AI-driven job assignment with eligibility gating. Boeing BDS and Global Services use its Capability Management module for structured OJT of mechanics and quality inspectors across dozens of sites.",
+  "founders": ["Andrew Knez"],
+  "named_customers": [
+    "Boeing (Defense, Space & Security and Global Services businesses)",
+    "MasterCraft"
+  ],
+  "product_summary": "Workforce-operations SaaS for industrial teams: plans headcount coverage and skill gaps, runs structured on-the-job and classroom training, keeps a live skills matrix and audit-ready qualification records, and assigns jobs only to qualified operators, giving frontline leaders real-time visibility of capability and bench strength.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 33,
+    "pages": [5],
+    "snippet": "Discover all 33 employees (approximate: LinkedIn member count; size band 11-50 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Covalent",
+        "website": "https://www.covalentnetworks.com",
+        "description": "Workforce-operations software for discrete manufacturing (Covalent Networks, Boston).",
+        "hq_country": "US",
+        "founded_year": 2017,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Incubator/Accelerator (CB Insights); investor hidden behind subscription",
+      "date": "2018-06-06",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7],
+      "snippet": "6/6/2018 Incubator/Accelerator $XXM"
+    },
+    {
+      "company": {
+        "name": "Covalent",
+        "website": "https://www.covalentnetworks.com",
+        "description": "Workforce-operations software for discrete manufacturing (Covalent Networks, Boston).",
+        "hq_country": "US",
+        "founded_year": 2017,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "Convertible Note (CB Insights); investors hidden behind subscription",
+      "date": "2019-05-29",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7],
+      "snippet": "5/29/2019 Convertible Note $XXM"
+    },
+    {
+      "company": {
+        "name": "Covalent",
+        "website": "https://www.covalentnetworks.com",
+        "description": "Workforce-operations software for discrete manufacturing (Covalent Networks, Boston).",
+        "hq_country": "US",
+        "founded_year": 2017,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed VC (CB Insights); investors hidden behind subscription",
+      "date": "2019-12-18",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7],
+      "snippet": "12/18/2019 Seed VC $XXM"
+    },
+    {
+      "company": {
+        "name": "Covalent",
+        "website": "https://www.covalentnetworks.com",
+        "description": "Workforce-operations software for discrete manufacturing (Covalent Networks, Boston).",
+        "hq_country": "US",
+        "founded_year": 2017,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed VC - II (CB Insights); undated, investors hidden behind subscription",
+      "date": null,
+      "date_precision": null,
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [],
+      "pages": [7],
+      "snippet": "Seed VC - II $XXM"
+    },
+    {
+      "company": {
+        "name": "Covalent",
+        "website": "https://www.covalentnetworks.com",
+        "description": "Workforce-operations software for discrete manufacturing (Covalent Networks, Boston).",
+        "hq_country": "US",
+        "founded_year": 2017,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "Angel (CB Insights)",
+      "date": "2021-01-21",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Jeffrey Bussgang"],
+      "pages": [7],
+      "snippet": "1/21/2021 Angel $XXM Jeffrey Bussgang"
+    }
+  ]
+}

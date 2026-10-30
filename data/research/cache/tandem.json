@@ -1,0 +1,115 @@
+{
+  "key": "tandem",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Tandem Intelligence, Inc. (tandem.inc; product login at app.tandemai.io, the tandemai.io domain VCBacked links), an AI-native development platform for hardware teams. tandem.inc/company names co-CEOs Kunal Jain and Arjun Jain and CTO Lokesh Kamanboina, matching Every's founder profile (2026-08-12) and Antler's Spring 2026 U.S. showcase entry (co-CEOs Arjun and Kunal, ex-Rolls-Royce and Boeing). Site footer reads 'SAN FRANCISCO' and '©2026 Tandem Intelligence INC.'; the terms name Tandem Intelligence, Inc. Not the Paris-based in-app AI-agent startup also called Tandem, not Tandem Capital (Bay Area seed fund), not TandemLaunch (Montreal venture studio). Category direct and layer design_intent kept from our notes: the company says it exists to keep 'design intent, requirements, and engineering decisions connected', the same requirements / design-intent tooling Utopian Autonomy builds for hardware teams. Founded year is not published (Every says it launched about eight months before 2026-08-12). Our notes' investor list (Foundation Capital, Also Capital, Antler, Genius Ventures plus angels) matches the company page exactly; only Foundation Capital is tied to a specific round (lead of the seed).",
+  "pages": [
+    { "url": "https://tandem.inc/", "title": "Tandem — AI-Native Hardware Development Platform", "publisher": "Tandem Intelligence, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tandem.inc/company", "title": "Company — Tandem", "publisher": "Tandem Intelligence, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tandem-ai-partner.notion.site/Tandem-Intelligence-Inc-Careers-38fcf5eea9eb801696cbc45387140347", "title": "Tandem Intelligence Inc. Careers", "publisher": "Tandem Intelligence, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tandem.inc/legal/terms-and-conditions", "title": "Terms and Conditions — Tandem", "publisher": "Tandem Intelligence, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.every.io/blog-post/arjun-jain-kunal-jain-and-lokesh-kamanboina-are-building-tandem-to-bring-the-efficiency-of-ai-to-hardware-engineering", "title": "Tandem Brings the Efficiency of AI to Hardware Engineering", "publisher": "Every (every.io blog)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://antler.co/blog/announcing-the-spring-2026-u-s-portfolio-showcase", "title": "Announcing the Spring 2026 U.S. Portfolio Showcase", "publisher": "Antler", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.vcbacked.co/company/tandem-san-francisco", "title": null, "publisher": "VCBacked", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "Tandem",
+    "website": "https://tandem.inc",
+    "description": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "direct",
+  "layer": "design_intent",
+  "layer_detail": "Design-intent / requirements traceability context layer for mechanical and hardware engineering; agents draft ECOs, design reviews, drawings, DFM feedback, impact and traceability reports. Lists SolidWorks and Autodesk among the workflows it is used in. Targets aerospace, space, medical devices, robotics & industrial, automotive, heavy machinery.",
+  "founders": ["Arjun Jain", "Kunal Jain", "Lokesh Kamanboina"],
+  "named_customers": ["Fluxergy", "Endiatx", "Vaxon Space", "Starlight Cardiovascular", "Tusk", "Daily's"],
+  "product_summary": "AI-native development system for hardware teams that links requirements, design intent, CAD changes and validation evidence in one context layer. Agents grounded in the team's own process data draft engineering outputs such as ECOs, design reviews, drawings, DFM feedback, impact reports and traceability reports.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Tandem",
+        "website": "https://tandem.inc",
+        "description": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed Round (Antler: 'Closed a $4.7M Seed Round', 2026-04-08; Every: '$4.9M round led by Foundation Capital', 2026-08-12)",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 4900000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Foundation Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [4, 5, 2],
+      "snippet": "In just eight months since launching, Tandem has already raised a $4.9M round led by Foundation Capital"
+    },
+    {
+      "company": {
+        "name": "Tandem",
+        "website": "https://tandem.inc",
+        "description": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "Not attributed to a round: tandem.inc/company lists these firms as backers with no round or date; Antler lists Tandem in its Spring 2026 U.S. portfolio; VCBacked (database) shows a May 2025 'Pre-Seed' backed by Antler",
+      "date": null,
+      "date_precision": null,
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Also Capital", "Antler", "Genius Ventures"],
+      "pages": [1, 5, 6],
+      "snippet": "Backed by the best Foundation Capital Venture Capital Also Capital Venture Capital Antler Venture Capital Genius Ventures Venture Capital"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[0].amount_original",
+      "values": [
+        "4900000 USD: Every, 2026-08-12 ('$4.9M round led by Foundation Capital')",
+        "4700000 USD: Antler showcase, 2026-04-08 ('Closed a $4.7M Seed Round')",
+        "5000000 USD total raised: Tandem careers page ('We have raised $5M.')",
+        "5000000 USD 'Pre-Seed', May 2025: VCBacked database"
+      ],
+      "chosen": "4900000",
+      "reason": "Most recent dated figure and the only one naming the lead. Antler's $4.7M predates it and may reflect an earlier close. The careers page's $5M is a rounded company total that may include earlier checks (e.g. Antler). VCBacked is database-only and appears to put the whole total on a single 2025 pre-seed."
+    },
+    {
+      "field": "rounds[0].stage",
+      "values": ["seed (Antler showcase)", "pre_seed (VCBacked: 'Pre-Seed', May 2025, $5.0M)"],
+      "chosen": "seed",
+      "reason": "Antler (an investor) calls it a Seed Round; VCBacked is a database hint only."
+    }
+  ],
+  "open_items": [
+    "Founded year not published on any page read; Every (2026-08-12) says Tandem launched about eight months earlier.",
+    "Seed close date not published; Antler's 2026-04-08 showcase already describes it as closed.",
+    "Seed participants other than the lead (Foundation Capital) are not named; Antler says angels included the former CEOs of Autodesk and SolidWorks and senior leaders from Anduril and Google.",
+    "Angel investors on tandem.inc/company are listed only by role (President of Android Ecosystem, Google; former CEO of Solidworks; former CEO of Autodesk; Head of Mission Software, Anduril; 2x NBA Champion), not by name.",
+    "Also Capital, Antler and Genius Ventures: round, date and amount of their investments not published; Antler's pre-seed / residency check amount unknown.",
+    "A FastAIJobs profile reportedly lists a $200K pre-seed (Sep 2025) but returned HTTP 403 and was not read; not recorded.",
+    "No coverage from the listed reputable outlets (TechCrunch, Axios, etc.) was found for the seed; the web-search budget ran out during this pass, so a follow-up search is worth doing.",
+    "Headcount: no public page with a figure (careers page says the team is 'small and talent dense'); LinkedIn not consulted.",
+    "Pricing not published (demo booking only).",
+    "Revenue not publicly reported."
+  ]
+}

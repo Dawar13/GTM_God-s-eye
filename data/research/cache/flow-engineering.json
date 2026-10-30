@@ -1,0 +1,185 @@
+{
+  "key": "flow-engineering",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Flow Engineering (flowengineering.com, branded 'Flow'), a requirements-management and agentic systems-engineering platform for hardware teams, founded and led by CEO Pari Singh. The seed release is datelined London, 6 December 2022. The Series A post says Flow relocated its HQ to San Francisco, and the Series B release is datelined San Francisco, 2026-09-30; Unite.AI calls it 'a San Francisco company'. Not the unrelated UK Companies House registrants with similar names (e.g. FLOW ENGINEERING LIMITED, Newport, no. 07491866, incorporated 2011), and not generic flow / fluid-engineering consultancies. Category direct and layer design_intent kept from our notes: Flow's own pages describe requirements management, traceability and verification across CAD, simulation, code and test, which is the requirements / design-intent tooling Utopian Autonomy builds for hardware teams. Our notes are confirmed: $50M Series B at a $750M valuation co-led by Valor (Antonio Gracias) and Atreides (Gavin Baker), and published pricing of USD 150 (Basic) and USD 300 (Pro) per editor per month.",
+  "pages": [
+    { "url": "https://www.flowengineering.com/", "title": "Flow — Requirements Tool for Agentic Teams", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/blog/series-b-press-release", "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/blog/flow-raises-23m-from-sequoia-to-accelerate-the-future-of-hardware-development", "title": "Announcing Flow's $23M Series A, Led by Sequoia", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/blog/flow-engineering-raises-8-5-m", "title": "Flow Engineering raises an $8.5m Seed Round", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/pricing", "title": "Pricing — Flow Engineering", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/careers", "title": "Careers — Flow Engineering", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2022/12/06/flow-engineering-wants-to-modernize-the-hardware-engineering-design-process/", "title": "Flow Engineering wants to modernize the hardware engineering design process", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/flow-engineering-raises-50-million-series-b-at-750-million-valuation/", "title": "Flow Engineering Raises $50 Million Series B At $750 Million Valuation", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://develop3d.com/collaborate/flow-raises-50m-series-b/", "title": "Flow raises $50m in Series B funding for AI engineering platform", "publisher": "DEVELOP3D", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://unite.ai/flow-engineering-lands-50m-series-b-at-750m-valuation-for-agentic-hardware-platform/", "title": "Flow Engineering Lands $50M Series B at $750M Valuation for Agentic Hardware Platform", "publisher": "Unite.AI", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fenwick.com/insights/experience/fenwick-represents-flow-engineering-50m-series-b-funding", "title": null, "publisher": "Fenwick & West (company counsel)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Flow Engineering",
+    "website": "https://www.flowengineering.com",
+    "description": "Requirements and systems-engineering platform for hardware teams, with AI agents that keep CAD, simulation, code and test aligned.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "direct",
+  "layer": "design_intent",
+  "layer_detail": "Requirements management, traceability and verification & validation for hardware programs; agents run change-impact analysis and check requirement and test coverage across requirements, CAD, simulation, code and test. Began as a requirements tool; MBSE and test cases/plans included; ITAR AWS GovCloud on Enterprise.",
+  "founders": ["Pari Singh"],
+  "named_customers": [
+    "Rivian",
+    "Rivian and Volkswagen Group Technologies (RV Tech)",
+    "General Motors PPU",
+    "Anduril",
+    "Stoke Space",
+    "Intuitive Machines",
+    "Pacific Fusion",
+    "Joby Aviation",
+    "Astranis",
+    "Radiant Industries",
+    "Impulse Space",
+    "Mytra",
+    "Skydio",
+    "Astrolab",
+    "Isar Aerospace",
+    "Atomic Machines",
+    "OpenStar",
+    "Firestorm Labs",
+    "Rondo",
+    "Xona Space Systems",
+    "Exowatt",
+    "Gravitics",
+    "Xcimer Energy",
+    "Bright AI",
+    "Space Machines",
+    "Aalyria",
+    "Rhoda.AI",
+    "Heron Power"
+  ],
+  "product_summary": "Cloud requirements and systems-engineering tool that acts as the continuously updated record for hardware development, linking requirements, CAD, simulation, code and test. AI agents analyse engineering changes, trace downstream impact and check requirement and test coverage inside engineers' existing tools; ITAR GovCloud option for regulated programs.",
+  "pricing": "Published on flowengineering.com/pricing (read 2026-10-30): Basic USD 150 per editor per month (500 requirements, 1 project, all integrations, API); Pro USD 300 per editor per month (5,000 requirements, 5 projects, priority support); Enterprise custom (ITAR AWS GovCloud, custom integrations, SSO/SAML). Viewer licences available.",
+  "headcount_est": null,
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Flow Engineering",
+        "website": "https://www.flowengineering.com",
+        "description": "Requirements and systems-engineering platform for hardware teams, with AI agents that keep CAD, simulation, code and test aligned.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed Round (release datelined London, 6 December 2022)",
+      "date": "2022-12-06",
+      "date_precision": "day",
+      "amount_original": 8500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["EQT Ventures"],
+      "participants": ["Backed VC", "David Helgason", "Charlie Songhust", "Kyle Parrish", "Matt Clifford"],
+      "unspecified": [],
+      "pages": [3, 6, 8],
+      "snippet": "EQT Ventures led the round with participation from some of Europe’s top tech investors, including Backed VC, David Hegelson (Unity)"
+    },
+    {
+      "company": {
+        "name": "Flow Engineering",
+        "website": "https://www.flowengineering.com",
+        "description": "Requirements and systems-engineering platform for hardware teams, with AI agents that keep CAD, simulation, code and test aligned.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A, led by Sequoia",
+      "date": "2025-10",
+      "date_precision": "month",
+      "amount_original": 23000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Sequoia Capital"],
+      "participants": ["Patrick Collison", "John Collison", "David Helgason"],
+      "unspecified": [],
+      "pages": [2, 1, 8, 9, 7],
+      "snippet": "$23M from Sequoia Capital, Patrick and John Collison (Stripe) and David Helgason (Unity)"
+    },
+    {
+      "company": {
+        "name": "Flow Engineering",
+        "website": "https://www.flowengineering.com",
+        "description": "Requirements and systems-engineering platform for hardware teams, with AI agents that keep CAD, simulation, code and test aligned.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B at a $750 million valuation",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": 750000000,
+      "leads": ["Valor Equity Partners", "Atreides Management"],
+      "participants": ["Sequoia Capital", "Human Capital", "Evantic", "SV Angel", "Odyssey", "EQT", "Thomas Wolf", "Jonas von Malottki", "Nico Rosberg", "Roelof Botha"],
+      "unspecified": [],
+      "pages": [1, 0, 7, 8, 9, 10],
+      "snippet": "a $50 million Series B at a $750 million valuation. The round was co-led by Antonio Gracias, founder of Valor Equity Partners"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[0].amount_original",
+      "values": [
+        "8500000 USD: Flow seed release and TechCrunch 2022-12-06 ('an $8.5 million seed round')",
+        "7000000 GBP: DEVELOP3D 2026-10-01 ('initial £7m Seed funding in 2022')"
+      ],
+      "chosen": "8500000 USD",
+      "reason": "The company's release and TechCrunch both give $8.5m; DEVELOP3D's sterling figure reads as a currency restatement of the same round."
+    },
+    {
+      "field": "rounds[1].date",
+      "values": [
+        "2025-10: Flow Series B release ('Since its Series A last October'), DEVELOP3D and Unite.AI ('Series A in October 2025')",
+        "2025-11-25: date displayed on Flow's Series A blog post"
+      ],
+      "chosen": "2025-10",
+      "reason": "Blog dates on flowengineering.com look like re-publish dates: the seed post shows 'Dec 4, 2025' but is datelined 6 December 2022."
+    },
+    {
+      "field": "rounds[0].participants",
+      "values": ["David Hegelson (Unity): seed release", "David Helgason (Unity): Series A post"],
+      "chosen": "David Helgason",
+      "reason": "Same Unity founder; the Series A post's spelling is used for linking. 'Charlie Songhust' is kept as the seed release spells it."
+    },
+    {
+      "field": "rounds[2].leads",
+      "values": [
+        "Antonio Gracias (Valor) and Gavin Baker (Atreides): individuals named as co-leads in Flow's release",
+        "Valor Equity Partners and Atreides Management: firms named as co-leads by Fenwick"
+      ],
+      "chosen": "Valor Equity Partners, Atreides Management",
+      "reason": "Fenwick names the firms, and Flow's release ends 'Flow is backed by Valor Equity Partners, Atreides Management, and Sequoia Capital.'"
+    }
+  ],
+  "open_items": [
+    "Founded year not found on any page read.",
+    "Co-founders other than Pari Singh not named on the pages read.",
+    "Headcount: no current public figure (TechCrunch, 2022-12-06, reported 'around a dozen employees' at the seed, now stale); LinkedIn not consulted.",
+    "Revenue not publicly reported (the Series B release gives usage, e.g. Rivian growing from 40 to 1,500 users in 7 months, but no revenue).",
+    "Series B valuation is given as '$750 million valuation' without saying pre- or post-money; recorded as post-money.",
+    "Series A: exact day not published; investors beyond Sequoia, the Collisons and David Helgason not listed; valuation not disclosed.",
+    "No pre-seed or other round before the December 2022 seed was found; Crunchbase returned HTTP 403 and the web-search budget ran out during this pass."
+  ]
+}

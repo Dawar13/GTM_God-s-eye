@@ -1,5 +1,1525 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:05:46+00:00",
-  "records": []
+  "generated_at": "2026-10-30T06:12:00+00:00",
+  "records": [
+    {
+      "id": "co_arda",
+      "name": "Arda",
+      "website": "https://arda.ai",
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "process_planning",
+      "description_short": "AI software that turns product designs into factory process plans, work instructions and station layouts, and updates them when designs change.",
+      "total_raised_usd": 232000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://arda.ai/",
+          "title": "Arda Industries – AI for Manufacturing",
+          "publisher": "Arda Industries, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://arda.ai/privacy-policy",
+          "title": "Privacy Policy - Arda",
+          "publisher": "Arda Industries, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing",
+          "title": "Ex-OpenAI research chief Bob McGrew’s Arda raises $232M for US factories",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://letsdatascience.com/news/ex-openai-research-chief-bob-mcgrews-arda-raises-230m-at-15b-f1b22022",
+          "title": "Ex-OpenAI Research Chief Bob McGrew's Arda Raises $230M at $1.5B",
+          "publisher": "Let's Data Science",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cryptobriefing.com/arda-raises-230-million-ai-manufacturing/",
+          "title": "Arda raises $230 million at $1.5 billion valuation to automate US manufacturing",
+          "publisher": "Crypto Briefing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://stockanalysis.com/private/arda/",
+          "title": "Arda Valuation, Funding & News",
+          "publisher": "Stock Analysis",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Design-to-production process planning: builds the bill of process (operations, tools, quality checks, fixtures, stations, visual work instructions) from CAD, PDFs and PLM data; propagates design revisions to the floor; feeds production data back for schedulers, supply-chain teams and technicians. Starting with manual assembly lines in defence and data-centre electrical equipment; prototyping agents that program robots.",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Bob McGrew",
+        "Augustus Odena",
+        "Alex Mark",
+        "Jakob Frick"
+      ],
+      "named_customers": [
+        "Anduril"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Agent-driven manufacturing-engineering software. It ingests CAD, PDFs, PLM data and requirements, builds a shared product model, then generates assembly order, operations, fixtures, station layouts and visual work instructions for engineers to review. It pushes design revisions to the floor and feeds production data back; robot-programming agents are in prototype.",
+      "pricing": null
+    },
+    {
+      "id": "co_covalent",
+      "name": "Covalent",
+      "website": "https://www.covalentnetworks.com",
+      "hq_country": "US",
+      "founded_year": 2017,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Boston software company (Covalent Networks) whose workforce-operations platform plans, trains and assigns frontline staff in discrete manufacturing.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.covalentnetworks.com/",
+          "title": "Powering the Workforce Behind Industrial Operations | Covalent",
+          "publisher": "Covalent",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.covalentnetworks.com/about-us",
+          "title": "About Us | Covalent",
+          "publisher": "Covalent",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.covalentnetworks.com/post/boeing-selects-covalent-to-provide-streamlined-and-optimized-structured-on-the-job-training-and-resource-management",
+          "title": "Boeing's Defense, Space & Security and Global Services Businesses Select Covalent to Provide Streamlined and Optimized Structured On-the-Job Training and Resource Management",
+          "publisher": "Covalent",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.covalentnetworks.com/case-studies/mastercraft-ramping-to-rate",
+          "title": "MasterCraft: Ramping to Rate",
+          "publisher": "Covalent",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/covalentnetworks/",
+          "title": "Covalent | Workforce Operations | LinkedIn (company page)",
+          "publisher": "LinkedIn (Covalent company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks",
+          "title": "Covalent Networks - Company Profile",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/orgs/covalent-networks",
+          "title": "Covalent Networks",
+          "publisher": "StartupIntros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Frontline workforce operations for complex discrete manufacturing (automotive, aerospace & defence): coverage and skills-gap planning, structured on-the-job, computer-based and instructor-led training (SCORM support), a live skills matrix, audit-ready qualification records, and AI-driven job assignment with eligibility gating. Boeing BDS and Global Services use its Capability Management module for structured OJT of mechanics and quality inspectors across dozens of sites.",
+      "size_class": null,
+      "founders": [
+        "Andrew Knez"
+      ],
+      "named_customers": [
+        "Boeing (Defense, Space & Security and Global Services businesses)",
+        "MasterCraft"
+      ],
+      "headcount_est": {
+        "value": 33,
+        "source": {
+          "url": "https://www.linkedin.com/company/covalentnetworks/",
+          "title": "Covalent | Workforce Operations | LinkedIn (company page)",
+          "publisher": "LinkedIn (Covalent company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Workforce-operations SaaS for industrial teams: plans headcount coverage and skill gaps, runs structured on-the-job and classroom training, keeps a live skills matrix and audit-ready qualification records, and assigns jobs only to qualified operators, giving frontline leaders real-time visibility of capability and bench strength.",
+      "pricing": null
+    },
+    {
+      "id": "co_faclon-labs",
+      "name": "Faclon Labs",
+      "website": "https://faclon.com",
+      "hq_country": "IN",
+      "founded_year": 2016,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Mumbai-founded industrial IoT and AI platform that connects plant equipment, tracks energy, maintenance and production, and adds an AI copilot for diagnostics.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/finance/faclon-labs-raises-pre-series-a-round-from-letsventure/366451",
+          "title": "Faclon Labs Raises Pre-Series A Round From LetsVenture",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/faclon-labs/funding/",
+          "title": "Faclon Labs Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/faclon-labs/",
+          "title": "Faclon Labs (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/faclon-labs/captable/",
+          "title": "Faclon Labs Cap Table (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM",
+          "title": "Faclon Labs - 2026 Company Profile, Team, Funding, Competitors & Financials - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://faclon.com",
+          "title": "Faclon Labs home page",
+          "publisher": "Faclon Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://faclon.com/about-us",
+          "title": "About Faclon Labs",
+          "publisher": "Faclon Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://faclon.com/case-study",
+          "title": "Faclon Labs case studies",
+          "publisher": "Faclon Labs",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/faclon",
+          "title": "Faclon Labs | LinkedIn (company page)",
+          "publisher": "LinkedIn (Faclon Labs company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Industrial IoT and AI operations platform (Faclon Intelligence Platform). It covers connectivity over Modbus, OPC, LoRa and HART (I/O Connect), dashboards and alerts (I/O Sense), no-code ML (I/O DeepSense) and the Bruce AI copilot, whose knowledge graph is built from SOPs and manuals. Solutions span energy and utilities, maintenance (condition-based monitoring and a maintenance management system), production and safety, and the company is pushing 'agentic AI' and an 'SEC-RCA Agent'. Delivered through dashboards and a copilot; no WhatsApp channel seen.",
+      "size_class": null,
+      "founders": [
+        "Rishi Sharma",
+        "Archit Naraniwal",
+        "Utkarsh Narain Srivastava"
+      ],
+      "named_customers": [
+        "Tata Power",
+        "Aditya Birla Group",
+        "Larsen and Toubro",
+        "JUSCO",
+        "Raymonds",
+        "ITC",
+        "Unotelos (Nigeria)",
+        "KNPL Jainpur"
+      ],
+      "headcount_est": {
+        "value": 172,
+        "source": {
+          "url": "https://www.linkedin.com/company/faclon",
+          "title": "Faclon Labs | LinkedIn (company page)",
+          "publisher": "LinkedIn (Faclon Labs company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Faclon Intelligence Platform: modular industrial IoT and AI software that connects machines over industrial protocols, provides dashboards, reports and alerts (I/O Sense), no-code forecasting models (I/O DeepSense) and a conversational copilot (Bruce AI) for diagnostics and root-cause analysis, applied to energy, maintenance, production and safety in plants.",
+      "pricing": null
+    },
+    {
+      "id": "co_flow-engineering",
+      "name": "Flow Engineering",
+      "website": "https://www.flowengineering.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Requirements and systems-engineering platform for hardware teams, with AI agents that keep CAD, simulation, code and test aligned.",
+      "total_raised_usd": 81500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.flowengineering.com/",
+          "title": "Flow — Requirements Tool for Agentic Teams",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/blog/flow-raises-23m-from-sequoia-to-accelerate-the-future-of-hardware-development",
+          "title": "Announcing Flow's $23M Series A, Led by Sequoia",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/blog/flow-engineering-raises-8-5-m",
+          "title": "Flow Engineering raises an $8.5m Seed Round",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/pricing",
+          "title": "Pricing — Flow Engineering",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/careers",
+          "title": "Careers — Flow Engineering",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2022/12/06/flow-engineering-wants-to-modernize-the-hardware-engineering-design-process/",
+          "title": "Flow Engineering wants to modernize the hardware engineering design process",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/flow-engineering-raises-50-million-series-b-at-750-million-valuation/",
+          "title": "Flow Engineering Raises $50 Million Series B At $750 Million Valuation",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://develop3d.com/collaborate/flow-raises-50m-series-b/",
+          "title": "Flow raises $50m in Series B funding for AI engineering platform",
+          "publisher": "DEVELOP3D",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://unite.ai/flow-engineering-lands-50m-series-b-at-750m-valuation-for-agentic-hardware-platform/",
+          "title": "Flow Engineering Lands $50M Series B at $750M Valuation for Agentic Hardware Platform",
+          "publisher": "Unite.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.fenwick.com/insights/experience/fenwick-represents-flow-engineering-50m-series-b-funding",
+          "title": null,
+          "publisher": "Fenwick & West (company counsel)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Requirements management, traceability and verification & validation for hardware programs; agents run change-impact analysis and check requirement and test coverage across requirements, CAD, simulation, code and test. Began as a requirements tool; MBSE and test cases/plans included; ITAR AWS GovCloud on Enterprise.",
+      "size_class": "from_25m_to_100m",
+      "founders": [
+        "Pari Singh"
+      ],
+      "named_customers": [
+        "Rivian",
+        "Rivian and Volkswagen Group Technologies (RV Tech)",
+        "General Motors PPU",
+        "Anduril",
+        "Stoke Space",
+        "Intuitive Machines",
+        "Pacific Fusion",
+        "Joby Aviation",
+        "Astranis",
+        "Radiant Industries",
+        "Impulse Space",
+        "Mytra",
+        "Skydio",
+        "Astrolab",
+        "Isar Aerospace",
+        "Atomic Machines",
+        "OpenStar",
+        "Firestorm Labs",
+        "Rondo",
+        "Xona Space Systems",
+        "Exowatt",
+        "Gravitics",
+        "Xcimer Energy",
+        "Bright AI",
+        "Space Machines",
+        "Aalyria",
+        "Rhoda.AI",
+        "Heron Power"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Cloud requirements and systems-engineering tool that acts as the continuously updated record for hardware development, linking requirements, CAD, simulation, code and test. AI agents analyse engineering changes, trace downstream impact and check requirement and test coverage inside engineers' existing tools; ITAR GovCloud option for regulated programs.",
+      "pricing": "Published on flowengineering.com/pricing (read 2026-10-30): Basic USD 150 per editor per month (500 requirements, 1 project, all integrations, API); Pro USD 300 per editor per month (5,000 requirements, 5 projects, priority support); Enterprise custom (ITAR AWS GovCloud, custom integrations, SSO/SAML). Viewer licences available."
+    },
+    {
+      "id": "co_galvant",
+      "name": "Galvant",
+      "website": "https://galvant.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "US start-up (formerly Takt) building AI agents that run quoting, procurement, AR/AP and reporting for small and mid-size manufacturers.",
+      "total_raised_usd": 5500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://galvant.ai/",
+          "title": "Galvant",
+          "publisher": "Galvant",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://galvant.ai/careers",
+          "title": "Galvant - Join the Team",
+          "publisher": "Galvant",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://galvant.ai/case-studies/custom-rubber",
+          "title": "Galvant case study - Custom Rubber",
+          "publisher": "Galvant",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/galvant",
+          "title": "Galvant | LinkedIn (company page)",
+          "publisher": "LinkedIn (Galvant company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://builtin.com/job/founding-full-stack-engineer-takt/8379637",
+          "title": "Founding Full-Stack Engineer - Takt (Pear VC)",
+          "publisher": "Built In",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Manufacturing back-office agents on a shared data layer ('Galvant intelligence layer' over ERP, CRM, historian, bank feeds, email and spreadsheets). Named agents: Val (reads RFQs, pulls pricing, checks margin, drafts quotes), Kit (turns vendor emails into master POs, tracks change orders, matches packing slips to invoices), Billy (cash application, AR/AP reconciliation, claims) and Scout (analytics across ERP/historian data). A person approves every step. Claims go-live in days; dedicated Azure instance per customer. Channel is ERP/email/web, no WhatsApp seen.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Adhitya Raghavan",
+        "William Zunker"
+      ],
+      "named_customers": [
+        "Custom Rubber Corp",
+        "Overdevest Nurseries (Grown by Overdevest)",
+        "MackayMitchell Envelope",
+        "Symbrosia",
+        "ETI Lighting",
+        "Garland Industries",
+        "Waukesha Metal Products",
+        "Arterex Medical",
+        "Ferrotech"
+      ],
+      "headcount_est": {
+        "value": 4,
+        "source": {
+          "url": "https://www.linkedin.com/company/galvant",
+          "title": "Galvant | LinkedIn (company page)",
+          "publisher": "LinkedIn (Galvant company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Agentic platform for manufacturers that unifies ERP, email, spreadsheet and plant data, then runs supervised workflow agents for RFQ quoting, vendor PO and invoice matching, AR/AP cash application and on-demand reporting, with human approval of each step and deployment in days rather than months.",
+      "pricing": null
+    },
+    {
+      "id": "co_matta",
+      "name": "Matta",
+      "website": "https://matta.ai",
+      "hq_country": "GB",
+      "founded_year": 2021,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "quality_vision",
+      "description_short": "Cambridge-spinout industrial AI company selling camera-based quality inspection, measurement and part traceability for factory lines.",
+      "total_raised_usd": 14000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://matta.ai/news-updates/14m-to-build-the-first-sentient-factories",
+          "title": "$14M to build the first sentient factories",
+          "publisher": "Matta",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://matta.ai",
+          "title": "Matta | Industrial AI for Factory Sentience",
+          "publisher": "Matta",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.matta.ai/about",
+          "title": "Matta | About",
+          "publisher": "Matta",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2025/12/10/matta-raises-14m-to-develop-sentient-factory-technology/",
+          "title": "Matta raises $14M to develop \"sentient factory\" technology",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ifm.eng.cam.ac.uk/news/cambridge-spin-out-matta-raises-14m-to-build-sentient-factories/",
+          "title": "IfM spin-out Matta raises $14M to transform how products are designed and manufactured",
+          "publisher": "Institute for Manufacturing, University of Cambridge",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.uktech.news/ai/cambridge-spinout-building-sentient-factories-closes-seed-round-20251212",
+          "title": "Cambridge spinout building 'sentient factories' closes seed round",
+          "publisher": "UKTN",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.penningtonslaw.com/news/penningtons-manches-cooper-advises-matta-on-14-million-seed-funding-to-advance-sentient-factory-technology/",
+          "title": "Penningtons Manches Cooper advises Matta on $14 million seed funding to advance 'sentient factory' technology",
+          "publisher": "Penningtons Manches Cooper",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://industrialtechnology.co.uk/industrial-ai-startup-matta-raises-14m-to-build-sentient-factories",
+          "title": "Industrial AI startup Matta raises $14M to build Sentient Factories",
+          "publisher": "Industrial Technology",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ats.cam.ac.uk/news/cambridge-ai-spinout-helping-factories-become-more-productive",
+          "title": "Cambridge AI spinout is helping factories become more productive, lower energy use and reduce emissions",
+          "publisher": "University of Cambridge",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13452862",
+          "title": "MATTA LABS LTD overview - Find and update company information",
+          "publisher": "Companies House (GOV.UK)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13452862/officers",
+          "title": "MATTA LABS LTD officers - Find and update company information",
+          "publisher": "Companies House (GOV.UK)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/mattaai",
+          "title": "Matta | LinkedIn",
+          "publisher": "LinkedIn (company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.caplight.com/company/matta",
+          "title": "Matta - Caplight",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Vision-based defect detection, dimensional measurement, counting / kitting and part traceability, with root-cause diagnosis; own sensors + edge compute",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Douglas Brion",
+        "Sebastian Pattinson"
+      ],
+      "named_customers": [
+        "Bowers & Wilkins",
+        "Caracol (OEM integration partner)"
+      ],
+      "headcount_est": {
+        "value": 22,
+        "source": {
+          "url": "https://www.linkedin.com/company/mattaai",
+          "title": "Matta | LinkedIn",
+          "publisher": "LinkedIn (company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Plug-and-play cameras, edge hardware and software that use unsupervised and self-supervised vision to catch defects, measure parts, count and kit, and give each part a traceable visual history, with root-cause diagnosis and suggested corrections surfaced in a plant-wide live view.",
+      "pricing": null
+    },
+    {
+      "id": "co_meridian",
+      "name": "Meridian",
+      "website": "https://www.usemeridian.io",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "New York applied-AI start-up that maps how operations-heavy companies work and deploys governed, self-improving agents on their workflows.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.usemeridian.io/",
+          "title": "Meridian | Frontier AI for Operations",
+          "publisher": "Meridian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.usemeridian.io/blog/fundraising",
+          "title": "Meridian raises seed round | Meridian",
+          "publisher": "Meridian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.usemeridian.io/company",
+          "title": "About | Meridian",
+          "publisher": "Meridian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/usemeridian-io",
+          "title": "Meridian | LinkedIn (company page)",
+          "publisher": "LinkedIn (Meridian company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Horizontal operations-agent platform (Context Cloud ontology, process discovery and mining, agent studio, evals and 'self-learning' benchmarks, human approvals, observability) sold to staffing, logistics, manufacturing and industrial-services firms. Manufacturing page pitch: 'AI workflows for reliable plant operations'; a 'Manufacturing ATLAS' of 24 agents across commercial, supplier and material, production and asset, quality and compliance, logistics, and finance domains. Showcased workflow is freight audit and pay / AP exceptions on SAP and NetSuite.",
+      "size_class": null,
+      "founders": [
+        "Siddharth Vijay",
+        "Akshay Bhatt",
+        "Alfonso Velasco"
+      ],
+      "named_customers": [],
+      "headcount_est": {
+        "value": 7,
+        "source": {
+          "url": "https://www.linkedin.com/company/usemeridian-io",
+          "title": "Meridian | LinkedIn (company page)",
+          "publisher": "LinkedIn (Meridian company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Enterprise agent platform that maps an organisation's SOPs, systems and handoffs into a context ontology, turns completed work examples into tests and evals, then deploys agents across existing tools (ERP, email, drives) with human approvals and learning from execution failures, for operations-heavy industries including manufacturing and logistics.",
+      "pricing": null
+    },
+    {
+      "id": "co_nowpurchase",
+      "name": "NowPurchase",
+      "website": "https://www.nowpurchase.com",
+      "hq_country": "IN",
+      "founded_year": 2017,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Kolkata-based raw-material marketplace and AI melt-optimisation software (MetalCloud) for foundries and metal manufacturers.",
+      "total_raised_usd": 16826375,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://entrackr.com/2022/01/nowpurchase-raises-2-4-million-in-seed-round/",
+          "title": "NowPurchase raises $2.4 million in seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/2024/09/nowpurchase-raises-6-mn-led-by-info-edge-ventures-others",
+          "title": "NowPurchase raises $6 Mn led by Info Edge Ventures, others",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/nowpurchase-nets-6-mn-to-offer-tech-led-procurement-solutions-to-metal-manufacturers-funding/",
+          "title": "NowPurchase Nets $6 Mn To Offer Tech-Led Procurement Solutions To Metal Manufacturers",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.outlookbusiness.com/start-up/nowpurchase-raises-usd-6-million-in-funding-round",
+          "title": "NowPurchase Raises USD $ 6 Million In Funding Round",
+          "publisher": "Outlook Business",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/?p=1375",
+          "title": "SaaS-Enabled Marketplace NowPurchase Raises USD 6 Mn to Scale MetalCloud Platform and Expand Across India",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/raw-materials-marketplace-nowpurchase-bags-%e2%82%b980-cr-to-expand-product-portfolio/",
+          "title": "Raw Materials Marketplace NowPurchase Bags ₹80 Cr To Expand Product Portfolio",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cdn.dealstreetasia.com/stories/nowpurchase-bachatt-477714",
+          "title": "India Digest: NowPurchase, Bachatt raise funding",
+          "publisher": "DealStreetAsia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/nowpurchase/funding/",
+          "title": "NowPurchase Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/nowpurchase/",
+          "title": "NowPurchase (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/nowpurchase-completes-first-esop-buyback/",
+          "title": "NowPurchase Completes First ESOP Buyback",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/nowpurchase",
+          "title": "NowPurchase | LinkedIn (company page)",
+          "publisher": "LinkedIn (NowPurchase company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.nowpurchase.com",
+          "title": "NowPurchase - Transforming Procurement & Production for Factories",
+          "publisher": "NowPurchase",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Two parts. First, a procurement marketplace for metal manufacturers selling metal scrap, carbon additives, ferro alloys and branded products, backed by six warehouses and two scrap processing centres as of Apr 2026, with a WhatsApp bot for real-time prices and stock. Second, MetalCloud, AI SaaS that suggests how to optimise melting and that the company calls the 'core operating system for metal manufacturers'. The LinkedIn page says it is building 'the operating system for metal manufacturing' across procurement, quality and production. Overlaps Utopian Autonomy on procurement and process stability, within foundries and metal plants only.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Naman Shah",
+        "Aakash Shah",
+        "Ankan Adhikari"
+      ],
+      "named_customers": [
+        "Titagarh Rail Systems Limited",
+        "Brakes India"
+      ],
+      "headcount_est": {
+        "value": 150,
+        "source": {
+          "url": "https://www.linkedin.com/company/nowpurchase",
+          "title": "NowPurchase | LinkedIn (company page)",
+          "publisher": "LinkedIn (NowPurchase company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "B2B marketplace supplying foundries and metal manufacturers with raw materials (metal scrap, carbon additives, ferro alloys) from its own warehouses and scrap processing centres, plus MetalCloud, AI-based SaaS that suggests melting optimisations; buyers see live prices and stock through a WhatsApp bot.",
+      "pricing": null
+    },
+    {
+      "id": "co_parallax-worlds",
+      "name": "Parallax Worlds",
+      "website": "https://www.parallaxworlds.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "San Francisco start-up that builds digital twins from phone video to train and test robots, and now deploys trained robots on factory floors.",
+      "total_raised_usd": 4000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.parallaxworlds.com/",
+          "title": "Parallax Worlds — AI-powered robots, production-ready in two weeks",
+          "publisher": "Parallax Worlds",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/",
+          "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor",
+          "publisher": "Digital Media Net (company press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/",
+          "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=721952",
+          "title": "Parallax Worlds raises $4.9M to help companies virtually stress-test industrial robots",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/parallax-worlds",
+          "title": "Parallax Worlds | LinkedIn (company page)",
+          "publisher": "LinkedIn (Parallax Worlds company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "Started as autonomy tooling (hyper-realistic simulation that converts everyday video into interactive 3D digital twins, runs physics simulations with real robot software, integrates with NVIDIA Omniverse, Unreal and Unity). Now sells end-to-end robot integration: customer records a walk-through, Parallax trains the robot in the twin, then ships and installs it in about two weeks with 24/7 support; robots from OEMs such as FANUC and Standard Bots (100+ models supported). Member of A3, SEMI and ARM Institute.",
+      "size_class": "under_5m",
+      "founders": [
+        "Tanmay Agarwal",
+        "Aumkar Renavikar"
+      ],
+      "named_customers": [
+        "Orangewood Labs",
+        "BotBuilt",
+        "Rainier Labs"
+      ],
+      "headcount_est": {
+        "value": 6,
+        "source": {
+          "url": "https://www.linkedin.com/company/parallax-worlds",
+          "title": "Parallax Worlds | LinkedIn (company page)",
+          "publisher": "LinkedIn (Parallax Worlds company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Turns a smartphone walk-through into an interactive digital twin, trains and stress-tests robots there using real robot software, then ships and installs a working robot in about two weeks with support and maintenance included, so manufacturers can automate tasks without long integration projects.",
+      "pricing": "Zero Risk Policy: $0 until the robot does the task at KPIs agreed in writing; no pilot fees and no upfront hardware cost; deployment, 24/7 support and maintenance billed at a single hourly rate (rate not published)."
+    },
+    {
+      "id": "co_qualitas-technologies",
+      "name": "Qualitas Technologies",
+      "website": "https://www.qualitastech.com",
+      "hq_country": "IN",
+      "founded_year": 2008,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "quality_vision",
+      "description_short": "Bengaluru machine-vision firm building AI visual-inspection, gauging and part-counting systems for manufacturing lines.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.qualitastech.com",
+          "title": "Qualitas Technologies home page (AI machine vision for manufacturing quality control)",
+          "publisher": "Qualitas Technologies",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.qualitastech.com/about-us",
+          "title": "About Us | Qualitas Technologies",
+          "publisher": "Qualitas Technologies",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.qualitastech.com/machine-vision-case-studies",
+          "title": "Machine Vision Case Studies | Qualitas Technologies",
+          "publisher": "Qualitas Technologies",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/qualitastech",
+          "title": "Qualitas Technologies | LinkedIn (company page)",
+          "publisher": "LinkedIn (Qualitas Technologies company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/qualitas-technologies/financials",
+          "title": "Qualitas Technologies - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/qualitas-technologies",
+          "title": "Qualitas Technologies - Products, Competitors, Financials, Employees, Headquarters Locations",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.caplight.com/company/qualitastech",
+          "title": "Qualitas Technologies (Caplight company page)",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Full-stack AI machine vision: cameras, lighting, AI software and line integration, including an EagleEye inspection station. Uses: surface and defect inspection, non-contact gauging and measurement, part counting, label, code and identity reading, and bin inventory verification. A 'Process & Video Analytics' offer turns existing cameras into production and dispatch counts reconciled with ERP. Verticals: automotive, pharma, electronics, bearings and metals, FMCG. Partner logos on the about page: Intel Partner Alliance (Advanced ISV Partner), HPE, NVIDIA, AWS Activate, NASSCOM.",
+      "size_class": null,
+      "founders": [
+        "Raghava Kashyapa"
+      ],
+      "named_customers": [
+        "Avtec",
+        "TVS",
+        "Visteon",
+        "Timken",
+        "P&G",
+        "ITC",
+        "Hyundai",
+        "Federal-Mogul",
+        "IndianOil"
+      ],
+      "headcount_est": {
+        "value": 30,
+        "source": {
+          "url": "https://www.linkedin.com/company/qualitastech",
+          "title": "Qualitas Technologies | LinkedIn (company page)",
+          "publisher": "LinkedIn (Qualitas Technologies company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Turnkey AI machine-vision systems (cameras, lighting, AI software, line integration) for surface-defect inspection, non-contact gauging, part counting, code and label reading and bin inventory checks, plus analytics that turn existing cameras into production and dispatch counts reconciled with ERP; serves automotive, pharma, electronics, bearings and FMCG lines.",
+      "pricing": null
+    },
+    {
+      "id": "co_salespatriot",
+      "name": "SalesPatriot",
+      "website": "https://www.salespatriot.com",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "San Francisco / Warsaw start-up selling AI that automates quoting, sourcing and order management for defence and aerospace parts distributors and OEMs.",
+      "total_raised_usd": 5000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/salespatriot",
+          "title": "SalesPatriot: Supply chain superintelligence for distribution and procurement | Y Combinator",
+          "publisher": "Y Combinator",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.salespatriot.com/",
+          "title": "SalesPatriot - Operational AI for Distributors & OEMs",
+          "publisher": "SalesPatriot",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.salespatriot.com/about",
+          "title": "About | SalesPatriot",
+          "publisher": "SalesPatriot",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://salespatriot.com/blog/sk-aerospace-and-salespatriot-partner",
+          "title": "S&K Aerospace and SalesPatriot Partner to Transform Sustainment Operations for U.S. and Allied Forces with AI",
+          "publisher": "SalesPatriot",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://salespatriot.com/fdh",
+          "title": "FDH Expands The Use of AI-Powered Supply Chain Tool Worldwide",
+          "publisher": "SalesPatriot",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2025/10/28/salespatriot-lands-5m-for-defence-procurement-modernisation-and-european-expansion/",
+          "title": "SalesPatriot lands $5M for defence procurement modernisation and European expansion",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.vestbee.com/insights/articles/sales-patriot-raises-5-m",
+          "title": "Polish-American startup SalesPatriot raises $5M to expand across Europe",
+          "publisher": "Vestbee",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.startuphub.ai/news/salespatriot-raises-5m-to-advance-ai-defence-procurement",
+          "title": "SalesPatriot raises $5M to advance AI defence procurement",
+          "publisher": "StartupHub.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/salespatriot",
+          "title": "SalesPatriot | LinkedIn (company page)",
+          "publisher": "LinkedIn (SalesPatriot company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.salespatriot.com/blog",
+          "title": "News & Events | SalesPatriot",
+          "publisher": "SalesPatriot",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Supply-chain back office rather than the plant floor: an AI operating system (products Forge for operations, Vantage for visibility, Bedrock for integrations) that pulls data from government procurement portals, ERPs, spreadsheets and email to automate bid/quote preparation, sourcing and order management for defence and aerospace parts distributors, OEMs and MRO sustainment teams. 'Plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Nelson Ray",
+        "Benjamin Rhodes-Kropf",
+        "Maciej Szymczyk"
+      ],
+      "named_customers": [
+        "Echelon Supply & Service",
+        "FDH Aero",
+        "Jamaica Bearings Group",
+        "AllClear Aerospace",
+        "STATZ Corporation"
+      ],
+      "headcount_est": {
+        "value": 26,
+        "source": {
+          "url": "https://www.linkedin.com/company/salespatriot",
+          "title": "SalesPatriot | LinkedIn (company page)",
+          "publisher": "LinkedIn (SalesPatriot company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI platform for defence, aerospace and industrial parts distributors and OEMs that ingests government portal, ERP, spreadsheet and email data, then automates bid and quote preparation, sourcing and order management; the company says suppliers process orders up to seven times faster and one customer raised bid volume 283%.",
+      "pricing": null
+    },
+    {
+      "id": "co_tandem",
+      "name": "Tandem",
+      "website": "https://tandem.inc",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
+      "total_raised_usd": 4900000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://tandem.inc/",
+          "title": "Tandem — AI-Native Hardware Development Platform",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tandem.inc/company",
+          "title": "Company — Tandem",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tandem-ai-partner.notion.site/Tandem-Intelligence-Inc-Careers-38fcf5eea9eb801696cbc45387140347",
+          "title": "Tandem Intelligence Inc. Careers",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tandem.inc/legal/terms-and-conditions",
+          "title": "Terms and Conditions — Tandem",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.every.io/blog-post/arjun-jain-kunal-jain-and-lokesh-kamanboina-are-building-tandem-to-bring-the-efficiency-of-ai-to-hardware-engineering",
+          "title": "Tandem Brings the Efficiency of AI to Hardware Engineering",
+          "publisher": "Every (every.io blog)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://antler.co/blog/announcing-the-spring-2026-u-s-portfolio-showcase",
+          "title": "Announcing the Spring 2026 U.S. Portfolio Showcase",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.vcbacked.co/company/tandem-san-francisco",
+          "title": null,
+          "publisher": "VCBacked",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Design-intent / requirements traceability context layer for mechanical and hardware engineering; agents draft ECOs, design reviews, drawings, DFM feedback, impact and traceability reports. Lists SolidWorks and Autodesk among the workflows it is used in. Targets aerospace, space, medical devices, robotics & industrial, automotive, heavy machinery.",
+      "size_class": "under_5m",
+      "founders": [
+        "Arjun Jain",
+        "Kunal Jain",
+        "Lokesh Kamanboina"
+      ],
+      "named_customers": [
+        "Fluxergy",
+        "Endiatx",
+        "Vaxon Space",
+        "Starlight Cardiovascular",
+        "Tusk",
+        "Daily's"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI-native development system for hardware teams that links requirements, design intent, CAD changes and validation evidence in one context layer. Agents grounded in the team's own process data draft engineering outputs such as ECOs, design reviews, drawings, DFM feedback, impact reports and traceability reports.",
+      "pricing": null
+    },
+    {
+      "id": "co_tractian",
+      "name": "Tractian",
+      "website": "https://tractian.com",
+      "hq_country": "US",
+      "founded_year": 2019,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Atlanta-based maker of wireless sensors and AI software for industrial condition monitoring, failure diagnosis and maintenance management.",
+      "total_raised_usd": 313500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/tractians-130m-series-d-values-the-company-at-1-4b-to-scale-physical-ai-for-asset-heavy-industries-302917313.html",
+          "title": "Tractian's $130M Series D Values the Company at $1.4B to Scale Physical AI for Asset-Heavy Industries",
+          "publisher": "Tractian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/blog/tractian-raises-series-d-to-scale-physical-ai",
+          "title": "Tractian raises Series D to scale Physical AI",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/tractian-happened-series-d",
+          "title": "Tractian Series D - The Uptime Herald",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/tractian-raises-120m-to-eliminate-industrial-downtime-worldwide-302323716.html",
+          "title": "Tractian Raises $120M to Eliminate Industrial Downtime Worldwide",
+          "publisher": "Tractian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/blog/tractian-raises-series-c-to-eliminate-industrial-downtime-worldwide",
+          "title": "Tractian Raises $120M to Eliminate Industrial Downtime Worldwide",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=680488",
+          "title": "Tractian raises $120M Series C (SiliconANGLE, Dec 5 2024)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.wilmerhale.com/en/insights/news/20241219-tractian-raises-%24120m-in-series-c-funding",
+          "title": "Tractian Raises $120M in Series C Funding",
+          "publisher": "WilmerHale",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.foley.com/news/2024/12/foley-represents-upload-ventures-as-investor-in-120-m-series-c-financing-for-tractian/",
+          "title": "Foley Represents Upload Ventures as Investor in $120 M Series C Financing for Tractian",
+          "publisher": "Foley & Lardner",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://venturebeat.com/ai/tractian-gets-45m-to-expand-ai-monitoring-of-industrial-machinery",
+          "title": "Tractian gets $45M to expand AI monitoring of industrial machinery",
+          "publisher": "VentureBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2022/05/17/2314910/",
+          "title": "Tractian, which uses AI to monitor industrial equipment, raises $15M",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2024-12-01-tractian-series-c",
+          "title": "Tractian Series C (funding history table)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2021-04-01-tractian-seed-2",
+          "title": "Tractian Seed (Apr 2021)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2020-10-01-tractian-seed",
+          "title": "Tractian Seed (Oct 2020)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/tractian/financials",
+          "title": "Tractian - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/tractian",
+          "title": "Tractian: Physical AI for asset-heavy industries | Y Combinator",
+          "publisher": "Y Combinator",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ajc.com/business/2026/02/one-of-the-countrys-fastest-growing-ai-startups-moves-hq-to-midtown/",
+          "title": "One of the country's fastest-growing AI startups moves HQ to Midtown",
+          "publisher": "The Atlanta Journal-Constitution",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tractian.com",
+          "title": "Tractian | Physical AI for Asset-Heavy Operations",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/solutions/pricing",
+          "title": "Tractian pricing",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/blog/what-repeat-trust-says-about-tractians-growth",
+          "title": "What repeat trust says about Tractian's growth",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.linkedin.com/company/tractian",
+          "title": "Tractian | LinkedIn",
+          "publisher": "LinkedIn (company page)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/sobre",
+          "title": "Tractian | Sobre",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://startupintros.com/news/2023-08-01-tractian-series-b",
+          "title": "Tractian Series B (Aug 2023)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tractian.com/llms.txt",
+          "title": "Tractian llms.txt",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Maintenance / condition monitoring: vibration, ultrasound, electrical and process sensors + AI failure detection + CMMS",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Igor Marinelli",
+        "Gabriel Lameirinhas",
+        "Leonardo Vieira"
+      ],
+      "named_customers": [
+        "Eli Lilly",
+        "McKesson",
+        "Whirlpool",
+        "Coca-Cola bottling facilities",
+        "Cummins",
+        "Embraer",
+        "Ingredion",
+        "Johnson Controls",
+        "John Deere",
+        "Bosch",
+        "Hyundai",
+        "Kraft Heinz",
+        "Georgia Aquarium"
+      ],
+      "headcount_est": {
+        "value": 700,
+        "source": {
+          "url": "https://www.prnewswire.com/news-releases/tractians-130m-series-d-values-the-company-at-1-4b-to-scale-physical-ai-for-asset-heavy-industries-302917313.html",
+          "title": "Tractian's $130M Series D Values the Company at $1.4B to Scale Physical AI for Asset-Heavy Industries",
+          "publisher": "Tractian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Plug-and-play sensors capture vibration, ultrasound, temperature, electrical and PLC/process signals; AI detects and diagnoses developing machine failures, prescribes fixes and reports downtime avoided, while a CMMS handles work orders, spare parts, preventive schedules and maintenance KPIs, integrating with SAP, NetSuite and IBM Maximo.",
+      "pricing": null
+    }
+  ]
 }

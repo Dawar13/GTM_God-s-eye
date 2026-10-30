@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:05:46+00:00",
+  "generated_at": "2026-10-30T06:12:00+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -698,6 +698,78 @@
     {
       "id": "anom_research_0078",
       "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "funds (user leads)",
+      "raw_value": "Q3 2026 fund close $150M (freesbee_q3_2026_fund_closes, from a treemap logo) | 2026 fund $484M (li_20_b2b_ai_funds_2026)",
+      "reason": "sources disagree: Crane's own post (21 Sep 2026) and MassMutual Ventures' copy of the 15 Sep 2026 release list the four vehicles and their sizes. Pulse 2.0, Coverager, Macfarlanes and Tech Funding News give the same figures.",
+      "resolution": "chose Both are correct but describe different things: $150M is Crane APAC I; $484M is the total across Crane III ($169M), Crane APAC I ($150M), Crane US I ($100M) and Crane Opportunity Fund I ($65M), announced 2026-09-15"
+    },
+    {
+      "id": "anom_research_0079",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "funds.Crane APAC I size",
+      "raw_value": "$135M target at launch (September 2025, per Tech Funding News) | $150M (2026-09-15 announcement)",
+      "reason": "sources disagree: $135M was the launch target; the September 2026 announcement gives $150M. The 2025 GlobeNewswire launch release ('Crane Venture Partners Launches $135M APAC I Fund') returned HTTP 403 and was not read.",
+      "resolution": "chose 150000000"
+    },
+    {
+      "id": "anom_research_0080",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "hq_city",
+      "raw_value": "London (MMV release dateline 'LONDON — September 15, 2026'; Tech.eu; Global Venturing 'UK-based') | crane.vc names no HQ and lists five cities: London, San Francisco, New York, Singapore, Bangalore",
+      "reason": "sources disagree: The firm was founded in London in 2015, and the fund release is datelined London. The other cities are offices.",
+      "resolution": "chose London"
+    },
+    {
+      "id": "anom_research_0081",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "stages",
+      "raw_value": "Inception through seed (crane.vc, 2026 fund release) | Crane led Gable's Series A in March 2025 ('a first for Crane'), and crane.vc/portfolio lists some companies tagged Series A/B/C",
+      "reason": "sources disagree: The stated strategy is inception to seed. The Series A lead is described as a one-off, and later-stage tags on the portfolio page may reflect companies' current stage or the MMV Europe/APAC portfolio Crane now administers.",
+      "resolution": "chose pre_seed, seed"
+    },
+    {
+      "id": "anom_research_0082",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "portfolio_count_reported",
+      "raw_value": "115 company entries listed on crane.vc/portfolio (counted 2026-10-30) | 138 investments and 10 exits 'according to CB Insights' (Tech Funding News, Sep 2026) | over 50 portfolio companies across Funds I and II (Tech.eu / Coverager, May 2022)",
+      "reason": "sources disagree: The firm publishes no total. 115 is the number of company entries on its own portfolio page, which may include companies from the MMV Europe/APAC portfolio it administers. The 138 figure is a database count reported second-hand.",
+      "resolution": "chose 115"
+    },
+    {
+      "id": "anom_research_0083",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "rounds.SRE.ai leads",
+      "raw_value": "'We are thrilled to have led SRE.ai's $7.2M seed round, alongside Salesforce Ventures, Y Combinator' (Crane SRE.ai post) | '$7.2 million seed round led by Salesforce Ventures and Crane' (Crane's 20 Aug 2025 portfolio round-up)",
+      "reason": "sources disagree: Both are Crane pages. The round-up names both firms as leads, and the GlobeNewswire headline linked from it says the round was backed by Salesforce Ventures and Crane. The release itself was not readable (403).",
+      "resolution": "chose Salesforce Ventures and Crane as co-leads"
+    },
+    {
+      "id": "anom_research_0084",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "rounds.Nopan amount",
+      "raw_value": "'its €7.2 million funding round, led by Newion' (Crane post) | 'has raised €7.2 million to date, including a new funding round led by Newion' (Nopan release)",
+      "reason": "sources disagree: The company's own release presents €7.2M as the total raised to date, not the size of the Newion-led round, so the round amount is not known.",
+      "resolution": "chose amount null"
+    },
+    {
+      "id": "anom_research_0085",
+      "source_id": "research",
+      "row_ref": "crane-venture-partners",
+      "field": "rounds.Expanse amount",
+      "raw_value": "$5.3M seed (Crane post; Expanse blog) | €4.5 million (EU-Startups headline linked from crane.vc homepage)",
+      "reason": "sources disagree: This is the same round expressed in a different currency. The company and Crane both announce it in USD. The EU-Startups page did not load and was not used.",
+      "resolution": "chose 5300000 USD"
+    },
+    {
+      "id": "anom_research_0086",
+      "source_id": "research",
       "row_ref": "haystack",
       "field": "fund.number",
       "raw_value": "VIII vs VII",
@@ -705,7 +777,7 @@
       "resolution": "research number VII kept"
     },
     {
-      "id": "anom_research_0079",
+      "id": "anom_research_0087",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "fund",
@@ -714,7 +786,7 @@
       "resolution": "row removed"
     },
     {
-      "id": "anom_research_0080",
+      "id": "anom_research_0088",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "check_min_usd / check_max_usd",
@@ -723,7 +795,7 @@
       "resolution": "chose $1M-$3M"
     },
     {
-      "id": "anom_research_0081",
+      "id": "anom_research_0089",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.IV",
@@ -732,7 +804,7 @@
       "resolution": "chose size and close date left null"
     },
     {
-      "id": "anom_research_0082",
+      "id": "anom_research_0090",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.V",
@@ -741,7 +813,7 @@
       "resolution": "chose one Fund V, $50M, fully sold per Form D/A filed 2019-07-05"
     },
     {
-      "id": "anom_research_0083",
+      "id": "anom_research_0091",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds numbering (2023 fund)",
@@ -750,7 +822,7 @@
       "resolution": "chose Haystack Ventures VII"
     },
     {
-      "id": "anom_research_0084",
+      "id": "anom_research_0092",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.VIII close_date",
@@ -759,7 +831,7 @@
       "resolution": "chose $85M, closed in 2026 (year precision)"
     },
     {
-      "id": "anom_research_0085",
+      "id": "anom_research_0093",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "funds.Needles III size",
@@ -768,7 +840,7 @@
       "resolution": "chose $25M"
     },
     {
-      "id": "anom_research_0086",
+      "id": "anom_research_0094",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "partners (Aashay Sanghvi)",
@@ -777,7 +849,7 @@
       "resolution": "chose Aashay Sanghvi, Partner"
     },
     {
-      "id": "anom_research_0087",
+      "id": "anom_research_0095",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "hq_city",
@@ -786,7 +858,7 @@
       "resolution": "chose San Francisco"
     },
     {
-      "id": "anom_research_0088",
+      "id": "anom_research_0096",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "portfolio_count_reported",
@@ -795,7 +867,7 @@
       "resolution": "chose 290"
     },
     {
-      "id": "anom_research_0089",
+      "id": "anom_research_0097",
       "source_id": "research",
       "row_ref": "haystack",
       "field": "rounds.Pangram stage",
@@ -804,7 +876,7 @@
       "resolution": "chose undisclosed"
     },
     {
-      "id": "anom_research_0090",
+      "id": "anom_research_0098",
       "source_id": "research",
       "row_ref": "mavka-ventures",
       "field": "partners[Vitaly Golomb].title",
@@ -813,7 +885,88 @@
       "resolution": "chose General Partner"
     },
     {
-      "id": "anom_research_0091",
+      "id": "anom_research_0099",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "check_min_usd / check_max_usd",
+      "raw_value": "$2-5M seed-lead checks (scout.vc homepage, 2026) | Fund V initial checks of $3-6M (Tectonic Defense, 2026-03-10) | typical check $500K-$1M plus $2-3M reserved for follow-ons (TechCrunch, Fund III, 2021)",
+      "reason": "sources disagree: The firm's own live homepage is the primary source. Tectonic's $3-6M is a single trade-press figure for Fund V and may be the newer number. TechCrunch's 2021 figure dates from the smaller $55M Fund III.",
+      "resolution": "chose $2M-$5M"
+    },
+    {
+      "id": "anom_research_0100",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "funds.I (fund list row 886)",
+      "raw_value": "Scout Ventures Fund I, $4.3M, 2013-06, NYC (Shai Goldman list; link is a 2014 Pando article on LiveOak Venture Partners' $109M fund) | EDGAR: BHV Entrepreneurship Fund LP ($10M offering, $1.08M sold at 2011-07-06 filing) and BHV Entrepreneurship Fund IA, L.P. (NYC, $2M then $5M offering, 2013-14); no $4.3M figure",
+      "reason": "sources disagree: The linked Pando URL now resolves to an unrelated product site, and its title is about LiveOak, a separate Austin firm. No fetched page ties $4.3M to Scout. A 2013 NYC vehicle does match BHV Entrepreneurship Fund IA, but its Form D shows no $4.3M.",
+      "resolution": "chose BHV vehicles recorded from Form D with size null; $4.3M not used"
+    },
+    {
+      "id": "anom_research_0101",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "funds (fund list row 503)",
+      "raw_value": "'Sequoia Ventues - Scout Fund', $180M, 2018-01-18, Fund III, Bay Area (Shai Goldman list) | Scout Ventures Fund III, L.P., $55M, 2021 (TechCrunch, VCJ, AltAssets, Form D)",
+      "reason": "sources disagree: The row is Sequoia Capital's scout program (Bay Area), not Scout Ventures. Scout's Fund III is the $55M 2021 fund.",
+      "resolution": "chose excluded from this firm"
+    },
+    {
+      "id": "anom_research_0102",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "funds.IV timing and size",
+      "raw_value": "$94M final close announced 2024-05-01 (Scout release on PR Newswire) | 'Scout most recently raised a $94M fund—Fund IV—back in 2022' (Tectonic Defense) | Form D: $125M offering, first sale 2022-08-11, $29.76M sold from 48 investors at 2023-08-04",
+      "reason": "sources disagree: Fundraising began in 2022 (Form D first sale) and the firm announced the final close in May 2024. $125M was the Form D offering target, not the raise.",
+      "resolution": "chose $94M, closed 2024-05-01"
+    },
+    {
+      "id": "anom_research_0103",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "funds.V",
+      "raw_value": "$125M Fund V closed, oversubscribed (Tectonic Defense 2026-03-10; scout.vc media lists Business Wire 'Scout Ventures Announces Oversubscribed $125 Million Fund V') | Form D 2025-09-12: Fund V LP + Fund V-A LP co-issuers, $125M offering, $0 sold | separate Form D for Scout Ventures Fund V - VA Sidecar LP: $5M sold to 1 investor (first sale 2025-10-21)",
+      "reason": "sources disagree: The announcement gives the close. Whether the $5M sidecar counts inside the $125M is not stated. The Business Wire release returned 403 and could not be read.",
+      "resolution": "chose Fund V $125M (V + V-A) closed 2026-03-10; sidecar recorded separately"
+    },
+    {
+      "id": "anom_research_0104",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "founding year",
+      "raw_value": "2012 (TechCrunch 2021; Tectonic Defense) | Brad Harrison Ventures founded 2006 (Wikipedia) | BHV Entrepreneurship Fund LP incorporated 2010, first sale 2011 (Form D) | 'Twenty years investing in early stage startups' (scout.vc About Us)",
+      "reason": "sources disagree: Sources date the firm from different points in the BHV-to-Scout lineage.",
+      "resolution": "chose not recorded (no schema field); predecessor BHV noted in identity_check"
+    },
+    {
+      "id": "anom_research_0105",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "hq_city",
+      "raw_value": "Austin, TX (Fund IV/V Form Ds 2022-25; PR Newswire 2024 dateline; VCJ 2021; Tectonic 2026) | New York, NY (PE Hub 2013; Fund III Form Ds 2017-18; BHV Form Ds 2011-15)",
+      "reason": "sources disagree: Every filing and release since 2021 uses Austin. New York was the base before 2021. The current site lists no office addresses, so a current NYC office could not be confirmed.",
+      "resolution": "chose Austin"
+    },
+    {
+      "id": "anom_research_0106",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "partners (Cody Huggins title)",
+      "raw_value": "Partner (scout.vc team page; Worldscape releases 2026) | Managing Partner (Tectonic Defense, 2026-03-10) | Head of Capital Formation (PR Newswire contact, 2024-05-01)",
+      "reason": "sources disagree: Both the firm's own site and the 2026 portfolio releases use Partner.",
+      "resolution": "chose Partner"
+    },
+    {
+      "id": "anom_research_0107",
+      "source_id": "research",
+      "row_ref": "scout-ventures",
+      "field": "portfolio_count_reported",
+      "raw_value": "85+ deals, 22 exits (scout.vc About Us) | 54 companies listed on scout.vc/companies (Funds I-V) | 'several dozen companies' in the first two funds (TechCrunch 2021)",
+      "reason": "sources disagree: This is the firm's own reported deal count. The companies page is a curated list and probably omits written-off and older positions.",
+      "resolution": "chose 85"
+    },
+    {
+      "id": "anom_research_0108",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.stages",
@@ -822,7 +975,7 @@
       "resolution": "chose pre_seed, seed, series_a"
     },
     {
-      "id": "anom_research_0092",
+      "id": "anom_research_0109",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "partners[Steven Lee].title",
@@ -831,7 +984,7 @@
       "resolution": "chose Founder & General Partner"
     },
     {
-      "id": "anom_research_0093",
+      "id": "anom_research_0110",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "facts.portfolio_count_reported",
@@ -840,7 +993,7 @@
       "resolution": "chose 12"
     },
     {
-      "id": "anom_research_0094",
+      "id": "anom_research_0111",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "name",
@@ -849,7 +1002,7 @@
       "resolution": "chose Seven Stars"
     },
     {
-      "id": "anom_research_0095",
+      "id": "anom_research_0112",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Origin Lab].date",
@@ -858,7 +1011,7 @@
       "resolution": "chose 2026-05-13"
     },
     {
-      "id": "anom_research_0096",
+      "id": "anom_research_0113",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Pomo].date",
@@ -867,7 +1020,7 @@
       "resolution": "chose 2026-04-08"
     },
     {
-      "id": "anom_research_0097",
+      "id": "anom_research_0114",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Corgi $108M].stage",
@@ -876,7 +1029,7 @@
       "resolution": "chose series_a (seed + Series A combined)"
     },
     {
-      "id": "anom_research_0098",
+      "id": "anom_research_0115",
       "source_id": "research",
       "row_ref": "seven-stars",
       "field": "rounds[Doctronic Series B].participants",
@@ -885,7 +1038,7 @@
       "resolution": "chose includes Wittington Ventures"
     },
     {
-      "id": "anom_research_0099",
+      "id": "anom_research_0116",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "funds[Supply Change Capital Fund I LP].size_original",
@@ -894,7 +1047,7 @@
       "resolution": "chose 40000000"
     },
     {
-      "id": "anom_research_0100",
+      "id": "anom_research_0117",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "hq_city",
@@ -903,7 +1056,7 @@
       "resolution": "chose Los Angeles"
     },
     {
-      "id": "anom_research_0101",
+      "id": "anom_research_0118",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "check_max_usd",
@@ -912,7 +1065,7 @@
       "resolution": "chose 500000-1000000"
     },
     {
-      "id": "anom_research_0102",
+      "id": "anom_research_0119",
       "source_id": "research",
       "row_ref": "supply-change-capital",
       "field": "accepts_cold_inbound",

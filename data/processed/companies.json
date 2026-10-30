@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:05:46+00:00",
+  "generated_at": "2026-10-30T06:12:00+00:00",
   "records": [
     {
       "id": "co_adaption-labs",
@@ -216,6 +216,124 @@
       "confidence": "low"
     },
     {
+      "id": "co_aseon-labs",
+      "name": "Aseon Labs",
+      "website": "https://aseonlabs.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Builds parking-space-sized robotic pods that inspect, clean and charge robotaxi fleets around a city.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/26/this-silicon-valley-startup-has-raised-10m-to-build-pitstops-to-clean-and-charge-robotaxis/",
+          "title": "Robotaxis drive miles just to get cleaned and charged; this new startup wants to fix that",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/ideas/aseon-labs-raises-10-million-to-build-the-infrastructure-for-autonomous-transportation",
+          "title": "Aseon Labs Raises $10 Million to Build the Infrastructure for Autonomous Transportation",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "layer": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_atomic-tessellator",
+      "name": "Atomic Tessellator",
+      "website": "https://atomictessellator.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Computational materials-discovery company finding substitutes for constrained critical minerals, including a rare-earth-free permanent magnet material (Vireon).",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/atomic-tessellator-raises-a-11-3-million-to-reinvent-permanent-magnets",
+          "title": "Atomic Tessellator Raises A$11.3 Million to Reinvent Permanent Magnets",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://atomictessellator.com/",
+          "title": "Critical minerals alternatives | Atomic Tessellator",
+          "publisher": "Atomic Tessellator",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_atoms",
       "name": "Atoms",
       "website": null,
@@ -238,6 +356,54 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_beacon-ai",
+      "name": "Beacon AI",
+      "website": "https://beaconai.co",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI pilot-assistant and flight-data software for commercial and defense aircraft operators.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://beaconai.co/post-15102024",
+          "title": "Beacon AI Secures $15M in Series A Funding to Bring AI into Flight Decks",
+          "publisher": "Beacon AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_bedrock-robotics",
@@ -345,6 +511,68 @@
         ],
         "sector": [
           0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_bluefish",
+      "name": "Bluefish",
+      "website": "https://www.bluefishai.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Agentic marketing platform that shows enterprise brands how AI assistants portray them and helps them influence it.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/bluefish-raises-43-million-series-b-to-power-agentic-marketing-for-the-fortune-500-302741124.html",
+          "title": "Bluefish Raises $43 Million Series B to Power Agentic Marketing for the Fortune 500",
+          "publisher": "Bluefish via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/bluefish-raises-43-million-series-b-to-power-agentic-marketing",
+          "title": "Bluefish Raises $43 Million Series B to Power Agentic Marketing",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/bluefish-raises-20m-to-power-ai-marketing-for-the-fortune-500-302534342.html",
+          "title": "Bluefish Raises $20M to Power AI Marketing for the Fortune 500",
+          "publisher": "Bluefish via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/first-to-believe-last-to-leave-celebrating-sre-ai-bluefish-ai-and-7bridges",
+          "title": "First to Believe, Last to Leave: Celebrating Laminar, Bluefish.ai, and 7bridges",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -504,6 +732,54 @@
       "confidence": "high"
     },
     {
+      "id": "co_casimir",
+      "name": "Casimir",
+      "website": "https://www.casimir.inc",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops semiconductor chips that use the Casimir effect to supply continuous low-level power to devices without batteries.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.casimir.inc/press-releases/casimir-launches-with-12m-oversubscribed-seed-round-to-bring-worlds-first-quantum-energy-chip-to-market",
+          "title": "Casimir Launches with $12M Oversubscribed Seed Round to Bring World's First Quantum Energy Chip To Market",
+          "publisher": "Casimir",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_celleste-bio",
       "name": "Celleste Bio",
       "website": "https://celleste-bio.com/",
@@ -601,6 +877,50 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_confighub",
+      "name": "ConfigHub",
+      "website": "https://www.confighub.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Treats infrastructure and application configuration as queryable data so teams can find, change and roll back config at scale.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/announcing-confighub-solving-infrastructures-configuration-crisis",
+          "title": "Announcing ConfigHub: Solving Infrastructure’s Configuration Crisis",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -868,6 +1188,106 @@
       "confidence": "low"
     },
     {
+      "id": "co_encharge-ai",
+      "name": "EnCharge AI",
+      "website": "https://www.enchargeai.com",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Develops analog in-memory-computing AI accelerator chips for edge-to-cloud deployments.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.enchargeai.com/news-and-publications/series-b",
+          "title": "EnCharge AI Closes Oversubscribed $100M Series B Funding Round Led by Tiger Global",
+          "publisher": "EnCharge AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_encord",
+      "name": "Encord",
+      "website": "https://encord.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Data platform for curating, annotating and evaluating multimodal training data (video, LiDAR, sensor, 3D) for physical AI.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/encord-scale-ai-rival-60m-physical-ai-data/",
+          "title": "Encord raises $60M to challenge Scale AI in physical AI data infrastructure",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_engineai",
       "name": "EngineAI",
       "website": null,
@@ -1007,6 +1427,60 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_expanse",
+      "name": "Expanse",
+      "website": "https://expanse.sh/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Software that predicts the GPUs, CPU, memory and runtime an AI or HPC job needs before it runs, cutting idle compute and failed jobs.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://expanse.sh/blog/expanse-raises-5-3m-seed",
+          "title": "Why we started Expanse, and our $5.3M seed",
+          "publisher": "Expanse Blog",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/expanse-raises-5-3-million-to-eliminate-guesswork-from-ai-computing",
+          "title": "Expanse raises $5.3 million to eliminate guesswork from AI computing",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc",
+          "title": "Crane Venture Partners - Crane backs outlier founders everywhere, from inception to seed",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -1238,6 +1712,68 @@
       "confidence": "high"
     },
     {
+      "id": "co_havoc",
+      "name": "Havoc",
+      "website": "https://www.havocai.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Software and software-defined hardware that lets one operator command large fleets of autonomous surface vessels and other uncrewed systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.havocai.com/news/havoc-raises-100m-series-a-for-all-domain-collaborative-autonomy",
+          "title": "Havoc Raises $100M Series A to Power the Future of All-Domain Collaborative Autonomy",
+          "publisher": "Havoc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.citybiz.co/article/603366/scout-ventures-lead-11m-seed-round-for-havocai/",
+          "title": "Scout Ventures Lead $11M Seed Round For HavocAI",
+          "publisher": "citybiz",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Brad_Harrison",
+          "title": "Brad Harrison",
+          "publisher": "Wikipedia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_helios-ai",
       "name": "Helios AI",
       "website": "https://www.helios.sc/",
@@ -1378,6 +1914,43 @@
       "confidence": "low"
     },
     {
+      "id": "co_immix",
+      "name": "IMMIX",
+      "website": "https://immix.xyz/",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Infrastructure for converting stablecoins between currencies, pairing AI-driven pricing with institutional trading technology for payment companies.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/immix-raises-3-5m-to-make-global-stablecoin-payments-work-across-currencies",
+          "title": "IMMIX Raises $3.5M to Make Global Stablecoin Payments Work Across Currencies",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_ineffable-intelligence",
       "name": "Ineffable Intelligence",
       "website": null,
@@ -1448,6 +2021,50 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_intalus",
+      "name": "Intalus",
+      "website": "https://intalustech.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Advanced-materials company that engineers durability and wear resistance directly into component surfaces.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://intalustech.com/blog-news/intalus-11m-seed",
+          "title": "INTALUS announces $11M Seed Raise",
+          "publisher": "Intalus",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_kinetic-age",
@@ -1615,6 +2232,40 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_memories-ai",
+      "name": "Memories.ai",
+      "website": "https://memories.ai/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Large visual memory model that gives AI systems persistent, searchable memory across long-running video.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/why-we-backed-memories-ai-building-the-memory-layer-for-ais-next-chapter",
+          "title": "Why We Backed Memories.ai: Building the Memory Layer for AI’s Next Chapter",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_merge-labs",
@@ -2042,6 +2693,54 @@
       "confidence": "high"
     },
     {
+      "id": "co_nopan",
+      "name": "Nopan",
+      "website": "https://www.nopan.com/",
+      "hq_country": "NL",
+      "founded_year": null,
+      "sector": "fintech",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Payments performance platform that helps merchants and fintechs launch and optimise account-to-account and wallet payments in Europe.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.nopan.com/blog/nopan-raises-%E2%82%AC7.2m-to-further-build-its-performance-platform-for-account-and-wallet-payments",
+          "title": "Nopan raises €7.2M to further build its performance platform for account and wallet payments",
+          "publisher": "Nopan Blog",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/nopan-raises-7-2m-to-further-build-its-performance-platform-for-account-and-wallet-payments",
+          "title": "Nopan raises €7.2M to further build its performance platform for account and wallet payments",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_nuyug",
       "name": "Nuyug",
       "website": "https://nuyug.com/",
@@ -2065,6 +2764,58 @@
           "url": "https://www.ajuniorvc.com/portfolio-companies/nuyug",
           "title": "Portfolio Companies: Nuyug",
           "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_olix",
+      "name": "OLIX",
+      "website": "https://olix.com/",
+      "hq_country": "GB",
+      "founded_year": 2024,
+      "sector": "ai_infra",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds complete AI inference racks, designing its own chips, lasers and optical chip-to-chip interconnect for frontier models.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://olix.com/news/company-raises-series-b",
+          "title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board",
+          "publisher": "OLIX",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/olix-raises-312m-at-a-3-3bn-valuation-and-appoints-professor-nick-mckeown-to-its-board",
+          "title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board",
+          "publisher": "Crane Venture Partners",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -2278,6 +3029,50 @@
       "confidence": "low"
     },
     {
+      "id": "co_pilogic",
+      "name": "PiLogic",
+      "website": "https://www.pilogic.ai",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds explainable probabilistic AI models that run onboard for satellite diagnostics and radar tracking.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.pilogic.ai/news/seed-round",
+          "title": "PiLogic raises $4M seed round to scale Exact AI for aerospace and defense",
+          "publisher": "PiLogic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_polyphron",
       "name": "Polyphron",
       "website": null,
@@ -2408,6 +3203,102 @@
       "confidence": "low"
     },
     {
+      "id": "co_pyannoteai",
+      "name": "pyannoteAI",
+      "website": "https://www.pyannote.ai/",
+      "hq_country": "FR",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Speaker-diarisation and speaker-intelligence platform built on the widely used pyannote open-source toolkit.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/mastermind-behind-openais-voice-chatbot-backs-pyannoteais-9m-round-to-advance-ai-speech-models-for-clearer-audio-transcriptions/",
+          "title": "OpenAI voice chatbot founder backs PyannoteAI'a $9M round to transform AI speech models with speaker intelligence",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/ideas/welcoming-pyannoteai-speaker-intelligence-the-next-frontier-in-voice-ai",
+          "title": "Welcoming pyannoteAI – Speaker Intelligence: The Next Frontier in Voice AI",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_radical",
+      "name": "Radical",
+      "website": "https://www.radicalaero.com",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Seattle startup building solar-powered, high-altitude autonomous aircraft.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/04/24/radical-thinks-the-time-has-come-for-solar-powered-high-altitude-autonomous-aircraft/",
+          "title": "Radical thinks the time has come for solar-powered, high-altitude autonomous aircraft",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/scout-ventures-announces-record-breaking-94-million-close-of-fund-iv-302132693.html",
+          "title": "Scout Ventures Announces Record-Breaking $94 Million Close of Fund IV",
+          "publisher": "PR Newswire (Scout Ventures release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_radical-numerics",
       "name": "Radical Numerics",
       "website": null,
@@ -2482,6 +3373,58 @@
         ],
         "sector": [
           0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_riven-systems",
+      "name": "Riven Systems",
+      "website": "https://rivensystems.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "process_planning",
+      "description_short": "Builds an AI-driven industrial-chemistry platform to develop and de-risk critical-minerals separation processes for US producers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.einpresswire.com/article/933452807/industrial-chemistry-startup-riven-systems-emerges-from-stealth-to-build-ai-platform-for-critical-minerals-processing",
+          "title": "Industrial Chemistry Startup Riven Systems Emerges From Stealth to Build AI Platform for Critical Minerals Processing",
+          "publisher": "EIN Presswire (Riven Systems release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -2651,6 +3594,46 @@
       "confidence": "high"
     },
     {
+      "id": "co_silverflow",
+      "name": "Silverflow",
+      "website": "https://www.silverflow.com/",
+      "hq_country": "NL",
+      "founded_year": 2019,
+      "sector": "fintech",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Cloud-native card payment processor that gives acquirers and payment companies direct access to the card networks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/adyen-alums-silverflow-raises-40m-to-kill-legacy-payments/",
+          "title": "Adyen alums' Silverflow raises $40M to kill legacy payments",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_slayd",
       "name": "Slayd",
       "website": "https://slayd.in/",
@@ -2694,6 +3677,60 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_sre-ai-now-laminar",
+      "name": "SRE.ai (now Laminar)",
+      "website": "https://www.laminar.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native DevOps and release automation for enterprise platforms such as Salesforce, founded by ex-Google DeepMind engineers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/first-to-believe-last-to-leave-celebrating-sre-ai-bluefish-ai-and-7bridges",
+          "title": "First to Believe, Last to Leave: Celebrating Laminar, Bluefish.ai, and 7bridges",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/sre-ai-automating-the-devops-layer-for-enterprise-operating-systems",
+          "title": "SRE.ai: Automating the DevOps Layer for Enterprise Operating Systems",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -3040,6 +4077,102 @@
       "confidence": "high"
     },
     {
+      "id": "co_usul",
+      "name": "Usul",
+      "website": "https://usul.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI platform that helps companies find and win government contracts, starting with defense procurement.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://usul.com/news/3-3m-seed-fundraising-announcement",
+          "title": "$3.3M Seed Fundraising Announcement",
+          "publisher": "Usul",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_valarian",
+      "name": "Valarian",
+      "website": "https://www.valarian.com",
+      "hq_country": "GB",
+      "founded_year": 2020,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "London-based provider of compartmentalised secure communications and sovereign infrastructure for government, defence and enterprise.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.valarian.com/article/forbes-spotlights-valarians-20m-mission-to-secure-government-communications",
+          "title": "Forbes Spotlights Valarian's $20M Mission to Secure Government Communications",
+          "publisher": "Valarian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_veeda-ai",
       "name": "Veeda AI",
       "website": null,
@@ -3157,6 +4290,50 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_worldscape",
+      "name": "Worldscape",
+      "website": "https://worldscape.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native mission-engineering platform that lets government and commercial users model, simulate and plan complex operations on unified data.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://worldscape.ai/company/news/worldscape-raises-10-million-seed-extension",
+          "title": "Worldscape Raises $10 Million Seed Extension",
+          "publisher": "Worldscape",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://worldscape.ai/company/news/worldscape-ai-raises-6m-seed",
+          "title": "Worldscape.ai Raises $6M Seed",
+          "publisher": "Worldscape",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_wudhomes",

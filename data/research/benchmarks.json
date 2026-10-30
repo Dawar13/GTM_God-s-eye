@@ -1,0 +1,834 @@
+[
+  {
+    "id": "bm_pbnvca_preseed_pre_money_us_2026ytd",
+    "metric": "median_pre_money",
+    "stage": "pre_seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 10732500,
+    "unit": "usd",
+    "sample_size": 60,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US pre-seed pre-money valuation for VC deals through 2026-09-30 (data pack sheet 'Median pre value'). Thin sample: 60 disclosed valuations. 2025 full year: $7.4M. 2026 25th-75th percentile: $5.76M-$19.8M. PitchBook tags a deal pre-seed when the company or press calls it that.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_seed_pre_money_us_2026ytd",
+    "metric": "median_pre_money",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 18280000,
+    "unit": "usd",
+    "sample_size": 823,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US seed pre-money valuation through 2026-09-30; the report chart rounds it to $18.3M (2025: $16.0M). 2026 25th-75th percentile: $10.9M-$35.1M. AI companies only: $21.0M (2025: $17.5M), from the report's AI chart.",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_series_a_pre_money_us_2026ytd",
+    "metric": "median_pre_money",
+    "stage": "series_a",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 60250000,
+    "unit": "usd",
+    "sample_size": 758,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US Series A pre-money valuation through 2026-09-30; the report chart rounds it to $60.3M (2025: $48.1M). 2026 25th-75th percentile: $30.8M-$115.4M. AI companies only: $78.0M (2025: $58.0M).",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_preseed_round_size_us_2026ytd",
+    "metric": "median_round_size",
+    "stage": "pre_seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 200000,
+    "unit": "usd",
+    "sample_size": 962,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US pre-seed deal value through 2026-09-30 (2025: $357.5K). 2026 75th percentile: $710K. PitchBook's pre-seed set includes small angel-style rounds, so it is not comparable to Carta's per-instrument SAFE data.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_seed_round_size_us_2026ytd",
+    "metric": "median_round_size",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 3000000,
+    "unit": "usd",
+    "sample_size": 2573,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US seed deal value through 2026-09-30 (2025: $3.4M). The report says seed is the only series whose median fell in 2026. 2026 25th-75th percentile: $1.0M-$6.5M. AI companies only: $4.5M.",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_series_a_round_size_us_2026ytd",
+    "metric": "median_round_size",
+    "stage": "series_a",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 17370000,
+    "unit": "usd",
+    "sample_size": 1135,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median US Series A deal value through 2026-09-30; the report chart rounds it to $17.4M (2025: $13.7M). AI companies only: $20.0M.",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_preseed_deal_count_us_2026ytd",
+    "metric": "deal_count",
+    "stage": "pre_seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 1136,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Counted (not estimated) US pre-seed deals through 2026-09-30, worth $906.7M (2025 full year: 1,180 deals, $1.08B). Q3 2026 alone: 406 deals. PitchBook's estimate for pre-seed and seed combined, including late-reported deals, is 5,199 deals worth $17.09B.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_seed_deal_count_us_2026ytd",
+    "metric": "deal_count",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 3090,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Counted (not estimated) US seed deals through 2026-09-30 (2025 full year: 4,185). Q3 2026 alone: 916 deals. Across all stages, US VC through Q3 2026 was $515.8B over an estimated 14,199 deals; Q3 alone was $98.4B over an estimated 5,012 deals.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_seed_capital_invested_us_2026ytd",
+    "metric": "capital_invested",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 16183062056,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "PitchBook-NVCA",
+    "notes": "US seed deal value through 2026-09-30, stated as $16.183B in the data pack (2025 full year: $20.31B). Pre-seed over the same period: $906.7M.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_early_stage_time_since_last_round_us_2026ytd",
+    "metric": "time_between_rounds",
+    "stage": "series_a",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 15.65,
+    "unit": "months",
+    "sample_size": 1420,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median time since the previous VC round for PitchBook 'early-stage VC' deals (Series A and B): 1.30411 years in the data pack, converted to months (x12) (2025: 1.337 years). For pre-seed/seed deals with a prior round: 1.523288 years, about 18.28 months (n=744).",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_first_time_fund_count_us_2026ytd",
+    "metric": "fund_count",
+    "stage": "all",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 81,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "PitchBook-NVCA",
+    "notes": "First-time (debut) US VC funds closed through 2026-09-30. The report says this is on pace for the fewest in a decade (2025 full year: 195). PitchBook gives no Q3-only figure, so Freesbee's 22 debut funds in Q3 2026 can't be checked directly.",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/research/pitchbook-nvca-venture-monitor/",
+        "title": "PitchBook-NVCA Venture Monitor",
+        "publisher": "NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_first_time_capital_raised_us_2026ytd",
+    "metric": "capital_raised_by_funds",
+    "stage": "all",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 4863094821,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Capital raised by first-time US VC funds through 2026-09-30: $4.9B across 81 funds in the report, $4.863B in the data pack (2025 full year: $9.42B). That is about 4.5% of all US VC raised in the period, per NVCA's summary.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_first_time_median_fund_size_us_2026ytd",
+    "metric": "median_fund_size",
+    "stage": "all",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 23275000,
+    "unit": "usd",
+    "sample_size": 80,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median size of first-time US VC funds closed through 2026-09-30 (2025: $20.0M; average 2026: $60.8M). Freesbee's median debut fund for Q3 2026 ($33M) is higher, but it covers a different period and dataset.",
+    "sources": [
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_pbnvca_median_fund_size_us_2026ytd",
+    "metric": "median_fund_size",
+    "stage": "all",
+    "instrument": null,
+    "geography": "us",
+    "period": "2026-Q1-Q3",
+    "value": 10000000,
+    "unit": "usd",
+    "sample_size": 656,
+    "publisher": "PitchBook-NVCA",
+    "notes": "Median of all US VC funds closed through 2026-09-30: the fifth straight annual decline (2025: $15M). Average: $165.4M. Totals: 699 funds, $108.48B. Established firms (fund 4 or later) closed 448 funds worth $95.63B, 88.2% of capital. The data pack gives no median for established managers, so Freesbee's $105M has no direct counterpart.",
+    "sources": [
+      {
+        "url": "https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://nvca.org/download/125414/?tmstv=1791465721",
+        "title": "Q3 2026 PitchBook-NVCA Venture Monitor data pack (XLSX)",
+        "publisher": "PitchBook-NVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_freesbee_fund_count_2026q3",
+    "metric": "fund_count",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 103,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Funds closed in Q3 2026, as given in the user-supplied Freesbee post. Neither the dataset nor the geography is stated, so geography is recorded as global to mean unspecified. The original post was not found because the web search budget ran out. For comparison, PitchBook-NVCA counts 699 US VC funds closed in Q1-Q3 2026 and gives no Q3-only count.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_freesbee_capital_raised_2026q3",
+    "metric": "capital_raised_by_funds",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 19900000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Capital raised by the 103 funds that closed in Q3 2026, per the user-supplied Freesbee post. Geography is unspecified and the original post was not found. For comparison, PitchBook-NVCA has $108.5B raised by US VC funds in Q1-Q3 2026, with no Q3-only figure.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_freesbee_debut_fund_count_2026q3",
+    "metric": "fund_count",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 22,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Debut (first-time) funds closed in Q3 2026, per the user-supplied Freesbee post. Geography is unspecified and the original post was not found. For comparison, PitchBook-NVCA counts 81 first-time US VC funds in Q1-Q3 2026.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_freesbee_debut_capital_raised_2026q3",
+    "metric": "capital_raised_by_funds",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 774000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Capital raised by the 22 debut funds that closed in Q3 2026, per the user-supplied Freesbee post. Geography is unspecified and the original post was not found. For comparison, PitchBook-NVCA has $4.9B raised by first-time US VC funds in Q1-Q3 2026.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_freesbee_debut_median_fund_size_2026q3",
+    "metric": "median_fund_size",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 33000000,
+    "unit": "usd",
+    "sample_size": 22,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Median debut fund size for Q3 2026, per the user-supplied Freesbee post (22 funds). Geography is unspecified and the original post was not found. PitchBook-NVCA's median first-time US VC fund for Q1-Q3 2026 is $23.3M (n=80), which is lower.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_freesbee_established_median_fund_size_2026q3",
+    "metric": "median_fund_size",
+    "stage": "all",
+    "instrument": null,
+    "geography": "global",
+    "period": "2026-Q3",
+    "value": 105000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Freesbee (user-supplied)",
+    "notes": "Median established-manager fund size for Q3 2026, per the user-supplied Freesbee post. The post's definition of 'established' and its geography are not known, and the original post was not found. PitchBook-NVCA publishes no median for established managers; its median across all US VC funds in Q1-Q3 2026 is $10M.",
+    "sources": [
+      {
+        "url": "user_supplied:freesbee_q3_2026_fund_closes",
+        "title": "Freesbee post on Q3 2026 fund closes",
+        "publisher": "Freesbee",
+        "retrieved_at": "2026-10-30",
+        "kind": "user_supplied"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_carta_preseed_capital_us_2026q2",
+    "metric": "capital_invested",
+    "stage": "pre_seed",
+    "instrument": "SAFE and convertible note",
+    "geography": "us",
+    "period": "2026-Q2",
+    "value": 3190000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "From Carta's State of Pre-Seed Q2 2026, which covers US startups on Carta and unpriced instruments only: $3.19B across 11,500+ SAFEs and convertible notes (Q2 2025: $3.22B across about 14,825). Average instrument: $276K, up 27% YoY. Carta's own page (carta.com/data/state-of-pre-seed-q2-2026/) returned HTTP 403 to our fetcher, so the figures were read on two secondary pages that cite it, and they agree.",
+    "sources": [
+      {
+        "url": "https://kruzeconsulting.com/blog/post/preseed-funding",
+        "title": "Pre-Seed Funding Guide: 2026 – 2027 Edition",
+        "publisher": "Kruze Consulting",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "bm_carta_preseed_safe_share_us_2026q2",
+    "metric": "safe_share_of_rounds",
+    "stage": "pre_seed",
+    "instrument": "SAFE",
+    "geography": "us",
+    "period": "2026-Q2",
+    "value": 0.93,
+    "unit": "fraction",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Per Carta (State of Pre-Seed Q2 2026, US): 93% of pre-seed rounds and 95% of pre-seed capital were on SAFEs, and 91% of SAFEs were post-money (Q2 2025: about 89%). Convertible notes were 7% of rounds and 8% of dollars in Q1 2026, a record low. The 93%, 95% and note shares are read on one secondary page (Waveup). Kruze confirms the 91% post-money share and says SAFE usage hit a new high, but gives no percentage. Carta's page returned 403.",
+    "sources": [
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://kruzeconsulting.com/blog/post/preseed-funding",
+        "title": "Pre-Seed Funding Guide: 2026 – 2027 Edition",
+        "publisher": "Kruze Consulting",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_carta_safe_cap_500k_1m_us_2026q2",
+    "metric": "safe_cap_median",
+    "stage": "pre_seed",
+    "instrument": "SAFE (91% post-money)",
+    "geography": "us",
+    "period": "2026-Q2",
+    "value": 10000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Median valuation cap for SAFE rounds of $500K-$999K: 25th percentile $7M, 90th percentile $30M. The $250K-$499K band's median is also $10M, and under $250K is $8M. Read from a table on Kruze sourced to 'Carta State of Pre-Seed Q2 2026'. Carta's page returned 403.",
+    "sources": [
+      {
+        "url": "https://kruzeconsulting.com/blog/post/preseed-funding",
+        "title": "Pre-Seed Funding Guide: 2026 – 2027 Edition",
+        "publisher": "Kruze Consulting",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "bm_carta_safe_cap_1m_2_5m_us_2026q2",
+    "metric": "safe_cap_median",
+    "stage": "pre_seed",
+    "instrument": "SAFE (91% post-money)",
+    "geography": "us",
+    "period": "2026-Q2",
+    "value": 15000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Median valuation cap for SAFE rounds of $1M-$2.4M, the band a ~$1M pre-seed falls in: 25th percentile $10M, 90th percentile $40M. Read from a Kruze table sourced to Carta State of Pre-Seed Q2 2026. Waveup also gives $15M for this band but labels it 2025, and Value Add VC gives $15M labelled Q1 2026. Carta's page returned 403.",
+    "sources": [
+      {
+        "url": "https://kruzeconsulting.com/blog/post/preseed-funding",
+        "title": "Pre-Seed Funding Guide: 2026 – 2027 Edition",
+        "publisher": "Kruze Consulting",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://valueaddvc.com/blog/pre-seed-vs-seed-vs-series-a",
+        "title": "Pre-Seed vs Seed vs Series A in 2026: Round Size, Valuation, and Dilution",
+        "publisher": "Value Add VC",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "bm_carta_safe_cap_2_5m_plus_us_2026q2",
+    "metric": "safe_cap_median",
+    "stage": "pre_seed",
+    "instrument": "SAFE (91% post-money)",
+    "geography": "us",
+    "period": "2026-Q2",
+    "value": 30000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "CONFLICT. Kruze's table (sourced to Carta State of Pre-Seed Q2 2026) gives a $30M median cap for SAFE rounds of $2.5M+ (25th percentile $20M, 90th about $100M). Waveup, citing Carta's post 'valuation caps on new SAFEs keep getting bigger' (carta.com/data/safe-valuation-caps-q2-2026/), gives $35M, up 40% YoY (75th about $60M, 90th $100M). Carta's page returned 403, so the two could not be reconciled.",
+    "sources": [
+      {
+        "url": "https://kruzeconsulting.com/blog/post/preseed-funding",
+        "title": "Pre-Seed Funding Guide: 2026 – 2027 Edition",
+        "publisher": "Kruze Consulting",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_carta_seed_round_size_us_2026h1",
+    "metric": "median_round_size",
+    "stage": "seed",
+    "instrument": "priced equity",
+    "geography": "us",
+    "period": "2026-H1",
+    "value": 4100000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Carta benchmark of more than 1,000 priced seed rounds by US software companies, covering the six months to July 2026; bridges and extensions are excluded, per Waveup. Value Add VC gives the same $4.1M but labels it Q1 2026, up from $3.2M the prior quarter. Carta's page (carta.com/data/linkedin-vc-fundraising-benchmarks-2026/) returned 403. Software only, so not comparable to PitchBook's all-sector $3.0M.",
+    "sources": [
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://valueaddvc.com/blog/startup-funding-rounds-in-2025-whats-normal-at-pre-seed-seed-a-and-b",
+        "title": "Pre-Seed to Series B Round Sizes 2026: $1M-$40M Benchmarks",
+        "publisher": "Value Add VC",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_carta_seed_post_money_us_2026h1",
+    "metric": "median_post_money",
+    "stage": "seed",
+    "instrument": "priced equity",
+    "geography": "us",
+    "period": "2026-H1",
+    "value": 24300000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Median seed post-money valuation from the same Carta benchmark (1,000+ priced US software seed rounds, six months to July 2026), per Waveup. Value Add VC gives $24M for Q1 2026 (up from $18M a year earlier). Other blogs label it '2026' and imply about $16M pre-money, which disagrees with PitchBook's all-sector median seed pre-money of $18.3M for Q1-Q3 2026. Carta's page returned 403.",
+    "sources": [
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://valueaddvc.com/blog/startup-funding-rounds-in-2025-whats-normal-at-pre-seed-seed-a-and-b",
+        "title": "Pre-Seed to Series B Round Sizes 2026: $1M-$40M Benchmarks",
+        "publisher": "Value Add VC",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_carta_seed_dilution_us_2026h1",
+    "metric": "median_dilution",
+    "stage": "seed",
+    "instrument": "priced equity",
+    "geography": "us",
+    "period": "2026-H1",
+    "value": 0.18,
+    "unit": "fraction",
+    "sample_size": null,
+    "publisher": "Carta",
+    "notes": "Median seed dilution in the same Carta benchmark (US software, six months to July 2026), described as 'ticking down for months'. Value Add VC also gives 18% (labelled Q1 2026), but a second Value Add VC page and Flowjam cite about 20% for 'seven straight quarters' with no end date. Carta's page returned 403. No Series A dilution figure was found on a fetched page.",
+    "sources": [
+      {
+        "url": "https://waveup.com/blog/seed-round-benchmarks/",
+        "title": "Seed Round Benchmarks 2026: Size, Valuation, Dilution, Time",
+        "publisher": "Waveup",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      },
+      {
+        "url": "https://valueaddvc.com/blog/startup-funding-rounds-in-2025-whats-normal-at-pre-seed-seed-a-and-b",
+        "title": "Pre-Seed to Series B Round Sizes 2026: $1M-$40M Benchmarks",
+        "publisher": "Value Add VC",
+        "retrieved_at": "2026-10-30",
+        "kind": "secondary"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "bm_bain_india_seed_deal_count_2025",
+    "metric": "deal_count",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "india",
+    "period": "2025",
+    "value": 803,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "IVCA-Bain",
+    "notes": "India seed deals in 2025, from Figure 6 of the IVCA-Bain India Venture Capital Report 2026 (2024: 756). Average disclosed seed deal: about $3M (2024: about $2M). This is an average, not a median, and excludes undisclosed-value deals. Series A in 2025: 315 deals, averaging about $8M. Underlying data: Bain, PitchBook.",
+    "sources": [
+      {
+        "url": "https://www.bain.com/globalassets/noindex/2026/bain_report_india_venture_capital_report_2026.pdf",
+        "title": "India Venture Capital Report 2026",
+        "publisher": "Bain & Company / IVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_bain_india_vc_capital_2025",
+    "metric": "capital_invested",
+    "stage": "all",
+    "instrument": null,
+    "geography": "india",
+    "period": "2025",
+    "value": 16000000000,
+    "unit": "usd",
+    "sample_size": null,
+    "publisher": "IVCA-Bain",
+    "notes": "India VC/growth investment in 2025, stated as '$16+ billion' or 'approximately $16 billion' (2024: $14B). Includes real estate and infrastructure deals. VC/growth funds raised about $5.4B in 2025, double the prior year.",
+    "sources": [
+      {
+        "url": "https://www.bain.com/globalassets/noindex/2026/bain_report_india_venture_capital_report_2026.pdf",
+        "title": "India Venture Capital Report 2026",
+        "publisher": "Bain & Company / IVCA",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      },
+      {
+        "url": "https://www.bain.com/insights/india-venture-capital-report-2026/",
+        "title": "India Venture Capital Report 2026",
+        "publisher": "Bain & Company",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bm_entrackr_india_seed_deal_count_2026q3",
+    "metric": "deal_count",
+    "stage": "seed",
+    "instrument": null,
+    "geography": "india",
+    "period": "2026-Q3",
+    "value": 88,
+    "unit": "count",
+    "sample_size": null,
+    "publisher": "Entrackr",
+    "notes": "From Entrackr's own tracking: 88 seed-stage deals in Q3 2026 raising $174.7M, the highest deal count of any stage. Series A: 59 deals, $689.17M. All early-stage: 194 deals, $1.01B. All stages: about $2.9B (Q2 2026: $3.5B; Q3 2025: $2.78B). No pre-seed, median or average figures are given.",
+    "sources": [
+      {
+        "url": "https://entrackr.com/report/quarterly-funding-report/indian-startups-raise-29-bn-in-q3-2026-as-ev-ai-drive-funding-12612860",
+        "title": "Indian startups raise $2.9 Bn in Q3 2026 as EV, AI drive funding",
+        "publisher": "Entrackr",
+        "retrieved_at": "2026-10-30",
+        "kind": "primary"
+      }
+    ],
+    "confidence": "high"
+  }
+]

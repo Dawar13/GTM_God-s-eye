@@ -1,0 +1,132 @@
+{
+  "key": "nowpurchase",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as NowPurchase (nowpurchase.com), the Kolkata-based company founded in 2017; Inc42 Datalabs gives the legal name as BIZ HERO INDIA PRIVATE LIMITED. Entrackr (2022, 2024), Inc42 (2024, 2026), Outlook Business, Entrepreneur India and its LinkedIn page (Kolkata, founded 2017, nowpurchase.com) all describe the same business: a raw-material marketplace and MetalCloud software for metal manufacturers and foundries, run by founder-CEO Naman Shah. Category kept 'adjacent'. Most of the business is selling raw materials (metal scrap, carbon additives, ferro alloys) through a marketplace with its own warehouses and scrap processing centres. It does overlap with Utopian Autonomy's procurement and process-stability agents: buyers get live prices and stock through a WhatsApp bot, and MetalCloud uses AI to optimise the melting process. That overlap is confined to foundries and metal manufacturing, so it is borderline-direct there. Layer set to plant_ops rather than process_planning: MetalCloud optimises the running melt process inside the plant and the marketplace serves plant procurement; neither plans how parts are made.",
+  "pages": [
+    { "url": "https://entrackr.com/2022/01/nowpurchase-raises-2-4-million-in-seed-round/", "title": "NowPurchase raises $2.4 million in seed round", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://entrackr.com/2024/09/nowpurchase-raises-6-mn-led-by-info-edge-ventures-others", "title": "NowPurchase raises $6 Mn led by Info Edge Ventures, others", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/buzz/nowpurchase-nets-6-mn-to-offer-tech-led-procurement-solutions-to-metal-manufacturers-funding/", "title": "NowPurchase Nets $6 Mn To Offer Tech-Led Procurement Solutions To Metal Manufacturers", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.outlookbusiness.com/start-up/nowpurchase-raises-usd-6-million-in-funding-round", "title": "NowPurchase Raises USD $ 6 Million In Funding Round", "publisher": "Outlook Business", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://india.entrepreneur.com/?p=1375", "title": "SaaS-Enabled Marketplace NowPurchase Raises USD 6 Mn to Scale MetalCloud Platform and Expand Across India", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/buzz/raw-materials-marketplace-nowpurchase-bags-%e2%82%b980-cr-to-expand-product-portfolio/", "title": "Raw Materials Marketplace NowPurchase Bags ₹80 Cr To Expand Product Portfolio", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://cdn.dealstreetasia.com/stories/nowpurchase-bachatt-477714", "title": "India Digest: NowPurchase, Bachatt raise funding", "publisher": "DealStreetAsia", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inc42.com/company/nowpurchase/funding/", "title": "NowPurchase Funding (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/company/nowpurchase/", "title": "NowPurchase (Inc42 company profile)", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/buzz/nowpurchase-completes-first-esop-buyback/", "title": "NowPurchase Completes First ESOP Buyback", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.linkedin.com/company/nowpurchase", "title": "NowPurchase | LinkedIn (company page)", "publisher": "LinkedIn (NowPurchase company page)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.nowpurchase.com", "title": "NowPurchase - Transforming Procurement & Production for Factories", "publisher": "NowPurchase", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [
+    {
+      "field": "founders",
+      "values": ["Naman Shah and Aakash Shah (Entrackr 2022 and 2024; Inc42 2024 and 2026 articles)", "Ankan Adhikari, Naman Shah and Aakash Shah (Entrepreneur India, Sep 2024)", "Ankan Adhikari and Naman Shah (Inc42 Datalabs profile)"],
+      "chosen": "Naman Shah, Aakash Shah, Ankan Adhikari",
+      "reason": "Naman Shah and Aakash Shah appear in every source. Ankan Adhikari is named as a founder by two sources (Entrepreneur India and the Inc42 profile), so he is kept but listed last."
+    },
+    {
+      "field": "rounds[seed 2022].leads",
+      "values": ["Led by Orios and InfoEdge Ventures (Entrackr, Jan 2022)", "Led by Orios VP with minor participation from Info Edge Ventures (Inc42, Sep 2024)"],
+      "chosen": "Orios and InfoEdge Ventures as co-leads",
+      "reason": "The Entrackr report was published when the round was announced; Inc42's description is a later recap."
+    },
+    {
+      "field": "rounds[2026].date",
+      "values": ["2026-04-01 (Inc42 article; DealStreetAsia India Digest; Inc42 FAQ)", "2026-03-31 (Inc42 Datalabs funding table)"],
+      "chosen": "2026-04-01",
+      "reason": "Announcement date in two press sources."
+    },
+    {
+      "field": "rounds[2024].amount INR equivalent",
+      "values": ["around INR 50 Cr (Inc42)", "about Rs 51 crore (Outlook Business)"],
+      "chosen": "USD 6,000,000 as announced",
+      "reason": "Every source announces the round in USD. The INR figures are conversions."
+    },
+    {
+      "field": "headcount_est",
+      "values": ["150 (LinkedIn 'Discover all 150 employees')", "144 (Inc42 profile overview)", "81 (Inc42 FAQ)"],
+      "chosen": "150",
+      "reason": "LinkedIn company-page header is the public page the protocol prefers. All values are approximate."
+    }
+  ],
+  "open_items": [
+    "Funding before 2022 not found. In Sep 2024 the company said total funds raised were $10M including the $6M round, but the known rounds ($2.4M seed plus $6M) add to $8.4M, leaving about $1.6M unexplained. By April 2026 the company claimed ₹120 Cr in equity to date.",
+    "The equity/debt split of the Sep 2024 $6M round is not disclosed. Entrepreneur India names Capsave Finance and UC Inclusive as the debt providers; both are recorded as participants.",
+    "The stage of the 2024 and 2026 rounds is not named in the press. Inc42 Datalabs labels both rounds 'Undisclosed' and puts the 2026 round at 'Late Stage'.",
+    "Revenue not recorded because no fetched press article reports it. The Inc42 Datalabs profile (a database page) says 'reported revenue of ₹330.5 Cr in FY25, an increase of 74.6% from FY24 (₹189.3 Cr)'. This is mostly raw-material trading revenue, not SaaS. An Entrackr or other press article reporting the MCA filing should be found before the figure is recorded.",
+    "Valuations not disclosed for any round.",
+    "nowpurchase.com is client-side rendered, and only its title and tagline could be read; product details come from press articles. No public pricing.",
+    "Not a funding event: the November 2024 ESOP buyback (Inc42) was valued at about 100x the initial purchase price, and 40 employees cashed out part of their vested options.",
+    "Lead investors of the 2022 seed are given as 'Orios' and 'InfoEdge Ventures'. These are taken to be Orios Venture Partners and Info Edge Ventures."
+  ],
+  "company": {
+    "name": "NowPurchase",
+    "website": "https://www.nowpurchase.com",
+    "description": "Kolkata-based raw-material marketplace and AI melt-optimisation software (MetalCloud) for foundries and metal manufacturers.",
+    "hq_country": "IN",
+    "founded_year": 2017,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Two parts. First, a procurement marketplace for metal manufacturers selling metal scrap, carbon additives, ferro alloys and branded products, backed by six warehouses and two scrap processing centres as of Apr 2026, with a WhatsApp bot for real-time prices and stock. Second, MetalCloud, AI SaaS that suggests how to optimise melting and that the company calls the 'core operating system for metal manufacturers'. The LinkedIn page says it is building 'the operating system for metal manufacturing' across procurement, quality and production. Overlaps Utopian Autonomy on procurement and process stability, within foundries and metal plants only.",
+  "founders": ["Naman Shah", "Aakash Shah", "Ankan Adhikari"],
+  "named_customers": ["Titagarh Rail Systems Limited", "Brakes India"],
+  "product_summary": "B2B marketplace supplying foundries and metal manufacturers with raw materials (metal scrap, carbon additives, ferro alloys) from its own warehouses and scrap processing centres, plus MetalCloud, AI-based SaaS that suggests melting optimisations; buyers see live prices and stock through a WhatsApp bot.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 150,
+    "pages": [10],
+    "snippet": "Discover all 150 employees (approximate: LinkedIn member count; size band 51-200 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": { "name": "NowPurchase", "website": "https://www.nowpurchase.com", "description": "Raw-material marketplace and AI melt-optimisation software for metal manufacturers.", "hq_country": "IN", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "date": "2022-01",
+      "date_precision": "month",
+      "amount_original": 2400000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Orios", "InfoEdge Ventures"],
+      "participants": ["Neeraj Arora"],
+      "unspecified": [],
+      "pages": [0, 2, 7],
+      "snippet": "NowPurchase, a B2B marketplace for metal, has raised $2.4 million in a seed round led by Orios and InfoEdge Ventures."
+    },
+    {
+      "company": { "name": "NowPurchase", "website": "https://www.nowpurchase.com", "description": "Raw-material marketplace and AI melt-optimisation software for metal manufacturers.", "hq_country": "IN", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "undisclosed",
+      "stage_raw": "Equity and debt round, stage not named (Capsave Finance and UC Inclusive named as debt providers by Entrepreneur India)",
+      "date": "2024-09-19",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Info Edge Ventures"],
+      "participants": ["Orios Venture Partners", "100 Unicorns", "VC Grid", "Dholakia Ventures", "Real Ispat Group", "Subhrakant Panda", "Ankur Warikoo", "Kedar Lele", "Capsave Finance", "UC Inclusive"],
+      "unspecified": [],
+      "pages": [1, 2, 3, 4, 7],
+      "snippet": "NowPurchase raises $6 Mn led by Info Edge Ventures, others"
+    },
+    {
+      "company": { "name": "NowPurchase", "website": "https://www.nowpurchase.com", "description": "Raw-material marketplace and AI melt-optimisation software for metal manufacturers.", "hq_country": "IN", "founded_year": 2017, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "undisclosed",
+      "stage_raw": "Funding round, stage not named (Inc42 Datalabs: 'Undisclosed', 'Late Stage'); about $8.5 Mn",
+      "date": "2026-04-01",
+      "date_precision": "day",
+      "amount_original": 800000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["Bajaj Finserv"],
+      "participants": ["InfoEdge Ventures", "Orios Venture Partners", "Real Ispat Group", "Shikhar Raj", "Madhur Gupta"],
+      "unspecified": [],
+      "pages": [5, 6, 7],
+      "snippet": "Manufacturing materials marketplace NowPurchase has secured ₹80 Cr (about $8.5 Mn) in a funding round led by Bajaj Finserv."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "key": "qualitas-technologies",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Qualitas Technologies (qualitastech.com), the Bengaluru AI machine-vision company. Several pages agree. The site's footer address (#53 Kempegowda Double Road, BEML Layout, Bangalore 560098) matches the HQ address on CB Insights. The LinkedIn page (linkedin.com/company/qualitastech) gives Bangalore as HQ, 2008 as the founding year and qualitastech.com as the website. Caplight (slug 'qualitastech') also gives Bangalore and 2008. The site's about page names Raghava Kashyapa as 'CEO & Founder', and the site claims '15+ years in machine vision', consistent with a 2008 founding. It is not one of the unrelated businesses that use the Qualitas name; the '$16M Series A' banner on the Caplight page refers to Caplight itself. Category kept 'adjacent' and layer 'quality_vision'. Qualitas sells turnkey camera-based inspection, gauging and counting systems, not agents that plant staff use for procurement, maintenance or process stability. Overlap with Utopian Autonomy is limited to quality on Indian manufacturing lines, plus a camera-analytics offer that reconciles production and dispatch counts with ERP.",
+  "pages": [
+    { "url": "https://www.qualitastech.com", "title": "Qualitas Technologies home page (AI machine vision for manufacturing quality control)", "publisher": "Qualitas Technologies", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.qualitastech.com/about-us", "title": "About Us | Qualitas Technologies", "publisher": "Qualitas Technologies", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.qualitastech.com/machine-vision-case-studies", "title": "Machine Vision Case Studies | Qualitas Technologies", "publisher": "Qualitas Technologies", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/qualitastech", "title": "Qualitas Technologies | LinkedIn (company page)", "publisher": "LinkedIn (Qualitas Technologies company page)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cbinsights.com/company/qualitas-technologies/financials", "title": "Qualitas Technologies - Funding, Financials, Valuation & Investors", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.cbinsights.com/company/qualitas-technologies", "title": "Qualitas Technologies - Products, Competitors, Financials, Employees, Headquarters Locations", "publisher": "CB Insights", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.caplight.com/company/qualitastech", "title": "Qualitas Technologies (Caplight company page)", "publisher": "Caplight", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "conflicts": [
+    {
+      "field": "headcount_est",
+      "values": ["~30 (LinkedIn 'View all 30 employees'; size band 11-50)", "16 (Caplight 'Employee Range')"],
+      "chosen": "30",
+      "reason": "LinkedIn company-page header is the public page the protocol prefers. Both values are approximate."
+    }
+  ],
+  "open_items": [
+    "No disclosed equity or VC round was found on any fetched page, so rounds is left empty. CB Insights lists three 'Incubator/Accelerator' entries with amounts masked: 3/16/2016, 11/11/2020 and 12/16/2021, the last with Intel Startup Program. It also names HPE and Airbus BizLab as investors. Caplight lists one 'Accelerator' entry dated Jan 4, 2021 with no amount, and names NASSCOM DeepTech Club, Venture Dock and AWS ML Elevate as backers. These look like accelerator or partner-program participation rather than priced rounds, and no press or company page describes money raised. The company may be bootstrapped, but this is not confirmed.",
+    "The web-search budget ran out before Entrackr, Inc42, ET and VCCircle could be checked specifically for Qualitas funding or MCA financials. The Inc42 company-profile URL tried returned the Inc42 homepage, and the YourStory company page was not fetched.",
+    "No reported revenue found.",
+    "No public pricing.",
+    "Customer names come from homepage logo alt text under 'Trusted by the world's leading manufacturers'. In the case study that names IndianOil, HT Process Controls is also named, so it is unclear whether IndianOil was a direct customer or reached through HT Process Controls.",
+    "The site lists a US phone number (+1 425) next to the Bangalore address; any US entity or office was not confirmed."
+  ],
+  "company": {
+    "name": "Qualitas Technologies",
+    "website": "https://www.qualitastech.com",
+    "description": "Bengaluru machine-vision firm building AI visual-inspection, gauging and part-counting systems for manufacturing lines.",
+    "hq_country": "IN",
+    "founded_year": 2008,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "quality_vision"
+  },
+  "category": "adjacent",
+  "layer": "quality_vision",
+  "layer_detail": "Full-stack AI machine vision: cameras, lighting, AI software and line integration, including an EagleEye inspection station. Uses: surface and defect inspection, non-contact gauging and measurement, part counting, label, code and identity reading, and bin inventory verification. A 'Process & Video Analytics' offer turns existing cameras into production and dispatch counts reconciled with ERP. Verticals: automotive, pharma, electronics, bearings and metals, FMCG. Partner logos on the about page: Intel Partner Alliance (Advanced ISV Partner), HPE, NVIDIA, AWS Activate, NASSCOM.",
+  "founders": ["Raghava Kashyapa"],
+  "named_customers": ["Avtec", "TVS", "Visteon", "Timken", "P&G", "ITC", "Hyundai", "Federal-Mogul", "IndianOil"],
+  "product_summary": "Turnkey AI machine-vision systems (cameras, lighting, AI software, line integration) for surface-defect inspection, non-contact gauging, part counting, code and label reading and bin inventory checks, plus analytics that turn existing cameras into production and dispatch counts reconciled with ERP; serves automotive, pharma, electronics, bearings and FMCG lines.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 30,
+    "pages": [3],
+    "snippet": "View all 30 employees (approximate: LinkedIn member count; size band 11-50 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": []
+}

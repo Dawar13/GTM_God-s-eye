@@ -39,7 +39,7 @@ def test_seed_files_row_counts():
 @pytest.fixture(scope="module")
 def store():
     s = Store()
-    run.run(s)
+    run.run(s, research=False)  # seed handling alone, before research overrides it
     return s
 
 

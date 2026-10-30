@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:05:46+00:00",
+  "generated_at": "2026-10-30T06:12:00+00:00",
   "records": [
     {
       "id": "fund_10d_ii",
@@ -6973,6 +6973,375 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_crane-venture-partners_i",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane I",
+      "number": "I",
+      "size_usd": 90000000,
+      "currency_original": "USD",
+      "size_original": 90000000,
+      "fx": null,
+      "close_date": "2019-06",
+      "close_date_precision": "month",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://globalventuring.com/crane-crowns-90m-close-for-first-fund",
+          "title": "Crane crowns $90m close for first fund",
+          "publisher": "Global Venturing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tech.eu/2022/05/24/crane-venture-partners-aims-to-sweep-the-leg-with-new-140-million-fund/",
+          "title": "Crane Venture Partners aims to sweep the leg with new $140 million fund",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_crane-venture-partners_i-2",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane APAC I",
+      "number": "I",
+      "size_usd": 150000000,
+      "currency_original": "USD",
+      "size_original": 150000000,
+      "fx": null,
+      "close_date": "2026-09-15",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://massmutualventures.com/news/crane-venture-partners-announces-the-next-chapter-in-early-stage-global-venture-capital/",
+          "title": "Crane Venture Partners Announces the Next Chapter in Early-Stage Global Venture Capital",
+          "publisher": "MassMutual Ventures (copy of the Crane / GlobeNewswire release, 2026-09-15)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/big-week-for-crane-even-bigger-for-founders",
+          "title": "Big Week for Crane. Even Bigger for Founders.",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/crane-venture-partners-raises-484-million-across-four-funds-to-build-global-inception-to-seed-platform/",
+          "title": "Crane Venture Partners Raises $484 Million Across Four Funds To Build Global Inception-To-Seed Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techfundingnews.com/crane-venture-partners-484m-four-funds-massmutual-ventures-global/",
+          "title": "Crane Venture Partners raises $484M across four funds to back founders from London to Bangalore",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.macfarlanes.com/insights/102o183/macfarlanes-advises-crane-venture-partners-on-484m-raise",
+          "title": "Macfarlanes advises Crane Venture Partners on $484m raise",
+          "publisher": "Macfarlanes (fund counsel work highlight)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_crane-venture-partners_i-3",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane US I",
+      "number": "I",
+      "size_usd": 100000000,
+      "currency_original": "USD",
+      "size_original": 100000000,
+      "fx": null,
+      "close_date": "2026-09-15",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://massmutualventures.com/news/crane-venture-partners-announces-the-next-chapter-in-early-stage-global-venture-capital/",
+          "title": "Crane Venture Partners Announces the Next Chapter in Early-Stage Global Venture Capital",
+          "publisher": "MassMutual Ventures (copy of the Crane / GlobeNewswire release, 2026-09-15)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/big-week-for-crane-even-bigger-for-founders",
+          "title": "Big Week for Crane. Even Bigger for Founders.",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/crane-venture-partners-raises-484-million-across-four-funds-to-build-global-inception-to-seed-platform/",
+          "title": "Crane Venture Partners Raises $484 Million Across Four Funds To Build Global Inception-To-Seed Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techfundingnews.com/crane-venture-partners-484m-four-funds-massmutual-ventures-global/",
+          "title": "Crane Venture Partners raises $484M across four funds to back founders from London to Bangalore",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.macfarlanes.com/insights/102o183/macfarlanes-advises-crane-venture-partners-on-484m-raise",
+          "title": "Macfarlanes advises Crane Venture Partners on $484m raise",
+          "publisher": "Macfarlanes (fund counsel work highlight)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_crane-venture-partners_i-4",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane Opportunity Fund I",
+      "number": "I",
+      "size_usd": 65000000,
+      "currency_original": "USD",
+      "size_original": 65000000,
+      "fx": null,
+      "close_date": "2026-09-15",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://massmutualventures.com/news/crane-venture-partners-announces-the-next-chapter-in-early-stage-global-venture-capital/",
+          "title": "Crane Venture Partners Announces the Next Chapter in Early-Stage Global Venture Capital",
+          "publisher": "MassMutual Ventures (copy of the Crane / GlobeNewswire release, 2026-09-15)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/big-week-for-crane-even-bigger-for-founders",
+          "title": "Big Week for Crane. Even Bigger for Founders.",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/crane-venture-partners-raises-484-million-across-four-funds-to-build-global-inception-to-seed-platform/",
+          "title": "Crane Venture Partners Raises $484 Million Across Four Funds To Build Global Inception-To-Seed Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techfundingnews.com/crane-venture-partners-484m-four-funds-massmutual-ventures-global/",
+          "title": "Crane Venture Partners raises $484M across four funds to back founders from London to Bangalore",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.macfarlanes.com/insights/102o183/macfarlanes-advises-crane-venture-partners-on-484m-raise",
+          "title": "Macfarlanes advises Crane Venture Partners on $484m raise",
+          "publisher": "Macfarlanes (fund counsel work highlight)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_crane-venture-partners_ii",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane second fund (Fund II)",
+      "number": "II",
+      "size_usd": 140000000,
+      "currency_original": "USD",
+      "size_original": 140000000,
+      "fx": null,
+      "close_date": "2022-05",
+      "close_date_precision": "month",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tech.eu/2022/05/24/crane-venture-partners-aims-to-sweep-the-leg-with-new-140-million-fund/",
+          "title": "Crane Venture Partners aims to sweep the leg with new $140 million fund",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://coverager.com/insurer-backed-crane-raises-140-million-for-its-second-fund/",
+          "title": "Insurer-backed Crane raises $140 million for its second fund",
+          "publisher": "Coverager",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_crane-venture-partners_iii",
+      "investor_id": "inv_crane-venture-partners",
+      "name": "Crane III",
+      "number": "III",
+      "size_usd": 169000000,
+      "currency_original": "USD",
+      "size_original": 169000000,
+      "fx": null,
+      "close_date": "2026-09-15",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://massmutualventures.com/news/crane-venture-partners-announces-the-next-chapter-in-early-stage-global-venture-capital/",
+          "title": "Crane Venture Partners Announces the Next Chapter in Early-Stage Global Venture Capital",
+          "publisher": "MassMutual Ventures (copy of the Crane / GlobeNewswire release, 2026-09-15)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/big-week-for-crane-even-bigger-for-founders",
+          "title": "Big Week for Crane. Even Bigger for Founders.",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/crane-venture-partners-raises-484-million-across-four-funds-to-build-global-inception-to-seed-platform/",
+          "title": "Crane Venture Partners Raises $484 Million Across Four Funds To Build Global Inception-To-Seed Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techfundingnews.com/crane-venture-partners-484m-four-funds-massmutual-ventures-global/",
+          "title": "Crane Venture Partners raises $484M across four funds to back founders from London to Bangalore",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://coverager.com/crane-venture-partners-raises-484-million-across-four-funds/",
+          "title": "Crane Venture Partners raises $484 million across four funds",
+          "publisher": "Coverager",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.macfarlanes.com/insights/102o183/macfarlanes-advises-crane-venture-partners-on-484m-raise",
+          "title": "Macfarlanes advises Crane Venture Partners on $484m raise",
+          "publisher": "Macfarlanes (fund counsel work highlight)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_creator-ventures_ii",
@@ -19890,10 +20259,147 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1524572/000152457211000003/primary_doc.xml",
+          "title": "Form D - BHV Entrepreneurship Fund LP (filed 2011-07-06)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=BHV&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: BHV",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2021/09/09/scout-ventures-fund-three/",
+          "title": "With $55M third fund, Scout Ventures is funding veterans ready to tackle the hardest technical challenges",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "id": "fund_scout-ventures_ii",
+      "investor_id": "inv_scout-ventures",
+      "name": "BHV Entrepreneurship Fund II, L.P.",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1570374/000157037413000001/primary_doc.xml",
+          "title": "Form D - BHV Entrepreneurship Fund II, L.P. (filed 2013-02-26)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1570374/000158226114000002/primary_doc.xml",
+          "title": "Form D/A - BHV Entrepreneurship Fund II, L.P. (filed 2014-01-27)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1570374/000157037415000003/primary_doc.xml",
+          "title": "Form D/A - BHV Entrepreneurship Fund II, L.P. (filed 2015-01-27)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2021/09/09/scout-ventures-fund-three/",
+          "title": "With $55M third fund, Scout Ventures is funding veterans ready to tackle the hardest technical challenges",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_scout-ventures_iii",
+      "investor_id": "inv_scout-ventures",
+      "name": "Scout Ventures Fund III, L.P.",
+      "number": "III",
+      "size_usd": 55000000,
+      "currency_original": "USD",
+      "size_original": 55000000,
+      "fx": null,
+      "close_date": "2021-09-09",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2021/09/09/scout-ventures-fund-three/",
+          "title": "With $55M third fund, Scout Ventures is funding veterans ready to tackle the hardest technical challenges",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.altassets.net/private-equity-news/by-pe-sector/venturegrowth/vc-firm-targeting-military-veteran-led-tech-startups-hits-55m-fund-iii-final-close.html",
+          "title": "VC firm targeting military veteran-led tech startups hits $55m Fund III final close",
+          "publisher": "AltAssets",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.venturecapitaljournal.com/scout-ventures-closes-third-fund/",
+          "title": "Scout Ventures closes third fund",
+          "publisher": "Venture Capital Journal",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1701739/000170173917000001/primary_doc.xml",
+          "title": "Form D - Scout Ventures Fund III, L.P. (filed 2017-03-22)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1701739/000170173918000002/primary_doc.xml",
+          "title": "Form D - Scout Ventures Fund III, L.P. (filed 2018-05-31)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_scout-ventures_iv",
@@ -19916,10 +20422,124 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1941054/000194105422000002/primary_doc.xml",
+          "title": "Form D - Scout Ventures Fund IV LP (filed 2022-08-05)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1941054/000194105423000001/primary_doc.xml",
+          "title": "Form D/A - Scout Ventures Fund IV LP (filed 2023-08-04)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.tectonicdefense.com/scout-ventures-raises-125m-fund-v/",
+          "title": "Scout Ventures Raises $125M Fund V",
+          "publisher": "Tectonic Defense",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.scout.vc/media",
+          "title": "Scout Ventures | Media",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_scout-ventures_undated",
+      "investor_id": "inv_scout-ventures",
+      "name": "BHV Entrepreneurship Fund IA, L.P.",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1582261/000158226113000001/primary_doc.xml",
+          "title": "Form D - BHV Entrepreneurship Fund IA, L.P. (filed 2013-07-31)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1582261/000158226114000001/primary_doc.xml",
+          "title": "Form D/A - BHV Entrepreneurship Fund IA, L.P. (filed 2014-01-27)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "id": "fund_scout-ventures_undated-2",
+      "investor_id": "inv_scout-ventures",
+      "name": "Scout Ventures Fund V - VA Sidecar LP",
+      "number": null,
+      "size_usd": 5000000,
+      "currency_original": "USD",
+      "size_original": 5000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2089219/000123191925000398/primary_doc.xml",
+          "title": "Form D - Scout Ventures Fund V - VA Sidecar LP (filed 2025-11-03)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=scout+venture&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: SCOUT VENTURE",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_scout-ventures_v",
@@ -19942,10 +20562,51 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.tectonicdefense.com/scout-ventures-raises-125m-fund-v/",
+          "title": "Scout Ventures Raises $125M Fund V",
+          "publisher": "Tectonic Defense",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.scout.vc/media",
+          "title": "Scout Ventures | Media",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2057506/000205750625000002/primary_doc.xml",
+          "title": "Form D - Scout Ventures Fund V LP / Scout Ventures Fund V-A LP (filed 2025-09-12)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?company=scout+venture&type=&dateb=&owner=include&count=100&action=getcompany",
+          "title": "EDGAR Company Search Results: SCOUT VENTURE",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_scribble-ventures_i",

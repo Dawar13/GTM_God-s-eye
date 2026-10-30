@@ -75,6 +75,9 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("bain capital", "bain capital ventures"),  # parent firm vs its venture arm
         ("atomic", "atomico"),  # SF startup studio vs London VC
         ("cleo capital", "cleo ventures"),  # Bay Area (USD) vs EUR fund
+        ("human ventures", "human capital"),  # NYC venture studio vs SF growth fund
+        ("founders fund", "founders capital"),  # different firms
+        ("eqt", "eqt ventures"),  # PE parent vs its venture arm
     ]
 )
 

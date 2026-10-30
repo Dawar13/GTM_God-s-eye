@@ -1,0 +1,211 @@
+{
+  "key": "salespatriot",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as SalesPatriot (salespatriot.com), the San Francisco / Warsaw start-up (YC W25) founded in 2024 by Nelson Ray, Benjamin Rhodes-Kropf and Maciej Szymczyk that builds an AI operating system for defence, aerospace and industrial parts distributors, OEMs and procurement teams. The name is unique in search; Pear VC's portfolio page ('AI operating system for defense and aerospace procurement') and the YC company page both link to salespatriot.com, and press on the Oct 2025 seed names the same founders. Category set to 'adjacent' (PROJECT_CONTEXT seed): it automates RFQ/bid quoting, sourcing and order management, which overlaps our procurement and RFQ agents, but its buyers are defence and aerospace parts distributors, OEM sales/procurement desks and MRO sustainment teams working government portals and ERPs, not plant-floor staff of manufacturers, and it does not touch maintenance or process stability.",
+  "pages": [
+    {
+      "url": "https://pear.vc/companies/",
+      "title": "Companies | Pear VC",
+      "publisher": "Pear VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/salespatriot",
+      "title": "SalesPatriot: Supply chain superintelligence for distribution and procurement | Y Combinator",
+      "publisher": "Y Combinator",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.salespatriot.com/",
+      "title": "SalesPatriot - Operational AI for Distributors & OEMs",
+      "publisher": "SalesPatriot",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.salespatriot.com/about",
+      "title": "About | SalesPatriot",
+      "publisher": "SalesPatriot",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://salespatriot.com/blog/sk-aerospace-and-salespatriot-partner",
+      "title": "S&K Aerospace and SalesPatriot Partner to Transform Sustainment Operations for U.S. and Allied Forces with AI",
+      "publisher": "SalesPatriot",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://salespatriot.com/fdh",
+      "title": "FDH Expands The Use of AI-Powered Supply Chain Tool Worldwide",
+      "publisher": "SalesPatriot",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://tech.eu/2025/10/28/salespatriot-lands-5m-for-defence-procurement-modernisation-and-european-expansion/",
+      "title": "SalesPatriot lands $5M for defence procurement modernisation and European expansion",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.vestbee.com/insights/articles/sales-patriot-raises-5-m",
+      "title": "Polish-American startup SalesPatriot raises $5M to expand across Europe",
+      "publisher": "Vestbee",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.startuphub.ai/news/salespatriot-raises-5m-to-advance-ai-defence-procurement",
+      "title": "SalesPatriot raises $5M to advance AI defence procurement",
+      "publisher": "StartupHub.ai",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.linkedin.com/company/salespatriot",
+      "title": "SalesPatriot | LinkedIn (company page)",
+      "publisher": "LinkedIn (SalesPatriot company page)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.salespatriot.com/blog",
+      "title": "News & Events | SalesPatriot",
+      "publisher": "SalesPatriot",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "headcount_est",
+      "values": [
+        "26 (LinkedIn company page member count, size band 11-50)",
+        "15 (Y Combinator company page 'team size')"
+      ],
+      "chosen": "26",
+      "reason": "LinkedIn count was read on 2026-10-30; the YC team-size field is self-reported and probably not updated since the seed. Both are approximate."
+    }
+  ],
+  "open_items": [
+    "Pre-seed amount not found: press says the $5M seed brings total funding to $6.3M, implying about $1.3M raised earlier (likely including the YC W25 investment), but no page describes that round's amount, date or investors.",
+    "Euro figure: some outlets reportedly gave the seed as about EUR 4.2M (a bebeez.eu URL slug says 'e4-2-million'), but that page returned 404 and tech.eu's fetched article gives only USD 5M; USD figure recorded.",
+    "The company's own seed post (salespatriot.com/blog/5-million-seed-funding, linked from its YC page) returned 404.",
+    "Partnerships announced on the company blog, not recorded as customers: S&K Aerospace (Oct 2026, agentic AI across S&K's MRO enterprise) and Maven Engineering Corporation (Jun 2026).",
+    "No public pricing (demo request only).",
+    "Revenue not publicly reported; press cites customers' teams managing over $200 million in annual Pentagon orders, which is order volume handled, not company revenue."
+  ],
+  "company": {
+    "name": "SalesPatriot",
+    "website": "https://www.salespatriot.com",
+    "description": "San Francisco / Warsaw start-up selling AI that automates quoting, sourcing and order management for defence and aerospace parts distributors and OEMs.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "supply_chain_logistics",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Supply-chain back office rather than the plant floor: an AI operating system (products Forge for operations, Vantage for visibility, Bedrock for integrations) that pulls data from government procurement portals, ERPs, spreadsheets and email to automate bid/quote preparation, sourcing and order management for defence and aerospace parts distributors, OEMs and MRO sustainment teams. 'Plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+  "founders": [
+    "Nelson Ray",
+    "Benjamin Rhodes-Kropf",
+    "Maciej Szymczyk"
+  ],
+  "named_customers": [
+    "Echelon Supply & Service",
+    "FDH Aero",
+    "Jamaica Bearings Group",
+    "AllClear Aerospace",
+    "STATZ Corporation"
+  ],
+  "product_summary": "AI platform for defence, aerospace and industrial parts distributors and OEMs that ingests government portal, ERP, spreadsheet and email data, then automates bid and quote preparation, sourcing and order management; the company says suppliers process orders up to seven times faster and one customer raised bid volume 283%.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 26,
+    "pages": [
+      9
+    ],
+    "snippet": "View 26 employees at SalesPatriot (approximate: LinkedIn member count; size band 11-50 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "SalesPatriot",
+        "website": "https://www.salespatriot.com",
+        "description": "AI operating system for defence and aerospace parts distribution and procurement.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Y Combinator Winter 2025 batch (accelerator investment); amount not stated",
+      "date": "2025",
+      "date_precision": "year",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Y Combinator"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "Founded: 2024 Batch: Winter 2025 Team Size: 15"
+    },
+    {
+      "company": {
+        "name": "SalesPatriot",
+        "website": "https://www.salespatriot.com",
+        "description": "AI operating system for defence and aerospace parts distribution and procurement.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed; total funding to date $6.3M",
+      "date": "2025-10-28",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "CRV"
+      ],
+      "participants": [
+        "Pear VC",
+        "Y Combinator",
+        "SV Angel",
+        "Liquid2",
+        "Uncorrelated Ventures",
+        "Paul Graham",
+        "Rich Miner",
+        "Mark Pincus",
+        "Steve Blank",
+        "Mati Staniszewski"
+      ],
+      "unspecified": [],
+      "pages": [
+        6,
+        7,
+        8,
+        1
+      ],
+      "snippet": "has raised $5 million in seed funding. ... This brings total funding to $6.3 million."
+    }
+  ]
+}

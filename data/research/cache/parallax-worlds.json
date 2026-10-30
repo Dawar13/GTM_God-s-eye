@@ -1,0 +1,103 @@
+{
+  "key": "parallax-worlds",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Parallax Worlds (parallaxworlds.com), the San Francisco robotics start-up co-founded by Tanmay Agarwal (CEO) and Aumkar Renavikar (CTO) that turns phone video into simulation-ready digital twins to train and stress-test robots. Pear VC, which led its Nov 2025 seed, lists it as 'Simulation platform for testing robots before factory deployment' and links to parallaxworlds.com; three press reports of the seed name the same founders and investors. A search on the full name returned only this company, so no same-named company had to be ruled out; other 'Parallax'-branded firms were not considered because the founder gave the full name. Positioning has shifted since the raise: the homepage now sells 'AI-powered robots, production-ready in two weeks' (it ships, installs and supports robots trained in the twin) and LinkedIn calls it an 'end-to-end integrator of AI-native robots', so layer is set to 'robotics' rather than 'autonomy_tooling'. Category changed from the PROJECT_CONTEXT seed 'adjacent' to 'remote': no overlap with our procurement, maintenance, process-stability or RFQ/BOM agents; it touches only our long-term robotics / dark-factory roadmap.",
+  "pages": [
+    { "url": "https://pear.vc/companies/", "title": "Companies | Pear VC", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.parallaxworlds.com/", "title": "Parallax Worlds — AI-powered robots, production-ready in two weeks", "publisher": "Parallax Worlds", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/", "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor", "publisher": "Digital Media Net (company press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/", "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots", "publisher": "The Robot Report", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=721952", "title": "Parallax Worlds raises $4.9M to help companies virtually stress-test industrial robots", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.linkedin.com/company/parallax-worlds", "title": "Parallax Worlds | LinkedIn (company page)", "publisher": "LinkedIn (Parallax Worlds company page)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Pre-seed amount and date not published: the seed release gives $4M seed and $4.9M total pre-seed plus seed (implying about $0.9M pre-seed), but no page states the pre-seed figure or date.",
+    "Feb 2026 coverage of a Korea / Asia expansion (asiae.co.kr, en.wowtale.net) could not be fetched (connection reset / 403), so it is unknown whether it reports any new funding.",
+    "The original press release on accessnewswire.com and the automate.org copy returned 403; the digitalmedianet.com copy was used.",
+    "Founded year not found (LinkedIn page shows none).",
+    "Hourly rate for its robot deployments is not published.",
+    "Revenue not publicly reported."
+  ],
+  "company": {
+    "name": "Parallax Worlds",
+    "website": "https://www.parallaxworlds.com",
+    "description": "San Francisco start-up that builds digital twins from phone video to train and test robots, and now deploys trained robots on factory floors.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "robotics_physical_ai",
+    "sector_classified_by": "source",
+    "layer": "robotics"
+  },
+  "category": "remote",
+  "layer": "robotics",
+  "layer_detail": "Started as autonomy tooling (hyper-realistic simulation that converts everyday video into interactive 3D digital twins, runs physics simulations with real robot software, integrates with NVIDIA Omniverse, Unreal and Unity). Now sells end-to-end robot integration: customer records a walk-through, Parallax trains the robot in the twin, then ships and installs it in about two weeks with 24/7 support; robots from OEMs such as FANUC and Standard Bots (100+ models supported). Member of A3, SEMI and ARM Institute.",
+  "founders": ["Tanmay Agarwal", "Aumkar Renavikar"],
+  "named_customers": ["Orangewood Labs", "BotBuilt", "Rainier Labs"],
+  "product_summary": "Turns a smartphone walk-through into an interactive digital twin, trains and stress-tests robots there using real robot software, then ships and installs a working robot in about two weeks with support and maintenance included, so manufacturers can automate tasks without long integration projects.",
+  "pricing": "Zero Risk Policy: $0 until the robot does the task at KPIs agreed in writing; no pilot fees and no upfront hardware cost; deployment, 24/7 support and maintenance billed at a single hourly rate (rate not published).",
+  "headcount_est": {
+    "value": 6,
+    "pages": [5],
+    "snippet": "View all 6 employees (approximate: LinkedIn member count; size band 2-10 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Parallax Worlds",
+        "website": "https://www.parallaxworlds.com",
+        "description": "Simulation and digital-twin platform for testing robots before factory deployment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "source",
+        "layer": "robotics"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed (amount and date not disclosed; co-led by Conviction (Embed), Unusual Ventures and Spacecadet Ventures; Boost VC a prior backer)",
+      "date": null,
+      "date_precision": null,
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Conviction (Embed)", "Unusual Ventures", "Spacecadet Ventures"],
+      "participants": [],
+      "unspecified": ["Boost VC"],
+      "pages": [2, 3],
+      "snippet": "Prior backers include Conviction (Embed), Unusual Ventures, Spacecadet Ventures (co-leads of the pre-seed), and Boost VC."
+    },
+    {
+      "company": {
+        "name": "Parallax Worlds",
+        "website": "https://www.parallaxworlds.com",
+        "description": "Simulation and digital-twin platform for testing robots before factory deployment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "source",
+        "layer": "robotics"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed; brings total pre-seed and seed funding to $4.9M",
+      "date": "2025-11-20",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Pear VC"],
+      "participants": [
+        "GS Futures",
+        "Kakao Ventures",
+        "Lightscape Partners",
+        "Gaingels",
+        "Nova Threshold",
+        "Mana Ventures"
+      ],
+      "unspecified": [],
+      "pages": [2, 3, 4, 0],
+      "snippet": "The round was led by Pear VC, with participation from GS Futures, Kakao Ventures, and Lightscape Partners,"
+    }
+  ]
+}

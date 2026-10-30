@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T19:05:46+00:00",
+  "generated_at": "2026-10-30T06:12:00+00:00",
   "records": [
     {
       "id": "rnd_adaption-labs_2026_seed",
@@ -267,6 +267,250 @@
       "confidence": "low"
     },
     {
+      "id": "rnd_arda_2026-10_series_a",
+      "company_id": "co_arda",
+      "date": "2026-10-20",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A at a $1.5 billion valuation (announced with launch from stealth)",
+      "amount_usd": 160000000,
+      "amount_original": 160000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": 1500000000,
+      "lead_investor_ids": [
+        "inv_accel",
+        "inv_altimeter",
+        "inv_khosla-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_8vc",
+        "inv_felicis-ventures",
+        "inv_sv-angel",
+        "inv_xyz-venture-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing",
+          "title": "Ex-OpenAI research chief Bob McGrew’s Arda raises $232M for US factories",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://letsdatascience.com/news/ex-openai-research-chief-bob-mcgrews-arda-raises-230m-at-15b-f1b22022",
+          "title": "Ex-OpenAI Research Chief Bob McGrew's Arda Raises $230M at $1.5B",
+          "publisher": "Let's Data Science",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cryptobriefing.com/arda-raises-230-million-ai-manufacturing/",
+          "title": "Arda raises $230 million at $1.5 billion valuation to automate US manufacturing",
+          "publisher": "Crypto Briefing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://stockanalysis.com/private/arda/",
+          "title": "Arda Valuation, Funding & News",
+          "publisher": "Stock Analysis",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_arda_undated_seed",
+      "company_id": "co_arda",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "amount_usd": 72000000,
+      "amount_original": 72000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_accel",
+        "inv_founders-fund"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing",
+          "title": "Ex-OpenAI research chief Bob McGrew’s Arda raises $232M for US factories",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://stockanalysis.com/private/arda/",
+          "title": "Arda Valuation, Funding & News",
+          "publisher": "Stock Analysis",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cryptobriefing.com/arda-raises-230-million-ai-manufacturing/",
+          "title": "Arda raises $230 million at $1.5 billion valuation to automate US manufacturing",
+          "publisher": "Crypto Briefing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_aseon-labs_2026-06_seed",
+      "company_id": "co_aseon-labs",
+      "date": "2026-06-26",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 10000000,
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_adrian-aoun",
+        "inv_expa",
+        "inv_founders-capital",
+        "inv_immad-akhund",
+        "inv_rajat-suri",
+        "inv_robin-hood-ventures",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/26/this-silicon-valley-startup-has-raised-10m-to-build-pitstops-to-clean-and-charge-robotaxis/",
+          "title": "Robotaxis drive miles just to get cleaned and charged; this new startup wants to fix that",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/ideas/aseon-labs-raises-10-million-to-build-the-infrastructure-for-autonomous-transportation",
+          "title": "Aseon Labs Raises $10 Million to Build the Infrastructure for Autonomous Transportation",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_atomic-tessellator_undated_seed",
+      "company_id": "co_atomic-tessellator",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": null,
+      "amount_original": 11300000,
+      "currency_original": "AUD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/atomic-tessellator-raises-a-11-3-million-to-reinvent-permanent-magnets",
+          "title": "Atomic Tessellator Raises A$11.3 Million to Reinvent Permanent Magnets",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://atomictessellator.com/",
+          "title": "Critical minerals alternatives | Atomic Tessellator",
+          "publisher": "Atomic Tessellator",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_atoms_2026_undisclosed",
       "company_id": "co_atoms",
       "date": "2026",
@@ -296,6 +540,57 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_beacon-ai_2024-10_series_a",
+      "company_id": "co_beacon-ai",
+      "date": "2024-10-15",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 15000000,
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_costanoa-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_jetblue-ventures",
+        "inv_sam-altman",
+        "inv_scout-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://beaconai.co/post-15102024",
+          "title": "Beacon AI Secures $15M in Series A Funding to Bring AI into Flight Decks",
+          "publisher": "Beacon AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_bedrock-robotics_2026_undisclosed",
@@ -412,6 +707,114 @@
         ],
         "investors": [
           0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_bluefish_2025-08_series_a",
+      "company_id": "co_bluefish",
+      "date": "2025-08-20",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 20000000,
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_nea"
+      ],
+      "participant_investor_ids": [
+        "inv_bloomberg-beta",
+        "inv_crane-venture-partners",
+        "inv_salesforce-ventures",
+        "inv_swift-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/bluefish-raises-20m-to-power-ai-marketing-for-the-fortune-500-302534342.html",
+          "title": "Bluefish Raises $20M to Power AI Marketing for the Fortune 500",
+          "publisher": "Bluefish via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/first-to-believe-last-to-leave-celebrating-sre-ai-bluefish-ai-and-7bridges",
+          "title": "First to Believe, Last to Leave: Celebrating Laminar, Bluefish.ai, and 7bridges",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_bluefish_2026-04_series_b",
+      "company_id": "co_bluefish",
+      "date": "2026-04-14",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 43000000,
+      "amount_original": 43000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_nea",
+        "inv_threshold-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_amex-ventures",
+        "inv_bloomberg-beta",
+        "inv_crane-venture-partners",
+        "inv_laconia",
+        "inv_salesforce-ventures",
+        "inv_swift-ventures",
+        "inv_tiaa-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/bluefish-raises-43-million-series-b-to-power-agentic-marketing-for-the-fortune-500-302741124.html",
+          "title": "Bluefish Raises $43 Million Series B to Power Agentic Marketing for the Fortune 500",
+          "publisher": "Bluefish via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/bluefish-raises-43-million-series-b-to-power-agentic-marketing",
+          "title": "Bluefish Raises $43 Million Series B to Power Agentic Marketing",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -589,6 +992,59 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_casimir_2026-05_seed",
+      "company_id": "co_casimir",
+      "date": "2026-05-12",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 12000000,
+      "amount_original": 12000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_american-deep-tech",
+        "inv_capital-factory",
+        "inv_cottonwood-technology",
+        "inv_lavrock-ventures",
+        "inv_tim-draper-of-draper-associates"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.casimir.inc/press-releases/casimir-launches-with-12m-oversubscribed-seed-round-to-bring-worlds-first-quantum-energy-chip-to-market",
+          "title": "Casimir Launches with $12M Oversubscribed Seed Round to Bring World's First Quantum Energy Chip To Market",
+          "publisher": "Casimir",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_celleste-bio_2024-12_seed",
       "company_id": "co_celleste-bio",
       "date": "2024-12-05",
@@ -701,6 +1157,56 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_confighub_2025-03_pre_seed",
+      "company_id": "co_confighub",
+      "date": "2025-03-26",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "first $4M (listed as Pre-Seed on crane.vc/portfolio)",
+      "amount_usd": 4000000,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners",
+        "inv_pear"
+      ],
+      "participant_investor_ids": [
+        "inv_encoded"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/announcing-confighub-solving-infrastructures-configuration-crisis",
+          "title": "Announcing ConfigHub: Solving Infrastructure’s Configuration Crisis",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -872,6 +1378,173 @@
         }
       ],
       "field_sources": {},
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_covalent_2018-06_pre_seed",
+      "company_id": "co_covalent",
+      "date": "2018-06-06",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "Incubator/Accelerator (CB Insights); investor hidden behind subscription",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_covalent_2019-05_undisclosed",
+      "company_id": "co_covalent",
+      "date": "2019-05-29",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Convertible Note (CB Insights); investors hidden behind subscription",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_covalent_2019-12_seed",
+      "company_id": "co_covalent",
+      "date": "2019-12-18",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed VC (CB Insights); investors hidden behind subscription",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_covalent_2021-01_undisclosed",
+      "company_id": "co_covalent",
+      "date": "2021-01-21",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Angel (CB Insights)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_jeffrey-bussgang"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_covalent_undated_seed",
+      "company_id": "co_covalent",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "Seed VC - II (CB Insights); undated, investors hidden behind subscription",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/covalent-networks/financials",
+          "title": "Covalent Networks - Financials",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -1106,6 +1779,128 @@
       "confidence": "low"
     },
     {
+      "id": "rnd_encharge-ai_2025-02_series_b",
+      "company_id": "co_encharge-ai",
+      "date": "2025-02-13",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 100000000,
+      "amount_original": 100000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_tiger-global"
+      ],
+      "participant_investor_ids": [
+        "inv_acvc",
+        "inv_alleycorp",
+        "inv_anzu-partners",
+        "inv_capital-ten",
+        "inv_constellation-technology-ventures",
+        "inv_ctbc-vc",
+        "inv_hh-ctbc",
+        "inv_in-q-tel-iqt",
+        "inv_maverick-silicon",
+        "inv_morgan-creek-digital",
+        "inv_rtx-ventures",
+        "inv_s5v",
+        "inv_samsung",
+        "inv_scout-ventures",
+        "inv_sip-global-partners",
+        "inv_vanderbilt-university",
+        "inv_zero-infinity-partners"
+      ],
+      "unspecified_investor_ids": [
+        "inv_venturetech-alliance"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.enchargeai.com/news-and-publications/series-b",
+          "title": "EnCharge AI Closes Oversubscribed $100M Series B Funding Round Led by Tiger Global",
+          "publisher": "EnCharge AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_encord_2026-02_series_c_plus",
+      "company_id": "co_encord",
+      "date": "2026-02",
+      "date_precision": "month",
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "amount_usd": 60000000,
+      "amount_original": 60000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": 550000000,
+      "lead_investor_ids": [
+        "inv_wellington-management"
+      ],
+      "participant_investor_ids": [
+        "inv_bright-pixel-capital",
+        "inv_crane-venture-partners",
+        "inv_crv",
+        "inv_harpoon-ventures",
+        "inv_isomer-capital",
+        "inv_n47",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/encord-scale-ai-rival-60m-physical-ai-data/",
+          "title": "Encord raises $60M to challenge Scale AI in physical AI data infrastructure",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_engineai_2026_undisclosed",
       "company_id": "co_engineai",
       "date": "2026",
@@ -1289,6 +2084,385 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_expanse_2026-09_seed",
+      "company_id": "co_expanse",
+      "date": "2026-09-16",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 5300000,
+      "amount_original": 5300000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_pxn-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://expanse.sh/blog/expanse-raises-5-3m-seed",
+          "title": "Why we started Expanse, and our $5.3M seed",
+          "publisher": "Expanse Blog",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/expanse-raises-5-3-million-to-eliminate-guesswork-from-ai-computing",
+          "title": "Expanse raises $5.3 million to eliminate guesswork from AI computing",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc",
+          "title": "Crane Venture Partners - Crane backs outlier founders everywhere, from inception to seed",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_faclon-labs_2016-10_seed",
+      "company_id": "co_faclon-labs",
+      "date": "2016-10",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "Seed (Inc42 database, 19 Oct 2016); Tracxn dates the first round Oct 07, 2016; likely an incubator investment by thinQbate",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_thinqbate"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/company/faclon-labs/funding/",
+          "title": "Faclon Labs Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/finance/faclon-labs-raises-pre-series-a-round-from-letsventure/366451",
+          "title": "Faclon Labs Raises Pre-Series A Round From LetsVenture",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_faclon-labs_2018-01_seed",
+      "company_id": "co_faclon-labs",
+      "date": "2018-01",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "First round from angel investors, January 2018 (Entrepreneur India); Inc42 lists Seed on 17 Jan 2018 with 'LetsVenture, +3 more'",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sameer-sainani",
+        "inv_vish-sathappan"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_letsventure"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/finance/faclon-labs-raises-pre-series-a-round-from-letsventure/366451",
+          "title": "Faclon Labs Raises Pre-Series A Round From LetsVenture",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/faclon-labs/funding/",
+          "title": "Faclon Labs Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_faclon-labs_2021-03_seed",
+      "company_id": "co_faclon-labs",
+      "date": "2021-03-03",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Pre-Series A (undisclosed amount)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sarjan-shah"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_letsventure"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/finance/faclon-labs-raises-pre-series-a-round-from-letsventure/366451",
+          "title": "Faclon Labs Raises Pre-Series A Round From LetsVenture",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/faclon-labs/funding/",
+          "title": "Faclon Labs Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_faclon-labs_2022-07_series_a",
+      "company_id": "co_faclon-labs",
+      "date": "2022-07-25",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; Tracxn calls it the largest round, amount masked; no press coverage found)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_faclon-labs_2023-09_undisclosed",
+      "company_id": "co_faclon-labs",
+      "date": "2023-09-19",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Angel (Tracxn label only; amount masked; no press coverage found)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_harikrishna-ramesh-valiyath"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_faclon-labs_2024-08_series_a",
+      "company_id": "co_faclon-labs",
+      "date": "2024-08-08",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; likely a tranche/allotment; amount masked; '& 3 more' investors unnamed)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_mayank-bist"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_faclon-labs_2025-03_series_a",
+      "company_id": "co_faclon-labs",
+      "date": "2025-03-19",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; likely a tranche/allotment; amount masked; '& 2 more' investors unnamed)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_krish-ravi-vaswani"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_faclon-labs_2025-10_series_a",
+      "company_id": "co_faclon-labs",
+      "date": "2025-10-31",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A (Tracxn label only; latest round; amount masked; one investor, unnamed)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM",
+          "title": "Faclon Labs - 2026 Company Profile, Team, Funding, Competitors & Financials - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tracxn.com/d/companies/faclon-labs/__zTOPnPDlZsWfSwQ8QAl4A2x66z32qOwbfLsyyCfstnM/funding-and-investors",
+          "title": "Faclon Labs - 2026 Funding Rounds & List of Investors - Tracxn",
+          "publisher": "Tracxn",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
+    },
+    {
       "id": "rnd_factify_2026_seed",
       "company_id": "co_factify",
       "date": "2026",
@@ -1383,6 +2557,241 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_flow-engineering_2022-12_seed",
+      "company_id": "co_flow-engineering",
+      "date": "2022-12-06",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed Round (release datelined London, 6 December 2022)",
+      "amount_usd": 8500000,
+      "amount_original": 8500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_eqt-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_backed",
+        "inv_charlie-songhust",
+        "inv_david-helgason",
+        "inv_kyle-parrish",
+        "inv_matt-clifford"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.flowengineering.com/blog/flow-engineering-raises-8-5-m",
+          "title": "Flow Engineering raises an $8.5m Seed Round",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2022/12/06/flow-engineering-wants-to-modernize-the-hardware-engineering-design-process/",
+          "title": "Flow Engineering wants to modernize the hardware engineering design process",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://develop3d.com/collaborate/flow-raises-50m-series-b/",
+          "title": "Flow raises $50m in Series B funding for AI engineering platform",
+          "publisher": "DEVELOP3D",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_flow-engineering_2025-10_series_a",
+      "company_id": "co_flow-engineering",
+      "date": "2025-10",
+      "date_precision": "month",
+      "stage": "series_a",
+      "stage_raw": "Series A, led by Sequoia",
+      "amount_usd": 23000000,
+      "amount_original": 23000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sequoia-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_david-helgason",
+        "inv_john-collison",
+        "inv_patrick-collison"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.flowengineering.com/blog/flow-raises-23m-from-sequoia-to-accelerate-the-future-of-hardware-development",
+          "title": "Announcing Flow's $23M Series A, Led by Sequoia",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://develop3d.com/collaborate/flow-raises-50m-series-b/",
+          "title": "Flow raises $50m in Series B funding for AI engineering platform",
+          "publisher": "DEVELOP3D",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://unite.ai/flow-engineering-lands-50m-series-b-at-750m-valuation-for-agentic-hardware-platform/",
+          "title": "Flow Engineering Lands $50M Series B at $750M Valuation for Agentic Hardware Platform",
+          "publisher": "Unite.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/flow-engineering-raises-50-million-series-b-at-750-million-valuation/",
+          "title": "Flow Engineering Raises $50 Million Series B At $750 Million Valuation",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_flow-engineering_2026-09_series_b",
+      "company_id": "co_flow-engineering",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B at a $750 million valuation",
+      "amount_usd": 50000000,
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": 750000000,
+      "lead_investor_ids": [
+        "inv_atreides-management",
+        "inv_valor-equity-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_eqt",
+        "inv_evantic",
+        "inv_human-capital",
+        "inv_jonas-von-malottki",
+        "inv_nico-rosberg",
+        "inv_odyssey",
+        "inv_roelof-botha",
+        "inv_sequoia-capital",
+        "inv_sv-angel",
+        "inv_thomas-wolf"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.flowengineering.com/",
+          "title": "Flow — Requirements Tool for Agentic Teams",
+          "publisher": "Flow Engineering",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/flow-engineering-raises-50-million-series-b-at-750-million-valuation/",
+          "title": "Flow Engineering Raises $50 Million Series B At $750 Million Valuation",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://develop3d.com/collaborate/flow-raises-50m-series-b/",
+          "title": "Flow raises $50m in Series B funding for AI engineering platform",
+          "publisher": "DEVELOP3D",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://unite.ai/flow-engineering-lands-50m-series-b-at-750m-valuation-for-agentic-hardware-platform/",
+          "title": "Flow Engineering Lands $50M Series B at $750M Valuation for Agentic Hardware Platform",
+          "publisher": "Unite.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.fenwick.com/insights/experience/fenwick-represents-flow-engineering-50m-series-b-funding",
+          "title": null,
+          "publisher": "Fenwick & West (company counsel)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_foodhealth-company-formerly-bitewell_2025-05_series_a",
@@ -1481,6 +2890,62 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_galvant_undated_seed",
+      "company_id": "co_galvant",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "Seed, led by Pear VC as part of the PearX cohort (company careers page); undated",
+      "amount_usd": 5500000,
+      "amount_original": 5500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_pear"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://galvant.ai/careers",
+          "title": "Galvant - Join the Team",
+          "publisher": "Galvant",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://builtin.com/job/founding-full-stack-engineer-takt/8379637",
+          "title": "Founding Full-Stack Engineer - Takt (Pear VC)",
+          "publisher": "Built In",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_gravis-robotics_2026_undisclosed",
       "company_id": "co_gravis-robotics",
       "date": "2026",
@@ -1548,6 +3013,124 @@
           "url": "https://www.ajuniorvc.com/portfolio-companies/handy-panda",
           "title": "Portfolio Companies: Handy Panda",
           "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_havoc_2024-09_seed",
+      "company_id": "co_havoc",
+      "date": "2024-09-23",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "amount_usd": 11000000,
+      "amount_original": 11000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures",
+        "inv_trousdale-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_alumni-ventures",
+        "inv_bv-vc",
+        "inv_decisive-point",
+        "inv_new-north-ventures",
+        "inv_outlander-vc",
+        "inv_the-veteran-fund"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.citybiz.co/article/603366/scout-ventures-lead-11m-seed-round-for-havocai/",
+          "title": "Scout Ventures Lead $11M Seed Round For HavocAI",
+          "publisher": "citybiz",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Brad_Harrison",
+          "title": "Brad Harrison",
+          "publisher": "Wikipedia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_havoc_2026-05_series_a",
+      "company_id": "co_havoc",
+      "date": "2026-05-12",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 100000000,
+      "amount_original": 100000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [
+        "inv_b-capital",
+        "inv_boardman-bay-capital-management",
+        "inv_ccm-capital-markets",
+        "inv_clear-street-llc",
+        "inv_cobalt-capital",
+        "inv_ja-green",
+        "inv_lockheed-martin",
+        "inv_meet-perry",
+        "inv_mute-ventures",
+        "inv_outlander-vc",
+        "inv_saic",
+        "inv_scout-ventures",
+        "inv_soren-ventures",
+        "inv_taiwania-capital",
+        "inv_the-veteran-fund",
+        "inv_up-partners",
+        "inv_vanderbilt-university-s-endowment"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.havocai.com/news/havoc-raises-100m-series-a-for-all-domain-collaborative-autonomy",
+          "title": "Havoc Raises $100M Series A to Power the Future of All-Domain Collaborative Autonomy",
+          "publisher": "Havoc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -1775,6 +3358,46 @@
       "confidence": "low"
     },
     {
+      "id": "rnd_immix_2026-10_undisclosed",
+      "company_id": "co_immix",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "amount_usd": 3500000,
+      "amount_original": 3500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_btse",
+        "inv_crane-venture-partners",
+        "inv_portfolio-ventures"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/immix-raises-3-5m-to-make-global-stablecoin-payments-work-across-currencies",
+          "title": "IMMIX Raises $3.5M to Make Global Stablecoin Payments Work Across Currencies",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_ineffable-intelligence_2026_seed",
       "company_id": "co_ineffable-intelligence",
       "date": "2026",
@@ -1874,6 +3497,55 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_intalus_2025-10_seed",
+      "company_id": "co_intalus",
+      "date": "2025-10-04",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "amount_usd": 11000000,
+      "amount_original": 11000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_lockheed-martin",
+        "inv_origin-ventures",
+        "inv_scout-ventures"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://intalustech.com/blog-news/intalus-11m-seed",
+          "title": "INTALUS announces $11M Seed Raise",
+          "publisher": "Intalus",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_kinetic-age_2026-10_undisclosed",
@@ -2073,6 +3745,245 @@
       "confidence": "low"
     },
     {
+      "id": "rnd_matta_2023-05_pre_seed",
+      "company_id": "co_matta",
+      "date": "2023-05-02",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "Pre Seed (Caplight row, no amount or investors shown)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.caplight.com/company/matta",
+          "title": "Matta - Caplight",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_matta_2024-02_pre_seed",
+      "company_id": "co_matta",
+      "date": "2024-02-28",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed; Giant Ventures led 'our pre-seed' (company); Caplight dates a Pre Seed row 2024-02-28 with Unruly Capital, Berkeley SkyDeck, Cambridge Enterprise",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_giant-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_berkeley-skydeck",
+        "inv_cambridge-enterprise",
+        "inv_unruly-capital"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://matta.ai/news-updates/14m-to-build-the-first-sentient-factories",
+          "title": "$14M to build the first sentient factories",
+          "publisher": "Matta",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ifm.eng.cam.ac.uk/news/cambridge-spin-out-matta-raises-14m-to-build-sentient-factories/",
+          "title": "IfM spin-out Matta raises $14M to transform how products are designed and manufactured",
+          "publisher": "Institute for Manufacturing, University of Cambridge",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://industrialtechnology.co.uk/industrial-ai-startup-matta-raises-14m-to-build-sentient-factories",
+          "title": "Industrial AI startup Matta raises $14M to build Sentient Factories",
+          "publisher": "Industrial Technology",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.caplight.com/company/matta",
+          "title": "Matta - Caplight",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_matta_2025-12_seed",
+      "company_id": "co_matta",
+      "date": "2025-12-05",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "amount_usd": 14000000,
+      "amount_original": 14000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lakestar"
+      ],
+      "participant_investor_ids": [
+        "inv_1st-kind-peugeot-family",
+        "inv_boost-vc",
+        "inv_giant-ventures",
+        "inv_inmotion-ventures",
+        "inv_redseed-vc",
+        "inv_unruly-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://matta.ai/news-updates/14m-to-build-the-first-sentient-factories",
+          "title": "$14M to build the first sentient factories",
+          "publisher": "Matta",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2025/12/10/matta-raises-14m-to-develop-sentient-factory-technology/",
+          "title": "Matta raises $14M to develop \"sentient factory\" technology",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ifm.eng.cam.ac.uk/news/cambridge-spin-out-matta-raises-14m-to-build-sentient-factories/",
+          "title": "IfM spin-out Matta raises $14M to transform how products are designed and manufactured",
+          "publisher": "Institute for Manufacturing, University of Cambridge",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.uktech.news/ai/cambridge-spinout-building-sentient-factories-closes-seed-round-20251212",
+          "title": "Cambridge spinout building 'sentient factories' closes seed round",
+          "publisher": "UKTN",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.penningtonslaw.com/news/penningtons-manches-cooper-advises-matta-on-14-million-seed-funding-to-advance-sentient-factory-technology/",
+          "title": "Penningtons Manches Cooper advises Matta on $14 million seed funding to advance 'sentient factory' technology",
+          "publisher": "Penningtons Manches Cooper",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://industrialtechnology.co.uk/industrial-ai-startup-matta-raises-14m-to-build-sentient-factories",
+          "title": "Industrial AI startup Matta raises $14M to build Sentient Factories",
+          "publisher": "Industrial Technology",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ats.cam.ac.uk/news/cambridge-ai-spinout-helping-factories-become-more-productive",
+          "title": "Cambridge AI spinout is helping factories become more productive, lower energy use and reduce emissions",
+          "publisher": "University of Cambridge",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_memories-ai_2025-07_seed",
+      "company_id": "co_memories-ai",
+      "date": "2025-07-24",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 8000000,
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_susa-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_crane-venture-partners",
+        "inv_creator-ventures",
+        "inv_fusion-fund",
+        "inv_samsung-next",
+        "inv_seedcamp"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/why-we-backed-memories-ai-building-the-memory-layer-for-ais-next-chapter",
+          "title": "Why We Backed Memories.ai: Building the Memory Layer for AI’s Next Chapter",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_merge-labs_2026_seed",
       "company_id": "co_merge-labs",
       "date": "2026",
@@ -2104,6 +4015,60 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_meridian_2026-05_seed",
+      "company_id": "co_meridian",
+      "date": "2026-05-01",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed funding (company announcement, May 1, 2026); amount and lead not disclosed",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_angels-from-anthropic",
+        "inv_pear",
+        "inv_sunflower-capital",
+        "inv_sv-angel"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.usemeridian.io/blog/fundraising",
+          "title": "Meridian raises seed round | Meridian",
+          "publisher": "Meridian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.usemeridian.io/",
+          "title": "Meridian | Frontier AI for Operations",
+          "publisher": "Meridian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_microagi_2026_seed",
@@ -2464,7 +4429,7 @@
       "unspecified_investor_ids": [
         "inv_box-group",
         "inv_haystack",
-        "inv_human-ventures",
+        "inv_human-capital",
         "inv_overmatch-ventures",
         "inv_xyz-venture-capital"
       ],
@@ -2605,6 +4570,262 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_nopan_2026-07_undisclosed",
+      "company_id": "co_nopan",
+      "date": "2026-07-14",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_newion"
+      ],
+      "participant_investor_ids": [
+        "inv_crane-venture-partners",
+        "inv_seedcamp"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.nopan.com/blog/nopan-raises-%E2%82%AC7.2m-to-further-build-its-performance-platform-for-account-and-wallet-payments",
+          "title": "Nopan raises €7.2M to further build its performance platform for account and wallet payments",
+          "publisher": "Nopan Blog",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/nopan-raises-7-2m-to-further-build-its-performance-platform-for-account-and-wallet-payments",
+          "title": "Nopan raises €7.2M to further build its performance platform for account and wallet payments",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_nowpurchase_2022-01_seed",
+      "company_id": "co_nowpurchase",
+      "date": "2022-01",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "amount_usd": 2400000,
+      "amount_original": 2400000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_infoedge-ventures",
+        "inv_orios"
+      ],
+      "participant_investor_ids": [
+        "inv_neeraj-arora"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/2022/01/nowpurchase-raises-2-4-million-in-seed-round/",
+          "title": "NowPurchase raises $2.4 million in seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/nowpurchase-nets-6-mn-to-offer-tech-led-procurement-solutions-to-metal-manufacturers-funding/",
+          "title": "NowPurchase Nets $6 Mn To Offer Tech-Led Procurement Solutions To Metal Manufacturers",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/nowpurchase/funding/",
+          "title": "NowPurchase Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_nowpurchase_2024-09_undisclosed",
+      "company_id": "co_nowpurchase",
+      "date": "2024-09-19",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Equity and debt round, stage not named (Capsave Finance and UC Inclusive named as debt providers by Entrepreneur India)",
+      "amount_usd": 6000000,
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_info-edge-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_100-unicorns",
+        "inv_ankur-warikoo",
+        "inv_capsave-finance",
+        "inv_dholakia-ventures",
+        "inv_kedar-lele",
+        "inv_orios",
+        "inv_real-ispat-group",
+        "inv_subhrakant-panda",
+        "inv_uc-inclusive",
+        "inv_vc-grid"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/2024/09/nowpurchase-raises-6-mn-led-by-info-edge-ventures-others",
+          "title": "NowPurchase raises $6 Mn led by Info Edge Ventures, others",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/nowpurchase-nets-6-mn-to-offer-tech-led-procurement-solutions-to-metal-manufacturers-funding/",
+          "title": "NowPurchase Nets $6 Mn To Offer Tech-Led Procurement Solutions To Metal Manufacturers",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.outlookbusiness.com/start-up/nowpurchase-raises-usd-6-million-in-funding-round",
+          "title": "NowPurchase Raises USD $ 6 Million In Funding Round",
+          "publisher": "Outlook Business",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/?p=1375",
+          "title": "SaaS-Enabled Marketplace NowPurchase Raises USD 6 Mn to Scale MetalCloud Platform and Expand Across India",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/nowpurchase/funding/",
+          "title": "NowPurchase Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_nowpurchase_2026-04_undisclosed",
+      "company_id": "co_nowpurchase",
+      "date": "2026-04-01",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Funding round, stage not named (Inc42 Datalabs: 'Undisclosed', 'Late Stage'); about $8.5 Mn",
+      "amount_usd": 8426375,
+      "amount_original": 800000000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.010532968190436065,
+        "rate_period": "2026-10-23",
+        "source_url": "https://www.federalreserve.gov/releases/h10/current/"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_bajaj-finserv"
+      ],
+      "participant_investor_ids": [
+        "inv_infoedge-ventures",
+        "inv_madhur-gupta",
+        "inv_orios",
+        "inv_real-ispat-group",
+        "inv_shikhar-raj"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/raw-materials-marketplace-nowpurchase-bags-%e2%82%b980-cr-to-expand-product-portfolio/",
+          "title": "Raw Materials Marketplace NowPurchase Bags ₹80 Cr To Expand Product Portfolio",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cdn.dealstreetasia.com/stories/nowpurchase-bachatt-477714",
+          "title": "India Digest: NowPurchase, Bachatt raise funding",
+          "publisher": "DealStreetAsia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/nowpurchase/funding/",
+          "title": "NowPurchase Funding (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_nuyug_2025-08_pre_seed",
       "company_id": "co_nuyug",
       "date": "2025-08-27",
@@ -2639,6 +4860,62 @@
           "url": "https://www.ajuniorvc.com/portfolio-companies/nuyug",
           "title": "Portfolio Companies: Nuyug",
           "publisher": "ajvc",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_olix_2026-08_series_b",
+      "company_id": "co_olix",
+      "date": "2026-08-03",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 312000000,
+      "amount_original": 312000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [
+        "inv_arm",
+        "inv_crane-venture-partners",
+        "inv_creandum",
+        "inv_fundomo",
+        "inv_hudson-river-trading",
+        "inv_hummingbird",
+        "inv_phoenix-court",
+        "inv_plural",
+        "inv_reed-hastings",
+        "inv_transition-vc"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://olix.com/news/company-raises-series-b",
+          "title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board",
+          "publisher": "OLIX",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/olix-raises-312m-at-a-3-3bn-valuation-and-appoints-professor-nick-mckeown-to-its-board",
+          "title": "OLIX raises $312m at a $3.3bn valuation and appoints Professor Nick McKeown to its board",
+          "publisher": "Crane Venture Partners",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -2762,6 +5039,125 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_parallax-worlds_2025-11_seed",
+      "company_id": "co_parallax-worlds",
+      "date": "2025-11-20",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed; brings total pre-seed and seed funding to $4.9M",
+      "amount_usd": 4000000,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_pear"
+      ],
+      "participant_investor_ids": [
+        "inv_gaingels",
+        "inv_gs-futures",
+        "inv_kakao-ventures",
+        "inv_lightscape",
+        "inv_mana-ventures",
+        "inv_nova-threshold"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/",
+          "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor",
+          "publisher": "Digital Media Net (company press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/",
+          "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=721952",
+          "title": "Parallax Worlds raises $4.9M to help companies virtually stress-test industrial robots",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pear.vc/companies/",
+          "title": "Companies | Pear VC",
+          "publisher": "Pear VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_parallax-worlds_undated_pre_seed",
+      "company_id": "co_parallax-worlds",
+      "date": null,
+      "date_precision": null,
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed (amount and date not disclosed; co-led by Conviction (Embed), Unusual Ventures and Spacecadet Ventures; Boost VC a prior backer)",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_conviction-embed",
+        "inv_spacecadet-ventures",
+        "inv_unusual-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_boost-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://digitalmedianet.com/parallax-worlds-raises-4-9m-to-stress-test-robots-before-they-hit-the-factory-floor/amp/",
+          "title": "Parallax Worlds Raises $4.9M To Stress-Test Robots Before They Hit The Factory Floor",
+          "publisher": "Digital Media Net (company press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/",
+          "title": "Parallax Worlds raises funding for hyper-realistic digital twins to test robots",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_peltier-technology_2026-04_seed",
       "company_id": "co_peltier-technology",
       "date": "2026-04-08",
@@ -2868,6 +5264,59 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_pilogic_2025-05_seed",
+      "company_id": "co_pilogic",
+      "date": "2025-05-22",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 4000000,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures",
+        "inv_seraphim-space"
+      ],
+      "participant_investor_ids": [
+        "inv_flex-capital",
+        "inv_fn-fund",
+        "inv_gokul-rajaram",
+        "inv_sovereign-s-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.pilogic.ai/news/seed-round",
+          "title": "PiLogic raises $4M seed round to scale Exact AI for aerospace and defense",
+          "publisher": "PiLogic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_polyphron_2026-09_seed",
@@ -3034,6 +5483,57 @@
       "confidence": "low"
     },
     {
+      "id": "rnd_pyannoteai_2025-04_seed",
+      "company_id": "co_pyannoteai",
+      "date": "2025-04-07",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "amount_usd": 9000000,
+      "amount_original": 9000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners",
+        "inv_serena-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_alexis-conneau",
+        "inv_julien-chaumond"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/mastermind-behind-openais-voice-chatbot-backs-pyannoteais-9m-round-to-advance-ai-speech-models-for-clearer-audio-transcriptions/",
+          "title": "OpenAI voice chatbot founder backs PyannoteAI'a $9M round to transform AI speech models with speaker intelligence",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://crane.vc/ideas/welcoming-pyannoteai-speaker-intelligence-the-next-frontier-in-voice-ai",
+          "title": "Welcoming pyannoteAI – Speaker Intelligence: The Next Frontier in Voice AI",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_radical-numerics_2026_seed",
       "company_id": "co_radical-numerics",
       "date": "2026",
@@ -3063,6 +5563,56 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_radical_2024-04_seed",
+      "company_id": "co_radical",
+      "date": "2024-04-24",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 4500000,
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_inflection",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/04/24/radical-thinks-the-time-has-come-for-solar-powered-high-altitude-autonomous-aircraft/",
+          "title": "Radical thinks the time has come for solar-powered, high-altitude autonomous aircraft",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/scout-ventures-announces-record-breaking-94-million-close-of-fund-iv-302132693.html",
+          "title": "Scout Ventures Announces Record-Breaking $94 Million Close of Fund IV",
+          "publisher": "PR Newswire (Scout Ventures release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_radixark_2026_seed",
@@ -3134,6 +5684,60 @@
       "field_sources": {
         "investors": [
           0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_riven-systems_2026-08_pre_seed",
+      "company_id": "co_riven-systems",
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "amount_usd": 7900000,
+      "amount_original": 7900000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_cerberus-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_alumni-ventures",
+        "inv_clai",
+        "inv_lightscape",
+        "inv_scout-ventures"
+      ],
+      "unspecified_investor_ids": [
+        "inv_new-system-ventures"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.einpresswire.com/article/933452807/industrial-chemistry-startup-riven-systems-emerges-from-stealth-to-build-ai-platform-for-critical-minerals-processing",
+          "title": "Industrial Chemistry Startup Riven Systems Emerges From Stealth to Build AI Platform for Critical Minerals Processing",
+          "publisher": "EIN Presswire (Riven Systems release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -3264,6 +5868,117 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_salespatriot_2025-10_seed",
+      "company_id": "co_salespatriot",
+      "date": "2025-10-28",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed; total funding to date $6.3M",
+      "amount_usd": 5000000,
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crv"
+      ],
+      "participant_investor_ids": [
+        "inv_liquid2",
+        "inv_mark-pincus",
+        "inv_mati-staniszewski",
+        "inv_paul-graham",
+        "inv_pear",
+        "inv_rich-miner",
+        "inv_steve-blank",
+        "inv_sv-angel",
+        "inv_uncorrelated-ventures",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/10/28/salespatriot-lands-5m-for-defence-procurement-modernisation-and-european-expansion/",
+          "title": "SalesPatriot lands $5M for defence procurement modernisation and European expansion",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.vestbee.com/insights/articles/sales-patriot-raises-5-m",
+          "title": "Polish-American startup SalesPatriot raises $5M to expand across Europe",
+          "publisher": "Vestbee",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.startuphub.ai/news/salespatriot-raises-5m-to-advance-ai-defence-procurement",
+          "title": "SalesPatriot raises $5M to advance AI defence procurement",
+          "publisher": "StartupHub.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/salespatriot",
+          "title": "SalesPatriot: Supply chain superintelligence for distribution and procurement | Y Combinator",
+          "publisher": "Y Combinator",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_salespatriot_2025_pre_seed",
+      "company_id": "co_salespatriot",
+      "date": "2025",
+      "date_precision": "year",
+      "stage": "pre_seed",
+      "stage_raw": "Y Combinator Winter 2025 batch (accelerator investment); amount not stated",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_y-combinator"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.ycombinator.com/companies/salespatriot",
+          "title": "SalesPatriot: Supply chain superintelligence for distribution and procurement | Y Combinator",
+          "publisher": "Y Combinator",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_scooter_2026-10_pre_seed",
       "company_id": "co_scooter",
       "date": "2026-10-05",
@@ -3324,6 +6039,50 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_silverflow_2026-03_series_b",
+      "company_id": "co_silverflow",
+      "date": "2026-03-05",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 40000000,
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_picus-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_coatue",
+        "inv_crane-venture-partners",
+        "inv_global-paytech-ventures",
+        "inv_inkef",
+        "inv_rabo-investments-corporate-venturing"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/adyen-alums-silverflow-raises-40m-to-kill-legacy-payments/",
+          "title": "Adyen alums' Silverflow raises $40M to kill legacy payments",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_slayd_2026-09_undisclosed",
       "company_id": "co_slayd",
       "date": "2026-09-16",
@@ -3366,6 +6125,68 @@
         "investors": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_sre-ai-now-laminar_2025-08_seed",
+      "company_id": "co_sre-ai-now-laminar",
+      "date": "2025-08-20",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 7200000,
+      "amount_original": 7200000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_crane-venture-partners",
+        "inv_salesforce-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_david-perry",
+        "inv_jeremy-roche",
+        "inv_sohaib-abassi",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://crane.vc/ideas/first-to-believe-last-to-leave-celebrating-sre-ai-bluefish-ai-and-7bridges",
+          "title": "First to Believe, Last to Leave: Celebrating Laminar, Bluefish.ai, and 7bridges",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/ideas/sre-ai-automating-the-devops-layer-for-enterprise-operating-systems",
+          "title": "SRE.ai: Automating the DevOps Layer for Enterprise Operating Systems",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://crane.vc/portfolio",
+          "title": "Portfolio - Crane Venture Partners",
+          "publisher": "Crane Venture Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -3548,6 +6369,115 @@
       "confidence": "medium"
     },
     {
+      "id": "rnd_tandem_undated_seed",
+      "company_id": "co_tandem",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "Seed Round (Antler: 'Closed a $4.7M Seed Round', 2026-04-08; Every: '$4.9M round led by Foundation Capital', 2026-08-12)",
+      "amount_usd": 4900000,
+      "amount_original": 4900000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_foundation-capital"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.every.io/blog-post/arjun-jain-kunal-jain-and-lokesh-kamanboina-are-building-tandem-to-bring-the-efficiency-of-ai-to-hardware-engineering",
+          "title": "Tandem Brings the Efficiency of AI to Hardware Engineering",
+          "publisher": "Every (every.io blog)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://antler.co/blog/announcing-the-spring-2026-u-s-portfolio-showcase",
+          "title": "Announcing the Spring 2026 U.S. Portfolio Showcase",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tandem-ai-partner.notion.site/Tandem-Intelligence-Inc-Careers-38fcf5eea9eb801696cbc45387140347",
+          "title": "Tandem Intelligence Inc. Careers",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_tandem_undated_undisclosed",
+      "company_id": "co_tandem",
+      "date": null,
+      "date_precision": null,
+      "stage": "undisclosed",
+      "stage_raw": "Not attributed to a round: tandem.inc/company lists these firms as backers with no round or date; Antler lists Tandem in its Spring 2026 U.S. portfolio; VCBacked (database) shows a May 2025 'Pre-Seed' backed by Antler",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_also-capital",
+        "inv_antler",
+        "inv_genius-ventures"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tandem.inc/company",
+          "title": "Company — Tandem",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://antler.co/blog/announcing-the-spring-2026-u-s-portfolio-showcase",
+          "title": "Announcing the Spring 2026 U.S. Portfolio Showcase",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.vcbacked.co/company/tandem-san-francisco",
+          "title": null,
+          "publisher": "VCBacked",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_terrantic_2024-08_seed",
       "company_id": "co_terrantic",
       "date": "2024-08-13",
@@ -3636,6 +6566,365 @@
         "investors": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_tractian_2020-10_seed",
+      "company_id": "co_tractian",
+      "date": "2020-10",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "Seed (Startup Intros, $500K, announced 10/01/20)",
+      "amount_usd": 500000,
+      "amount_original": 500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://startupintros.com/news/2024-12-01-tractian-series-c",
+          "title": "Tractian Series C (funding history table)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2020-10-01-tractian-seed",
+          "title": "Tractian Seed (Oct 2020)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_tractian_2021-04_seed",
+      "company_id": "co_tractian",
+      "date": "2021-04",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "Seed (Startup Intros, $3M, announced 04/01/21)",
+      "amount_usd": 3000000,
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://startupintros.com/news/2024-12-01-tractian-series-c",
+          "title": "Tractian Series C (funding history table)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2021-04-01-tractian-seed-2",
+          "title": "Tractian Seed (Apr 2021)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "rnd_tractian_2022-05_series_a",
+      "company_id": "co_tractian",
+      "date": "2022-05-17",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "amount_usd": 15000000,
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_next47"
+      ],
+      "participant_investor_ids": [
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/05/17/2314910/",
+          "title": "Tractian, which uses AI to monitor industrial equipment, raises $15M",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://venturebeat.com/ai/tractian-gets-45m-to-expand-ai-monitoring-of-industrial-machinery",
+          "title": "Tractian gets $45M to expand AI monitoring of industrial machinery",
+          "publisher": "VentureBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2024-12-01-tractian-series-c",
+          "title": "Tractian Series C (funding history table)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_tractian_2023-08_series_b",
+      "company_id": "co_tractian",
+      "date": "2023-08-07",
+      "date_precision": "day",
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "amount_usd": 45000000,
+      "amount_original": 45000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_general-catalyst",
+        "inv_next47"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://venturebeat.com/ai/tractian-gets-45m-to-expand-ai-monitoring-of-industrial-machinery",
+          "title": "Tractian gets $45M to expand AI monitoring of industrial machinery",
+          "publisher": "VentureBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/tractian/financials",
+          "title": "Tractian - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2023-08-01-tractian-series-b",
+          "title": "Tractian Series B (Aug 2023)",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2
+        ],
+        "investors": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "rnd_tractian_2024-12_series_c_plus",
+      "company_id": "co_tractian",
+      "date": "2024-12-05",
+      "date_precision": "day",
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "amount_usd": 120000000,
+      "amount_original": 120000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_sapphire-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_general-catalyst",
+        "inv_next47",
+        "inv_ngp-capital",
+        "inv_upload-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/tractian-raises-120m-to-eliminate-industrial-downtime-worldwide-302323716.html",
+          "title": "Tractian Raises $120M to Eliminate Industrial Downtime Worldwide",
+          "publisher": "Tractian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/blog/tractian-raises-series-c-to-eliminate-industrial-downtime-worldwide",
+          "title": "Tractian Raises $120M to Eliminate Industrial Downtime Worldwide",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=680488",
+          "title": "Tractian raises $120M Series C (SiliconANGLE, Dec 5 2024)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.wilmerhale.com/en/insights/news/20241219-tractian-raises-%24120m-in-series-c-funding",
+          "title": "Tractian Raises $120M in Series C Funding",
+          "publisher": "WilmerHale",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.foley.com/news/2024/12/foley-represents-upload-ventures-as-investor-in-120-m-series-c-financing-for-tractian/",
+          "title": "Foley Represents Upload Ventures as Investor in $120 M Series C Financing for Tractian",
+          "publisher": "Foley & Lardner",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_tractian_2026-10_series_c_plus",
+      "company_id": "co_tractian",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "stage": "series_c_plus",
+      "stage_raw": "Series D",
+      "amount_usd": 130000000,
+      "amount_original": 130000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": 1400000000,
+      "lead_investor_ids": [
+        "inv_m-g-s-catalyst",
+        "inv_sapphire-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_53-station",
+        "inv_bosch-ventures",
+        "inv_endeavor-catalyst",
+        "inv_general-catalyst",
+        "inv_monashees",
+        "inv_n47",
+        "inv_norte-ventures",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/tractians-130m-series-d-values-the-company-at-1-4b-to-scale-physical-ai-for-asset-heavy-industries-302917313.html",
+          "title": "Tractian's $130M Series D Values the Company at $1.4B to Scale Physical AI for Asset-Heavy Industries",
+          "publisher": "Tractian via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/blog/tractian-raises-series-d-to-scale-physical-ai",
+          "title": "Tractian raises Series D to scale Physical AI",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tractian.com/en/tractian-happened-series-d",
+          "title": "Tractian Series D - The Uptime Herald",
+          "publisher": "Tractian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/tractian/financials",
+          "title": "Tractian - Funding, Financials, Valuation & Investors",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -3744,6 +7033,108 @@
         }
       ],
       "field_sources": {
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_usul_2025-05_seed",
+      "company_id": "co_usul",
+      "date": "2025-05-12",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 3300000,
+      "amount_original": 3300000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_bravo-victor-venture-capital",
+        "inv_col-peter-newell",
+        "inv_jacqueline-tame",
+        "inv_lt-gen-jack-shanahan",
+        "inv_steve-blank",
+        "inv_y-combinator"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://usul.com/news/3-3m-seed-fundraising-announcement",
+          "title": "$3.3M Seed Fundraising Announcement",
+          "publisher": "Usul",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_valarian_2025-05_undisclosed",
+      "company_id": "co_valarian",
+      "date": "2025-05",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "amount_usd": 7000000,
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_artis-ventures",
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.valarian.com/article/forbes-spotlights-valarians-20m-mission-to-secure-government-communications",
+          "title": "Forbes Spotlights Valarian's $20M Mission to Secure Government Communications",
+          "publisher": "Valarian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.scout.vc/companies",
+          "title": "Scout Ventures | Companies",
+          "publisher": "Scout Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
         "investors": [
           0,
           1
@@ -3887,6 +7278,87 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "rnd_worldscape_2026-03_seed",
+      "company_id": "co_worldscape",
+      "date": "2026-03-03",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "seed",
+      "amount_usd": 6000000,
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_radius-capital",
+        "inv_washington-harbour-partners"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://worldscape.ai/company/news/worldscape-ai-raises-6m-seed",
+          "title": "Worldscape.ai Raises $6M Seed",
+          "publisher": "Worldscape",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_worldscape_2026-08_seed",
+      "company_id": "co_worldscape",
+      "date": "2026-08-04",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "Seed Round extension",
+      "amount_usd": 10000000,
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_scout-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_radius-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://worldscape.ai/company/news/worldscape-raises-10-million-seed-extension",
+          "title": "Worldscape Raises $10 Million Seed Extension",
+          "publisher": "Worldscape",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_wudhomes_2026-10_pre_seed",

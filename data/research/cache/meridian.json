@@ -1,0 +1,70 @@
+{
+  "key": "meridian",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Meridian (usemeridian.io; LinkedIn 'usemeridian-io'), a New York applied-AI start-up founded in 2024 that builds operations agents for traditional industries (staffing, logistics, manufacturing, industrial services). Picked because Pear VC's portfolio page lists 'Meridian - Frontier intelligence for overlooked industries' linking to usemeridian.io, and Meridian's own seed announcement names Pear among its backers; Pear also backs the other four names on the founder's list. usemeridian.io is a client-side app, so text was read from the JS bundles the site serves; page URLs below are the routes where that text renders. Ruled out: Meridian / Longitude Labs (NY agentic financial-modelling spreadsheet, $17M a16z-led seed, Feb 2026), Meridian AI (meridian-ai.com, private-markets CRM, 645 Ventures seed), Meridian Labs (AI dev agency), Meridian Ventures (VC fund) and local 'Meridian, MS/ID' service pages. Category set to 'adjacent' (PROJECT_CONTEXT seed): Meridian is horizontal across operations-heavy industries; manufacturing is one vertical, where it pitches agents for supplier and material, production and asset, quality and finance work, overlapping our procurement and maintenance agents, but its showcased work is back-office (freight audit, AP exceptions) and it is not plant-floor or WhatsApp-first.",
+  "pages": [
+    { "url": "https://pear.vc/companies/", "title": "Companies | Pear VC", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.usemeridian.io/", "title": "Meridian | Frontier AI for Operations", "publisher": "Meridian", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.usemeridian.io/blog/fundraising", "title": "Meridian raises seed round | Meridian", "publisher": "Meridian", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.usemeridian.io/company", "title": "About | Meridian", "publisher": "Meridian", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/usemeridian-io", "title": "Meridian | LinkedIn (company page)", "publisher": "LinkedIn (Meridian company page)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Seed amount and lead investor not disclosed on the announcement (May 1, 2026); no press coverage found (web search budget ran out before a press search). A PitchBook profile titled 'Meridian (New York)' appeared in search results but returned 403 and was not used.",
+    "Pear VC's page tags Meridian 'Pre-seed, Seed'; no separate pre-seed round found.",
+    "Customers: the site code contains case studies for PLS Logistics, Aurobindo and Advantis Medical, but they sit behind feature flags that evaluate off in production, so they are not publicly displayed and are not recorded as named customers.",
+    "No public pricing (demo request only).",
+    "Revenue not publicly reported."
+  ],
+  "company": {
+    "name": "Meridian",
+    "website": "https://www.usemeridian.io",
+    "description": "New York applied-AI start-up that maps how operations-heavy companies work and deploys governed, self-improving agents on their workflows.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "ai_apps_agents",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Horizontal operations-agent platform (Context Cloud ontology, process discovery and mining, agent studio, evals and 'self-learning' benchmarks, human approvals, observability) sold to staffing, logistics, manufacturing and industrial-services firms. Manufacturing page pitch: 'AI workflows for reliable plant operations'; a 'Manufacturing ATLAS' of 24 agents across commercial, supplier and material, production and asset, quality and compliance, logistics, and finance domains. Showcased workflow is freight audit and pay / AP exceptions on SAP and NetSuite.",
+  "founders": ["Siddharth Vijay", "Akshay Bhatt", "Alfonso Velasco"],
+  "named_customers": [],
+  "product_summary": "Enterprise agent platform that maps an organisation's SOPs, systems and handoffs into a context ontology, turns completed work examples into tests and evals, then deploys agents across existing tools (ERP, email, drives) with human approvals and learning from execution failures, for operations-heavy industries including manufacturing and logistics.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 7,
+    "pages": [4],
+    "snippet": "View all 7 employees (approximate: LinkedIn member count; size band 11-50 employees)"
+  },
+  "revenue_reported_usd": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Meridian",
+        "website": "https://www.usemeridian.io",
+        "description": "Applied-AI start-up deploying operations agents for staffing, logistics, manufacturing and industrial services.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed funding (company announcement, May 1, 2026); amount and lead not disclosed",
+      "date": "2026-05-01",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Sunflower Capital", "Pear", "SV Angel", "Angels from Anthropic"],
+      "pages": [2, 1, 0],
+      "snippet": "Meridian raises seed funding backed by Sunflower Capital, Pear, SV Angel, and angels from Anthropic"
+    }
+  ]
+}
