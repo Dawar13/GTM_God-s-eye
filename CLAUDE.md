@@ -9,3 +9,4 @@ Rules:
 - Log non-obvious choices in docs/DECISIONS.md with date and reason.
 - Design: follow PROJECT_CONTEXT §9; no all-caps labels, no generic card grids, tabular numbers.
 - Next.js here is 16.4 with Cache Components; read AGENTS.md and the bundled docs it points to before writing Next code.
+- Phase 2: one session per row of docs/PHASE_2.md §3; follow its §0 token rules (no reading data/processed/ files, plan first, at most two screenshots).

@@ -206,3 +206,13 @@ Phase 0 open questions are still unanswered; Phase 1 proceeds on the stated defa
 - **Firm links only on an exact, unique name match** (name or alias key). 23 of 30 link; Alchemist, Founders Inc., Startup Wise Guys, Bethnal Green Ventures and ERA have no investor record, and "Accel", "Neo" and "Google" each fit more than one record, so they stay unlinked rather than guessed.
 - **No new research.** Where our Tier A/B research already recorded a programme's terms, YC, Techstars, South Park Commons, Conviction Embed and Antler US agree with the list; Entrepreneur First's research wording differs (up to $250K plus follow-on, without the 8% split), so it is not counted as confirmed. The tab shows the list's wording.
 - **View:** `/investors/accelerators`, a plain table like the other Phase 1 sanity views; Phase 2 adds filters and term comparison.
+
+## 2026-10-30 — Phase 2 started (current phase: 2 — interface, visualisation and polish; next session: S0)
+
+- `docs/PHASE_2.md` is the user's Phase 2 file and governs: one session per row of its §3, its §0 token rules, light-first theme (S0 rewrites PROJECT_CONTEXT §9). Branch `phase-2`, cut from `phase-1` (not yet merged to `main`).
+- The earlier draft is kept as `docs/PHASE_2_NOTES.md` for reference only: measured file sizes and counts, Sigma 4 rendering notes, the `react-plotly.js` peer dependency (use `react-plotly.js/factory` + `plotly.js-dist-min`), and test-tooling gaps. Its palette-contrast notes refer to the old dark-first palette.
+- Phase 1 open questions are still unanswered, so Phase 2 uses the stated defaults: raise $1.0M post-money SAFE (an assumption, editable in Strategy), equal pitch weights as in PROJECT_CONTEXT §4.
+- **Two things the plan doesn't cover, for the session that reaches them:**
+  - S1's Investors menu lists Directory, Thesis map, Capital, Network; the user later asked for an Accelerators tab (`/investors/accelerators`, DECISIONS "Accelerators tab"). Keep it as a fifth Investors item.
+  - S1's investor-type filter includes "incubator"; `InvestorType` has `accelerator` but no `incubator`. Add the enum value (Zod first, `pnpm gen:schema`) when the filter is built; no record uses it yet.
+- `jq` (rule 1) is not installed on this machine. Inspect data with `node -e` one-liners over `require('./data/processed/x.json').records`, or install jq (`winget install jqlang.jq`). Never print whole files.
