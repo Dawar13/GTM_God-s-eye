@@ -117,6 +117,15 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("scale capital", "scale venture partners"),
         ("better capital", "better ventures"),
         ("pioneer capital", "pioneer fund"),
+        # Batch 8.
+        ("define ventures", "defined capital"),  # different firms (fuzzy 92.3)
+        ("s ventures", "s3 ventures"),  # short keys collide (fuzzy 95.2)
+        ("s ventures", "se ventures"),
+        ("s3 ventures", "se ventures"),
+        ("trinity capital", "trinity ventures"),  # venture lender vs VC firm
+        ("cerberus ventures", "cerberus capital management"),  # VC vs PE firm
+        ("two sigma", "two sigma ventures"),  # parent vs venture arm
+        ("valor", "valor ventures"),  # bare "Valor" fits several firms
     ]
 )
 
