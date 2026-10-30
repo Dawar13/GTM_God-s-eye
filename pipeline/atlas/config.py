@@ -18,6 +18,11 @@ RESEARCH = DATA / "research"
 RESEARCH_CACHE = RESEARCH / "cache"
 # Resolver source id for names that come from research files (not a user list).
 RESEARCH_SOURCE_ID = "research"
+# Other domains of one company, each stated in a research file's identity check.
+# Companies match by domain first, and a different domain otherwise blocks a name match.
+COMPANY_DOMAIN_ALIASES = {
+    "tandemai.io": "tandem.inc",  # Tandem's product domain (cache/tandem.json)
+}
 
 GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
@@ -86,6 +91,7 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("capital f", "tf capital"),  # different firms (fuzzy 94.7)
         ("intel", "intel capital"),  # parent company vs its venture arm
         ("intel", "intel capital diversity fund"),  # the fund is Intel Capital's
+        ("f2 venture capital", "ff venture capital"),  # different firms (fuzzy 94.4)
     ]
 )
 

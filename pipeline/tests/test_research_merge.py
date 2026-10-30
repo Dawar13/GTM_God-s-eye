@@ -176,6 +176,28 @@ def test_a_sourced_alias_in_a_round_is_the_firm_itself():
     assert r["participant_investor_ids"] == ["inv_onesixone-ventures"]
 
 
+def test_competitor_named_like_another_company_gets_its_own_id():
+    store = Store()
+    companies = research.CompanyIndex(store)
+    other = companies.get_or_create(company("Tandem", "https://tandem.example"), [], [])
+    comp = {
+        "company": company("Tandem", "https://tandem.inc"),
+        "pages": [page("https://tandem.inc/", "primary")],
+        "category": "direct",
+        "layer": "design_intent",
+        "layer_detail": None,
+        "founders": [],
+        "named_customers": [],
+        "product_summary": None,
+        "pricing": None,
+        "headcount_est": None,
+        "revenue_reported_usd": None,
+    }
+    co = companies.competitor_from(comp)
+    assert co["id"] != other["id"]
+    assert set(store.companies) == {other["id"]} and set(store.competitors) == {co["id"]}
+
+
 def test_disagreeing_amounts_mark_the_round_contested():
     a = investor_file(
         "root-ventures",

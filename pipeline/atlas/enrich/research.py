@@ -20,7 +20,13 @@ from jsonschema import Draft202012Validator
 from rapidfuzz import fuzz
 
 from atlas import fx, ids, names
-from atlas.config import RESEARCH, RESEARCH_CACHE, RESEARCH_SOURCE_ID, SCHEMAS
+from atlas.config import (
+    COMPANY_DOMAIN_ALIASES,
+    RESEARCH,
+    RESEARCH_CACHE,
+    RESEARCH_SOURCE_ID,
+    SCHEMAS,
+)
 from atlas.geo import region_for_country
 from atlas.model import Store, add_source, cite, new_company, new_round
 from atlas.resolve import Group, InvestorResolver
@@ -448,7 +454,10 @@ def _apply_partners(store: Store, inv: dict, f: dict) -> None:
 
 
 def _norm_domain(url: str | None) -> str | None:
-    return _domain(url) if url else None
+    if not url:
+        return None
+    domain = _domain(url)
+    return COMPANY_DOMAIN_ALIASES.get(domain, domain)
 
 
 class CompanyIndex:
@@ -505,7 +514,13 @@ class CompanyIndex:
     def competitor_from(self, f: dict) -> dict:
         rc = f["company"]
         existing = self.find(rc["name"], rc["website"])
-        cid = existing["id"] if existing else ids.company_id(rc["name"])
+        if existing:
+            cid = existing["id"]
+        else:  # a same-named company with another domain keeps its id
+            registry = ids.IdRegistry()
+            for taken in [*self.store.companies, *self.store.competitors]:
+                registry.claim(taken)
+            cid = registry.claim(ids.company_id(rc["name"]))
         if existing and existing["id"] in self.store.companies:
             del self.store.companies[existing["id"]]
         pages = f["pages"]
