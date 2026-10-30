@@ -28,6 +28,7 @@ export function ChartFrame({
   notShown,
   state = { status: "ready" },
   tableAlternative,
+  action,
   height = 280,
   children,
   className,
@@ -42,6 +43,8 @@ export function ChartFrame({
   state?: ChartState;
   /** The same data as an accessible table; enables "View as table". */
   tableAlternative?: ReactNode;
+  /** A link or button to the full view, shown at the top right. */
+  action?: ReactNode;
   height?: number;
   children: ReactNode;
   className?: string;
@@ -56,17 +59,20 @@ export function ChartFrame({
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="text-sm text-ink-2">{subtitle}</p>
         </div>
-        {tableAlternative !== undefined && state.status === "ready" && (
-          <Segmented
-            label={`${title} view`}
-            value={view}
-            onChange={setView}
-            options={[
-              { value: "chart", label: "Chart" },
-              { value: "table", label: "View as table" },
-            ]}
-          />
-        )}
+        <div className="flex shrink-0 flex-col items-end gap-2">
+          {action}
+          {tableAlternative !== undefined && state.status === "ready" && (
+            <Segmented
+              label={`${title} view`}
+              value={view}
+              onChange={setView}
+              options={[
+                { value: "chart", label: "Chart" },
+                { value: "table", label: "View as table" },
+              ]}
+            />
+          )}
+        </div>
       </header>
 
       {legend && !showTable && <div>{legend}</div>}

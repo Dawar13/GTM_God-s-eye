@@ -1,4 +1,5 @@
 import type {
+  CompetitorLayer,
   Freshness,
   InvestorStage,
   InvestorType,
@@ -78,4 +79,14 @@ export const TIER_LABELS: Record<ResearchTier, string> = {
   A: "Tier A",
   B: "Tier B",
   C: "Tier C",
+};
+
+export const LAYER_LABELS: Record<CompetitorLayer, string> = {
+  design_intent: "Design intent",
+  process_planning: "Process planning",
+  plant_ops: "Plant ops",
+  quality_vision: "Quality vision",
+  autonomy_tooling: "Autonomy tooling",
+  robotics: "Robotics",
+  full_stack_factory: "Full-stack factory",
 };

@@ -91,7 +91,7 @@ Tick each box when its checks pass.
 - Shortcuts: `⌘K` palette, `/` focus search, `[` toggle rail, `F` filters, `Esc` close.
 - Checks: keyboard-only walkthrough of all routes; screenshots desktop + mobile.
 
-### S2 — Command (overview) ☐
+### S2 — Command (overview) ☑
 - Stat strip: investors tracked, Western share, fresh funds, total fresh dry powder, deals mapped, competitors.
 - Small multiples (2×2): funds closed by year (bar, stacked fresh/older), fresh capital by region (bar), top 10 by fit score (ranked bar with feature-contribution segments), recent deals in our layers (dot timeline).
 - Every tile links to the full view with matching filters.
