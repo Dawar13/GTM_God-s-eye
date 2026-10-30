@@ -1,0 +1,103 @@
+{
+  "key": "westbound",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Westbound Equity Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as westboundequity.com, the venture firm formerly called Concrete Rose (Pulse 2.0), whose Fund II was $100M. Its site lists Esusu, Planet FWD, Syndio, Sierra, Mon Ami and The Browser Company as portfolio. Not Westbound Capital or other 'Westbound' entities.",
+  "pages": [
+    { "url": "https://westboundequity.com", "title": "Westbound Equity Partners", "publisher": "Westbound Equity Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/westbound-equity-partners-100-million/", "title": "Westbound Equity Partners: Oversubscribed $100 Million Fund II Closed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://windsordrake.com/market-intelligence/funding-rounds/esusu-funding-round-2025-12-11", "title": "Esusu funding round 2025-12-11", "publisher": "Windsor Drake", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://pulse2.com/welcome-tech-7-5-million-secured-for-scaling-ai-based-platform-connecting-immigrant-workforce", "title": "Welcome Tech: $7.5 Million Secured For Scaling AI-Based Platform Connecting Immigrant Workforce", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "Westbound Equity Partners: Oversubscribed $100 Million Fund II Closed"
+    },
+    "website": {
+      "value": "https://westboundequity.com",
+      "pages": [0],
+      "snippet": "Building a virtuous cycle of wealth and opportunity."
+    },
+    "thesis_text": {
+      "value": "Puts financial and social capital behind exceptional founders and ventures led by or built with underrepresented people of color.",
+      "pages": [1],
+      "snippet": "exceptional founders and ventures led by or built with underrepresented people of color"
+    }
+  },
+  "funds": [
+    {
+      "name": "Westbound Fund II",
+      "number": "II",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2024-03",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "Westbound Equity Partners: Oversubscribed $100 Million Fund II Closed"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Esusu",
+        "website": null,
+        "description": "Rent-reporting and identity-verification platform that brings rental data into mortgage underwriting.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Westbound Equity Partners"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Esusu raised $50M Series C led by Westbound Equity Partners on December 11, 2025."
+    },
+    {
+      "company": {
+        "name": "Welcome Tech",
+        "website": null,
+        "description": "Digital platform serving immigrant workforces and their employers, linking workers to jobs, healthcare and financial tools.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2025-09",
+      "date_precision": "month",
+      "amount_original": 7500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Westbound Equity Partners", "TTV Capital", "CityRock Ventures", "BTN Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Westbound backs founders solving hard problems in overlooked markets."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on westboundequity.com or the Pulse 2.0 pages; lead says LA, a search summary says Bay Area (Palo Alto / Menlo Park), none fetched. Left out.",
+    "Stages, check size and sectors not stated on fetched pages. Contact form exists at westboundequity.com/contact-us/ per the homepage; no verbatim text, so not recorded as application_url.",
+    "Fund II close date: Pulse 2.0 article dated 17 March 2024; lead says 2024-03-14. Kept to month.",
+    "Esusu lead claim rests on one database page (Windsor Drake); no press or primary page fetched. Welcome Tech: Pulse 2.0 does not name a lead or stage and is dated 2 Sept 2025; BusinessWire release (27 Aug 2025 per search) returned 403.",
+    "Only two rounds found."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "key": "maven-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Maven Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Seed-stage consumer-tech VC (maven.vc) that announced a $60M fourth fund in April 2024 (TechCrunch syndication) and named Medeloop, Lutra AI and MultiOn among new companies. Not Maven Capital Partners (UK), Maven Venture Partners, or Maven (the course platform). maven.vc itself failed to fetch (SSL error).",
+  "pages": [
+    { "url": "https://bestofai.com/article/consumer-tech-investing-is-still-hot-for-maven-ventures-securing-60m-for-fund-iv-techcrunch", "title": "Consumer tech investing is still hot for Maven Ventures, securing $60M for Fund IV (TechCrunch, via BestofAI)", "publisher": "BestofAI (TechCrunch syndication)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/medeloop-medical-research-platform-company-raises-15-5-million-series-a", "title": "Medeloop raises $15.5 million Series A", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=640247", "title": "Lutra AI seed funding (Dec 7, 2023)", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "$60 million for a fourth fund" },
+    "stated_sectors": { "value": ["ai_apps_agents", "health_bio", "climate_energy", "fintech", "consumer"], "pages": [0], "snippet": "consumer AI, personalized healthcare, climate and sustainability, family technology and fintech" },
+    "thesis_text": { "value": "Seed investor betting that consumer tech trends persist, looking for founders with distinct insight into how technology can improve consumers' lives.", "pages": [0], "snippet": "massive consumer tech trends" }
+  },
+  "funds": [
+    {
+      "name": "Maven Ventures Fund IV",
+      "number": "IV",
+      "size_original": 60000000,
+      "currency_original": "USD",
+      "close_date": "2024-04-16",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$60 million for a fourth fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Medeloop", "website": null, "description": "AI-powered medical research platform for grants, studies, no-code analytics and manuscripts.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-11-26",
+      "date_precision": "day",
+      "amount_original": 15500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Inovia Capital"],
+      "participants": ["Icon Ventures", "Maven Ventures", "General Catalyst", "Healthier Capital", "Up2 Opportunity Fund", "CFO Advisors"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "a pioneering medical research platform"
+    },
+    {
+      "company": { "name": "Lutra AI", "website": null, "description": "Platform for creating personal AI workflows so people with little coding background can automate routine work.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2023-12-07",
+      "date_precision": "day",
+      "amount_original": 3800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Coatue Ventures"],
+      "participants": ["Hustle Fund", "Maven Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "a platform aimed at helping users create personal artificial intelligence workflows"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded (Lutra AI is older than 24 months). MultiOn round not found.",
+    "Firm website maven.vc failed to fetch (SSL error): website, HQ, stages, check size, application URL not recorded. HQ believed Bay Area (lead list) but not on a fetched page.",
+    "Fund close date is the article date. TechCrunch original not fetched; syndicated copy used. Round snippets are company descriptions from the pages (Maven named in the same page per fetch summary)."
+  ]
+}

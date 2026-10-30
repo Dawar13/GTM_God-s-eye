@@ -1,0 +1,77 @@
+{
+  "key": "hyde-park-venture-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Hyde Park Venture Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as hydeparkvp.com, the Chicago early-stage VC (415 N LaSalle Drive) whose portfolio page lists ShipBob, FourKites, G2, Slip Robotics, Definity. Not Hyde Park Angels (a separate Chicago angel group) and not Hyde Park Capital or Hyde Park Ventures elsewhere.",
+  "pages": [
+    { "url": "https://www.hydeparkvp.com", "title": "Hyde Park Venture Partners", "publisher": "Hyde Park Venture Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/hyde-park-venture-partners-98-million-fund-iv-closed/", "title": "Hyde Park Venture Partners: $98 Million Fund IV Closed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2024/12/17/slip-robotics-snags-28m-for-its-bots-that-can-load-a-truck-in-five-minutes", "title": "Slip Robotics snags $28M for its bots that can load a truck in five minutes", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/benji-625-million-raised-for-loyalty-partnership-infrastructure-platform/", "title": "Benji $6.25 million raised for loyalty partnership infrastructure platform", "publisher": "Infor Capital", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/definity-raises-12-million-series-a-to-advance-agentic-data-engineering-platform/", "title": "Definity Raises $12 Million Series A To Advance Agentic Data Engineering Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "an early-stage venture capital fund" },
+    "website": { "value": "https://www.hydeparkvp.com", "pages": [0], "snippet": "AI First Applications, infrastructure and enabling technology." },
+    "hq_city": { "value": "Chicago", "pages": [1], "snippet": "headquartered in Chicago" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "headquartered in Chicago" },
+    "thesis_text": { "value": "Early-stage investor in AI-first applications, infrastructure and enabling technology, with founders primarily in the Midwest and Toronto.", "pages": [0, 1], "snippet": "AI First Applications, infrastructure and enabling technology." },
+    "stated_sectors": { "value": ["ai_apps_agents", "ai_infra", "enterprise_saas"], "pages": [0], "snippet": "AI First Applications, infrastructure and enabling technology." }
+  },
+  "funds": [
+    {
+      "name": "Hyde Park Venture Partners Fund IV",
+      "number": "IV",
+      "size_original": 98000000,
+      "currency_original": "USD",
+      "close_date": "2024-05-09",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "the raise of $98 million Hyde Park Venture Partners Fund IV"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Benji", "website": null, "description": "Universal API for loyalty program integrations and partnerships.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-05-19", "date_precision": "day",
+      "amount_original": 6250000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Preface Ventures", "Atinc"],
+      "participants": ["Great North Ventures", "M25", "Hyde Park Venture Partners"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "spearheaded by Preface Ventures and Atinc"
+    },
+    {
+      "company": { "name": "Definity", "website": null, "description": "Agentic data engineering platform to operate and optimize enterprise lakehouse and Spark data pipelines; Chicago.", "hq_country": "US", "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-04-29", "date_precision": "day",
+      "amount_original": 12000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["GreatPoint Ventures"],
+      "participants": ["Dynatrace", "StageOne Ventures", "Hyde Park Venture Partners"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "an agentic data engineering platform purpose-built to operate and optimize enterprise lakehouse and Spark data pipelines"
+    },
+    {
+      "company": { "name": "Slip Robotics", "website": null, "description": "Atlanta-based robot-as-a-service business combining automation software and large floor-like robotic platforms for truck loading.", "hq_country": "US", "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B", "date": "2024-12-17", "date_precision": "day",
+      "amount_original": 28000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["DCVC"],
+      "participants": ["Eve Atlas", "Tech Square Ventures", "Hyde Park Venture Partners", "Overline", "Pathbreaker Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Hyde Park Venture Partners"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Stages and check size not recorded: the homepage text was only available as a tool summary without quotable wording.",
+    "Latest fund: Pulse 2.0 says $98M Fund IV, May 9, 2024; the lead list's May 6 date differs. Earlier funds (a $100M third fund, per search summaries) not recorded.",
+    "Benji HQ not stated on the page (Chicago and New York named as hubs). Benji leads vary by outlet (Atinc as co-lead or not).",
+    "Pulse 2.0 names Diffit and CivCheck as first Fund IV investments but gives no rounds.",
+    "Application URL and cold inbound not checked."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "key": "life-extension-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Life Extension Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed by founders Inaki Berenguer and Amol Sarva (TechCrunch Aug 2022; lifex.vc team page, branded LifeX Ventures). Not the Pittsburgh healthcare seed firm sometimes shown as LifeX in aggregators, and not Longevity Vision Fund.",
+  "pages": [
+    { "url": "https://www.lifex.vc", "title": "LifeX Ventures", "publisher": "LifeX Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2022/08/18/this-new-100m-fund-plans-to-focus-on-startups-accelerating-the-science-around-longevity/amp", "title": "Life Extension Ventures", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.wiggin.com/news/wiggin-and-dana-advises-xscape-photonics-in-series-a-funding-round/", "title": "Wiggin and Dana advises Xscape Photonics in Series A funding round", "publisher": "Wiggin and Dana", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=735267", "title": "NoTraffic raises $90M Series C", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "a new $100 million fund" },
+    "website": { "value": "https://www.lifex.vc", "pages": [0], "snippet": "Backing founders building the next era of health." },
+    "hq_city": { "value": "New York", "pages": [1], "snippet": "New York-based" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "New York-based" },
+    "thesis_text": { "value": "Backs founders using AI and software to advance science, improve care and rethink how health is delivered and paid for.", "pages": [0], "snippet": "backs founders using AI and software to advance science, improve care, and rethink how health is delivered and paid for." },
+    "stated_sectors": { "value": ["health_bio", "ai_apps_agents"], "pages": [0], "snippet": "backs founders using AI and software to advance science, improve care, and rethink how health is delivered and paid for." }
+  },
+  "funds": [
+    {
+      "name": "Life Extension Ventures fund",
+      "number": null,
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2022-08-18",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "a new $100 million fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "NoTraffic", "website": null, "description": "Autonomous AI traffic management platform that adapts signal cycles in real time.", "hq_country": null, "founded_year": null, "sector": "mobility_ev", "sector_classified_by": "model", "layer": null },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2026-03-24",
+      "date_precision": "day",
+      "amount_original": 90000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["PSG Equity"],
+      "participants": ["M&G Investments", "Grove Ventures", "LifeX Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The Series C round was led by PSG Equity with participation from M&G Investments, Grove Ventures, LifeX Ventures"
+    },
+    {
+      "company": { "name": "Xscape Photonics", "website": null, "description": "Silicon photonics for data centers.", "hq_country": null, "founded_year": null, "sector": "hardware_deeptech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-10-16",
+      "date_precision": "day",
+      "amount_original": 44000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["IAG Capital Partners"],
+      "participants": ["Altair Engineering", "Cisco Investments", "Fathom Fund", "Kyra Ventures", "LifeX Ventures", "NVIDIA", "Osage University Partners"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "included investments from Altair Engineering, Cisco Investments, Fathom Fund, Kyra Ventures, LifeX Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded (stopped early). Trek Health Series A (2025, Madrona-led) seen only in search summaries.",
+    "Fund close date is the TechCrunch article date; lifex.vc mentions a Fund II with no size. Stages, check size, application URL not stated on fetched pages. The 2022 lead said NYC / London; TechCrunch says team also in Madrid, London, San Francisco."
+  ]
+}

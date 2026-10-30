@@ -1,0 +1,91 @@
+{
+  "key": "seedcamp",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Seedcamp",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as seedcamp.com, European early-stage investor (legal entity Seedcamp Investment Management LLP per site footer) with Revolut, Wise, UiPath, Synthesia on its portfolio page. Not an unrelated 'Seedcamp' event brand.",
+  "pages": [
+    { "url": "https://seedcamp.com", "title": "Seedcamp", "publisher": "Seedcamp", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/05/17/how-seedcamps-networked-approach-to-europe-helped-it-secure-new-180m-fund", "title": "How Seedcamp's networked approach to Europe helped it secure new $180M fund", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://seedcamp.com/views/solvera-raises-6-3m-to-build-the-engineering-firm-of-the-future/", "title": "Solvera raises $6.3M to build the engineering firm of the future", "publisher": "Seedcamp", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://seedcamp.com/views/metaview-raises-60m-series-c-to-drive-agentic-recruiting/", "title": "Metaview raises $60M Series C to drive agentic recruiting", "publisher": "Seedcamp", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://seedcamp.com/views/flow-engineering-raises-a-50m-series-b-to-bring-software-speed-to-hardware/", "title": "Flow Engineering raises $50M Series B to bring software speed to hardware", "publisher": "Seedcamp", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "European early-stage investor Seedcamp has announced the close of its $180 million “Fund VI.”" },
+    "website": { "value": "https://seedcamp.com", "pages": [0], "snippet": "By Your Side from Day One." },
+    "stages": { "value": ["pre_seed", "seed", "series_a", "series_b"], "pages": [1], "snippet": "intends to lead rounds from the angel and seed stage (up to $1 million)" },
+    "leads": { "value": true, "pages": [1, 2], "snippet": "intends to lead rounds from the angel and seed stage (up to $1 million)" },
+    "check_max_usd": { "value": 1000000, "pages": [1], "snippet": "intends to lead rounds from the angel and seed stage (up to $1 million)" },
+    "thesis_text": { "value": "Early-stage European investor that leads angel and seed rounds, backs founders from day one, and follows on up to Series B.", "pages": [0, 1], "snippet": "By Your Side from Day One." }
+  },
+  "funds": [
+    {
+      "name": "Seedcamp Fund VI",
+      "number": "VI",
+      "size_original": 180000000,
+      "currency_original": "USD",
+      "close_date": "2023-05",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "announced the close of its $180 million “Fund VI.”"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Solvera", "website": null, "description": "AI-agent-driven engineering firm taking projects from requirements to construction-ready design, charging for outcomes rather than licences.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "amount_original": 6300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Seedcamp"],
+      "participants": ["Inception Fund", "Momentum", "PSV", "Sondo", "OBOS Ventures", "Construct Venture", "The Nordic Web Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Solvera raises $6.3M to build the engineering firm of the future"
+    },
+    {
+      "company": { "name": "Metaview", "website": null, "description": "Recruiting software that began as AI interview recording and analysis and now offers agentic sourcing, screening and interviewing.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "amount_original": 60000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Insight Partners"],
+      "participants": ["GV", "Intrepid Growth Partners", "Vertex Ventures US", "Plural", "Garuda Ventures", "Seedcamp"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Metaview raises $60M Series C to drive agentic recruiting"
+    },
+    {
+      "company": { "name": "Flow Engineering", "website": null, "description": "AI agents that track and propagate hardware design changes across teams to cut iteration cycles from months to days.", "hq_country": null, "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Seedcamp"],
+      "pages": [4],
+      "snippet": "We've backed them for almost a decade"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (London) not stated on any fetched page; hq_city/hq_country omitted. Seedcamp's own Fund VI page (16.05.2023) surfaced only in search summaries.",
+    "Earlier funds ($28M 2014, $103M 2020) and standard pre-seed terms not found on fetched pages.",
+    "Fund VI close date only known to month from the TechCrunch article date; Flow Engineering lead and co-investors not named in Seedcamp's post.",
+    "Seedcamp's recent post says it invested in Metaview via its 'Select' fund; Select fund size not found."
+  ]
+}

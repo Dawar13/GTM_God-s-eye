@@ -1,0 +1,61 @@
+{
+  "key": "m-x-v-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "m]x[v Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as mxv.vc, a New York City venture firm; its portfolio page lists Novu, DevRev, Postscript, Alembic AI and others. Cooley's coverage ties the $52M debut fund to the same firm name. Not MXV/MX token or other 'MXV' entities.",
+  "pages": [
+    { "url": "https://www.mxv.vc", "title": "m]x[v Capital", "publisher": "m]x[v Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.mxv.vc/portfolio", "title": "m]x[v Capital Portfolio", "publisher": "m]x[v Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cooley.com/news/coverage/2023/2023-05-22-early-stage-vc-firm-mxv-capital-launches-52-million-debut-fund", "title": "Early-Stage VC Firm m]x[v Capital Launches $52 Million Debut Fund", "publisher": "Cooley", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupintros.com/news/2025-12-11-marble-seed", "title": "Marble - $9M Seed", "publisher": "Startup Intros", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "early-stage venture capital firm" },
+    "website": { "value": "https://www.mxv.vc", "pages": [0], "snippet": "Founding and Funding the Future." },
+    "hq_city": { "value": "New York", "pages": [0, 2], "snippet": "Venture Capital based in New York City." },
+    "hq_country": { "value": "US", "pages": [0, 2], "snippet": "Venture Capital based in New York City." },
+    "thesis_text": { "value": "Early-stage investor in business-to-business enterprise software companies, aiming to back founders building what comes next.", "pages": [0, 2], "snippet": "We invest in visionary founders building what’s next." },
+    "stated_sectors": { "value": ["enterprise_saas"], "pages": [2], "snippet": "early-stage business-to-business enterprise software as a service companies" }
+  },
+  "funds": [
+    {
+      "name": "m]x[v Capital debut fund",
+      "number": null,
+      "size_original": 52000000,
+      "currency_original": "USD",
+      "close_date": "2023-05-22",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "$52 million debut fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Marble", "website": null, "description": "AI platform for tax professionals (tax research and return preparation), per a search summary only; the fetched page has no description.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed venture round",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "amount_original": 9000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Chad Byers"],
+      "participants": ["Konrad Capital", "M]x[V Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Marble – $9M Seed (announced Dec 11, 2025)"
+    }
+  ],
+  "conflicts": [
+    { "field": "rounds[Marble].leads", "values": ["Chad Byers (Startup Intros)", "Susa Ventures (search-result summary only)"], "chosen": "Chad Byers", "reason": "Only the fetched page is recorded; the Susa Ventures claim was not seen on a fetched page." }
+  ],
+  "open_items": [
+    "Only one round found, from a database page only (low confidence); no company or primary announcement fetched. finsmes (HTTP 403) and Marble/cryptonomist pages not read.",
+    "Stages and check size not stated on fetched pages; Cooley says early-stage only, so stages omitted. Pre-seed/seed focus appears only in search summaries.",
+    "Fund close date taken from Cooley coverage (2023-05-22); lead list says 2023-05-18. Pipeseed search summary claims earlier $30M/$60M funds, unverified."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "key": "renegade-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Renegade Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as renegadepartners.com (renegade.vc is a parked domain, not the firm), the San Francisco early-stage and Series A firm co-founded by Renata Quintini and Roseanne Wincek (per search summaries); Pulse 2.0 describes its $128M Fund II. Not Renegade Capital or other similarly named firms.",
+  "pages": [
+    { "url": "https://www.renegadepartners.com", "title": "Renegade Partners", "publisher": "Renegade Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/renegade-partners-128-million-fund-ii-revealed/", "title": "Renegade Partners: $128 Million Fund II Revealed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thenextweb.com/news/natter-23m-series-a-ai-video-conversations-enterprise", "title": "Natter raises $23M Series A", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/copia-automation-raises-26-million-to-expand-industrial-code-management-and-recovery-platform/", "title": "Copia Automation Raises $26 Million To Expand Industrial Code Management And Recovery Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/air-space-intelligence-modern-aerospace-company-raises-34-million", "title": "Air Space Intelligence: Modern Aerospace Company Raises $34 Million", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Renegade Partners" },
+    "website": { "value": "https://www.renegadepartners.com", "pages": [0], "snippet": "Partnership is our product." },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "San Francisco" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "San Francisco" },
+    "stages": { "value": ["seed", "series_a", "series_b"], "pages": [0], "snippet": "early-stage and Series A investments" },
+    "thesis_text": { "value": "Backs ambitious founders tackling important problems with a concentrated portfolio of about 20 companies per fund and hands-on support.", "pages": [0, 1], "snippet": "Partnership is our product." },
+    "stated_sectors": { "value": ["ai_apps_agents", "fintech", "ai_infra", "enterprise_saas", "consumer"], "pages": [0], "snippet": "AI & ML, Fintech, Infrastructure, Enterprise, Vertical SaaS, and Consumer" }
+  },
+  "funds": [
+    {
+      "name": "Renegade Partners Fund II",
+      "number": "II",
+      "size_original": 128000000,
+      "currency_original": "USD",
+      "close_date": "2024-05-10",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$128 million for Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Natter", "website": null, "description": "Enterprise insights startup running AI-moderated video conversations.", "hq_country": "GB", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-04-07", "date_precision": "day",
+      "amount_original": 23000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Renegade Partners"],
+      "participants": ["Asymmetric Capital Partners", "Kindred Capital", "Rackhouse Venture Capital", "Village Global"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "a $23 million Series A"
+    },
+    {
+      "company": { "name": "Copia Automation", "website": null, "description": "Industrial code management and resiliency solutions for operational technology teams.", "hq_country": null, "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2026-06-16", "date_precision": "day",
+      "amount_original": 26000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["AE Ventures", "Squadra Ventures"],
+      "participants": ["KAS Venture Partners", "Construct Capital", "Lux Capital", "Ironspring Ventures", "Renegade Partners"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "industrial code management and resiliency solutions"
+    },
+    {
+      "company": { "name": "Air Space Intelligence", "website": null, "description": "Aerospace software company using AI to monitor and optimize flight operations; airline customers and US Air Force contracts.", "hq_country": null, "founded_year": null, "sector": "defense_dual_use", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B", "date": "2023-12-20", "date_precision": "day",
+      "amount_original": 34000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Andreessen Horowitz", "Bloomberg Beta", "Renegade Partners", "Spark Capital"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "a modern aerospace company addressing the software crisis across commercial and government sectors"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size ($2-10M per the site, up to $10M per Pulse 2.0) shown only in tool summaries without quotable text; not recorded.",
+    "Fund II $128M per Pulse 2.0 dated May 10, 2024 (lead list said May 1); $100M Fund I (2021) not confirmed on a fetched page.",
+    "HQ city from Pulse 2.0 (San Francisco); the site itself gives no explicit address.",
+    "Natter described as London-based by The Next Web; other sources say it moved to New York. Copia HQ and stage not stated. Air Space Intelligence: date is the Pulse 2.0 article date (Dec 20, 2023); the page names no lead (a16z listed as a new investor).",
+    "Application URL (/contact) not fetched; no pitch process described on the homepage."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "key": "ldv-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "LDV Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ldv.co, the visual-technology and AI pre-seed/seed fund (portfolio includes Synthesia, Ezra, CIONIC, VitVio, Glass Imaging, ResiQuant). Not LDV Partners or other 'LDV' entities.",
+  "pages": [
+    { "url": "https://ldv.co", "title": "LDV Capital", "publisher": "LDV Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://ldv.co/blog/ldv-capital-raised-fourth-fund-to-continue-investing-in-people-building-businesses-powered-by-visual-technologies-and-artificial-intelligence", "title": "LDV Capital raised fourth fund", "publisher": "LDV Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://ldv.co/news", "title": "LDV Capital in the news", "publisher": "LDV Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "we have raised our fourth LDV Capital fund with $31M" },
+    "website": { "value": "https://ldv.co", "pages": [0], "snippet": "invests in deep technical teams building visual technology businesses" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "Invest: $500K - $1.5M at pre-seed or seed" },
+    "check_min_usd": { "value": 500000, "pages": [0], "snippet": "Invest: $500K - $1.5M at pre-seed or seed" },
+    "check_max_usd": { "value": 1500000, "pages": [0], "snippet": "Invest: $500K - $1.5M at pre-seed or seed" },
+    "thesis_text": {
+      "value": "Backs deep technical teams building businesses on visual technology, using computer vision, machine learning and AI, at the earliest stages.",
+      "pages": [0, 1],
+      "snippet": "invests in deep technical teams building visual technology businesses"
+    },
+    "stated_sectors": { "value": ["ai_apps_agents", "health_bio"], "pages": [0], "snippet": "Ezra (acquired by Function Health; early cancer detection)" }
+  },
+  "funds": [
+    {
+      "name": "LDV Capital Fund IV",
+      "number": "IV",
+      "size_original": 31000000,
+      "currency_original": "USD",
+      "close_date": "2024-01-23",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "we have raised our fourth LDV Capital fund with $31M."
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "0 rounds recorded. LDV's news page lists ResiQuant ($4M, March 2025, 'LDV Capital-led' in the headline), Glass Imaging ($20M, May 2025), VitVio, Arcturus and others, but the round pages (The Insurer 401, VentureBeat/GamesBeat 403, EU-Startups 403, Axios 403) could not be fetched, so none is recorded.",
+    "HQ (NYC per lead list) not stated on fetched pages. Earlier funds ($10M 2018, $21M 2021) not confirmed. No pitch/contact link on homepage.",
+    "Fund IV date is the blog post date (Jan 23, 2024); a search summary dated Venture Capital Journal coverage Jan 29, 2024."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "key": "ensemble",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Ensemble",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ensemble.vc, the early-stage firm (Ensemble VC) based in Austin, Texas, per its April 2023 debut-fund press release; its site lists Saronic, CHAOS, Stablecore, Neion Bio. Not Ensemble Capital, Ensemble Health Partners or Ensemble Investments.",
+  "pages": [
+    { "url": "https://www.ensemble.vc", "title": "Ensemble", "publisher": "Ensemble", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.mondaq.com/pressrelease/111386/ensemble-announces-%24100-million-debut-fund", "title": "Ensemble Announces $100 Million Debut Fund", "publisher": "Mondaq (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ensemble.vc/research/why-ensemble-is-backing-stablecores-mission-to-bring-community-banks-into-the-stablecoin-future", "title": "Why Ensemble is Backing Stablecore's Mission", "publisher": "Ensemble", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.ensemble.vc/research/chaos-notches-4-5b-valuation-in-510m-series-d", "title": "CHAOS notches $4.5B valuation in $510M Series D", "publisher": "Ensemble", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "an early-stage venture capital firm" },
+    "website": { "value": "https://www.ensemble.vc", "pages": [0], "snippet": "our mission is to increase the slope of innovation." },
+    "hq_city": { "value": "Austin", "pages": [1], "snippet": "based in Austin, Texas" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "based in Austin, Texas" },
+    "thesis_text": { "value": "Believes the depth of a startup's whole team, not only its founders, determines success; backs early teams to raise the slope of innovation.", "pages": [0, 1], "snippet": "prove that the depth of a startup's entire team determines its success – not just the founding team" }
+  },
+  "funds": [
+    {
+      "name": "Ensemble debut fund",
+      "number": null,
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2023-04-05",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$100 million debut fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "CHAOS", "website": null, "description": "Builds multi-static radar systems (Coherent Distributed Networks) that detect autonomous threats.", "hq_country": null, "founded_year": 2022, "sector": "defense_dual_use", "sector_classified_by": "model", "layer": null },
+      "stage": "series_c_plus",
+      "stage_raw": "Series D",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 510000000,
+      "currency_original": "USD",
+      "valuation_post_original": 4500000000,
+      "leads": ["Valor Equity Partners"],
+      "participants": ["8VC", "Accel"],
+      "unspecified": ["Ensemble"],
+      "pages": [3],
+      "snippet": "CHAOS notches $4.5B valuation in $510M Series D"
+    },
+    {
+      "company": { "name": "Stablecore", "website": null, "description": "Infrastructure platform letting banks and credit unions offer stablecoins and tokenized deposits via their existing core systems.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2025-10",
+      "date_precision": "month",
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Norwest"],
+      "participants": ["Coinbase Ventures", "Ensemble VC", "Curql", "BankTech Ventures", "Bank of Utah", "EJF Ventures", "Bankers Helping Bankers Fund"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Coinbase Ventures, Ensemble VC, Curql, BankTech Ventures, Bank of Utah, EJF Ventures, Bankers Helping Bankers Fund"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded; Neion Bio's page names Ensemble as an investor but gives no round details. Saronic page not fetched.",
+    "Round dates are the publish dates of Ensemble's own posts (Stablecore 2025-10-01 page date with a Sept 2025 press-release URL; CHAOS 2025-11-15), so month precision used. CHAOS: the post says Ensemble invested at Series B, not Series D.",
+    "Fund numbering unresolved: search summaries show 'Ensemble VC II' / 'III' in databases for a 2023 $100M fund; press release calls it a debut fund. Press release has dateline April 5, 2023 and a 19 April 2023 date. Check size, specific stages and sectors not stated.",
+    "Latest fund (if any after 2023) not found."
+  ]
+}

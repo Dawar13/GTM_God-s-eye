@@ -1,0 +1,135 @@
+{
+  "key": "ibex-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Ibex Investors",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The $106M Denver / Tel Aviv fund belongs to Ibex Investors (ibexinvestors.com), not 'Ibex Ventures': ibexventures.com is a 'Coming Soon' placeholder with no investor content. Calcalist says Ibex Investors is headquartered in Denver with a Tel Aviv office; its site describes Israel and Mobility focus and over $1B AUM. Not Ibex Medical or the Paris 'Ibex' names.",
+  "pages": [
+    { "url": "https://ibexinvestors.com", "title": "Ibex Investors", "publisher": "Ibex Investors", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "http://www.calcalistech.com/ctechnews/article/rjizqcfhp", "title": "Ibex Investors closes $106 million fund to invest in early-stage Israeli startups", "publisher": "Calcalist (CTech)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ynetnews.com/business/article/hks11z76txl", "title": "Corbel secures $6.7M to bring AI sales tech to industrial equipment sector", "publisher": "Ynetnews", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ynetnews.com/business/article/hjnlttkl11e", "title": "Israeli travel-tech Localbird secures $7.4M to scale AI concierge for vacation rentals", "publisher": "Ynetnews", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ibexventures.com", "title": "Ibex Ventures (placeholder)", "publisher": "ibexventures.com", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "asset_manager",
+      "pages": [0],
+      "snippet": "over $1B in assets under management"
+    },
+    "website": {
+      "value": "https://ibexinvestors.com",
+      "pages": [0],
+      "snippet": "from seed through IPO and beyond"
+    },
+    "hq_city": {
+      "value": "Denver",
+      "pages": [1],
+      "snippet": "The firm is headquartered in Denver, Colorado, with an office in Tel Aviv."
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [1],
+      "snippet": "The firm is headquartered in Denver, Colorado, with an office in Tel Aviv."
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a", "series_b", "series_c_plus", "growth"],
+      "pages": [1],
+      "snippet": "from pre-seed to pre-IPO"
+    },
+    "leads": {
+      "value": true,
+      "pages": [2],
+      "snippet": "The round was led by Ibex Investors"
+    },
+    "thesis_text": {
+      "value": "Geographic focus on Israel and a thematic focus on mobility, via venture capital and hedge fund strategies.",
+      "pages": [0],
+      "snippet": "from seed through IPO and beyond"
+    },
+    "stated_sectors": {
+      "value": ["mobility_ev"],
+      "pages": [0],
+      "snippet": "Mobility VC"
+    }
+  },
+  "funds": [
+    {
+      "name": "Ibex Israel VC II LP",
+      "number": "II",
+      "size_original": 106000000,
+      "currency_original": "USD",
+      "close_date": "2024-02-21",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$106 million in capital commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Corbel",
+        "website": null,
+        "description": "AI-powered operating system for industrial equipment manufacturers; helps sales teams quote equipment and offer financing.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 6700000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Ibex Investors"],
+      "participants": ["Joule Ventures", "Restive Ventures", "Selah Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The round was led by Ibex Investors"
+    },
+    {
+      "company": {
+        "name": "Localbird",
+        "website": null,
+        "description": "Israeli travel-tech company building a hybrid AI-human concierge platform for short-term rentals.",
+        "hq_country": "IL",
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 7400000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["IBEX Investors"],
+      "participants": ["State of Mind Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The round was led by IBEX Investors"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "name",
+      "values": ["Ibex Ventures", "Ibex Investors"],
+      "chosen": "Ibex Investors",
+      "reason": "The Denver / Tel Aviv $106M fund is Ibex Investors; ibexventures.com is an empty placeholder. Key kept as given."
+    }
+  ],
+  "open_items": [
+    "Corbel and Localbird articles show no publication date on the fetched pages (search results suggest Localbird around Oct 2025); dates left null. HQ countries not stated for Corbel.",
+    "Check size not stated. A third round (Offroad, Aug 2026 per a search summary of a database page) was not fetched.",
+    "Calcalist reports 'Ibex Israel VC II LP' at $106M announced 21 Feb 2024; search summaries describe it as the firm's fourth Israel fund, not verified.",
+    "Fund type recorded as asset_manager because the site describes venture, hedge and public-equity strategies with over $1B AUM; a VC-only classification would understate it."
+  ]
+}

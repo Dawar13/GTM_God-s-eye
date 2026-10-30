@@ -1,0 +1,161 @@
+{
+  "key": "propeller-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Propeller Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as propellervc.com, Boston ocean-climate fund co-founded by Brian Halligan. Not Ocean 14 Capital.",
+  "pages": [
+    {
+      "url": "https://propellervc.com",
+      "title": "Propeller",
+      "publisher": "Propeller",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://impactalpha.com/propeller-ventures-raises-100-million-climate-tech-fund-for-ocean-based-solutions/",
+      "title": "Propeller Ventures raises $100 million climate tech fund",
+      "publisher": "ImpactAlpha",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.trysignalbase.com/news/funding/orpheus-ocean-secures-28m-pre-seed-funding-accelerating-ocean-climate-innovation-with-propeller",
+      "title": "Orpheus Ocean secures $2.8M pre-seed",
+      "publisher": "SignalBase",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://propellervc.com/blog/topic/funding",
+      "title": "Funding",
+      "publisher": "Propeller",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "We are early stage investors"
+    },
+    "website": {
+      "value": "https://propellervc.com",
+      "pages": [
+        0
+      ],
+      "snippet": "We are early stage investors who develop high conviction in our investments."
+    },
+    "hq_city": {
+      "value": "Boston",
+      "pages": [
+        1
+      ],
+      "snippet": "Boston-based"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        1
+      ],
+      "snippet": "Boston-based"
+    },
+    "stages": {
+      "value": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "PRE-SEED TO SERIES A"
+    },
+    "check_min_usd": {
+      "value": 500000,
+      "pages": [
+        0
+      ],
+      "snippet": "~$500K - $3M"
+    },
+    "check_max_usd": {
+      "value": 3000000,
+      "pages": [
+        0
+      ],
+      "snippet": "~$500K - $3M"
+    },
+    "thesis_text": {
+      "value": "Early-stage investor in ocean-climate technology such as ocean carbon removal and shipping decarbonisation.",
+      "pages": [
+        1
+      ],
+      "snippet": "decarbonizing maritime shipping, lithium mining, offshore wind, and desalination"
+    },
+    "stated_sectors": {
+      "value": [
+        "climate_energy"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "decarbonizing maritime shipping, lithium mining, offshore wind, and desalination"
+    }
+  },
+  "funds": [
+    {
+      "name": "Propeller Fund I",
+      "number": "I",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2022-10-20",
+      "date_precision": "day",
+      "pages": [
+        3
+      ],
+      "snippet": "Today we are proud to announce our first fund of $100 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Orpheus Ocean",
+        "website": null,
+        "description": "Deep-sea robotics.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-03-03",
+      "date_precision": "day",
+      "amount_original": 2800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Propeller"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        2
+      ],
+      "snippet": "led by Propeller"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Other sources cite a $117-118M fund; page figure of $100M recorded.",
+    "Only one round found on a fetched page (pHathom seed not read).",
+    "Boston per ImpactAlpha, matching the lead list."
+  ]
+}

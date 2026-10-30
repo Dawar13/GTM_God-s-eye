@@ -1,0 +1,44 @@
+{
+  "key": "swell-vc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Swell VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed by domain swell.vc: New York pre-seed and seed fund; portfolio page lists Loft Orbital, Crisp, Deel, Credal. The 2024 PR Newswire release (Swell VC, Fund II) matches. Not Swell Partners-style aggregator entries of other firms, and not the fintech Swell that raised a $10M Series A. The lead of a $10M / 2022-08-31 fund close is not supported: the only fund sizes found are Fund II $11.5M (Oct 2024) and an unverified earlier $10M target.",
+  "pages": [
+    { "url": "https://www.swell.vc", "title": "Swell VC", "publisher": "Swell VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/swell-vc-closes-11-5m-fund-ii-proving-small-funds-can-deliver-big-wins-302275881.html", "title": "Swell VC Closes $11.5M Fund II, Proving Small Funds Can Deliver Big Wins", "publisher": "PR Newswire", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "pre-seed and seed-stage venture capital firm" },
+    "website": { "value": "https://www.swell.vc", "pages": [0], "snippet": "A New York-based pre-seed and seed fund investing in AI for critical infrastructure." },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "A New York-based pre-seed and seed fund investing in AI for critical infrastructure." },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "A New York-based pre-seed and seed fund investing in AI for critical infrastructure." },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 1], "snippet": "A New York-based pre-seed and seed fund investing in AI for critical infrastructure." },
+    "thesis_text": { "value": "Backs founders using AI to rebuild the systems that run the world, across space and defense, biology, industrial systems and enterprise infrastructure.", "pages": [0], "snippet": "We back founders rebuilding the systems that run the world with AI." },
+    "stated_sectors": { "value": ["space", "defense_dual_use", "health_bio", "industrial_manufacturing", "enterprise_saas", "ai_apps_agents"], "pages": [0], "snippet": "A New York-based pre-seed and seed fund investing in AI for critical infrastructure." }
+  },
+  "funds": [
+    {
+      "name": "Swell VC Fund II",
+      "number": "II",
+      "size_original": 11500000,
+      "currency_original": "USD",
+      "close_date": "2024-10-15",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "closed Fund II with $11.5 million in commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "funds", "values": ["$10M, 2022-08-31 (lead)", "$11.5M Fund II, 2024-10-15 (press release)"], "chosen": "$11.5M Fund II, 2024-10-15", "reason": "Only the press release was fetched; the 2022 lead found no support. The site references a Fund III with no size." }
+  ],
+  "open_items": [
+    "No rounds recorded: no fetched page describing a specific round names Swell VC. The release cites Loft Orbital Series B ($140M) and Crisp ($97M) as portfolio outcomes without dates or co-investors; search results for Godela, Deepnight, Array Labs did not name Swell.",
+    "Swell VC site references a Fund III with no size; not recorded. Check size not stated on fetched pages.",
+    "The 2022-08-31 $10M lead is unverified; may be Fund I or another firm."
+  ]
+}

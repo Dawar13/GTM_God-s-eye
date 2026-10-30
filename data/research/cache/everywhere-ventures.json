@@ -1,0 +1,47 @@
+{
+  "key": "everywhere-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Everywhere Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as everywhere.vc, a pre-seed firm (formerly The Fund) with a 300-company portfolio list and 500 Founder LPs on its site. Not the unrelated 'Everywhere' brands.",
+  "pages": [
+    { "url": "https://www.everywhere.vc", "title": "Everywhere Ventures", "publisher": "Everywhere Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thecondia.com/fusepay-a-seychelles-based-fintech-raises-350k-pre-seed/", "title": "Fusepay, a Seychelles-based fintech, raises $350K pre-seed", "publisher": "The Condia", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We invest $250k into pre-seed rounds." },
+    "website": { "value": "https://www.everywhere.vc", "pages": [0], "snippet": "Backing founders, everywhere." },
+    "stages": { "value": ["pre_seed"], "pages": [0], "snippet": "We invest $250k into pre-seed rounds." },
+    "check_min_usd": { "value": 250000, "pages": [0], "snippet": "We invest $250k into pre-seed rounds." },
+    "check_max_usd": { "value": 250000, "pages": [0], "snippet": "We invest $250k into pre-seed rounds." },
+    "thesis_text": { "value": "Pre-seed investor backing founders worldwide, supported by a community of founder LPs and operators; stated reach is 300 companies across 30 countries.", "pages": [0], "snippet": "Backing founders, everywhere." }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Fusepay", "website": null, "description": "Seychelles-based fintech modernising B2B payments across the Indian Ocean islands.", "hq_country": "SC", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-08-06",
+      "date_precision": "day",
+      "amount_original": 350000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Hustle Fund"],
+      "participants": ["Everywhere Ventures", "First Check Ventures", "Startup Istanbul", "Ryan Nesbitt"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "raised a $350,000 pre-seed round"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (NYC per lead) not stated on the fetched homepage; omitted. No fund close ($25M, 2023) found; search summaries instead gave Fund I $10M / Fund II $20M and AUM figures of $25M or $100M+, none from fetched pages. Site itself states $100M AUM.",
+    "Only one round recorded. Starcloud pre-seed (2024) appears in search summaries, but the Verdict Series A article does not name Everywhere; Business Wire release returned 403.",
+    "Fusepay lead: The Condia says Hustle Fund led; another search summary said the company listed all five as leads. Seychelles hq_country 'SC' inferred from the page text.",
+    "Check size: homepage says $250k; search summaries cite $50K-$250K elsewhere (not fetched)."
+  ]
+}

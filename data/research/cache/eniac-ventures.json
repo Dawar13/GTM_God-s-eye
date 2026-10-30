@@ -1,0 +1,76 @@
+{
+  "key": "eniac-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Eniac Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as eniac.vc, the New York seed-stage firm (footer 'Eniac Ventures. NYC'; TechCrunch names co-founder Nihal Mehta). Portfolio includes Alloy, Attentive, Hinge-era mobile names. Not the ENIAC computer or the EU ENIAC joint undertaking.",
+  "pages": [
+    { "url": "https://www.eniac.vc", "title": "Eniac Ventures", "publisher": "Eniac Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/04/24/seed-stage-firm-eniac-ventures-raises-220m-across-two-funds", "title": "Seed-stage firm Eniac Ventures raises $220M across two funds", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.gunder.com/en/news-insights/client-news/eniac-ventures-raises-dollar220m-across-two-fund-formations", "title": "Eniac Ventures Raises $220M Across Two Fund Formations", "publisher": "Gunderson Dettmer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=707159", "title": "Refold AI seed funding (Aug 13, 2025)", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.eniac.vc/writings/actor-labs-raises-4m-seed-round-led-by-eniac-ventures", "title": "Actor Labs Raises $4M Seed Round Led by Eniac Ventures", "publisher": "Eniac Ventures", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Seed-stage firm Eniac Ventures raises $220M across two funds" },
+    "website": { "value": "https://www.eniac.vc", "pages": [0], "snippet": "We partner with founders from 0 to 1" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "© 2025 Eniac Ventures. NYC." },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "© 2025 Eniac Ventures. NYC." },
+    "stages": { "value": ["seed"], "pages": [1], "snippet": "pre-product-market-fit generalists" },
+    "leads": { "value": true, "pages": [3, 4], "snippet": "Led by Eniac Ventures" }
+  },
+  "funds": [
+    {
+      "name": "Eniac Ventures VI",
+      "number": "VI",
+      "size_original": 160000000,
+      "currency_original": "USD",
+      "close_date": "2024-04-24",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "new $160M Eniac Ventures VI seed stage fund, as well as its existing $60M Eniac Select I opportunity fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Refold AI", "website": null, "description": "Enterprise startup using AI to automate API integrations.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed funding",
+      "date": "2025-08-13",
+      "date_precision": "day",
+      "amount_original": 6500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Eniac Ventures", "Tidal Ventures"],
+      "participants": ["Better Capital", "Ahead VC", "Karman Ventures", "Z21"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "an enterprise startup that provides artificial intelligence to automate application programming interface integrations"
+    },
+    {
+      "company": { "name": "Actor Labs", "website": null, "description": "Deploys robot models in real-world settings.", "hq_country": null, "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Eniac Ventures"],
+      "participants": ["Hyperion", "Hummingbird Ventures", "2048 Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "We have raised a $4M seed round and are excited to show a snapshot of what our deployed robot models can do"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded; a third (Hyper July 2025, Catio Mar 2025) was seen only in search summaries, not on fetched pages.",
+    "Actor Labs date not on the Eniac page (search summary suggested May 2026, unfetched).",
+    "Fund VI date is the announcement date; actual close date unknown. Select I ($60M) closed 2021 per TechCrunch. Earlier funds (2013 $12.9M) not fetched.",
+    "Check size (avg initial about $1.5M per TechCrunch summary) not recorded: no verbatim quote captured. Sectors: firm says sector-agnostic. No application URL on homepage."
+  ]
+}

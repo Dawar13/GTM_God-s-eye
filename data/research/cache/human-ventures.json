@@ -1,0 +1,45 @@
+{
+  "key": "human-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Human Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "New York early-stage VC and startup studio (Fortune Term Sheet, 2024-04-15; founders Heather Hartnett and Joe Marchese per search summaries); portfolio includes Evvy and Groundswell. Not Human Capital, not Humans& (AI company with a 2026 seed round), not Humans Ventures. human.ventures failed to fetch (certificate error).",
+  "pages": [
+    { "url": "https://www.fortune.com/2024/04/15/human-ventures-approaches-50-million-raised-second-fund", "title": "Human Ventures approaches $50 million raised for its second fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://alleywatch.com/?p=133831", "title": "Evvy seed round announcement", "publisher": "AlleyWatch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "started as a venture studio and physical space for founders" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "New York-based" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "New York-based" },
+    "thesis_text": { "value": "Invests in emerging categories, especially the human needs economy (health, wellness, livelihood) and the attention economy (hospitality, media).", "pages": [0], "snippet": "categories that we think aren't really categories yet" },
+    "stated_sectors": { "value": ["health_bio", "consumer"], "pages": [0], "snippet": "categories that we think aren't really categories yet" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Evvy", "website": null, "description": "Women's health company selling an at-home vaginal microbiome test using metagenomic sequencing.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed round of $5M",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["General Catalyst", "BoxGroup", "Virtue", "Human Ventures", "G9 Ventures", "BBG Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Evvy is launching the first-ever at-home vaginal microbiome test to use metagenomic sequencing."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round (Evvy seed, about July 2021 per URL/search summary; page shows no date; lead not named on page, General Catalyst leading is from a search summary only). No recent (last 24 months) rounds found; PitchBook/Seedtable listings of 2025 seeds were not fetched.",
+    "Funds not recorded: Fortune says only 'currently raising its second fund' and 'approached the $50 million threshold'; no close figure or date on a fetched page. $50M 2019 first fund not confirmed on a fetched page.",
+    "Website, stages, check size, application URL not found on fetched pages."
+  ]
+}

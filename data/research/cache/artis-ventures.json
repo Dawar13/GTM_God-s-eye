@@ -1,0 +1,99 @@
+{
+  "key": "artis-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "ARTIS Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ARTIS (ARTIS Ventures), San Francisco, site av.co (artisventures.com redirects there); portfolio page names Conceivable, Rad AI, Seed Health, Science, Onto, Metriport; Conceivable and OverT press releases name ARTIS Ventures. Not Artis Capital, not Artis Partners.",
+  "pages": [
+    { "url": "http://www.av.co/", "title": "ARTIS", "publisher": "ARTIS Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/artis-ventures-200-million-in-new-capital-closed/", "title": "ARTIS Ventures: $200 Million In New Capital Closed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.biospace.com/press-releases/conceivable-life-sciences-closes-18-million-series-a-financing-to-advance-development-and-commercialization-of-the-worlds-first-ai-powered-automated-ivf-lab", "title": "Conceivable Life Sciences Closes $18 Million Series A Financing", "publisher": "BioSpace (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.biospace.com/press-releases/conceivable-life-sciences-secures-50-million-series-a", "title": "Conceivable Life Sciences Secures $50 Million Series A", "publisher": "BioSpace (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.biospace.com/overt-bio-raises-16-million-tapping-innovative-reprogramming-of-immune-cells-to-deliver-next-generation-therapies", "title": "OverT Bio Raises $16 Million", "publisher": "BioSpace", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "reimagining the systems that sustain life itself" },
+    "website": { "value": "https://www.av.co", "pages": [0], "snippet": "bold application of frontier technologies" },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "499 Jackson Street, Suite 400, San Francisco, CA 94111" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "499 Jackson Street, Suite 400, San Francisco, CA 94111" },
+    "thesis_text": {
+      "value": "Backs founders applying frontier technologies such as AI to make human health proactive, personalized and resilient.",
+      "pages": [0],
+      "snippet": "build toward a world where health is proactive, personalized, and resilient"
+    },
+    "stated_sectors": {
+      "value": ["health_bio", "ai_apps_agents"],
+      "pages": [0],
+      "snippet": "the future of the human condition can be made more resilient through the bold application of frontier technologies"
+    }
+  },
+  "funds": [
+    {
+      "name": "TechBio II",
+      "number": "II",
+      "size_original": 200000000,
+      "currency_original": "USD",
+      "close_date": "2023-12",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "focused on the convergence of health and medicine"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Conceivable Life Sciences", "website": null, "description": "AI-powered robotic automation for IVF laboratories.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-01-14",
+      "date_precision": "day",
+      "amount_original": 18000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["ARTIS Ventures"],
+      "participants": ["Atlantic Health Venture Studio", "Muse Capital", "Scrub Capital", "ACME Capital", "Black Opal Ventures", "Cadence Healthcare Ventures", "Future Positive Capital", "Stride.VC", "Time BioVentures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Conceivable is creating a scalable solution that democratizes IVF and delivers equity in fertility care."
+    },
+    {
+      "company": { "name": "Conceivable Life Sciences", "website": null, "description": "AI-powered robotic automation for IVF laboratories.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-09-15",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Advance Venture Partners"],
+      "participants": ["ARTIS Ventures", "Stride", "ACME"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "This funding validates our vision of transforming IVF through AI-powered robotic automation,"
+    },
+    {
+      "company": { "name": "OverT Bio", "website": null, "description": "Cell therapies for solid tumors via reprogramming of immune cells.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2024-05-06",
+      "date_precision": "day",
+      "amount_original": 16000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["ARTIS Ventures", "Wing VC"],
+      "participants": ["Fusion Fund", "OMX Ventures", "Alexandria Venture Investments", "Gaingels", "Civilization Ventures", "Hawktail", "Cancer Research Institute"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "OverT is making bold bets on how to create truly transformative cell therapies."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Stages and check size not stated on av.co; omitted (aggregator profiles give conflicting ranges in search results only).",
+    "TechBio II close date: only the Pulse 2.0 article dated 20 Dec 2023 fetched; lead date 2023-12-18 unconfirmed so recorded as month. Search results called it the fourth fund (FinSMEs, Drypowder) versus second (Pulse 2.0); not reconciled. Law360 paywalled.",
+    "Rounds are mostly healthcare/biotech; no AI/industrial rounds found for ARTIS in the budget.",
+    "Conceivable press releases do not give the company website or HQ; BioSpace summaries of the OverT and Conceivable releases were read through a fetch summarizer, snippets are quotes the summarizer returned."
+  ]
+}

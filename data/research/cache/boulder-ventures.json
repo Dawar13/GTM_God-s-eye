@@ -1,0 +1,120 @@
+{
+  "key": "boulder-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Boulder Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as boulderventures.com, 1941 Pearl Street, Boulder CO; IT and biotech venture firm for Colorado and the Mid-Atlantic.",
+  "pages": [
+    {
+      "url": "https://boulderventures.com",
+      "title": "Boulder Ventures",
+      "publisher": "Boulder Ventures",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://securitybrief.com.au/story/rapidfort-raises-usd-42m-for-automated-vuln-fixes",
+      "title": "RapidFort raises USD $42M",
+      "publisher": "SecurityBrief",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "Venture Capital for IT and Biotech companies in Colorado and the Mid-Atlantic"
+    },
+    "website": {
+      "value": "https://boulderventures.com",
+      "pages": [
+        0
+      ],
+      "snippet": "Boulder Ventures I - VIII"
+    },
+    "hq_city": {
+      "value": "Boulder",
+      "pages": [
+        0
+      ],
+      "snippet": "1941 Pearl Street, #300 Boulder, CO 80302"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        0
+      ],
+      "snippet": "1941 Pearl Street, #300 Boulder, CO 80302"
+    },
+    "thesis_text": {
+      "value": "Venture capital for IT and biotech companies in Colorado and the Mid-Atlantic.",
+      "pages": [
+        0
+      ],
+      "snippet": "Venture Capital for IT and Biotech companies in Colorado and the Mid-Atlantic"
+    },
+    "stated_sectors": {
+      "value": [
+        "enterprise_saas",
+        "health_bio"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "Venture Capital for IT and Biotech companies"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "RapidFort",
+        "website": null,
+        "description": "Software supply chain security with continuous remediation.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-02",
+      "date_precision": "month",
+      "amount_original": 42000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Blue Cloud Ventures",
+        "Forgepoint Capital"
+      ],
+      "participants": [
+        "Felicis Ventures",
+        "Alumni Ventures",
+        "Boulder Ventures",
+        "Brave Capital",
+        "Evolution Ventures",
+        "Florida Funders",
+        "Gaingels",
+        "Mana Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "Other investors included Alumni Ventures, Boulder Ventures, Brave Capital"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Fund VIII ($58M, Nov 2022) not confirmed on a fetched page; a Jan 2026 PEI headline says Fund IX targets $60M (headline only), so no fund recorded.",
+    "Stages and check size not stated on the homepage.",
+    "Only one round found on a fetched page."
+  ]
+}

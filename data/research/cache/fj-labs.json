@@ -1,0 +1,44 @@
+{
+  "key": "fj-labs",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "FJ Labs",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as fjlabs.com, the marketplace-focused early-stage firm whose founding partner is Fabrice Grinda (team page). Not FJ Labs Funds LPs SPVs on EDGAR aggregators, and not an unrelated 'FJ' studio.",
+  "pages": [
+    { "url": "https://fjlabs.com", "title": "FJ Labs", "publisher": "FJ Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fjlabs.com/strategy", "title": "FJ Labs Strategy", "publisher": "FJ Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/01/25/most-active-investor-fj-labs-closes-on-260m-across-two-new-vehicles", "title": "Most active investor FJ Labs closes on $260M across two new vehicles", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "FJ Labs has garnered $260 million in capital commitments across a pre-seed fund" },
+    "website": { "value": "https://fjlabs.com", "pages": [0], "snippet": "Angel Investing At Venture Scale" },
+    "stages": { "value": ["pre_seed"], "pages": [1, 2], "snippet": "Focus on Early-Stage Marketplaces" },
+    "leads": { "value": false, "pages": [2], "snippet": "We don't lead. We don't price. We don't take board seats." },
+    "thesis_text": { "value": "Backs scalable, capital-efficient marketplaces and network-effect businesses with sound unit economics and market-leader potential, across large economies worldwide.", "pages": [0, 1], "snippet": "Marketplaces and network effects businesses are our bread and butter." },
+    "stated_sectors": { "value": ["consumer", "supply_chain_logistics", "fintech"], "pages": [0], "snippet": "We focus on marketplaces and network effect businesses" }
+  },
+  "funds": [
+    {
+      "name": "Two new vehicles (pre-seed fund and Series B-and-beyond opportunity fund)",
+      "number": null,
+      "size_original": 260000000,
+      "currency_original": "USD",
+      "close_date": "2023-01-25",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "FJ Labs has garnered $260 million in capital commitments across a pre-seed fund and an opportunity-style"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "funds.size", "values": ["200000000 (lead list)", "260000000 (TechCrunch, 2023-01-25)"], "chosen": "260000000", "reason": "TechCrunch reports $260M across two vehicles; $200M appears only in unverified aggregator listings." }
+  ],
+  "open_items": [
+    "No round recorded: FJ Labs portfolio page lists companies with year but no amounts/co-investors; announcement pages for 2025-26 rounds (Cata, 1Buy.AI, Bidbus, Jusfy) were not fetched. nordic9 Pair article returned 403.",
+    "HQ city, check size and application route not stated on fetched firm pages; stages inferred from the 'pre-seed fund' / 'Early-Stage Marketplaces' wording plus Series B-and-beyond vehicle (not recorded).",
+    "Stated sector ids are model-mapped from 'marketplaces'; no sector list on site."
+  ]
+}

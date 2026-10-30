@@ -1,0 +1,54 @@
+{
+  "key": "beta-boom",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Beta Boom",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Beta Boom (betaboom.com), boutique pre-seed/seed VC in Salt Lake City with managing partners Kimmy and Sergio Paluch (Pulse 2.0); portfolio page lists Guidepad, Elm AI, Alpha Level, Parakeet Risk. Not the Utah Innovation Fund ($15M state program) that a search surfaced; no source linked them. Lead's $15M figure not found.",
+  "pages": [
+    { "url": "https://www.betaboom.com", "title": "Beta Boom", "publisher": "Beta Boom", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/beta-boom-14-5-million-fund-ii/amp/", "title": "Beta Boom: $14.5 Million Fund II Closed To Invest In Solutions For Underserved Populations", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://betaboom.com/pre-seed-funding-enterprise-startups", "title": "Pre-seed funding for enterprise startups", "publisher": "Beta Boom", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "a pre-seed and seed stage venture capital firm" },
+    "website": { "value": "https://www.betaboom.com", "pages": [0], "snippet": "a boutique VC fund located in Salt Lake City" },
+    "hq_city": { "value": "Salt Lake City", "pages": [0], "snippet": "a boutique VC fund located in Salt Lake City" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "a boutique VC fund located in Salt Lake City" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1, 2], "snippet": "We invest at the pre seed and seed stage in Enterprise SaaS startups." },
+    "thesis_text": {
+      "value": "Pre-seed and seed investor backing founders outside the Silicon Valley mold, with focus on enterprise AI, cybersecurity and healthcare.",
+      "pages": [0],
+      "snippet": "in founders who defy the traditional Silicon Valley mold"
+    },
+    "application_url": { "value": "https://betaboom.com/apply", "pages": [0], "snippet": "Apply for Investment" }
+  },
+  "funds": [
+    {
+      "name": "Beta Boom Fund II",
+      "number": "II",
+      "size_original": 14500000,
+      "currency_original": "USD",
+      "close_date": "2024-02-13",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$14.5 million Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    {
+      "field": "funds",
+      "values": ["$15M (lead list, 2024)", "$14.5M Fund II, Feb 13 2024 (Pulse 2.0)"],
+      "chosen": "$14.5M",
+      "reason": "Fetched press page states $14.5M; $15M not found on any page."
+    }
+  ],
+  "open_items": [
+    "0 rounds recorded. No fetched page names Beta Boom in a specific round (Appnigma AI page gives no round details; Pulse 2.0 lists Bolder Money, Canopie, Attane Health with co-investors but no round detail). Search summaries cite Alpha Level, Parakeet, Elm AI ($2M seed Apr 2025) and Guidepad, unverified.",
+    "Check size (homepage summary: average pre-seed $350K-$500K) not recorded because I could not quote the page's own words. Cold-inbound policy not recorded for the same reason; betaboom.com/apply link noted on homepage.",
+    "Stated sectors not recorded as ids for the same reason. Pulse 2.0 names fintech, digital health and future of work."
+  ]
+}

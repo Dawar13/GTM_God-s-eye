@@ -1,0 +1,82 @@
+{
+  "key": "ex-ante",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "ex/ante",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Identified as ex/ante, the seed-stage fund managed by Zoe Weinberg and Michael Mosier, incubated by Schmidt Futures, with Reality Defender, Lockr and Webacy named as portfolio companies (Coinlive relaying Forbes). Reality Defender and HoundDog.ai releases name 'ex/ante' / 'Ex/ante' as investor. Not Ex Ante Partners or Overlap Holdings (a different $33M NYC fund). The firm's own website could not be fetched (exante.vc and www.exante.vc failed).",
+  "pages": [
+    { "url": "https://www.coinlive.com/news-flash/309453", "title": "ex/ante raises $33 million (Forbes relay)", "publisher": "Coinlive", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://prnewswire.com/news-releases/deepfake-detection-platform-reality-defender-secures-15-million-in-series-a-funding-led-by-dcvc-301958923.html", "title": "Deepfake Detection Platform Reality Defender Secures $15 Million in Series A Funding Led by DCVC", "publisher": "PR Newswire", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=656166", "title": "HoundDog.ai closes $3.1M seed round", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "successfully raised $33 million in funding" },
+    "stages": { "value": ["seed"], "pages": [0, 2], "snippet": "led by E14, Mozilla and Ex/ante" },
+    "thesis_text": {
+      "value": "Early-stage investor in 'agency technology' touching human behavior and rights online, concerned with internet threats to democracy and intellectual property in the AI era.",
+      "pages": [0],
+      "snippet": "agency technology"
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "fintech", "crypto_web3"],
+      "pages": [0],
+      "snippet": "artificial intelligence, cybersecurity, data infrastructure, digital identity, fintech, and Web3"
+    }
+  },
+  "funds": [
+    {
+      "name": "ex/ante Fund I",
+      "number": "I",
+      "size_original": 33000000,
+      "currency_original": "USD",
+      "close_date": "2023-11-03",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "successfully raised $33 million in funding"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Reality Defender", "website": null, "description": "Security platform detecting deepfakes and AI-generated content across audio, video, images and text.", "hq_country": null, "founded_year": 2021, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2023-10-17",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["DCVC"],
+      "participants": ["Comcast", "ex/ante", "Partnership Fund for New York City", "Rackhouse Venture Capital", "Nat Friedman's AI Grant"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Our new partners at DCVC not only believe in our platform and our team, but share our vision"
+    },
+    {
+      "company": { "name": "HoundDog.ai", "website": null, "description": "AI-powered code scanner that prevents sensitive data leaks and automates compliance.", "hq_country": null, "founded_year": null, "sector": "dev_tools", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2024-05-22",
+      "date_precision": "day",
+      "amount_original": 3100000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["E14", "Mozilla", "ex/ante"],
+      "participants": ["Amjad Masad"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "led by E14, Mozilla and Ex/ante"
+    }
+  ],
+  "conflicts": [
+    { "field": "fund close date", "values": ["2023-11-02 (lead list, unconfirmed)", "2023-11-03 (Coinlive page header)"], "chosen": "2023-11-03", "reason": "Only the fetched page's date is evidence; it is a news date, not necessarily the close." }
+  ],
+  "open_items": [
+    "Firm website and HQ (New York per lead list) not confirmed on a fetched page; omitted. Fund size reported by some directories as $40M (unverified).",
+    "Only 2 rounds found; a 2025 Cofident Security seed and HoundDog.ai later round appeared in search snippets without confirmation of ex/ante's role.",
+    "Both rounds are dated before 2024-05; none in the last 24 months confirmed.",
+    "Coinlive is a crypto news relay of a Forbes article; Forbes original not fetched."
+  ]
+}

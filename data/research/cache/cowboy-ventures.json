@@ -1,0 +1,42 @@
+{
+  "key": "cowboy-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cowboy Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cowboy.vc, the seed fund founded by Aileen Lee (TechCrunch 2023 fund coverage; site lists Drata, Guild, Homebase, Vic.ai). Not Cowboy Space or Cowboy (e-bike company).",
+  "pages": [
+    { "url": "https://www.cowboy.vc", "title": "Cowboy Ventures", "publisher": "Cowboy Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cowboy.vc/portfolio", "title": "Cowboy Ventures portfolio", "publisher": "Cowboy Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/01/23/cowboy-ventures-goes-bigger-with-260m-across-two-new-funds-including-an-opportunity-fund/", "title": "Cowboy Ventures goes bigger, with $260M across two new funds, including an opportunity fund", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "Bay Area-based seed-stage focused fund" },
+    "website": { "value": "https://www.cowboy.vc", "pages": [0], "snippet": "We seed trailblazers, changemakers, and legends in the making" },
+    "hq_city": { "value": "Palo Alto", "pages": [0], "snippet": "525 Lytton Ave, Palo Alto, CA 94301" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "525 Lytton Ave, Palo Alto, CA 94301" },
+    "stages": { "value": ["seed"], "pages": [2], "snippet": "Bay Area-based seed-stage focused fund" },
+    "thesis_text": { "value": "Seed investor that favours pre-product startups and positions itself as a founder-first partner backed by a community of operators.", "pages": [0, 2], "snippet": "prefers to invest in 'pre-product' startups" }
+  },
+  "funds": [
+    {
+      "name": "Cowboy Ventures Fund IV",
+      "number": "IV",
+      "size_original": 140000000,
+      "currency_original": "USD",
+      "close_date": "2023-01-23",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "The outfit garnered $140 million in commitments for its fourth flagship fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No round recorded: fetched pages name Cowboy as an early investor in Guild Education and Drata (TechCrunch 2023) but do not name Cowboy as a participant in a specific round; portfolio page has no round data. 2026 rounds seen only in search-result summaries (Standard Kernel seed, Derapi, Graici) and not fetched.",
+    "Fund date is the TechCrunch publication date (2023-01-23). Also closed $120M first opportunity ('Mustang') fund same day, not recorded (latest-fund-only is the flagship). Earlier funds ($36M 2012, $57M 2014) not confirmed on fetched pages; TechCrunch gives prior funds as $40M, $60M, $95M.",
+    "Homepage sector list, check size, and cold-inbound route not recorded (not quotable from fetch summary); site mentions a hello@ general contact and a /how-we-work page, not fetched."
+  ]
+}

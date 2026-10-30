@@ -1,0 +1,95 @@
+{
+  "key": "bluestein-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Bluestein Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the Chicago food-system venture firm anchored by the Bluestein family (managing partner Andrew Bluestein per BiomeSense release), via its own Substack announcement of Fund III and FoodNavigator coverage; portfolio names Factor, Foxtrot, Meati, BiomeSense. Not Bluestein Associates / unrelated Bluestein entities. bluestein.vc itself could not be fetched.",
+  "pages": [
+    { "url": "https://bluesteinventures.substack.com/p/bluestein-ventures-raises-45-million", "title": "Bluestein Ventures Raises $45 Million Fund III", "publisher": "Bluestein Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.foodnavigator.com/Article/2024/02/20/Bluestein-Ventures-closes-third-fund-with-45m-to-focus-on-nutrition-sustainability-digitization/", "title": "Bluestein Ventures closes third fund with $45m", "publisher": "FoodNavigator", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://sosv.com/biomesense-raises-7m-to-develop-mainstream-gut-biome-test/", "title": "BiomeSense raises $7M to develop mainstream gut biome test", "publisher": "SOSV", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.biospace.com/biomesense-closes-oversubscribed-3-million-funding-round", "title": "BiomeSense Closes Oversubscribed $3 Million Funding Round", "publisher": "BioSpace", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/lembas-3-6-million-raised-for-ai-based-bioactive-peptide-discovery", "title": "Lembas: $3.6 Million Raised For AI-Based Bioactive Peptide Discovery", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "anchored by the Bluestein Family" },
+    "hq_city": { "value": "Chicago", "pages": [0], "snippet": "Chicago" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Chicago" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [1], "snippet": "primarily pre-Seed to Series A" },
+    "thesis_text": {
+      "value": "Invests in early-stage companies building a healthier, more sustainable food system, including food-as-medicine, nutrition and AI applied to food supply chains.",
+      "pages": [0, 1],
+      "snippet": "products and services geared towards creating a healthier and more sustainable food system"
+    },
+    "stated_sectors": { "value": ["consumer", "health_bio"], "pages": [0, 1], "snippet": "transform the food system to be better, healthier, and more sustainable" }
+  },
+  "funds": [
+    {
+      "name": "Bluestein Ventures Fund III",
+      "number": "III",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2024-02-20",
+      "date_precision": "day",
+      "pages": [0, 1],
+      "snippet": "has raised $45m for its third fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "BiomeSense", "website": null, "description": "Building an AI-powered intelligence platform for the gut microbiome; SOSV portfolio company and IndieBio graduate.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "oversubscribed round",
+      "date": "2025-10-21",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Bluestein Ventures"],
+      "participants": ["Labcorp Venture Fund", "Emil Capital", "Shorewind Capital", "OceanM19"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Labcorp Venture Fund, Emil Capital, Shorewind Capital, and OceanM19"
+    },
+    {
+      "company": { "name": "Lembas", "website": null, "description": "AI-based bioactive peptide discovery company (GLP-1 food ingredient).", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-06-22",
+      "date_precision": "day",
+      "amount_original": 3600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["FLORA Ventures"],
+      "participants": ["Bluestein Ventures", "Fresh Fund", "Longevity Venture Partners", "Maia Ventures", "Siddhi Capital", "Mandi Ventures", "SDH"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Bluestein Ventures, Fresh Fund, Longevity Venture Partners, Maia Ventures, Siddhi Capital, Mandi Ventures, and SDH"
+    },
+    {
+      "company": { "name": "BiomeSense", "website": null, "description": "Biotech unlocking microbiome health benefits with a smart bathroom device and bioinformatics software.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "oversubscribed $3 million funding round",
+      "date": "2023-05-18",
+      "date_precision": "day",
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Bluestein Ventures"],
+      "participants": ["Harvest Ridge Capital", "SOSV", "Seerave Foundation"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Led by Bluestein Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "bluestein.vc could not be fetched; check size, application URL and cold-inbound policy not found on a fetched page (search summaries cite $500K-$1.5M, unverified).",
+    "Press release dated Feb 20, 2024; no verbatim fund snippet beyond FoodNavigator's.",
+    "Round company HQ countries not stated on fetched pages (Lembas HQ disagrees across sources: UK vs Israel).",
+    "ALTR $5M seed (Jul 2025) appears only in aggregator summaries; not fetched, not recorded."
+  ]
+}

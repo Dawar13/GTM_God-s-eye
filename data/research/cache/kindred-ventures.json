@@ -1,0 +1,87 @@
+{
+  "key": "kindred-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Kindred Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as kindredventures.com (Kindred Ventures LLC), the early-stage venture firm whose site lists Sandbar, Corgi, Inversion and OpenPhone; its own announcement page covers the $100M second fund of 2021. Not Kindred Capital or Kindred Biosciences.",
+  "pages": [
+    { "url": "https://www.kindredventures.com", "title": "Kindred Ventures", "publisher": "Kindred Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://kindredventures.com/announcement/kindred-ventures-just-closed-its-second-fund-with-100-million-in-capital-commitments/", "title": "Kindred Ventures just closed its second fund with $100 million in capital commitments", "publisher": "Kindred Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2026/03/10/sandbar-secures-23m-series-a-for-its-ai-note-taking-ring/", "title": "Sandbar secures $23M Series A for its AI note-taking ring", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.wastedive.com/news/replenysh-series-a-funding-recycling-infrastructure-data-supply-chain/746730/", "title": "Replenysh raises Series A", "publisher": "Waste Dive", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://svdaily.com/2023/11/06/opal-snaps-up-17-million-series-a/", "title": "Opal snaps up $17 million Series A", "publisher": "Silicon Valley Daily", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Kindred Ventures just closed its second fund with $100 million in capital commitments" },
+    "website": { "value": "https://www.kindredventures.com", "pages": [0], "snippet": "We back visionary and relentless founders building the future using technology and science." },
+    "thesis_text": { "value": "Backs visionary, relentless founders building the future with technology and science; also names quiet electric transportation as a focus.", "pages": [0], "snippet": "We back visionary and relentless founders building the future using technology and science." }
+  },
+  "funds": [
+    {
+      "name": "Kindred Ventures II",
+      "number": "II",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2021-02-01",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Kindred Ventures just closed its second fund with $100 million in capital commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Sandbar", "website": null, "description": "Maker of an AI note-taking ring.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-10",
+      "date_precision": "day",
+      "amount_original": 23000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Adjacent", "Kindred Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The company has now raised $23 million in a Series A funding round led by Adjacent and Kindred Ventures."
+    },
+    {
+      "company": { "name": "Replenysh", "website": null, "description": "Recycling infrastructure and supply chain data company.", "hq_country": null, "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-04-30",
+      "date_precision": "day",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["M13"],
+      "participants": ["Incite", "Kindred Ventures", "Floodgate Fund"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Venture capital firm M13 led the investment, along with participation from Incite, Kindred Ventures"
+    },
+    {
+      "company": { "name": "Opal", "website": null, "description": "Maker of the Opal camera.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2023-11-06",
+      "date_precision": "day",
+      "amount_original": 17000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Founders Fund"],
+      "participants": ["Kindred Ventures", "Marques Brownlee", "Casey Neistat"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "with continued participation from Kindred Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Latest fund not confirmed on a fetched page: only Fund II ($100M, 2021-02-01) recorded. Search summaries mention a 2019 $56M fund, later funds and 2026 SEC filings for Fund IV (about $190M raised) and Selector II; none fetched.",
+    "HQ (San Francisco per fetch summary, Bay Area per lead), stages and check size not quotable from fetched pages; left out.",
+    "Opal date is the article date. Axios (Inversion) returned 403 and WWD (Faircraft) 402; not used."
+  ]
+}

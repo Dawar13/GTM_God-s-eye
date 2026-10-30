@@ -1,0 +1,41 @@
+{
+  "key": "audacious-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Audacious Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Early-stage VC led by Nakul Mandan (search results; firm's 'Audacious 2.0' fund post is on nakulmandan.squarespace.com). Identified here only through its co-lead of Tezi's 2024 seed (TechCrunch). Not Audacity VC or Audacious Capital. Firm website audacious.vc and the fund post could not be fetched (connection refused; HTTP 401).",
+  "pages": [
+    { "url": "https://techcrunch.com/2024/07/31/tezi-is-building-an-ai-agent-for-hiring-managers", "title": "Tezi is building an AI agent for hiring managers", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "led by 8VC and Audacious Ventures" },
+    "leads": { "value": true, "pages": [0], "snippet": "led by 8VC and Audacious Ventures" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Tezi", "website": null, "description": "Early-stage startup building an AI agent that helps HR teams find candidates for job openings.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "$9 million seed",
+      "date": "2024-07-31",
+      "date_precision": "day",
+      "amount_original": 9000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["8VC", "Audacious Ventures"],
+      "participants": ["Liquid 2", "Afore", "PrimeSet", "South Park Commons"],
+      "unspecified": [],
+      "pages": [0],
+      "snippet": "led by 8VC and Audacious Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Lightfield $47M Series A (Sept 2026): fetched Unite.AI page does not name Audacious, so not recorded. Maxima Series A (Nov 2025, CB Insights listing) not fetched. Nominal 2026 round: no mention of Audacious.",
+    "Fund not recorded: the $150M 'Audacious 2.0' second fund (April 2024) appears only in search-result titles/summaries; the firm post returned 401 and was not read.",
+    "Website, HQ (San Francisco per search summaries), stages, sectors, check size, application URL not verified on fetched pages."
+  ]
+}

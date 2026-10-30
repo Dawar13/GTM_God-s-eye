@@ -1,0 +1,93 @@
+{
+  "key": "underscore",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Underscore VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as underscore.vc, Boston-based pre-seed/seed VC (131 Oliver Street) whose homepage lists CloudZero, Hi Marley, Salsify, Terra and Hypernatural; Gunderson Dettmer names 'Boston-based client Underscore VC' for the $58M Fund III. Not Underscore Capital or Underscore (other).",
+  "pages": [
+    { "url": "https://www.underscore.vc", "title": "Underscore VC", "publisher": "Underscore VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.gunder.com/en/news-insights/client-news/boston-based-underscore-vc-announces-dollar58m-fund-iii", "title": "Boston-Based Underscore VC Announces $58M Fund III", "publisher": "Gunderson Dettmer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.securityweek.com/terra-security-raises-8m-for-agentic-ai-penetration-testing-platform/", "title": "Terra Security Raises $8M for Agentic AI Penetration Testing Platform", "publisher": "SecurityWeek", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/terra-security-30-million-series-a-raised-to-transform-penetration-testing-with-agentic-ai/amp/", "title": "Terra Security: $30 Million Series A Raised To Transform Penetration Testing With Agentic AI", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/hypernatural-9-2-million-secured-for-scaling-ai-video-creator", "title": "Hypernatural: $9.2 Million Secured For Scaling AI Video Creator", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Underscore VC is a Boston-based venture capital firm backing founders applying AI to real-world problems" },
+    "website": { "value": "https://www.underscore.vc", "pages": [0], "snippet": "Underscore VC is a Boston-based venture capital firm backing founders applying AI to real-world problems" },
+    "hq_city": { "value": "Boston", "pages": [0, 1], "snippet": "Boston-based client Underscore VC" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "Boston-based client Underscore VC" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "at Pre-Seed and Seed" },
+    "thesis_text": { "value": "Boston firm backing founders who apply AI to real-world problems, with a profit-sharing community of experts.", "pages": [0], "snippet": "backing founders applying AI to real-world problems" },
+    "stated_sectors": { "value": ["ai_apps_agents", "enterprise_saas", "fintech"], "pages": [0, 1], "snippet": "bold B2B software" }
+  },
+  "funds": [
+    {
+      "name": "Underscore VC Fund III",
+      "number": "III",
+      "size_original": 58000000,
+      "currency_original": "USD",
+      "close_date": "2024-04-12",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$58 million Fund III formation"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Hypernatural", "website": null, "description": "AI video creator that turns text, stories or scripts into custom videos for everyday creators.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "pre-seed and seed ($9.2M total)",
+      "date": "2025-07-27",
+      "date_precision": "day",
+      "amount_original": 9200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["AIX Ventures", "Underscore VC"],
+      "participants": ["Adverb", "Character.vc", "43 VC"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "one of the fastest AI video creators"
+    },
+    {
+      "company": { "name": "Terra Security", "website": null, "description": "Agentic AI web application penetration testing platform with human expert supervision.", "hq_country": null, "founded_year": 2024, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-09-19",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Felicis"],
+      "participants": ["Dell Technologies Capital", "SVCI", "SYN Ventures", "LAMA Partners", "Underscore VC"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "existing backers SYN Ventures, LAMA Partners, and Underscore VC"
+    },
+    {
+      "company": { "name": "Terra Security", "website": null, "description": "Agentic AI web application penetration testing platform with human expert supervision.", "hq_country": null, "founded_year": 2024, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed funding",
+      "date": "2025-04-23",
+      "date_precision": "day",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SYN Ventures", "FXP Ventures"],
+      "participants": ["Underscore VC"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Agentic AI-powered penetration testing startup Terra Security on Tuesday announced raising $8 million in seed funding."
+    }
+  ],
+  "conflicts": [
+    { "field": "Hypernatural round lead", "values": ["AIX Ventures and Underscore VC (Pulse 2.0)", "Underscore listed only as participant (Seedtable, search summary)"], "chosen": "AIX Ventures and Underscore VC", "reason": "Pulse 2.0 is the fetched page; a company post said AIX led seed and Underscore led pre-seed (not fetched)." }
+  ],
+  "open_items": [
+    "Fund I ($85M, 2016) and Fund II ($115M, 2018) not confirmed on fetched pages; only Fund III recorded. Fund III date is the Gunderson announcement date.",
+    "Check size not stated. Homepage lists a contact email and phone, deliberately not recorded; no pitch link.",
+    "Hypernatural is a combined $9.2M pre-seed and seed; stage recorded as seed, amount is the total."
+  ]
+}

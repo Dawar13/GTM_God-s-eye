@@ -1,0 +1,42 @@
+{
+  "key": "cake-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cake Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cake.vc, the pre-seed and seed firm whose portfolio includes Eli Health, Frame Fertility, Culina Health and Death Clock; Venture Capital Journal reports its $17m first fund from BofA, Cendana and Pivotal. Not Cake (the crypto/DeFi blockchain project) or Cake DeFi.",
+  "pages": [
+    { "url": "https://www.cake.vc", "title": "Cake Ventures", "publisher": "Cake Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.privateequityinternational.com/diverse-led-cake-ventures-raises-17m-from-bofa-cendana-pivotal-more", "title": "Diverse-led Cake Ventures raises $17m from BofA, Cendana, Pivotal, more", "publisher": "Venture Capital Journal", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Diverse-led Cake Ventures raises $17m from BofA, Cendana, Pivotal, more" },
+    "website": { "value": "https://www.cake.vc", "pages": [0], "snippet": "invests in founders with global ambitions" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "invest at seed and pre-seed" },
+    "thesis_text": { "value": "Backs founders building for tomorrow's internet users: longevity and later life, women's growing spending power, and a majority-minority consumer base.", "pages": [0], "snippet": "Investing in where we're going, not where we came from." },
+    "stated_sectors": { "value": ["health_bio", "consumer"], "pages": [0], "snippet": "Later-life needs and longevity" },
+    "application_url": { "value": "https://www.cake.vc/apply", "pages": [0], "snippet": "What are you Building?" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "What are you Building?" }
+  },
+  "funds": [
+    {
+      "name": "Cake Ventures Fund I",
+      "number": "I",
+      "size_original": 17000000,
+      "currency_original": "USD",
+      "close_date": "2023-01-12",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Diverse-led Cake Ventures raises $17m from BofA, Cendana, Pivotal, more"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No round recorded: the Eli Health seed announcement (HLTH, 2023-04-05, $3.6M) does not name Cake Ventures; other round pages for Frame Fertility, Culina Health were not fetched.",
+    "HQ not stated on fetched pages (search summaries say San Francisco; not recorded). Check size (~$250K-$500K in search summary) not on fetched pages. Medium announcement of Fund I returned 403; /portfolio returned 404.",
+    "Fund date is the VCJ article date; 'announced' date vs close date not distinguished. Application URL /apply taken from the homepage 'Apply' link as described in the fetch summary."
+  ]
+}

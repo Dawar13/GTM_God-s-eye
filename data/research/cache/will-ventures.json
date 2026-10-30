@@ -1,0 +1,73 @@
+{
+  "key": "will-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Will Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Boston-based seed firm for consumer, health, sports and entertainment, founded by former football players (TechCrunch, Oct 2022); Fund II $150M. Not Will Capital Management, not Willow or Willo. The firm's own site could not be fetched (will.vc failed); willventures.com loaded but mentions a Los Angeles office and no HQ, so it was not used as a source.",
+  "pages": [
+    { "url": "https://techcrunch.com/2022/10/18/will-ventures-second-fund-sports-technologies/", "title": "Will Ventures closes second fund with $150M to invest in sports technologies", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://builtin.com/articles/jump-raises-23m-to-modernize-fan-engagement-20250815", "title": "Jump Raises $23M to Help Sports Teams Modernize Fan Engagement", "publisher": "Built In", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/03/02/parades-cami-tellez-announces-new-creator-economy-marketing-platform-4m-in-funding/", "title": "Parade's Cami Tellez announces new creator economy marketing platform, $4M in funding", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "This low-flying, Boston-based venture outfit just tripled the size of its second fund to $150 million" },
+    "hq_city": { "value": "Boston", "pages": [0], "snippet": "This low-flying, Boston-based venture outfit" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "This low-flying, Boston-based venture outfit" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "the firm will continue to invest in seed-stage companies in the consumer, health, sports and entertainment sectors." },
+    "thesis_text": { "value": "Seed investor in consumer, health, sports and entertainment companies, backed by a community of athletes, with a concentrated portfolio.", "pages": [0], "snippet": "the firm will continue to invest in seed-stage companies in the consumer, health, sports and entertainment sectors." },
+    "stated_sectors": { "value": ["consumer", "health_bio"], "pages": [0], "snippet": "seed-stage companies in the consumer, health, sports and entertainment sectors." }
+  },
+  "funds": [
+    {
+      "name": "Will Ventures Fund II",
+      "number": "II",
+      "size_original": 150000000,
+      "currency_original": "USD",
+      "close_date": "2022-10-18",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "Now armed with $150 million for Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Devotion", "website": null, "description": "AI-supported influencer marketing platform helping large brands run and manage influencer programs.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-03-02",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Basecase", "Will Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "raised $4 million in a round led by Basecase and Will Ventures"
+    },
+    {
+      "company": { "name": "Jump", "website": null, "description": "Platform helping sports teams modernize fan engagement.", "hq_country": "US", "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-08-15",
+      "date_precision": "day",
+      "amount_original": 23000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SevenSevenSix"],
+      "participants": ["Forerunner Ventures", "Courtside Ventures", "Will Ventures", "Drive by DraftKings"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "with participation from previous investors including Forerunner Ventures, Courtside Ventures, Will Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded. TechCrunch 2022 names Ness, Mighty Health, The Post and Street FC as Fund II portfolio but gives no round details.",
+    "Firm website, check size, application URL not confirmed (will.vc fetch failed). Devotion TechCrunch article gives no stage (stage left undisclosed; search-result summaries say seed) and no HQ.",
+    "Jump date is the Built In article date; other sources date the announcement 2025-08-12. Fund II close date is the TechCrunch article date; the article gives no explicit close date."
+  ]
+}

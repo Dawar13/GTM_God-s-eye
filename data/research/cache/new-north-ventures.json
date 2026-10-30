@@ -1,0 +1,88 @@
+{
+  "key": "new-north-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "New North Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as newnorthvc.com (newnorthventures.com redirects there), the dual-use / national-security seed fund with a New Hampshire office address; portfolio page lists HawkEye 360, Hubble Network, Reality Defender, M2 Foundry. Not North Ventures or Northzone-style 'North' funds seen in aggregators.",
+  "pages": [
+    { "url": "http://newnorthvc.com/", "title": "New North Ventures", "publisher": "New North Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.newnorthvc.com/pitching-new-north", "title": "Pitching New North Ventures", "publisher": "New North Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.tectonicdefense.com/exclusive-new-north-ventures-closes-fund-ii/", "title": "Exclusive: New North Ventures Closes Fund II", "publisher": "Tectonic", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://newnorthvc.com/news", "title": "New North Ventures news", "publisher": "New North Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.thesaasnews.com/news/m2-foundry-raises-pre-seed-funding/", "title": "M2 Foundry raises pre-seed funding", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "pre-seed, seed, and Series A investments in early-stage dual-use startups" },
+    "website": { "value": "https://www.newnorthvc.com", "pages": [0], "snippet": "New North Ventures" },
+    "hq_city": { "value": "Portsmouth", "pages": [0], "snippet": "134 Pleasant Street Portsmouth, NH 03801" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "134 Pleasant Street Portsmouth, NH 03801" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Pre-seed and seed. We are often the first check into a company." },
+    "thesis_text": {
+      "value": "Early-stage dual-use investor working where national security meets economic resilience, with emphasis on cybersecurity, space, and trusted AI and autonomy.",
+      "pages": [0, 2],
+      "snippet": "operating at the nexus of national security and economic resilience"
+    },
+    "stated_sectors": { "value": ["defense_dual_use", "space"], "pages": [2], "snippet": "pre-seed, seed, and Series A investments in early-stage dual-use startups" },
+    "application_url": { "value": "https://www.newnorthvc.com/pitching-new-north", "pages": [1], "snippet": "Come prepared to talk through the business rather than present it." }
+  },
+  "funds": [
+    {
+      "name": "New North Ventures Fund II",
+      "number": "II",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2025-07-18",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "with a target of $80M and room to grow to $100M"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "M2 Foundry",
+        "website": null,
+        "description": "Arlington, VA startup building AI-native software and complex-systems modeling.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2026-05-11",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["New North Ventures"],
+      "participants": ["Scott Weller angel syndicate"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "This round was led by New North Ventures."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["Portsmouth, NH (firm's site)", "Manchester, NH (lead list, aggregators)"],
+      "chosen": "Portsmouth",
+      "reason": "The firm's own homepage gives a Portsmouth address; Manchester appears only in the lead list and search summaries."
+    },
+    {
+      "field": "funds",
+      "values": ["Fund I $25M (BBJ headline on firm's news page, July 2024)", "Fund II first close $45M, target $80M-$100M (Tectonic, July 2025)", "$22M (lead list)"],
+      "chosen": "Fund II $45M first close",
+      "reason": "Latest fund per fetched article; the $22M lead figure was not found on any fetched page."
+    }
+  ],
+  "open_items": [
+    "Only 1 round recorded (M2 Foundry, amount undisclosed). Hubble Network Series C, Havoc Series A and the EIN Presswire M2 release returned HTTP 403, so New North's role there is not confirmed from a page read. M2 date: SaaS News says May 11, 2026; other listings say May 7-8 and May 27.",
+    "Average check $1M and 'prefer to lead or co-lead' appear on the pitching page but are not recorded as numeric facts. Cold-inbound policy not stated.",
+    "Fund II final close not found; Tectonic reports first close only. Fund I $25M (July 2024) known only from a headline on the firm's news page."
+  ]
+}

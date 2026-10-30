@@ -5,7 +5,7 @@
   "name": "Indicator Ventures",
   "status": "active",
   "researched_at": "2026-10-30",
-  "identity_check": "Confirmed as Indicator Ventures (indicatorventures.com), an early-stage investment firm with offices in New York, Boston and Washington DC; general partners Jon Struhl (New York), Geoff Bernstein (Boston) and Baiyin Murphy (Washington DC); portfolio includes Dandy, Databento, Beacon Biosignals, Makini and Retrocausal. Not Indicator Capital or any other similarly named fund.",
+  "identity_check": "Confirmed as Indicator Ventures (indicatorventures.com), an early-stage investment firm with offices in New York, Boston and Washington DC; general partners Jon Struhl (co-founder, New York), Geoff Bernstein (Boston) and Baiyin Murphy (Washington DC). SEC EDGAR lists its fund vehicles as Indicator Ventures, L.P., II, III, IV and Select I, all with Massachusetts addresses. Portfolio on the site includes Dandy, Databento, Beacon Biosignals, Makini and Retrocausal, matching round announcements that name 'Indicator Ventures'. Not Indicator Capital, not the Sao Paulo 'Indicator Fund 1, L.P.' in EDGAR, and not Index Ventures (whose AI deals dominate search results).",
   "pages": [
     {
       "url": "https://www.indicatorventures.com/",
@@ -13,97 +13,885 @@
       "publisher": "Indicator Ventures",
       "retrieved_at": "2026-10-30",
       "kind": "primary"
+    },
+    {
+      "url": "https://efts.sec.gov/LATEST/search-index?q=%22Indicator%20Ventures%22&forms=D",
+      "title": "SEC EDGAR full-text search: Form D filings for Indicator Ventures funds (filer names, file dates, business addresses)",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://retrocausal.ai/news/funding-announcement-press-release/",
+      "title": "Retrocausal Raises Oversubscribed $5.3M Round to Meet Increased Demand for its Generative AI Manufacturing Copilot",
+      "publisher": "Retrocausal",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://labusinessjournal.com/manufacturing/starpath-raises-12-million-seed-round/",
+      "title": "Starpath Raises $12 Million Seed Round",
+      "publisher": "Los Angeles Business Journal",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://alleywatch.com/2026/06/edge-markets-prediction-markets-edge-banking-infrastructure-platform-seni-thomas/",
+      "title": "EDGE Markets Raises $29.2M to Solve the Capital Constraint Blocking Institutional Traders in the Prediction Markets",
+      "publisher": "AlleyWatch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://macaubusiness.com/edge-markets-raises-29-2-million-series-a-funding-round/",
+      "title": "EDGE Markets Raises $29.2 Million Series A Funding Round",
+      "publisher": "Macau Business (PR Newswire release)",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://beacon.bio/news/beacon-biosignals-raises-86m-to-accelerate-ai-driven-insights-into-brain-health",
+      "title": "Beacon Biosignals Raises $86M to Accelerate AI-Driven Insights into Brain Health",
+      "publisher": "Beacon Biosignals",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://beacon.bio/news/beacon-biosignals-upsizes-series-b-to-over-97-million",
+      "title": "Beacon Biosignals Upsizes Series B Financing to Over $97 Million",
+      "publisher": "Beacon Biosignals",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://audioshake.ai/press-releases/audioshake-raises-14m-to-make-sound-more-usable-in-the-ai-era",
+      "title": "AudioShake Raises $14M to Make Sound More Usable in the AI Era",
+      "publisher": "AudioShake",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://audioshake.ai/press-releases/ai-music-start-up-audioshake-raises-2-7m-seed-round-investors-include-metallica-backed-black-squirrel-partners-ajr-crush-ventures-more",
+      "title": "AI Music Start-Up AudioShake Raises $2.7M Seed Round, Investors Include Metallica-backed Black Squirrel Partners, AJR, Crush Ventures + more",
+      "publisher": "AudioShake",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techcrunch.com/2025/05/20/affinitis-20-and-22-year-old-founders-raise-17m-led-by-signalfire-just-6-months-after-an-11m-seed/",
+      "title": "Affiniti's 20- and 22-year-old founders raise $17M led by SignalFire just 6 months after an $11M seed",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.fintechfutures.com/venture-capital-funding/us-fintech-start-up-affiniti-raises-17m-series-a",
+      "title": "US fintech start-up Affiniti raises $17m Series A",
+      "publisher": "FinTech Futures",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://alleywatch.com/2017/05/inside-the-mind-of-a-nyc-vc-jonathan-struhl-of-indicator-ventures/",
+      "title": "Inside the Mind of a NYC VC: Jonathan Struhl of Indicator Ventures",
+      "publisher": "AlleyWatch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.finsmes.com/2025/07/chariot-claims-raises-3-6m-in-seed-funding.html",
+      "title": "Chariot Claims Raises $3.6M in Seed Funding",
+      "publisher": "FinSMEs",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.legaltech-talk.com/chariot-claims-raises-3-6m-in-seed-funding/",
+      "title": "Chariot Claims Raises $3.6M in Seed Funding",
+      "publisher": "LegalTechTalk",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.thesaasnews.com/news/chariot-raises-10m-series-a/",
+      "title": "Chariot Raises $10M Series A",
+      "publisher": "The SaaS News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/",
+      "title": "Exclusive: Chariot Raises $10M To Help Consumers Fight Back Against Hidden Fees And Hard-To-Cancel Subscriptions",
+      "publisher": "Crunchbase News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://insider.fitt.co/press-release/hike-medical-raises-22-5m-to-modernize-the-medical-device-supply-chain-from-referral-to-device-delivery/",
+      "title": "Hike Medical Raises $22.5M to Modernize the Medical Device Supply Chain from Referral to Device Delivery",
+      "publisher": "Fitt Insider (Hike Medical release)",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.hmenews.com/article/hike-medical-raises-22-5m",
+      "title": "Hike Medical raises $22.5M",
+      "publisher": "HME News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.ardatx.com/news/arda-therapeutics-secures-43m-series-a-financing-to-advance-targeted-cell-depletion-therapies",
+      "title": "Arda Therapeutics Secures $43M Series A Financing to Advance Targeted Cell Depletion Therapies",
+      "publisher": "Arda Therapeutics (Business Wire release)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://valueaddvc.com/vc/indicator-ventures",
+      "title": "Indicator Ventures — Portfolio, Funds & Investments",
+      "publisher": "Value Add VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://edgemarkets.io/newsroom/edge-markets-raises-29.2-million-series-a-funding-round",
+      "title": "EDGE Markets Raises $29.2 Million Series A Funding Round",
+      "publisher": "EDGE Markets",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.finsmes.com/2022/06/airspace-link-closes-23m-in-series-b-funding-round.html",
+      "title": "Airspace Link Closes $23M in Series B Funding Round",
+      "publisher": "FinSMEs",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
     }
   ],
   "facts": {
+    "aliases": {
+      "value": [
+        "Indicator Ventures, L.P.",
+        "Indicator Ventures II, L.P.",
+        "Indicator Ventures III, L.P.",
+        "Indicator Ventures IV, L.P.",
+        "Indicator Ventures Select I, L.P."
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "Indicator Ventures IV, L.P.  (CIK 0002085032)"
+    },
     "type": {
       "value": "vc",
-      "pages": [0],
+      "pages": [
+        0,
+        12
+      ],
       "snippet": "Early-stage investment firm"
     },
     "website": {
       "value": "https://www.indicatorventures.com",
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "© 2026 Indicator Ventures. Not an offer to sell or solicitation to buy securities."
     },
     "linkedin": {
       "value": "https://www.linkedin.com/company/indicator-ventures",
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "New York · Boston · Washington DC · Get in touch → · LinkedIn"
     },
-    "stages": {
-      "value": ["pre_seed", "seed"],
-      "pages": [0],
-      "snippet": "Never too early. We've invested in a founder and an idea. If you're already raising your Series A, we're probably not your fit."
+    "hq_city": {
+      "value": "Boston",
+      "pages": [
+        1,
+        3,
+        0
+      ],
+      "snippet": "Balerion Space Ventures in Dallas and Indicator Ventures in Boston."
     },
-    "leads": {
-      "value": true,
-      "pages": [0],
-      "snippet": "Whether we lead, co-lead, or join the round, we show up when you need us"
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        0,
+        1
+      ],
+      "snippet": "New York · Boston · Washington DC"
+    },
+    "stages": {
+      "value": [
+        "pre_seed",
+        "seed"
+      ],
+      "pages": [
+        0,
+        12
+      ],
+      "snippet": "Never too early. We've invested in a founder and an idea. If you're already raising your Series A, we're probably not your fit."
     },
     "check_min_usd": {
       "value": 1000000,
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "$1–5M Initial check size"
     },
     "check_max_usd": {
       "value": 5000000,
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "$1–5M Initial check size"
+    },
+    "leads": {
+      "value": true,
+      "pages": [
+        0,
+        9,
+        2,
+        13
+      ],
+      "snippet": "Whether we lead, co-lead, or join the round, we show up when you need us"
     },
     "thesis_text": {
       "value": "Early-stage firm backing founders at the idea stage, before a Series A, across healthcare, industrial automation, fintech and emerging tech. It leads, co-leads or joins rounds, writes $1-5M initial checks, and deliberately keeps a smaller portfolio so it can work closely with each company.",
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "We deliberately invest in fewer companies so we can be the first call when something's broken"
     },
     "stated_sectors": {
-      "value": ["health_bio", "industrial_manufacturing", "fintech"],
-      "pages": [0],
+      "value": [
+        "health_bio",
+        "industrial_manufacturing",
+        "fintech"
+      ],
+      "pages": [
+        0
+      ],
       "snippet": "Early-stage investment firm Healthcare Industrial Automation Fintech Emerging Tech"
     },
     "accepts_cold_inbound": {
       "value": "yes",
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "Just email us. First name @ indicatorventures.com. Keep it short, tell us what you're building, attach the deck. Warm intros are nice but not required."
     },
     "requires_us_entity": {
       "value": "unknown",
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "New York · Boston · Washington DC"
     },
     "portfolio_count_reported": {
       "value": 60,
-      "pages": [0],
+      "pages": [
+        0
+      ],
       "snippet": "60+ Companies seeded"
     }
   },
-  "funds": [],
+  "funds": [
+    {
+      "name": "Indicator Ventures, L.P. (Fund I)",
+      "number": "I",
+      "size_original": 16000000,
+      "currency_original": "USD",
+      "close_date": "2014",
+      "date_precision": "year",
+      "pages": [
+        1,
+        20,
+        12
+      ],
+      "snippet": "New fund: Indicator Ventures Fund I ($16M) Value Add VC funds tracker"
+    },
+    {
+      "name": "Indicator Ventures II, L.P.",
+      "number": "II",
+      "size_original": 25000000,
+      "currency_original": "USD",
+      "close_date": "2019",
+      "date_precision": "year",
+      "pages": [
+        1,
+        20
+      ],
+      "snippet": "New fund: Indicator Ventures Fund II ($25M) Value Add VC funds tracker"
+    },
+    {
+      "name": "Indicator Ventures Select I, L.P.",
+      "number": null,
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        1
+      ],
+      "snippet": "Indicator Ventures Select I, L.P.  (CIK 0001849147)"
+    },
+    {
+      "name": "Indicator Ventures III, L.P.",
+      "number": "III",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        1
+      ],
+      "snippet": "Indicator Ventures III, L.P.  (CIK 0001883727)"
+    },
+    {
+      "name": "Indicator Ventures IV, L.P.",
+      "number": "IV",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        1
+      ],
+      "snippet": "Indicator Ventures IV, L.P.  (CIK 0002085032)"
+    }
+  ],
   "partners": [
     {
       "name": "Jon Struhl",
-      "title": "General Partner",
+      "title": "Co-founder & General Partner",
       "focus_sectors": [],
       "linkedin_url": "https://www.linkedin.com/in/struhl",
-      "pages": [0]
+      "pages": [
+        0,
+        9,
+        12
+      ]
     },
     {
       "name": "Geoff Bernstein",
       "title": "General Partner",
       "focus_sectors": [],
       "linkedin_url": "https://www.linkedin.com/in/geoffreybernstein",
-      "pages": [0]
+      "pages": [
+        0,
+        12
+      ]
     },
     {
       "name": "Baiyin Murphy",
       "title": "General Partner",
       "focus_sectors": [],
       "linkedin_url": "https://www.linkedin.com/in/baiyin",
-      "pages": [0]
+      "pages": [
+        0
+      ]
     }
   ],
-  "rounds": [],
-  "conflicts": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Chariot Claims",
+        "website": "https://chariotclaims.com/",
+        "description": "New York legal-tech platform that finds mass-arbitration consumer claims, matches eligible consumers to partner law firms and runs claim operations, increasingly with AI review tools.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Silverton Partners"
+      ],
+      "participants": [
+        "Indicator Ventures",
+        "Lightbank",
+        "Neon Fund",
+        "ZVC",
+        "Rosecliff Ventures",
+        "Alumni Ventures",
+        "FJ Labs",
+        "Graph Ventures",
+        "Vermilion Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        16,
+        15
+      ],
+      "snippet": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "company": {
+        "name": "Hike Medical",
+        "website": "https://www.hikemedical.com/",
+        "description": "San Francisco company automating device-based care (orthotics, prosthetics, durable medical equipment) from referral to dispense, combining AI back-office tools with in-house manufacturing of custom insoles.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "seed and Series A funding (combined $22.5M, announced together)",
+      "date": "2026-08",
+      "date_precision": "month",
+      "amount_original": 22500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Saga Ventures"
+      ],
+      "participants": [
+        "Indicator Ventures",
+        "Fifth Down Capital",
+        "RiverPark Ventures",
+        "Orthofeet, Inc."
+      ],
+      "unspecified": [],
+      "pages": [
+        17,
+        18
+      ],
+      "snippet": "The round was led by Max Altman at Saga Ventures, with additional participation from Indicator Ventures, Fifth Down Capital, RiverPark Ventures and other funds"
+    },
+    {
+      "company": {
+        "name": "EDGE Markets",
+        "website": "https://edgemarkets.io/",
+        "description": "Financial infrastructure for gaming, prediction-market and digital-asset traders and operators: a banking account, a payment rail and an institutional deposit product.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-06-08",
+      "date_precision": "day",
+      "amount_original": 29200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "CoinFund"
+      ],
+      "participants": [
+        "Indicator Ventures",
+        "Mantis VC",
+        "Stepstone Group",
+        "Bullpen Capital"
+      ],
+      "unspecified": [],
+      "pages": [
+        21,
+        5,
+        4
+      ],
+      "snippet": "announced today that it closed a $29.2 million Series A round. CoinFund led the round, alongside Indicator Ventures, Mantis VC, Stepstone Group, and Bullpen Capital."
+    },
+    {
+      "company": {
+        "name": "Beacon Biosignals",
+        "website": "https://beacon.bio/",
+        "description": "Neurotechnology company whose FDA-cleared at-home EEG device and brain-activity foundation model support AI-driven diagnostics and drug development.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B ($86M, oversubscribed; extended to $97M on 2026-04-06 with new investors JSL Health, Palo Santo VC, Kicker Ventures, Samsung Next)",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "amount_original": 86000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Innoviva",
+        "Google Ventures (GV)",
+        "Nexus NeuroTech Ventures",
+        "S32",
+        "Catalio Capital Management",
+        "Takeda",
+        "General Catalyst",
+        "Logos Capital",
+        "Casdin Capital",
+        "Indicator Ventures"
+      ],
+      "pages": [
+        6,
+        7
+      ],
+      "snippet": "with continued support from General Catalyst, Logos Capital, Casdin Capital, and Indicator Ventures."
+    },
+    {
+      "company": {
+        "name": "AudioShake",
+        "website": "https://www.audioshake.ai/",
+        "description": "San Francisco AI company that separates any audio recording into its individual components (stems, dialogue) for music, film and speech uses.",
+        "hq_country": "US",
+        "founded_year": 2020,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-10-01",
+      "date_precision": "day",
+      "amount_original": 14000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Shine Capital"
+      ],
+      "participants": [
+        "Thomson Reuters Ventures",
+        "Origin Ventures",
+        "Background Capital",
+        "Indicator Ventures",
+        "Precursor Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        8
+      ],
+      "snippet": "The round was led by Shine Capital, with participation from Thomson Reuters Ventures, Origin Ventures, Background Capital, and existing investors Indicator Ventures and Precursor Ventures."
+    },
+    {
+      "company": {
+        "name": "Chariot Claims",
+        "website": "https://chariotclaims.com/",
+        "description": "New York legal-tech platform that finds mass-arbitration consumer claims, matches eligible consumers to partner law firms and runs claim operations, increasingly with AI review tools.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-07-10",
+      "date_precision": "day",
+      "amount_original": 3600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Indicator Ventures"
+      ],
+      "participants": [
+        "Lightbank",
+        "Neon Ventures",
+        "Alumni Ventures",
+        "FJ Labs",
+        "Graph Ventures",
+        "Rosecliff Ventures",
+        "Chapter F",
+        "ZVC"
+      ],
+      "unspecified": [],
+      "pages": [
+        13,
+        14
+      ],
+      "snippet": "The round was led by Indicator Ventures, with participation from Lightbank, Neon Ventures, Alumni Ventures, FJ Labs, Graph Ventures, Rosecliff Ventures, Chapter F, and ZVC."
+    },
+    {
+      "company": {
+        "name": "Affiniti",
+        "website": "https://www.affiniti.com/",
+        "description": "Co-branded small-business credit card and spend-management platform offered through trade associations.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-05-20",
+      "date_precision": "day",
+      "amount_original": 17000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "SignalFire"
+      ],
+      "participants": [
+        "Indicator Ventures",
+        "LightShed Ventures",
+        "RiverPark Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        10,
+        11
+      ],
+      "snippet": "Seed investors Indicator Ventures, LightShed Ventures, and RiverPark Ventures also participated."
+    },
+    {
+      "company": {
+        "name": "Arda Therapeutics",
+        "website": "https://www.ardatx.com/",
+        "description": "Biotech developing targeted cell-depletion therapies for chronic diseases such as fibrosis.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-10-09",
+      "date_precision": "day",
+      "amount_original": 43000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Andreessen Horowitz (a16z Bio + Health)"
+      ],
+      "participants": [
+        "Two Sigma Ventures",
+        "RV Invest",
+        "Eli Lilly and Company",
+        "GV",
+        "Biovision Ventures",
+        "Valhalla Ventures",
+        "Indicator Ventures",
+        "Alumni Ventures",
+        "LifeLink Ventures",
+        "Mana Ventures",
+        "Gaingels",
+        "ExitFund"
+      ],
+      "unspecified": [],
+      "pages": [
+        19
+      ],
+      "snippet": "with participation from Two Sigma Ventures, RV Invest, Eli Lilly and Company, GV, Biovision Ventures, Valhalla Ventures, Indicator Ventures"
+    },
+    {
+      "company": {
+        "name": "Starpath Robotics",
+        "website": "https://starpath.space/",
+        "description": "Hawthorne, California startup building hardware to mine water ice on the Moon and make propellant in space.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "space",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2024-08-26",
+      "date_precision": "day",
+      "amount_original": 12000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "8VC",
+        "Fusion Fund"
+      ],
+      "participants": [
+        "Day One Ventures",
+        "Balerion Space Ventures",
+        "Indicator Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        3
+      ],
+      "snippet": "led by 8VC in Austin and Fusion Fund in Palo Alto, along with Day One Ventures in San Francisco, Balerion Space Ventures in Dallas and Indicator Ventures"
+    },
+    {
+      "company": {
+        "name": "Retrocausal",
+        "website": "https://retrocausal.ai/",
+        "description": "AI copilot (Kaizen Copilot) for manufacturing process management that helps assembly workers and engineers avoid mistakes and optimise lines.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "source",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "oversubscribed $5.3M financing round (stage not named)",
+      "date": "2023-11-30",
+      "date_precision": "day",
+      "amount_original": 5300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Glasswing Ventures",
+        "One Way Ventures",
+        "Indicator Ventures"
+      ],
+      "participants": [
+        "Argon Ventures",
+        "Differential Ventures",
+        "Ascend Vietnam Ventures",
+        "Incubate Fund US",
+        "SaaS Ventures",
+        "Hypertherm Ventures",
+        "Stage Venture Partners",
+        "Techstars"
+      ],
+      "unspecified": [],
+      "pages": [
+        2
+      ],
+      "snippet": "today announced a $5.3M financing round co-led by Glasswing Ventures, One Way Ventures, and Indicator Ventures"
+    },
+    {
+      "company": {
+        "name": "AudioShake",
+        "website": "https://www.audioshake.ai/",
+        "description": "San Francisco AI company that separates any audio recording into its individual components (stems, dialogue) for music, film and speech uses.",
+        "hq_country": "US",
+        "founded_year": 2020,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2023-05-09",
+      "date_precision": "day",
+      "amount_original": 2700000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Indicator Ventures"
+      ],
+      "participants": [
+        "Precursor Ventures",
+        "Side Door Ventures"
+      ],
+      "unspecified": [
+        "Black Squirrel Partners",
+        "AJR",
+        "Google's Black Angel Group",
+        "peermusic",
+        "Crush Ventures"
+      ],
+      "pages": [
+        9
+      ],
+      "snippet": "AI music start-up AudioShake today announced a $2.7 million seed round led by Indicator Ventures, with participation from Precursor Ventures, and Side Door Ventures."
+    },
+    {
+      "company": {
+        "name": "Airspace Link",
+        "website": "https://airspacelink.com/",
+        "description": "Detroit company whose cloud platform AirHub gives governments, drone operators and manufacturers the airspace data and safety tools to run drone operations at scale.",
+        "hq_country": "US",
+        "founded_year": 2018,
+        "sector": "mobility_ev",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2022-06-23",
+      "date_precision": "day",
+      "amount_original": 23000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Avanta Ventures"
+      ],
+      "participants": [
+        "Morningside",
+        "Caprock",
+        "Altos Ventures",
+        "Indicator Ventures",
+        "2048 Ventures",
+        "Detroit Venture Partners",
+        "Thales Group"
+      ],
+      "unspecified": [],
+      "pages": [
+        22
+      ],
+      "snippet": "led by Avanta Ventures with participation from Morningside, Caprock, and follow-on investment from Altos Ventures, Indicator Ventures, 2048 Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": [
+        "Boston: all five EDGAR Form D filers use Boston addresses (Fund IV: Wellesley Hills, MA); LA Business Journal calls it 'Indicator Ventures in Boston'",
+        "New York / Boston / Washington DC: the firm's own footer lists all three offices, New York first; Jon Struhl is based in New York",
+        "Pittsford, New York: Value Add VC, citing an SEC Form ADV (IAPD) record (database page)"
+      ],
+      "chosen": "Boston",
+      "reason": "Every fund vehicle files from Massachusetts and press places the firm in Boston; the site does not name a headquarters. The Pittsford, NY Form ADV record was not checked and may belong to a different adviser."
+    },
+    {
+      "field": "funds.II close_date",
+      "values": [
+        "2019 vintage, $25M (Value Add VC funds tracker)",
+        "Form D for Indicator Ventures II, L.P. filed 2017-11-03 (SEC EDGAR)"
+      ],
+      "chosen": "$25M, year 2019",
+      "reason": "The Form D date marks the first sale, so the fund was likely raised from late 2017 with a final close in 2019. Size and year come from a database page only; Form D amounts could not be read because EDGAR refused the archive request."
+    },
+    {
+      "field": "check_min_usd / check_max_usd",
+      "values": [
+        "$1–5M initial check size (indicatorventures.com, 2026)",
+        "$1-3 million initial checks (privateequitylist.com)",
+        "up to $2 million in new companies (waveup.com)"
+      ],
+      "chosen": "$1M–$5M",
+      "reason": "The firm's own current site; the database figures look like older descriptions."
+    },
+    {
+      "field": "rounds.AudioShake founded_year",
+      "values": [
+        "'Since its founding in 2020' (AudioShake seed release, May 2023)",
+        "'AudioShake was launched in 2021' (AudioShake Series A release, Oct 2025)"
+      ],
+      "chosen": "2020",
+      "reason": "Founding and public launch may differ; the earlier release states founding explicitly."
+    },
+    {
+      "field": "rounds.Hike Medical date",
+      "values": [
+        "Updated August 26, 2026 (HME News)",
+        "Dateline Aug 28, 2026 (Hike Medical release on Fitt Insider)"
+      ],
+      "chosen": "2026-08 (month)",
+      "reason": "The two pages give different days; month precision is safe."
+    }
+  ],
   "open_items": [
-    "Work in progress."
+    "Fund sizes for Indicator Ventures III, L.P. (Form D 2021-12-27), Select I, L.P. (Form D 2021-03-05) and IV, L.P. (Form D 2025-12-04, Wellesley Hills, MA) not found. SEC EDGAR full-text search and submissions data accepted the 'CapitalAtlas research' User-Agent, but the Form D documents themselves (www.sec.gov/Archives) returned 403, so offering amounts were not read. The site claims '$300M+ Assets under management', which implies Funds III-IV are much larger than Funds I-II.",
+    "Fund I ($16M, 2014) and Fund II ($25M, 2019) sizes come only from a database page (Value Add VC); no press release or firm announcement found. Exact final-close dates (the lead's 2014-11-12 and 2019-09-30) not confirmed; Form D filing dates are in the EDGAR search results.",
+    "No application form or apply URL: the site says to email a partner (first name @ indicatorventures.com) or the general contact address (not recorded). Cold inbound is stated as welcome.",
+    "Nothing found on investing in Indian founders or on requiring a US entity; every portfolio company found is US-based.",
+    "Partner sector focus not published; focus_sectors left empty. Jon Struhl led AudioShake's seed citing his audio-engineering background; venture partners Jacob Donoghue (CEO of portfolio company Beacon Biosignals) and Matthew Alkaitis (Beacon's Chief Clinical Officer) are physician-scientists; Marissa Grey is Head of Talent (Boston). Who covers Retrocausal or Makini is not stated.",
+    "The site lists 'Emerging Tech' as a sector and 'Vertical AI' and 'Commerce' as portfolio filters; these have no single sector id and were not mapped. A 2017 AlleyWatch interview described the firm as focused on 'emerging frontier technologies including VR/AR and machine learning'.",
+    "Industrial / supply-chain rounds sought but not recorded: Makini ('Universal industrial systems API') and RepRally ('Operating system for CPG distribution') are in the portfolio, but no fetched page names Indicator in a specific round (only database hints). Datalinx AI and SenseNet appear in database lists of Indicator deals, but their round pages do not name Indicator, so they were not recorded.",
+    "Other leads not checked for lack of search budget: Affiniti's $11M seed (Nov 2024; FinTech Futures names Indicator as a backer but no seed-round page was fetched), EDGE Markets' 2025 seed, Mara pre-seed (Aug 2026 per Caplight), Reflex seed, Netomi (Accenture Ventures investment, Apr 2026, does not name Indicator), Tacit, Dorothy, Polymer.",
+    "Beacon Biosignals Series B: Indicator is named among existing backers of the $86M round; the April 2026 extension to $97M added other investors only.",
+    "Lead about the NY Venture Summit 2026 attendee list was not checked; it adds no investment fact."
   ]
 }

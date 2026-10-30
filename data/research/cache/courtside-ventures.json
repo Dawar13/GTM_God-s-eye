@@ -1,0 +1,69 @@
+{
+  "key": "courtside-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Courtside Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Courtside Ventures (courtsidevc.com), the sports, gaming and lifestyle early-stage VC firm: launched 2016 with Dan Gilbert, Bruin Sports Capital and WPP (Global Venturing); Fund III release lists The Athletic, StockX, 100 Thieves. Not Courtside Capital or other unrelated 'Courtside' entities. Firm site courtsidevc.com refused connection when fetched.",
+  "pages": [
+    { "url": "https://prnewswire.com/news-releases/courtside-ventures-announces-100-million-fund-iii-with-participation-from-global-industry-leaders-301725479.html", "title": "Courtside Ventures Announces $100 Million Fund III With Participation From Global Industry Leaders", "publisher": "PR Newswire (Courtside Ventures)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://globalventuring.com/courtside-ventures-kicks-off-with-35m", "title": "Courtside Ventures kicks off with $35m", "publisher": "Global Venturing", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://ca.marketscreener.com/news/latest/Courtside-Ventures-Announces-First-Year-Investment-Portfolio-Leads-Seed-Round-In-Y-Combinator-Alum-23666772", "title": "Courtside Ventures Announces First Year Investment Portfolio, Leads Seed Round In Y Combinator Alum", "publisher": "MarketScreener (PR Newswire release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "early-stage VC firm" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "NEW YORK" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "NEW YORK" },
+    "stages": { "value": ["seed", "series_a"], "pages": [1], "snippet": "at seed and series A stage" },
+    "leads": { "value": true, "pages": [2], "snippet": "led the $2.3 million seed financing for the rapidly growing subscription sports media company The Athletic" },
+    "thesis_text": { "value": "Early-stage investor in sports, gaming and lifestyle companies, including fitness and collectibles.", "pages": [0], "snippet": "sports, gaming and lifestyle" },
+    "stated_sectors": { "value": ["consumer"], "pages": [0], "snippet": "sports, gaming and lifestyle" }
+  },
+  "funds": [
+    {
+      "name": "Courtside Ventures Fund III",
+      "number": "III",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2023-01-19",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$100M Fund III"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "The Athletic",
+        "website": null,
+        "description": "Subscription sports media company, Y Combinator alum.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed financing",
+      "date": "2017-01-09",
+      "date_precision": "day",
+      "amount_original": 2300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Courtside Ventures"],
+      "participants": ["Advancit Capital", "Bertelsmann Digital Media Investors", "Luminari Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "led the $2.3 million seed financing for the rapidly growing subscription sports media company The Athletic"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round recorded, and it is from January 2017 (outside the 24-month preference). Search summaries mention Rythm Health Series A (Nov 2025) and Fanstake $6.25M seed, not fetched.",
+    "Fund I ($35M, 2016-01-13 launch) is confirmed by Global Venturing but not recorded as a fund (article dated launch, not close). A Fund IV (Sportico, Michael Jordan) appears only in search summary; Sportico fetch redirected to a paywall host; Bloomberg returned 403.",
+    "Fund III release names early Fund III investments (Hypothetic, Matchday, Mojo, Xpoint, Jackpot.com and others) but gives no round details. Detroit presence mentioned by Global Venturing, but the 2023 dateline is New York; HQ set to New York. Check size not stated.",
+    "Fund II ($60M, 2018) from search summaries not confirmed."
+  ]
+}

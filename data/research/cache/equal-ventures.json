@@ -1,0 +1,90 @@
+{
+  "key": "equal-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Equal Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as equal.vc, the New York seed firm that backs founders applying technology in legacy industries (insurance, logistics, retail, climate); team page names Jon Healy, Rick Zullo and others, portfolio includes Odyssey and Equal Parts. Not Equal (Equal AI / Equal Identity, a Prosus-backed Indian data-sharing company), not Equal Opportunity Ventures.",
+  "pages": [
+    { "url": "https://www.equal.vc", "title": "Equal Ventures", "publisher": "Equal Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.equal.vc/portfolio", "title": "Equal Ventures portfolio", "publisher": "Equal Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://news.crunchbase.com/venture/equal-ventures-closes-on-56m-seed-stage-fund-to-transform-society-and-industry", "title": "Equal Ventures closes on $56M seed-stage fund", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/odyssey-energy-solutions-raises-74-million-as-platform-facilitates-3-6-billion-in-distributed-energy-capital/amp/", "title": "Odyssey Energy Solutions Raises $74 Million", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/odyssey-15-million-in-funding/", "title": "Odyssey: $15 Million In Funding Received", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupintros.com/news/2025-04-04-equal-parts-other-equity", "title": "Equal Parts - Venture Round", "publisher": "Startup Intros", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "seed-stage venture firm" },
+    "website": { "value": "https://www.equal.vc", "pages": [0], "snippet": "We partner with founders and businesses deploying technology within legacy industries." },
+    "hq_city": { "value": "New York", "pages": [2], "snippet": "New York-based Equal Ventures" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "New York-based Equal Ventures" },
+    "stages": { "value": ["seed"], "pages": [0, 2], "snippet": "We are all-in partners to exceptional founders at the earliest stages." },
+    "thesis_text": {
+      "value": "Partners with founders at the earliest stages who apply technology to legacy industries, making concentrated, high-conviction bets before they become consensus.",
+      "pages": [0],
+      "snippet": "We make high-conviction bets before they are consensus."
+    },
+    "stated_sectors": {
+      "value": ["climate_energy", "supply_chain_logistics", "consumer", "fintech"],
+      "pages": [0],
+      "snippet": "Climate, Insurance & Benefits, Retail, Supply Chain & Logistics"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Odyssey Energy Solutions", "website": null, "description": "Platform connecting distributed-energy installers with financing providers and equipment vendors in emerging markets.", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "$27 million equity round plus $47 million debt",
+      "date": "2026-09-01",
+      "date_precision": "day",
+      "amount_original": 74000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Broadscale Group", "FMO", "Al Mada Ventures", "Union Square Ventures", "Equal Ventures", "Abstract Ventures", "Twelve Below", "FJ Labs", "MCJ", "Transition Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Union Square Ventures, Equal Ventures, Abstract Ventures, Twelve Below, FJ Labs, MCJ and Transition Ventures"
+    },
+    {
+      "company": { "name": "Equal Parts", "website": null, "description": "Portfolio company of Equal Ventures; business not described on fetched pages.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "Venture Round",
+      "date": "2025-04-04",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Equal Ventures", "Max Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5],
+      "snippet": "The round was led by Equal Ventures, Max Ventures."
+    },
+    {
+      "company": { "name": "Odyssey Energy Solutions", "website": null, "description": "Business-in-a-box software platform for distributed energy in emerging markets.", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2023-05-30",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Union Square Ventures"],
+      "participants": ["Equal Ventures", "Twelve Below", "Transition", "Equator", "MCJ Collective", "Abstract Ventures", "Founder Collective", "Climate Capital"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "led by Union Square Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Funds: only the $56M debut fund (Crunchbase News, Feb 2020) was read; the $100M 2024 lead is unconfirmed (search summaries conflict: $94.8M Fund II, $150M, $175M). No fund recorded as latest.",
+    "Check size (~$1.5M initial, per 2020 article) is stale and not recorded. No HQ, stages or contact instructions on equal.vc.",
+    "Equal Parts round comes from a database page only; amount ($10M vs $8M elsewhere) and date should be confirmed in press.",
+    "Odyssey 2026 round: Pulse 2.0 names no lead and no HQ; Equal Parts description not found."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "key": "iangels",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "iAngels",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as iangels.com, the venture firm founded by Mor Assia and Shelly Hod Moyal (co-CEOs and founding partners per Calcalist), whose second fund iAngels Ventures 2 raised $70M in Feb 2024; it led Wild Moose's seed per Wild Moose's own post. Not iStartup Angels Group or other angel networks of similar name.",
+  "pages": [
+    { "url": "https://www.calcalistech.com/ctechnews/article/bkkfg11bn6", "title": "Mor Assia and Shelly Hod Moyal raise $70 million for second iAngels fund", "publisher": "Calcalist (CTech)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.wildmoose.ai/post/wild-moose-raises-7m-seed-round-led-by-iangels", "title": "Wild Moose raises $7M seed round led by iAngels", "publisher": "Wild Moose", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.iangels.com", "title": "iAngels", "publisher": "iAngels", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "iAngels Ventures 2" },
+    "website": { "value": "https://www.iangels.com", "pages": [2], "snippet": "iAngels" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "early-stage startups" },
+    "check_min_usd": { "value": 2000000, "pages": [0], "snippet": "$2-4 million for Seed rounds" },
+    "check_max_usd": { "value": 4000000, "pages": [0], "snippet": "$2-4 million for Seed rounds" }
+  },
+  "funds": [
+    {
+      "name": "iAngels Ventures 2",
+      "number": "II",
+      "size_original": 70000000,
+      "currency_original": "USD",
+      "close_date": "2024-02-19",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$70 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Wild Moose", "website": "https://www.wildmoose.ai", "description": "AI first-responder for site reliability engineering that runs structured incident investigations.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-10",
+      "date_precision": "month",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["iAngels"],
+      "participants": ["Y Combinator", "F2 Venture Capital", "Maverick Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "with participation from Y Combinator, F2 Venture Capital, Maverick Ventures, and others"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Others seen only in search summaries or tag listings: Nas.com ($27M, Apr 2026, PitchBook/Shizune summary), LeO $5M seed (Nov 2021, Calcalist tag page only: led by iAngels and Menara Ventures).",
+    "HQ (Tel Aviv per lead), thesis, sectors, application URL not stated on any fetched page; iangels.com returned only the name via fetch. PitchBook profile returned 403.",
+    "Calcalist gives the fund as $70M but no close-date text beyond the article date 19.02.24."
+  ]
+}

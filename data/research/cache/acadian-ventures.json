@@ -1,0 +1,79 @@
+{
+  "key": "acadian-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Acadian Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Acadian Ventures (acadian.vc), the future-of-work early-stage VC led by founder and GP Jason Corsello per search summaries; VentureBeat calls it New York-based. Fund II investors named: ServiceNow Ventures and Connecticut Innovations. Not Acadian Asset Management or Acadian Capital Ventures, not Akkadian Ventures.",
+  "pages": [
+    { "url": "https://venturebeat.com/ai/acadian-ventures-raises-30m-for-vc-fund-focused-on-the-future-of-work", "title": "Acadian Ventures raises $30M for VC fund focused on the future of work", "publisher": "VentureBeat", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/acadian-ventures-30-million-fund-ii-closed-to-invest-in-next-gen-technologies/", "title": "Acadian Ventures: $30 Million Fund II Closed To Invest In Next-Gen Technologies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.acadian.vc", "title": "Acadian Ventures", "publisher": "Acadian Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://acadianventures.substack.com/p/kombo-raises-25m-series-a", "title": "Kombo Raises $25M Series A", "publisher": "Acadian Ventures (Substack)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "early-stage venture capital firm" },
+    "website": { "value": "https://www.acadian.vc", "pages": [2], "snippet": "focused on locations often overlooked by conventional Venture Capital" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "New York-based" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "New York-based" },
+    "thesis_text": {
+      "value": "Early-stage investor in companies using technology to transform work, across AI work applications, work infrastructure, regulatory tech and the global workforce.",
+      "pages": [0, 1],
+      "snippet": "invest in companies transforming work by leveraging technology"
+    },
+    "stated_sectors": { "value": ["enterprise_saas", "ai_apps_agents"], "pages": [0], "snippet": "technologies for the future of work" }
+  },
+  "funds": [
+    {
+      "name": "Acadian Ventures Fund II",
+      "number": "II",
+      "size_original": 30000000,
+      "currency_original": "USD",
+      "close_date": "2024-01-29",
+      "date_precision": "day",
+      "pages": [0, 1],
+      "snippet": "oversubscribed $30 million in capital commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Kombo",
+        "website": null,
+        "description": "Unified API connecting HR, payroll and IT systems; calls itself the infrastructure layer for people data.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-02",
+      "date_precision": "month",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Volition Capital"],
+      "participants": ["Acadian Ventures", "468 Capital", "Y Combinator"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "has raised a $25M Series A round led by Volition Capital"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.Kombo.leads",
+      "values": ["Volition Capital (Acadian's own post)", "Acadian Ventures (startupintros.com aggregator)"],
+      "chosen": "Volition Capital",
+      "reason": "The investor's own announcement names Volition as lead; the aggregator is a single secondary source."
+    }
+  ],
+  "open_items": [
+    "Only 1 round recorded (Kombo, Feb 2026; post dated Feb 19, aggregators say Feb 18). Penzilla seed, Origin Series A and Pack rounds appear only in search summaries.",
+    "Stages, check size, application URL not stated on fetched pages (acadian.vc homepage lists only an info email, not recorded). FinSMEs search summary says Madison, CT; VentureBeat says New York.",
+    "Fund II close dated 2024-01-29 by VentureBeat; Pulse 2.0 article dated Jan 30."
+  ]
+}

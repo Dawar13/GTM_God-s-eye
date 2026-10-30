@@ -1,0 +1,97 @@
+{
+  "key": "aix-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "AIX Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as aixventures.com, the AI-focused early-stage fund whose own newsroom announces a second fund of $202M and names Hugging Face, You.com, Weights & Biases, Perplexity and Chroma. Sumble coverage identifies Anthony Goldbloom as an AIX co-founder (via search summary). Not AI Ventures / other AI-named funds; www.aix.vc unreachable.",
+  "pages": [
+    { "url": "https://www.aixventures.com/newsroom/second-fund-of-202m", "title": "AIX Ventures' Second Fund of $202M Will Fuel AI and the Future of Work", "publisher": "AIX Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://coverager.com/coverflow-raises-4-8-million/", "title": "Coverflow raises $4.8 million", "publisher": "Coverager", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=717642", "title": "Sumble launches with $38.5M", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://auth.startupintros.com/news/2026-01-31-omneky-undisclosed", "title": "Omneky - Undisclosed round", "publisher": "Startup Intros", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "our second fund of $202M to invest in early-stage AI companies" },
+    "website": { "value": "https://www.aixventures.com", "pages": [0], "snippet": "our second fund of $202M to invest in early-stage AI companies" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "early-stage AI companies" },
+    "thesis_text": {
+      "value": "Early-stage investor in AI tools and infrastructure that change how people work, holding that AI should be a force for good.",
+      "pages": [0],
+      "snippet": "AI can and should be a force for good."
+    },
+    "stated_sectors": {
+      "value": ["ai_infra", "ai_apps_agents", "health_bio", "climate_energy"],
+      "pages": [0],
+      "snippet": "from the workplace to healthcare, biotech to climate"
+    }
+  },
+  "funds": [
+    {
+      "name": "AIX Ventures Fund II",
+      "number": "II",
+      "size_original": 202000000,
+      "currency_original": "USD",
+      "close_date": "2024-02-13",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "our second fund of $202M"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Omneky", "website": null, "description": "Portfolio company; business not described on the fetched page.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "Undisclosed",
+      "date": "2026-01-31",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["AIX Ventures"],
+      "participants": ["20Growth", "Alpine Venture Capital", "Flybridge", "Henkel", "Informed Ventures", "Oryx Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Lead investor: AIX Ventures"
+    },
+    {
+      "company": { "name": "Sumble", "website": null, "description": "AI-powered go-to-market intelligence platform built on a knowledge graph of public web signals, founded by Kaggle co-founders.", "hq_country": null, "founded_year": 2022, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "combined seed and Series A round",
+      "date": "2025-10-22",
+      "date_precision": "day",
+      "amount_original": 38500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Coatue Management", "Canaan Partners Management"],
+      "participants": ["AIX Ventures", "Square Peg Capital", "Bloomberg Beta", "Zetta Venture Partners", "Marc Benioff", "Nat Friedman"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "combined seed and Series A round"
+    },
+    {
+      "company": { "name": "Coverflow", "website": null, "description": "San Francisco startup (founded 2023) automating policy analysis, data entry and workflow for insurance brokers.", "hq_country": "US", "founded_year": 2023, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-07",
+      "date_precision": "month",
+      "amount_original": 4800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["AIX Ventures"],
+      "participants": ["Founder Collective", "Afore Capital"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "a platform that automates policy analysis, data entry, and workflow management for insurance brokers"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "AIX newsroom page shows 'Feb 13' without a year; 2024 taken from search results and the newsroom tag listing (2/13/24).",
+    "HQ (Bay Area per lead), check size ($750K-$3M in search summary only), application URL not on fetched pages; aix.vc connection refused.",
+    "Coverflow date (July 2025) comes from search results; the Coverager page showed no date. SeedTable lists Founder Collective as lead (estimate-based); press says AIX.",
+    "Sumble: Goldbloom, an AIX co-founder, reportedly recused himself (search summary); AIX not a lead. No industrial-sector rounds found."
+  ]
+}

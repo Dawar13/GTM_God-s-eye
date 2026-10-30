@@ -1,0 +1,98 @@
+{
+  "key": "golden-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Golden Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as golden.ventures, the Toronto seed firm investing since June 2011 (formerly Golden Venture Partners), with Float, Wattpad, Neo Financial and BenchSci in its portfolio; BetaKit covers its Fund V. Not Golden Gate or Golden Seeds.",
+  "pages": [
+    { "url": "https://golden.ventures", "title": "Golden Ventures", "publisher": "Golden Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/golden-ventures-closes-nearly-140-million-cad-for-fifth-seed-stage-vc-fund/", "title": "Golden Ventures closes nearly $140 million CAD for fifth seed-stage VC fund", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://betakit.com/golden-ventures-looks-to-capitalize-on-portfolio-winners-with-two-new-funds/", "title": "Golden Ventures looks to capitalize on portfolio winners with two new funds", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://betakit.com/niahealth-raises-5-75-million-as-it-hopes-to-become-a-household-name-in-preventative-healthcare/", "title": "NiaHealth raises $5.75 million as it hopes to become a household name in preventative healthcare", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "Golden Ventures closes nearly $140 million CAD for fifth seed-stage VC fund"
+    },
+    "website": {
+      "value": "https://golden.ventures",
+      "pages": [0],
+      "snippet": "We invest early and put in the time."
+    },
+    "hq_city": {
+      "value": "Toronto",
+      "pages": [1],
+      "snippet": "Toronto-based Golden Ventures"
+    },
+    "hq_country": {
+      "value": "CA",
+      "pages": [1],
+      "snippet": "Toronto-based Golden Ventures"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [0],
+      "snippet": "Pre-seed, Seed, and Seed+"
+    },
+    "leads": {
+      "value": true,
+      "pages": [3],
+      "snippet": "led by Golden Ventures"
+    },
+    "thesis_text": {
+      "value": "Sector-agnostic early-stage investor in North American tech, with a Canada-first stance and a hands-on approach to founders.",
+      "pages": [0, 1],
+      "snippet": "We invest early and put in the time."
+    }
+  },
+  "funds": [
+    {
+      "name": "Golden Ventures V",
+      "number": "V",
+      "size_original": 103000000,
+      "currency_original": "USD",
+      "close_date": "2023-12",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "Golden Ventures closes nearly $140 million CAD for fifth seed-stage VC fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "NiaHealth",
+        "website": null,
+        "description": "Preventive health platform that streamlines clinician-co-signed medical tests through an annual subscription.",
+        "hq_country": "CA",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-06-26",
+      "date_precision": "day",
+      "amount_original": 5750000,
+      "currency_original": "CAD",
+      "valuation_post_original": null,
+      "leads": ["Golden Ventures"],
+      "participants": ["The51", "Kyle Braatz", "Jason Smith"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by Golden Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round found (NiaHealth). No fetched page names Golden's role in the other portfolio rounds listed (Float, Neo Financial, Faire etc.); BetaKit's Fund V and 2021 articles name no Fund V investments. KitchenMate (seed co-led with Eniac) appeared only in a search summary.",
+    "Check size of $500K to $3M appears on golden.ventures and BetaKit, currency not stated on the page; not recorded as check range. Homepage states fund size of $100M (2024); BetaKit puts Fund V at about US$103M (C$139M), final close in December 2023, article 22 Feb 2024.",
+    "Golden.ventures homepage does not state HQ; Toronto is from BetaKit text. Application is by email to a published address (not recorded); FAQ not fetched.",
+    "Lead mentions Golden Venture Partners funds from 2011; the 2011 start is on the homepage ('investing since June 2011') but earlier funds not recorded (latest only)."
+  ]
+}

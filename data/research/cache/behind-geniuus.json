@@ -1,0 +1,41 @@
+{
+  "key": "behind-geniuus",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Behind Genius Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Official name is Behind Genius Ventures (the lead list's 'Geniuus' is a misspelling). Confirmed via behindgeniusventures.com (behindgenius.com redirects there) and Fortune's 2024-04-23 article on its second fund, founder Paige Finn Doherty. Portfolio page names Maneva, Intramotev, MoldCo. Not Genius Ventures or Genius Group.",
+  "pages": [
+    { "url": "http://www.behindgeniusventures.com/", "title": "Behind Genius Ventures", "publisher": "Behind Genius Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2024/04/23/behind-genius-ventures-raises-second-fund-8-million/", "title": "Behind Genius Ventures raises second fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Behind Genius closed its second fund at $8.9 million" },
+    "website": { "value": "https://www.behindgeniusventures.com", "pages": [0], "snippet": "We believe some of the defining companies of the next decade will look less like conventional software businesses." },
+    "check_min_usd": { "value": 150000, "pages": [1], "snippet": "between $150,000 and $250,000" },
+    "check_max_usd": { "value": 250000, "pages": [1], "snippet": "between $150,000 and $250,000" }
+  },
+  "funds": [
+    {
+      "name": "Behind Genius Ventures Fund II",
+      "number": "II",
+      "size_original": 8900000,
+      "currency_original": "USD",
+      "close_date": "2024-04-23",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$8.9 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "fund size", "values": ["$9M (lead list)", "$8.9M (Fortune)"], "chosen": "8900000", "reason": "Fortune is the fetched page; the $9M is a rounded figure." }
+  ],
+  "open_items": [
+    "No rounds recorded: no fetched page names Behind Genius in a specific round. Maneva Series A (June 2026, Axios returned 403) and Intramotev Series A (Aug 2024) searches did not name it as a participant.",
+    "HQ (San Diego per lead list/search summaries; one source suggests San Francisco since 2024) and stages (pre-seed/seed per search summaries) not stated on fetched pages; not recorded.",
+    "Fund close date is the Fortune article date. Thesis/sectors: homepage mentions AI roll-ups in professional services, not recorded as a stated sector without a firmer quote."
+  ]
+}

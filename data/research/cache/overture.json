@@ -1,0 +1,115 @@
+{
+  "key": "overture",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Overture VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as overture.vc (Overture VC / Overture Climate VC), the early-stage fund founded by former US government officials that backs Antora, Crux and Dexmat with in-kind help from Boundary Stone Partners. Not Overture Partners or Overture Ventures unrelated funds. Fetched pages disagree on HQ (see conflicts).",
+  "pages": [
+    { "url": "https://overture.vc", "title": "Overture VC", "publisher": "Overture VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://impactalpha.com/overture-raises-60-million-debut-fund-to-help-climate-tech-founders-tap-into-government-support/", "title": "Overture raises $60 million debut fund to help climate tech founders tap into government support", "publisher": "ImpactAlpha", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.automotiveworld.com/news/harbinger-secures-us160m-from-fedex-and-investors/", "title": "Harbinger secures US$160m from FedEx and investors", "publisher": "Automotive World", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/harbinger-160-million-series-c-raised-as-fedex-places-initial-order-for-electric-vehicles", "title": "Harbinger: $160 Million Series C Raised As FedEx Places Initial Order For Electric Vehicles", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "$60 million debut fund"
+    },
+    "website": {
+      "value": "https://overture.vc",
+      "pages": [0],
+      "snippet": "We invest in technologies critical to the national interest."
+    },
+    "hq_city": {
+      "value": "Washington, DC",
+      "pages": [1],
+      "snippet": "The Washington, DC-based firm"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [1],
+      "snippet": "The Washington, DC-based firm"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a"],
+      "pages": [1],
+      "snippet": "pre-seed, seed and Series A climate tech deals"
+    },
+    "check_min_usd": {
+      "value": 1000000,
+      "pages": [1],
+      "snippet": "typically writing checks of around $1 million"
+    },
+    "check_max_usd": {
+      "value": 1000000,
+      "pages": [1],
+      "snippet": "typically writing checks of around $1 million"
+    },
+    "thesis_text": {
+      "value": "Invests in technologies critical to the national interest, helping founders win government support and handle regulatory complexity.",
+      "pages": [0],
+      "snippet": "We invest in technologies critical to the national interest."
+    },
+    "stated_sectors": {
+      "value": ["climate_energy", "industrial_manufacturing"],
+      "pages": [0],
+      "snippet": "hyper-differentiated edge"
+    }
+  },
+  "funds": [
+    {
+      "name": "Overture Climate Fund I",
+      "number": "I",
+      "size_original": 60000000,
+      "currency_original": "USD",
+      "close_date": "2024-02-21",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$60 million debut fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Harbinger Motors",
+        "website": null,
+        "description": "California-based maker of medium-duty electric and hybrid commercial vehicles, building its own electric stripped chassis in the US.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "mobility_ev",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "amount_original": 160000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["FedEx", "Technology Impact Fund (Capricorn)", "THOR Industries"],
+      "participants": ["Ridgeline", "Tiger Global", "Leitmotif", "Maniv Mobility", "Schematic Ventures", "Overture Climate", "Ironspring Ventures", "ArcTern Ventures", "Litquidity Ventures", "The Coca-Cola System Sustainability Fund"],
+      "unspecified": [],
+      "pages": [2, 3],
+      "snippet": "Overture Climate"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["Washington, DC (ImpactAlpha: 'The Washington, DC-based firm')", "Los Angeles (lead list; search summaries of Dot.LA)"],
+      "chosen": "Washington, DC",
+      "reason": "Only ImpactAlpha was fetched and states it; Dot.LA fetch failed (network error). Needs a primary source."
+    }
+  ],
+  "open_items": [
+    "Only one round recorded (Harbinger Series C). GridCARE seed: the fetched unite.ai page does not name Overture (a search summary did); GridCARE Series A (May 2026) BusinessWire page returned 403. Other rounds (ChemFinity, Zero) only in aggregator summaries.",
+    "HQ unresolved (DC vs Los Angeles); overture.vc states no HQ, stages or check size. Check size 'around $1 million' from ImpactAlpha, so min and max both set to it.",
+    "Fund close date 2024-02-21 is the ImpactAlpha byline date, which the page also contradicts with a June dateline. Page describes Overture as having invested in 21 startups including Antora, Crux, Dexmat.",
+    "Homepage names founders with '$670M previously deployed'; thesis has evolved from climate-only to 'national interest' (energy, AI, resilience, industrial transformation); overture.vc lists a contact address (not recorded). Layer not applicable."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "key": "the-house-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "The House Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The House Fund (thehouse.fund), Berkeley, CA pre-seed fund for Berkeley-affiliated founders; portfolio page lists Databricks, Perplexity, Anyscale, depthfirst. Not House Capital (f4.fund slug 'house-capital' is this firm's directory page, not a different firm) and not The House VC.",
+  "pages": [
+    { "url": "https://thehouse.fund", "title": "The House Fund", "publisher": "The House Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/10/25/the-house-fund-aims-to-invest-a-fresh-115m-in-berkeley-affiliated-startups", "title": "The House Fund aims to invest a fresh $115M in Berkeley-affiliated startups", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fenwick.com/insights/experience/fenwick-represents-depthfirst-in-80m-series-b-funding", "title": "Fenwick Represents depthfirst in $80M Series B Funding", "publisher": "Fenwick", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=736960", "title": "depthfirst raises $80M Series B", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Fund III will invest in Berkeley-affiliated AI startups" },
+    "website": { "value": "https://thehouse.fund", "pages": [0], "snippet": "The House Fund invests at inception in Berkeley's boldest founders." },
+    "hq_city": { "value": "Berkeley", "pages": [0], "snippet": "Berkeley, CA" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Berkeley, CA" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Roughly 70% of Fund III will go toward startups at the pre-seed stage." },
+    "check_max_usd": { "value": 2000000, "pages": [1], "snippet": "We write first checks up to $2 million and reserve for follow-ons." },
+    "thesis_text": {
+      "value": "Invests at inception in Berkeley-affiliated founders, with Fund III focused on AI startups from the Berkeley community.",
+      "pages": [0, 1],
+      "snippet": "Fund III will invest in Berkeley-affiliated AI startups"
+    }
+  },
+  "funds": [
+    {
+      "name": "The House Fund III",
+      "number": "III",
+      "size_original": 115000000,
+      "currency_original": "USD",
+      "close_date": "2023-10-25",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "closed its third tranche — Fund III — at $115 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "depthfirst",
+        "website": null,
+        "description": "AI-native security platform and applied AI lab founded in 2024, securing software at the speed of development.",
+        "hq_country": null,
+        "founded_year": 2024,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-03-31",
+      "date_precision": "day",
+      "amount_original": 80000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Meritech Capital"],
+      "participants": ["Forerunner Ventures", "The House Fund", "Accel", "Box Group", "Liquid 2 Ventures", "Alt Capital", "Mantis VC"],
+      "unspecified": [],
+      "pages": [2, 3],
+      "snippet": "led by Meritech Capital Partners LP."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded (depthfirst). SkyPilot, Sarvativ, Schole seeds appear only in search summaries of PitchBook/CB Insights.",
+    "Fund III is the latest found; a newer fund was not found. Date is the announcement date. Fund I ($6M, 2016) and II ($44M, 2019) not recorded beyond search results; Fund III 'closed' per TechCrunch.",
+    "Homepage lists only an email contact, not recorded; no application URL. Lead said 'later funds': none beyond Fund III found."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "key": "syn-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "SYN Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as synventures.com, the cybersecurity-focused VC based in West Palm Beach, Florida (Refresh Miami; SecurityWeek: 'Florida-based SYN Ventures'), started in 2021 by former security executives. Portfolio page lists Terra Security, Miggo, Halcyon, Vectra. Not Syn Ventures-unrelated 'Synergy' firms or SYNC/Synapse funds.",
+  "pages": [
+    { "url": "https://www.synventures.com", "title": "SYN Ventures", "publisher": "SYN Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://refreshmiami.com/syn-ventures-launches-75m-cybersecurity-seed-fund/", "title": "SYN Ventures launches $75M cybersecurity seed fund", "publisher": "Refresh Miami", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.securityweek.com/terra-security-raises-8m-for-agentic-ai-penetration-testing-platform/", "title": "Terra Security Raises $8M for Agentic AI Penetration Testing Platform", "publisher": "SecurityWeek", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/terra-security-30-million-series-a-raised-to-transform-penetration-testing-with-agentic-ai/amp/", "title": "Terra Security: $30 Million Series A Raised To Transform Penetration Testing With Agentic AI", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.securityweek.com/miggo-security-banks-17m-series-a-for-adr-technology/", "title": "Miggo Security Banks $17M Series A for ADR Technology", "publisher": "SecurityWeek", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "a venture capital firm focused on investing in disruptive and innovative companies" },
+    "website": { "value": "https://www.synventures.com", "pages": [0], "snippet": "a venture capital firm focused on investing in disruptive and innovative companies" },
+    "hq_city": { "value": "West Palm Beach", "pages": [1], "snippet": "based in West Palm Beach" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "based in West Palm Beach" },
+    "stages": { "value": ["pre_seed", "seed", "series_a", "series_b"], "pages": [0], "snippet": "from the earliest stages of company formation" },
+    "leads": { "value": true, "pages": [2, 4], "snippet": "led by Florida‑based SYN Ventures" },
+    "thesis_text": { "value": "Cybersecurity-focused investor founded by former security executives, backing companies from formation through exit.", "pages": [0], "snippet": "cybersecurity, industrial security, national defense, privacy, regulatory compliance, and data governance" },
+    "stated_sectors": { "value": ["dev_tools", "defense_dual_use"], "pages": [0], "snippet": "cybersecurity, industrial security, national defense, privacy, regulatory compliance, and data governance" },
+    "application_url": { "value": "https://www.synventures.com/contact/", "pages": [0], "snippet": "Fill out my online form" }
+  },
+  "funds": [
+    {
+      "name": "SYN Ventures seed fund",
+      "number": null,
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2023-10-16",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "The firm expects to do a final close later this quarter."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Miggo Security", "website": null, "description": "Application detection and response software that maps live data flows in running services and blocks suspicious behavior.", "hq_country": null, "founded_year": null, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-04-23",
+      "date_precision": "day",
+      "amount_original": 17000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SYN Ventures"],
+      "participants": ["YL Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "has bagged a $17 million Series A round led by Florida‑based SYN Ventures"
+    },
+    {
+      "company": { "name": "Terra Security", "website": null, "description": "Agentic AI web application penetration testing platform with human expert supervision.", "hq_country": null, "founded_year": 2024, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-09-19",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Felicis"],
+      "participants": ["Dell Technologies Capital", "SVCI", "SYN Ventures", "LAMA Partners", "Underscore VC"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "existing backers SYN Ventures, LAMA Partners, and Underscore VC"
+    },
+    {
+      "company": { "name": "Terra Security", "website": null, "description": "Agentic AI web application penetration testing platform with human expert supervision.", "hq_country": null, "founded_year": 2024, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed funding",
+      "date": "2025-04-23",
+      "date_precision": "day",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SYN Ventures", "FXP Ventures"],
+      "participants": ["Underscore VC"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Agentic AI-powered penetration testing startup Terra Security on Tuesday announced raising $8 million in seed funding."
+    }
+  ],
+  "conflicts": [
+    { "field": "latest fund size and date", "values": ["$100M final close, 2024-03-27 (lead list)", "$75M first close, 2023-10-16 (Refresh Miami)"], "chosen": "$75M first close", "reason": "The $100M March 2024 final close was seen only in a search summary; no fetched page confirms it." }
+  ],
+  "open_items": [
+    "$100M seed-fund final close (March 2024) not confirmed on a fetched page; only the $75M first close (Oct 2023) is recorded. Fund II ($300M, 2022) and a Fund III target were seen only in search summaries.",
+    "Terra Series A and seed pages are shared with the Underscore VC file; portfolio page lists many other 2024-2026 deals (e.g. Arcade, Balance Theory, CodeIntegrity, Nullify) with no round pages fetched.",
+    "Check size not stated. Application URL is the contact page; homepage also links an online form (not recorded)."
+  ]
+}

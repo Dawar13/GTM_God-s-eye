@@ -1,0 +1,103 @@
+{
+  "key": "climactic",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Climactic",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as climactic.vc, the climate venture firm co-founded by Raj Kapoor and Josh Felser (Managing Partners), offices in San Francisco and NYC; its portfolio page lists EDEN, Gritt Robotics, Copper, WeaveGrid, MuonSpace; EDEN and Material Scale press name Felser as Climactic managing partner. Not Climatic (a lung-health startup), not Climate Capital or Climate Ventures.",
+  "pages": [
+    { "url": "https://www.climactic.vc", "title": "Climactic", "publisher": "Climactic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://climactic.vc/media", "title": "Climactic media", "publisher": "Climactic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.contractingbusiness.com/around-the-web/article/55287615/eden-raises-37m-to-transform-home-services-with-instant-quotes-and-data-driven-sales", "title": "EDEN raises $3.7M to transform home services with instant quotes and data-driven sales", "publisher": "Contracting Business", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupintros.com/news/2024-05-01-orange-charger-seed-2", "title": "Seed funding round for Orange Charger raising $7M in May 2024", "publisher": "StartupIntros", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.techcompanynews.com/gritt-raises-26m-in-series-a-funding-led-by-obvious-ventures/", "title": "Gritt Raises $26M In Series A Funding Led By Obvious Ventures", "publisher": "Tech Company News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/02/17/climactic-launches-hybrid-fund-to-get-startups-through-the-valley-of-death/", "title": "Climactic launches hybrid fund to get startups through the valley of death", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "early stage companies" },
+    "website": { "value": "https://www.climactic.vc", "pages": [0], "snippet": "San Francisco and NYC" },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "San Francisco and NYC" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "San Francisco and NYC" },
+    "stages": { "value": ["seed"], "pages": [0, 2], "snippet": "early stage companies" },
+    "thesis_text": {
+      "value": "Backs climate founders who can commercialize quickly, getting ideas off the ground and scaling fast.",
+      "pages": [0],
+      "snippet": "immediate, impactful commercialization of ideas off the ground and quickly to scale"
+    },
+    "stated_sectors": {
+      "value": ["robotics_physical_ai", "climate_energy"],
+      "pages": [0],
+      "snippet": "Physical AI, Energy Tech, and Waste-to-Value startups"
+    }
+  },
+  "funds": [
+    {
+      "name": "Climactic Fund I",
+      "number": "I",
+      "size_original": 65000000,
+      "currency_original": "USD",
+      "close_date": "2023-12-19",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "12/19/23 Climactic (inaugural fund) $65M"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "EDEN", "website": null, "description": "Digital sales enablement platform for home-services contractors, generating instant quotes from a building-stock database.", "hq_country": "US", "founded_year": 2021, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": "funding round",
+      "date": "2025-05-02",
+      "date_precision": "day",
+      "amount_original": 3700000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Climactic"],
+      "participants": ["Better Ventures", "C2 Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "EDEN helps the industry leapfrog in the same way we've seen real estate and car sales advance in recent years."
+    },
+    {
+      "company": { "name": "Gritt Robotics", "website": "https://www.gritt.ai", "description": "Physical AI systems attached to existing jobsite equipment to automate labor-intensive outdoor construction, starting with utility-scale solar.", "hq_country": "US", "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-07-22",
+      "date_precision": "day",
+      "amount_original": 26000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Obvious Ventures"],
+      "participants": ["Union Square Ventures", "Active Impact Investments"],
+      "unspecified": ["First Round Capital", "Climactic", "Congruent Ventures", "VSC Ventures"],
+      "pages": [4],
+      "snippet": "physical AI systems that integrate robotics and AI to automate labor intensive tasks in outdoor construction"
+    },
+    {
+      "company": { "name": "Orange Charger", "website": null, "description": "Company named in Climactic's portfolio; page gives no description of its business.", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2024-05-01",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Climactic"],
+      "participants": ["Baukunst", "Trucks Venture Capital", "Lincoln Property Company", "Spacecadet Ventures", "Andrew Wheeler", "Thomas Byrne", "Matt McElhattan", "Marc Tarpenning"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Seed funding round for Orange Charger raising $7M in May 2024."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size (about $1.5M-$3M) came from a fetch summarizer and search snippets, not a quotable page line; omitted.",
+    "Fund I $65M: climactic.vc/media (fetched via summarizer) links to Axios (HTTP 403 on fetch); TechCrunch and search results give 14 Dec 2023 vs the media page's 12/19/23 - date unconfirmed.",
+    "TechCrunch (17 Feb 2026) describes a ~$11M hybrid debt-equity vehicle, Material Scale, in an SPV; not recorded as a fund because it is not a conventional close.",
+    "Orange Charger round is from a database page only (StartupIntros); business not described; sector is a guess. Gritt: article lists Climactic among earlier backers supporting the Series A, role in this round not explicit, so recorded as unspecified.",
+    "HQ: site lists offices in San Francisco and NYC; San Francisco chosen per lead list.",
+    "Stage 'seed' inferred from EDEN/Orange Charger rounds plus 'early stage companies'."
+  ]
+}

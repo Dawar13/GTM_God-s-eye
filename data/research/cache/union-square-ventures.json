@@ -1,0 +1,171 @@
+{
+  "key": "union-square-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Union Square Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as usv.com, the New York venture firm (817 Broadway). USV Climate Fund was not found on fetched pages.",
+  "pages": [
+    {
+      "url": "https://www.usv.com",
+      "title": "Union Square Ventures",
+      "publisher": "Union Square Ventures",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techintelpro.com/AI/Agentic-AI/supper-raises-11m-seed-led-by-union-square-ventures-for-agentic-data-platform",
+      "title": "Supper raises $11M seed led by Union Square Ventures",
+      "publisher": "TechIntelPro",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.usv.com/writing/tolan",
+      "title": "Tolan",
+      "publisher": "Union Square Ventures",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.cryptobriefing.com/union-square-ventures-900-million-ai-funds/",
+      "title": "Union Square Ventures raises $900 million",
+      "publisher": "Crypto Briefing",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "we have invested at the edge of large markets being transformed by technology"
+    },
+    "website": {
+      "value": "https://www.usv.com",
+      "pages": [
+        0
+      ],
+      "snippet": "For more than two decades, we have invested at the edge of large markets being transformed by technology."
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [
+        0
+      ],
+      "snippet": "817 Broadway, 14th Floor New York, NY 10003"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        0
+      ],
+      "snippet": "817 Broadway, 14th Floor New York, NY 10003"
+    },
+    "stages": {
+      "value": [
+        "seed"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "at the earliest stages of company building"
+    },
+    "thesis_text": {
+      "value": "Invests early at the edge of large markets being reshaped by technology, and keeps supporting founders afterwards.",
+      "pages": [
+        0
+      ],
+      "snippet": "we have invested at the edge of large markets being transformed by technology"
+    }
+  },
+  "funds": [
+    {
+      "name": "USV early-stage fund (Oct 2026 report)",
+      "number": null,
+      "size_original": 500000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        3
+      ],
+      "snippet": "raised $900 million across two funds"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Tolan",
+        "website": null,
+        "description": "Persistent companion product.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "$30M financing",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Union Square Ventures"
+      ],
+      "participants": [
+        "Khosla Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        2
+      ],
+      "snippet": "USV is leading a $30M financing in Tolan, alongside existing investor Khosla Ventures."
+    },
+    {
+      "company": {
+        "name": "Supper",
+        "website": null,
+        "description": "Agentic data platform (per article headline).",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-12-04",
+      "date_precision": "day",
+      "amount_original": 11000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Union Square Ventures"
+      ],
+      "participants": [
+        "BoxGroup",
+        "Inspired Capital",
+        "Torch Capital",
+        "Avid Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "led by Union Square Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "USV Climate Fund ($162M, 2021) not confirmed on fetched pages.",
+    "Fund names, numbers and close date for the Oct 2026 funds ($500M early-stage, $400M later-stage per Bloomberg via Crypto Briefing) not found; close_date left null.",
+    "Third round not recorded: Machenta and Gritt appear only as index entries without round details."
+  ]
+}

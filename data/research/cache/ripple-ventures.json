@@ -1,0 +1,69 @@
+{
+  "key": "ripple-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Ripple Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Ripple Ventures (rippleventures.com), Toronto-based inception/pre-seed VC with a Vancouver office (BetaKit); portfolio page lists Voiceflow, Wisedocs, Rose Rocket, Theo AI, Katalyze, Blank Bio. Not Ripple (XRP), not Ripple Capital.",
+  "pages": [
+    { "url": "https://www.rippleventures.com", "title": "Ripple Ventures", "publisher": "Ripple Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/ripple-ventures-plants-flag-in-vancouver-as-firm-envisions-coast-to-coast-fund-iii/", "title": "Ripple Ventures plants flag in Vancouver as firm envisions 'coast-to-coast' Fund III", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fundraiseinsider.com/blog/katalyze-ai-raises-10-5m-seed-for-pharma-agent-platform/", "title": "Katalyze AI Raises $10.5M Seed for Pharma Agent Platform", "publisher": "Fundraise Insider", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Toronto-based early-stage venture firm" },
+    "website": { "value": "https://www.rippleventures.com", "pages": [0], "snippet": "Inception-stage partners to founders building advanced technologies." },
+    "hq_city": { "value": "Toronto", "pages": [0, 1], "snippet": "Based in Toronto" },
+    "hq_country": { "value": "CA", "pages": [0, 1], "snippet": "Based in Toronto" },
+    "stages": { "value": ["pre_seed"], "pages": [0], "snippet": "inception (pre-incorporation, pre-product, or pre-traction)" },
+    "check_min_usd": { "value": 250000, "pages": [0], "snippet": "$250K–$1M USD" },
+    "check_max_usd": { "value": 1000000, "pages": [0], "snippet": "$250K–$1M USD" },
+    "thesis_text": {
+      "value": "Inception-stage partner to founders building advanced technologies, investing before incorporation, product or traction.",
+      "pages": [0],
+      "snippet": "Inception-stage partners to founders building advanced technologies."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Katalyze AI",
+        "website": null,
+        "description": "Agentic AI operating system for pharmaceutical companies, consolidating production data and running domain-trained agents.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "amount_original": 10500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Bonfire Ventures"],
+      "participants": ["Inovia Capital", "Ripple Ventures", "Alumni Ventures", "Gokul Rajaram"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "$10.5 million in a seed round"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.Katalyze AI.date",
+      "values": ["2026-09-15 (Fundraise Insider)", "July 2026 (seedtable URL slug seen in search results)"],
+      "chosen": "2026-09-15",
+      "reason": "Only the fetched page's date is used."
+    }
+  ],
+  "open_items": [
+    "Only 1 round recorded (Katalyze AI). Theo AI (pre-seed Nov 2024, per search summary), Wisedocs, Blank Bio not confirmed on fetched pages; Techleap Theo AI page returned HTTP 403.",
+    "No fund size found: BetaKit (Oct 2023) says Fund III target size undisclosed; Medium Fund III announcement returned 403. The lead's $30M 2024 close is unconfirmed. Fund III left out of funds for lack of size.",
+    "No application URL on homepage (only an email for new projects, not recorded). HQ per homepage is Toronto only; California not confirmed."
+  ]
+}

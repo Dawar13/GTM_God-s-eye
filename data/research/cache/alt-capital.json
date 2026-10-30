@@ -1,0 +1,78 @@
+{
+  "key": "alt-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Alt Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Alt Capital is Jack Altman's venture firm (Lattice co-founder), per TechCrunch and Pulse 2.0; first fund $150M announced Feb 2024, second fund $275M Sept 2025. Website altcap.com returned only a logo/title. Not Altman Capital (Sam Altman family office) and not the Indian Alt (alt.co) or Alt Capital Bangalore entries seen in aggregators.",
+  "pages": [
+    { "url": "https://pulse2.com/jack-altmans-alt-capital-closes-150-million-fund/", "title": "Jack Altman's Alt Capital Closes $150 Million Fund", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/09/16/jack-altman-raised-a-new-275m-early-stage-fund-in-a-mere-week", "title": "Jack Altman raised a new $275M early-stage fund in a mere week", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://stocks.observer-reporter.com/observerreporter/article/bizwire-2025-11-17-span-raises-25m-to-bring-clarity-to-engineering-teams-navigating-ai-transformation", "title": "Span raises $25M to bring clarity to engineering teams navigating AI transformation", "publisher": "Observer-Reporter (Business Wire release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.altcap.com", "title": "Alt Capital", "publisher": "Alt Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "Jack Altman just announced a second $275 million fund for his solo-run firm Alt Capital."
+    },
+    "website": {
+      "value": "https://www.altcap.com",
+      "pages": [3],
+      "snippet": "Alt Capital"
+    },
+    "thesis_text": {
+      "value": "Early-stage firm whose founder describes an 'infinite game' of finding, supporting and studying great startups, helping with advice and networks for customers, capital and talent.",
+      "pages": [0],
+      "snippet": "finding, supporting, and studying great startups"
+    }
+  },
+  "funds": [
+    {
+      "name": "Alt Capital Fund II",
+      "number": "II",
+      "size_original": 275000000,
+      "currency_original": "USD",
+      "close_date": "2025-09-16",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Jack Altman just announced a second $275 million fund for his solo-run firm Alt Capital."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Span",
+        "website": null,
+        "description": "AI-native developer intelligence platform for engineering teams.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Seed and Series A",
+      "date": "2025-11-17",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Alt Capital", "Craft Ventures", "SV Angel", "BoxGroup", "Bling Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "$25 million in Seed and Series A funding from Alt Capital, Craft Ventures, SV Angel, BoxGroup, and Bling Capital."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded (Span). Parahelp $18M Series A (Sept 2025, Alt reportedly lead) appeared only in search summaries; no fetched page. Business Wire original returned HTTP 403.",
+    "HQ (San Francisco per search summary), stages, check size not on a fetched page; altcap.com shows only a logo.",
+    "Search summaries say Jack Altman joined Benchmark as general partner in Feb 2026 (Bloomberg) and Alt Capital's future is unclear; not verified on a fetched page. Lead list's Fund I $150M 2024-02-01: Pulse 2.0 dated it Feb 2, 2024.",
+    "Fund II recorded as announced 2025-09-16 (article date); close date not stated."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "key": "breakwater-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Breakwater Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as breakwater.vc, the pre-seed and seed fund (founders William Finney and Peter Mueller, a SeaChange spinout per search summaries of GeekWire) whose homepage lists Scispot, Kodama Systems, Myriad and Neuramill. Not the unrelated Breakwater Ventures entry in some databases showing a $25M 2016 fund and Santa Monica address.",
+  "pages": [
+    { "url": "https://www.breakwater.vc", "title": "Breakwater Ventures", "publisher": "Breakwater Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.therobotreport.com/kodama-raises-7m-bring-robotics-forestry/", "title": "Kodama raises $7M to bring robotics to forestry", "publisher": "The Robot Report", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://founders-daily-briefing.beehiiv.com/p/scispot-raises-8m", "title": "Scispot raises $8M", "publisher": "Founders' Daily Briefing", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We invest early — pre seed and seed" },
+    "website": { "value": "https://www.breakwater.vc", "pages": [0], "snippet": "turning compute into labor capacity" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "We invest early — pre seed and seed" },
+    "thesis_text": {
+      "value": "Backs pre-seed and seed companies in the US and Canada that turn compute into labor capacity: industrial adoption of tech, fintech for non-traditional users, and vertical AI software.",
+      "pages": [0],
+      "snippet": "companies turning compute into labor capacity"
+    },
+    "stated_sectors": {
+      "value": ["industrial_manufacturing", "defense_dual_use", "fintech", "ai_apps_agents"],
+      "pages": [0],
+      "snippet": "Tech adoption in industrials, manufacturing, defense, agriculture, and skilled trades"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Kodama Systems", "website": null, "description": "Sonora, California company bringing physical AI to forestry via supervised autonomy plus teleoperation for logging machines.", "hq_country": "US", "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "robotics" },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Konvoy Ventures", "Breakwater Ventures"],
+      "participants": ["Blue Forest Asset Management", "NYA Ventures", "Breakthrough Energy Ventures", "Congruent Ventures", "Dangerous Ventures", "M1C"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Konvoy Ventures and Breakwater Ventures"
+    },
+    {
+      "company": { "name": "Scispot", "website": null, "description": "Kitchener-Waterloo life-sciences startup offering an AI-powered operating layer for lab tasks such as experiment planning, documentation and inventory.", "hq_country": "CA", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "all-equity Series A funding round",
+      "date": "2026-06-05",
+      "date_precision": "day",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Avenue Growth Partners"],
+      "participants": ["Breakwater Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Breakwater Ventures, an existing investor"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. Myriad $7.8M seed (Sep 2025, Category Ventures lead) and Sourcerer / Neuramill seeds seen only in search summaries or 403 pages; not recorded.",
+    "$10M Fund I (GeekWire Feb 2024) and Seattle HQ not confirmed on a fetched page: GeekWire returned 403; breakwater.vc states no HQ, check size or fund. No fund recorded.",
+    "Kodama round stage not labelled in the article; scispot quote paraphrased from fetch summary, snippet is the page's wording as reported.",
+    "No application URL or contact method on the homepage (newsletter, job board, LP login only)."
+  ]
+}

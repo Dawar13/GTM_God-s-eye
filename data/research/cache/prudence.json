@@ -1,0 +1,122 @@
+{
+  "key": "prudence",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Prudence",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Prudence the New York early-stage venture firm investing in the built world (construction, real estate, infrastructure, climate adaptation), per Pulse 2.0 and Private Equity International ('Prudence, a New York-based early-stage venture capital firm'). Firm's own domain was not fetched or confirmed. Not Prudence Holdings or other 'Prudence' entities.",
+  "pages": [
+    { "url": "https://pulse2.com/prudence-80-million-fund-iii-closed-to-invest-in-early-stage-startups", "title": "Prudence: $80 Million Fund III Closed To Invest In Early-Stage Startups", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://raising.fi/news/rebar-series-a-march-2026", "title": "Rebar Raises $14 Million in Series A Funding", "publisher": "Raising.fi", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.privateequityinternational.com/building-managers-marketplace-vendorpm-inks-c20m-series-a", "title": "Building managers marketplace VendorPM inks C$20m Series A", "publisher": "Private Equity International / Venture Capital Journal", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [2],
+      "snippet": "Prudence, a New York-based early-stage venture capital firm"
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [2],
+      "snippet": "Prudence, a New York-based early-stage venture capital firm"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [2],
+      "snippet": "Prudence, a New York-based early-stage venture capital firm"
+    },
+    "stages": {
+      "value": ["seed", "series_a", "series_b"],
+      "pages": [0],
+      "snippet": "invests from the seed to Series B stage"
+    },
+    "leads": {
+      "value": true,
+      "pages": [2],
+      "snippet": "led the round"
+    },
+    "thesis_text": {
+      "value": "Early-stage technology for the built world: construction, real estate, infrastructure and climate adaptation, with emphasis on software, data and AI.",
+      "pages": [0],
+      "snippet": "construction, real estate, infrastructure, and climate adaptation"
+    },
+    "stated_sectors": {
+      "value": ["industrial_manufacturing", "climate_energy", "supply_chain_logistics"],
+      "pages": [0],
+      "snippet": "construction, real estate, infrastructure, and climate adaptation"
+    }
+  },
+  "funds": [
+    {
+      "name": "Prudence Fund III",
+      "number": "III",
+      "size_original": 80000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [0],
+      "snippet": "closed its third fund with $80 million of capital commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Rebar",
+        "website": null,
+        "description": "AI quoting and estimating for HVAC, electrical and plumbing contractors, reading blueprints and spec books.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-04",
+      "date_precision": "month",
+      "amount_original": 14000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Prudence"],
+      "participants": ["Zero Infinity Partners", "Founder Collective", "Villain Capital", "Optimist Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Series A"
+    },
+    {
+      "company": {
+        "name": "VendorPM",
+        "website": null,
+        "description": "Proptech startup (building managers' vendor marketplace); the fetched page gives no product detail.",
+        "hq_country": "CA",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2022-08-24",
+      "date_precision": "day",
+      "amount_original": 20000000,
+      "currency_original": "CAD",
+      "valuation_post_original": null,
+      "leads": ["Prudence"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "collects C$20m in Series A financing"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Prudence's own site not fetched; website, check size and application URL not recorded. Domain not confirmed.",
+    "Fund III close date: BusinessWire release (7 March 2024 per lead) returned 403; Pulse 2.0 says reported April 2024. close_date left null.",
+    "Rebar: raising.fi page is dated 24 April 2026 while the BusinessWire release URL in search results is dated 10 March 2026 (403, not fetched); month recorded from the fetched page. Rebar HQ New York per raising.fi (search summaries differ: Seattle).",
+    "Third round (AI Clearing, City Detect, Uniti) not confirmed from a fetched page; only two rounds recorded, VendorPM is outside 24 months.",
+    "Rebar snippet is a bare label because the fetch summary did not quote the page sentence naming Prudence as lead."
+  ]
+}

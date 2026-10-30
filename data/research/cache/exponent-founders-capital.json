@@ -1,0 +1,44 @@
+{
+  "key": "exponent-founders-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Exponent Founders Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Exponent Founders Capital, a New York generalist early-stage VC that announced $125M raised to date including a $75M Fund II in Jan 2024 (Pulse 2.0). Not Exponent One (Indian EV financing arm), not Exponent (Solana yield protocol), not Exponent Partners or Exponent Private Equity.",
+  "pages": [
+    { "url": "https://pulse2.com/exponent-founders-capital-launched-with-125-million-to-invest-in-early-stage-companies", "title": "Exponent Founders Capital Launched With $125 Million To Invest In Early-Stage Companies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "inception and early-stage companies" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "Exponent Founders Capital Launched With $125 Million" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Exponent Founders Capital Launched With $125 Million" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "inception and early-stage companies" },
+    "thesis_text": {
+      "value": "Generalist early-stage investor in enterprise software, fintech and payments, infrastructure, applied AI and vertical SaaS across the U.S., Canada and Europe.",
+      "pages": [0],
+      "snippet": "inception and early-stage companies"
+    },
+    "stated_sectors": { "value": ["enterprise_saas", "fintech", "ai_apps_agents"], "pages": [0], "snippet": "inception and early-stage companies" }
+  },
+  "funds": [
+    {
+      "name": "Exponent Founders Capital Fund II",
+      "number": "II",
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2024-01-05",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "raised $125 million to date"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "0 rounds recorded. Search summaries mention only Artie seed (Feb 2024) via a third-party profile; no fetched page names the firm in a round. exponent.vc fetch failed (TLS error); Business Wire releases returned HTTP 403.",
+    "Website not confirmed on a fetched page. Check size ($500K-$5M) appears only in search summaries. Application URL, cold inbound not found.",
+    "Fund II date is the announcement date (Jan 5, 2024); 'close' not stated separately. Pulse 2.0 snippet about fund size is partial; the page text also says 'a new $75 million Fund II vehicle'."
+  ]
+}

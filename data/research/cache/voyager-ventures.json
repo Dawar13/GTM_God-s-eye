@@ -1,0 +1,70 @@
+{
+  "key": "voyager-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Voyager Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as voyagervc.com, the early-stage energy, industrial and climate-tech fund whose homepage announces its $275M Fund II and whose Feb 2024 release describes a $100M Select Fund I (San Francisco and New York offices). Not Voyager Capital (Seattle), not Voyagers Ventures, not Voyager Partners other than this firm's own fund vehicles.",
+  "pages": [
+    { "url": "https://www.voyagervc.com", "title": "Voyager Ventures", "publisher": "Voyager Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/voyager-ventures-closes-select-fund-i-to-invest-in-the-next-generation-of-climate-tech-302055566.html", "title": "Voyager Ventures Closes Select Fund I", "publisher": "PR Newswire (Voyager Ventures)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/voyager-ventures-275-million-fund-ii/", "title": "Voyager Ventures: $275 Million Fund II Closed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.esgtoday.com/voyager-ventures-launches-275-million-fund-to-invest-in-energy-industrial-climate-tech-startups/", "title": "Voyager Ventures Launches $275 Million Fund", "publisher": "ESG Today", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.esgtoday.com/clean-energy-startup-arbor-raises-55-million-to-deploy-zero-emission-turbines/", "title": "Clean Energy Startup Arbor Raises $55 Million", "publisher": "ESG Today", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [3], "snippet": "early-stage" },
+    "website": { "value": "https://www.voyagervc.com", "pages": [0], "snippet": "Investing in frontier energy, industrial, and climate technology companies" },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "San Francisco" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "San Francisco" },
+    "stages": { "value": ["seed", "series_a"], "pages": [1, 3], "snippet": "primarily to Series A, with consideration for Series B and beyond" },
+    "thesis_text": {
+      "value": "Backs early-stage technologies that upgrade the economy's core systems: energy generation and storage, materials production, physical AI, mobility and carbon management.",
+      "pages": [2, 3],
+      "snippet": "invest early in the foundational technology companies for durable economic growth"
+    },
+    "stated_sectors": {
+      "value": ["climate_energy", "industrial_manufacturing", "ai_apps_agents", "mobility_ev"],
+      "pages": [0, 3],
+      "snippet": "Energy + Efficiency"
+    }
+  },
+  "funds": [
+    {
+      "name": "Voyager Ventures Fund II",
+      "number": "II",
+      "size_original": 275000000,
+      "currency_original": "USD",
+      "close_date": "2026-01",
+      "date_precision": "month",
+      "pages": [0, 2],
+      "snippet": "Announcing Our $275M Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Arbor Energy", "website": null, "description": "Clean-power startup, founded 2022 by former SpaceX engineers, building a supercritical CO2 oxy-combustion turbine.", "hq_country": null, "founded_year": 2022, "sector": "climate_energy", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-10",
+      "date_precision": "month",
+      "amount_original": 55000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Lowercarbon Capital", "Voyager Ventures"],
+      "participants": ["Gigascale Capital", "Marathon Petroleum Corporation", "Cantos Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Lowercarbon Capital and Voyager Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. NewOrbit Series A (~$18.5M, Jun 2026), Foundation Alloy ($22M Series A), Leeta Materials seed ($4M vs $5.65M) and Endurance Energy ($54M Series A) were seen only in search summaries or on pages that failed to load; Astro Mechanica's fetched page did not name Voyager.",
+    "Fund II exact close date: Pulse 2.0 is dated Jan 29, 2026 and ESG Today Jan 30; PR Newswire release reported as Jan 28 in search results only. Recorded to the month. Fund I (Voyager Partners Select I, $100M, 2024-02-07) is earlier and not recorded.",
+    "Check size not stated on fetched pages. HQ taken from the 2024 release; the homepage shows SF, NY, London and Munich clocks without naming a HQ.",
+    "Arbor article date is Oct 23, 2025 (ESG Today); round announced around Oct 21 per search results."
+  ]
+}

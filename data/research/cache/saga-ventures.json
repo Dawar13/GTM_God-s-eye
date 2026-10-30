@@ -1,0 +1,77 @@
+{
+  "key": "saga-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Saga Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Seed-stage fund of Max Altman (ex-Alt Capital), Ben Braverman (ex-Flexport CRO) and Thomson Nguyen (Nearside founder), with a $125M first fund (Future Nexus; Venture Unlocked). Co-leads Dedalus Labs' seed per the round coverage. No official site was found; Profound's release writes the name as 'Saga VC'. Not the Saga blockchain or the Amsterdam legal-tech startup Saga.",
+  "pages": [
+    { "url": "https://www.heyfuturenexus.com/posts/saga-ventures-125m-bet-on-pandoras-box", "title": "Saga Ventures' $125M bet on Pandora's box", "publisher": "Future Nexus", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://ventureunlocked.substack.com/p/saga-ventures-on-key-lessons-on-raising", "title": "Saga Ventures on key lessons on raising a fund", "publisher": "Venture Unlocked", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.startuphub.ai/news/dedalus-labs-secures-11m-seed-funding-for-ai-agent-dev", "title": "Dedalus Labs Secures $11M Seed Funding for AI Agent Dev", "publisher": "StartupHub.ai", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.techbuzz.ai/articles/fleetworks-raises-17m-to-ai-match-truckers-with-cargo-loads", "title": "FleetWorks raises $17M to AI-match truckers with cargo loads", "publisher": "The Tech Buzz", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.tryprofound.com/newsroom/profound-raises-35m-series-b-as-ai-search-becomes-the-next-platform-shift", "title": "Profound raises $35M Series B as AI search becomes the next platform shift", "publisher": "Profound", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "manages a $125 million early-stage venture fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Pre-seed and seed" },
+    "leads": { "value": true, "pages": [2], "snippet": "co-led by Kindred Ventures and Saga Ventures" },
+    "thesis_text": { "value": "Operator-led early-stage investor that helps founders hire early engineers, shape go-to-market, and reach Series A investors; fintech and AI focus.", "pages": [0], "snippet": "All companies are fintech companies, but also all companies are AI companies now too." },
+    "stated_sectors": { "value": ["fintech", "ai_apps_agents"], "pages": [0], "snippet": "All companies are fintech companies, but also all companies are AI companies now too." }
+  },
+  "funds": [
+    {
+      "name": "Saga Ventures Fund I",
+      "number": "I",
+      "size_original": 125000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [0],
+      "snippet": "manages a $125 million early-stage venture fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Dedalus Labs", "website": null, "description": "Startup streamlining AI agent development.", "hq_country": null, "founded_year": null, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed funding round", "date": "2025-10-15", "date_precision": "day",
+      "amount_original": 11000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Kindred Ventures", "Saga Ventures"],
+      "participants": ["Y Combinator"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "co-led by Kindred Ventures and Saga Ventures"
+    },
+    {
+      "company": { "name": "FleetWorks", "website": null, "description": "Uses AI agents to match freight with trucking carriers via calls, texts or a web portal.", "hq_country": null, "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-10-14", "date_precision": "day",
+      "amount_original": 17000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["First Round Capital"],
+      "participants": ["Y Combinator", "Saga Ventures", "LFX Venture Partners"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "participation from Y Combinator, Saga Ventures, and LFX Venture Partners"
+    },
+    {
+      "company": { "name": "Profound", "website": null, "description": "AI visibility and content optimization platform.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B", "date": "2025-08-12", "date_precision": "day",
+      "amount_original": 35000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Sequoia"],
+      "participants": ["Kleiner Perkins", "Khosla Ventures", "South Park Commons"],
+      "unspecified": ["Saga VC"],
+      "pages": [4],
+      "snippet": "Kleiner Perkins, Khosla Ventures, Saga VC, and South Park Commons"
+    }
+  ],
+  "conflicts": [
+    { "field": "hq", "values": ["Bay Area (lead list)", "Austin, TX or Wyoming (search-result summaries only)"], "chosen": "unset", "reason": "No fetched page states the firm's location; no official site found." }
+  ],
+  "open_items": [
+    "HQ city/country not stated on any fetched page, so not recorded (lead list says Bay Area; search summaries disagree: Austin / Wyoming).",
+    "Fund I close date not on a fetched page (launched March 2024 per Venture Unlocked summary); lead list's 2024-05-06 date unconfirmed. Check size ($2-2.5M) appears only in search summaries; website, application URL, cold inbound not found.",
+    "Profound release says 'Saga VC'; treated as the same firm because Future Nexus names Profound as a portco, but not explicitly tied on one page.",
+    "FleetWorks amount: TechCrunch-style coverage says $17M Series A; other outlets say $15M Series A within $17M. Dates are article dates. Company HQs not stated on the fetched pages."
+  ]
+}

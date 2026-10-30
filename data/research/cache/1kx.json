@@ -1,0 +1,108 @@
+{
+  "key": "1kx",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "1kx",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the crypto/web3 venture firm 1kx: The Block describes 'investment firm 1kx' raising a $75M closed-ended fund for early-stage companies and token networks (March 2024), and Optimum and Kulipa seed rounds name 1kx as lead. The lead's 'Germany' HQ could not be confirmed on any fetched page (1kx.com and www.1kx.com both show only 'Under construction'). Not 1kx-named unrelated entities; no domain-level disambiguation beyond the web3 context.",
+  "pages": [
+    { "url": "https://www.theblock.co/post/285702/1kx-raise-75-million-funding-round", "title": "1kx raises $75 million in latest funding round", "publisher": "The Block", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.coindesk.com/tech/2025/04/15/mit-incubated-optimum-raises-usd11m-seed-round-to-build-web3-s-missing-memory-layer", "title": "MIT-incubated Optimum raises $11M seed round to build Web3's missing memory layer", "publisher": "CoinDesk", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://asksurf.ai/pulse/en/kulipa-raises-6-2m-seed-web3", "title": "Kulipa raises $6.2M seed (Web3)", "publisher": "Surf (asksurf.ai)", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://1kx.com", "title": "1kx", "publisher": "1kx", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "Investment firm 1kx has raised $75 million for a new oversubscribed closed-ended fund"
+    },
+    "website": {
+      "value": "https://1kx.com",
+      "pages": [3],
+      "snippet": "Under construction"
+    },
+    "thesis_text": {
+      "value": "Gives early-stage companies and token networks technical support, financial resources and infrastructure help.",
+      "pages": [0],
+      "snippet": "offering technical support, financial resources and infrastructure assistance to early-stage companies and token networks"
+    },
+    "stated_sectors": {
+      "value": ["crypto_web3"],
+      "pages": [0],
+      "snippet": "early-stage companies and token networks"
+    }
+  },
+  "funds": [
+    {
+      "name": "Closed-ended fund (first close; name not given)",
+      "number": null,
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2024-03",
+      "date_precision": "month",
+      "pages": [0],
+      "snippet": "The investment firm on Thursday completed the first close of a new oversubscribed closed-ended fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Optimum",
+        "website": null,
+        "description": "Decentralized memory layer for blockchains, aimed at improving blockchain performance.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "crypto_web3",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-04-15",
+      "date_precision": "day",
+      "amount_original": 11000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["1kx"],
+      "participants": ["Robot Ventures", "Finality Capital", "Spartan", "CMT Digital", "SNZ", "Triton Capital", "GSR", "Animoca"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "The seed round was led by 1kx with participation from Robot Ventures, Finality Capital, Spartan"
+    },
+    {
+      "company": {
+        "name": "Kulipa",
+        "website": null,
+        "description": "Web3 startup; the announcement does not say what it builds.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "crypto_web3",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed funding",
+      "date": "2026-04-01",
+      "date_precision": "day",
+      "amount_original": 6200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["1kx", "Flourish Ventures"],
+      "participants": ["White Star Capital", "Fabric Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "1kx and Flourish Ventures led the round, with White Star Capital and Fabric Ventures also participating."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ not found on any fetched page; lead says Germany and a search summary of a database page says Berlin, neither fetched. 1kx.com shows 'Under construction'.",
+    "Stages and check size ($500K-$5M per a database summary) not on a fetched page; omitted.",
+    "Fund name/number not stated; The Block describes a first close on a Thursday (30 March 2024 article date); close_date kept to the month. Lead says 2024-03-27.",
+    "Kulipa round rests on one aggregator page (kind database); no primary or press announcement fetched. Only two rounds found.",
+    "Application URL / cold-inbound not checked."
+  ]
+}

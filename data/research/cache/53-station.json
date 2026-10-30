@@ -1,0 +1,84 @@
+{
+  "key": "53-station",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "53 Stations",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as 53stations.com, the early-stage venture firm backed by The Pritzker Organization (TPO), single-LP structure; its portfolio page lists Altana, Flux, Whisper Aero, Kaya AI, ConCntric. The lead list calls it '53 Station'; the firm writes '53 Stations'. Not Station A, not 5:01 Acquisition, not the djlive5-3station.com domain that 53station.com (singular) redirects to, which was not fetched.",
+  "pages": [
+    { "url": "https://www.53stations.com", "title": "53 Stations", "publisher": "53 Stations", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/53-stations-190-million-fund-i/", "title": "53 Stations: $190 Million Fund I Launched To Invest In Early-Stage Companies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://prnewswire.com/news-releases/kaya-ai-launches-with-5-3m-pre-seed-to-transform-data-center-and-mission-critical-project-supply-chains-with-ai-302356728.html", "title": "Kaya AI launches with $5.3M pre-seed", "publisher": "PR Newswire", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techfundingnews.com/concntric-raises-10m-series-a-ai-preconstruction/", "title": "ConCntric raises $10M Series A", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://proptechconnect.com/concntric-has-raised-10-million-in-series-a-funding-2/", "title": "ConCntric has raised $10 million in Series A funding", "publisher": "PropTechConnect", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We invest in early-stage, technology companies in TPO-aligned sectors" },
+    "website": { "value": "https://www.53stations.com", "pages": [0], "snippet": "We invest in early-stage, technology companies in TPO-aligned sectors" },
+    "thesis_text": {
+      "value": "Early-stage technology investor backed by a single LP, The Pritzker Organization, offering founders access to its operating businesses and executives.",
+      "pages": [0, 1],
+      "snippet": "We invest in early-stage, technology companies in TPO-aligned sectors"
+    },
+    "stated_sectors": {
+      "value": ["industrial_manufacturing", "health_bio", "fintech"],
+      "pages": [0],
+      "snippet": "We invest in early-stage, technology companies in TPO-aligned sectors"
+    }
+  },
+  "funds": [
+    {
+      "name": "53 Stations Fund I",
+      "number": "I",
+      "size_original": 190000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [1],
+      "snippet": "Fund I, $190 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "ConCntric", "website": "https://concntric.com", "description": "AI preconstruction platform combining scope, cost, schedule and risk workflows, with an agentic AI engine called Amplify.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-10-07",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["53 Stations"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3, 4],
+      "snippet": "ConCntric addresses this by equipping teams with a platform and Amplify, our agentic AI engine"
+    },
+    {
+      "company": { "name": "Kaya AI", "website": "https://usekaya.ai/", "description": "AI and automation platform for procurement on data center and mission-critical infrastructure construction projects.", "hq_country": null, "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-01-22",
+      "date_precision": "day",
+      "amount_original": 5300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["53 Stations", "Suffolk Technologies", "Soma Capital"],
+      "participants": ["Barclays Black Formation Investments", "RXR", "Mantis VC", "Virta Ventures", "4DX Ventures", "TO Ventures", "Optimist Ventures", "Refashiond Ventures", "Timon Capital", "BFF", "BlueImpact"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "we look for transformative technology partners in spaces we know well."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (Chicago) not recorded: the fetched pages do not state an address; only the lead list and search results say Chicago.",
+    "Fund I close date not confirmed: Pulse 2.0 (dated 2 Dec 2023) gives size only; Business Wire release (22 Nov 2023 per search URL) not fetched. Described as a launch, not a final close.",
+    "Stages (seed to Series B) and check size ($1M-$10M) appear only in search summaries; not recorded.",
+    "Only 2 rounds found: Whisper Aero's Series A (Fenwick page) does not name 53 Stations; Ketryx Series B and Wealth.com Series B involvement came from search snippets only.",
+    "53station.com (no s) redirects to djlive5-3station.com; not followed.",
+    "Sectors mapped from portfolio descriptions (built-world, healthcare, wealth management) to nearest ids."
+  ]
+}

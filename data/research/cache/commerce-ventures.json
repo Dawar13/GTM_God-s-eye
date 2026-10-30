@@ -1,0 +1,150 @@
+{
+  "key": "commerce-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Commerce Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as commerce.vc, the San Francisco (555 Mission Street) retail and financial-services tech firm; portfolio includes Bill.com, Marqeta, Forter, Socure, Narvar. Fund V release is datelined San Francisco. Not New Commerce Ventures or other 'Commerce' funds.",
+  "pages": [
+    { "url": "https://www.commerce.vc", "title": "Commerce Ventures", "publisher": "Commerce Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.prweb.com/releases/commerce-ventures-announces-oversubscribed-fund-v-to-continue-investing-in-the-future-of-retail-and-financial-services-302077182.html", "title": "Commerce Ventures Announces Oversubscribed Fund V", "publisher": "Commerce Ventures via PRWeb", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.pymnts.com/?p=3454009", "title": "EnFi's $15 Million Fundraise Pushes Agentic AI Into Bank Credit Decisions", "publisher": "PYMNTS", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/fuse-raises-25m-to-disrupt-aging-loan-origination-systems-used-by-us-credit-unions/", "title": "Fuse raises $25M to disrupt aging loan origination systems used by US credit unions", "publisher": "InforCapital", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.newswire.com/news/refibuy-raises-13-6m-oversubscribed-seed-round-to-accelerate-agentic-commerce", "title": "ReFiBuy Raises $13.6M Oversubscribed Seed Round to Accelerate Agentic Commerce", "publisher": "Newswire (company release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "exceeding $150 million in committed capital"
+    },
+    "website": {
+      "value": "https://www.commerce.vc",
+      "pages": [0],
+      "snippet": "Powering the future of commerce for all."
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [0],
+      "snippet": "555 Mission Street, Suite 3250"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [0],
+      "snippet": "555 Mission Street, Suite 3250"
+    },
+    "thesis_text": {
+      "value": "Partners with founders building the platforms behind the future of retail and financial services, across shopping, payments, insurance and banking tech.",
+      "pages": [0],
+      "snippet": "To partner with entrepreneurs who are building the platforms required for the future of retail and financial services."
+    },
+    "stated_sectors": {
+      "value": ["fintech", "consumer"],
+      "pages": [0],
+      "snippet": "Powering the future of commerce for all."
+    }
+  },
+  "funds": [
+    {
+      "name": "Commerce Ventures Fund V",
+      "number": "V",
+      "size_original": 150000000,
+      "currency_original": "USD",
+      "close_date": "2024-03-04",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "exceeding $150 million in committed capital"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "EnFi",
+        "website": null,
+        "description": "AI agents that help banks make credit decisions by checking debt levels, pledged assets and credit background.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-02-04",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Fintop"],
+      "participants": ["Patriot Financial Partners", "Commerce Ventures", "Unusual Ventures", "Boston Seed Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The funding round was led by Fintop"
+    },
+    {
+      "company": {
+        "name": "Fuse",
+        "website": null,
+        "description": "AI-driven loan origination software meant to replace outdated lending systems at US credit unions.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-17",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Footwork", "Primary Venture Partners", "NextView Ventures", "Commerce Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "spearheaded by prominent venture capital firms including"
+    },
+    {
+      "company": {
+        "name": "ReFiBuy",
+        "website": null,
+        "description": "Agentic Commerce Optimization platform helping brands and retailers appear in AI shopping assistants.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Series Seed",
+      "date": "2026-05-05",
+      "date_precision": "day",
+      "amount_original": 13600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["NewRoad Capital Partners"],
+      "participants": ["Ridge Ventures", "Silicon Road Ventures", "Incubate Fund", "VELA Partners", "G20 Ventures", "Commerce Ventures", "Knoll Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "$13.6 million in oversubscribed Series Seed funding"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "funds",
+      "values": ["$26M (2016) and $150M (2021) per lead list", "Fund V exceeding $150M, announced 2024-03-04 per PRWeb release"],
+      "chosen": "Fund V, >$150M, 2024-03-04",
+      "reason": "Task asks for the latest fund only; the $150M (2021) lead appears to be the earlier Fund IV (not fetched)."
+    }
+  ],
+  "open_items": [
+    "Stages and check size not stated on fetched pages (a database summary says Seed to Series B, $1M-$5M; not fetched).",
+    "Fuse: InforCapital (a news aggregator, kind database) says the round was 'spearheaded' by four firms including Commerce Ventures; no single lead stated, so leads left empty. Search summaries disagree on the lead; no TechCrunch original fetched.",
+    "EnFi stage not given on the PYMNTS page (search summaries say Series A).",
+    "Fund V size is 'exceeding $150 million'; recorded as 150000000. Fund V close date is the announcement date.",
+    "Application URL not checked."
+  ]
+}

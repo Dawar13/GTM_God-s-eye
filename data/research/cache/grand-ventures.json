@@ -1,0 +1,95 @@
+{
+  "key": "grand-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Grand Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as grandvcp.com, the seed-stage B2B venture firm at a Grand Rapids, Michigan address; its Fund II announcement dated 2023-10-09 matches the $50M lead. Not Grand Ventures in other cities and not Grand Central or Grand Crossing funds.",
+  "pages": [
+    { "url": "https://www.grandvcp.com", "title": "Grand Ventures", "publisher": "Grand Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://grandvcp.com/michigans-grand-ventures-announces-50m-early-stage-fund", "title": "Michigan's Grand Ventures announces $50M early-stage fund", "publisher": "Grand Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.grandvcp.com/why-grand-invested-in-ollygarden", "title": "Why Grand Invested in OllyGarden", "publisher": "Grand Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.grandvcp.com/why-we-invested-in-brokerbot", "title": "Why We Invested in BrokerBot", "publisher": "Grand Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.complyjet.com/blog/comp-ai-funding", "title": "Comp AI Funding: What the $34M Series A Means for Compliance Buyers", "publisher": "ComplyJet", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "second fund to invest in early-stage companies" },
+    "website": { "value": "https://www.grandvcp.com", "pages": [0], "snippet": "We invest in early-stage B2B technology companies across North America and beyond" },
+    "hq_city": { "value": "Grand Rapids", "pages": [1], "snippet": "The Grand Rapids, Michigan firm" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "The Grand Rapids, Michigan firm" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "Seed Stage" },
+    "check_min_usd": { "value": 250000, "pages": [0], "snippet": "$250K-$2M" },
+    "check_max_usd": { "value": 2000000, "pages": [0], "snippet": "$250K-$2M" },
+    "thesis_text": { "value": "Invests in early-stage B2B technology companies across North America and beyond, with a seed-stage focus on developer tools, digital health and fintech.", "pages": [0], "snippet": "We invest in early-stage B2B technology companies across North America and beyond" },
+    "stated_sectors": { "value": ["dev_tools", "health_bio", "fintech"], "pages": [0], "snippet": "DevOps / Dev Tools · Digital Health · Fintech" },
+    "application_url": { "value": "https://www.grandvcp.com/lets-connect", "pages": [0], "snippet": "Let's connect" }
+  },
+  "funds": [
+    {
+      "name": "Grand Ventures Fund II",
+      "number": "II",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2023-10-09",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Michigan's Grand Ventures announces $50M early-stage fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Comp AI", "website": null, "description": "Compliance automation startup focused on SOC 2 and security compliance.", "hq_country": null, "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "amount_original": 34000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Roo Capital", "Grand Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "The round was led by Roo Capital and Grand Ventures"
+    },
+    {
+      "company": { "name": "OllyGarden", "website": null, "description": "OpenTelemetry expertise embedded in every repository, cutting telemetry waste.", "hq_country": null, "founded_year": null, "sector": "dev_tools", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "$4M seed round",
+      "date": "2026-10-12",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Grand Ventures", "Next Frontier Capital", "ACTAI Ventures", "DIG Ventures", "Datadog", "Grafana Labs", "Dash0"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "alongside Next Frontier Capital and ACTAI Ventures"
+    },
+    {
+      "company": { "name": "BrokerBot", "website": null, "description": "Admin and compliance automation for real estate brokerages.", "hq_country": null, "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-06-04",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Grand Ventures"],
+      "pages": [3],
+      "snippet": "We’re excited to welcome BrokerBot to the Grand Ventures portfolio."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Fund II close date is the announcement date (2023-10-09); one search summary dated the close to 2022, unverified.",
+    "Comp AI Series A is sourced from a ComplyJet blog that cites TechCrunch and the company release; neither was fetched. Comp AI pre-seed (2.6M) not recorded (Grand co-lead only in search summaries).",
+    "OllyGarden and BrokerBot dates are Grand's blog post dates, not round close dates. BrokerBot amount and co-investors not stated. Shelfmark (Aug 2026) also backed; amount not stated on the fetched post.",
+    "Contact page /lets-connect was not fetched; cold-inbound stance not recorded."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "key": "red-beard-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Red Beard Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Web3/frontier-tech syndicate and fund (RBV) with a newsletter at redbeardventures.beehiiv.com and a $25M Fund I reported May 2023 (Animoca Brands among backers). redbeard.vc is a for-sale redirect, so the firm's own website was not usable. Not Redbeard Ventures-named unrelated entities.",
+  "pages": [
+    { "url": "https://redbeardventures.beehiiv.com/p/rbv-weekly-newsletter-aa24", "title": "RBV Weekly Newsletter", "publisher": "Red Beard Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/red-beard-ventures-25-million-funding/amp/", "title": "Red Beard Ventures: $25 Million Funding Round Banked To Accelerate Web3", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Red Beard Ventures (RBV) Fund I" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "Fund I invests $100k to $1M in pre-seed and seed blockchain-based companies." },
+    "check_min_usd": { "value": 100000, "pages": [0], "snippet": "invests $100k to $1M" },
+    "check_max_usd": { "value": 1000000, "pages": [0], "snippet": "invests $100k to $1M" },
+    "thesis_text": { "value": "Stage-agnostic syndicate in frontier technology, led by Web3 plus space, fintech, robotics, biotech and climate; Fund I targets early blockchain companies.", "pages": [0], "snippet": "stage agnostic and invests in Frontier Technology with a focus on Web3, Space, FinTech, Robotics, Biotech, and Climate" },
+    "stated_sectors": { "value": ["crypto_web3", "space", "fintech", "robotics_physical_ai", "health_bio", "climate_energy"], "pages": [0], "snippet": "focus on Web3, Space, FinTech, Robotics, Biotech, and Climate" }
+  },
+  "funds": [
+    {
+      "name": "Red Beard Ventures Fund I",
+      "number": "I",
+      "size_original": 25000000,
+      "currency_original": "USD",
+      "close_date": "2023-05-16",
+      "date_precision": "day",
+      "pages": [0, 1],
+      "snippet": "Red Beard Ventures Closes $25M Funding Round With Animoca Brands, Others"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No portfolio round found on a page that names Red Beard in a specific round; none recorded. Search summaries mention LAB (Oct 2025), Maiga.ai (Sep 2025) and Layer3 (2021 seed) but those pages were not fetched.",
+    "HQ (NYC / LA per lead) not stated on any fetched page; omitted. Website unresolved (redbeard.vc redirects to a domain-sale page); CoinDesk (SSO redirect) and TokenInsight (403) not read.",
+    "Pulse 2.0 says the $25M was a 'funding round'; newsletter calls it a Fund I close. Recorded as fund close; date 2023-05-16 is the CoinDesk date cited by the newsletter."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "key": "definition-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Definition Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "definitioncap.com lists only a New York address (134 West 4th St) and a contact link; no description, fund or portfolio. Search summaries (not fetched) describe a New York software-focused firm founded 2022 with a roughly $100M Fund I. Not Definition Capital UK-listed entities, Define Ventures or Defined Capital.",
+  "pages": [
+    { "url": "https://definitioncap.com", "title": "Definition Capital", "publisher": "Definition Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "website": {
+      "value": "https://definitioncap.com",
+      "pages": [0],
+      "snippet": "134 West 4th St, New York, NY, 10012"
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [0],
+      "snippet": "134 West 4th St, New York, NY, 10012"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [0],
+      "snippet": "134 West 4th St, New York, NY, 10012"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "Only the New York address is confirmed from a fetched page. Type, stages, check size, thesis and fund are not stated on definitioncap.com.",
+    "No $80M fund dated 2024-02-21 found: search summaries show a reported ~$100M Fund I from a single aggregator and no Feb 2024 announcement. Lead unverified.",
+    "No round recorded: no fetched page names Definition Capital. Decagon Series D (Jan 2026; Builtin page does not name Definition) and other 2026 deals appear only in search summaries; MergerLinks/F4 pages were login-walled or 403.",
+    "Zero rounds found; needs a re-run with the press release for the fund and the Decagon / Cape / Simile announcements."
+  ]
+}

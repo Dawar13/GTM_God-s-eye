@@ -1,0 +1,53 @@
+{
+  "key": "dept-of-xyz",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Dept of XYZ",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "departmentofxyz.com redirects to theventuredept.vc, 'The Venture Dept.', legal entity 'The Department of XYZ IM LLC', founder and general partner Matt Homer; announcements name 'The Department of XYZ' as an Etherfuse and Superstate investor. Not a government department.",
+  "pages": [
+    { "url": "https://www.theventuredept.vc/", "title": "The Venture Dept.", "publisher": "The Venture Dept.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.theventuredept.vc/about.html", "title": "About - The Venture Dept.", "publisher": "The Venture Dept.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.theventuredept.vc/portfolio.html", "title": "Portfolio - The Venture Dept.", "publisher": "The Venture Dept.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://theblock.co/post/263049/coinfund-co-leads-14-million-series-a-round-for-asset-manager-superstate", "title": "CoinFund co-leads $14 million Series A round for asset manager Superstate", "publisher": "The Block", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://chainwire.org/2024/07/22/etherfuse-raises-3m-to-bring-emerging-market-debt-on-chain/", "title": "Etherfuse raises $3M to bring emerging market debt on-chain", "publisher": "Chainwire (press release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "founders building the next generation of financial infrastructure" },
+    "website": { "value": "https://www.theventuredept.vc", "pages": [0], "snippet": "We Back Founders Building The Future of Finance" },
+    "thesis_text": { "value": "Early-stage venture firm backing founders building the next generation of financial infrastructure.", "pages": [0, 1], "snippet": "founders building the next generation of financial infrastructure" },
+    "stated_sectors": { "value": ["fintech"], "pages": [0], "snippet": "We Back Founders Building The Future of Finance" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Etherfuse", "website": null, "description": "Platform for issuing tokenized real-world assets, focused on emerging-market government debt (Stablebonds); team split between Irvine, CA and Mexico City.", "hq_country": null, "founded_year": null, "sector": "crypto_web3", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed funding round", "date": "2024-07-22", "date_precision": "day",
+      "amount_original": 3000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["White Star Capital", "North Island Ventures"],
+      "participants": ["The Stellar Development Foundation", "Funfair"],
+      "unspecified": ["The Department of XYZ"],
+      "pages": [4],
+      "snippet": "co-led by White Star Capital and North Island Ventures"
+    },
+    {
+      "company": { "name": "Superstate", "website": null, "description": "Asset management firm using blockchain to tokenize investment products; founded by Robert Leshner.", "hq_country": null, "founded_year": null, "sector": "crypto_web3", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2023-11-15", "date_precision": "day",
+      "amount_original": 14000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Distributed Global", "CoinFund"],
+      "participants": ["Breyer Capital", "Galaxy", "Arrington Capital", "Road Capital", "CMT Digital", "Folius Ventures", "Nascent", "Hack VC", "Modular Capital"],
+      "unspecified": ["Department of XYZ"],
+      "pages": [3],
+      "snippet": "an asset management firm utilizing blockchain technology"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded (Superstate is older than 24 months). Portfolio page lists 25 companies (e.g. Predicate, Multiliquid, Opacity) with no round info; coverage of Predicate's $7M (Oct 2024) found did not name this firm.",
+    "Fund size ($5M lead; BeInCrypto reported $5.10M initial funding) not read on a fetched page (HTTP 403); fund, HQ (New York), stages and check size not found on the site.",
+    "Etherfuse HQ not stated; the release names the investor 'The Department of XYZ'.",
+    "Application URL and cold inbound not checked; the site shows a general contact only."
+  ]
+}

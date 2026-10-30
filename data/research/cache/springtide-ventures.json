@@ -1,0 +1,60 @@
+{
+  "key": "springtide-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "SpringTide Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as springtide.com, the early-stage healthcare VC (Boston, Salt Lake City, San Francisco; Austin Walters managing partner). Portfolio: OpenLoop, Nest Health, Debut Biotech. Not Springtide Child Development (pediatric clinic, 2020 Series A) and not the Prague-based Springtide.",
+  "pages": [
+    { "url": "https://www.springtide.com", "title": "SpringTide Ventures", "publisher": "SpringTide Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://silicon.co.uk/press-release/springtide-ventures-announces-the-close-of-65-million-fund-ii", "title": "SpringTide Ventures Announces the Close of $65 Million Fund II", "publisher": "Silicon UK (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.springtide.com/company-highlights/nest-health-picks-up-4m-in-seed-extension-funding-to-build-out-at-home-primary-care-for-families", "title": "Nest Health picks up $4M in seed extension funding", "publisher": "SpringTide Ventures", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We lead early-stage financings for tomorrow's greatest healthcare companies." },
+    "website": { "value": "https://www.springtide.com", "pages": [0], "snippet": "We lead early-stage financings for tomorrow's greatest healthcare companies." },
+    "hq_city": { "value": "Boston", "pages": [0, 1], "snippet": "Boston | Salt Lake City | San Francisco" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "Boston | Salt Lake City | San Francisco" },
+    "leads": { "value": true, "pages": [0], "snippet": "We lead early-stage financings for tomorrow's greatest healthcare companies." },
+    "thesis_text": { "value": "Backs early-stage healthcare innovators, using industry experts to spot trends and find founders applying AI, sequencing and flexible electronics to improve care.", "pages": [1], "snippet": "dedicated to supporting the world’s best healthcare innovators" },
+    "stated_sectors": { "value": ["health_bio"], "pages": [1], "snippet": "digital health, medical devices, life sciences, and tech-enabled care delivery" }
+  },
+  "funds": [
+    {
+      "name": "SpringTide Ventures Fund II",
+      "number": "II",
+      "size_original": 65000000,
+      "currency_original": "USD",
+      "close_date": "2024-04-17",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "successful close of its Fund II at $65 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Nest Health", "website": null, "description": "Startup providing in-home and virtual care to families.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed extension",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["SpringTide"],
+      "participants": ["Alumni Ventures", "Ochsner Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "New Orleans-based company"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Nest Health page shows 'Nov 14' with no year; amount is 'over $4 million' (recorded as 4000000 floor). Snippet only quotes HQ phrase; lead wording seen in fetch summary, not verbatim.",
+    "OpenLoop $15M Series A page did not name SpringTide as a participant (led by Nava Ventures); not recorded.",
+    "Possible Fund III (f4.fund claims $150M late 2025; SEC-based listing about $49.6M) seen only in search summaries; unverified, so Fund II recorded as latest confirmed.",
+    "No single HQ stated; Boston listed first of three offices. Stage 'early-stage' only; check size not stated. Business Wire release not fetched."
+  ]
+}
