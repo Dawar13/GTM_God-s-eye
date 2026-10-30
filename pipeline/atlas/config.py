@@ -126,6 +126,13 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("cerberus ventures", "cerberus capital management"),  # VC vs PE firm
         ("two sigma", "two sigma ventures"),  # parent vs venture arm
         ("valor", "valor ventures"),  # bare "Valor" fits several firms
+        # Batch 9.
+        ("revolution ventures", "evolution ventures"),  # fuzzy 94.7
+        ("inventure", "inventures"),  # fuzzy 94.7
+        ("marathon venture capital", "marathon fund"),
+        ("together fund", "ventures together"),
+        ("fusion fund", "fusion vc"),
+        ("tower research capital", "tower research ventures"),  # parent vs venture arm
     ]
 )
 
