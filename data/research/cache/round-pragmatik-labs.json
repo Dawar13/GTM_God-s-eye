@@ -1,0 +1,100 @@
+{
+  "key": "round-pragmatik-labs",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Pragmatik Labs = Shanghai AI agent lab founded by Junyang Lin, ex-Alibaba Qwen lead (TheNextWeb, Yicai, 36Kr); site pragmatik.com per TheNextWeb. Not an unrelated 'Pragmatic' firm.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/pragmatik-labs-junyang-lin-qwen-shanghai-agents",
+      "title": "The man who built Qwen has a new lab, and the Shanghai government is an investor",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.yicaiglobal.com/news/former-qwen-ai-head-sets-up-ai-startup-backed-by-tencent",
+      "title": "Former Qwen AI Head Sets Up AI Startup Backed by Tencent",
+      "publisher": "Yicai Global",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://eu.36kr.com/en/p/3936547768948615",
+      "title": "Pragmatik Labs financing report",
+      "publisher": "36Kr",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "amount",
+      "values": [
+        "$220M (36Kr, media citing sources)",
+        "not stated (TheNextWeb, Yicai; no round size in Lin's announcement)"
+      ],
+      "chosen": "220000000",
+      "reason": "Only 36Kr gives a figure, from unnamed sources; not confirmed by the company."
+    },
+    {
+      "field": "stage",
+      "values": [
+        "seed (CSV)",
+        "not stated; 36Kr author infers most likely angel round"
+      ],
+      "chosen": "undisclosed",
+      "reason": "No page calls it a seed round."
+    },
+    {
+      "field": "valuation",
+      "values": [
+        "about $2B post-money (Yicai, 36Kr, from reports)",
+        "not confirmed (TheNextWeb)"
+      ],
+      "chosen": "null",
+      "reason": "Unconfirmed media figure."
+    }
+  ],
+  "open_items": [
+    "Amount and stage are not in the company announcement; $220M rests on unnamed-source reporting.",
+    "Bloomberg and The Information reports not read.",
+    "State fund named as Shanghai Engine Fund (TheNextWeb, Yicai) or Shanghai Future Industry Fund (36Kr).",
+    "Founding year not found."
+  ],
+  "seed_company": "Pragmatik Labs",
+  "verdict": "contested",
+  "round": {
+    "company": {
+      "name": "Pragmatik Labs",
+      "website": "https://pragmatik.com",
+      "description": "AI research lab building next-generation agents for digital and physical environments, founded by the former head of Alibaba's Qwen models.",
+      "hq_country": "CN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "undisclosed",
+    "stage_raw": "round size and stage not stated by company; media call it first round",
+    "date": "2026-08",
+    "date_precision": "month",
+    "amount_original": 220000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Gaorong Ventures",
+      "HSG"
+    ],
+    "participants": [
+      "Tencent",
+      "Shanghai Engine Fund"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "Gaorong Ventures and HSG, the firm formerly known as Sequoia China, co-led the round."
+  }
+}

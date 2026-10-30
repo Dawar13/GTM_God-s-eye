@@ -1,0 +1,71 @@
+{
+  "key": "round-veeda-ai",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Veeda AI = Toronto world-models startup led by ex-Nvidia Sanja Fidler, site veeda.ai, incorporated June 2026 as Veeda Innovation (BetaKit).",
+  "pages": [
+    {
+      "url": "https://betakit.com/former-nvidia-lab-leader-sanja-fidler-launches-veeda-ai-to-tackle-world-models/",
+      "title": "Former Nvidia lab leader Sanja Fidler launches Veeda AI to tackle world models",
+      "publisher": "BetaKit",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "Khosla; Radical (CSV)",
+        "backers named, no lead stated (BetaKit); 'co-led' only in unread search summaries"
+      ],
+      "chosen": "leads empty",
+      "reason": "Page read does not name leads."
+    },
+    {
+      "field": "stage",
+      "values": [
+        "seed (CSV)",
+        "not stated (BetaKit)"
+      ],
+      "chosen": "undisclosed",
+      "reason": "Search summaries call it seed; unverified on page."
+    }
+  ],
+  "open_items": [
+    "Only BetaKit read; The Logic and SiliconANGLE not read.",
+    "Stage 'seed' and 'co-led' not confirmed on a page read.",
+    "Amount is 'raised so far'."
+  ],
+  "seed_company": "Veeda AI",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Veeda AI",
+      "website": "https://veeda.ai",
+      "description": "Building world models that simulate the physical world for robotics and physical AI.",
+      "hq_country": "CA",
+      "founded_year": 2026,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "undisclosed",
+    "stage_raw": "$90 million raised so far; stage not stated on page",
+    "date": "2026-08-19",
+    "date_precision": "day",
+    "amount_original": 90000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [
+      "Radical Ventures",
+      "Khosla Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "The company confirmed that it has raised $90 million USD ($124 million CAD) from investors so far"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "key": "round-microagi",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Microagi (MicroAGI) = microagi.ai, Munich robotics-deployment startup founded Sept 2025 by ex-Formula 1 engineers, product Atlas. Not any other 'micro AGI' project.",
+  "pages": [
+    { "url": "https://techfundingnews.com/this-munich-startup-founded-by-two-f1-engineers-a-whatsapp-entrepreneur-and-an-alan-turing-researcher-just-raised-55m-in-germanys-largest-ever-seed-round/", "title": "This Munich startup founded by two F1 engineers just raised $55M in Germany's largest ever seed round", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.merca2.es/2026/07/17/ronda-seed-robotica-ia-microagi-2419306/", "title": "MicroAGI levanta 55 millones en la mayor ronda seed de Alemania para robotica con IA", "publisher": "Merca2", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [
+    { "field": "date", "values": ["17 July 2026 (both fetched pages)", "16 July 2026 (deutsche-startups.de URL, page returned 403)"], "chosen": "2026-07-17", "reason": "Two fetched pages say 17 July; difference is one day." }
+  ],
+  "open_items": [
+    "Company's own announcement not read.",
+    "Hummingbird named as 'Hummingbird Ventures' with managing partner Firat Ileri by Tech Funding News; recorded as Hummingbird to match Merca2.",
+    "Search results mention Trafalgar Research as an investor on one list; not on opened pages."
+  ],
+  "seed_company": "Microagi",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Microagi",
+      "website": "https://microagi.ai",
+      "description": "Robotics deployment company whose Atlas platform fine-tunes AI models on a factory's operational data so robots run reliably on production lines.",
+      "hq_country": "DE",
+      "founded_year": 2025,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "seed",
+    "stage_raw": "$55 million seed",
+    "date": "2026-07-17",
+    "date_precision": "day",
+    "amount_original": 55000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Hummingbird"],
+    "participants": ["Northzone", "LocalGlobe", "Village Global", "redalpine"],
+    "unspecified": [],
+    "pages": [0, 1],
+    "snippet": "La ronda seed ha sido liderada por el fondo internacional Hummingbird"
+  }
+}

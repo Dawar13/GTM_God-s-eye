@@ -1,0 +1,71 @@
+{
+  "key": "round-humans",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "humans& (humans&, Inc.) = AI lab founded by Georges Harik, Andi Peng, Eric Zelikman and others; domain humansand.ai (Crunchbase News). Not any other 'humans' company.",
+  "pages": [
+    {
+      "url": "https://news.crunchbase.com/ai/humans-raises-huge-seed-round-unicorn-valuation/",
+      "title": "humans& raises huge seed round at unicorn valuation",
+      "publisher": "Crunchbase News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://siliconangle.com/?p=728361",
+      "title": "humans& raises $480M (SiliconANGLE)",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on pages read; country US assumed from US investors and reporting, not confirmed.",
+    "Valuation $4.48B reported; not labelled post-money, so left null.",
+    "Founding year not found (company described as three months old in Jan 2026)."
+  ],
+  "seed_company": "humans&",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "humans&",
+      "website": "https://humansand.ai",
+      "description": "AI lab building collaboration-centred AI that connects people and intelligent systems.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$480 million seed",
+    "date": "2026-01-20",
+    "date_precision": "day",
+    "amount_original": 480000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "SV Angel",
+      "Georges Harik"
+    ],
+    "participants": [
+      "Nvidia",
+      "Jeff Bezos",
+      "GV",
+      "Emerson Collective",
+      "Forerunner",
+      "S32",
+      "DCVC",
+      "Human Capital",
+      "Felicis",
+      "CRV"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "The investment was led by SV Angel and Georges Harik, one of the company's founders."
+  }
+}

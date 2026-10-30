@@ -1,0 +1,76 @@
+{
+  "key": "round-adaption-labs",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Adaption Labs = San Francisco AI startup of Sara Hooker (ex-Cohere) building continuously learning models (Fortune). Domain not on page read.",
+  "pages": [
+    {
+      "url": "https://fortune.com/2026/02/04/adaption-labs-50-million-seed-funding-emergence-captial-sara-hooker-sudip-roy-ai-models-that-learn-on-the-fly/",
+      "title": "Adaption Labs raises $50M seed",
+      "publisher": "Fortune",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic co-investor",
+      "values": [
+        "Mozilla (CSV)",
+        "Mozilla Ventures (Fortune)"
+      ],
+      "chosen": "Mozilla Ventures",
+      "reason": "Venture arm named on page."
+    },
+    {
+      "field": "valuation",
+      "values": [
+        "$1B (one aggregator in search, unread)",
+        "declined / not disclosed (Fortune)"
+      ],
+      "chosen": "null",
+      "reason": "Fortune says not disclosed."
+    }
+  ],
+  "open_items": [
+    "Only one page read.",
+    "Website and founding year not found."
+  ],
+  "seed_company": "Adaption Labs",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Adaption Labs",
+      "website": null,
+      "description": "Builds AI models that adapt to tasks and keep learning after deployment without retraining.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$50 million seed",
+    "date": "2026-02-04",
+    "date_precision": "day",
+    "amount_original": 50000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Emergence Capital Partners"
+    ],
+    "participants": [
+      "Mozilla Ventures",
+      "Fifty Years",
+      "Threshold Ventures",
+      "Alpha Intelligence Capital",
+      "E14 Fund",
+      "Neo"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "has raised $50 million in seed funding for her new startup, Adaption Labs."
+  }
+}

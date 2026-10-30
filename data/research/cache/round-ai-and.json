@@ -1,0 +1,43 @@
+{
+  "key": "round-ai-and",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "ai& (AI And) = aiand.com per MarTech Series, Japan-based vertically integrated AI platform (data centers, heterogeneous compute, model services) founded by David Bennett and Shimpei Hara, ex-Tenstorrent. Not other companies called AI or 'ai and'.",
+  "pages": [
+    { "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/ai-launches-with-50m-seed-round-2b-infrastructure-capital-to-scale-a-vertically-integrated-ai-platform-from-japan/", "title": "ai& launches with $50M seed round, $2B infrastructure capital", "publisher": "MarTech Series (company release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.design-reuse.com/news/202530312-ex-tenstorrent-execs-start-cloud-provider-ai-lab-in-japan", "title": "Ex-Tenstorrent execs start cloud provider, AI lab in Japan", "publisher": "Design & Reuse (EE Times item)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "No investor named on any fetched page; leads and participants empty, consistent with 'undisclosed' in the CSV.",
+    "The $2B is described as committed data center capital (MarTech) or infrastructure capital (Design & Reuse), not equity; it is not part of the seed amount.",
+    "HQ city and founding year not stated. ai&'s own site and the original press release not opened.",
+    "Date is the MarTech Series publication date, 25 March 2026."
+  ],
+  "seed_company": "ai&",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "ai&",
+      "website": "https://aiand.com",
+      "description": "Japan-based AI company combining data centers, heterogeneous compute and model services into one vertically integrated platform with an OpenAI-compatible inference API.",
+      "hq_country": "JP",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$50 million seed funding",
+    "date": "2026-03-25",
+    "date_precision": "day",
+    "amount_original": 50000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [],
+    "unspecified": [],
+    "pages": [0, 1],
+    "snippet": "backed by $50 million in seed funding and more than $2 billion in committed data center capital."
+  }
+}

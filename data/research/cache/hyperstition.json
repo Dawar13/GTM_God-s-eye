@@ -1,0 +1,52 @@
+{
+  "key": "hyperstition",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Hyperstition Research",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Best match is Hyperstition Research (Delaware LLC, founded 2025), a seed-stage fund described on a Deep Tech Week directory page; no website found. Not Hyperstition Incorporated (hyperstition.tech, San Francisco, tagline 'Science Fiction as a Service'; a separate Deep Tech Week listing whose homepage states no fund activity). Not the HST crypto token or Nick Land's hyperstition concept. Unverified that this is the entity behind the Dec 2025 $5M lead.",
+  "pages": [
+    { "url": "https://www.deep-tech-week.com/organizations/hyperstition-research", "title": "Hyperstition Research", "publisher": "Deep Tech Week", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.deep-tech-week.com/organizations/hyperstition-incorporated", "title": "Hyperstition Incorporated", "publisher": "Deep Tech Week", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "seed-stage venture capital fund"
+    },
+    "stages": {
+      "value": ["seed"],
+      "pages": [0],
+      "snippet": "seed-stage venture capital fund"
+    },
+    "thesis_text": {
+      "value": "Invests in companies advancing Kardashev-scale technology across robotics, manufacturing, space, energy and compute.",
+      "pages": [0],
+      "snippet": "advancing Kardashev-scale technologies"
+    },
+    "stated_sectors": {
+      "value": ["robotics_physical_ai", "industrial_manufacturing", "space", "climate_energy", "ai_infra"],
+      "pages": [0],
+      "snippet": "robotics, manufacturing, space, energy, and compute"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    {
+      "field": "fund size",
+      "values": ["$5M (lead list, 2025-12-01)", "$3M raised (Deep Tech Week listing)"],
+      "chosen": "neither recorded",
+      "reason": "The listing says 'has raised $3 million' with no date or fund name; the $5M lead could not be found on any fetched page, so no fund is recorded."
+    }
+  ],
+  "open_items": [
+    "No website, HQ, team, fund name, close date or announcement found; hyperstition.vc and www.hyperstition.vc do not resolve. Only a single directory listing (database) supports the facts, so confidence is low.",
+    "The $5M, 2025-12-01 fund from the lead list is unverified; the listing says $3M raised.",
+    "Listing names portfolio Dispatcher, Hellbender, General Robotics, Oryn AI and Araknode. Hellbender's $12.5M seed (May 2026, Pulse 2.0) names Magarac, Veredas, Mana, Gaingels, Sum VC and Active Angels but not Hyperstition, so no round is recorded; no round page found for the others.",
+    "Check size, application URL and cold-inbound policy not found."
+  ]
+}

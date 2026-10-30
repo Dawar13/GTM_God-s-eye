@@ -1,0 +1,72 @@
+{
+  "key": "round-inferact",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Inferact = commercial spinout of the open-source vLLM inference engine, CEO Simon Mo (TechCrunch); links to inferact.ai.",
+  "pages": [
+    {
+      "url": "https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/",
+      "title": "Inference startup Inferact lands $150M to commercialize vLLM",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://siliconangle.com/2026/01/22/inferact-launches-150m-funding-commercialize-vllm/",
+      "title": "Inferact launches with $150M to commercialize vLLM",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "Databricks",
+      "values": [
+        "Databricks' venture arm participated (SiliconANGLE)",
+        "not listed (TechCrunch)"
+      ],
+      "chosen": "recorded as participant (Databricks Ventures)",
+      "reason": "SiliconANGLE names it; TechCrunch silent."
+    }
+  ],
+  "open_items": [
+    "HQ and founding year not stated on pages read.",
+    "Company primary announcement not read."
+  ],
+  "seed_company": "Inferact",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Inferact",
+      "website": "https://inferact.ai",
+      "description": "Commercial company built around the open-source vLLM inference engine, developing a separate commercial inference product.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$150 million seed",
+    "date": "2026-01-22",
+    "date_precision": "day",
+    "amount_original": 150000000,
+    "currency_original": "USD",
+    "valuation_post_original": 800000000,
+    "leads": [
+      "Andreessen Horowitz",
+      "Lightspeed Venture Partners"
+    ],
+    "participants": [
+      "Databricks Ventures",
+      "UC Berkeley Chancellor's Fund"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "The company is backed by $150 million in seed funding."
+  }
+}

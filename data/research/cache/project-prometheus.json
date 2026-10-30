@@ -1,0 +1,106 @@
+{
+  "key": "project-prometheus",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Prometheus (formerly Project Prometheus; site prometheus.ai, linked from PYMNTS), the AI company co-led as co-CEOs by Jeff Bezos and Vik Bajaj (ex-Google X, Verily co-founder), launched in November 2025 with $6.2B and based in San Francisco with offices in London and Zurich. It is the same company whose June 2026 $12B round is recorded in bezos-expeditions.json: the same MarketScreener and Crypto Briefing pages were re-read here, and PYMNTS, Pulse 2.0 and SiliconANGLE describe the same co-CEOs and focus. Not Prometheus Group (enterprise asset-management / maintenance software), Prometheus Biosciences, Prometheus Fuels or the open-source Prometheus monitoring tool. Category set to adjacent (PROJECT_CONTEXT §7 had remote): every page describes AI tools that help engineers design, prototype and prepare physical products for manufacturing (an 'artificial general engineer' for aerospace, automotive and computing), which overlaps Utopian's design-intent tooling for hardware teams; Crypto Briefing says it targets engineering workflows rather than robotics or factory automation, and Bezos says it is not building robots, so it does not touch plant-floor procurement, maintenance or WhatsApp agents. Layer design_intent rather than process_planning because the stated focus is design and pre-production engineering. No product or customer is public yet.",
+  "pages": [
+    { "url": "https://www.marketscreener.com/news/project-prometheus-announced-that-it-has-received-12-billion-in-funding-from-jpmorgan-chase-co--ce7f5cd8dd80f42d", "title": "Project Prometheus announced that it has received $12 billion in funding", "publisher": "MarketScreener", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://cryptobriefing.com/prometheus-bezos-ai-startup-41b-valuation/", "title": "Jeff Bezos's AI lab raises $12B in Series B at $41B: Report", "publisher": "Crypto Briefing", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.pymnts.com/news/investment-tracker/2026/jeff-bezos-raises-12-billion-for-ai-engineering-startup-prometheus", "title": "Bezos Raises $12 Billion for AI Engineering Startup Prometheus", "publisher": "PYMNTS", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/prometheus-raises-12-billion-series-b-at-41-billion-valuation-to-develop-ai-tools-for-engineering-and-manufacturing/", "title": "Prometheus Raises $12 Billion Series B At $41 Billion Valuation To Develop AI Tools For Engineering And Manufacturing", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=721535", "title": "Report: Startup co-led by Jeff Bezos raises $6.2B to develop 'AI for the physical economy'", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://the-decoder.com/jeff-bezos-nears-10-billion-funding-round-for-ai-lab-project-prometheus/", "title": "Jeff Bezos nears $10 billion funding round for AI lab Project Prometheus", "publisher": "The Decoder", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://en.wikipedia.org/wiki/Project_Prometheus_(company)", "title": "Prometheus (company)", "publisher": "Wikipedia", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "Prometheus",
+    "website": "https://www.prometheus.ai",
+    "description": "San Francisco AI lab co-run by Jeff Bezos and Vik Bajaj, building AI that helps engineers design, prototype and prepare physical products for manufacturing.",
+    "hq_country": "US",
+    "founded_year": 2025,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "adjacent",
+  "layer": "design_intent",
+  "layer_detail": "Pre-product frontier lab: AI models that understand physics, aimed at engineering design, prototyping and pre-production for aerospace, automotive and computing hardware (an 'artificial general engineer'); says it is not building robots",
+  "founders": ["Jeff Bezos", "Vik Bajaj"],
+  "named_customers": [],
+  "product_summary": "Developing AI systems grounded in physics that take over engineering work on physical products, from design and simulation through prototyping and pre-production, for aerospace, automotive, computing and other industries. Leaders describe the goal as an 'artificial general engineer'. No public product, pricing or customers yet; recent capital is mainly for compute.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 150,
+    "pages": [2, 1, 3],
+    "snippet": "Approximate (Jun 2026): Prometheus has offices in San Francisco, London and Zurich and \"has hired about 150 people.\""
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Prometheus", "website": "https://www.prometheus.ai", "description": "San Francisco AI lab co-run by Jeff Bezos and Vik Bajaj, building AI that helps engineers design, prototype and prepare physical products for manufacturing.", "hq_country": "US", "founded_year": 2025, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "undisclosed",
+      "stage_raw": "launch financing of $6.2B, partly from Bezos (series not named on pages read; the next round is called Series B)",
+      "date": "2025-11-17",
+      "date_precision": "day",
+      "amount_original": 6200000000,
+      "currency_original": "USD",
+      "valuation_post_original": 30000000000,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Jeff Bezos"],
+      "pages": [4, 6, 2, 3],
+      "snippet": "Startup co-led by Jeff Bezos raises $6.2B to develop 'AI for the physical economy'"
+    },
+    {
+      "company": { "name": "Prometheus", "website": "https://www.prometheus.ai", "description": "San Francisco AI lab co-run by Jeff Bezos and Vik Bajaj, building AI that helps engineers design, prototype and prepare physical products for manufacturing.", "hq_country": "US", "founded_year": 2025, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "design_intent" },
+      "stage": "series_b",
+      "stage_raw": "Series B (Convertible Preferred Stock per MarketScreener); total raised to date $18.2B",
+      "date": "2026-06-11",
+      "date_precision": "day",
+      "amount_original": 12000000000,
+      "currency_original": "USD",
+      "valuation_post_original": 41000000000,
+      "leads": ["The Goldman Sachs Group, Inc.", "BlackRock, Inc.", "JPMorgan Chase & Co."],
+      "participants": ["DST Global", "Arch Venture Partners, L.P.", "Jeff Bezos"],
+      "unspecified": [],
+      "pages": [0, 1, 2, 3, 5],
+      "snippet": "Project Prometheus announced that it has received $12,000,000,000 in a round of funding co-led by new investors"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[series_b].amount_and_valuation",
+      "values": ["$10B at about $38B, 'about to close' (The Decoder, 2026-04-21, citing the Financial Times; Bloomberg headline 2026-04-23 says closed at $38B value)", "$12B Series B at $41B post-money, announced 2026-06-11 (MarketScreener, Crypto Briefing citing Axios, PYMNTS and Pulse 2.0 citing CNBC)"],
+      "chosen": "$12B at $41B, dated 2026-06-11",
+      "reason": "Treated as one round reported early and then upsized: the same lead banks (JPMorgan, BlackRock) appear in both, and MarketScreener's $18.2B total equals $6.2B plus $12B, leaving no room for a separate $10B round."
+    },
+    {
+      "field": "rounds[2025-11].stage",
+      "values": ["Not named: 'launch with $6.2 billion in funding' (Wikipedia citing NYT; SiliconANGLE)", "Implied Series A, since June 2026 round is called Series B (Crypto Briefing, PYMNTS, Pulse 2.0); search summaries mention outlets calling it a Series A or a seed"],
+      "chosen": "undisclosed",
+      "reason": "No page read names the series of the $6.2B financing."
+    },
+    {
+      "field": "rounds[2025-11].valuation_post_original",
+      "values": ["$30B ('the company raised $6.2 billion last year in a deal that valued it at $30 billion', PYMNTS citing a February 2026 report)", "Not stated (SiliconANGLE, Wikipedia, Pulse 2.0)"],
+      "chosen": "30000000000",
+      "reason": "Only one page gives a valuation; recorded but rests on a single press page."
+    },
+    {
+      "field": "company.name",
+      "values": ["Project Prometheus (2025 launch coverage, MarketScreener)", "Prometheus (2026 coverage; Wikipedia says 'formerly Project Prometheus')"],
+      "chosen": "Prometheus",
+      "reason": "Current name in 2026 coverage; queue key kept as project-prometheus."
+    }
+  ],
+  "open_items": [
+    "Company's own site (prometheus.ai) returned HTTP 429 twice; product description, leadership and offices come from press pages only. No company release about either round was found.",
+    "Nov 2025 $6.2B financing: series, exact close date and investors other than Jeff Bezos not found ('partly from Bezos' and 'other unnamed investors'). Dated to the 2025-11-17 launch reports.",
+    "Series B: MarketScreener mentions 'other investors' beyond those named; GeekWire, Axios, CNBC and Bloomberg coverage was 403 / paywalled and not read.",
+    "Total raised $18.2B per MarketScreener.",
+    "Wikipedia (citing Wired, 2025-11-26) says Prometheus acquired General Agents, an agentic-AI startup; an acquisition, not a funding round, and the Wired article was not read. The Decoder (citing FT) says Prometheus plans a holding company to buy businesses its AI could transform; size and status not found.",
+    "Headcount: about 100 at launch (SiliconANGLE, Nov 2025), over 120 in Dec 2025 (Wikipedia), about 150 in Jun 2026 (Crypto Briefing, PYMNTS, Pulse 2.0).",
+    "No customers, product, pricing or revenue public. Bezos said Blue Origin could benefit from its technology and that it may become an AWS customer; neither is a named customer.",
+    "Founding year 2025 from Wikipedia ('founded ... in November 2025'); some reports say work began earlier in 2025, not verified."
+  ]
+}

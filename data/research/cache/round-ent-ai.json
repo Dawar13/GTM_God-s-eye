@@ -1,0 +1,75 @@
+{
+  "key": "round-ent-ai",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Company is 'Ent' (workspace / endpoint security), founders Elias Manousos and Brandon Dixon (ex-RiskIQ, Microsoft Security Copilot) per TheNextWeb and SecurityBrief. Domain ent.ai not confirmed on any page read.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/ent-security-100m-seed-intent-aware-workspace-prevention",
+      "title": "The team that built Microsoft's Security Copilot just raised $100M",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://securitybrief.asia/story/ent-raises-usd-100-million-seed-round-led-by-decibel",
+      "title": "Ent raises USD $100 million seed round led by Decibel",
+      "publisher": "SecurityBrief Asia",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "lead",
+      "values": [
+        "Decibel (TheNextWeb, SecurityBrief)",
+        "In-Q-Tel as lead (fundup.ai search listing, not read)"
+      ],
+      "chosen": "Decibel",
+      "reason": "Both pages read name Decibel."
+    }
+  ],
+  "open_items": [
+    "Website/domain and HQ not found on pages read.",
+    "BusinessWire release returned 403."
+  ],
+  "seed_company": "Ent.AI",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Ent",
+      "website": null,
+      "description": "Intent-aware endpoint security platform that assesses behaviour of human users and AI agents at the point of use.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$100 million seed",
+    "date": "2026-06-16",
+    "date_precision": "day",
+    "amount_original": 100000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Decibel"
+    ],
+    "participants": [
+      "Sequoia",
+      "Crosspoint Capital Partners",
+      "Craft Ventures",
+      "Shield Capital",
+      "Felicis",
+      "In-Q-Tel"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "Ent has raised USD $100 million in seed funding in a round led by Decibel."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "key": "round-sycamore",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Sycamore = enterprise AI agent platform (sycamore.so) led by ex-Coatue investor and ex-Atlassian CTO Sri Viswanath (TechCrunch). Not other firms named Sycamore.",
+  "pages": [
+    {
+      "url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+      "title": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic co-investor",
+      "values": [
+        "Dell (CSV)",
+        "Dell Technologies Capital (TechCrunch)"
+      ],
+      "chosen": "Dell Technologies Capital",
+      "reason": "The corporate venture arm, not Dell itself."
+    }
+  ],
+  "open_items": [
+    "Only one page read; BusinessWire release returned 403.",
+    "HQ not stated on page read (search summary says Palo Alto, unread)."
+  ],
+  "seed_company": "Sycamore",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Sycamore",
+      "website": "https://sycamore.so",
+      "description": "Platform for building, securing and coordinating autonomous AI agents for enterprises.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$65 million seed",
+    "date": "2026-03-30",
+    "date_precision": "day",
+    "amount_original": 65000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Coatue",
+      "Lightspeed"
+    ],
+    "participants": [
+      "Abstract Ventures",
+      "Dell Technologies Capital",
+      "8VC",
+      "Fellows Fund",
+      "E14 Fund"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "on Monday announced a $65 million seed led by Coatue and Lightspeed"
+  }
+}

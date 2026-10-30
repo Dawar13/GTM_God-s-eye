@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:28:39+00:00",
+  "generated_at": "2026-10-30T07:50:39+00:00",
   "records": [
     {
       "id": "co_acko",
@@ -123,7 +123,7 @@
       "id": "co_adaption-labs",
       "name": "Adaption Labs",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -138,10 +138,61 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fortune.com/2026/02/04/adaption-labs-50-million-seed-funding-emergence-captial-sara-hooker-sudip-roy-ai-models-that-learn-on-the-fly/",
+          "title": "Adaption Labs raises $50M seed",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
+    },
+    {
+      "id": "co_adopt-ai",
+      "name": "Adopt AI",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Agentic AI platform that lets users run workflows and complex actions in software through text commands.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/adopt-ai-bags-6-mn-to-help-users-automate-workflows-with-text-commands",
+          "title": "Adopt AI Bags $6 Mn To Help Users Automate Workflows With Text Commands",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.elevationcapital.com/enterprise-ai",
+          "title": "Enterprise AI",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_aequs",
@@ -403,8 +454,8 @@
     {
       "id": "co_ai",
       "name": "ai&",
-      "website": null,
-      "hq_country": null,
+      "website": "https://aiand.com",
+      "hq_country": "JP",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -419,10 +470,67 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/ai-launches-with-50m-seed-round-2b-infrastructure-capital-to-scale-a-vertically-integrated-ai-platform-from-japan/",
+          "title": "ai& launches with $50M seed round, $2B infrastructure capital",
+          "publisher": "MarTech Series (company release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.design-reuse.com/news/202530312-ex-tenstorrent-execs-start-cloud-provider-ai-lab-in-japan",
+          "title": "Ex-Tenstorrent execs start cloud provider, AI lab in Japan",
+          "publisher": "Design & Reuse (EE Times item)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
+    },
+    {
+      "id": "co_aignosis",
+      "name": "Aignosis",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Jaipur healthtech building an AI-based screening tool for autism and developmental conditions in young children.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/antler-nikhil-kamath-back-healthtech-startup-aignosis-with-rs-4-cr-seed-round-12611813",
+          "title": "Antler, Nikhil Kamath back healthtech startup Aignosis with Rs 4 Cr seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_akashalabdhi",
@@ -864,8 +972,8 @@
     {
       "id": "co_ami-labs",
       "name": "AMI Labs",
-      "website": null,
-      "hq_country": null,
+      "website": "https://amilabs.xyz",
+      "hq_country": "FR",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -880,9 +988,41 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://tech.eu/2026/03/10/yann-lecun-s-paris-based-ai-world-model-startup-raises-more-than-1bn/",
+          "title": "Yann LeCun's Paris-based AI world model startup raises more than $1BN",
+          "publisher": "tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=733864",
+          "title": "AMI Labs raises $1.03B (SiliconANGLE)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.wamda.com/index.php/en/2026/03/shorooq-invests-ami-labs-ai-startup-hits-3-5-billion-valuation",
+          "title": "Shorooq invests in AMI Labs",
+          "publisher": "Wamda",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -1019,6 +1159,40 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_antora",
+      "name": "Antora",
+      "website": "https://antora.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "climate_energy",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Modular thermal batteries that store energy as heat in carbon blocks and deliver industrial steam or firm power.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/speed-to-power",
+          "title": "Speed to Power",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_aperturedata",
@@ -1260,6 +1434,43 @@
       "confidence": "high"
     },
     {
+      "id": "co_arivihan",
+      "name": "Arivihan",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI learning platform for school students preparing for state board, CBSE and NEET exams.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/edtech-startup-arivihan-raises-10-mn-in-series-a-led-by-accel-and-prosus-12592500",
+          "title": "Edtech startup Arivihan raises $10 Mn in Series A led by Accel and Prosus",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_armatrix",
       "name": "Armatrix",
       "website": "https://armatrix.com/",
@@ -1350,6 +1561,60 @@
           2,
           3,
           4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_articulus-surgical",
+      "name": "Articulus Surgical",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2019,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Modular, compact surgical-robotics platform for minimally invasive soft-tissue surgery, designed for Indian hospitals.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/medical-robotics-startup-articulus-surgical-raises-funding-from-kalaari-capital-11095456",
+          "title": "Medical robotics startup Articulus Surgical raises funding from Kalaari Capital",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-articulus-surgical-2",
+          "title": "Why We Invested in Articulus Surgical",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.kalaari.com/portfolio",
+          "title": "Portfolio",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -1556,6 +1821,58 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_atomic-machines",
+      "name": "Atomic Machines",
+      "website": "https://www.atomicmachines.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Bay Area company whose AI-native, all-digital 'Matter Compiler' builds working micromachines directly from code; first product is a power relay for AI data centres.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/why-we-invested-in-atomic-machines-prompting-matter",
+          "title": "Construct Capital | Why We Invested in Atomic Machines: Prompting Matter",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://thenextweb.com/news/atomic-machines-250m-matter-compiler-micro-machines",
+          "title": "Atomic Machines emerges with $250M to build micro-machines from code",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
           0,
           1
         ],
@@ -1849,6 +2166,67 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_backops",
+      "name": "BackOps",
+      "website": "https://backops.ai/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI operations layer that automates back-office exception work (order changes, claims) for 3PLs, manufacturers and logistics teams.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://retailtechinnovationhub.com/home/2026/3/12/backops-bags-26-million-series-a-to-build-ai-powered-operating-system-for-supply-chains",
+          "title": "BackOps bags $26 million Series A to build AI powered operating system for supply chains",
+          "publisher": "Retail Technology Innovation Hub",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.constructcap.com/articles/backops-the-connective-intelligence-layer-powering-the-modern-supply-chain",
+          "title": "Construct Capital | BackOps: The Connective Intelligence Layer Powering the Modern Supply Chain",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.freightwaves.com/news/backops-ai-raises-6m-to-solve-warehouse-inefficiencies",
+          "title": "BackOps AI raises $6M to solve warehouse inefficiencies",
+          "publisher": "FreightWaves",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/backops-ai-6-million-seed-funding-round-raised-for-transforming-logistics-automation/",
+          "title": "BackOps AI: $6 Million Seed Funding Round Raised for Transforming Logistics Automation",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
         ]
       },
       "confidence": "high"
@@ -2514,6 +2892,37 @@
       "confidence": "high"
     },
     {
+      "id": "co_bytexl",
+      "name": "byteXL",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Works inside engineering colleges to deliver industry-aligned curriculum, coding platform, assessments and career preparation.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/bytexl-raises-9m-in-series-b",
+          "title": "byteXL Raises $9M in Series B",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_c2i",
       "name": "C2i",
       "website": "https://c2isemi.com",
@@ -2554,10 +2963,54 @@
       "confidence": "medium"
     },
     {
+      "id": "co_caddi",
+      "name": "Caddi",
+      "website": "https://trycaddi.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds AI agents (including agents that build agents) that run back-office workflows at professional-services firms such as law firms and RIAs.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://legaltechnology.com/startup-corner-caddi-targets-law-firm-operations-with-an-agent-that-build-agents/",
+          "title": "Startup Corner: Caddi targets law firm operations with an 'agent that build agents'",
+          "publisher": "Legal IT Insider",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.saasrise.com/deals/caddi-raises-5m-seed-round-from-ubiquity-2b4bb0d7-8f79-403e-a53d-93be5a641ba1",
+          "title": "Caddi raises $5M seed round led by Ubiquity",
+          "publisher": "SaaSRise",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_callosum",
       "name": "Callosum",
-      "website": null,
-      "hq_country": null,
+      "website": "https://callosum.com",
+      "hq_country": "GB",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -2572,9 +3025,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://tech.eu/2026/08/20/callosum-raises-100m-seed-round/",
+          "title": "Callosum raises $100M seed round",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1
+        ],
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -2798,6 +3265,85 @@
       "confidence": "high"
     },
     {
+      "id": "co_castle",
+      "name": "Castle",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Bitcoin treasury platform.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.caplight.com/investor/parkrangerscap",
+          "title": "Park Rangers Capital investor profile",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "id": "co_cautio",
+      "name": "Cautio",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "mobility_ev",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Video telematics: low-cost AI dashcam and operating system for fleet safety, compliance and driver monitoring in India.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/visual-telematics-startup-cautio-closes-seed-round-at-3-mn/",
+          "title": "Visual Telematics Startup Cautio Closes Seed Round At $3 Mn",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/dashcam-startup-cautio-raises-rs-11-cr-in-seed-round-8938078",
+          "title": "Dashcam startup Cautio raises Rs 11 Cr in seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_cellarim-labs",
       "name": "Cellarim Labs",
       "website": "https://www.cellarim.com",
@@ -2894,6 +3440,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_certiv",
+      "name": "Certiv",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Endpoint security layer that monitors and controls AI agent actions on employee devices.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://builtin.com/articles/certiv-launches-4m-funding-20260316",
+          "title": "Certiv Launches With $4.2M in Pre-Seed Funding",
+          "publisher": "Built In Seattle",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_certivity",
       "name": "Certivity",
       "website": "https://www.certivity.io/",
@@ -2950,15 +3530,63 @@
       "confidence": "high"
     },
     {
+      "id": "co_chara-technologies",
+      "name": "Chara Technologies",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2019,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Rare-earth-free, software-defined electric motors and controllers for EVs and industrial uses.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/chara-technologies-raises-inr-52-cr-to-scale-rare-earth-free-motor-manufacturing/",
+          "title": "Chara Technologies Raises INR 52 Cr To Scale Rare-Earth-Free Motor Manufacturing",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/chara-raises-rs-52-cr-in-series-a-2",
+          "title": "Chara Raises Rs 52 Cr in Series A",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_chargelab",
       "name": "ChargeLab",
-      "website": "https://chargelab.co",
+      "website": "https://chargelab.co/",
       "hq_country": null,
       "founded_year": null,
       "sector": "mobility_ev",
       "sector_classified_by": "source",
       "layer": null,
-      "description_short": "Hardware-agnostic software for running electric-vehicle charging networks.",
+      "description_short": "Hardware-agnostic software for operating EV charging networks.",
       "total_raised_usd": null,
       "is_competitor": false,
       "sources": [
@@ -3730,9 +4358,9 @@
     {
       "id": "co_corma",
       "name": "Corma",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://corma.ai",
+      "hq_country": "IL",
+      "founded_year": 2025,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -3746,9 +4374,36 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fortune.com/2026/08/10/exclusive-corma-raises-60-million-from-sequoia-for-ai-trained-to-defend-against-cyberattacks/",
+          "title": "Exclusive: Corma raises $60 million from Sequoia for AI trained to defend against cyberattacks",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.securityweek.com/corma-raises-60-million-for-defensive-cybersecurity-ai-model/",
+          "title": "Corma Raises $60 Million for Defensive Cybersecurity AI Model",
+          "publisher": "SecurityWeek",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ],
+        "founded_year": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -3795,6 +4450,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_cosmochute",
+      "name": "Cosmochute",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2026,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Space robotics startup building a modular lunar mobility platform for payloads on the Moon.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/space-robotics-startup-cosmochute-raises-15-mn-in-pre-seed-round-12677383",
+          "title": "Space robotics startup Cosmochute raises $1.5 Mn in pre-seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/",
+          "title": "From Boldfit To Origin — Indian Startups Raised About $236 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_coverfox",
       "name": "Coverfox",
       "website": null,
@@ -3823,6 +4526,46 @@
           0
         ],
         "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_craftifai",
+      "name": "CraftifAI",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": "autonomy_tooling",
+      "description_short": "Bengaluru R&D company building generative-AI tools to speed software and model development for embedded, IoT, robotics, drones and edge AI.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/craftifai-secures-3-mn-in-seed-round-led-by-ankur-capital-11121741",
+          "title": "CraftifAI secures $3 Mn in seed round led by Ankur Capital",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "layer": [
           0
         ],
         "sector": [
@@ -4210,6 +4953,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_dextr-ai",
+      "name": "Dextr AI",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2025,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds AI agents for hotels that sit on existing systems and handle back-office and guest tasks.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/elevation-capital-leads-67-million-seed-round-in-dextr-ai-12574387",
+          "title": "Elevation Capital leads $6.7 Mn seed round in Dextr AI",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.elevationcapital.com/perspectives/investing-in-dextr-ai",
+          "title": "Investing in Dextr AI",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_dialogue-ai",
       "name": "Dialogue AI",
       "website": "https://www.dialogueai.com",
@@ -4256,6 +5043,109 @@
           2
         ],
         "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_didero",
+      "name": "Didero",
+      "website": "https://www.didero.ai/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI procurement software that centralizes supplier data and automates sourcing, purchase-order and supplier-communication work for mid-market manufacturers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/07/17/didero-is-using-ai-to-solve-supply-chain-management-at-mid-market-companies/",
+          "title": "Didero is using AI to solve supply chain management at mid-market companies",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-didero-future-of-global-trade",
+          "title": "Construct Capital | Investing in Didero: Pioneering the Future of Global Trade & Procurement with AI",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_digantara",
+      "name": "Digantara",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2018,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Space surveillance company building hardware, software and AI tools to track objects and debris in orbit.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/spacetech-startup-digantara-raises-50-mn-for-global-expansion/",
+          "title": "Spacetech Startup Digantara Raises $50 Mn For Global Expansion",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/decoding/spacetech-startup-digantara-hits-200-mn-valuation-after-series-b-funding-11056913",
+          "title": "Spacetech startup Digantara hits $200 Mn valuation after Series B funding",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/digantara-raises-50m-in-series-b-2",
+          "title": "Digantara Raises $50M in Series B",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
           0,
           1,
           2
@@ -4414,6 +5304,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_dodo-payments",
+      "name": "Dodo Payments",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2023,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Fintech letting merchants accept payments from 150+ countries with 25+ local payment methods.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/dodo-payments-raises-11-mn-in-pre-seed-round-8754518",
+          "title": "Dodo Payments raises $1.1 Mn in pre-seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.antler.co/location/india",
+          "title": "Antler in India | Further, Faster",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_dualite",
       "name": "Dualite",
       "website": "https://dualite.dev",
@@ -4449,6 +5383,54 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_dusq",
+      "name": "DUSQ",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Sleep science and recovery company building a sleep-regulation platform on physiological data.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/dusq-raises-rs-24-cr-in-seed-round-led-by-fireside-ventures-11099913",
+          "title": "DUSQ raises Rs 24 Cr in seed round led by Fireside Ventures",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.antler.co/location/india",
+          "title": "Antler in India | Further, Faster",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_dusty-robotics",
@@ -4491,6 +5473,70 @@
       "confidence": "medium"
     },
     {
+      "id": "co_eclipse-space",
+      "name": "Eclipse Space",
+      "website": "https://eclipse.space/",
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Designs turnkey satellite constellations that governments and enterprises own and operate, owning the architecture and software while partners build hardware.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.satellitetoday.com/connectivity/2026/06/29/new-megaconstellation-startup-eclipse-space-targets-sovereign-market/",
+          "title": "New Megaconstellation Startup Eclipse Space Targets Sovereign Market",
+          "publisher": "Via Satellite (Satellite Today)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.spacecapital.com/blogs/eclipse-space-fabless-model",
+          "title": "Eclipse Space and the fabless model",
+          "publisher": "Space Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://ubiquity.vc/blog/ubiquity-backs-eclipse-space-a-starlink",
+          "title": "Ubiquity backs Eclipse Space",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_eka-robotics",
       "name": "Eka Robotics",
       "website": null,
@@ -4531,10 +5577,41 @@
       "confidence": "medium"
     },
     {
+      "id": "co_ekyam",
+      "name": "Ekyam",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Retail middleware software connecting retailers' separate order management, returns and ecommerce systems; cofounded by Eloquii cofounder Mariah Chase.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://fortune.com/2025/03/27/ekyam-ai-retail-middleware-software-eloquii-founder-female-founders-fund/",
+          "title": "Ekyam AI retail middleware software, Eloquii founder, Female Founders Fund",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_elorian-ai",
       "name": "Elorian AI",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -4549,9 +5626,28 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://pulse2.com/elorian-ai-55-million-raised-for-multimodal-reasoning-research-lab-founded-by-former-deepmind-leaders/",
+          "title": "Elorian AI: $55 Million Raised For Multimodal Reasoning Research Lab",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://startupintros.com/news/2026-04-09-elorian-seed",
+          "title": "Elorian seed",
+          "publisher": "Startup Intros",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -4592,6 +5688,54 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_ema",
+      "name": "Ema",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Uses teams of AI agents to automate corporate processes across HR, IT and finance.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+          "title": "Ema raises $77M as AI starts eating into enterprise software and services",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.accel.com/team/subrata-mitra",
+          "title": "Subrata Mitra",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
           0,
           1
         ],
@@ -4789,6 +5933,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_endurance-energy",
+      "name": "Endurance Energy",
+      "website": "https://www.enduranceenergy.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "climate_energy",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds subsea geothermal power systems to produce cheap, clean power from the seafloor.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-endurance-the-ocean-floor-is-the-next-energy-frontier",
+          "title": "Construct Capital | Investing in Endurance: The Ocean Floor Is the Next Energy Frontier",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_engineai",
       "name": "EngineAI",
       "website": null,
@@ -4830,7 +6008,7 @@
       "id": "co_enigma",
       "name": "Enigma",
       "website": "https://enigma.inc/",
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": "ai_apps_agents",
       "sector_classified_by": "model",
@@ -4852,6 +6030,20 @@
           "publisher": "Index Ventures",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://www.newswire.com/news/enigma-raises-71-million-seed-round-with-a-new-game-plan-for-ai-and-robots",
+          "title": "Enigma Raises $71 Million Seed Round and Puts the World's First Interactive AI Robots Online",
+          "publisher": "Newswire (company press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://theaiinsider.tech/2026/07/27/enigma-raises-71m-in-seed-funding-to-develop-ai-models-for-training-robots/",
+          "title": "Enigma Raises $71M in Seed Funding to Develop AI Models for Training Robots",
+          "publisher": "The AI Insider",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
@@ -4863,6 +6055,11 @@
         ],
         "sector": [
           1
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -4871,7 +6068,7 @@
       "id": "co_ent-ai",
       "name": "Ent.AI",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -4886,16 +6083,35 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://thenextweb.com/news/ent-security-100m-seed-intent-aware-workspace-prevention",
+          "title": "The team that built Microsoft's Security Copilot just raised $100M",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://securitybrief.asia/story/ent-raises-usd-100-million-seed-round-led-by-decibel",
+          "title": "Ent raises USD $100 million seed round led by Decibel",
+          "publisher": "SecurityBrief Asia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
       "id": "co_entire",
       "name": "Entire",
-      "website": null,
-      "hq_country": null,
+      "website": "https://entire.io",
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -4910,9 +6126,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/",
+          "title": "Former GitHub CEO raises record $60M dev tool seed round at $300M valuation",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1
+        ],
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -5281,11 +6511,112 @@
       "confidence": "high"
     },
     {
+      "id": "co_eyebot",
+      "name": "Eyebot",
+      "website": "https://www.eyebot.co/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Makes AI-powered kiosks that run automated 90-second vision tests at the point of sale.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://ubiquity.vc/blog/eyebot-announces-6m-seed-funding",
+          "title": "Eyebot announces $6M seed funding",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_fabheads-automation",
+      "name": "Fabheads Automation",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2015,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Robotic automation and production services for carbon-fibre and composite components.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/fabheads-raises-10-mn-in-series-a-round-led-by-accel-9396012",
+          "title": "Fabheads raises $10 Mn in Series A round led by Accel",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/fabheads-bags-10-mn-to-manufacture-composite-materials/",
+          "title": "Fabheads Bags $10 Mn To Manufacture Composite Materials",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.accel.com/team/prayank-swaroop",
+          "title": "Prayank Swaroop",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "layer": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_factify",
       "name": "Factify",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://www.factify.com/",
+      "hq_country": "IL",
+      "founded_year": 2023,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -5299,9 +6630,46 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://venturebeat.com/infrastructure/factify-wants-to-move-past-pdfs-and-docx-by-giving-digital-documents-their",
+          "title": "Factify wants to move past PDFs and DOCX by giving digital documents their own identity",
+          "publisher": "VentureBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.fenwick.com/insights/experience/fenwick-represents-factify-in-73m-seed-financing",
+          "title": "Fenwick Represents Factify in $73M Seed Financing",
+          "publisher": "Fenwick",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.ynetnews.com/business/article/bytqx2diwl",
+          "title": "Israeli startup Factify raises $73M to replace PDFs with next-generation digital documents",
+          "publisher": "Ynetnews",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -5342,6 +6710,54 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_fibr-ai",
+      "name": "Fibr AI",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI agents that turn generic web pages into experiences personalised for each visitor.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
+          "title": "Accel doubles down on Fibr AI as agents turn static websites into one-to-one experiences",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.accel.com/team/prayank-swaroop",
+          "title": "Prayank Swaroop",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
           0,
           1
         ],
@@ -5401,6 +6817,54 @@
       "confidence": "high"
     },
     {
+      "id": "co_fieldstone-bio",
+      "name": "Fieldstone Bio",
+      "website": "https://fieldstone.bio/",
+      "hq_country": null,
+      "founded_year": 2023,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Engineers microbes that change color when they sense target compounds (e.g. TNT, arsenic, soil nitrogen), read out by drone-borne hyperspectral cameras and AI.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/05/15/fieldstone-bio-is-building-microbes-that-can-sense-everything-from-tnt-to-arsenic/",
+          "title": "Fieldstone Bio is building microbes that can sense everything from TNT to arsenic",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/tag/ubiquity-ventures/",
+          "title": "Ubiquity Ventures | TechCrunch",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_figure",
       "name": "Figure",
       "website": "https://www.figure.ai/",
@@ -5455,7 +6919,7 @@
     {
       "id": "co_fish-audio",
       "name": "Fish Audio",
-      "website": null,
+      "website": "https://fish.audio",
       "hq_country": null,
       "founded_year": null,
       "sector": null,
@@ -5471,9 +6935,28 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fish.audio/de/blog/fish-audio-52m-seed-funding/",
+          "title": "Fish Audio raises $52M seed funding",
+          "publisher": "Fish Audio",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/07/28/fish-audio-makes-splash-raising-52m-seed-funding-ai-voices/",
+          "title": "Fish Audio makes a splash raising $52M in seed funding for AI voices",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -5502,6 +6985,27 @@
           "publisher": "Index Ventures",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/29/flapping-airplanes-and-the-promise-of-research-driven-ai/",
+          "title": "Flapping Airplanes and the promise of research-driven AI",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.startuphub.ai/startups/flapping-airplanes",
+          "title": "Flapping Airplanes",
+          "publisher": "StartupHub.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://texxr.com/1162272/flapping-airplanes-raises-180m-at-1-5b",
+          "title": "Flapping Airplanes raises $180M at $1.5B",
+          "publisher": "Texxr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
@@ -5631,6 +7135,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_folio",
+      "name": "Folio",
+      "website": "https://folio.co/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Managed marketplace that runs the procure-to-pay flow for hospitality operators.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/folio-modernizing-hospitality-procurement",
+          "title": "Construct Capital | Folio: Modernizing Hospitality Procurement",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_foodhealth-company-formerly-bitewell",
       "name": "FoodHealth Company (formerly bitewell)",
       "website": "https://www.foodhealth.co/",
@@ -5748,6 +7286,58 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_general-autonomy",
+      "name": "General Autonomy",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Develops AI-driven humanoid and multi-task robots, plus robot dogs, to automate labour-heavy work.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/exclusive-robotics-startup-general-autonomy-raises-%E2%82%B932-cr-at-%E2%82%B9280-cr-valuation/",
+          "title": "Exclusive: Robotics Startup General Autonomy Raises ₹32 Cr At ₹280 Cr Valuation",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.elevationcapital.com/frontier-tech",
+          "title": "Frontier Tech",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_general-intuition",
@@ -5969,16 +7559,37 @@
     {
       "id": "co_green-aero",
       "name": "Green Aero",
-      "website": "https://www.greenaero.in/",
+      "website": "https://www.greenaero.in",
       "hq_country": "IN",
       "founded_year": 2023,
-      "sector": "defense_dual_use",
-      "sector_classified_by": "model",
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "source",
       "layer": null,
-      "description_short": "Hydrogen-capable aero engines and supercritical-CO2 heat recovery for defence and clean aviation.",
+      "description_short": "Delhi deep-tech startup developing next-generation (green-hydrogen) aero engines for defence and civilian use.",
       "total_raised_usd": null,
       "is_competitor": false,
       "sources": [
+        {
+          "url": "https://entrackr.com/snippets/green-aero-raises-16-mn-in-seed-round-led-by-pi-ventures-9477236",
+          "title": "Green Aero raises $1.6 Mn in Seed round led by pi Ventures",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/green-aero/funding/",
+          "title": "Green Aero Funding 2026",
+          "publisher": "Inc42 Datalabs",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.antler.co/location/india",
+          "title": "Antler in India | Further, Faster",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
         {
           "url": "https://economictimes.indiatimes.com/tech/funding/iit-delhi-incubated-deeptech-startup-green-aero-secures-1-6-million-from-pi-ventures/articleshow/122324030.cms",
           "title": "IIT Delhi-incubated deeptech startup Green Aero secures 1.6 million from pi Ventures",
@@ -6026,6 +7637,65 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_grid-aero",
+      "name": "Grid Aero",
+      "website": "https://grid.aero/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds low-cost, long-range autonomous cargo aircraft (Lifter Lite) for military and commercial logistics.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://resiliencemedia.co/grid-aero-raises-20-million-series-a-to-bring-autonomous-cargo-drones-to-the-front-lines/",
+          "title": "Grid Aero raises $20 million Series A to bring autonomous cargo drones to the front lines",
+          "publisher": "Resilience Media",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://grid.aero/newsroom",
+          "title": "Grid Aero | Newsroom",
+          "publisher": "Grid Aero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.suasnews.com/2025/08/grid-aero-launches-with-6m-and-breakthrough-autonomous-cargo-aircraft-built-in-6-months/",
+          "title": "Grid Aero Launches with $6M and Breakthrough Autonomous Cargo Aircraft Built in 6 Months",
+          "publisher": "sUAS News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -6177,6 +7847,54 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_halter",
+      "name": "Halter",
+      "website": "https://www.halterhq.com/",
+      "hq_country": "NZ",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Agtech company providing virtual fencing and a farm operating system for dairy and beef cattle farms.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.halterhq.com/en-us/news/halter-raises-220m-in-series-e-to-accelerate-global-expansion-of-virtual-fencing",
+          "title": "Halter raises $220M in Series E to accelerate global expansion of virtual fencing",
+          "publisher": "Halter",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://ubiquity.vc/blog/halter-at-2-billion-and-deeptech-fundraising-lessons",
+          "title": "Halter at $2 billion, and deeptech fundraising lessons",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -6522,6 +8240,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_hirebound",
+      "name": "HireBound",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI recruitment platform that automates sourcing, screening, scheduling and evaluation end to end.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/hirebound-raises-2-mn-in-seed-round-led-by-kalaari-capital-11149693",
+          "title": "HireBound raises $2 Mn in seed round led by Kalaari Capital",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-hirebound",
+          "title": "Why we invested in HireBound",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_holocron-technologies",
       "name": "Holocron Technologies",
       "website": "https://holocron.tech/",
@@ -6573,7 +8335,7 @@
       "id": "co_hone",
       "name": "Hone",
       "website": "https://hone.com",
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": "ai_apps_agents",
       "sector_classified_by": "model",
@@ -6595,6 +8357,20 @@
           "publisher": "Index Ventures",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://news.bgov.com/artificial-intelligence/former-openai-cognition-staffers-want-ai-to-help-run-a-business",
+          "title": "Former OpenAI, Cognition Staffers Want AI to Help Run a Business",
+          "publisher": "Bloomberg Government (Bloomberg News)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.trendingtopics.eu/hone-moritz-stephan-60-million/",
+          "title": "Hone raises $60 million (Moritz Stephan)",
+          "publisher": "Trending Topics",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
@@ -6606,6 +8382,11 @@
         ],
         "sector": [
           1
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -6800,8 +8581,8 @@
     {
       "id": "co_humans",
       "name": "humans&",
-      "website": null,
-      "hq_country": null,
+      "website": "https://humansand.ai",
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -6816,9 +8597,32 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://news.crunchbase.com/ai/humans-raises-huge-seed-round-unicorn-valuation/",
+          "title": "humans& raises huge seed round at unicorn valuation",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=728361",
+          "title": "humans& raises $480M (SiliconANGLE)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -6881,6 +8685,54 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_hyperbots",
+      "name": "Hyperbots",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Agentic AI platform automating finance and accounting work for mid-market CFO offices.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/hyperbots-bags-6-5-mn-to-automate-finance-accounting-operations/",
+          "title": "Hyperbots Bags $6.5 Mn To Automate Finance & Accounting Operations",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/hyperbots-raises-6-5-million-series-a-2",
+          "title": "Hyperbots Raises $6.5 Million Series A",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -7074,10 +8926,47 @@
       "confidence": "high"
     },
     {
+      "id": "co_inamo",
+      "name": "Inamo",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Mumbai quick-commerce enablement platform offering dark-store, last-mile delivery and inventory infrastructure as a service.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/quick-commerce-enabler-inamo-raises-8-mn-led-by-prime-venture-partners-11167854",
+          "title": "Quick commerce enabler Inamo raises $8 Mn led by Prime Venture Partners",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_ineffable-intelligence",
       "name": "Ineffable Intelligence",
       "website": null,
-      "hq_country": null,
+      "hq_country": "GB",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -7092,16 +8981,35 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2026/2026-04-27-ineffable-intelligence-announces-%241-1-billion-seed-financing",
+          "title": "Ineffable Intelligence Announces $1.1 Billion Seed Financing",
+          "publisher": "Cooley (law firm, quoting company release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=742691",
+          "title": "Ineffable Intelligence raises $1.1B seed round (SiliconANGLE)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
       "id": "co_inferact",
       "name": "Inferact",
-      "website": null,
-      "hq_country": null,
+      "website": "https://inferact.ai",
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -7116,16 +9024,39 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/",
+          "title": "Inference startup Inferact lands $150M to commercialize vLLM",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/01/22/inferact-launches-150m-funding-commercialize-vllm/",
+          "title": "Inferact launches with $150M to commercialize vLLM",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
       "id": "co_inherent",
       "name": "Inherent",
       "website": null,
-      "hq_country": null,
+      "hq_country": "GB",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -7140,9 +9071,28 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science",
+          "title": "Ex-DeepMind researchers raised $50M to build AI for scientific questions",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://dealroom.co/news/130378-inherent-emerges-from-stealth-with-50m-seed-to-build-ai-native-science/",
+          "title": "Inherent emerges from stealth with $50M seed",
+          "publisher": "Dealroom",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -7190,6 +9140,61 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_inspecity",
+      "name": "InspeCity",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "IIT Bombay-incubated space-tech company building in-orbit servicing, assembly and manufacturing to extend satellite life.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/spacetech-startup-inspecity-raises-rs-100-cr-in-pre-series-a-round-12442264",
+          "title": "Space-tech startup InspeCity raises Rs 100 Cr in pre-Series A round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.antler.co/location/india",
+          "title": "Antler in India | Further, Faster",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/2023/04/space-tech-startup-inspecity-raises-pre-seed-round/",
+          "title": "Space tech startup InspeCity raises pre-seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
           0,
           1
         ],
@@ -7316,6 +9321,58 @@
           1
         ],
         "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_jeh-aerospace",
+      "name": "Jeh Aerospace",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Hyderabad maker of aerostructures and jet-engine parts using software-defined, automated, AI-assisted manufacturing.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/jeh-aerospace-bags-11-mn-from-elevation-general-catalyst/",
+          "title": "Jeh Aerospace Bags $11 Mn In Series A Funding",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/jeh-aerospace-raises-11-mn-led-by-elevation-capital-9627545",
+          "title": "Jeh Aerospace raises $11 Mn led by Elevation Capital",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "layer": [
           0,
           1
         ],
@@ -7670,6 +9727,43 @@
       "confidence": "high"
     },
     {
+      "id": "co_kusho",
+      "name": "Kusho",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2023,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds AI agents that test software for bugs, pairing proprietary models with foundation LLMs.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/2024/02/kusho-raises-600k-in-pre-seed-round-led-by-antler/",
+          "title": "Kusho raises $600K in pre-seed round led by Antler",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_laminar-formerly-h2ok-innovations",
       "name": "Laminar (formerly H2Ok Innovations)",
       "website": "https://runlaminar.com/",
@@ -7707,6 +9801,13 @@
           "url": "https://2048.vc/companies",
           "title": "Companies — 2048 Ventures",
           "publisher": "2048 Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.constructcap.com/companies",
+          "title": "Construct Capital | Companies",
+          "publisher": "Construct Capital",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
         }
@@ -8260,6 +10361,43 @@
       "confidence": "high"
     },
     {
+      "id": "co_maasi",
+      "name": "Maasi",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Bengaluru childcare service that trains, pays and supports caregivers for vetted in-home childcare.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/child-care-startup-maasi-raises-rs-6-cr-in-pre-seed-round-12757624",
+          "title": "Child-care startup Maasi raises Rs 6 Cr in pre-seed round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_macrodata",
       "name": "Macrodata",
       "website": "https://www.macrodata.co/",
@@ -8500,6 +10638,91 @@
       "confidence": "high"
     },
     {
+      "id": "co_matters-ai",
+      "name": "Matters.AI",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native data security platform that discovers, tracks and protects sensitive enterprise data.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/mattersai-raises-rs-55-cr-led-by-kalaari-and-endia-partners-10563796",
+          "title": "Matters.AI raises Rs 55 Cr led by Kalaari and Endiya Partners",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-matters-ai",
+          "title": "Why We Invested in Matters.AI",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_maxim-ai",
+      "name": "Maxim AI",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "SaaS platform that helps generative-AI developers test and ship applications faster.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/maxim-ai-bags-3-mn-to-help-genai-developers-streamline-product-process/",
+          "title": "Maxim AI Bags $3 Mn To Help GenAI Developers Streamline Product Process",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_memories-ai",
       "name": "Memories.ai",
       "website": "https://memories.ai/",
@@ -8537,7 +10760,7 @@
       "id": "co_merge-labs",
       "name": "Merge Labs",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -8552,10 +10775,85 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/",
+          "title": "OpenAI invests in Sam Altman's brain-computer interface startup Merge Labs",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/?p=727965",
+          "title": "Merge Labs raises $252M (SiliconANGLE)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sourcery.vc/p/breaking-merge-labs-raises-252m-from",
+          "title": "Merge Labs Raises $252M from OpenAI, Bain, & Gabe Newell",
+          "publisher": "Sourcery",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
+    },
+    {
+      "id": "co_meshdefend",
+      "name": "MeshDefend",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native agentic operating system for enterprise data-infrastructure operations (Agent Mesh).",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/meshdefend-raises-2-3-mn-to-build-ai-native-data-infra-platform/",
+          "title": "MeshDefend Raises $2.3 Mn To Build AI-Native Data Infra Platform",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-meshdefend",
+          "title": "Why We Invested in MeshDefend",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_method-security",
@@ -8594,9 +10892,9 @@
     {
       "id": "co_microagi",
       "name": "Microagi",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://microagi.ai",
+      "hq_country": "DE",
+      "founded_year": 2025,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -8610,9 +10908,36 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techfundingnews.com/this-munich-startup-founded-by-two-f1-engineers-a-whatsapp-entrepreneur-and-an-alan-turing-researcher-just-raised-55m-in-germanys-largest-ever-seed-round/",
+          "title": "This Munich startup founded by two F1 engineers just raised $55M in Germany's largest ever seed round",
+          "publisher": "Tech Funding News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.merca2.es/2026/07/17/ronda-seed-robotica-ia-microagi-2419306/",
+          "title": "MicroAGI levanta 55 millones en la mayor ronda seed de Alemania para robotica con IA",
+          "publisher": "Merca2",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ],
+        "founded_year": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -8763,9 +11088,9 @@
     {
       "id": "co_mirendil",
       "name": "Mirendil",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://mirendil.com",
+      "hq_country": "US",
+      "founded_year": 2026,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -8779,9 +11104,46 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://letsdatascience.com/news/mirendil-raises-200m-to-build-self-improving-ai-platform-c564b966",
+          "title": "Mirendil Raises $200M to Build Self-Improving AI Platform",
+          "publisher": "Let's Data Science",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.unite.ai/ru/former-anthropic-researchers-launch-mirendil-at-1-billion-valuation-with-200-m-seed-round/",
+          "title": "Mirendil launches at $1B valuation with $200M seed round",
+          "publisher": "Unite.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://cryptobriefing.com/mirendil-200m-seed-round-a16z-nvidia/",
+          "title": "Mirendil secures $200M seed round led by a16z and Nvidia",
+          "publisher": "Crypto Briefing",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -8814,6 +11176,58 @@
       ],
       "field_sources": {},
       "confidence": "low"
+    },
+    {
+      "id": "co_modulus-housing",
+      "name": "Modulus Housing",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2018,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "full_stack_factory",
+      "description_short": "Factory-made modular construction of low-rise buildings delivered at high volume.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/modulus-housing-raises-rs-70-cr-in-series-a-round-10830476",
+          "title": "Modulus Housing raises Rs 70 Cr in Series A round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-modulus-housing-2",
+          "title": "Why We Invested in Modulus Housing",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_moonrider",
@@ -8980,6 +11394,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_muon-space",
+      "name": "Muon Space",
+      "website": "https://www.muonspace.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds custom satellite missions on modular platforms with in-house payloads and its own operating software.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/the-mission-scale-infrastructure-layer-for-space",
+          "title": "The Mission-Scale Infrastructure Layer for Space",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_mytra",
       "name": "Mytra",
       "website": null,
@@ -9025,6 +11473,104 @@
         ]
       },
       "confidence": "low"
+    },
+    {
+      "id": "co_nauta",
+      "name": "Nauta",
+      "website": "https://www.getnauta.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI logistics orchestration platform that helps importers coordinate and automate their global supply chain operations.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/nauta-the-ai-powered-logistics-orchestration-platform-for-the-global-supply-chain-industry",
+          "title": "Construct Capital | Nauta: The AI-Powered Logistics Orchestration Platform for the Global Supply Chain Industry",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_navana-ai",
+      "name": "Navana.ai",
+      "website": "https://navana.ai",
+      "hq_country": "IN",
+      "founded_year": 2018,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Voice-AI stack with in-house speech models for Indian languages, sold to regulated enterprises (on-prem, AI contact centre).",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.ciol.com/funding-acquistion-merger/navanaai-raises-40-crore-as-voice-ai-moves-into-regulated-enterprises-12502072",
+          "title": "Navana.ai Raises ₹40 Crore as Voice AI Moves Into Regulated Enterprises",
+          "publisher": "CIOL",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/from-pixxel-to-swish-indian-startups-raised-over-321-9-mn-this-week/",
+          "title": "From Pixxel To Swish — Indian Startups Raised Over $321.9 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/navana-ai/funding/",
+          "title": "Navana.ai Funding",
+          "publisher": "Inc42 Datalabs",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2
+        ],
+        "description_short": [
+          0,
+          1,
+          2
+        ],
+        "hq_country": [
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          0,
+          1,
+          2
+        ],
+        "sector": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_nerd-apply",
@@ -9190,6 +11736,88 @@
       "confidence": "high"
     },
     {
+      "id": "co_nexxa-ai",
+      "name": "Nexxa.ai",
+      "website": "https://nexxa.ai/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "design_intent",
+      "description_short": "Builds specialised AI agents that sit on top of existing engineering tools for heavy-industry engineers designing rail, factories, machinery and transport systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://siliconangle.com/?p=728464",
+          "title": "Nexxa.ai raises $9M to streamline the world's industrial backbone with AI",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/nexxa-ai-9-million-seed-funding-closed-to-scale-ai-agents-for-heavy-industry-workflows/",
+          "title": "Nexxa.ai: $9 Million Seed Funding Closed To Scale AI Agents For Heavy Industry Workflows",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.constructcap.com/companies",
+          "title": "Construct Capital | Companies",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.constructcap.com/articles/camila-key-saruhashi-promoted-to-partner",
+          "title": "Construct Capital | Camila Key Saruhashi Has Been Promoted to Partner at Construct",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "layer": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_nimbus-health",
       "name": "Nimbus Health",
       "website": "https://www.nimbushealth.com/",
@@ -9310,6 +11938,40 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_noetive",
+      "name": "Noetive",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "AI platform for autonomous, expert-level operations in physical industries such as manufacturing, logistics and construction.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/operational-intelligence-for-the-physical-economy",
+          "title": "Operational Intelligence for the Physical Economy",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "layer": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_nominal",
@@ -9517,6 +12179,50 @@
           1
         ],
         "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_nudgebee",
+      "name": "NudgeBee",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI agents for SRE, FinOps and cloud/Kubernetes operations built on a shared enterprise context layer.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startup-this-week-apr-20-apr-25-11763906",
+          "title": "Funding and acquisitions in Indian startup this week [Apr 20 - Apr 25]",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-nudgebee",
+          "title": "Why We Invested in NudgeBee",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
           0,
           1
         ],
@@ -9823,6 +12529,58 @@
       "confidence": "high"
     },
     {
+      "id": "co_olis-robotics",
+      "name": "Olis Robotics",
+      "website": "https://olisrobotics.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "University of Washington spinout whose software lets operators remotely monitor, control and recover faults on industrial robots.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://cosmiclog.com/2023/08/11/olis-raises-4m-for-tech-that-keeps-robots-on-track/",
+          "title": "Olis raises $4M for tech that keeps robots on track",
+          "publisher": "Cosmic Log (Alan Boyle)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/olis-robotics-university-of-washington-spinoff-to-address-remote-robot-management-demand-with-new-funding-round/amp/",
+          "title": "Olis Robotics: University Of Washington Spinoff To Address Remote Robot Management Demand With New Funding Round",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_olix",
       "name": "OLIX",
       "website": "https://olix.com/",
@@ -9873,6 +12631,114 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_omnia",
+      "name": "Omnia",
+      "website": "https://www.useomnia.com",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Platform that measures brand visibility inside AI assistants and dispatches agents to create and place AI-friendly content.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.useomnia.com/blog/omnia-raises-3-5m-pre-seed",
+          "title": "Omnia raises 3.5M pre-seed",
+          "publisher": "Omnia",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_oolka",
+      "name": "Oolka",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "fintech",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Consumer credit-health app using AI agents to flag credit issues, improve scores and manage loans.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/credit-lifecycle-platform-oolka-raises-14-mn-in-series-a-led-by-accel-11780445",
+          "title": "Credit lifecycle platform Oolka raises $14 Mn in Series A led by Accel",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_optimist",
+      "name": "Optimist",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Technology-led cooling startup designing and building air conditioners, with an R&D lab in Gurugram.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/optimist-raises-12-mn-in-seed-round-led-by-accel-and-arkam-ventures-11020870",
+          "title": "Optimist raises $12 Mn in seed round led by Accel and Arkam Ventures",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_optimized-electrotech",
@@ -9986,6 +12852,82 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_origin",
+      "name": "Origin",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Physical-AI startup building robots for interior construction, starting with wall finishing.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/construction-robotics-startup-origin-raises-20-mn-led-by-accel-zacua-ventures-12680062",
+          "title": "Construction robotics startup Origin raises $20 Mn led by Accel, Zacua Ventures",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/",
+          "title": "From Boldfit To Origin — Indian Startups Raised About $236 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.accel.com/news/our-investment-in-origin-bringing-physical-ai-to-the-built-world",
+          "title": "Our investment in Origin",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.accel.com/team/subrata-mitra",
+          "title": "Subrata Mitra",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "layer": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sector": [
+          0,
+          1,
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -10221,6 +13163,54 @@
       "confidence": "low"
     },
     {
+      "id": "co_oxide",
+      "name": "Oxide",
+      "website": "https://oxide.computer/",
+      "hq_country": null,
+      "founded_year": 2019,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds rack-scale cloud computers so organisations can run cloud-style infrastructure they own.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/built-for-the-compute-ownership-era",
+          "title": "Built for the Compute Ownership Era",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://eclipse.capital/companies",
+          "title": "Eclipse | Companies",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_pangram",
       "name": "Pangram",
       "website": "http://pangram.com",
@@ -10311,6 +13301,54 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "co_pascal-ai-labs",
+      "name": "Pascal AI Labs",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI agents that automate investment research workflows for finance and investment professionals.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/pascal-ai-raises-3-1-mn-from-kalaari-info-edge-ventures-to-automate-investment-research/",
+          "title": "Pascal AI Raises $3.1 Mn From Kalaari, Info Edge Ventures To Automate Investment Research",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-pascal-ai-2",
+          "title": "Why We Invested in Pascal AI",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_peltier-technology",
@@ -10702,8 +13740,8 @@
     {
       "id": "co_physical-superintelligence",
       "name": "Physical Superintelligence",
-      "website": null,
-      "hq_country": null,
+      "website": "https://psi.inc",
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -10718,9 +13756,32 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://pulse2.com/physical-superintelligence-raises-58-million-seed-to-build-ai-physics-lab-and-virtual-physicist-platform/",
+          "title": "Physical Superintelligence Raises $58 Million Seed To Build AI Physics Lab And Virtual Physicist Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://unite.ai/physical-superintelligence-raises-58m-seed-round",
+          "title": "Physical Superintelligence raises $58M seed round",
+          "publisher": "Unite.AI",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -10889,6 +13950,46 @@
       "confidence": "high"
     },
     {
+      "id": "co_podium-automation",
+      "name": "Podium Automation",
+      "website": "https://www.podiumautomation.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Rebuilds the industrial control panel manufacturer with software-defined manufacturing of automation hardware, starting from a Brooklyn factory.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-podium-automation-rebuilding-the-backbone-of-industrial-automation",
+          "title": "Construct Capital | Investing in Podium Automation: Rebuilding the Backbone of Industrial Automation",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "layer": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_polar-mist",
       "name": "Polar Mist",
       "website": "https://www.polarmist.ai/",
@@ -10914,6 +14015,54 @@
           "publisher": "Air Street Capital",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_polygrade",
+      "name": "Polygrade",
+      "website": "https://polygrade.com/",
+      "hq_country": "CA",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Toronto startup using task-specific AI agents to run warranty claims administration on top of existing systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-polygrade-the-missing-platform-for-warranty-claims",
+          "title": "Construct Capital | Investing in Polygrade: The Missing Platform for Warranty Claims",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://betakit.com/toronto-software-startup-ploygrade-emerges-from-stealth-to-build-ai-for-home-warranty-claims/",
+          "title": "Software startup Polygrade emerges from stealth to build AI for home warranty claims",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
@@ -11078,6 +14227,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_portkey",
+      "name": "Portkey",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2023,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "LLMOps platform: a unified gateway and control plane for running production AI across many models.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/ai-apps-building-platform-portkey-raises-15-mn-in-series-a-led-by-elevation-11134623",
+          "title": "AI apps building platform Portkey raises $15 Mn in Series A led by Elevation",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/portkey-bags-15-mn-to-help-enterprises-manage-ai-spending/",
+          "title": "Portkey Bags $15 Mn To Help Enterprises Manage AI Spending",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_positron",
       "name": "Positron",
       "website": "https://www.positron.ai",
@@ -11144,8 +14337,8 @@
     {
       "id": "co_pragmatik-labs",
       "name": "Pragmatik Labs",
-      "website": null,
-      "hq_country": null,
+      "website": "https://pragmatik.com",
+      "hq_country": "CN",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -11160,9 +14353,41 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://thenextweb.com/news/pragmatik-labs-junyang-lin-qwen-shanghai-agents",
+          "title": "The man who built Qwen has a new lab, and the Shanghai government is an investor",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.yicaiglobal.com/news/former-qwen-ai-head-sets-up-ai-startup-backed-by-tencent",
+          "title": "Former Qwen AI Head Sets Up AI Startup Backed by Tencent",
+          "publisher": "Yicai Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://eu.36kr.com/en/p/3936547768948615",
+          "title": "Pragmatik Labs financing report",
+          "publisher": "36Kr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -11230,6 +14455,91 @@
       "confidence": "high"
     },
     {
+      "id": "co_presentations-ai",
+      "name": "Presentations.ai",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2019,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI tool that generates presentation decks for companies.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/02/03/accel-backs-indian-ai-startup-building-chatgpt-for-presentations/",
+          "title": "Accel backs Indian AI startup building 'ChatGPT for presentations'",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.accel.com/team/shekhar-kirani",
+          "title": "Shekhar Kirani",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_presolv360",
+      "name": "Presolv360",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2017,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Mumbai online dispute-resolution platform for mediation, arbitration and other ADR.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/update-exclusive-presolv360-raises-4-7-mn-from-elevation-capital-others/",
+          "title": "[Update] Exclusive: Presolv360 Raises $4.7 Mn From Elevation Capital, Others",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_previvor-edge",
       "name": "Previvor Edge",
       "website": null,
@@ -11261,6 +14571,37 @@
         "description_short": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_prime-minute",
+      "name": "Prime Minute",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds AI-assisted precision aerial suppression systems for fast-moving disasters, starting with wildfires.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/the-resilience-prime",
+          "title": "The Resilience Prime",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
         ]
       },
       "confidence": "high"
@@ -11463,6 +14804,50 @@
       "confidence": "high"
     },
     {
+      "id": "co_pype-ai",
+      "name": "Pype AI",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Voice-AI agents that run hospital and clinic front-desk calls, scheduling, reminders and follow-ups.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/pype-ai-raises-12-mn-in-pre-seed-round-led-by-kalaari-capital-10783582",
+          "title": "Pype AI raises $1.2 Mn in pre-seed round led by Kalaari Capital",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-pype-ai",
+          "title": "Why We Invested in Pype AI",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "founded_year": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_q-factor",
       "name": "Q-Factor",
       "website": null,
@@ -11488,6 +14873,43 @@
           0
         ],
         "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_qosmic",
+      "name": "QOSMIC",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Builds laser-based optical communication systems to replace radio-frequency satellite links.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/qosmic-bags-3-3-mn-to-build-laser-based-satellite-communication-systems/",
+          "title": "QOSMIC Bags $3.3 Mn To Build Laser-Based Satellite Communication Systems",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
           0
         ],
         "sector": [
@@ -11588,6 +15010,58 @@
         ],
         "sector": [
           0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_queue",
+      "name": "Queue",
+      "website": "https://queue.inc/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "source",
+      "layer": "robotics",
+      "description_short": "Robotics startup building an autonomous pharmacy system that fills and verifies prescriptions from sealed bottles without an on-site pharmacist.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://ubiquity.vc/blog/ubiquity-backs-queue-the-first-fully",
+          "title": "Ubiquity Backs Queue: the First Fully Autonomous Pharmacy",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.therobotreport.com/queue-raises-funding-fully-autonomous-pharmacy/",
+          "title": "Queue raises funding for fully autonomous pharmacy",
+          "publisher": "The Robot Report",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -11695,7 +15169,7 @@
     {
       "id": "co_radical-numerics",
       "name": "Radical Numerics",
-      "website": null,
+      "website": "https://radicalnumerics.ai",
       "hq_country": null,
       "founded_year": null,
       "sector": null,
@@ -11711,16 +15185,35 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fortune.com/2026/06/15/exclusive-ai-dna-radical-numerics-eric-nguyen-biology-biodefense-drug-discovery/",
+          "title": "Exclusive: Radical Numerics, AI for DNA, biology and biodefense",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/06/15/radical-numerics-launches-50m-build-general-biological-intelligence/",
+          "title": "Radical Numerics launches with $50M to build general biological intelligence",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     },
     {
       "id": "co_radixark",
       "name": "RadixArk",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -11735,24 +15228,56 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://siliconangle.com/?p=747000",
+          "title": "RadixArk raises $100M seed (SiliconANGLE)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
       "id": "co_rapidcanvas",
       "name": "RapidCanvas",
-      "website": "https://www.rapidcanvas.ai",
+      "website": "https://www.rapidcanvas.ai/",
       "hq_country": null,
       "founded_year": 2021,
       "sector": "ai_apps_agents",
-      "sector_classified_by": "model",
+      "sector_classified_by": "source",
       "layer": null,
-      "description_short": "AI platform whose LLM-powered agents automate much of the work of data scientists and engineers.",
+      "description_short": "Enterprise AI company pairing its software platform with domain experts to build custom AI solutions.",
       "total_raised_usd": null,
       "is_competitor": false,
       "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/",
+          "title": "From Boldfit To Origin — Indian Startups Raised About $236 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.rapidcanvas.ai/",
+          "title": "RapidCanvas",
+          "publisher": "RapidCanvas",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.accel.com/team/dinesh-katiyar",
+          "title": "Dinesh Katiyar",
+          "publisher": "Accel",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
         {
           "url": "https://entrackr.com/news/rapidcanvas-raises-16-mn-led-by-peak-xv-8430632",
           "title": "RapidCanvas raises $16 Mn led by Peak XV",
@@ -11763,19 +15288,25 @@
       ],
       "field_sources": {
         "website": [
-          0
+          0,
+          1,
+          2
         ],
         "description_short": [
-          0
-        ],
-        "founded_year": [
-          0
+          0,
+          1,
+          2
         ],
         "sector": [
-          0
+          0,
+          1,
+          2
+        ],
+        "founded_year": [
+          3
         ]
       },
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "co_reach-industries",
@@ -12239,6 +15770,46 @@
       "confidence": "high"
     },
     {
+      "id": "co_ridley",
+      "name": "Ridley",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-powered real estate platform challenging traditional commission fees.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.ai-market-watch.com/news/ridley-64-million-seed-round-raised-to-advance-ai",
+          "title": "Ridley $6.4 million seed round raised to advance AI",
+          "publisher": "AI Market Watch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.caplight.com/investor/parkrangerscap",
+          "title": "Park Rangers Capital investor profile",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_rigor-ai",
       "name": "Rigor AI",
       "website": "https://rigor.ai",
@@ -12367,9 +15938,9 @@
     {
       "id": "co_river-ai",
       "name": "River AI",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://river.ai",
+      "hq_country": "US",
+      "founded_year": 2026,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -12383,9 +15954,46 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://thenextweb.com/news/river-ai-1-1-billion-babuschkin-general-catalyst-open-weights",
+          "title": "River AI raised $1.1bn to let companies train and keep their own models",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://raising.fi/news/river-ai-seed-series-a-august-2026",
+          "title": "River AI Raises $1.1 Billion in Early Funding Rounds",
+          "publisher": "raising.fi",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://media.dealstreetasia.com/stories/temasek-nvidia-river-ai-491862/",
+          "title": "Temasek, Nvidia, others back xAI co-founder's startup River AI in $1.1b round",
+          "publisher": "DealStreetAsia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2,
+          3
+        ],
+        "hq_country": [
+          1,
+          2,
+          3
+        ],
+        "founded_year": [
+          1,
+          2,
+          3
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -12708,6 +16316,43 @@
       "confidence": "medium"
     },
     {
+      "id": "co_rovia",
+      "name": "Rovia",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2025,
+      "sector": "fintech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Bengaluru wealth platform for professionals paid partly in equity (RSUs, stock plans), handling cross-border transfer and reinvestment.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/antler-india-leads-1-mn-pre-seed-round-in-wealthtech-platform-rovia-11895889",
+          "title": "Antler India leads $1 Mn pre-seed round in wealthtech platform Rovia",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_sage-care",
       "name": "Sage Care",
       "website": "https://www.sage.care",
@@ -12760,6 +16405,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_sageox",
+      "name": "SageOx",
+      "website": null,
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Infrastructure that turns team decisions, intent and project history into structured knowledge usable by people and AI agents.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://parsers.vc/news/260513-sageox-secures-15-million--revolutionizing/",
+          "title": "SageOx Secures $15 Million",
+          "publisher": "Parsers.vc",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_scholar-education",
       "name": "Scholar Education",
       "website": null,
@@ -12794,6 +16473,58 @@
         ]
       },
       "confidence": "low"
+    },
+    {
+      "id": "co_scimplify",
+      "name": "Scimplify",
+      "website": "https://www.scimplify.com/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "full_stack_factory",
+      "description_short": "Develops and manufactures specialty chemicals and advanced materials, from lab scale to commercial production.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/",
+          "title": "From Boldfit To Origin — Indian Startups Raised About $236 Mn This Week",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.scimplify.com/",
+          "title": "Scimplify",
+          "publisher": "Scimplify",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "co_scooter",
@@ -13093,6 +16824,40 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_shade",
+      "name": "Shade",
+      "website": "https://shade.inc/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-native file storage and workflow platform for teams handling large volumes of files.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-shade-the-foundation-for-the-file-abundance-era",
+          "title": "Construct Capital | Investing in Shade: The Foundation for the File Abundance Era",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
         ]
       },
       "confidence": "high"
@@ -13406,6 +17171,37 @@
       "confidence": "medium"
     },
     {
+      "id": "co_soxton-ai",
+      "name": "Soxton AI",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-powered legal platform.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.caplight.com/investor/parkrangerscap",
+          "title": "Park Rangers Capital investor profile",
+          "publisher": "Caplight",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "low"
+    },
+    {
       "id": "co_spaitial",
       "name": "SpAItial",
       "website": "https://www.spaitial.ai/",
@@ -13445,6 +17241,114 @@
         "sector": [
           0,
           1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_sphere-semi",
+      "name": "Sphere Semi",
+      "website": "https://www.spheresemi.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Uses AI and software automation to design analog chips and RF systems.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-sphere-semi-reinventing-analog-chip-design-for-the-ai-era",
+          "title": "Construct Capital | Investing in Sphere Semi: Reinventing Analog Chip Design for the AI Era",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_spill-games",
+      "name": "Spill Games",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": 2024,
+      "sector": "consumer",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Bengaluru mobile gaming studio that builds games with AI.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/elevation-capital-leads-105-mn-series-a-round-in-spill-games-12674083",
+          "title": "Elevation Capital leads $10.5 Mn Series A round in Spill Games",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_splash-industries",
+      "name": "Splash Industries",
+      "website": "https://splash9.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "defense_dual_use",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Builds low-cost dual-use autonomous drone boats for civilian and national-security patrol missions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://ubiquity.vc/blog/ubiquity-backs-splash-industries",
+          "title": "Ubiquity backs Splash Industries",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
         ]
       },
       "confidence": "high"
@@ -13817,8 +17721,8 @@
     {
       "id": "co_sycamore",
       "name": "Sycamore",
-      "website": null,
-      "hq_country": null,
+      "website": "https://sycamore.so",
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -13833,9 +17737,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
+          "title": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1
+        ],
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -13864,6 +17782,40 @@
           0
         ],
         "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "co_synthio-labs",
+      "name": "Synthio Labs",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2024,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Clinical-grade conversational voice AI for life sciences companies, clinicians and patients.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/synthio-labs-bags-5-mn-to-provide-voice-ai-to-life-sciences-industry/",
+          "title": "Synthio Labs Bags $5 Mn To Provide Voice AI To Life Sciences Industry",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "founded_year": [
           0
         ],
         "sector": [
@@ -13925,6 +17877,37 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_taya",
+      "name": "Taya",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Developing AI jewelry that captures and interprets the wearer's thoughts and emotions.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://inforcapital.com/news/taya-raises-5m-seed-round-for-ai-jewelry/",
+          "title": "Taya raises $5M seed round for AI jewelry",
+          "publisher": "Infor Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_telescope",
@@ -14440,10 +18423,44 @@
       "confidence": "medium"
     },
     {
+      "id": "co_torch-systems",
+      "name": "Torch Systems",
+      "website": "https://www.torchsystems.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "climate_energy",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI-powered sensing platform giving operators continuous visibility across distributed physical infrastructure such as the power grid.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-torch-bringing-ai-powered-sensing-to-critical-infrastructure",
+          "title": "Construct Capital | Investing in Torch: Bringing AI Powered Sensing to Critical Infrastructure",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_trase",
       "name": "Trase",
       "website": null,
-      "hq_country": null,
+      "hq_country": "US",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -14458,9 +18475,20 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://aiweekly.co/node/3678",
+          "title": "Trase Raises $107M Seed for Healthcare and Defense AI Agents",
+          "publisher": "AI Weekly (citing Axios Pro)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "hq_country": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -14533,6 +18561,89 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_ubicept",
+      "name": "Ubicept",
+      "website": "https://www.ubicept.com/",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": "quality_vision",
+      "description_short": "MIT / UW-Madison spinout turning single-photon (SPAD) sensor data into computer-vision output for low-light and high-speed imaging.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://image-sensors-world.blogspot.com/2023/07/ubicept-raises-8m-for-spad-based.html",
+          "title": "Ubicept raises $8M for SPAD-based computer vision",
+          "publisher": "Image Sensors World (reprints Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/ubicept-8-million-funding/",
+          "title": "Ubicept: Computer Vision Technology Company Closes $8 Million",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "layer": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_unifyapps",
+      "name": "UnifyApps",
+      "website": null,
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Enterprise platform for building and running AI agents across a company's software.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/unifyapps-raises-20-mn-in-series-a-appoints-new-co-founder-7566239",
+          "title": "UnifyApps raises $20 Mn in Series A, appoints new co-founder",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_unveilr-ai",
@@ -14723,6 +18834,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_vammo",
+      "name": "Vammo",
+      "website": "https://vammo.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "mobility_ev",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Electric two-wheeler platform with battery swapping for riders in Latin America.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/vammo-raises-45m-to-scale-electric-mobility-in-latam",
+          "title": "Construct Capital | Vammo Raises $45M to Scale Electric Mobility in LATAM",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_vatn-systems",
       "name": "Vatn Systems",
       "website": "https://www.vatnsystems.com/",
@@ -14789,9 +18934,9 @@
     {
       "id": "co_veeda-ai",
       "name": "Veeda AI",
-      "website": null,
-      "hq_country": null,
-      "founded_year": null,
+      "website": "https://veeda.ai",
+      "hq_country": "CA",
+      "founded_year": 2026,
       "sector": null,
       "sector_classified_by": null,
       "layer": null,
@@ -14805,9 +18950,26 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://betakit.com/former-nvidia-lab-leader-sanja-fidler-launches-veeda-ai-to-tackle-world-models/",
+          "title": "Former Nvidia lab leader Sanja Fidler launches Veeda AI to tackle world models",
+          "publisher": "BetaKit",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1
+        ],
+        "hq_country": [
+          1
+        ],
+        "founded_year": [
+          1
+        ]
+      },
       "confidence": "low"
     },
     {
@@ -15566,8 +19728,8 @@
     {
       "id": "co_zyg",
       "name": "ZyG",
-      "website": null,
-      "hq_country": null,
+      "website": "https://zyg.com",
+      "hq_country": "IL",
       "founded_year": null,
       "sector": null,
       "sector_classified_by": null,
@@ -15582,9 +19744,32 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://siliconangle.com/?p=732683",
+          "title": "ZyG raises $58M seed (SiliconANGLE, 5 Mar 2026)",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://retailtechinnovationhub.com/home/2026/3/5/zyg-lands-58-million-in-seed-funding-to-expand-ai-powered-agentic-dtc-e-commerce-platform",
+          "title": "ZyG lands $58 million in seed funding to expand AI powered DTC e-commerce platform",
+          "publisher": "Retail Tech Innovation Hub",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "website": [
+          1,
+          2
+        ],
+        "hq_country": [
+          1,
+          2
+        ]
+      },
       "confidence": "low"
     }
   ]

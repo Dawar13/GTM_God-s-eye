@@ -1,0 +1,45 @@
+{
+  "key": "round-fish-audio",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Fish Audio = fish.audio, AI voice-model company (text-to-speech / speech-to-text, developer API and enterprise offering), CEO Rissa Cao per search results. Not unrelated 'Fish' audio products.",
+  "pages": [
+    { "url": "https://fish.audio/de/blog/fish-audio-52m-seed-funding/", "title": "Fish Audio raises $52M seed funding", "publisher": "Fish Audio", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/2026/07/28/fish-audio-makes-splash-raising-52m-seed-funding-ai-voices/", "title": "Fish Audio makes a splash raising $52M in seed funding for AI voices", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [
+    { "field": "date", "values": ["27 July 2026 (company post)", "28 July 2026 (SiliconANGLE)"], "chosen": "2026-07-27", "reason": "Company's own post, one day apart." },
+    { "field": "amount", "values": ["$52M (both fetched pages)", "$50M (raising.fi and runtimewire, search results only)"], "chosen": "$52M", "reason": "Company post and SiliconANGLE agree." }
+  ],
+  "open_items": [
+    "HQ and founding year not stated on fetched pages; SiliconANGLE says platform launched in 2023, company post implies founding around mid-2025.",
+    "Company post fetched in German; snippet is the German original, translated nowhere else.",
+    "TechCrunch and PR Newswire coverage appeared in search but were not opened."
+  ],
+  "seed_company": "Fish Audio",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Fish Audio",
+      "website": "https://fish.audio",
+      "description": "Builds expressive AI voice models for text-to-speech and speech-to-text, offered via a developer API and an enterprise tier.",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$52 million seed",
+    "date": "2026-07-27",
+    "date_precision": "day",
+    "amount_original": 52000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Coreline Ventures", "Capital Today"],
+    "participants": ["359 Capital", "Play Time", "HF0", "645 Ventures", "Parable", "Carya Venture Partners", "Alphalist Partners"],
+    "unspecified": [],
+    "pages": [0, 1],
+    "snippet": "Coreline Ventures and Capital Today led the round, which also saw participation from a host of other backers"
+  }
+}

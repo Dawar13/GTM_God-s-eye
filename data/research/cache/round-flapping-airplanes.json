@@ -1,0 +1,96 @@
+{
+  "key": "round-flapping-airplanes",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Flapping Airplanes = AI research lab (flappingairplanes.com), backed by GV, Sequoia, Index (TechCrunch, StartupHub). Same company as the $1B Series A in the Index Ventures cache.",
+  "pages": [
+    {
+      "url": "https://techcrunch.com/2026/01/29/flapping-airplanes-and-the-promise-of-research-driven-ai/",
+      "title": "Flapping Airplanes and the promise of research-driven AI",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.startuphub.ai/startups/flapping-airplanes",
+      "title": "Flapping Airplanes",
+      "publisher": "StartupHub.ai",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://texxr.com/1162272/flapping-airplanes-raises-180m-at-1-5b",
+      "title": "Flapping Airplanes raises $180M at $1.5B",
+      "publisher": "Texxr",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+      "title": "Toward More Efficient AI: Leading Flapping Airplanes' $1B Series A",
+      "publisher": "Index Ventures",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "GV; Sequoia; Index Ventures as leads (CSV)",
+        "backers named, no lead stated (TechCrunch, StartupHub, Texxr)"
+      ],
+      "chosen": "leads empty",
+      "reason": "No page read calls any of them lead."
+    },
+    {
+      "field": "valuation",
+      "values": [
+        "$1.5B (Texxr, citing WSJ)",
+        "not stated (TechCrunch, StartupHub)"
+      ],
+      "chosen": "null",
+      "reason": "Only a secondary aggregator."
+    }
+  ],
+  "open_items": [
+    "Valuation $1.5B appears only on Texxr (citing WSJ); not recorded.",
+    "A later $1B Series A (Oct 2026, led by Index and Lux per StartupHub) is a separate round.",
+    "HQ San Francisco per StartupHub only; founding year 2026 per StartupHub, unverified.",
+    "Founders not named on pages read."
+  ],
+  "seed_company": "Flapping Airplanes",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Flapping Airplanes",
+      "website": "https://flappingairplanes.com",
+      "description": "AI research lab working on models that need far less training data and compute.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$180 million in seed funding",
+    "date": "2026-01",
+    "date_precision": "month",
+    "amount_original": 180000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [
+      "GV",
+      "Sequoia",
+      "Index Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "with $180 million in seed funding from Google Ventures, Sequoia, and Index."
+  }
+}

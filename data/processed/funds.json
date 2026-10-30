@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:28:39+00:00",
+  "generated_at": "2026-10-30T07:50:39+00:00",
   "records": [
     {
       "id": "fund_100x-vc_undated",
@@ -889,6 +889,150 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_accel-india_ix",
+      "investor_id": "inv_accel-india",
+      "name": "Accel ninth India fund",
+      "number": "IX",
+      "size_usd": 550000000,
+      "currency_original": "USD",
+      "size_original": 550000000,
+      "fx": null,
+      "close_date": "2026-08-12",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/news/accel-raises-550-mn-india-fund-takes-india-corpus-to-12-bn-in-18-months-12252002",
+          "title": "Accel raises $550 Mn India fund, takes India corpus to $1.2 Bn in 18 months",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/accel-closes-ninth-india-fund-with-550-mn-corpus-to-invest-in-ai-deeptech/",
+          "title": "Accel Closes Ninth India Fund With $550 Mn Corpus To Invest In AI, Deeptech",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/?p=98592",
+          "title": "Accel Closes Oversubscribed USD 550 Mn India Fund in Weeks",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_accel-india_vii",
+      "investor_id": "inv_accel-india",
+      "name": "Accel seventh India fund",
+      "number": "VII",
+      "size_usd": 650000000,
+      "currency_original": "USD",
+      "size_original": 650000000,
+      "fx": null,
+      "close_date": "2022-03",
+      "close_date_precision": "month",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/accel-launches-650-mn-fund-for-early-stage-startups-in-india-and-sea-8594754",
+          "title": "Accel launches $650 Mn fund for early-stage startups in India and SEA",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/accel-closes-ninth-india-fund-with-550-mn-corpus-to-invest-in-ai-deeptech/",
+          "title": "Accel Closes Ninth India Fund With $550 Mn Corpus To Invest In AI, Deeptech",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_accel-india_viii",
+      "investor_id": "inv_accel-india",
+      "name": "Accel eighth India fund (India and Southeast Asia)",
+      "number": "VIII",
+      "size_usd": 650000000,
+      "currency_original": "USD",
+      "size_original": 650000000,
+      "fx": null,
+      "close_date": "2025-01-06",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/accel-launches-650-mn-fund-for-early-stage-startups-in-india-and-sea-8594754",
+          "title": "Accel launches $650 Mn fund for early-stage startups in India and SEA",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/news/accel-raises-550-mn-india-fund-takes-india-corpus-to-12-bn-in-18-months-12252002",
+          "title": "Accel raises $550 Mn India fund, takes India corpus to $1.2 Bn in 18 months",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/accel-closes-ninth-india-fund-with-550-mn-corpus-to-invest-in-ai-deeptech/",
+          "title": "Accel Closes Ninth India Fund With $550 Mn Corpus To Invest In AI, Deeptech",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_acceleprise_ii",
@@ -2325,6 +2469,46 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_antler-india_i",
+      "investor_id": "inv_antler-india",
+      "name": "Antler India maiden fund",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.antler.co/press-releases/antler-india-approaches-final-close-of-maiden-inr-600-crores-usd-75-million-pre-seed-fund",
+          "title": "Antler India approaches final close of maiden INR 600 crores/ ~USD 75 million pre-seed fund",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/2023/09/antler-india-closes-raises-rs-500-cr-for-maiden-fund/",
+          "title": "Antler India raises Rs 500 Cr for maiden fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/pre-seed-investor-antler-india-first-close-maiden-fund-inr-500-cr/",
+          "title": "Pre-Seed Investor Antler India Bags INR 500 Cr From Maiden Fund",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
       "id": "fund_antler-us_ii",
       "investor_id": "inv_antler-us",
       "name": "Antler US Fund",
@@ -3219,9 +3403,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://tech.eu/2025/11/26/elevenlabs-and-revolut-backer-launches-15m-solo-gp-fund/",
+          "title": "ElevenLabs and Revolut backer launches $15M solo GP fund",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -7032,6 +7230,48 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_construct-capital_2022",
+      "investor_id": "inv_construct-capital",
+      "name": "Construct Capital later-stage (select) fund, 2022",
+      "number": null,
+      "size_usd": 75000000,
+      "currency_original": "USD",
+      "size_original": 75000000,
+      "fx": null,
+      "close_date": "2022-04-21",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/04/21/construct-capital-startups-automation-infrastructure/",
+          "title": "Construct Capital raises $300M to invest in automation",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://silicon.co.uk/press-release/construct-capital-closes-300-million-fund-iii-to-transform-foundational-industries",
+          "title": "Construct Capital Closes $300 Million Fund III to Transform Foundational Industries",
+          "publisher": "Silicon UK (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_construct-capital_i",
       "investor_id": "inv_construct-capital",
       "name": "Construct Capital",
@@ -7052,10 +7292,108 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2021/02/08/a-former-nea-partner-and-a-former-uber-exec-just-closed-their-140-million-debut-vc-fund/",
+          "title": "A former NEA partner and a former Uber exec just closed their $140 million debut VC fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
+    },
+    {
+      "id": "fund_construct-capital_ii",
+      "investor_id": "inv_construct-capital",
+      "name": "Construct Capital Fund II",
+      "number": "II",
+      "size_usd": 225000000,
+      "currency_original": "USD",
+      "size_original": 225000000,
+      "fx": null,
+      "close_date": "2022-04-21",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2022/04/21/construct-capital-startups-automation-infrastructure/",
+          "title": "Construct Capital raises $300M to invest in automation",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://silicon.co.uk/press-release/construct-capital-closes-300-million-fund-iii-to-transform-foundational-industries",
+          "title": "Construct Capital Closes $300 Million Fund III to Transform Foundational Industries",
+          "publisher": "Silicon UK (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_construct-capital_iii",
+      "investor_id": "inv_construct-capital",
+      "name": "Construct Capital Fund III",
+      "number": "III",
+      "size_usd": 300000000,
+      "currency_original": "USD",
+      "size_original": 300000000,
+      "fx": null,
+      "close_date": "2025-03-31",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.constructcap.com/articles/announcing-fund-iii",
+          "title": "Construct Capital | Announcing Fund III",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://silicon.co.uk/press-release/construct-capital-closes-300-million-fund-iii-to-transform-foundational-industries",
+          "title": "Construct Capital Closes $300 Million Fund III to Transform Foundational Industries",
+          "publisher": "Silicon UK (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_contour-venture-partners_iii",
@@ -9985,17 +10323,59 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_eclipse-ventures_ii",
-      "investor_id": "inv_eclipse-ventures",
+      "id": "fund_eclipse_i",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Early Growth Fund I, L.P.",
+      "number": "I",
+      "size_usd": 510000000,
+      "currency_original": "USD",
+      "size_original": 510000000,
+      "fx": null,
+      "close_date": "2021-11-22",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/the-inflection-point-for-the-industrial-evolution",
+          "title": "The Inflection Point for the Industrial Evolution",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_ii",
+      "investor_id": "inv_eclipse",
       "name": "Eclipse Ventures",
       "number": "II",
-      "size_usd": 184000000,
+      "size_usd": 510000000,
       "currency_original": "USD",
-      "size_original": 184000000,
+      "size_original": 510000000,
       "fx": null,
-      "close_date": "2017-01-12",
+      "close_date": "2023-04-10",
       "close_date_precision": "day",
-      "vintage_year": 2017,
+      "vintage_year": 2023,
       "location": "Bay Area",
       "notes": null,
       "sources": [
@@ -10005,10 +10385,237 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii",
+          "title": "Forging the New Economy: Eclipse Fund V and Early Growth Fund II",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/eclipse-ventures-collects-1-23bn-across-two-funds/",
+          "title": "Eclipse Ventures collects $1.23bn across two funds",
+          "publisher": "Venture Capital Journal / Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_iii",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Early Growth Fund III, L.P.",
+      "number": "III",
+      "size_usd": 591000000,
+      "currency_original": "USD",
+      "size_original": 591000000,
+      "fx": null,
+      "close_date": "2026-04-07",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/announcing-eclipse-fund-vi-and-early-growth-iii",
+          "title": "Announcing Eclipse Fund VI and Early Growth III",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.manufacturingdive.com/news/vc-firm-eclipse-raises-1-b-physical-industries-university-endowments/818546/",
+          "title": "Eclipse raises $1.3B to reshore manufacturing, strengthen supply chains",
+          "publisher": "Manufacturing Dive",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_iv",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Fund IV, L.P.",
+      "number": "IV",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": "2021-04-09",
+      "close_date_precision": "day",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/eclipse-fund-iv",
+          "title": "Eclipse Fund IV",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_v",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Fund V, L.P.",
+      "number": "V",
+      "size_usd": 720000000,
+      "currency_original": "USD",
+      "size_original": 720000000,
+      "fx": null,
+      "close_date": "2023-04-10",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii",
+          "title": "Forging the New Economy: Eclipse Fund V and Early Growth Fund II",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/eclipse-ventures-collects-1-23bn-across-two-funds/",
+          "title": "Eclipse Ventures collects $1.23bn across two funds",
+          "publisher": "Venture Capital Journal / Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_vi",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Fund VI, L.P.",
+      "number": "VI",
+      "size_usd": 720000000,
+      "currency_original": "USD",
+      "size_original": 720000000,
+      "fx": null,
+      "close_date": "2026-04-07",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/announcing-eclipse-fund-vi-and-early-growth-iii",
+          "title": "Announcing Eclipse Fund VI and Early Growth III",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.manufacturingdive.com/news/vc-firm-eclipse-raises-1-b-physical-industries-university-endowments/818546/",
+          "title": "Eclipse raises $1.3B to reshore manufacturing, strengthen supply chains",
+          "publisher": "Manufacturing Dive",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_eis-angel-co-investment_ii",
@@ -10087,6 +10694,141 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_elevation-capital_2025",
+      "investor_id": "inv_elevation-capital",
+      "name": "Elevation Holdings",
+      "number": null,
+      "size_usd": 400000000,
+      "currency_original": "USD",
+      "size_original": 400000000,
+      "fx": null,
+      "close_date": "2025",
+      "close_date_precision": "year",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.elevationcapital.com/perspectives/fund-ix",
+          "title": "Elevation Fund IX: For Audacious Founders Building an Unstoppable India",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/elevation-capital-launches-fund-ix-with-500-mn-corpus-to-back-ai-led-startups/",
+          "title": "Elevation Capital Launches Fund IX With $500 Mn Corpus To Back AI-Led Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_elevation-capital_ix",
+      "investor_id": "inv_elevation-capital",
+      "name": "Elevation Fund IX",
+      "number": "IX",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": "2026-07-14",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.elevationcapital.com/perspectives/fund-ix",
+          "title": "Elevation Fund IX: For Audacious Founders Building an Unstoppable India",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/elevation-capital-launches-fund-ix-with-500-mn-corpus-to-back-ai-led-startups/",
+          "title": "Elevation Capital Launches Fund IX With $500 Mn Corpus To Back AI-Led Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_elevation-capital_viii",
+      "investor_id": "inv_elevation-capital",
+      "name": "Elevation Fund VIII",
+      "number": "VIII",
+      "size_usd": 670000000,
+      "currency_original": "USD",
+      "size_original": 670000000,
+      "fx": null,
+      "close_date": "2022-04-07",
+      "close_date_precision": "day",
+      "vintage_year": 2022,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.elevationcapital.com/summit/announcements/investing-in-india",
+          "title": "Our New Fund: All In on India",
+          "publisher": "Elevation Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/2022/04/elevation-capital-announces-fund-viii-worth-670-mn/",
+          "title": "Elevation Capital announces Fund VIII worth $670 Mn",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/exclusive/exclusive-amit-aggarwal-to-quit-elevation-capital-after-four-years-8838350",
+          "title": "Exclusive: Amit Aggarwal to quit Elevation Capital after four years",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_elevation-innovation-partners_i",
@@ -11087,10 +11829,33 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fortune.com/2025/12/01/female-founders-fund-fourth-fund-emerging-managers-milestone",
+          "title": "Female Founders Fund fourth fund, emerging managers milestone",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://femtechinsider.com/female-founders-fund-closes-29m-fourth-fund/",
+          "title": "Female Founders Fund closes $29M fourth fund",
+          "publisher": "Femtech Insider",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_ff-vc_iii",
@@ -12058,12 +12823,12 @@
       "id": "fund_founders-co-op_vii",
       "investor_id": "inv_founders-co-op",
       "name": "Founders' Co-Op",
-      "number": "VII",
+      "number": "VI",
       "size_usd": 50000000,
       "currency_original": "USD",
       "size_original": 50000000,
       "fx": null,
-      "close_date": "2025-11-04",
+      "close_date": "2025-11-05",
       "close_date_precision": "day",
       "vintage_year": 2025,
       "location": "Seattle, WA",
@@ -12075,9 +12840,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://pulse2.com/founders-co-op-sixth-fund-launched-at-50-million-to-support-pacific-northwest-startups/amp/",
+          "title": "Founders' Co-op: Sixth Fund Launched At $50 Million To Support Pacific Northwest Startups",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -16128,6 +16907,192 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_kalaari-capital_ii",
+      "investor_id": "inv_kalaari-capital",
+      "name": "Kalaari Capital Fund II",
+      "number": "II",
+      "size_usd": 160000000,
+      "currency_original": "USD",
+      "size_original": 160000000,
+      "fx": null,
+      "close_date": "2012",
+      "close_date_precision": "year",
+      "vintage_year": 2012,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/kalaari-capital-is-closing-275-mn-for-two-new-funds-to-back-startups/",
+          "title": "Kalaari Capital Is Closing $275 Mn For Two New Funds To Back Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_kalaari-capital_iii",
+      "investor_id": "inv_kalaari-capital",
+      "name": "Kalaari Capital Partners III",
+      "number": "III",
+      "size_usd": 290000000,
+      "currency_original": "USD",
+      "size_original": 290000000,
+      "fx": null,
+      "close_date": "2015",
+      "close_date_precision": "year",
+      "vintage_year": 2015,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/2019/01/kalaari-capital-200-mn-fourth-fund/",
+          "title": "Kalaari Capital onboards 3 new Venture Partners; targets $200 Mn worth fourth fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/kalaari-capital-is-closing-275-mn-for-two-new-funds-to-back-startups/",
+          "title": "Kalaari Capital Is Closing $275 Mn For Two New Funds To Back Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_kalaari-capital_iv",
+      "investor_id": "inv_kalaari-capital",
+      "name": "Kalaari Capital Partners India IV",
+      "number": "IV",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.kalaari.com/",
+          "title": "Kalaari Capital",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.kalaari.com/investor-relations",
+          "title": "Investor Relations",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/2019/01/kalaari-capital-200-mn-fourth-fund/",
+          "title": "Kalaari Capital onboards 3 new Venture Partners; targets $200 Mn worth fourth fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/kalaari-capital-confirms-reliances-anchor-investment-in-fund-4/",
+          "title": "Kalaari Capital Confirms Reliance's Anchor Investment In Fund 4",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_kalaari-capital_undated",
+      "investor_id": "inv_kalaari-capital",
+      "name": "Kalaari Capital Partners Opportunity Fund",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/kalaari-capital-is-closing-275-mn-for-two-new-funds-to-back-startups/",
+          "title": "Kalaari Capital Is Closing $275 Mn For Two New Funds To Back Startups",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_kalaari-capital_undated-2",
+      "investor_id": "inv_kalaari-capital",
+      "name": "CXXO (carve-out within Kalaari for women-led startups)",
+      "number": null,
+      "size_usd": 10000000,
+      "currency_original": "USD",
+      "size_original": 10000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://cxxo.kalaari.com/",
+          "title": "Early-Stage Venture Fund for Women Founders in India | CXXO",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.kalaari.com/insights-from-the-fronlines/why-we-invested-in-superbryn-2",
+          "title": "Why We Invested in SuperBryn",
+          "publisher": "Kalaari Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_karlani-capital_i",
       "investor_id": "inv_karlani-capital",
       "name": "Karlani Capital",
@@ -17414,6 +18379,39 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "fund_lux-capital_ix",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux Ventures IX",
+      "number": "IX",
+      "size_usd": 1500000000,
+      "currency_original": "USD",
+      "size_original": 1500000000,
+      "fx": null,
+      "close_date": "2026-01-07",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.luxcapital.com/news/announcing-lux-ventures-ix",
+          "title": "Announcing Lux Ventures IX",
+          "publisher": "Lux Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_m-x-v-capital_i",
@@ -19802,9 +20800,9 @@
       "investor_id": "inv_park-rangers-capital",
       "name": "Park Rangers Capital",
       "number": "I",
-      "size_usd": 4000000,
+      "size_usd": 4300000,
       "currency_original": "USD",
-      "size_original": 4000000,
+      "size_original": 4300000,
       "fx": null,
       "close_date": "2025-11-14",
       "close_date_precision": "day",
@@ -19820,7 +20818,14 @@
           "kind": "user_supplied"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -24595,10 +25600,24 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.shieldcap.com/announcements/shield-capital-closes-186-million-inaugural-venture-capital-fund",
+          "title": "Shield Capital Closes $186 Million Inaugural Venture Capital Fund",
+          "publisher": "Shield Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_shima-capital_i",
@@ -27430,19 +28449,60 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2019/01/23/a-former-bessemer-venture-partners-principal-just-closed-his-own-30-million-fund-and-heres-how/",
+          "title": "Here's how a former Bessemer Venture Partners principal closed his own $30 million fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://in.marketscreener.com/news/latest/Ubiquity-Ventures-Launches-to-Accelerate-Software-s-Reach-Beyond-the-Screen-27902704",
+          "title": "Ubiquity Ventures Launches to Accelerate Software's Reach Beyond the Screen",
+          "publisher": "MarketScreener (Business Wire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Ubiquity%20Ventures%22&forms=D",
+          "title": "EDGAR full-text search: \"Ubiquity Ventures\" (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2024/01/30/ubiquity-ventures-75m-fund-3-software-beyond-the-screen/",
+          "title": "Ubiquity Ventures secures $75M for Fund III to invest in \"software beyond the screen\"",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_ubiquity-ventures_ii",
       "investor_id": "inv_ubiquity-ventures",
       "name": "Ubiquity Ventures",
       "number": "II",
-      "size_usd": 50000000,
+      "size_usd": 51200000,
       "currency_original": "USD",
-      "size_original": 50000000,
+      "size_original": 51200000,
       "fx": null,
       "close_date": "2021-06-23",
       "close_date_precision": "day",
@@ -27456,10 +28516,60 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://prnewswire.com/news-releases/ubiquity-ventures-closes-50-million-fund-2-to-enable-software-beyond-the-screen-seed-stage-companies-to-grow-and-scale-301318005.html",
+          "title": "Ubiquity Ventures Closes $50+ Million Fund 2 to Enable \"Software Beyond the Screen\" Seed-Stage Companies to Grow and Scale",
+          "publisher": "Ubiquity Ventures via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://ubiquity.vc/blog/50-million-ubiquity-fund-2",
+          "title": "Ubiquity Ventures announces $50 million Fund 2",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/ubiquity-ventures-rakes-in-over-51-2m-for-sophomore-fund/",
+          "title": "Ubiquity Ventures rakes in over $51.2m for sophomore fund",
+          "publisher": "Private Equity International (Venture Capital Journal)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Ubiquity%20Ventures%22&forms=D",
+          "title": "EDGAR full-text search: \"Ubiquity Ventures\" (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2024/01/30/ubiquity-ventures-75m-fund-3-software-beyond-the-screen/",
+          "title": "Ubiquity Ventures secures $75M for Fund III to invest in \"software beyond the screen\"",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_ubiquity-ventures_iii",
@@ -27482,10 +28592,68 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://ubiquity.vc/blog/announcing-75-million-ubiquity-fund-3",
+          "title": "Announcing $75 million Ubiquity Fund 3",
+          "publisher": "Ubiquity Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Ubiquity%20Ventures%22&forms=D",
+          "title": "EDGAR full-text search: \"Ubiquity Ventures\" (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_ubiquity-ventures_iv",
+      "investor_id": "inv_ubiquity-ventures",
+      "name": "Ubiquity Ventures IV, L.P.",
+      "number": "IV",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Ubiquity%20Ventures%22&forms=D",
+          "title": "EDGAR full-text search: \"Ubiquity Ventures\" (Form D)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0002098420.json",
+          "title": "EDGAR submissions: Ubiquity Ventures IV, L.P. (CIK 0002098420)",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_ulu-ventures_iii",

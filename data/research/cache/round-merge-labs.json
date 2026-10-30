@@ -1,0 +1,92 @@
+{
+  "key": "round-merge-labs",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Merge Labs = brain-computer-interface research lab (ultrasound, molecular) co-founded by Sam Altman, with OpenAI as investor (TechCrunch). Not an unrelated 'Merge' firm.",
+  "pages": [
+    {
+      "url": "https://www.techcrunch.com/2026/01/15/openai-invests-in-sam-altmans-brain-computer-interface-startup-merge-labs/",
+      "title": "OpenAI invests in Sam Altman's brain-computer interface startup Merge Labs",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://siliconangle.com/?p=727965",
+      "title": "Merge Labs raises $252M (SiliconANGLE)",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.sourcery.vc/p/breaking-merge-labs-raises-252m-from",
+      "title": "Merge Labs Raises $252M from OpenAI, Bain, & Gabe Newell",
+      "publisher": "Sourcery",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "amount",
+      "values": [
+        "$252M (Bloomberg via SiliconANGLE; Sourcery)",
+        "$250M (TechCrunch source)"
+      ],
+      "chosen": "$252M",
+      "reason": "Bloomberg figure; TechCrunch rounds."
+    },
+    {
+      "field": "leads",
+      "values": [
+        "Bain Capital (CSV)",
+        "none named; OpenAI wrote largest single check (TechCrunch)",
+        "none named (SiliconANGLE, Sourcery)"
+      ],
+      "chosen": "leads empty",
+      "reason": "No page read names Bain as lead."
+    }
+  ],
+  "open_items": [
+    "Merge Labs and OpenAI primary announcements not read (OpenAI page 403).",
+    "Valuation $850M reported by TechCrunch; SiliconANGLE says FT reported it as a target; not post-money, so null.",
+    "HQ, website, founding year not found."
+  ],
+  "seed_company": "Merge Labs",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Merge Labs",
+      "website": null,
+      "description": "Research lab building non-invasive brain-computer interfaces using molecules and ultrasound to link biological and artificial intelligence.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$252 million seed",
+    "date": "2026-01-15",
+    "date_precision": "day",
+    "amount_original": 252000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [
+      "Bain Capital",
+      "Interface Fund",
+      "Fifty Years",
+      "Gabe Newell"
+    ],
+    "unspecified": [
+      "OpenAI"
+    ],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "Investment firms Bain Capital, Interface Fund and Fifty Years also participated in the raise"
+  }
+}

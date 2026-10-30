@@ -1,0 +1,141 @@
+{
+  "key": "female-founders-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Female Founders Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as femalefoundersfund.com, the New York seed fund led by Anu Duggal (Fortune, Dec 2025 Fund IV article), investing since 2014 in women-founded companies; portfolio page lists Maven, Taya, Ekyam, Billie. Not BBG Ventures, not Female Founders Alliance, not Female Founders Fund-named university or accelerator programs.",
+  "pages": [
+    { "url": "https://www.femalefoundersfund.com", "title": "Female Founders Fund", "publisher": "Female Founders Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.femalefoundersfund.com/portfolio", "title": "Portfolio - Female Founders Fund", "publisher": "Female Founders Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2025/12/01/female-founders-fund-fourth-fund-emerging-managers-milestone", "title": "Female Founders Fund fourth fund, emerging managers milestone", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://femtechinsider.com/female-founders-fund-closes-29m-fourth-fund/", "title": "Female Founders Fund closes $29M fourth fund", "publisher": "Femtech Insider", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2021/07/13/female-founder-fund-closes-third-fund-with-57m-for-female-bipoc-founders/", "title": "Female Founders Fund closes third fund with $57M for female founders", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fortune.com/2025/03/27/ekyam-ai-retail-middleware-software-eloquii-founder-female-founders-fund/", "title": "Ekyam AI retail middleware software, Eloquii founder, Female Founders Fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/taya-raises-5m-seed-round-for-ai-jewelry/", "title": "Taya raises $5M seed round for AI jewelry", "publisher": "Infor Capital", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [2],
+      "snippet": "Female Founders Fund has closed its fourth fund at $29 million"
+    },
+    "website": {
+      "value": "https://www.femalefoundersfund.com",
+      "pages": [0],
+      "snippet": "We invest in women building category defining businesses."
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [4],
+      "snippet": "the seven-year-old New York-based early-stage fund"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [4],
+      "snippet": "the seven-year-old New York-based early-stage fund"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [4, 5, 6],
+      "snippet": "Ekyam raised a $2 million pre-seed round"
+    },
+    "leads": {
+      "value": true,
+      "pages": [5, 6],
+      "snippet": "Taya secures $5 million seed round from MaC Venture Capital, Female Founders Fund, and a16z speedrun"
+    },
+    "thesis_text": {
+      "value": "Backs women founders building category-defining companies, with a point of view that challenges and redefines their market.",
+      "pages": [0],
+      "snippet": "We invest in women building category defining businesses."
+    },
+    "stated_sectors": {
+      "value": ["health_bio", "ai_apps_agents", "consumer", "hardware_deeptech"],
+      "pages": [0],
+      "snippet": "Digital Healthcare"
+    },
+    "application_url": {
+      "value": "https://femalefoundersfund.typeform.com/pitches",
+      "pages": [0, 1],
+      "snippet": "SUBMIT YOUR PITCH"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "SUBMIT YOUR PITCH"
+    }
+  },
+  "funds": [
+    {
+      "name": "Female Founders Fund IV",
+      "number": "IV",
+      "size_original": 29000000,
+      "currency_original": "USD",
+      "close_date": "2025-12-01",
+      "date_precision": "day",
+      "pages": [2, 3],
+      "snippet": "The fourth fund is $29 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Taya",
+        "website": null,
+        "description": "Developing AI jewelry that captures and interprets the wearer's thoughts and emotions.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-03-16",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["MaC Venture Capital", "Female Founders Fund"],
+      "participants": ["a16z speedrun"],
+      "unspecified": [],
+      "pages": [6],
+      "snippet": "Taya secures $5 million seed round from MaC Venture Capital, Female Founders Fund, and a16z speedrun"
+    },
+    {
+      "company": {
+        "name": "Ekyam",
+        "website": null,
+        "description": "Retail middleware software connecting retailers' separate order management, returns and ecommerce systems; cofounded by Eloquii cofounder Mariah Chase.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-03-27",
+      "date_precision": "day",
+      "amount_original": 2000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Female Founders Fund"],
+      "participants": ["Greycroft"],
+      "unspecified": [],
+      "pages": [5],
+      "snippet": "Ekyam raised a $2 million pre-seed round"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 announced rounds recorded; a third (Beyond Aero Series A, Oct 2024) appears in a search summary as including Female Founders Fund, but the fetched Tech.eu page does not name it and gasworld returned 403. Not recorded.",
+    "Check size: only the 2021 TechCrunch figure ($750K-$1M) was seen, dated and for Fund III; not recorded as a current fact.",
+    "Fund IV close date is the Fortune publication date (2025-12-01); the firm says it raised between Nov 2023 and Dec 2025. Fund I ($5.85M per Fortune), II ($27M) and III ($57M) not recorded (Tier B: latest only).",
+    "Homepage states no HQ; New York comes from a 2021 TechCrunch article. Fortune's Fund IV article names 831 Stories as the first Fund IV investment, with no round details.",
+    "Taya date: Infor Capital article dated 2026-03-16; a tracker listing gives 2026-03-11."
+  ]
+}

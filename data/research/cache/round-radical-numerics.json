@@ -1,0 +1,42 @@
+{
+  "key": "round-radical-numerics",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Radical Numerics = radicalnumerics.ai (per SiliconANGLE), AI research lab building general biological intelligence, founder/CEO Eric Nguyen per Fortune. Not an unrelated numerics or math company.",
+  "pages": [
+    { "url": "https://fortune.com/2026/06/15/exclusive-ai-dna-radical-numerics-eric-nguyen-biology-biodefense-drug-discovery/", "title": "Exclusive: Radical Numerics, AI for DNA, biology and biodefense", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2026/06/15/radical-numerics-launches-50m-build-general-biological-intelligence/", "title": "Radical Numerics launches with $50M to build general biological intelligence", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (search results disagree: Menlo Park vs San Francisco; neither page opened states it) and founding year not found; hq_country left null.",
+    "Company's own announcement not read.",
+    "Earlier pre-seed backed by Patrick Collison, amount not stated."
+  ],
+  "seed_company": "Radical Numerics",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Radical Numerics",
+      "website": "https://radicalnumerics.ai",
+      "description": "AI research lab building multimodal models that work across DNA, RNA, proteins and other biological molecules for drug discovery and related uses.",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "health_bio",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$50 million seed round",
+    "date": "2026-06-15",
+    "date_precision": "day",
+    "amount_original": 50000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Emergence Capital"],
+    "participants": ["Obvious Ventures", "Triatomic Capital", "Factory", "First Spark Ventures"],
+    "unspecified": [],
+    "pages": [0, 1],
+    "snippet": "Emergence Capital led the seed round."
+  }
+}

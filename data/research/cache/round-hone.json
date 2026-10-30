@@ -1,0 +1,46 @@
+{
+  "key": "round-hone",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Hone = hone.com, San Francisco AI-agent startup (CEO Moritz Stephan, founded by ex-Ramp and Cognition staff) building 'Engines' that own business outcomes. Index Ventures' post on hone.com links the same company. Not Hone Health or other Hones.",
+  "pages": [
+    { "url": "https://news.bgov.com/artificial-intelligence/former-openai-cognition-staffers-want-ai-to-help-run-a-business", "title": "Former OpenAI, Cognition Staffers Want AI to Help Run a Business", "publisher": "Bloomberg Government (Bloomberg News)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.trendingtopics.eu/hone-moritz-stephan-60-million/", "title": "Hone raises $60 million (Moritz Stephan)", "publisher": "Trending Topics", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.indexventures.com/perspectives/ai-that-owns-business-outcomes-our-investment-in-hone/", "title": "AI That Owns Business Outcomes: Our Investment in Hone", "publisher": "Index Ventures", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [
+    { "field": "leads", "values": ["Benchmark and Index Ventures led (Bloomberg)", "no lead named, both listed as backers (Trending Topics)", "no lead named (Index post)"], "chosen": "Benchmark; Index Ventures", "reason": "Bloomberg states both led; other pages do not contradict." }
+  ],
+  "open_items": [
+    "Valuation $285M reported by Bloomberg per Hone, not labelled post-money, so valuation left null.",
+    "Amount and stage not stated on the Index post; taken from Bloomberg and Trending Topics.",
+    "Founded year not found; founders per Index post: Moritz Stephan, Oliver Brady, Carlo Kobe.",
+    "Hone's own announcement not read; other participants (Elad Gil, SV Angel, Scott Wu) from Trending Topics only."
+  ],
+  "seed_company": "Hone",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Hone",
+      "website": "https://hone.com",
+      "description": "Builds AI agents ('Engines') meant to take ownership of whole business outcomes and handle long-running work over weeks or months.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$60 million seed",
+    "date": "2026-10-08",
+    "date_precision": "day",
+    "amount_original": 60000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Benchmark", "Index Ventures"],
+    "participants": ["Elad Gil", "SV Angel", "Scott Wu"],
+    "unspecified": [],
+    "pages": [0, 1, 2],
+    "snippet": "Benchmark and Index Ventures led the financing."
+  }
+}

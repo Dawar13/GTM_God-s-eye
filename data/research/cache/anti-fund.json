@@ -1,0 +1,86 @@
+{
+  "key": "anti-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Anti Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as antifund.com, the venture firm co-founded by Jake Paul and Geoffrey Woo, with Logan Paul as general partner (Pulse 2.0; Fox Business). Its own site lists OpenAI, Anduril, Physical Intelligence and Ramp. Not any other 'Anti' branded fund.",
+  "pages": [
+    { "url": "https://antifund.com", "title": "Anti Fund", "publisher": "Anti Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/anti-fund-30-million/", "title": "Anti Fund: $30 Million Fund Closed And Logan Paul Added As General Partner", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.foxbusiness.com/sports/jake-logan-paul-business-partners-first-time-major-venture-capital-firm-news", "title": "Jake and Logan Paul become business partners for first time amid major venture capital firm news", "publisher": "Fox Business", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://refreshmiami.com/news/anti-fund-closes-30m-fund-i-adds-logan-paul-as-general-partner/", "title": "Anti Fund closes $30M Fund I, adds Logan Paul as General Partner", "publisher": "Refresh Miami", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://frontofficesports.com/micro-betting-company-simplebet-raises-30m", "title": "Micro-betting company Simplebet raises $30M", "publisher": "Front Office Sports", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Anti Fund I" },
+    "website": { "value": "https://antifund.com", "pages": [0], "snippet": "Capital is a commodity. Attention is not." },
+    "hq_city": { "value": "Miami", "pages": [3], "snippet": "the Miami-based firm's assets under management now exceed $65 million" },
+    "hq_country": { "value": "US", "pages": [3], "snippet": "the Miami-based firm's assets under management now exceed $65 million" },
+    "stages": { "value": ["pre_seed", "seed", "growth"], "pages": [0, 1], "snippet": "Pre-seed and seed" },
+    "check_min_usd": { "value": 100000, "pages": [1], "snippet": "$100,000 to $500,000" },
+    "check_max_usd": { "value": 500000, "pages": [1], "snippet": "$100,000 to $500,000" },
+    "thesis_text": {
+      "value": "Backs technical founders at formation and category leaders at growth, pairing capital with attention, cultural reach and network.",
+      "pages": [0, 1],
+      "snippet": "Capital is a commodity. Attention is not."
+    },
+    "stated_sectors": { "value": ["ai_apps_agents", "robotics_physical_ai"], "pages": [1], "snippet": "Artificial intelligence, robotics, and frontier technologies" },
+    "application_url": { "value": "https://antifund.com", "pages": [0], "snippet": "Capital is a commodity. Attention is not." },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "Capital is a commodity. Attention is not." }
+  },
+  "funds": [
+    {
+      "name": "Anti Fund I",
+      "number": "I",
+      "size_original": 30000000,
+      "currency_original": "USD",
+      "close_date": "2025-12-03",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "closed its oversubscribed $30 million Anti Fund I fund, nearly doubling its assets."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Simplebet",
+        "website": null,
+        "description": "Micro-betting company offering in-game wagers on NFL, NBA, MLB and college football.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2021-08-26",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Nakisa Bidarian", "Anti Fund"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Former UFC executive Nakisa Bidarian and Jake Paul's Anti Fund are leading a $30 million financing"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["Los Angeles (Shai Goldman list lead, unverified)", "Miami (Refresh Miami)"],
+      "chosen": "Miami",
+      "reason": "Only Miami appears on a fetched page; Pulse 2.0 and Fox Business state no city; LA is unconfirmed."
+    }
+  ],
+  "open_items": [
+    "Only one round recorded (Simplebet, 2021, outside the 24-month window). Antifund.com lists 2025-26 seed deals (Enigma, Merge, Cluely and others) by stage and year only, with no amounts or co-investors; no dedicated round page was fetched. Simplebet's stage is not given by the source.",
+    "BusinessWire release for Fund I returned HTTP 403; close date 2025-12-03 taken from Fox Business publication date. Pulse 2.0 dates its article Dec 10.",
+    "Anti Fund Growth I ($100M, June 2026) is reported in search results but not on a fetched page; latest fund recorded is Fund I only. Check size is the firm-stated first-check range as reported by Pulse 2.0.",
+    "Search results mention an Anti Fund II target of $400M (Form D); not verified."
+  ]
+}

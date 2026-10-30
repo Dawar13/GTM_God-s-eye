@@ -1,0 +1,100 @@
+{
+  "key": "round-river-ai",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "River AI = Palo Alto company founded by ex-xAI co-founder Igor Babuschkin selling an API for fine-tuning and RL on open-weight models (TNW). river.ai describes the product ('Your own frontier AI lab. In one API.') but names no founder, so the domain link to Babuschkin is not confirmed. Not any other 'River' AI firm.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/river-ai-1-1-billion-babuschkin-general-catalyst-open-weights",
+      "title": "River AI raised $1.1bn to let companies train and keep their own models",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://raising.fi/news/river-ai-seed-series-a-august-2026",
+      "title": "River AI Raises $1.1 Billion in Early Funding Rounds",
+      "publisher": "raising.fi",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://media.dealstreetasia.com/stories/temasek-nvidia-river-ai-491862/",
+      "title": "Temasek, Nvidia, others back xAI co-founder's startup River AI in $1.1b round",
+      "publisher": "DealStreetAsia",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://river.ai",
+      "title": "River AI",
+      "publisher": "River AI (company site)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "stage",
+      "values": [
+        "seed (CSV)",
+        "seed and Series A combined (raising.fi)",
+        "not stated (TNW)"
+      ],
+      "chosen": "undisclosed, noted as seed plus Series A",
+      "reason": "$1.1B is a total across seed and Series A; the split is not given."
+    },
+    {
+      "field": "valuation",
+      "values": [
+        "not disclosed (TNW)",
+        "about $5B (search snippet citing NYT; not read)"
+      ],
+      "chosen": "null",
+      "reason": "No valuation on a page read."
+    }
+  ],
+  "open_items": [
+    "Split between seed and Series A not published on pages read.",
+    "Valuation unconfirmed.",
+    "Nvidia and AMD Ventures named as strategic investment; Y Combinator and Temasek as further money."
+  ],
+  "seed_company": "River AI",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "River AI",
+      "website": "https://river.ai",
+      "description": "Palo Alto startup founded by an ex-xAI co-founder offering an API to fine-tune and RL-train open-weight models, plus personal-AI hardware plans.",
+      "hq_country": "US",
+      "founded_year": 2026,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "undisclosed",
+    "stage_raw": "$1.1 billion across seed and Series A rounds",
+    "date": "2026-08-11",
+    "date_precision": "day",
+    "amount_original": 1100000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "General Catalyst",
+      "AMP PBC"
+    ],
+    "participants": [
+      "NVIDIA",
+      "AMD Ventures",
+      "Y Combinator",
+      "Temasek"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "General Catalyst and AMP PBC led the round, with strategic investment from NVIDIA and AMD Ventures"
+  }
+}

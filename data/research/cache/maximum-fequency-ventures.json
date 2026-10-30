@@ -1,0 +1,71 @@
+{
+  "key": "maximum-fequency-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Maximum Frequency Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as mf.xyz, the operator-led crypto venture fund and company-creation engine launched October 2025 by four former Aptos team members (Mo Shaikh, Neil Harounian, Alexandre Tang, Jerome Ong). The lead list's spelling 'Fequency' is a typo; the firm writes 'Frequency'.",
+  "pages": [
+    { "url": "https://www.mf.xyz/posts/maximum-frequency-ventures-launches-50-million-operator-led-fund-and-incubator-to-power-the-next-wave-of-web3-companies", "title": "Maximum Frequency Ventures Launches $50 Million Operator-Led Fund and Incubator", "publisher": "Maximum Frequency Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/crypto/2025/10/14/maximum-frequency-ventures-mo-shaikh-aptos-labs-50m-fundraise/", "title": "Maximum Frequency Ventures raises $50M (Mo Shaikh, ex-Aptos Labs)", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.mf.xyz/posts/mfv-2025-partner-letter", "title": "MFV 2025 Partner Letter", "publisher": "Maximum Frequency Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://dailyhodl.com/2026/02/03/bluff-raises-21-million-to-power-betting-innovation/amp/", "title": "BLUFF raises $21 million to power betting innovation", "publisher": "The Daily Hodl", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "a $50 million operator-led company-creation engine and venture fund" },
+    "website": { "value": "https://www.mf.xyz", "pages": [0], "snippet": "a $50 million operator-led company-creation engine and venture fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "invest early, embed with teams, and stay until adoption takes hold" },
+    "thesis_text": {
+      "value": "Operator-led capital beats passive capital in crypto; invests early, embeds with founders, and runs a founder residency, with emphasis on Asia.",
+      "pages": [0, 1],
+      "snippet": "to prove that operator-led capital outperforms passive capital in crypto"
+    },
+    "stated_sectors": { "value": ["crypto_web3"], "pages": [0], "snippet": "Layer 1 blockchains, stablecoins, wallets, on-ramps, and token mechanics" }
+  },
+  "funds": [
+    {
+      "name": "Maximum Frequency Ventures Fund I",
+      "number": "I",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2025-10-14",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "raised $50 million for a new venture fund that will focus on crypto companies"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "BLUFF",
+        "website": null,
+        "description": "Social betting platform and sportsbook with fast settlement, planning prediction markets and creator-led events.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "crypto_web3",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "strategic",
+      "stage_raw": "strategic investment",
+      "date": "2026-02-03",
+      "date_precision": "day",
+      "amount_original": 21000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["1kx"],
+      "participants": ["Makers Fund", "Maximum Frequency Ventures", "Delphi Ventures Founders", "Tristan Thompson"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Makers Fund, Maximum Frequency Ventures, Delphi Ventures Founders"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city and country not stated on any fetched page (mf.xyz launch post, Fortune); the NYC lead is unconfirmed, so hq fields are left out.",
+    "Only one round recorded. The 2025 partner letter says $7.6M deployed across eight companies but names only six (Klickl, Moonshot, Bluff and three stealth) with no stage, amount, date or co-investors. Fortune says six startups, unnamed. The BLUFF page calls the round a 'strategic investment', no series.",
+    "Check size not stated on any fetched page; no application page found."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "key": "round-ami-labs",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "AMI Labs = Paris-based world-model startup co-founded by Yann LeCun (tech.eu; Wamda). Not an unrelated 'AMI'.",
+  "pages": [
+    {
+      "url": "https://tech.eu/2026/03/10/yann-lecun-s-paris-based-ai-world-model-startup-raises-more-than-1bn/",
+      "title": "Yann LeCun's Paris-based AI world model startup raises more than $1BN",
+      "publisher": "tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://siliconangle.com/?p=733864",
+      "title": "AMI Labs raises $1.03B (SiliconANGLE)",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.wamda.com/index.php/en/2026/03/shorooq-invests-ami-labs-ai-startup-hits-3-5-billion-valuation",
+      "title": "Shorooq invests in AMI Labs",
+      "publisher": "Wamda",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic co-investors",
+      "values": [
+        "Samsung (tech.eu, SiliconANGLE)",
+        "Temasek (Wamda)",
+        "Toyota (not found on any page read)"
+      ],
+      "chosen": "Samsung and Temasek recorded; Toyota omitted",
+      "reason": "No page read mentions Toyota."
+    }
+  ],
+  "open_items": [
+    "Toyota participation not verified.",
+    "Valuation reported as $3.5B pre-money (Wamda, tech.eu); post-money not stated, so left null.",
+    "Founding year not stated; company said to be under six months old in March 2026."
+  ],
+  "seed_company": "AMI Labs",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "AMI Labs",
+      "website": "https://amilabs.xyz",
+      "description": "Paris-based lab led by Yann LeCun building world models that learn from real-world interaction.",
+      "hq_country": "FR",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$1.03bn seed round",
+    "date": "2026-03-10",
+    "date_precision": "day",
+    "amount_original": 1030000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Cathay Innovation",
+      "Greycroft",
+      "Hiro Capital",
+      "HV Capital",
+      "Bezos Expeditions"
+    ],
+    "participants": [
+      "Nvidia",
+      "Samsung Electronics",
+      "Temasek",
+      "Shorooq",
+      "SBVA",
+      "Eric Schmidt",
+      "Mark Cuban",
+      "Xavier Niel"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Jeff Bezos' Bezos Expeditions"
+  }
+}

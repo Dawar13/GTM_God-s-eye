@@ -1,0 +1,67 @@
+{
+  "key": "round-entire",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Entire = developer-tools startup founded by ex-GitHub CEO Thomas Dohmke, domain entire.io (TechCrunch). Not any other company named Entire.",
+  "pages": [
+    {
+      "url": "https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/",
+      "title": "Former GitHub CEO raises record $60M dev tool seed round at $300M valuation",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic co-investor",
+      "values": [
+        "Microsoft (CSV)",
+        "M12 (TechCrunch; page does not say M12 is Microsoft's fund)"
+      ],
+      "chosen": "M12 as participant",
+      "reason": "Microsoft itself not named on page read."
+    }
+  ],
+  "open_items": [
+    "Only one page read; SiliconANGLE (search summary) says M12 is Microsoft's fund, not fetched.",
+    "HQ and founding year not stated."
+  ],
+  "seed_company": "Entire",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Entire",
+      "website": "https://entire.io",
+      "description": "Open-source developer tooling that links AI-agent-written code to the prompts and transcripts behind it, plus a Git-compatible database.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "largest-ever seed for a dev tool startup",
+    "date": "2026-02-10",
+    "date_precision": "day",
+    "amount_original": 60000000,
+    "currency_original": "USD",
+    "valuation_post_original": 300000000,
+    "leads": [
+      "Felicis"
+    ],
+    "participants": [
+      "Madrona",
+      "M12",
+      "Basis Set",
+      "Harry Stebbings",
+      "Jerry Yang",
+      "Olivier Pomel"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "Former GitHub CEO Thomas Dohmke has raised the largest-ever seed round for a dev tool startup, according to its lead backer, Felicis."
+  }
+}

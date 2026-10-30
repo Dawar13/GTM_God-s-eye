@@ -1,0 +1,158 @@
+{
+  "key": "applied-intuition",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Applied Intuition, Inc. (appliedintuition.com), the vehicle-software and physical-AI company founded in 2017 by Qasar Younis (CEO) and Peter Ludwig (CTO); its own funding posts for Series B through F, its About page and TechCrunch (Mar 2024) describe the same company and founders. Releases were datelined Mountain View, California through 2025 and Sunnyvale, California in 2026 (the About page now says headquartered in Sunnyvale). Not Intuition Robotics, Intuit, or any other 'Intuition'-named company. Category kept remote (PROJECT_CONTEXT §7, the 'shovels' role model): it sells simulation / validation tooling, a vehicle operating system and a self-driving stack to automakers, truck and off-road OEMs and defence customers. It does not sell plant-floor agents for procurement, maintenance or process stability, and nothing read mentions factories or WhatsApp. One overlap to watch: Dana (Jul 2026), an agentic platform that runs engineering workflows for teams building vehicles and autonomous machines (early users Isuzu and Komatsu), which sits near Utopian's design-intent tooling for hardware teams but targets autonomy development, not requirements traceability. Layer kept autonomy_tooling. Sector robotics_physical_ai by source: its 2026 boilerplate calls it 'a physical AI company providing tools and infrastructure, operating systems, and autonomy'; its named customers are still mostly automakers (18 of the top 20, per its releases).",
+  "pages": [
+    { "url": "https://appliedintuition.com/news/series-f", "title": "Applied Intuition Closes $600M Series F at $15B Valuation", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/news/series-e", "title": "Applied Intuition hits $6B valuation with $250M Series E", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/news/series-d", "title": "Announcing Our $175M Series D Funding Co-Led by Elad Gil, Addition, and Coatue Management", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/news/series-c", "title": "Announcing $125M Series C From Existing Investors Lux Capital, Andreessen Horowitz, and General Catalyst", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/news/series-b-announcement", "title": "Announcing a $40M Series B Funding Led by General Catalyst", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://roboticsandautomationnews.com/2019/09/19/autonomous-vehicles-simulator-applied-intuition-raises-40-million-in-funding/25756", "title": "Autonomous vehicles simulator Applied Intuition raises $40 million in funding", "publisher": "Robotics & Automation News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2024/03/12/applied-intuition-series-e-raise-funding-andreessen-lux/", "title": "Applied Intuition lands $6B valuation for AI-powered autonomous vehicle software", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.appliedintuition.com/about", "title": "About | Applied Intuition", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/press", "title": "Press | Applied Intuition", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana", "title": "Applied Intuition Launches Dana, the Agentic Platform for Physical AI", "publisher": "Applied Intuition", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Applied Intuition",
+    "website": "https://www.appliedintuition.com",
+    "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.",
+    "hq_country": "US",
+    "founded_year": 2017,
+    "sector": "robotics_physical_ai",
+    "sector_classified_by": "source",
+    "layer": "autonomy_tooling"
+  },
+  "category": "remote",
+  "layer": "autonomy_tooling",
+  "layer_detail": "Toolchain and software for autonomous / software-defined vehicles: simulation and validation tools, Vehicle OS, Self-Driving System, defence autonomy, and (since Jul 2026) Dana, an agentic platform for building, testing and operating physical-AI systems",
+  "founders": ["Qasar Younis", "Peter Ludwig"],
+  "named_customers": ["General Motors", "Toyota", "Volkswagen", "Gatik", "Motional", "Kodiak", "U.S. Army", "Defense Innovation Unit", "U.S. Navy", "Isuzu Motors", "Komatsu"],
+  "product_summary": "Sells software for building and running autonomous and software-defined machines: simulation and validation tools, a vehicle operating system, a self-driving stack for cars, trucks and off-road equipment, defence autonomy, and Dana, an agent platform that automates vehicle-engineering workflows through natural language and tools like Slack and Jira.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 1000,
+    "pages": [7],
+    "snippet": "Approximate, engineers only (Oct 2026 About page): \"1,000+\" \"Engineers\""
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2018-09",
+      "date_precision": "month",
+      "amount_original": 11500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [5, 3, 1],
+      "snippet": "In September 2018, Applied Intuition announced $11.5 million in Series A funding"
+    },
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_b",
+      "stage_raw": "Series B; total external capital raised $51.5M",
+      "date": "2019-09-12",
+      "date_precision": "day",
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["General Catalyst"],
+      "participants": ["Kleiner Perkins", "M12", "Sozo Ventures", "La Famiglia", "Andreessen Horowitz", "Lux Capital", "Floodgate"],
+      "unspecified": [],
+      "pages": [4, 5],
+      "snippet": "a $40 million Series B led by General Catalyst"
+    },
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C, fully funded by existing investors with equal participation from each fund; total raised a little over $175M",
+      "date": "2020-10-22",
+      "date_precision": "day",
+      "amount_original": 125000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Lux Capital", "Andreessen Horowitz", "General Catalyst"],
+      "pages": [3, 1],
+      "snippet": "Announcing $125M Series C From Existing Investors Lux Capital, Andreessen Horowitz, and General Catalyst"
+    },
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_c_plus",
+      "stage_raw": "Series D at a $3.6B valuation; total raised over $350M",
+      "date": "2021-11-11",
+      "date_precision": "day",
+      "amount_original": 175000000,
+      "currency_original": "USD",
+      "valuation_post_original": 3600000000,
+      "leads": ["Elad Gil", "Addition", "Coatue Management"],
+      "participants": ["Semil Shah", "Andreessen Horowitz", "General Catalyst", "Lux Capital"],
+      "unspecified": [],
+      "pages": [2, 1],
+      "snippet": "Announcing Our $175M Series D Funding Co-Led by Elad Gil, Addition, and Coatue Management"
+    },
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_c_plus",
+      "stage_raw": "Series E at a $6B valuation",
+      "date": "2024-03-12",
+      "date_precision": "day",
+      "amount_original": 250000000,
+      "currency_original": "USD",
+      "valuation_post_original": 6000000000,
+      "leads": ["Lux Capital", "Elad Gil", "Porsche Investments Management S.A."],
+      "participants": ["Andreessen Horowitz", "General Catalyst", "BOND", "Human Capital", "Henry Kravis", "Mustafa Suleyman", "Ray Dalio", "John Quinn", "Nico Rosberg"],
+      "unspecified": [],
+      "pages": [1, 6],
+      "snippet": "The Series E round was led by Lux Capital's Bilal Zuberi, investor Elad Gil, and Porsche Investments Management"
+    },
+    {
+      "company": { "name": "Applied Intuition", "website": "https://www.appliedintuition.com", "description": "Sunnyvale, California physical-AI software company selling simulation and development tooling, a vehicle operating system and self-driving software to automakers, heavy-equipment makers and defence.", "hq_country": "US", "founded_year": 2017, "sector": "robotics_physical_ai", "sector_classified_by": "source", "layer": "autonomy_tooling" },
+      "stage": "series_c_plus",
+      "stage_raw": "Series F fundraise and tender offer (primary / secondary split not disclosed) at a $15B valuation",
+      "date": "2025-06-17",
+      "date_precision": "day",
+      "amount_original": 600000000,
+      "currency_original": "USD",
+      "valuation_post_original": 15000000000,
+      "leads": ["BlackRock (funds and accounts managed by BlackRock)", "Kleiner Perkins"],
+      "participants": ["Franklin Templeton", "Qatar Investment Authority", "Abu Dhabi Investment Council", "Premji Invest", "Stripes", "Greycroft", "BAM Elevate", "137 Ventures", "Fidelity Management & Research Company", "General Catalyst", "Lux", "BOND", "Elad Gil", "Addition", "Tribe Capital"],
+      "unspecified": [],
+      "pages": [0],
+      "snippet": "Applied Intuition Closes $600M Series F at $15B Valuation"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[series_c].leads",
+      "values": ["No single lead: 'fully funded by existing investors' with 'equal participation from each fund' (Lux, a16z, General Catalyst; Applied Intuition Series C post, 2020)", "Lux Capital's Bilal Zuberi 'also led the Series C' (Applied Intuition Series E post, 2024)"],
+      "chosen": "All three recorded as unspecified",
+      "reason": "The contemporaneous company post describes equal participation and names no lead; the 2024 post credits Lux alone."
+    },
+    {
+      "field": "company.hq",
+      "values": ["Mountain View, California (Series E and Series F releases, 2024-2025)", "Sunnyvale, California (About page and Dana release, 2026)"],
+      "chosen": "Sunnyvale, California (US)",
+      "reason": "Most recent company pages; the company appears to have moved. Country is the same."
+    }
+  ],
+  "open_items": [
+    "Series A (Sep 2018, $11.5M led by Andreessen Horowitz) rests on one press page plus the company's later statements that a16z led the A; other participants and the exact day not found. Lux Capital and Floodgate are 'previous investors' at the Series B and may have been in the A or an earlier round; no seed round found.",
+    "Series F: the $600M combines a primary raise and a tender offer; the split is not disclosed. Total raised across Series A to F is $1,201.5M if the whole $600M is counted.",
+    "No 2026 round confirmed on any page read. Search summaries cite The Information (Oct 2026) reporting that Applied Intuition fielded offers at a $30B valuation; the article is paywalled and was not read, so it is not recorded.",
+    "Revenue not publicly reported; the Series E post claims only 'sustainable triple-digit percentage growth year-over-year, profitably'.",
+    "Headcount: About page gives '1,000+' engineers only; total headcount not found. The Series D post says the team 'more than doubled in a year' (2021).",
+    "Named customers taken from TechCrunch (Mar 2024: GM, Toyota, Volkswagen among '18 of the top 20 automakers'; Gatik, Motional, Kodiak; Army and DIU contract), the Dana release (Isuzu and Komatsu early access) and the company press list (U.S. Navy selection, Oct 2026). Partnerships with Honda, Nissan, Stellantis, Porsche, Audi, TRATON, OpenAI, HUMAIN and the U.S. Department of War selection were seen only as headlines or partner mentions and are not listed as customers.",
+    "Acquisitions made by Applied Intuition are not funding rounds and were not researched.",
+    "Pricing not public.",
+    "GlobeNewswire and PresseBox copies of the Series B release returned 403 or a login wall."
+  ]
+}

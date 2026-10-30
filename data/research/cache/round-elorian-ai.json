@@ -1,0 +1,78 @@
+{
+  "key": "round-elorian-ai",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Elorian AI = Palo Alto multimodal visual-reasoning lab co-founded by ex-Google DeepMind researcher Andrew Dai (Pulse 2.0). Not another 'Elorian'.",
+  "pages": [
+    {
+      "url": "https://pulse2.com/elorian-ai-55-million-raised-for-multimodal-reasoning-research-lab-founded-by-former-deepmind-leaders/",
+      "title": "Elorian AI: $55 Million Raised For Multimodal Reasoning Research Lab",
+      "publisher": "Pulse 2.0",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://startupintros.com/news/2026-04-09-elorian-seed",
+      "title": "Elorian seed",
+      "publisher": "Startup Intros",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "Striker, Menlo, Altimeter as leads (CSV; a Wilson Sonsini search snippet, PDF unreadable)",
+        "'backing from' Striker, Menlo, Altimeter, 49 Palms; no lead named (Pulse 2.0)",
+        "'backed by' NVIDIA, Menlo, Altimeter, Striker, 49 Palms, Jeff Dean (Startup Intros)"
+      ],
+      "chosen": "leads left empty; all as participants",
+      "reason": "No page read names a lead."
+    }
+  ],
+  "open_items": [
+    "Wilson Sonsini note (search snippet says 'led by') could not be read; verify leads there.",
+    "NVIDIA participation reported by Startup Intros only.",
+    "Valuation reports (about $300M) not read on a page; null.",
+    "HQ Palo Alto per search result only; country US.",
+    "Website and founding year not found."
+  ],
+  "seed_company": "Elorian AI",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Elorian AI",
+      "website": null,
+      "description": "Palo Alto lab building multimodal reasoning models focused on visual understanding, for engineering, robotics and agriculture.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$55 million seed",
+    "date": "2026-04",
+    "date_precision": "month",
+    "amount_original": 55000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [],
+    "participants": [
+      "Striker Venture Partners",
+      "Menlo Ventures",
+      "Altimeter",
+      "49 Palms",
+      "NVIDIA"
+    ],
+    "unspecified": [
+      "Jeff Dean"
+    ],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "The funding round includes backing from Striker Venture Partners, Menlo Ventures, and Altimeter."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "round-enigma",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Enigma = enigma.inc, co-founded by Jonathan Jacobi and Gal Niv, building AI models for robots (public demo at robots.online). Index Ventures post is titled for JJ and Gal. Not Enigma Technologies (business-data firm) or other Enigmas.",
+  "pages": [
+    { "url": "https://www.indexventures.com/perspectives/enigma-emerges-from-stealth-our-investment-in-jj-and-gal/", "title": "Enigma Emerges from Stealth: Our Investment in JJ and Gal", "publisher": "Index Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.newswire.com/news/enigma-raises-71-million-seed-round-with-a-new-game-plan-for-ai-and-robots", "title": "Enigma Raises $71 Million Seed Round and Puts the World's First Interactive AI Robots Online", "publisher": "Newswire (company press release)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://theaiinsider.tech/2026/07/27/enigma-raises-71m-in-seed-funding-to-develop-ai-models-for-training-robots/", "title": "Enigma Raises $71M in Seed Funding to Develop AI Models for Training Robots", "publisher": "The AI Insider", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [
+    { "field": "amount", "values": ["$71M (all fetched pages)", "$70M (a Spanish-language outlet seen in search results, not opened)"], "chosen": "$71M", "reason": "Company release and Index post both say $71 million." }
+  ],
+  "open_items": [
+    "Founded year not stated; release says less than a year before July 2026.",
+    "Index post only welcomes a Ribbit partner; Ribbit as co-lead rests on the press release and The AI Insider.",
+    "enigma.inc homepage not fetched; the release points to robots.online."
+  ],
+  "seed_company": "Enigma",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Enigma",
+      "website": "https://enigma.inc/",
+      "description": "Builds AI models meant to make any robot on any hardware intelligent and easy to use, with new interfaces for directing robots.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics"
+    },
+    "stage": "seed",
+    "stage_raw": "seed round",
+    "date": "2026-07-27",
+    "date_precision": "day",
+    "amount_original": 71000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Index Ventures", "Ribbit Capital"],
+    "participants": ["Conviction Partners"],
+    "unspecified": [],
+    "pages": [0, 1, 2],
+    "snippet": "we’re excited to lead their $71 million seed round"
+  }
+}

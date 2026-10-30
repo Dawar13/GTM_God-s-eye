@@ -1,0 +1,77 @@
+{
+  "key": "round-ineffable-intelligence",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Ineffable Intelligence = London AI lab founded by ex-DeepMind researcher David Silver (Cooley release; SiliconANGLE). Not any other firm named Ineffable.",
+  "pages": [
+    {
+      "url": "https://www.cooley.com/news/coverage/2026/2026-04-27-ineffable-intelligence-announces-%241-1-billion-seed-financing",
+      "title": "Ineffable Intelligence Announces $1.1 Billion Seed Financing",
+      "publisher": "Cooley (law firm, quoting company release)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://siliconangle.com/?p=742691",
+      "title": "Ineffable Intelligence raises $1.1B seed round (SiliconANGLE)",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "strategic co-investors",
+      "values": [
+        "Google (SiliconANGLE)",
+        "UK Sovereign AI Fund (SiliconANGLE)",
+        "British Business Bank (search snippets only, not on a page read)"
+      ],
+      "chosen": "Google and UK Sovereign AI Fund recorded as participants",
+      "reason": "Cooley page names no other investors; SiliconANGLE names Google and the Sovereign AI Fund."
+    }
+  ],
+  "open_items": [
+    "Website and founding year not found on pages read.",
+    "British Business Bank participation seen only in search-result snippets; not recorded.",
+    "Bloomberg and Crowdfund Insider pages not read (paywall / 403)."
+  ],
+  "seed_company": "Ineffable Intelligence",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Ineffable Intelligence",
+      "website": null,
+      "description": "London frontier AI lab, founded by David Silver, aiming to build a 'superlearner' that learns all knowledge from its own experience.",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$1.1 billion seed financing",
+    "date": "2026-04-27",
+    "date_precision": "day",
+    "amount_original": 1100000000,
+    "currency_original": "USD",
+    "valuation_post_original": 5100000000,
+    "leads": [
+      "Sequoia Capital",
+      "Lightspeed Venture Partners"
+    ],
+    "participants": [
+      "Nvidia",
+      "Google",
+      "UK Sovereign AI Fund",
+      "DST Global",
+      "Index Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "on its $1.1 billion seed financing led by Sequoia Capital and Lightspeed Venture Partners"
+  }
+}

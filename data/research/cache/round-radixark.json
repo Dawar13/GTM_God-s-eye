@@ -1,0 +1,68 @@
+{
+  "key": "round-radixark",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "RadixArk = company behind the open-source SGLang inference engine and Miles, founded by Ying Sheng and Banghua Zhu (search summary of Business Wire release; not independently read). Not any other 'Radix' firm.",
+  "pages": [
+    {
+      "url": "https://siliconangle.com/?p=747000",
+      "title": "RadixArk raises $100M seed (SiliconANGLE)",
+      "publisher": "SiliconANGLE",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "Accel led with Spark Capital (SiliconANGLE)",
+        "Accel lead, Spark co-lead (search summary)",
+        "both listed as leads (Seedtable, not read)"
+      ],
+      "chosen": "Accel and Spark Capital as listed",
+      "reason": "SiliconANGLE: 'Accel led the seed round with Spark Capital.'"
+    }
+  ],
+  "open_items": [
+    "Business Wire release and company blog not readable (403 / blocked); primary page missing.",
+    "Valuation about $400M (WSJ via SiliconANGLE); not labelled post-money, left null.",
+    "HQ and founders not on page read; website not confirmed."
+  ],
+  "seed_company": "RadixArk",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "RadixArk",
+      "website": null,
+      "description": "Builds commercial AI training and inference infrastructure on top of the open-source SGLang and Miles projects.",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$100 million seed",
+    "date": "2026-05-05",
+    "date_precision": "day",
+    "amount_original": 100000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Accel",
+      "Spark Capital"
+    ],
+    "participants": [
+      "NVentures",
+      "AMD",
+      "Databricks",
+      "Hock Tan"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "Accel led the seed round with Spark Capital."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "key": "founders-co-op",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Founders' Co-op",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as founderscoop.com, the Seattle seed fund run by managing partners Chris DeVore and Aviel Ginzburg (Pulse 2.0 Fund VI article); homepage gives 1605 Boylston Ave, Seattle. Not a cooperative or other firm named Founders Fund (Peter Thiel's Founders Fund) or Founder's Co-op accelerator listings.",
+  "pages": [
+    { "url": "https://www.founderscoop.com", "title": "Founders' Co-op", "publisher": "Founders' Co-op", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/founders-co-op-sixth-fund-launched-at-50-million-to-support-pacific-northwest-startups/amp/", "title": "Founders' Co-op: Sixth Fund Launched At $50 Million To Support Pacific Northwest Startups", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://parsers.vc/news/260513-sageox-secures-15-million--revolutionizing/", "title": "SageOx Secures $15 Million", "publisher": "Parsers.vc", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://builtin.com/articles/certiv-launches-4m-funding-20260316", "title": "Certiv Launches With $4.2M in Pre-Seed Funding", "publisher": "Built In Seattle", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0, 1],
+      "snippet": "THE BEST FIRST-CHECK INVESTOR IN THE PACIFIC NORTHWEST"
+    },
+    "website": {
+      "value": "https://www.founderscoop.com",
+      "pages": [0],
+      "snippet": "THE BEST FIRST-CHECK INVESTOR IN THE PACIFIC NORTHWEST"
+    },
+    "hq_city": {
+      "value": "Seattle",
+      "pages": [0],
+      "snippet": "1605 Boylston Ave, Seattle, WA 98122"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [0],
+      "snippet": "1605 Boylston Ave, Seattle, WA 98122"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [0, 1],
+      "snippet": "the first institutional check for emerging companies"
+    },
+    "leads": {
+      "value": true,
+      "pages": [0],
+      "snippet": "THE BEST FIRST-CHECK INVESTOR IN THE PACIFIC NORTHWEST"
+    },
+    "thesis_text": {
+      "value": "Bets on people: technical founding teams in the Pacific Northwest tackling hard problems, in any technology wave rather than AI alone.",
+      "pages": [0, 1],
+      "snippet": "not AI-only"
+    },
+    "stated_sectors": {
+      "value": ["enterprise_saas"],
+      "pages": [0],
+      "snippet": "people solving hard problems in the enterprise"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "Let's Talk"
+    }
+  },
+  "funds": [
+    {
+      "name": "Founders' Co-op Fund VI",
+      "number": "VI",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2025-11-05",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "maintaining a $50 million size consistent with its previous vehicle"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "SageOx",
+        "website": null,
+        "description": "Infrastructure that turns team decisions, intent and project history into structured knowledge usable by people and AI agents.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-05-13",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Canaan Partners"],
+      "participants": ["A.Capital", "Pioneer Square Labs", "Founders' Co-op"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "SageOx, a Seattle-based innovator, secured a $15 million seed round."
+    },
+    {
+      "company": {
+        "name": "Certiv",
+        "website": null,
+        "description": "Endpoint security layer that monitors and controls AI agent actions on employee devices.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2026-03-16",
+      "date_precision": "day",
+      "amount_original": 4200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Aviso Ventures", "Founders Co-op", "Fortson"],
+      "pages": [3],
+      "snippet": "Certiv, a Seattle-based provider of AI agent adoption solutions, announced its launch from stealth with $4.2 million in pre-seed funding"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. Arkero ($6M pre-seed, 2026-01-29): Built In does not name Founders' Co-op; a search summary says the company release lists it as participant and a database says lead; BusinessWire returned 403, so not recorded.",
+    "Fund VI close date is the Pulse 2.0 announcement date (2025-11-05); the lead list says 2025-11-04. GeekWire (403) not fetched. Fund VI 'around 30 startups, up to $1.5M' appears only in a search summary, so check size not recorded.",
+    "Homepage states no check size or sector list; sector enterprise_saas is inferred from 'hard problems in the enterprise'. 'leads' is inferred from the first-check claim, not an explicit statement.",
+    "Application URL: homepage 'Let's Talk' links to an apply page that was not fetched.",
+    "Fund V ($50M, 2021-03) and earlier funds not recorded (Tier B: latest only)."
+  ]
+}

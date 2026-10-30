@@ -1,0 +1,161 @@
+{
+  "key": "park-rangers-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Park Rangers Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as parkrangerscap.com, Erica Wenger's pre-seed and seed fund for community- and distribution-led founders ('elephant founders'); Fortune (2025-11-14) names her and a $4.3M first fund. Portfolio page lists Beehiiv, Clay, Superpower, Ridley, Castle, Soxton. Not Park Capital, Park Partners or Park Rangers in the public-lands sense; parkrangers.vc does not resolve.",
+  "pages": [
+    { "url": "https://parkrangerscap.com", "title": "Park Rangers Capital", "publisher": "Park Rangers Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2025/11/14/term-sheet-next-erica-wenger-on-elephants-branding-in-vc-and-her-first-fund/", "title": "Term Sheet Next: Erica Wenger on elephants, branding in VC and her first fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://prc.beehiiv.com/p/deploying-fund-i", "title": "Deploying Fund I", "publisher": "Park Rangers Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.caplight.com/investor/parkrangerscap", "title": "Park Rangers Capital investor profile", "publisher": "Caplight", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.ai-market-watch.com/news/ridley-64-million-seed-round-raised-to-advance-ai", "title": "Ridley $6.4 million seed round raised to advance AI", "publisher": "AI Market Watch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://parkrangerscap.com/portfolio", "title": "Portfolio - Park Rangers Capital", "publisher": "Park Rangers Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "Closed its first fund at $4.3 million"
+    },
+    "website": {
+      "value": "https://parkrangerscap.com",
+      "pages": [0],
+      "snippet": "concentrated, high-conviction bets on founders building movements, not just products"
+    },
+    "hq_city": {
+      "value": "Marina del Rey",
+      "pages": [3],
+      "snippet": "Headquarters: Marina del Rey, California"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [3],
+      "snippet": "Headquarters: Marina del Rey, California"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [0, 2],
+      "snippet": "preseed & seed, $20M post valuation & under"
+    },
+    "check_min_usd": {
+      "value": 100000,
+      "pages": [1],
+      "snippet": "$100,000 to $200,000 per check"
+    },
+    "check_max_usd": {
+      "value": 200000,
+      "pages": [1],
+      "snippet": "$100,000 to $200,000 per check"
+    },
+    "thesis_text": {
+      "value": "Backs pre-seed and seed founders whose distribution, community and authenticity are their edge, favouring durable 'elephant' companies over unicorn valuations.",
+      "pages": [0, 1],
+      "snippet": "Elephants, not unicorns"
+    }
+  },
+  "funds": [
+    {
+      "name": "Park Rangers Capital Fund I",
+      "number": "I",
+      "size_original": 4300000,
+      "currency_original": "USD",
+      "close_date": "2025-11-14",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Closed its first fund at $4.3 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Ridley",
+        "website": null,
+        "description": "AI-powered real estate platform challenging traditional commission fees.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-12",
+      "date_precision": "month",
+      "amount_original": 6400000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Fifth Wall"],
+      "participants": [],
+      "unspecified": ["Park Rangers Capital"],
+      "pages": [4, 3],
+      "snippet": "Ridley secured $6.4M in seed funding, led by Fifth Wall"
+    },
+    {
+      "company": {
+        "name": "Soxton AI",
+        "website": null,
+        "description": "AI-powered legal platform.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed",
+      "date": "2025-12",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Park Rangers Capital"],
+      "pages": [3],
+      "snippet": "Soxton AI | Dec 2025 | Pre-seed"
+    },
+    {
+      "company": {
+        "name": "Castle",
+        "website": null,
+        "description": "Bitcoin treasury platform.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed",
+      "date": "2025-06",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Park Rangers Capital"],
+      "pages": [3],
+      "snippet": "Castle | Jun 2025 | Pre-seed"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": ["Marina del Rey, California (Caplight)", "New York City (lead list)"],
+      "chosen": "Marina del Rey",
+      "reason": "Only Caplight states an HQ on a fetched page; the firm's site and Fortune give none. Lead list's NYC is unconfirmed."
+    }
+  ],
+  "open_items": [
+    "HQ appears only in a database page (Caplight); the lead list says NYC. Not stated on parkrangerscap.com or in Fortune.",
+    "Ridley: ai-market-watch confirms the $6.4M seed led by Fifth Wall but does not name Park Rangers; its participation comes from Caplight and a search summary (Pulse.bot), whose page failed to load. Ridley date from AI Market Watch is 2025-12-10; other sources say 2025-12-03.",
+    "Soxton AI and Castle appear only on Caplight (database): no amount, co-investors or press page found, so confidence is low.",
+    "Fund close date is the Fortune article date (2025-11-14); Fund I deployment began by 2025-01-29 per the firm's blog.",
+    "Application URL: site has a /connect page, not fetched. Stated sectors not listed on the firm's site."
+  ]
+}

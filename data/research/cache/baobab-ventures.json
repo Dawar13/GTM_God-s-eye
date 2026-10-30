@@ -1,0 +1,127 @@
+{
+  "key": "baobab-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Baobab Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as baobabventures.vc, the operator-led, remote-first pre-seed and seed fund of Carles Reina (ElevenLabs GTM lead), launched Nov 2025 with a $15M solo GP fund (Tech.eu). Its site lists Theker Robotics, Omina, Murphy AI and Altan AI. Not Baobab Capital or other firms named Baobab (e.g. Africa-focused funds).",
+  "pages": [
+    { "url": "https://baobabventures.vc", "title": "Baobab Ventures", "publisher": "Baobab Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tech.eu/2025/11/26/elevenlabs-and-revolut-backer-launches-15m-solo-gp-fund/", "title": "ElevenLabs and Revolut backer launches $15M solo GP fund", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/baobab-ventures-debuts-with-15-million-solo-gp-fund-targeting-global-deep-tech-founders/amp/", "title": "Baobab Ventures Debuts With $15 Million Solo GP Fund Targeting Global Deep-Tech Founders", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.useomnia.com/blog/omnia-raises-3-5m-pre-seed", "title": "Omnia raises 3.5M pre-seed", "publisher": "Omnia", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/theker-robotics-raises-85-million-in-europes-largest-robotics-series-a-financing/", "title": "THEKER Robotics Raises $85 Million In Europe's Largest Robotics Series A Financing", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "a $15m solo GP fund"
+    },
+    "website": {
+      "value": "https://baobabventures.vc",
+      "pages": [0],
+      "snippet": "Operator-led VC fund"
+    },
+    "hq_city": {
+      "value": "London",
+      "pages": [1],
+      "snippet": "London and Barcelona-based"
+    },
+    "hq_country": {
+      "value": "GB",
+      "pages": [1],
+      "snippet": "London and Barcelona-based"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [0, 1],
+      "snippet": "pre-seed and seed stage startups"
+    },
+    "check_min_usd": {
+      "value": 300000,
+      "pages": [1],
+      "snippet": "average investments of between $300,000 and $350,000"
+    },
+    "check_max_usd": {
+      "value": 350000,
+      "pages": [1],
+      "snippet": "average investments of between $300,000 and $350,000"
+    },
+    "thesis_text": {
+      "value": "Operator-led, remote-first fund backing technical pre-seed and seed teams in deep tech, focused on AI, robotics and defence, with about half of deals in Europe.",
+      "pages": [0, 1],
+      "snippet": "across AI, robotics, and defence"
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "robotics_physical_ai", "defense_dual_use"],
+      "pages": [1],
+      "snippet": "across AI, robotics, and defence"
+    },
+    "application_url": {
+      "value": "https://baobabventures.vc",
+      "pages": [0],
+      "snippet": "Fill out some details and we will be in touch shortly!"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "Fill out some details and we will be in touch shortly!"
+    }
+  },
+  "funds": [
+    {
+      "name": "Baobab Ventures",
+      "number": null,
+      "size_original": 15000000,
+      "currency_original": "USD",
+      "close_date": "2025-11-26",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "a $15m solo GP fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Omnia",
+        "website": "https://www.useomnia.com",
+        "description": "Platform that measures brand visibility inside AI assistants and dispatches agents to create and place AI-friendly content.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 3500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Visionaries Club"],
+      "participants": ["Kfund", "Baobab Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Omnia has closed a €3.5 million funding round in its pre-seed phase."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "Omnia round date",
+      "values": ["2025-11-26 (blog page date)", "2025-10-16 (database listings in search results)", "2026-03-11 (search-result summary of the same blog)"],
+      "chosen": "2025-11",
+      "reason": "Only the month of the Omnia blog post date is recorded; the other dates come from search summaries, not fetched pages."
+    }
+  ],
+  "open_items": [
+    "Only 1 round recorded with a page that names Baobab Ventures as an investor. Altan (Sep 2025, $2.5M pre-seed) is named as Baobab-backed only via a search-result summary of Preqin; fetched pages not confirmed. THEKER's $85M Series A (Pulse 2.0) names Carles Reina as an individual with Baobab Ventures as his affiliation, not the firm as participant, so not recorded.",
+    "Murphy AI and Wabi AI round details not found. Pulse 2.0 says seven investments, four named.",
+    "HQ: Tech.eu says London and Barcelona-based; the firm's site says remote-first and states no HQ. City recorded as London per the lead list.",
+    "Check size is Tech.eu's reported average ($300K-$350K), not a stated range on the firm's site. Fund close date is the announcement date; fund has no number (debut fund).",
+    "Application URL is the homepage contact form; team contact address on the site not recorded."
+  ]
+}

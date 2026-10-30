@@ -1,0 +1,76 @@
+{
+  "key": "round-inherent",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Inherent = London public-benefit AI-science lab (platform Faraday) founded by ex-DeepMind researchers Tantum Collins, Edward Hughes, Louis Kirsch and Kaloyan Aleksiev (TNW). Domain not stated on pages read. Not any other 'Inherent' firm.",
+  "pages": [
+    {
+      "url": "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science",
+      "title": "Ex-DeepMind researchers raised $50M to build AI for scientific questions",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://dealroom.co/news/130378-inherent-emerges-from-stealth-with-50m-seed-to-build-ai-native-science/",
+      "title": "Inherent emerges from stealth with $50M seed",
+      "publisher": "Dealroom",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads",
+      "values": [
+        "co-led by Index Ventures and Radical Ventures (TNW)",
+        "led by Index Ventures, Radical Ventures participated (Dealroom)"
+      ],
+      "chosen": "Index Ventures as lead; Radical Ventures as participant",
+      "reason": "Only Index is named lead by both; Radical's role disputed."
+    }
+  ],
+  "open_items": [
+    "Verify whether Radical Ventures co-led; Sifted (not read) may settle it.",
+    "Website not confirmed.",
+    "Founding year not found."
+  ],
+  "seed_company": "Inherent",
+  "verdict": "contested",
+  "round": {
+    "company": {
+      "name": "Inherent",
+      "website": null,
+      "description": "London lab building Faraday, a platform pairing human researchers with self-improving AI agents for open-ended science.",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$50 million seed",
+    "date": "2026-05",
+    "date_precision": "month",
+    "amount_original": 50000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Index Ventures"
+    ],
+    "participants": [
+      "Radical Ventures",
+      "NVentures",
+      "Ex/Ante",
+      "Metaplanet",
+      "Macroscopic Ventures",
+      "Mythos Ventures"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1
+    ],
+    "snippet": "round co-led by Index Ventures and Radical Ventures."
+  }
+}

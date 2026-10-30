@@ -1,0 +1,55 @@
+{
+  "key": "round-callosum",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Callosum = UK AI infrastructure startup founded by Cambridge neuroscientists, site callosum.com (tech.eu). Two AF.NET items in search results describe an unrelated collaboration tool; ignored.",
+  "pages": [
+    {
+      "url": "https://tech.eu/2026/08/20/callosum-raises-100m-seed-round/",
+      "title": "Callosum raises $100M seed round",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one page read (tech.eu); company and Atomico primary posts not read.",
+    "HQ stated only as 'UK'; founding year not found.",
+    "Tech.eu says 'UK's Sovereign AI', not 'Sovereign AI Fund'; recorded as UK Sovereign AI."
+  ],
+  "seed_company": "Callosum",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Callosum",
+      "website": "https://callosum.com",
+      "description": "Builds software that lets AI workloads run across different chips and models.",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$100m seed round",
+    "date": "2026-08-20",
+    "date_precision": "day",
+    "amount_original": 100000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Atomico"
+    ],
+    "participants": [
+      "Plural",
+      "DCVC",
+      "UK Sovereign AI"
+    ],
+    "unspecified": [],
+    "pages": [
+      0
+    ],
+    "snippet": "has raised $100m in a seed round led by European VC Atomico"
+  }
+}

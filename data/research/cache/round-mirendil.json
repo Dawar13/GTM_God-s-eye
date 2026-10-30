@@ -1,0 +1,81 @@
+{
+  "key": "round-mirendil",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Mirendil = San Francisco AI startup founded by ex-Anthropic researchers Behnam Neyshabur and Harsh Mehta; domain mirendil.com (unite.ai). Not another firm.",
+  "pages": [
+    {
+      "url": "https://letsdatascience.com/news/mirendil-raises-200m-to-build-self-improving-ai-platform-c564b966",
+      "title": "Mirendil Raises $200M to Build Self-Improving AI Platform",
+      "publisher": "Let's Data Science",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.unite.ai/ru/former-anthropic-researchers-launch-mirendil-at-1-billion-valuation-with-200-m-seed-round/",
+      "title": "Mirendil launches at $1B valuation with $200M seed round",
+      "publisher": "Unite.AI",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://cryptobriefing.com/mirendil-200m-seed-round-a16z-nvidia/",
+      "title": "Mirendil secures $200M seed round led by a16z and Nvidia",
+      "publisher": "Crypto Briefing",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "leads / amount",
+      "values": [
+        "a16z and Kleiner Perkins co-led $200M (Let's Data Science, Unite.AI)",
+        "a16z and Nvidia led $200M (Crypto Briefing body)",
+        "$175M in advanced discussions, not confirmed closed (Crypto Briefing later paragraph and editor's note)"
+      ],
+      "chosen": "a16z and Kleiner Perkins, $200M, closed",
+      "reason": "Two outlets agree; the Crypto Briefing page contradicts itself and carries an editor's note. No primary announcement read."
+    }
+  ],
+  "open_items": [
+    "No company or tier-one press page read; confidence relies on secondary outlets.",
+    "Valuation about $1B; not labelled post-money, left null.",
+    "Exact date: articles dated 24-29 June 2026."
+  ],
+  "seed_company": "Mirendil",
+  "verdict": "confirmed",
+  "round": {
+    "company": {
+      "name": "Mirendil",
+      "website": "https://mirendil.com",
+      "description": "San Francisco startup from ex-Anthropic researchers building AI systems to speed up AI research.",
+      "hq_country": "US",
+      "founded_year": 2026,
+      "sector": "ai_infra",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$200 million seed",
+    "date": "2026-06",
+    "date_precision": "month",
+    "amount_original": 200000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": [
+      "Andreessen Horowitz",
+      "Kleiner Perkins"
+    ],
+    "participants": [
+      "NVIDIA"
+    ],
+    "unspecified": [],
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "snippet": "co-led by Andreessen Horowitz and Kleiner Perkins with participation from NVIDIA"
+  }
+}

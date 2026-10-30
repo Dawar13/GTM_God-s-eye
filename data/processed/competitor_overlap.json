@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:28:39+00:00",
+  "generated_at": "2026-10-30T07:50:39+00:00",
   "competitor_ids": [
+    "co_applied-intuition",
     "co_apprentice-io",
     "co_arda",
     "co_atoms",
@@ -17,9 +18,11 @@
     "co_meridian",
     "co_nowpurchase",
     "co_parallax-worlds",
+    "co_prometheus",
     "co_qualitas-technologies",
     "co_salespatriot",
     "co_seeq",
+    "co_sima-ai",
     "co_symphonyai-industrial",
     "co_tandem",
     "co_tractian"
@@ -60,6 +63,42 @@
       "latest_date": "2026-05-01"
     },
     {
+      "investor_id": "inv_andreessen-horowitz",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_atoms",
+        "co_hadrian"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2018-09_series_a",
+        "rnd_applied-intuition_2019-09_series_b",
+        "rnd_applied-intuition_2020-10_series_c_plus",
+        "rnd_applied-intuition_2021-11_series_c_plus",
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_atoms_2026_undisclosed",
+        "rnd_hadrian_2022-03_series_a",
+        "rnd_hadrian_2023-12_series_b",
+        "rnd_hadrian_2025-07_series_c_plus",
+        "rnd_hadrian_2026-01_undisclosed",
+        "rnd_hadrian_2026-08_series_c_plus"
+      ],
+      "latest_date": "2026-08-06"
+    },
+    {
+      "investor_id": "inv_137-ventures",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_hadrian"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus",
+        "rnd_hadrian_2022-03_series_a",
+        "rnd_hadrian_2025-07_series_c_plus",
+        "rnd_hadrian_2026-08_series_c_plus"
+      ],
+      "latest_date": "2026-08-06"
+    },
+    {
       "investor_id": "inv_accel",
       "competitor_ids": [
         "co_arda",
@@ -87,20 +126,16 @@
       "latest_date": "2026-10-20"
     },
     {
-      "investor_id": "inv_andreessen-horowitz",
+      "investor_id": "inv_blackrock",
       "competitor_ids": [
-        "co_atoms",
-        "co_hadrian"
+        "co_applied-intuition",
+        "co_prometheus"
       ],
       "round_ids": [
-        "rnd_atoms_2026_undisclosed",
-        "rnd_hadrian_2022-03_series_a",
-        "rnd_hadrian_2023-12_series_b",
-        "rnd_hadrian_2025-07_series_c_plus",
-        "rnd_hadrian_2026-01_undisclosed",
-        "rnd_hadrian_2026-08_series_c_plus"
+        "rnd_applied-intuition_2025-06_series_c_plus",
+        "rnd_prometheus_2026-06_series_b"
       ],
-      "latest_date": "2026-08-06"
+      "latest_date": "2026-06-11"
     },
     {
       "investor_id": "inv_boost-vc",
@@ -128,6 +163,21 @@
       "latest_date": "2026-09-30"
     },
     {
+      "investor_id": "inv_fidelity-management-research-company",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus",
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2024-04_undisclosed",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
       "investor_id": "inv_founders-fund",
       "competitor_ids": [
         "co_arda",
@@ -143,6 +193,36 @@
         "rnd_hadrian_2026-08_series_c_plus"
       ],
       "latest_date": "2026-08-06"
+    },
+    {
+      "investor_id": "inv_general-catalyst",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_tractian"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b",
+        "rnd_applied-intuition_2020-10_series_c_plus",
+        "rnd_applied-intuition_2021-11_series_c_plus",
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_applied-intuition_2025-06_series_c_plus",
+        "rnd_tractian_2023-08_series_b",
+        "rnd_tractian_2024-12_series_c_plus",
+        "rnd_tractian_2026-10_series_c_plus"
+      ],
+      "latest_date": "2026-10-22"
+    },
+    {
+      "investor_id": "inv_human-capital",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_flow-engineering"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_flow-engineering_2026-09_series_b"
+      ],
+      "latest_date": "2026-09-30"
     },
     {
       "investor_id": "inv_insight",
@@ -161,6 +241,27 @@
       "latest_date": "2024-08-06"
     },
     {
+      "investor_id": "inv_lux-capital",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_hadrian"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b",
+        "rnd_applied-intuition_2020-10_series_c_plus",
+        "rnd_applied-intuition_2021-11_series_c_plus",
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_applied-intuition_2025-06_series_c_plus",
+        "rnd_hadrian_2021-04_seed",
+        "rnd_hadrian_2022-03_series_a",
+        "rnd_hadrian_2023-12_series_b",
+        "rnd_hadrian_2025-07_series_c_plus",
+        "rnd_hadrian_2026-01_undisclosed",
+        "rnd_hadrian_2026-08_series_c_plus"
+      ],
+      "latest_date": "2026-08-06"
+    },
+    {
       "investor_id": "inv_next47",
       "competitor_ids": [
         "co_seeq",
@@ -174,6 +275,31 @@
         "rnd_tractian_2024-12_series_c_plus"
       ],
       "latest_date": "2024-12-05"
+    },
+    {
+      "investor_id": "inv_nico-rosberg",
+      "competitor_ids": [
+        "co_applied-intuition",
+        "co_flow-engineering"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_flow-engineering_2026-09_series_b"
+      ],
+      "latest_date": "2026-09-30"
+    },
+    {
+      "investor_id": "inv_stepstone",
+      "competitor_ids": [
+        "co_hadrian",
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_hadrian_2026-01_undisclosed",
+        "rnd_sima-ai_2025-08_undisclosed",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
     },
     {
       "investor_id": "inv_valor-equity-partners",
@@ -220,18 +346,6 @@
         "rnd_atoms_2018-03_strategic"
       ],
       "latest_date": "2018-03"
-    },
-    {
-      "investor_id": "inv_137-ventures",
-      "competitor_ids": [
-        "co_hadrian"
-      ],
-      "round_ids": [
-        "rnd_hadrian_2022-03_series_a",
-        "rnd_hadrian_2025-07_series_c_plus",
-        "rnd_hadrian_2026-08_series_c_plus"
-      ],
-      "latest_date": "2026-08-06"
     },
     {
       "investor_id": "inv_1789-capital",
@@ -306,6 +420,47 @@
       "latest_date": "2025-04-09"
     },
     {
+      "investor_id": "inv_abu-dhabi-investment-council",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
+      "investor_id": "inv_accounts-advised-by-t-rowe-price-associates-inc",
+      "competitor_ids": [
+        "co_hadrian"
+      ],
+      "round_ids": [
+        "rnd_hadrian_2026-08_series_c_plus"
+      ],
+      "latest_date": "2026-08-06"
+    },
+    {
+      "investor_id": "inv_adage-capital-management",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2021-05_series_b"
+      ],
+      "latest_date": "2021-05-11"
+    },
+    {
+      "investor_id": "inv_addition",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2021-11_series_c_plus",
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
       "investor_id": "inv_alkeon-capital-management",
       "competitor_ids": [
         "co_apprentice-io"
@@ -315,6 +470,16 @@
         "rnd_apprentice-io_2023-03_series_c_plus"
       ],
       "latest_date": "2023-03"
+    },
+    {
+      "investor_id": "inv_alliancebernstein",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
     },
     {
       "investor_id": "inv_alpha-square",
@@ -337,6 +502,18 @@
       "latest_date": null
     },
     {
+      "investor_id": "inv_alter-venture-partners",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
       "investor_id": "inv_altira",
       "competitor_ids": [
         "co_seeq"
@@ -349,6 +526,29 @@
         "rnd_seeq_2024-08_series_c_plus"
       ],
       "latest_date": "2024-08-06"
+    },
+    {
+      "investor_id": "inv_amplify",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
+      "investor_id": "inv_amplify-partners",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2020-05_series_a",
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2024-04_undisclosed"
+      ],
+      "latest_date": "2024-04-04"
     },
     {
       "investor_id": "inv_angels-from-anthropic",
@@ -390,6 +590,16 @@
         "rnd_hadrian_2026-08_series_c_plus"
       ],
       "latest_date": "2026-08-06"
+    },
+    {
+      "investor_id": "inv_arch-venture-partners-l-p",
+      "competitor_ids": [
+        "co_prometheus"
+      ],
+      "round_ids": [
+        "rnd_prometheus_2026-06_series_b"
+      ],
+      "latest_date": "2026-06-11"
     },
     {
       "investor_id": "inv_atreides-management",
@@ -462,6 +672,26 @@
       "latest_date": "2026-02-04"
     },
     {
+      "investor_id": "inv_bam-elevate",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
+      "investor_id": "inv_baron-capital",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
       "investor_id": "inv_berkeley-skydeck",
       "competitor_ids": [
         "co_matta"
@@ -470,6 +700,17 @@
         "rnd_matta_2024-02_pre_seed"
       ],
       "latest_date": "2024-02-28"
+    },
+    {
+      "investor_id": "inv_bond-capital",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
     },
     {
       "investor_id": "inv_bosch",
@@ -597,6 +838,16 @@
       "latest_date": "2013-11"
     },
     {
+      "investor_id": "inv_coatue",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2021-11_series_c_plus"
+      ],
+      "latest_date": "2021-11-11"
+    },
+    {
       "investor_id": "inv_colorcon-ventures",
       "competitor_ids": [
         "co_apprentice-io"
@@ -683,6 +934,20 @@
       "latest_date": "2025-10"
     },
     {
+      "investor_id": "inv_dell-technologies-capital",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2020-05_series_a",
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2024-04_undisclosed",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
       "investor_id": "inv_dholakia-ventures",
       "competitor_ids": [
         "co_nowpurchase"
@@ -691,6 +956,28 @@
         "rnd_nowpurchase_2024-09_undisclosed"
       ],
       "latest_date": "2024-09-19"
+    },
+    {
+      "investor_id": "inv_dst-global",
+      "competitor_ids": [
+        "co_prometheus"
+      ],
+      "round_ids": [
+        "rnd_prometheus_2026-06_series_b"
+      ],
+      "latest_date": "2026-06-11"
+    },
+    {
+      "investor_id": "inv_elad-gil",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2021-11_series_c_plus",
+        "rnd_applied-intuition_2024-03_series_c_plus",
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
     },
     {
       "investor_id": "inv_embark-ventures",
@@ -753,6 +1040,16 @@
       "latest_date": "2026-07-22"
     },
     {
+      "investor_id": "inv_floodgate",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b"
+      ],
+      "latest_date": "2019-09-12"
+    },
+    {
       "investor_id": "inv_foundation-capital",
       "competitor_ids": [
         "co_tandem"
@@ -763,6 +1060,26 @@
       "latest_date": null
     },
     {
+      "investor_id": "inv_franklin-templeton",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
+      "investor_id": "inv_funds-managed-by-apollo",
+      "competitor_ids": [
+        "co_hadrian"
+      ],
+      "round_ids": [
+        "rnd_hadrian_2026-08_series_c_plus"
+      ],
+      "latest_date": "2026-08-06"
+    },
+    {
       "investor_id": "inv_gaingels",
       "competitor_ids": [
         "co_parallax-worlds"
@@ -771,18 +1088,6 @@
         "rnd_parallax-worlds_2025-11_seed"
       ],
       "latest_date": "2025-11-20"
-    },
-    {
-      "investor_id": "inv_general-catalyst",
-      "competitor_ids": [
-        "co_tractian"
-      ],
-      "round_ids": [
-        "rnd_tractian_2023-08_series_b",
-        "rnd_tractian_2024-12_series_c_plus",
-        "rnd_tractian_2026-10_series_c_plus"
-      ],
-      "latest_date": "2026-10-22"
     },
     {
       "investor_id": "inv_genius-ventures",
@@ -815,6 +1120,16 @@
         "rnd_matta_2025-12_seed"
       ],
       "latest_date": "2025-12-05"
+    },
+    {
+      "investor_id": "inv_greycroft-partners",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
     },
     {
       "investor_id": "inv_gs-futures",
@@ -857,6 +1172,16 @@
       "latest_date": "2018-09-18"
     },
     {
+      "investor_id": "inv_henry-kravis",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus"
+      ],
+      "latest_date": "2024-03-12"
+    },
+    {
       "investor_id": "inv_hg",
       "competitor_ids": [
         "co_ifs"
@@ -866,16 +1191,6 @@
         "rnd_ifs_2025-04_strategic"
       ],
       "latest_date": "2025-04-09"
-    },
-    {
-      "investor_id": "inv_human-capital",
-      "competitor_ids": [
-        "co_flow-engineering"
-      ],
-      "round_ids": [
-        "rnd_flow-engineering_2026-09_series_b"
-      ],
-      "latest_date": "2026-09-30"
     },
     {
       "investor_id": "inv_iconiq-capital",
@@ -930,6 +1245,27 @@
       "latest_date": "2023-10-05"
     },
     {
+      "investor_id": "inv_j-p-morgan",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
+      "investor_id": "inv_jeff-bezos",
+      "competitor_ids": [
+        "co_prometheus"
+      ],
+      "round_ids": [
+        "rnd_prometheus_2025-11_undisclosed",
+        "rnd_prometheus_2026-06_series_b"
+      ],
+      "latest_date": "2026-06-11"
+    },
+    {
       "investor_id": "inv_jeffrey-bussgang",
       "competitor_ids": [
         "co_covalent"
@@ -938,6 +1274,16 @@
         "rnd_covalent_2021-01_undisclosed"
       ],
       "latest_date": "2021-01-21"
+    },
+    {
+      "investor_id": "inv_jericho",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2024-04_undisclosed"
+      ],
+      "latest_date": "2024-04-04"
     },
     {
       "investor_id": "inv_john-collison",
@@ -950,6 +1296,16 @@
       "latest_date": "2025-10"
     },
     {
+      "investor_id": "inv_john-quinn",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus"
+      ],
+      "latest_date": "2024-03-12"
+    },
+    {
       "investor_id": "inv_jonas-von-malottki",
       "competitor_ids": [
         "co_flow-engineering"
@@ -958,6 +1314,16 @@
         "rnd_flow-engineering_2026-09_series_b"
       ],
       "latest_date": "2026-09-30"
+    },
+    {
+      "investor_id": "inv_jpmorgan-chase-co",
+      "competitor_ids": [
+        "co_prometheus"
+      ],
+      "round_ids": [
+        "rnd_prometheus_2026-06_series_b"
+      ],
+      "latest_date": "2026-06-11"
     },
     {
       "investor_id": "inv_jpmorganchase-strategic-investment-group",
@@ -1020,6 +1386,17 @@
       "latest_date": "2026-10-20"
     },
     {
+      "investor_id": "inv_kleiner-perkins",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b",
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
       "investor_id": "inv_krish-ravi-vaswani",
       "competitor_ids": [
         "co_faclon-labs"
@@ -1038,6 +1415,16 @@
         "rnd_flow-engineering_2022-12_seed"
       ],
       "latest_date": "2022-12-06"
+    },
+    {
+      "investor_id": "inv_la-famiglia",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b"
+      ],
+      "latest_date": "2019-09-12"
     },
     {
       "investor_id": "inv_lachy-groom",
@@ -1081,6 +1468,17 @@
       "latest_date": "2025-11-20"
     },
     {
+      "investor_id": "inv_lip-bu-tan",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2024-04_undisclosed"
+      ],
+      "latest_date": "2024-04-04"
+    },
+    {
       "investor_id": "inv_liquid2",
       "competitor_ids": [
         "co_salespatriot"
@@ -1102,21 +1500,6 @@
       "latest_date": "2026-02-04"
     },
     {
-      "investor_id": "inv_lux-capital",
-      "competitor_ids": [
-        "co_hadrian"
-      ],
-      "round_ids": [
-        "rnd_hadrian_2021-04_seed",
-        "rnd_hadrian_2022-03_series_a",
-        "rnd_hadrian_2023-12_series_b",
-        "rnd_hadrian_2025-07_series_c_plus",
-        "rnd_hadrian_2026-01_undisclosed",
-        "rnd_hadrian_2026-08_series_c_plus"
-      ],
-      "latest_date": "2026-08-06"
-    },
-    {
       "investor_id": "inv_m-g-s-catalyst",
       "competitor_ids": [
         "co_tractian"
@@ -1125,6 +1508,16 @@
         "rnd_tractian_2026-10_series_c_plus"
       ],
       "latest_date": "2026-10-22"
+    },
+    {
+      "investor_id": "inv_m12",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b"
+      ],
+      "latest_date": "2019-09-12"
     },
     {
       "investor_id": "inv_madhur-gupta",
@@ -1187,6 +1580,18 @@
       "latest_date": "2022-12-06"
     },
     {
+      "investor_id": "inv_maverick-capital",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2024-04_undisclosed",
+        "rnd_sima-ai_2025-08_undisclosed",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
       "investor_id": "inv_mayank-bist",
       "competitor_ids": [
         "co_faclon-labs"
@@ -1195,6 +1600,16 @@
         "rnd_faclon-labs_2024-08_series_a"
       ],
       "latest_date": "2024-08-08"
+    },
+    {
+      "investor_id": "inv_micron-technology-inc",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2026-04_strategic"
+      ],
+      "latest_date": "2026-04-08"
     },
     {
       "investor_id": "inv_microsoft",
@@ -1227,6 +1642,26 @@
       "latest_date": "2026-08-06"
     },
     {
+      "investor_id": "inv_msd-partners",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2022-10_series_b"
+      ],
+      "latest_date": "2022-10-26"
+    },
+    {
+      "investor_id": "inv_mustafa-suleyman",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus"
+      ],
+      "latest_date": "2024-03-12"
+    },
+    {
       "investor_id": "inv_n47",
       "competitor_ids": [
         "co_tractian"
@@ -1235,6 +1670,19 @@
         "rnd_tractian_2026-10_series_c_plus"
       ],
       "latest_date": "2026-10-22"
+    },
+    {
+      "investor_id": "inv_nd-capital",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2020-05_series_a",
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
     },
     {
       "investor_id": "inv_neeraj-arora",
@@ -1255,16 +1703,6 @@
         "rnd_tractian_2024-12_series_c_plus"
       ],
       "latest_date": "2024-12-05"
-    },
-    {
-      "investor_id": "inv_nico-rosberg",
-      "competitor_ids": [
-        "co_flow-engineering"
-      ],
-      "round_ids": [
-        "rnd_flow-engineering_2026-09_series_b"
-      ],
-      "latest_date": "2026-09-30"
     },
     {
       "investor_id": "inv_norte-ventures",
@@ -1350,6 +1788,37 @@
       "latest_date": "2025-10-28"
     },
     {
+      "investor_id": "inv_point72",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2024-04_undisclosed",
+        "rnd_sima-ai_2026-09_series_c_plus"
+      ],
+      "latest_date": "2026-09-28"
+    },
+    {
+      "investor_id": "inv_porsche-investments-management-s-a",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus"
+      ],
+      "latest_date": "2024-03-12"
+    },
+    {
+      "investor_id": "inv_premji-invest",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
       "investor_id": "inv_pritzker-group-venture-capital",
       "competitor_ids": [
         "co_apprentice-io"
@@ -1371,6 +1840,26 @@
       "latest_date": "2019"
     },
     {
+      "investor_id": "inv_qatar-investment-authority",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
+    },
+    {
+      "investor_id": "inv_ray-dalio",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2024-03_series_c_plus"
+      ],
+      "latest_date": "2024-03-12"
+    },
+    {
       "investor_id": "inv_real-ispat-group",
       "competitor_ids": [
         "co_nowpurchase"
@@ -1382,7 +1871,7 @@
       "latest_date": "2026-04-01"
     },
     {
-      "investor_id": "inv_redseed-vc",
+      "investor_id": "inv_redseed",
       "competitor_ids": [
         "co_matta"
       ],
@@ -1512,6 +2001,16 @@
       "latest_date": "2024-08-06"
     },
     {
+      "investor_id": "inv_semil-shah",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2021-11_series_c_plus"
+      ],
+      "latest_date": "2021-11-11"
+    },
+    {
       "investor_id": "inv_sequoia-capital",
       "competitor_ids": [
         "co_flow-engineering"
@@ -1574,6 +2073,16 @@
       "latest_date": "2024-08-06"
     },
     {
+      "investor_id": "inv_sozo-ventures",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2019-09_series_b"
+      ],
+      "latest_date": "2019-09-12"
+    },
+    {
       "investor_id": "inv_spacecadet-ventures",
       "competitor_ids": [
         "co_parallax-worlds"
@@ -1584,14 +2093,14 @@
       "latest_date": null
     },
     {
-      "investor_id": "inv_stepstone",
+      "investor_id": "inv_state-of-michigan",
       "competitor_ids": [
-        "co_hadrian"
+        "co_sima-ai"
       ],
       "round_ids": [
-        "rnd_hadrian_2026-01_undisclosed"
+        "rnd_sima-ai_2026-09_series_c_plus"
       ],
-      "latest_date": "2026-01-09"
+      "latest_date": "2026-09-28"
     },
     {
       "investor_id": "inv_steve-blank",
@@ -1613,6 +2122,16 @@
         "rnd_machina-labs_2026_undisclosed"
       ],
       "latest_date": "2026-02-04"
+    },
+    {
+      "investor_id": "inv_stripes",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
     },
     {
       "investor_id": "inv_subhrakant-panda",
@@ -1676,6 +2195,16 @@
       "latest_date": "2021-05-19"
     },
     {
+      "investor_id": "inv_the-goldman-sachs-group-inc",
+      "competitor_ids": [
+        "co_prometheus"
+      ],
+      "round_ids": [
+        "rnd_prometheus_2026-06_series_b"
+      ],
+      "latest_date": "2026-06-11"
+    },
+    {
       "investor_id": "inv_the-venture-reality-fund",
       "competitor_ids": [
         "co_apprentice-io"
@@ -1705,6 +2234,16 @@
         "rnd_flow-engineering_2026-09_series_b"
       ],
       "latest_date": "2026-09-30"
+    },
+    {
+      "investor_id": "inv_tribe-capital",
+      "competitor_ids": [
+        "co_applied-intuition"
+      ],
+      "round_ids": [
+        "rnd_applied-intuition_2025-06_series_c_plus"
+      ],
+      "latest_date": "2025-06-17"
     },
     {
       "investor_id": "inv_tru-arrow-partners",
@@ -1789,6 +2328,16 @@
       "latest_date": "2024-09-19"
     },
     {
+      "investor_id": "inv_venturetech-alliance",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2023-06_undisclosed"
+      ],
+      "latest_date": "2023-06-13"
+    },
+    {
       "investor_id": "inv_vish-sathappan",
       "competitor_ids": [
         "co_faclon-labs"
@@ -1810,7 +2359,7 @@
       "latest_date": "2026-08-06"
     },
     {
-      "investor_id": "inv_wcm",
+      "investor_id": "inv_wcm-investment-management",
       "competitor_ids": [
         "co_hadrian"
       ],
@@ -1819,6 +2368,18 @@
         "rnd_hadrian_2026-08_series_c_plus"
       ],
       "latest_date": "2026-08-06"
+    },
+    {
+      "investor_id": "inv_wing-venture-partners",
+      "competitor_ids": [
+        "co_sima-ai"
+      ],
+      "round_ids": [
+        "rnd_sima-ai_2020-05_series_a",
+        "rnd_sima-ai_2021-05_series_b",
+        "rnd_sima-ai_2022-10_series_b"
+      ],
+      "latest_date": "2022-10-26"
     },
     {
       "investor_id": "inv_woven-capital",

@@ -1,0 +1,45 @@
+{
+  "key": "round-zyg",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "ZyG = zyg.com (per SiliconANGLE), Israeli agentic e-commerce operating-system startup (legal name ZyG Edge Inc.), CEO Omer Kaplan. Not any other company named Zyg.",
+  "pages": [
+    { "url": "https://siliconangle.com/?p=732683", "title": "ZyG raises $58M seed (SiliconANGLE, 5 Mar 2026)", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://retailtechinnovationhub.com/home/2026/3/5/zyg-lands-58-million-in-seed-funding-to-expand-ai-powered-agentic-dtc-e-commerce-platform", "title": "ZyG lands $58 million in seed funding to expand AI powered DTC e-commerce platform", "publisher": "Retail Tech Innovation Hub", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [
+    { "field": "leads", "values": ["Lightspeed Venture Partners led (SiliconANGLE)", "Bessemer, Viola and Lightspeed led (Retail Tech Innovation Hub; its text names Bessemer first)"], "chosen": "Bessemer Venture Partners; Viola Ventures; Lightspeed Venture Partners", "reason": "Amount and stage agree; the CSV matches the three-lead reading but SiliconANGLE names only Lightspeed, so verdict is contested." }
+  ],
+  "open_items": [
+    "Company's own announcement (PR Newswire) not opened.",
+    "Founded year and HQ city not stated on fetched pages; described as Israeli.",
+    "Search results mention a later $60M Series A led by Accel (Bloomberg, May 2026); not opened, not part of this seed.",
+    "Retail Tech Innovation Hub dated the post 6 Mar; SiliconANGLE 5 Mar; used 5 Mar."
+  ],
+  "seed_company": "ZyG",
+  "verdict": "contested",
+  "round": {
+    "company": {
+      "name": "ZyG",
+      "website": "https://zyg.com",
+      "description": "Agentic operating system that helps small direct-to-consumer e-commerce brands scale using AI agents.",
+      "hq_country": "IL",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$58 million seed",
+    "date": "2026-03-05",
+    "date_precision": "day",
+    "amount_original": 58000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Bessemer Venture Partners", "Viola Ventures", "Lightspeed Venture Partners"],
+    "participants": ["Disruptive AI", "Emerge", "Access Industries", "Stardom Ventures", "Jibe Ventures"],
+    "unspecified": [],
+    "pages": [0, 1],
+    "snippet": "ZyG has secured $58 million in a seed funding round led by Bessemer Venture Partners"
+  }
+}

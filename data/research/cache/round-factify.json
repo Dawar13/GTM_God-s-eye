@@ -1,0 +1,45 @@
+{
+  "key": "round-factify",
+  "entity_type": "round",
+  "researched_at": "2026-10-30",
+  "identity_check": "Factify = factify.com, Tel Aviv-based document-standard startup (CEO Matan Gavish) building an intelligent replacement for PDF/docx. Not other companies named Factify (e.g. fact-checking projects).",
+  "pages": [
+    { "url": "https://venturebeat.com/infrastructure/factify-wants-to-move-past-pdfs-and-docx-by-giving-digital-documents-their", "title": "Factify wants to move past PDFs and DOCX by giving digital documents their own identity", "publisher": "VentureBeat", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fenwick.com/insights/experience/fenwick-represents-factify-in-73m-seed-financing", "title": "Fenwick Represents Factify in $73M Seed Financing", "publisher": "Fenwick", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ynetnews.com/business/article/bytqx2diwl", "title": "Israeli startup Factify raises $73M to replace PDFs with next-generation digital documents", "publisher": "Ynetnews", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "conflicts": [
+    { "field": "amount", "values": ["$73M seed (VentureBeat, Fenwick, Ynetnews)", "$63M (CSV; an aggregator in search results, not opened)"], "chosen": "$73M", "reason": "Three fetched pages say $73M. Ynetnews also mentions a $10.3M pre-seed in 2024 but does not say whether it is inside the $73M, so the $63M = 73 minus 10 reading is unconfirmed." }
+  ],
+  "open_items": [
+    "Whether the $73M includes the $10.3M 2024 pre-seed is not stated.",
+    "Founded year: Ynetnews says late 2023 (initially self-funded by founder); recorded as 2023.",
+    "Company's own announcement and PR Newswire release (403) not read."
+  ],
+  "seed_company": "Factify",
+  "verdict": "corrected",
+  "round": {
+    "company": {
+      "name": "Factify",
+      "website": "https://www.factify.com/",
+      "description": "Building a new digital document standard in which each document carries its own identity, live permissions and an immutable audit log, as a successor to PDF and docx.",
+      "hq_country": "IL",
+      "founded_year": 2023,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null
+    },
+    "stage": "seed",
+    "stage_raw": "$73 million seed round",
+    "date": "2026-01-28",
+    "date_precision": "day",
+    "amount_original": 73000000,
+    "currency_original": "USD",
+    "valuation_post_original": null,
+    "leads": ["Valley Capital Partners"],
+    "participants": ["John Giannandrea", "Ken Moelis", "Peter Brown", "Jim Perry", "Shai Doron", "Shai Wininger"],
+    "unspecified": [],
+    "pages": [0, 1, 2],
+    "snippet": "led by Valley Capital Partners"
+  }
+}
