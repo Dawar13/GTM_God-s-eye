@@ -138,3 +138,69 @@ export type SectionKey = (typeof SECTIONS)[number]["key"];
 export function isSectionActive(section: (typeof SECTIONS)[number], pathname: string): boolean {
   return section.prefix === null ? pathname === "/" : pathname.startsWith(section.prefix);
 }
+
+export type NavChild = { href: string; label: string };
+
+/** Sub-items per section, in menu order. Command, Competitors and Strategy have none. */
+export const SECTION_CHILDREN: Record<SectionKey, readonly NavChild[]> = {
+  command: [],
+  "vc-math": VC_MATH_TOOLS.map((t) => ({ href: `/vc-math/${t.slug}`, label: t.label })),
+  investors: INVESTOR_VIEWS.map((v) => ({ href: `/investors/${v.slug}`, label: v.label })),
+  competitors: [],
+  strategy: [],
+};
+
+export function activeSection(pathname: string): (typeof SECTIONS)[number] | undefined {
+  return SECTIONS.find((s) => isSectionActive(s, pathname));
+}
+
+const EXTRA_TITLES: Record<string, string> = { "/lab": "Lab", "/debug": "Debug" };
+
+/** Title and sub-tabs the top bar shows for a path. */
+export function getPageMeta(pathname: string): { title: string; tabs: readonly NavChild[] } {
+  const section = activeSection(pathname);
+  if (section) return { title: section.label, tabs: SECTION_CHILDREN[section.key] };
+  return { title: EXTRA_TITLES[pathname] ?? "Capital Atlas", tabs: [] };
+}
+
+export type PaletteAction = { id: string; label: string; href: string; group: string; keywords: string };
+
+/** Every page the palette can jump to, with the verbs people type. */
+export const PALETTE_PAGES: readonly PaletteAction[] = [
+  ...SECTIONS.map((s) => ({
+    id: `section:${s.key}`,
+    label: s.label,
+    href: s.href,
+    group: "Pages",
+    keywords: "go open section",
+  })),
+  ...SECTIONS.flatMap((s) =>
+    SECTION_CHILDREN[s.key].map((c) => ({
+      id: `page:${c.href}`,
+      label: `${s.label}: ${c.label}`,
+      href: c.href,
+      group: "Pages",
+      keywords: `go open ${c.label}`,
+    })),
+  ),
+];
+
+/** Named actions that open a tool: "Open SAFE calculator". */
+export const PALETTE_TOOL_ACTIONS: readonly PaletteAction[] = [
+  ["round-builder", "Open round builder", "pre post money price per share"],
+  ["cap-table", "Open cap table", "ownership dilution rounds"],
+  ["option-pool", "Open option pool calculator", "esop shuffle"],
+  ["safe", "Open SAFE calculator", "safe post-money"],
+  ["convertible-note", "Open convertible note calculator", "interest cap discount"],
+  ["liquidation", "Open liquidation waterfall", "preference exit payout"],
+  ["vc-method", "Open VC method calculator", "target return exit"],
+  ["fund-math", "Open fund math", "return the fund"],
+  ["power-law", "Open power law simulator", "monte carlo"],
+  ["india-instruments", "Open India instruments", "ccps ccd isafe fema"],
+].map(([slug, label, keywords]) => ({
+  id: `tool:${slug}`,
+  label: label!,
+  href: `/vc-math/${slug}`,
+  group: "Actions",
+  keywords: keywords!,
+}));

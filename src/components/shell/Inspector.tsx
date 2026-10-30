@@ -1,36 +1,67 @@
 "use client";
 
-import { useEffect, type CSSProperties, type KeyboardEvent, type PointerEvent } from "react";
-import { X } from "lucide-react";
-import { INSPECTOR_WIDTH, useSelection, type SelectionKind } from "@/store/selection";
+import {
+  useEffect,
+  type CSSProperties,
+  type KeyboardEvent,
+  type PointerEvent,
+  type ReactNode,
+} from "react";
+import { ArrowLeft, ArrowRight, ExternalLink, X } from "lucide-react";
+import { INSPECTOR_WIDTH, useInspectorStore } from "@/store/inspector";
+import { useInspector } from "@/lib/hooks/useInspector";
+import { DESKTOP_QUERY, useMediaQuery } from "@/lib/hooks/useMediaQuery";
+import { loadEntity, useLoaded } from "@/lib/client-index";
+import type { EntityHeader } from "@/lib/data/entities";
+import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
 
-const KIND_LABELS: Record<SelectionKind, string> = {
-  investor: "Investor",
-  fund: "Fund",
-  company: "Company",
-  round: "Round",
-};
-
+const KIND_LABELS = { investor: "Investor", company: "Company", competitor: "Competitor" } as const;
 const KEY_STEP = 16;
 
+/**
+ * Right drawer (420px, 360 to 640) on desktop, bottom sheet below 1024px.
+ * S1 shows the header facts only; S5 builds the full profile inside `InspectorBody`.
+ */
 export function Inspector() {
-  const selection = useSelection((s) => s.selection);
-  const clear = useSelection((s) => s.clear);
-  const width = useSelection((s) => s.inspectorWidth);
-  const setWidth = useSelection((s) => s.setInspectorWidth);
+  const inspector = useInspector();
+  const desktop = useMediaQuery(DESKTOP_QUERY);
+  const width = useInspectorStore((s) => s.width);
+  const setWidth = useInspectorStore((s) => s.setWidth);
+  const { id, close } = inspector;
 
+  // Esc closes the drawer, unless a popover or dialog (palette, filter menu) has its own Esc to handle.
   useEffect(() => {
-    if (!selection) return;
+    if (!id || !desktop) return;
     const onKey = (e: globalThis.KeyboardEvent) => {
-      if (e.key === "Escape") clear();
+      if (e.key !== "Escape" || e.defaultPrevented) return;
+      if (document.querySelector('[role="dialog"], [data-radix-popper-content-wrapper]')) return;
+      close();
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [selection, clear]);
+  }, [id, desktop, close]);
 
-  if (!selection) return null;
+  if (!id) return null;
+
+  if (!desktop) {
+    return (
+      <Sheet open onOpenChange={(open) => !open && close()}>
+        <SheetContent
+          side="bottom"
+          showCloseButton={false}
+          aria-describedby={undefined}
+          className="data-[side=bottom]:h-[75dvh] gap-0 rounded-t-xl p-0"
+        >
+          <SheetTitle className="sr-only">Inspector</SheetTitle>
+          <SheetDescription className="sr-only">Details for the selected record</SheetDescription>
+          <InspectorBody id={id} inspector={inspector} />
+        </SheetContent>
+      </Sheet>
+    );
+  }
 
   // The handle sits on the left edge, so dragging left widens the panel.
   const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
@@ -64,7 +95,7 @@ export function Inspector() {
     <aside
       aria-label="Inspector"
       style={{ "--inspector-w": `${width}px` } as CSSProperties}
-      className="fixed inset-0 z-40 flex flex-col bg-panel md:relative md:inset-auto md:z-auto md:w-(--inspector-w) md:shrink-0 md:border-l md:border-rule"
+      className="relative flex w-(--inspector-w) shrink-0 flex-col border-l border-rule bg-panel"
     >
       <div
         role="separator"
@@ -76,24 +107,192 @@ export function Inspector() {
         tabIndex={0}
         onPointerDown={onPointerDown}
         onKeyDown={onHandleKey}
-        className="absolute inset-y-0 left-0 z-10 hidden w-1.5 -translate-x-1/2 cursor-col-resize touch-none transition-colors hover:bg-accent/50 focus-visible:bg-accent focus-visible:outline-none md:block"
+        className="absolute inset-y-0 left-0 z-10 w-1.5 -translate-x-1/2 cursor-col-resize touch-none transition-colors hover:bg-accent/50 focus-visible:bg-accent focus-visible:outline-none"
       />
+      <InspectorBody id={id} inspector={inspector} />
+    </aside>
+  );
+}
 
-      <header className="flex shrink-0 items-start gap-3 border-b border-rule px-4 py-3">
-        <div className="min-w-0 flex-1">
-          <p className="text-xs text-ink-2">{KIND_LABELS[selection.kind]}</p>
-          <h2 className="truncate text-sm font-semibold">{selection.title}</h2>
+function InspectorBody({
+  id,
+  inspector,
+}: {
+  id: string;
+  inspector: ReturnType<typeof useInspector>;
+}) {
+  const state = useLoaded(id, () => loadEntity(id));
+  const { close, back, forward, canBack, canForward, open } = inspector;
+  const entity = state.status === "ready" ? state.data : null;
+
+  return (
+    <>
+      <header className="flex shrink-0 items-start gap-1 border-b border-rule px-3 py-3">
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          onClick={back}
+          disabled={!canBack}
+          aria-label="Previous record"
+          className="text-ink-2"
+        >
+          <ArrowLeft aria-hidden />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          onClick={forward}
+          disabled={!canForward}
+          aria-label="Next record"
+          className="text-ink-2"
+        >
+          <ArrowRight aria-hidden />
+        </Button>
+        <div className="min-w-0 flex-1 px-2">
+          <p className="text-xs text-ink-2">{entity ? KIND_LABELS[entity.kind] : " "}</p>
+          <h2 className="truncate text-base font-semibold">
+            {entity ? entity.name : state.status === "error" ? "Not found" : "Loading"}
+          </h2>
         </div>
-        <Button variant="ghost" size="icon-sm" onClick={clear} aria-label="Close inspector">
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          onClick={close}
+          aria-label="Close inspector"
+          className="text-ink-2"
+        >
           <X aria-hidden />
         </Button>
       </header>
 
       <ScrollArea className="min-h-0 flex-1">
-        <pre className="p-4 font-mono text-xs leading-relaxed break-words whitespace-pre-wrap text-ink-2">
-          {JSON.stringify(selection.payload, null, 2)}
-        </pre>
+        <div className="px-4 py-3">
+          {state.status === "loading" && (
+            <div className="flex flex-col gap-3" aria-busy="true">
+              <Skeleton className="h-4 w-1/2" />
+              <Skeleton className="h-4 w-2/3" />
+              <Skeleton className="h-4 w-1/3" />
+            </div>
+          )}
+          {state.status === "error" && (
+            <p className="text-sm text-ink-2">
+              No record with the id <span className="num">{id}</span> was found.
+            </p>
+          )}
+          {entity && <EntityHeaderView entity={entity} onOpen={open} />}
+        </div>
       </ScrollArea>
-    </aside>
+    </>
+  );
+}
+
+/** One row per source domain: how many pages, and the most recent read date. */
+function groupSources(sources: EntityHeader["sources"]) {
+  const groups = new Map<string, { domain: string; url: string; count: number; latest: string }>();
+  for (const s of sources) {
+    const g = groups.get(s.domain);
+    if (!g) groups.set(s.domain, { domain: s.domain, url: s.url, count: 1, latest: s.retrievedAt });
+    else {
+      g.count += 1;
+      if (s.retrievedAt > g.latest) g.latest = s.retrievedAt;
+    }
+  }
+  return [...groups.values()];
+}
+
+function EntityHeaderView({
+  entity,
+  onOpen,
+}: {
+  entity: EntityHeader;
+  onOpen: (id: string) => void;
+}) {
+  const facts: { label: string; value: ReactNode }[] = [
+    { label: "Type", value: entity.typeLabel },
+    { label: "HQ", value: entity.hq },
+    {
+      label: "Website",
+      value: entity.website ? (
+        <a
+          href={entity.website}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-1 text-accent hover:underline"
+        >
+          {entity.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+          <ExternalLink aria-hidden className="size-3" />
+        </a>
+      ) : null,
+    },
+  ];
+
+  return (
+    <div>
+      <dl className="divide-y divide-rule border-b border-rule">
+        {facts.map((f) => (
+          <div key={f.label} className="flex items-baseline justify-between gap-4 py-2 text-sm">
+            <dt className="text-ink-2">{f.label}</dt>
+            <dd className="min-w-0 truncate text-right">{f.value ?? "Unknown"}</dd>
+          </div>
+        ))}
+      </dl>
+
+      {entity.backers && (
+        <InspectorSection title="Backed by" meta={String(entity.backers.total)}>
+          {entity.backers.list.length === 0 ? (
+            <p className="text-sm text-ink-2">No investors recorded for this company.</p>
+          ) : (
+            <ul className="flex flex-col gap-1 text-sm">
+              {entity.backers.list.map((b) => (
+                <li key={b.id}>
+                  <button
+                    type="button"
+                    onClick={() => onOpen(b.id)}
+                    className="text-left hover:text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
+                  >
+                    {b.name}
+                  </button>
+                </li>
+              ))}
+              {entity.backers.total > entity.backers.list.length && (
+                <li className="text-xs text-ink-2">
+                  and{" "}
+                  <span className="num">{entity.backers.total - entity.backers.list.length}</span>{" "}
+                  more
+                </li>
+              )}
+            </ul>
+          )}
+        </InspectorSection>
+      )}
+
+      <InspectorSection title="Sources" meta={`${entity.sources.length} pages`}>
+        <ul className="flex flex-col gap-2 text-sm">
+          {groupSources(entity.sources).map((g) => (
+            <li key={g.domain} className="flex items-center justify-between gap-3">
+              {g.url.startsWith("http") ? (
+                <a
+                  href={g.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="min-w-0 truncate hover:underline"
+                >
+                  <SourceBadge domain={g.domain} confidence={entity.confidence} />
+                </a>
+              ) : (
+                <SourceBadge domain={g.domain} confidence={entity.confidence} />
+              )}
+              <span className="num shrink-0 text-xs text-ink-2">
+                {g.count > 1 && <span className="mr-2">{g.count} pages</span>}
+                {g.latest}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-2 text-xs text-ink-2">
+          The dot shows the record&apos;s confidence; the date is the latest read.
+        </p>
+      </InspectorSection>
+    </div>
   );
 }

@@ -1,11 +1,28 @@
 import { fitScore } from "@/lib/fit/score";
-import type { FitFeatures, Fund, Investor, Region, ResearchTier } from "@/lib/schema";
+import { SECTOR_MATCH_MIN, type FilterableInvestor } from "@/lib/filters";
+import type { FitFeatures, Fund, Investor } from "@/lib/schema";
+import type { Sector } from "@/lib/schema/enums";
 
-export type DirectoryRow = {
-  id: string;
+/** The fields the global filters read, from one investor record. Used by the Directory and the filter bar. */
+export function toFilterable(inv: Investor): FilterableInvestor {
+  const weights = inv.sector_weights?.value ?? {};
+  const sectors = Object.entries(weights)
+    .filter(([, w]) => (w ?? 0) >= SECTOR_MATCH_MIN)
+    .map(([sector]) => sector as Sector);
+  return {
+    id: inv.id,
+    region: inv.region,
+    stages: inv.stages,
+    type: inv.type,
+    freshness: inv.category.freshness,
+    maturity: inv.category.maturity,
+    sectors,
+    tier: inv.tier,
+  };
+}
+
+export type DirectoryRow = FilterableInvestor & {
   name: string;
-  tier: ResearchTier | null;
-  region: Region | null;
   latestFundSizeUsd: number | null;
   latestFundYear: number | null;
   seedListCount: number;
@@ -51,10 +68,8 @@ export function toDirectoryRows(
     const fit = fitByInvestor.get(inv.id);
     const score = fit ? fitScore(fit) : null;
     return {
-      id: inv.id,
+      ...toFilterable(inv),
       name: inv.name,
-      tier: inv.tier,
-      region: inv.region,
       latestFundSizeUsd: latest?.size_usd ?? null,
       latestFundYear: latest?.vintage_year ?? null,
       seedListCount: inv.seed_list_count,

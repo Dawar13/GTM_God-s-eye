@@ -2,15 +2,15 @@
 
 import { useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
-import { cn } from "cn";
 import { useUi } from "@/store/ui";
+import { Button } from "@/components/ui/button";
 
 /**
- * Icon and label switch on the data-theme attribute through CSS, so the
- * server render matches whatever the init script applied before paint.
+ * Icon swaps on the data-theme attribute through CSS, so the server render
+ * matches whatever the init script applied before paint.
  */
-export function ThemeToggle({ labelClass, className }: { labelClass: string; className?: string }) {
-  const setTheme = useUi((s) => s.setTheme);
+export function ThemeToggle() {
+  const toggleTheme = useUi((s) => s.toggleTheme);
   const syncThemeFromDocument = useUi((s) => s.syncThemeFromDocument);
 
   useEffect(() => {
@@ -18,19 +18,16 @@ export function ThemeToggle({ labelClass, className }: { labelClass: string; cla
   }, [syncThemeFromDocument]);
 
   return (
-    <button
-      type="button"
-      onClick={() =>
-        setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark")
-      }
-      className={className}
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={toggleTheme}
+      aria-label="Switch colour theme"
+      title="Switch colour theme"
+      className="text-ink-2"
     >
-      <Sun aria-hidden className="size-4 shrink-0 light:hidden" />
-      <Moon aria-hidden className="hidden size-4 shrink-0 light:block" />
-      <span className={cn(labelClass)}>
-        <span className="light:hidden">Use light theme</span>
-        <span className="hidden light:inline">Use dark theme</span>
-      </span>
-    </button>
+      <Sun aria-hidden className="light:hidden" />
+      <Moon aria-hidden className="hidden light:block" />
+    </Button>
   );
 }

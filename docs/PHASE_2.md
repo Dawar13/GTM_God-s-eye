@@ -75,7 +75,7 @@ Tick each box when its checks pass.
 - Internal style-guide route `/lab` showing every primitive in both themes.
 - Checks: lint, typecheck, test; one screenshot of `/lab`.
 
-### S1 — Shell, menu and navigation ☐
+### S1 — Shell, menu and navigation ☑
 - **Left menu (rail)**, 232px, collapsible to 64px icons (persisted):
   - Command
   - VC Math → Round builder, Cap table, Option pool, SAFE, Convertible note, Liquidation, VC method, Fund math, Power law, India

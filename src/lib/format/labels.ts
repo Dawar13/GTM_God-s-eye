@@ -2,7 +2,9 @@ import type {
   Freshness,
   InvestorStage,
   InvestorType,
+  Maturity,
   Region,
+  ResearchTier,
   RoundStage,
   Sector,
 } from "@/lib/schema/enums";
@@ -48,6 +50,7 @@ export const INVESTOR_TYPE_LABELS: Record<InvestorType, string> = {
   sovereign: "Sovereign",
   asset_manager: "Asset manager",
   accelerator: "Accelerator",
+  incubator: "Incubator",
   strategic: "Strategic",
   individual: "Individual",
 };
@@ -62,4 +65,17 @@ export const FRESHNESS_LABELS: Record<Freshness, string> = {
   fresh: "Fresh fund",
   older: "Older fund",
   unknown: "Unknown",
+};
+
+export const MATURITY_LABELS: Record<Maturity, string> = {
+  debut: "Debut fund",
+  emerging: "Emerging",
+  established: "Established",
+};
+
+/** Research tiers (PHASE_1 §4.2): A is the deepest profile. */
+export const TIER_LABELS: Record<ResearchTier, string> = {
+  A: "Tier A",
+  B: "Tier B",
+  C: "Tier C",
 };

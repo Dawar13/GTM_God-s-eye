@@ -15,7 +15,7 @@ File: `data/processed/investors.json`. A firm, fund manager or individual that i
 | `name` | string | yes | Display name |
 | `aliases` | array of string | yes | Other names seen for this investor, e.g. a16z |
 | `parent_brand` | string \| null | yes | Shared brand across regional firms, e.g. Accel for Accel US and Accel India |
-| `type` | `vc`, `cvc`, `angel`, `syndicate`, `family_office`, `sovereign`, `asset_manager`, `accelerator`, `strategic`, `individual` \| null | yes |  |
+| `type` | `vc`, `cvc`, `angel`, `syndicate`, `family_office`, `sovereign`, `asset_manager`, `accelerator`, `incubator`, `strategic`, `individual` \| null | yes |  |
 | `region` | `western`, `india`, `other` \| null | yes | western, india or other (PROJECT_CONTEXT §3) |
 | `hq_country` | string \| null | yes | ISO 3166-1 alpha-2 |
 | `hq_city` | string \| null | yes |  |
@@ -412,7 +412,7 @@ FX rate applied (pipeline/atlas/fx.py)
 - **Sector**: `ai_infra`, `ai_apps_agents`, `industrial_manufacturing`, `robotics_physical_ai`, `defense_dual_use`, `hardware_deeptech`, `space`, `climate_energy`, `mobility_ev`, `supply_chain_logistics`, `enterprise_saas`, `dev_tools`, `fintech`, `health_bio`, `consumer`, `crypto_web3`
 - **InvestorStage**: `pre_seed`, `seed`, `series_a`, `series_b`, `series_c_plus`, `growth`
 - **RoundStage**: `pre_seed`, `seed`, `series_a`, `series_b`, `series_c_plus`, `growth`, `strategic`, `undisclosed`
-- **InvestorType**: `vc`, `cvc`, `angel`, `syndicate`, `family_office`, `sovereign`, `asset_manager`, `accelerator`, `strategic`, `individual`
+- **InvestorType**: `vc`, `cvc`, `angel`, `syndicate`, `family_office`, `sovereign`, `asset_manager`, `accelerator`, `incubator`, `strategic`, `individual`
 - **Region**: `western`, `india`, `other`
 - **Confidence**: `high`, `medium`, `low`
 - **SourceKind**: `primary`, `secondary`, `user_supplied`

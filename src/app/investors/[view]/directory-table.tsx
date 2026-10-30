@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import {
   createColumnHelper,
   createSortedRowModel,
@@ -13,8 +14,9 @@ import { cn } from "cn";
 import type { DirectoryRow } from "@/lib/data/directory";
 import { formatUsd, UNKNOWN } from "@/lib/format";
 import { REGION_LABELS } from "@/lib/format/labels";
-import type { Investor } from "@/lib/schema";
-import { useSelection } from "@/store/selection";
+import { applyFilters } from "@/lib/filters";
+import { useFilters } from "@/lib/filters/use-filters";
+import { useInspector } from "@/lib/hooks/useInspector";
 
 // Phase 0: proves the data path. Phase 2 replaces this with the full directory.
 const features = tableFeatures({
@@ -85,24 +87,21 @@ const NUMERIC = new Set([
   "sourceCount",
 ]);
 
-export function DirectoryTable({
-  rows,
-  investors,
-}: {
-  rows: DirectoryRow[];
-  investors: Record<string, Investor>;
-}) {
-  const table = useTable({ features, columns, data: rows });
-  const select = useSelection((s) => s.select);
-  const selectedId = useSelection((s) => s.selection?.id);
+export function DirectoryTable({ rows }: { rows: DirectoryRow[] }) {
+  // The same applyFilters the filter bar's chip counts use, so the two always agree.
+  const { filters } = useFilters();
+  const shown = useMemo(() => applyFilters(rows, filters), [rows, filters]);
+  const table = useTable({ features, columns, data: shown });
+  const { id: selectedId, open: openInspector } = useInspector();
 
-  const open = (row: DirectoryRow) =>
-    select({ kind: "investor", id: row.id, title: row.name, payload: investors[row.id] });
+  const open = (row: DirectoryRow) => openInspector(row.id);
 
   return (
     <div className="overflow-x-auto">
       <p className="mb-3 text-xs text-ink-2">
-        {rows.length.toLocaleString("en-US")} investors. Select a name to inspect its record.
+        <span className="num">{shown.length.toLocaleString("en-US")}</span> of{" "}
+        <span className="num">{rows.length.toLocaleString("en-US")}</span> investors match the
+        filters. Select a name to inspect it.
       </p>
       <table className="w-full text-sm">
         <thead>
@@ -143,7 +142,7 @@ export function DirectoryTable({
               onClick={() => open(row.original)}
               className={cn(
                 "cursor-pointer border-b border-rule/60 hover:bg-panel-sunk",
-                row.original.id === selectedId && "bg-panel-sunk",
+                row.original.id === selectedId && "bg-accent-soft",
               )}
             >
               {row.getAllCells().map((cell) => (

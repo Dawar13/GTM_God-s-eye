@@ -1,8 +1,10 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Sans_Condensed } from "next/font/google";
 import { FilterBar } from "@/components/shell/FilterBar";
 import { Inspector } from "@/components/shell/Inspector";
 import { LeftRail } from "@/components/shell/LeftRail";
+import { TopBar } from "@/components/shell/TopBar";
 import { Providers } from "@/components/shell/Providers";
 import { DEFAULT_THEME, THEME_INIT_SCRIPT } from "@/lib/theme";
 import "./globals.css";
@@ -43,24 +45,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        <Providers>
-          <div className="flex h-dvh overflow-hidden">
-            <LeftRail />
-            <div className="flex min-w-0 flex-1 flex-col">
-              <FilterBar />
-              <div className="flex min-h-0 flex-1">
-                <main
-                  id="main"
-                  tabIndex={-1}
-                  className="min-w-0 flex-1 overflow-y-auto outline-none"
-                >
-                  {children}
-                </main>
-                <Inspector />
+        {/* nuqs and the shell read the URL, so they sit under one Suspense boundary. */}
+        <Suspense fallback={<div aria-hidden className="h-dvh bg-canvas" />}>
+          <Providers>
+            <div className="flex h-dvh overflow-hidden">
+              <LeftRail />
+              <div className="flex min-w-0 flex-1 flex-col">
+                <TopBar />
+                <FilterBar />
+                <div className="flex min-h-0 flex-1">
+                  <main
+                    id="main"
+                    tabIndex={-1}
+                    className="min-w-0 flex-1 overflow-y-auto outline-none"
+                  >
+                    {children}
+                  </main>
+                  <Inspector />
+                </div>
               </div>
             </div>
-          </div>
-        </Providers>
+          </Providers>
+        </Suspense>
       </body>
     </html>
   );
