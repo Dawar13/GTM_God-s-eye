@@ -191,11 +191,18 @@ def test_competitor_named_like_another_company_gets_its_own_id():
         "product_summary": None,
         "pricing": None,
         "headcount_est": None,
-        "revenue_reported_usd": None,
+        "revenue_reported": {
+            "value": {"amount": 1_200_000_000, "currency": "EUR", "year": 2024},
+            "pages": [0],
+            "snippet": "Total revenue for 2024 was over EUR 1.2 billion",
+        },
     }
     co = companies.competitor_from(comp)
     assert co["id"] != other["id"]
     assert set(store.companies) == {other["id"]} and set(store.competitors) == {co["id"]}
+    # Reported revenue is converted at the year's rate, like every other amount.
+    assert co["revenue_usd"] == pytest.approx(1_200_000_000 / 0.924, rel=1e-3)
+    assert co["revenue_basis"] == "reported"
 
 
 def test_disagreeing_amounts_mark_the_round_contested():

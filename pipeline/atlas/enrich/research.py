@@ -557,10 +557,13 @@ class CompanyIndex:
         if f["headcount_est"]:
             h = f["headcount_est"]
             co["headcount_est"] = {"value": h["value"], "source": page_source(pages[h["pages"][0]])}
-        if f["revenue_reported_usd"]:
-            co["revenue_usd"] = f["revenue_reported_usd"]["value"]
-            co["revenue_basis"] = "reported"
-            cite(co, "revenue_usd", _attach(co, pages, f["revenue_reported_usd"]["pages"]))
+        if rev := f["revenue_reported"]:
+            v = rev["value"]
+            usd, _ = fx.to_usd(v["amount"], v["currency"], v["year"])
+            if usd is not None:  # no rate for that year: left unknown, like other amounts
+                co["revenue_usd"] = usd
+                co["revenue_basis"] = "reported"
+                cite(co, "revenue_usd", _attach(co, pages, rev["pages"]))
         co["confidence"] = confidence_for(pages)
         self.store.competitors[cid] = co
         return co

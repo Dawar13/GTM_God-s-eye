@@ -177,7 +177,15 @@ export const CompetitorResearch = z.strictObject({
   product_summary: z.string().nullable(),
   pricing: z.string().nullable(),
   headcount_est: fact(z.number().int().positive()).nullable(),
-  revenue_reported_usd: fact(Money).nullable(),
+  revenue_reported: fact(
+    z.strictObject({
+      amount: Money.describe("As reported, in `currency`"),
+      currency: z.string().length(3),
+      year: z.number().int().min(1990).max(2100).describe("Year the revenue is for"),
+    }),
+  )
+    .nullable()
+    .describe("Only if publicly reported; the pipeline converts to USD at that year's rate"),
   rounds: z.array(ResearchRound),
 });
 export type CompetitorResearch = z.infer<typeof CompetitorResearch>;

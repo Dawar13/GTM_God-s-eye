@@ -322,14 +322,37 @@
         }
       ]
     },
-    "revenue_reported_usd": {
+    "revenue_reported": {
       "anyOf": [
         {
           "type": "object",
           "properties": {
             "value": {
-              "type": "number",
-              "minimum": 0
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "minimum": 0,
+                  "description": "As reported, in `currency`"
+                },
+                "currency": {
+                  "type": "string",
+                  "minLength": 3,
+                  "maxLength": 3
+                },
+                "year": {
+                  "type": "integer",
+                  "minimum": 1990,
+                  "maximum": 2100,
+                  "description": "Year the revenue is for"
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "year"
+              ],
+              "additionalProperties": false
             },
             "pages": {
               "minItems": 1,
@@ -356,7 +379,8 @@
         {
           "type": "null"
         }
-      ]
+      ],
+      "description": "Only if publicly reported; the pipeline converts to USD at that year's rate"
     },
     "rounds": {
       "type": "array",
@@ -638,7 +662,7 @@
     "product_summary",
     "pricing",
     "headcount_est",
-    "revenue_reported_usd",
+    "revenue_reported",
     "rounds"
   ],
   "additionalProperties": false

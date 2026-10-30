@@ -66,7 +66,7 @@ Stages: `pre_seed, seed, series_a, series_b, series_c_plus, growth` (rounds may 
 - `layer`: `design_intent, process_planning, plant_ops, quality_vision, autonomy_tooling, robotics, full_stack_factory`; `layer_detail` free text.
 - `founders` (names), `named_customers` (only customers the company names publicly), `product_summary` (≤ 50 words, paraphrased), `pricing` (only if public, as stated).
 - `headcount_est`: a fact `{value, pages, snippet}` from a public page (e.g. the company's LinkedIn page header), or null. Label approximate in the snippet.
-- `revenue_reported_usd`: a fact only if revenue is **publicly reported**; never estimate. Otherwise null.
+- `revenue_reported`: a fact `{amount, currency, year}` only if revenue is **publicly reported**, in the currency reported (don't convert; the pipeline does); never estimate. Otherwise null.
 - `rounds`: the full funding history found, same round shape as investor files. For PE buyouts or acquisitions use stage `strategic` and say so in `stage_raw`.
 
 ## Seed-round check (`entity_type: "round"`, `cache/round-<company-slug>.json`)
