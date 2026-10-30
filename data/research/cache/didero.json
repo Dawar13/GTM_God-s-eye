@@ -1,0 +1,103 @@
+{
+  "key": "didero",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Didero (didero.ai), the New York startup selling AI agents for direct-spend procurement and supply-chain work at manufacturers and distributors; the company site, its own Series A and launch posts, TechCrunch (2024 and 2026), SiliconANGLE and Construct Capital's investment note all describe the same company and the same co-founders (Tim Spencer, Lorenz Pallhuber, Tom Petit). Not Covalent AI (covalentmarket.com), an AI purchasing tool Didero acquired in July 2025. Category set to direct (not in the PROJECT_CONTEXT §7 seed list; candidate found through Construct Capital's portfolio): Didero's agents do procurement work for manufacturers — supplier follow-ups, PO coordination, sourcing and quoting, receiving and AP — which is Utopian Autonomy's procurement / RFQ wedge, and TechCrunch frames it as 'manufacturing procurement'. Differences: it serves procurement, supply-chain and AP teams through the ERP and email (it also ingests WeChat messages and calls), not plant-floor staff over WhatsApp; many named customers are distributors or consumer-goods firms; it does not touch maintenance, process stability or engineering drawings. Layer plant_ops is the nearest fit (no supply-chain layer in the taxonomy), as for Galvant and SalesPatriot.",
+  "pages": [
+    { "url": "https://www.didero.ai/", "title": "Didero (homepage: Supply chains on autopilot)", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/blog", "title": "Didero blog index", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/blog/series-a-announcement", "title": "Didero Raises $30M Series A to Bring AI Agents to Global Supply Chains", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/blog/introducing-didero-ai-procurement", "title": "Introducing Didero, the AI procurement agent that helps supply chain teams connect across the world", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/blog/amid-tariff-uncertainty-didero-acquires-covalent-ai-to-put-supply-chains-on-autopilot", "title": "Amid tariff uncertainty, Didero acquires Covalent AI to put supply chains on autopilot", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/case-studies", "title": "Didero case studies", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/case-studies/fabco", "title": "Didero case study: FABco", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/case-studies/echelon-supply-and-service", "title": "Didero case study: Echelon Supply and Service", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/case-studies/bishop-lifting", "title": "Didero case study: Bishop Lifting", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.didero.ai/careers", "title": "Didero careers", "publisher": "Didero", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/07/17/didero-is-using-ai-to-solve-supply-chain-management-at-mid-market-companies/", "title": "Didero is using AI to solve supply chain management at mid-market companies", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/", "title": "Didero lands $30M to put manufacturing procurement on 'agentic' autopilot", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2026/02/12/didero-raises-30m-series-expand-agentic-ai-enterprise-procurement/", "title": "Didero raises $30M early-stage round to expand agentic AI for enterprise procurement", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.constructcap.com/articles/investing-in-didero-future-of-global-trade", "title": "Construct Capital | Investing in Didero: Pioneering the Future of Global Trade & Procurement with AI", "publisher": "Construct Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "company": {
+    "name": "Didero",
+    "website": "https://www.didero.ai/",
+    "description": "New York startup selling AI agents that run direct-spend procurement work (supplier follow-ups, POs, sourcing, AP) on top of manufacturers' and distributors' ERPs.",
+    "hq_country": "US",
+    "founded_year": 2023,
+    "sector": "supply_chain_logistics",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Procurement / supply-chain back office rather than the plant floor: agents for planning and replenishment, sourcing and quoting, master data and contracts, PO management, logistics and delivery, AP and supplier performance reporting, running on the customer's ERP (e.g. Epicor at Echelon) and reading supplier emails, WeChat messages, calls, POs and packing lists. Users are procurement, supply-chain and AP teams. 'plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+  "founders": ["Tim Spencer", "Lorenz Pallhuber", "Tom Petit"],
+  "named_customers": ["Footprint", "FABco", "Echelon Supply and Service", "Bishop Lifting", "AGC Chemicals", "Lyka"],
+  "product_summary": "AI agents that sit on a company's existing ERP and inbox and execute direct-spend work: supplier communication and follow-ups, PO creation and tracking, sourcing and quoting, contracts and master data, receiving, invoice / AP processing and supplier reporting. Reads emails, WeChat messages, calls, POs and packing lists; suppliers change nothing.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Didero", "website": "https://www.didero.ai/", "description": "New York startup selling AI agents that run direct-spend procurement work (supplier follow-ups, POs, sourcing, AP) on top of manufacturers' and distributors' ERPs.", "hq_country": "US", "founded_year": 2023, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed ($7M; closed June 2024, announced at launch from stealth on 2024-07-17)",
+      "date": "2024-07-17",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["First Round Capital"],
+      "participants": ["Construct Capital", "AI Grant", "Box Group", "Company Ventures", "Conviction"],
+      "unspecified": [],
+      "pages": [10, 3, 13, 12],
+      "snippet": "The round was led by First Round Capital with participation from Construct Capital,"
+    },
+    {
+      "company": { "name": "Didero", "website": "https://www.didero.ai/", "description": "New York startup selling AI agents that run direct-spend procurement work (supplier follow-ups, POs, sourcing, AP) on top of manufacturers' and distributors' ERPs.", "hq_country": "US", "founded_year": 2023, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-02-12",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Chemistry", "Headline"],
+      "participants": ["M12 (Microsoft's venture fund)"],
+      "unspecified": [],
+      "pages": [2, 11, 12],
+      "snippet": "just raised a $30 million Series A co-led by Chemistry and Headline."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "founders[].role (CEO)",
+      "values": ["Tom Petit is CEO; Tim Spencer is 'product lead and co-founder' (TechCrunch, 2024-07-17)", "Tim Spencer is co-founder and Chief Executive Officer (SiliconANGLE, 2026-02-12)"],
+      "chosen": "All three listed as founders; no CEO field recorded",
+      "reason": "The roles appear to have changed between 2024 and 2026; TechCrunch 2026 gives Spencer no title. The founder list itself agrees across sources."
+    },
+    {
+      "field": "rounds[seed].date",
+      "values": ["2024-07-14 (visible date on Didero's launch post; page metadata says 2026-10-27, likely a site migration)", "2024-07-17 (TechCrunch article and Construct Capital note)", "Closed June 2024 ('The $7 million seed round closed last month', TechCrunch)"],
+      "chosen": "2024-07-17",
+      "reason": "Two independent pages give the announcement date; the close month is kept in stage_raw. Construct Capital's investor file uses the same date."
+    },
+    {
+      "field": "rounds[seed].leads",
+      "values": ["First Round Capital led (TechCrunch 2024; SiliconANGLE 2026 lists First Round first among backers)", "No lead named (Didero launch post; Construct Capital note lists investors without roles)"],
+      "chosen": "First Round Capital",
+      "reason": "TechCrunch states the lead explicitly; the other pages are silent rather than contradictory."
+    }
+  ],
+  "open_items": [
+    "Total raised: $37M by sum of the two disclosed rounds ($7M seed + $30M Series A); SiliconANGLE cites Tracxn for about $37M. No company page states a total.",
+    "Series A: only Chemistry, Headline and M12 named; other participants (e.g. returning seed investors) not stated on any page read. Valuation not disclosed.",
+    "Didero acquired Covalent AI (AI purchasing software; co-founder Erin Yaylali) per its 2025-07-21 post; terms not disclosed. An acquisition by Didero, not a funding round.",
+    "Headcount: no public page read gives one (LinkedIn not used). Careers page says it is hiring in New York.",
+    "Revenue not publicly reported. TechCrunch 2026: 'dozens of customers'; a search-result summary mentioned 'more than 30 customers' but that page was not opened.",
+    "Case-studies page also lists Spot and Tango, Total Home Supply and Novilla, but those names were seen only as URL slugs; not added to named_customers. AGC Chemicals appears as 'AGC Chemicals Americas' in a 2026-03-05 blog post title.",
+    "Pricing not public.",
+    "Did not see WhatsApp or plant-floor users on any page; the only messaging channel named is WeChat (TechCrunch 2026)."
+  ]
+}

@@ -34,3 +34,29 @@ About 32 minutes and 50 fetches per Tier A investor; one research agent per inve
 **Tier B yield.** After four Tier B batches, 8 of 19 profiles have 3 or more sourced rounds. The misses are mostly small funds closed in 2025–26 (TheFounderVC, Hyperstition, Park Rangers Capital, Baobab Ventures, Belief Capital), which have announced 0–2 deals; a Tier B agent now stops at about 15 tool calls per investor and records what exists. Expect well under 200 Tier B investors to reach 3 rounds even with full coverage of the 200; the coverage report counts both.
 
 **Seed-list corrections so far.** Mind Robotics' $900M is two rounds ($500M Series A and $400M); LimX Dynamics' $400M is a six-month total (about $200M round); Pudu's investors are Longgang Financial Holding and Ya Capital, not Longping Financial; River AI's $1.1B combines seed and Series A; Elorian AI has no named lead; Merge Labs has no named lead (OpenAI wrote the largest check, Bain participated); AMI Labs' five co-leads include Bezos Expeditions, and Toyota is on no page read; Inherent's lead structure is contested.
+
+## Competitor discovery (2026-10-30)
+
+Candidates beyond PROJECT_CONTEXT §7, found during investor research or by discovery agents. Unverified until profiled; the page where each was seen is listed.
+
+| Candidate | Domain | What it does (as described) | Seen at | Status |
+|---|---|---|---|---|
+| Didero | didero.ai | AI agents for manufacturing procurement, POs, quoting, AP | construct-capital.json | profiled: direct, plant_ops |
+| Nexxa.ai | nexxa.ai | Agent platform for heavy industry (RFQ, demand planning) | construct-capital.json | profiled: adjacent |
+| Forgepoint | forgepoint.ai | AI agent automating RFQ-to-quote for manufacturers | siliconangle.com (2026-10-14) | to profile |
+| Maneva | maneva.ai | "AI line supervisor" on existing factory cameras | parsers.vc (2026-06-16) | to profile |
+| Edmund | not confirmed | Maintenance root-cause agents down to PLC level (Prague) | inforcapital.com | to profile |
+| Aerchain | not stated | AI-agent procurement platform (Bengaluru) | whalesbook.com | to profile |
+| Uptool | uptool.com | AI quoting for machine and fab shops | uptool.com | to profile |
+| 1Buy.AI | 1buy.ai | AI procurement for electronics makers (Delhi); INR 32.5 Cr (Jan 2026) | india.entrepreneur.com | to profile |
+| IndustrialMind.ai | industrialmind.ai | Agents turning industrial knowledge into workflows | antler-india research; trysignalbase.com | profiled: direct, process_planning |
+| Procol | procol.ai | Procurement and finance agents for Indian manufacturers | blume-ventures.json | profiled: direct, plant_ops |
+| Noetive | not confirmed | Plant AI (Eclipse portfolio) | eclipse-ventures.json | to profile |
+| Vinci | not confirmed | Hardware design tooling (Eclipse portfolio) | eclipse-ventures.json | to profile |
+| Sea12 | not confirmed | AI automation for heavy industry (Also Capital portfolio) | also-capital.json | to profile |
+| Spector.ai | spector.ai | Maintenance and reliability agents; INR 58 Cr (Jan 2026) | inc42.com | to profile |
+| UGX.AI | ugx.ai | Shop-floor data and agents (Gurugram); $1M seed (Nov 2025) | yourstory.com | to profile |
+| ThirdAI Automation | thirdaiautomation.com | Root-cause copilot for chip fabs; $3M (Feb 2026) | inc42.com | to profile |
+| FactoStack | factostack.com | Factory software with quote and PO agents | factostack.com | to profile |
+| Intellithink | intellithink.in | Predictive maintenance; INR 17 Cr (Apr 2026) | newskart | to profile |
+| Workroom Automation | not confirmed | AI planning engine; INR 6.2 Cr (Mar 2026) | Indian Chemical News | to profile |

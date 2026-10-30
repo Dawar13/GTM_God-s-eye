@@ -5,7 +5,7 @@
   "name": "Also Capital",
   "status": "active",
   "researched_at": "2026-10-30",
-  "identity_check": "Confirmed as Also Capital (alsocapital.com; site operated by Also Capital Management LLC per its terms), the hard-tech early-stage firm founded by Managing Partner Mike Annunziata (ex-Farther Farms co-founder, Varda Space board member), with Varda CEO Will Bruey named as a co-founder. Its blog Also Blog Posts (alsoblogposts.com) announces the $21M first fund (2024-10-17) and $50M second fund (2026-02-24). The homepage lists Tandem (Seed) as a portfolio company with the description 'Neutral context layer capturing intent from hardware design decisions', matching our competitor Tandem (tandem.inc). Not ALSO Holding (Swiss IT distributor), not 'Also' the Rivian e-bike spin-off, and not Allos or Aleph-style similarly named funds.",
+  "identity_check": "Confirmed as Also Capital (alsocapital.com; site operated by Also Capital Management LLC per its terms), the hard-tech early-stage firm founded and run by Managing Partner Mike Annunziata (ex-Farther Farms co-founder, Varda Space board member); Varda CEO Will Bruey is named on the site as a co-founder. Its own blog, Also Blog Posts (alsoblogposts.com, linked from the site), announces the $21M first fund (2024-10-17) and the $50M second fund (2026-02-24), matching the leads. The LinkedIn company page (website alsocapital.com) gives New York, NY, and a 2024 blog post places the team in a SoHo NYC office. The homepage lists Tandem (Seed) as 'Neutral context layer capturing intent from hardware design decisions', and tandem.inc/company lists Also Capital among its backers, so this is the investor in our direct competitor Tandem. Not ALSO Holding (Swiss IT distributor), not the micromobility company called Also, and not any 'Also Ventures'-style namesake; no other firm uses alsocapital.com.",
   "pages": [
     { "url": "https://alsocapital.com/", "title": "Also Capital", "publisher": "Also Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
     { "url": "https://alsocapital.com/terms", "title": "Also Capital | Terms", "publisher": "Also Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
@@ -20,19 +20,370 @@
     { "url": "https://www.alsoblogposts.com/p/introducing-our-newest-venture-partner", "title": "Introducing our Newest Venture Partner, Shaurya Luthra", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
     { "url": "https://www.alsoblogposts.com/p/welcoming-brandes-woodall-to-also", "title": "Welcoming Brandes Woodall to Also Capital!", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
     { "url": "https://www.alsoblogposts.com/p/launching-the-2026-ac-summer-scout", "title": "Launching the 2026 AC Summer Scout Fund", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
-    { "url": "https://www.alsoblogposts.com/p/integral-the-privacy-first-healthcare", "title": "Integral: The Privacy-First Healthcare Data Analytics Platform", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" }
+    { "url": "https://www.alsoblogposts.com/p/integral-the-privacy-first-healthcare", "title": "Integral: The Privacy-First Healthcare Data Analytics Platform", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.alsoblogposts.com/p/announcing-the-inaugural-also-capital", "title": "Announcing the Inaugural Also Capital Summer Scout Program", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.alsoblogposts.com/p/i-went-on-a-podcast", "title": "I went on a podcast!", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.linkedin.com/company/also-capital/", "title": "Also Capital | LinkedIn (company page About section)", "publisher": "LinkedIn", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.hardwarefyi.com/q-a-with-mike-annunziata-of-also-capital-2/", "title": "Q&A with Mike Annunziata of Also Capital", "publisher": "HardwareFYI (The Analog Newsletter)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tbpn-digest.vercel.app/story/2026-02-23/also-capital-closes-50m-fund-ii-backing-hard-tech-founders-who-play-to-win-from-day-zero", "title": "Also Capital closes $50M Fund II backing hard tech founders who play to win from day zero", "publisher": "TBPN Digest (unofficial episode summary site)", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://tandem.inc/company", "title": "Company — Tandem", "publisher": "Tandem Intelligence, Inc.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.meshoptical.com/blog/introducing-mesh", "title": "Introducing Mesh", "publisher": "Mesh Optical Technologies", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/?p=724563", "title": "Vital Lyfe raises $24M seed round (SiliconANGLE, 2025-12-16)", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.waterworld.com/smart-water-utility/news/55337862/vital-lyfe-raises-24m-to-scale-off-grid-on-demand-water-making-technology", "title": "Vital Lyfe raises $24M to scale off-grid, on-demand water-making technology", "publisher": "WaterWorld", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://vital-lyfe.com/", "title": "Vital Lyfe", "publisher": "Vital Lyfe", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.satellitetoday.com/finance/2025/04/22/northwood-space-raises-30m-series-a-to-disrupt-satellite-ground-stations", "title": "Northwood Space Raises $30M Series A to Disrupt Satellite Ground Stations", "publisher": "Via Satellite (satellitetoday.com)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://a16z.com/announcement/investing-in-northwood/", "title": "Investing in Northwood", "publisher": "Andreessen Horowitz", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/10/04/detroits-grounded-raises-3-5m-to-fuel-modular-electric-rv-plans/", "title": "Detroit's Grounded raises $3.5M to fuel modular electric RV plans", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.sdxcentral.com/news/ground-station-startup-founded-by-former-disney-actor-raises-63m/", "title": "Ground station startup founded by former Disney actor raises $6.3M", "publisher": "SDxCentral", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.nbcbayarea.com/entertainment/entertainment-news/disney-star-bridgit-mendler-launches-satellite-data-startup-with-6-3m-in-funding/3458938/?amp=1", "title": "Disney star Bridgit Mendler launches satellite data startup with $6.3M in funding", "publisher": "NBC Bay Area", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://venturebeat.com/business/integral-secures-6-9-million-seed-round-led-by-haystack-to-maximize-data-privacy-and-quality/", "title": "Integral secures $6.9 million seed round led by Haystack to maximize data privacy and quality", "publisher": "VentureBeat (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://atlasmotion.com/", "title": "Atlas Motion", "publisher": "Atlas Motion", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.alsoblogposts.com/p/funraising-podcast-with-mat-vogels", "title": "FunRaising Podcast with Mat Vogels @ VC Sheet", "publisher": "Also Blog Posts (Also Capital)", "retrieved_at": "2026-10-30", "kind": "primary" }
   ],
   "facts": {
-    "aliases": { "value": ["Also", "AC", "Also Capital Management LLC"], "pages": [1, 12], "snippet": "This Website is maintained and operated by Also Capital Management LLC" },
-    "type": { "value": "vc", "pages": [0], "snippet": "Mike Annunziata is the Founder & Managing Partner of Also Capital, an early-stage venture firm" },
-    "website": { "value": "https://alsocapital.com", "pages": [0], "snippet": "Catalytic Capital for Founders Who Choose Hard Problems" }
+    "aliases": { "value": ["Also", "AC", "Also Capital Management LLC"], "pages": [1, 12, 10], "snippet": "This Website is maintained and operated by Also Capital Management LLC" },
+    "type": { "value": "vc", "pages": [0], "snippet": "Mike Annunziata is the Founder & Managing Partner of Also Capital, an early-stage venture firm that invests in technically ambitious founders early" },
+    "website": { "value": "https://alsocapital.com", "pages": [0, 16], "snippet": "Catalytic Capital for Founders Who Choose Hard Problems" },
+    "linkedin": { "value": "https://www.linkedin.com/company/also-capital/", "pages": [16], "snippet": "Catalytic capital for founders solving hard problems." },
+    "hq_city": { "value": "New York", "pages": [14, 16, 12], "snippet": "All investors will be located in person with me in our SoHo NYC office" },
+    "hq_country": { "value": "US", "pages": [14, 16], "snippet": "All investors will be located in person with me in our SoHo NYC office" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [15, 4, 17, 0, 18], "snippet": "Also Capital stands out by leading pre-seed rounds with checks up to $1M and reserving $500k-$1M for follow-on investments at seed and beyond" },
+    "check_max_usd": { "value": 1000000, "pages": [15], "snippet": "Also Capital stands out by leading pre-seed rounds with checks up to $1M and reserving $500k-$1M for follow-on investments at seed and beyond" },
+    "leads": { "value": true, "pages": [5, 4, 15, 17, 26], "snippet": "We lead ~10 Formation-stage investments per fund." },
+    "thesis_text": { "value": "Concentrated hard-tech firm that writes early, often lead, checks at inception and pre-seed into technically credible founders choosing hard, durable engineering problems in space, energy, defense, advanced manufacturing, robotics and AI. Backs about 15 formation-stage companies per fund and helps with first hires, early technical and commercial tradeoffs and follow-on raises; Fund II centres on compute, communication and autonomy.", "pages": [0, 3, 4, 5], "snippet": "Founders that intentionally pick hard problems outperform." },
+    "stated_sectors": { "value": ["space", "climate_energy", "defense_dual_use", "ai_infra", "ai_apps_agents", "industrial_manufacturing", "robotics_physical_ai", "health_bio", "hardware_deeptech"], "pages": [0, 2, 3], "snippet": "Filter by All Bio Scout Advanced Manufacturing Defense AI Energy Space Robotics Healthcare" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0, 7, 31], "snippet": "something that pushes back against entropy rather than rides the latest wave, we would like to hear from you." },
+    "requires_us_entity": { "value": "unknown", "pages": [15, 0], "snippet": "with a mission to strengthen America's leadership in transformative technology." },
+    "portfolio_count_reported": { "value": 30, "pages": [0], "snippet": "Since 2019 we've invested in over 30 companies that have collectively raised over $2B" }
   },
   "funds": [
-    { "name": "Also Capital Fund I", "number": "I", "size_original": 21000000, "currency_original": "USD", "close_date": "2024-10-17", "date_precision": "day", "pages": [2, 3], "snippet": "Today I'm proud to announce Also Capital's first fund, an $21M vehicle" },
-    { "name": "Also Capital Fund II", "number": "II", "size_original": 50000000, "currency_original": "USD", "close_date": "2026-02-23", "date_precision": "day", "pages": [3], "snippet": "Yesterday, we sat down with Jordi and John on TBPN to officially announce the close of our $50M sophomore fund." }
+    { "name": "Also Capital Fund I", "number": "I", "size_original": 21000000, "currency_original": "USD", "close_date": "2024-10-17", "date_precision": "day", "pages": [2, 3], "snippet": "Today I'm proud to announce Also Capital's first fund, an $21M vehicle catalyzing the next generation of exceptional hard tech founders." },
+    { "name": "Also Capital Fund II", "number": "II", "size_original": 50000000, "currency_original": "USD", "close_date": "2026-02-23", "date_precision": "day", "pages": [3, 18], "snippet": "Yesterday, we sat down with Jordi and John on TBPN to officially announce the close of our $50M sophomore fund." }
   ],
-  "partners": [],
-  "rounds": [],
-  "conflicts": [],
-  "open_items": []
+  "partners": [
+    { "name": "Mike Annunziata", "title": "Founder & Managing Partner", "focus_sectors": ["hardware_deeptech", "space", "industrial_manufacturing"], "linkedin_url": null, "pages": [0, 4, 17] },
+    { "name": "Brandes Woodall", "title": "Analyst", "focus_sectors": [], "linkedin_url": "https://www.linkedin.com/in/brandes-woodall-b124731b9/", "pages": [0, 11] },
+    { "name": "Will Bruey", "title": "Venture Partner (co-founder of Also Capital; CEO, Varda Space Industries)", "focus_sectors": ["space"], "linkedin_url": "https://www.linkedin.com/in/will-bruey-8a2b5040/", "pages": [0, 10, 4] },
+    { "name": "Colin Smith", "title": "Venture Partner (founding team, Vast)", "focus_sectors": ["space"], "linkedin_url": "https://www.linkedin.com/in/colinfsmith/", "pages": [0, 10] },
+    { "name": "Jamie Cox", "title": "Venture Partner (co-founder & CSO, Fluidstack)", "focus_sectors": ["ai_infra"], "linkedin_url": "https://www.linkedin.com/in/jamie-cox-27b197141/", "pages": [0, 10] },
+    { "name": "Daniela Perlein", "title": "Venture Partner (co-founder, goTenna)", "focus_sectors": ["hardware_deeptech", "defense_dual_use"], "linkedin_url": "https://www.linkedin.com/in/danielaperlein/", "pages": [0, 10] },
+    { "name": "Shaurya Luthra", "title": "Venture Partner (co-founder & Head of Digital, Northwood Space)", "focus_sectors": ["space"], "linkedin_url": "https://www.linkedin.com/in/shauryaluthra/", "pages": [0, 10] }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Atlas Motion",
+        "website": "https://atlasmotion.com",
+        "description": "Designs and manufactures motors for drones and robots on its own production lines, built in Southern California with volume production in the Philippines.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "source",
+        "layer": "robotics"
+      },
+      "stage": "seed",
+      "stage_raw": "$11.5M seed; Also's post names participants but not the lead",
+      "date": "2026-08-06",
+      "date_precision": "day",
+      "amount_original": 11500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Greycroft", "Sunflower", "Ravelin", "Jai Malik (AMCA)", "Scott Sanders (Forterra)"],
+      "unspecified": ["Also Capital"],
+      "pages": [5, 30],
+      "snippet": "Atlas Motion, which today announced their $11.5M seed, with Greycroft, Sunflower, Ravelin, and angels Jai Malik (AMCA) and Scott Sanders (Forterra) participating."
+    },
+    {
+      "company": {
+        "name": "Mesh Optical",
+        "website": "https://www.meshoptical.com",
+        "description": "Ex-SpaceX team designing and manufacturing, in Los Angeles, low-power linear optical transceivers (Alpha C1, 1.6 Tb/s) for AI data centres.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "'$50M in funding' (Also) / 'over $50 million' (Mesh); round name not given",
+      "date": "2026-02-17",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Thrive Capital"],
+      "participants": ["Banner VC"],
+      "unspecified": ["Also Capital"],
+      "pages": [6, 20],
+      "snippet": "earlier this morning Mesh announced $50M in funding, led by Thrive Capital, with participation from Banner VC."
+    },
+    {
+      "company": {
+        "name": "Vital Lyfe",
+        "website": "https://vital-lyfe.com",
+        "description": "Ex-SpaceX founders building portable, autonomous desalination water-makers that turn any natural water source, including seawater, into drinking water.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "$24M financing: 'more than $18 million in seed funding' plus committed debt (WaterWorld); '$24 million in seed funding' (SiliconANGLE)",
+      "date": "2025-12-16",
+      "date_precision": "day",
+      "amount_original": 24000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Interlagos", "General Catalyst"],
+      "participants": ["Generational Partners", "Cantos", "Space VC", "Also Capital"],
+      "unspecified": [],
+      "pages": [22, 21, 23],
+      "snippet": "The round was led by Interlagos and General Catalyst, with participation from Generational Partners, Cantos, Space VC, and Also Capital."
+    },
+    {
+      "company": {
+        "name": "AndrenaM",
+        "website": "https://www.andrenam.com",
+        "description": "Low-cost persistent maritime monitoring: distributed acoustic sensing and data-collection networks protecting maritime infrastructure.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "oversubscribed $10M seed; Also, an existing investor, 'double down alongside' First Round",
+      "date": "2025-06-16",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["First Round Capital"],
+      "participants": ["Long Journey", "Homebrew", "Banter", "Wave Function", "201.vc", "Also Capital"],
+      "unspecified": [],
+      "pages": [7],
+      "snippet": "led by Meka Asonye at First Round Capital with participation from Long Journey, Homebrew, and existing investors Banter, Wave Function, and 201.vc."
+    },
+    {
+      "company": {
+        "name": "Northwood Space",
+        "website": "https://www.northwoodspace.io/",
+        "description": "Builds a software-defined, phased-array satellite ground station network to raise satellite downlink capacity.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "space",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-04-22",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Alpine Space Ventures", "Andreessen Horowitz"],
+      "participants": ["Also Capital", "Founders Fund", "StepStone Group", "Humba Ventures", "Banter Capital", "BoxGroup", "Balerion Space Ventures", "Long Journey", "Aabid Razvi", "Evan Loomis", "Adrian Aoun"],
+      "unspecified": [],
+      "pages": [8, 24, 25, 10],
+      "snippet": "Northwood announced their oversubscribed $30M Series A, co-led by a16z and Alpine Space Ventures. Also Capital doubled down significantly"
+    },
+    {
+      "company": {
+        "name": "Grounded",
+        "website": "https://www.groundedrvs.com",
+        "description": "Detroit startup building modular electric RVs and upfitting electric work vans for commercial and public-sector fleets.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "mobility_ev",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed, co-led by Also Capital and The 81 Collection (TechCrunch)",
+      "date": "2024-10-04",
+      "date_precision": "day",
+      "amount_original": 3500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Also Capital", "The 81 Collection"],
+      "participants": ["Side Door Ventures", "Corey Moelis"],
+      "unspecified": [],
+      "pages": [9, 26],
+      "snippet": "We're excited to join Vijen, Alex, and The 81 Collection as part of this $3.5M pre-seed financing."
+    },
+    {
+      "company": {
+        "name": "Northwood Space",
+        "website": "https://www.northwoodspace.io/",
+        "description": "Builds a software-defined, phased-array satellite ground station network to raise satellite downlink capacity.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "space",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "$6.3M seed 'from Founders Fund and Andreessen Horowitz' (no lead wording)",
+      "date": "2024-02-20",
+      "date_precision": "day",
+      "amount_original": 6300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Also Capital", "Long Journey Ventures", "BoxGroup", "Humba Ventures"],
+      "unspecified": ["Founders Fund", "Andreessen Horowitz"],
+      "pages": [27, 28, 10],
+      "snippet": "with participation from Also Capital, Long Journey Ventures, BoxGroup, and Humba Ventures."
+    },
+    {
+      "company": {
+        "name": "Integral",
+        "website": "https://useintegral.com/",
+        "description": "Privacy-compliance software that automates de-identification and expert-determination certification so healthcare data can be used for analytics.",
+        "hq_country": null,
+        "founded_year": 2022,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "oversubscribed seed",
+      "date": "2023-09-05",
+      "date_precision": "day",
+      "amount_original": 6900000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Haystack", "The General Partnership", "Virtue Ventures"],
+      "participants": ["Also Capital", "Array Ventures", "Caffeinated Capital", "GreatPoint Ventures", "LiveRamp Ventures", "Venrex"],
+      "unspecified": [],
+      "pages": [29, 13],
+      "snippet": "with additional support from Also Capital, Array Ventures, Caffeinated Capital, GreatPoint Ventures, LiveRamp Ventures, and Venrex."
+    },
+    {
+      "company": {
+        "name": "Integral",
+        "website": "https://useintegral.com/",
+        "description": "Privacy-compliance software that automates de-identification and expert-determination certification so healthcare data can be used for analytics.",
+        "hq_country": null,
+        "founded_year": 2022,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed (amount and co-investors not stated)",
+      "date": "2022-08",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Also Capital"],
+      "pages": [13],
+      "snippet": "We first met Shubh in August 2022 when we invested in his pre-seed round"
+    },
+    {
+      "company": {
+        "name": "Tandem",
+        "website": "https://tandem.inc",
+        "description": "AI context layer and agents that keep design intent, requirements and CAD changes linked for hardware engineering teams.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "Not attributed to a round: Tandem lists Also Capital among its backers; Also's homepage lists Tandem at current stage 'Seed'. No page describes Also's round.",
+      "date": null,
+      "date_precision": null,
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Also Capital"],
+      "pages": [19, 0],
+      "snippet": "Backed by the best Foundation Capital Venture Capital Also Capital Venture Capital Antler Venture Capital Genius Ventures Venture Capital"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "funds.I size_original",
+      "values": [
+        "$21M (Also Capital fund announcement, 2024-10-17)",
+        "$22M ('a $22M fund', Slice Pod intro reposted on Also's blog, 2024-12-05)",
+        "$22M 'first fund in 2023' (TBPN Digest, unofficial summary, database-grade)"
+      ],
+      "chosen": "21000000",
+      "reason": "The firm's own fund announcement; the $22M figures are third-party descriptions and may count later commitments or rounding."
+    },
+    {
+      "field": "funds.I close_date",
+      "values": [
+        "2024-10-17 announcement of the $21M first fund",
+        "'Our first fund, a 2023 vintage' (Fund II post, 2026-02-24)"
+      ],
+      "chosen": "2024-10-17",
+      "reason": "Announcement date of the close; 2023 is the vintage year (first investments), not the close."
+    },
+    {
+      "field": "check_max_usd",
+      "values": [
+        "'leading pre-seed rounds with checks up to $500k' plus $500k-$1M follow-on reserve (master plan, 2023-09-20)",
+        "'leading pre-seed rounds with checks up to $1M' plus $500k-$1M reserve (Slice Pod intro on Also's blog, 2024-12-05, after Fund I closed)"
+      ],
+      "chosen": "1000000",
+      "reason": "Latest stated figure and the one that applies to the $21M Fund I; nothing published yet for the $50M Fund II."
+    },
+    {
+      "field": "stages",
+      "values": [
+        "pre-seed lead checks with follow-on at seed and beyond (Also blog, 2023 and 2024)",
+        "'inception, pre-seed, and seed' (TBPN Digest)",
+        "'investing ... from pre-seed to Series B' (Slice Pod intro, counting follow-ons)",
+        "'formation-stage' / 'Inception' (homepage)"
+      ],
+      "chosen": "pre_seed, seed",
+      "reason": "Entry stage is inception / pre-seed with seed follow-ons; Series A/B appearances are follow-on support (e.g. Northwood Series A), not entry checks."
+    },
+    {
+      "field": "portfolio_count_reported",
+      "values": [
+        "'over 30 companies' since 2019 (homepage, 2026)",
+        "'14 core investments' in Fund I (Fund II post)",
+        "'over $4M to work in 19 companies' over five years (master plan, 2023)",
+        "27 named companies plus 12 stealth entries on the homepage, including scout-fund deals"
+      ],
+      "chosen": "30",
+      "reason": "Firm's own current total, recorded as the stated lower bound; Fund I alone is 14 core deals."
+    },
+    {
+      "field": "rounds.Vital Lyfe amount/stage",
+      "values": [
+        "$24M in seed funding (SiliconANGLE, 2025-12-16)",
+        "$24M financing including more than $18M of seed funding, the rest committed debt (WaterWorld, 2025-12-16)"
+      ],
+      "chosen": "24000000, stage seed",
+      "reason": "Both agree on the $24M headline; the equity seed portion (>$18M) is noted in stage_raw."
+    }
+  ],
+  "open_items": [
+    "Tandem (direct competitor): Also Capital appears on tandem.inc/company and Tandem is on Also's homepage (current stage 'Seed'), but no page says which Tandem round Also joined, when, or for how much; one search found no press. Recorded as an undisclosed round. Tandem's seed ($4.9M) was led by Foundation Capital per tandem.json.",
+    "No founder application URL: the homepage 'Get in Touch' button is a mailto link to a general inbox (not recorded). ClickUp forms on the blog are for scout / analyst / chief-of-staff hiring, not founders. Cold inbound inferred from the homepage invitation, AndrenaM's founders having 'cold emailed us', and the analyst's podcast on 'what makes a great cold email'.",
+    "Nothing found on investing in Indian founders. requires_us_entity: not stated; the stated mission is American hard-tech leadership, and Atlas Motion runs volume production in the Philippines.",
+    "Check size for the $50M Fund II is not published; the $1M cap dates from Dec 2024 (Fund I). The homepage now says each fund backs 'roughly 15 formation-stage companies'; the Atlas post says 'We lead ~10 Formation-stage investments per fund.'",
+    "SEC EDGAR refused the 'CapitalAtlas research' User-Agent (undeclared automated tool), so Form D filings (fund legal names, exact final-close dates and amounts) were not checked. Fund II close date is the TBPN announcement day (2026-02-23), the day before the blog post. A $100K 'AC Summer Scout Fund' pool runs each summer; not recorded as a fund.",
+    "LinkedIn gives founded 2018; the homepage says investing since 2019; the firm went full-time in Sept 2023 (master plan). Mike Annunziata's personal LinkedIn is not linked from the firm's pages (site icons are '#' placeholders), so it is null.",
+    "Atlas Motion: Also's post doesn't name the lead (Also kept in 'unspecified'); the Forbes article it links returned 403.",
+    "Mesh Optical: Also's post announces its investment on the day of the $50M Thrive-led raise and says it backed Mesh 'since day one', but not which round it joined (kept in 'unspecified'). Surprise: the homepage now marks Mesh Optical 'Acquired'; acquirer and date not found.",
+    "Earlier checks not described round by round: AndrenaM initial investment 'last summer' (2024); Northwood 'initial investment ... in 2023' (seed announced 2024-02-20). AnySignal seed press release (Business Wire 2023-10-16, everythingrf) returned 403.",
+    "Portfolio companies with no page naming Also in a round: Sea12 (NYC, AI back-office automation for heavy industry; $25M Series A led by Caffeinated Capital per The SaaS News, Also not named; possible adjacent competitor to Utopian Autonomy), Observed Matter (X-ray inspection for high-stakes manufacturing), River Technologies, 4D Surgical, Möbius Industries, Nexa Labs, Polyphron, Neion, Conductor, ShipIn Systems, Fluidstack, K2 Space, Radiant, Varda, Float Health, plus 12 stealth companies (one described as 'Physical backbone for the manufacturing operating system'). Search budget ran out.",
+    "Founded year not stated for Atlas Motion, Mesh Optical, Vital Lyfe (SiliconANGLE says co-founded 'last year', i.e. likely 2024) or AndrenaM; AndrenaM and Integral HQ not stated.",
+    "Partner focus_sectors are classified from bios (model); the firm does not assign coverage. Venture Partners are operators at portfolio companies, not investing partners; Brandes Woodall (Analyst) states no sector focus."
+  ]
 }

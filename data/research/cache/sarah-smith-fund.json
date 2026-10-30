@@ -1,0 +1,72 @@
+{
+  "key": "sarah-smith-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Sarah Smith Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as sarahsmith.fund, a solo-GP pre-seed and seed fund led by Sarah Smith (ex-Bain Capital Ventures per TechCrunch coverage), focused on the Stanford ecosystem; site portfolio includes Casca and TrueMeter. Professional facts only. Not any other person named Sarah Smith.",
+  "pages": [
+    { "url": "https://www.sarahsmith.fund", "title": "Sarah Smith Fund", "publisher": "Sarah Smith Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/07/11/sarah-smith-launches-16m-fund-says-ai-can-unlock-so-much-for-solo-gps-like-herself/", "title": "Sarah Smith launches $16M fund, says AI can 'unlock' so much for solo GPs like herself", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.thesaasnews.com/news/truemeter-raises-4-million-in-seed-round", "title": "TrueMeter raises $4 million in seed round", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "A Differentiated Pre-Seed & Seed Fund." },
+    "website": { "value": "https://www.sarahsmith.fund", "pages": [0], "snippet": "Investing early in Founder CEOs" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "A Differentiated Pre-Seed & Seed Fund." },
+    "check_min_usd": { "value": 250000, "pages": [0], "snippet": "The fund invests $250K+" },
+    "thesis_text": {
+      "value": "Backs intensely driven founder CEOs early, pairing capital with people-operations support, with a Stanford-ecosystem focus and fast solo-GP decisions.",
+      "pages": [0, 1],
+      "snippet": "Investing early in Founder CEOs"
+    }
+  },
+  "funds": [
+    {
+      "name": "Sarah Smith Fund I",
+      "number": "I",
+      "size_original": 16000000,
+      "currency_original": "USD",
+      "close_date": "2025-07-10",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "announced Thursday the final closing of a $16 million Fund I."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "TrueMeter",
+        "website": null,
+        "description": "AI platform helping multi-location businesses such as restaurants and retailers cut energy costs through rate optimisation, consolidated billing and operational insights.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-09",
+      "date_precision": "month",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Ulu Ventures"],
+      "participants": ["Pear VC", "e2.vc", "RiverPark Ventures", "Flex Capital", "Sarah Smith Fund", "Cyan Ventures", "Costanoa Ventures", "Sand Hill Angels"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The round was led by Ulu Ventures, with participation from Pear VC, e2.vc, RiverPark Ventures, Flex Capital, Sarah Smith Fund"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ not stated for the fund; the site says the GP lives in Menlo Park (personal, not recorded as firm HQ) and TechCrunch says the fund is 'doubling down on Stanford campus'. Not recorded.",
+    "Only 1 round recorded. Casca Series A (Aug 2025, Canapi lead) is tagged to the fund by FinTech Global but the article text does not list it; Casca $3.9M pre-seed (Feb 2024) seen on an aggregator only. The site lists 50 portfolio companies (Casca, Rowspace, Pika, Skyfire and others) but no round pages naming the fund were found.",
+    "Round date is month precision (September 2025); aggregators vary 09-01 to 09-11. Business Wire release returned 403.",
+    "Fund close date 2025-07-10 inferred: TechCrunch (2025-07-11) says 'announced Thursday'. Lead list said 2025-07-10. LPs named by TechCrunch: Pear VC, Ulu Ventures, Verdis Investment Management.",
+    "Application process not described on the site; check size recorded as $250K+ (minimum only)."
+  ]
+}

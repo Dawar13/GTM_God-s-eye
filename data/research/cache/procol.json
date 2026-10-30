@@ -1,0 +1,334 @@
+{
+  "key": "procol",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Procol (procol.ai; procol.io and procol.in redirect there), the Gurugram procurement-software company run by Procol Tech Pvt. Ltd and founded in 2018 by Gaurav Baheti and Sumit Mendiratta. The company's about page (2018 founding in Gurugram, Blume, Sequoia Surge, Y Combinator and Beenext as early backers, the 2022 ₹51 crore round), Blume Ventures' October 2026 portfolio essay, Inc42 and Mint (September 2022 Series A) and Inc42's company profile all describe the same company and founders. Category set to 'direct' (not in the PROJECT_CONTEXT §7 seed list; candidate found through Blume Ventures' portfolio): Procol sells autonomous procurement agents (intake, sourcing with negotiation and supplier discovery, auto-award, should-cost, supplier onboarding and risk, PO and AP) to Indian enterprises with manufacturing as its first listed industry (Tata Group, AM/NS India, Apollo Tyres, Havells, Dixon), and it offers RFQ and BOM generator tools. That is Utopian Autonomy's procurement / RFQ wedge in the same home market, and Blume's essay says the business began by moving buyers' WhatsApp-based awarding onto software. This follows the precedent for Didero and Galvant. Differences: Procol is a horizontal source-to-pay and accounts-payable suite sold to procurement and finance leaders across all industries (retail, real estate, pharma, IT), used through a web app and ERP integrations; it does not touch maintenance, process stability or engineering drawings, and no WhatsApp channel for plant staff was seen on its site.",
+  "pages": [
+    {
+      "url": "https://www.procol.ai/",
+      "title": "Agentic AI for Procurement & Finance | Procol AI",
+      "publisher": "Procol",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.procol.ai/about/",
+      "title": "About Procol",
+      "publisher": "Procol",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.procol.ai/customers/",
+      "title": "Customer Success Stories | Transforming Procurement Excellence | Procol",
+      "publisher": "Procol",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.procol.ai/pricing/",
+      "title": "Procol pricing",
+      "publisher": "Procol",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://blume.vc/commentaries/how-procol-took-procurement-from-whatsapp-to-ai-agents",
+      "title": "How Procol Took Procurement From WhatsApp to AI Agents",
+      "publisher": "Blume Ventures",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://inc42.com/buzz/supply-chain-startup-procol-secures-6-mn-to-help-digitise-procurement-processes/",
+      "title": "Logistics Startup Procol Secures $6 Mn+ To Help Digitise Procurement Processes",
+      "publisher": "Inc42",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.livemint.com/companies/start-ups/procol-raises-capital-from-gmo-venture-partners-sequoia-blume-ventures-11663064792587.html",
+      "title": "Procol raises capital from GMO Venture Partners, Sequoia, Blume Ventures",
+      "publisher": "Mint",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://inc42.com/company/procol/funding/",
+      "title": "Procol Funding 2026 – Total Funding, Rounds & Investors (Inc42 company profile)",
+      "publisher": "Inc42",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://inc42.com/company/procol/",
+      "title": "Procol (Inc42 company profile)",
+      "publisher": "Inc42",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://inc42.com/company/procol/financials/",
+      "title": "Procol Financials (Inc42 company profile)",
+      "publisher": "Inc42",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    },
+    {
+      "url": "https://inc42.com/startups/can-surge-backed-procols-middlemen-bidding-tech-fix-agri-procurement/",
+      "title": "Can Sequoia Surge-Backed Procol's 'Middlemen' Bidding Platform Fix Inefficient Agri Procurement?",
+      "publisher": "Inc42",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://entrackr.com/2022/06/y-combinator-and-surge-backed-procol-raises-5-5-mn-in-a-new-round/",
+      "title": "Y Combinator and Surge-backed Procol raises $5.5 Mn in a new round",
+      "publisher": "Entrackr",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://news.ventureintelligence.com/private-equity/b2b-agro-commodities-marketplace-procol-raises-%245.5-m-from-surge%2C-blume%2C-others",
+      "title": "B2B agro commodities marketplace Procol raises $5.5 M from Surge, Blume, others",
+      "publisher": "Venture Intelligence (summary of Entrackr)",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[seed 2019].leads",
+      "values": [
+        "Blume Ventures led, Rainmatter joining in (Blume Ventures essay)",
+        "'led by VC firm Blume Ventures and Rainmatter Capital' (Mint, 2022)"
+      ],
+      "chosen": "Lead Blume Ventures; Rainmatter as participant",
+      "reason": "Blume's own account is more specific; Mint's phrasing can be read as naming both investors rather than a co-lead."
+    },
+    {
+      "field": "rounds[Series A 2022]",
+      "values": [
+        "One Series A of ₹51 crore announced 13 Sep 2022 (Inc42 news: $6.4 Mn; Mint: $6 million; company timeline: '₹51 crore raised' in 2022)",
+        "Entrackr (17 Jun 2022, from RoC filings): Rs 43 crore ($5.5 million) via pre-Series A CCPS, 'The Series A round appears to be an ongoing one'",
+        "Inc42 company database: two 'Series A' rows, 16 June 2022 ($5.52 Mn, Blume +6) and 12 Sept 2022 ($6.41 Mn, Blume +15)"
+      ],
+      "chosen": "One Series A of ₹51 crore, September 2022",
+      "reason": "Entrackr says the June allotment was part of an ongoing round, and the company's timeline and the September press describe a single ₹51 crore round. The June rows are treated as the first tranche, not a separate round."
+    },
+    {
+      "field": "total raised",
+      "values": [
+        "$16.92 Mn+ across 4 rounds (Inc42 company database)",
+        "'close to $11 million to date' as of June 2022, including the $1M 2019 seed and a $100K Y Combinator grant (Entrackr)",
+        "About $11.4M from the rounds recorded here ($1M 2019 seed, $4M July 2020, ₹51 crore 2022 Series A)"
+      ],
+      "chosen": "Rounds recorded individually; roughly $11M+ in total",
+      "reason": "The database total appears to count the 2022 Series A twice (June and September rows); Entrackr's running total and the recorded rounds agree on about $11M."
+    },
+    {
+      "field": "headcount_est",
+      "values": [
+        "245 (Inc42 profile header 'Employee count: 245')",
+        "135 (Inc42 profile FAQ: 'it now employs 135 individuals')"
+      ],
+      "chosen": "245",
+      "reason": "The header figure is the profile's current count; the FAQ text appears older. Both are approximate database figures."
+    },
+    {
+      "field": "rounds[2020 round].date",
+      "values": [
+        "January 2020: 'Sequoia's Surge programme (now Peak XV) came in with its third cohort in January 2020' (Blume essay)",
+        "July 2020: Inc42 (Sep 2020), Entrackr (Jun 2022) and Inc42 database (13 July 2020)"
+      ],
+      "chosen": "2020-07",
+      "reason": "Three sources date the $4M round to July 2020; Blume's January date is when Procol joined the Surge cohort, and the cheque may have closed later."
+    }
+  ],
+  "open_items": [
+    "Y Combinator: Entrackr (Jun 2022) reports a '$100K grant from Y Combinator in 2018' and the company's about page lists Y Combinator among 2019 backers; no YC page was read, and a grant is not recorded as an equity round.",
+    "Revenue not recorded: Inc42's database shows ₹35.6 Cr in FY23 and ₹9.1 Cr in FY24 (net loss ₹15.4 Cr), taken from filings, but no press article reporting these figures was read (TheKredible returned HTTP 530). The FY24 fall is consistent with Blume's account that the commodity auction business was shut down; Blume also says revenue grew 5x in two years (no figure). No FY25 figures found.",
+    "No public pricing: the pricing page offers module-based custom quotes only.",
+    "No funding after September 2022 found on the company's site, Inc42's database or in search results.",
+    "The Entrackr July 2020 original report on the $4M round was not located; the round rests on Inc42 (Sep 2020), Entrackr's 2022 recap and the Inc42 database.",
+    "Headcount is database-only (Inc42). LinkedIn not used.",
+    "Customers: the customers page names customers by industry and case study; the home page also shows logos. Earlier press (Inc42 2020, Mint 2022) names Haldiram's, Big Basket, Future Group, Dalmia Bharat, Havells, Mrs Bectors, Emami, Zetwerk and Tata BigBasket."
+  ],
+  "company": {
+    "name": "Procol",
+    "website": "https://www.procol.ai",
+    "description": "Gurugram-founded procurement platform whose AI agents run sourcing, negotiation, supplier management, purchase orders and accounts payable for enterprises, many of them Indian manufacturers.",
+    "hq_country": "IN",
+    "founded_year": 2018,
+    "sector": "ai_apps_agents",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Procurement / source-to-pay back office rather than the plant floor (no supply-chain layer in the taxonomy; plant_ops is the nearest fit, as for Didero and Galvant). Agent suites: Guided Intake, Autonomous Sourcing (demand aggregation, negotiation, supplier discovery, auto-award, bid analysis, should-cost), Supplier Risk & Monitoring (onboarding, due diligence, scorecards), Accounts Payable Concierge (invoice capture and matching, payments), AI Spend Control Tower and an orchestration engine, branded 'Clara'. Also eAuction, vendor portal and free RFQ, RFP, BOM and PO generators. Started as a commodity auction platform for food companies before rebuilding as enterprise software.",
+  "founders": [
+    "Gaurav Baheti",
+    "Sumit Mendiratta"
+  ],
+  "named_customers": [
+    "Tata Group",
+    "AM/NS India",
+    "Apollo Tyres",
+    "Havells",
+    "Dixon Technologies",
+    "Škoda",
+    "Ralson Tires",
+    "India Nippon Electricals",
+    "Diffusion Engineers",
+    "Hershey's",
+    "Dr. Oetker",
+    "Haldiram's",
+    "Emami",
+    "Gopal Snacks",
+    "Reliance Retail",
+    "IKEA",
+    "Noon",
+    "bigbasket",
+    "Aditya Birla Group",
+    "Saint-Gobain",
+    "Signature Global",
+    "M3M",
+    "Dr. Reddy's",
+    "Zydus",
+    "Pulcra Chemicals",
+    "Zuari FarmHub",
+    "Quippo Oil & Gas Infrastructure",
+    "Dalmia Bharat",
+    "Mrs Bectors",
+    "Zetwerk",
+    "Future Group"
+  ],
+  "product_summary": "Agentic source-to-pay platform: AI agents (branded Clara) handle purchase intake, sourcing events and e-auctions, supplier negotiation and discovery, award decisions, supplier onboarding and risk checks, purchase orders, invoice matching and payments, with spend analytics, under customer-set policies and integrated with ERPs such as SAP, Oracle and Tally.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 245,
+    "pages": [
+      8
+    ],
+    "snippet": "Employee count: 245 (approximate: Inc42 database profile header)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Procol",
+        "website": "https://www.procol.ai",
+        "description": "Gurugram procurement platform, then a commodity auction / e-sourcing marketplace.",
+        "hq_country": "IN",
+        "founded_year": 2018,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed, $1 million (mid-2019 per Blume; 16 July 2019 per Inc42 database)",
+      "date": "2019-07",
+      "date_precision": "month",
+      "amount_original": 1000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Blume Ventures"
+      ],
+      "participants": [
+        "Rainmatter"
+      ],
+      "unspecified": [],
+      "pages": [
+        4,
+        6,
+        7
+      ],
+      "snippet": "Blume led Procol's $1 million seed round in mid-2019, with Rainmatter joining in."
+    },
+    {
+      "company": {
+        "name": "Procol",
+        "website": "https://www.procol.ai",
+        "description": "Gurugram procurement platform, then a commodity auction / e-sourcing marketplace.",
+        "hq_country": "IN",
+        "founded_year": 2018,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed per Inc42 database (13 July 2020, $4.00 Mn); press gives no stage label. Led by Sequoia Surge (Inc42, Sep 2020)",
+      "date": "2020-07",
+      "date_precision": "month",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Sequoia Surge"
+      ],
+      "participants": [
+        "Beenext",
+        "Blume Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        10,
+        11,
+        7,
+        4
+      ],
+      "snippet": "In July, the company raised $4 Mn led by Sequoia Surge, alongside Singapore-based venture capital firm Beenext."
+    },
+    {
+      "company": {
+        "name": "Procol",
+        "website": "https://www.procol.ai",
+        "description": "Gurugram procurement software start-up for manufacturing companies' sourcing and their SME supplier base.",
+        "hq_country": "IN",
+        "founded_year": 2018,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A, ₹51 crore announced 13 Sep 2022 (Inc42: $6.4 Mn; Mint: $6 million); no lead named. Entrackr reported a first allotment in June 2022 of 1,547 pre-Series A CCPS raising Rs 43 crore ($5.5M) from Surge, Blume, Beenext, GMO Fintech, Vistra ITCL and others",
+      "date": "2022-09-13",
+      "date_precision": "day",
+      "amount_original": 510000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [
+        "Blume Ventures",
+        "Beenext",
+        "Sequoia Surge",
+        "Kunal Shah",
+        "Mars Shot Ventures",
+        "Deb Deep Sengupta",
+        "Srinath (Zetwerk)",
+        "Ashish Dave",
+        "Ankush Grover",
+        "Aaryaman Vir Shah",
+        "Ankit Sethi"
+      ],
+      "unspecified": [
+        "GMO Venture Partners",
+        "Alarko Ventures",
+        "Esas Ventures",
+        "FounderBank Capital",
+        "Anchorage Capital"
+      ],
+      "pages": [
+        5,
+        6,
+        11,
+        1,
+        7,
+        12
+      ],
+      "snippet": "secured Series A funding of ₹51 crore ($6 million) from GMO Venture Partners, Alarko Ventures, Esas Ventures, FounderBank Capital and Anchorage Capital."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "key": "cambrian-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cambrian Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cambrian.vc, the solo-GP early-stage fintech fund of Rex Salisbury (former a16z investor), San Francisco; TechCrunch 2025-07-16 covers its second $20M fund. Not Cambrian Bioworks, not Cambrian (AI/other startups).",
+  "pages": [
+    { "url": "https://www.cambrian.vc", "title": "Cambrian Ventures", "publisher": "Cambrian Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/07/16/rex-salisburys-cambrian-ventures-raises-new-fund-bucking-fintech-slowdown", "title": "Rex Salisbury's Cambrian Ventures raises new fund, bucking fintech slowdown", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/cyphlens-3-8-million-funding/amp/", "title": "Cyphlens: $3.8 Million Seed Round Raised To Scale Visual Encryption For Enterprise Data Protection", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "launching with $20 million in committed capital" },
+    "website": { "value": "https://www.cambrian.vc", "pages": [0], "snippet": "Capital x community for early-stage fintech entrepreneurs." },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "San Francisco, with an office in Jackson Square" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "San Francisco, with an office in Jackson Square" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 1], "snippet": "pre-seed and seed-stage startups" },
+    "check_min_usd": { "value": 300000, "pages": [0], "snippet": "$300k to $1mm+" },
+    "check_max_usd": { "value": 1000000, "pages": [0], "snippet": "$300k to $1mm+" },
+    "thesis_text": {
+      "value": "Solo-GP fund pairing capital with a founder and operator network to back early-stage US fintech founders, with AI built into products.",
+      "pages": [0, 1],
+      "snippet": "finding great founders who have new ideas for unique products"
+    },
+    "stated_sectors": { "value": ["fintech"], "pages": [0], "snippet": "Capital x community for early-stage fintech entrepreneurs." },
+    "application_url": { "value": "https://www.cambrian.vc", "pages": [0], "snippet": "Founders can submit a pitch deck through an Airtable form." },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "Founders can submit a pitch deck through an Airtable form." }
+  },
+  "funds": [
+    {
+      "name": "Cambrian Ventures Fund II",
+      "number": "II",
+      "size_original": 20000000,
+      "currency_original": "USD",
+      "close_date": "2025-07-16",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "secure a second fund, which is launching with $20 million in committed capital."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Cyphlens",
+        "website": null,
+        "description": "Visual encryption security layer that protects data while it is displayed on a screen.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "oversubscribed seed round",
+      "date": "2025-12-14",
+      "date_precision": "day",
+      "amount_original": 3800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Salesforce Ventures", "Motivate Ventures", "DCG", "ex/ante", "Cambrian Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Salesforce Ventures, Motivate Ventures, DCG, ex/ante, and Cambrian Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Portfolio names OatFi, Every, Anatomy, LightSpun, Keep, Oyster, Salsa, Paid appear on cambrian.vc, but no round pages naming Cambrian were found (search for Paid's seed did not name Cambrian). Anatomy Financial $1.3M pre-seed and Entravia $550K pre-seed seen only on aggregators.",
+    "Fund II 'closed' date is the TechCrunch launch-article date; the article says the fund is 'launching' with $20M committed.",
+    "Cyphlens lead not named by Pulse 2.0; one aggregator says Salesforce Ventures led, unverified.",
+    "Site check-size and stage text came from a summarised fetch of cambrian.vc; the Airtable form URL was not captured."
+  ]
+}

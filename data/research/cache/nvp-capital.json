@@ -1,0 +1,104 @@
+{
+  "key": "nvp-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "nvp capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the New York seed firm founded by Dan Borok and Vaughn Crowe (Pulse 2.0 Fund II article), investing in vertical AI and enterprise software; portfolio named there includes Pair Team, Vulcan Elements and Class8. Not Newark Venture Partners (also abbreviated NVP) and not N&V Capital. Firm's own website not located.",
+  "pages": [
+    { "url": "https://pulse2.com/nvp-capital-closes-80-million-second-fund-as-assets-rise-to-200-million", "title": "nvp Capital Closes $80 Million Second Fund As Assets Rise To $200 Million", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.privateequityinternational.com/nvp-capital-closes-on-80m-for-fund-ii-backing-vertical-ai-start-ups/", "title": "NVP Capital closes on $80m for Fund II, backing vertical AI start-ups", "publisher": "Venture Capital Journal", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/advance-8-55-million-seed-funding/", "title": "Advance: $8.55 Million Seed Funding Raised For Turning Premium Flows Into Yield and Revenue", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2026/05/26/ai-training-data-provider-human-archive-raises-8-2m/", "title": "AI training data provider Human Archive raises $8.2M", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "seed-stage enterprise software and vertical AI startups" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "seed-stage enterprise software and vertical AI startups" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "seed-stage enterprise software and vertical AI startups" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "seed-stage enterprise software and vertical AI startups" },
+    "thesis_text": {
+      "value": "Backs founders using AI to modernize outdated, hard-to-digitize, operations-heavy industries.",
+      "pages": [0],
+      "snippet": "seed-stage enterprise software and vertical AI startups"
+    },
+    "stated_sectors": { "value": ["ai_apps_agents", "enterprise_saas", "health_bio", "industrial_manufacturing", "fintech"], "pages": [0], "snippet": "seed-stage enterprise software and vertical AI startups" }
+  },
+  "funds": [
+    {
+      "name": "nvp capital Fund II",
+      "number": "II",
+      "size_original": 80000000,
+      "currency_original": "USD",
+      "close_date": "2025-11",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "NVP Capital closes on $80m for Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Advance",
+        "website": null,
+        "description": "Fintech infrastructure for insurance intermediaries: moves premiums into trust accounts, pays carriers, settles commissions and earns yield on idle balances.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2026-02-05",
+      "date_precision": "day",
+      "amount_original": 8550000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["nvp capital"],
+      "participants": ["Crystal Venture Partners", "Vesey Ventures", "Mensch Capital", "Assaf Wand"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The round was led by nvp Capital, with participation from Crystal Venture Partners, Vesey Ventures, and Mensch Capital"
+    },
+    {
+      "company": {
+        "name": "Human Archive",
+        "website": null,
+        "description": "Sources AI training video of people doing everyday tasks via gig-platform workers, then labels and sells it to AI developers.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": null,
+      "date": "2026-05-26",
+      "date_precision": "day",
+      "amount_original": 8200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Wing Venture Capital", "nvp capital", "Y Combinator"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Wing Venture Capital, NVP Capital, Y Combinator headlined the consortium that provided the capital."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "funds[Fund II].close_date",
+      "values": ["2025-10-13 (Shai Goldman list lead)", "2025-11-17 (Venture Capital Journal)", "2025-11-18 (Pulse 2.0)"],
+      "chosen": "2025-11",
+      "reason": "Fetched press pages put the announcement in mid-November 2025; the October date is unverified."
+    }
+  ],
+  "open_items": [
+    "Two rounds recorded, not three. A third candidate, Thoughtly ($5.5M seed, April-May 2026), has conflicting lead roles in search results (company release: Armory Square leads with nvp participating; nvp: co-lead) and the AlleyWatch page fetched did not name nvp, so it was left out. Reaxiomatic (pre-seed, June 2026) was seen only in search results.",
+    "Human Archive stage: SiliconANGLE does not label the round; other coverage in search results calls it seed (one outlet says Series A); recorded as seed on the strength of that search-result coverage only; treat as lower confidence. SiliconANGLE does not separate leads from participants.",
+    "Firm website, check size, application route and cold-inbound policy not found; nvp.capital and nvpcap.com did not resolve or returned 403.",
+    "Search results mention a Fund III Form D (target $100M); not verified."
+  ]
+}

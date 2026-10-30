@@ -1,0 +1,98 @@
+{
+  "key": "bee-partners",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "Bee Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Bee Partners (beepartners.vc), San Francisco-based pre-seed venture firm led by managing partner Michael Berolzheimer, investing in 'human-machine convergence' (AI, ML, robotics, frontier tech). Confirmed via TechCrunch's Fund IV article and the UC Berkeley BEGIN directory, which links to beepartners.vc.",
+  "pages": [
+    {
+      "url": "https://techcrunch.com/2023/11/01/bee-partners-venture-capital-pre-seed-deep-tech/",
+      "title": "Bee Partners closes fourth fund to add more capital for pre-seed founders in deep tech",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://begin.berkeley.edu/resources/bee-partners/",
+      "title": "Bee Partners",
+      "publisher": "UC Berkeley BEGIN",
+      "retrieved_at": "2026-10-30",
+      "kind": "database"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "The San Francisco-based venture capital firm invests in companies focused on artificial intelligence, machine learning, robotics and frontier technologies."
+    },
+    "website": {
+      "value": "https://www.beepartners.vc/",
+      "pages": [1],
+      "snippet": "Website: https://www.beepartners.vc/"
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [0],
+      "snippet": "The San Francisco-based venture capital firm invests in companies focused on artificial intelligence, machine learning, robotics and frontier technologies."
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [0],
+      "snippet": "The San Francisco-based venture capital firm invests in companies focused on artificial intelligence, machine learning, robotics and frontier technologies."
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "pages": [0, 1],
+      "snippet": "For pre-seed founders innovating in the deep tech space, Bee Partners wants to be partners with you."
+    },
+    "check_min_usd": {
+      "value": 350000,
+      "pages": [0],
+      "snippet": "Its average check size is $800,000, but has invested as low as $350,000 and as high as $1.5 million."
+    },
+    "check_max_usd": {
+      "value": 1500000,
+      "pages": [0],
+      "snippet": "Its average check size is $800,000, but has invested as low as $350,000 and as high as $1.5 million."
+    }
+  },
+  "funds": [
+    {
+      "name": "Bee Partners Fund III",
+      "number": "III",
+      "size_original": 43000000,
+      "currency_original": "USD",
+      "close_date": "2019",
+      "date_precision": "year",
+      "pages": [0],
+      "snippet": "Its third fund, closed in 2019, was $43 million."
+    },
+    {
+      "name": "Bee Partners Fund IV",
+      "number": "IV",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2023-11-01",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "It closed on $50 million in commitments for its fourth fund"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Michael Berolzheimer",
+      "title": "Managing Partner",
+      "focus_sectors": [],
+      "linkedin_url": null,
+      "pages": [0]
+    }
+  ],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "beepartners.vc refused connections (ECONNREFUSED) on every fetch on 2026-10-30, so the firm's own pages (team, portfolio, pitch form) could not be read."
+  ]
+}

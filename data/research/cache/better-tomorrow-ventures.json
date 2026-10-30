@@ -1,0 +1,109 @@
+{
+  "key": "better-tomorrow-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Better Tomorrow Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as btv.vc, the fintech-focused pre-seed and seed firm co-founded by Sheel Mohnot and Jake Gibson (TechCrunch 2022 and Oct 2025). Its site features Unit, Coast, Basis, Relay and Mendel. Not any other fund with a similar name.",
+  "pages": [
+    { "url": "https://www.btv.vc", "title": "Better Tomorrow Ventures", "publisher": "Better Tomorrow Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/10/01/better-tomorrow-ventures-closes-140m-remains-bullish-on-fintech", "title": "Better Tomorrow Ventures closes $140M, remains bullish on fintech", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2022/02/15/better-tomorrow-ventures-closes-on-225m-fintech-focused-fund-which-is-triple-the-size-of-its-last-fund/", "title": "Better Tomorrow Ventures closes on $225M fintech-focused fund", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://newsworthy.ai/curated/layer-secures-6-6m-seed-funding-to-revolutionize-smb-accounting/202516753", "title": "Layer secures $6.6M seed funding to revolutionize SMB accounting", "publisher": "Newsworthy (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/11/19/credit-risk-automation-platform-kaaj-raises-3-8m-seed-from-kindred-ventures/", "title": "Credit risk automation platform Kaaj raises $3.8M seed from Kindred Ventures", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Better Tomorrow Ventures just raised a $140 million third fund" },
+    "website": { "value": "https://www.btv.vc", "pages": [0], "snippet": "We invest in exceptional teams we're excited to work with over decades" },
+    "hq_city": { "value": "San Francisco", "pages": [2], "snippet": "Early-stage fintech with a broad view of the sector" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "Early-stage fintech with a broad view of the sector" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "sweet spot is at the pre-seed/seed" },
+    "check_min_usd": { "value": 500000, "pages": [0], "snippet": "a $500k - 4M check" },
+    "check_max_usd": { "value": 4000000, "pages": [0], "snippet": "a $500k - 4M check" },
+    "thesis_text": {
+      "value": "Early-stage fintech across the sector, including AI for underwriting, compliance and accounting, backing teams for long partnerships.",
+      "pages": [0, 1],
+      "snippet": "The massive digitization opportunity is still ahead of us"
+    },
+    "stated_sectors": { "value": ["fintech"], "pages": [1], "snippet": "The massive digitization opportunity is still ahead of us" },
+    "leads": { "value": true, "pages": [0], "snippet": "sweet spot is at the pre-seed/seed" }
+  },
+  "funds": [
+    {
+      "name": "Better Tomorrow Ventures Fund III",
+      "number": "III",
+      "size_original": 140000000,
+      "currency_original": "USD",
+      "close_date": "2025-10-01",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Better Tomorrow Ventures just raised a $140 million third fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Layer",
+        "website": null,
+        "description": "Embedded accounting and bookkeeping inside the software small businesses already use; reports more than 30,000 customers.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-07-09",
+      "date_precision": "day",
+      "amount_original": 6600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Emergence Capital"],
+      "participants": ["Better Tomorrow Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "with contributions from Better Tomorrow Ventures (BTV)"
+    },
+    {
+      "company": {
+        "name": "Kaaj",
+        "website": null,
+        "description": "Credit-risk automation platform using AI agents to cut loan underwriting from days to minutes.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-11-19",
+      "date_precision": "day",
+      "amount_original": 3800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Kindred Ventures", "Better Tomorrow Ventures"],
+      "pages": [4],
+      "snippet": "$3.8 million seed round from Kindred Ventures and Better Tomorrow Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "check_max_usd",
+      "values": ["$4M (btv.vc)", "$3.5M (TechCrunch Oct 2025)", "$3M (TechCrunch Feb 2022)"],
+      "chosen": "$4M",
+      "reason": "The firm's own current site is the most recent primary statement."
+    }
+  ],
+  "open_items": [
+    "Two rounds recorded, not three. Reflow ($15M+ seed, Feb 2026) lists BTV as an investor in search results but Axios returned 403 and Pulse.bot failed to load, so no fetched page supports it. Outpost Series A (Mar 2026) seen only in a CB Insights search snippet.",
+    "Layer: Seedtable-type database sources tag BTV as lead; the press release says Emergence Capital led. Kaaj: TechCrunch does not say who led; other outlets in search results say Kindred Ventures led.",
+    "Only latest fund (Fund III, $140M, 2025-10-01) recorded. Earlier funds seen: Fund I $75M (Sept 2020 per TechCrunch 2022, lead says 2020-08-12) and Fund II $150M plus $75M opportunity fund (Feb 2022, lead says 2022-02-16). Press describes the $225M as combined.",
+    "HQ San Francisco comes from the 2022 TechCrunch article only; the lead list says Bay Area / NYC. No pitch or contact link on btv.vc, so application_url and cold-inbound are left out."
+  ]
+}

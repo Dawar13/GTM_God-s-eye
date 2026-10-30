@@ -1,0 +1,73 @@
+{
+  "key": "counterpart-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Counterpart Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as counterpart.vc, the San Francisco VC described as the first institutional fund founded by former corporate-VC leaders, which also runs the Counter Club CVC community; Fortune covers its $132M Fund III. Portfolio on site: Cloudbeds, Arintra, AptEdge, Glidian. Not Counterpart Advisors, not the insurance company called Counterpart.",
+  "pages": [
+    { "url": "https://www.counterpart.vc", "title": "Counterpart Ventures", "publisher": "Counterpart Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.fortune.com/2025/06/25/exclusive-counterpart-ventures-closes-132-million-third-fund-to-link-cvcs-and-startups", "title": "Exclusive: Counterpart Ventures closes $132 million third fund to link CVCs and startups", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/arintra-21-million-series-a-raised-for-expanding-beyond-autonomous-medical-coding/amp/", "title": "Arintra: $21 Million Series A Raised For Expanding Beyond Autonomous Medical Coding", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Counterpart Ventures is the first institutional VC fund exclusively founded by former corporate VC leaders." },
+    "website": { "value": "https://www.counterpart.vc", "pages": [0], "snippet": "Counterpart Ventures is the first institutional VC fund exclusively founded by former corporate VC leaders." },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "500 3rd Street, Suite 240, San Francisco, CA, USA" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "500 3rd Street, Suite 240, San Francisco, CA, USA" },
+    "stages": { "value": ["seed", "series_a"], "pages": [0], "snippet": "Principal Mikey Kailis focuses on \"Seed and Series A.\"" },
+    "thesis_text": {
+      "value": "Connects startups with corporate venture investors as customers, partners and capital, brokering introductions to enterprise customers and strategic partners.",
+      "pages": [0, 1],
+      "snippet": "Broker introductions to potential enterprise customers and strategic partners."
+    }
+  },
+  "funds": [
+    {
+      "name": "Counterpart Ventures Fund III",
+      "number": "III",
+      "size_original": 132000000,
+      "currency_original": "USD",
+      "close_date": "2025-06-25",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "has now raised its third fund of $132 million."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Arintra",
+        "website": null,
+        "description": "AI platform automating medical coding for healthcare providers, extending into revenue assurance.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-08-19",
+      "date_precision": "day",
+      "amount_original": 21000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Peak XV Partners"],
+      "participants": ["Endeavor Health Ventures", "Y Combinator", "Counterpart Ventures", "Spider Capital", "Ten13"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Endeavor Health Ventures, Y Combinator, Counterpart Ventures, Spider Capital, Ten13"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Oxide Computer and Invent.ai appear in Fortune/site as portfolio; Oxide's Feb 2026 $200M Series C coverage did not name Counterpart. A Feb 2026 'Onshore' investment appears only in an aggregator summary.",
+    "Stages 'seed, series_a' come from one principal's stated focus on the site; check size not stated on fetched pages (a search summary said $1M-$8M, unverified; a job post said seed-Series B).",
+    "Fund close date is the Fortune article date (2025-06-25). A 2024 Yamaha release cited Fund III at $125M (pre-final close).",
+    "Arintra HQ not stated by Pulse 2.0 (funds to open a Bay Area HQ); hq_country US assumed from a search-result press-release dateline, unverified on a fetched page.",
+    "No application URL found."
+  ]
+}

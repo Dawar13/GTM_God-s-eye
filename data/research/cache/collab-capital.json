@@ -1,0 +1,82 @@
+{
+  "key": "collab-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Collab Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as collab.capital, the Atlanta VC founded by Jewel Burks Solomon and Barry Givens (AJC and TechCrunch headlines in search results); its own newsroom announces the $75M Fund II. Portfolio: SparkCharge, River Health, Goodr, Hairbrella. Not Collab (collab.com creator platform) or other 'Collab' funds.",
+  "pages": [
+    { "url": "https://www.collab.capital/newsroom/collab-capital-closes-75m-fund-ii-scales-its-vision-for-shared-prosperity", "title": "Collab Capital Closes $75M Fund II, Scales Its Vision for \"Shared Prosperity\"", "publisher": "Collab Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collab.capital/portfolio", "title": "Collab Capital portfolio", "publisher": "Collab Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/05/20/sparkcharge-raises-30m-to-help-fleets-electrify-without-commitments/", "title": "SparkCharge raises $30M to help fleets electrify without commitments", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "$75 million in committed capital" },
+    "website": { "value": "https://www.collab.capital", "pages": [0], "snippet": "the building blocks of shared prosperity" },
+    "hq_city": { "value": "Atlanta", "pages": [0], "snippet": "Atlanta, based on the dateline" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Atlanta, based on the dateline" },
+    "stages": { "value": ["seed", "series_a"], "pages": [0], "snippet": "Seed and Series A only." },
+    "check_min_usd": { "value": 1000000, "pages": [0], "snippet": "$1 million to $2 million per company" },
+    "check_max_usd": { "value": 2000000, "pages": [0], "snippet": "$1 million to $2 million per company" },
+    "thesis_text": {
+      "value": "Backs early-stage startups addressing foundational needs in work, healthcare and community infrastructure, led by founders closest to the problem.",
+      "pages": [0],
+      "snippet": "founders closest to the problem are best positioned to solve it"
+    },
+    "stated_sectors": {
+      "value": ["health_bio", "fintech", "climate_energy", "mobility_ev"],
+      "pages": [0],
+      "snippet": "Economic Mobility, Healthcare Access, and Community Infrastructure (power, transportation, broadband, housing, and food)"
+    },
+    "application_url": { "value": "https://kkzr55yjpa8.typeform.com/to/ZY6Osc0Z", "pages": [1], "snippet": "Apply for funding: https://kkzr55yjpa8.typeform.com/to/ZY6Osc0Z" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [1], "snippet": "Apply for funding" },
+    "portfolio_count_reported": { "value": 42, "pages": [1], "snippet": "Portfolio Companies (42)" }
+  },
+  "funds": [
+    {
+      "name": "Collab Capital Fund II",
+      "number": "II",
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2025-06-11",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "Announced June 11, 2025: $75 million in committed capital. With Fund I, total assets under management reach $125 million."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "SparkCharge",
+        "website": null,
+        "description": "Mobile, off-grid EV charging for fleets, sold as charging-as-a-service.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "mobility_ev",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A-1",
+      "date": "2025-05-20",
+      "date_precision": "day",
+      "amount_original": 15500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Monte's Fam"],
+      "participants": ["Cleveland Avenue", "Collab Capital", "Elemental Impact", "MarcyPen", "non sibi ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "with participation from Cleveland Avenue, Collab Capital, Elemental Impact, MarcyPen, and non sibi ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. River Health Series A (Jan 2025) and A0 appear only in Collab's own portfolio listing and aggregators (VCBacked, CB Insights); no round page naming Collab found. Collab's portfolio page gives no round dates.",
+    "SparkCharge headline says $30M (TechCrunch: $15.5M equity plus a $15M venture loan from Horizon Technology Finance); amount recorded as the $15.5M equity.",
+    "Fund I ($50M, 2021-05-26 per lead list; sources vary $50M-$51M, launched 2020) not confirmed on a fetched page; only Fund II recorded. Fund II numbers in the release are 'about 30 companies over five years, 40% reserved for follow-ons'.",
+    "HQ Atlanta is from the press-release dateline, not an explicit statement; the site's Contact link is a placeholder."
+  ]
+}

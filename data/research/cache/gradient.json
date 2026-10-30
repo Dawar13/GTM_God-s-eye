@@ -1,0 +1,997 @@
+{
+  "key": "gradient",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "Gradient",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Gradient (gradient.com; legal entity GRDNT LLC per its privacy policy), the seed fund for AI founders that Google set up in 2017 and that announced its $220M Fund 5 'as a fully independent firm' on 2026-03-17 (own post; Fortune; Pulse 2.0; Global Venturing, which says it spun out of Alphabet in 2025). The site links the LinkedIn page company/gradient-ventures and the X handle GradientVC, and press and portfolio pages (TechCrunch, Crunchbase News, BackOps, TNW) write 'Gradient Ventures'. EDGAR lists Gradient Fund V LP (CIK 2064254, San Francisco), whose Form D text contains 'GRDNT'. Ruled out: other EDGAR filers named Gradient that are not tied to gradient.com or GRDNT (Gradient Partners, L.P.; Gradient Europe Fund LP; Gradient Ascent Fund 0, LP; Gradient Ridge Onshore/Offshore funds; Forte Gradient LLC) and operating companies named Gradient (Gradient Labs, Gradient Health, gradient A.I. Corp., Gradient X). Recorded as type vc, not cvc: the 2026 sources describe it as independent and partner-owned, with Google as one LP among outside LPs.",
+  "pages": [
+    {
+      "url": "https://www.gradient.com/",
+      "title": "Gradient | The seed fund designed for founders in AI",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/team/",
+      "title": "Gradient | Team",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/portfolio/",
+      "title": "Gradient | Portfolio",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/news/",
+      "title": "Gradient | News",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://fortune.com/2026/03/17/google-backed-ai-investors-nobody-took-seriously-2017-raised-220-million-gradient/",
+      "title": "The Google-backed AI investors nobody took seriously in 2017 just raised $220 million",
+      "publisher": "Fortune",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.gradient.com/blog/",
+      "title": "Gradient | Blog",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/fund-5/",
+      "title": "Ten years of AI investing, and just getting started: Introducing Gradient's $220 million Fund 5",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/investing-in-zeroset/",
+      "title": "Zeroset: Modeling the Enterprise for Long-Horizon Agents",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/photon-codes/",
+      "title": "Photon: The Messaging Platform for AI Agents",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/backops-series-a/",
+      "title": "BackOps: The Intelligence Layer Warehouse Operators Deserve",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techcrunch.com/2026/09/24/meet-feather-the-startup-building-the-android-of-robotics-for-developers/",
+      "title": "Meet Feather, the startup building the 'Android of robotics' for developers",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/",
+      "title": "Arga Labs is building a better way to train enterprise AI agents",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://thenextweb.com/news/plato-16m-series-a-simulated-workplaces-ai-agents",
+      "title": "Plato raises $16M to build fake offices where AI agents learn real jobs",
+      "publisher": "The Next Web",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.backops.com/articles/the-next-chapter-of-backops",
+      "title": "The Next Chapter of BackOps",
+      "publisher": "BackOps",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+      "title": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
+      "publisher": "Crunchbase News",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/sapiom-seed/",
+      "title": "When Agents Start Spending (Sapiom)",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/anchor-browser/",
+      "title": "Our Investment in Anchor",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/forging-the-future-ai-powered-procurement-for-hardware-companies/",
+      "title": "Forging the Future: AI-Powered Procurement for Hardware Companies",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/credible-context-engine-for-enterprise/",
+      "title": "Credible: The Context Engine for Enterprise AI",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/clayton-petty-partner/",
+      "title": "Gradient Promotes Clayton Petty to Partner",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.gradient.com/privacy/",
+      "title": "Gradient | Privacy Policy",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://efts.sec.gov/LATEST/search-index?q=%22GRDNT%22&forms=D",
+      "title": "SEC EDGAR full-text search: \"GRDNT\", Form D",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://efts.sec.gov/LATEST/search-index?keysTyped=gradient",
+      "title": "SEC EDGAR entity lookup: gradient",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://efts.sec.gov/LATEST/search-index?keysTyped=gradient%20fund",
+      "title": "SEC EDGAR entity lookup: gradient fund",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://pulse2.com/gradient-220-million-raised-for-ai-seed-fund/amp/",
+      "title": "Gradient: $220 Million Raised For AI Seed Fund",
+      "publisher": "Pulse 2.0",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://globalventuring.com/corporate/information-technology/google-backed-vc-gradient-launches-220m-al-seed-fund/",
+      "title": "Google-backed VC Gradient launches $220m AI seed fund",
+      "publisher": "Global Venturing",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+      "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.gradient.com/blog/posts/nango-integration-infrastructure-ai-agents/",
+      "title": "Nango: Open-Source Integration Runtime for Production AI Agents",
+      "publisher": "Gradient",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://retailtechinnovationhub.com/home/2026/3/12/backops-bags-26-million-series-a-to-build-ai-powered-operating-system-for-supply-chains",
+      "title": "BackOps bags $26 million Series A to build AI powered operating system for supply chains",
+      "publisher": "Retail Technology Innovation Hub",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/backops-ai-raises-6m-to-solve-warehouse-inefficiencies",
+      "title": "BackOps AI raises $6M to solve warehouse inefficiencies",
+      "publisher": "FreightWaves",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.constructcap.com/articles/backops-the-connective-intelligence-layer-powering-the-modern-supply-chain",
+      "title": "BackOps: The Connective Intelligence Layer Powering the Modern Supply Chain",
+      "publisher": "Construct Capital",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "aliases": {
+      "value": [
+        "Gradient Ventures",
+        "GRDNT LLC"
+      ],
+      "pages": [
+        0,
+        13,
+        10,
+        14,
+        20
+      ],
+      "snippet": "Construct Capital, Gradient Ventures and 10VC."
+    },
+    "type": {
+      "value": "vc",
+      "pages": [
+        0,
+        6,
+        4
+      ],
+      "snippet": "officially announcing the launch of our oversubscribed $220 million Fund 5, and as a fully independent firm."
+    },
+    "website": {
+      "value": "https://www.gradient.com",
+      "pages": [
+        0
+      ],
+      "snippet": "The seed fund designed for founders in AI."
+    },
+    "linkedin": {
+      "value": "https://www.linkedin.com/company/gradient-ventures/",
+      "pages": [
+        0
+      ],
+      "snippet": "LinkedIn"
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [
+        25,
+        21
+      ],
+      "snippet": "Based in San Francisco"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        25,
+        21
+      ],
+      "snippet": "Based in San Francisco"
+    },
+    "stages": {
+      "value": [
+        "pre_seed",
+        "seed"
+      ],
+      "pages": [
+        6,
+        4,
+        24,
+        25
+      ],
+      "snippet": "be the first institutional check, spend real time with founders at pre-seed and seed"
+    },
+    "leads": {
+      "value": true,
+      "pages": [
+        18,
+        17,
+        27,
+        10,
+        7,
+        8,
+        26,
+        6
+      ],
+      "snippet": "Today, Credible announced its $10M seed round led by Gradient, alongside SignalFire, K5 Global"
+    },
+    "thesis_text": {
+      "value": "Pre-seed and seed fund for AI founders, set up by Google in 2017 and now independent, that aims to write the first institutional check. Focus: AI-native B2B software, AI agents that reshape work, the AI developer stack, real-world AI (biology, materials, robotics, compute) and open-source, small-model and hybrid-compute plays; it avoids foundation-model contenders.",
+      "pages": [
+        6,
+        4,
+        24,
+        25
+      ],
+      "snippet": "Our core areas of focus evolve with time, technology and markets but have always centered on applied AI."
+    },
+    "stated_sectors": {
+      "value": [
+        "ai_apps_agents",
+        "enterprise_saas",
+        "dev_tools",
+        "ai_infra",
+        "robotics_physical_ai",
+        "health_bio",
+        "hardware_deeptech"
+      ],
+      "pages": [
+        6,
+        24,
+        25
+      ],
+      "snippet": "Real-world AI, from biology to materials, from robotics to compute substrates - extending the possibilities of physics"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [
+        6
+      ],
+      "snippet": "We're actively investing from Fund 5. Reach out or follow us on X and LinkedIn for updates."
+    },
+    "requires_us_entity": {
+      "value": "unknown",
+      "pages": [
+        6,
+        2
+      ],
+      "snippet": "We're actively investing from Fund 5. Reach out or follow us on X and LinkedIn for updates."
+    }
+  },
+  "funds": [
+    {
+      "name": "Gradient Fund V LP (Fund 5)",
+      "number": "V",
+      "size_original": 220000000,
+      "currency_original": "USD",
+      "close_date": "2026-03-17",
+      "date_precision": "day",
+      "pages": [
+        6,
+        4,
+        24,
+        25,
+        21,
+        3
+      ],
+      "snippet": "officially announcing the launch of our oversubscribed $220 million Fund 5, and as a fully independent firm."
+    }
+  ],
+  "partners": [
+    {
+      "name": "Darian Shirazi",
+      "title": "General Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "robotics_physical_ai"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        6,
+        8,
+        10,
+        24,
+        25
+      ]
+    },
+    {
+      "name": "Zach Bratun-Glennon",
+      "title": "General Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "supply_chain_logistics",
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        4,
+        6,
+        9,
+        17,
+        27
+      ]
+    },
+    {
+      "name": "Andrew Brackin",
+      "title": "Partner",
+      "focus_sectors": [
+        "industrial_manufacturing"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        17
+      ]
+    },
+    {
+      "name": "Clayton Petty",
+      "title": "Partner",
+      "focus_sectors": [
+        "supply_chain_logistics",
+        "industrial_manufacturing",
+        "enterprise_saas"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        19,
+        9
+      ]
+    },
+    {
+      "name": "Denise Teng",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "dev_tools"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        7,
+        16,
+        27
+      ]
+    },
+    {
+      "name": "Vig Sachidananda",
+      "title": "Partner",
+      "focus_sectors": [
+        "ai_apps_agents",
+        "ai_infra"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        8,
+        16
+      ]
+    },
+    {
+      "name": "Kyle Duffy",
+      "title": "Operating Partner",
+      "focus_sectors": [
+        "ai_infra"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        1,
+        18
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Zeroset",
+        "website": "https://zeroset.com",
+        "description": "Builds environments that recreate how an enterprise's workflows and states run so AI agents can operate inside them; first product Nebula in research preview.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2026-10-06",
+      "date_precision": "day",
+      "amount_original": 5200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient",
+        "2048 Ventures"
+      ],
+      "participants": [
+        "Leblon Capital"
+      ],
+      "unspecified": [],
+      "pages": [
+        7
+      ],
+      "snippet": "Today, Zeroset announced a $5.2 million pre-seed round co-led by Gradient and 2048 Ventures"
+    },
+    {
+      "company": {
+        "name": "Photon",
+        "website": "https://photon.codes",
+        "description": "Messaging platform that lets developers' AI agents reach users over iMessage, WhatsApp, SMS and email.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient",
+        "A*"
+      ],
+      "participants": [
+        "Vercel",
+        "HongShan",
+        "Z Fellows"
+      ],
+      "unspecified": [],
+      "pages": [
+        8
+      ],
+      "snippet": "We're proud to support their mission and co-lead their $4.5 million seed round with A* alongside participation from Vercel,"
+    },
+    {
+      "company": {
+        "name": "Plato",
+        "website": null,
+        "description": "Builds simulated workplaces (support, finance, HR software and tasks) where AI labs can train and test agents without touching real systems.",
+        "hq_country": "US",
+        "founded_year": 2025,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A ($19M raised in total)",
+      "date": "2026-10-28",
+      "date_precision": "day",
+      "amount_original": 16000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Nava Ventures"
+      ],
+      "participants": [
+        "Gradient Ventures",
+        "Transpose Platform",
+        "Mustafa Suleyman"
+      ],
+      "unspecified": [],
+      "pages": [
+        12
+      ],
+      "snippet": "Nava Ventures led the round, with Gradient Ventures, Transpose Platform and Microsoft AI chief Mustafa Suleyman joining."
+    },
+    {
+      "company": {
+        "name": "Feather",
+        "website": "https://feather.dev/",
+        "description": "Modular humanoid robot platform, hardware and software, that developers build real-world robot tasks on ('Android of robotics').",
+        "hq_country": "US",
+        "founded_year": 2025,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed, 'previously announced' (TechCrunch, 2026-09-24); Gradient's portfolio page lists Feather as partnered 2026",
+      "date": "2026",
+      "date_precision": "year",
+      "amount_original": 7600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient Ventures"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        10,
+        2
+      ],
+      "snippet": "Gradient Ventures, which backed Feather at its inception … leading the startup's previously announced $7.6 million pre-seed round"
+    },
+    {
+      "company": {
+        "name": "BackOps",
+        "website": "https://backops.ai/",
+        "description": "AI resolution layer that runs and improves operations processes across systems, teams and partners for companies that make or move physical goods.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-09-16",
+      "date_precision": "day",
+      "amount_original": 42000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Insight Partners"
+      ],
+      "participants": [
+        "Theory Ventures",
+        "Construct Capital",
+        "Gradient Ventures",
+        "10VC"
+      ],
+      "unspecified": [],
+      "pages": [
+        13
+      ],
+      "snippet": "Today, we announced a $42M Series B led by Insight Partners, with continued support from Theory Ventures, Construct Capital, Gradient Ventures and 10VC."
+    },
+    {
+      "company": {
+        "name": "Arga Labs",
+        "website": "https://argalabs.com",
+        "description": "Builds training environments that replicate enterprise software such as Salesforce, Workday and email so enterprise AI agents can be trained and tested.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-08-26",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "General Catalyst"
+      ],
+      "participants": [
+        "Box Group",
+        "Emergence",
+        "Gradient",
+        "SV Angel"
+      ],
+      "unspecified": [],
+      "pages": [
+        11
+      ],
+      "snippet": "with participation from Box Group, Emergence, Gradient, and SV Angel"
+    },
+    {
+      "company": {
+        "name": "Malachyte",
+        "website": "https://www.malachyte.com/",
+        "description": "Real-time, intent-aware product recommendation and shopping engine for online stores that adapts as a shopper browses, without an account or purchase history.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-08-06",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Bessemer Venture Partners",
+        "Gradient"
+      ],
+      "participants": [
+        "Harpoon Ventures"
+      ],
+      "unspecified": [],
+      "pages": [
+        26
+      ],
+      "snippet": "The funding round was co-led by Bessemer Venture Partners and Gradient, with participation from Harpoon Ventures."
+    },
+    {
+      "company": {
+        "name": "Credible",
+        "website": "https://credibledata.com",
+        "description": "Context engine that stores a company's metric definitions, entity relationships, rules and permissions and serves them to AI agents, apps and analytics; built on open-source Malloy.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-07-28",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient"
+      ],
+      "participants": [
+        "SignalFire",
+        "K5 Global",
+        "Taylor Brown",
+        "Godard Abel"
+      ],
+      "unspecified": [],
+      "pages": [
+        18
+      ],
+      "snippet": "Today, Credible announced its $10M seed round led by Gradient, alongside SignalFire, K5 Global"
+    },
+    {
+      "company": {
+        "name": "Fazeshift",
+        "website": "https://fazeshift.com",
+        "description": "AI agents that automate accounts-receivable work (invoicing, collections, payment matching, reconciliation) across a company's existing software.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A ($22M raised in total)",
+      "date": "2026-05-07",
+      "date_precision": "day",
+      "amount_original": 17000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "F-Prime Capital"
+      ],
+      "participants": [
+        "Gradient Ventures",
+        "Y Combinator",
+        "Wayfinder Ventures",
+        "Pioneer Fund",
+        "Ritual Capital"
+      ],
+      "unspecified": [],
+      "pages": [
+        14
+      ],
+      "snippet": "F-Prime Capital led the financing, which included participation from Gradient Ventures"
+    },
+    {
+      "company": {
+        "name": "Nango",
+        "website": "https://www.nango.dev/",
+        "description": "Open-source integration runtime that lets products and AI agents connect to 700+ APIs, handling credentials, token rotation, scaling and observability.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed (amount not disclosed)",
+      "date": "2026-03-23",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        27
+      ],
+      "snippet": "we're excited to lead the Seed round and back founders Robin and Bastien."
+    },
+    {
+      "company": {
+        "name": "BackOps",
+        "website": "https://backops.ai/",
+        "description": "AI resolution layer that runs and improves operations processes across systems, teams and partners for companies that make or move physical goods.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-12",
+      "date_precision": "day",
+      "amount_original": 26000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Theory Ventures"
+      ],
+      "participants": [
+        "Gradient",
+        "Construct Capital",
+        "10VC"
+      ],
+      "unspecified": [],
+      "pages": [
+        28,
+        9,
+        13
+      ],
+      "snippet": "The round was led by Theory Ventures, with participation from Gradient, Construct Capital, and 10VC."
+    },
+    {
+      "company": {
+        "name": "Sapiom",
+        "website": "https://www.sapiom.ai/",
+        "description": "Spend-control and trust layer that gives AI agents wallets with limits and allow-lists and checks each paid API call against policy before it is made.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed (amount not disclosed; Gradient says it is doubling down as an earlier backer)",
+      "date": "2026-02-05",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [
+        "Accel"
+      ],
+      "participants": [
+        "Gradient"
+      ],
+      "unspecified": [],
+      "pages": [
+        15
+      ],
+      "snippet": "Today we're excited to announce Sapiom's seed round led by Accel, and we're proud to double down on our partnership."
+    },
+    {
+      "company": {
+        "name": "Anchor",
+        "website": "https://anchorbrowser.io",
+        "description": "Browser infrastructure for AI browser agents, focused on token efficiency, speed, reliability and security.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed (no lead named)",
+      "date": "2025-10-22",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Gradient",
+        "Blumberg Capital"
+      ],
+      "pages": [
+        16
+      ],
+      "snippet": "We're excited to back Anchor as part of their $6M Seed round alongside Blumberg Capital."
+    },
+    {
+      "company": {
+        "name": "BackOps",
+        "website": "https://backops.ai/",
+        "description": "AI resolution layer that runs and improves operations processes across systems, teams and partners for companies that make or move physical goods.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed ('latest round', bringing total to $8M)",
+      "date": "2025-06-23",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Construct Capital"
+      ],
+      "participants": [
+        "Gradient",
+        "10VC"
+      ],
+      "unspecified": [],
+      "pages": [
+        29,
+        30
+      ],
+      "snippet": "led by Construct Capital, along with existing investors Gradient and 10VC"
+    },
+    {
+      "company": {
+        "name": "Forge",
+        "website": "https://www.forgehq.com/",
+        "description": "AI procurement-management platform for hardware companies that ingests emails, purchase orders and spreadsheets and ties into ERP, accounting and contract systems.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed (amount and co-investors not disclosed)",
+      "date": "2024-06-04",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [
+        "Gradient"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        17
+      ],
+      "snippet": "We're excited to lead the seed round in Forge, an AI-powered procurement management platform for hardware companies."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "founding year",
+      "values": [
+        "2017: 'Google stood up Gradient in 2017' (Fortune, 2026-03-17); founded the year of the Transformer paper (Fund 5 post); 'founded in 2017' (Pulse 2.0)",
+        "'Google launched Gradient seven years ago' (Global Venturing, 2026-03-17), i.e. about 2019"
+      ],
+      "chosen": "2017 (used in thesis_text only)",
+      "reason": "The firm's own post and two other outlets agree on 2017."
+    },
+    {
+      "field": "partners.title (Darian Shirazi, Zach Bratun-Glennon)",
+      "values": [
+        "General Partner (gradient.com/team)",
+        "Managing Partner (Pulse 2.0; Global Venturing, both 2026-03-17)"
+      ],
+      "chosen": "General Partner",
+      "reason": "The firm's own team page, read 2026-10-30."
+    },
+    {
+      "field": "portfolio_count_reported",
+      "values": [
+        "'backed more than 500 AI founders' (Fund 5 post; Pulse 2.0)",
+        "'has backed more than 500 startups' (Global Venturing)",
+        "136 companies listed on gradient.com/portfolio (counted 2026-10-30, incl. exits)"
+      ],
+      "chosen": "not recorded",
+      "reason": "The firm states a founder count, not a company count; Global Venturing's 'startups' looks like a misreading of it, and the live portfolio list is not a reported figure."
+    },
+    {
+      "field": "rounds.Nango date",
+      "values": [
+        "Seed-lead post dated 2026-03-23 (gradient.com blog)",
+        "Portfolio page lists Nango as 'Partnered 2025'"
+      ],
+      "chosen": "2026-03-23",
+      "reason": "Date of the page that describes the round; the investment itself may have been made in 2025."
+    }
+  ],
+  "open_items": [
+    "Check size: not stated on gradient.com (home, team, portfolio, Fund 5 post) or in Fortune, Pulse 2.0 or Global Venturing.",
+    "No public application form: the footer 'Founder Portal' (gradient.com/founders/) returns 401 (login required). Cold inbound recorded 'yes' from the Fund 5 post's 'Reach out'. Nothing found on requiring a US entity or on investing in Indian founders; the portfolio includes Latin American, Canadian and European companies.",
+    "Funds 1-4: exist by implication (Fund 5 is the 'fifth fund'; 'nearly $1.2 billion across five funds' per Pulse 2.0 and Global Venturing; Google was the sole LP of the first fund) but sizes and dates are undisclosed (Fortune: 'Gradient declined to disclose previous fund sizes'). Roughly $980M across Funds 1-4 is arithmetic, not reported.",
+    "SEC EDGAR: the efts search index answered with the declared User-Agent, but sec.gov Archives refused it (403), so the Gradient Fund V LP Form D (filed 2025-06-24, amended 2026-06-16) was not read; amount sold and first-sale date unknown. A Form D for 'GRDNT OPPT I LLC a Series of GRDNT MSTR LLC' (Claymont, DE, 2026-05-07) matches the GRDNT name but its link to Gradient is unconfirmed; not recorded as a fund.",
+    "HQ city from Global Venturing ('Based in San Francisco') and the Fund V LP's EDGAR business location; no street address on gradient.com (the privacy page names GRDNT LLC only).",
+    "Partner focus_sectors are inferred from the deal posts each partner wrote on gradient.com; the team page gives titles only and links no partner LinkedIn profiles.",
+    "Company websites for Arga Labs and Fazeshift come from gradient.com/portfolio, not the round pages; Feather's US base is inferred from TechCrunch calling it 'the only U.S. startup developing a modular humanoid platform'.",
+    "Rounds not recorded: Mastra $22M Series A (Spark Capital lead; Mastra's post does not name Gradient); Respan, Firstwork and Clarify posts give no round terms; Rivio (AI procurement) found only on database-style pages; Tamarack (mill software) has no round page; Axios Pro items linked from gradient.com/news (Collective $100M, Pathfinder $12M Series A, Sava $10M seed, Axle $17.5M, Hostie $12M, Enzo Health $20M, Spade $40M) not fetched (subscriber pages); Vera Health $28.5M Series A, Patlytics $40M, Polyphron, Quantro and Helical not checked."
+  ]
+}

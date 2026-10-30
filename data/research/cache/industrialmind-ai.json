@@ -1,0 +1,83 @@
+{
+  "key": "industrialmind-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as IndustrialMind.ai (industrialmind.ai), the manufacturing-AI start-up founded by former Tesla Gigafactory manufacturing-AI leaders (co-founders Steven Gao, CEO, and Justin Li). The company's site, its own pre-seed press release, The AI Insider's republication of the Business Wire release and Antler's 2025 Disrupt portfolio announcement all link to or name industrialmind.ai and describe the same product (an 'AI manufacturing engineer' for drawings, production monitoring and root-cause analysis) and the same investors and customers (Antler, TSVC, Plug and Play; Siemens, tesa, Andritz). The site is a client-rendered app: page text was read from the HTML head (meta description, FAQ structured data) and the site's own published JavaScript bundle that renders each listed URL. It is not shown as an Antler India company: no page read ties it to Antler India's Embark programme or to Indian founders; Antler presents it in its Singapore-run 2025 Disrupt portfolio, and its listed offices are Mountain View (US), Singapore and Munich (careers). Category set to 'direct': its agents do drawing review, BOM generation from drawings, drawing-to-process and drawing-to-quote (RFQ), production monitoring for process stability, predictive maintenance and root-cause analysis, which is most of Utopian Autonomy's plant-function scope. The difference is the channel and buyer: it sells to engineering and quality teams at large manufacturers and equipment makers (Siemens, tesa, ANDRITZ) with a forward-deployed model; no WhatsApp or shop-floor messaging channel and no procurement-negotiation agent were seen.",
+  "pages": [
+    { "url": "https://www.industrialmind.ai/", "title": "IndustrialMind.ai | The AI Manufacturing Engineer for Every Factory", "publisher": "IndustrialMind.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.industrialmind.ai/en/about", "title": "About IndustrialMind.ai | Manufacturing AI Experts", "publisher": "IndustrialMind.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.industrialmind.ai/en/news/industrialmind-pre-seed-funding", "title": "IndustrialMind raises $1.2M in pre-seed funding | IndustrialMind.ai", "publisher": "IndustrialMind.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.industrialmind.ai/en/news/andritz-ai-deployment", "title": "ANDRITZ selects IndustrialMind for drawing review, BOMs and root cause analysis | IndustrialMind.ai", "publisher": "IndustrialMind.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://theaiinsider.tech/2025/11/26/industrialmind-ai-raises-1-2m-pre-seed-to-bring-the-ai-engineer-to-manufacturing/", "title": "IndustrialMind.ai Secures $1.2M Pre-Seed to Bring the AI Engineer to Manufacturing", "publisher": "The AI Insider", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.antler.co/press-releases/antler-unveils-2025-disrupt-portfolio-fourteen-startups-building-ai-that-actually-works", "title": "Antler unveils 2025 Disrupt portfolio: fourteen startups building AI that actually works", "publisher": "Antler", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.industrialmind.ai/en/careers", "title": "Careers | IndustrialMind.ai", "publisher": "IndustrialMind.ai", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": [
+        "US: the company's pre-seed release is datelined 'MOUNTAIN VIEW, CA' and the site lists its US office (883N Shoreline Blvd, Mountain View) first; the ANDRITZ release is datelined San Francisco",
+        "SG: Antler says its 2025 Disrupt portfolio companies are 'headquartered in Singapore', and the site lists a Singapore office (36 Robinson Road)"
+      ],
+      "chosen": "US",
+      "reason": "The company's own releases use US datelines and list the US office first. Antler's statement covers the whole Disrupt cohort, not IndustrialMind specifically. The Singapore entity is probably its Antler-programme and APAC base."
+    },
+    {
+      "field": "rounds[pre-seed].date",
+      "values": [
+        "October 1, 2025 (dateline of the release on the company's news page)",
+        "2025-11-06 (Business Wire release, from the URL The AI Insider links to)",
+        "26 November 2025 (The AI Insider publication date)",
+        "2025-10-30 (date in the URL of e27 coverage linked from the company's news page; not opened)"
+      ],
+      "chosen": "2025-10 (month precision)",
+      "reason": "The company's own release dates the announcement October 1, 2025, and e27 covered it in October. The Business Wire and AI Insider dates are later redistribution of the same release."
+    }
+  ],
+  "open_items": [
+    "Founding year not found on any page read (site, release, AI Insider, Antler). Antler's Disrupt 1 cohort launched May 2025 and Disrupt 2 in October 2025, but which cohort IndustrialMind joined is not stated.",
+    "Co-founder Justin Li is named only in a press-photo caption on the company's news page ('IndustrialMind co-founders Justin Li (left) and Steven Gao (right)'); his role and background are not stated. Steven Gao's exact Tesla title is not stated beyond 'former Tesla manufacturing AI leaders'.",
+    "Antler's Disrupt programme gives each company $400,000 of initial capital (Antler page); whether that is part of the $1.2M pre-seed is not stated. No lead investor is named.",
+    "Unread coverage of the round: Singapore Business Review (URL slug 'industrialmindai-raises-16m-boost-factory-efficiency', which may give a different amount or currency; fetch refused), e27 (HTTP 403), Business Wire original (not opened). GlobeNewswire (ANDRITZ release) and TNGlobal (Antler Asia showcase, 22 Jun 2026) returned 403; the company's own copies were read instead.",
+    "No headcount from a public page (LinkedIn not used). Careers page lists open roles in Mountain View/US, Singapore and Munich.",
+    "No revenue publicly reported; no public pricing.",
+    "Antler India research (antler-india.json) noted IndustrialMind among Embark founder stories; no page read here confirms an Antler India or Indian-founder link.",
+    "Advisors announced on the news page (Jay Lee, Jeff Winter, Erik Walenza-Slabe of Asia Growth Partners) not researched; the site also hosts an 'AI Transformation Workspace' white-labelled for Asia Growth Partners."
+  ],
+  "company": {
+    "name": "IndustrialMind.ai",
+    "website": "https://www.industrialmind.ai",
+    "description": "Ex-Tesla-founded start-up building an 'AI manufacturing engineer': agents that turn engineering drawings into BOMs, process plans and quotes, monitor production and run root-cause analysis.",
+    "hq_country": "US",
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "process_planning"
+  },
+  "category": "direct",
+  "layer": "process_planning",
+  "layer_detail": "Spans process planning and plant ops. Process planning: drawing review against internal standards, drawing-to-process and drawing-to-quote agents, BOM and routing generation from drawings, should-cost quotes (deployed at ANDRITZ for hydraulic equipment parts). Plant ops: real-time production monitoring and anomaly prediction for process stability, SPC, predictive maintenance and multi-agent root-cause analysis with auto-generated reports. Also an 'IM foundation model' and a free drawing-parser tool. Sells to manufacturers, equipment makers and integrators (sheet metal, casting, battery, electrical panels) through a forward-deployed model; no WhatsApp channel seen.",
+  "founders": ["Steven Gao", "Justin Li"],
+  "named_customers": ["Siemens", "tesa", "ANDRITZ"],
+  "product_summary": "An AI 'manufacturing engineer': agents that read engineering drawings to draft BOMs, routings, process plans and should-cost quotes, review drawings against internal standards, monitor production in real time to flag anomalies, and run multi-agent root-cause analysis with auto-generated reports, delivered by forward-deployed engineers.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "IndustrialMind.ai", "website": "https://www.industrialmind.ai", "description": "Ex-Tesla-founded 'AI manufacturing engineer' for drawings, production monitoring and root-cause analysis.", "hq_country": "US", "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "process_planning" },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed ($1.2M); no lead named; angel Gang Song, former Tesla VP of Manufacturing",
+      "date": "2025-10",
+      "date_precision": "month",
+      "amount_original": 1200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Antler", "TSVC", "Plug and Play", "Gang Song"],
+      "pages": [2, 4, 5],
+      "snippet": "Investors in the round include Antler, TSVC, Plug and Play, and Gang Song, former Tesla Vice President of Manufacturing."
+    }
+  ]
+}

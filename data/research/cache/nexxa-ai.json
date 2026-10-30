@@ -1,0 +1,105 @@
+{
+  "key": "nexxa-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Nexxa.ai (nexxa.ai), the Sunnyvale, California startup founded in May 2024 that builds AI agents and the NitroOS / Nitro multi-agent orchestration layer for heavy-industry companies; its own site, the PR Newswire seed release (2026-01-21), SiliconANGLE and Pulse 2.0 (seed and pre-seed) all name the same CEO, Philipp Wehn, and the same backers (a16z speedrun, Construct Capital). Matched on the nexxa.ai domain (double x, '.ai' in the name), not on name alone. Category set to adjacent (not in the PROJECT_CONTEXT §7 seed list; candidate found through Construct Capital's portfolio): NitroOS says it automates demand planning, RFQ and field operations, and press says its agents work inside engineering tools and estimating systems, which overlaps Utopian Autonomy's RFQ and engineering-tooling functions; but it is a horizontal orchestration platform for large enterprises across ten heavy industries (rail, construction, energy, utilities, mining, ports, aerospace, automotive, manufacturing), delivered by forward-deployed engineers and sold on the Siemens Xcelerator Marketplace, not agents for plant-floor staff over WhatsApp, and no page mentions procurement, maintenance or process stability. Layer design_intent kept from the Construct Capital record because every funding page frames the users as industrial engineers who design and maintain infrastructure and work in engineering tools; plant_ops is a defensible alternative given the NitroOS page's operations use cases.",
+  "pages": [
+    { "url": "https://nexxa.ai/", "title": "Nexxa.ai (homepage: AI for Industrial Autonomy)", "publisher": "Nexxa.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://nexxa.ai/company", "title": "Nexxa.ai company / about page", "publisher": "Nexxa.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://nexxa.ai/nitro-os", "title": "Nexxa.ai NitroOS", "publisher": "Nexxa.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://nexxa.ai/all-industries", "title": "Nexxa.ai All Industries", "publisher": "Nexxa.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://nexxa.ai/media", "title": "Nexxa.ai Media & Updates", "publisher": "Nexxa.ai", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.prnewswire.com/news-releases/rebuilding-america-and-the-worlds-industrial-backbone-with-ai-302666281.html", "title": "Rebuilding America and the World's Industrial Backbone With AI", "publisher": "Nexxa.ai via PR Newswire", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/2026/01/21/nexxa-ai-raises-9m-streamline-worlds-industrial-backbone-ai/", "title": "Nexxa.ai raises $9M to streamline the world's industrial backbone with AI", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/nexxa-ai-9-million-seed-funding-closed-to-scale-ai-agents-for-heavy-industry-workflows/", "title": "Nexxa.ai: $9 Million Seed Funding Closed To Scale AI Agents For Heavy Industry Workflows", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/nexxa-ai-4-4-million-pre-seed-raised-for-bringing-specialized-ai-to-heavy-industries/", "title": "Nexxa.ai: $4.4 Million Pre-Seed Raised For Bringing Specialized AI To Heavy Industries", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://aithority.com/machine-learning/nexxa-ai-raises-4-4-million-to-bring-specialized-ai-to-heavy-industries/", "title": "Nexxa.ai Raises $4.4 Million to Bring Specialized AI to Heavy Industries", "publisher": "AiThority (PR Newswire release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Nexxa.ai",
+    "website": "https://nexxa.ai/",
+    "description": "Sunnyvale, California startup building supervised AI agents and a multi-agent orchestration layer (NitroOS) that run on heavy-industry companies' existing engineering and operations systems.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "design_intent"
+  },
+  "category": "adjacent",
+  "layer": "design_intent",
+  "layer_detail": "Agent orchestration for industrial engineering and operations: NitroOS ('Industrial Intelligence Graph') sits on existing engineering tools, estimating systems and systems of record; named workflows are demand planning, RFQ and field operations. Users framed as industrial engineers who design and maintain rail networks, factories, construction projects and machinery. Delivered through five-day pilots and forward-deployed engineers; Protocol Zero safety layer; listed on Siemens Xcelerator Marketplace. Serves ten heavy industries, not only factories.",
+  "founders": ["Philipp Wehn", "David (DH) Huang", "Shashank Goel"],
+  "named_customers": ["Siemens", "Matikon"],
+  "product_summary": "NitroOS, an orchestration layer that sits on customers' existing engineering, estimating and operational systems and runs supervised multi-agent workflows (named: demand planning, RFQ, field operations) with logged, traceable decisions and a Protocol Zero safety layer; deployed by forward-deployed engineers via five-day pilots; also sold on the Siemens Xcelerator Marketplace.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Nexxa.ai", "website": "https://nexxa.ai/", "description": "Sunnyvale, California startup building supervised AI agents and a multi-agent orchestration layer (NitroOS) that run on heavy-industry companies' existing engineering and operations systems.", "hq_country": "US", "founded_year": 2024, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "design_intent" },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed ($4.4M; Axios Pro headline describes it as a SAFE, article not read)",
+      "date": "2025-07-21",
+      "date_precision": "day",
+      "amount_original": 4400000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["a16z speedrun"],
+      "participants": ["Augment Ventures", "Propeller Ventures", "Plug and Play", "Beat Ventures", "SBI", "Untapped Ventures", "Cross Atlantic Angels", "Rick Berry", "Pat McCarthy"],
+      "unspecified": [],
+      "pages": [9, 8, 5],
+      "snippet": "The funding round was driven by a16z speedrun."
+    },
+    {
+      "company": { "name": "Nexxa.ai", "website": "https://nexxa.ai/", "description": "Sunnyvale, California startup building supervised AI agents and a multi-agent orchestration layer (NitroOS) that run on heavy-industry companies' existing engineering and operations systems.", "hq_country": "US", "founded_year": 2024, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "design_intent" },
+      "stage": "seed",
+      "stage_raw": "Seed (\"existing investors\" also participated, not named)",
+      "date": "2026-01-21",
+      "date_precision": "day",
+      "amount_original": 9000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Construct Capital"],
+      "participants": ["a16z speedrun"],
+      "unspecified": [],
+      "pages": [5, 6, 7],
+      "snippet": "a $9 million seed round led by Construct Capital"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "total_raised",
+      "values": ["$14 million total (PR Newswire seed release: 'This brings Nexxa.ai's total funding to $14 million')", "$13.4 million by sum of the two disclosed rounds ($4.4M pre-seed + $9M seed)"],
+      "chosen": "Rounds recorded as announced; no total field",
+      "reason": "The company's own figure is rounded or includes unannounced money; both rounds are recorded at their stated amounts."
+    },
+    {
+      "field": "rounds[pre_seed].leads",
+      "values": ["'driven by a16z speedrun' (Pulse 2.0; PR Newswire seed release)", "'driven by Andreesen Horowitz' (AiThority reprint of the PR Newswire pre-seed release)"],
+      "chosen": "a16z speedrun",
+      "reason": "Same backer: speedrun is Andreessen Horowitz's accelerator program; two pages use the program name."
+    },
+    {
+      "field": "rounds[pre_seed].date",
+      "values": ["2025-07-21 (AiThority, PR Newswire release)", "2025-07-22 (Pulse 2.0 article date)"],
+      "chosen": "2025-07-21",
+      "reason": "Release date; Pulse 2.0 reported it a day later."
+    },
+    {
+      "field": "rounds[seed].participants",
+      "values": ["'significant participation from a16z speedrun' (PR Newswire, Pulse 2.0)", "'significant participation from a16z' (SiliconANGLE)"],
+      "chosen": "a16z speedrun",
+      "reason": "The company's release names the speedrun program specifically."
+    }
+  ],
+  "open_items": [
+    "Headcount: no public page read gives one (LinkedIn not used; careers on jobs.ashbyhq.com/nexxa not checked for counts).",
+    "Revenue not publicly reported; the seed release says only that Nexxa is 'preparing to scale revenue 10x in 2026'.",
+    "Customers: Siemens and Matikon named by the company (others under NDA); the pre-seed release said early adopters include 'Fortune 100 and midmarket firms' and quoted a Siemens Mobility executive. How Siemens uses it (customer vs. Xcelerator marketplace partner) is not described.",
+    "Axios Pro (2026-01-21, 'Nexxa.AI eyes Series A with $9M seed') and Axios Pro (2025-07-21) were not read (paywalled); a Series A is apparently being planned but no round is recorded.",
+    "Founders: the company page lists three co-founders (Wehn CEO, Huang CTO, Goel CPO); press names only Wehn.",
+    "Layer is borderline between design_intent (engineering-tool agents for industrial engineers, per all funding pages) and plant_ops (NitroOS page: demand planning, RFQ, field operations).",
+    "Pricing not public; the NitroOS page offers a five-day pilot with one Nexxa engineer, no price stated.",
+    "No mention of WhatsApp, plant-floor staff, procurement, maintenance or engineering drawings on any page read."
+  ]
+}

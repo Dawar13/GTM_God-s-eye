@@ -1,0 +1,78 @@
+{
+  "key": "forward-deployed",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Forward Deployed VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Tectonic Defense describes Forward Deployed VC (FDVC), founded in San Francisco in 2022, a defense and security fund backed by Palantir, Anduril and SpaceX alumni; portfolio names Castelion, Chariot Defense, Rune, Turion. Lead list called it 'Forward Deployed Ventures'; the page uses 'Forward Deployed VC'. Not an engineering-role 'forward deployed' employer, and not Chariot Defense's own 'forward-deployed engineering'.",
+  "pages": [
+    { "url": "https://www.tectonicdefense.com/forward-deployed-vc-raises-45m-fund-ii/", "title": "Forward Deployed VC raises $45M Fund II", "publisher": "Tectonic Defense", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://sacra.com/c/chariot-defense/", "title": "Chariot Defense", "publisher": "Sacra", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://pulse2.com/chariot-defense-34-million-series-a-raised-to-scale-battlefield-power-systems/amp/", "title": "Chariot Defense: $34 Million Series A Raised To Scale Battlefield Power Systems", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Fund II, $45M, backed by 150 LPs from companies including Palantir, Anduril, and SpaceX" },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "Founded in San Francisco in 2022" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Founded in San Francisco in 2022" },
+    "stages": { "value": ["seed", "pre_seed"], "pages": [0, 1], "snippet": "led by General Catalyst and XYZ in July 2025, with participation from Cubit Capital, Ravelin, Forward Deployed VC" },
+    "check_min_usd": { "value": 500000, "pages": [0], "snippet": "$500K to $1M for Fund II" },
+    "check_max_usd": { "value": 1000000, "pages": [0], "snippet": "$500K to $1M for Fund II" },
+    "thesis_text": {
+      "value": "Defense and security focus, backing network-sourced founders in mission-critical industries software has not yet transformed, with plans for applied AI on physical problems.",
+      "pages": [0],
+      "snippet": "In these mission-critical industries, software and technology just haven’t yet truly transformed them"
+    },
+    "stated_sectors": {
+      "value": ["defense_dual_use", "climate_energy", "supply_chain_logistics", "industrial_manufacturing", "ai_apps_agents"],
+      "pages": [0],
+      "snippet": "Defense, energy, supply chain, manufacturing, and AI applied to these areas"
+    }
+  },
+  "funds": [
+    {
+      "name": "Forward Deployed VC Fund II",
+      "number": "II",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2025-08",
+      "date_precision": "month",
+      "pages": [0],
+      "snippet": "Fund II, $45M, announced the week of August 7, 2025"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Chariot Defense",
+        "website": null,
+        "description": "Defense technology company building battlefield power systems for drones and counter-UAS platforms.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-07",
+      "date_precision": "month",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["General Catalyst", "XYZ Venture Capital"],
+      "participants": ["Cubit Capital", "Ravelin", "Forward Deployed VC", "Pax", "New Vista", "D3", "Brave Capital"],
+      "unspecified": [],
+      "pages": [1, 2],
+      "snippet": "led by General Catalyst and XYZ in July 2025, with participation from Cubit Capital, Ravelin, Forward Deployed VC"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Website not found (forwarddeployed.vc and www.forwarddeployed.vc did not resolve / refused); not recorded.",
+    "Only 1 round recorded (Chariot seed, from Sacra, a database page; Pulse 2.0 confirms the Series A but does not name Forward Deployed VC, so Series A participation unconfirmed). Other rounds seen only in aggregators: The Compression Company pre-seed (Feb 2026, $3.4M, Long Journey Ventures lead per search results), Stone Power seed (PitchBook, 2026-05-06), Cape Series C.",
+    "Fund close date given only as the week of Aug 7, 2025 (month recorded). Fund I was $10M per the same page; Bloomberg (2025-08-05) and others not fetched.",
+    "Application URL and cold-inbound policy not found."
+  ]
+}

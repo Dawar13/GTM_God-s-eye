@@ -1,0 +1,89 @@
+{
+  "key": "forgepoint",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Forgepoint Inc. (forgepoint.ai), the US start-up behind 'Frank', an AI inside sales rep that runs the RFQ-to-quote workflow for manufacturers. The company site (home, company, product, careers and press pages), the a16z speedrun company page, and SiliconANGLE, TechFundingNews, The Next Web and American Bazaar coverage of 2026-10-14 all describe the same product, the same co-founders (Jack Strauss, CEO; Alex Pareto, CTO) and the same $9.8M seed co-led by Primary Venture Partners and a16z speedrun; the company's press page links to the funding coverage. Not any other business using the Forgepoint name (e.g. investment firms); no page read links them. Not in the PROJECT_CONTEXT §7 seed list; found through a discovery search. Category set to direct: Frank reads customer RFQs including PDFs and CAD files, extracts materials, dimensions and tolerances, drafts a BOM, prices each line against the shop's cost model and sends and follows up the quote, which is Utopian Autonomy's RFQ / BOM / engineering-drawing wedge. Differences: it is a sell-side tool for sales reps and estimators at US job shops (foundries, fabricators, molders, machine shops), working over email, text and chat on top of the ERP; no procurement, maintenance or process-stability agents and no WhatsApp channel were seen.",
+  "pages": [
+    { "url": "https://forgepoint.ai/", "title": "Forgepoint (homepage: The AI revenue engine for manufacturers)", "publisher": "Forgepoint", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://forgepoint.ai/company", "title": "Forgepoint company page", "publisher": "Forgepoint", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://forgepoint.ai/product", "title": "Forgepoint product page (Frank)", "publisher": "Forgepoint", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://forgepoint.ai/careers", "title": "Forgepoint careers", "publisher": "Forgepoint", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://forgepoint.ai/press", "title": "Forgepoint press", "publisher": "Forgepoint", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://speedrun.a16z.com/companies/forgepoint", "title": "Meet Forgepoint. AI coworkers for the manufacturing back office.", "publisher": "a16z speedrun", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://siliconangle.com/?p=850425", "title": "Forgepoint raises $9.8M to automate custom price quotes for manufacturing firms", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techfundingnews.com/forgepoint-raises-9-8m-from-primary-and-a16z-speedrun-to-put-ai-on-the-factory-quote-desk/", "title": "Forgepoint raises $9.8M from Primary and a16z speedrun to put AI on the factory quote desk", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thenextweb.com/news/forgepoint-9-8m-seed-ai-quoting-manufacturers-frank", "title": "Forgepoint raises $9.8M to help manufacturers quote faster", "publisher": "The Next Web (contributed article)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://americanbazaaronline.com/2026/10/14/forgepoint-raises-9-8-million-seed-round-to-automate-manufacturing-quotes-with-ai-490040/", "title": "Forgepoint raises $9.8 million seed round to automate manufacturing quotes with AI", "publisher": "American Bazaar", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://microsoftpartners.microsoft.com/abs/Individual-Partner-Success-Story/?title=Forgepoint%20helps%20manufacturers%20accelerate%20revenue%20growth%20with%20AI-powered%20quoting%20on%20Dynamics%20365%20Business%20Central", "title": "Forgepoint helps manufacturers accelerate revenue growth with AI-powered quoting on Dynamics 365 Business Central", "publisher": "Microsoft Partner Network", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Forgepoint",
+    "website": "https://forgepoint.ai/",
+    "description": "US start-up selling 'Frank', an AI inside sales rep that turns manufacturers' incoming RFQs (emails, PDFs, CAD) into priced quotes and follows them up.",
+    "hq_country": "US",
+    "founded_year": 2025,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "process_planning"
+  },
+  "category": "direct",
+  "layer": "process_planning",
+  "layer_detail": "Sell-side quoting / estimating for job shops rather than the plant floor: Frank qualifies inbound RFQs (email, PDF, spreadsheet, CAD), extracts materials, dimensions, tolerances, quantities and due dates from drawings, chases missing specs, drafts a BOM and prices each line against the shop's cost model, routes the quote for human sign-off, sends it, tracks opens and runs follow-ups, and logs everything to the account and job. Integrates with ERPs (Epicor, NetSuite, SAP, Sage, Infor, Syspro, Acumatica, Dynamics 365 Business Central). Industries listed: injection molding, steel mills, foundries, metal service centers, fabricators, stampers, coating and heat treat, CNC machining, forging, fasteners. process_planning is the nearest layer (drawing-to-quote), as for IndustrialMind's quoting agent.",
+  "founders": ["Jack Strauss", "Alex Pareto"],
+  "named_customers": ["SIP Manufacturing", "Excal Inc.", "Metals of Honor", "Black Label Services", "Gamma Foundries", "Riverside Foundry", "Highland Foundry Ltd", "Premix / Hadlock", "Acra Cast Inc."],
+  "product_summary": "Frank, an AI inside sales rep for manufacturers: reads incoming RFQs and drawings, asks buyers for missing details, drafts a BOM and prices it with the shop's own cost rules, holds the quote for human approval, then sends it, tracks buyer engagement and follows up, logging activity into the ERP / CRM.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 8,
+    "pages": [5],
+    "snippet": "8Employees (a16z speedrun company page header; approximate, undated)"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Forgepoint", "website": "https://forgepoint.ai/", "description": "US start-up selling 'Frank', an AI inside sales rep that turns manufacturers' incoming RFQs into priced quotes.", "hq_country": "US", "founded_year": 2025, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "process_planning" },
+      "stage": "seed",
+      "stage_raw": "Seed ($9.8M), co-led by Primary Venture Partners and a16z speedrun; angel investors from OpenAI, Brex, Vercel and SoFi participated (company page also lists angels from Joby Aviation and Betterment)",
+      "date": "2026-10-14",
+      "date_precision": "day",
+      "amount_original": 9800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Primary Venture Partners", "a16z speedrun"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [6, 7, 8, 9, 1, 4],
+      "snippet": "Forgepoint announced a $9.8 million seed round led by Primary Venture Partners and a16z speedrun."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq city",
+      "values": [
+        "New York: the careers page says 'We work together in our NYC office five days a week'; TechFundingNews calls it 'The New York startup'",
+        "San Francisco: the a16z speedrun company page says 'Located in San Francisco, California'"
+      ],
+      "chosen": "US (city not a schema field); New York preferred",
+      "reason": "The company's own careers page names only an NYC office; the speedrun page may reflect the accelerator period. Country is US either way."
+    },
+    {
+      "field": "rounds[seed].participants",
+      "values": [
+        "Angels from OpenAI, Brex, Vercel and SoFi (SiliconANGLE, TFN, TNW, American Bazaar)",
+        "Angels from OpenAI, Brex, Vercel, Joby Aviation, SoFi and Betterment (company page)"
+      ],
+      "chosen": "No individual angels recorded; affiliations kept in stage_raw",
+      "reason": "No source names the angels as people; the company page lists two more affiliations than the press. Not a contradiction about the leads."
+    }
+  ],
+  "open_items": [
+    "Total raised: $9.8M (the seed is the only round found). Whether a16z speedrun's cohort 005 investment came before or is part of the $9.8M is not stated on any page read; no pre-seed found.",
+    "Revenue: the company says it reached 'seven-figure ARR within six months' of Frank's launch (TNW, TFN; American Bazaar says 'seven-figure revenue'); no exact figure, so revenue_reported left null.",
+    "Headcount 8 is from the a16z speedrun page (undated; likely pre-seed). No other public headcount (LinkedIn not used).",
+    "named_customers: SIP Manufacturing is named in the funding coverage (founder and CRO Chas Aday quoted) and has a case study link on the homepage. The other eight are logos on the homepage under 'Forged in real shops.'; the page does not label them customers in words. Names in product mock-ups (e.g. Ridgeline Fab, Powell Pump) are illustrative and excluded.",
+    "Founding year 2025 from the a16z speedrun page only.",
+    "Forbes (2026-10-14) returned 403; Axios Pro (2026-10-14) returned 403; Business Insider Markets copy of the release could not be fetched. Microsoft Partner success story (2026-10-07) showed only its title.",
+    "Pricing not public (demo-led).",
+    "No WhatsApp, procurement / purchasing, maintenance or process-stability features seen; channels are email plus 'text, or chat' for asking Frank."
+  ]
+}

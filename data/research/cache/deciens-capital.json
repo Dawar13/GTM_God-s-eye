@@ -1,0 +1,101 @@
+{
+  "key": "deciens-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Deciens Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as deciens.com, the Albuquerque, New Mexico early-stage fintech VC (Albuquerque Journal; founder/managing partner Daniel Kimerling per Pulse 2.0). Site lists Treasury Prime, Chipper Cash, Gynger, Transparency Analytics. Not Decibel, not Deci (AI company).",
+  "pages": [
+    { "url": "https://www.deciens.com", "title": "Deciens Capital", "publisher": "Deciens Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.abqjournal.com/business/albuquerques-deciens-capital-closes-93-million-fund/452141", "title": "Albuquerque's Deciens Capital closes $93 million fund", "publisher": "Albuquerque Journal", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/deciens-capital-93-33-million-fund-iii-closed-to-invest-in-fintech/amp/", "title": "Deciens Capital: $93.33 Million Fund III Closed To Invest In Fintech", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech.global/2025/12/31/transparency-analytics-secures-new-backing-for-credit-benchmarking/", "title": "Transparency Analytics secures new backing for credit benchmarking", "publisher": "FinTech Global", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/grupago-4-3-million-funding/amp/", "title": "Grupago: $4.3 Million Raised To Expand Digital Microcredit Offerings For SMBs In Latin America", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "has successfully closed its third fund, Fund III, with $93.33 million in limited partner commitments." },
+    "website": { "value": "https://www.deciens.com", "pages": [0], "snippet": "the next generation of financial services" },
+    "hq_city": { "value": "Albuquerque", "pages": [1], "snippet": "An Albuquerque-based venture capital firm" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "An Albuquerque-based venture capital firm" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 4], "snippet": "at the earliest stage of their entrepreneurial journey" },
+    "thesis_text": {
+      "value": "Concentrated early-stage investor in next-generation financial services, aiming to be the first material capital into companies with compounding moats in winner-take-all markets.",
+      "pages": [0, 1],
+      "snippet": "the first material capital invested into companies of consequence"
+    },
+    "stated_sectors": { "value": ["fintech"], "pages": [0], "snippet": "the next generation of financial services" },
+    "application_url": { "value": "https://www.deciens.com/contact-us", "pages": [0], "snippet": "Contact link pointing to /contact-us" }
+  },
+  "funds": [
+    {
+      "name": "Deciens Capital Fund III",
+      "number": "III",
+      "size_original": 93330000,
+      "currency_original": "USD",
+      "close_date": "2025-07-29",
+      "date_precision": "day",
+      "pages": [1, 2],
+      "snippet": "has successfully closed its third fund, Fund III, with $93.33 million in limited partner commitments."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Transparency Analytics",
+        "website": null,
+        "description": "Financial benchmarking and credit ratings business focused on private credit.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "second funding round",
+      "date": "2025-12-31",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Deciens Capital"],
+      "participants": ["Allianz Life Ventures", "Mouro Capital", "FJ Labs", "SUM Ventures", "Core Innovation Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "including Deciens Capital, who is known for their focus on digital transformation"
+    },
+    {
+      "company": {
+        "name": "Grupago",
+        "website": null,
+        "description": "Online small-business lending in Latin America, currently active in Mexico.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2024-03-12",
+      "date_precision": "day",
+      "amount_original": 4300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Deciens Capital"],
+      "participants": ["Precursor Ventures", "Clocktower Ventures", "Twine Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Grupago and its founder Uri are emblematic of the types of innovators Deciens dreams of working with."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. June Point Lending seed (July 2025, Deciens lead) seen only on a Caplight search summary; Generous Energy had no round details. Grupago is older than 24 months.",
+    "Transparency Analytics date is the FinTech Global article date (2025-12-31); Business Wire release appears dated about 2025-12-17 (not fetched). Amount undisclosed.",
+    "Fund close date 2025-07-29 matches the lead and Albuquerque Journal ('announced Tuesday', article 2025-07-30); Pulse 2.0 dates the announcement Aug 6 and Business Wire (Aug 5) returned 403.",
+    "Check size not stated; stage 'pre_seed/seed' inferred from the 'earliest stage' wording and the Grupago seed lead. Pulse 2.0 does not state HQ; HQ from the Albuquerque Journal.",
+    "Cold-inbound policy not stated; /contact-us not fetched."
+  ]
+}

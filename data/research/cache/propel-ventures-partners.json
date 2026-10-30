@@ -1,0 +1,109 @@
+{
+  "key": "propel-ventures-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Propel Venture Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as propel.vc, the San Francisco (900 Kearny Street) fintech-focused pre-seed/seed VC, BBVA spin-off founded 2016, partners Jay Reinemann and David Mort (Pulse 2.0 Fund V article). Portfolio on site: Coinbase, Groww, Newfront, Guideline, Neon, Nomad. Not Propel Ventures of Durham/Atlanta-area co-investors, not PropelX, not Propel (AI), not Propel People.",
+  "pages": [
+    { "url": "https://propel.vc", "title": "Propel Venture Partners", "publisher": "Propel Venture Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/propel-venture-partners-100-million-fund-v-closed/amp/", "title": "Propel Venture Partners: $100 Million Fund V Closed", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://latamlist.com/bond-raises-2m-to-automate-sme-accounting-in-brazil-with-ai/", "title": "BOND raises $2M to automate SME accounting in Brazil with AI", "publisher": "LatamList", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech.global/2025/12/12/safebooks-ai-raises-15m-for-finance-data-integrity-tech/", "title": "Safebooks AI raises $15m for finance data integrity tech", "publisher": "FinTech Global", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.siliconlegal.com/sls-client-propel-venture-partners-co-leads-safebooks-15mm-seed-round", "title": "SLS Client Propel Venture Partners Co-Leads Safebooks' $15MM Seed Round", "publisher": "Silicon Legal", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "$100 million in commitments" },
+    "website": { "value": "https://propel.vc", "pages": [0], "snippet": "Backing the builders of the new economy." },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "900 Kearny Street, San Francisco, California" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "900 Kearny Street, San Francisco, California" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "pre-seed and seed rounds" },
+    "check_min_usd": { "value": 1000000, "pages": [1], "snippet": "$1-4 million per company" },
+    "check_max_usd": { "value": 4000000, "pages": [1], "snippet": "$1-4 million per company" },
+    "thesis_text": {
+      "value": "Early-stage investments where technology meets financial services, plus horizontal technologies, with smaller fund size allowing early, founder-aligned entry.",
+      "pages": [1],
+      "snippet": "early-stage investments in the intersection of technology and financial services"
+    },
+    "stated_sectors": {
+      "value": ["fintech", "ai_apps_agents", "climate_energy", "ai_infra"],
+      "pages": [0],
+      "snippet": "financial services, AI, energy, compute, and emerging markets"
+    },
+    "application_url": { "value": "https://propel.vc/raising/", "pages": [0], "snippet": "Apply for funding: propel.vc/raising/" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "Apply for funding: propel.vc/raising/" },
+    "portfolio_count_reported": { "value": 62, "pages": [1], "snippet": "62 companies since the 2016 founding" }
+  },
+  "funds": [
+    {
+      "name": "Propel Venture Partners Fund V",
+      "number": "V",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2025-07-10",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$100 million in commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "BOND",
+        "website": null,
+        "description": "Brazilian startup using AI to modernise bookkeeping for small and mid-size businesses while keeping human accountants involved.",
+        "hq_country": "BR",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-04-17",
+      "date_precision": "day",
+      "amount_original": 2000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Propel Venture Partners"],
+      "participants": ["Kiara Capital", "Norte Ventures", "Hypersphere", "Patrick Sigrist"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "raised a $2M round led by Propel Venture Partners."
+    },
+    {
+      "company": {
+        "name": "Safebooks AI",
+        "website": null,
+        "description": "Agentic revenue-integrity platform that monitors finance revenue data in real time on top of existing systems.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-12-10",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["10D", "Propel Venture Partners", "Mensch Capital"],
+      "participants": ["Moneta Venture Capital", "Magnolia Capital", "Cerca Fund", "Blue Moon"],
+      "unspecified": [],
+      "pages": [3, 4],
+      "snippet": "Silicon Legal represented Propel Venture Partners as they co-led Safebooks' $15 million Seed round."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. Opine $5M seed (Dec 2025, S3 Ventures lead) and Akua $8.5M seed (Oct 2025) list 'Propel Ventures' / 'Propel' in search summaries only and the entity match was not verified, so not recorded.",
+    "Fund V close date 2025-07-10 from the Axios/Business Wire dates in search results and the lead; the fetched Pulse 2.0 article is dated 2025-07-15. Business Wire not fetched.",
+    "Lead list's $50M (2021-06-01) fund not verified; only Fund V recorded. Pulse 2.0 says total raised over $436M.",
+    "BOND stage conflicts across sources (pre-seed/seed/Series A); LatamList does not state it, so left undisclosed. Safebooks: FinTech Global names 'Propel Ventures' as co-lead; Silicon Legal (law-firm client note) confirms Propel Venture Partners. HQ of both startups not stated on fetched pages beyond BOND being Brazilian.",
+    "Name: the key is 'propel-ventures-partners' as instructed; the firm writes 'Propel Venture Partners'."
+  ]
+}

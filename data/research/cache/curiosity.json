@@ -1,0 +1,584 @@
+{
+  "key": "curiosity",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "Curiosity",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Curiosity Venture Capital B.V. (curiosityvc.com, also styled Curiosity VC), the Amsterdam early-stage AI software investor founded in 2021 by Herman Kienhuis (ex-KPN Ventures) and Maurice Beckand Verwee (Crosspring). Its own post of June 2026 announces the EUR 17M first tranche of Curiosity Fund II for vertical AI, which matches the lead; Vestbee reports the same close and names curiosityvc.com as the firm's site. The Dutch RVO Seed Capital register lists its vehicle Curiosity Seed Fund B.V., managed by Curiosity Venture Capital B.V., at TNW West, Amsterdam, with www.curiosityvc.com as its site. Ruled out: the curiosity.vc domain (connection refused, no link to this firm), a 'Curiosity Partners' listing that surfaced in search (not opened; it does not match the Fund II announcement), and the Curiosity Foundation (curiosityvc.org), the firm's own charitable arm that receives 10% of carried interest, not an investing entity. Also note: the portfolio company 'Utopian Labs' (sales-workflow AI agents, acquired by Zapier) is unrelated to Utopian Autonomy.",
+  "pages": [
+    { "url": "https://curiosityvc.com", "title": "Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://curiosityvc.com/about", "title": "About - Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://curiosityvc.com/team", "title": "Team - Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://curiosityvc.com/portfolio", "title": "Portfolio - Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://curiosityvc.com/news", "title": "News & Insights - Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/curiosity-vc-closes-eu17m-first-tranche-of-fund-ii-to-back-vertical-ai-startups-across-europe", "title": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://vestbee.com/insights/articles/curiosity-vc-raises-17-m", "title": "Curiosity VC raises €17M first close of Fund II", "publisher": "Vestbee", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tech.eu/brief/the-fast-and-the-curious-new-dutch-vc-unveils-e50-million-fund-for-ai-startups-in-northern-europe/", "title": "The fast and the curious: New Dutch VC unveils €50 million fund for AI startups in Northern Europe", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.unquote.com/benelux/news/3027291/curiosity-vc-eyes-eur-75m-fund-close-in-2023", "title": "Curiosity VC eyes EUR 75m fund close in 2023", "publisher": "Unquote", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.curiosityvc.com/post/new-vc-fund-curiosity-launches-with-first-investment-in-explainable-ai-startup-deeploy", "title": "New VC fund Curiosity launches with first investment in explainable AI startup Deeploy", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.rvo.nl/subsidies-financiering/seed-capital/totaaloverzicht-fondsen/curiosity-seed-fund-bv", "title": "Curiosity Seed Fund B.V. - Seed Capital fondsen", "publisher": "Rijksdienst voor Ondernemend Nederland (RVO)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://curiosityvc.com/investors", "title": "Investors - Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/indurex-raises-eu7-million-to-bring-engineering-intelligence-to-critical-infrastructure-and-industrial-operations", "title": "Indurex Raises €7 Million to Bring Engineering Intelligence to Critical Infrastructure and Industrial Operations", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cfnews.net/L-actualite/International/Operations/Capital-innovation/Un-tricolore-renforce-l-infrastructure-d-Indurex-753405", "title": "Un tricolore renforce l'infrastructure d'Indurex", "publisher": "CFNEWS", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.curiosityvc.com/post/reebuild-raises-eu3m-seed-round-to-build-ai-native-back-office-automation-for-construction-and-real-estate", "title": "reebuild Raises €3M Seed Round to Build AI-Native Back-Office Automation for Construction and Real Estate", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/curiosity-leads-15million-pre-seed-round-in-ai-native-sme-credit-provider-duqu", "title": "Curiosity leads €1.5 million pre-seed round in AI-native SME credit provider Duqu", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/display-dev-raises-eu470k-to-power-document-collaboration-for-ai-agents", "title": "Display.dev raises €470K to power document collaboration for AI agents", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/why-did-we-invest-in-display-dev", "title": "Why we invested in Display.dev?", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/dawnguard-launches-platform-to-build-secure-cloud-systems-from-day-zero-with-fresh-funding-and-us-office", "title": "Dawnguard launches platform to build secure cloud systems from day zero, with fresh funding and US office", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/imperum-funding-round", "title": "Imperum raises seed round to scale its autonomous SOC platform", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/validfor-raises-1-2-million-to-shape-the-future-of-life-sciences-validation-with-agentic-ai", "title": "Validfor Raises $1.2 million to Shape the Future of Life Sciences Validation with Agentic AI", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/lynk-raises-pre-seed-round-led-by-curiosity-vc-to-scale-ai-contract-control-across-europe", "title": "Curiosity VC leads pre-seed round in Lynk, scaling AI contract control across Europe", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/cybersecurity-startup-xfa-raises-eu1-5-million-led-by-scalefund-and-curiosity-to-scale-security-for-the-hidden-60-of-work-devices", "title": "Cybersecurity Startup XFA Raises €1.5 Million to Scale Security for the 'Hidden' 60% of Work Devices", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/orq-ai-closes-eu5m-in-seed-funding-to-help-enterprises-deploy-ai-agents-at-scale", "title": "Orq.ai Closes €5M in Seed Funding to Help Enterprises Deploy AI Agents at Scale", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/dreamdata-closes-55m-series-b-to-empower-b2b-marketers-to-own-revenue-in-the-ai-era", "title": "Dreamdata Closes $55M Series B to Empower B2B Marketers to Own Revenue in the AI Era", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/altura-raises-eu8m-series-a-for-autonomous-ai-agents-that-help-organizations-win-public-and-private-tenders", "title": "Altura raises €8m Series A for autonomous AI agents that help organisations win public and private tenders", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/curiosity-vc-joins-eu3-7m-seed-round-for-telescope-a-proptech-company-turning-sustainability-risk-challenges-into-strategic-advantages-for-real-estate", "title": "Curiosity VC joins €3.7M Seed round for Telescope", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.curiosityvc.com/post/dutch-insurance-analytics-company-onesurance-raises-their-seed-round-led-by-curiosity-vc", "title": "Dutch insurance analytics company Onesurance raises their seed round led by Curiosity VC", "publisher": "Curiosity", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.everythingstartups.com/vc-funds/curiosity-vc", "title": "Curiosity VC", "publisher": "Everything Startups", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "aliases": {
+      "value": ["Curiosity VC", "Curiosity Venture Capital", "Curiosity Venture Capital B.V.", "CuriosityVC"],
+      "pages": [0, 1, 6, 14],
+      "snippet": "© Copyright Curiosity Venture Capital B.V. • All rights reserved."
+    },
+    "type": {
+      "value": "vc",
+      "pages": [0, 5],
+      "snippet": "We invest in Nordic, Baltic, and Benelux founders to build AI software companies that serve the world, not eat it."
+    },
+    "website": {
+      "value": "https://www.curiosityvc.com",
+      "pages": [0, 6, 10],
+      "snippet": "We invest in Nordic, Baltic, and Benelux founders to build AI software companies that serve the world, not eat it."
+    },
+    "linkedin": {
+      "value": "https://www.linkedin.com/company/curiosityvc/",
+      "pages": [0, 11],
+      "snippet": "© Copyright Curiosity Venture Capital B.V. • All rights reserved."
+    },
+    "hq_city": {
+      "value": "Amsterdam",
+      "pages": [10, 5, 6, 7, 8],
+      "snippet": "Bezoekadres: TNW West, Koningin Wilhelminaplein 1, 1062 HG, Amsterdam"
+    },
+    "hq_country": {
+      "value": "NL",
+      "pages": [10, 5, 7],
+      "snippet": "Bezoekadres: TNW West, Koningin Wilhelminaplein 1, 1062 HG, Amsterdam"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [5, 6],
+      "snippet": "The firm focuses on pre-seed and seed investments in European AI-centric software companies."
+    },
+    "check_range": {
+      "value": { "min": 500000, "max": 1500000, "currency": "EUR" },
+      "pages": [10, 8],
+      "snippet": "Curiosity Seed Fund investeert initieel bedragen van € 500.000 tot € 1.500.000 per participatie."
+    },
+    "leads": {
+      "value": true,
+      "pages": [15, 19, 21, 22, 27],
+      "snippet": "Duqu has raised €1.5 million in a pre-seed round, led by Curiosity VC, with participation of No Such Ventures."
+    },
+    "thesis_text": {
+      "value": "Amsterdam early-stage fund backing AI-native B2B software founders in the Benelux, Nordics and Baltics, with selective co-investments in London, Berlin and Paris. Fund II concentrates on pre-seed and seed vertical AI companies serving industries such as finance, legal, real estate, energy, manufacturing and cybersecurity. Founders and advisors share in fund profits; 10% of carry goes to its foundation.",
+      "pages": [0, 1, 5, 6],
+      "snippet": "inside industries like finance, legal, real estate, energy, manufacturing and cybersecurity."
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "enterprise_saas", "fintech", "climate_energy", "industrial_manufacturing", "dev_tools", "supply_chain_logistics"],
+      "pages": [5, 0, 6],
+      "snippet": "inside industries like finance, legal, real estate, energy, manufacturing and cybersecurity."
+    },
+    "application_url": {
+      "value": "https://forms.gle/gxXFoejN7WSpSXmF8",
+      "pages": [0, 1, 11],
+      "snippet": "Submit Your Pitch"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "If this is you, send us your pitch deck"
+    },
+    "requires_us_entity": {
+      "value": "unknown",
+      "pages": [0, 5],
+      "snippet": "HQ in Benelux, Nordics, Baltics."
+    },
+    "portfolio_count_reported": {
+      "value": 24,
+      "pages": [5],
+      "snippet": "Across Fund I and Fund II, Curiosity has invested in 24 portfolio companies"
+    }
+  },
+  "funds": [
+    {
+      "name": "Curiosity Fund I (debut fund)",
+      "number": "I",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [5, 7, 8, 9],
+      "snippet": "Fund I, which backed 23 early-stage AI startups across the Benelux, Nordics, and Baltics."
+    },
+    {
+      "name": "Curiosity Seed Fund B.V. (RVO Seed Capital vehicle)",
+      "number": null,
+      "size_original": 12000000,
+      "currency_original": "EUR",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [10],
+      "snippet": "Investeringsbudget: € 12 miljoen"
+    },
+    {
+      "name": "Curiosity Fund II (first close; EUR 30-40M target)",
+      "number": "II",
+      "size_original": 17000000,
+      "currency_original": "EUR",
+      "close_date": "2026-06-09",
+      "date_precision": "day",
+      "pages": [5, 6],
+      "snippet": "Curiosity VC Closes €17M First Tranche of Fund II to Back Vertical AI Startups Across Europe"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Herman Kienhuis",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": ["ai_apps_agents", "ai_infra", "fintech"],
+      "linkedin_url": "https://www.linkedin.com/in/hermankienhuis/",
+      "pages": [2, 5, 15, 23]
+    },
+    {
+      "name": "Maurice Beckand Verwee",
+      "title": "Founder & Managing Partner",
+      "focus_sectors": ["ai_apps_agents", "enterprise_saas"],
+      "linkedin_url": "https://www.linkedin.com/in/mauricebv",
+      "pages": [2, 19, 5]
+    },
+    {
+      "name": "Akshata Agarwal",
+      "title": "Principal",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/akshata-a-84602435/",
+      "pages": [2]
+    },
+    {
+      "name": "Sebastian Johansson",
+      "title": "Investment manager",
+      "focus_sectors": [],
+      "linkedin_url": "https://www.linkedin.com/in/sebastianljohansson/",
+      "pages": [2]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Indurex",
+        "website": "https://www.indurex.ai",
+        "description": "Dutch AI-native engineering company that manages engineering risk and cyber security for critical infrastructure and industrial operations.",
+        "hq_country": "NL",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Contrarian Ventures"],
+      "participants": ["Axeleo Capital", "Curiosity"],
+      "unspecified": [],
+      "pages": [12, 13],
+      "snippet": "Round led by Contrarian Ventures, with participation from Axeleo Capital and Curiosity"
+    },
+    {
+      "company": {
+        "name": "reebuild",
+        "website": "https://reebuild.com",
+        "description": "Vienna vertical-AI platform that automates invoice review, cost management and material tracking for construction and real-estate firms.",
+        "hq_country": "AT",
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-10-13",
+      "date_precision": "day",
+      "amount_original": 3000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Fortino Ventures"],
+      "participants": ["Rise PropTech", "CuriosityVC"],
+      "unspecified": [],
+      "pages": [14],
+      "snippet": "The round is led by European investor Fortino Ventures, with participation from Rise PropTech and CuriosityVC."
+    },
+    {
+      "company": {
+        "name": "Duqu",
+        "website": "https://duqu.ai",
+        "description": "Amsterdam AI-native fintech that advances cash to SMEs and freelancers against their outstanding invoices.",
+        "hq_country": "NL",
+        "founded_year": 2025,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "amount_original": 1500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Curiosity VC"],
+      "participants": ["No Such Ventures"],
+      "unspecified": [],
+      "pages": [15],
+      "snippet": "Duqu has raised €1.5 million in a pre-seed round, led by Curiosity VC, with participation of No Such Ventures."
+    },
+    {
+      "company": {
+        "name": "Display.dev",
+        "website": "https://display.dev/",
+        "description": "Tallinn startup building a document platform where AI agents publish, share and update documents.",
+        "hq_country": "EE",
+        "founded_year": 2026,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed funding",
+      "date": "2026-07-07",
+      "date_precision": "day",
+      "amount_original": 470000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Outlast Fund", "FIRSTPICK", "Curiosity VC", "Henrik Bohman"],
+      "pages": [16, 17],
+      "snippet": "Display.dev, a Tallinn-based startup building a document platform for AI agents, has raised €470,000 in pre-seed funding."
+    },
+    {
+      "company": {
+        "name": "Dawnguard",
+        "website": null,
+        "description": "Security platform that designs secure cloud architecture and turns it into deployable infrastructure; opened a New York office in 2026.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed funding (additional)",
+      "date": "2026-07-01",
+      "date_precision": "day",
+      "amount_original": 3300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Curiosity VC", "eCAPITAL"],
+      "unspecified": ["BNVT Capital"],
+      "pages": [18],
+      "snippet": "with new participation from Curiosity VC in the Netherlands and eCAPITAL in Germany"
+    },
+    {
+      "company": {
+        "name": "Imperum",
+        "website": "https://www.imperum.io",
+        "description": "Amsterdam company building an autonomous security-operations (SOC) platform where AI agents triage and investigate alerts.",
+        "hq_country": "NL",
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-06-11",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Curiosity VC"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [19],
+      "snippet": "has raised a seed round led by European AI investor Curiosity VC, which joins as a strategic investor and partner."
+    },
+    {
+      "company": {
+        "name": "Validfor",
+        "website": "https://www.validfor.com",
+        "description": "B2B startup with an agentic AI platform for digital validation and compliance in pharma, biotech and medtech.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2026-02-24",
+      "date_precision": "day",
+      "amount_original": 1200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["DOMiNO Ventures"],
+      "participants": ["Curiosity VC"],
+      "unspecified": [],
+      "pages": [20],
+      "snippet": "raised $1.2 million in a pre-seed round led by DOMiNO Ventures, with participation from Curiosity VC and angel investors."
+    },
+    {
+      "company": {
+        "name": "Lynk",
+        "website": "https://www.lynk.so",
+        "description": "Rotterdam software company offering an AI contract-control platform for organisations.",
+        "hq_country": "NL",
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Curiosity VC"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [21],
+      "snippet": "has raised a pre-seed round led by European AI investor Curiosity VC"
+    },
+    {
+      "company": {
+        "name": "XFA",
+        "website": "https://www.xfa.tech",
+        "description": "Antwerp cybersecurity company that checks device security at login without invasive device-management software.",
+        "hq_country": "BE",
+        "founded_year": 2023,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "amount_original": 1500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["ScaleFund", "Curiosity"],
+      "participants": ["PMV", "Seeder Fund", "Investee"],
+      "unspecified": [],
+      "pages": [22],
+      "snippet": "This seed round was led by ScaleFund (Belgium) and Curiosity (the Netherlands)"
+    },
+    {
+      "company": {
+        "name": "Orq.ai",
+        "website": "https://orq.ai",
+        "description": "Amsterdam enterprise control platform for building, deploying and governing AI agents across their lifecycle.",
+        "hq_country": "NL",
+        "founded_year": 2022,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "oversubscribed seed funding round",
+      "date": "2025-12-03",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["seed + speed Ventures", "Galion.exe"],
+      "participants": ["Curiosity", "Spacetime", "XO Ventures", "xdeck ventures", "Waves Capital", "GoldenEggCheck"],
+      "unspecified": [],
+      "pages": [23],
+      "snippet": "with continued backing from Curiosity and other existing investors Spacetime, XO Ventures, xdeck ventures, Waves Capital, and GoldenEggCheck."
+    },
+    {
+      "company": {
+        "name": "Dreamdata",
+        "website": "https://dreamdata.io",
+        "description": "B2B activation and attribution platform that unifies go-to-market data so B2B marketers can tie activity to revenue.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-10-14",
+      "date_precision": "day",
+      "amount_original": 55000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["PeakSpan Capital"],
+      "participants": ["Curiosity VC", "InReach Ventures", "Angel Invest", "Crowberry Capital"],
+      "unspecified": [],
+      "pages": [24],
+      "snippet": "led by PeakSpan Capital, with participation from existing investors Curiosity VC, InReach Ventures, Angel Invest and Crowberry Capital."
+    },
+    {
+      "company": {
+        "name": "Altura",
+        "website": "https://altura.io",
+        "description": "Amsterdam bid-management platform using autonomous AI agents to help organisations prepare and win public and private tenders.",
+        "hq_country": "NL",
+        "founded_year": 2022,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-06-09",
+      "date_precision": "day",
+      "amount_original": 8000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Octopus Ventures"],
+      "participants": ["Fortino Capital", "Curiosity VC", "Perry Oostdam"],
+      "unspecified": [],
+      "pages": [25],
+      "snippet": "participation from existing investors Fortino Capital, Curiosity VC, and Perry Oostdam"
+    },
+    {
+      "company": {
+        "name": "Telescope",
+        "website": "https://www.telescope.eco/",
+        "description": "Norwegian proptech platform helping real-estate owners understand, manage and reduce climate-related risks to their properties.",
+        "hq_country": "NO",
+        "founded_year": 2022,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-03-05",
+      "date_precision": "day",
+      "amount_original": 3700000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Scale Capital", "Dreamcraft Ventures"],
+      "participants": ["Curiosity VC", "OBOS (investment arm)"],
+      "unspecified": [],
+      "pages": [26],
+      "snippet": "led by Scale Capital and Dreamcraft Ventures, with participation from Dutch investor Curiosity VC and the investment arm of Norwegian property developer OBOS."
+    },
+    {
+      "company": {
+        "name": "Onesurance",
+        "website": "https://www.onesurance.ai",
+        "description": "Dutch AI-driven data-science company providing customer-insight analytics to insurers, brokers and intermediaries.",
+        "hq_country": "NL",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed investment",
+      "date": "2024-10-17",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["Curiosity VC"],
+      "participants": ["Smarter Ventures"],
+      "unspecified": [],
+      "pages": [27],
+      "snippet": "The round was led by Dutch AI investor Curiosity VC with co-investments from SaaS investor Smarter Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "stages",
+      "values": [
+        "pre-seed and seed (Fund II post, June 2026; Vestbee)",
+        "seed-stage to Series B rounds (Unquote, July 2022, debut fund)",
+        "companies that have launched their first product and are gaining momentum (homepage)"
+      ],
+      "chosen": "pre_seed, seed",
+      "reason": "The Fund II announcement is the firm's current statement of strategy. Series B appearances (Dreamdata) are follow-ons from Fund I positions."
+    },
+    {
+      "field": "check_range",
+      "values": [
+        "EUR 500,000 to 1,500,000 initial per company (RVO register for Curiosity Seed Fund B.V.; Unquote 2022 for the debut fund, with follow-ons up to EUR 3-4m total)",
+        "$500K-$2M (Everything Startups database, no source cited)"
+      ],
+      "chosen": "EUR 500,000 - 1,500,000",
+      "reason": "A government register and a press report agree on the euro range. The database figure has no source. No ticket size is stated for Fund II."
+    },
+    {
+      "field": "funds.Fund II close_date",
+      "values": ["June 5, 2026 (date shown above the Curiosity post)", "June 9, 2026 (dateline in the body of the Curiosity post; Vestbee article date)"],
+      "chosen": "2026-06-09",
+      "reason": "The press-release dateline and the independent report agree. June 5 looks like the page's publishing date."
+    },
+    {
+      "field": "portfolio_count_reported",
+      "values": [
+        "24 portfolio companies across Fund I and Fund II (Fund II post, June 2026)",
+        "23 early-stage AI startups in Fund I (same post)",
+        "28 company cards under 'Meet the companies', plus 21 angel-syndicate and 16 previous-fund companies (portfolio page, Oct 2026)",
+        "over 60 companies invested in by the team over their careers (about page)"
+      ],
+      "chosen": "24",
+      "reason": "The firm's own count of fund investments. The portfolio page has grown since June 2026 (Duqu, reebuild, Indurex, Display.dev) and mixes in team members' earlier angel and fund investments."
+    },
+    {
+      "field": "funds.Fund I size",
+      "values": [
+        "aims to grow towards EUR 50M to invest in 20 companies (Curiosity launch post and Tech.eu, Jan 2022)",
+        "EUR 50m target, hard cap up to EUR 75m, final close planned for 2023; first close April 2022 with 55 LPs, amount undisclosed (Unquote, July 2022)",
+        "combined assets under management of EUR 50M across Fund I and Fund II (Fund II post, June 2026)"
+      ],
+      "chosen": "size not recorded",
+      "reason": "No page states Fund I's final size or close date. The 2026 AUM figure suggests Fund I closed well below its EUR 50-75M target, but subtracting the Fund II first close would be a guess."
+    },
+    {
+      "field": "hq_city",
+      "values": ["Amsterdam (RVO register address at TNW West; Tech.eu; Unquote; Fund II post)", "Amsterdam and Zoetermeer (Curiosity launch post, Jan 2022)"],
+      "chosen": "Amsterdam",
+      "reason": "Every current source names Amsterdam, and the register gives an Amsterdam visiting address."
+    }
+  ],
+  "open_items": [
+    "Fund II final close not found as of 2026-10-30. The June 2026 post targets EUR 30-40M with a final close 'later this year'. LPs at first close: 44 private investors plus RVO Seed Capital matching for Dutch investments.",
+    "Fund I final size and close date not found. Known: 35 investors committed at launch (Jan 2022), first close April 2022 with 55 LPs (amount undisclosed), EUR 50M target and EUR 75M hard cap (Unquote). Investment Fund Groningen joined as an LP (Curiosity post, Feb 2024; amount not stated).",
+    "Curiosity Seed Fund B.V. (RVO register): EZK loan EUR 6M, investment budget EUR 12M, term 2022-2032, investment period 2022-2026, aims to back 10 Dutch software companies, managed by Curiosity Venture Capital B.V. Its relationship to Fund I (probably a parallel vehicle for Dutch deals) is not stated. Whether Fund II has its own RVO vehicle is not stated.",
+    "Check size for Fund II not stated; the EUR 500K-1.5M range comes from the Fund I-era RVO vehicle and Unquote 2022.",
+    "Nothing found on investing in Indian founders, so that fact is omitted. Nothing found on requiring a US entity; the firm targets companies headquartered in the Benelux, Nordics and Baltics.",
+    "Rounds come from Curiosity's own news posts (primary). Independent press was not fetched for most; the CFNEWS Indurex article is paywalled and confirms only a trio of European investors and that the Dutch startup was launched 'last year' by Jalal Bouhdada (so founded probably 2025, not recorded). Indurex's stage is not stated; CFNEWS's wording 's'amorce' suggests a seed round.",
+    "Round gaps: amounts not disclosed for Imperum, Lynk and Onesurance. HQ not stated for Dawnguard (dateline New York & Amsterdam), Validfor and Dreamdata (dateline Copenhagen, New York). Dawnguard's website is not linked. In Dawnguard's round the $3.3M came 'from existing investor BNVT Capital', so BNVT is recorded as unspecified rather than lead. Display.dev's post names no lead.",
+    "Older rounds on curiosityvc.com/news, not fetched or recorded: Moonlit (Aug 2024), Epum $1.6M pre-seed led (Jul 2024), Neople EUR 6M (Jun 2024), QA.tech (May 2024), Altura EUR 3M seed led (Mar 2024), Orq.ai pre-seed extension to EUR 2.3M (Mar 2024), BeCause $2.5M seed (Feb 2024), Version Lens EUR 1.5M (Jan 2024), Luna.ai (Nov 2023), Orquesta EUR 800K pre-seed led (Oct 2023), Strise $10.8M (Sep 2023), Neople EUR 1.5M (Jun 2023), Deeploy EUR 2.5M seed (Jun 2023), Epicbrief led (Apr 2023), Dreamdata EUR 7M Series A (Mar 2023), Strise EUR 3.3M led (Nov 2022), Freesi (Jun 2022), Alpha AR (Mar 2022), Deeploy EUR 0.8M first investment (Jan 2022).",
+    "Exits named by the firm: Nalvin joined Lovable (Jul 2026) and Utopian Labs was acquired by Zapier (Oct 2025). The portfolio page labels every card 'Exit', including companies that raised recently, which looks like a site display quirk rather than real exits.",
+    "Team changes: Lisa Brouwer was quoted as Principal at Curiosity (XFA post, Dec 2025) and Elliot Schouten as CFO and investment manager (Lynk post, Dec 2025); neither is on the current core team, and Schouten now appears as an advisor. 'Fleur, AI Analyst' on the team page links only to the company LinkedIn page. Investment Analyst Eva Formica is not recorded as a partner. The team page states no focus areas, so partner focus_sectors are drawn from the deals each founder is quoted on (Kienhuis: Duqu, Orq.ai, Fund II; Beckand Verwee: Imperum).",
+    "Sifted, Tech.eu and EU-Startups coverage of the individual 2025-2026 rounds was not searched (search budget spent on fund history)."
+  ]
+}

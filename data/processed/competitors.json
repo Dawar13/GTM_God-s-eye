@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:50:39+00:00",
+  "generated_at": "2026-10-30T08:10:05+00:00",
   "records": [
     {
       "id": "co_applied-intuition",
@@ -17,7 +17,7 @@
       "sources": [
         {
           "url": "https://appliedintuition.com/news/series-f",
-          "title": "Applied Intuition Closes $600M Series F at $15B Valuation",
+          "title": "Applied Intuition Series F",
           "publisher": "Applied Intuition",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
@@ -291,6 +291,13 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing",
+          "title": "Arda raises $232M at $1.5bn for AI manufacturing",
+          "publisher": "The Next Web",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://arda.ai/",
           "title": "Arda Industries – AI for Manufacturing",
           "publisher": "Arda Industries, Inc.",
@@ -303,13 +310,6 @@
           "publisher": "Arda Industries, Inc.",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
-        },
-        {
-          "url": "https://thenextweb.com/news/arda-bob-mcgrew-232m-1-5bn-ai-manufacturing",
-          "title": "Ex-OpenAI research chief Bob McGrew’s Arda raises $232M for US factories",
-          "publisher": "The Next Web",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         },
         {
           "url": "https://letsdatascience.com/news/ex-openai-research-chief-bob-mcgrews-arda-raises-230m-at-15b-f1b22022",
@@ -335,7 +335,7 @@
       ],
       "field_sources": {
         "website": [
-          0
+          1
         ]
       },
       "confidence": "high",
@@ -714,6 +714,146 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Workforce-operations SaaS for industrial teams: plans headcount coverage and skill gaps, runs structured on-the-job and classroom training, keeps a live skills matrix and audit-ready qualification records, and assigns jobs only to qualified operators, giving frontline leaders real-time visibility of capability and bench strength.",
+      "pricing": null
+    },
+    {
+      "id": "co_didero",
+      "name": "Didero",
+      "website": "https://www.didero.ai/",
+      "hq_country": "US",
+      "founded_year": 2023,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "New York startup selling AI agents that run direct-spend procurement work (supplier follow-ups, POs, sourcing, AP) on top of manufacturers' and distributors' ERPs.",
+      "total_raised_usd": 37000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/07/17/didero-is-using-ai-to-solve-supply-chain-management-at-mid-market-companies/",
+          "title": "Didero is using AI to solve supply chain management at mid-market companies",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.constructcap.com/articles/investing-in-didero-future-of-global-trade",
+          "title": "Construct Capital | Investing in Didero: Pioneering the Future of Global Trade & Procurement with AI",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/",
+          "title": "Didero (homepage: Supply chains on autopilot)",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/blog",
+          "title": "Didero blog index",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/blog/series-a-announcement",
+          "title": "Didero Raises $30M Series A to Bring AI Agents to Global Supply Chains",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/blog/introducing-didero-ai-procurement",
+          "title": "Introducing Didero, the AI procurement agent that helps supply chain teams connect across the world",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/blog/amid-tariff-uncertainty-didero-acquires-covalent-ai-to-put-supply-chains-on-autopilot",
+          "title": "Amid tariff uncertainty, Didero acquires Covalent AI to put supply chains on autopilot",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/case-studies",
+          "title": "Didero case studies",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/case-studies/fabco",
+          "title": "Didero case study: FABco",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/case-studies/echelon-supply-and-service",
+          "title": "Didero case study: Echelon Supply and Service",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/case-studies/bishop-lifting",
+          "title": "Didero case study: Bishop Lifting",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.didero.ai/careers",
+          "title": "Didero careers",
+          "publisher": "Didero",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
+          "title": "Didero lands $30M to put manufacturing procurement on 'agentic' autopilot",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/02/12/didero-raises-30m-series-expand-agentic-ai-enterprise-procurement/",
+          "title": "Didero raises $30M early-stage round to expand agentic AI for enterprise procurement",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          2
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Procurement / supply-chain back office rather than the plant floor: agents for planning and replenishment, sourcing and quoting, master data and contracts, PO management, logistics and delivery, AP and supplier performance reporting, running on the customer's ERP (e.g. Epicor at Echelon) and reading supplier emails, WeChat messages, calls, POs and packing lists. Users are procurement, supply-chain and AP teams. 'plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+      "size_class": "from_25m_to_100m",
+      "founders": [
+        "Tim Spencer",
+        "Lorenz Pallhuber",
+        "Tom Petit"
+      ],
+      "named_customers": [
+        "Footprint",
+        "FABco",
+        "Echelon Supply and Service",
+        "Bishop Lifting",
+        "AGC Chemicals",
+        "Lyka"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI agents that sit on a company's existing ERP and inbox and execute direct-spend work: supplier communication and follow-ups, PO creation and tracking, sourcing and quoting, contracts and master data, receiving, invoice / AP processing and supplier reporting. Reads emails, WeChat messages, calls, POs and packing lists; suppliers change nothing.",
       "pricing": null
     },
     {
@@ -1101,6 +1241,20 @@
           "kind": "primary"
         },
         {
+          "url": "https://www.hadrian.co/blog/series-c",
+          "title": "Hadrian Series C",
+          "publisher": "Hadrian",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/07/17/hadrian-raises-260m-to-build-out-automated-factories-for-space-and-defense-parts/",
+          "title": "Hadrian raises $260M to build out automated factories for space and defense parts",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://www.hadrian.co",
           "title": "Hadrian",
           "publisher": "Hadrian",
@@ -1127,20 +1281,6 @@
           "publisher": "Hadrian",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
-        },
-        {
-          "url": "https://www.hadrian.co/blog/series-c",
-          "title": "Hadrian Raises $260M to Build AI-Powered Factories for America, Adds Full Product Manufacturing, Opens Arizona Site",
-          "publisher": "Hadrian",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://techcrunch.com/2025/07/17/hadrian-raises-260m-to-build-out-automated-factories-for-space-and-defense-parts/",
-          "title": "Hadrian raises $260M to build out automated factories for space and defense parts",
-          "publisher": "TechCrunch",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
         },
         {
           "url": "https://techcrunch.com/2024/02/21/hadrian-automations-ceo-wants-to-defy-history-and-revitalize-american-industry/",
@@ -1236,7 +1376,7 @@
       ],
       "field_sources": {
         "website": [
-          2
+          4
         ]
       },
       "confidence": "high",
@@ -1367,6 +1507,93 @@
       "revenue_usd": 1298701299,
       "revenue_basis": "reported",
       "product_summary": "IFS Cloud is a composable, AI-enabled enterprise platform spanning ERP, enterprise asset management, supply chain management and field service management for manufacturers, asset-intensive and service businesses; IFS Agent Studio lets enterprises build and deploy agentic 'digital workers', extended by acquisitions in agentic AI, supply-chain optimization and warehouse management.",
+      "pricing": null
+    },
+    {
+      "id": "co_industrialmind-ai",
+      "name": "IndustrialMind.ai",
+      "website": "https://www.industrialmind.ai",
+      "hq_country": "US",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "process_planning",
+      "description_short": "Ex-Tesla-founded start-up building an 'AI manufacturing engineer': agents that turn engineering drawings into BOMs, process plans and quotes, monitor production and run root-cause analysis.",
+      "total_raised_usd": 1200000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.industrialmind.ai/",
+          "title": "IndustrialMind.ai | The AI Manufacturing Engineer for Every Factory",
+          "publisher": "IndustrialMind.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.industrialmind.ai/en/about",
+          "title": "About IndustrialMind.ai | Manufacturing AI Experts",
+          "publisher": "IndustrialMind.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.industrialmind.ai/en/news/industrialmind-pre-seed-funding",
+          "title": "IndustrialMind raises $1.2M in pre-seed funding | IndustrialMind.ai",
+          "publisher": "IndustrialMind.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.industrialmind.ai/en/news/andritz-ai-deployment",
+          "title": "ANDRITZ selects IndustrialMind for drawing review, BOMs and root cause analysis | IndustrialMind.ai",
+          "publisher": "IndustrialMind.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://theaiinsider.tech/2025/11/26/industrialmind-ai-raises-1-2m-pre-seed-to-bring-the-ai-engineer-to-manufacturing/",
+          "title": "IndustrialMind.ai Secures $1.2M Pre-Seed to Bring the AI Engineer to Manufacturing",
+          "publisher": "The AI Insider",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.antler.co/press-releases/antler-unveils-2025-disrupt-portfolio-fourteen-startups-building-ai-that-actually-works",
+          "title": "Antler unveils 2025 Disrupt portfolio: fourteen startups building AI that actually works",
+          "publisher": "Antler",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.industrialmind.ai/en/careers",
+          "title": "Careers | IndustrialMind.ai",
+          "publisher": "IndustrialMind.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Spans process planning and plant ops. Process planning: drawing review against internal standards, drawing-to-process and drawing-to-quote agents, BOM and routing generation from drawings, should-cost quotes (deployed at ANDRITZ for hydraulic equipment parts). Plant ops: real-time production monitoring and anomaly prediction for process stability, SPC, predictive maintenance and multi-agent root-cause analysis with auto-generated reports. Also an 'IM foundation model' and a free drawing-parser tool. Sells to manufacturers, equipment makers and integrators (sheet metal, casting, battery, electrical panels) through a forward-deployed model; no WhatsApp channel seen.",
+      "size_class": "under_5m",
+      "founders": [
+        "Steven Gao",
+        "Justin Li"
+      ],
+      "named_customers": [
+        "Siemens",
+        "tesa",
+        "ANDRITZ"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "An AI 'manufacturing engineer': agents that read engineering drawings to draft BOMs, routings, process plans and should-cost quotes, review drawings against internal standards, monitor production in real time to flag anomalies, and run multi-agent root-cause analysis with auto-generated reports, delivered by forward-deployed engineers.",
       "pricing": null
     },
     {
@@ -1773,6 +2000,135 @@
       "pricing": null
     },
     {
+      "id": "co_nexxa-ai",
+      "name": "Nexxa.ai",
+      "website": "https://nexxa.ai/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "design_intent",
+      "description_short": "Sunnyvale, California startup building supervised AI agents and a multi-agent orchestration layer (NitroOS) that run on heavy-industry companies' existing engineering and operations systems.",
+      "total_raised_usd": 13400000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://siliconangle.com/?p=728464",
+          "title": "Nexxa.ai raises $9M to streamline the world's industrial backbone with AI",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/nexxa-ai-9-million-seed-funding-closed-to-scale-ai-agents-for-heavy-industry-workflows/",
+          "title": "Nexxa.ai: $9 Million Seed Funding Closed To Scale AI Agents For Heavy Industry Workflows",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.constructcap.com/companies",
+          "title": "Construct Capital | Companies",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.constructcap.com/articles/camila-key-saruhashi-promoted-to-partner",
+          "title": "Construct Capital | Camila Key Saruhashi Has Been Promoted to Partner at Construct",
+          "publisher": "Construct Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nexxa.ai/",
+          "title": "Nexxa.ai (homepage: AI for Industrial Autonomy)",
+          "publisher": "Nexxa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nexxa.ai/company",
+          "title": "Nexxa.ai company / about page",
+          "publisher": "Nexxa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nexxa.ai/nitro-os",
+          "title": "Nexxa.ai NitroOS",
+          "publisher": "Nexxa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nexxa.ai/all-industries",
+          "title": "Nexxa.ai All Industries",
+          "publisher": "Nexxa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nexxa.ai/media",
+          "title": "Nexxa.ai Media & Updates",
+          "publisher": "Nexxa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/rebuilding-america-and-the-worlds-industrial-backbone-with-ai-302666281.html",
+          "title": "Rebuilding America and the World's Industrial Backbone With AI",
+          "publisher": "Nexxa.ai via PR Newswire",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/01/21/nexxa-ai-raises-9m-streamline-worlds-industrial-backbone-ai/",
+          "title": "Nexxa.ai raises $9M to streamline the world's industrial backbone with AI",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/nexxa-ai-4-4-million-pre-seed-raised-for-bringing-specialized-ai-to-heavy-industries/",
+          "title": "Nexxa.ai: $4.4 Million Pre-Seed Raised For Bringing Specialized AI To Heavy Industries",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://aithority.com/machine-learning/nexxa-ai-raises-4-4-million-to-bring-specialized-ai-to-heavy-industries/",
+          "title": "Nexxa.ai Raises $4.4 Million to Bring Specialized AI to Heavy Industries",
+          "publisher": "AiThority (PR Newswire release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          4
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Agent orchestration for industrial engineering and operations: NitroOS ('Industrial Intelligence Graph') sits on existing engineering tools, estimating systems and systems of record; named workflows are demand planning, RFQ and field operations. Users framed as industrial engineers who design and maintain rail networks, factories, construction projects and machinery. Delivered through five-day pilots and forward-deployed engineers; Protocol Zero safety layer; listed on Siemens Xcelerator Marketplace. Serves ten heavy industries, not only factories.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Philipp Wehn",
+        "David (DH) Huang",
+        "Shashank Goel"
+      ],
+      "named_customers": [
+        "Siemens",
+        "Matikon"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "NitroOS, an orchestration layer that sits on customers' existing engineering, estimating and operational systems and runs supervised multi-agent workflows (named: demand planning, RFQ, field operations) with logged, traceable decisions and a Protocol Zero safety layer; deployed by forward-deployed engineers via five-day pilots; also sold on the Siemens Xcelerator Marketplace.",
+      "pricing": null
+    },
+    {
       "id": "co_nowpurchase",
       "name": "NowPurchase",
       "website": "https://www.nowpurchase.com",
@@ -1991,6 +2347,172 @@
       "revenue_basis": "none",
       "product_summary": "Turns a smartphone walk-through into an interactive digital twin, trains and stress-tests robots there using real robot software, then ships and installs a working robot in about two weeks with support and maintenance included, so manufacturers can automate tasks without long integration projects.",
       "pricing": "Zero Risk Policy: $0 until the robot does the task at KPIs agreed in writing; no pilot fees and no upfront hardware cost; deployment, 24/7 support and maintenance billed at a single hourly rate (rate not published)."
+    },
+    {
+      "id": "co_procol",
+      "name": "Procol",
+      "website": "https://www.procol.ai",
+      "hq_country": "IN",
+      "founded_year": 2018,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Gurugram-founded procurement platform whose AI agents run sourcing, negotiation, supplier management, purchase orders and accounts payable for enterprises, many of them Indian manufacturers.",
+      "total_raised_usd": 11488715,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.procol.ai/",
+          "title": "Agentic AI for Procurement & Finance | Procol AI",
+          "publisher": "Procol",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.procol.ai/about/",
+          "title": "About Procol",
+          "publisher": "Procol",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.procol.ai/customers/",
+          "title": "Customer Success Stories | Transforming Procurement Excellence | Procol",
+          "publisher": "Procol",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.procol.ai/pricing/",
+          "title": "Procol pricing",
+          "publisher": "Procol",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://blume.vc/commentaries/how-procol-took-procurement-from-whatsapp-to-ai-agents",
+          "title": "How Procol Took Procurement From WhatsApp to AI Agents",
+          "publisher": "Blume Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/supply-chain-startup-procol-secures-6-mn-to-help-digitise-procurement-processes/",
+          "title": "Logistics Startup Procol Secures $6 Mn+ To Help Digitise Procurement Processes",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.livemint.com/companies/start-ups/procol-raises-capital-from-gmo-venture-partners-sequoia-blume-ventures-11663064792587.html",
+          "title": "Procol raises capital from GMO Venture Partners, Sequoia, Blume Ventures",
+          "publisher": "Mint",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/procol/funding/",
+          "title": "Procol Funding 2026 – Total Funding, Rounds & Investors (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/procol/",
+          "title": "Procol (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/procol/financials/",
+          "title": "Procol Financials (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/startups/can-surge-backed-procols-middlemen-bidding-tech-fix-agri-procurement/",
+          "title": "Can Sequoia Surge-Backed Procol's 'Middlemen' Bidding Platform Fix Inefficient Agri Procurement?",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/2022/06/y-combinator-and-surge-backed-procol-raises-5-5-mn-in-a-new-round/",
+          "title": "Y Combinator and Surge-backed Procol raises $5.5 Mn in a new round",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/b2b-agro-commodities-marketplace-procol-raises-%245.5-m-from-surge%2C-blume%2C-others",
+          "title": "B2B agro commodities marketplace Procol raises $5.5 M from Surge, Blume, others",
+          "publisher": "Venture Intelligence (summary of Entrackr)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Procurement / source-to-pay back office rather than the plant floor (no supply-chain layer in the taxonomy; plant_ops is the nearest fit, as for Didero and Galvant). Agent suites: Guided Intake, Autonomous Sourcing (demand aggregation, negotiation, supplier discovery, auto-award, bid analysis, should-cost), Supplier Risk & Monitoring (onboarding, due diligence, scorecards), Accounts Payable Concierge (invoice capture and matching, payments), AI Spend Control Tower and an orchestration engine, branded 'Clara'. Also eAuction, vendor portal and free RFQ, RFP, BOM and PO generators. Started as a commodity auction platform for food companies before rebuilding as enterprise software.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Gaurav Baheti",
+        "Sumit Mendiratta"
+      ],
+      "named_customers": [
+        "Tata Group",
+        "AM/NS India",
+        "Apollo Tyres",
+        "Havells",
+        "Dixon Technologies",
+        "Škoda",
+        "Ralson Tires",
+        "India Nippon Electricals",
+        "Diffusion Engineers",
+        "Hershey's",
+        "Dr. Oetker",
+        "Haldiram's",
+        "Emami",
+        "Gopal Snacks",
+        "Reliance Retail",
+        "IKEA",
+        "Noon",
+        "bigbasket",
+        "Aditya Birla Group",
+        "Saint-Gobain",
+        "Signature Global",
+        "M3M",
+        "Dr. Reddy's",
+        "Zydus",
+        "Pulcra Chemicals",
+        "Zuari FarmHub",
+        "Quippo Oil & Gas Infrastructure",
+        "Dalmia Bharat",
+        "Mrs Bectors",
+        "Zetwerk",
+        "Future Group"
+      ],
+      "headcount_est": {
+        "value": 245,
+        "source": {
+          "url": "https://inc42.com/company/procol/",
+          "title": "Procol (Inc42 company profile)",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Agentic source-to-pay platform: AI agents (branded Clara) handle purchase intake, sourcing events and e-auctions, supplier negotiation and discovery, award decisions, supplier onboarding and risk checks, purchase orders, invoice matching and payments, with spend analytics, under customer-set policies and integrated with ERPs such as SAP, Oracle and Tally.",
+      "pricing": null
     },
     {
       "id": "co_prometheus",
@@ -2691,6 +3213,20 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://tandem.inc/company",
+          "title": "Company — Tandem",
+          "publisher": "Tandem Intelligence, Inc.",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://alsocapital.com/",
+          "title": "Also Capital",
+          "publisher": "Also Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
           "url": "https://www.vcbacked.co/company/tandem-san-francisco",
           "title": "Tandem (San Francisco) - VCBacked",
           "publisher": "VCBacked",
@@ -2700,13 +3236,6 @@
         {
           "url": "https://tandem.inc/",
           "title": "Tandem — AI-Native Hardware Development Platform",
-          "publisher": "Tandem Intelligence, Inc.",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
-          "url": "https://tandem.inc/company",
-          "title": "Company — Tandem",
           "publisher": "Tandem Intelligence, Inc.",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
@@ -2742,7 +3271,7 @@
       ],
       "field_sources": {
         "website": [
-          1
+          3
         ]
       },
       "confidence": "high",

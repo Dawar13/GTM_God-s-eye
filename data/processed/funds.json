@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:50:39+00:00",
+  "generated_at": "2026-10-30T08:10:05+00:00",
   "records": [
     {
       "id": "fund_100x-vc_undated",
@@ -837,6 +837,356 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_8vc_i",
+      "investor_id": "inv_8vc",
+      "name": "8VC debut fund (Fund I)",
+      "number": "I",
+      "size_usd": 425000000,
+      "currency_original": "USD",
+      "size_original": 425000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2018/04/23/8vc-has-closed-its-second-early-stage-fund-seemingly-with-an-eye-on-logistics-and-biotech/",
+          "title": "8VC has closed its second early-stage fund, seemingly with an eye on logistics and biotech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_8vc_ii",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund II, L.P.",
+      "number": "II",
+      "size_usd": 640000000,
+      "currency_original": "USD",
+      "size_original": 640000000,
+      "fx": null,
+      "close_date": "2018-04-23",
+      "close_date_precision": "day",
+      "vintage_year": 2018,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2018/04/23/8vc-has-closed-its-second-early-stage-fund-seemingly-with-an-eye-on-logistics-and-biotech/",
+          "title": "8VC has closed its second early-stage fund, seemingly with an eye on logistics and biotech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.8vc.com/build",
+          "title": "The 8VC Build Program | 8VC",
+          "publisher": "8VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_iii",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund III, L.P.",
+      "number": "III",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.8vc.com/build",
+          "title": "The 8VC Build Program | 8VC",
+          "publisher": "8VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_iv",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund IV, L.P.",
+      "number": "IV",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.8vc.com/build",
+          "title": "The 8VC Build Program | 8VC",
+          "publisher": "8VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_undated",
+      "investor_id": "inv_8vc",
+      "name": "8VC seed fund (separate, alongside the debut fund)",
+      "number": null,
+      "size_usd": 50000000,
+      "currency_original": "USD",
+      "size_original": 50000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2018/04/23/8vc-has-closed-its-second-early-stage-fund-seemingly-with-an-eye-on-logistics-and-biotech/",
+          "title": "8VC has closed its second early-stage fund, seemingly with an eye on logistics and biotech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_8vc_undated-2",
+      "investor_id": "inv_8vc",
+      "name": "8VC Co-Invest Fund I, L.P. (late-stage coinvest fund)",
+      "number": null,
+      "size_usd": 400000000,
+      "currency_original": "USD",
+      "size_original": 400000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2018/04/23/8vc-has-closed-its-second-early-stage-fund-seemingly-with-an-eye-on-logistics-and-biotech/",
+          "title": "8VC has closed its second early-stage fund, seemingly with an eye on logistics and biotech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_v",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund V, L.P.",
+      "number": "V",
+      "size_usd": 880000000,
+      "currency_original": "USD",
+      "size_original": 880000000,
+      "fx": null,
+      "close_date": "2023-03-01",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.8vc.com/resources/announcing-8vc-fund-v",
+          "title": "Announcing 8VC Fund V",
+          "publisher": "8VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_vi",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund VI, L.P.",
+      "number": "VI",
+      "size_usd": 998000000,
+      "currency_original": "USD",
+      "size_original": 998000000,
+      "fx": null,
+      "close_date": "2025-03-04",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.8vc.com/resources/announcing-8vc-fund-vi",
+          "title": "Announcing 8VC Fund VI",
+          "publisher": "8VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_8vc_vii",
+      "investor_id": "inv_8vc",
+      "name": "8VC Fund VII, L.P.",
+      "number": "VII",
+      "size_usd": 1500000000,
+      "currency_original": "USD",
+      "size_original": 1500000000,
+      "fx": null,
+      "close_date": "2026-07-03",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.gunder.com/en/news-insights/client-news/8vc-closes-dollar15-billion-seventh-fund-firms-largest-to-date",
+          "title": "8VC Closes $1.5 Billion Seventh Fund, Firm's Largest to Date",
+          "publisher": "Gunderson Dettmer (fund counsel, client news)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://vintage-ip.com/news/8vc-raises-1-5b-to-invest-across-ai-defense-healthcare-and-enterprise-technology/",
+          "title": "8VC Closes $1.5B Fund to Back Founders in the AI Industrial Revolution",
+          "publisher": "Vintage Investment Partners",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%228VC%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings mentioning 8VC (filer names, file dates, business addresses)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_97212-ventures_i",
@@ -1924,7 +2274,7 @@
       "currency_original": "USD",
       "size_original": 50000000,
       "fx": null,
-      "close_date": "2026-02-24",
+      "close_date": "2026-02-23",
       "close_date_precision": "day",
       "vintage_year": 2026,
       "location": "NYC",
@@ -1936,16 +2286,32 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://tbpn-digest.vercel.app/story/2026-02-23/also-capital-closes-50m-fund-ii-backing-hard-tech-founders-who-play-to-win-from-day-zero",
+          "title": "Also Capital closes $50M Fund II backing hard tech founders who play to win from day zero",
+          "publisher": "TBPN Digest (unofficial episode summary site)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_also-capital_ii-2",
       "investor_id": "inv_also-capital",
       "name": "Also Capital",
-      "number": "II",
+      "number": "I",
       "size_usd": 21000000,
       "currency_original": "USD",
       "size_original": 21000000,
@@ -1962,10 +2328,33 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.alsoblogposts.com/p/announcing-also-capitals-21m-first",
+          "title": "Announcing Also Capital's $21M First Fund",
+          "publisher": "Also Blog Posts (Also Capital)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.alsoblogposts.com/p/announcing-also-capitals-50m-second",
+          "title": "Announcing Also Capital's $50M Second Fund",
+          "publisher": "Also Blog Posts (Also Capital)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_alsop-louie_iii",
@@ -2465,7 +2854,14 @@
           "kind": "user_supplied"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -3709,6 +4105,39 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_bee-partners_iii",
+      "investor_id": "inv_bee-partners",
+      "name": "Bee Partners Fund III",
+      "number": "III",
+      "size_usd": 43000000,
+      "currency_original": "USD",
+      "size_original": 43000000,
+      "fx": null,
+      "close_date": "2019",
+      "close_date_precision": "year",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/11/01/bee-partners-venture-capital-pre-seed-deep-tech/",
+          "title": "Bee Partners closes fourth fund to add more capital for pre-seed founders in deep tech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "fund_bee-partners_iv",
       "investor_id": "inv_bee-partners",
       "name": "Bee Partners",
@@ -3717,7 +4146,7 @@
       "currency_original": "USD",
       "size_original": 50000000,
       "fx": null,
-      "close_date": "2023-11-02",
+      "close_date": "2023-11-01",
       "close_date_precision": "day",
       "vintage_year": 2023,
       "location": "Bay Area",
@@ -3731,7 +4160,14 @@
           "kind": "user_supplied"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -3991,7 +4427,7 @@
       "currency_original": "USD",
       "size_original": 140000000,
       "fx": null,
-      "close_date": "2025-10-02",
+      "close_date": "2025-10-01",
       "close_date_precision": "day",
       "vintage_year": 2025,
       "location": "Bay Area, NYC",
@@ -4003,9 +4439,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2025/10/01/better-tomorrow-ventures-closes-140m-remains-bullish-on-fintech",
+          "title": "Better Tomorrow Ventures closes $140M, remains bullish on fintech",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -5000,10 +5450,21 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://boost.vc",
+          "title": "Boost VC",
+          "publisher": "Boost VC",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_boostvc_iv",
@@ -5794,9 +6255,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2025/07/16/rex-salisburys-cambrian-ventures-raises-new-fund-bucking-fintech-slowdown",
+          "title": "Rex Salisbury's Cambrian Ventures raises new fund, bucking fintech slowdown",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -7858,9 +8333,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.fortune.com/2025/06/25/exclusive-counterpart-ventures-closes-132-million-third-fund-to-link-cvcs-and-startups",
+          "title": "Exclusive: Counterpart Ventures closes $132 million third fund to link CVCs and startups",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -8965,9 +9454,9 @@
       "investor_id": "inv_deciens-capital",
       "name": "Deciens Capital",
       "number": "III",
-      "size_usd": null,
-      "currency_original": null,
-      "size_original": null,
+      "size_usd": 93330000,
+      "currency_original": "USD",
+      "size_original": 93330000,
       "fx": null,
       "close_date": "2025-07-29",
       "close_date_precision": "day",
@@ -8981,10 +9470,33 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.abqjournal.com/business/albuquerques-deciens-capital-closes-93-million-fund/452141",
+          "title": "Albuquerque's Deciens Capital closes $93 million fund",
+          "publisher": "Albuquerque Journal",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/deciens-capital-93-33-million-fund-iii-closed-to-invest-in-fintech/amp/",
+          "title": "Deciens Capital: $93.33 Million Fund III Closed To Invest In Fintech",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_deep-fork-capital_ii",
@@ -10325,6 +10837,109 @@
     {
       "id": "fund_eclipse_i",
       "investor_id": "inv_eclipse",
+      "name": "Eclipse Ventures Fund I, L.P. (filed as Formation8 Partners Hardware Fund I, L.P.)",
+      "number": "I",
+      "size_usd": 125000000,
+      "currency_original": "USD",
+      "size_original": 125000000,
+      "fx": null,
+      "close_date": "2015",
+      "close_date_precision": "year",
+      "vintage_year": 2015,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2016/07/14/telsas-longtime-vp-of-production-joins-venture-firm-ahead-of-new-fund-raise/",
+          "title": "Tesla's longtime VP of production joins venture firm ahead of new fund raise",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Eclipse%20Ventures%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Eclipse Ventures",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_i-2",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Continuity Fund I, L.P.",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_i-3",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Partners Fund I, L.P.",
+      "number": "I",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_i-4",
+      "investor_id": "inv_eclipse",
       "name": "Eclipse Early Growth Fund I, L.P.",
       "number": "I",
       "size_usd": 510000000,
@@ -10369,13 +10984,13 @@
       "investor_id": "inv_eclipse",
       "name": "Eclipse Ventures",
       "number": "II",
-      "size_usd": 510000000,
+      "size_usd": 185000000,
       "currency_original": "USD",
-      "size_original": 510000000,
+      "size_original": 185000000,
       "fx": null,
-      "close_date": "2023-04-10",
+      "close_date": "2017-01-10",
       "close_date_precision": "day",
-      "vintage_year": 2023,
+      "vintage_year": 2017,
       "location": "Bay Area",
       "notes": null,
       "sources": [
@@ -10387,8 +11002,15 @@
           "kind": "user_supplied"
         },
         {
-          "url": "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii",
-          "title": "Forging the New Economy: Eclipse Fund V and Early Growth Fund II",
+          "url": "https://techcrunch.com/2019/06/17/vc-lior-susan-has-a-big-idea-that-seems-to-be-working-building-next-generation-industrial-companies",
+          "title": "VC Lior Susan has a big idea that seems to be working: building next-generation industrial companies",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://eclipse.capital/blog/eclipse",
+          "title": "Eclipse (Fund II announcement, 2017-03-29)",
           "publisher": "Eclipse",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
@@ -10401,9 +11023,9 @@
           "kind": "primary"
         },
         {
-          "url": "https://www.privateequityinternational.com/eclipse-ventures-collects-1-23bn-across-two-funds/",
-          "title": "Eclipse Ventures collects $1.23bn across two funds",
-          "publisher": "Venture Capital Journal / Private Equity International",
+          "url": "https://techcrunch.com/2016/07/14/telsas-longtime-vp-of-production-joins-venture-firm-ahead-of-new-fund-raise/",
+          "title": "Tesla's longtime VP of production joins venture firm ahead of new fund raise",
+          "publisher": "TechCrunch",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
         }
@@ -10412,9 +11034,122 @@
         "size_usd": [
           1,
           2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_ii-2",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Early Growth Fund II, L.P.",
+      "number": "II",
+      "size_usd": 510000000,
+      "currency_original": "USD",
+      "size_original": 510000000,
+      "fx": null,
+      "close_date": "2023-04-10",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii",
+          "title": "Forging the New Economy: Eclipse Fund V and Early Growth Fund II",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/eclipse-ventures-collects-1-23bn-across-two-funds/",
+          "title": "Eclipse Ventures collects $1.23bn across two funds",
+          "publisher": "Venture Capital Journal / Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_iii",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Fund III, L.P.",
+      "number": "III",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": "2019-01",
+      "close_date_precision": "month",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.calcalistech.com/articles/0,7340,L-3754386,00.html",
+          "title": "Eclipse Ventures Raises a Third, $500 Million Fund",
+          "publisher": "Calcalist (CTech)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2019/06/17/vc-lior-susan-has-a-big-idea-that-seems-to-be-working-building-next-generation-industrial-companies",
+          "title": "VC Lior Susan has a big idea that seems to be working: building next-generation industrial companies",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://eclipse.capital/blog/eclipse-fund-iv",
+          "title": "Eclipse Fund IV",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
           3
         ],
         "close_date": [
+          0,
           1,
           2,
           3
@@ -10423,7 +11158,7 @@
       "confidence": "high"
     },
     {
-      "id": "fund_eclipse_iii",
+      "id": "fund_eclipse_iii-2",
       "investor_id": "inv_eclipse",
       "name": "Eclipse Early Growth Fund III, L.P.",
       "number": "III",
@@ -10452,6 +11187,13 @@
           "kind": "secondary"
         },
         {
+          "url": "https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-to-back-and-build-physical-ai-startups/",
+          "title": "VC Eclipse has a new $1.3B to back — and build — 'physical AI' startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
           "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
           "publisher": "U.S. SEC EDGAR",
@@ -10463,12 +11205,14 @@
         "size_usd": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "close_date": [
           0,
           1,
-          2
+          2,
+          3
         ]
       },
       "confidence": "high"
@@ -10496,6 +11240,13 @@
           "kind": "primary"
         },
         {
+          "url": "https://techcrunch.com/2021/04/29/eclipse-ventures-has-500-million-more-to-digitize-old-line-industries-and-bring-them-up-to-speed/",
+          "title": "Eclipse Ventures has $500 million more to digitize old-line industries and bring them up to speed",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
           "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
           "publisher": "U.S. SEC EDGAR",
@@ -10506,13 +11257,41 @@
       "field_sources": {
         "size_usd": [
           0,
-          1
+          1,
+          2
         ],
         "close_date": [
           0,
-          1
+          1,
+          2
         ]
       },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_iv-2",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Partners Fund IV, L.P.",
+      "number": "IV",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
       "confidence": "high"
     },
     {
@@ -10538,18 +11317,18 @@
           "kind": "primary"
         },
         {
-          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
-          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
-          "publisher": "U.S. SEC EDGAR",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
           "url": "https://www.privateequityinternational.com/eclipse-ventures-collects-1-23bn-across-two-funds/",
           "title": "Eclipse Ventures collects $1.23bn across two funds",
           "publisher": "Venture Capital Journal / Private Equity International",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {
@@ -10564,6 +11343,32 @@
           2
         ]
       },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_v-2",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Partners Fund V, L.P.",
+      "number": "V",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
       "confidence": "high"
     },
     {
@@ -10596,6 +11401,13 @@
           "kind": "secondary"
         },
         {
+          "url": "https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-to-back-and-build-physical-ai-startups/",
+          "title": "VC Eclipse has a new $1.3B to back — and build — 'physical AI' startups",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
           "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
           "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
           "publisher": "U.S. SEC EDGAR",
@@ -10607,14 +11419,42 @@
         "size_usd": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "close_date": [
           0,
           1,
-          2
+          2,
+          3
         ]
       },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_eclipse_vi-2",
+      "investor_id": "inv_eclipse",
+      "name": "Eclipse Partners Fund VI, L.P.",
+      "number": "VI",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Lior%20Susan%22&forms=D",
+          "title": "EDGAR full-text search: Form D filings mentioning Lior Susan",
+          "publisher": "U.S. SEC EDGAR",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
       "confidence": "high"
     },
     {
@@ -12612,16 +13452,16 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_forward-deployed_ii",
-      "investor_id": "inv_forward-deployed",
+      "id": "fund_forward-deployed-vc_ii",
+      "investor_id": "inv_forward-deployed-vc",
       "name": "Forward Deployed",
       "number": "II",
       "size_usd": 45000000,
       "currency_original": "USD",
       "size_original": 45000000,
       "fx": null,
-      "close_date": "2025-08-07",
-      "close_date_precision": "day",
+      "close_date": "2025-08",
+      "close_date_precision": "month",
       "vintage_year": 2025,
       "location": "Bay Area",
       "notes": null,
@@ -12632,9 +13472,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.tectonicdefense.com/forward-deployed-vc-raises-45m-fund-ii/",
+          "title": "Forward Deployed VC raises $45M Fund II",
+          "publisher": "Tectonic Defense",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -13430,6 +14284,57 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_gradient_v",
+      "investor_id": "inv_gradient",
+      "name": "Gradient Fund 5",
+      "number": "V",
+      "size_usd": 220000000,
+      "currency_original": "USD",
+      "size_original": 220000000,
+      "fx": null,
+      "close_date": "2026-03-17",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://fortune.com/2026/03/17/google-backed-ai-investors-nobody-took-seriously-2017-raised-220-million-gradient/",
+          "title": "The Google-backed AI investors nobody took seriously in 2017 just raised $220 million",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.gradient.com/news/",
+          "title": "Gradient | News",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.gradient.com/",
+          "title": "Gradient | The seed fund designed for founders in AI",
+          "publisher": "Gradient",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_grand-ventures_ii",
@@ -18381,9 +19286,93 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_lux-capital_2019",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux opportunity fund (2019, growth stage)",
+      "number": null,
+      "size_usd": 550000000,
+      "currency_original": "USD",
+      "size_original": 550000000,
+      "fx": null,
+      "close_date": "2019-08-01",
+      "close_date_precision": "day",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://fortune.com/2019/08/01/lux-capital-new-funds/",
+          "title": "Lux Capital raises more than $1 billion across two new funds",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2023/2023-04-20-lux-capital-closes-lux-ventures-viii-at-1-15-billion",
+          "title": "Lux Capital Closes Lux Ventures VIII at $1.15 Billion",
+          "publisher": "Cooley LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_lux-capital_2021",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux Total Opportunities Fund",
+      "number": null,
+      "size_usd": 800000000,
+      "currency_original": "USD",
+      "size_original": 800000000,
+      "fx": null,
+      "close_date": "2021-06",
+      "close_date_precision": "month",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/04/05/lux-capital-ditches-its-opportunity-fund-in-latest-fundraise",
+          "title": "Lux Capital ditches its opportunity fund in latest fundraise",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2023/2023-04-20-lux-capital-closes-lux-ventures-viii-at-1-15-billion",
+          "title": "Lux Capital Closes Lux Ventures VIII at $1.15 Billion",
+          "publisher": "Cooley LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_lux-capital_ix",
       "investor_id": "inv_lux-capital",
-      "name": "Lux Ventures IX",
+      "name": "Lux Ventures IX (Lux IX)",
       "number": "IX",
       "size_usd": 1500000000,
       "currency_original": "USD",
@@ -18401,14 +19390,176 @@
           "publisher": "Lux Capital",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://www.luxcapital.com/news/lux-capital-raises-1-5-billion-for-fund-focused-on-new-science-defense",
+          "title": "Lux Capital Raises $1.5 billion for Fund Focused on New Science, Defense (news item linking Bloomberg)",
+          "publisher": "Lux Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/07/lux-capital-lands-1-5-billion-for-its-largest-fund-ever",
+          "title": "Lux Capital lands $1.5B for its largest fund ever",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.sidley.com/en/newslanding/newsannouncements/2026/01/sidley-advises-lux-capital-on-new-vc-fund-lux-ix",
+          "title": "Sidley Advises Lux Capital on New VC Fund Lux IX",
+          "publisher": "Sidley Austin LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
         "size_usd": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "close_date": [
-          0
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_lux-capital_vi",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux sixth flagship early-stage fund (2019)",
+      "number": "VI",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": "2019-08-01",
+      "close_date_precision": "day",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://fortune.com/2019/08/01/lux-capital-new-funds/",
+          "title": "Lux Capital raises more than $1 billion across two new funds",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2023/2023-04-20-lux-capital-closes-lux-ventures-viii-at-1-15-billion",
+          "title": "Lux Capital Closes Lux Ventures VIII at $1.15 Billion",
+          "publisher": "Cooley LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_lux-capital_vii",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux Ventures VII",
+      "number": "VII",
+      "size_usd": 675000000,
+      "currency_original": "USD",
+      "size_original": 675000000,
+      "fx": null,
+      "close_date": "2021-06",
+      "close_date_precision": "month",
+      "vintage_year": 2021,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/04/05/lux-capital-ditches-its-opportunity-fund-in-latest-fundraise",
+          "title": "Lux Capital ditches its opportunity fund in latest fundraise",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2023/2023-04-20-lux-capital-closes-lux-ventures-viii-at-1-15-billion",
+          "title": "Lux Capital Closes Lux Ventures VIII at $1.15 Billion",
+          "publisher": "Cooley LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_lux-capital_viii",
+      "investor_id": "inv_lux-capital",
+      "name": "Lux Ventures VIII (Lux 8)",
+      "number": "VIII",
+      "size_usd": 1150000000,
+      "currency_original": "USD",
+      "size_original": 1150000000,
+      "fx": null,
+      "close_date": "2023-04-20",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cooley.com/news/coverage/2023/2023-04-20-lux-capital-closes-lux-ventures-viii-at-1-15-billion",
+          "title": "Lux Capital Closes Lux Ventures VIII at $1.15 Billion",
+          "publisher": "Cooley LLP",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://fortune.com/2023/04/19/lux-capital-new-fund-investing-ai-startups",
+          "title": "Lux Capital is betting on science-focused A.I. startups with its latest and largest fund",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/04/05/lux-capital-ditches-its-opportunity-fund-in-latest-fundraise",
+          "title": "Lux Capital ditches its opportunity fund in latest fundraise",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
         ]
       },
       "confidence": "high"
@@ -18648,6 +19799,86 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_maniv_i",
+      "investor_id": "inv_maniv",
+      "name": "Maniv Mobility A, LP (first fund)",
+      "number": "I",
+      "size_usd": 44000000,
+      "currency_original": "USD",
+      "size_original": 44000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2019/07/09/maniv-mobility-closes-100m-fund-with-backing-from-renault-bmw-aptiv/",
+          "title": "With global ambitions, VC firm Maniv Mobility raises $100 million from automakers, suppliers",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Maniv%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings matching \"Maniv\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_maniv_ii",
+      "investor_id": "inv_maniv",
+      "name": "Maniv Mobility II, L.P.",
+      "number": "II",
+      "size_usd": 100000000,
+      "currency_original": "USD",
+      "size_original": 100000000,
+      "fx": null,
+      "close_date": "2019-07-09",
+      "close_date_precision": "day",
+      "vintage_year": 2019,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2019/07/09/maniv-mobility-closes-100m-fund-with-backing-from-renault-bmw-aptiv/",
+          "title": "With global ambitions, VC firm Maniv Mobility raises $100 million from automakers, suppliers",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Maniv%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings matching \"Maniv\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "fund_maniv_iii",
       "investor_id": "inv_maniv",
       "name": "Maniv",
@@ -18668,10 +19899,77 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2024/04/03/vc-firm-maniv-is-growing-in-every-direction-armed-with-a-140m-new-fund/",
+          "title": "VC firm Maniv is growing in every direction, armed with a $140M new fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/announcing-manivs-third-fund-michael-granoff-s4u4f/",
+          "title": "Announcing Maniv's third fund (Michael Granoff, LinkedIn article, linked from maniv.com/musings)",
+          "publisher": "Maniv (Michael Granoff)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/maniv-announces-third-early-stage-venture-fund-of-140m-to-accelerate-the-decarbonization-and-digitization-of-global-transportation",
+          "title": "Maniv Announces Third Early-Stage Venture Fund of $140M to Accelerate the Decarbonization and Digitization of Global Transportation",
+          "publisher": "Silicon UK (Business Wire release by Maniv)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Maniv%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings matching \"Maniv\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_maniv_undated",
+      "investor_id": "inv_maniv",
+      "name": "Maniv Mobility Special Opportunities, L.P. (Series 1-12)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Maniv%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings matching \"Maniv\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fund_mantis_i",
@@ -18830,8 +20128,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_maximum-fequency-ventures_i",
-      "investor_id": "inv_maximum-fequency-ventures",
+      "id": "fund_maximum-frequency-ventures_i",
+      "investor_id": "inv_maximum-frequency-ventures",
       "name": "Maximum Fequency Ventures",
       "number": "I",
       "size_usd": 50000000,
@@ -18850,9 +20148,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://fortune.com/crypto/2025/10/14/maximum-frequency-ventures-mo-shaikh-aptos-labs-50m-fundraise/",
+          "title": "Maximum Frequency Ventures raises $50M (Mo Shaikh, ex-Aptos Labs)",
+          "publisher": "Fortune",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -18932,6 +20244,160 @@
       ],
       "field_sources": {},
       "confidence": "medium"
+    },
+    {
+      "id": "fund_merantix-capital_2026",
+      "investor_id": "inv_merantix-capital",
+      "name": "Merantix AI Fund GmbH & Co. KG",
+      "number": null,
+      "size_usd": 115349700,
+      "currency_original": "EUR",
+      "size_original": 103000000,
+      "fx": {
+        "rate_to_usd": 1.1199,
+        "rate_period": "2026-10-23",
+        "source_url": "https://www.federalreserve.gov/releases/h10/current/"
+      },
+      "close_date": "2026-06-04",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://news.merantix-capital.com/p/merantix-capitals-next-chapter-103m",
+          "title": "Merantix Capital's next chapter: €103M early-stage AI fund to transform Europe's key industries",
+          "publisher": "Merantix Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2026/06/04/merantix-capital-launches-eur103m-fund-for-early-stage-european-ai-startups/",
+          "title": "Merantix Capital launches €103M fund for early-stage European AI startups",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.handelsblatt.com/unternehmen/start-ups/kuenstliche-intelligenz-merantix-capital-stellt-sich-mit-neuem-fonds-breiter-auf/100230032.html",
+          "title": "Künstliche Intelligenz: Merantix Capital stellt sich mit neuem Fonds breiter auf",
+          "publisher": "Handelsblatt",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/merantix-capital-raises-e103-million-ai-fund-to-back-early-stage-european-startups/",
+          "title": "Merantix Capital Raises €103 Million AI Fund To Back Early-Stage European Startups",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.businessinsider.de/gruenderszene/ex-fdp-chefin-startet-neuen-100-millionen-fonds/",
+          "title": "Ex-FDP-Chefin startet neuen 100-Millionen-Fonds",
+          "publisher": "Business Insider (Gründerszene)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.merantix-capital.com/sfdr",
+          "title": "SFDR",
+          "publisher": "Merantix Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_merantix-capital_ii",
+      "investor_id": "inv_merantix-capital",
+      "name": "MX Fund II GmbH & Co. KG",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.merantix-capital.com/sfdr",
+          "title": "SFDR",
+          "publisher": "Merantix Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
+    },
+    {
+      "id": "fund_merantix-capital_undated",
+      "investor_id": "inv_merantix-capital",
+      "name": "Merantix Capital first fund (venture-studio fund)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": "EUR",
+      "size_original": 30000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.handelsblatt.com/unternehmen/start-ups/kuenstliche-intelligenz-merantix-capital-stellt-sich-mit-neuem-fonds-breiter-auf/100230032.html",
+          "title": "Künstliche Intelligenz: Merantix Capital stellt sich mit neuem Fonds breiter auf",
+          "publisher": "Handelsblatt",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://tech.eu/2026/06/04/merantix-capital-launches-eur103m-fund-for-early-stage-european-ai-startups/",
+          "title": "Merantix Capital launches €103M fund for early-stage European AI startups",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconcanals.com/germanys-deltia-ai-bags-4-5m/",
+          "title": "Germany's Deltia.ai bags €4.5M to combat manufacturing labour shortage using AI and computer vision",
+          "publisher": "Silicon Canals",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_mercato-partners_ii",
@@ -20034,8 +21500,8 @@
       "currency_original": "USD",
       "size_original": 80000000,
       "fx": null,
-      "close_date": "2025-10-13",
-      "close_date_precision": "day",
+      "close_date": "2025-11",
+      "close_date_precision": "month",
       "vintage_year": 2025,
       "location": "NYC",
       "notes": null,
@@ -20046,10 +21512,33 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://pulse2.com/nvp-capital-closes-80-million-second-fund-as-assets-rise-to-200-million",
+          "title": "nvp Capital Closes $80 Million Second Fund As Assets Rise To $200 Million",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.privateequityinternational.com/nvp-capital-closes-on-80m-for-fund-ii-backing-vertical-ai-start-ups/",
+          "title": "NVP Capital closes on $80m for Fund II, backing vertical AI start-ups",
+          "publisher": "Venture Capital Journal",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_nya-ventures_i",
@@ -21663,10 +23152,357 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.androidauthority.com/android-co-founder-andy-rubin-raises-48-million-599025/",
+          "title": "Android co-founder Andy Rubin launches a tech hardware incubator called Playground Global",
+          "publisher": "Android Authority",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001638842.json",
+          "title": "SEC EDGAR submissions: Playground Global, LLC (CIK 0001638842)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          1,
+          2
+        ],
+        "close_date": [
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_i-2",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Ventures, L.P. (Fund I)",
+      "number": "I",
+      "size_usd": 300000000,
+      "currency_original": "USD",
+      "size_original": 300000000,
+      "fx": null,
+      "close_date": "2015-10",
+      "close_date_precision": "month",
+      "vintage_year": 2015,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://venturebeat.com/business/andy-rubins-playground-incubator-has-closed-its-funding-round-and-is-now-a-vc",
+          "title": "Andy Rubin's Playground incubator has closed a $300 million funding round",
+          "publisher": "VentureBeat",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://privateequityinternational.com/playground-nearly-doubles-target-for-fund-ii",
+          "title": "Playground nearly doubles target for Fund II",
+          "publisher": "Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001636153.json",
+          "title": "SEC EDGAR submissions: Playground Ventures, L.P. (CIK 0001636153)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ],
+        "close_date": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_ii",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Ventures II, L.P. (Fund II)",
+      "number": "II",
+      "size_usd": 500000000,
+      "currency_original": "USD",
+      "size_original": 500000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://privateequityinternational.com/playground-nearly-doubles-target-for-fund-ii",
+          "title": "Playground nearly doubles target for Fund II",
+          "publisher": "Private Equity International",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2017/06/30/andy-rubins-playground-ventures-is-raising-another-15m/",
+          "title": "Andy Rubin's Playground Ventures is raising another $15M",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001690302.json",
+          "title": "SEC EDGAR submissions: Playground Ventures II, L.P. (CIK 0001690302)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.playground.vc/playground-blogs/playground-global-raises-410-million-to-accelerate-the-time-to-impact-for-deep-tech-and-science-companies",
+          "title": "Playground Global Raises $410 Million to Accelerate the Time-to-Impact for Deep Tech and Science Companies",
+          "publisher": "Playground Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_iii",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Ventures III, L.P. (Fund III, with Playground Ventures Affiliates III, L.P.)",
+      "number": "III",
+      "size_usd": 410000000,
+      "currency_original": "USD",
+      "size_original": 410000000,
+      "fx": null,
+      "close_date": "2023-12-14",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.playground.vc/playground-blogs/playground-global-raises-410-million-to-accelerate-the-time-to-impact-for-deep-tech-and-science-companies",
+          "title": "Playground Global Raises $410 Million to Accelerate the Time-to-Impact for Deep Tech and Science Companies",
+          "publisher": "Playground Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2026/2026-05-18-playground-global-announces-%24475-million-fourth-fund",
+          "title": "Playground Global Announces $475 Million Fourth Fund",
+          "publisher": "Cooley LLP (fund counsel)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.playground.vc/playground-blogs",
+          "title": "Playground | Blog",
+          "publisher": "Playground Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001859529.json",
+          "title": "SEC EDGAR submissions: Playground Ventures III, L.P. (CIK 0001859529)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001918729.json",
+          "title": "SEC EDGAR submissions: Playground Ventures Affiliates III, L.P. (CIK 0001918729)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_iv",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Global Fund IV (Playground Ventures IV, L.P. and Playground Ventures Affiliates IV, L.P.)",
+      "number": "IV",
+      "size_usd": 475000000,
+      "currency_original": "USD",
+      "size_original": 475000000,
+      "fx": null,
+      "close_date": "2026-05-18",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.playground.vc/playground-blogs/playground-global-announces-475-million-fund-iv",
+          "title": "Playground Global Announces $475 Million Fund IV to Back the Next Generation of Deep Technology Companies",
+          "publisher": "Playground Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2026/2026-05-18-playground-global-announces-%24475-million-fourth-fund",
+          "title": "Playground Global Announces $475 Million Fourth Fund",
+          "publisher": "Cooley LLP (fund counsel)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.playground.vc/playground-blogs",
+          "title": "Playground | Blog",
+          "publisher": "Playground Global",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0002043278.json",
+          "title": "SEC EDGAR submissions: Playground Ventures IV, L.P. (CIK 0002043278)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_undated",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Ventures Affiliates II, L.P.",
+      "number": null,
+      "size_usd": 15000000,
+      "currency_original": "USD",
+      "size_original": 15000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2017/06/30/andy-rubins-playground-ventures-is-raising-another-15m/",
+          "title": "Andy Rubin's Playground Ventures is raising another $15M",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://data.sec.gov/submissions/CIK0001710770.json",
+          "title": "SEC EDGAR submissions: Playground Ventures Affiliates II, L.P. (CIK 0001710770)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_undated-2",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Omega, L.P.",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/submissions/CIK0002069677.json",
+          "title": "SEC EDGAR submissions: Playground Omega, L.P. (CIK 0002069677)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
         }
       ],
       "field_sources": {},
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "id": "fund_playground-global_undated-3",
+      "investor_id": "inv_playground-global",
+      "name": "Playground Omega 2, L.P.",
+      "number": null,
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://data.sec.gov/submissions/CIK0002072280.json",
+          "title": "SEC EDGAR submissions: Playground Omega 2, L.P. (CIK 0002072280)",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
+      "confidence": "high"
     },
     {
       "id": "fund_plexo-capital_i",
@@ -22435,8 +24271,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_propel-ventures-partners_iii",
-      "investor_id": "inv_propel-ventures-partners",
+      "id": "fund_propel-venture-partners_iii",
+      "investor_id": "inv_propel-venture-partners",
       "name": "Propel Venture Partners",
       "number": "III",
       "size_usd": 50000000,
@@ -22461,15 +24297,15 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_propel-ventures-partners_v",
-      "investor_id": "inv_propel-ventures-partners",
+      "id": "fund_propel-venture-partners_v",
+      "investor_id": "inv_propel-venture-partners",
       "name": "Propel Ventures Partners",
       "number": "V",
       "size_usd": 100000000,
       "currency_original": "USD",
       "size_original": 100000000,
       "fx": null,
-      "close_date": "2025-07-11",
+      "close_date": "2025-07-10",
       "close_date_precision": "day",
       "vintage_year": 2025,
       "location": "Bay Area",
@@ -22481,9 +24317,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://pulse2.com/propel-venture-partners-100-million-fund-v-closed/amp/",
+          "title": "Propel Venture Partners: $100 Million Fund V Closed",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -24503,9 +26353,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://techcrunch.com/2025/07/11/sarah-smith-launches-16m-fund-says-ai-can-unlock-so-much-for-solo-gps-like-herself/",
+          "title": "Sarah Smith launches $16M fund, says AI can 'unlock' so much for solo GPs like herself",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -25607,16 +27471,87 @@
           "publisher": "Shield Capital",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://www.shieldcap.com/news",
+          "title": "Shield Capital | News",
+          "publisher": "Shield Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield%20Capital%20Fund%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings for \"Shield Capital Fund\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://aviationweek.com/aerospace/emerging-technologies/vc-firm-made-diu-vets-unveils-186m-early-stage-investment-fund",
+          "title": "VC Firm Made Of DIU Vets Unveils $186M Early-Stage Investment Fund",
+          "publisher": "Aviation Week",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://shieldcap.com/announcements/shield-capital-national-security-venture-capital-fund-launch",
+          "title": "Shield Capital Announces Launch of National Security Venture Capital Fund",
+          "publisher": "Shield Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/shield-capital-philip-bilden-raj-shah-national-security-vc-fund-investment",
+          "title": "Shield Capital raises $120M for national security fund",
+          "publisher": "Crunchbase News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
         "size_usd": [
-          1
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
         ],
         "close_date": [
-          1
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
         ]
       },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_shield-capital_ii",
+      "investor_id": "inv_shield-capital",
+      "name": "Shield Capital Fund II, L.P. (with Shield Capital Fund II-Parallel, L.P.)",
+      "number": "II",
+      "size_usd": null,
+      "currency_original": null,
+      "size_original": null,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield%20Capital%20Fund%22&forms=D",
+          "title": "SEC EDGAR full-text search: Form D filings for \"Shield Capital Fund\"",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {},
       "confidence": "high"
     },
     {
@@ -26368,10 +28303,232 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://www.southparkcommons.com/press",
+          "title": "Press - South Park Commons",
+          "publisher": "South Park Commons",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/south-park-commons-targets-40-mn-india-focused-fund-8601082",
+          "title": "South Park Commons targets $40 Mn India-focused fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/South_Park_Commons",
+          "title": "South Park Commons - Wikipedia",
+          "publisher": "Wikipedia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
-      "confidence": "medium"
+      "field_sources": {
+        "size_usd": [
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_south-park-commons_ii",
+      "investor_id": "inv_south-park-commons",
+      "name": "SPC Fund II",
+      "number": "II",
+      "size_usd": 150000000,
+      "currency_original": "USD",
+      "size_original": 150000000,
+      "fx": null,
+      "close_date": "2020",
+      "close_date_precision": "year",
+      "vintage_year": 2020,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://entrackr.com/snippets/south-park-commons-targets-40-mn-india-focused-fund-8601082",
+          "title": "South Park Commons targets $40 Mn India-focused fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.southparkcommons.com/press",
+          "title": "Press - South Park Commons",
+          "publisher": "South Park Commons",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_south-park-commons_iii",
+      "investor_id": "inv_south-park-commons",
+      "name": "SPC Fund III",
+      "number": "III",
+      "size_usd": 275000000,
+      "currency_original": "USD",
+      "size_original": 275000000,
+      "fx": null,
+      "close_date": "2025-05-02",
+      "close_date_precision": "day",
+      "vintage_year": 2025,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://blog.southparkcommons.com/announcing-spc-fund-iii/",
+          "title": "Announcing SPC's $275M Fund III - by Aditya Agarwal",
+          "publisher": "South Park Commons (blog)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/south-park-commons-raises-575-million-fund-iv-bringing-aum-to-approximately-2-billion/",
+          "title": "South Park Commons Raises $575 Million Fund IV, Bringing AUM To About $2 Billion",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ],
+        "close_date": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_south-park-commons_iv",
+      "investor_id": "inv_south-park-commons",
+      "name": "SPC Fund IV",
+      "number": "IV",
+      "size_usd": 575000000,
+      "currency_original": "USD",
+      "size_original": 575000000,
+      "fx": null,
+      "close_date": "2026-08-05",
+      "close_date_precision": "day",
+      "vintage_year": 2026,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.southparkcommons.com/news/announcing-spc-575m-fund-iv",
+          "title": "Announcing SPC's $575M Fund IV | South Park Commons",
+          "publisher": "South Park Commons",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.cooley.com/news/coverage/2026/2026-08-05-south-park-commons-raises-%24575-million-fund-iv",
+          "title": "South Park Commons Raises $575 Million Fund IV // Cooley // Global Law Firm",
+          "publisher": "Cooley (fund counsel press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/south-park-commons-raises-575-million-fund-iv-bringing-aum-to-approximately-2-billion/",
+          "title": "South Park Commons Raises $575 Million Fund IV, Bringing AUM To About $2 Billion",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://blog.southparkcommons.com/p/august-2026-update",
+          "title": "August 2026 Update - South Park Commons",
+          "publisher": "South Park Commons (blog)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "close_date": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "fund_south-park-commons_undated",
+      "investor_id": "inv_south-park-commons",
+      "name": "SPC India fund (target per SEC filing; final close not confirmed)",
+      "number": null,
+      "size_usd": 40000000,
+      "currency_original": "USD",
+      "size_original": 40000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/01/07/south-park-commons-is-raising-40m-for-an-india-specific-fund/",
+          "title": "South Park Commons is raising $40M for an India-specific fund | TechCrunch",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/south-park-commons-targets-40-mn-india-focused-fund-8601082",
+          "title": "South Park Commons targets $40 Mn India-focused fund",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/South_Park_Commons",
+          "title": "South Park Commons - Wikipedia",
+          "publisher": "Wikipedia",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "fund_spacecadet-ventures_i",
@@ -26824,8 +28981,8 @@
       "currency_original": "USD",
       "size_original": 165000000,
       "fx": null,
-      "close_date": "2025-10-03",
-      "close_date_precision": "day",
+      "close_date": "2025-10",
+      "close_date_precision": "month",
       "vintage_year": 2025,
       "location": "Bay Area",
       "notes": null,
@@ -26836,9 +28993,23 @@
           "publisher": null,
           "retrieved_at": "2026-10-29",
           "kind": "user_supplied"
+        },
+        {
+          "url": "https://startupwired.com/2025/10/01/striker-venture-partners-launches-with-165-million-fund/",
+          "title": "Striker Venture Partners launches with $165 million fund",
+          "publisher": "StartupWired",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
         }
       ],
-      "field_sources": {},
+      "field_sources": {
+        "size_usd": [
+          1
+        ],
+        "close_date": [
+          1
+        ]
+      },
       "confidence": "medium"
     },
     {

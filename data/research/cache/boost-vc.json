@@ -1,0 +1,148 @@
+{
+  "key": "boost-vc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Boost VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as boost.vc, the pre-seed deep-tech venture firm (Fund 4 headline cites Fortune and Adam Draper in search results). Its site lists Coinbase, K2 Space, Starfish Space, Radiant Nuclear. Not Boost Capital Partners, not Boost10x, not WeBoost, not Boost Capital (Solafune).",
+  "pages": [
+    {
+      "url": "https://boost.vc",
+      "title": "Boost VC",
+      "publisher": "Boost VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://inforcapital.com/news/rotostitch-lands-1m-pre-seed-to-power-apparel-automation/",
+      "title": "Rotostitch lands $1M pre-seed to power apparel automation",
+      "publisher": "Infor Capital",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "We Lead Pre-Seed Rounds."
+    },
+    "website": {
+      "value": "https://boost.vc",
+      "pages": [
+        0
+      ],
+      "snippet": "We invest first – in founders making aerospace a reality."
+    },
+    "stages": {
+      "value": [
+        "pre_seed"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "We Lead Pre-Seed Rounds."
+    },
+    "check_min_usd": {
+      "value": 500000,
+      "pages": [
+        0
+      ],
+      "snippet": "$500k Checks."
+    },
+    "check_max_usd": {
+      "value": 500000,
+      "pages": [
+        0
+      ],
+      "snippet": "$500k Checks."
+    },
+    "leads": {
+      "value": true,
+      "pages": [
+        0
+      ],
+      "snippet": "We Lead Pre-Seed Rounds."
+    },
+    "thesis_text": {
+      "value": "Invests first in deep-tech founders with a clear why-now and big vision, headlined by aerospace but spanning space, bio, climate, robotics and AI.",
+      "pages": [
+        0
+      ],
+      "snippet": "We invest first – in founders making aerospace a reality."
+    },
+    "stated_sectors": {
+      "value": [
+        "space",
+        "health_bio",
+        "climate_energy",
+        "robotics_physical_ai",
+        "ai_apps_agents",
+        "crypto_web3",
+        "hardware_deeptech"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "Space, Bio/Health, Climate, Robotics, Crypto, AI, VR/AR, and Other"
+    }
+  },
+  "funds": [
+    {
+      "name": "Boost VC Fund 4",
+      "number": "IV",
+      "size_original": 87000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        0
+      ],
+      "snippet": "raises over $87 million for new Boost VC Fund 4"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Rotostitch",
+        "website": null,
+        "description": "Automated textile manufacturing technology pairing proprietary hardware with software for fast, flexible fabric production for apparel brands.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "process_planning"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-12-13",
+      "date_precision": "day",
+      "amount_original": 1000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Boost VC",
+        "Nova Threshold"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "Commenting on the round, investor Emily Yu of Boost VC highlighted the team's distinctive technical approach"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city/country not stated on boost.vc; not recorded.",
+    "Fund 4 close date (lead says 2025-09-29) not confirmed on a fetched page; Fortune and inkl (403), Techleap (403) were blocked. Size 'over $87M' is from the boost.vc headline only.",
+    "Only 1 round recorded; portfolio page lists no rounds and search surfaced mostly aggregators. K2 Space, Starfish Space, Radiant Nuclear (logos on site) not checked for round pages.",
+    "No application URL on the site; /faq is the 'Learn more' page and was not fetched.",
+    "Check size '$500k' from homepage only; a search summary mentioned $3M-$7M valuations, unverified.",
+    "Fund III size: search results gave about $90M and $39M from different aggregators; not resolved. Lead list had $39M (2018-02-14) which is not confirmed."
+  ]
+}

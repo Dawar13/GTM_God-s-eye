@@ -1,0 +1,112 @@
+{
+  "key": "striker-venture-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Striker Venture Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the San Francisco venture firm founded in 2025 (Ynet), with a $165M debut fund announced October 2025 (StartupWired) and named by Pulse 2.0 and SiliconANGLE as an investor in Elorian AI and Edison Scientific. The Elorian page spells the investor 'Striker Venture Partners', matching this firm (the user list's 'Striker'). Not Digital Striker (a different company), not Stride Ventures.",
+  "pages": [
+    { "url": "https://startupwired.com/2025/10/01/striker-venture-partners-launches-with-165-million-fund/", "title": "Striker Venture Partners launches with $165 million fund", "publisher": "StartupWired", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ynetnews.com/business/article/sk11tpvkebe", "title": "US venture fund Striker launches in Israel, targets early-stage cyber startups", "publisher": "Ynetnews", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/elorian-ai-55-million-raised-for-multimodal-reasoning-research-lab-founded-by-former-deepmind-leaders/", "title": "Elorian AI: $55 Million Raised For Multimodal Reasoning Research Lab", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2025/12/18/edison-scientific-raises-70m-build-autonomous-ai-scientists-research", "title": "Edison Scientific raises $70M to build autonomous AI scientists", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "a U.S.-based venture capital fund founded in 2025 in San Francisco" },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "a U.S.-based venture capital fund founded in 2025 in San Francisco" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "a U.S.-based venture capital fund founded in 2025 in San Francisco" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [1], "snippet": "pre-seed, seed or Series A" },
+    "check_min_usd": { "value": 5000000, "pages": [1], "snippet": "individual investments ranging from $5 million to $30 million" },
+    "check_max_usd": { "value": 30000000, "pages": [1], "snippet": "individual investments ranging from $5 million to $30 million" },
+    "thesis_text": {
+      "value": "Concentrated bets on founders and teams before technology is proven, with about ten companies in total, up to half in Israel.",
+      "pages": [0, 1],
+      "snippet": "one fund, 10 limited partners (LPs), and 10 investments"
+    },
+    "stated_sectors": { "value": ["ai_infra", "ai_apps_agents", "enterprise_saas"], "pages": [0, 1], "snippet": "focuses exclusively on cybersecurity and artificial intelligence" }
+  },
+  "funds": [
+    {
+      "name": "Striker Venture Partners Fund I",
+      "number": "I",
+      "size_original": 165000000,
+      "currency_original": "USD",
+      "close_date": "2025-10",
+      "date_precision": "month",
+      "pages": [0],
+      "snippet": "a $165 million fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Elorian AI",
+        "website": null,
+        "description": "Lab working on multimodal reasoning research and products focused on visual understanding, co-founded by a former Google Brain and DeepMind leader.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-04",
+      "date_precision": "month",
+      "amount_original": 55000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["49 Palms", "Jeff Dean"],
+      "unspecified": ["Striker Venture Partners", "Menlo Ventures", "Altimeter"],
+      "pages": [2],
+      "snippet": "backing from Striker Venture Partners"
+    },
+    {
+      "company": {
+        "name": "Edison Scientific",
+        "website": null,
+        "description": "Builds autonomous AI scientists (product Kosmos) that review literature, run analyses and write cited reports; spun out of nonprofit FutureHouse.",
+        "hq_country": "US",
+        "founded_year": 2025,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "date": "2025-12-18",
+      "date_precision": "day",
+      "amount_original": 70000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Triatomic Capital", "Spark Capital"],
+      "participants": ["Pillar VC", "Susa Ventures", "Striker Venture Partners", "Hawktail Management", "Olive Tree Capital Advisors"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Striker Venture Partners LP"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "check_min_usd / check_max_usd",
+      "values": ["$10M to $20M per company (StartupWired)", "$5M to $30M per company (Ynet)"],
+      "chosen": "$5M-$30M",
+      "reason": "Ynet states the range explicitly as individual-investment bounds; StartupWired gives a narrower typical figure."
+    },
+    {
+      "field": "hq_city",
+      "values": ["Bay Area (Shai Goldman list lead)", "San Francisco (Ynet)"],
+      "chosen": "San Francisco",
+      "reason": "Ynet names the city explicitly."
+    }
+  ],
+  "open_items": [
+    "Two rounds recorded, not three. Ricursive Intelligence (seed, Dec 2025) lists Striker only in database-style pages from search results, not a fetched press page; Inferact's seed (TechCrunch) does not name Striker, so it is not recorded.",
+    "Elorian AI: Pulse 2.0 does not label stage or name leads, and is dated 2026-04-12; the 'Striker' in the user list is this firm only if the names match (Pulse 2.0 spells it Striker Venture Partners). Amount $55M per Pulse 2.0. Search results describe Striker, Menlo and Altimeter as co-leads of a seed; left as unspecified.",
+    "Fund close day not confirmed (lead says 2025-10-03; StartupWired is dated 2025-10-01); recorded as October 2025. Ynet article date also not stated on the page.",
+    "Firm website, application route and cold-inbound policy not found. Ynet and Calcalist report a first Israeli seed investment in an undisclosed stealth cyber company."
+  ]
+}
