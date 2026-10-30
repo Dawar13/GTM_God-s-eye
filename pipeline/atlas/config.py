@@ -92,6 +92,12 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("intel", "intel capital"),  # parent company vs its venture arm
         ("intel", "intel capital diversity fund"),  # the fund is Intel Capital's
         ("f2 venture capital", "ff venture capital"),  # different firms (fuzzy 94.4)
+        ("capital-a", "a.capital"),  # different firms (fuzzy 100 on reordered words)
+        ("capital factory", "factory"),  # Austin accelerator vs another firm
+        ("mozilla", "mozilla ventures"),  # parent vs its venture arm
+        # A bare "Amplify" in a release can be either firm; it stays its own record.
+        ("amplify ventures", "amplify"),
+        ("amplify partners", "amplify"),
     ]
 )
 
