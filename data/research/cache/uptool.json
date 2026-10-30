@@ -1,0 +1,73 @@
+{
+  "key": "uptool",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Uptool (uptool.com), the San Mateo, California startup founded in 2024 that sells AI quoting software to small and midsize U.S. machine and fabrication shops. The company site (home, company, pricing), Eclipse's portfolio page for Uptool, Venture Capital Access Online (4 Feb 2026), Pulse 2.0 (10 Feb 2026) and 3DPrint.com (11 Feb 2026) all describe the same product and the same co-founders (Benny Buller, CEO and founder of Velo3D; Alex Huckstepp, ex-Machina Labs and Carbon). Matched on the domain and the RFQ-quoting description, not the name alone; not usamachineshops.com, a shop directory the Uptool site links to. Category set to direct (not in the PROJECT_CONTEXT §7 seed list; candidate seen in Eclipse's portfolio, whose Axios source was blocked): Uptool automates the RFQ-to-quote workflow for shops — ingesting quote emails, CAD files, engineering drawings and BOMs, computing operations, materials and costs — which is Utopian Autonomy's RFQ / BOM / engineering-drawing function. Differences: its users are estimators and owners at job shops answering customers' RFQs (the supplier side), not plant staff at the buying factory; delivery is a web dashboard plus the shop's quoting inbox, not WhatsApp; it does not cover procurement, maintenance or process stability, though it plans CRM and job tracking next. Layer process_planning, as for Forgepoint.",
+  "pages": [
+    { "url": "https://uptool.com", "title": "Uptool: AI-Powered Quoting for Machine & Fab Shops", "publisher": "Uptool", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://uptool.com/company", "title": "Uptool company page", "publisher": "Uptool", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://uptool.com/pricing", "title": "Uptool pricing", "publisher": "Uptool", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://eclipse.capital/companies/uptool", "title": "Eclipse portfolio: Uptool", "publisher": "Eclipse", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.vcaonline.com/news/2026020415/uptool-launches-from-stealth-with-ai-platform-to-accelerate-u-s-manufacturing/", "title": null, "publisher": "Venture Capital Access Online", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/uptool-6-million-seed-funding-closed-for-helping-u-s-shops-quote-10x-faster", "title": "Uptool: $6 Million Seed Funding Closed for Helping U.S. Shops Quote 10x Faster", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://3dprint.com/323862/uptool-emerges-from-stealth/", "title": null, "publisher": "3DPrint.com", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Uptool",
+    "website": "https://uptool.com",
+    "description": "San Mateo startup selling AI quoting software that turns RFQ emails, CAD files, drawings and BOMs into priced quotes for small U.S. machine and fab shops.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "process_planning"
+  },
+  "category": "direct",
+  "layer": "process_planning",
+  "layer_detail": "RFQ-to-quote automation for job shops: connects to the shop's quoting inbox, gathers RFQ documents (CAD files, engineering drawings, BOMs) into a dashboard, captures operations and costs with material and operations calculators, applies shop rates and markups, and tracks revisions and customer conversations. Claims 90% of the RFQ-to-quote workflow automated and per-part quoting cut from 20 to 2 minutes. Users are estimators and owners at small and midsize machine and fabrication shops (supplier side). Roadmap per press: CRM and job tracking toward a shop operating system. Web app, no WhatsApp channel seen.",
+  "founders": ["Benny Buller", "Alex Huckstepp", "Patricio Echagüe"],
+  "named_customers": ["VelocityCNC", "Becker", "Valence", "VTN", "Bullray", "M95"],
+  "product_summary": "Web platform for machine and fab shops that pulls incoming RFQs and their CAD files, drawings and BOMs into one dashboard, estimates operations, materials and cost, applies the shop's rates and markups to draft the quote, and tracks revisions and customer conversations; set-up takes about an hour.",
+  "pricing": "Free 1-week trial ('$0 for any U.S. shop < 100 ppl'); paid plan 'Starts at $195+ /month dependent on total employees & ITAR' (uptool.com/pricing).",
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Uptool", "website": "https://uptool.com", "description": "San Mateo startup selling AI quoting software for small U.S. machine and fab shops.", "hq_country": "US", "founded_year": 2024, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "process_planning" },
+      "stage": "seed",
+      "stage_raw": "$6M seed funding, disclosed at launch from stealth (February 2026); no lead named",
+      "date": "2026-02-04",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Khosla Ventures", "Eclipse", "Bessemer Venture Partners", "Kleiner Perkins"],
+      "pages": [1, 3, 4, 5, 6],
+      "snippet": "raised $6 million in seed funding from Khosla Ventures, Eclipse, Bessemer Venture Partners, and Kleiner Perkins"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "founders",
+      "values": ["Benny Buller and Alex Huckstepp (Uptool's About text, Eclipse page, Pulse 2.0, 3DPrint.com)", "Benny Buller, Alex Huckstepp and Patricio 'Pato' Echagüe (Uptool company page, executive team section: Echagüe is 'Co-Founder and CTO')"],
+      "chosen": "All three",
+      "reason": "The company's own executive-team listing names Echagüe as co-founder and CTO; the shorter two-name lists may predate his title or simply name the public faces of the launch."
+    },
+    {
+      "field": "rounds[seed].date",
+      "values": ["2026-02-04 (Venture Capital Access Online launch article)", "2026-02-10 (Pulse 2.0)", "2026-02-11 (3DPrint.com)"],
+      "chosen": "2026-02-04",
+      "reason": "Earliest dated report of the launch announcement; the later articles report the same $6M seed. The round's close date is not stated anywhere."
+    }
+  ],
+  "open_items": [
+    "Total raised: $6M (the seed is the only round found). No lead investor is named on any page read; all four investors recorded as unspecified.",
+    "Eclipse partner on the deal: Charly Mwangi (Eclipse portfolio page). Axios's launch article (blocked in earlier Eclipse research) was not fetched.",
+    "Named customers: VelocityCNC is named in press (owner Nathan Dillon); the homepage testimonials are attributed only to short company names ('Becker', 'Valence', 'Velocity', 'VTN', 'Bullray', 'M95'), recorded as written. No logos or case studies.",
+    "Headcount not on any public page read (LinkedIn not used). Revenue and customer count not reported; 3DPrint.com quotes the CEO on 'initial customers' only.",
+    "A search-result summary mentioned a database listing dating the round to January 2025; that page was not opened and the date is not recorded.",
+    "Alex Huckstepp's title: 'Co-Founder and CCO' on the company page; not given in press."
+  ]
+}

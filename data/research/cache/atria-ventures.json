@@ -1,0 +1,66 @@
+{
+  "key": "atria-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Atria Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "atria.vc is the San Francisco firm founded in 2023 by general partner Chris Leiter, investing where AI meets life sciences (WaveUp database page, which lists Trially, Peer AI and Sleuth Insights as portfolio). The round articles name the investor only as 'Atria', so the match to atria.vc rests on that database listing. Not Atria AI (UK legal AI), Atrium Ventures, Atria Partners (France), Aria Ventures or Kiara Ventures. The atria.vc homepage showed only the firm name when fetched.",
+  "pages": [
+    { "url": "https://atria.vc", "title": "Atria Ventures", "publisher": "Atria Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://hub.waveup.com/funds/atria-ventures", "title": "Atria Ventures", "publisher": "WaveUp", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.startlandnews.com/2025/09/trially-seed-round/", "title": "Trially secures $4.7M seed round, launches 'Margo' AI solution to clear patient bottleneck", "publisher": "Startland News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://trial.medpath.com/news/e113cb06651202ae/peer-ai-secures-12-1m-to-transform-drug-approval-process-with-specialized-ai-platform", "title": "Peer AI secures $12.1M to transform drug approval process with specialized AI platform", "publisher": "MedPath", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Leads pre-seed and seed rounds" },
+    "website": { "value": "https://atria.vc", "pages": [0, 1], "snippet": "atria.vc" },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "Atria Ventures (San Francisco, US)" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Atria Ventures (San Francisco, US)" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Leads pre-seed and seed rounds" },
+    "check_min_usd": { "value": 250000, "pages": [1], "snippet": "range of $250,000 to $2 million" },
+    "check_max_usd": { "value": 2000000, "pages": [1], "snippet": "range of $250,000 to $2 million" },
+    "thesis_text": {
+      "value": "Invests where AI and life sciences converge, aiming to reshape the life sciences industry from molecule to patient.",
+      "pages": [1],
+      "snippet": "reimagine the trillion-dollar life sciences industry from molecule to patient"
+    },
+    "stated_sectors": { "value": ["health_bio", "ai_apps_agents", "hardware_deeptech"], "pages": [1], "snippet": "AI & Deep Tech, Biotech, Healthtech & Wellness, Pharma" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Peer AI", "website": null, "description": "Agentic AI tools helping life sciences companies prepare regulatory documents.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null,
+      "date": "2025-10-07", "date_precision": "day",
+      "amount_original": 12100000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Flare Capital Partners", "SignalFire"],
+      "participants": ["Greycroft", "Atria", "Alumni Ventures", "Gaingels", "Mana Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "with participation from Greycroft, Atria, Alumni Ventures, Gaingels, and Mana Ventures"
+    },
+    {
+      "company": { "name": "Trially", "website": null, "description": "AI platform matching, engaging and enrolling patients into clinical trials; launched the Margo agentic system.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2025-09-16", "date_precision": "day",
+      "amount_original": 4700000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Flyover Capital"],
+      "participants": ["Alpaca", "Atria", "Blu Ventures", "Looking Glass Capital", "Redbud", "The Council", "Gaingels"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "with participation from Alpaca, Atria, Blu Ventures, Looking Glass Capital, Redbud, The Council, and Gaingels"
+    }
+  ],
+  "conflicts": [
+    { "field": "fund size", "values": ["$25M (lead list)", "$20.2M Fund I, vintage 2024 (startup-seeker, search summary)", "$100M (Superscout, search summary)"], "chosen": "none recorded", "reason": "No fetched page states a fund size or close date; no February 2025 announcement found." }
+  ],
+  "open_items": [
+    "Fund: the $25M, 2025-02-27 lead was not confirmed on any page; funds left empty. Search summaries gave $20.2M (vintage 2024) and $100M; Atria's Fund I is described only as closed with 15 investments.",
+    "Firm facts (HQ, stages, check, thesis, sectors) come from one database page (WaveUp); the atria.vc homepage rendered only the firm name. Treat as low confidence until a primary page is read.",
+    "Only 2 rounds recorded, both naming 'Atria' without 'Ventures'. Sleuth Insights seed was listed by a database in search results but no round page was fetched (name collisions with other 'Sleuth' companies).",
+    "Peer AI stage is not stated on the fetched page (databases disagree between Seed and Series A). Round dates are article dates. No 2026 Atria announcements found.",
+    "Application URL and cold-inbound policy not found."
+  ]
+}

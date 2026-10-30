@@ -1,0 +1,138 @@
+{
+  "key": "geek-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Geek Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as geek.vc, the New York pre-seed/seed firm backing immigrant founders, founder and managing partner Ihar Mahaniok; Fund I $23M announced 2023-08-28 (PR Newswire). Not Geek+ (warehouse robotics maker) and not Geek Technology.",
+  "pages": [
+    { "url": "https://geek.vc", "title": "Geek Ventures", "publisher": "Geek Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/geek-ventures-launches-first-fund-to-support-immigrant-tech-founders-301910626.html", "title": "Geek Ventures Launches First Fund to Support Immigrant Tech Founders", "publisher": "PR Newswire", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thenextweb.com/news/immigrant-focused-vc-geek-ventures-returns-with-larger-checks", "title": "Immigrant-focused VC Geek Ventures returns with larger checks", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/cytronic-raises-13-5-million-seed-funding-to-automate-e-commerce-fulfillment/", "title": "Cytronic Raises $13.5 Million Seed Funding To Automate E-Commerce Fulfillment", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "announced the close of Geek Ventures Fund I, LP."
+    },
+    "website": {
+      "value": "https://geek.vc",
+      "pages": [0],
+      "snippet": "Driving equal opportunity for visionary immigrant entrepreneurs through capital and connections."
+    },
+    "hq_city": {
+      "value": "New York",
+      "pages": [1],
+      "snippet": "a New York-based venture capital firm"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [1],
+      "snippet": "a New York-based venture capital firm"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [1],
+      "snippet": "pre-seed and seed stage technology startups"
+    },
+    "check_min_usd": {
+      "value": 50000,
+      "pages": [1],
+      "snippet": "investments ranging from $50,000 to $1 million."
+    },
+    "check_max_usd": {
+      "value": 1000000,
+      "pages": [1],
+      "snippet": "investments ranging from $50,000 to $1 million."
+    },
+    "thesis_text": {
+      "value": "Backs immigrant founders at pre-seed and seed in AI infrastructure, vertical AI, robotics, deep tech and data-heavy software.",
+      "pages": [1, 2],
+      "snippet": "investing in visionary immigrant founders"
+    },
+    "stated_sectors": {
+      "value": ["ai_infra", "ai_apps_agents", "robotics_physical_ai", "hardware_deeptech"],
+      "pages": [2],
+      "snippet": "investments are focused on AI infrastructure, vertical AI applications, robotics, deep tech and data-heavy software."
+    }
+  },
+  "funds": [
+    {
+      "name": "Geek Ventures Fund I, LP",
+      "number": "I",
+      "size_original": 23000000,
+      "currency_original": "USD",
+      "close_date": "2023-08-28",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "The inaugural fund of $23 million."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Cytronic",
+        "website": "https://www.cytronic.ai/",
+        "description": "Robotic fulfillment facilities for direct-to-consumer e-commerce brands.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-07-17",
+      "date_precision": "day",
+      "amount_original": 13500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Slow Ventures"],
+      "participants": ["Geek Ventures", "Failup Ventures", "Alumni Ventures", "Spacecadet", "Weekend Fund", "Mana Ventures", "Rice Capital", "Script Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Geek Ventures, Failup Ventures, Alumni Ventures, Spacecadet, Weekend Fund, Mana Ventures, Rice Capital and Script Capital also participated."
+    },
+    {
+      "company": {
+        "name": "Caremaze",
+        "website": null,
+        "description": "Startup that closed a pre-seed round alongside early Palantir investors.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2025-03",
+      "date_precision": "month",
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Geek Ventures"],
+      "pages": [2],
+      "snippet": "Caremaze closed a $3 million pre-seed round in March 2025 with Geek Ventures alongside early Palantir investors."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "check_size",
+      "values": ["$50,000 to $1 million (PR Newswire, 2023)", "$100,000 to $300,000 first checks, Fund I (The Next Web, 2026)", "$200-800k first checks (geek.vc, per fetch summary)"],
+      "chosen": "50000-1000000",
+      "reason": "Only range quoted verbatim from a fetched page; firm's own site and 2026 press suggest narrower recent first checks."
+    }
+  ],
+  "open_items": [
+    "Only 2 rounds recorded; Caremaze sector/location unknown (page says only 'alongside early Palantir investors'). Wajo (2026, Khosla-backed) is on the portfolio page but ecosystemastartup article does not mention Geek Ventures; ZeroDrift not checked.",
+    "Fund II: TheNextWeb article (June 2026) title says larger checks, and a search summary says an SEC filing shows Fund II raising; no size or date read on a fetched page.",
+    "Application URL (Typeform pitch form) listed on geek.vc but no verbatim quote captured; not recorded. Immigrant-founder focus is stated; Indian founders specifically not stated."
+  ]
+}

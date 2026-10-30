@@ -1,0 +1,86 @@
+{
+  "key": "precursor-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Precursor Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as precursorvc.com, the pre-seed/seed firm founded in 2015 by Charles Hudson (formerly SoftTech VC); it led Empromptu's 2025 pre-seed (TechCrunch). Not Precursor Capital or other similarly named funds. The homepage returned only a page title when fetched.",
+  "pages": [
+    { "url": "https://precursorvc.com", "title": "Precursor Ventures — Pre-Seed & Seed Stage Venture Capital", "publisher": "Precursor Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.billionaires.africa/2026/04/08/meet-charles-hudson-the-black-vc-who-built-a-175-million-firm-by-backing-founders-first", "title": "Meet Charles Hudson, the Black VC who built a $175 million firm by backing founders first", "publisher": "Billionaires Africa", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/", "title": "Empromptu raises $2M pre-seed to help enterprises build AI apps", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.thesaasnews.com/news/idilio-raises-5-5m-seed/", "title": "Idilio raises $5.5M seed", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://dealroom.co/news/133288-secludy-raises-4m-to-help-banks-train-ai-without-exposing-customer-data/", "title": "Secludy raises $4M to help banks train AI without exposing customer data", "publisher": "Dealroom", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Precursor has invested in more than 375 companies" },
+    "website": { "value": "https://precursorvc.com", "pages": [0], "snippet": "Precursor Ventures — Pre-Seed & Seed Stage Venture Capital" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 1], "snippet": "Pre-Seed & Seed Stage Venture Capital" },
+    "leads": { "value": true, "pages": [2], "snippet": "pre-seed funding round led by Precursor Ventures" },
+    "check_min_usd": { "value": 250000, "pages": [1], "snippet": "$250,000 to $500,000" },
+    "check_max_usd": { "value": 500000, "pages": [1], "snippet": "$250,000 to $500,000" },
+    "thesis_text": {
+      "value": "Backs pre-seed founders regardless of background, network or pedigree, betting on the person rather than the plan, across many small bets per fund.",
+      "pages": [1],
+      "snippet": "Hudson backs the person, not the plan."
+    }
+  },
+  "funds": [
+    {
+      "name": "Precursor Ventures Fund V",
+      "number": "V",
+      "size_original": 66000000,
+      "currency_original": "USD",
+      "close_date": "2025-04",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "Fifth fund closed April 2025 at $66 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Idilio", "website": null, "description": "Uses AI to produce short vertical dramas for Spanish- and Portuguese-speaking audiences.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-06-04", "date_precision": "day",
+      "amount_original": 5500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [],
+      "participants": ["WndrCo", "a16z Speedrun", "Goodwater Capital", "Precursor Ventures", "David Velez", "Jonathan Carson", "Blitzscaling Ventures", "Honeystone Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The funding round included participation from WndrCo, a16z Speedrun, Goodwater Capital, Precursor Ventures"
+    },
+    {
+      "company": { "name": "Secludy", "website": null, "description": "Privacy-tech platform letting financial firms train generative AI and evaluate AI vendors without exposing real customer data.", "hq_country": "US", "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-06-03", "date_precision": "day",
+      "amount_original": 4000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Impression Ventures"],
+      "participants": ["LAUNCH", "The Syndicate", "Wedbush Ventures", "Precursor Ventures", "Hustle Fund", "Script Capital", "Mana Ventures", "Chispa VC"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Impression Ventures (lead), LAUNCH, The Syndicate, Wedbush Ventures, Precursor Ventures, Hustle Fund"
+    },
+    {
+      "company": { "name": "Empromptu", "website": null, "description": "AI service where users describe an app to a chatbot and the platform builds it, with tools for tuning and adding AI to existing code.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed", "stage_raw": "Pre-seed",
+      "date": "2025-12-09", "date_precision": "day",
+      "amount_original": 2000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Precursor Ventures"],
+      "participants": ["Zeal Capital", "Alumni Ventures", "FoundersEdge", "South Loop"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "pre-seed funding round led by Precursor Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "latest fund", "values": ["Fund V $66M, April 2025 (Billionaires Africa)", "Fund IV $80-85M, 2022 (search summaries only)", "a 2026 Fund IV at $45M (one aggregator, unfetched)"], "chosen": "Fund V $66M, April 2025", "reason": "Only fetched page stating a latest fund; matches lead list's 'later funds'. Not corroborated by a second page." }
+  ],
+  "open_items": [
+    "HQ city/country not stated on any fetched page (homepage fetch returned only a title); search summaries say San Francisco, lead list says Bay Area. Left out of facts.",
+    "Fund V rests on one article; earlier funds ($15.3M 2017, $31M 2019) not fetched. Fund V close date given only as month.",
+    "Idilio lead not named on the fetched page and HQ not stated; Idilio date is the article date.",
+    "Application URL and cold-inbound policy not found (site did not render)."
+  ]
+}

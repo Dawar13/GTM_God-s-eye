@@ -1,0 +1,787 @@
+{
+  "key": "venturetech-alliance",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "VentureTech Alliance",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as VentureTech Alliance (vtalliance.com), the San Jose, California venture investment management company that its site says was founded in 2001 to invest in early-stage semiconductor and other emerging-technology companies and 'currently manages funds totaling $165 million'. Backers, only as pages state them: the firm's site says it 'has a strong strategic partnership with TSMC, the IC foundry industry leader' while its investment activity 'is managed independently of this strategic partnership'; TechNode (June 2023, citing Icsmart) calls it 'TSMC's venture capital arm' and says TSMC founded it in 2001; Eliyan's 2024 release calls it the 'venture arm of world's leading foundry'; Tech Times (2026) says 'the fund has ties to Taiwan Semiconductor Manufacturing Company'. TSMC's own annual reports list VentureTech Alliance Fund II, L.P. and Fund III, L.P. (Cayman Islands) as TSMC subsidiaries with 98% shareholding, and its 2024 report says both were dissolved in 2025. Archived team bios tie the staff to TSMC (Ron Norris, ex-President of TSMC USA; Christy Chou, ex-Finance Manager of TSMC North America). Company releases from 2023-2026 name Kai Tsang as its Managing Director / Managing Partner, matching the archived team page. Not TSMC's other venture vehicles listed separately in the same filings (InveStar funds, Emerging Fund, L.P.). The lead's 'deep tech / hardware, Series A' tags are broader than the site's semiconductor-value-chain focus.",
+  "pages": [
+    {
+      "url": "https://www.vtalliance.com/",
+      "title": "VentureTech Alliance",
+      "publisher": "VentureTech Alliance",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.vtalliance.com/01about01.php",
+      "title": "VentureTech Alliance | About: Our Objectives",
+      "publisher": "VentureTech Alliance",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.vtalliance.com/01about02.php",
+      "title": "VentureTech Alliance | About: Target Market",
+      "publisher": "VentureTech Alliance",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.vtalliance.com/01about03.php",
+      "title": "VentureTech Alliance | About: Investment Criteria",
+      "publisher": "VentureTech Alliance",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.vtalliance.com/01about04.php",
+      "title": "VentureTech Alliance | About: Evaluation Process",
+      "publisher": "VentureTech Alliance",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://web.archive.org/web/20230325230853/http://vtalliance.com/02team.php",
+      "title": "VentureTech Alliance | Team (Wayback Machine snapshot, 2023-03-25)",
+      "publisher": "VentureTech Alliance via Internet Archive",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://web.archive.org/web/20220331102254/http://vtalliance.com/02team.php?tb_index=NA20090505014505",
+      "title": "VentureTech Alliance | Team: Ron Norris (Wayback Machine snapshot, 2022-03-31)",
+      "publisher": "VentureTech Alliance via Internet Archive",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://web.archive.org/web/20230328080438/http://vtalliance.com/02team.php?tb_index=NA20090505014910",
+      "title": "VentureTech Alliance | Team: Christy Chou (Wayback Machine snapshot, 2023-03-28)",
+      "publisher": "VentureTech Alliance via Internet Archive",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://web.archive.org/web/20230328080516/http://vtalliance.com/03portfolio.php",
+      "title": "VentureTech Alliance | Portfolio (Wayback Machine snapshot, 2023-03-28)",
+      "publisher": "VentureTech Alliance via Internet Archive",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://technode.com/2023/06/16/tsmc-invests-nearly-100-million-into-three-us-chip-startups/",
+      "title": "TSMC invests nearly 100 million into three US chip startups",
+      "publisher": "TechNode",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://ayarlabs.com/news/ayar-labs-adds-25-million-in-expansion-of-its-130-million-series-c/",
+      "title": "Ayar Labs Adds $25 Million in Expansion of its $130 Million Series C",
+      "publisher": "Ayar Labs",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://ayarlabs.com/news/ayar-labs-155m-series-d-to-address-ai-infrastructure-includes-amd-intel-capital-nvidia/",
+      "title": "Ayar Labs, with Investments from AMD, Intel Capital, and NVIDIA, Secures $155 million to Address Urgent Need for Scalable, Cost-Effective AI Infrastructure",
+      "publisher": "Ayar Labs",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+      "title": "Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co-Packaged Optics",
+      "publisher": "Ayar Labs",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techstartups.com/2023/06/13/ai-chip-startup-sima-ai-raises-another-13-million-in-funding-as-ai-boom-picks-up-steam/",
+      "title": "AI chip startup SiMa.ai raises another $13 million in funding as AI boom picks up steam",
+      "publisher": "Tech Startups",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://sima.ai/in-the-news/ai-chip-startup-sima-ai-raises-13-million-in-funding-as-ai-boom-picks-up-steam/",
+      "title": "AI chip startup SiMa.ai raises $13 million in funding as AI boom picks up steam",
+      "publisher": "SiMa.ai",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/encharge-ai-closes-additional-22-6m-from-venturetech-alliance-rtx-ventures-and-acvc-partners-to-unlock-ai-compute-302005460.html",
+      "title": "EnCharge AI Closes Additional $22.6M from VentureTech Alliance, RTX Ventures and ACVC Partners to Unlock AI Compute",
+      "publisher": "PR Newswire (EnCharge AI release)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://eliyan.com/press-release/strategic-investment-from-venturetech-alliance/",
+      "title": "Chiplet interconnect pioneer Eliyan gains additional financial backing from AI chip ecosystem with strategic investment from VentureTech Alliance",
+      "publisher": "Eliyan",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://smartcitiestech.io/2026/09/hyperlight-adds-venturetech-alliance-to-series-c-financing-round/",
+      "title": "HyperLight adds VentureTech Alliance to Series C financing round",
+      "publisher": "Smart Cities Tech (MySecurity Media)",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm",
+      "title": "Transformer Chip Startup Etched Exits Stealth: $800M Raised, $1B in Contracts",
+      "publisher": "Tech Times",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.vcaonline.com/news/2025081303/celestial-ai-closes-final-series-c1-round-to-accelerate-next-generation-ai-computing",
+      "title": "Celestial AI Closes Final Series C1 Round to Accelerate Next-Generation AI Computing",
+      "publisher": "Venture Capital Access Online (Celestial AI release via Business Wire)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://pulse2.com/celestial-ai-final-closing-of-255-million-series-c1-funding",
+      "title": "Celestial AI: Final Closing Of $255 Million Series C1 Funding",
+      "publisher": "Pulse 2.0",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://www.unite.ai/enfabrica-secures-115m-series-c-funding-and-announces-availability-of-worlds-fastest-gpu-networking-chip/",
+      "title": "Enfabrica Secures $115M Series C Funding and Announces Availability of World's Fastest GPU Networking Chip",
+      "publisher": "Unite.AI",
+      "retrieved_at": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "url": "https://avicena.tech/avicena-announces-series-b-funding-round-led-by-tiger-global-with-participation-from-sk-hynix/",
+      "title": "Avicena Announces Series B Funding Round Led by Tiger Global with Participation from SK hynix",
+      "publisher": "Avicena",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://avicena.tech/company/",
+      "title": "Avicena | Company",
+      "publisher": "Avicena",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.enchargeai.com/news-and-publications/series-b",
+      "title": "EnCharge AI Closes Oversubscribed $100M Series B Funding Round Led by Tiger Global",
+      "publisher": "EnCharge AI",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://investor.tsmc.com/static/annualReports/2024/english/ebook/files/basic-html/page178.html",
+      "title": "TSMC 2024 Annual Report, 8.1 Subsidiaries: TSMC Subsidiaries Chart",
+      "publisher": "Taiwan Semiconductor Manufacturing Company",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://investor.tsmc.com/static/annualReports/2024/english/ebook/files/basic-html/page181.html",
+      "title": "TSMC 2024 Annual Report, subsidiaries shareholding table",
+      "publisher": "Taiwan Semiconductor Manufacturing Company",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://investor.tsmc.com/static/annualReports/2023/english/pdf/2023_tsmc_ar_e_ch8.pdf",
+      "title": "TSMC 2023 Annual Report, Chapter 8: Subsidiary Information and Other Special Notes",
+      "publisher": "Taiwan Semiconductor Manufacturing Company",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://investor.tsmc.com/static/annualReports/2013/english/pdf/pdf08.pdf",
+      "title": "TSMC 2013 Annual Report, Chapter 8: Subsidiary Information and Other Special Notes",
+      "publisher": "Taiwan Semiconductor Manufacturing Company",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.ethernovia.com/news/ethernovia-raises-over-90-million-series-b-to-scale-leading-edge-autonomy-and-physical-ai-networking-chips/",
+      "title": "Ethernovia Raises Over $90 Million Series B to Scale Leading-Edge Autonomy and Physical AI Networking Chips",
+      "publisher": "Ethernovia",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "aliases": {
+      "value": [
+        "VentureTech",
+        "VTA",
+        "Venture Tech Alliance"
+      ],
+      "pages": [
+        1,
+        17,
+        22
+      ],
+      "snippet": "VentureTech Alliance (VTA) has joined its Series C financing round"
+    },
+    "type": {
+      "value": "cvc",
+      "pages": [
+        1,
+        9,
+        16,
+        27,
+        25
+      ],
+      "snippet": "VentureTech Alliance, TSMC's venture capital arm, has invested in three Silicon Valley chip startups."
+    },
+    "website": {
+      "value": "https://www.vtalliance.com",
+      "pages": [
+        0,
+        1
+      ],
+      "snippet": "VentureTech Alliance was founded in 2001 as a venture investment management company"
+    },
+    "hq_city": {
+      "value": "San Jose",
+      "pages": [
+        0,
+        4
+      ],
+      "snippet": "2851 Junction Avenue San Jose, CA 95134"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        0,
+        4
+      ],
+      "snippet": "2851 Junction Avenue San Jose, CA 95134"
+    },
+    "stages": {
+      "value": [
+        "series_a",
+        "series_b"
+      ],
+      "pages": [
+        3,
+        2
+      ],
+      "snippet": "VentureTech primarily invests in companies that require early to mid-stage funding"
+    },
+    "check_min_usd": {
+      "value": 1000000,
+      "pages": [
+        3
+      ],
+      "snippet": "typical initial investments in the range of $1-3 million."
+    },
+    "check_max_usd": {
+      "value": 3000000,
+      "pages": [
+        3
+      ],
+      "snippet": "typical initial investments in the range of $1-3 million."
+    },
+    "leads": {
+      "value": false,
+      "pages": [
+        3
+      ],
+      "snippet": "VentureTech frequently works with other investors who act as the lead, while we play the role of strategic, active investor"
+    },
+    "thesis_text": {
+      "value": "Invests mainly early to mid-stage across the semiconductor value chain: fabless chip companies needing advanced process technology, and chip infrastructure such as EDA, IP and process or equipment technology, plus emerging technologies that rely on complex outsourced manufacturing. Takes an active, often board-level strategic role and may favour areas with long-term synergy for its corporate strategic partner.",
+      "pages": [
+        2,
+        3,
+        1
+      ],
+      "snippet": "VentureTech focuses primarily on the semiconductor value chain, such as fabless semiconductor companies and semiconductor infrastructure companies"
+    },
+    "stated_sectors": {
+      "value": [
+        "hardware_deeptech"
+      ],
+      "pages": [
+        2,
+        3
+      ],
+      "snippet": "Fabless semiconductor companies that require advanced and high-value-added semiconductor technologies."
+    },
+    "application_url": {
+      "value": "https://www.vtalliance.com/01about04.php",
+      "pages": [
+        4
+      ],
+      "snippet": "Applicants should initially submit an in-depth company overview to facilitate the process."
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [
+        4
+      ],
+      "snippet": "is open to unsolicited proposals from companies that have the passion and confidence to strive for excellence."
+    },
+    "requires_us_entity": {
+      "value": "unknown",
+      "pages": [
+        4,
+        8
+      ],
+      "snippet": "Private Company Taipei, Taiwan"
+    }
+  },
+  "funds": [
+    {
+      "name": "VentureTech Alliance Fund II, L.P.",
+      "number": "II",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        27,
+        28,
+        25,
+        26
+      ],
+      "snippet": "VentureTech Alliance Fund II, L.P. Feb. 27, 2004 Cayman Islands US$ 3,487 Investing in technology start-up companies"
+    },
+    {
+      "name": "VentureTech Alliance Fund III, L.P.",
+      "number": "III",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [
+        27,
+        28,
+        25,
+        26
+      ],
+      "snippet": "VentureTech Alliance Fund III, L.P. Mar. 25, 2006 Cayman Islands US$ 93,998 Investing in technology start-up companies"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Kai Tsang",
+      "title": "Managing Partner",
+      "focus_sectors": [
+        "hardware_deeptech"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        5,
+        19,
+        17,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "Ron Norris",
+      "title": null,
+      "focus_sectors": [
+        "hardware_deeptech"
+      ],
+      "linkedin_url": null,
+      "pages": [
+        6
+      ]
+    },
+    {
+      "name": "Christy Chou",
+      "title": null,
+      "focus_sectors": [],
+      "linkedin_url": null,
+      "pages": [
+        7
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "HyperLight",
+        "website": null,
+        "description": "Thin-film lithium niobate (TFLN) photonics company whose chiplet platform targets data-centre and telecom optical interconnects, including co-packaged optics.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C; VentureTech Alliance joined an existing round (amount, lead and other investors not named)",
+      "date": "2026-09-09",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "VentureTech Alliance"
+      ],
+      "pages": [
+        17
+      ],
+      "snippet": "VentureTech Alliance (VTA) has joined its Series C financing round"
+    },
+    {
+      "company": {
+        "name": "Etched",
+        "website": null,
+        "description": "AI chip startup whose Sohu chip is built for transformer inference, made on TSMC's N4P process.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "$500M round, series not named, closed December 2025 at a $5B post-money valuation (reported June 2026)",
+      "date": "2025-12",
+      "date_precision": "month",
+      "amount_original": 500000000,
+      "currency_original": "USD",
+      "valuation_post_original": 5000000000,
+      "leads": [
+        "Stripes"
+      ],
+      "participants": [
+        "VentureTech Alliance",
+        "Peter Thiel",
+        "Jane Street",
+        "Hudson River Trading",
+        "Jump Trading",
+        "Two Sigma",
+        "Ribbit Capital"
+      ],
+      "unspecified": [],
+      "pages": [
+        18
+      ],
+      "snippet": "It included a strategic investment from VentureTech Alliance"
+    },
+    {
+      "company": {
+        "name": "Celestial AI",
+        "website": null,
+        "description": "Santa Clara optical-interconnect company addressing the scaling demands of modern AI infrastructure.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "final close of the $255M Series C1 (first close of $250M reported March 2025); total funding $520M; no lead named in this release",
+      "date": "2025-08-13",
+      "date_precision": "day",
+      "amount_original": 255000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [
+        "VentureTech Alliance",
+        "Samsung Catalyst Fund"
+      ],
+      "unspecified": [],
+      "pages": [
+        19,
+        20
+      ],
+      "snippet": "adding strategic investors VentureTech Alliance and Samsung Catalyst Fund in the round"
+    },
+    {
+      "company": {
+        "name": "Avicena",
+        "website": "https://avicena.tech/",
+        "description": "Sunnyvale company building microLED-based LightBundle optical interconnects for chip-to-chip and AI scale-up links.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B ($65M; total raised $120M)",
+      "date": "2025-05-14",
+      "date_precision": "day",
+      "amount_original": 65000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Tiger Global"
+      ],
+      "participants": [
+        "Maverick Silicon",
+        "Prosperity7 Ventures",
+        "Venture Tech Alliance",
+        "SK hynix",
+        "Cerberus Capital Management",
+        "Hitachi Ventures",
+        "Lam Research"
+      ],
+      "unspecified": [],
+      "pages": [
+        22,
+        23
+      ],
+      "snippet": "new and existing investors including Maverick Silicon, Prosperity7 Ventures, Venture Tech Alliance, SK hynix"
+    },
+    {
+      "company": {
+        "name": "Enfabrica",
+        "website": null,
+        "description": "AI networking chip company selling a 3.2 Tbps Accelerated Compute Fabric (ACF) SuperNIC for GPU clusters.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C, oversubscribed ($115M), announced at SC24",
+      "date": "2024-11-19",
+      "date_precision": "day",
+      "amount_original": 115000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Spark Capital"
+      ],
+      "participants": [
+        "Maverick Silicon",
+        "VentureTech Alliance",
+        "Atreides Management",
+        "Alumni Ventures",
+        "Liberty Global Ventures",
+        "Sutter Hill Ventures",
+        "Valor Equity Partners"
+      ],
+      "unspecified": [],
+      "pages": [
+        21
+      ],
+      "snippet": "with contributions from new investors Maverick Silicon and VentureTech Alliance"
+    },
+    {
+      "company": {
+        "name": "Eliyan",
+        "website": "https://www.eliyan.com/",
+        "description": "Santa Clara chiplet-interconnect company scaling semiconductor performance, power and cost for high-performance computing.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "strategic",
+      "stage_raw": "strategic investment from VentureTech Alliance (amount not disclosed; total investment passes $100M)",
+      "date": "2024-08-13",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [
+        "VentureTech Alliance"
+      ],
+      "unspecified": [],
+      "pages": [
+        16
+      ],
+      "snippet": "today announced a strategic investment from VentureTech Alliance"
+    },
+    {
+      "company": {
+        "name": "EnCharge AI",
+        "website": "https://enchargeai.com/",
+        "description": "Santa Clara AI chip company building full-stack edge-to-cloud AI compute (launched in 2022).",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "second institutional round from strategic partners; series not named; total raised $45M",
+      "date": "2023-12-05",
+      "date_precision": "day",
+      "amount_original": 22600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [
+        "VentureTech Alliance",
+        "RTX Ventures",
+        "ACVC Partners",
+        "Anzu Partners",
+        "AlleyCorp",
+        "Scout VC",
+        "Silicon Catalyst Angels",
+        "S5V"
+      ],
+      "unspecified": [],
+      "pages": [
+        15
+      ],
+      "snippet": "strategic partners including VentureTech Alliance, RTX Ventures, and ACVC Partners"
+    },
+    {
+      "company": {
+        "name": "SiMa.ai",
+        "website": "https://sima.ai/",
+        "description": "Silicon Valley maker of machine-learning chips and software for edge devices.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "additional funding, series not named",
+      "date": "2023-06-13",
+      "date_precision": "day",
+      "amount_original": 13000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "VentureTech Alliance"
+      ],
+      "pages": [
+        13,
+        14
+      ],
+      "snippet": "from high-profile investors including a key fund in Taiwan called VentureTech Alliance"
+    },
+    {
+      "company": {
+        "name": "Ayar Labs",
+        "website": "https://ayarlabs.com/",
+        "description": "Silicon photonics company making optical I/O chiplets for chip-to-chip connectivity in AI and HPC systems.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C1: $25M expansion bringing the total Series C to $155M (oversubscribed up round)",
+      "date": "2023-05-24",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Capital TEN"
+      ],
+      "participants": [
+        "VentureTech Alliance",
+        "Boardman Bay Capital Management",
+        "IAG Capital Partners",
+        "NVIDIA",
+        "Tyche Partners"
+      ],
+      "unspecified": [],
+      "pages": [
+        10
+      ],
+      "snippet": "The oversubscribed up round was led by new investor Capital TEN."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq street address",
+      "values": [
+        "2851 Junction Avenue, San Jose, CA 95134 (home page)",
+        "2585 Junction Ave., San Jose, CA 95134 (Evaluation Process page mailing address)"
+      ],
+      "chosen": "San Jose, US (city only)",
+      "reason": "Both pages are the firm's own and agree on San Jose; the street number differs, so only the city is recorded."
+    },
+    {
+      "field": "type",
+      "values": [
+        "'a venture investment management company' with 'a strong strategic partnership with TSMC', investment activity 'managed independently' (firm site)",
+        "'TSMC's venture capital arm', founded by TSMC in 2001 (TechNode, 2023, citing Icsmart); 'venture arm of world's leading foundry' (Eliyan release, 2024)",
+        "TSMC annual reports list VentureTech Alliance Fund II and III, L.P. as TSMC subsidiaries at 98% shareholding (2023, 2024) and VentureTech Alliance Holdings, LLC at 100% (2013)"
+      ],
+      "chosen": "cvc",
+      "reason": "TSMC's own filings show it owns 98% of the named funds and the press calls VTA its venture arm; the site's statement that investing is managed independently is kept here for the reader."
+    },
+    {
+      "field": "partners.Kai Tsang title",
+      "values": [
+        "Managing Director (EnCharge AI release, Dec 2023; Eliyan release, Aug 2024)",
+        "Managing Partner (Celestial AI release, Aug 2025; Smart Cities Tech, Sep 2026)"
+      ],
+      "chosen": "Managing Partner",
+      "reason": "The two most recent sources, one of them a company release, use Managing Partner; the title appears to have changed between Aug 2024 and Aug 2025. The firm's own team page gives no title."
+    },
+    {
+      "field": "stages",
+      "values": [
+        "'early to mid-stage funding', also following on in later rounds (firm site)",
+        "Rounds found since 2023 are mostly Series B, Series C/C1 and late private rounds (Avicena B, Enfabrica C, Celestial AI C1, HyperLight C, Etched $500M at $5B)"
+      ],
+      "chosen": "series_a, series_b (the firm's stated range)",
+      "reason": "The stated policy is recorded; recent public deals suggest entry is now mostly Series B and later, and no Series A or seed entry was found after 2023."
+    },
+    {
+      "field": "status / funds",
+      "values": [
+        "TSMC 2024 Annual Report: VentureTech Alliance Fund II, L.P. and Fund III, L.P. 'dissolved in 2025'",
+        "VentureTech Alliance named as a new investor in Celestial AI (Aug 2025), Etched (Dec 2025) and HyperLight (Sep 2026)"
+      ],
+      "chosen": "active",
+      "reason": "Investments continue after the two known funds were dissolved, so the firm is active through some other vehicle that no fetched page names."
+    },
+    {
+      "field": "hq_country",
+      "values": [
+        "San Jose, California address on vtalliance.com",
+        "'a key fund in Taiwan called VentureTech Alliance' (Tech Startups, June 2023)"
+      ],
+      "chosen": "US",
+      "reason": "The firm's own pages give only a San Jose address; the Taiwan wording is a single press description, likely reflecting the TSMC link."
+    },
+    {
+      "field": "rounds amounts attributed to VentureTech (TechNode, June 2023)",
+      "values": [
+        "'The three startups secured financing of $13 million, $25 million, and $64 million respectively from VentureTech' (TechNode, citing Icsmart)",
+        "SiMa.ai's $13M and Ayar Labs' $25M were whole rounds with other investors (Tech Startups; Ayar Labs release)"
+      ],
+      "chosen": "Round totals recorded as round amounts; VentureTech's own cheque sizes unknown",
+      "reason": "The company sources describe these figures as total round sizes, and Ayar Labs names a different lead (Capital TEN) plus four other investors, so the TechNode wording overstates VentureTech's share."
+    }
+  ],
+  "open_items": [
+    "Fund sizes and close dates are not published. TSMC's 2023 annual report gives incorporation dates and year-end capital (Fund II US$3,487k; Fund III US$93,998k; TSMC invested US$3,417,545 and US$92,118,263, 98% each), which are paid-in balances, not commitments. The site's 'funds totaling $165 million' figure is undated. TSMC's 2024 report says both funds were dissolved in 2025; the vehicle behind the 2025-2026 deals is not named on any fetched page.",
+    "A first fund is not named. TSMC's 2013 report lists Emerging Alliance Fund, L.P. (Jan. 10, 2001, 99.5% TSMC) and VentureTech Alliance Holdings, LLC (Apr. 25, 2007, 100%) among TSMC subsidiaries; no page ties Emerging Alliance Fund to VentureTech Alliance, so it is not recorded as Fund I. TSMC's Emerging Fund, L.P. (2021) is a separate TSMC vehicle with no stated VTA link.",
+    "Rounds seen but not recorded because the page does not place VentureTech Alliance in that round: Ayar Labs Series D, Dec 2024 (VTA listed only among 'existing investors'); Ayar Labs Series E (Mar 2026) and $150M expansion (Sep 2026) (VTA only in boilerplate); EnCharge AI Series B, Feb 2025 (VTA called a 'previous investor', not listed as a Series B participant); Ethernovia Series B, Jan 2026 (VTA not named; TechNode's 2023 '$64 million' Ethernovia figure has no round page).",
+    "Unverified database hints not checked: an Eridu investment dated 20 Mar 2026 (PitchBook snippet; eridu.ai returned 403); Tracxn lists Astera Labs and Rivos among exits. Business Wire originals for Enfabrica (Nov 2024) and Celestial AI (Aug 2025) returned 403, so a reprint and press were used.",
+    "No round found in which VentureTech Alliance led; leads=false follows the site's statement that it usually invests alongside other leads.",
+    "The live team (02team.php), portfolio (03portfolio.php) and contact (04contact.php) pages return empty documents (Oct 2026), and Wayback snapshots since 2023-06 are empty or bot-check pages. Partners and portfolio come from 2022-2023 snapshots, so current staffing is unconfirmed; titles are not given in the page text.",
+    "Stages: the firm says 'early to mid-stage'; mapping that to Series A and Series B is an interpretation, not the firm's words.",
+    "No company LinkedIn page linked from vtalliance.com; not recorded.",
+    "portfolio_count_reported: the firm states no count. The 2023 portfolio snapshot lists about 50 companies, mostly 2000s-era investments.",
+    "requires_us_entity: not stated; the archived portfolio includes Taipei- and Hsinchu-based companies. invests_in_indian_founders: not stated.",
+    "Application route is an email to any team member or post to the firm's San Jose address; there is no web form (emails not recorded)."
+  ]
+}

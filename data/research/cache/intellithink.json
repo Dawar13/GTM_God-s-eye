@@ -1,0 +1,67 @@
+{
+  "key": "intellithink",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Intellithink (intellithink.in), the Bengaluru industrial-IoT company selling machine-health monitoring (condition-based monitoring, production monitoring, energy analytics) with its own sensors and cloud platform, products IntelliVIBE and IntelliAMP. The company site (client-rendered; its About page content was read from the site's own JS bundle), NewsKart and Ascendants (16 Apr 2026) and Venture Intelligence (17 Apr 2026) all describe the same Bengaluru machine-health business and the same leadership (Sridhar Venugopal, founder and CEO; Aswin Venu, co-founder); intellithink.com does not serve a site. Category set to adjacent (not in the PROJECT_CONTEXT §7 seed list; candidate from a NewsKart lead): it overlaps Utopian Autonomy's maintenance function — 24x7 monitoring of rotating equipment, anomaly detection and suggested fixes for steel, cement, power, oil and gas, pharma and auto plants in India — but it is a sensor-plus-dashboard condition-monitoring product (like Tractian, which §7 lists as adjacent), not an AI agent working with plant staff over WhatsApp, and no page mentions procurement, RFQ / BOM, engineering drawings or process stability.",
+  "pages": [
+    { "url": "https://intellithink.in/", "title": "Intellithink - Connect, Integrate, Transform (meta description: Machine Health Solutions)", "publisher": "Intellithink", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://intellithink.in/js/484.js", "title": "Intellithink site: About page content (client-rendered bundle, leadership team and company text)", "publisher": "Intellithink", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.newskart.com/intellithink-raises-inr-17-crore-why-this-industrial-ai-funding-matters-in-2026/", "title": "Intellithink Raises INR 17 Crore: Why This Industrial AI Funding Matters in 2026", "publisher": "NewsKart", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.ventureintelligence.com/private-equity/industrial-ai-startup-intellithink-raises-rs.17-cr-led-by-pentathlon-ventures", "title": null, "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://ascendants.in/business-stories/intellithink-raises-17-crore-industrial-ai-india-gcc/", "title": null, "publisher": "Ascendants", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Intellithink",
+    "website": "https://intellithink.in",
+    "description": "Bengaluru industrial-IoT company that monitors the health of rotating plant machinery with its own sensors and a cloud analytics platform.",
+    "hq_country": "IN",
+    "founded_year": 2018,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Condition-based monitoring / predictive maintenance: proprietary sensors (IntelliVIBE; IntelliAMP is a second product, not described on pages read) stream to a cloud platform that watches rotating equipment around the clock, flags anomalies and suggests fixes; also production monitoring and energy analytics. Industries listed on the site: cement, oil and gas, power generation, steel, pharmaceutical, automotive. Users are maintenance and reliability teams; dashboard product, no WhatsApp or agent interface seen.",
+  "founders": ["Sridhar Venugopal", "Aswin Venu"],
+  "named_customers": ["Jindal Steel", "Jindal Stainless", "JSW Steel", "ArcelorMittal Nippon Steel", "Adani", "UltraTech", "Dalmia", "Ducab", "L&T"],
+  "product_summary": "Industrial IoT machine-health platform: in-house sensors (IntelliVIBE, IntelliAMP) feed a cloud analytics layer that monitors rotating equipment 24x7, detects anomalies, diagnoses likely faults and suggests corrective action, alongside production-monitoring and energy-analytics modules for heavy-industry plants.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Intellithink", "website": "https://intellithink.in", "description": "Bengaluru machine-health (condition monitoring) company for heavy-industry plants.", "hq_country": "IN", "founded_year": 2018, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "undisclosed",
+      "stage_raw": "Funding round, stage not stated on pages read (NewsKart: 'early-stage raise'); INR 17 crore; Pentathlon Ventures put in INR 6.5 crore from its India Fund II",
+      "date": "2026-04-16",
+      "date_precision": "day",
+      "amount_original": 170000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["Pentathlon Ventures"],
+      "participants": ["Anicut Capital", "Veltis Capital"],
+      "unspecified": [],
+      "pages": [2, 3, 4],
+      "snippet": "has raised INR 17 crore in a round led by Pentathlon Ventures, with participation from Anicut Capital and Veltis Capital."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[2026-04].date",
+      "values": ["2026-04-16 (NewsKart byline; Ascendants 'April 16', no year on page)", "2026-04-17 (Venture Intelligence)"],
+      "chosen": "2026-04-16",
+      "reason": "Two press pages give 16 April; the database entry a day later is likely its posting date."
+    }
+  ],
+  "open_items": [
+    "Total raised: INR 17 crore is the only round found. No earlier round found on pages read, although the company dates to 2018.",
+    "Stage: search-result headlines (raising.fi, theaiworld.org, aurumproptech.in) call it a seed round, but none of those pages was opened; the fetched pages do not state a stage, so it is recorded as undisclosed.",
+    "Named customers come from Ascendants' article (which also says 'more than 50 enterprises'); the company site shows client logos as images only, with no names readable. Not confirmed on a company page.",
+    "Founded year: 2018 per Venture Intelligence and Ascendants; a search-result summary said 2017, but no fetched page says so.",
+    "Site leadership also lists Narayana Bhat (CTO) and Dr. Sai Pai (Chief Data Scientist); only Venugopal and Venu are called founders.",
+    "Use of funds per Ascendants: expansion across India and the GCC and a next-generation solution. Newsbytes (403) was not readable.",
+    "Headcount not on any public page read (LinkedIn not used). Revenue not publicly reported. Pricing not public.",
+    "Indian legal entity name (Pvt Ltd) not confirmed on any page read."
+  ]
+}

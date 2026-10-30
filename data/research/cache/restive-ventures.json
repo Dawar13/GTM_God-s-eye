@@ -1,0 +1,81 @@
+{
+  "key": "restive-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Restive Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Restive Ventures, the early-stage fintech / AI-native financial services fund that closed a $45M Fund III in May 2026 (Pulse 2.0) and is named in Corbel's seed round release. Own site (restive.vc) did not resolve, so identification rests on press. Not Restive (the cloud-software company) or other 'Restive' names.",
+  "pages": [
+    { "url": "https://pulse2.com/restive-ventures-closes-45-million-fund-iii-to-back-ai-native-financial-services-startups/", "title": "Restive Ventures Closes $45 Million Fund III To Back AI-Native Financial Services Startups", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/corbel-6-7-million-secured-for-improving-industrial-equipment-sales-with-ai-native-platform", "title": "Corbel: $6.7 Million Secured For Improving Industrial Equipment Sales With AI-Native Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "the early-stage venture firm"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "pages": [0],
+      "snippet": "writing the first check into founders at the earliest stages"
+    },
+    "thesis_text": {
+      "value": "Backs new AI-native financial products rather than upgrades to legacy fintech, seeing a roughly $1 trillion opportunity in AI-native financial services.",
+      "pages": [0],
+      "snippet": "a $1 trillion market opportunity in AI-native financial services"
+    },
+    "stated_sectors": {
+      "value": ["fintech", "ai_apps_agents"],
+      "pages": [0],
+      "snippet": "a $1 trillion market opportunity in AI-native financial services"
+    }
+  },
+  "funds": [
+    {
+      "name": "Restive Fund III",
+      "number": "III",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2026-05-11",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$45 million in committed capital"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Corbel",
+        "website": null,
+        "description": "AI operating system for industrial equipment manufacturers, automating selling, quoting and financing with agents trained on each maker's data.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-10-23",
+      "date_precision": "day",
+      "amount_original": 6700000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Ibex Investors"],
+      "participants": ["Joule Ventures", "Restive Ventures", "Selah Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "The round was led by Ibex Investors, with participation from Joule Ventures, Restive Ventures, and Selah Ventures."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round recorded. Brico Series A ($13.5M, Flourish Ventures lead, Restive participating, Oct 2025) was seen on fintech.global but the tool gave no verbatim sentence, so not recorded; Hiro (acquired by OpenAI, Apr 2026) has no funding round page naming Restive's role.",
+    "HQ (San Francisco per a directory summary), website, check size, application URL not confirmed; restive.vc did not resolve. The lead that Restive sits on 'B2B AI funds' and One Way Summit lists was not checked.",
+    "Pulse 2.0 gives no explicit close date; 2026-05-11 is the article date. Pulse 2.0 says Fund I (2019) and Fund II (2021) exist; sizes not given.",
+    "Corbel date: Pulse 2.0 says 2025-10-23; other outlets in search results say Oct 15-16, 2025 (not fetched)."
+  ]
+}

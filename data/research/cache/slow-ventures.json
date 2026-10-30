@@ -1,0 +1,94 @@
+{
+  "key": "slow-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Slow Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as slow.co, the generalist early-stage firm active since 2011 with offices in San Francisco, Boston and New York, which also runs the Slow Ventures Creator Fund (creatorfund.co) led by Sam Lessin and Megan Lightcap. Not Slow Capital or Slow Money.",
+  "pages": [
+    { "url": "https://slow.co/about", "title": "About Slow Ventures", "publisher": "Slow Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.tubefilter.com/2026/10/02/slow-ventures-sam-lessin-megan-lightcap-creator-investment/amp/", "title": "Slow Ventures creator investments", "publisher": "Tubefilter", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.adweek.com/dealroom/slow-ventures-invests-creators/", "title": "Slow Ventures Backs 3 More Creators in Its $64 Million Bet on Niche 'Cults'", "publisher": "Adweek", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "generalist early stage venture capital firm" },
+    "website": { "value": "https://slow.co", "pages": [0], "snippet": "generalist early stage venture capital firm" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "San Francisco, Boston, and New York" },
+    "thesis_text": {
+      "value": "Generalist early-stage firm arguing software beyond classic B2B SaaS will reshape industries; also backs creator-led companies via a dedicated creator fund.",
+      "pages": [0, 1],
+      "snippet": "generalist early stage venture capital firm"
+    },
+    "stated_sectors": { "value": ["fintech", "crypto_web3", "consumer", "health_bio", "enterprise_saas"], "pages": [0], "snippet": "security, fintech, buyouts/rollups, SaaS, crypto, consumer, healthcare, and the creator economy" }
+  },
+  "funds": [
+    {
+      "name": "Slow Ventures Creator Fund",
+      "number": null,
+      "size_original": 64000000,
+      "currency_original": "USD",
+      "close_date": "2025-02",
+      "date_precision": "month",
+      "pages": [1, 2],
+      "snippet": "Slow anticipates deploying the entirety of its $64 million over a two to three-year time horizon"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Will Lasry (textile manufacturing holding company)", "website": null, "description": "Creator-led textile manufacturing business; Slow invests in the creator's holding company.", "hq_country": null, "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-10-02",
+      "date_precision": "day",
+      "amount_original": 2500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Slow Ventures"],
+      "pages": [1, 2],
+      "snippet": "Will Lasry (textile manufacturing)"
+    },
+    {
+      "company": { "name": "Erin McGoff (career advice holding company)", "website": null, "description": "Creator business offering career advice to Gen Z professionals; Slow takes equity in her holding company.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-10-02",
+      "date_precision": "day",
+      "amount_original": 1500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Slow Ventures"],
+      "pages": [1, 2],
+      "snippet": "Erin McGoff (Gen Z career advice)"
+    },
+    {
+      "company": { "name": "Kyle Lee (commercial fishing, frozen-seafood DTC)", "website": null, "description": "Creator-led commercial fishing business with a direct-to-consumer flash-frozen fish brand.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-10-02",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Slow Ventures"],
+      "pages": [1, 2],
+      "snippet": "Kyle Lee (commercial fishing, frozen-seafood DTC business)"
+    }
+  ],
+  "conflicts": [
+    { "field": "Creator Fund size", "values": ["$64M (Tubefilter, Adweek)", "$60M at launch and $63M (search summaries only)", "$63M (lead list)"], "chosen": "64000000", "reason": "Only $64M appears on fetched pages; Axios article returned HTTP 403." }
+  ],
+  "open_items": [
+    "slow.co lists San Francisco, Boston and New York with no single HQ; hq_city omitted. Check size and stages not stated on the About page (Creator Fund checks $1-3M per Adweek).",
+    "Slow's flagship funds ($65M 2015, $145M 2016 from lead list) not confirmed; the lead list's 2025-02-13 Creator Fund date is unconfirmed (announced around Feb 2025; Axios 403).",
+    "The three rounds are creator holding-company investments under the Creator Fund, not conventional priced rounds; date is the Tubefilter article date, Adweek says raised in spring/summer 2025-26 (wording ambiguous). Co-investors not named. Fewer conventional rounds were found within budget.",
+    "No application URL recorded; slow.co/contact and creatorfund.co exist but were not fetched."
+  ]
+}

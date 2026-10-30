@@ -1,0 +1,66 @@
+{
+  "key": "thirdai-automation",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ThirdAI Automation Inc (thirdaiautomation.com), the India–US company with a San Jose, California address that sells a 'Causal Intelligence Platform' for root-cause analysis in semiconductor fabs, equipment makers and field-service teams. The company site (home, about, case studies), Inc42, Entrackr and Analytics India Magazine (all 11 Feb 2026, $3M seed co-led by Endiya Partners and Capria Ventures) describe the same causal-AI RCA product and the same founders (Vivek Vishwakarma, CEO, ex-Intel; Sainyam Galhotra, CTO, ex-Cornell). Not ThirdAI Corp, the unrelated CPU-based deep-learning company; press headlines shorten this company's name to 'ThirdAI', so it was matched on the semiconductor-RCA description and founders, not the name. Category set to adjacent (not in the PROJECT_CONTEXT §7 seed list; candidate from an Inc42 lead): its causal agents diagnose equipment faults and process excursions and draft RCA reports, which overlaps Utopian Autonomy's maintenance and process-stability functions, and one anonymised deployment is on a tier-1 piston maker's shop floor. But it is built for semiconductor fabs, toolmakers and their field-service organisations, sold to process / equipment engineers through a platform embedded in tools such as Jira, deployed in the customer's VPC or air-gapped, with no procurement, RFQ / BOM or WhatsApp interface seen.",
+  "pages": [
+    { "url": "https://thirdaiautomation.com", "title": "ThirdAI Automation: The First Causal Intelligence Platform for Semiconductors", "publisher": "ThirdAI Automation", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thirdaiautomation.com/about", "title": "About ThirdAI Automation", "publisher": "ThirdAI Automation", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://thirdaiautomation.com/case-studies", "title": "ThirdAI Automation case studies", "publisher": "ThirdAI Automation", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://inc42.com/buzz/thirdai-nets-3-mn-to-reduce-downtimes-at-semiconductor-fabs/", "title": "ThirdAI Nets $3 Mn To Reduce Downtimes At Semiconductor Fabs", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://entrackr.com/snippets/thirdai-raises-3-mn-led-by-endiya-partners-and-capria-ventures-11095630", "title": "ThirdAI raises $3 Mn led by Endiya Partners and Capria Ventures", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://analyticsindiamag.com/ai-news/thirdai-raises-3-mn-to-expand-causal-ai-for-semiconductor-fabs", "title": null, "publisher": "Analytics India Magazine", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "ThirdAI Automation",
+    "website": "https://thirdaiautomation.com",
+    "description": "India–US startup (San Jose address) selling a causal-AI platform that finds root causes of equipment faults, process excursions and defects in semiconductor fabs and toolmakers.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Root-cause analysis for fab and equipment operations: a causal engine and knowledge graph behind four modules (causal diagnostics, process intelligence, defect feedback, resolution orchestration) plus an enterprise MLOps product. Case studies cover RCA embedded in an equipment maker's Jira workflow, field-service data across five countries (Yield Engineering Systems), automated daily RCA reports from a piston maker's equipment and process data, and VLM-based defect classification at a fab. Users are process, equipment and field-service engineers; VPC or on-prem / air-gapped.",
+  "founders": ["Vivek Vishwakarma", "Sainyam Galhotra"],
+  "named_customers": ["Yield Engineering Systems"],
+  "product_summary": "Causal Intelligence Platform for semiconductor makers, toolmakers and field-service teams: links equipment, process, defect and service data in a knowledge graph, then uses causal AI agents to trace faults and excursions to their true root cause, recommend engineer-approved fixes and generate RCA reports.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "ThirdAI Automation", "website": "https://thirdaiautomation.com", "description": "Causal-AI root-cause analysis platform for semiconductor fabs and equipment makers.", "hq_country": "US", "founded_year": 2024, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed round, $3M (Inc42: ₹27.2 Cr), co-led",
+      "date": "2026-02-11",
+      "date_precision": "day",
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Endiya Partners", "Capria Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3, 4, 5],
+      "snippet": "Deeptech startup ThirdAI has raised $3 million in a seed funding round co-led by Endiya Partners and Capria Ventures."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country / HQ city",
+      "values": ["San Jose, CA (company site footer: '2150 North 1st Street #505, San Jose, CA 95131')", "San Francisco (Analytics India Magazine: 'headquartered in San Francisco')", "'India–US–based company' (Entrackr); AIM's report is datelined Bengaluru"],
+      "chosen": "US (San Jose address from the company site)",
+      "reason": "The company's own address outranks press; both US cities give the same country. The India side (Bengaluru dateline, hiring 'in India and overseas') is noted but no Indian address was seen on the site."
+    }
+  ],
+  "open_items": [
+    "Total raised: $3M (the seed is the only round found). No participants beyond the two co-leads are named; valuation not disclosed.",
+    "Named customers: only Yield Engineering Systems (case study and homepage testimonial from its VP Engineering). AWIGN appears in a case study headlined 'AWIGN Partners with ThirdAI Automation' (robotics video annotation) and is treated as a partner, not a customer. Other case studies are anonymised (Fortune 500 semiconductor manufacturer, global semiconductor equipment maker, consumer-electronics maker, tier-1 piston maker).",
+    "Homepage states the company is a partner of the India Semiconductor Mission; the nature of that partnership was not checked.",
+    "Indian legal entity and Indian office address not found on the site; a search-result summary mentioned hiring in Japan, but no fetched page says so.",
+    "Headcount not on any public page read (LinkedIn not used). Revenue not publicly reported.",
+    "Pricing not public; homepage describes a 60-90 day pilot on the customer's own data."
+  ]
+}

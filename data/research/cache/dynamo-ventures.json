@@ -1,0 +1,70 @@
+{
+  "key": "dynamo-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Dynamo Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as dynamo.vc, the Chattanooga, Tennessee pre-seed and seed fund for supply chain, logistics and mobility; its site names Gatik, Stord, Manna, FreightHero and Lux Aeterna, and its Fund III release is on that domain. Not Dynamo AI, Dynamo Fund (other) or Dynamo Software.",
+  "pages": [
+    { "url": "https://www.dynamo.vc", "title": "Dynamo Ventures", "publisher": "Dynamo Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://dynamo.vc/insights-and-news/dynamo-ventures-closes-54m-fund-iii-unlocks-liquidity-for-early-lps-with-top-decile-returns", "title": "Dynamo Ventures Closes $54M Fund III, Unlocks Liquidity for Early LPs", "publisher": "Dynamo Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2026/03/10/lux-aeterna-raises-10-million-for-reusable-satellite-mission/", "title": "Lux Aeterna raises $10 million for reusable satellite mission", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/2025/11/19/orion-lands-3-5m-bring-predictive-ai-physical-risk-supply-chain-visibility/", "title": "Orion lands $3.5M to bring predictive AI to physical risk and supply chain visibility", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.thesaasnews.com/news/pinch-ai-raises-5-million-in-seed-round", "title": "Pinch AI raises $5 million in seed round", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "Dynamo backs the relentless founders upgrading the physical economy." },
+    "website": { "value": "https://dynamo.vc", "pages": [0], "snippet": "Dynamo backs the relentless founders upgrading the physical economy." },
+    "hq_city": { "value": "Chattanooga", "pages": [4], "snippet": "A Chattanooga, Tennessee venture firm that backs pre-seed and seed startups" },
+    "hq_country": { "value": "US", "pages": [4], "snippet": "A Chattanooga, Tennessee venture firm that backs pre-seed and seed startups" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "from inception through seed" },
+    "leads": { "value": true, "pages": [3, 4], "snippet": "Dynamo Ventures (lead), Bravo Victor Venture Capital, Techstars Central, and Service Provider Capital" },
+    "thesis_text": { "value": "Early-stage investor in companies rethinking how goods are made, moved and sold, favouring sectors where digitization is overdue: manufacturing, logistics, transportation and commerce infrastructure.", "pages": [0, 1], "snippet": "Rather than chasing hype cycles, Dynamo focuses on sectors where digitization is overdue" },
+    "stated_sectors": { "value": ["supply_chain_logistics", "mobility_ev", "industrial_manufacturing", "robotics_physical_ai", "space"], "pages": [0, 1], "snippet": "manufacturing, logistics, transportation, and commerce infrastructure" },
+    "application_url": { "value": "https://dynamo.vc/request-for-startups", "pages": [0], "snippet": "The Request for Startups page (/request-for-startups) is the pitch route." }
+  },
+  "funds": [
+    {
+      "name": "Dynamo Ventures Fund III",
+      "number": "III",
+      "size_original": 54000000,
+      "currency_original": "USD",
+      "close_date": "2025-05-14",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Dynamo Ventures Closes $54M Fund III, Unlocks Liquidity for Early LPs"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Lux Aeterna", "website": null, "description": "Develops reusable satellites with an integrated heat shield so they can return to Earth; founded December 2024.", "hq_country": "US", "founded_year": 2024, "sector": "space", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed", "date": "2026-03-10", "date_precision": "day",
+      "amount_original": 10000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Konvoy"], "participants": ["Decisive Point", "Cubit Capital", "Wave Function", "Space Capital", "Dynamo Ventures", "Channel 39"], "unspecified": [],
+      "pages": [2], "snippet": "announced a new $10 million seed round Tuesday morning led by Konvoy"
+    },
+    {
+      "company": { "name": "Pinch AI", "website": null, "description": "AI platform helping retailers cut return fraud while keeping loyal shoppers happy.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-01", "date_precision": "month",
+      "amount_original": 5000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Dynamo Ventures", "Infinity Ventures"], "participants": ["Defined Capital", "PayPal Ventures"], "unspecified": [],
+      "pages": [4], "snippet": "has raised $5 million in Seed funding"
+    },
+    {
+      "company": { "name": "Orion", "website": null, "description": "AI platform forecasting real-world risks such as protests and natural disasters that disrupt supply chains, with per-asset risk scores; founded 2024.", "hq_country": null, "founded_year": 2024, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2025-11-19", "date_precision": "day",
+      "amount_original": 3500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Dynamo Ventures"], "participants": ["Bravo Victor Venture Capital", "Techstars Central", "Service Provider Capital"], "unspecified": [],
+      "pages": [3], "snippet": "Risk teams no longer need more data; they need better signals,"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Lead list's Fund II ($43M, 2021-06-24) not confirmed on a fetched page (search summary cites FreightWaves $43.21M); only Fund III ($54M, announced 2025-05-14 on dynamo.vc) recorded. dynamo.vc release states no HQ, check size or stages; stage text comes from the homepage.",
+    "Check size not stated on fetched pages ($1-2M in a search summary of a profile; unverified).",
+    "HQ Chattanooga is from The SaaS News' description of Dynamo, not the firm's own pages. Pinch AI date is the article month (updated 2026-01-16); Pinch AI HQ San Francisco per same page but company hq_country left as US from that.",
+    "Lux Aeterna also had a $4M pre-seed (June 2025, Space Capital led; Dynamo participated) per search summary only. Contact button on the site uses an obfuscated email (not recorded)."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "key": "modern-technica-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Modern Technical Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Modern Technical Fund (MTF) at moderntechnicalfund.com, a solo-GP pre-seed and seed fund run by Amanda Robson ('Robby') that closed a $22M first fund. The lead's spelling 'Modern Technica Fund' is a variant of this name; no other firm by that name was found. Not Moderne Ventures (proptech) and not Modern Seed Industry Development Fund.",
+  "pages": [
+    { "url": "https://moderntechnicalfund.com", "title": "Modern Technical Fund", "publisher": "Modern Technical Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://mtfrobby.substack.com/p/announcing-modern-technical-fund", "title": "Announcing: Modern Technical Fund", "publisher": "Modern Technical Fund (Substack)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://upstartsmedia.com/p/amanda-robson-raises-22-million-for-mtf", "title": "How This Emerging Manager Broke Through A 'Brutal' Fundraising Environment To Raise $22 Million", "publisher": "Upstarts Media", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.securityweek.com/manifold-raises-8-million-for-ai-detection-and-response/", "title": "Manifold Raises $8 Million for AI Detection and Response", "publisher": "SecurityWeek", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 2], "snippet": "Our mission is to get technical founders to product-market fit faster." },
+    "website": { "value": "https://moderntechnicalfund.com", "pages": [1], "snippet": "moderntechnicalfund.com" },
+    "hq_city": { "value": "San Francisco", "pages": [2], "snippet": "Robson is described as San Francisco-based" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "Robson is described as San Francisco-based" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "$500K - $1M investments, US & Israeli pre-seed and seed-stage startups" },
+    "check_min_usd": { "value": 500000, "pages": [0], "snippet": "$500K - $1M investments, US & Israeli pre-seed and seed-stage startups" },
+    "check_max_usd": { "value": 1000000, "pages": [0], "snippet": "$500K - $1M investments, US & Israeli pre-seed and seed-stage startups" },
+    "thesis_text": { "value": "Backs US and Israeli technical founders building software for security, AI, engineering and data teams, even pre-deck and pre-revenue, via priced rounds or SAFEs without a board seat.", "pages": [0], "snippet": "Investing in priced rounds or post-money YC SAFEs, no board seat" },
+    "stated_sectors": { "value": ["dev_tools", "ai_infra", "enterprise_saas"], "pages": [0, 1], "snippet": "building software for engineering, data, and security teams" }
+  },
+  "funds": [
+    {
+      "name": "Modern Technical Fund I",
+      "number": "I",
+      "size_original": 22000000,
+      "currency_original": "USD",
+      "close_date": "2025-06",
+      "date_precision": "month",
+      "pages": [1, 2],
+      "snippet": "set out to raise $20M and closed at $22M"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Manifold Security", "website": null, "description": "Detection and response platform for autonomous AI agents, mapping the tools agents call, systems they access and actions they take; founded 2025.", "hq_country": "US", "founded_year": 2025, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed", "date": "2026-03-18", "date_precision": "day",
+      "amount_original": 8000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Costanoa Ventures"], "participants": ["Cherry Ventures", "Rain Capital", "Modern Technical Fund"], "unspecified": [],
+      "pages": [3], "snippet": "Cybersecurity startup Manifold today announced raising $8 million in a seed funding round led by Costanoa Ventures."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round confirmed on a fetched page (Manifold Security seed). Search summaries tied MTF to Keycard's Series A and Pluto Security's seed, but the fetched Upstarts and Crypto Briefing articles do not name MTF, so neither is recorded.",
+    "Fund close date: Substack post is dated 2025-06-03 and Upstarts says a first close in January 2025; no exact final close date stated. Recorded at month precision. Lead said 2025-06-04, unconfirmed.",
+    "HQ San Francisco comes from Upstarts describing Robson as SF-based; MTF's own site states no HQ. Date for Manifold is SecurityWeek's article date.",
+    "Website portfolio page lists ~22 companies (e.g. Drata, Fossa, Keycard, RunReveal) with no round details; includes many from the GP's earlier career. No application URL or cold-inbound policy stated."
+  ]
+}

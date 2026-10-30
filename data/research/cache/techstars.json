@@ -1,0 +1,96 @@
+{
+  "key": "techstars",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Techstars",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as techstars.com, the Boulder-based accelerator and early-stage investor (programs since 2006; apply.techstars.com). The 2015 $150M lead is Techstars Ventures (separate vehicle); a $150M 2021 lead matches Techstars Accelerator 2021, L.P. in search results only. Not Techstars-branded community events such as Startup Weekend, which are programs of the same organisation.",
+  "pages": [
+    { "url": "https://www.techstars.com", "title": "Techstars", "publisher": "Techstars", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.techstars.com/equity-back-guarantee-the-details", "title": "Techstars Investment Terms Update", "publisher": "Techstars", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/06/28/techstars/", "title": "Techstars accelerator new fund raising $150 million", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://3dprint.com/309044/advanced-manufacturing-equipment-sourcing-platform-diagon-raises-5-1m-in-seed-round/", "title": "Advanced manufacturing equipment sourcing platform Diagon raises $5.1M in seed round", "publisher": "3DPrint.com", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "accelerator",
+      "pages": [0],
+      "snippet": "the accelerator and investor for founders who do more faster."
+    },
+    "website": {
+      "value": "https://www.techstars.com",
+      "pages": [0],
+      "snippet": "the accelerator and investor for founders who do more faster."
+    },
+    "hq_city": {
+      "value": "Boulder",
+      "pages": [2],
+      "snippet": "Boulder-based early-stage investor"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [2],
+      "snippet": "Boulder-based early-stage investor"
+    },
+    "check_min_usd": {
+      "value": 220000,
+      "pages": [1],
+      "snippet": "The $220,000 offer is made up of two components"
+    },
+    "check_max_usd": {
+      "value": 220000,
+      "pages": [1],
+      "snippet": "The $220,000 offer is made up of two components"
+    },
+    "thesis_text": {
+      "value": "Runs regional and sector accelerators worldwide; standard deal is $200K uncapped MFN Safe plus $20K for 5% common stock via a post-money convertible equity agreement (terms updated April 2025).",
+      "pages": [1],
+      "snippet": "$20,000 fixed-percentage convertible equity agreement for 5% common stock"
+    },
+    "application_url": {
+      "value": "https://apply.techstars.com",
+      "pages": [0],
+      "snippet": "the accelerator and investor for founders who do more faster."
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [0],
+      "snippet": "the accelerator and investor for founders who do more faster."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Diagon",
+        "website": null,
+        "description": "Silicon Valley startup with an AI-backed software platform for sourcing advanced manufacturing equipment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2024-04-25",
+      "date_precision": "day",
+      "amount_original": 5100000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Valia Ventures", "Techstars"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "a seed round backed by firms including Valia Ventures and Techstars"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded (Diagon, April 2024, outside 24-month window). Techstars invests in hundreds of accelerator companies; individual rounds not enumerated. Search result mentioned a May 2026 $250K manufacturing round, not fetched.",
+    "Funds not recorded: the Techstars newsroom page for the $150M fund returned 404. TechCrunch (June 2023) says Techstars was raising $150M for Techstars Accelerator 2024 per SEC filings and called Accelerator 2021 its third institutionally-backed fund, without stating size. Techstars Ventures $150M (2015) and Accelerator 2021 $150M appear only in search listings.",
+    "Application URL and cold inbound taken from homepage 'Apply at apply.techstars.com' (fetch summary); homepage snippet is generic. Equity terms per Techstars April 17, 2025 update; older pages (2024) cite $120K/$20K for 6%."
+  ]
+}

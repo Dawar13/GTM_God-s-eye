@@ -1,0 +1,62 @@
+{
+  "key": "scribble-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Scribble Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as scribble.vc, the pre-seed and seed AI-focused venture firm whose Fund III ($80M, May 2025) was announced through Cooley with a Palo Alto dateline; its site lists Baseten, Periodic Labs, Sunday Robotics and Stoke Space as portfolio. Not Scribble Data or Scribble Technologies.",
+  "pages": [
+    { "url": "https://www.scribble.vc", "title": "Scribble Ventures", "publisher": "Scribble Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.cooley.com/news/coverage/2025/2025-05-21-scribble-ventures-closes-80-million-oversubscribed-fund-iii", "title": "Scribble Ventures Closes $80 Million Oversubscribed Fund III", "publisher": "Cooley", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tbpn-digest.vercel.app/story/2026-03-03/guild-ai-raises-44m-to-build-an-enterprise-agent-control-plane-think-github-but-for-ai-agents", "title": "Guild.ai raises $44M to build an enterprise agent control plane", "publisher": "TBPN Digest", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://briefglance.com/articles/ai-vets-raise-32m-to-build-a-digital-shield-for-national-security", "title": "AI Vets Raise $32M to Build a Digital Shield for National Security", "publisher": "BriefGlance", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "an early-stage venture firm that invests in pre-seed artificial intelligence (AI) companies" },
+    "website": { "value": "https://www.scribble.vc", "pages": [0], "snippet": "We're focused on AI native companies." },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Palo Alto dateline" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "our initial check is typically 750k-$1.5M" },
+    "check_min_usd": { "value": 750000, "pages": [0], "snippet": "our initial check is typically 750k-$1.5M" },
+    "check_max_usd": { "value": 1500000, "pages": [0], "snippet": "our initial check is typically 750k-$1.5M" },
+    "thesis_text": { "value": "Early-stage investor in AI-native companies, usually the first backer, weighing founder track record, the opportunity and any unusual founder edge.", "pages": [0, 1], "snippet": "We're focused on AI native companies." },
+    "stated_sectors": { "value": ["ai_apps_agents", "robotics_physical_ai", "space"], "pages": [0], "snippet": "Sunday Robotics, Statsig, Periodic Labs, Stoke Space, Core Automation, Peregrine, Hadrian" }
+  },
+  "funds": [
+    {
+      "name": "Scribble Ventures Fund III",
+      "number": "III",
+      "size_original": 80000000,
+      "currency_original": "USD",
+      "close_date": "2025-05-21",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "the close of its $80 million third fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Guild.ai", "website": null, "description": "Governance and control plane for fleets of AI agents in enterprise systems, with access controls, audit trails, cost tracking and risk analysis.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-03-03", "date_precision": "day",
+      "amount_original": 30000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Google Ventures"], "participants": ["NFX", "Coastal Ventures", "Scribble Ventures", "Accru Capital", "Web Investment Network"], "unspecified": [],
+      "pages": [2], "snippet": "The company builds a control plane for AI agent fleets deployed in enterprise infrastructure."
+    },
+    {
+      "company": { "name": "Smack Technologies", "website": null, "description": "Veteran-founded AI company building a real-time decision platform for U.S. defense planning, via its Omega and Alpha suites.", "hq_country": "US", "founded_year": null, "sector": "defense_dual_use", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-03-02", "date_precision": "day",
+      "amount_original": 32000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Geodesic Capital", "Costanoa Ventures"], "participants": ["Point72 Ventures", "Felicis", "Scribble Ventures", "Bloomberg Beta"], "unspecified": [],
+      "pages": [3], "snippet": "Smack Technologies, an artificial intelligence startup founded by military special operations veterans"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds confirmed on fetched pages. Swarm Aero Series A (2026-03-11) was reported by search summaries to include Scribble, but the fetched BriefGlance article does not name it and the Business Wire release returned HTTP 403. Periodic Labs seed and Sunday Robotics rounds fetched/searched did not name Scribble.",
+    "Fund I/II ($43M, 2021-02-04) from the lead list not found; only Fund III ($80M, Cooley, 2025-05-21) recorded. Cooley coverage says Fund III 'exceeded' hard cap per a search summary only.",
+    "HQ city not stated on fetched pages: Cooley's dateline is Palo Alto, and search summaries say San Francisco area; only country recorded. Website states no HQ.",
+    "Smack Technologies: some outlets describe the $32M as combined seed and Series A (Point72 led the earlier seed); BriefGlance says Series A. Guild.ai also raised a $14M seed led by GV (per TBPN Digest; $44M total).",
+    "Contact is an email on the site (not recorded); no application URL. Dates are article dates."
+  ]
+}

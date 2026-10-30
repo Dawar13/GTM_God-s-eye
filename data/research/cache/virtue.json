@@ -1,0 +1,71 @@
+{
+  "key": "virtue",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Virtue",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as virtuevc.com, 'the earliest stage healthcare venture capital firm' (Sean Doolan, Emre Karatas), whose portfolio page lists Evvy, Tuva Health, Translucent and Amae Health. Austin location comes from search summaries only. Not Virtus, Virtue Capital or other firms named Virtue.",
+  "pages": [
+    { "url": "https://www.virtuevc.com", "title": "Virtue", "publisher": "Virtue", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://virtuevc.substack.com/p/-introducing-virtue-the-earliest", "title": "Introducing Virtue: The Earliest Stage Health VC", "publisher": "Virtue", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2026/03/11/exclusive-translucent-ai-native-healthcare-finance-startup-raises-27-million-series-a/", "title": "Translucent raises $27 million Series A", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/tuva-health-5-million-seed-secured-for-building-open-source-healthcare-data-transformation-platform/amp/", "title": "Tuva Health: $5 Million (Seed) Secured", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Virtue is the earliest stage healthcare venture capital firm." },
+    "website": { "value": "https://www.virtuevc.com", "pages": [0], "snippet": "Virtue is the earliest stage healthcare venture capital firm." },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Pre-seed & Seed ( 0→1 / Pre-PMF)" },
+    "check_min_usd": { "value": 500000, "pages": [0], "snippet": "typically invest $500K - 4M in our initial check." },
+    "check_max_usd": { "value": 4000000, "pages": [0], "snippet": "typically invest $500K - 4M in our initial check." },
+    "thesis_text": {
+      "value": "Backs founders at the earliest stage who aim to transform the healthcare system, then brings in later-stage investors as companies scale.",
+      "pages": [0, 1],
+      "snippet": "radical founders at the earliest stage determined to transform our broken healthcare system."
+    },
+    "stated_sectors": { "value": ["health_bio"], "pages": [0], "snippet": "Virtue is the earliest stage healthcare venture capital firm." }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Translucent", "website": "https://www.translucent.ai/", "description": "AI-native healthcare finance company giving hospitals an AI financial leader that monitors data and recommends actions.", "hq_country": null, "founded_year": 2024, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-03-11",
+      "date_precision": "day",
+      "amount_original": 27000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["GV"],
+      "participants": ["NEA", "FPV Ventures", "Virtue"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "GV led the round, with participation from NEA, FPV Ventures, and Virtue."
+    },
+    {
+      "company": { "name": "Tuva Health", "website": "https://tuvahealth.com/", "description": "Open-source software that turns insurance claims and EHR data into analytics-ready tables.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2024-12-16",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Virtue"],
+      "participants": ["Box Group", "Y Combinator"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The funding round was led by Virtue, with participation from Box Group, Y Combinator, and several health tech angel investors"
+    }
+  ],
+  "conflicts": [
+    { "field": "initial check size", "values": ["$500K-$4M (virtuevc.com)", "$250K-$1.5M average (2021 launch post)"], "chosen": "$500K-$4M", "reason": "Current homepage over the 2021 launch post." }
+  ],
+  "open_items": [
+    "HQ not stated on fetched pages; Austin, TX appears only in search summaries and the lead list. Hq fields omitted.",
+    "Fund II (~$55.75M, closed Jan 2025 per aggregators; one lists Sept 2026) not confirmed on any fetched page; Fund I $31.25M (Dec 2021) is shown only as a Substack post title. No fund recorded.",
+    "Only two rounds recorded: Translucent Series A (Fortune) and Tuva Health seed (Pulse 2.0). A Translucent Aug 2025 $7M seed and Kanurra Jul 2026 seed appear only in search summaries; Business Wire pages returned 403.",
+    "No application URL or cold-inbound statement found on virtuevc.com."
+  ]
+}

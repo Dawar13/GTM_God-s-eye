@@ -47,7 +47,7 @@ Candidates beyond PROJECT_CONTEXT §7, found during investor research or by disc
 | Maneva | maneva.ai | "AI line supervisor" on existing factory cameras | parsers.vc (2026-06-16) | profiled: adjacent, quality_vision |
 | Edmund | not confirmed | Maintenance root-cause agents down to PLC level (Prague) | inforcapital.com | profiled: direct, plant_ops (HQ Ostrava) |
 | Aerchain | not stated | AI-agent procurement platform (Bengaluru) | whalesbook.com | profiled: adjacent, plant_ops |
-| Uptool | uptool.com | AI quoting for machine and fab shops | uptool.com | to profile |
+| Uptool | uptool.com | AI quoting for machine and fab shops | uptool.com | profiled: direct, process_planning |
 | 1Buy.AI | 1buy.ai | AI procurement for electronics makers (Delhi); INR 32.5 Cr (Jan 2026) | india.entrepreneur.com | profiled: adjacent, plant_ops |
 | IndustrialMind.ai | industrialmind.ai | Agents turning industrial knowledge into workflows | antler-india research; trysignalbase.com | profiled: direct, process_planning |
 | Procol | procol.ai | Procurement and finance agents for Indian manufacturers | blume-ventures.json | profiled: direct, plant_ops |
@@ -56,8 +56,12 @@ Candidates beyond PROJECT_CONTEXT §7, found during investor research or by disc
 | Sea12 | not confirmed | AI automation for heavy industry (Also Capital portfolio) | also-capital.json | profiled: adjacent, plant_ops |
 | Spector.ai | spector.ai | Maintenance and reliability agents; INR 58 Cr (Jan 2026) | inc42.com | profiled: direct, plant_ops (HQ Santa Clara) |
 | UGX.AI | ugx.ai | Shop-floor data and agents (Gurugram); $1M seed (Nov 2025) | yourstory.com | profiled: adjacent, plant_ops |
-| ThirdAI Automation | thirdaiautomation.com | Root-cause copilot for chip fabs; $3M (Feb 2026) | inc42.com | to profile |
+| ThirdAI Automation | thirdaiautomation.com | Root-cause copilot for chip fabs; $3M (Feb 2026) | inc42.com | profiled: adjacent, plant_ops (chip fabs) |
 | FactoStack | factostack.com | Factory software with quote and PO agents | factostack.com | profiled: adjacent (no funding found) |
-| Intellithink | intellithink.in | Predictive maintenance; INR 17 Cr (Apr 2026) | newskart | to profile |
-| Workroom Automation | not confirmed | AI planning engine; INR 6.2 Cr (Mar 2026) | Indian Chemical News | to profile |
-| Magentic | not confirmed | Procurement agents for manufacturers (Sequoia portfolio) | sequoia-capital.json | to profile |
+| Intellithink | intellithink.in | Predictive maintenance; INR 17 Cr (Apr 2026) | newskart | profiled: adjacent, plant_ops |
+| Workroom Automation | not confirmed | AI planning engine; INR 6.2 Cr (Mar 2026) | Indian Chemical News | profiled: adjacent, plant_ops (onworkroom.com) |
+| Magentic | not confirmed | Procurement agents for manufacturers (Sequoia portfolio) | sequoia-capital.json | profiled: direct, plant_ops (London; works over Teams and email) |
+
+**Channel.** None of the agent-based competitors profiled delivers through WhatsApp: they work inside the ERP, email, Teams or their own web apps.
+
+**Paraphrased snippets (review finding).** The page-fetch tool can return a summary instead of the page text, and one Tier B file (pillar-vc) recorded a paraphrase as its snippet for a round the page did not support; the round was removed. Prompts from batch 8 on require quoting only text seen verbatim and dropping a fact whose wording can't be quoted. The self-audit re-checks snippets against the live pages.

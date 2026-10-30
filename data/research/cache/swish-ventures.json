@@ -1,0 +1,103 @@
+{
+  "key": "swish-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Swish Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Swish Ventures at swish.vc, the Israeli seed / Series A fund led by former NBA player Omri Casspi; its site lists Upwind, EON, Cognition, Wonderful, Glow, Applied Compute and Long Lake. Not Swish.ai (Series A 2021) and not the Indian food-delivery startup Swish.",
+  "pages": [
+    { "url": "https://www.swish.vc", "title": "Swish Ventures | Venture Capital", "publisher": "Swish Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://en.globes.co.il/en/article-1001554339", "title": "Omri Casspi's Swish Ventures closes $250m fund", "publisher": "Globes", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconvalleyinvestclub.com/ar/2026/01/27/upwind-raises-250-million-and-hits-unicorn-status-at-a-1-5-billion-valuation/", "title": "Upwind raises $250 million and hits unicorn status at a $1.5 billion valuation", "publisher": "Silicon Valley Invest Club", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "http://www.calcalistech.com/ctechnews/article/r13apdnugg", "title": "AIR emerges from stealth with $50 million", "publisher": "CTech by Calcalist", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.calcalistech.com/ctechnews/article/hytdbmixyx", "title": "Omri Casspi raises $60 million for Swish Ventures' second fund", "publisher": "CTech by Calcalist", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [4],
+      "snippet": "second Seed stage venture fund"
+    },
+    "website": {
+      "value": "https://www.swish.vc",
+      "pages": [0],
+      "snippet": "Swish Ventures | Venture Capital"
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "pages": [1],
+      "snippet": "early-stage investments at the Seed and Series A stages"
+    }
+  },
+  "funds": [
+    {
+      "name": "Swish Ventures Fund III",
+      "number": "III",
+      "size_original": 250000000,
+      "currency_original": "USD",
+      "close_date": "2026-09-03",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "closing of Swish Ventures $250 million third fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Upwind",
+        "website": "https://www.upwind.io/",
+        "description": "Cloud security company; reached unicorn status with this round.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-01-26",
+      "date_precision": "day",
+      "amount_original": 250000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["Bessemer Venture Partners"],
+      "participants": ["Picture Capital", "Alta Park", "Cerca Partners", "Craft Ventures", "Cyberstarts", "Greylock", "Leaders Fund", "Penny Jar Capital", "Swish Ventures", "TCV"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Penny Jar Capital, Swish Ventures, and TCV"
+    },
+    {
+      "company": {
+        "name": "AIR Security",
+        "website": null,
+        "description": "Security startup building a firewall for AI agents; emerged from stealth.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed (two rounds, per other outlets)",
+      "date": "2026-09-01",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Sequoia Capital", "Greenoaks"],
+      "participants": ["Swish Ventures", "Netz"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Swish Ventures and Netz also participated, alongside private investors including"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (Israel), check size (~$20M per company for Fund III, $5-7M for Fund II), focus sectors and thesis appeared only as tool summaries of Globes / Calcalist / Ynet, not quotable verbatim; not recorded.",
+    "Lead '$60M, 2024-12-02' is Fund II (second seed fund, Calcalist timestamp 02.12.24); Calcalist says 'raised $60 million'. Only Fund III recorded as latest fund.",
+    "Only two rounds with a page naming Swish. Caplight lists Glow (Series B, Jul 2026) and Cognition AI (Series E, Sep 2026) but round pages not fetched. Upwind stage not stated in the article (later reports call it Series B); Calcalist did not label AIR as seed.",
+    "No application URL found."
+  ]
+}

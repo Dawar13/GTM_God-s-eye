@@ -1,0 +1,82 @@
+{
+  "key": "unshackled-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Unshackled Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as unshackledvc.com, the pre-seed firm for immigrant founders with immigration support, founded 2014 by Manan Mehta and Nitin Pachisia; Fund III $35M reported by TechCrunch 2023-06-27. Not Unshackled Fund or any unrelated 'Unshackled' brand.",
+  "pages": [
+    { "url": "https://www.unshackledvc.com", "title": "Unshackled Ventures", "publisher": "Unshackled Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2023/06/27/unshackled-ventures-35m-immigrant-founders/", "title": "Unshackled Ventures, venture capital", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/reprogram-biosciences-raises-seed-financing-for-tumor-cell-reprogramming-therapies/", "title": "Reprogram Biosciences Raises Seed Financing For Tumor Cell Reprogramming Therapies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "pre-seed investments in immigrant founders"
+    },
+    "website": {
+      "value": "https://www.unshackledvc.com",
+      "pages": [0],
+      "snippet": "the first check for Day 0 founders"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "pages": [1],
+      "snippet": "pre-seed investments in immigrant founders"
+    },
+    "thesis_text": {
+      "value": "First-check capital for day-zero immigrant founders, bundled with free immigration filings, a founder community and fundraising support.",
+      "pages": [0],
+      "snippet": "the first check for Day 0 founders"
+    }
+  },
+  "funds": [
+    {
+      "name": "Unshackled Ventures Fund III",
+      "number": "III",
+      "size_original": 35000000,
+      "currency_original": "USD",
+      "close_date": "2023-06-27",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "pre-seed investments in immigrant founders"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Reprogram Biosciences",
+        "website": null,
+        "description": "Preclinical oncology company developing mRNA therapeutics that reprogram solid tumor cells.",
+        "hq_country": null,
+        "founded_year": 2025,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2026-06-01",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Unshackled Ventures", "1517 Fund", "Narya"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The financing round included participation from investors such as Unshackled Ventures, 1517 Fund, and Narya."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Pulse 2.0 gives $6M as total capital raised since 2025 founding, not the seed alone, so amount left null; other outlets date the announcement May 27, 2026 (search summary only). One search summary says Unshackled led; the fetched page names no lead.",
+    "TechCrunch 2023 names Fund III investments Masa Finance, Cache Energy, Formally but with no round amounts or dates. Cache Energy rounds (Research Park pages, 2023 and 2024) do not name Unshackled; third-party trackers do.",
+    "HQ not on fetched pages (search results disagree: San Francisco vs Palo Alto). The $3.5M (2014) fund lead and Bay Area not verified. Check size not stated (Eighteen150 program: $150,000 for 10% per TechCrunch). Fund III date is TechCrunch article date.",
+    "Immigrant-founder focus is explicit; Indian founders specifically not stated. Homepage claims 300+ immigration filings."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "key": "creator-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Creator Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as creator.ventures, the New York pre-seed and seed consumer-internet fund founded by Caspar Lee and Sasha Kaletsky (Business Wire release via Silicon UK, TechCrunch). Not Creator Fund (UK/European science pre-deck fund), not Creative Ventures, not CreatorLed Ventures.",
+  "pages": [
+    { "url": "https://www.silicon.co.uk/press-release/creator-ventures-closes-45m-fund-ii-to-invest-in-the-next-wave-of-the-consumer-internet", "title": "Creator Ventures Closes $45M Fund II to Invest in the Next Wave of the Consumer Internet", "publisher": "Silicon UK (Business Wire release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/05/20/in-a-good-sign-for-consumer-internet-startups-creator-ventures-raises-45m", "title": "In a good sign for consumer internet startups, Creator Ventures raises $45M", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/08/14/ai-translation-tech-palabra-gets-backing-from-reddit-co-founders-venture-firm", "title": "AI translation tech Palabra gets backing from Reddit co-founder's venture firm", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techli.com/?p=10712", "title": "Tax season gets an upgrade as Deduction raises $2.8M and launches its AI-powered tax agent", "publisher": "Techli", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "a seed and pre-seed venture capital fund" },
+    "website": { "value": "https://creator.ventures", "pages": [0], "snippet": "the website, creator.ventures" },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "Headquartered in New York City" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Headquartered in New York City" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "The firm plans to lead or co-lead pre-seed and seed rounds" },
+    "leads": { "value": true, "pages": [0, 3], "snippet": "The firm plans to lead or co-lead pre-seed and seed rounds" },
+    "check_min_usd": { "value": 200000, "pages": [0], "snippet": "Check size: $200,000 to $2.5 million" },
+    "check_max_usd": { "value": 2500000, "pages": [0], "snippet": "Check size: $200,000 to $2.5 million" },
+    "thesis_text": { "value": "Backs founders defining the future of the consumer internet, from consumer apps and creative tools to marketplaces, with a closer look at consumer AI.", "pages": [0, 1], "snippet": "founders defining the future of the consumer internet" },
+    "stated_sectors": { "value": ["consumer", "ai_apps_agents"], "pages": [0, 1], "snippet": "Consumer apps, creative tools, application-layer consumer software, marketplaces" }
+  },
+  "funds": [
+    {
+      "name": "Creator Ventures Fund II",
+      "number": "II",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2025-05-20",
+      "date_precision": "day",
+      "pages": [0, 1],
+      "snippet": "Now Creator Ventures is launching its second fund with $45 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Deduction", "website": null, "description": "AI tax service for US consumers, 'Taylor, CPAI', pairing an autonomous AI agent with licensed CPA oversight.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed", "stage_raw": "Pre-seed", "date": "2025-11-19", "date_precision": "day",
+      "amount_original": 2800000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["One Way Ventures", "Creator Ventures"], "participants": ["Alpine VC", "Intuition", "Charley Moore"], "unspecified": ["angels from OpenAI and Robinhood"],
+      "pages": [3], "snippet": "Combining the intelligence of an autonomous AI agent with the oversight of licensed CPAs"
+    },
+    {
+      "company": { "name": "Palabra AI", "website": null, "description": "Real-time speech translation technology: a desktop app for video calls in 30+ languages plus APIs and SDKs for enterprises.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed", "stage_raw": "pre-seed", "date": "2025-08-14", "date_precision": "day",
+      "amount_original": 8400000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Seven Seven Six"], "participants": ["Creator Ventures", "Max Mullen", "Anne Lee Skates", "Mehdi Ghissassi", "Namat Bahram"], "unspecified": [],
+      "pages": [2], "snippet": "That's why the firm is leading an $8.4 million pre-seed round into the startup."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds confirmed; none found from the last 12 months (latest Deduction, Nov 2025). Search summaries listed other deals (e.g. Seal Robotics pre-seed, led by 'Creator Fund', a different firm) which were not confirmed.",
+    "Deduction lead: Techli and StartupBeat name One Way Ventures and Creator Ventures as co-leads; a database listing said Creator led alone. Dates are article dates (CB Insights listed 2025-11-14).",
+    "creator.ventures itself (and Business Wire) could not be fetched; website URL comes from the press release text. HQ is New York per the release; one directory says London. Fund II total AUM $65M per release (search summary of another source said $45M).",
+    "Fund II date is the announcement date (2025-05-20); lead matched. No application URL or cold-inbound policy found."
+  ]
+}

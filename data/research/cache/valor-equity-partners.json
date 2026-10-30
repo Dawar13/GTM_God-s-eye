@@ -1,0 +1,115 @@
+{
+  "key": "valor-equity-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Valor Equity Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Valor Equity Partners (valorep.com), the private investment firm founded by Antonio Gracias; its site lists SpaceX, Addepar, BitGo and Dataminr. Crusoe coverage names Valor Equity Partners as co-lead; Flow Engineering's release names Gracias as Valor's founder. The Valor Atreides AI Fund is a Valor-branded vehicle (Bedrock round), distinct from Atreides Management (Gavin Baker's separate firm, which co-invests with Valor). Not Valor Capital Group (Brazil/US).",
+  "pages": [
+    { "url": "https://www.valorep.com", "title": "Valor Equity Partners", "publisher": "Valor Equity Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flowengineering.com/blog/series-b-press-release", "title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software", "publisher": "Flow Engineering", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/bedrock-robotics-270-million-series-b-at-1-75-billion-valuation", "title": "Bedrock Robotics: $270 Million Series B At $1.75 Billion Valuation Raised For Autonomous Construction Technology", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://parameter.io/crusoe-secures-3-9b-mega-round-to-scale-ai-infrastructure-and-modular-data-centers/", "title": "Crusoe secures $3.9B mega round to scale AI infrastructure and modular data centers", "publisher": "Parameter.io", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "asset_manager",
+      "pages": [0],
+      "snippet": "a different kind of private investment firm"
+    },
+    "website": {
+      "value": "https://www.valorep.com",
+      "pages": [0],
+      "snippet": "We're Valor"
+    },
+    "thesis_text": {
+      "value": "Invests in technology and technology-enabled companies that disrupt existing industries, with an operational-growth approach.",
+      "pages": [0],
+      "snippet": "invest in technology and technology-enabled companies that innovate and disrupt existing industries"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Crusoe",
+        "website": null,
+        "description": "AI infrastructure and data-centre company, including modular AI computing facilities.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series F",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "amount_original": 3900000000,
+      "currency_original": "USD",
+      "valuation_post_original": 30900000000,
+      "leads": ["Atreides Management", "Mubadala Capital", "Valor Equity Partners"],
+      "participants": ["Founders Fund", "Nvidia", "GIC", "Qatar Investment Authority", "Radical Ventures", "TPG"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The financing was jointly led by three investment firms: Atreides Management, Mubadala Capital, and Valor Equity Partners."
+    },
+    {
+      "company": {
+        "name": "Bedrock Robotics",
+        "website": null,
+        "description": "Autonomy retrofit kits that turn excavators into autonomous construction machines.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-02-04",
+      "date_precision": "day",
+      "amount_original": 270000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1750000000,
+      "leads": ["CapitalG", "Valor Atreides AI Fund"],
+      "participants": ["Xora", "8VC", "Eclipse", "Emergence Capital", "Perry Creek Capital", "NVentures", "Tishman Speyer", "MIT", "Georgian", "Incharge Capital", "C4 Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "co-led by CapitalG and the Valor Atreides AI Fund"
+    },
+    {
+      "company": {
+        "name": "Flow Engineering",
+        "website": "https://www.flowengineering.com/",
+        "description": "Requirements tool for agentic hardware engineering teams.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": 750000000,
+      "leads": ["Valor Equity Partners", "Atreides Management"],
+      "participants": ["Sequoia Capital", "Human Capital", "Evantic", "SV Angel", "Odyssey", "EQT"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Flow is backed by Valor Equity Partners, Atreides Management, and Sequoia Capital."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ, stages, check size, application URL not found on fetched pages (valorep.com home page has an Offices link, not read). No Valor Atreides AI Fund size or close date found; funds left empty.",
+    "Bedrock lead is the 'Valor Atreides AI Fund' as named by Pulse 2.0; whether it is wholly a Valor vehicle was not verified from a fetched page.",
+    "Flow Engineering: the release names Antonio Gracias (Valor founder) and Gavin Baker (Atreides) as co-leads; leads recorded as the firms per Flow's closing line and the earlier Flow research file (Fenwick). Date is the release date of 2026-09-30 per the fetched summary; other sources may say Oct 1.",
+    "Crusoe co-lead list varies: an earlier Bloomberg-based report named only Atreides and Valor as co-leads (search summary). Series F stage mapped to series_c_plus."
+  ]
+}

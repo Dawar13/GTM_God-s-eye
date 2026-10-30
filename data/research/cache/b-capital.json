@@ -1,0 +1,131 @@
+{
+  "key": "b-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "B Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as b.capital (bcapgroup.com redirects there), the stage-based VC/growth firm (B Capital Group) with Howard Morgan as Chair and General Partner and Ascent Fund III. Not bcapital.com, a separate Europe/MENA real-estate and tech investor (EUR 500K-2.5M tickets), and not 'Capital 2B'. The '$500M Q3 2026' lead is Ascent Fund III, confirmed by press.",
+  "pages": [
+    { "url": "https://b.capital/", "title": "B Capital", "publisher": "B Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/b-capital-closes-500-million-ascent-fund-iii-to-back-ai-driven-companies/", "title": "B Capital Closes $500 Million Ascent Fund III To Back AI-Driven Companies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://b.capital/why-we-invested/why-we-invested-in-solarsquare/", "title": "Why We Invested in SolarSquare", "publisher": "B Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://b.capital/why-we-invested/why-we-invested-cadence/", "title": "Why We Invested: Cadence", "publisher": "B Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://b.capital/why-we-invested/why-we-invested-flourish-health/", "title": "Why We Invested: Flourish Health", "publisher": "B Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "B Capital Closes $500 Million Ascent Fund III To Back AI-Driven Companies"
+    },
+    "website": {
+      "value": "https://b.capital/",
+      "pages": [0],
+      "snippet": "empower entrepreneurs to think bigger. Scale faster. Grow global."
+    },
+    "thesis_text": {
+      "value": "Stage-based early and growth funds backing founders across technology, healthcare and energy; recent writing centres on AI value creation.",
+      "pages": [0],
+      "snippet": "empower entrepreneurs to think bigger. Scale faster. Grow global."
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "health_bio", "climate_energy"],
+      "pages": [0],
+      "snippet": "sectors that shape the future"
+    }
+  },
+  "funds": [
+    {
+      "name": "B Capital Ascent Fund III",
+      "number": "III",
+      "size_original": 500000000,
+      "currency_original": "USD",
+      "close_date": "2026-07",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "B Capital Closes $500 Million Ascent Fund III To Back AI-Driven Companies"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "SolarSquare",
+        "website": null,
+        "description": "Mumbai-based residential rooftop solar company.",
+        "hq_country": "IN",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2026-07-06",
+      "date_precision": "day",
+      "amount_original": 53000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["B Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "B Capital is excited to lead the $53M Series C in SolarSquare."
+    },
+    {
+      "company": {
+        "name": "Cadence",
+        "website": null,
+        "description": "Health technology company building AI-enabled continuous care for people with chronic disease.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-06-25",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["B Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "B Capital is proud to partner with Cadence."
+    },
+    {
+      "company": {
+        "name": "Flourish Health",
+        "website": null,
+        "description": "Virtual and in-home intensive behavioral health treatment for children and young adults.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-07-30",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["B Capital"],
+      "pages": [4],
+      "snippet": "B Capital is thrilled to announce its investment in Flourish Health."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (San Francisco per fetch summary), stages (seed, Series A, B for Ascent III) and check size not recorded: no verbatim quote available from fetched pages. Pulse 2.0 gives close as July 7, 2026; search listing shows Business Wire dated July 6, 2026, so month precision used.",
+    "Business Wire / joplinglobe release returned HTTP 429, not read. Ascent III early investments reported by press: Apptronik, Havoc AI, Star Catcher (not fetched as rounds).",
+    "Cadence and Flourish Health: stage, amount and co-investors not disclosed on B Capital's posts; dates are post publication dates."
+  ]
+}

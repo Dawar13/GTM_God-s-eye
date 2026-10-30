@@ -1,0 +1,113 @@
+{
+  "key": "claypond-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Claypond Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Claypond Capital is the Bengaluru family investment office of Manipal Group chairman Ranjan Pai (Inc42, April 2025), founded 2023. The 'Deep tech; AI' lead is unconfirmed: no source found describing a deep-tech fund. Not Clay VC, Pond Venture Partners or CLAI Ventures. Own site claypondcapital.com refused connection.",
+  "pages": [
+    { "url": "https://inc42.com/?p=509142", "title": "Ranjan Pai's Claypond Capital Appoints Sekhar Garisa As New MD", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://cryptobriefing.com/emergent-130m-series-c-ai-platform/", "title": "Emergent raises $130M Series C at $1.5B valuation to supercharge AI coding platform", "publisher": "Crypto Briefing", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "family_office",
+      "pages": [0],
+      "snippet": "Claypond Capital, the family investment office of Manipal Group chairman Ranjan Pai"
+    },
+    "hq_city": {
+      "value": "Bengaluru",
+      "pages": [0],
+      "snippet": "the Bengaluru-based family office participated in fintech startup GrayQuest's INR 80 Cr Series B round."
+    },
+    "hq_country": {
+      "value": "IN",
+      "pages": [0],
+      "snippet": "the Bengaluru-based family office participated in fintech startup GrayQuest's INR 80 Cr Series B round."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Emergent",
+        "website": null,
+        "description": "AI software-development (vibe coding) platform.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C",
+      "date": "2026-07-15",
+      "date_precision": "day",
+      "amount_original": 130000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["Creaegis"],
+      "participants": ["Claypond Capital", "Sentinel Global", "Khosla Ventures", "SoftBank Vision Fund 2", "Lightspeed", "Y Combinator"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "The round was led by Creaegis, with participation from Claypond Capital, Sentinel Global, Khosla Ventures"
+    },
+    {
+      "company": {
+        "name": "Easy Home Finance",
+        "website": null,
+        "description": "Lending technology startup.",
+        "hq_country": "IN",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-01",
+      "date_precision": "month",
+      "amount_original": 35000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Claypond Capital"],
+      "pages": [0],
+      "snippet": "Claypond also co-led lending tech startup Easy Home Finance's $35 Mn Series B funding round."
+    },
+    {
+      "company": {
+        "name": "GrayQuest",
+        "website": null,
+        "description": "Fintech startup.",
+        "hq_country": "IN",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-01",
+      "date_precision": "month",
+      "amount_original": 800000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Claypond Capital"],
+      "unspecified": [],
+      "pages": [0],
+      "snippet": "In January, the Bengaluru-based family office participated in fintech startup GrayQuest's INR 80 Cr Series B round."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Stages, check size, thesis and sectors not found; no primary page fetched (claypondcapital.com refused connection, manipalgroup.com page returned 403). Search snippets list HealthTech, Fintech, AI, E-commerce for sectors but were not read on a page.",
+    "'Deep tech; AI' lead not confirmed; entity is a family office, not a deep-tech fund.",
+    "Emergent: search results disagree on Claypond role (participant per Crypto Briefing; co-lead per other outlets); recorded as participant. Emergent date 2026-07-15 per Crypto Briefing; another outlet says July 20.",
+    "Easy Home Finance / GrayQuest dated 'January' in an April 2025 article, so year 2025 inferred; INR 80 Cr = 800,000,000. Portfolio also named in Inc42: Zepto, HealthifyMe, PharmEasy (no rounds fetched)."
+  ]
+}

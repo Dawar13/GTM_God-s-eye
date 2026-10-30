@@ -1,0 +1,85 @@
+{
+  "key": "divergent-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Divergent Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Divergent Capital, the venture firm at divergenthq.com (listed as a New York venture firm on its Caplight profile; backer of Thea Energy and Coherence Neuro). Not divergentcapital.ca (a different, Canadian site that divergentcapital.com redirects to) and not Divergent Ventures (neurodiversity-focused fund). divergenthq.com returned no readable content.",
+  "pages": [
+    { "url": "https://www.fusionenergybase.com/organizations/divergent-capital", "title": "Divergent Capital", "publisher": "Fusion Energy Base", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://thea.energy/?p=1652", "title": "Thea Energy Raises $100 Million Series B Funding to Build Scalable Fusion Power Plants", "publisher": "Thea Energy", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techfundingnews.com/startup-in-spotlight-coherence-neuro-raises-10m-to-launch-closed-loop-neuro-dystem-for-cancer-treatment/", "title": "Coherence Neuro raises $10M to launch closed-loop neuro system for cancer treatment", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "Venture Capital Firm"
+    },
+    "thesis_text": {
+      "value": "Venture firm that invests in innovative technology companies; portfolio spans fusion energy and neurotech.",
+      "pages": [0],
+      "snippet": "focused on investing in innovative technology companies"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Thea Energy",
+        "website": null,
+        "description": "Developing stellarator-based fusion power plants.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-05-27",
+      "date_precision": "day",
+      "amount_original": 100000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["US Innovative Technology Fund (USIT)"],
+      "participants": ["Calm Ventures", "Climate Capital", "Divergent Capital", "Emerald Technology Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures"
+    },
+    {
+      "company": {
+        "name": "Coherence Neuro",
+        "website": null,
+        "description": "Neurotech startup building a closed-loop neuro system for cancer treatment.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-11-04",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Topology Ventures", "Artesian"],
+      "participants": ["Blackbird", "Possible Ventures", "XEIA Venture Partners", "Jumpspace Ventures", "Divergent Capital", "SmartGateVC", "Spacewalk VC"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "including XEIA Venture Partners, Jumpspace Ventures, Divergent Capital, SmartGateVC, Spacewalk VC"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ (New York) appears only in a tool summary of the Caplight profile and a search summary; no verbatim snippet, so not recorded as a fact. Website, stages, check size ($500K-$1M per a search summary of Bank of America's profile) not confirmed on fetched pages.",
+    "Leads $30M (2022-04-01) and $40M (2024-12-23) not confirmed; the $40M appears only as an unsourced spreadsheet row ('Divergent Ventrues'). No fund recorded.",
+    "Only two rounds recorded. A Caplight profile also lists Coherence Neuro Oct 2026 ($45M, reported led by OpenAI Startup Fund and Founders Fund; Divergent listed as returning backer in search summary only) and Enera pre-seed (Jun 2026); neither page fetched. Thea Energy August 2026 Series B extension does not name Divergent per search summary.",
+    "divergenthq.com and Carta/Bank of America profile pages could not be read."
+  ]
+}

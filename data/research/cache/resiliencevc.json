@@ -1,0 +1,89 @@
+{
+  "key": "resiliencevc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "ResilienceVC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed via TechCrunch and Pulse 2.0 as ResilienceVC, the Washington DC seed-stage fintech firm founded in 2023 by Tahira Dosani and Vikas Raj with a $56M debut fund (Feb 2025). Tugboat and Parento round articles name ResilienceVC as lead. Not Resilience Capital, National Resilience, or the Resilience Fund for Women. The firm's own site failed to load.",
+  "pages": [
+    { "url": "https://techcrunch.com/2025/02/27/resiliencevc-bucks-trend-unveils-56m-fund-to-back-fintechs-working-on-financial-inclusion", "title": "ResilienceVC bucks trend, unveils $56M fund to back fintechs working on financial inclusion", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/resiliencevc-debut-fund-launched-at-over-56-million/", "title": "ResilienceVC: Debut Fund Launched At Over $56 Million", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.insurancejournal.com/news/west/2026/06/15/872151.htm", "title": "Tugboat in California Closes $3M Seed Round to Expand Claims Support", "publisher": "Insurance Journal", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech.global/?p=214075", "title": "Parento raises $5.9m to expand parental leave insurance", "publisher": "FinTech Global", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.proptechbuzz.com/news/coral-raises-7-5m-instant-energy-rebates", "title": "Coral Raises $7.5M to Expand Instant Energy Rebates for Efficient Home Upgrades", "publisher": "PropTech Buzz", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "seed-stage venture capital firm" },
+    "hq_city": { "value": "Washington", "pages": [0], "snippet": "based there intentionally, to stay close to regulators and policymakers" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "based there intentionally, to stay close to regulators and policymakers" },
+    "stages": { "value": ["seed"], "pages": [0, 1], "snippet": "seed-stage venture capital firm" },
+    "leads": { "value": true, "pages": [2, 3], "snippet": "The round was led by ResilienceVC." },
+    "check_min_usd": { "value": 1000000, "pages": [0, 1], "snippet": "average initial investment of $1 million per company" },
+    "check_max_usd": { "value": 1000000, "pages": [0, 1], "snippet": "average initial investment of $1 million per company" },
+    "thesis_text": {
+      "value": "Seed-stage fintech investor backing mass-market companies that help Americans reach financial stability: homeownership, affordable insurance and access to benefits.",
+      "pages": [0, 1],
+      "snippet": "embedded fintech companies that find new ways to address financial challenges"
+    },
+    "stated_sectors": { "value": ["fintech"], "pages": [1], "snippet": "embedded fintech" }
+  },
+  "funds": [
+    {
+      "name": "ResilienceVC Fund I",
+      "number": "I",
+      "size_original": 56000000,
+      "currency_original": "USD",
+      "close_date": "2025-02-27",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$56 million debut fund, described as oversubscribed"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Tugboat", "website": null, "description": "Consumer insurance-claims service for homeowners using agentic AI to analyze carrier letters and draft disputes; $99 per year.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-06-15", "date_precision": "day",
+      "amount_original": 3000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["ResilienceVC"],
+      "participants": ["South Dakota First", "gener8tor", "Sure Ventures", "Acumen America"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The round was led by ResilienceVC."
+    },
+    {
+      "company": { "name": "Coral", "website": null, "description": "Energy financing platform giving instant upfront rebates on efficient home upgrades such as heat pumps, sold through installers.", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null,
+      "date": "2026-03-09", "date_precision": "day",
+      "amount_original": 7500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [],
+      "participants": ["ResilienceVC", "Twelve Below", "Floating Point", "Accion Ventures", "Blackhorn Ventures", "Remarkable Ventures", "New Climate Ventures", "Watsco Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "These include ResilienceVC, Twelve Below, Floating Point"
+    },
+    {
+      "company": { "name": "Parento", "website": null, "description": "Paid parental leave insurance with leave management tools and parent coaching, founded 2019.", "hq_country": "US", "founded_year": 2019, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed II",
+      "date": "2025-09-09", "date_precision": "day",
+      "amount_original": 5900000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["ResilienceVC"],
+      "participants": ["Kapor Capital", "Bread & Butter Ventures", "Operator Stack", "Coyote Ventures", "ffVC", "Human Ventures", "Springbank", "Precursor", "Cross Impact", "K Street", "Evidenced", "Avesta"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The round was led by ResilienceVC"
+    }
+  ],
+  "conflicts": [
+    { "field": "fund size", "values": ["$56M debut fund (TechCrunch)", "over $56M AUM incl. Discover Financial Health Improvement Fund (Pulse 2.0)"], "chosen": "56000000", "reason": "TechCrunch calls it the debut fund at $56M; Pulse 2.0 says AUM is over $56M including a managed fund, so Fund I alone may be smaller." }
+  ],
+  "open_items": [
+    "Firm website (resiliencevc.com) failed to load; no primary page read. Website, application URL and cold-inbound policy not recorded.",
+    "Check size is an average initial investment (about $1M), recorded as min=max; a $500K-$2M range appeared only in a search summary.",
+    "Coral: stage and lead not stated by the fetched article (search summaries say seed and ResilienceVC-led, unverified); HQ not stated.",
+    "Tugboat HQ given as Simi Valley, CA by Insurance Journal, but other outlets say Los Angeles or Grand Forks ND. Round websites not captured.",
+    "Chaiz 2024 seed (ResilienceVC reportedly lead) found only via search summaries; excluded as older than 24 months and unfetched."
+  ]
+}

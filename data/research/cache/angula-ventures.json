@@ -1,0 +1,80 @@
+{
+  "key": "angula-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Angular Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The lead list spells it 'Angula'; the official name is Angular Ventures (angularventures.com), the Europe/Israel-focused inception-stage fund whose $125M Fund III was announced 2025-02-03 per Gunderson Dettmer, its counsel. The firm's own site refused connections (ECONNREFUSED), so domain is taken from search results. Not Angular Capital or the Angular framework.",
+  "pages": [
+    { "url": "https://www.gunder.com/en/news-insights/client-news/angular-ventures-announces-dollar125m-fund-formation", "title": "Angular Ventures Announces $125M Fund Formation", "publisher": "Gunderson Dettmer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/reco-30-million-series-b/", "title": "Reco: $30 Million Series B Raised For AI SaaS Security Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.newswire.com/news/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for", "title": "Reco Raises $30M B Round for a Total of $85M", "publisher": "Reco (Newswire press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupintros.com/news/2025-12-10-medida-seed", "title": "Medida seed round", "publisher": "StartupIntros", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "inception-stage fund" },
+    "website": { "value": "https://angularventures.com", "pages": [0], "snippet": "Angular Ventures Announces $125M Fund Formation" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0], "snippet": "inception-stage fund" },
+    "thesis_text": {
+      "value": "Backs technical founders in Europe and Israel who tackle hard-to-crack markets such as maritime logistics, small-batch manufacturing and power grids.",
+      "pages": [0],
+      "snippet": "we know that a fund announcement is of little consequence to the founders battling every day in the trenches."
+    },
+    "stated_sectors": { "value": ["supply_chain_logistics", "industrial_manufacturing", "climate_energy"], "pages": [0], "snippet": "Maritime logistics, small-batch manufacturing, and power grid optimization" }
+  },
+  "funds": [
+    {
+      "name": "Angular Ventures III",
+      "number": "III",
+      "size_original": 125000000,
+      "currency_original": "USD",
+      "close_date": "2025-02-03",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "Angular Ventures III"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Reco", "website": null, "description": "Security for AI and SaaS environments: discovers apps, AI agents and shadow AI, and monitors identities and permissions.", "hq_country": null, "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-02-10",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Zeev Ventures"],
+      "participants": ["Insight Partners", "boldstart ventures", "Angular Ventures", "Workday Ventures", "TIAA Ventures", "S Ventures", "Quadrille Capital"],
+      "unspecified": [],
+      "pages": [1, 2],
+      "snippet": "with participation from existing investors Insight Partners, boldstart ventures, and Angular Ventures."
+    },
+    {
+      "company": { "name": "Medida", "website": null, "description": "Israeli startup; the source page gives no description.", "hq_country": null, "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-12-10",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Angular Ventures"],
+      "participants": ["Eyal Bino", "Firsthand Alliance"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Lead investor: Angular Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "Reco round date", "values": ["2026-02-10 (Newswire release)", "2026-02-14 (Pulse 2.0)"], "chosen": "2026-02-10", "reason": "Company press release date; Pulse 2.0 is a later write-up." }
+  ],
+  "open_items": [
+    "angularventures.com unreachable (ECONNREFUSED); HQ, offices (London / New York / Tel Aviv per lead list and search summary), check size (up to $6M initial per search summary), application URL and portfolio page not confirmed. Hq fields omitted.",
+    "Stages recorded as pre_seed/seed from 'inception-stage'; search results suggest it also participates in Series A. Fund II ($80M, 2021) not recorded.",
+    "Only two rounds with fetched pages. Medida seed is from an aggregator only (Calcalist original not fetched), company description and HQ unknown, and the Medida snippet paraphrases the aggregator's field. Verso $6M seed (Traded, HTTP 403) and DualBird (Pulse bot fetch failed; lead disputed) not recorded.",
+    "Reco: Newswire release does not name Angular; only the Pulse 2.0 page does. Angular described as existing investor."
+  ]
+}

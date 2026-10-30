@@ -1,0 +1,86 @@
+{
+  "key": "susa-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Susa Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as susaventures.com, whose homepage lists partners Chad Byers, Pratyush Buddiga, Misha Gordon-Rowe and Shaheer Sandhu and links the susaventures.substack.com fund letter announcing Susa Ventures V. Not Susa Fellows Fund or unrelated 'Susa' entities.",
+  "pages": [
+    { "url": "https://www.susaventures.com", "title": "Susa Ventures", "publisher": "Susa Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://susaventures.substack.com/p/susa-ventures-v-175m-for-seed-stage", "title": "Susa Ventures V: $175M for Seed-Stage Founders", "publisher": "Susa Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/07/24/samsung-backs-a-video-ai-startup-that-can-analyze-thousands-of-hours-of-footage/", "title": "Samsung backs a video AI startup that can analyze thousands of hours of footage", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/11/19/cavela-lands-6-6m-to-help-brands-beat-pre-tariff-manufacturing-costs/", "title": "Cavela lands $6.6M to help brands beat pre-tariff manufacturing costs", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/10/06/a-19-year-old-nabs-backing-from-google-execs-for-his-ai-memory-startup-supermemory/", "title": "A 19-year-old nabs backing from Google execs for his AI memory startup, Supermemory", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "a $175M fund to help you launch and scale your company" },
+    "website": { "value": "https://www.susaventures.com", "pages": [0], "snippet": "Chad Byers" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "pre-idea all the way through early product-market-fit" },
+    "leads": { "value": true, "pages": [2, 3, 4], "snippet": "seed funding round led by Susa Ventures" },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "$500K to $5M" },
+    "check_max_usd": { "value": 5000000, "pages": [1], "snippet": "$500K to $5M" },
+    "thesis_text": {
+      "value": "Founder-first seed specialist forming independent conviction regardless of who else is in the round; sector-agnostic, mostly software, bullish on AI.",
+      "pages": [1],
+      "snippet": "we don't care who else is in the round"
+    },
+    "stated_sectors": { "value": ["enterprise_saas", "ai_apps_agents"], "pages": [1], "snippet": "AI is underhyped" }
+  },
+  "funds": [
+    {
+      "name": "Susa Ventures V",
+      "number": "V",
+      "size_original": 175000000,
+      "currency_original": "USD",
+      "close_date": "2025-03-18",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "a $175M fund to help you launch and scale your company"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Cavela", "website": null, "description": "AI agents that find manufacturers, request quotes and negotiate specs for brands across 40+ countries.", "hq_country": null, "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2025-11-19", "date_precision": "day",
+      "amount_original": 6600000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["XYZ Venture Capital", "Susa Ventures"],
+      "participants": ["Crossover Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "seed funding co-led by XYZ Venture Capital and Susa Ventures"
+    },
+    {
+      "company": { "name": "Supermemory", "website": null, "description": "Memory API for AI apps that builds a knowledge graph from files, emails, chats and app data to personalize context.", "hq_country": null, "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2025-10-06", "date_precision": "day",
+      "amount_original": 2600000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Susa Ventures", "Browder Capital", "SF1.vc"],
+      "participants": ["Dane Knecht", "Jeff Dean", "Logan Kilpatrick", "David Cramer"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "led by Susa Ventures, Browder Capital, and SF1.vc"
+    },
+    {
+      "company": { "name": "Memories.ai", "website": null, "description": "Video-analysis platform handling up to 10 million hours of footage, adding a context layer for search, labeling and summarizing.", "hq_country": null, "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2025-07-24", "date_precision": "day",
+      "amount_original": 8000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Susa Ventures"],
+      "participants": ["Samsung Next", "Fusion Fund", "Crane Ventures", "Seedcamp", "Creator Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "seed funding round led by Susa Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on any fetched page; lead list says Bay Area, so hq fields left out.",
+    "Earlier funds ($25M 2014, $50M 2016, $90M 2019, plus $375M across two funds in 2021) not recorded; only the latest is required.",
+    "Fund V date is the date on the Substack letter (March 18, 2025).",
+    "Application URL and cold-inbound policy not found on the homepage.",
+    "Round dates are TechCrunch article dates; none of the three company HQs or websites were stated on the fetched articles."
+  ]
+}

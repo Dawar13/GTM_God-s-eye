@@ -1,0 +1,102 @@
+{
+  "key": "bbg-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "BBG Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "BBG Ventures at bbgventures.com, the pre-seed / seed fund for female and diverse founders (portfolio page names Starface, Spring Health, SuperCircle, HopSkipDrive, Blueland). Fortune's Oct 2024 article covers its second $60M fund; SuperCircle coverage calls it a New York firm. Not the Bloomberg Beta or other 'BBG'-named entities.",
+  "pages": [
+    { "url": "https://www.bbgventures.com", "title": "BBG Ventures", "publisher": "BBG Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2024/10/30/bbg-ventures-closes-new-60-million-fund-with-focus-on-polycultural-founders", "title": "BBG Ventures closes new $60 million fund with focus on 'polycultural' founders", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://siliconangle.com/?p=723170", "title": "SuperCircle raises $24M Series A", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.privateequityinternational.com/ai-platform-ox-fetches-12-6m-series-a/", "title": "AI platform Ox fetches $12.6m Series A", "publisher": "Venture Capital Journal", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "a second, $60 million fund with a new mandate"
+    },
+    "website": {
+      "value": "https://www.bbgventures.com",
+      "pages": [0],
+      "snippet": "We invest early in diverse founders whose lived + learned experience gives them an unfair advantage"
+    },
+    "thesis_text": {
+      "value": "Invests early in diverse founders with firsthand experience of the problem, backing AI-driven software and human-need businesses.",
+      "pages": [0],
+      "snippet": "We invest early in diverse founders whose lived + learned experience gives them an unfair advantage"
+    }
+  },
+  "funds": [
+    {
+      "name": "BBG Ventures second fund",
+      "number": "II",
+      "size_original": 60000000,
+      "currency_original": "USD",
+      "close_date": "2024-10-30",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "a second, $60 million fund with a new mandate"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "SuperCircle",
+        "website": null,
+        "description": "Retail textile waste management and recovery, using AI for product identification and sorting.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-12-10",
+      "date_precision": "day",
+      "amount_original": 24000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Foundry Group"],
+      "participants": ["BBG Ventures", "Renewal Funds", "Elemental Impact"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "with BBG Ventures, Renewal Funds, Elemental Impact and other existing investors also participating"
+    },
+    {
+      "company": {
+        "name": "Ox",
+        "website": null,
+        "description": "AI platform; the fetched page gives no further description.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2023-04-25",
+      "date_precision": "day",
+      "amount_original": 12600000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["BBG Ventures", "MaC Venture Capital"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "BBG Ventures and MaC Venture Capital led the round."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded; the Ox round is older than 24 months. Search summaries also mention Climatic ($10M seed, Jan 2026) and MaxHome.AI ($5M seed, Sep 2025) with BBG participating, but those pages were not fetched.",
+    "Stages (pre-seed / seed), HQ (New York), focus sectors appeared only as tool summaries or search summaries, not quotable verbatim; not recorded. Fortune gives no stage or check size.",
+    "Lead $50M (2021-03-24) is TechCrunch 2021-03-25 headline 'BBG Ventures just closed on $50 million' (seen in search results only, not fetched); earlier fund not recorded. Fortune calls the Oct 2024 fund the 'second' fund while other sources number it differently; number recorded as II per Fortune.",
+    "Ox: amount, lead and date from tool summary of the VCJ page; Ox's business not described on fetched page."
+  ]
+}

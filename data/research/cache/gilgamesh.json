@@ -1,0 +1,61 @@
+{
+  "key": "gilgamesh",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Gilgamesh Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as gilgameshvc.com, the New York fintech fund founded by Miguel Armaza and Andrew Endicott (site team list) that closed a $20M Fund II in May 2025 (Private Equity International headline). Not Gilgamesh Pharmaceuticals.",
+  "pages": [
+    { "url": "https://www.gilgameshvc.com", "title": "Gilgamesh Ventures", "publisher": "Gilgamesh Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.privateequityinternational.com/fintech-focused-gilgamesh-ventures-nabs-20m-for-fund-ii/", "title": "Fintech-focused Gilgamesh Ventures nabs $20m for Fund II", "publisher": "Venture Capital Journal / PEI", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/companies/gilgamesh-ventures/", "title": "Gilgamesh Ventures", "publisher": "InforCapital", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://fintech.global/2026/04/24/astor-raises-5m-seed-to-democratise-investment-advice", "title": "Astor raises $5m seed to democratise investment advice", "publisher": "Fintech Global", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://contxto.com/en/funding/mexican-startup-palenca-raises-4-million/", "title": "Mexican startup Palenca raises $4 million", "publisher": "Contxto", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "a global, early-stage fintech venture capital fund based in New York City" },
+    "website": { "value": "https://www.gilgameshvc.com", "pages": [0], "snippet": "Gilgamesh Ventures LLC" },
+    "hq_city": { "value": "New York", "pages": [0, 2], "snippet": "a global, early-stage fintech venture capital fund based in New York City" },
+    "hq_country": { "value": "US", "pages": [0, 2], "snippet": "a global, early-stage fintech venture capital fund based in New York City" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [2], "snippet": "Stages: Pre-Seed and Seed" },
+    "thesis_text": { "value": "Early-stage fintech-only investor backing founders reshaping financial services, active across North America and Latin America.", "pages": [0, 2], "snippet": "global, early-stage fintech venture capital fund" },
+    "stated_sectors": { "value": ["fintech"], "pages": [0, 1], "snippet": "Fintech-focused Gilgamesh Ventures nabs $20m for Fund II" }
+  },
+  "funds": [
+    {
+      "name": "Gilgamesh Ventures Fund II",
+      "number": "II",
+      "size_original": 20000000,
+      "currency_original": "USD",
+      "close_date": "2025-05-21",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "LPs include Foundation Capital, GBM Ventures, Encore Bank and a dozen family offices from the US and abroad."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Palenca", "website": null, "description": "Mexican income-verification startup serving lenders, including for income from informal or non-traditional sources.", "hq_country": "MX", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2026-05-21", "date_precision": "day",
+      "amount_original": 4000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Experian"], "participants": ["Foundation Capital", "Gilgamesh Ventures", "Dhow Ventures"], "unspecified": [],
+      "pages": [4], "snippet": "That is the gap Palenca, an income verification startup for financial institutions, aims to close."
+    },
+    {
+      "company": { "name": "Astor", "website": null, "description": "SEC-registered AI-native investment advisory platform linking to users' brokerage accounts to give personalised guidance under fiduciary duty.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "seed", "date": "2026-04-24", "date_precision": "day",
+      "amount_original": 5000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Monashees"], "participants": ["Y Combinator", "Goodwater Capital", "Gilgamesh Ventures", "468 Capital", "Valutia", "Sunshine Lake"], "unspecified": ["individual investors from Stripe and OpenAI"],
+      "pages": [3], "snippet": "an SEC-registered AI-native investment advisory platform"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds confirmed on fetched pages. Aro (Brazil, $2.5M pre-seed led by ONEVC and 17Sigma, April 2026) appeared in search summaries naming Gilgamesh, but its Pulse page failed to load twice, so it is not recorded.",
+    "Palenca: Contxto gives no stage; Seedtable (search summary only) lists a $4.0M seed dated 2026-05-06 under 'Buro de Ingresos', likely the same company but unconfirmed. Date is Contxto's article date (round closed 'a few days ago'). HQ of Palenca stated only as 'Mexican'. Astor HQ not stated; US recorded because it is SEC-registered and serves American investors.",
+    "Fund II close date 2025-05-21 is the article date; Axios (403) not read. Check size ($400-600K in Fund II per search summaries) not on a fetched page. Fund I size and the 'Gilgamesh Fintech Ventures II' formal name unverified; fund name here is a descriptive label.",
+    "Stages come from a database page (InforCapital) only; the firm's own site says 'early-stage' fintech. No application URL (email only, not recorded); portfolio section on the site was empty."
+  ]
+}

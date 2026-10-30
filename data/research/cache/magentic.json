@@ -1,0 +1,91 @@
+{
+  "key": "magentic",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Magentic (magentic.com), the London startup with a New York office that builds AI agents ('Mages', 'digital workers') for procurement and supply-chain work at global manufacturers. The company site (home, about, customers, its Series A story), Sequoia's 'Partnering with Magentic' post, Pulse 2.0 (July 2025) and TheNextWeb (September 2026) all describe the same company and the same co-founders, Robin Van Aeken (CEO, ex-McKinsey) and Odhran O'Donoghue (CTO, ex-OpenAI, Oxford PhD); Sequoia's investor file links the same domain. Not the open-source Python LLM library also called 'magentic', and not Microsoft's 'Magentic-One' agent system. Category set to direct (not in the PROJECT_CONTEXT §7 seed list; candidate from Sequoia's portfolio): Magentic's agents do procurement work for manufacturers — supplier selection, contract negotiation, ordering, invoice processing, price-leakage and MRO-spend recovery — across direct and indirect spend, which is Utopian Autonomy's procurement wedge. Differences: it sells to procurement and supply-chain teams at large global manufacturers (Siemens is the one named customer; beverage, consumer-goods and pharma clients are anonymised), its agents talk over Microsoft Teams and email inside the customer's ERP, and no page mentions WhatsApp, plant-floor staff, maintenance, process stability or engineering drawings. Layer plant_ops is the nearest fit (no supply-chain layer in the taxonomy), as for Didero.",
+  "pages": [
+    { "url": "https://www.magentic.com", "title": "Magentic (homepage)", "publisher": "Magentic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.magentic.com/about", "title": "About Magentic", "publisher": "Magentic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.magentic.com/customers", "title": "Magentic customers", "publisher": "Magentic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.magentic.com/stories/magentic-raises-18m", "title": "Magentic raises $18M to build the AI workforce for the physical world", "publisher": "Magentic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://sequoiacap.com/article/partnering-with-magentic-ai-driven-savings-for-the-worlds-supply-chains", "title": "Partnering with Magentic: AI-Driven Savings for the World's Supply Chains", "publisher": "Sequoia Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/magentic-5-5-million-raised-for-ai-agent-platform/amp/", "title": "Magentic: $5.5 Million Raised For AI Agent Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thenextweb.com/news/magentic-18m-series-a-ai-agents-procurement", "title": "Magentic raises $18M to put AI agents to work in manufacturers' supply chains", "publisher": "TheNextWeb", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "company": {
+    "name": "Magentic",
+    "website": "https://www.magentic.com",
+    "description": "London startup (New York office) building AI agents that carry out procurement and supply-chain work inside global manufacturers' ERPs, talking to staff over Teams and email.",
+    "hq_country": "GB",
+    "founded_year": null,
+    "sector": "supply_chain_logistics",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Procurement / supply-chain back office rather than the plant floor: multi-agent 'Mages' that read contracts, ERP records, invoices, emails and spreadsheets to find savings before a purchase, protect value during it (supplier selection, negotiation, ordering) and recover value after it (price leakage, invoice errors, MRO spend). Direct and indirect spend; humans approve major decisions. Users are procurement and supply-chain teams reached over Microsoft Teams and email. 'plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+  "founders": ["Robin Van Aeken", "Odhran O'Donoghue"],
+  "named_customers": ["Siemens"],
+  "product_summary": "Multi-agent 'digital workers' that plug into a manufacturer's ERP, contracts, invoices and inboxes to run procurement tasks end to end: hunting savings, choosing suppliers, negotiating, placing orders, processing invoices and recovering price leakage, coordinating with staff over Teams and email while people sign off key decisions.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Magentic", "website": "https://www.magentic.com", "description": "London startup building AI agents for procurement and supply-chain work at global manufacturers.", "hq_country": "GB", "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed ($5.5M, announced at launch in July 2025; Pulse 2.0 calls it a 'funding round', Sequoia and TheNextWeb call it the seed); angels from SAP, Airbus, McKinsey, Hugging Face, Ironclad and Rosberg Ventures also joined",
+      "date": "2025-07-22",
+      "date_precision": "day",
+      "amount_original": 5500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Sequoia Capital"],
+      "participants": ["The Westly Group", "First Momentum Ventures"],
+      "unspecified": [],
+      "pages": [4, 5, 6],
+      "snippet": "announced a $5.5 million funding round led by Sequoia Capital"
+    },
+    {
+      "company": { "name": "Magentic", "website": "https://www.magentic.com", "description": "London startup building AI agents for procurement and supply-chain work at global manufacturers.", "hq_country": "GB", "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "amount_original": 18000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Felicis"],
+      "participants": ["Sequoia Capital", "The Westly Group"],
+      "unspecified": [],
+      "pages": [3, 6, 0],
+      "snippet": "has raised $18M in a Series A round today, led by Felicis"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[seed].date",
+      "values": ["2025-07-22 (date in the body of Sequoia's 'Partnering with Magentic' post; its page metadata shows 2026-10-30, likely a re-crawl)", "2025-07-24 (Pulse 2.0 article byline)", "July 2025 (TheNextWeb and Magentic's about page: 'launched in July 2025')"],
+      "chosen": "2025-07-22",
+      "reason": "The lead investor's own post is the primary source and the earliest date; Pulse 2.0 reported it two days later. Matches the date already used in sequoia-capital.json."
+    },
+    {
+      "field": "rounds[series_a].date",
+      "values": ["2026-09-17 (TheNextWeb byline; dateline 'London, Sept 17, 2026' on Magentic's story)", "2026-10-21 (page metadata of Magentic's story)"],
+      "chosen": "2026-09-17",
+      "reason": "The dateline in the text and an independent press article agree; the later metadata date looks like a site update."
+    }
+  ],
+  "open_items": [
+    "Total raised: $23.5M by sum of the two disclosed rounds ($5.5M seed + $18M Series A). No page read states a total.",
+    "Sequoia's post says it is 'doubling down' on the founders, who went through Sequoia's Arc pre-seed / seed programme the year before; whether an earlier Arc cheque was invested, and how much, is not stated. No pre-seed round recorded.",
+    "Founded year not stated anywhere read; pages only say the company launched in July 2025.",
+    "Series A: only Felicis (lead), Sequoia Capital and The Westly Group named; whether First Momentum Ventures returned is not stated. Valuation not disclosed for either round.",
+    "Seed angels named only by employer (SAP, Airbus, McKinsey & Company, Hugging Face, Ironclad, Rosberg Ventures) on Pulse 2.0; individuals not named, so not recorded as investors.",
+    "Named customers: only Siemens (testimonial from its SVP Supply Chain Management Digitalization on the customers page). Other customers are anonymised: three of the world's ten largest beverage companies, a global technology leader, a '$40B global manufacturer' (site) or '$30 billion manufacturer' (Pulse 2.0) that saved 4% on MRO / spare parts.",
+    "Headcount not on any public page read (LinkedIn not used). Revenue not publicly reported; only customer outcome figures (2-5% savings, 60% data-quality improvement, one customer >1M orders a year through the agents).",
+    "Pricing not public.",
+    "No WhatsApp or plant-floor channel seen; Teams and email are the only channels named."
+  ]
+}

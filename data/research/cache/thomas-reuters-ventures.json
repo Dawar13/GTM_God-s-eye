@@ -1,0 +1,96 @@
+{
+  "key": "thomas-reuters-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Thomson Reuters Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The lead list spells it 'Thomas Reuters'; the official name is Thomson Reuters Ventures (TRV), the corporate venture arm of Thomson Reuters, confirmed by thomsonreuters.com press release announcing its second corporate VC fund and by portfolio rounds naming 'Thomson Reuters Ventures'. Its former trventures.com domain could not be fetched. Not the Reuters news agency or Thomson Reuters Foundation.",
+  "pages": [
+    { "url": "https://www.thomsonreuters.com/en/press-releases/2025/february/thomson-reuters-announces-new-150-million-dollar-corporate-venture-capital-fund", "title": "Thomson Reuters announces new $150 million corporate venture capital fund", "publisher": "Thomson Reuters", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://finsmes.com/?p=348642", "title": "Truewind raises $13M in Series A funding", "publisher": "FinSMEs", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.solveintelligence.com/blog/post/series-a-funding-to-build-ai-for-patents", "title": "Solve Intelligence Raises $12M Series A to Build AI for Patents", "publisher": "Solve Intelligence", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/firmpilot-ai-22-million-series-a-1-raised-for-ai-powered-legal-marketing-platform", "title": "FirmPilot AI: $22 Million Series A-1 Raised For AI-Powered Legal Marketing Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["TRV", "Thomson Reuters Ventures"], "pages": [0, 2], "snippet": "Thomson Reuters (via TRV)" },
+    "type": { "value": "cvc", "pages": [0], "snippet": "second Corporate Venture Capital Fund" },
+    "website": { "value": "https://www.thomsonreuters.com/en/ventures", "pages": [0], "snippet": "Thomson Reuters announces new $150 million corporate venture capital fund" },
+    "stages": { "value": ["series_a"], "pages": [0], "snippet": "Fund 2 will target Series A investments, with flexibility to explore earlier and later-stage opportunities." },
+    "thesis_text": {
+      "value": "Corporate fund investing in early-stage technology companies, including gen AI, that solve professionals' problems, supporting Thomson Reuters' build, partner, buy strategy.",
+      "pages": [0],
+      "snippet": "Fund 2 will target Series A investments, with flexibility to explore earlier and later-stage opportunities."
+    },
+    "stated_sectors": { "value": ["enterprise_saas", "fintech"], "pages": [0], "snippet": "Legal Technology, Tax & Accounting, Fintech, Risk Fraud & Compliance, and News & Media" }
+  },
+  "funds": [
+    {
+      "name": "Thomson Reuters Ventures Fund 2",
+      "number": "II",
+      "size_original": 150000000,
+      "currency_original": "USD",
+      "close_date": "2025-02-10",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$150 million for Fund 2, the company's second Corporate Venture Capital Fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "FirmPilot", "website": null, "description": "AI marketing platform helping law firms attract clients via SEO, paid ads, local search and PR.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A-1",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "amount_original": 22000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["DeepWork Capital"],
+      "participants": ["Data Point Capital", "Blumberg Capital", "Thomson Reuters Ventures", "Valor Ventures", "SaaS Ventures", "EarlyLight Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "participation from existing investors including Blumberg Capital, Thomson Reuters Ventures, Valor Ventures"
+    },
+    {
+      "company": { "name": "Solve Intelligence", "website": "https://www.solveintelligence.com", "description": "AI platform for patent work: application drafting, office action responses and invention harvesting.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-04-09",
+      "date_precision": "day",
+      "amount_original": 12000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["20VC"],
+      "participants": ["Microsoft M12", "Thomson Reuters Ventures", "Y Combinator"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "strategic investment from Microsoft (via M12) and Thomson Reuters (via TRV)"
+    },
+    {
+      "company": { "name": "Truewind", "website": null, "description": "AI-powered platform and concierge service for accounting professionals and finance teams.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-01-16",
+      "date_precision": "day",
+      "amount_original": 13000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Rho Capital", "Thomson Reuters Ventures"],
+      "participants": ["Pathlight Ventures", "Fin Capital", "Y Combinator", "Fellows Fund", "Beat Ventures", "Soma Capital", "Scrum Ventures", "Hike Ventures", "SV Tech Ventures"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "was led by Rho Capital and Thomson Reuters Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "FirmPilot lead", "values": ["DeepWork Capital (Pulse 2.0)", "Thomson Reuters Ventures (one aggregator, per search summary)"], "chosen": "DeepWork Capital", "reason": "Fetched Pulse 2.0 page names DeepWork as lead and TRV as an existing investor." }
+  ],
+  "open_items": [
+    "HQ not stated on fetched pages (Toronto is only the press-release dateline); lead list says Dallas / NYC, unverified. Hq fields omitted.",
+    "Check size ($4-7M) and 20-25 investments over three years appear only in a BetaKit search summary, not a fetched page. Fund 1 ($100M, 2021) not recorded.",
+    "Fund date is the announcement date (2025-02-10) from the press release. Website recorded is the thomsonreuters.com/en/ventures path, which redirected to trventures.com (not fetchable).",
+    "Solve Intelligence announcement names 'TRV' not the full name; mapped to Thomson Reuters Ventures. No application URL or cold-inbound statement found."
+  ]
+}

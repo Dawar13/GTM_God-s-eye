@@ -1,0 +1,65 @@
+{
+  "key": "workroom-automation",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Workroom Automation (onworkroom.com), the Hyderabad company founded in 2022 that sells 'Workroom', a connected factory platform with an AI planning engine for medium and large manufacturers. The domain comes from the company's seed press release (Analytics Insight, 23 Mar 2026, 'https://www.onworkroom.com/'); the site, that release, Indian Chemical News (24 Mar 2026) and Venture Intelligence (23 Mar 2026) all describe the same connected-factory / planning product and name the same co-founders (Abhinav Atthota, CEO; Rohan Agarwal, CTO). The site's LinkedIn link points to a company page slugged 'leapsquare-labs', which suggests an earlier or legal name; not checked. Category set to adjacent (not in the PROJECT_CONTEXT §7 seed list; candidate from an Indian Chemical News lead): it is an Indian plant-floor software company selling to the same kind of mid-to-large manufacturers, with role-based shop-floor apps, but its functions are production, inventory and workforce planning, execution tracking and traceability (MES-like), not Utopian Autonomy's procurement, maintenance, process-stability or RFQ / BOM / drawing work, and no WhatsApp or agent interface is mentioned.",
+  "pages": [
+    { "url": "https://www.onworkroom.com/", "title": "Workroom (homepage)", "publisher": "Workroom Automation", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.analyticsinsight.net/press-release/workroom-automation-raises-62-crore-in-seed-funding-led-by-equirus-innovatex-fund-to-build-the-operating-system-for-global-manufacturing", "title": null, "publisher": "Analytics Insight (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.indianchemicalnews.com/digitization/workroom-automation-raises-rs-62-crore-to-revolutionize-manufacturing-with-ai-powered-factory-platform-29798", "title": "Workroom Automation raises Rs. 6.2 crore to revolutionize manufacturing with AI-powered factory platform", "publisher": "Indian Chemical News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.ventureintelligence.com/private-equity/manufacturing-enabler-workroom-automation-raises-rs.6.2-cr-led-by-equirus-innovatex-fund", "title": null, "publisher": "Venture Intelligence", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "company": {
+    "name": "Workroom Automation",
+    "website": "https://www.onworkroom.com/",
+    "description": "Hyderabad startup building a connected factory platform whose AI planning engine turns high-mix demand into daily production, inventory and workforce plans and tracks execution.",
+    "hq_country": "IN",
+    "founded_year": 2022,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Production planning and execution (MES-like) rather than design-to-manufacturing process planning: an AI planning engine for workstation, inventory and workforce planning that re-plans automatically on live constraints, plus production execution, traceability, workflow engine, web and shop-floor role-based apps, dashboards, forecasts and an integrations layer ('Factory OS'). Customers in tyres, stationery, intralogistics and consumer goods. No WhatsApp channel seen.",
+  "founders": ["Abhinav Atthota", "Rohan Agarwal"],
+  "named_customers": ["Apollo Tyres", "Hindustan Pencils", "ALSTEF Group", "Plumage"],
+  "product_summary": "Connected factory software for medium and large manufacturers: an AI planning engine that converts high-mix demand into optimised daily production plans and adjusts them to live constraints, with modules for inventory and workforce planning, production execution, part-level traceability and order tracking, and role-based apps for office and shop-floor teams.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Workroom Automation", "website": "https://www.onworkroom.com/", "description": "Hyderabad connected-factory platform with an AI production-planning engine.", "hq_country": "IN", "founded_year": 2022, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "plant_ops" },
+      "stage": "seed",
+      "stage_raw": "Seed round, Rs 6.2 crore; first institutional raise",
+      "date": "2026-03-23",
+      "date_precision": "day",
+      "amount_original": 62000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["Equirus InnovateX Fund"],
+      "participants": ["Astir Ventures", "Venture Catalysts Group", "Bhavik Dholakia", "Vishal Shah", "Varun Patel", "Viraj Lavingia", "Bhavin Sodavadiya"],
+      "unspecified": [],
+      "pages": [1, 2, 3],
+      "snippet": "raised Rs. 6.2 crore in a Seed funding round led by Equirus InnovateX Fund"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[seed].date",
+      "values": ["2026-03-23 (Analytics Insight press release, Venture Intelligence)", "2026-03-24 (Indian Chemical News)"],
+      "chosen": "2026-03-23",
+      "reason": "The company's press release and the database entry carry 23 March; Indian Chemical News reported it a day later."
+    }
+  ],
+  "open_items": [
+    "Total raised: INR 6.2 crore (the seed, described as the company's first institutional raise). Valuation not disclosed. Angels listed in participants are those named in the press release ('among others'); it does not say how much each invested.",
+    "Founded year 2022 comes from the press release only; Indian Chemical News and Venture Intelligence do not state it.",
+    "Named customers are from the homepage customer blurbs (Apollo Tyres, Hindustan Pencils, ALSTEF Group, Plumage); press says only 'multiple factories of leading manufacturing enterprises' in automotive, electronics, industrial machinery and consumer goods.",
+    "The homepage shows a 'Launching Soon' badge despite named deployments; unclear what is unreleased.",
+    "LinkedIn company page slug 'leapsquare-labs' (linked from the site) hints at a former or legal entity name (LeapSquare Labs?); not verified, LinkedIn not opened.",
+    "Headcount not on any public page read. Revenue not publicly reported. Pricing not public.",
+    "USD equivalents vary in search results (raising.fi about $707K, CB Insights about $660K); those pages were not opened and no conversion is recorded."
+  ]
+}

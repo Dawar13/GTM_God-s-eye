@@ -1,0 +1,78 @@
+{
+  "key": "verified",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Verified Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The lead list says 'Verified'; the firm is Verified Capital, founded by Kris Fredrickson (ex-Coatue, Benchmark), debut $175M fund announced 2025-07-18 per Tech Funding News. verified.capital redirects to verified.fund (page content empty when fetched). Rounds name 'Verified Capital'. Not Verified Ventures / AI Fund I (a Verified Ventures series) or Galaxy / Theta $175M crypto funds.",
+  "pages": [
+    { "url": "https://techfundingnews.com/big-bet-on-ai-coatue-investor-kris-fredrickson-launches-verified-capital-a-175m-fund/", "title": "Big bet on AI: Coatue investor Kris Fredrickson launches Verified Capital, a $175M fund", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/juicebox-80-million-at-850-million-valuation-raised-for-ai-recruiting-platform/amp/", "title": "Juicebox: $80 Million At $850 Million Valuation Raised For AI Recruiting Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://convergedigest.com/baseten-raises-1-5-billion-to-expand-ai-inference-infrastructure/?amp=1", "title": "Baseten raises $1.5 billion to expand AI inference infrastructure", "publisher": "Converge Digest", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Verified"], "pages": [0], "snippet": "Verified Capital" },
+    "type": { "value": "vc", "pages": [0], "snippet": "invest in only eight to ten companies" },
+    "website": { "value": "https://www.verified.fund", "pages": [0], "snippet": "Verified Capital" },
+    "thesis_text": {
+      "value": "Concentrated fund backing a handful of exceptional AI startups, spanning infrastructure, applications and AI-enabled fintech.",
+      "pages": [0],
+      "snippet": "invest in only eight to ten companies"
+    },
+    "stated_sectors": { "value": ["ai_infra", "ai_apps_agents", "fintech"], "pages": [0], "snippet": "the most exceptional startups in the AI space" }
+  },
+  "funds": [
+    {
+      "name": "Verified Capital Fund I",
+      "number": "I",
+      "size_original": 175000000,
+      "currency_original": "USD",
+      "close_date": "2025-07-18",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "Verified Capital $175 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Baseten", "website": null, "description": "AI inference infrastructure software company, founded 2019.", "hq_country": "US", "founded_year": 2019, "sector": "ai_infra", "sector_classified_by": "source", "layer": null },
+      "stage": "growth",
+      "stage_raw": "Series F",
+      "date": "2026-06-22",
+      "date_precision": "day",
+      "amount_original": 1500000000,
+      "currency_original": "USD",
+      "valuation_post_original": 13000000000,
+      "leads": ["Altimeter Capital", "Conviction", "Spark Capital"],
+      "participants": ["Sands Capital", "Wellington Management", "IVP", "Greylock", "Battery Ventures", "D. E. Shaw Ventures", "Blackbird", "Durable Capital Partners", "Verified Capital", "01A"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Verified Capital, 01A, and existing investors"
+    },
+    {
+      "company": { "name": "Juicebox", "website": null, "description": "AI recruiting platform using agents to search talent databases and contact candidates proactively.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-03-10",
+      "date_precision": "day",
+      "amount_original": 80000000,
+      "currency_original": "USD",
+      "valuation_post_original": 850000000,
+      "leads": ["DST Global"],
+      "participants": ["Sequoia", "Coatue", "Y Combinator", "NFDG", "Verified Capital"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "The round was led by DST Global, with participation from Sequoia, Coatue, Y Combinator, NFDG, and Verified Capital."
+    }
+  ],
+  "conflicts": [
+    { "field": "Baseten valuation", "values": ["$11B (first tranche)", "$13B (second tranche)"], "chosen": "13000000000", "reason": "Round closed in two tranches; the higher, final valuation recorded." }
+  ],
+  "open_items": [
+    "Firm site (verified.fund) fetched but returned no content: HQ, stages, check size ($5-25M and San Francisco appear only in search summaries), application URL not confirmed. Hq fields and stages omitted.",
+    "Only two rounds recorded. Techfundingnews names Harvey (Series B) and Atlas ($27M Series B) as portfolio but without date or Verified's role; Perplexity likewise. Baseten valuation $11B/$13B per two tranches (valuation_post is the higher).",
+    "Fund close date is the Tech Funding News article date (2025-07-18); the lead list says 2025 only. Juicebox participants list varies between sources (Coatue)."
+  ]
+}

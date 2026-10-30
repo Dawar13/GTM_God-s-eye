@@ -1,0 +1,84 @@
+{
+  "key": "lerer-hippeau",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Lerer Hippeau",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as lererhippeau.com, the New York pre-seed/seed firm (tagline 'Finding founders before they're famous') that closed its ninth fund of $200M in April 2025 (Pulse 2.0). Portfolio updates on the site include Scotch, WeatherPromise and Mother.tech. Not Lerer Ventures or other Lerer-family entities.",
+  "pages": [
+    { "url": "https://www.lererhippeau.com", "title": "Lerer Hippeau", "publisher": "Lerer Hippeau", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/lerer-hippeau-200-million-closed-for-ninth-seed-fund/amp/", "title": "Lerer Hippeau: $200 Million Closed For Ninth Seed Fund", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.crunchbase.com/venture/scotch-raises-ai-funding-liquor-retail-tech/", "title": "Scotch raises $20M Series A", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/weatherpromise-12-8-million-series-a/", "title": "WeatherPromise: $12.8 Million Series A", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techfundingnews.com/mother-tech-15m-seed-gv-lerer-hippeau-degen-ai-app/", "title": "MOTHER.tech raises $15M seed led by GV", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "finding the best founders before they're famous" },
+    "website": { "value": "https://www.lererhippeau.com", "pages": [0], "snippet": "Finding founders before they're famous." },
+    "hq_city": { "value": "New York", "pages": [1], "snippet": "New York City" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "New York City" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "pre-seed and seed" },
+    "thesis_text": {
+      "value": "Talent-driven generalist backing founders from zero to one across consumer and enterprise, staying involved long term; AI is a current focus.",
+      "pages": [0, 1],
+      "snippet": "Finding founders before they're famous."
+    },
+    "stated_sectors": { "value": ["consumer", "enterprise_saas", "ai_apps_agents"], "pages": [1], "snippet": "both enterprise and consumer" }
+  },
+  "funds": [
+    {
+      "name": "Lerer Hippeau Fund IX",
+      "number": "IX",
+      "size_original": 200000000,
+      "currency_original": "USD",
+      "close_date": "2025-04",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "LH Fund IX, $200 million, announced April 12, 2025"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Scotch", "website": null, "description": "AI-driven software platform for liquor stores bundling POS hardware, payments and state-by-state compliance back office.", "hq_country": "US", "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A",
+      "date": "2026-06-04", "date_precision": "day",
+      "amount_original": 20000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["VMG Partners"],
+      "participants": ["First Round Capital", "Lerer Hippeau", "Toba Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "included participation from First Round Capital, Lerer Hippeau and Toba Capital"
+    },
+    {
+      "company": { "name": "MOTHER.tech", "website": null, "description": "Brooklyn creative studio building modular AI image tools and the Degen app for one-tap shareable images.", "hq_country": "US", "founded_year": 2023, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-05-05", "date_precision": "day",
+      "amount_original": 15000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["GV"],
+      "participants": ["Lerer Hippeau Ventures", "BoxGroup", "Shine Capital"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "GV, Lerer Hippeau Ventures, BoxGroup, and Shine Capital"
+    },
+    {
+      "company": { "name": "WeatherPromise", "website": null, "description": "Weather guarantees for travel and outdoor experiences that refund consumers if weather is worse than promised.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A",
+      "date": "2026-01-13", "date_precision": "day",
+      "amount_original": 12800000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Maveron"],
+      "participants": ["1Sharpe", "Lerer Hippeau", "Clocktower Ventures", "Commerce Ventures", "MS Transverse", "Start Ventures", "1Flourish", "Mark Okerstrom"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "additional participants included 1Sharpe, Lerer Hippeau, Clocktower Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size not on any fetched page (a $500K-$3M figure appeared only in a search-result summary).",
+    "Earlier funds (2014 $62M onward) not recorded; only the latest is required for Tier B. Fund IX date is the Pulse 2.0 date (Apr 12); a Business Wire release dated 2025-04-08 returned in search was not fetched.",
+    "Application URL and cold-inbound policy not on the homepage; not looked up further.",
+    "Rounds dates: WeatherPromise is the article date. Board's $20M Series A (TechCrunch, 2026-06-02) excluded because Lerer Hippeau was not named in it."
+  ]
+}

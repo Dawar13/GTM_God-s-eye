@@ -1,0 +1,209 @@
+{
+  "key": "pillar-vc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Pillar VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as pillar.vc, the Boston firm at 10 St. James Ave that announced Fund IV ($175M) on 2025-03-17 and lists Abridge, PathAI, Neural Magic and Latent Labs. Not Pillar Security, Pillar (Italian construction OS), or Pillar Companies.",
+  "pages": [
+    {
+      "url": "https://www.pillar.vc",
+      "title": "Pillar VC",
+      "publisher": "Pillar VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.pillar.vc/venture-capital/announcing-pillar-vc-fund-iv/",
+      "title": "Announcing Pillar VC Fund IV",
+      "publisher": "Pillar VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.pillar.vc/investing/g5-labs-why-we-invested/",
+      "title": "G5 Labs (Why We Invested)",
+      "publisher": "Pillar VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.pillar.vc/investing/ehl-why-we-invested/",
+      "title": "Event Horizon Labs (Why We Invested)",
+      "publisher": "Pillar VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://pillar.vc/venture-capital/investing-in-latent-labs/",
+      "title": "Investing in Latent Labs",
+      "publisher": "Pillar VC",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        1
+      ],
+      "snippet": "a new $175M Fund IV"
+    },
+    "website": {
+      "value": "https://www.pillar.vc",
+      "pages": [
+        0
+      ],
+      "snippet": "partners at inception with technically brilliant dreamers"
+    },
+    "hq_city": {
+      "value": "Boston",
+      "pages": [
+        0
+      ],
+      "snippet": "10 St. James Ave, 7F, Boston, MA 02116"
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        0
+      ],
+      "snippet": "10 St. James Ave, 7F, Boston, MA 02116"
+    },
+    "stages": {
+      "value": [
+        "pre_seed",
+        "seed"
+      ],
+      "pages": [
+        1,
+        2
+      ],
+      "snippet": "We're there from the beginning."
+    },
+    "leads": {
+      "value": true,
+      "pages": [
+        2
+      ],
+      "snippet": "Co-led by Pillar VC and Battery Ventures"
+    },
+    "thesis_text": {
+      "value": "Partners at inception with technical founders turning scientific breakthroughs into companies, across healthcare, computing and enterprise intelligence, and therapeutics.",
+      "pages": [
+        0,
+        1
+      ],
+      "snippet": "scientific progress has never been more crucial or more accelerated"
+    },
+    "stated_sectors": {
+      "value": [
+        "health_bio",
+        "ai_apps_agents",
+        "ai_infra"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "Healthcare, computing and enterprise intelligence, and therapeutics"
+    },
+    "application_url": {
+      "value": "https://pillar.vc/connect/",
+      "pages": [
+        0
+      ],
+      "snippet": "https://pillar.vc/connect/"
+    },
+    "portfolio_count_reported": {
+      "value": 90,
+      "pages": [
+        1
+      ],
+      "snippet": "About 90 companies, over half with university roots"
+    }
+  },
+  "funds": [
+    {
+      "name": "Pillar VC Fund IV",
+      "number": "IV",
+      "size_original": 175000000,
+      "currency_original": "USD",
+      "close_date": "2025-03-17",
+      "date_precision": "day",
+      "pages": [
+        1
+      ],
+      "snippet": "a new $175M Fund IV"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "G5 Labs",
+        "website": null,
+        "description": "Platform where organizations state intent and the platform continuously builds, secures and manages the resulting software; live with Fortune 1000 customers.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [
+        "Pillar VC",
+        "Battery Ventures"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        2
+      ],
+      "snippet": "Co-led by Pillar VC and Battery Ventures"
+    },
+    {
+      "company": {
+        "name": "Event Horizon Labs",
+        "website": null,
+        "description": "Investment firm using AI agent swarms to build trading infrastructure and test strategies, founded by Owen Colegrove.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Pillar VC"
+      ],
+      "pages": [
+        3
+      ],
+      "snippet": "one of the first great investment firms designed around the new reality of AI"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size not stated on fetched pages (search summary from Fortune: $50K-$500K pre-seed, $2M-$6M seed; not fetched). Stages inferred from 'from the beginning' wording and G5 Labs seed.",
+    "Event Horizon Labs: the 'Why We Invested' post gives no stage, amount, lead or co-investors; date is the post date.",
+    "Latent Labs: removed in review. Pillar's post says it wrote the first check and co-led an earlier seed with Kindred (no date or amount), but no fetched page places Pillar in the $50M Feb 2025 round, and the recorded snippet was a paraphrase, not a quote.",
+    "Day AI $20M Series A (Feb 2026, Sequoia) excluded: neither fetched page names Pillar in that round (Pillar's own post says it offered to invest, no stage).",
+    "Round companies' HQ/website not stated on fetched pages. Pillar's own site gave no public pitch process; /connect/ is the closest contact page, cold-inbound policy not stated."
+  ]
+}

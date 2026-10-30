@@ -1,0 +1,84 @@
+{
+  "key": "sempervirens",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "SemperVirens Venture Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed via the March 2025 PRWeb release and Pulse 2.0: SemperVirens Venture Capital (sempervirensvc.com) closed $177M across Core Fund III and Growth Opportunity Fund II; portfolio includes Midi Health and Stepful. The firm's own site (sempervirens.com) failed to load (TLS error), so website is taken from search listings only. Not Sempervirens Fund (Save the Redwoods) or other similarly named entities.",
+  "pages": [
+    { "url": "https://www.prweb.com/releases/sempervirens-venture-capital-closes-177-million-in-new-funds-to-back-early-stage-b2b-companies-transforming-complex-industries-302405442.html", "title": "SemperVirens Venture Capital Closes $177 Million in New Funds to Back Early-Stage B2B Companies Transforming Complex Industries", "publisher": "SemperVirens (via PRWeb)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/sempervirens-venture-capital-177-million-closed-across-two-new-funds/", "title": "SemperVirens Venture Capital: $177 Million Closed Across Two New Funds", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/midi-health-100-million-series-d-at-over-1-billion-valuation-raised-for-womens-telehealth-platform", "title": "Midi Health: $100 Million Series D At Over $1 Billion Valuation", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://letsdatascience.com/news/stepful-raises-55m-to-scale-ai-healthcare-training-e0c48dd8", "title": "Stepful Raises $55M to Scale AI Healthcare Training", "publisher": "Let's Data Science", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "SemperVirens Venture Capital closes $177 million in new funds" },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "SAN FRANCISCO" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "SAN FRANCISCO" },
+    "stages": { "value": ["seed", "series_a", "series_b", "growth"], "pages": [0, 1], "snippet": "Core Fund III targets early-stage companies" },
+    "thesis_text": {
+      "value": "Backs early-stage B2B companies driving workforce transformation in enterprise, healthcare and financial services, with AI central to complex industries.",
+      "pages": [0],
+      "snippet": "driving workforce transformation through innovation in the enterprise, healthcare and financial services sectors"
+    },
+    "stated_sectors": { "value": ["enterprise_saas", "health_bio", "fintech"], "pages": [0], "snippet": "enterprise, healthcare and financial services sectors" }
+  },
+  "funds": [
+    {
+      "name": "SemperVirens Core Fund III",
+      "number": "III",
+      "size_original": 141000000,
+      "currency_original": "USD",
+      "close_date": "2025-03",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "Core Fund III: $141M, early-stage"
+    },
+    {
+      "name": "SemperVirens Growth Opportunity Fund II",
+      "number": "II",
+      "size_original": 36000000,
+      "currency_original": "USD",
+      "close_date": "2025-03",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "Growth Opportunity Fund II: $36M, growth-stage"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Stepful", "website": null, "description": "Employer-sponsored vocational clinical training platform combining online instruction, simulation and workforce data for roles like medical assistant.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_c_plus", "stage_raw": "Series C",
+      "date": "2026-06-09", "date_precision": "day",
+      "amount_original": 55000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Oak HC/FT"],
+      "participants": ["Foresite Capital", "Hearst Ventures", "Citi Impact Fund", "SemperVirens", "Y Combinator", "Intermountain Health", "ECMC Education Impact Fund"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "participation from existing investors including SemperVirens"
+    },
+    {
+      "company": { "name": "Midi Health", "website": null, "description": "Palo Alto telehealth company starting with midlife hormone care and expanding into AI-supported women's health across life stages.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "series_c_plus", "stage_raw": "Series D",
+      "date": "2026-02-03", "date_precision": "day",
+      "amount_original": 100000000, "currency_original": "USD", "valuation_post_original": 1000000000,
+      "leads": ["Goodwater Capital"],
+      "participants": ["Foresite Capital", "Serena Ventures", "Advance Venture Partners", "GV", "Emerson Collective", "SemperVirens", "McKesson Ventures", "Felicis Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Emerson Collective, SemperVirens, McKesson Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "fund close date", "values": ["2025-03-19 (PRWeb/Fortune per search)", "2025-03-23 (Pulse 2.0 article date)"], "chosen": "2025-03", "reason": "Day varies by source; month agrees. Fortune reportedly said final close was in January; not fetched." }
+  ],
+  "open_items": [
+    "Only 2 rounds recorded. Take2 $14M Series A (Feb 2026; SemperVirens listed as participant in search summaries) and Multiverse $70M (May 2026) were not confirmed on a fetched page (Take2 sources returned 403/404).",
+    "Midi Health 'series_d' stage and valuation_post_original 1e9 (stated as 'over $1 billion'): treated as a floor. Mapped to series_c_plus (schema has no series_d).",
+    "HQ San Francisco is from the PRWeb dateline only; the release does not state HQ explicitly. One search summary said San Mateo. Lead list says SF / NYC.",
+    "Website, check size, application URL and cold-inbound policy not found (firm site failed to load).",
+    "Stepful and Midi HQ/website not stated on fetched pages beyond Midi being described as Palo Alto."
+  ]
+}

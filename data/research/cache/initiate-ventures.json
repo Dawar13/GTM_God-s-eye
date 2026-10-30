@@ -1,0 +1,97 @@
+{
+  "key": "initiate-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "INITIATE Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "INITIATE Ventures (initiate.vc), the women-led healthcare / life-sciences venture fund and venture studio of Jessica Owens and Iana Dimkova; site names Cornerstone AI, Macro Trials and Tensor Bio; TechCrunch and PRWeb name the same co-founded companies. Not Initiate Capital or other 'Initiate' labelled firms.",
+  "pages": [
+    { "url": "https://www.initiate.vc", "title": "INITIATE", "publisher": "INITIATE Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/11/18/healthcare-vc-firm-initiate-has-a-new-45m-and-has-already-founded-five-startups-internally", "title": "Healthcare VC firm Initiate has a new $45M and has already founded five startups internally", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.prweb.com/releases/initiate-ventures-closes-45-million-to-fund-and-co-create-companies-at-the-intersection-of-healthcare-life-sciences-and-tech-302308455.html", "title": "INITIATE Ventures closes $45 million to fund and co-create companies at the intersection of healthcare, life sciences and tech", "publisher": "PRWeb (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.prweb.com/releases/cornerstone-ai-adds-another-5-million-to-empower-biopharma-and-healthcare-companies-to-get-more-from-their-data-302291205.html", "title": "Cornerstone AI adds another $5 million to empower biopharma and healthcare companies to get more from their data", "publisher": "PRWeb (press release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "INITIATE funds and co-founds the companies defining healthcare's AI-native era."
+    },
+    "website": {
+      "value": "https://www.initiate.vc",
+      "pages": [0],
+      "snippet": "INITIATE funds and co-founds the companies defining healthcare's AI-native era."
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "pages": [1],
+      "snippet": "seed and Series A companies"
+    },
+    "check_min_usd": {
+      "value": 500000,
+      "pages": [1],
+      "snippet": "$500,000 to $3 million"
+    },
+    "check_max_usd": {
+      "value": 3000000,
+      "pages": [1],
+      "snippet": "$500,000 to $3 million"
+    },
+    "thesis_text": {
+      "value": "Funds and co-founds early-stage, AI-native companies in healthcare and life sciences, through both venture investing and an in-house studio.",
+      "pages": [0, 1],
+      "snippet": "at the intersection of tech and life sciences"
+    },
+    "stated_sectors": {
+      "value": ["health_bio", "ai_apps_agents"],
+      "pages": [0, 1],
+      "snippet": "at the intersection of tech and life sciences"
+    }
+  },
+  "funds": [
+    {
+      "name": "INITIATE Ventures Fund I",
+      "number": "I",
+      "size_original": 45000000,
+      "currency_original": "USD",
+      "close_date": "2024-11-18",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$45 million debut fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Cornerstone AI",
+        "website": null,
+        "description": "AI software that cleans and structures healthcare data from EHRs, registries, claims and clinical trials.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": "opportunistic round",
+      "date": "2024-10-30",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Acrew Capital"],
+      "participants": ["Initiate Ventures", "Healthy Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "with participation from existing investors Initiate Ventures and Healthy Ventures"
+    }
+  ],
+  "open_items": [
+    "Only one dated round recorded. Search summaries say INITIATE also took part in Cornerstone AI's July 2022 $5M seed (led by Healthy Ventures); that page (healthcareittoday) was not fetched. PRWeb lists Delfi Diagnostics, Macro Trials and Persana as portfolio companies but no round pages for them were fetched. No 2025-26 rounds found.",
+    "HQ San Francisco comes only from the PRWeb dateline (no verbatim snippet), so not recorded as a fact. The lead date 2024-11-19 differs from the 2024-11-18 announcement on TechCrunch / PRWeb.",
+    "Cornerstone AI amount of $5M and 'brings total to $10M' from tool summary of the release; the amount itself is not quoted verbatim."
+  ],
+  "conflicts": []
+}

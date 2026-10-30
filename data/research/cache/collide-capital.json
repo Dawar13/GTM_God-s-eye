@@ -1,0 +1,33 @@
+{
+  "key": "collide-capital",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "Collide Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as Collide Capital (collidecap.com), the early-stage VC firm founded by Aaron Samuels and Brian Hollins that invests pre-seed to Series A in fintech, supply chain and future of work; its press page links the April 2026 TechCrunch and ImpactAlpha coverage of its $95M Fund II. Not Collider Ventures (Israel), a separate firm.",
+  "pages": [
+    { "url": "https://www.collidecap.com/", "title": "Collide Capital", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2026/04/09/collide-capital-raises-95m-fund-to-back-fintech-future-of-work-startups/", "title": "Collide Capital raises $95M fund to back fintech, future-of-work startups", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://impactalpha.com/collide-capital-raises-95-million-for-most-deserving-fintech-supply-chain-and-future-of-work-founders/", "title": "Collide Capital raises $95 million for 'most deserving' fintech, supply chain and future of work founders", "publisher": "ImpactAlpha", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.collidecap.com/teams", "title": "Collide Capital | Team", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/portfolio", "title": "Collide Capital | Portfolio", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/press", "title": "Collide Capital | Press", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
+    "website": { "value": "https://www.collidecap.com", "pages": [0], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0, 2], "snippet": "Collide's second fund writes pre-seed to Series A checks ranging from $1 million to $3 million." },
+    "check_min_usd": { "value": 1000000, "pages": [1, 2], "snippet": "The average check size will be between $1 million and $3 million." },
+    "check_max_usd": { "value": 3000000, "pages": [1, 2], "snippet": "The average check size will be between $1 million and $3 million." },
+    "portfolio_count_reported": { "value": 75, "pages": [1, 4], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." }
+  },
+  "funds": [
+    { "name": "Collide Capital Fund I", "number": "I", "size_original": 66000000, "currency_original": "USD", "close_date": "2022", "date_precision": "year", "pages": [1, 2], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." },
+    { "name": "Collide Capital Fund II", "number": "II", "size_original": 95000000, "currency_original": "USD", "close_date": "2026-04-09", "date_precision": "day", "pages": [1, 2, 0], "snippet": "announced Thursday the close of a $95 million Fund II." }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": []
+}

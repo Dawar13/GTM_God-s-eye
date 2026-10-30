@@ -1,0 +1,84 @@
+{
+  "key": "flybridge-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Flybridge",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as flybridge.com, the early-stage AI-focused firm rooted in New York City and Boston with 20+ years of investing and a portfolio including Arcade, Blitzy, crewAI and BrightHire. Named 'Flybridge Ventures' in some rounds; formerly Flybridge Capital Partners. Not Flybridge Technologies or other similarly named entities.",
+  "pages": [
+    { "url": "https://flybridge.com", "title": "Flybridge", "publisher": "Flybridge", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025", "title": "Announcing Flybridge 2025", "publisher": "Flybridge", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://hoodline.com/2026/05/blitzy-s-200-million-blitz-sends-kendall-square-back-into-the-ai-big-leagues/", "title": "Blitzy's $200 million blitz sends Kendall Square back into the AI big leagues", "publisher": "Hoodline", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fenwick.com/insights/experience/fenwick-represents-arcade-in-12m-series-seed-funding", "title": "Fenwick Represents Arcade in $12M Series Seed Funding", "publisher": "Fenwick", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Flybridge Ventures", "Flybridge Capital Partners"], "pages": [3], "snippet": "participation from Flybridge Ventures" },
+    "type": { "value": "vc", "pages": [0], "snippet": "early-stage venture firm backing founders building AI-powered companies" },
+    "website": { "value": "https://flybridge.com", "pages": [0], "snippet": "Flybridge" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "rooted in NYC and Boston" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "We focus exclusively on pre-seed and seed investments by choice." },
+    "leads": { "value": true, "pages": [1], "snippet": "We typically lead or co-lead rounds with $1M - $3M checks alongside high-quality co-investors." },
+    "check_min_usd": { "value": 1000000, "pages": [1], "snippet": "We typically lead or co-lead rounds with $1M - $3M checks alongside high-quality co-investors." },
+    "check_max_usd": { "value": 3000000, "pages": [1], "snippet": "We typically lead or co-lead rounds with $1M - $3M checks alongside high-quality co-investors." },
+    "thesis_text": {
+      "value": "Pre-seed and seed investor in AI across infrastructure and developer platforms, agentic business applications, and native AI applications for human potential.",
+      "pages": [1],
+      "snippet": "Investing $100 Million in Ambitious Early-Stage Founders Transforming the World with AI"
+    },
+    "stated_sectors": { "value": ["ai_infra", "ai_apps_agents", "dev_tools"], "pages": [1], "snippet": "AI Infrastructure & Developer Platforms" }
+  },
+  "funds": [
+    {
+      "name": "Flybridge 2025",
+      "number": "VII",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2025-09-09",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "our seventh seed fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Blitzy", "website": null, "description": "Multi-agent AI software that analyzes legacy corporate codebases and generates production-ready code.", "hq_country": "US", "founded_year": 2023, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "growth",
+      "stage_raw": "Growth round",
+      "date": "2026-05-05",
+      "date_precision": "day",
+      "amount_original": 200000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1400000000,
+      "leads": ["Northzone"],
+      "participants": ["PSG", "Battery Ventures", "Jump Capital", "Flybridge", "Link Ventures", "Venture Guides"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "continued support from local backers such as Flybridge, Link Ventures and Venture Guides"
+    },
+    {
+      "company": { "name": "Arcade", "website": "https://www.arcade.dev", "description": "Infrastructure for AI agents that safely carry out tasks for users in the real world.", "hq_country": "US", "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "Series Seed",
+      "date": "2024-03-28",
+      "date_precision": "day",
+      "amount_original": 12000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Laude Ventures"],
+      "participants": ["Flybridge Ventures", "Hanabi Capital", "Neotribe", "Andy Rachleff"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The round was led by Laude Ventures with participation from Flybridge Ventures, Hanabi Capital, Neotribe, and Andy Rachleff."
+    }
+  ],
+  "conflicts": [
+    { "field": "Fund close date", "values": ["2025-09-09 (flybridge.com post, 'September 9')", "May 2024 (one adviser profile, search summary only)"], "chosen": "2025-09-09", "reason": "Firm's own announcement post; year inferred from its title 'Flybridge 2025'." }
+  ],
+  "open_items": [
+    "Only two rounds recorded. Arcade's later $60M Series A (June 2026, SYN Ventures) page does not mention Flybridge. Arcee, crewAI, Portkey rounds not verified on fetched pages.",
+    "Fenwick page dates the Arcade seed 2024-03-28; an aggregator suggests March 2025, so the date is uncertain. Blitzy stage label varies by source (growth, Series C/D/G); the fetched Hoodline page says growth round. Other Blitzy investors (Link, NFX etc.) from search only.",
+    "No single HQ named (NYC and Boston); hq_city omitted. Lead list $100M 'New York / Boston' matches fund size. Pre-seed via Next Wave funds (check size not stated). No application URL recorded; site lists Next Wave /next-wave for pre-seed."
+  ]
+}

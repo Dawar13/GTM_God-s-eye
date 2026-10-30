@@ -1,0 +1,95 @@
+{
+  "key": "cherryrock-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cherryrock Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cherryrockcapital.com, the venture firm founded by former TaskRabbit CEO Stacy Brown-Philpot that backs underinvested founders; its site links the $172M fund coverage and names Certiverse, Coactive AI, Vori and Flourish Health. Not Cherry Ventures or Cherrystone.",
+  "pages": [
+    { "url": "https://www.cherryrockcapital.com", "title": "Cherryrock Capital", "publisher": "Cherryrock Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://impactalpha.com/cherryrock-capital-raises-172-million-for-growth-stage-startups-led-by-underinvested-founders/", "title": "Cherryrock Capital raises $172 million for growth-stage startups led by underinvested founders", "publisher": "ImpactAlpha", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://lw.com/en/news/2024/05/latham-watkins-advises-coactive-ai-in-us30-million-series-b-funding-round", "title": "Latham & Watkins Advises Coactive AI in US$30 Million Series B Funding Round", "publisher": "Latham & Watkins", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.vori.com/news/vori-raises-22m-series-b", "title": "Vori raises $22M Series B", "publisher": "Vori", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://vitablehealth.com/blog/celebrating-a-milestone-vitable-healths-16m-series-a", "title": "Celebrating a Milestone: What Our $16M Series A Means for Primary Care", "publisher": "Vitable Health", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "$172 million venture fund" },
+    "website": { "value": "https://www.cherryrockcapital.com", "pages": [0], "snippet": "backs underinvested entrepreneurs building transformative software companies" },
+    "stages": { "value": ["series_a", "series_b"], "pages": [1, 2, 3], "snippet": "led by Cherryrock Capital" },
+    "thesis_text": {
+      "value": "Backs underinvested founders building software companies, leading Series A and B rounds and adding scaling, board and network support.",
+      "pages": [0, 1],
+      "snippet": "backs underinvested entrepreneurs building transformative software companies"
+    },
+    "stated_sectors": { "value": ["health_bio", "fintech", "enterprise_saas"], "pages": [1], "snippet": "Digital health, fintech, and future of work" }
+  },
+  "funds": [
+    {
+      "name": "Cherryrock Capital Fund I",
+      "number": "I",
+      "size_original": 172000000,
+      "currency_original": "USD",
+      "close_date": "2025-02-19",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$172 million venture fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Vori", "website": "https://www.vori.com", "description": "Autonomous operating system for grocery stores covering checkout, payments, inventory, ordering and pricing.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-05-06",
+      "date_precision": "day",
+      "amount_original": 22000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Cherryrock Capital"],
+      "participants": ["Greylock Partners", "The Factory"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Today, Vori announced a $22 million Series B led by Cherryrock Capital, with participation from Greylock Partners"
+    },
+    {
+      "company": { "name": "Vitable Health", "website": "https://vitablehealth.com", "description": "Employer-focused health benefits and primary care for underinsured hourly workers.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-07",
+      "date_precision": "month",
+      "amount_original": 16000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Cherryrock Capital"],
+      "participants": ["Newark Venture Partners", "Citi Impact Fund", "First Round Capital", "Commerce Ventures", "Y Combinator"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "We have successfully raised $16 million in our Series A funding round, led by Cherryrock Capital,"
+    },
+    {
+      "company": { "name": "Coactive AI", "website": null, "description": "AI software for analyzing images, video and audio at scale.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2024-05-24",
+      "date_precision": "day",
+      "amount_original": 30000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Cherryrock Capital", "Emerson Collective"],
+      "participants": ["Greycroft", "Andreessen Horowitz", "Bessemer Venture Partners", "Exceptional Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Cherryrock Capital, in its first investment, co-led this funding round with Emerson Collective."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on cherryrockcapital.com or ImpactAlpha; Bay Area from the lead list is unverified. hq_country omitted.",
+    "Fund close date: ImpactAlpha article is dated 2025-02-20 (announcement); lead list says 2025-02-19; search summary says closed January 2025. Recorded the lead-list date; not confirmed on a fetched page.",
+    "Check size ($6-10M) appears only in a search summary, not a fetched page.",
+    "Vitable Series A date (July 2024) comes from search results; the Vitable blog page carries no date, so month precision.",
+    "Vori stage: Fortune/Vori call it Series B; no application URL or cold-inbound statement found (only a 'Get in touch' link)."
+  ]
+}

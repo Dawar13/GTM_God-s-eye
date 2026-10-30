@@ -1,0 +1,60 @@
+{
+  "key": "ovni-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "OVNI Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ovni.capital, the first-check hard-tech venture firm listing offices in San Francisco, Paris and Berlin and backing European founders who scale internationally; baCta and Rift press coverage names it as OVNI Capital. Not OVNI Ventures or any other 'Ovni' entity.",
+  "pages": [
+    { "url": "https://www.ovni.capital", "title": "OVNI Capital", "publisher": "OVNI Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://parsers.vc/news/260305-parisian-biotech-bacta-secures-7m--ai/", "title": "Parisian Biotech baCta Secures 7M: AI-Powered Molecular Factories Transform Industrial Ingredients", "publisher": "Parsers VC", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupsmagazine.co.uk/article-rift-raises-eu46m-build-global-network-demand-aerial-intelligence", "title": "Rift raises 4.6M to build global network for on-demand aerial intelligence", "publisher": "Startups Magazine", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tech.eu/2026/09/22/lightspring-raises-eur35m-to-tackle-photonic-chip-manufacturing-bottleneck/", "title": "Lightspring raises EUR3.5M to tackle photonic chip manufacturing bottleneck", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://parsers.vc/fund/ovni.capital/", "title": "OVNI Capital portfolio", "publisher": "Parsers VC", "retrieved_at": "2026-10-30", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We lead early-stage rounds with conviction." },
+    "website": { "value": "https://www.ovni.capital", "pages": [0], "snippet": "we back European founders scaling internationally" },
+    "hq_city": { "value": "Paris", "pages": [0], "snippet": "Paris (8 Rue Royale)" },
+    "hq_country": { "value": "FR", "pages": [0], "snippet": "Paris (8 Rue Royale)" },
+    "leads": { "value": true, "pages": [0, 3], "snippet": "We lead early-stage rounds with conviction." },
+    "check_min_usd": { "value": 250000, "pages": [0], "snippet": "$250k to $2m" },
+    "check_max_usd": { "value": 2000000, "pages": [0], "snippet": "$250k to $2m" },
+    "thesis_text": { "value": "First-check, early-stage investor in hard-tech founders from Europe who scale internationally, working across Paris, San Francisco and Berlin.", "pages": [0], "snippet": "we back European founders scaling internationally" },
+    "stated_sectors": { "value": ["hardware_deeptech"], "pages": [0], "snippet": "Hard Tech" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Lightspring", "website": null, "description": "French deeptech making optical couplers for photonic chips by 3D-printing coupling structures directly onto the chip, replacing manual alignment.", "hq_country": "FR", "founded_year": null, "sector": "hardware_deeptech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-09-22", "date_precision": "day",
+      "amount_original": 3100000, "currency_original": "EUR", "valuation_post_original": null,
+      "leads": ["Atlantic", "OVNI Capital"], "participants": ["Concept Ventures", "Ixcore", "Plug and Play Ventures"], "unspecified": ["industry business angels"],
+      "pages": [3], "snippet": "The French deeptech startup uses 3D lithography to manufacture optical interfaces directly on photonic chips"
+    },
+    {
+      "company": { "name": "baCta", "website": null, "description": "Paris biotech using AI and precision fermentation to turn microorganisms into production systems for sustainable industrial ingredients, starting with astaxanthin.", "hq_country": "FR", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-03-05", "date_precision": "day",
+      "amount_original": 7000000, "currency_original": "EUR", "valuation_post_original": null,
+      "leads": ["LocalGlobe", "Daphni"], "participants": ["OVNI Capital"], "unspecified": ["business angels incl. founders of Phagos, Genomines and Mistral AI"],
+      "pages": [1], "snippet": "Parisian biotech baCta secured €7M Seed funding."
+    },
+    {
+      "company": { "name": "Rift", "website": null, "description": "French deeptech offering on-demand aerial intelligence using long-endurance VTOL drones, autonomous stations and its RiftOS software.", "hq_country": "FR", "founded_year": null, "sector": "defense_dual_use", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2025-11-20", "date_precision": "day",
+      "amount_original": 4600000, "currency_original": "EUR", "valuation_post_original": null,
+      "leads": ["AlleyCorp"], "participants": ["OVNI Capital"], "unspecified": [],
+      "pages": [2], "snippet": "a €4.6 million funding round led by AlleyCorp with participation from OVNI Capital"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Fund not recorded: search summaries cite Sifted for a EUR60M final close on 2025-05-22 (earlier EUR15M/EUR50M first-close figures conflict), but the Sifted page returned HTTP 403 and was not read; the lead's $68M / 2025-05-27 is unconfirmed.",
+    "Stages not stated beyond 'early-stage' on the site; not recorded. Check size shown in dollars on the site ($250k-$2m); search summaries gave EUR250k-2m, unverified.",
+    "HQ: site lists San Francisco, Paris and Berlin without naming a head office; Paris taken from the lead and the firm's French origin (not confirmed on a fetched page).",
+    "Rift round: Startups Magazine gives no stage label (one aggregator says seed, OVNI's LinkedIn reportedly pre-seed); includes EUR1.6M public funding per search summary. Lightspring amount is the EUR3.1M seed (EUR3.5M incl. EUR350k grant). Dates are article dates.",
+    "Contact is by email only (published on the site, deliberately not recorded); no application URL. Site portfolio section was empty."
+  ]
+}

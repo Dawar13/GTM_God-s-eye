@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T08:48:20+00:00",
+  "generated_at": "2026-10-30T13:11:07+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -2133,6 +2133,85 @@
       "pricing": null
     },
     {
+      "id": "co_intellithink",
+      "name": "Intellithink",
+      "website": "https://intellithink.in",
+      "hq_country": "IN",
+      "founded_year": 2018,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Bengaluru industrial-IoT company that monitors the health of rotating plant machinery with its own sensors and a cloud analytics platform.",
+      "total_raised_usd": 1790605,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://intellithink.in/",
+          "title": "Intellithink - Connect, Integrate, Transform (meta description: Machine Health Solutions)",
+          "publisher": "Intellithink",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://intellithink.in/js/484.js",
+          "title": "Intellithink site: About page content (client-rendered bundle, leadership team and company text)",
+          "publisher": "Intellithink",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.newskart.com/intellithink-raises-inr-17-crore-why-this-industrial-ai-funding-matters-in-2026/",
+          "title": "Intellithink Raises INR 17 Crore: Why This Industrial AI Funding Matters in 2026",
+          "publisher": "NewsKart",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/industrial-ai-startup-intellithink-raises-rs.17-cr-led-by-pentathlon-ventures",
+          "title": null,
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://ascendants.in/business-stories/intellithink-raises-17-crore-industrial-ai-india-gcc/",
+          "title": null,
+          "publisher": "Ascendants",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Condition-based monitoring / predictive maintenance: proprietary sensors (IntelliVIBE; IntelliAMP is a second product, not described on pages read) stream to a cloud platform that watches rotating equipment around the clock, flags anomalies and suggests fixes; also production monitoring and energy analytics. Industries listed on the site: cement, oil and gas, power generation, steel, pharmaceutical, automotive. Users are maintenance and reliability teams; dashboard product, no WhatsApp or agent interface seen.",
+      "size_class": "under_5m",
+      "founders": [
+        "Sridhar Venugopal",
+        "Aswin Venu"
+      ],
+      "named_customers": [
+        "Jindal Steel",
+        "Jindal Stainless",
+        "JSW Steel",
+        "ArcelorMittal Nippon Steel",
+        "Adani",
+        "UltraTech",
+        "Dalmia",
+        "Ducab",
+        "L&T"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Industrial IoT machine-health platform: in-house sensors (IntelliVIBE, IntelliAMP) feed a cloud analytics layer that monitors rotating equipment 24x7, detects anomalies, diagnoses likely faults and suggests corrective action, alongside production-monitoring and energy-analytics modules for heavy-industry plants.",
+      "pricing": null
+    },
+    {
       "id": "co_machina-labs",
       "name": "Machina Labs",
       "website": "https://machinalabs.ai",
@@ -2317,6 +2396,91 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "RoboCraftsman cells pair industrial robots with AI to form sheet metal straight from CAD without dies, then trim, heat-treat and scan parts. Machina runs them in its own factories and on-site Edge Factories to make airframe, missile, hypersonic, naval and custom automotive panels.",
+      "pricing": null
+    },
+    {
+      "id": "co_magentic",
+      "name": "Magentic",
+      "website": "https://www.magentic.com",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "supply_chain_logistics",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "London startup (New York office) building AI agents that carry out procurement and supply-chain work inside global manufacturers' ERPs, talking to staff over Teams and email.",
+      "total_raised_usd": 23500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://sequoiacap.com/article/partnering-with-magentic-ai-driven-savings-for-the-worlds-supply-chains",
+          "title": "Partnering with Magentic: AI-Driven Savings for the World's Supply Chains",
+          "publisher": "Sequoia Capital",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/magentic-5-5-million-raised-for-ai-agent-platform/amp/",
+          "title": "Magentic: $5.5 Million Raised For AI Agent Platform",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://thenextweb.com/news/magentic-18m-series-a-ai-agents-procurement",
+          "title": "Magentic raises $18M to put AI agents to work in manufacturers' supply chains",
+          "publisher": "TheNextWeb",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.magentic.com",
+          "title": "Magentic (homepage)",
+          "publisher": "Magentic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.magentic.com/about",
+          "title": "About Magentic",
+          "publisher": "Magentic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.magentic.com/customers",
+          "title": "Magentic customers",
+          "publisher": "Magentic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.magentic.com/stories/magentic-raises-18m",
+          "title": "Magentic raises $18M to build the AI workforce for the physical world",
+          "publisher": "Magentic",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          3
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Procurement / supply-chain back office rather than the plant floor: multi-agent 'Mages' that read contracts, ERP records, invoices, emails and spreadsheets to find savings before a purchase, protect value during it (supplier selection, negotiation, ordering) and recover value after it (price leakage, invoice errors, MRO spend). Direct and indirect spend; humans approve major decisions. Users are procurement and supply-chain teams reached over Microsoft Teams and email. 'plant_ops' is the nearest layer; there is no supply-chain layer in the taxonomy.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Robin Van Aeken",
+        "Odhran O'Donoghue"
+      ],
+      "named_customers": [
+        "Siemens"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Multi-agent 'digital workers' that plug into a manufacturer's ERP, contracts, invoices and inboxes to run procurement tasks end to end: hunting savings, choosing suppliers, negotiating, placing orders, processing invoices and recovering price leakage, coordinating with staff over Teams and email while people sign off key decisions.",
       "pricing": null
     },
     {
@@ -3857,6 +4021,20 @@
       "is_competitor": true,
       "sources": [
         {
+          "url": "https://techstartups.com/2023/06/13/ai-chip-startup-sima-ai-raises-another-13-million-in-funding-as-ai-boom-picks-up-steam/",
+          "title": "AI chip startup SiMa.ai raises another $13 million in funding as AI boom picks up steam",
+          "publisher": "Tech Startups",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://sima.ai/in-the-news/ai-chip-startup-sima-ai-raises-13-million-in-funding-as-ai-boom-picks-up-steam/",
+          "title": "AI chip startup SiMa.ai raises $13 million in funding as AI boom picks up steam",
+          "publisher": "SiMa.ai",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
           "url": "https://sima.ai/news/",
           "title": "News | SiMa.ai",
           "publisher": "SiMa.ai",
@@ -3927,20 +4105,6 @@
           "kind": "secondary"
         },
         {
-          "url": "https://techstartups.com/2023/06/13/ai-chip-startup-sima-ai-raises-another-13-million-in-funding-as-ai-boom-picks-up-steam/",
-          "title": "AI chip startup SiMa.ai raises another $13 million in funding as AI boom picks up steam",
-          "publisher": "TechStartups",
-          "retrieved_at": "2026-10-30",
-          "kind": "secondary"
-        },
-        {
-          "url": "https://sima.ai/in-the-news/ai-chip-startup-sima-ai-raises-13-million-in-funding-as-ai-boom-picks-up-steam/",
-          "title": "AI chip startup SiMa.ai raises $13 million in funding as AI boom picks up steam (In the News)",
-          "publisher": "SiMa.ai",
-          "retrieved_at": "2026-10-30",
-          "kind": "primary"
-        },
-        {
           "url": "https://sima.ai/in-the-news/ai-chip-startup-sima-ai-raises-37-million-in-b1-round/",
           "title": "AI chip startup SiMa.ai raises $37 million in B1 round (In the News, links Mint)",
           "publisher": "SiMa.ai",
@@ -3964,7 +4128,7 @@
       ],
       "field_sources": {
         "website": [
-          0
+          2
         ]
       },
       "confidence": "high",
@@ -4292,6 +4456,84 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "AI-native development system for hardware teams that links requirements, design intent, CAD changes and validation evidence in one context layer. Agents grounded in the team's own process data draft engineering outputs such as ECOs, design reviews, drawings, DFM feedback, impact reports and traceability reports.",
+      "pricing": null
+    },
+    {
+      "id": "co_thirdai-automation",
+      "name": "ThirdAI Automation",
+      "website": "https://thirdaiautomation.com",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "India–US startup (San Jose address) selling a causal-AI platform that finds root causes of equipment faults, process excursions and defects in semiconductor fabs and toolmakers.",
+      "total_raised_usd": 3000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://thirdaiautomation.com",
+          "title": "ThirdAI Automation: The First Causal Intelligence Platform for Semiconductors",
+          "publisher": "ThirdAI Automation",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://thirdaiautomation.com/about",
+          "title": "About ThirdAI Automation",
+          "publisher": "ThirdAI Automation",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://thirdaiautomation.com/case-studies",
+          "title": "ThirdAI Automation case studies",
+          "publisher": "ThirdAI Automation",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/thirdai-nets-3-mn-to-reduce-downtimes-at-semiconductor-fabs/",
+          "title": "ThirdAI Nets $3 Mn To Reduce Downtimes At Semiconductor Fabs",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://entrackr.com/snippets/thirdai-raises-3-mn-led-by-endiya-partners-and-capria-ventures-11095630",
+          "title": "ThirdAI raises $3 Mn led by Endiya Partners and Capria Ventures",
+          "publisher": "Entrackr",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://analyticsindiamag.com/ai-news/thirdai-raises-3-mn-to-expand-causal-ai-for-semiconductor-fabs",
+          "title": null,
+          "publisher": "Analytics India Magazine",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Root-cause analysis for fab and equipment operations: a causal engine and knowledge graph behind four modules (causal diagnostics, process intelligence, defect feedback, resolution orchestration) plus an enterprise MLOps product. Case studies cover RCA embedded in an equipment maker's Jira workflow, field-service data across five countries (Yield Engineering Systems), automated daily RCA reports from a piston maker's equipment and process data, and VLM-based defect classification at a fab. Users are process, equipment and field-service engineers; VPC or on-prem / air-gapped.",
+      "size_class": "under_5m",
+      "founders": [
+        "Vivek Vishwakarma",
+        "Sainyam Galhotra"
+      ],
+      "named_customers": [
+        "Yield Engineering Systems"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Causal Intelligence Platform for semiconductor makers, toolmakers and field-service teams: links equipment, process, defect and service data in a knowledge graph, then uses causal AI agents to trace faults and excursions to their true root cause, recommend engineer-approved fixes and generate RCA reports.",
       "pricing": null
     },
     {
@@ -4630,6 +4872,97 @@
       "pricing": null
     },
     {
+      "id": "co_uptool",
+      "name": "Uptool",
+      "website": "https://uptool.com",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "process_planning",
+      "description_short": "San Mateo startup selling AI quoting software that turns RFQ emails, CAD files, drawings and BOMs into priced quotes for small U.S. machine and fab shops.",
+      "total_raised_usd": 6000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://uptool.com",
+          "title": "Uptool: AI-Powered Quoting for Machine & Fab Shops",
+          "publisher": "Uptool",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://uptool.com/company",
+          "title": "Uptool company page",
+          "publisher": "Uptool",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://uptool.com/pricing",
+          "title": "Uptool pricing",
+          "publisher": "Uptool",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://eclipse.capital/companies/uptool",
+          "title": "Eclipse portfolio: Uptool",
+          "publisher": "Eclipse",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.vcaonline.com/news/2026020415/uptool-launches-from-stealth-with-ai-platform-to-accelerate-u-s-manufacturing/",
+          "title": null,
+          "publisher": "Venture Capital Access Online",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pulse2.com/uptool-6-million-seed-funding-closed-for-helping-u-s-shops-quote-10x-faster",
+          "title": "Uptool: $6 Million Seed Funding Closed for Helping U.S. Shops Quote 10x Faster",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://3dprint.com/323862/uptool-emerges-from-stealth/",
+          "title": null,
+          "publisher": "3DPrint.com",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "RFQ-to-quote automation for job shops: connects to the shop's quoting inbox, gathers RFQ documents (CAD files, engineering drawings, BOMs) into a dashboard, captures operations and costs with material and operations calculators, applies shop rates and markups, and tracks revisions and customer conversations. Claims 90% of the RFQ-to-quote workflow automated and per-part quoting cut from 20 to 2 minutes. Users are estimators and owners at small and midsize machine and fabrication shops (supplier side). Roadmap per press: CRM and job tracking toward a shop operating system. Web app, no WhatsApp channel seen.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Benny Buller",
+        "Alex Huckstepp",
+        "Patricio Echagüe"
+      ],
+      "named_customers": [
+        "VelocityCNC",
+        "Becker",
+        "Valence",
+        "VTN",
+        "Bullray",
+        "M95"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Web platform for machine and fab shops that pulls incoming RFQs and their CAD files, drawings and BOMs into one dashboard, estimates operations, materials and cost, applies the shop's rates and markups to draft the quote, and tracks revisions and customer conversations; set-up takes about an hour.",
+      "pricing": "Free 1-week trial ('$0 for any U.S. shop < 100 ppl'); paid plan 'Starts at $195+ /month dependent on total employees & ITAR' (uptool.com/pricing)."
+    },
+    {
       "id": "co_vinci",
       "name": "Vinci",
       "website": "https://www.getvinci.ai/",
@@ -4767,6 +5100,73 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Pre-trained physics foundation model that ingests native design and layout files, meshes automatically and returns deterministic, solver-grade thermal, thermo-mechanical (warpage, stress) and convective-flow simulations at manufacturing resolution in minutes, behind the customer's firewall and without training on customer data. First market: semiconductors and electronics packaging.",
+      "pricing": null
+    },
+    {
+      "id": "co_workroom-automation",
+      "name": "Workroom Automation",
+      "website": "https://www.onworkroom.com/",
+      "hq_country": "IN",
+      "founded_year": 2022,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "Hyderabad startup building a connected factory platform whose AI planning engine turns high-mix demand into daily production, inventory and workforce plans and tracks execution.",
+      "total_raised_usd": 653044,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.onworkroom.com/",
+          "title": "Workroom (homepage)",
+          "publisher": "Workroom Automation",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.analyticsinsight.net/press-release/workroom-automation-raises-62-crore-in-seed-funding-led-by-equirus-innovatex-fund-to-build-the-operating-system-for-global-manufacturing",
+          "title": null,
+          "publisher": "Analytics Insight (press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.indianchemicalnews.com/digitization/workroom-automation-raises-rs-62-crore-to-revolutionize-manufacturing-with-ai-powered-factory-platform-29798",
+          "title": "Workroom Automation raises Rs. 6.2 crore to revolutionize manufacturing with AI-powered factory platform",
+          "publisher": "Indian Chemical News",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://news.ventureintelligence.com/private-equity/manufacturing-enabler-workroom-automation-raises-rs.6.2-cr-led-by-equirus-innovatex-fund",
+          "title": null,
+          "publisher": "Venture Intelligence",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Production planning and execution (MES-like) rather than design-to-manufacturing process planning: an AI planning engine for workstation, inventory and workforce planning that re-plans automatically on live constraints, plus production execution, traceability, workflow engine, web and shop-floor role-based apps, dashboards, forecasts and an integrations layer ('Factory OS'). Customers in tyres, stationery, intralogistics and consumer goods. No WhatsApp channel seen.",
+      "size_class": "under_5m",
+      "founders": [
+        "Abhinav Atthota",
+        "Rohan Agarwal"
+      ],
+      "named_customers": [
+        "Apollo Tyres",
+        "Hindustan Pencils",
+        "ALSTEF Group",
+        "Plumage"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Connected factory software for medium and large manufacturers: an AI planning engine that converts high-mix demand into optimised daily production plans and adjusts them to live constraints, with modules for inventory and workforce planning, production execution, part-level traceability and order tracking, and role-based apps for office and shop-floor teams.",
       "pricing": null
     }
   ]

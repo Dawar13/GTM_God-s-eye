@@ -1,0 +1,70 @@
+{
+  "key": "bloomberg-beta",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Bloomberg Beta",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as bloombergbeta.com, the early-stage venture fund funded by Bloomberg as sole limited partner (Global Venturing), with offices in San Francisco and New York per its public Manual repo. Not Bloomberg L.P.'s other corporate arms and not Bloomberg Philanthropies.",
+  "pages": [
+    { "url": "https://www.bloombergbeta.com", "title": "Bloomberg Beta", "publisher": "Bloomberg Beta", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://github.com/Bloomberg-Beta/Manual", "title": "Bloomberg Beta Manual", "publisher": "Bloomberg Beta (GitHub)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://globalventuring.com/corporate/fundraising/bloomber-beta-75m-fifth-fund/", "title": "Bloomberg puts up another $75m for venture investments", "publisher": "Global Venturing", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/vals-ai-raises-40-million-series-a-at-400-million-valuation-as-revenue-grows-8x/", "title": "Vals AI Raises $40 Million Series A At $400 Million Valuation As Revenue Grows 8x", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/protege-25-million-series-a-raised-for-expanding-ai-training-data-platform", "title": "Protege: $25 Million Series A Raised For Expanding AI Training Data Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/atolio-24-million-raised-for-expanding-ai-based-enterprise-search-platform", "title": "Atolio: $24 Million Raised For Expanding AI-Based Enterprise Search Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 2], "snippet": "Venture capital firm Bloomberg Beta has closed its fifth fund with $75m of capital from its sole limited partner" },
+    "website": { "value": "https://www.bloombergbeta.com", "pages": [0], "snippet": "We invest at early stages, in companies that make business work better." },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "Offices are in San Francisco (140 New Montgomery St., 22nd fl) and New York (731 Lexington Ave.)" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "San Francisco (140 New Montgomery St., 22nd fl) and New York (731 Lexington Ave.)" },
+    "stages": { "value": ["seed"], "pages": [1], "snippet": "$75M seed fund" },
+    "thesis_text": { "value": "Early-stage investor backing companies that make business work better; an opportunity fund follows on in companies it already backs.", "pages": [0, 1], "snippet": "We invest at early stages, in companies that make business work better." },
+    "stated_sectors": { "value": ["enterprise_saas", "ai_apps_agents"], "pages": [0], "snippet": "companies that make business work better" }
+  },
+  "funds": [
+    {
+      "name": "Bloomberg Beta Fund V",
+      "number": "V",
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2025-06-10",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "Venture capital firm Bloomberg Beta has closed its fifth fund with $75m of capital from its sole limited partner"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Vals AI", "website": null, "description": "Independent platform that tests frontier AI models on professional work tasks such as those done by lawyers, bankers, engineers and doctors.", "hq_country": null, "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-08", "date_precision": "month",
+      "amount_original": 40000000, "currency_original": "USD", "valuation_post_original": 400000000,
+      "leads": ["Andreessen Horowitz"], "participants": ["8VC", "Bloomberg Beta", "HRT Ventures", "Next Ladder Ventures"], "unspecified": [],
+      "pages": [3], "snippet": "Vals AI raised a $40 million Series A at a $400 million valuation"
+    },
+    {
+      "company": { "name": "Atolio", "website": null, "description": "Private, AI-driven enterprise search tool that connects information scattered across siloed internal systems; founded 2019.", "hq_country": null, "founded_year": 2019, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-09", "date_precision": "month",
+      "amount_original": 24000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Translink Capital"], "participants": ["IBM Ventures", "Bloomberg Beta", "Acorn Pacific Ventures", "Parameter Ventures"], "unspecified": [],
+      "pages": [5], "snippet": "the safe and secure way that enterprises connect siloed systems of information"
+    },
+    {
+      "company": { "name": "Protege", "website": null, "description": "Marketplace letting data owners give AI developers controlled access to proprietary data for AI training; over 100 data partners in healthcare and media.", "hq_country": null, "founded_year": null, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-08", "date_precision": "month",
+      "amount_original": 25000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Footwork"], "participants": ["CRV", "Bloomberg Beta", "Flex Capital", "Shaper Capital", "Liquid 2 Ventures"], "unspecified": [],
+      "pages": [4], "snippet": "a platform for the secure exchange of proprietary data for AI training"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Lead list's $75M funds from 2013, 2016 and 2019 not confirmed; only the fifth fund ($75M, announced 2025-06-10 via a podcast interview) was fetched. Fund V name/number comes from the article ('fifth fund'), not the firm.",
+    "Check size not stated on fetched pages. Stages recorded as seed only from 'seed fund'; the homepage says 'early stages'. Opportunity fund ($75M) invests later in existing portfolio companies.",
+    "HQ: the Manual lists both San Francisco and New York offices; San Francisco listed first. No application URL found; Manual says to reach out to team members individually.",
+    "Round dates are article dates at month precision (Vals AI: Pulse 2.0 dated Aug 15 2026, Sacra search result said Aug 13). A claimed Humans& seed participation was not confirmed (Crunchbase News article does not name Bloomberg Beta); Caplight Series A not confirmed either.",
+    "Company websites and HQs not on the fetched pages; left null."
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "key": "symphonic-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Symphonic Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as symphoniccapital.com (symphonic.vc redirects there), the pre-seed fund founded by Sydney Thomas, with a $13.5M debut fund announced 2025-04-10 (the $14M lead is this fund, rounded). Not Symbolic Capital, not Symphony Ventures.",
+  "pages": [
+    { "url": "https://www.symphoniccapital.com/", "title": "Symphonic Capital", "publisher": "Symphonic Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/symphonic-capital-13-5-million-debut-fund-launched/", "title": "Symphonic Capital: $13.5 Million Debut Fund Launched", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://businessofsandiego.substack.com/p/exclusive-sydney-thomas-san-diego", "title": "Exclusive: Sydney Thomas, San Diego VC Talks Raising $13M for Symphonic Capital", "publisher": "Business of San Diego", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fortune.com/2025/04/10/symphonic-capital-unveils-13-5-million-first-fund-to-back-digital-health-and-fintech-startups", "title": "Symphonic Capital unveils $13.5 million first fund to back digital health and fintech startups", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/lovu-health-8-million-closed-to-expand-ai-based-maternal-care-platform", "title": "Lovu Health: $8 Million Closed To Expand AI-Based Maternal Care Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/revelai-health-3-1-million-seed-funding-raised-for-scaling-ai-care-coordination", "title": "RevelAi Health: $3.1 Million Seed Funding Raised For Scaling AI Care Coordination", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/flourish-care-5-7-million-raised-to-make-doula-care-the-standard-in-maternal-health", "title": "Flourish Care: $5.7 Million Raised To Make Doula Care A Standard In Maternal Health", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Symphonic Capital closed a $13.5 million first fund" },
+    "website": { "value": "https://www.symphoniccapital.com/", "pages": [0], "snippet": "We raised $13.5M for our inaugural fund." },
+    "hq_city": { "value": "San Diego", "pages": [2], "snippet": "based in San Diego full-time" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "based in San Diego full-time" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 2], "snippet": "from pre-seed and beyond" },
+    "thesis_text": {
+      "value": "Pre-seed investor backing founders who redesign essential systems, starting with health and financial services, for underserved communities.",
+      "pages": [0, 3],
+      "snippet": "invest in companies solving problems for the 99%"
+    },
+    "stated_sectors": { "value": ["health_bio", "fintech"], "pages": [3], "snippet": "such foundational verticals" },
+    "application_url": { "value": "https://dealflow.symphoniccapital.com/apply", "pages": [0], "snippet": "dealflow.symphoniccapital.com/apply" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "dealflow.symphoniccapital.com/apply" }
+  },
+  "funds": [
+    {
+      "name": "Symphonic Capital Fund I",
+      "number": "I",
+      "size_original": 13500000,
+      "currency_original": "USD",
+      "close_date": "2025-04-10",
+      "date_precision": "day",
+      "pages": [1, 3],
+      "snippet": "Symphonic Capital closed a $13.5 million first fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Flourish Care", "website": "https://flourishcommunitycare.com/", "description": "Maternal health company building a reimbursed doula network integrated into insurance and clinical workflows.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-03", "date_precision": "month",
+      "amount_original": 5700000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Zeal Capital Partners"],
+      "participants": ["Create Health Ventures", "Collide Capital", "Rogue Women's Fund", "Symphonic Capital", "Slater Technology Fund", "Catalytic Impact Foundation", "Capita3"],
+      "unspecified": [],
+      "pages": [6],
+      "snippet": "Symphonic Capital, backing inclusive economic growth"
+    },
+    {
+      "company": { "name": "Lōvu Health", "website": "https://lovu.health/", "description": "Maternal care platform using AI and remote monitoring from before conception through two years postpartum.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A",
+      "date": "2025-09-10", "date_precision": "day",
+      "amount_original": 8000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["SJF Ventures"],
+      "participants": ["Rogue Women's Fund", "Symphonic Capital", "Emmeline Ventures", "Alumni Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "SJF Ventures (lead), Rogue Women's Fund, Symphonic Capital, Emmeline Ventures, and Alumni Ventures"
+    },
+    {
+      "company": { "name": "RevelAi Health", "website": "https://www.revelaihealth.com/", "description": "Conversational AI platform for musculoskeletal care: patient calls, triage, quality questionnaires and clinical documentation.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2025-06-19", "date_precision": "day",
+      "amount_original": 3100000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Ulu Ventures", "Symphonic Capital"],
+      "participants": ["Orthopedic VC", "Sand Hill Angels"],
+      "unspecified": [],
+      "pages": [5],
+      "snippet": "led by Ulu Ventures and Symphonic Capital"
+    }
+  ],
+  "conflicts": [
+    { "field": "fund size", "values": ["$13.5M (Pulse 2.0, Fortune, firm site)", "$14M (lead list)"], "chosen": "13500000", "reason": "Firm's own site and press agree on $13.5M; $14M looks like rounding." }
+  ],
+  "open_items": [
+    "HQ San Diego rests on one local press article that places the founder there full-time; the firm site states no HQ (search snippets mention Oakland elsewhere).",
+    "Check size not stated on any fetched page. Business Wire release returned HTTP 403.",
+    "Flourish Care date is the Pulse 2.0 publication date (2026-03-30) vs announcement dated 2026-03-23 per search listing; recorded as 2026-03. Lovu and RevelAi HQ not stated on fetched pages; RevelAi date varies (Apr 28 vs Jun 2025 in databases), Pulse 2.0 says June 19."
+  ]
+}
