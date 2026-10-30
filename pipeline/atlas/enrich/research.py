@@ -293,6 +293,7 @@ def _apply_investor(store: Store, inv: dict, f: dict) -> None:
     if {"pre_seed", "seed"} & set(inv["stages"]):
         inv["flags"] = [x for x in inv["flags"] if x != "not_early_stage_target_by_default"]
     if f["status"] == "inactive":
+        inv["flags"] = sorted({*inv["flags"], "inactive"})
         store.add_anomaly(
             SOURCE_ID,
             f["key"],

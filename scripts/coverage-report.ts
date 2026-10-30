@@ -30,7 +30,11 @@ const pct = (n: number, d: number) => (d ? `${Math.round((100 * n) / d)}%` : "�
 
 /** A round counts as sourced when at least one source is not a user-supplied list. */
 const sourced = (r: Round) => r.sources.some((s) => s.kind !== "user_supplied");
-const researched = (i: Investor) => i.sources.some((s) => s.kind !== "user_supplied");
+/**
+ * Researched = a research file supplied facts. A co-investor named only in
+ * someone else's round cites that page for its name alone, which isn't research.
+ */
+const researched = (i: Investor) => Object.keys(i.field_sources).some((f) => f !== "name");
 
 const FIELDS: [string, (i: Investor) => boolean][] = [
   ["type", (i) => i.type !== null],
@@ -88,8 +92,12 @@ async function main() {
   const b = tier("B");
   const aWestern = a.filter((i) => i.region === "western");
   const aIndia = a.filter((i) => i.region === "india");
-  const full = (i: Investor) => researched(i) && sourcedRounds(i) >= 8;
+  const active = (i: Investor) => !i.flags.includes("inactive");
+  const full = (i: Investor) => researched(i) && active(i) && sourcedRounds(i) >= 8;
   const shallow = (i: Investor) => researched(i) && sourcedRounds(i) >= 3;
+  // Tier B counts every profile (DECISIONS 2026-10-30): many small new funds have
+  // announced fewer than 3 deals, so profiles and 3-round profiles are shown apart.
+  const profiled = researched;
 
   const lines: string[] = [
     "# Coverage",
@@ -100,9 +108,10 @@ async function main() {
     "",
     "| Target | Now | Needed |",
     "|---|---:|---:|",
-    `| Tier A Western investors researched with ≥ 8 sourced rounds | ${aWestern.filter(full).length} | 60 |`,
-    `| Tier A India investors researched with ≥ 8 sourced rounds | ${aIndia.filter(full).length} | 10 |`,
-    `| Tier B investors researched (≥ 3 sourced rounds) | ${b.filter(shallow).length} | 200 |`,
+    `| Tier A Western investors researched with ≥ 8 sourced rounds (active) | ${aWestern.filter(full).length} | 60 |`,
+    `| Tier A India investors researched with ≥ 8 sourced rounds (active) | ${aIndia.filter(full).length} | 10 |`,
+    `| Tier B investors profiled | ${b.filter(profiled).length} | 200 |`,
+    `| … of which with ≥ 3 sourced rounds | ${b.filter(shallow).length} | — |`,
     `| Competitors profiled | ${competitors.length} | all of PROJECT_CONTEXT §7 |`,
     `| Rounds with a non-list source | ${rounds.filter(sourced).length} | 600 |`,
     `| Companies | ${companies.length + competitors.length} | 400 |`,

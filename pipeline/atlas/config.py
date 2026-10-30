@@ -111,6 +111,12 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("sbi", "sbi ventures"),
         ("ngp", "ngp capital"),
         ("ascend", "ascend venture capital"),
+        # Batch 7: parent vs venture arm, and stopword collisions between different firms.
+        ("google", "google ventures"),
+        ("coreweave", "coreweave ventures"),
+        ("scale capital", "scale venture partners"),
+        ("better capital", "better ventures"),
+        ("pioneer capital", "pioneer fund"),
     ]
 )
 

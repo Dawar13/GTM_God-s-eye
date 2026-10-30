@@ -43,7 +43,7 @@ File: `data/processed/investors.json`. A firm, fund manager or individual that i
 | `seed_list_count` | integer | yes | How many user seed lists named this investor |
 | `seed_source_ids` | array of string | yes | Seed lists that named this investor |
 | `seed_hints` | array of [SeedHint](#seedhint) | yes |  |
-| `flags` | array of `not_early_stage_target_by_default` | yes |  |
+| `flags` | array of `not_early_stage_target_by_default`, `inactive` | yes |  |
 
 ## Partner
 
@@ -423,7 +423,7 @@ FX rate applied (pipeline/atlas/fx.py)
 - **CompetitorLayer**: `design_intent`, `process_planning`, `plant_ops`, `quality_vision`, `autonomy_tooling`, `robotics`, `full_stack_factory`
 - **SizeClass**: `under_5m`, `from_5m_to_25m`, `from_25m_to_100m`, `from_100m_to_1b`, `over_1b`
 - **RevenueBasis**: `reported`, `none`
-- **InvestorFlag**: `not_early_stage_target_by_default`
+- **InvestorFlag**: `not_early_stage_target_by_default`, `inactive`
 - **FitFlag**: `conflict`, `sparse`
 - **YesNoUnknown**: `yes`, `no`, `unknown`
 - **ResearchTier**: `A`, `B`, `C`

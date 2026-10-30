@@ -604,7 +604,8 @@
             "items": {
               "type": "string",
               "enum": [
-                "not_early_stage_target_by_default"
+                "not_early_stage_target_by_default",
+                "inactive"
               ]
             }
           }

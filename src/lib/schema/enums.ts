@@ -117,7 +117,11 @@ export const RevenueBasis = z.enum(REVENUE_BASIS);
 export type RevenueBasis = z.infer<typeof RevenueBasis>;
 
 /** Record-level flags set by the pipeline. */
-export const INVESTOR_FLAGS = ["not_early_stage_target_by_default"] as const;
+export const INVESTOR_FLAGS = [
+  "not_early_stage_target_by_default",
+  // Research found no recent activity (e.g. venture pages gone, team left).
+  "inactive",
+] as const;
 export const InvestorFlag = z.enum(INVESTOR_FLAGS);
 export type InvestorFlag = z.infer<typeof InvestorFlag>;
 
