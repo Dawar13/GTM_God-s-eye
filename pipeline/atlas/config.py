@@ -133,6 +133,31 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("together fund", "ventures together"),
         ("fusion fund", "fusion vc"),
         ("tower research capital", "tower research ventures"),  # parent vs venture arm
+        # Final batch: different firms that share a key or match fuzzily.
+        ("creator ventures", "the creator fund"),
+        ("kindred ventures", "kindred capital"),
+        ("swell vc", "swell partners"),
+        ("january ventures", "january capital"),
+        ("longevity fund", "longevity venture partners"),
+        ("origin ventures", "origins fund"),
+        ("spartan", "sparta group llc"),
+        ("flourish ventures", "1flourish"),
+        ("future fund", "future ventures"),
+        ("latitude", "latitud ventures"),
+        ("shaper capital", "shapers"),
+        ("newark venture partners", "newmark"),
+        ("advantage capital", "advantage vc"),
+        ("neon fund", "neon ventures"),
+        ("outset capital", "outset ventures"),
+        # Parent vs venture arm.
+        ("maverick ventures", "maverick capital"),
+        ("galaxy ventures", "galaxy"),
+        ("obos", "obos ventures"),
+        # Bare or near names that fit more than one firm.
+        ("neo", "neo ventures"),
+        ("gsr ventures", "gsr"),
+        ("valkyrie", "valkyrie ventures"),
+        ("daybreak", "daybreak ventures"),  # research ruled out a Hague "Daybreak Ventures"
     ]
 )
 
