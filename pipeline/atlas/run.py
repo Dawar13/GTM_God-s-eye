@@ -18,7 +18,7 @@ from atlas.export.write_json import (
     write_document,
 )
 from atlas.geo import region_for_location
-from atlas.ingest import goldman_pdf, seeds
+from atlas.ingest import accelerators, goldman_pdf, seeds
 from atlas.model import Store
 from atlas.names import firm_from_fund_name
 from atlas.resolve import InvestorResolver
@@ -88,6 +88,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
     research_stats = research_files.apply(store, loaded, {})
     if research:
         set_tiers(store, loaded)
+    store.programs = accelerators.build(store)
 
     regions = build.region_counts(store)
     investors = store.investors.values()
@@ -138,6 +139,7 @@ def export(store: Store, generated_at: str, analytics: dict) -> dict[str, int]:
         "rounds": list(store.rounds.values()),
         "benchmarks": store.benchmarks,
         "legal_notes": store.legal_notes,
+        "accelerator_programs": store.programs,
         "fit_features": store.fit_features,
         "layout_thesis": analytics["layout_thesis"],
         "clusters": analytics["clusters"],

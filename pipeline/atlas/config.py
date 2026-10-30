@@ -27,6 +27,7 @@ COMPANY_DOMAIN_ALIASES = {
 GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
 SEED_ROUNDS_CSV = SEED_DIR / "seed_rounds.csv"
+ACCELERATORS_CSV = SEED_DIR / "accelerators_2026.csv"
 
 SCHEMA_VERSION = 2
 

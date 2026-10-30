@@ -112,6 +112,13 @@ export const INVESTOR_VIEWS = [
       "Investors linked to the companies they backed, with ego, co-investment and competitor views.",
     phaseNote: "Phase 1 builds the graph and its metrics; Phase 2 draws it.",
   },
+  {
+    slug: "accelerators",
+    label: "Accelerators",
+    summary:
+      "Accelerator and residency programmes with their headline terms, linked to the firms that run them.",
+    phaseNote: "Phase 1 lists the programmes and terms; Phase 2 adds filters and term comparison.",
+  },
 ] as const satisfies readonly SubView[];
 
 export function findSubView<T extends SubView>(views: readonly T[], slug: string): T | undefined {

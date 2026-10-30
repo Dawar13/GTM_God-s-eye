@@ -3,7 +3,8 @@ import { Confidence, DatePrecision, SourceKind } from "./enums";
 
 const SLUG = "[a-z0-9][a-z0-9_-]*";
 
-type IdPrefix = "inv" | "fund" | "co" | "rnd" | "anom" | "merge" | "ptr" | "bm" | "legal" | "fit";
+type IdPrefix =
+  "inv" | "fund" | "co" | "rnd" | "anom" | "merge" | "ptr" | "bm" | "legal" | "fit" | "prog";
 
 /** Record ids are `<prefix>_<slug>`; see pipeline/atlas/ids.py for how they are built. */
 export const idOf = (prefix: IdPrefix) =>

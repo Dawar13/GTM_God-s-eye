@@ -85,6 +85,13 @@ export async function getLegalNotes(): Promise<DatasetRecord<"legal_notes">[]> {
   return (await loadDataset("legal_notes")).records;
 }
 
+export async function getAcceleratorPrograms(): Promise<
+  DatasetRecord<"accelerator_programs">[]
+> {
+  "use cache";
+  return (await loadDataset("accelerator_programs")).records;
+}
+
 export async function getFitFeatures(): Promise<DatasetRecord<"fit_features">[]> {
   "use cache";
   return (await loadDataset("fit_features")).records;

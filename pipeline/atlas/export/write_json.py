@@ -18,6 +18,7 @@ DATASET_NAMES = (
     "rounds",
     "benchmarks",
     "legal_notes",
+    "accelerator_programs",
     "fit_features",
     "layout_thesis",
     "clusters",

@@ -168,6 +168,10 @@ Delete `src/app/debug/`: its connector table becomes a panel in Network (§7), a
 
 ---
 
+### 4.1 Accelerators (`/investors/accelerators`)
+
+Added after Phase 1 at the user's request: 30 programmes from a user-supplied list (`accelerator_programs.json`), terms as listed and unverified. Replace the plain table with the Directory's table primitives: sort by headline USD, first check and equity; filter by equity-free and by linked tier; open the linked investor in the inspector; label every term "as listed" with the list as its source. Unlinked programmes (7) show "—" for firm with the reason in the inspector.
+
 ## 5. VC math calculators (`/vc-math/[tool]`)
 
 All math comes from `src/lib/finance/`; **no arithmetic on money, shares or percentages in components** beyond formatting. Each calculator has inputs (sliders paired with number inputs), a live chart, a results table, a "Show the formula" toggle, and one preloaded worked example. Move the PHASE_1 §2.2 inputs out of `tests/finance/worked-examples.test.ts` into `src/lib/finance/examples.ts`, imported by both the tests and the calculators, so every preloaded example is a tested one. Engine `RangeError`s become inline messages next to the input at fault, never a crash. Input schemas live in `src/lib/schema/calculators.ts` (Zod), shared with the share codec in §11; run `pnpm gen:schema` after adding them.

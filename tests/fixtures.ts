@@ -1,4 +1,12 @@
-import type { Company, Competitor, Fund, Investor, Round, Source } from "@/lib/schema";
+import type {
+  AcceleratorProgram,
+  Company,
+  Competitor,
+  Fund,
+  Investor,
+  Round,
+  Source,
+} from "@/lib/schema";
 
 export const source: Source = {
   url: "user_supplied:goldman_sub200m_funds",
@@ -151,3 +159,29 @@ export function round(overrides: Partial<Round> = {}): Round {
     ...overrides,
   };
 }
+
+export const program = (over: Partial<AcceleratorProgram> = {}): AcceleratorProgram => ({
+  id: "prog_y-combinator",
+  name: "Y Combinator",
+  rank_in_list: 1,
+  investor_id: "inv_root-ventures",
+  terms_as_listed: "$500k: $125k for 7% + $375k MFN SAFE",
+  headline_amount: 500_000,
+  currency: "USD",
+  headline_usd: 500_000,
+  upfront_amount: 125_000,
+  upfront_equity_pct: 7,
+  equity_free: null,
+  fx: null,
+  sources: [
+    {
+      url: "user_supplied:accelerators_2026_list",
+      title: "accelerators_2026_list",
+      publisher: null,
+      retrieved_at: "2026-10-30",
+      kind: "user_supplied",
+    },
+  ],
+  confidence: "low",
+  ...over,
+});

@@ -166,6 +166,7 @@ class Store:
     rounds: dict[str, dict] = field(default_factory=dict)
     benchmarks: list[dict] = field(default_factory=list)
     legal_notes: list[dict] = field(default_factory=list)
+    programs: list[dict] = field(default_factory=list)
     fit_features: list[dict] = field(default_factory=list)
     # Not exported: inputs the analytics need (investor id -> sectors the firm states).
     stated_sectors: dict[str, list[str]] = field(default_factory=dict)

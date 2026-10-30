@@ -199,3 +199,10 @@ Phase 0 open questions are still unanswered; Phase 1 proceeds on the stated defa
 - See `docs/PHASE_1_REPORT.md`: exit checklist, counts, top 25 by fit, clusters, surprises, gaps and open questions. Self-audit precision 96.7% (one wrong fact, removed).
 - Short of target: Tier B 175 of 200 profiled (research stopped early at the user's request).
 - `docs/PHASE_2.md` is drafted. Phase 2 does not start until the human has reviewed Phase 1, answered the open questions, and merged `phase-1`.
+
+## 2026-10-30 — Accelerators tab (user request after Phase 1)
+
+- **New dataset `accelerator_programs`** from a user-supplied list of 30 accelerators (`data/seed/accelerators_2026.csv`, received 2026-10-30). Terms are kept exactly as listed and marked unverified (`confidence: low`, source `user_supplied:accelerators_2026_list`); the numeric columns (headline amount, currency, first check, equity) were transcribed from each terms string, and amounts convert to USD at the 2026 rate.
+- **Firm links only on an exact, unique name match** (name or alias key). 23 of 30 link; Alchemist, Founders Inc., Startup Wise Guys, Bethnal Green Ventures and ERA have no investor record, and "Accel", "Neo" and "Google" each fit more than one record, so they stay unlinked rather than guessed.
+- **No new research.** Where our Tier A/B research already recorded a programme's terms (YC, Techstars, South Park Commons, Entrepreneur First, Conviction Embed, Antler US), they agree with the list; the tab shows the list's wording.
+- **View:** `/investors/accelerators`, a plain table like the other Phase 1 sanity views; Phase 2 adds filters and term comparison.

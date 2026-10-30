@@ -9,6 +9,7 @@ import {
   RoundStage,
 } from "./enums";
 import {
+  FxUsed,
   InvestorId,
   IsoDate,
   PartialDate,
@@ -63,6 +64,39 @@ export const LegalNote = z
   })
   .describe("A sourced fact about entity structure or Indian investment rules");
 export type LegalNote = z.infer<typeof LegalNote>;
+
+export const AcceleratorProgram = z
+  .strictObject({
+    id: idOf("prog"),
+    name: z.string().min(1),
+    rank_in_list: z.number().int().positive().nullable().describe("Position in the source list"),
+    investor_id: InvestorId.nullable().describe(
+      "The firm that runs it, when its name matches one investor record exactly",
+    ),
+    terms_as_listed: z
+      .string()
+      .describe("Terms exactly as the source list states them; unverified"),
+    headline_amount: z
+      .number()
+      .nonnegative()
+      .nullable()
+      .describe("Largest total the listed terms state, in `currency`"),
+    currency: z.string().length(3).nullable(),
+    headline_usd: Usd.nullable().describe("headline_amount in USD at the list year's rate"),
+    upfront_amount: z.number().nonnegative().nullable().describe("First check, in `currency`"),
+    upfront_equity_pct: z
+      .number()
+      .min(0)
+      .max(100)
+      .nullable()
+      .describe("Equity the listed terms state for the first check"),
+    equity_free: z.boolean().nullable().describe("True only when the list says equity-free"),
+    fx: FxUsed.nullable(),
+    sources: Sources,
+    confidence: RecordConfidence,
+  })
+  .describe("An accelerator or residency programme and its terms as a source lists them");
+export type AcceleratorProgram = z.infer<typeof AcceleratorProgram>;
 
 const Feature = derivedOf(z.number().min(0).max(1)).nullable();
 

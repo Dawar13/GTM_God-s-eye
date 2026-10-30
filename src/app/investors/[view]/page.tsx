@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CanvasPlaceholder, EmptyState } from "@/components/shell/EmptyState";
 import { INVESTOR_VIEWS, findSubView } from "@/lib/nav";
+import { Accelerators } from "./accelerators";
 import { Directory } from "./directory";
 
 type Params = PageProps<"/investors/[view]">["params"];
@@ -31,5 +32,6 @@ async function InvestorView({ params }: { params: Params }) {
   const view = findSubView(INVESTOR_VIEWS, (await params).view);
   if (!view) notFound();
   if (view.slug === "directory") return <Directory />;
+  if (view.slug === "accelerators") return <Accelerators />;
   return <EmptyState phaseNote={view.phaseNote}>{view.summary}</EmptyState>;
 }
