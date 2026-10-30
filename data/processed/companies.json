@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:24:38+00:00",
+  "generated_at": "2026-10-30T07:28:39+00:00",
   "records": [
     {
       "id": "co_acko",
@@ -314,6 +314,43 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_agnikul-cosmos",
+      "name": "Agnikul Cosmos",
+      "website": "https://agnikul.in",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "space",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Chennai maker of small-satellite launch vehicles built around 3D-printed rocket engines.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/funding/spacetech-startup-agnikul-cosmos-raises-rs-150-crore-at-500-million-valuation/articleshow/125502954.cms",
+          "title": "Spacetech startup Agnikul Cosmos raises $17 million at $500 million valuation",
+          "publisher": "The Economic Times",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_ahammune-biosciences",
@@ -2307,6 +2344,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_breathe-esg",
+      "name": "Breathe ESG",
+      "website": null,
+      "hq_country": null,
+      "founded_year": 2022,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "SaaS for enterprise sustainability (ESG) management.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/funding/breathe-esg-raises-rs-2-6-core-in-funding-led-by-100x-vc/articleshow/105208015.cms",
+          "title": "Breathe ESG raises Rs 2.6 core in funding led by 100X.VC",
+          "publisher": "The Economic Times",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "founded_year": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_broome-ai",
       "name": "Broome AI",
       "website": "https://www.broome.ai/",
@@ -2727,6 +2798,54 @@
       "confidence": "high"
     },
     {
+      "id": "co_cellarim-labs",
+      "name": "Cellarim Labs",
+      "website": "https://www.cellarim.com",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "Bengaluru biomanufacturer using cell-free enzyme processes to make cosmetic actives such as hyaluronic acid.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://yourstory.com/2025/01/100xvc-invests-27m-18-startups-12th-cohort",
+          "title": "100X.VC invests $2.7M in 18 startups for its 12th cohort",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "co_celleste-bio",
       "name": "Celleste Bio",
       "website": "https://celleste-bio.com/",
@@ -3064,6 +3183,54 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "co_clodexa",
+      "name": "Clodexa",
+      "website": "https://clodexa.com",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "source",
+      "layer": null,
+      "description_short": "AI sales-intelligence tool that surfaces buyers and buying signals and syncs them to the CRM.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://yourstory.com/2025/01/100xvc-invests-27m-18-startups-12th-cohort",
+          "title": "100X.VC invests $2.7M in 18 startups for its 12th cohort",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0,
+          1
+        ],
+        "description_short": [
+          0,
+          1
+        ],
+        "hq_country": [
+          0,
+          1
+        ],
+        "sector": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -4245,6 +4412,43 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_dualite",
+      "name": "Dualite",
+      "website": "https://dualite.dev",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI app builder that turns ideas into web and mobile apps without code, plus expert-guided builds.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_dusty-robotics",
@@ -9324,6 +9528,40 @@
       "confidence": "high"
     },
     {
+      "id": "co_numberlabs",
+      "name": "Numberlabs",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI software that automates finance operations for CFOs.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_numocity",
       "name": "Numocity",
       "website": "https://www.numocity.com/",
@@ -10568,6 +10806,43 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_playsuper",
+      "name": "PlaySuper",
+      "website": "https://playsuper.ai",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Platform for mobile-game studios that links in-game currency to brand rewards to lift retention and revenue.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_pocket",
@@ -12644,6 +12919,43 @@
       "confidence": "high"
     },
     {
+      "id": "co_scoutflo",
+      "name": "Scoutflo",
+      "website": "https://scoutflo.com",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "dev_tools",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI site-reliability agent for incident response and debugging; described at investment as a cloud management platform for developers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_sedemac-mechatronics",
       "name": "Sedemac Mechatronics",
       "website": "https://www.sedemac.com",
@@ -12694,6 +13006,40 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_selkea",
+      "name": "Selkea",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Compliance-automation software for banks, financial services and insurers.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_sereact",
@@ -13331,6 +13677,43 @@
       "confidence": "low"
     },
     {
+      "id": "co_supaboard",
+      "name": "Supaboard",
+      "website": "https://supaboard.ai",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "ai_apps_agents",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "AI analyst agent that queries a company's own database and produces dashboards, reports and alerts.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ],
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "co_supply-pay",
       "name": "Supply Pay",
       "website": "https://supplypay.io/",
@@ -13542,6 +13925,40 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "co_telescope",
+      "name": "Telescope",
+      "website": null,
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": null,
+      "description_short": "Data visualisation and analytics software.",
+      "total_raised_usd": null,
+      "is_competitor": false,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "description_short": [
+          0
+        ],
+        "hq_country": [
+          0
+        ],
+        "sector": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "co_teradar",

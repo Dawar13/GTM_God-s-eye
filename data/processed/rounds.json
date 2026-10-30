@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:24:38+00:00",
+  "generated_at": "2026-10-30T07:28:39+00:00",
   "records": [
     {
       "id": "rnd_acko_2018-05_undisclosed",
@@ -334,6 +334,49 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_agnikul-cosmos_2025-11_undisclosed",
+      "company_id": "co_agnikul-cosmos",
+      "date": "2025-11-22",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "funding round",
+      "amount_usd": 17000000,
+      "amount_original": 17000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [
+        "inv_100x-vc",
+        "inv_advenza-global-limited",
+        "inv_artha-venture-fund",
+        "inv_atharva-green-ecotech-llp",
+        "inv_hdfc-bank",
+        "inv_prathithi-ventures"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/funding/spacetech-startup-agnikul-cosmos-raises-rs-150-crore-at-500-million-valuation/articleshow/125502954.cms",
+          "title": "Spacetech startup Agnikul Cosmos raises $17 million at $500 million valuation",
+          "publisher": "The Economic Times",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_ahammune-biosciences_2021-04_series_a",
       "company_id": "co_ahammune-biosciences",
       "date": "2021-04-27",
@@ -496,7 +539,7 @@
         "inv_a91-partners",
         "inv_asha-ventures",
         "inv_catamaran-ventures",
-        "inv_pratithi-growth-fund",
+        "inv_prathithi-ventures",
         "inv_rainmatter",
         "inv_waterfield-fund"
       ],
@@ -3235,6 +3278,50 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_breathe-esg_2023-11_pre_seed",
+      "company_id": "co_breathe-esg",
+      "date": "2023-11-14",
+      "date_precision": "day",
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed funding round",
+      "amount_usd": 315000,
+      "amount_original": 315000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "participant_investor_ids": [
+        "inv_hyderabad-angels",
+        "inv_kanj-realty-ventures",
+        "inv_pradeep-lala",
+        "inv_prashant-naik",
+        "inv_vipul-jain"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://economictimes.indiatimes.com/tech/funding/breathe-esg-raises-rs-2-6-core-in-funding-led-by-100x-vc/articleshow/105208015.cms",
+          "title": "Breathe ESG raises Rs 2.6 core in funding led by 100X.VC",
+          "publisher": "The Economic Times",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_broome-ai_2026-03_pre_seed",
       "company_id": "co_broome-ai",
       "date": "2026-03-11",
@@ -3694,6 +3781,57 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_cellarim-labs_2025-01_undisclosed",
+      "company_id": "co_cellarim-labs",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://yourstory.com/2025/01/100xvc-invests-27m-18-startups-12th-cohort",
+          "title": "100X.VC invests $2.7M in 18 startups for its 12th cohort",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_celleste-bio_2024-12_seed",
       "company_id": "co_celleste-bio",
       "date": "2024-12-05",
@@ -4039,6 +4177,57 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_clodexa_2025-01_undisclosed",
+      "company_id": "co_clodexa",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://yourstory.com/2025/01/100xvc-invests-27m-18-startups-12th-cohort",
+          "title": "100X.VC invests $2.7M in 18 startups for its 12th cohort",
+          "publisher": "YourStory",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -5845,6 +6034,48 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_dualite_2025-01_undisclosed",
+      "company_id": "co_dualite",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "rnd_dusty-robotics_2021-06_series_a",
@@ -9672,7 +9903,7 @@
       "participant_investor_ids": [
         "inv_aditya-vuchi",
         "inv_alakh",
-        "inv_hyderabad-angels-fund",
+        "inv_hyderabad-angels",
         "inv_prateek",
         "inv_seedstars-international"
       ],
@@ -13804,6 +14035,48 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_numberlabs_2025-01_undisclosed",
+      "company_id": "co_numberlabs",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_numocity_2020-01_undisclosed",
       "company_id": "co_numocity",
       "date": "2020-01-13",
@@ -15324,6 +15597,48 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_playsuper_2025-01_undisclosed",
+      "company_id": "co_playsuper",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "rnd_pocket_2026-03_pre_seed",
@@ -17799,6 +18114,48 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_scoutflo_2025-01_undisclosed",
+      "company_id": "co_scoutflo",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_sedemac-mechatronics_2025-04_undisclosed",
       "company_id": "co_sedemac-mechatronics",
       "date": "2025-04",
@@ -18154,6 +18511,48 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_selkea_2025-01_undisclosed",
+      "company_id": "co_selkea",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "rnd_sereact_2025-01_series_a",
@@ -18947,6 +19346,48 @@
       "confidence": "medium"
     },
     {
+      "id": "rnd_supaboard_2025-01_undisclosed",
+      "company_id": "co_supaboard",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_supply-pay_2025-04_pre_seed",
       "company_id": "co_supply-pay",
       "date": "2025-04-02",
@@ -19352,6 +19793,48 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_telescope_2025-01_undisclosed",
+      "company_id": "co_telescope",
+      "date": "2025-01",
+      "date_precision": "month",
+      "stage": "undisclosed",
+      "stage_raw": "Class 12 cohort",
+      "amount_usd": 143459,
+      "amount_original": 12500000,
+      "currency_original": "INR",
+      "fx": {
+        "rate_to_usd": 0.011476708021071237,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_100x-vc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/100xvc-invests-usd-27-mn-in-18-startups-in-its-12th-cohort/485768",
+          "title": "100X.VC Invests USD 2.7 Mn in 18 Startups in Its 12th Cohort",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "rnd_teradar_2025-11_series_b",

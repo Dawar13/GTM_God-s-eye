@@ -1,7 +1,45 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:24:38+00:00",
+  "generated_at": "2026-10-30T07:28:39+00:00",
   "records": [
+    {
+      "id": "fund_100x-vc_undated",
+      "investor_id": "inv_100x-vc",
+      "name": "100X.VC INR 125 Cr fund (announced Apr 2022)",
+      "number": null,
+      "size_usd": null,
+      "currency_original": "INR",
+      "size_original": 1250000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/sanjay-mehta-led-100x-vc-unveils-10-startups-joining-its-seventh-cohort",
+          "title": "Sanjay Mehta-Led 100X.VC Unveils 10 Startups Joining Its Seventh Cohort",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/100x-vc-to-invest-inr-125-cr-in-100-early-stage-startups-this-year",
+          "title": "100X.VC To Invest INR 125 Cr In 100 Early-Stage Startups This Year",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0,
+          1
+        ]
+      },
+      "confidence": "medium"
+    },
     {
       "id": "fund_10d_ii",
       "investor_id": "inv_10d",

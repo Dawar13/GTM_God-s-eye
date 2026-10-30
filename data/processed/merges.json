@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:24:38+00:00",
+  "generated_at": "2026-10-30T07:28:39+00:00",
   "records": [
     {
       "id": "merge_0001",
@@ -1402,6 +1402,39 @@
     },
     {
       "id": "merge_0127",
+      "investor_id": "inv_artha-venture-fund",
+      "kept_name": "Artha Venture Fund",
+      "merged_name": "Artha Select Fund",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0128",
+      "investor_id": "inv_prathithi-ventures",
+      "kept_name": "Prathithi Ventures",
+      "merged_name": "Pratithi Growth Fund",
+      "method": "fuzzy",
+      "score": 94.1,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0129",
+      "investor_id": "inv_hyderabad-angels",
+      "kept_name": "Hyderabad Angels",
+      "merged_name": "Hyderabad Angels Fund",
+      "method": "normalised_name",
+      "score": null,
+      "source_ids": [
+        "research"
+      ]
+    },
+    {
+      "id": "merge_0130",
       "investor_id": "inv_madrona",
       "kept_name": "Madrona",
       "merged_name": "Madrona Venture Group",
@@ -1412,7 +1445,7 @@
       ]
     },
     {
-      "id": "merge_0128",
+      "id": "merge_0131",
       "investor_id": "inv_entrepreneurs-first",
       "kept_name": "Entrepreneurs First",
       "merged_name": "Entrepreneur First",
@@ -1423,7 +1456,7 @@
       ]
     },
     {
-      "id": "merge_0129",
+      "id": "merge_0132",
       "investor_id": "inv_insight",
       "kept_name": "Insight",
       "merged_name": "Insight Partners",
@@ -1434,7 +1467,7 @@
       ]
     },
     {
-      "id": "merge_0130",
+      "id": "merge_0133",
       "investor_id": "inv_hanabi",
       "kept_name": "Hanabi",
       "merged_name": "Hanabi Capital",
@@ -1445,7 +1478,7 @@
       ]
     },
     {
-      "id": "merge_0131",
+      "id": "merge_0134",
       "investor_id": "inv_stepstone",
       "kept_name": "StepStone",
       "merged_name": "StepStone Group",
@@ -1456,7 +1489,7 @@
       ]
     },
     {
-      "id": "merge_0132",
+      "id": "merge_0135",
       "investor_id": "inv_prosus",
       "kept_name": "Prosus",
       "merged_name": "Prosus Ventures",
@@ -1467,7 +1500,7 @@
       ]
     },
     {
-      "id": "merge_0133",
+      "id": "merge_0136",
       "investor_id": "inv_alpha-square",
       "kept_name": "Alpha Square",
       "merged_name": "Alpha Square Group",
@@ -1478,7 +1511,7 @@
       ]
     },
     {
-      "id": "merge_0134",
+      "id": "merge_0137",
       "investor_id": "inv_prysm",
       "kept_name": "Prysm",
       "merged_name": "Prysm Capital",
@@ -1489,7 +1522,7 @@
       ]
     },
     {
-      "id": "merge_0135",
+      "id": "merge_0138",
       "investor_id": "inv_plug-and-play",
       "kept_name": "Plug and Play",
       "merged_name": "Plug and Play VC",
@@ -1500,7 +1533,7 @@
       ]
     },
     {
-      "id": "merge_0136",
+      "id": "merge_0139",
       "investor_id": "inv_lightscape",
       "kept_name": "Lightscape",
       "merged_name": "Lightscape Partners",
@@ -1511,7 +1544,7 @@
       ]
     },
     {
-      "id": "merge_0137",
+      "id": "merge_0140",
       "investor_id": "inv_overmatch-ventures",
       "kept_name": "Overmatch Ventures",
       "merged_name": "Overmatch",
@@ -1522,7 +1555,7 @@
       ]
     },
     {
-      "id": "merge_0138",
+      "id": "merge_0141",
       "investor_id": "inv_abstract",
       "kept_name": "Abstract",
       "merged_name": "Abstract Ventures",
@@ -1533,7 +1566,7 @@
       ]
     },
     {
-      "id": "merge_0139",
+      "id": "merge_0142",
       "investor_id": "inv_taiwania",
       "kept_name": "Taiwania",
       "merged_name": "Taiwania Capital",
@@ -1544,7 +1577,7 @@
       ]
     },
     {
-      "id": "merge_0140",
+      "id": "merge_0143",
       "investor_id": "inv_up-partners",
       "kept_name": "Up Partners",
       "merged_name": "UP.Partners",
@@ -1555,7 +1588,7 @@
       ]
     },
     {
-      "id": "merge_0141",
+      "id": "merge_0144",
       "investor_id": "inv_outlander-ventures",
       "kept_name": "Outlander Ventures",
       "merged_name": "Outlander VC",
@@ -1566,7 +1599,7 @@
       ]
     },
     {
-      "id": "merge_0142",
+      "id": "merge_0145",
       "investor_id": "inv_tiger-global",
       "kept_name": "Tiger Global",
       "merged_name": "Tiger Global Management",
@@ -1577,7 +1610,7 @@
       ]
     },
     {
-      "id": "merge_0143",
+      "id": "merge_0146",
       "investor_id": "inv_saic",
       "kept_name": "SAIC",
       "merged_name": "SAIC Ventures",
@@ -1588,7 +1621,7 @@
       ]
     },
     {
-      "id": "merge_0144",
+      "id": "merge_0147",
       "investor_id": "inv_vanderbilt-universitys-endowment",
       "kept_name": "Vanderbilt University’s endowment",
       "merged_name": "Vanderbilt University's endowment",
@@ -1599,7 +1632,7 @@
       ]
     },
     {
-      "id": "merge_0145",
+      "id": "merge_0148",
       "investor_id": "inv_decisive-point-ventures",
       "kept_name": "Decisive Point Ventures",
       "merged_name": "Decisive Point",
@@ -1610,7 +1643,7 @@
       ]
     },
     {
-      "id": "merge_0146",
+      "id": "merge_0149",
       "investor_id": "inv_bluehill-capital",
       "kept_name": "Bluehill Capital",
       "merged_name": "BlueHill Capital",
@@ -1621,7 +1654,7 @@
       ]
     },
     {
-      "id": "merge_0147",
+      "id": "merge_0150",
       "investor_id": "inv_bosch",
       "kept_name": "Bosch",
       "merged_name": "Bosch Ventures",
@@ -1632,7 +1665,7 @@
       ]
     },
     {
-      "id": "merge_0148",
+      "id": "merge_0151",
       "investor_id": "inv_radius-capital",
       "kept_name": "Radius Capital",
       "merged_name": "Radius",
@@ -1643,7 +1676,7 @@
       ]
     },
     {
-      "id": "merge_0149",
+      "id": "merge_0152",
       "investor_id": "inv_alkeon-capital-management",
       "kept_name": "Alkeon Capital Management",
       "merged_name": "Alkeon Capital",
@@ -1654,7 +1687,7 @@
       ]
     },
     {
-      "id": "merge_0150",
+      "id": "merge_0153",
       "investor_id": "inv_wcm",
       "kept_name": "WCM",
       "merged_name": "WCM Investment Management",
@@ -1665,7 +1698,7 @@
       ]
     },
     {
-      "id": "merge_0151",
+      "id": "merge_0154",
       "investor_id": "inv_orios",
       "kept_name": "Orios",
       "merged_name": "Orios Venture Partners",
@@ -1676,7 +1709,7 @@
       ]
     },
     {
-      "id": "merge_0152",
+      "id": "merge_0155",
       "investor_id": "inv_altira",
       "kept_name": "Altira",
       "merged_name": "Altira Group",

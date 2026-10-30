@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T07:24:38+00:00",
+  "generated_at": "2026-10-30T07:28:39+00:00",
   "records": [
     {
       "id": "fit_100-unicorns",
@@ -29,6 +29,53 @@
       "flags": [
         "sparse"
       ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_100x-vc",
+      "investor_id": "inv_100x-vc",
+      "features": {
+        "thesis": {
+          "value": 0.190476,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.10",
+            "ai weight 0.19"
+          ]
+        },
+        "stage": {
+          "value": 1.0,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: pre_seed"
+          ]
+        },
+        "check": {
+          "value": 1.0,
+          "method": "check range vs raise of $1,000,000 (assumption); leads +0.2",
+          "inputs": [
+            "check 131662–131662",
+            "leads True"
+          ]
+        },
+        "adjacency": {
+          "value": 0.283469,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 11 rounds"
+          ]
+        },
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders yes"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [],
       "raise_size_usd": 1000000
     },
     {
@@ -2037,6 +2084,35 @@
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
             "industrial_affinity 0.50",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_advenza-global-limited",
+      "investor_id": "inv_advenza-global-limited",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
             "ai weight 0.00"
           ]
         },
@@ -5098,11 +5174,11 @@
       "investor_id": "inv_artha-venture-fund",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.166666,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
             "industrial_affinity 0.00",
-            "ai weight 1.00"
+            "ai weight 0.33"
           ]
         },
         "stage": null,
@@ -5111,7 +5187,7 @@
           "value": 0.0,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 1 rounds"
+            "0 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -5499,6 +5575,35 @@
             "latest fund 13000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_atharva-green-ecotech-llp",
+      "investor_id": "inv_atharva-green-ecotech-llp",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -21683,6 +21788,35 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_hdfc-bank",
+      "investor_id": "inv_hdfc-bank",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_health-enterprise-partners",
       "investor_id": "inv_health-enterprise-partners",
       "features": {
@@ -22830,15 +22964,15 @@
       "raise_size_usd": 1000000
     },
     {
-      "id": "fit_hyderabad-angels-fund",
-      "investor_id": "inv_hyderabad-angels-fund",
+      "id": "fit_hyderabad-angels",
+      "investor_id": "inv_hyderabad-angels",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.333334,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
             "industrial_affinity 0.00",
-            "ai weight 1.00"
+            "ai weight 0.67"
           ]
         },
         "stage": null,
@@ -22847,7 +22981,7 @@
           "value": 0.0,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 1 rounds"
+            "0 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -26193,6 +26327,35 @@
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
             "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_kanj-realty-ventures",
+      "investor_id": "inv_kanj-realty-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
           ]
         },
         "geography": null,
@@ -36208,6 +36371,64 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_pradeep-lala",
+      "investor_id": "inv_pradeep-lala",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_prashant-naik",
+      "investor_id": "inv_prashant-naik",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_prateek",
       "investor_id": "inv_prateek",
       "features": {
@@ -36237,8 +36458,8 @@
       "raise_size_usd": 1000000
     },
     {
-      "id": "fit_pratithi-growth-fund",
-      "investor_id": "inv_pratithi-growth-fund",
+      "id": "fit_prathithi-ventures",
+      "investor_id": "inv_prathithi-ventures",
       "features": {
         "thesis": {
           "value": 0.0,
@@ -36254,7 +36475,7 @@
           "value": 0.0,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 1 rounds"
+            "0 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -49425,6 +49646,35 @@
             "latest fund 200000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_vipul-jain",
+      "investor_id": "inv_vipul-jain",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
       },
       "flags": [
         "sparse"
