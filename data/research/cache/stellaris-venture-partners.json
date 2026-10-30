@@ -1,0 +1,93 @@
+{
+  "key": "stellaris-venture-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Stellaris Venture Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as stellarisvp.com, Bengaluru-based seed and Series A firm; portfolio on its site includes Mamaearth, Whatfix, Propelld and Carpl. Not Stellar Ventures or Stellaris Health.",
+  "pages": [
+    { "url": "https://www.stellarisvp.com", "title": "Stellaris Venture Partners", "publisher": "Stellaris Venture Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://indianretailer.com/news/funding-alert-stellaris-venture-partners-closes-300-min-fund-iii-support-indian-startups", "title": "Stellaris Venture Partners Closes $300 Mn Fund III to Support Indian Startups", "publisher": "Indian Retailer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.marcamoney.com/arrowhead-raises-3-million-in-seed-funding-led-by-stellaris-venture-partners/", "title": "Arrowhead raises $3 million in seed funding led by Stellaris Venture Partners", "publisher": "Marca Money", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.marcamoney.com/pibit-ai-raises-7-million-in-series-a-funding-led-by-stellaris-venture-partners/", "title": "Pibit.AI raises $7 million in Series A funding led by Stellaris Venture Partners", "publisher": "Marca Money", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://entrackr.com/snippets/material-depot-raises-10-mn-led-by-accel-and-stellaris-venture-partners-11077672", "title": "Material Depot raises $10 Mn led by Accel and Stellaris Venture Partners", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Stellaris Venture Partners has secured $300 million for its Fund III" },
+    "website": { "value": "https://www.stellarisvp.com", "pages": [0], "snippet": "backing stellar founders building iconic businesses" },
+    "hq_city": { "value": "Bengaluru", "pages": [0], "snippet": "2nd floor, Indiqube Coral, DOS Colony, Bangalore 560075, India" },
+    "hq_country": { "value": "IN", "pages": [0], "snippet": "2nd floor, Indiqube Coral, DOS Colony, Bangalore 560075, India" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0, 1], "snippet": "The firm typically leads investments in Seed and Series A funding rounds." },
+    "leads": { "value": true, "pages": [1], "snippet": "The firm typically leads investments in Seed and Series A funding rounds." },
+    "thesis_text": { "value": "Commits early to Indian founders from ideation or first revenue, across brands, fintech, software, consumer tech, AI, healthcare and sustainability.", "pages": [0], "snippet": "backing stellar founders building iconic businesses" },
+    "stated_sectors": { "value": ["consumer", "fintech", "enterprise_saas", "ai_apps_agents", "health_bio", "climate_energy"], "pages": [0], "snippet": "brands, fintech, software, consumer tech, AI, healthcare, and sustainability" }
+  },
+  "funds": [
+    {
+      "name": "Stellaris Venture Partners Fund III",
+      "number": "III",
+      "size_original": 300000000,
+      "currency_original": "USD",
+      "close_date": "2024-11-28",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Stellaris Venture Partners has secured $300 million for its Fund III"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Material Depot", "website": null, "description": "Digital-first marketplace for construction, interior design and home decor materials with physical experience centres.", "hq_country": "IN", "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2026-02-05",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Accel", "Stellaris Venture Partners"],
+      "participants": ["Whiteboard Capital", "DeVC", "Soma Capital", "MyAsiaVC"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "co-led by Accel and Stellaris Venture Partners"
+    },
+    {
+      "company": { "name": "Arrowhead", "website": null, "description": "Bengaluru voice AI platform building sales agents for banks, NBFCs and fintechs.", "hq_country": "IN", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-02",
+      "date_precision": "month",
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Stellaris Venture Partners"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Arrowhead raises $3 million in seed funding led by Stellaris Venture Partners"
+    },
+    {
+      "company": { "name": "Pibit.AI", "website": null, "description": "Builds AI systems for commercial underwriting for carriers and MGAs.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Stellaris Venture Partners"],
+      "participants": ["Y Combinator", "Arali Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Pibit.AI raises $7 million in Series A funding led by Stellaris Venture Partners"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Check size and fund size not stated on stellarisvp.com. Fund III date is the article byline (28 Nov 2024), not a stated close date.",
+    "Stage 'pre_seed' from the site's idea-stage share (60% of investments); no pre-seed snippet beyond that.",
+    "Material Depot stage not labelled on the Entrackr page (other outlets in search results say Series A); left undisclosed. Arrowhead/Pibit.AI dates are the pages' 'last updated' stamps (Feb 2026 / Nov 2025), not announcement dates.",
+    "Truva (Jan 2026, co-led with Orios) seen only in search results; not recorded."
+  ]
+}

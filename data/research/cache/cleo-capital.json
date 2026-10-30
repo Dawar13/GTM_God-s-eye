@@ -1,0 +1,61 @@
+{
+  "key": "cleo-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cleo Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Cleo Capital, the pre-seed fund founded by Sarah Kunst in 2018 (TechCrunch 2021 Fund II article; Crunchbase News 2019 scout-fund article). Not Cleo Ventures (separate EUR fund). cleocapital.com did not load. The Mojave round page names only 'Cleo Capital' with no location, so linking it to Kunst's firm rests on the name alone.",
+  "pages": [
+    { "url": "https://techcrunch.com/2021/04/09/cleo-capital-is-targeting-20-million-for-fund-ii/", "title": "Cleo Capital is targeting $20 million for Fund II", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://news.crunchbase.com/news/sarah-kunsts-cleo-capital-raises-3-5-million-to-boost-women-decision-makers-in-vc", "title": "Sarah Kunst's Cleo Capital Raises $3.5 Million To Boost Women Decision-Makers In VC", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/mojave-raises-19-million-series-b/", "title": "Mojave Raises $19 Million Series B To Scale Humidity-First HVAC Technology", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "will invest in female scouts, who will independently seek deal flow"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "pages": [0],
+      "snippet": "No one is competing in pre-seed."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Mojave Energy Systems",
+        "website": null,
+        "description": "Sunnyvale-based maker of humidity-first HVAC technology (ArctiDry platform).",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-09-25",
+      "date_precision": "day",
+      "amount_original": 19000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Fairtree Elevant Ventures"],
+      "participants": ["River Bay Investments", "At One Ventures", "Fifth Wall", "Myriad Venture Partners", "Starshot Capital", "Cleo Capital", "MetaTrail"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "New investors Cleo Capital and MetaTrail also participated."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round recorded. Caplight lists Cleo as co-investor in SkinBit (pre-seed, Aug 2026), Davis (pre-seed, May 2026), ROH and Plug (Apr 2025), but those round pages were not fetched. Whether the Mojave 'Cleo Capital' is Kunst's firm is not confirmed on the page.",
+    "HQ (Bay Area per the lead) not on any fetched page; a Caplight profile summary said Las Vegas, Nevada, which conflicts and was not recorded. Check size (~$1M in 2021) and thesis not recorded for lack of verbatim snippets.",
+    "Lead '$4M, 2019-08-19' not confirmed: Crunchbase News (2019-08-20) says the fund raised $3.5M (Axios had a $10M target; Axios page returned 403). Debut fund is not the latest fund; Fund II (2021 target $20M) and a possible Fund III ($20M, aggregator only) not confirmed, so funds left empty.",
+    "Mojave Series B: Pulse 2.0 gives no check size; other outlets differ on whether River Bay co-led."
+  ]
+}

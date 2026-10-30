@@ -1,0 +1,93 @@
+{
+  "key": "day-one-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Day One Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as dayoneventures.com, the early-stage VC led by founder and GP Masha Bucher, whose Fund III ($150M) TechCrunch reported on 2024-06-11 as a Silicon Valley firm. Not DayOne (data-center company), Day One Capital, or a StartupHub entry that places it in Tel Aviv.",
+  "pages": [
+    { "url": "https://www.dayoneventures.com", "title": "Day One Ventures", "publisher": "Day One Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/06/11/vc-queen-masha-bucher-largest-fund-150m", "title": "VC queen Masha Bucher's largest fund yet: $150M", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/04/09/artisan-the-stop-hiring-humans-ai-agent-startup-raises-25m-and-is-still-hiring-humans", "title": "Artisan, the 'stop hiring humans' AI agent startup, raises $25M", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ans.org/news/article-7540/new-financing-round-benefits-valar/", "title": "New financing round benefits Valar", "publisher": "American Nuclear Society", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "early-stage founders" },
+    "website": { "value": "https://www.dayoneventures.com", "pages": [0], "snippet": "We back early-stage companies with customer obsession in their DNA" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Silicon Valley firm" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [1], "snippet": "early-stage founders" },
+    "thesis_text": { "value": "Backs early-stage founders tackling humanity's pressing problems, adding a 'Future of Human' focus and closer ties between technology, art and culture.", "pages": [0, 1], "snippet": "We back early-stage companies with customer obsession in their DNA" },
+    "stated_sectors": { "value": ["ai_apps_agents", "fintech", "climate_energy", "enterprise_saas", "consumer", "hardware_deeptech", "crypto_web3"], "pages": [0], "snippet": "ai, fintech, climate & energy, enterprise, future of work, consumer, deep tech, web 3" }
+  },
+  "funds": [
+    {
+      "name": "Day One Ventures Fund III",
+      "number": "III",
+      "size_original": 150000000,
+      "currency_original": "USD",
+      "close_date": "2024-06-11",
+      "date_precision": "day",
+      "pages": [0, 1],
+      "snippet": "Announcing Day One Ventures' $150M Fund III"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Valar Atomics",
+        "website": null,
+        "description": "Hawthorne, California reactor start-up developing advanced nuclear reactors.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "amount_original": 130000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Snowpoint", "Day One", "Dream"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by venture capital groups Snowpoint, Day One, and Dream"
+    },
+    {
+      "company": {
+        "name": "Artisan",
+        "website": null,
+        "description": "AI sales agent startup selling autonomous AI employees.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-04-09",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Glade Brook Capital"],
+      "participants": ["Y Combinator", "Day One Ventures", "HubSpot Ventures", "Oliver Jung", "Fellows Fund"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Y Combinator, Day One Ventures, HubSpot Ventures, Oliver Jung, Fellows Fund, and others participated as well."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded. Valar Atomics seed ($19M, Feb 2025, led by Riot Ventures, Day One participating) and Filed seed (May 2025) appear only in search summaries and were not fetched.",
+    "Valar Series A: ANS page (dated 2025-11-13) says 'Day One' not 'Day One Ventures' and says it was 'recently announced'; other outlets in search results date the announcement 2025-11-10 and CB Insights lists $105M. Amount $130M per ANS; date recorded is the article date. Ambiguity over whether 'Day One' is this firm is resolved by search results naming Day One Ventures.",
+    "HQ city not recorded: TechCrunch says only 'Silicon Valley'. Check size and application URL not stated; homepage offers a contact form and email addresses (not recorded).",
+    "TechCrunch gives Fund I $20M and Fund II $50M and AUM just over $450M; Fund III close date is the announcement date."
+  ]
+}

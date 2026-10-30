@@ -1,0 +1,93 @@
+{
+  "key": "collaborative-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Collaborative Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as collabfund.com (collaborativefund.com redirects there), the investor founded by Craig Shapiro whose sixth flagship fund ($125M) TechCrunch reported on 2024-06-10; its site lists Reddit, Olipop, Sweetgreen, Kickstarter, Whoop and Phaidra. Not Collab Holdings, Collaborative Capital or other 'Collaborative' firms.",
+  "pages": [
+    { "url": "http://collabfund.com/", "title": "Collaborative Fund", "publisher": "Collaborative Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/06/10/after-hits-like-reddit-and-scopley-collaborative-fund-easily-raised-a-125m-fund-to-tackle-climate-health-and-food", "title": "After hits like Reddit and Scopely, Collaborative Fund easily raised a $125M fund to tackle climate, health and food", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techintelpro.com/news/ai/enterprise-ai/phaidra-raises-50m-series-b-led-by-collaborative-fund-for-ai-infrastructure", "title": "Phaidra raises $50M Series B led by Collaborative Fund for AI infrastructure", "publisher": "TechIntelPro", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/loyal-22-million-series-b-2-raised-for-clinical-stage-animal-health-platform", "title": "Loyal: $22 Million (Series B-2) Raised For Clinical-Stage Animal Health Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Collaborative Fund is a leading source of capital for big ideas pushing the world forward." },
+    "website": { "value": "https://collabfund.com/", "pages": [0], "snippet": "Collaborative Fund is a leading source of capital for big ideas pushing the world forward." },
+    "stages": { "value": ["seed", "series_a", "series_b", "series_c_plus", "growth"], "pages": [0], "snippet": "Funding seed through growth." },
+    "leads": { "value": true, "pages": [2], "snippet": "Series B" },
+    "thesis_text": { "value": "Backs ideas across AI, consumer, money, health and energy; the latest flagship fund favours seed-stage, consumer-focused companies in climate, health and food over SaaS.", "pages": [0, 1], "snippet": "Funding seed through growth." },
+    "stated_sectors": { "value": ["ai_apps_agents", "consumer", "fintech", "health_bio", "climate_energy"], "pages": [0], "snippet": "Powering new energy sources, materials, and technologies to transform industries and supply chains." }
+  },
+  "funds": [
+    {
+      "name": "Collaborative Fund sixth flagship fund",
+      "number": "VI",
+      "size_original": 125000000,
+      "currency_original": "USD",
+      "close_date": "2024-06",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "raised the fund \"in just over 90 days\""
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Phaidra",
+        "website": null,
+        "description": "Builds AI agents for AI factories, aimed at cutting waste in data-center operations.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-10-01",
+      "date_precision": "day",
+      "amount_original": 50000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Collaborative Fund"],
+      "participants": ["Helena", "Index Ventures", "NVIDIA", "Sony Innovation Fund"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Helena, Index Ventures, NVIDIA, Sony Innovation Fund, and others"
+    },
+    {
+      "company": {
+        "name": "Loyal",
+        "website": null,
+        "description": "Clinical-stage animal health company developing longevity drugs for dogs.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B-2",
+      "date": "2025-02-26",
+      "date_precision": "day",
+      "amount_original": 22000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Valor Equity Partners", "Collaborative Fund"],
+      "pages": [3],
+      "snippet": "from Valor Equity Partners and Collaborative Fund, and others"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded. Phaidra amount is 'exceeding $50 million' (recorded as $50M); source is an aggregator-style news site, Ropes & Gray's announcement returned HTTP 403. Phaidra date is the announcement date; page says Seattle-based.",
+    "Loyal: Pulse 2.0 does not name a lead (search summaries say Valor and Collaborative led); date 2025-02-26 is the announcement date from search results, the Pulse page is dated 2025-02-28.",
+    "HQ not recorded: no fetched page states a location (lead says NYC; TechCrunch has no location). Check size, application URL and cold-inbound status not stated; collabfund.com has no pitch link.",
+    "Earlier funds in leads ($33M 2014, $65M 2015, $100M 2018) appear only in search summaries; Tier B records the latest fund only. Periodic Labs and General Intuition are featured on the site but no round page was found. A 2026 Collab Holdings $250M vehicle is mentioned only by a low-authority blog and not recorded."
+  ]
+}

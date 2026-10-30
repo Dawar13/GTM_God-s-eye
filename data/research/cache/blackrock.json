@@ -1,0 +1,77 @@
+{
+  "key": "blackrock",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "BlackRock",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as blackrock.com, BlackRock, Inc., the global asset manager. Record covers its direct private / growth investments in AI companies (named in the Armada and ElevenLabs rounds), not its public index funds or the BlackRock-Microsoft AI infrastructure partnership. Not BlackRock-affiliated funds with separate names (e.g. BlackRock Private Investments Fund).",
+  "pages": [
+    { "url": "https://www.blackrock.com/corporate/about-us", "title": "About us", "publisher": "BlackRock", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://builtin.com/articles/armada-raises-230m-2b-valuation-20260520", "title": "Edge Computing Company Armada Raises $230M at $2B Valuation", "publisher": "Built In", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-longoria-as-new-investors/", "title": "ElevenLabs lists BlackRock, Jamie Foxx and Longoria as new investors", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "asset_manager", "pages": [0], "snippet": "We’re a global asset manager and technology provider" },
+    "website": { "value": "https://www.blackrock.com", "pages": [0], "snippet": "We’re a global asset manager and technology provider" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Armada",
+        "website": null,
+        "description": "Edge computing company providing modular AI infrastructure (modular data centers); planned Arizona factory.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-05-20",
+      "date_precision": "day",
+      "amount_original": 230000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Overmatch", "BlackRock", "8090 Industries"],
+      "participants": ["Johnson Controls"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "co-led by Overmatch, BlackRock and 8090 Industries"
+    },
+    {
+      "company": {
+        "name": "ElevenLabs",
+        "website": null,
+        "description": "AI voice platform; new Series D investors announced after reaching over $500M annual recurring revenue.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series D",
+      "date": "2026-05-05",
+      "date_precision": "day",
+      "amount_original": 500000000,
+      "currency_original": "USD",
+      "valuation_post_original": 11000000000,
+      "leads": [],
+      "participants": ["BlackRock", "Wellington", "D.E. Shaw", "Schroders", "Nvidia", "Jamie Foxx", "Eva Longoria"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The additions include institutions such as BlackRock, Wellington, D.E. Shaw, and Schroders"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded. ElevenLabs: BlackRock was added to the $500M Series D announced in February 2026 (reveal dated 2026-05-05); other outlets report $550M+, not confirmed on the fetched page; the $11B valuation is as of February per TechCrunch. Armada valuation described as $2B (pre-money in the press-release title).",
+    "Axelera AI, Applied Intuition (co-led with Kleiner Perkins, undated) and Project Prometheus appear only in search summaries; Guidewheel Series B (Business Wire) returned 403.",
+    "BlackRock about page states no HQ, AUM, stages, thesis or private-markets programme; those were left out. A BlackRock Private Investments Fund (SEC filings) does direct late-stage venture / growth investing, seen only in a search summary.",
+    "Company HQs and websites for both rounds not stated on the fetched pages."
+  ]
+}

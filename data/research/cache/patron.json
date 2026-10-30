@@ -1,0 +1,62 @@
+{
+  "key": "patron",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Patron",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Patron is the seed-stage gaming-lens venture firm founded 2021 by ex-Riot Games executives Jason Yeh and Brian Cho (its Substack patronxyz.substack.com is authored by Cho and Amber Atherton; Gunderson Dettmer client announcement of Fund II). Not Patron Capital Partners (European real estate) and not patron.vc, which is a parked domain.",
+  "pages": [
+    { "url": "https://www.gunder.com/en/news-insights/client-news/patron-announces-dollar100m-fund-ii-to-back-seed-stage-founders-building-for-the-next-generation", "title": "Patron Announces $100M Fund II to Back Seed Stage Founders Building for the Next Generation", "publisher": "Gunderson Dettmer (client news)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pymnts.com/news/investment-tracker/2024/vc-firm-patron-raises-100-million-for-consumer-startups", "title": "VC Firm Patron Raises $100 Million For Consumer Startups", "publisher": "PYMNTS", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/sweatpals-12-million-seed-funding-raised-to-improve-social-connection-through-fitness", "title": "Sweatpals: $12 Million Seed Funding Raised To Improve Social Connection Through Fitness", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://patronxyz.substack.com/p/were-leading-the-seed-round-in-rascal", "title": "We're leading the seed round in Rascal Games", "publisher": "Patron (Substack)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://patronxyz.substack.com/archive", "title": "Patron Substack archive", "publisher": "Patron (Substack)", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Early-stage venture capital firm" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "seed-stage founders building for the next generation of consumers" },
+    "leads": { "value": true, "pages": [2, 3], "snippet": "We're leading the seed round in Rascal Games" },
+    "thesis_text": { "value": "Backs seed-stage founders using a gaming lens to build venture-scale consumer businesses across verticals, aimed at people growing up on platforms like Roblox and Discord.", "pages": [0, 1], "snippet": "using this gaming lens to build venture-scale businesses across all verticals" },
+    "stated_sectors": { "value": ["consumer"], "pages": [0, 1], "snippet": "gaming as the initial wedge to build venture-scale businesses" }
+  },
+  "funds": [
+    {
+      "name": "Patron Fund II",
+      "number": "II",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2024-09-18",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "$100 million Patron Fund II"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Sweatpals", "website": null, "description": "Community-driven fitness platform for social connection through movement.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2025-10-29", "date_precision": "day",
+      "amount_original": 12000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Patron", "a16z speedrun", "HartBeat Ventures"], "participants": ["Max Mullen", "WndrCo", "Antler", "Pear", "Deb Liu"], "unspecified": [],
+      "pages": [2], "snippet": "community-driven fitness platform pioneering social connection through movement"
+    },
+    {
+      "company": { "name": "Rascal Games", "website": null, "description": "Games startup combining generative AI with social and gaming experience, founded by Rick Ling and Jonathan Lin.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed round", "date": "2023-09-14", "date_precision": "day",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Patron"], "participants": [], "unspecified": [],
+      "pages": [3], "snippet": "We're leading the seed round in Rascal Games"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds[0].close_date", "values": ["2024-09-17 (PYMNTS: announced that Tuesday)", "2024-09-18 (Gunderson Dettmer, and lead list)"], "chosen": "2024-09-18", "reason": "Both are announcement dates; the lead list matches the law-firm release." }
+  ],
+  "open_items": [
+    "Only 2 rounds recorded; Rascal Games (Sep 2023) is outside the 24-month window. Chronicle Studios ($11.6M seed, June 2025, led by Patron and Point72 per search summary) not recorded: Business Wire returned 403. Pulse.bot Sweatpals page failed to load.",
+    "Website not recorded: patron.vc is a parked domain and patron.xyz failed certificate check. HQ not stated on any fetched page (search summaries say Santa Monica; lead list says LA / Bay Area).",
+    "Check size not stated on fetched pages (a directory lists $0-1M, unverified). Application URL / cold inbound not found.",
+    "Fund I ($90M, 2021) not recorded (latest fund only). Rascal Games co-investors not labelled on the page.",
+    "Sweatpals: Pulse 2.0 says Patron co-led alongside a16z speedrun and HartBeat Ventures."
+  ]
+}

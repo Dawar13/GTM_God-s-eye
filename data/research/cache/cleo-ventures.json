@@ -1,0 +1,49 @@
+{
+  "key": "cleo-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cleo Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cleo-ventures.com, an AI-native pre-seed and seed fund with a EUR 300k-1m cheque and a EUR 30M fund announced 22 May 2026 (Vestbee). Portfolio list on its site names AMI Labs, MatX, DeepIP, Animaj, Linc and Metomic. Not Cleo Capital (Bay Area), not Cleo (the fintech app).",
+  "pages": [
+    { "url": "https://www.cleo-ventures.com", "title": "Cleo Ventures", "publisher": "Cleo Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://vestbee.com/insights/articles/cleo-ventures-raises-30-m", "title": "Cleo Ventures raises EUR 30M", "publisher": "Vestbee", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "AI-Native Venture Capital Fund" },
+    "website": { "value": "https://www.cleo-ventures.com", "pages": [0], "snippet": "AI-Native Venture Capital Fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [0, 1], "snippet": "pre-seed and seed, often before the first line of code or first hire" },
+    "check_range": { "value": { "min": 300000, "max": 1000000, "currency": "EUR" }, "pages": [1], "snippet": "invests between €300,000 and €1 million in startups" },
+    "thesis_text": {
+      "value": "Invests exclusively in AI-native companies at the earliest stages, backing founders even before product or code exists, with a strong focus on Europe.",
+      "pages": [0, 1],
+      "snippet": "Backing exceptional humans in the era of abundant intelligence."
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "ai_infra"],
+      "pages": [1],
+      "snippet": "AI infrastructure"
+    }
+  },
+  "funds": [
+    {
+      "name": "Cleo Ventures fund",
+      "number": null,
+      "size_original": 30000000,
+      "currency_original": "EUR",
+      "close_date": "2026-05-22",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "a €30 million pre-seed and seed fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No rounds recorded: no fetched page names Cleo Ventures in a specific round. Vestbee says Cleo has made two initial investments not yet disclosed. AMI Labs, MatX etc. are listed on the site, but the team's earlier backings are not confirmed as Cleo Ventures fund rounds, and no round page names Cleo Ventures.",
+    "HQ not stated on cleo-ventures.com or Vestbee (a search summary says Paris, not verified on a fetched page). Close date is the Vestbee article date; a pulse.bot item calls it 'Fund II' but that was not fetched, so number left null.",
+    "Site has no contact address or pitch email, only a form; application route and cold-inbound not recorded."
+  ]
+}

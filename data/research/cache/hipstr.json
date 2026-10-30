@@ -1,0 +1,107 @@
+{
+  "key": "hipstr",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "HIPstr",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "HIPstr is the early-stage investment arm of HighPost Capital (highpost.com/hipstr), which closed a $100M Fund I in August 2024 (Pulse 2.0). Domain check: hipstr.com is an unrelated US photo-booth company and is NOT this investor; hipstr has no standalone site, its page lives on highpost.com. Portfolio on highpost.com (After, Caldera Lab, Closer, Sprinter, EverFence) matches the fund announcement.",
+  "pages": [
+    { "url": "https://www.highpost.com/hipstr/", "title": "HIPstr - HighPost Capital", "publisher": "HighPost Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.highpost.com", "title": "HighPost Capital", "publisher": "HighPost Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/hipstr-100-million-raised-to-invest-in-early-stage-consumer-growth-companies", "title": "HIPstr: $100 Million Raised To Invest In Early-Stage Consumer Growth Companies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/after-com-10-million-raised-to-help-families-navigate-end-of-life-services/", "title": "After.com: $10 Million Raised To Help Families Navigate End-Of-Life Services", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://beautymatter.com/articles/caldera-lab-raises-6-million-in-series-a-funding", "title": "Caldera + Lab raises $6 million in Series A funding", "publisher": "BeautyMatter", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "$100 million in capital commitments" },
+    "website": { "value": "https://www.highpost.com/hipstr/", "pages": [0], "snippet": "Early Stage Growth" },
+    "thesis_text": {
+      "value": "Early-stage consumer growth investor, backing companies outside HighPost's buyout strategy that have reached some scale and want strategic capital and founder support.",
+      "pages": [2],
+      "snippet": "Invest In Early-Stage Consumer Growth Companies"
+    },
+    "stated_sectors": {
+      "value": ["consumer"],
+      "pages": [2],
+      "snippet": "Invest In Early-Stage Consumer Growth Companies"
+    }
+  },
+  "funds": [
+    {
+      "name": "HIPstr Fund I",
+      "number": "I",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [2],
+      "snippet": "$100 million in capital commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Caldera + Lab",
+        "website": "https://calderalab.com",
+        "description": "Skincare brand for men.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-10-30",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["HIPstr"],
+      "pages": [4],
+      "snippet": "Caldera + Lab landed $6 million in its Series A funding round from HIPstr"
+    },
+    {
+      "company": {
+        "name": "After.com",
+        "website": "https://www.after.com",
+        "description": "Online service for pre-planning and arranging cremation and funeral services without visiting a funeral home.",
+        "hq_country": "US",
+        "founded_year": 2020,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-07-29",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["HIPstr"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by HIPstr (the early-stage investment arm of HighPost Capital)"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.After.com.date",
+      "values": ["2024-07-29 (Pulse 2.0 page date)", "2024-07-17 / 07-18 (BusinessWire release per search results)"],
+      "chosen": "2024-07-29",
+      "reason": "Only the Pulse 2.0 page was fetched; the release date is probably 2024-07-17. Date is an article date."
+    }
+  ],
+  "open_items": [
+    "HQ (West Palm Beach) not on any fetched page; search summaries say West Palm Beach. Not recorded. Fund I close date: Pulse 2.0 page dated 2024-08-19 while the BusinessWire release URL is dated 2024-08-14; no fetched release, so close_date null.",
+    "Caldera + Lab: BeautyMatter says only that the round came 'from HIPstr' (article date 2024-10-30; release around 2024-10-28); lead role unconfirmed, so recorded as unspecified.",
+    "Only two rounds recorded with pages naming HIPstr. highpost.com lists 2025-2026 entries (Cofertility, Turnout, Northbeam, Airvet, Prometheus, Kraken, WatchHouse) but no round page was found; an airVet Series B-II (Feb 2025) appears only in a search summary of CB Insights.",
+    "Stages (mainly Series A per fetch summary), check size and application route not stated on quotable text. Note highpost.com has a general contact address and a 'Request access' form; not recorded."
+  ]
+}

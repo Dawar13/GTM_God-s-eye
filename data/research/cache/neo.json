@@ -1,0 +1,78 @@
+{
+  "key": "neo",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Neo",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as neo.com, Ali Partovi's San Francisco firm (founded 2017) with the Neo Accelerator and Scholars programmes. neo.com itself shows only the word 'Neo', so identity rests on Wikipedia and press naming Neo Ventures in the Wispr Flow round. Not Neo Ventures other namesakes (e.g. Neo Investment Partners).",
+  "pages": [
+    { "url": "https://www.neo.com/", "title": "Neo", "publisher": "Neo", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://en.wikipedia.org/wiki/Neo_(venture_capital_firm)", "title": "Neo (venture capital firm)", "publisher": "Wikipedia", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://inc42.com/buzz/peak-xv-partners-together-fund-join-voice-ai-unicorn-wispr-flows-cap-table/", "title": "Peak XV Partners, Together Fund Join Voice AI Unicorn Wispr Flow's Cap Table", "publisher": "Inc42", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Accepted startups \"receive a $750,000 uncapped SAFE\"" },
+    "website": { "value": "https://www.neo.com", "pages": [0], "snippet": "Neo" },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "based in San Francisco" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "San Francisco, California, U.S." },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "Neo's seed investments included the prediction market Kalshi" },
+    "check_min_usd": { "value": 750000, "pages": [1], "snippet": "receive a $750,000 uncapped SAFE" },
+    "check_max_usd": { "value": 750000, "pages": [1], "snippet": "receive a $750,000 uncapped SAFE" },
+    "thesis_text": { "value": "Founded by Ali Partovi in 2017; backs young technical founders through an accelerator offering a $750K uncapped SAFE, plus seed investments in AI and consumer startups.", "pages": [1], "snippet": "founded in 2017 by Ali Partovi" }
+  },
+  "funds": [
+    {
+      "name": "Neo Fund IV",
+      "number": "IV",
+      "size_original": 320000000,
+      "currency_original": "USD",
+      "close_date": "2025",
+      "date_precision": "year",
+      "pages": [1],
+      "snippet": "Neo closed its fourth fund at $320 million in 2025."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Wispr Flow", "website": null, "description": "Builds AI-powered speech-to-text (voice dictation) software.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-08-18",
+      "date_precision": "day",
+      "amount_original": 280000000,
+      "currency_original": "USD",
+      "valuation_post_original": 2000000000,
+      "leads": ["Menlo Ventures"],
+      "participants": ["Notable Capital", "NEA", "Neo", "8VC", "MVP Ventures", "Acrew", "Forerunner", "Goodwater", "PLUS Capital", "Peak XV Partners", "Together Fund", "Activate"],
+      "unspecified": [],
+      "pages": [2, 1],
+      "snippet": "Wispr Flow, an AI voice-dictation startup that raised a $280 million Series B round in August 2026."
+    },
+    {
+      "company": { "name": "Bluesky", "website": null, "description": "Social network company; Neo led its 2023 seed round.", "hq_country": null, "founded_year": null, "sector": "consumer", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2023",
+      "date_precision": "year",
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Neo"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "Neo led the $8 million seed round for Bluesky in 2023"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds.Fund II size", "values": ["$150M (Wikipedia)", "$130M (a search-result summary)"], "chosen": "n/a", "reason": "Only the latest fund is recorded; Fund II not used." }
+  ],
+  "open_items": [
+    "Inc42 names the Wispr Flow investor as 'Neo Ventures'; Wikipedia says Neo backed Wispr Flow, so treated as the same firm. Company HQ not stated.",
+    "Bluesky seed is from Wikipedia only (database); no press page fetched for the round, and the exact date is not given. Low confidence.",
+    "Only two rounds found. neo.com is a one-word page, so no first-party stages/sectors/application info. Fund IV close month not given.",
+    "Wikipedia's Cursor/Anysphere, Kalshi and Cognition AI mentions have no round details; not recorded."
+  ]
+}

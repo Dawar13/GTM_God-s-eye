@@ -1,0 +1,105 @@
+{
+  "key": "pear",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Pear VC",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as pear.vc (Pear VC), the pre-seed and seed firm with offices in San Francisco and Menlo Park that runs the PearX accelerator; Pear's own page names Parallax Worlds as a portfolio company. Not Pear Commerce, not Pear Therapeutics.",
+  "pages": [
+    { "url": "https://pear.vc", "title": "Pear VC", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pear.vc/how-we-invest/seed/", "title": "Your partner in the seed journey", "publisher": "Pear VC", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.webull.com/news/15745802813268992", "title": "Pear VC Raises $333M Fund V to Double Down on Finding Founders Before the Market Does", "publisher": "Webull (syndicated news)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.therobotreport.com/parallax-worlds-raises-4m-stress-test-robots-hyper-realistic-digital-twins/", "title": "Parallax Worlds raises $4M to stress-test robots with hyper-realistic digital twins", "publisher": "The Robot Report", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.startuphub.ai/news/salespatriot-raises-5m-to-advance-ai-defence-procurement", "title": "SalesPatriot raises $5M to advance AI defence procurement", "publisher": "StartupHub.ai", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Pear leads or co-leads rounds" },
+    "website": { "value": "https://pear.vc", "pages": [0], "snippet": "Your first investor team" },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "Offices in San Francisco & Menlo Park" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Offices in San Francisco & Menlo Park" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1, 2], "snippet": "pre-seed and seed" },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "$500K-$2M checks" },
+    "check_max_usd": { "value": 10000000, "pages": [1], "snippet": "Up to $10M checks" },
+    "thesis_text": {
+      "value": "Backs founders before companies at pre-seed and seed, via the PearX accelerator and early-stage leads or co-leads, across AI, B2B, biotech, consumer, deep tech, fintech and healthcare.",
+      "pages": [1, 2],
+      "snippet": "We invest in founders before companies."
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "ai_infra", "enterprise_saas", "health_bio", "consumer", "hardware_deeptech", "fintech"],
+      "pages": [1],
+      "snippet": "AI applications, AI infrastructure, B2B, biotech, consumer, deep tech, fintech, and healthcare"
+    }
+  },
+  "funds": [
+    {
+      "name": "Pear VC Fund V",
+      "number": "V",
+      "size_original": 333000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [2],
+      "snippet": "Fund V"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Parallax Worlds",
+        "website": null,
+        "description": "Digital-twin simulation platform for testing and validating robots before physical deployment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Pear VC"],
+      "participants": ["GS Futures", "Kakao Ventures", "Lightscape Partners", "Gaingels", "Nova Threshold", "Mana Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Pear VC led the round."
+    },
+    {
+      "company": {
+        "name": "SalesPatriot",
+        "website": null,
+        "description": "Platform that helps defence and aerospace suppliers manage components and procurement.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-10-28",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["CRV"],
+      "participants": ["Pear VC", "Y Combinator", "SV Angel"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Other investors included Pear VC, Y Combinator, and SV Angel."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded: Galvant, Meridian and other Pear rounds not found on fetched pages; Pulse/Socratix pages failed to fetch.",
+    "Fund V close date not stated on the fetched page (shows '10/14', year inferred only); size recorded, date left null.",
+    "Parallax Worlds date is month of the 2025-11-24 Robot Report article ('previous week'); SalesPatriot HQ not stated (described as Polish-American).",
+    "No application URL on pear.vc; /contact/ has no pitch instructions. PearX accelerator is a separate program at pear.vc/pearx/ (not fetched)."
+  ]
+}

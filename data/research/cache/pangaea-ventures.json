@@ -1,0 +1,72 @@
+{
+  "key": "pangaea-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Pangaea Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as pangaeaventures.com (Pangaea Ventures Ltd.), the hard-tech / advanced-materials venture firm with offices in Vancouver, Phoenix and Tokyo; portfolio includes CarbonCure, Aspect Biosystems, Ardent and NLM Photonics. Not Pangea Ventures or other similarly named firms.",
+  "pages": [
+    { "url": "https://www.pangaeaventures.com", "title": "Pangaea Ventures", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.pangaeaventures.com/blog/pangaea-ventures-celebrates-final-close", "title": "Pangaea Ventures Celebrates Final Close of Fifth Fund at $85M", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.pangaeaventures.com/blog/pangaea-invests-in-nlm-photonics-joins-board", "title": "Pangaea Invests in NLM Photonics, Joins Board", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pangaeaventures.com/blog/pangaea-ventures-joins-ardents-series-b", "title": "Pangaea Ventures Co-Leads Ardent's Series B", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.pangaeaventures.com/blog/pangaea-ventures-highlights-semicon-west-startup-social-with-investment-in-membrions-20m-series-b1", "title": "Pangaea Ventures Highlights Semicon West Startup Social with Investment in Membrion's $20M Series B1", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.pangaeaventures.com/blog", "title": "Pangaea Ventures blog", "publisher": "Pangaea Ventures", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "a leading venture capital firm specializing in hard tech investments with a focus on Planetary Health" },
+    "website": { "value": "https://www.pangaeaventures.com", "pages": [0], "snippet": "© 2026 Pangaea Ventures Ltd." },
+    "hq_city": { "value": "Vancouver", "pages": [0], "snippet": "Our offices are in Vancouver, Phoenix, and Tokyo." },
+    "hq_country": { "value": "CA", "pages": [0], "snippet": "Our offices are in Vancouver, Phoenix, and Tokyo." },
+    "leads": { "value": true, "pages": [3], "snippet": "co-led by Pangaea Ventures and Xplor Ventures" },
+    "thesis_text": { "value": "Invests in teams building advanced materials, novel chemistry and biology innovations, positioned as hard tech with a planetary-health focus.", "pages": [0, 1], "snippet": "invests in the teams building the advanced materials, novel chemistry, and biology innovations" },
+    "stated_sectors": { "value": ["hardware_deeptech", "climate_energy", "health_bio"], "pages": [0], "snippet": "Semiconductors & Advanced Manufacturing, Climate & Sustainable Systems, and Human Health & Bioengineering" }
+  },
+  "funds": [
+    {
+      "name": "Pangaea Ventures Impact Fund",
+      "number": "V",
+      "size_original": 85000000,
+      "currency_original": "USD",
+      "close_date": "2024-09",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "Pangaea Ventures Celebrates Final Close of Fifth Fund at $85M"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "NLM Photonics", "website": null, "description": "Organic electro-optic materials (Selerion) to replace silicon modulators moving data between chips.", "hq_country": null, "founded_year": null, "sector": "hardware_deeptech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A2", "date": "2026-09-08", "date_precision": "day",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": [], "participants": ["Pangaea Ventures", "Diamond Edge Ventures", "Emerald Technology Ventures", "Idemitsu", "Tokyo Ohka Kogyo", "Oregon Venture Fund", "StoryHouse Ventures"], "unspecified": [],
+      "pages": [2], "snippet": "Series A2 round"
+    },
+    {
+      "company": { "name": "Membrion", "website": null, "description": "Startup in the chip-sector materials and water space; participant in Semicon West Startup Social.", "hq_country": null, "founded_year": null, "sector": "hardware_deeptech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B1", "date": "2025-10-07", "date_precision": "day",
+      "amount_original": 20000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [], "participants": ["Pangaea Ventures", "PureTerra Ventures", "Ecolab", "Lam Research"], "unspecified": [],
+      "pages": [4], "snippet": "their participation in Membrion's $20 million Series B1 funding round"
+    },
+    {
+      "company": { "name": "Ardent", "website": null, "description": "Optiperm platform improving efficiency, cost and emissions in chemical and energy industries.", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "first close of its Series B", "date": "2025-12", "date_precision": "month",
+      "amount_original": null, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Pangaea Ventures", "Xplor Ventures"], "participants": ["Syensqo Ventures", "Chevron Technology Ventures"], "unspecified": [],
+      "pages": [3], "snippet": "co-led by Pangaea Ventures and Xplor Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds[0].size_original", "values": ["85000000 (firm's own post, 'Fifth Fund at $85M')", "86000000 (lead list)", "CAD 115M (BetaKit, search summary)"], "chosen": "85000000", "reason": "The firm's own fetched post says $85M; no source seen says $86M. Currency on the page is '$' only; USD assumed because CAD 115M is reported as roughly USD 85M in search summaries." }
+  ],
+  "open_items": [
+    "Fund close date: firm post shows 'Sep 23' with no year; lead list says 2024-09-24. Recorded 2024-09 (month) because the year was not on the fetched page.",
+    "Ardent Series B date: post shows 'Dec 15' with no year; recorded 2025-12 from search-summary context (CB Insights Dec 2025). Year not confirmed on page.",
+    "NLM Photonics date 2026-09-08 comes from the blog listing; the post itself shows 'Sep 8' only. Amount not disclosed on page; Pangaea's board role ambiguous (headline says joins board, body says a named partner joins NLM's board).",
+    "Membrion description paraphrased from the Semicon West Startup Social article, which does not describe the business; sector is model-classified.",
+    "HQ: site lists offices in Vancouver, Phoenix and Tokyo without naming a headquarters; Vancouver follows the lead list. Stages and check size not stated on fetched pages (search summaries: Series A focus, $3-5M checks)."
+  ]
+}

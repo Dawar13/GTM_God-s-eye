@@ -1,0 +1,98 @@
+{
+  "key": "swift-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Swift Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as swift.vc, the entrepreneur-led early-stage firm with general partners Brett Wilson and John Hughes; its portfolio page lists Arize, Coval, Bluefish and Gray Matter Robotics, and the Pulse 2.0 interview describes it as AI-focused. Not Switch Ventures or other 'Swift'-named funds.",
+  "pages": [
+    { "url": "https://www.swift.vc", "title": "Swift Ventures", "publisher": "Swift Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.swift.vc/companies", "title": "Swift Ventures - Companies", "publisher": "Swift Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/swift-ventures-profile-brett-wilson-interview/amp/", "title": "Swift Ventures: Interview With General Partner Brett Wilson About The AI-Focused Firm Of Founders Backing Founders", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/bluefish-43-million-series-b-fuels-expansion-of-agentic-marketing-platform/amp/", "title": "Bluefish: $43 Million Series B Fuels Expansion Of Agentic Marketing Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://letsdatascience.com/news/coval-raises-28m-series-a-to-scale-voice-ai-evaluation-e6ceb6bf", "title": "Coval Raises $28M Series A to Scale Voice AI Evaluation", "publisher": "Let's Data Science", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/coval-raises-28-million-series-a-to-advance-voice-ai-evaluation-platform/", "title": "Coval Raises $28 Million Series A To Advance Voice AI Evaluation Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0, 2],
+      "snippet": "Company-building expertise from fellow entrepreneurs that have built and scaled through every stage."
+    },
+    "website": {
+      "value": "https://www.swift.vc",
+      "pages": [0],
+      "snippet": "roll up their sleeves with you"
+    },
+    "thesis_text": {
+      "value": "Entrepreneur-led firm backing early-stage B2B AI application and infrastructure companies, aiming to be the most helpful investor on the cap table.",
+      "pages": [2],
+      "snippet": "North Star is to be the most helpful investor on the cap table"
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents", "ai_infra"],
+      "pages": [2],
+      "snippet": "laser-focused on achieving real-world breakthroughs using AI"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Coval",
+        "website": "https://www.coval.ai",
+        "description": "Evaluation platform that tests and monitors voice AI agents.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-06-24",
+      "date_precision": "day",
+      "amount_original": 28000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Norwest"],
+      "participants": ["Base10 Partners", "Twilio Ventures", "Y Combinator", "MaC Ventures", "Swift Ventures"],
+      "unspecified": [],
+      "pages": [4, 5],
+      "snippet": "with participation from Base10 Partners, Twilio Ventures, Y Combinator, MaC Ventures, and Swift Ventures."
+    },
+    {
+      "company": {
+        "name": "Bluefish",
+        "website": "https://www.bluefishai.com",
+        "description": "Agentic marketing platform helping large brands track and shape how AI assistants portray them.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-04-14",
+      "date_precision": "day",
+      "amount_original": 43000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Threshold Ventures", "NEA"],
+      "participants": ["Amex Ventures", "TIAA Ventures", "Salesforce Ventures", "Bloomberg Beta", "Crane Venture Partners", "Laconia", "Swift Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "and existing investors Crane Venture Partners, Laconia, and Swift Ventures."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on swift.vc; Pulse 2.0 says only 'roots in Berkeley, California'. Search summaries mention San Francisco (50 California St) but not confirmed on a fetched page, so HQ left out.",
+    "Lead's $50M 2024 fund (Swift Ventures II) not confirmed on any fetched page; no fund recorded. Pulse 2.0 says fund sizes not disclosed.",
+    "Stages, check size and application path not stated on fetched pages (homepage lists only info@ contact; not recorded).",
+    "Only two rounds found with a page naming Swift (budget). Coval and Bluefish company websites inferred from the portfolio page links. Third round not recorded."
+  ]
+}

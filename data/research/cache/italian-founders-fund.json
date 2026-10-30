@@ -1,0 +1,113 @@
+{
+  "key": "italian-founders-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Italian Founders Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as italianfoundersfund.com, the Milan VC managed by Koinos Capital SGR and described on its site as Italy's first founder-backed VC; Vestbee (2025-08-05) names it Italian Founders Fund (IFF), managed by Koinos Capital SGR. Not the Dutch Founders Fund or DFF Ventures (separate co-investor), nor Italian Angels or CDP Venture Capital (an LP).",
+  "pages": [
+    { "url": "https://www.italianfoundersfund.com", "title": "Italian Founders Fund", "publisher": "Italian Founders Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://vestbee.com/insights/articles/italian-founders-fund-secures-90-m", "title": "Italian Founders Fund secures €90M", "publisher": "Vestbee", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/italian-founders-fund-koinos-capital-sgr-supera-il-target-e-chiude-la-raccolta-a-oltre-100-mln-euro/", "title": "Italian Founders Fund (Koinos Capital SGR) supera il target e chiude la raccolta a oltre 100 mln euro", "publisher": "Inforcapital", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/", "title": "Compri secures €3.2M to build AI-powered procurement teams", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://retailtechinnovationhub.com/home/2026/4/1/workforce-management-firm-sona-raises-45-million-in-series-b-funding-round-led-by-n47", "title": "Workforce management firm Sona raises $45 million in Series B funding round led by N47", "publisher": "Retail Tech Innovation Hub", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.startupbusiness.it/en/?p=179814", "title": "Compri secures a €3.2 million funding round for AI-powered procurement solutions", "publisher": "Startupbusiness", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Italy's first founder-backed VC" },
+    "website": { "value": "https://www.italianfoundersfund.com", "pages": [0], "snippet": "We invest from Pre-Seed to Series A in companies with an Italian DNA." },
+    "hq_city": { "value": "Milan", "pages": [0], "snippet": "Via Fatebenefratelli, 9, 20121, Milano" },
+    "hq_country": { "value": "IT", "pages": [0], "snippet": "Via Fatebenefratelli, 9, 20121, Milano" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0], "snippet": "We invest from Pre-Seed to Series A in companies with an Italian DNA." },
+    "leads": { "value": true, "pages": [0], "snippet": "lead or co-lead early rounds" },
+    "check_range": { "value": { "min": 250000, "max": 3000000, "currency": "EUR" }, "pages": [0], "snippet": "€250k to €3m" },
+    "thesis_text": { "value": "Backs entrepreneurs with Italian roots and global ambitions, whether the company was born in Italy, expands there, or is founded by Italians abroad.", "pages": [0], "snippet": "Backing entrepreneurs with Italian roots and global ambitions." },
+    "stated_sectors": { "value": ["enterprise_saas", "health_bio", "fintech", "ai_infra", "climate_energy", "mobility_ev", "dev_tools", "consumer"], "pages": [0], "snippet": "HR tech, healthtech, fintech, AI infrastructure, govtech, construction tech, procurement, proptech, mobility, energy, climate tech" },
+    "application_url": { "value": "https://noteforms.com/forms/iff-investment-proposal-form-3hcdrd-1", "pages": [0], "snippet": "iff-investment-proposal-form" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "iff-investment-proposal-form" }
+  },
+  "funds": [
+    {
+      "name": "Italian Founders Fund",
+      "number": "I",
+      "size_original": 100000000,
+      "currency_original": "EUR",
+      "close_date": "2026-07-28",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "raising over €100 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Compri",
+        "website": null,
+        "description": "Milan-based startup building AI-powered procurement software for industrial companies.",
+        "hq_country": "IT",
+        "founded_year": 2024,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed round",
+      "date": "2026-06-24",
+      "date_precision": "day",
+      "amount_original": 3200000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Picus Capital"],
+      "participants": ["Shapers", "Italian Founders Fund", "DFF Ventures"],
+      "unspecified": [],
+      "pages": [3, 5],
+      "snippet": "Shapers, Italian Founders Fund, DFF Ventures, and plus private backers"
+    },
+    {
+      "company": {
+        "name": "Sona",
+        "website": null,
+        "description": "AI platform for frontline enterprises, handling workforce forecasting and scheduling.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-04-01",
+      "date_precision": "day",
+      "amount_original": 45000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["N47"],
+      "participants": ["Felicis", "Northzone", "Gradient", "Italian Founders Fund"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "participation from existing investors Felicis, Northzone, Gradient, and Italian Founders Fund"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "check_range",
+      "values": ["€250k to €3m initial investment (homepage)", "initial checks of €500,000 to €1.5 million, follow-ons up to €2.5 million (Vestbee, 2025-08-05)"],
+      "chosen": "€250k to €3m",
+      "reason": "The firm's own homepage is primary and current; Vestbee is an older press summary."
+    },
+    {
+      "field": "fund_size",
+      "values": ["€50M debut (June 2024)", "€90M (2025-08-05, Vestbee)", "over €100M (2026-07-28, Inforcapital)"],
+      "chosen": "100000000 EUR (over €100M)",
+      "reason": "Latest reported close; same fund growing across closes. Lead's €50M is the first close. 'Over' is recorded as a floor."
+    }
+  ],
+  "open_items": [
+    "Only two rounds recorded. Compri pre-seed (€1.6M, led by Italian Founders Fund and DFF Ventures per Startupbusiness) has no date on the fetched page; ReportAId (pre-seed, led by IFF) and TaDa (seed, Oct 2025, IFF-led) appear only in search summaries (nordic9 returned 403, startupintros not found).",
+    "Sona round date from the article URL path (2026-04-01); the byline reads 2 Apr 2026. Sona HQ not stated.",
+    "Fund close date is the Inforcapital article date; the final close figure comes from a single press page. Share capital and AIF registration of manager Koinos Capital SGR are on the homepage but not recorded.",
+    "Lead's 2024-06-10 €50M debut-fund announcement was not fetched directly; only seen in search summaries."
+  ]
+}

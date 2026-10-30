@@ -1,0 +1,53 @@
+{
+  "key": "acurio-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Acurio Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as acurio.vc, the Spanish early-stage firm formerly All Iron Ventures (site links 'All Iron Ventures is now Acurio Ventures'; TechCrunch 2024-09-23 rebrand article). Team in Bilbao, Madrid, Barcelona and London. Not Acoru or Acurio Capital.",
+  "pages": [
+    { "url": "https://acurio.vc", "title": "Acurio Ventures", "publisher": "Acurio Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/09/23/all-iron-ventures-rebrands-as-acurio-ventures-with-a-new-e150m-follow-on-fund", "title": "All Iron Ventures rebrands as Acurio Ventures with a new EUR150M 'follow-on' fund", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thenextweb.com/news/lexroom-50-million-series-b-civil-law-legal-ai-europe", "title": "Italy's Lexroom hits $73M total raised on $50M Series B for civil-law legal AI", "publisher": "The Next Web", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["All Iron Ventures"], "pages": [0], "snippet": "All Iron Ventures is now Acurio Ventures" },
+    "type": { "value": "vc", "pages": [1], "snippet": "closing its third fund of $166 million (€150 million)" },
+    "website": { "value": "https://acurio.vc", "pages": [0], "snippet": "We partner with visionary founders to make history happen." },
+    "hq_country": { "value": "ES", "pages": [1], "snippet": "based in Bilbao, Madrid, Barcelona, and London" },
+    "stages": { "value": ["seed", "series_a"], "pages": [0], "snippet": "We invest primarily in seed and series A rounds in Europe" },
+    "thesis_text": { "value": "Generalist, sector-agnostic European early-stage investor, mostly co-investing alongside other funds, backing committed founders.", "pages": [0, 1], "snippet": "We are sector agnostic" }
+  },
+  "funds": [
+    {
+      "name": "Acurio Ventures III",
+      "number": "III",
+      "size_original": 150000000,
+      "currency_original": "EUR",
+      "close_date": "2024-09-23",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "closing its third fund of $166 million (€150 million)"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Lexroom", "website": null, "description": "Milan-based legal AI startup focused on civil-law jurisdictions.", "hq_country": "IT", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B", "date": "2026-05-19", "date_precision": "day",
+      "amount_original": 50000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Left Lane Capital"], "participants": ["Base10 Partners", "Eurazeo", "Acurio Ventures", "Entourage", "View Different"], "unspecified": [],
+      "pages": [2], "snippet": "Base10 Partners, Eurazeo, Acurio Ventures, Entourage and View Different joined the round"
+    }
+  ],
+  "conflicts": [
+    { "field": "leads", "values": ["follow-on only, will not lead (TechCrunch)", "usually co-investor, sometimes lead or co-lead (acurio.vc)"], "chosen": "not recorded", "reason": "Sources disagree on lead policy; fund-level fact left out." },
+    { "field": "funds[0].size_original", "values": ["EUR 150M (TechCrunch headline)", "USD 166M (lead list and TechCrunch body)"], "chosen": "150000000 EUR", "reason": "Euro is the fund's native currency; $166M is the conversion TechCrunch gave." }
+  ],
+  "open_items": [
+    "Only 1 round recorded. TandemTrace seed (Adara/Acurio co-lead) and Orain EUR 6M round (Acurio and KFund via Leadwind) appear in search summaries only: Capital Riesgo and El Referente returned 403, and Adara's year-in-review does not name Acurio.",
+    "Acurio Secondaries (EUR 115M, July 2026) seen only in search summaries; not recorded as a fund.",
+    "HQ city not stated on fetched pages (Bilbao per search summaries). Check size not stated; TechCrunch gives equity stakes of 3% to 10% instead. Site shows a contact email; no application form, so application_url not recorded."
+  ]
+}

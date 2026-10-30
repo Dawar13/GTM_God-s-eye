@@ -1,0 +1,90 @@
+{
+  "key": "coelius-capital",
+  "entity_type": "investor",
+  "tier": "A",
+  "name": "Coelius Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "TBD",
+  "pages": [
+    {
+      "url": "https://web.archive.org/web/20260613020816/https://coelius.vc/",
+      "title": "Home - Coelius Capital (Wayback Machine snapshot, 2026-06-13)",
+      "publisher": "Coelius Capital",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001890889.json",
+      "title": "EDGAR submissions: Coelius Capital II, LP (CIK 0001890889)",
+      "publisher": "U.S. SEC (EDGAR)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    },
+    {
+      "url": "https://efts.sec.gov/LATEST/search-index?q=%22Coelius%22&forms=D",
+      "title": "EDGAR full-text search: Form D filings matching \"Coelius\"",
+      "publisher": "U.S. SEC (EDGAR)",
+      "retrieved_at": "2026-10-30",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "Entrepreneurial early stage capital for technology startups."
+    },
+    "website": {
+      "value": "https://coelius.vc",
+      "pages": [
+        0
+      ],
+      "snippet": "Entrepreneurial early stage capital for technology startups."
+    },
+    "hq_city": {
+      "value": "San Francisco",
+      "pages": [
+        1,
+        2
+      ],
+      "snippet": "C/O COELIUS CAPITAL\",\"street2\":\"447 SUTTER ST STE 405 PMB 20\",\"city\":\"SAN FRANCISCO\""
+    },
+    "hq_country": {
+      "value": "US",
+      "pages": [
+        1,
+        2
+      ],
+      "snippet": "\"city\":\"SAN FRANCISCO\",\"stateOrCountry\":\"CA\""
+    },
+    "check_min_usd": {
+      "value": 200000,
+      "pages": [
+        0
+      ],
+      "snippet": "Average checks are $200k-1m"
+    },
+    "check_max_usd": {
+      "value": 1000000,
+      "pages": [
+        0
+      ],
+      "snippet": "Average checks are $200k-1m"
+    },
+    "accepts_cold_inbound": {
+      "value": "yes",
+      "pages": [
+        0
+      ],
+      "snippet": "How to apply Please send a deck, a summary or at least a paragraph first."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": []
+}

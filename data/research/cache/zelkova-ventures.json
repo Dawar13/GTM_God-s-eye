@@ -1,0 +1,87 @@
+{
+  "key": "zelkova-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Zelkova Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Zelkova Ventures, early-stage VC listed on NFX Signal as Miami-based; named as an investor in Ocient and Compyl rounds by press. Firm site (zelkovavc.com) could not be fetched (SSL handshake failure). Not Zelkova Venture Partners funds elsewhere or Zelestra.",
+  "pages": [
+    { "url": "https://signal.nfx.com/firms/zelkova-ventures", "title": "Zelkova Ventures", "publisher": "NFX Signal", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://siliconangle.com/?p=693506", "title": "Ocient raises $42.1M Series B extension", "publisher": "SiliconANGLE", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://natlawreview.com/press-releases/compyl-closes-12-million-series-funding", "title": "Compyl Closes $12 Million in Series A Funding", "publisher": "National Law Review (press release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "early stage companies; in many cases, pre-revenue" },
+    "hq_city": { "value": "Miami", "pages": [0], "snippet": "Miami, Florida" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Miami, Florida" },
+    "thesis_text": {
+      "value": "Early-stage venture investor, often pre-revenue companies, frequently supplying the first outside or institutional capital.",
+      "pages": [0],
+      "snippet": "early stage companies; in many cases, pre-revenue"
+    },
+    "stated_sectors": {
+      "value": ["climate_energy", "consumer"],
+      "pages": [0],
+      "snippet": "technology, green tech, internet and luxury goods"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Compyl",
+        "website": null,
+        "description": "Governance, risk and compliance platform using data and AI to support risk management and compliance.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-06-04",
+      "date_precision": "day",
+      "amount_original": 12000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Venture Guides"],
+      "participants": ["Contour Venture Partners", "Armory Square Ventures", "NVP Capital", "Alpine Meridian Ventures", "Brooklyn Bridge Ventures", "Zelkova Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Brooklyn Bridge Ventures, and Zelkova Ventures."
+    },
+    {
+      "company": {
+        "name": "Ocient",
+        "website": null,
+        "description": "Analytics platform running some queries far faster than competing systems, aimed at large data and AI workloads.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B extension",
+      "date": "2025-04-22",
+      "date_precision": "day",
+      "amount_original": 42100000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Allstate Strategic Ventures", "Blue Bear Capital", "Solidigm", "Massive", "Zelkova", "Northwestern Mutual"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "This latest raise was backed by new investors Allstate Strategic Ventures, Blue Bear Capital, Solidigm, Massive, Zelkova"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Official site zelkovavc.com (search results) failed to fetch (SSL error); website, stages, check size, funds and application route not verified. HQ and sectors come from one database page only (low confidence); other databases reportedly list New York.",
+    "Only two rounds recorded; Teal Series A (Jan 2025) and Respondology Series A extension (Apr 2025) appear only in search summaries/aggregators, not fetched.",
+    "Compyl HQ not explicit on page (dateline New York); Ocient is shown on the page without stated HQ; Ocient lead not named. Zelkova called 'new investor' in the Ocient round, though aggregators also list a Sept 2024 Ocient Series B entry."
+  ]
+}

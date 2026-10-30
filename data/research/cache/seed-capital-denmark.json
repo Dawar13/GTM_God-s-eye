@@ -1,0 +1,46 @@
+{
+  "key": "seed-capital-denmark",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Seed Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as seedcapital.dk, Copenhagen seed VC (Højbro Plads 10) with Trustpilot, Lunar, Templafy, Vivino, Veo and Flatpay in its portfolio. Tech.eu covers its Fund V close. Not Seed Capital Investments or other firms named Seed Capital.",
+  "pages": [
+    { "url": "https://www.seedcapital.dk", "title": "Seed Capital", "publisher": "Seed Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://tech.eu/2026/09/11/seed-capital-closes-eur130m-fund-v-to-expand-across-the-nordics/", "title": "Seed Capital closes €130M Fund V to expand across the Nordics", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Seed Capital (Denmark)"], "pages": [0], "snippet": "Højbro Plads 10, DK-1200 Copenhagen, Denmark" },
+    "type": { "value": "vc", "pages": [1], "snippet": "Fund V" },
+    "website": { "value": "https://www.seedcapital.dk", "pages": [0], "snippet": "We partner with remarkable entrepreneurs across the Nordics to build global winners." },
+    "hq_city": { "value": "Copenhagen", "pages": [0], "snippet": "Højbro Plads 10, DK-1200 Copenhagen, Denmark" },
+    "hq_country": { "value": "DK", "pages": [0], "snippet": "Højbro Plads 10, DK-1200 Copenhagen, Denmark" },
+    "stages": { "value": ["seed", "series_a"], "pages": [1], "snippet": "Seed through Series A" },
+    "check_range": { "value": { "min": 3000000, "max": 6000000, "currency": "EUR" }, "pages": [1], "snippet": "€3-6 million" },
+    "thesis_text": { "value": "Nordic seed investor concentrating on fintech and AI-driven B2B, with cybersecurity and resilience newly added; Fund V targets 15-17 companies.", "pages": [1], "snippet": "Fintech and AI-driven B2B, plus cybersecurity and resilience as a new focus" },
+    "stated_sectors": { "value": ["fintech", "ai_apps_agents", "enterprise_saas"], "pages": [0, 1], "snippet": "Fintech and AI-driven B2B" }
+  },
+  "funds": [
+    {
+      "name": "Seed Capital Fund V",
+      "number": "V",
+      "size_original": 130000000,
+      "currency_original": "EUR",
+      "close_date": "2026-09-11",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "€130 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "latest_fund", "values": ["Fund IV €140M (seedcapital.dk homepage)", "Fund V €130M (Tech.eu, 11 Sep 2026)"], "chosen": "Fund V €130M", "reason": "Tech.eu is dated 2026-09-11 and reports the newer close; the homepage still shows Fund IV." }
+  ],
+  "open_items": [
+    "No round with a fetched page naming Seed Capital: Cernel EUR 4M seed (Feb 2026, led by Seed Capital) seen only in search results; bebeez page 404 and pulse.bot fetch failed. Repodo and Oplane (early Fund V deals) have no amounts or dates on Tech.eu. Zero rounds recorded.",
+    "The lead's '2026 fund EUR 130M' confirmed as Fund V. Tech.eu page gives the date as 11 Sep 2026 (announcement, treated as close date).",
+    "Homepage check size EUR 2-4M (Fund IV) differs from Fund V EUR 3-6M; Fund V recorded."
+  ]
+}

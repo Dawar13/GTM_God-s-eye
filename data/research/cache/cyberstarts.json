@@ -1,0 +1,60 @@
+{
+  "key": "cyberstarts",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cyberstarts",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as cyberstarts.com, the Israel-based early-stage cybersecurity firm led by founder Gili Raanan (Fortune); site lists Wiz, Island, Cyera and Fireblocks. Not Cyber Starts or other cyber accelerators.",
+  "pages": [
+    { "url": "https://www.cyberstarts.com", "title": "Cyberstarts", "publisher": "Cyberstarts", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.fortune.com/2024/10/21/exclusive-gili-raanans-cyberstarts-raises-60-million-for-fourth-seed-fund", "title": "Exclusive: Gili Raanan's Cyberstarts raises $60 million for fourth seed fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.newswire.com/news/gambit-security-raises-61m-to-set-the-standard-for-enterprise-22732979", "title": "Gambit Security Raises $61M to Set The Standard for Enterprise Resilience", "publisher": "Newswire (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech.global/2026/03/18/surf-ai-raises-57m-to-tackle-enterprise-security-ops/", "title": "Surf AI raises $57m to tackle enterprise security ops", "publisher": "Fintech Global", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Cyberstarts raises $60 million for fourth seed fund" },
+    "website": { "value": "https://www.cyberstarts.com", "pages": [0], "snippet": "the day one partner for industry-defining cybersecurity companies" },
+    "hq_country": { "value": "IL", "pages": [1], "snippet": "the Israel-based firm" },
+    "stages": { "value": ["seed"], "pages": [1], "snippet": "early stage-focused" },
+    "thesis_text": { "value": "Day-one partner to cybersecurity founders, using a CISO network and a systematic hunt for urgent problems; favours founders who overcame big challenges.", "pages": [0], "snippet": "Entrepreneurs who have faced big challenges make the best founders." },
+    "stated_sectors": { "value": ["ai_apps_agents"], "pages": [0], "snippet": "the day one partner for industry-defining cybersecurity companies" }
+  },
+  "funds": [
+    {
+      "name": "Cyberstarts fourth seed fund",
+      "number": "IV",
+      "size_original": 60000000,
+      "currency_original": "USD",
+      "close_date": "2024-10-21",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Cyberstarts raises $60 million for fourth seed fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Gambit Security", "website": null, "description": "AI-native cyber resilience platform.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Seed and Series A funding", "date": "2026-02-25", "date_precision": "day",
+      "amount_original": 61000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": [], "participants": ["Spark Capital", "Kleiner Perkins", "Cyberstarts"], "unspecified": [],
+      "pages": [2], "snippet": "Backed by Spark Capital, Kleiner Perkins, and Cyberstarts"
+    },
+    {
+      "company": { "name": "Surf AI", "website": null, "description": "Agentic operations platform for security teams.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2026-03-18", "date_precision": "day",
+      "amount_original": 57000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Accel"], "participants": ["Cyberstarts", "Boldstart Ventures"], "unspecified": [],
+      "pages": [3], "snippet": "participation from existing backers Cyberstarts and Boldstart Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. A Security $37M (Ynet: co-led by Lightspeed and Cyberstarts) fetched but the article gives no calendar date, so not recorded.",
+    "Gambit: release says 'Seed and Series A' with no lead named; Calcalist (search summary only) says Kleiner, Spark and Cyberstarts led. Surf AI stage labelled seed+Series A / Series B in search summaries; fetched page gives no stage.",
+    "HQ city (Tel Aviv per search summaries) not on a fetched page. Check size, application URL and cold-inbound policy not found; site has no contact details.",
+    "Earlier 2018 $54M fund and 2022 Fund III ($60M) not verified on fetched pages; only the Oct 2024 fourth seed fund recorded. Opportunity Fund II ($380M, 2025) seen only in search summaries.",
+    "Sector mapped to ai_apps_agents as nearest id; no dedicated cybersecurity sector id exists."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "key": "one-way-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "One Way Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as onewayvc.com, the Boston-based firm backing companies with at least one immigrant founder (Pulse 2.0, Jan 2021, Fund II $57.5M). Not an unrelated 'One Way' brand.",
+  "pages": [
+    { "url": "https://www.onewayvc.com", "title": "One Way Ventures", "publisher": "One Way Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/one-way-ventures-closes-second-fund-at-57-5-million/", "title": "One Way Ventures Closes Second Fund At $57.5 Million", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.onewayvc.com/thoughts/provision-lands-7m-seed-round", "title": "Provision lands $7M seed round", "publisher": "One Way Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.onewayvc.com/thoughts/tabs-raises-25m-series-a-from-general-catalyst", "title": "Tabs raises $25M Series A from General Catalyst", "publisher": "One Way Ventures", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [1],
+      "snippet": "backs companies with at least one immigrant founder"
+    },
+    "website": {
+      "value": "https://www.onewayvc.com",
+      "pages": [0],
+      "snippet": "We're on a mission to back exceptional immigrant founders building high-impact global companies."
+    },
+    "thesis_text": {
+      "value": "Invests in exceptional immigrant founders building high-impact global companies, on the principle of equal opportunity regardless of birthplace.",
+      "pages": [0],
+      "snippet": "We're on a mission to back exceptional immigrant founders building high-impact global companies."
+    }
+  },
+  "funds": [
+    {
+      "name": "One Way Ventures Fund II",
+      "number": "II",
+      "size_original": 57500000,
+      "currency_original": "USD",
+      "close_date": "2021-01",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "One Way Ventures Closes Second Fund At $57.5 Million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Provision",
+        "website": null,
+        "description": "AI co-pilot for construction estimators that extracts cost information from text and image documents.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-10-22",
+      "date_precision": "day",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["One Way Ventures", "Cercano Management", "Y Combinator"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "One Way Ventures invested in this seed round alongside Cercano Management and Y Combinator"
+    },
+    {
+      "company": {
+        "name": "Tabs",
+        "website": null,
+        "description": "AI platform that automates receivables work after customer contracts are signed.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-11-01",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["General Catalyst"],
+      "participants": ["Lightspeed", "One Way Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "other key partners such as One Way Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. KarmaCheck Series B (June 2024) and Tive Series C (Feb 2025) posts on onewayvc.com do not name One Way as a participant in the round (Tive only as 'our portfolio company'), so not recorded.",
+    "HQ Boston, stages (pre-seed/seed) and check size ('up to $1M' per search/ImpactAlpha summary) not quoted from fetched pages; homepage check size renders garbled. Pulse 2.0 reports Boston HQ in its summary but no verbatim quote captured.",
+    "Fund I ($28.5M, 2018; lead said $28M 2018-11-18) and a Fund III raise (search summary only) not verified on fetched pages. Fund II close: Pulse 2.0 article dated Jan 8, 2021, close Jan 1, 2021 per summary.",
+    "Immigrant-founder focus is explicit; Indian founders specifically not stated. Pitch page is /pitch-us on onewayvc.com (not recorded; no quote)."
+  ]
+}

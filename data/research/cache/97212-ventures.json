@@ -1,0 +1,56 @@
+{
+  "key": "97212-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "97212 Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as 97212.vc, the New York VC for Israeli founders (name from Israel's country code 972 and NYC 212); its portfolio page lists Remepy, Beti, Ritual, CopilotKit, Permit and others. Not a generic 'Ventures' firm; founders must relocate to NYC.",
+  "pages": [
+    { "url": "https://www.97212.vc", "title": "97212 Ventures", "publisher": "97212 Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.97212.vc/portfolio", "title": "97212 Ventures Portfolio", "publisher": "97212 Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/97212-ventures-announces-20m-fund-providing-israeli-tech-founders-insider-access-to-the-nyc-tech-ecosystem-302142360.html", "title": "97212 Ventures announces $20M fund providing Israeli tech founders insider access to the NYC tech ecosystem", "publisher": "PR Newswire (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://copilotkit.ai/blog/series-a", "title": "CopilotKit Series A", "publisher": "CopilotKit", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "The VC for Israeli Founders Building Global Companies in NYC." },
+    "website": { "value": "https://www.97212.vc", "pages": [0], "snippet": "The VC for Israeli Founders Building Global Companies in NYC." },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "The VC for Israeli Founders Building Global Companies in NYC." },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "The VC for Israeli Founders Building Global Companies in NYC." },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [2], "snippet": "new Israeli pre-seed and seed startups" },
+    "thesis_text": { "value": "Seed fund focused exclusively on early-stage Israeli startups building category-defining companies in New York, offering NYC network access; founders relocate within 18 months.", "pages": [0, 2], "snippet": "exclusively focused on investing in top early-stage Israeli startups" },
+    "stated_sectors": { "value": ["enterprise_saas", "health_bio", "fintech", "supply_chain_logistics"], "pages": [2], "snippet": "B2B enterprise tech, digital health and wellness" }
+  },
+  "funds": [
+    {
+      "name": "97212 Ventures Fund I",
+      "number": "I",
+      "size_original": 20000000,
+      "currency_original": "USD",
+      "close_date": "2024-05-10",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "a 20-million dollar fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "CopilotKit", "website": "https://www.copilotkit.ai/", "description": "Agent-human collaboration platform offering an enterprise agentic frontend stack with generative UI; leads the AG-UI open protocol.", "hq_country": null, "founded_year": null, "sector": "dev_tools", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-05-05", "date_precision": "day",
+      "amount_original": 27000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Glilot Capital", "NfX", "SignalFire"],
+      "participants": ["Discovery Ventures", "Vermilion Cliffs Ventures", "DVC", "Abstraction Capital", "97212 Ventures", "Deep Acre", "J-Ventures", "Gurtin Ventures", "Fresh Fund"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "97212 Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. The portfolio page (21 companies, no round info) and fund release name Remepy, Beti, Ritual but give no rounds or co-investors.",
+    "Permit.io's Series A (Feb 2024, Pulse 2.0) lists an investor spelled '92712', not '97212'; not recorded as a round for this firm.",
+    "Check size not stated. HQ city comes from the site tagline and fund release. Press release dated May 10, 2024 (lead list says May 9).",
+    "Application URL / cold inbound not checked (site shows a general contact address only; not recorded)."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "key": "flint-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Flint Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Boston-based VC Flint Capital (flint.capital), whose third fund of $160M was covered by TechCrunch on 2024-08-08 and FinTech Alliance on 2024-08-09. Not Flint (AI website startup), Flint Capital LLC elsewhere, or other firms named Flint. Homepage and portfolio page fetched empty.",
+  "pages": [
+    { "url": "https://techcrunch.com/2024/08/08/flint-capital-raises-a-160m-through-unusual-fund-raising-strategy/", "title": "Flint Capital raises a $160M through unusual fund raising strategy", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech-alliance.com/news-insights/article/flint-capital-raises-160m-to-invest-in-early-stage-software-startups", "title": "Flint Capital raises $160M to invest in early-stage software startups", "publisher": "FinTech Alliance", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Boston-based Flint Capital just closed its third fund at $160 million" },
+    "hq_city": { "value": "Boston", "pages": [0], "snippet": "Boston-based Flint Capital just closed its third fund at $160 million" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Boston-based Flint Capital just closed its third fund at $160 million" },
+    "stages": { "value": ["seed", "series_a", "growth"], "pages": [0], "snippet": "The capital will be split evenly between early and late stage investments." },
+    "thesis_text": { "value": "Global mandate covering Europe and Israel as well as the US, favouring startups that plan to expand into the US market; capital split evenly between early and late stage.", "pages": [0], "snippet": "as long as we go off to the US market" },
+    "stated_sectors": { "value": ["enterprise_saas", "health_bio", "fintech"], "pages": [0, 1], "snippet": "cybersecurity, enterprise software, and digital health" }
+  },
+  "funds": [
+    {
+      "name": "Flint Capital third fund",
+      "number": "III",
+      "size_original": 160000000,
+      "currency_original": "USD",
+      "close_date": "2024-08",
+      "date_precision": "month",
+      "pages": [0, 1],
+      "snippet": "Boston-based Flint Capital just closed its third fund at $160 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No round recorded: neither fetched press page describes a specific round. A startupintros.com page for a Leo AI seed ($5M, Sept 2025) led by Flint Capital appeared only in a search summary; fetch returned 'News Not Found'.",
+    "flint.capital homepage and portfolio fetches returned empty; no website snippet, check size, application URL or exact close date. Stage mapping (seed, series_a, growth) is inferred from 'early and late stage'. Opportunity fund component mentioned in search summaries only.",
+    "Website value not recorded as a fact since no fetched page quoted it."
+  ]
+}

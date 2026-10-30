@@ -1,0 +1,113 @@
+{
+  "key": "coatue",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Coatue Management",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as coatue.com, Coatue Management, L.L.C., with offices in New York, Menlo Park, San Francisco, Hong Kong and London and venture, growth, tactical, CTEK and public strategies. Names Decagon, Sunday and Firmus as rounds it led in 2026 per press. Not Coatue-affiliated public funds like Coatue Innovation Fund (coatuectek.com) as a separate record.",
+  "pages": [
+    { "url": "https://www.coatue.com", "title": "Coatue", "publisher": "Coatue Management", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://firmus.co/newsroom/firmus-raises-usdusd505-million-in-strategic-equity-investment-led-by-coatue", "title": "Firmus raises USD$505 million in strategic equity investment led by Coatue", "publisher": "Firmus", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://builtin.com/articles/decagon-raises-250m-series-d-4b-valuation-20260130", "title": "Customer Experience Platform Decagon Raises $250M at $4.5B Valuation", "publisher": "Built In", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/sunday-raises-165m-to-launch-first-autonomous-robots-by-thanksgiving", "title": "Sunday raises $165M to launch first autonomous robots by Thanksgiving", "publisher": "Inforcapital", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "asset_manager", "pages": [0], "snippet": "Coatue Management, L.L.C. (\"Coatue\") maintains the websites www.coatue.com" },
+    "website": { "value": "https://www.coatue.com", "pages": [0], "snippet": "Expanding access to innovation." },
+    "stages": {
+      "value": ["seed", "growth"],
+      "pages": [0],
+      "snippet": "Investing in early-stage startups leveraging our network to identify major trends early."
+    },
+    "thesis_text": {
+      "value": "Invests across early-stage venture, late-stage growth and tactical debt and equity, believing strategies must evolve with the market; over 250 tech companies in its private portfolio.",
+      "pages": [0],
+      "snippet": "We believe that investment strategies, like companies, must grow and evolve with the market."
+    },
+    "portfolio_count_reported": { "value": 250, "pages": [0], "snippet": "Our active private portfolio includes over 250 tech companies." }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Decagon",
+        "website": null,
+        "description": "AI customer-experience and agentic commerce platform, positioning as an AI concierge.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series D",
+      "date": "2026-01-30",
+      "date_precision": "day",
+      "amount_original": 250000000,
+      "currency_original": "USD",
+      "valuation_post_original": 4500000000,
+      "leads": ["Coatue Management", "Index Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Led by investors Coatue Management and Index Ventures"
+    },
+    {
+      "company": {
+        "name": "Sunday",
+        "website": null,
+        "description": "AI robotics firm building Memo, an autonomous home robot.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-03-28",
+      "date_precision": "day",
+      "amount_original": 165000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1150000000,
+      "leads": ["Coatue"],
+      "participants": ["Bain Capital Ventures", "Fidelity Management & Research", "Tiger Global Management", "Benchmark", "Conviction", "Xtal Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by Coatue at $1.15B valuation"
+    },
+    {
+      "company": {
+        "name": "Firmus",
+        "website": null,
+        "description": "Asia-based AI infrastructure company; strategic equity investment subject to closing conditions.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "strategic",
+      "stage_raw": "strategic equity investment",
+      "date": "2026-04",
+      "date_precision": "month",
+      "amount_original": 505000000,
+      "currency_original": "USD",
+      "valuation_post_original": 5500000000,
+      "leads": ["Coatue"],
+      "participants": ["NVIDIA"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "one of the most active global investors in AI and technology infrastructure"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ not recorded: coatue.com lists five offices (New York, Menlo Park, San Francisco, Hong Kong, London) but identifies no headquarters. Check size, sectors and application route not stated; Coatue is an asset manager with venture/growth/public arms and no founder pitch route was found.",
+    "Funds not recorded: coatue.com gives no fund names, sizes or close dates (CTEK / Coatue Innovation Fund is public-facing at coatuectek.com, not fetched).",
+    "Firmus release says the investment is 'expected' and subject to closing conditions (NVIDIA participation also conditional); other outlets describe it as raised. Date is the month on the Firmus page. Firmus HQ not stated ('Asia-based').",
+    "Sunday date is the Inforcapital publication date (Mar 28, 2026); the original press release (StreetInsider) returned 403. Mind Robotics Series A was reported by search results as co-led by Accel and a16z, not Coatue, so not recorded. Decagon date is the Built In publication date (Business Wire release said 2026-01-28 in URL). Decagon HQ and website not stated on page."
+  ]
+}

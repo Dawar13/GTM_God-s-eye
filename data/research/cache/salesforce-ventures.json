@@ -1,0 +1,91 @@
+{
+  "key": "salesforce-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Salesforce Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Salesforce Ventures, the corporate venture arm of Salesforce, Inc. Salesforce's 2018 press release introduces the Canada Trailblazer Fund as a Salesforce Ventures fund; Code Metal and Optura round coverage names 'Salesforce Ventures' as lead. Not Salesforce.org, Salesforce's Industries Ventures or any third-party 'Salesforce partner' funds.",
+  "pages": [
+    { "url": "https://www.salesforce.com/company/news-press/press-releases/2018/05/180503/", "title": "Salesforce Ventures introduces $100 million Canada Trailblazer Fund", "publisher": "Salesforce", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.tectonicdefense.com/code-metal-raises-125m-series-b/", "title": "Code Metal raises $125M Series B", "publisher": "Tectonic Defense", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/optura-17-5-million-series-a-raised-to-scale-healthcare-roai-platform/", "title": "Optura: $17.5 Million Series A Raised To Scale Healthcare ROAI Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "cvc",
+      "pages": [0],
+      "snippet": "a $100 million fund to invest in Canadian startups and fuel cloud innovation and customer success in the region"
+    }
+  },
+  "funds": [
+    {
+      "name": "Canada Trailblazer Fund",
+      "number": null,
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2018-05-03",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "a $100 million fund to invest in Canadian startups and fuel cloud innovation and customer success in the region"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Code Metal",
+        "website": null,
+        "description": "Boston-founded AI platform that translates high-level code into hardware-specific code for embedded systems and chips, and verifies it for defense and automotive.",
+        "hq_country": "US",
+        "founded_year": 2023,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-02-19",
+      "date_precision": "day",
+      "amount_original": 125000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1250000000,
+      "leads": ["Salesforce Ventures"],
+      "participants": ["Accel", "B Capital", "Smith Point Capital", "J2 Ventures", "Shield Capital", "Overmatch", "RTX"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "announced that it’s raised a $125M Series B led by Salesforce Ventures"
+    },
+    {
+      "company": {
+        "name": "Optura",
+        "website": null,
+        "description": "Nashville healthcare platform that helps enterprises measure the business value of AI and track return on AI investment.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-05-14",
+      "date_precision": "day",
+      "amount_original": 17500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Salesforce Ventures"],
+      "participants": ["Echo Health Ventures", "Susa Ventures", "Matrix Partners", "HC9 Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "a $17.5 million Series A round led by Salesforce Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded (third not found within budget). Search summaries also show Legora ($550M Series D, Mar 2026), Hark ($700M Series A, May 2026) and Actively ($45M Series B) with Salesforce Ventures; round pages not fetched. Optura: some outlets say co-led with Echo Health Ventures; Pulse 2.0 names only Salesforce Ventures as lead.",
+    "Canada Trailblazer Fund is a 2018 fund and not necessarily the latest; Salesforce Ventures' current fund structure was not found. The 2018 date is the launch announcement, not a close date. Salesforce Ventures' own page was not found (salesforce.com/company/ventures returned a resources hub).",
+    "Website, HQ, stages (a 2018 BrainStation summary mentions Series A/B for the Canada fund, not verbatim), check size, thesis, sectors, application URL not recorded. Frontier-lab investor list lead not checked.",
+    "Code Metal date is the 2026-02-19 announcement; the Tectonic page was published 2026-02-20 per its summary."
+  ]
+}

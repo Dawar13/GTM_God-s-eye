@@ -1,0 +1,74 @@
+{
+  "key": "avid-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Avid Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as avidventures.com, the New York early-stage fintech and software firm led by Addie Lerner (Fortune/Pulse 2.0 on Fund II); site lists Alloy, Basis, Clara, Nova Credit, Rapyd and links the Fund II Fortune piece. Not Avid (nonprofit-fundraising startup) or Avid Capital.",
+  "pages": [
+    { "url": "https://avidventures.com", "title": "Avid Ventures", "publisher": "Avid Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/avid-ventures-87-million-early-stage-fund-ii-launched", "title": "Avid Ventures: $87 Million Early Stage Fund II Launched", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.fortune.com/2024/09/19/avid-ventures-raises-87-million-second-fund", "title": "Exclusive: Avid Ventures raises $87 million second fund", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://fintech.global/2026/02/25/basis-raises-100m-series-b-at-1-15bn-valuation/", "title": "Basis raises $100m Series B at $1.15bn valuation", "publisher": "Fintech Global", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.prnewswire.com/news-releases/supper-raises-11m-seed-round-to-deliver-an-ai-native-data-platform-that-makes-data-access-effortless-fast-and-reliable-302630889.html", "title": "Supper raises $11M seed round", "publisher": "PR Newswire", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://thatch.com/blog/thatch-series-c-announcement", "title": "Thatch Series C announcement", "publisher": "Thatch", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "Avid Ventures raises $87 million second fund" },
+    "website": { "value": "https://avidventures.com", "pages": [0], "snippet": "We built Avid to be an extension of your founding team." },
+    "hq_city": { "value": "New York", "pages": [1], "snippet": "Based in New York City." },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Based in New York City." },
+    "stages": { "value": ["pre_seed", "seed", "series_a", "series_b"], "pages": [0, 1], "snippet": "Seed through Series B stages" },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "$500k to $2 million collaborative Toehold checks" },
+    "check_max_usd": { "value": 10000000, "pages": [1], "snippet": "up to $10 million" },
+    "thesis_text": { "value": "Boutique hands-on investor backing founders building transformative software and fintech companies, often very early, with larger follow-on checks around Series B.", "pages": [0, 1], "snippet": "transformative software and fintech companies" },
+    "stated_sectors": { "value": ["fintech", "enterprise_saas"], "pages": [1], "snippet": "transformative software and fintech companies" }
+  },
+  "funds": [
+    {
+      "name": "Avid Ventures Fund II",
+      "number": "II",
+      "size_original": 87000000,
+      "currency_original": "USD",
+      "close_date": "2024-09-19",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "$87 million"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Thatch", "website": "https://thatch.com", "description": "Helps companies move from traditional health benefits to health budgets.", "hq_country": null, "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "series_c_plus", "stage_raw": "Series C", "date": "2026-09-15", "date_precision": "day",
+      "amount_original": 108000000, "currency_original": "USD", "valuation_post_original": 1000000000,
+      "leads": [], "participants": ["Avid Ventures", "The General Partnership", "Index Ventures", "Scale Venture Partners", "General Catalyst", "Andreessen Horowitz", "Quiet Capital", "SemperVirens", "QuantumLight", "Eli Lilly and Company", "Paychex", "ADP Ventures"], "unspecified": [],
+      "pages": [5], "snippet": "$108M Series C funding round"
+    },
+    {
+      "company": { "name": "Basis", "website": null, "description": "AI agents for accounting firms.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B", "date": "2026-02-25", "date_precision": "day",
+      "amount_original": 100000000, "currency_original": "USD", "valuation_post_original": 1150000000,
+      "leads": ["Accel"], "participants": ["GV", "Lloyd Blankfein", "Khosla Ventures", "NFDG", "Better Tomorrow Ventures", "BoxGroup", "Avid Ventures", "Jeff Dean", "Jeff Wilke", "Adam D'Angelo"], "unspecified": [],
+      "pages": [3], "snippet": "Additional investors include NFDG, Better Tomorrow Ventures, BoxGroup, Avid Ventures"
+    },
+    {
+      "company": { "name": "Supper", "website": null, "description": "Agentic data platform for accessing company data.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2025-12-03", "date_precision": "day",
+      "amount_original": 11000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Union Square Ventures"], "participants": ["BoxGroup", "Inspired Capital", "Torch Capital", "Avid Ventures"], "unspecified": [],
+      "pages": [4], "snippet": "the agentic data platform that removes the agony of accessing company data"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds[0].close_date", "values": ["2024-09-19 (Fortune)", "2024-09-28 (Pulse 2.0 article date)"], "chosen": "2024-09-19", "reason": "Fortune's exclusive is dated the announcement day; Pulse 2.0 covered it later." }
+  ],
+  "open_items": [
+    "Fund I ($72M per Pulse 2.0 and Fortune; a 2021 release says $68M per search summary) not recorded: latest fund only.",
+    "Thatch release does not state which firm led; Avid listed as existing/new investor with no further detail. Thatch description paraphrased from the release.",
+    "Supper and Thatch snippets for Avid's presence are not verbatim quotes of the Avid mention (fetch tool summarised the page); the quoted text identifies the round.",
+    "Check range: Toehold $500K-$2M and Double Down up to $10M per Pulse 2.0; min/max combine both. Search summaries mention other ranges (up to $8M).",
+    "Contact is an info@ email on the site; no application URL recorded. Fragment (Oct 2026) listed on site but Fortune article does not name Avid, so excluded."
+  ]
+}

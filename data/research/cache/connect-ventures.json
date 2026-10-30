@@ -5,45 +5,497 @@
   "name": "Connect Ventures",
   "status": "active",
   "researched_at": "2026-10-30",
-  "identity_check": "Confirmed as Connect Ventures (connectventures.co; LinkedIn /company/connect-ventures), the London pre-seed and seed VC operated by Connect Ventures LLP (England and Wales OC367566, FCA 582584), investing since 2012. Work in progress.",
+  "identity_check": "Confirmed as Connect Ventures (connectventures.co; LinkedIn /company/connect-ventures), the London pre-seed and seed VC run by Pietro Bezza, Sitar Teli and Rory Stirling. The site footer names Connect Ventures LLP (England and Wales OC367566, FCA 582584). Founded in 2012 by Pietro Bezza and Bill Earner (TechCrunch, FrenchWeb, May 2012). Not the US consumer-AI fund also called 'Connect Ventures' at connectventures.com (in partnership with Creative Artists Agency), a different firm whose deals are excluded here.",
   "pages": [
-    {
-      "url": "https://www.connectventures.co",
-      "title": "Connect Ventures",
-      "publisher": "Connect Ventures",
-      "retrieved_at": "2026-10-30",
-      "kind": "primary"
-    },
-    {
-      "url": "https://www.connectventures.co/opinions/announcing-connect-fund-v",
-      "title": "Announcing Connect Fund V: Sharpening our focus to back technical founders from day zero",
-      "publisher": "Connect Ventures",
-      "retrieved_at": "2026-10-30",
-      "kind": "primary"
-    },
-    {
-      "url": "https://www.connectventures.co/opinions/announcing-connect-fund-iv-to-back-products-loved-by-many",
-      "title": "Announcing Connect Fund IV to back products loved by many",
-      "publisher": "Connect Ventures",
-      "retrieved_at": "2026-10-30",
-      "kind": "primary"
-    }
+    {"url": "https://www.connectventures.co", "title": "Connect Ventures | Home", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/announcing-connect-fund-v", "title": "Announcing Connect Fund V: Sharpening our focus to back technical founders from day zero", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/announcing-connect-fund-iv-to-back-products-loved-by-many", "title": "Announcing Connect Fund IV to back products loved by many", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://tech.eu/2026/09/23/connect-ventures-announces-first-close-of-80m-fund-v-to-back-europes-technical-founders/", "title": "Connect Ventures announces first close of $80M Fund V to back Europe's technical founders", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://tech.eu/2020/06/25/connect-ventures-third-fund/", "title": "London's Connect Ventures closes its third fund at $80 million", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://news.crunchbase.com/venture/londons-connect-ventures-closes-its-third-fund-at-80-million/", "title": "London's Connect Ventures closes its third fund at $80 million", "publisher": "Crunchbase News", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://www.connectventures.co/opinions/announcing-connect-ventures-iii", "title": "Announcing Connect Ventures III", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://techcrunch.com/?p=544410", "title": "European VC Connect Ventures Launches With $22M Fund. Secret Sales Gets The First Helping: $487K", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://www.frenchweb.fr/nouveau-le-fonds-europeen-connect-ventures-boucle-un-closing-de-16-millions-euros-61399/59850", "title": "Le fonds européen Connect Ventures boucle un closing de 16 millions d'euros", "publisher": "FrenchWeb", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://www.euacc.ai/investors/connect-ventures-two", "title": "Connect Ventures Two", "publisher": "EUACC", "retrieved_at": "2026-10-30", "kind": "database"},
+    {"url": "https://www.connectventures.co/team-members/pietro-bezza", "title": "Pietro Bezza - Connect Ventures", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/team-members/rory-stirling", "title": "Rory Stirling - Connect Ventures", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/team-members/sitar-teli", "title": "Sitar Teli - Connect Ventures", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies", "title": "Companies - Connect Ventures", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/lets-get-physical-investing-in-mosaico", "title": "Let's get physical: investing in Mosaico", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/new-year-new-unicorn-new-product-updates", "title": "New year, new unicorn, new product updates", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-nexcade", "title": "Investing in Nexcade", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/all-systems-go-new-faces-new-founders-new-product-launches", "title": "All systems go: New faces, new founders, new product launches", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-ewake-engineers-best-friend-for-software-reliability", "title": "Investing in Ewake: engineers' best friend for software reliability", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-cloud-capital", "title": "Investing in Cloud Capital", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-steep", "title": "Investing in Steep", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/why-we-invested-in-dessn", "title": "Design in production. Why we invested in Dessn", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/from-barcelona-to-berlin-welcoming-dessn-dust-series-b-and-plenty-more", "title": "From Barcelona to Berlin. Welcoming Dessn, Dust Series B and plenty more...", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-zellify-the-missing-data-layer-for-consumer-growth", "title": "Investing in Zellify: the missing data layer for consumer growth", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/welcoming-zellify-new-launches-barcelona-bound", "title": "Welcoming Zellify, New Launches, Barcelona Bound", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-cino-the-new-social-layer-for-finance", "title": "Investing in Cino: The New Social Layer for Finance", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/opinions/connect-2024-in-review", "title": "2024: Our Year in Review", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/mosaico", "title": "Connect Ventures Portfolio - Mosaico", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/nexcade-oii7a", "title": "Connect Ventures Portfolio - Nexcade", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/ewake", "title": "Connect Ventures Portfolio - Ewake", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/cloud-capital", "title": "Connect Ventures Portfolio - Cloud Capital", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/steep", "title": "Connect Ventures Portfolio - Steep", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/dessn", "title": "Connect Ventures Portfolio - Dessn", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/zellify-2", "title": "Connect Ventures Portfolio - Zellify", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/cino", "title": "Connect Ventures Portfolio - Cino", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://tech.eu/2024/04/09/food-sourcing-platform-torg-raises-eur27m-seed/", "title": "Food sourcing platform Torg raises €2.7M Seed", "publisher": "Tech.eu", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://startupsmagazine.co.uk/article-tuza-secures-ps4m-compare-business-card-payments", "title": "Tuza secures £4M to compare business card payments", "publisher": "Startups Magazine", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://ca.news.yahoo.com/business-payments-comparison-tuza-taps-101100969.html", "title": "Business payments comparison site Tuza taps backers for £4m", "publisher": "Sky News (via Yahoo News)", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://www.uktech.news/news/cloud-capital-results-latest-funding-round-20250424", "title": "Cloud Capital results latest funding round", "publisher": "UKTN", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://podnews.net/press-release/aicoustics-funding-5m", "title": "ai|coustics raises €5M seed funding", "publisher": "Podnews (press release)", "retrieved_at": "2026-10-30", "kind": "press"},
+    {"url": "https://www.connectventures.co/opinions/investing-in-ai-coustics-yes-i-can-hear-you-now", "title": "Investing in ai|Coustics: Yes, I can hear you now…", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.zellify.app/careers/founding-engineer", "title": "Founding Engineer - Zellify", "publisher": "Zellify", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://trysignalbase.com/news/funding/zellify-raises-37m-seed-round", "title": "Zellify Raises $3.7M Seed Round", "publisher": "Signalbase", "retrieved_at": "2026-10-30", "kind": "database"},
+    {"url": "https://www.connectventures.co/companies/tuza", "title": "Connect Ventures Portfolio - Tuza", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/torg", "title": "Connect Ventures Portfolio - Torg", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"},
+    {"url": "https://www.connectventures.co/companies/ai-coustics", "title": "Connect Ventures Portfolio - ai-coustics", "publisher": "Connect Ventures", "retrieved_at": "2026-10-30", "kind": "primary"}
   ],
   "facts": {
-    "type": {
-      "value": "vc",
-      "pages": [0],
-      "snippet": "a partner-only, Europe-wide, high conviction investment team."
-    },
-    "website": {
-      "value": "https://www.connectventures.co",
-      "pages": [0],
-      "snippet": "We've been investing in pre-seed and seed stage companies since 2012, from our home in London."
-    }
+    "aliases": {"value": ["Connect Ventures LLP", "Connect"], "pages": [0, 39], "snippet": "Connect Ventures LLP is a limited liability partnership incorporated in England and Wales with registered number OC367566"},
+    "type": {"value": "vc", "pages": [0, 3], "snippet": "We’re a partner-only, Europe-wide, high conviction investment team."},
+    "website": {"value": "https://www.connectventures.co", "pages": [0], "snippet": "We’ve been investing in pre-seed and seed stage companies since 2012, from our home in London."},
+    "linkedin": {"value": "https://www.linkedin.com/company/connect-ventures", "pages": [0, 11], "snippet": "Stay in touch with us on LinkedIn"},
+    "hq_city": {"value": "London", "pages": [0, 4, 5], "snippet": "We invest across Europe, from our home in London."},
+    "hq_country": {"value": "GB", "pages": [0, 4], "snippet": "Connect Ventures LLP is a limited liability partnership incorporated in England and Wales with registered number OC367566"},
+    "stages": {"value": ["pre_seed", "seed"], "pages": [0, 1, 3, 2], "snippet": "We are pre-seed specialists since 2012. We lead or co-lead rounds between $500k-$5m."},
+    "check_min_usd": {"value": 500000, "pages": [1, 3], "snippet": "We'll continue to lead pre-seed rounds across Europe, writing cheques of $500k–$5m."},
+    "check_max_usd": {"value": 5000000, "pages": [1, 3], "snippet": "We'll continue to lead pre-seed rounds across Europe, writing cheques of $500k–$5m."},
+    "leads": {"value": true, "pages": [0, 1, 3, 14, 16, 18, 21, 23, 35, 36], "snippet": "We often lead the first round and invest as early as an idea."},
+    "thesis_text": {"value": "London partner-only firm that leads pre-seed (and some seed) rounds across Europe, backing technical founders from day zero. Fund V narrows the focus to companies where technology is core to the product, from AI and infrastructure to hardware, robotics, automation and biotech, with a low-volume, high-conviction, high-support model and $500k-$5m cheques.", "pages": [0, 1, 3], "snippet": "particularly where technology is fundamental to the product and the problem being solved - from AI and infrastructure to hardware, robotics and biotech."},
+    "stated_sectors": {"value": ["ai_infra", "ai_apps_agents", "hardware_deeptech", "robotics_physical_ai", "health_bio"], "pages": [0, 1], "snippet": "We back founders building at the intersection of AI, hardware, and automation."},
+    "accepts_cold_inbound": {"value": "unknown", "pages": [0], "snippet": "We often lead the first round and invest as early as an idea."},
+    "requires_us_entity": {"value": "unknown", "pages": [0], "snippet": "We invest across Europe, from our home in London."},
+    "portfolio_count_reported": {"value": 120, "pages": [1, 3], "snippet": "We've now invested in more than 120 companies, consistently backing founders at the earliest stages."}
   },
-  "funds": [],
-  "partners": [],
-  "rounds": [],
-  "conflicts": [],
-  "open_items": []
+  "funds": [
+    {
+      "name": "Connect Ventures Fund I (first close)",
+      "number": "I",
+      "size_original": 16000000,
+      "currency_original": "EUR",
+      "close_date": "2012-05",
+      "date_precision": "month",
+      "pages": [7, 8, 6],
+      "snippet": "€43 million from its current size of €16 million"
+    },
+    {
+      "name": "Connect Ventures Two",
+      "number": "II",
+      "size_original": null,
+      "currency_original": null,
+      "close_date": null,
+      "date_precision": null,
+      "pages": [9],
+      "snippet": "Connect Ventures Two"
+    },
+    {
+      "name": "Connect Ventures III",
+      "number": "III",
+      "size_original": 80000000,
+      "currency_original": "USD",
+      "close_date": "2020-06-25",
+      "date_precision": "day",
+      "pages": [6, 4, 5],
+      "snippet": "We’re thrilled to announce the final closing of our new $80M (£65M) fund"
+    },
+    {
+      "name": "Connect Fund IV",
+      "number": "IV",
+      "size_original": 80000000,
+      "currency_original": "USD",
+      "close_date": "2023-09-05",
+      "date_precision": "day",
+      "pages": [2],
+      "snippet": "We’re excited to announce our fourth fund today, at $80M"
+    },
+    {
+      "name": "Connect Fund V (first close; $80M target)",
+      "number": "V",
+      "size_original": 55000000,
+      "currency_original": "USD",
+      "close_date": "2026-09-23",
+      "date_precision": "day",
+      "pages": [1, 3],
+      "snippet": "We're excited to announce the first close of our fifth fund today: $55m, against a final target of $80m."
+    }
+  ],
+  "partners": [
+    {
+      "name": "Pietro Bezza",
+      "title": "Managing Partner (co-founder)",
+      "focus_sectors": ["enterprise_saas", "ai_apps_agents", "robotics_physical_ai", "dev_tools"],
+      "linkedin_url": "https://www.linkedin.com/in/pietrobezza/",
+      "pages": [10, 0, 7, 14, 18, 21, 20, 1]
+    },
+    {
+      "name": "Rory Stirling",
+      "title": "General Partner",
+      "focus_sectors": ["fintech", "supply_chain_logistics", "ai_apps_agents"],
+      "linkedin_url": "https://www.linkedin.com/in/rorystirling/",
+      "pages": [11, 0, 16, 19, 36]
+    },
+    {
+      "name": "Sitar Teli",
+      "title": "Managing Partner (co-founder and co-managing partner per Tech.eu)",
+      "focus_sectors": ["consumer", "enterprise_saas", "fintech", "ai_infra"],
+      "linkedin_url": "https://www.linkedin.com/in/sitar/",
+      "pages": [12, 0, 3, 23, 25, 40, 35]
+    }
+  ],
+  "rounds": [
+    {
+      "company": {
+        "name": "Dessn",
+        "website": "https://www.dessn.ai/",
+        "description": "UK AI-native design-in-production tool that lets designers and PMs prototype inside the company's real codebase and components, without an IDE.",
+        "hq_country": "GB",
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-05-12",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["Betaworks", "N49P"],
+      "unspecified": [],
+      "pages": [21, 22, 32],
+      "snippet": "by leading a $6m seed with participation from Betaworks and N49P"
+    },
+    {
+      "company": {
+        "name": "Zellify",
+        "website": "https://zellify.app/",
+        "description": "Stockholm web-to-app platform that lets mobile app companies run onboarding, paywalls and checkout on the web, outside app-store fees, with full attribution data.",
+        "hq_country": "SE",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "amount_original": 3100000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["Dreamcraft Ventures", "Inovia", "FJ Labs", "Ventures Together", "Sebastian Knutsson", "Fredrik Hjelm", "Jaroslav Beck", "Johannes Schildt"],
+      "unspecified": [],
+      "pages": [23, 24, 41, 42, 33],
+      "snippet": "Today, we're proud to announce that Connect Ventures led Zellify's €3.1m seed round, joined by Dreamcraft Ventures, Inovia, FJ Labs, and Ventures Together"
+    },
+    {
+      "company": {
+        "name": "Mosaico",
+        "website": "https://mosaico.dev/",
+        "description": "Italian (Parma and Bologna) open-source, Rust-based data management platform built for robotics and physical-AI teams.",
+        "hq_country": "IT",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "source",
+        "layer": "autonomy_tooling"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed",
+      "date": "2026-01-20",
+      "date_precision": "day",
+      "amount_original": 1000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["Vento"],
+      "unspecified": [],
+      "pages": [14, 15, 27, 24],
+      "snippet": "We are excited to have led the pre-seed, alongside Vento and high-value Deep Tech angels."
+    },
+    {
+      "company": {
+        "name": "Nexcade",
+        "website": "https://nexcade.ai/",
+        "description": "UK multi-agent AI automation platform for freight forwarders, starting with automated quotations and bookings.",
+        "hq_country": "GB",
+        "founded_year": null,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2025-10-08",
+      "date_precision": "day",
+      "amount_original": 2500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["MMC Ventures", "Entropy Industrial Capital", "Inovia", "Charlie Songhurst", "Keith Wallington"],
+      "unspecified": [],
+      "pages": [16, 17, 28, 0],
+      "snippet": "We led a $2.5m pre-seed round, alongside great people at MMC Ventures, Entropy Industrial Capital, Inovia, and angels including Charlie Songhurst and Keith Wallington."
+    },
+    {
+      "company": {
+        "name": "Ewake",
+        "website": "https://ewake.ai/",
+        "description": "French startup whose AI agents sit on production data and tools to surface, triage and help resolve software-reliability incidents with engineering teams.",
+        "hq_country": "FR",
+        "founded_year": null,
+        "sector": "dev_tools",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed round",
+      "date": "2025-10-07",
+      "date_precision": "day",
+      "amount_original": 2000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["2100 Ventures", "Notion Capital", "Amirhossein Malekzadeh", "Nicolas Steegmann", "Michele Attisani"],
+      "unspecified": [],
+      "pages": [18, 17, 29],
+      "snippet": "We’re excited to lead a €2m pre-seed round in Ewake and to back Poone and Omid’s mission to redefine software reliability with AI agents."
+    },
+    {
+      "company": {
+        "name": "Cloud Capital",
+        "website": "https://www.cloudcapital.co/",
+        "description": "UK fintech platform giving CFOs forecasting, savings and commitment management for cloud-infrastructure spend.",
+        "hq_country": "GB",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed (announced with a later $5.4M seed; $7.7M combined)",
+      "date": "2025-04-24",
+      "date_precision": "day",
+      "amount_original": 2300000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [38, 19, 30, 26],
+      "snippet": "Cloud Capital raised an initial $2.3 million pre-seed round led by Connect Ventures alongside a number of fintech angels."
+    },
+    {
+      "company": {
+        "name": "ai-coustics",
+        "website": "https://ai-coustics.com",
+        "description": "Berlin company building a real-time speech-enhancement and audio-conditioning layer (API and SDKs) for Voice AI, broadcasters and device makers.",
+        "hq_country": "DE",
+        "founded_year": 2021,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed funding round",
+      "date": "2025-03-25",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Partech"],
+      "participants": ["Acurio", "Intuition", "Arc Investors", "Connect", "FOV Ventures"],
+      "unspecified": [],
+      "pages": [39, 40, 45],
+      "snippet": "with the participation of Acurio, Intuition and Arc Investors, as well as existing investors Connect and FOV Ventures"
+    },
+    {
+      "company": {
+        "name": "Cino",
+        "website": "https://www.getcino.com/uk",
+        "description": "Dutch real-time shared-payments app: groups link bank accounts, set a split, and each member is charged their share at checkout via a virtual card.",
+        "hq_country": "NL",
+        "founded_year": 2023,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2025-03-04",
+      "date_precision": "day",
+      "amount_original": 3500000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["Connect Ventures"],
+      "unspecified": [],
+      "pages": [25, 34],
+      "snippet": "We’re excited to participate in Cino’s €3.5m seed round"
+    },
+    {
+      "company": {
+        "name": "Steep",
+        "website": "https://steep.app",
+        "description": "Swedish metrics-first business-intelligence platform for the modern data stack, built on a semantic layer for self-serve analytics.",
+        "hq_country": "SE",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2024-07-03",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["inventures", "Alliance VC", "Antler", "Greens"],
+      "unspecified": [],
+      "pages": [20, 31, 26],
+      "snippet": "leading a $4m seed round along with existing investor inventures, and participation from Alliance VC, Antler and Greens."
+    },
+    {
+      "company": {
+        "name": "Tuza",
+        "website": "https://tuza.ai",
+        "description": "UK fintech that started as a price-comparison exchange for SMB card-payment services and now describes itself as an AI-native automation platform for large banks.",
+        "hq_country": "GB",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed funding round",
+      "date": "2024-05-02",
+      "date_precision": "day",
+      "amount_original": 4000000,
+      "currency_original": "GBP",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["Northzone", "Triple Point", "Entrepreneur First"],
+      "unspecified": [],
+      "pages": [36, 37, 43, 26],
+      "snippet": "has successfully secured £4 million in a seed funding round led by Connect Ventures, with investment from Northzone, Triple Point, and Entrepreneur First."
+    },
+    {
+      "company": {
+        "name": "Torg",
+        "website": "https://usetorg.com",
+        "description": "Berlin AI-assisted sourcing marketplace connecting retail and wholesale buyers with 100,000+ verified food and beverage suppliers, focused on private label.",
+        "hq_country": "DE",
+        "founded_year": null,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "amount_original": 2700000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": ["Connect Ventures"],
+      "participants": ["FoodLabs", "Sondo", "Ventures Together", "Sameer Singh", "Jonas Meynert"],
+      "unspecified": [],
+      "pages": [35, 44, 26],
+      "snippet": "The round was led by Connect Ventures and joined by existing investor FoodLabs and new investors including Sondo , Ventures Together , Sameer Singh and Jonas Meynert"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "check_min_usd / check_max_usd",
+      "values": [
+        "'writing cheques of $500k–$5m' (Fund V announcement; Tech.eu 23 Sep 2026: 'writing cheques of $500,000 to $5 million')",
+        "'We lead or co-lead rounds between $500k-$5m' (homepage: a round size, not a cheque size)",
+        "€250,000 to €1.25 million per investment (Fund I, TechCrunch and FrenchWeb, May 2012)"
+      ],
+      "chosen": "$500,000 to $5,000,000 cheques (USD)",
+      "reason": "The Fund V announcement and Tech.eu both state it as the cheque size for the current fund. The homepage wording describes the rounds the firm leads, and the 2012 range applied to Fund I."
+    },
+    {
+      "field": "portfolio_count_reported",
+      "values": [
+        "'more than 120 companies' (Fund V announcement and Tech.eu, Sep 2026)",
+        "109 company tiles across the seven pages of connectventures.co/companies"
+      ],
+      "chosen": "120 (a lower bound)",
+      "reason": "This is the firm's own stated count. The portfolio page may leave out some companies or stealth investments."
+    },
+    {
+      "field": "funds.I size",
+      "values": [
+        "€16M first close, aiming for €43M (TechCrunch 1 May 2012; FrenchWeb 2 May 2012)",
+        "'$22M fund' (TechCrunch headline conversion)",
+        "'$21M, 2012-05, London' (user fund list by Shai Goldman; not fetched)"
+      ],
+      "chosen": "16,000,000 EUR, first close, May 2012",
+      "reason": "This is the amount as announced, in its original currency. The USD figures are conversions. No final close for Fund I was found."
+    },
+    {
+      "field": "rounds.Zellify amount",
+      "values": [
+        "€3.1m seed (Connect's post; founder post quoted on Signalbase)",
+        "$3.7M seed (Zellify site banner; Signalbase headline)"
+      ],
+      "chosen": "3,100,000 EUR",
+      "reason": "The lead investor and the founders state €3.1m, and $3.7M matches its USD conversion."
+    },
+    {
+      "field": "rounds.Cloud Capital date",
+      "values": [
+        "Announced 24 Apr 2025 (UKTN) and 28 Apr 2025 (Connect post)",
+        "Investment year 2024 (Connect portfolio page), and listed among 2024's new investments (Connect 2024 review, 17 Jan 2025)"
+      ],
+      "chosen": "2025-04-24",
+      "reason": "This is the earliest public announcement. UKTN says the pre-seed was raised 'initially', before the seed, so the pre-seed itself probably closed in 2024."
+    },
+    {
+      "field": "rounds.Mosaico date",
+      "values": [
+        "20 Jan 2026 (Connect post announcing the investment)",
+        "Investment year 2025 (Connect portfolio page)"
+      ],
+      "chosen": "2026-01-20",
+      "reason": "This is the announcement date. The round probably closed in late 2025."
+    },
+    {
+      "field": "partners.Sitar Teli title",
+      "values": [
+        "Managing Partner (Connect site)",
+        "co-founder and co-managing partner (Tech.eu 2026)",
+        "General Partner (Tech.eu 2020)"
+      ],
+      "chosen": "Managing Partner",
+      "reason": "This is the title on the firm's current site."
+    }
+  ],
+  "open_items": [
+    "application_url: none found. The site has no pitch form or contact page (/contact, /pitch, /apply, /founders and /about return 404), and the homepage has no mailto link. accepts_cold_inbound is therefore 'unknown'. The team includes a 'Dealflow Ops Analyst', but no inbound process is stated.",
+    "requires_us_entity: not stated, so recorded as 'unknown'. The stated geography is Europe only, and the portfolio spans BE, DE, FR, IT, NL, SE, CH and the UK (plus one US-tagged company).",
+    "Indian founders: nothing stated, so the fact is omitted.",
+    "Fund II ('Connect Ventures Two'): only a database listing (EUACC) was found, with no size, vintage or close date. The firm's Fund III post does not size it.",
+    "Fund I: only the €16M first close (target €43M) of May 2012 was found; the final size is unknown. FrenchWeb says Fund I targeted early-stage startups in London, Berlin, Stockholm and Tel Aviv.",
+    "Fund IV: the post (5 Sep 2023) says 'at $80M' but does not say whether that is a final close. Search results show British Patient Capital commitments (a cornerstone in Fund III and £20m in Fund IV), but the BBB and BPC pages returned 403, so they are not recorded.",
+    "Fund V: first close of $55M against an $80M target, anchored by British Business Bank, with returning LPs Aldea Ventures, Sella Venture Partners and Molten Ventures plus family offices and Connect-backed founders. The firm's post is undated, so the date comes from Tech.eu (23 Sep 2026). The user-list lead '2026 fund $55M first close' is confirmed.",
+    "Fund III LPs (firm post): Top Tier Capital Partners, Isomer Capital, British Patient Capital, Big Society Capital and De Agostini. Tech.eu also names Draper Esprit and Korelya Capital.",
+    "Rounds not recorded because no fetched round page names Connect, or because the page was blocked: Ogment pre-seed (Oct 2024; a Nordic9 search result names Connect with Eniac, Boost VC and Earthling VC, but the page returned 403); Molecular Glue Labs (Fund V post cites it as a recent techbio investment; no round article found); Unwritten and Neverless (2024); Embedd (2023, firmware hardware abstraction); Aikido seed co-led with Notion in late 2023 (2024 review); Dust $40M Series B (Connect's newsletter does not say it participated).",
+    "ai-coustics earlier round: Connect's homepage says 'Led the pre-seed in 2023', while TechCrunch (25 Mar 2024) reports €1.9M from Connect Ventures, Inovia Capital, FOV Ventures and Jan Bohl without naming a lead or stage. It is not recorded as a separate round.",
+    "Cino: Connect's post says it participated in the €3.5m seed but names no lead or co-investors.",
+    "Mosaico amount (€1M) comes from Connect's undated newsletter, 'New year, new unicorn' (Jan 2026). The Nordic9 article on the co-led Vento round returned 403.",
+    "Zellify date (28 Apr 2026) comes from Signalbase (a database). The Sifted article returned 403, and Connect's own investment post is undated (its 5 May 2026 newsletter welcomes Zellify). Seedtable, seen only in search results, lists Inovia as lead, which conflicts with Connect's and Zellify's own pages.",
+    "Dessn date is the date of Connect's post (12 May 2026); no press article was fetched. Nexcade and Ewake rest on Connect's own posts only; no press article was fetched.",
+    "Founding year was not found for Dessn, Zellify, Mosaico, Nexcade, Ewake, Cloud Capital, Steep, Tuza or Torg. Company HQ countries come from Connect's portfolio pages.",
+    "Partner focus sectors are inferred from the bios (Bezza: B2B software; Stirling: product-led fintech; Teli: consumer, marketplaces and networked SaaS) and from the deals each wrote up. Non-investing staff (CFO Mark Pettit, Head of Finance Amira Naik, Head of Marketing Claire Walker, Operations Manager Rosie Cipolla, Dealflow Ops Analyst Sai Tatireddy) are not recorded. Co-founder Bill Earner (2012) no longer appears on the site."
+  ]
 }

@@ -1,0 +1,82 @@
+{
+  "key": "contour-venture-partners",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Contour Venture Partners",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as contourventures.com, the New York seed-stage software firm (475 Park Avenue South) founded in 2005 and early in Datadog, OnDeck and Movable Ink per TechCrunch. Not Contour Ventures or Contour Capital elsewhere.",
+  "pages": [
+    { "url": "https://www.contourventures.com/", "title": "Contour Venture Partners", "publisher": "Contour Venture Partners", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/05/20/contour-venture-partners-an-early-investor-in-datadog-and-movable-ink-lowers-the-target-for-its-fifth-fund", "title": "Contour Venture Partners lowers the target for its fifth fund", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/felix-raises-200-million-series-c-led-by-andreessen-horowitz/", "title": "Felix Raises $200 Million Series C Led By Andreessen Horowitz", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://inforcapital.com/news/efex-raises-8-million-to-strengthen-its-treasury-platform/", "title": "EFEX raises $8 million to strengthen its treasury platform", "publisher": "Infor Capital", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://natlawreview.com/press-releases/compyl-closes-12-million-series-funding", "title": "Compyl Closes $12 Million in Series A Funding", "publisher": "National Law Review (press release)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Longtime New York-based seed investor" },
+    "website": { "value": "https://www.contourventures.com", "pages": [0], "snippet": "The most seasoned seed stage venture capital firm." },
+    "hq_city": { "value": "New York", "pages": [0], "snippet": "475 Park Avenue South, 6th Floor, New York, NY 10016" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "475 Park Avenue South, 6th Floor, New York, NY 10016" },
+    "stages": { "value": ["seed"], "pages": [0, 1], "snippet": "prefers to lead rounds in seed and early-stage companies" },
+    "leads": { "value": true, "pages": [1], "snippet": "prefers to lead rounds in seed and early-stage companies" },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "writes checks between $500,000 and $1.5 million" },
+    "check_max_usd": { "value": 1500000, "pages": [1], "snippet": "writes checks between $500,000 and $1.5 million" },
+    "thesis_text": { "value": "Seed-stage investor in innovative software companies, with a geographic priority on New York and the Northeast; partners with entrepreneurs to transform industries.", "pages": [0, 1], "snippet": "seed stage companies that provide innovative software solutions" },
+    "stated_sectors": { "value": ["enterprise_saas", "fintech"], "pages": [0], "snippet": "seed stage companies that provide innovative software solutions" }
+  },
+  "funds": [
+    {
+      "name": "Contour Venture Partners Fund V",
+      "number": "V",
+      "size_original": 42000000,
+      "currency_original": "USD",
+      "close_date": "2024-05",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "closed on $42 million, raised from 64 backers, for Contour Venture Partners Fund V"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Felix", "website": null, "description": "Fintech expanding a financial services platform for Latino consumers in the US, having started with remittances.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "series_c_plus", "stage_raw": "Series C", "date": "2026-09-04", "date_precision": "day",
+      "amount_original": 200000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Andreessen Horowitz"],
+      "participants": ["QED Investors", "Castle Island Ventures", "Switch Ventures", "Contour Venture Partners", "Endeavor Catalyst"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Contour Venture Partners"
+    },
+    {
+      "company": { "name": "EFEX", "website": null, "description": "Fintech tackling the complexities of international finance for mid-market businesses.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2026-03-27", "date_precision": "day",
+      "amount_original": 8000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["PayPal Ventures", "Floodgate"],
+      "participants": ["Contour Venture Partners", "Nido Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "co-led by PayPal Ventures and Floodgate"
+    },
+    {
+      "company": { "name": "Compyl", "website": null, "description": "Unified governance, risk and compliance (GRC) platform, founded in 2020.", "hq_country": "US", "founded_year": 2020, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-06-04", "date_precision": "day",
+      "amount_original": 12000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Venture Guides"],
+      "participants": ["Contour Venture Partners", "Armory Square Ventures", "nvp capital", "Alpine Meridian Ventures", "Brooklyn Bridge Ventures", "Zelkova Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "closed $12 million in Series A financing"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds.size", "values": ["42000000 (TechCrunch, citing SEC filing)", "47000000 (lead list / Value Add VC tracker, not fetched)"], "chosen": "42000000", "reason": "Only the TechCrunch figure was read on a fetched page; the $47M figure could be a later close or parallel fund and is unconfirmed." }
+  ],
+  "open_items": [
+    "Fund V: $42M initial close per SEC filing (May 17, 2024); target was $90M including a $20M parallel fund. $47M from the lead list not confirmed. The $56M (2016) fund not confirmed.",
+    "Felix and EFEX HQ not stated on fetched pages; Felix amount/stage from Pulse 2.0 only, Contour's own site lists these as news.",
+    "Compyl HQ not stated on the fetched page. Contour's HQ taken from the website address block.",
+    "Application URL and cold-inbound policy not checked."
+  ]
+}

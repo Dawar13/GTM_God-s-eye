@@ -1,0 +1,60 @@
+{
+  "key": "speciale-invest",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Speciale Invest",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as specialeinvest.com, the Indian deep-tech VC whose portfolio includes Agnikul Cosmos, GalaxEye, ePlane, Ultraviolette, CynLr and QNu Labs (Entrackr, 12 Aug 2025, Fund III close). Not Speciale Capital or similarly named firms.",
+  "pages": [
+    { "url": "https://www.specialeinvest.com", "title": "Speciale Invest", "publisher": "Speciale Invest", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://entrackr.com/snippets/speciale-invest-closes-rs-600-cr-fund-iii-to-back-early-stage-deeptech-startups-9651087", "title": "Speciale Invest closes Rs 600 Cr fund III to back early-stage deeptech startups", "publisher": "Entrackr", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.entrepreneurindia.com/blog/en/news/inspecity-raises-inr-100-cr-in-pre-series-a-funding.60893", "title": "InspeCity Raises INR 100 Cr in Pre-Series A Funding", "publisher": "Entrepreneur India", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "closed its Fund III at Rs 600 crore" },
+    "website": { "value": "https://www.specialeinvest.com", "pages": [0], "snippet": "We enable visionary founders building the next frontiers of humanity." },
+    "hq_country": { "value": "IN", "pages": [1], "snippet": "sovereign technology and globally scalable intellectual property from India" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "early-stage deeptech startups" },
+    "check_range": { "value": { "min": 70000000, "max": 100000000, "currency": "INR" }, "pages": [1], "snippet": "Rs 7 crore to Rs 10 crore" },
+    "thesis_text": { "value": "Early-stage backer of sovereign technology and globally scalable Indian IP, spanning AI infrastructure, spacetech, climatetech, quantum, advanced manufacturing and dual-use defence.", "pages": [1], "snippet": "sovereign technology and globally scalable intellectual property from India" },
+    "stated_sectors": { "value": ["ai_infra", "space", "climate_energy", "hardware_deeptech", "industrial_manufacturing", "defense_dual_use"], "pages": [1], "snippet": "AI infrastructure, spacetech, climatetech, quantum systems, advanced manufacturing, and dual-use defence" }
+  },
+  "funds": [
+    {
+      "name": "Speciale Invest Fund III",
+      "number": "III",
+      "size_original": 6000000000,
+      "currency_original": "INR",
+      "close_date": "2025-08-12",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "closed its Fund III at Rs 600 crore"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "InspeCity", "website": null, "description": "Indian space technology company building platforms for in-space servicing, mobility and satellite life-extension.", "hq_country": "IN", "founded_year": null, "sector": "space", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "pre-Series A",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "amount_original": 1000000000,
+      "currency_original": "INR",
+      "valuation_post_original": null,
+      "leads": ["Speciale Invest", "Ashish Kacholia"],
+      "participants": ["Antler Elevate", "Antler India", "Manish Gandhi", "Shastra VC"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Led by Speciale Invest and Ashish Kacholia"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not found (specialeinvest.com homepage truncated; YourStory 403). Country India from Entrackr text.",
+    "Only one round recorded: InspeCity (INR 100 Cr, ~USD 10.5M). Search-result mentions of H2LooP, Nucleovir, Peptris and ePlane not confirmed on fetched pages.",
+    "Fund III INR 600 Cr vs INR 500 Cr target; follow-on reserve about Rs 300 crore. A Rs 1,400 crore growth fund appears only in search results; not recorded.",
+    "InspeCity 'pre-Series A' mapped to series_a bucket in the absence of a pre-series-A stage id; stage_raw preserves the wording."
+  ]
+}

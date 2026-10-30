@@ -1,0 +1,77 @@
+{
+  "key": "starshot-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Starshot Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Climate-focused early-stage VC founded by Jeremy Brewer and Sam Levac-Levey, with a $35M debut Fund I (CNBC via NBC Bay Area; Pulse 2.0). Portfolio includes Ecolectro, Mojave and Harvest Thermal. Not Starshot Capital Partners or other firms of similar name. The firm's own site (starshot.capital) failed to load (self-signed certificate).",
+  "pages": [
+    { "url": "https://www.nbcbayarea.com/news/business/money-report/climate-crisis-brings-high-school-friends-together-to-back-startups-overlooked-by-other-vcs/3533666/", "title": "Climate crisis brings high school friends together to back startups overlooked by other VCs", "publisher": "CNBC via NBC Bay Area", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/starshot-capital-35-million-fund-launched-to-invest-in-climate-companies/", "title": "Starshot Capital: $35 Million Fund Launched To Invest In Climate Companies", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://prnewswire.com/news-releases/ecolectro-closes-10-5m-series-a-round-to-accelerate-next-generation-green-hydrogen-electrolyzers-302306161.html", "title": "Ecolectro Closes $10.5M Series A Round to Accelerate Next-Generation Green Hydrogen Electrolyzers", "publisher": "PR Newswire (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/mojave-9-5-million-series-a-raised-for-changing-the-nature-of-air-conditioning/", "title": "Mojave: $9.5 Million (Series A) Raised For Changing The Nature Of Air Conditioning", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/mojave-raises-19-million-series-b/", "title": "Mojave Raises $19 Million Series B To Scale Humidity-First HVAC Technology", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "high-impact companies in underinvested climate sectors" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Brewer and Levac-Levey are based in the Bay Area." },
+    "stages": { "value": ["seed", "series_a"], "pages": [0, 1, 2], "snippet": "early-stage companies" },
+    "thesis_text": { "value": "Backs early-stage climate companies in underinvested sectors that could avert a cumulative gigaton of emissions by 2050, targeting returns comparable to top venture-backed startups.", "pages": [1], "snippet": "a cumulative one gigaton of carbon emissions by 2050" },
+    "stated_sectors": { "value": ["climate_energy", "industrial_manufacturing"], "pages": [1], "snippet": "the industrial sector, manufacturing, food & agriculture, the built environment, materials, and chemicals" }
+  },
+  "funds": [
+    {
+      "name": "Starshot Fund I",
+      "number": "I",
+      "size_original": 35000000,
+      "currency_original": "USD",
+      "close_date": "2024-05-09",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "has raised $35 million for its debut fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Mojave Energy Systems", "website": null, "description": "Sunnyvale-based climate tech maker of liquid-desiccant HVAC systems (ArctiDry) that dehumidify air with less electricity.", "hq_country": "US", "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b", "stage_raw": "Series B funding", "date": "2026-09-25", "date_precision": "day",
+      "amount_original": 19000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Fairtree Elevant Ventures"],
+      "participants": ["River Bay Investments", "At One Ventures", "Fifth Wall", "Myriad Venture Partners", "Starshot Capital", "Cleo Capital", "MetaTrail"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Mojave Energy Systems, a Sunnyvale, California-based climate technology company"
+    },
+    {
+      "company": { "name": "Mojave Energy Systems", "website": null, "description": "Company founded to change the nature of air conditioning; makes ArctiDry liquid desiccant HVAC system.", "hq_country": "US", "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2024-12-24", "date_precision": "day",
+      "amount_original": 9500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Fifth Wall", "At One Ventures"],
+      "participants": ["Myriad Venture Partners", "Starshot Capital", "Alumni Ventures Group", "Earth Venture Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "a company founded to change the nature of air conditioning"
+    },
+    {
+      "company": { "name": "Ecolectro", "website": null, "description": "Green hydrogen electrolyzer company based in Ithaca, NY.", "hq_country": "US", "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2024-11-14", "date_precision": "day",
+      "amount_original": 10500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Toyota Ventures"],
+      "participants": ["Starshot Capital", "DNX Ventures", "Energy Revolution Ventures", "New Climate Ventures", "Banco Popular Impact Fund", "Techstars"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "participation from Starshot Capital, DNX Ventures, Energy Revolution Ventures, New Climate Ventures"
+    }
+  ],
+  "conflicts": [
+    { "field": "hq_city", "values": ["Bay Area (NBC Bay Area / CNBC; lead list)", "Los Angeles (search-result summaries of Business Wire and Caplight, not fetched)"], "chosen": "unset", "reason": "Fetched page names only the Bay Area, not a city; Business Wire release returned HTTP 403." }
+  ],
+  "open_items": [
+    "HQ city unresolved (Bay Area vs Los Angeles); only country recorded. Firm site starshot.capital unreachable.",
+    "Check size, application URL, cold inbound not found.",
+    "Ecolectro seed (Starshot led, per Pulse 2.0 fund article) has no date or amount on a fetched page; not recorded as a round.",
+    "A Fund II (~$100M, Form D April 2026) appeared in a search summary only; not verified, only Fund I recorded."
+  ]
+}

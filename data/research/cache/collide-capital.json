@@ -5,29 +5,262 @@
   "name": "Collide Capital",
   "status": "active",
   "researched_at": "2026-10-30",
-  "identity_check": "Confirmed as Collide Capital (collidecap.com), the early-stage VC firm founded by Aaron Samuels and Brian Hollins that invests pre-seed to Series A in fintech, supply chain and future of work; its press page links the April 2026 TechCrunch and ImpactAlpha coverage of its $95M Fund II. Not Collider Ventures (Israel), a separate firm.",
+  "identity_check": "Confirmed as Collide Capital (collidecap.com; LinkedIn company page linked from the site, HQ New York, NY), the early-stage VC firm co-founded by Aaron Samuels (ex-Blavity/AfroTech) and Brian Hollins (ex-Goldman Sachs growth equity) that invests pre-seed to Series A in fintech, supply chain and future of work. Its own press page links the April 2026 TechCrunch, ImpactAlpha and AfroTech coverage of its $95M Fund II. Not Collider Ventures (Israel), and not 'Collide', the Houston GenAI energy startup that shows up in database searches.",
   "pages": [
     { "url": "https://www.collidecap.com/", "title": "Collide Capital", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
     { "url": "https://techcrunch.com/2026/04/09/collide-capital-raises-95m-fund-to-back-fintech-future-of-work-startups/", "title": "Collide Capital raises $95M fund to back fintech, future-of-work startups", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
     { "url": "https://impactalpha.com/collide-capital-raises-95-million-for-most-deserving-fintech-supply-chain-and-future-of-work-founders/", "title": "Collide Capital raises $95 million for 'most deserving' fintech, supply chain and future of work founders", "publisher": "ImpactAlpha", "retrieved_at": "2026-10-30", "kind": "press" },
     { "url": "https://www.collidecap.com/teams", "title": "Collide Capital | Team", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
-    { "url": "https://www.collidecap.com/portfolio", "title": "Collide Capital | Portfolio", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
-    { "url": "https://www.collidecap.com/press", "title": "Collide Capital | Press", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" }
+    { "url": "https://www.collidecap.com/portfolio", "title": "Collide Capital | Portfolio (page 1)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/press", "title": "Collide Capital | Press", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.thesaasnews.com/news/prefix-raises-7-5m-seed-round", "title": "Prefix Raises $7.5M Seed Round", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://reinsurancene.ws/braven-closes-4-6m-seed-round-and-launches-london-office/", "title": "Braven closes $4.6m Seed round and launches London office", "publisher": "Reinsurance News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://latamlist.com/braven-raises-4-6m-seed-round-to-expand-ai-insurance-infrastructure-platform/", "title": "Braven raises $4.6M seed round to expand AI insurance infrastructure platform", "publisher": "LatamList", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.ellis.ai/press/ellis-emerges-from-stealth", "title": "Ellis Emerges From Stealth With More Than $10 Million to Build the AI-Native Operating Foundation for Private Credit", "publisher": "Ellis", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/ellis-raises-more-than-10-million-in-seed-funding-led-by-first-round-capital/", "title": "Ellis Raises More Than $10 Million In Seed Funding Led By First Round Capital", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://globalaginvesting.com/helios-ai-secures-4-7m-in-seed-round-for-ag-commodity-ai-copilot-launch/", "title": "Helios AI Secures $4.7M in Seed Round for Ag Commodity AI Copilot Launch", "publisher": "Global AgInvesting", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://forbes.co/2025/08/05/emprendedores/creditop-recauda-us37-millones-para-su-plataforma-de-credito", "title": "Creditop quiere dar acceso al crédito sin tarjeta en puntos de venta: ahora tiene US$3,7 millones para hacerlo", "publisher": "Forbes Colombia", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/flourish-care-5-7-million-raised-to-make-doula-care-the-standard-in-maternal-health", "title": "Flourish Care: $5.7 Million Raised To Make Doula Care A Standard In Maternal Health", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.tedcomd.com/news-events/press-releases/2025/tedco-selects-collide-capital-support-management-and-investment", "title": "TEDCO Selects Collide Capital to Support Management and Investment of Allocated SSBCI Funding", "publisher": "TEDCO", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://afrotech.com/collide-capital-closes-95m-in-oversubscribed-round-for-fund-ii", "title": "Collide Capital Closes $95M Oversubscribed Round For Fund II To 'Usher In A New Era Of Venture Capital'", "publisher": "AfroTech", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.linkedin.com/company/collidecapital/", "title": "Collide Capital | LinkedIn (company page About section)", "publisher": "LinkedIn", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.jelou.ai/en/blog/series-A-10M", "title": "Jelou Raises $10M to Build AI Apps That Move Money on WhatsApp", "publisher": "Jelou", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://latamlist.com/jelou-raises-10m-series-a", "title": "Jelou raises $10M Series A", "publisher": "LatamList", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.collidecap.com/portfolio?18aa7839_page=2", "title": "Collide Capital | Portfolio (page 2)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/portfolio?18aa7839_page=3", "title": "Collide Capital | Portfolio (page 3)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/portfolio?18aa7839_page=4", "title": "Collide Capital | Portfolio (page 4)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/portfolio?18aa7839_page=5", "title": "Collide Capital | Portfolio (page 5)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.collidecap.com/portfolio?18aa7839_page=6", "title": "Collide Capital | Portfolio (page 6)", "publisher": "Collide Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://prnewswire.com/news-releases/intramotev-raises-14-4-million-to-retrofit-a-new-era-of-growth-for-rail-industry-302223983.html", "title": "Intramotev Raises $14.4 Million to Retrofit a New Era of Growth for Rail Industry", "publisher": "PR Newswire (Intramotev release)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.silicon.co.uk/press-release/coldcart-announces-6-5m-seed-round-to-eliminate-perishable-parcel-shipping-inefficiency-and-complexity", "title": "Coldcart Announces $6.5M Seed Round to Eliminate Perishable Parcel Shipping Inefficiency and Complexity", "publisher": "Silicon UK (Business Wire release)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://retailtechinnovationhub.com/home/2024/7/16/coldcart-bags-65-million-in-funding-to-grow-its-installed-base-of-perishable-shippers-and-logistics-providers", "title": "Coldcart bags $6.5 million in funding to grow its installed base of perishable shippers and logistics providers", "publisher": "Retail Technology Innovation Hub", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.artificiallawyer.com/2025/05/19/theo-ai-bags-4-2m-seed-for-case-prediction/", "title": "Theo Ai Bags $4.2m Seed For Case Prediction", "publisher": "Artificial Lawyer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://legaltechnology.com/litigation-outcome-prediction-startup-theo-ai-raises-4-2m-seed-funding/", "title": "Litigation outcome prediction startup Theo Ai raises $4.2m seed funding", "publisher": "Legal IT Insider", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.thesaasnews.com/news/beltic-raises-7-3m-seed/", "title": "Beltic Raises $7.3M Seed", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.webull.com/news/15667682877244416", "title": "Beltic Emerges from Stealth to Secure Autonomous Agent Transactions at Scale", "publisher": "Webull (PR Newswire release by Beltic)", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://pulse2.com/collide-capital-95-million-fund-ii-raised-to-back-fintech-supply-chain-and-future-of-work-startups/", "title": "Collide Capital: $95 Million Fund II Raised To Back Fintech, Supply Chain, And Future Of Work Startups", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://efts.sec.gov/LATEST/search-index?q=%22Collide%20Capital%22&forms=D", "title": "SEC EDGAR full-text search: Form D filings matching \"Collide Capital\"", "publisher": "U.S. SEC EDGAR", "retrieved_at": "2026-10-30", "kind": "primary" }
   ],
   "facts": {
-    "type": { "value": "vc", "pages": [0, 1], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
-    "website": { "value": "https://www.collidecap.com", "pages": [0], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
-    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0, 2], "snippet": "Collide's second fund writes pre-seed to Series A checks ranging from $1 million to $3 million." },
-    "check_min_usd": { "value": 1000000, "pages": [1, 2], "snippet": "The average check size will be between $1 million and $3 million." },
-    "check_max_usd": { "value": 3000000, "pages": [1, 2], "snippet": "The average check size will be between $1 million and $3 million." },
-    "portfolio_count_reported": { "value": 75, "pages": [1, 4], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." }
+    "aliases": { "value": ["Collide"], "pages": [2], "snippet": "Collide's $66 million first fund validated that approach." },
+    "type": { "value": "vc", "pages": [0, 1, 16], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
+    "website": { "value": "https://www.collidecap.com", "pages": [0, 16], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
+    "linkedin": { "value": "https://www.linkedin.com/company/collidecapital/", "pages": [0, 16], "snippet": "Collide Capital’s mission is to guide founders on their institutional capital journey and equip them with resources" },
+    "hq_city": { "value": "New York", "pages": [16], "snippet": "New York, NY" },
+    "hq_country": { "value": "US", "pages": [16], "snippet": "New York, NY" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0, 2, 15], "snippet": "Collide's second fund writes pre-seed to Series A checks ranging from $1 million to $3 million." },
+    "check_min_usd": { "value": 1000000, "pages": [1, 2, 15], "snippet": "The average check size will be between $1 million and $3 million." },
+    "check_max_usd": { "value": 3000000, "pages": [1, 2, 15], "snippet": "The average check size will be between $1 million and $3 million." },
+    "leads": { "value": true, "pages": [7, 8, 11, 12, 6], "snippet": "The funding round was led by Collide Capital, a US venture capital firm" },
+    "thesis_text": { "value": "Early-stage firm writing pre-seed to Series A checks into founders building fintech, supply chain and future-of-work companies, which its site also frames as enterprise SaaS, sustainable supply chain and consumer technology. It pairs capital with hands-on operating support and networks to guide founders through the institutional fundraising path toward an exit.", "pages": [0, 1, 2], "snippet": "Collide Capital invests in early-stage companies from pre-seed to Series A, with a focus on founders building in fintech, supply chain, and future of work." },
+    "stated_sectors": { "value": ["fintech", "supply_chain_logistics", "enterprise_saas", "consumer"], "pages": [0, 1, 2, 15], "snippet": "with a focus on founders building transformational enterprise SaaS" },
+    "application_url": { "value": "https://airtable.com/appVhr8gVLLbvFxjL/pagcZvSIfH3kiRyTZ/form", "pages": [0], "snippet": "How can I pitch Collide Capital and who are you looking to invest in?" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "Pitch us!" },
+    "requires_us_entity": { "value": "unknown", "pages": [0, 19], "snippet": "Embedded lending network for merchants in LatAm" },
+    "portfolio_count_reported": { "value": 75, "pages": [1, 4, 15], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." }
   },
   "funds": [
-    { "name": "Collide Capital Fund I", "number": "I", "size_original": 66000000, "currency_original": "USD", "close_date": "2022", "date_precision": "year", "pages": [1, 2], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." },
-    { "name": "Collide Capital Fund II", "number": "II", "size_original": 95000000, "currency_original": "USD", "close_date": "2026-04-09", "date_precision": "day", "pages": [1, 2, 0], "snippet": "announced Thursday the close of a $95 million Fund II." }
+    { "name": "Collide Capital initial exploratory fund", "number": null, "size_original": null, "currency_original": null, "close_date": "2019", "date_precision": "year", "pages": [31], "snippet": "Since launching its initial exploratory fund in 2019" },
+    { "name": "Collide Capital Fund I LP", "number": "I", "size_original": 66000000, "currency_original": "USD", "close_date": "2022", "date_precision": "year", "pages": [1, 2, 15, 14, 32], "snippet": "It has backed 75 companies to date after closing its inaugural $66 million Fund I in 2022." },
+    { "name": "Collide Capital Fund II LP", "number": "II", "size_original": 95000000, "currency_original": "USD", "close_date": "2026-04-09", "date_precision": "day", "pages": [1, 2, 15, 31, 0, 32], "snippet": "announced Thursday the close of a $95 million Fund II." },
+    { "name": "Collide Capital NYS SSBCI Fund, LP", "number": null, "size_original": null, "currency_original": null, "close_date": null, "date_precision": null, "pages": [32], "snippet": "Collide Capital NYS SSBCI Fund, LP  (CIK 0002067215)" },
+    { "name": "Collide Capital MD SSBCI Fund, LP", "number": null, "size_original": null, "currency_original": null, "close_date": null, "date_precision": null, "pages": [32, 14], "snippet": "up to $10 million in U.S. Department of Treasury State Small Business Credit Initiative" },
+    { "name": "Collide Capital Revi SPV I LLC", "number": null, "size_original": null, "currency_original": null, "close_date": null, "date_precision": null, "pages": [32], "snippet": "Collide Capital Revi SPV I LLC  (CIK 0002068680)" },
+    { "name": "Collide Capital Slang SPV I LLC", "number": null, "size_original": null, "currency_original": null, "close_date": null, "date_precision": null, "pages": [32], "snippet": "Collide Capital Slang SPV I LLC  (CIK 0002114153)" }
   ],
-  "partners": [],
-  "rounds": [],
-  "conflicts": [],
-  "open_items": []
+  "partners": [
+    { "name": "Aaron Samuels", "title": "Founder and Managing Partner", "focus_sectors": [], "linkedin_url": "https://www.linkedin.com/in/aaron-levy-samuels/", "pages": [3, 0, 2] },
+    { "name": "Brian Hollins", "title": "Founder and Managing Partner", "focus_sectors": [], "linkedin_url": "https://www.linkedin.com/in/brian-hollins/", "pages": [3, 0, 14] },
+    { "name": "Michael Costigan", "title": "Venture Partner", "focus_sectors": [], "linkedin_url": "http://linkedin.com/in/michaelcostigan", "pages": [3] },
+    { "name": "Andrew Peng", "title": "Principal", "focus_sectors": [], "linkedin_url": "https://www.linkedin.com/in/andrew-peng-1637a929/", "pages": [3] },
+    { "name": "Elias Mufarech", "title": "Principal", "focus_sectors": [], "linkedin_url": "https://www.linkedin.com/in/elias-mufarech/", "pages": [3] }
+  ],
+  "rounds": [
+    {
+      "company": { "name": "Ellis", "website": "https://www.ellis.ai/", "description": "AI-native operations platform for private credit managers, positioned as an operating system for fund administration.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "seed funding (more than $10 million), emerged from stealth",
+      "date": "2026-07-30", "date_precision": "day",
+      "amount_original": 10000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["First Round Capital"],
+      "participants": ["645 Ventures", "Harlem Capital", "Khosla Ventures", "Slow Ventures", "Wilshire Lane", "Westbound", "Collide Capital", "Gallery Ventures", "Mellody Hobson", "Josh Kushner", "Immad Akhund"],
+      "unspecified": [],
+      "pages": [9, 10, 19],
+      "snippet": "Slow Ventures, Wilshire Lane, Westbound, Collide Capital and Gallery Ventures."
+    },
+    {
+      "company": { "name": "Braven", "website": "https://gobraven.com/", "description": "AI-powered infrastructure for insurers, brokers, MGAs and reinsurers; formerly Sytrex, built by a Colombian founding team.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-06-16", "date_precision": "day",
+      "amount_original": 4600000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital"],
+      "participants": ["Fiat Ventures", "MGV", "Carao Ventures", "Angeles VC", "Broom Ventures", "Matthias Weber"],
+      "unspecified": [],
+      "pages": [7, 8, 4],
+      "snippet": "The funding round was led by Collide Capital, a US venture capital firm"
+    },
+    {
+      "company": { "name": "Prefix", "website": "https://www.useprefix.com/", "description": "AI-driven facility management and maintenance platform for multi-site restaurant and retail operators.", "hq_country": "US", "founded_year": null, "sector": "enterprise_saas", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed",
+      "date": "2026-04", "date_precision": "month",
+      "amount_original": 7500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital", "Slow Ventures"],
+      "participants": ["Connexa Capital", "Kyle Archer of Elevated Inc.", "I2BF", "Bienville Capital"],
+      "unspecified": [],
+      "pages": [6, 21],
+      "snippet": "co-led by Collide Capital and Slow Ventures"
+    },
+    {
+      "company": { "name": "Jelou", "website": "https://jelou.ai/en", "description": "Builds transactional AI agents that let companies run payments, identity checks and other workflows inside WhatsApp, mainly for Latin American businesses.", "hq_country": null, "founded_year": 2017, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A",
+      "date": "2026-01-26", "date_precision": "day",
+      "amount_original": 10000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Wellington Access Ventures"],
+      "participants": ["Krealo", "Collide Capital"],
+      "unspecified": [],
+      "pages": [17, 18, 20],
+      "snippet": "with participation from Krealo (Credicorp's Corporate Venture Capital) and Collide Capital."
+    },
+    {
+      "company": { "name": "Helios AI", "website": "https://www.helios.sc/", "description": "AI software that forecasts soft-commodity prices and supply disruptions for food and agriculture supply chains.", "hq_country": "US", "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "seed funding",
+      "date": "2025-09-25", "date_precision": "day",
+      "amount_original": 4700000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital"],
+      "participants": ["S&P Global Ventures", "Stray Dog Capital", "Angeles VC", "Equity Alliance", "Supply Change Capital"],
+      "unspecified": [],
+      "pages": [11, 20, 1],
+      "snippet": "Led by Collide Capital"
+    },
+    {
+      "company": { "name": "Creditop", "website": "https://creditop.com/", "description": "Colombian fintech offering point-of-sale and online credit to shoppers without a credit card; embedded lending network for LatAm merchants.", "hq_country": "CO", "founded_year": null, "sector": "fintech", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed", "stage_raw": "ronda (stage not named), US$3.7M",
+      "date": "2025-08-05", "date_precision": "day",
+      "amount_original": 3700000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital"],
+      "participants": ["Clocktower", "Alaya Capital", "Amador Holdings", "Newtopia", "Driven VC"],
+      "unspecified": [],
+      "pages": [12, 19],
+      "snippet": "Creditop acaba de recaudar US$3,7 millones en una ronda liderada por el fondo estadounidense Collide Capital"
+    },
+    {
+      "company": { "name": "Flourish Care", "website": "https://flourishcommunitycare.com/", "description": "Maternal health company connecting credentialed doulas and birth workers with health plans and providers through in-person and virtual care.", "hq_country": "US", "founded_year": null, "sector": "health_bio", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "oversubscribed seed",
+      "date": "2026-03-30", "date_precision": "day",
+      "amount_original": 5700000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Zeal Capital Partners"],
+      "participants": ["Create Health Ventures", "Collide Capital", "Rogue Women's Fund", "Symphonic Capital", "Slater Technology Fund", "Catalytic Impact Foundation", "Capita3"],
+      "unspecified": [],
+      "pages": [13],
+      "snippet": "Collide Capital, an early-stage investor"
+    },
+    {
+      "company": { "name": "Beltic", "website": "https://beltic.com/", "description": "Verification and authorization infrastructure for AI agents, letting businesses establish trust in the agents that transact on their systems.", "hq_country": "US", "founded_year": 2025, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed; emerged from stealth with $8.8M total including the pre-seed",
+      "date": "2026-09-30", "date_precision": "day",
+      "amount_original": 7300000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Norwest"],
+      "participants": ["Restive Ventures", "Oxford Seed Fund", "Collide Capital"],
+      "unspecified": [],
+      "pages": [30, 29, 4],
+      "snippet": "with participation from Restive Ventures, Oxford Seed Fund, and Collide Capital"
+    },
+    {
+      "company": { "name": "Beltic", "website": "https://beltic.com/", "description": "Verification and authorization infrastructure for AI agents, letting businesses establish trust in the agents that transact on their systems.", "hq_country": "US", "founded_year": 2025, "sector": "ai_infra", "sector_classified_by": "model", "layer": null },
+      "stage": "pre_seed", "stage_raw": "pre-seed ($1.5M); date not given in the release, year taken from Collide's portfolio entry year (2025) and the 2025 founding",
+      "date": "2025", "date_precision": "year",
+      "amount_original": 1500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital"],
+      "participants": ["Latitud Ventures", "Positive Ventures"],
+      "unspecified": [],
+      "pages": [30, 4],
+      "snippet": "who also led a $1.5 million pre-seed round that included Latitud Ventures, Positive Ventures, and other notable angels."
+    },
+    {
+      "company": { "name": "Theo Ai", "website": "https://theoai.ai/", "description": "AI prediction platform that forecasts litigation and settlement outcomes for large law firms, general counsel and litigation funders.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "seed",
+      "date": "2025-05-19", "date_precision": "day",
+      "amount_original": 4200000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["NextView Ventures", "Collide Capital"],
+      "participants": ["David Fox"],
+      "unspecified": [],
+      "pages": [27, 28, 22],
+      "snippet": "The round was co-led by returning investor NextView Ventures and new investor Collide Capital."
+    },
+    {
+      "company": { "name": "Intramotev", "website": "https://intramotev.com/", "description": "St. Louis company retrofitting freight railcars into battery-electric, self-propelled autonomous units (TugVolt, ReVolt).", "hq_country": "US", "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "oversubscribed Series A",
+      "date": "2024-08-15", "date_precision": "day",
+      "amount_original": 14400000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Flybridge Capital Partners", "Alpaca VC"],
+      "participants": ["Advantage Capital", "Aera VC", "Band VC", "Cantos", "Cathcart Rail", "Collide Capital", "Decisive Point", "Idealab Arizona"],
+      "unspecified": [],
+      "pages": [24, 20],
+      "snippet": "Collide Capital, Decisive Point, and Idealab Arizona."
+    },
+    {
+      "company": { "name": "Coldcart", "website": "https://www.coldcart.co/", "description": "Orchestration and optimization software for frozen and refrigerated parcel logistics, working through partner logistics providers.", "hq_country": "US", "founded_year": null, "sector": "supply_chain_logistics", "sector_classified_by": "source", "layer": null },
+      "stage": "seed", "stage_raw": "oversubscribed seed (includes earlier convertible notes led by Material)",
+      "date": "2024-07-15", "date_precision": "day",
+      "amount_original": 6500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Collide Capital"],
+      "participants": ["Great North Ventures", "Behind Genius Ventures", "Feld Ventures", "Alumni Ventures", "Service Provider Capital"],
+      "unspecified": ["Material"],
+      "pages": [25, 26, 4],
+      "snippet": "The round was led by Collide Capital and includes previous convertible note investments led by Material."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city",
+      "values": [
+        "New York, NY (LinkedIn company page; Form D business location for Fund II, the SSBCI funds and the SPVs, 2024-2026)",
+        "Cambridge, MA (Form D business location for Fund I LP, filed 2022-02-10)",
+        "Samuels 'recently moved from New York to San Francisco to open a new Collide office' (ImpactAlpha, Apr 2026)"
+      ],
+      "chosen": "New York",
+      "reason": "The firm's own LinkedIn page and every EDGAR filing since 2024 give New York; Cambridge was only the 2022 Fund I filing address, and San Francisco is described as a new second office."
+    },
+    {
+      "field": "portfolio_count_reported",
+      "values": [
+        "75 companies backed to date (TechCrunch, Apr 2026); 'over 75' (collidecap.com, AfroTech, Pulse 2.0)",
+        "'more than 50 founders' (TEDCO release, Jul 2025)",
+        "54 company cards across the six collidecap.com portfolio pages (Oct 2026)"
+      ],
+      "chosen": "75",
+      "reason": "The firm's own current figure, matching April 2026 press; the TEDCO number is older and counts founders, and the website list is visibly incomplete (e.g. Flourish Care and Ocho-era names are missing)."
+    },
+    {
+      "field": "rounds.Jelou company.hq_country",
+      "values": [
+        "'New York-based' (ImpactAlpha, Apr 2026)",
+        "Mexico (Collide portfolio card)",
+        "'an Ecuadorian startup' founded in Ecuador in 2017 (LatamList; Jelou's own post)"
+      ],
+      "chosen": "null",
+      "reason": "Three sources give three locations and Jelou's own post states only its Ecuador founding and new Mexico/Colombia offices."
+    },
+    {
+      "field": "rounds.Braven company.hq_country",
+      "values": [
+        "'headquartered in San Francisco and founded by a Colombian team' (Reinsurance News)",
+        "'founded by a Colombian team', no HQ given (LatamList); Collide portfolio card says California"
+      ],
+      "chosen": "US",
+      "reason": "Reinsurance News states the San Francisco HQ and Collide's card agrees (California); the Colombian link is the founding team."
+    }
+  ],
+  "open_items": [
+    "Invests in Indian founders: not stated anywhere checked (site, FAQ, fund coverage); left out.",
+    "requires_us_entity: unknown. Nothing stated; the portfolio includes companies the site places in Colombia (Creditop), Mexico (OneCarNow!, Jelou) and Israel (Weav), but their legal domiciles were not checked.",
+    "Two pitch forms: the header button and FAQ ('Pitch us here') point to the Airtable form recorded as application_url; the portfolio and 'Ready to Collide?' sections point to a Typeform (2xrdf64xib2.typeform.com/PitchCollide). The FAQ says the investment team reviews every inbound pitch. A separate LP-contact email exists (not recorded).",
+    "SEC EDGAR: the full-text search API accepted the 'CapitalAtlas research' User-Agent, but www.sec.gov refused the Form D documents themselves, so offering amounts, sale dates and exact legal details of Fund I, Fund II, the NYS and MD SSBCI funds and the Revi and Slang SPVs were not read. Fund II's first Form D was filed 2024-09-27 (amended 2025-06-04), well before the April 2026 close announcement.",
+    "Fund close dates: Fund I only '2022' (TechCrunch; Fund I Form D filed 2022-02-10); Fund II date is the 2026-04-09 announcement, no final-close date published. Size of the 2019 'initial exploratory fund' (Pulse 2.0) is not disclosed.",
+    "SSBCI: TEDCO (Maryland, Jul 2025) selected Collide to manage and invest up to $10M of SSBCI money, matching the 'MD SSBCI Fund, LP' filing; the New York SSBCI allocation size was not found.",
+    "Partner focus sectors are not assigned by the firm and team bios do not give sector coverage, so focus_sectors are empty. Team page also lists Lauren Dupont (SVP of Operations), Shane Bates (Finance), Sabine Quetant (Marketing), Jovana Ruzic (Executive Assistant) and two 'Breakthrough Accelerator' members; not recorded as partners. Artificial Lawyer calls Aaron Samuels 'General Partner'; the team page says 'Founder and Managing Partner'.",
+    "Every card on collidecap.com/portfolio carries an 'ACQUIRED' label, including active companies such as Braven and Jelou; treated as a site template artifact, not as exit data. The firm reports five exits (AfroTech, Pulse 2.0) without naming them all (Butter Technologies is shown as acquired by GrubMarket on the homepage).",
+    "Rounds not recorded because no fetched round page named Collide: Cortex (AI-native electronics engineering, entered 2026; only a database hint of a ~$10M July 2026 seed), Ocho (Collide named as investor by ImpactAlpha but no round page), FaceSign, Art Lab, Anadyr, Heva, Gemist (VentureBeat piece names no investors), Tandem, TeamOhana, OCN Series B (Bloomberg link on Collide's press page, paywalled), Vendorflow (2021 round coverage does not name Collide).",
+    "Blocked round pages (403): Ellis on Business Wire, Helios AI on Produce Market Guide, Intramotev on Railway Age, Collide's own Fund II release on Business Wire (2026-04-09). Ellis's own release, as rendered, also listed Kearny Jackson among investors; not in Pulse 2.0's list, so left out of participants.",
+    "Company founding years not stated on round pages for Ellis, Braven, Prefix, Helios AI, Creditop, Flourish Care, Theo Ai, Intramotev and Coldcart; Ellis HQ (New York) comes from Collide's portfolio card."
+  ]
 }

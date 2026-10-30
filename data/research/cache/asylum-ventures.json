@@ -1,0 +1,73 @@
+{
+  "key": "asylum-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Asylum Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as asylum.vc, the Brooklyn / New York early-stage firm whose companies page lists Ark Robotics, The Clearing Company, Pantograph and others; Cointelegraph covers its $55M fund. Not Asylon Robotics, Asymmetry Ventures or Halcyon Ventures.",
+  "pages": [
+    { "url": "https://www.asylum.vc", "title": "Asylum Ventures", "publisher": "Asylum Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.asylum.vc/companies", "title": "Asylum Ventures - Companies", "publisher": "Asylum Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://cointelegraph.com/news/vc-roundup-asylum-ventures-launches-55-m-fund-back-startup-artists-assets", "title": "VC Roundup: Asylum Ventures launches $55M fund to back startup artists, not assets", "publisher": "Cointelegraph", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.theblock.co/post/368519/former-polymarket-exec-raises-15-million-from-coinbase-and-usv-for-rival-prediction-platform", "title": "Former Polymarket exec raises $15 million from Coinbase and USV for rival prediction platform", "publisher": "The Block", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "A new venture capital firm in New York City" },
+    "website": { "value": "https://www.asylum.vc", "pages": [0], "snippet": "defend their efforts at all costs" },
+    "hq_city": { "value": "New York", "pages": [2], "snippet": "A new venture capital firm in New York City" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "A new venture capital firm in New York City" },
+    "thesis_text": {
+      "value": "Generalist early-stage investor that looks for overlooked markets and categories, and backs founders it sees as creative people.",
+      "pages": [2],
+      "snippet": "We are generalists, but we believe the best investments are in markets/categories that no one cares about (yet)."
+    }
+  },
+  "funds": [
+    {
+      "name": "Asylum Ventures Fund I",
+      "number": "I",
+      "size_original": 55000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [2],
+      "snippet": "With a $55 million fund, Asylum Ventures recently launched its new fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "The Clearing Company",
+        "website": "https://www.clearing.co",
+        "description": "On-chain prediction market built by former Polymarket staff; the firm's companies page notes it was later acquired by Coinbase.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "crypto_web3",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2025-08-27",
+      "date_precision": "day",
+      "amount_original": 15000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Union Square Ventures"],
+      "participants": ["Compound", "Rubik", "Earl Grey", "Cursor Capital", "Asylum"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "other investors in The Clearing Company seed round included: Compound, Rubik, Earl Grey, Cursor Capital, Asylum."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only one round found with a page naming Asylum. Ark Robotics seed (July 2025, ~$7.5M per search summary) names Asylum Ventures, but the Nordic9 page returned HTTP 403; not recorded.",
+    "The Block names the investor as 'Asylum'; matched to Asylum Ventures via the firm's own companies page listing The Clearing Company.",
+    "Fund I close date not confirmed: Cointelegraph (2024-09-16) says the fund was 'recently launched'; lead said 2024-09-05. Close date left null.",
+    "Stages (pre-seed/seed) and $1-2M checks appear in search summaries and a fetch summary only, not as quotable text; not recorded. asylum.vc shows no application route.",
+    "asylum.vc footer HQ is Brooklyn per fetch summary; recorded as New York (Cointelegraph lede)."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "key": "alumni-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Alumni Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as av.vc (Alumni Ventures, AV), the venture firm for individual investors with an address in Manchester, NH; its homepage shows Lambda, Groq, Cohere, Together AI and Mercor among holdings. Not an alumni association or a single university fund.",
+  "pages": [
+    { "url": "https://www.av.vc", "title": "Alumni Ventures", "publisher": "Alumni Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.av.vc/about", "title": "About AV", "publisher": "Alumni Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://securitybrief.co.uk/story/rapidfort-raises-usd-42m-for-automated-vuln-fixes", "title": "RapidFort raises USD $42M for automated vuln fixes", "publisher": "SecurityBrief", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://ventureburn.com/noda-ai-raises-25m-series-a-to-advance-defense-ai-platform/?amp=1", "title": "NODA AI Raises $25M Series A to Advance Defense AI Platform", "publisher": "Ventureburn", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "AV is a globally recognized venture firm." },
+    "website": { "value": "https://www.av.vc", "pages": [0], "snippet": "AV helps you build a diversified venture portfolio" },
+    "hq_city": { "value": "Manchester", "pages": [0], "snippet": "670 N. Commercial Street Suite 403 Manchester, NH 03101" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "670 N. Commercial Street Suite 403 Manchester, NH 03101" },
+    "thesis_text": {
+      "value": "Venture platform for accredited individual investors to build diversified portfolios through funds and syndicates, arguing value creation is moving into private markets.",
+      "pages": [0],
+      "snippet": "Value creation is shifting into the private markets."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "NODA AI",
+        "website": null,
+        "description": "Defense AI orchestration platform acting as a cognitive layer for controlling multiple manned and unmanned systems.",
+        "hq_country": null,
+        "founded_year": 2024,
+        "sector": "defense_dual_use",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "amount_original": 25000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Bessemer Venture Partners"],
+      "participants": ["Booz Allen Ventures", "Draper Associates", "Bloomberg Beta", "Alumni Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by Bessemer Venture Partners"
+    },
+    {
+      "company": {
+        "name": "RapidFort",
+        "website": null,
+        "description": "Automated software supply chain security and vulnerability remediation, including hardened container images.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-02-04",
+      "date_precision": "day",
+      "amount_original": 42000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Blue Cloud Ventures", "Forgepoint Capital"],
+      "participants": ["Felicis Ventures", "Alumni Ventures", "Boulder Ventures", "Brave Capital", "Evolution Ventures", "Florida Funders", "Gaingels", "Mana Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "Felicis Ventures, Alumni Ventures, Boulder Ventures, Brave Capital, Evolution Ventures, Florida Funders, Gaingels, and Mana Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only two rounds recorded (neither is AI-infra or robotics proper). QuadSci, Winn.AI, Spectrum Security and two July 2026 seeds appeared in search summaries only.",
+    "Stages, check size, fund names/sizes and cold-inbound not stated on av.vc homepage/about; /founders redirects to an app.av.vc signup page (not fetched). AV runs many affiliated funds; latest fund not identified.",
+    "Dates: NODA is the Ventureburn article date (other databases say 2026-03-03); RapidFort is the SecurityBrief date (other sources say 2026-02-03). HQs of both companies not stated on the pages.",
+    "Homepage showed an obfuscated email and phone; deliberately not recorded."
+  ]
+}

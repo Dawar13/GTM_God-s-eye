@@ -1,0 +1,67 @@
+{
+  "key": "idg-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "IDG Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as idgcapital.com, headquartered in Hong Kong, founded in Boston in 1993, five strategies from venture to public markets. Not IDG Ventures (Bay Area / IDG Ventures USA).",
+  "pages": [
+    { "url": "https://www.idgcapital.com", "title": "IDG Capital", "publisher": "IDG Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.tmtpost.com/7767707.html", "title": "Exclusive: IDG Capital Leads New Funding as Booster Robotics Raises Over $14 Million", "publisher": "TMTPost", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techfundingnews.com/from-mit-research-to-1-5b-unicorn-ethan-hus-meshy-raises-400m-for-ai-powered-3d-creation/", "title": "From MIT research to $1.5B unicorn: Meshy raises $400M", "publisher": "Tech Funding News", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "We back founders across the business-building and public company expansion lifecycle." },
+    "website": { "value": "https://www.idgcapital.com", "pages": [0], "snippet": "Headquartered in Hong Kong with offices across 3 continents." },
+    "hq_city": { "value": "Hong Kong", "pages": [0], "snippet": "Headquartered in Hong Kong with offices across 3 continents." },
+    "hq_country": { "value": "HK", "pages": [0], "snippet": "Headquartered in Hong Kong with offices across 3 continents." },
+    "stages": { "value": ["seed", "series_a", "series_b", "series_c_plus", "growth"], "pages": [0], "snippet": "Funds for every stage" },
+    "thesis_text": { "value": "Multi-strategy investor (venture, growth, buyout, secondaries, public markets) backing founders across the company lifecycle, with consumer, consumer tech and healthcare case studies.", "pages": [0], "snippet": "A diverse portfolio spanning entrepreneurs across 10+ markets." },
+    "stated_sectors": { "value": ["consumer", "health_bio"], "pages": [0], "snippet": "Yoplait China (consumer)... Circle (consumer technology)... i-Incubator Healthcare (healthcare)" },
+    "portfolio_count_reported": { "value": 1800, "pages": [0], "snippet": "1,800+ portfolio companies" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Booster Robotics", "website": null, "description": "Chinese humanoid robot maker selling the Booster K1 with over 700 units shipped globally.", "hq_country": "CN", "founded_year": null, "sector": "robotics_physical_ai", "sector_classified_by": "model", "layer": "robotics" },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2025-11-17",
+      "date_precision": "day",
+      "amount_original": 14000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["IDG Capital"],
+      "participants": ["E-Town Capital", "Source Code Capital", "InnoAngel Fund", "Shenzhen Capital Group", "Bohua Capital"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "The round was led by IDG Capital."
+    },
+    {
+      "company": { "name": "Meshy", "website": null, "description": "AI platform that generates 3D assets from text prompts or images.", "hq_country": "US", "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "model", "layer": null },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-07-24",
+      "date_precision": "day",
+      "amount_original": 400000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1500000000,
+      "leads": ["IDG Capital", "Matrix Partners China", "Monolith Management"],
+      "participants": ["Granite Asia", "HongShan", "BAI Capital", "Source Code Capital"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "co-led the round with Matrix Partners China and Monolith Management"
+    }
+  ],
+  "conflicts": [
+    { "field": "round.Meshy.hq_country", "values": ["US (Silicon Valley, per company release)", "CN (Beijing, per BigGo Finance)"], "chosen": "US", "reason": "Tech Funding News cites the company's own release for Silicon Valley; the article flags the discrepancy." }
+  ],
+  "open_items": [
+    "Booster Robotics: amount is 'exceeding $14 million' (recorded 14,000,000 as a floor); article date 2025-11-17; series not named. Search results had dated it Jan 2026 - fetched page governs.",
+    "Meshy amount is 'nearly $400 million'; recorded as 400M, approximate.",
+    "Only two rounds with fetched pages; BrainCo (Jul 2026) and DeepSeek (Jun 2026) seen only in aggregator search summaries, not recorded.",
+    "No fund named or sized on idgcapital.com; Bloomberg May 2026 ~$2B growth fund report seen only in search results. Region from HQ: Hong Kong."
+  ]
+}

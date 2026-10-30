@@ -1,0 +1,102 @@
+{
+  "key": "wischoff-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Wischoff Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as wischoff.com, the solo-GP firm of Nichole Wischoff (Forbes Australia, TechCrunch); the site's portfolio lists FreightMate, Nyne, Checkmate and Stell Engineering, matching those articles. Not Wischoff Financial or other Wischoff-named companies.",
+  "pages": [
+    { "url": "https://wischoff.com", "title": "Wischoff Ventures", "publisher": "Wischoff Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.forbes.com.au/covers/entrepreneurs/how-nichole-wischoff-raised-us50-million-for-her-vc-firm/", "title": "How Nichole Wischoff raised US$50 million for her VC firm", "publisher": "Forbes Australia", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2022/12/16/solo-gp-nichole-wischoff-raises-20m-fund-backed-by-peter-thiel-to-invest-in-unsexy-businesses", "title": "Solo GP Nichole Wischoff raises $20M fund backed by Peter Thiel to invest in unsexy businesses", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/corner-health-raises-32-5-million-in-seed-and-series-a-financing-to-rebuild-primary-care/", "title": "Corner Health Raises $32.5 Million in Seed and Series A Financing to Rebuild Primary Care", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://raising.fi/news/axiom-trust-seed-march-2026", "title": "Axiom Trust Raises $11.8 Million in Seed Funding", "publisher": "Raising.fi", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "A big focus for me is trying to bring the physical world online" },
+    "website": { "value": "https://wischoff.com", "pages": [0], "snippet": "Our Portfolio" },
+    "thesis_text": {
+      "value": "Generalist, enterprise-heavy early-stage investor focused on bringing the physical world online, with portfolio companies encouraged to become each other's customers.",
+      "pages": [1],
+      "snippet": "A big focus for me is trying to bring the physical world online"
+    }
+  },
+  "funds": [
+    {
+      "name": "Wischoff Ventures Fund III",
+      "number": "III",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": null,
+      "date_precision": null,
+      "pages": [1],
+      "snippet": "Wischoff Ventures has raised $50 million for its third fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Corner Health",
+        "website": null,
+        "description": "Network of provider-owned primary care practices run by nurse practitioners, with an AI operations platform.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Seed and Series A",
+      "date": "2026-07-14",
+      "date_precision": "day",
+      "amount_original": 32500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Oak HC/FT"],
+      "participants": ["First Round Capital", "Zigg Capital", "Homebrew", "Pathlight Ventures", "Wischoff Ventures", "Go Global Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Pathlight Ventures, Wischoff Ventures, and Go Global Ventures."
+    },
+    {
+      "company": {
+        "name": "Axiom Trust",
+        "website": null,
+        "description": "AI-powered trust company modernising trust administration, regulated in Nevada.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-03",
+      "date_precision": "month",
+      "amount_original": 11800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Lightspeed Venture Partners"],
+      "participants": ["Wischoff Ventures", "Runa Capital", "SNR", "Primetime Partners"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Other participants in this round included Wischoff Ventures, Runa Capital, SNR, and Primetime Partners."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds.Axiom Trust.date",
+      "values": ["2026-03 (URL slug and other results)", "2026-04-24 (stated in page text per fetch tool)"],
+      "chosen": "2026-03",
+      "reason": "Several outlets and the Axios URL date it to 2026-03-09; Raising.fi page text differs. Month precision used."
+    }
+  ],
+  "open_items": [
+    "Corner Health: $32.5M is the combined seed + Series A total; Series A alone reported as $25M by other outlets (not fetched). Wischoff's role in seed vs Series A not distinguished; recorded under the round announcement.",
+    "Fund III: Forbes Australia (dated 2024-10-21) says $50M raised; no close date. Fund II ($20M, TechCrunch 2022-12-16) is the lead's 2022 fund; the $50M is Fund III, not Fund II.",
+    "HQ (Nashville per Forbes; NYC office planned), stages, check size ($800K-$1.6M) come from fetch-tool summaries without quotable text; not recorded.",
+    "wischoff.com shows only a portfolio and a contact link (a deals@ address, not recorded); no application URL. Third round not recorded."
+  ]
+}

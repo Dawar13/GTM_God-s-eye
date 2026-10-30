@@ -1,0 +1,119 @@
+{
+  "key": "westly-group",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "The Westly Group",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as westlygroup.com, the Menlo Park / San Francisco firm backing founders since 2007, whose July 2024 press release (VentureBeat, 'MENLO PARK, Calif.') announced a $100M seed fund alongside Fund IV ($312M). Not Westly Capital Partners or other Westly-named entities.",
+  "pages": [
+    { "url": "https://www.westlygroup.com", "title": "The Westly Group", "publisher": "The Westly Group", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://venturebeat.com/business/the-westly-group-closes-100-million-seed-fund-to-transform-the-worlds-largest-industries", "title": "The Westly Group closes $100 million seed fund to transform the world's largest industries", "publisher": "VentureBeat (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://westlygroup.com/news/", "title": "News", "publisher": "The Westly Group", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/2025/08/12/exclusive-squint-raises-40-million-at-265-million-valuation-to-modernize-manufacturing-for-companies-like-pepsi-and-michelin/", "title": "Exclusive: Squint raises $40 million at $265 million valuation to modernize manufacturing for companies like Pepsi and Michelin", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Backing founders transforming how the world is built, powered, and moved - since 2007." },
+    "website": { "value": "https://www.westlygroup.com", "pages": [0], "snippet": "Backing founders transforming how the world is built, powered, and moved - since 2007." },
+    "hq_city": { "value": "Menlo Park", "pages": [0, 1], "snippet": "Menlo Park, CA & San Francisco, CA" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "Menlo Park, CA & San Francisco, CA" },
+    "stages": { "value": ["seed", "series_a", "series_b"], "pages": [1], "snippet": "oversubscribed $100 million seed fund" },
+    "thesis_text": { "value": "Backs founders building AI-native software and hardware companies in the industries that run the physical world, such as energy, mobility and industrial sectors.", "pages": [0], "snippet": "The industries that run the physical world are being rebuilt." },
+    "stated_sectors": { "value": ["climate_energy", "ai_apps_agents", "robotics_physical_ai", "industrial_manufacturing", "mobility_ev"], "pages": [0], "snippet": "Energy, AI, Reindustrialization & Robotics, Mobility, and Cybersecurity" },
+    "application_url": { "value": "https://westlygroup.com/contact/", "pages": [0], "snippet": "contact form at westlygroup.com/contact/" }
+  },
+  "funds": [
+    {
+      "name": "The Westly Group Seed Fund",
+      "number": null,
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2024-07-02",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "oversubscribed $100 million seed fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Squint",
+        "website": null,
+        "description": "Manufacturing intelligence platform serving large industrial and consumer-goods manufacturers.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-08-12",
+      "date_precision": "day",
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "valuation_post_original": 265000000,
+      "leads": ["The Westly Group", "TCV"],
+      "participants": ["Sequoia Capital", "Menlo Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The Westly Group and TCV"
+    },
+    {
+      "company": {
+        "name": "Magentic",
+        "website": null,
+        "description": "AI co-pilot for procurement and supply chain teams.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "supply_chain_logistics",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-07-22",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["The Westly Group"],
+      "pages": [2],
+      "snippet": "We're thrilled to announce our Seed investment in Magentic, an AI co-pilot for procurement and supply chain teams."
+    },
+    {
+      "company": {
+        "name": "Sightline",
+        "website": null,
+        "description": "Go-to-market intelligence platform for the transition economy.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "climate_energy",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed",
+      "date": "2025-01-27",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["The Westly Group"],
+      "pages": [2],
+      "snippet": "We're delighted to announce our Seed investment in Sightline"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Magentic and Sightline are taken from the firm's news-index page (post titles, dates, quoted lines); the Medium posts returned HTTP 403, so amounts and co-investors are not recorded. Magentic's $5.5M amount appears only in search summaries. Dates are post dates.",
+    "Newer Westly posts exist (Noetive seed, 2026-09-16; Tenet, 2026-06-17; Generalist, 2026-06-23) but the Medium pages were not fetchable.",
+    "Leads' $160M (2013) fund not verified: only the 2024 seed fund and Fund IV ($312M, for A, B and C rounds, per the press release) appear on fetched pages. Homepage states '$800M+' AUM and 5 funds raised. Stage list for series_a/series_b is inferred from the Fund IV description and the Squint Series B.",
+    "Check size not stated. Squint HQ not stated on the Fortune page. Sector 'mobility_ev' and others come from the homepage sector list, which is a general list rather than a seed-fund description."
+  ]
+}

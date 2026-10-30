@@ -1,0 +1,87 @@
+{
+  "key": "accel",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Accel",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as accel.com (Accel, formerly Accel Partners), with offices in Palo Alto, San Francisco, Bangalore and London per its contact page. Brand-level record only; Accel US, Accel Europe & Israel and Accel India are separate records. Not Accel-KKR, not Accel Entertainment.",
+  "pages": [
+    { "url": "https://www.accel.com", "title": "Accel", "publisher": "Accel", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.accel.com/contact-us", "title": "Accel contact", "publisher": "Accel", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.landbase.com/blog/fastest-growing-companies-backed-accel", "title": "Fastest-growing companies backed by Accel", "publisher": "Landbase", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://builtin.com/articles/depthfirst-raises-40m-series-a-20260114", "title": "depthfirst Secures $40M in Series A Funding", "publisher": "Built In", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techintelpro.com/news/ai/enterprise-ai/ciridae-raises-20m-led-by-accel-for-ai-operating-systems", "title": "Ciridae raises $20M led by Accel for AI operating systems", "publisher": "TechIntelPro", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "the venture capital firm known for early investments in companies such as Facebook" },
+    "website": { "value": "https://www.accel.com", "pages": [0], "snippet": "First partner to exceptional teams everywhere." },
+    "hq_city": { "value": "Palo Alto", "pages": [1], "snippet": "500 University Avenue" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Palo Alto, CA 94301" },
+    "stages": { "value": ["seed", "growth"], "pages": [2], "snippet": "Accel invests across early and later stages." },
+    "thesis_text": {
+      "value": "Global venture firm positioning itself as first partner to exceptional teams, investing across early and later stages.",
+      "pages": [0, 2],
+      "snippet": "First partner to exceptional teams everywhere."
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Ciridae",
+        "website": null,
+        "description": "AI transformation firm building operating systems for mid-market real-economy businesses, embedding with customers.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed",
+      "date": "2026-05-13",
+      "date_precision": "day",
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Accel"],
+      "participants": ["Andreessen Horowitz", "General Catalyst", "Sunflower Capital", "Backcountry Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "led by Accel"
+    },
+    {
+      "company": {
+        "name": "depthfirst",
+        "website": null,
+        "description": "AI security platform that finds, triages and fixes vulnerabilities across software and infrastructure layers.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-01-14",
+      "date_precision": "day",
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Accel"],
+      "participants": ["Kristen Green", "Jeff Dean"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Led by Accel"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "accel.com home and about pages show only a tagline; stages come from a third-party blog (Landbase) and are coarse (early and later). No check size or application route found; contact page has no pitch instructions.",
+    "Only two rounds recorded. Legora, Atlas, Higgsfield, SolveAI appeared in search summaries only; the Business Wire Ciridae release returned 403. Ciridae and depthfirst HQ not stated on the fetched pages.",
+    "No latest fund recorded: the only fund page fetched (Accel's Latest Fund, 2020-12-16, $2.3B global later-stage) is old; Landbase mentions 2026 vehicles ($3.5B early-stage, $5B late-stage) without names or dates.",
+    "HQ Palo Alto taken as first-listed office on the contact page; San Francisco also listed."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": "the-fintech-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "The Fintech Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as thefintechfund.com, the pre-seed and seed fintech fund founded by Nik Milanovic of the This Week in Fintech newsletter (site links thisweekinfintech.com; TechCrunch 2025-02-21). Not Fintech Collective, not Infinity Ventures (one database mixed in Infinity's $184M Fund II), not Beams Fintech Fund.",
+  "pages": [
+    { "url": "https://thefintechfund.com", "title": "The Fintech Fund", "publisher": "The Fintech Fund", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2025/02/21/the-most-important-fintech-vcs-investing-heavily-in-the-sector/", "title": "The most important fintech VCs investing heavily in the sector", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://privateequitylist.com/investors/the-fintech-fund", "title": "The Fintech Fund", "publisher": "Private Equity List", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://brale.xyz/blog/new-capital", "title": "New capital", "publisher": "Brale", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://financialit.net/news/fundraising-news/wiselayer-secures-72-million-power-ai-workers-finance-accounting-teams", "title": "WiseLayer Secures $7.2 Million to Power AI Workers for Finance & Accounting Teams", "publisher": "FinancialIT", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "closed its second $10 million fund" },
+    "website": { "value": "https://thefintechfund.com", "pages": [0], "snippet": "The Fintech Fund" },
+    "hq_city": { "value": "New York", "pages": [2], "snippet": "New York, New York, United States" },
+    "hq_country": { "value": "US", "pages": [2], "snippet": "New York, New York, United States" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "invests in fintech companies globally at the pre-seed and seed stages" },
+    "check_min_usd": { "value": 200000, "pages": [1], "snippet": "Ranges from $200,000 to $400,000." },
+    "check_max_usd": { "value": 400000, "pages": [1], "snippet": "Ranges from $200,000 to $400,000." },
+    "thesis_text": { "value": "Global pre-seed and seed fintech investor tied to a newsletter and angel syndicate community, offering founders consulting and referrals beyond capital.", "pages": [1], "snippet": "not just money but also a ton of consulting or referrals" },
+    "stated_sectors": { "value": ["fintech"], "pages": [1], "snippet": "invests in fintech companies globally at the pre-seed and seed stages" }
+  },
+  "funds": [
+    {
+      "name": "The Fintech Fund II",
+      "number": "II",
+      "size_original": 10000000,
+      "currency_original": "USD",
+      "close_date": "2024-09",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "Last September, the firm closed its second $10 million fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Brale", "website": null, "description": "Stablecoin and tokenised-money infrastructure company raising to fund R&D, regulatory work, and incubation and M&A.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2025-09-18", "date_precision": "day",
+      "amount_original": 30000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Lightspeed"], "participants": ["The FinTech Fund", "NEA", "Refract", "Foundation Capital", "Kindred Ventures", "Ludlow Ventures"], "unspecified": [],
+      "pages": [3], "snippet": "Brale has raised $30M to support our continued development."
+    },
+    {
+      "company": { "name": "WiseLayer", "website": null, "description": "AI-powered digital workers for finance and accounting teams.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "undisclosed", "stage_raw": null, "date": "2025-01-29", "date_precision": "day",
+      "amount_original": 7200000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Canaan Partners"], "participants": ["K5 Global", "The Fintech Fund", "Unpopular Ventures"], "unspecified": [],
+      "pages": [4], "snippet": "with participation from K5 Global, The Fintech Fund, Unpopular Ventures, and industry angels"
+    }
+  ],
+  "conflicts": [
+    { "field": "check_range", "values": ["$200K-$400K (TechCrunch)", "$150K-$200K and $0-1M (Private Equity List)"], "chosen": "200000-400000", "reason": "TechCrunch is the press source and the database page contradicts itself." },
+    { "field": "funds[0].close_date", "values": ["2024-09 (TechCrunch 'last September')", "2024-09-18 (lead list)"], "chosen": "2024-09", "reason": "Press page gives the month; the Axios link on the firm's press page is dated 2024-09-18 but was not fetched." }
+  ],
+  "open_items": [
+    "Only 2 rounds recorded. Stage not stated on the Brale or WiseLayer pages (search summaries call WiseLayer seed and Brale seed/Series A); left undisclosed. WiseLayer HQ (New York per search summary) not on fetched page.",
+    "Brale's page lists the fund as 'The FinTech Fund (Nik Milanovic)'; Brale description paraphrased from the use-of-funds sentence, sector model-classified.",
+    "HQ New York comes from a database page only; the firm site does not state it. Founded year conflicts (2021 database vs 2022 TechCrunch); not a recorded field.",
+    "First fund size not stated on fetched pages. Axios fund article (2024-09-18) not fetched. Application URL and cold-inbound policy not found; firm site shows only nav links (portfolio points to Crunchbase)."
+  ]
+}

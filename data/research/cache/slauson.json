@@ -1,0 +1,99 @@
+{
+  "key": "slauson",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Slauson & Co.",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as slauson.co, the Los Angeles early-stage firm founded by Austin Clements and Ajay Relan; its site lists Fund II ($100M), the Friends & Family accelerator and portfolio companies including Flora, Slate and Bags. Not Slauson Associates or any similarly named LA advisory.",
+  "pages": [
+    { "url": "https://www.slauson.co", "title": "Slauson & Co.", "publisher": "Slauson & Co.", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://techcrunch.com/2024/09/04/slauson-co-raises-100m-fund-ii-proving-appetite-for-inclusion-persists", "title": "Slauson & Co. raises $100M Fund II, proving appetite for inclusion persists", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://techcrunch.com/2025/07/08/why-this-los-angeles-vc-firm-was-an-early-investor-in-slate-auto", "title": "Why this Los Angeles VC firm was an early investor in Slate Auto", "publisher": "TechCrunch", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/flora-fertility-5-million-seed-round-fuels-launch-of-first-individually-owned-fertility-insurance-platform/", "title": "Flora Fertility: $5 Million Seed Round Fuels Launch Of First Individually-Owned Fertility Insurance Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "Los Angeles based early-stage venture capital firm rooted in economic inclusion" },
+    "website": { "value": "https://www.slauson.co", "pages": [0], "snippet": "Los Angeles based early-stage venture capital firm rooted in economic inclusion" },
+    "hq_city": { "value": "Los Angeles", "pages": [0], "snippet": "Los Angeles based early-stage venture capital firm rooted in economic inclusion" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Los Angeles based early-stage venture capital firm rooted in economic inclusion" },
+    "leads": { "value": true, "pages": [1], "snippet": "Fund II will write checks between $500,000 and $2 million, hoping to lead most rounds." },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "Fund II will write checks between $500,000 and $2 million, hoping to lead most rounds." },
+    "check_max_usd": { "value": 2000000, "pages": [1], "snippet": "Fund II will write checks between $500,000 and $2 million, hoping to lead most rounds." },
+    "thesis_text": {
+      "value": "Early-stage firm backing founders from overlooked backgrounds, in SaaS and consumer tech, with economic inclusion as its mission.",
+      "pages": [0, 1],
+      "snippet": "to back early-stage founders, focused on SaaS and consumer tech."
+    }
+  },
+  "funds": [
+    {
+      "name": "Slauson & Co. Fund II",
+      "number": "II",
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2024-09-04",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "VC firm Slauson & Co. has closed a $100 million Fund II, a big step up from its initial $75 million fund."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Flora Fertility",
+        "website": null,
+        "description": "Individually owned, portable fertility insurance that people can buy independent of their employer.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-04-12",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["ManchesterStory"],
+      "participants": ["Slauson & Co.", "TruStage Ventures", "BDC Capital", "Marathon Fund", "Adara Venture Capital", "Highline Beta", "Everywhere Ventures", "Cartography Capital"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "The round was led by ManchesterStory, with participation from Slauson & Co."
+    },
+    {
+      "company": {
+        "name": "Slate Auto",
+        "website": null,
+        "description": "Maker of an affordable electric pickup truck.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "mobility_ev",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2025-07",
+      "date_precision": "month",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Slauson & Co."],
+      "pages": [2],
+      "snippet": "Slauson & Co. also invested in the Series B"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Slate Series B: date, amount and co-investors not stated by TechCrunch; date set to the article month (2025-07), not the round date.",
+    "Third round not found. A SeedTable (database) hit for an OroCRM seed (Jan 2026) was not fetched and is likely a different company from Oro (homeownership benefits).",
+    "Stages (pre-seed/seed) and sector list come from a fetch summary of slauson.co, not quotable text; not recorded as stages/sectors.",
+    "Fund I ($75M) mentioned by TechCrunch; only latest fund recorded. No pitch email on slauson.co; a Medium post mentions an updated submission form (not fetched), so application_url left out."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "key": "anthology-fund",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Anthology Fund",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "The Anthology Fund, a $100M early-stage AI initiative announced 2024-07-17 by Menlo Ventures in partnership with Anthropic; it is run by Menlo partners and lives on menlovc.com/anthology-fund. Not Anthology Inc. (education software) or Anthology Development. Anthropic's announcement says it is financed by Menlo, so type is vc, not cvc.",
+  "pages": [
+    { "url": "https://menlovc.com/anthology-fund/", "title": "Anthology Fund", "publisher": "Menlo Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.anthropic.com/news/anthropic-partners-with-menlo-ventures-to-launch-anthology-fund", "title": "Anthropic partners with Menlo Ventures to launch Anthology Fund", "publisher": "Anthropic", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://menlovc.com/perspective/q2-2025-update-from-the-anthology-fund/", "title": "Q2 2025 Update from the Anthology Fund", "publisher": "Menlo Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.gunder.com/en/news-insights/client-news/beheard-announced-as-one-of-18-startups-for-anthology-fund-and-new-financing", "title": "BeHeard Announced As One of 18 Startups for Anthology Fund and New Financing", "publisher": "Gunderson Dettmer", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "financed by Menlo to support startups innovating broadly with Anthropic technology" },
+    "website": { "value": "https://menlovc.com/anthology-fund/", "pages": [0], "snippet": "a groundbreaking $100 million initiative" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0], "snippet": "We will make Pre-Seed, Seed, and Series A investments" },
+    "check_min_usd": { "value": 100000, "pages": [0], "snippet": "$100,000 (and up!)" },
+    "thesis_text": { "value": "Backs AI founders building on or aligned with Anthropic technology, spanning infrastructure, applications, consumer AI, trust and safety, and societal benefit.", "pages": [1], "snippet": "consumer AI solutions" },
+    "stated_sectors": { "value": ["ai_infra", "ai_apps_agents", "health_bio"], "pages": [1], "snippet": "novel applications of AI in industries like healthcare, education, scientific research, and more" },
+    "application_url": { "value": "https://menlovc.com/anthology-fund/", "pages": [0], "snippet": "rolling" },
+    "accepts_cold_inbound": { "value": "yes", "pages": [0], "snippet": "within two weeks" }
+  },
+  "funds": [
+    {
+      "name": "Anthology Fund",
+      "number": null,
+      "size_original": 100000000,
+      "currency_original": "USD",
+      "close_date": "2024-07-17",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "$100 million initiative"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "BeHeard",
+        "website": null,
+        "description": "AI-driven customer feedback platform.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_apps_agents",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "pre_seed",
+      "stage_raw": "pre-seed financing",
+      "date": "2024-12-18",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": ["True Ventures", "Ridge Ventures", "Sterling Road"],
+      "unspecified": ["Anthology Fund"],
+      "pages": [3],
+      "snippet": "included participation from True Ventures, Ridge Ventures and Sterling Road"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "stages",
+      "values": ["Pre-Seed, Seed, and Series A (FAQ)", "seed to expansion stages (page body)"],
+      "chosen": "pre_seed, seed, series_a",
+      "reason": "The FAQ is the more specific statement of what the fund actually does; the page body is marketing copy."
+    },
+    {
+      "field": "anthropic_credits",
+      "values": ["$25,000 (Anthropic announcement, Menlo resources section)", "$30,000 (Menlo FAQ and Q2 2025 update)"],
+      "chosen": "not recorded as a fact",
+      "reason": "Menlo's pages disagree; the later Q2 2025 update says $30K Anthropic credits plus $100K AWS credits."
+    }
+  ],
+  "open_items": [
+    "Only one round recorded. Goodfire (Series A $50M, 2025-04-17, led by Menlo) is described by Menlo as having been backed at seed by the Anthology Fund, but the Series A page does not name the Anthology Fund in that round; seed amount and date not found. Other cohort names (Mercor, All Hands, Crosswise, Accordance, Brellium, New Lantern, Alma, Astrix) come from a Pulse 2.0 cohort list with no round details.",
+    "HQ not recorded: no fetched page states a location for the fund (Menlo Ventures' own location not verified here). Close date is the announcement date; a 'close' is not a concept for this rolling initiative.",
+    "The Menlo FAQ says terms are negotiated case by case; leads are described as seven- to 10-year commitments. Per Menlo's Q2 2025 update, over 30 Anthology companies by August 2025.",
+    "Fund-mgmt: investment team named on the Menlo page includes Menlo partners; partners not recorded for Tier B."
+  ]
+}

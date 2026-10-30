@@ -1,0 +1,38 @@
+{
+  "key": "ai-seed",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "AI Seed",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "aiseed.vc redirects (301) to aiseed.com, which describes AI Seed as a specialist AI venture capital fund regulated as an alternative investment fund managed by iFund under UK FCA authorisation; portfolio names include NoMaze, Limbic, causaLens, Hopsworks and Ntropy. Not the 'Artificial Intelligence Seed Fund' listings of other firms, not an AI-seed-stage label for generic funds.",
+  "pages": [
+    { "url": "https://aiseed.com/", "title": "AI Seed", "publisher": "AI Seed", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "an award-winning specialist AI venture capital fund" },
+    "website": { "value": "https://aiseed.com/", "pages": [0], "snippet": "an award-winning specialist AI venture capital fund" },
+    "thesis_text": {
+      "value": "Specialist AI venture fund aiming to back pure-play, vertical AI category leaders early; screens over a thousand AI software companies a year.",
+      "pages": [0],
+      "snippet": "invest in AI category leaders before anyone else"
+    },
+    "stated_sectors": {
+      "value": ["ai_apps_agents"],
+      "pages": [0],
+      "snippet": "invest in AI category leaders before anyone else"
+    },
+    "portfolio_count_reported": { "value": 50, "pages": [0], "snippet": "50+ AI companies" },
+    "application_url": { "value": "https://aiseed.com/", "pages": [0], "snippet": "Register for details" },
+    "accepts_cold_inbound": { "value": "unknown", "pages": [0], "snippet": "Register for details" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No rounds recorded: no fetched page names AI Seed in a specific round. Search summaries mention Limbic (pre-seed, July 2019, Nordic9 returned 403) and Hopsworks (Vendep-led 2023 round, but the Vendep release fetched does not name AI Seed).",
+    "HQ not stated on aiseed.com (news releases datelined London, also Klepp Norway and Tokyo); London not recorded. Stages, check size (an aggregator mentions up to GBP 100k, unverified) and fund size/close date not stated on fetched pages.",
+    "The page's 'Register for details' form is on an investors page aimed at LPs/fund materials, not founder pitching; application_url is only the homepage and cold-inbound is unknown. portfolio_count (50+) refers to Fund I."
+  ]
+}

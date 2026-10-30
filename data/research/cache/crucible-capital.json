@@ -1,0 +1,73 @@
+{
+  "key": "crucible-capital",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Crucible Capital",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Identified as cruciblecap.xyz, the Meltem Demirors firm launched in 2024 (Fortune); its portfolio page lists Ornn, Supra, Spectral Compute and Mira Network, and Pulse 2.0 names Crucible Capital as an existing Ornn backer. Fortune calls it Delaware-based and reports two funds of $30M and $45M being raised, so the lead's '$55M, NYC' is not confirmed. Not Crucible Ventures (named in an earlier Ornn release), not Crux Capital (Dallas), not Crucible Capital Group (Preqin).",
+  "pages": [
+    { "url": "https://cruciblecap.xyz", "title": "Crucible Capital", "publisher": "Crucible Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://cruciblecap.xyz/portfolio", "title": "Crucible Capital - Portfolio", "publisher": "Crucible Capital", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fortune.com/crypto/2024/08/07/meltem-demirors-venture-capital-crucible-crypto", "title": "Meltem Demirors venture capital Crucible", "publisher": "Fortune", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/ornn-raises-33-million-seed-round-to-build-compute-market-infrastructure/amp/", "title": "Ornn Raises $33 Million Seed Round To Build Compute Market Infrastructure", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/ornn-5-7-million-seed-funding-raised-for-launching-compute-futures-exchange", "title": "Ornn: $5.7 Million Seed Funding Raised For Launching Compute Futures Exchange", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [2], "snippet": "a seed-stage investment fund" },
+    "website": { "value": "https://cruciblecap.xyz", "pages": [0], "snippet": "invests from idea through inflection" },
+    "stages": { "value": ["seed"], "pages": [2], "snippet": "a seed-stage investment fund" },
+    "thesis_text": {
+      "value": "Backs companies driving structural shifts in energy, compute and materials, plus the markets that finance and coordinate them.",
+      "pages": [0],
+      "snippet": "companies driving structural shifts across energy, compute, materials"
+    },
+    "stated_sectors": {
+      "value": ["climate_energy", "ai_infra"],
+      "pages": [0],
+      "snippet": "companies driving structural shifts across energy, compute, materials"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Ornn",
+        "website": "https://ornn.trade",
+        "description": "Builds a market and futures infrastructure for trading AI compute capacity.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "ai_infra",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "seed round",
+      "date": "2026-06-29",
+      "date_precision": "day",
+      "amount_original": 33000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["a16z crypto"],
+      "participants": ["Galaxy Ventures", "Nordstar", "SV Angel", "Vine Ventures", "Crucible Capital", "Link Ventures", "Box Group"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Crucible Capital was one of several existing backers that kept investing"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "hq_city / fund size",
+      "values": ["NYC and $55M closed 2024 (lead list)", "Delaware-based; two funds of $30M and $45M being raised, no outside capital yet (Fortune, 2024-08-07)"],
+      "chosen": "none recorded",
+      "reason": "No fetched page confirms the lead; cruciblecap.xyz states no HQ or fund size."
+    }
+  ],
+  "open_items": [
+    "Fund size not confirmed: $55M appears only on a tracker (search summary); Fortune reports $30M + $45M targets. No fund recorded.",
+    "HQ not stated on cruciblecap.xyz; Fortune says Delaware-based. Left out.",
+    "Ornn $5.7M seed (Nov 2025) names 'Crucible Ventures' as co-lead, not 'Crucible Capital'; not recorded as a round. Spectral Compute $6M seed (Nov 2025, Crucible participating per search summary) page returned 403.",
+    "Only one round recorded; check size not stated on fetched pages; the site publishes a general contact address (not recorded)."
+  ]
+}

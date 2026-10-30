@@ -1,0 +1,82 @@
+{
+  "key": "y-combinator",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Y Combinator",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as ycombinator.com, the San Francisco startup accelerator that invests $500k per company, four times a year. YC lists SalesPatriot (W25) in its directory. Not YC Continuity or Y Combinator-style namesakes.",
+  "pages": [
+    { "url": "https://www.ycombinator.com", "title": "Y Combinator", "publisher": "Y Combinator", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.ycombinator.com/deal", "title": "The YC deal", "publisher": "Y Combinator", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://startuprise.co.uk/salespatriot-raises-5m-to-modernize-defence-procurement-and-expand-into-europe/", "title": "SalesPatriot Raises $5M To Modernize Defence Procurement And Expand Into Europe", "publisher": "StartupRise", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-tractian-chega-a-valuation-de-us-14-bilhao-com-nova-captacao/", "title": "Rodadas da semana: Tractian chega a valuation de US$ 1,4 bilhão com nova captação", "publisher": "Bloomberg Línea", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.marcamoney.com/pibit-ai-raises-7-million-in-series-a-funding-led-by-stellaris-venture-partners/", "title": "Pibit.AI raises $7 million in Series A funding led by Stellaris Venture Partners", "publisher": "Marca Money", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "accelerator", "pages": [0], "snippet": "Four times a year, YC invests $500k in a selected group of startups" },
+    "website": { "value": "https://www.ycombinator.com", "pages": [0], "snippet": "In 2005, Y Combinator developed a new model of startup funding." },
+    "hq_city": { "value": "San Francisco", "pages": [0], "snippet": "Those companies spend three months in San Francisco" },
+    "hq_country": { "value": "US", "pages": [0], "snippet": "Those companies spend three months in San Francisco" },
+    "stages": { "value": ["pre_seed"], "pages": [0], "snippet": "with no revenue, product, or fully baked idea" },
+    "check_min_usd": { "value": 500000, "pages": [1], "snippet": "We invest $125,000 on a post-money SAFE in return for 7% of your company" },
+    "check_max_usd": { "value": 500000, "pages": [1], "snippet": "We invest $375,000 on an uncapped SAFE with a Most Favored Nation (\"MFN\") provision" },
+    "thesis_text": { "value": "Invests $500k per startup: a $125k post-money SAFE for 7% plus a $375k uncapped MFN SAFE, with a three-month San Francisco programme ending in Demo Day.", "pages": [0, 1], "snippet": "We invest $500,000" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Tractian", "website": null, "description": "Industrial maintenance and machine-monitoring company (Brazil/US).", "hq_country": null, "founded_year": null, "sector": "industrial_manufacturing", "sector_classified_by": "model", "layer": "plant_ops" },
+      "stage": "series_c_plus",
+      "stage_raw": "Série D",
+      "date": "2026-10-24",
+      "date_precision": "day",
+      "amount_original": 130000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1400000000,
+      "leads": ["Sapphire Ventures", "M&G Catalyst"],
+      "participants": ["N47", "General Catalyst", "Bosch Ventures", "53 Stations", "Monashees", "Endeavor Catalyst", "Norte Ventures", "Y Combinator"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Participaram ainda N47, General Catalyst, Bosch Ventures, 53 Stations, Monashees, Endeavor Catalyst, Norte Ventures"
+    },
+    {
+      "company": { "name": "SalesPatriot", "website": null, "description": "AI supply-chain and procurement platform for defence distributors and OEMs; YC Winter 2025, San Francisco.", "hq_country": "US", "founded_year": 2024, "sector": "defense_dual_use", "sector_classified_by": "model", "layer": null },
+      "stage": "seed",
+      "stage_raw": "seed funding",
+      "date": "2025-10-29",
+      "date_precision": "day",
+      "amount_original": 5000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["CRV"],
+      "participants": ["Pear VC", "Y Combinator", "SV Angel", "Liquid2", "Uncorrelated Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "raised $5 million in seed funding"
+    },
+    {
+      "company": { "name": "Pibit.AI", "website": null, "description": "Builds AI systems for commercial underwriting for carriers and MGAs.", "hq_country": null, "founded_year": null, "sector": "ai_apps_agents", "sector_classified_by": "source", "layer": null },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 7000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Stellaris Venture Partners"],
+      "participants": ["Y Combinator", "Arali Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "Pibit.AI raises $7 million in Series A funding led by Stellaris Venture Partners"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Standard deal per ycombinator.com/deal: $500,000 total = $125,000 post-money SAFE for 7% + $375,000 uncapped MFN SAFE; no milestone conditions; pro rata right. check_min/max both 500000 (total).",
+    "HQ not named on the page; San Francisco taken from where the programme is run. Application URL not fetched (homepage: 'Apply for Winter 2027 by November 2').",
+    "Tractian: Bloomberg Línea names Y Combinator as a participant in the Oct 2026 Series D (USD 130M at USD 1.4B). Valuation text uses 'avalia em'. Series D mapped to series_c_plus. Company HQ not stated; leads Sapphire and M&G Catalyst.",
+    "SalesPatriot: StartupRise date shown as Oct 29, 2025 (search results said Oct 26-28). YC directory confirms the company is W25."
+  ]
+}

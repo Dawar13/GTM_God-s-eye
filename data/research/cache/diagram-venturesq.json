@@ -1,0 +1,73 @@
+{
+  "key": "diagram-venturesq",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Diagram Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as diagram.vc, the Montreal-based venture builder and early-stage investor in fintech and climatetech (lead list spells it 'Venturesq'). Site title is 'Diagram'; press (BetaKit, Lyteflo and Axle coverage) uses 'Diagram Ventures'. Offices in Montreal and Toronto. Not Diagram Capital.",
+  "pages": [
+    { "url": "https://diagram.vc", "title": "Diagram", "publisher": "Diagram", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://betakit.com/diagram-ventures-beats-target-to-close-first-climatetech-fund-at-80-million", "title": "Diagram Ventures beats target to close first ClimateTech Fund at $80 million", "publisher": "BetaKit", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://startupintros.com/news/2025-01-15-lyteflo-seed", "title": "Lyteflo seed round", "publisher": "StartupIntros", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://www.thesaasnews.com/news/axle-automation-secures-2-5-million-in-seed-round/", "title": "Axle Automation secures $2.5 million in seed round", "publisher": "The SaaS News", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/curant-ai-raises-3-1-million-seed-round-led-by-diagram-for-ai-powered-insurance-platform/", "title": "Curant.ai Raises $3.1 Million Seed Round Led By Diagram For AI-Powered Insurance Platform", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "aliases": { "value": ["Diagram", "Venturesq"], "pages": [0], "snippet": "Diagram | EN" },
+    "type": { "value": "vc", "pages": [0], "snippet": "We build and invest in Fintech and Climatetech companies." },
+    "website": { "value": "https://diagram.vc", "pages": [0], "snippet": "We build and invest in Fintech and Climatetech companies." },
+    "hq_city": { "value": "Montreal", "pages": [1], "snippet": "Montréal-based Diagram Ventures" },
+    "hq_country": { "value": "CA", "pages": [1], "snippet": "Montréal-based Diagram Ventures" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [1], "snippet": "pre-seed up to Series A" },
+    "leads": { "value": true, "pages": [3], "snippet": "Diagram Ventures" },
+    "thesis_text": { "value": "Builds and backs early-stage fintech and climatetech companies; its climate fund targets capital-efficient digital solutions for emissions reduction.", "pages": [0, 1], "snippet": "We invest in early-stage companies, backing ambitious founders who are driving meaningful change." },
+    "stated_sectors": { "value": ["fintech", "climate_energy"], "pages": [0], "snippet": "We build and invest in Fintech and Climatetech companies." },
+    "application_url": { "value": "https://diagram.vc/contact-us/", "pages": [0], "snippet": "contact-us" }
+  },
+  "funds": [
+    {
+      "name": "Diagram ClimateTech Fund",
+      "number": null,
+      "size_original": 80000000,
+      "currency_original": "CAD",
+      "close_date": "2024-09",
+      "date_precision": "month",
+      "pages": [1],
+      "snippet": "$80 million CAD, reached at its hard cap in the final close"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Curant.ai", "website": null, "description": "AI infrastructure for insurance carriers, starting with disability claims.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "seed funding", "date": "2026-07-29", "date_precision": "day",
+      "amount_original": 3100000, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Diagram"], "participants": ["Humania Insurance", "Element Ventures", "Blue Plains Capital"], "unspecified": [],
+      "pages": [4], "snippet": "$3.1 million"
+    },
+    {
+      "company": { "name": "Lyteflo", "website": null, "description": "Climate-tech venture built by Diagram (per fund coverage).", "hq_country": null, "founded_year": null, "sector": "climate_energy", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed", "date": "2025-01-15", "date_precision": "day",
+      "amount_original": 3000000, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Diagram Ventures"], "participants": [], "unspecified": [],
+      "pages": [2], "snippet": "Lyteflo raised $3M Seed venture round, led by Diagram Ventures."
+    },
+    {
+      "company": { "name": "Axle Automation", "website": null, "description": "AI-driven solutions for compliance teams.", "hq_country": "US", "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "seed", "stage_raw": "Seed Round", "date": "2024-07", "date_precision": "month",
+      "amount_original": 2500000, "currency_original": null, "valuation_post_original": null,
+      "leads": ["Diagram Ventures"], "participants": ["Mistral Ventures", "Uphonest Capital", "StreamingFast"], "unspecified": [],
+      "pages": [3], "snippet": "has secured $2.5 million in seed funding"
+    }
+  ],
+  "conflicts": [
+    { "field": "funds[0].close_date", "values": ["2024-09", "2024-10-11 (lead list)"], "chosen": "2024-09", "reason": "BetaKit (fetched) says final close in September 2024; the October date is the announcement per search summaries, not confirmed on a fetched page." }
+  ],
+  "open_items": [
+    "Round currencies not stated on the fetched pages (Curant, Lyteflo, Axle); currency_original left null. Lyteflo page (StartupIntros database) gives no description; description taken from fund coverage in search summary, treat as unverified.",
+    "Check size C$2-5M per startup stated for the climate fund by BetaKit, not recorded as a firm-wide check range.",
+    "FinTech fund(s) (CAD 115M per search summary) not verified; only the latest ClimateTech Fund recorded. Site says 5 funds, 400M+ raised.",
+    "Site lists offices in Montreal and Toronto; HQ taken from BetaKit."
+  ]
+}

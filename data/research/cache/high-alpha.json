@@ -1,0 +1,121 @@
+{
+  "key": "high-alpha",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "High Alpha",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as highalpha.com, the Indianapolis venture studio and fund for enterprise SaaS (Fund IV $125M announced 2024-06-11 on its own site; footer address 830 Massachusetts Avenue, Indianapolis). Not High Alpha Capital Advisors or other firms with 'Alpha' in the name.",
+  "pages": [
+    { "url": "https://www.highalpha.com", "title": "High Alpha", "publisher": "High Alpha", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.highalpha.com/news/high-alpha-raises-125m-fund-focused-on-the-future-of-enterprise-saas", "title": "High Alpha Raises $125M Fund, Focused on the Future of Enterprise SaaS", "publisher": "High Alpha", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.highalpha.com/news/datalinx-ai-raises-4m-seed-round-to-solve-data-readiness-challenges-for-enterprise-marketing", "title": "Datalinx AI Raises $4.2M Seed Round to Solve Data Readiness Challenges for Enterprise Marketing", "publisher": "High Alpha", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.highalpha.com/news/verisoul-raises-8-8m-series-a-to-fight-fraud-fake-users-and-bots-in-the-ai-era", "title": "Verisoul Raises $8.8M Series A to Fight Fraud, Fake Users, and Bots in the AI Era", "publisher": "High Alpha", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.highalpha.com/news/boost-my-school-secures-10m-to-revolutionize-k-12-fundraising-for-advancement-teams", "title": "Boost My School Secures $10M to Revolutionize K-12 Fundraising for Advancement Teams", "publisher": "High Alpha", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "High Alpha is a venture firm." },
+    "website": { "value": "https://www.highalpha.com", "pages": [0], "snippet": "High Alpha is a venture firm." },
+    "hq_city": { "value": "Indianapolis", "pages": [0, 1], "snippet": "830 Massachusetts Avenue, Indianapolis, IN 46204" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "830 Massachusetts Avenue, Indianapolis, IN 46204" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [1], "snippet": "early-stage SaaS companies" },
+    "thesis_text": { "value": "Creates and funds enterprise software companies, pairing venture-studio company building with direct investing across North America.", "pages": [0, 1], "snippet": "We invest in enterprise software companies." },
+    "stated_sectors": { "value": ["enterprise_saas"], "pages": [0], "snippet": "create and fund B2B SaaS companies" },
+    "leads": { "value": true, "pages": [3], "snippet": "High Alpha" }
+  },
+  "funds": [
+    {
+      "name": "High Alpha IV",
+      "number": "IV",
+      "size_original": 125000000,
+      "currency_original": "USD",
+      "close_date": "2024-06-11",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "High Alpha Raises $125M Fund, Focused on the Future of Enterprise SaaS"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Datalinx AI",
+        "website": null,
+        "description": "AI data refinery that turns complex data into AI- and application-ready assets, aimed at enterprise marketing.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "seed",
+      "stage_raw": "Seed funding",
+      "date": "2026-01-29",
+      "date_precision": "day",
+      "amount_original": 4200000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["High Alpha"],
+      "participants": ["Databricks Ventures", "Aperiam", "Frederic Kerrest", "515 Ventures"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "The oversubscribed round was led by High Alpha"
+    },
+    {
+      "company": {
+        "name": "Verisoul",
+        "website": null,
+        "description": "All-in-one fraud detection platform that stops AI bots, duplicates and fraudsters.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-12-16",
+      "date_precision": "day",
+      "amount_original": 8800000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["High Alpha"],
+      "participants": ["Lookout Ventures", "Bitkraft", "Bain Future Back Ventures", "Third Prime"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "all-in-one fraud detection platform that stops AI bots, duplicates, and fraudsters"
+    },
+    {
+      "company": {
+        "name": "Boost My School",
+        "website": null,
+        "description": "Fundraising platform built for K-12 schools.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "undisclosed",
+      "stage_raw": null,
+      "date": "2025-08-26",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["High Alpha"],
+      "participants": [],
+      "unspecified": ["Far Out VC", "ground game", "Allos Ventures"],
+      "pages": [4],
+      "snippet": "The recent round was led by High Alpha"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Boost My School: the page says the company raised $10M and total funding is $10M but does not give the stage; Far Out VC, ground game and Allos Ventures are described as prior backers, so listed as unspecified. Sector 'consumer' is a loose classification of a K-12 fundraising platform.",
+    "Datalinx and Verisoul were also in the Datalinx page 'based in NYC and Austin' and Verisoul 'Austin, Texas'; hq_country US inferred. Boost My School HQ New York from dateline only.",
+    "Opendate $14M Series A led by High Alpha (2026-01-27), Bearing seed (2026-02-12) and others appear on the High Alpha news index but were not individually fetched.",
+    "Stages, check size and application URL are not stated on the homepage; stage list is inferred from 'early-stage SaaS companies' on the Fund IV page plus rounds seen. Fund IV backed by ServiceNow Ventures per the announcement.",
+    "Venture-studio plus fund structure per lead list; the studio is described as 'We co-create with founders to explore, build, and scale together'."
+  ]
+}

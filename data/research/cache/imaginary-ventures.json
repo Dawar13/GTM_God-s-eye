@@ -1,0 +1,70 @@
+{
+  "key": "imaginary-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Imaginary Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as the consumer/retail-technology VC co-founded by Natalie Massenet (Net-a-Porter founder) and Nick Brown, first fund $75M in April 2018 (Carmen Busquets journal); partner Logan Langberg led the Alec's Ice Cream Series A (search summary). Own site imaginary.vc could not be fetched. Not Imaginary Co or other 'Imaginary' brands.",
+  "pages": [
+    { "url": "https://www.carmenbusquets.com/journal/post/imaginary-ventures-launches-75m-venture-capital-fund", "title": "Imaginary Ventures Launches $75M Venture Capital Fund", "publisher": "Carmen Busquets", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.newhope.com/industry-news/alecs-ice-cream-secures-11m-series-a-to-scale-nationwide-expansion", "title": "Alec's Ice Cream secures $11M Series A to scale nationwide expansion", "publisher": "Newhope", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [0],
+      "snippet": "has just closed its first fund of $75 million in capital commitments."
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "pages": [0, 1],
+      "snippet": "oversubscribed $11 million Series A funding round led by Imaginary Ventures"
+    },
+    "thesis_text": {
+      "value": "Backs early-stage direct-to-consumer brands where retail and technology meet; has since led food and beverage rounds too.",
+      "pages": [0],
+      "snippet": "early-stage direct-to-consumer brands"
+    },
+    "stated_sectors": {
+      "value": ["consumer"],
+      "pages": [0],
+      "snippet": "early-stage direct-to-consumer brands"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Alec's Ice Cream",
+        "website": null,
+        "description": "Petaluma, California maker of A2 regenerative organic ice cream.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "consumer",
+        "sector_classified_by": "source",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-10-20",
+      "date_precision": "day",
+      "amount_original": 11000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Imaginary Ventures"],
+      "participants": ["Great Circle Ventures", "Altelan Capital", "Daybreaker", "Monique Volz"],
+      "unspecified": [],
+      "pages": [1],
+      "snippet": "oversubscribed $11 million Series A funding round led by Imaginary Ventures"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 1 round recorded. Hook $10M Series A (Feb 2026): search summaries say Imaginary took part, but the AlleyWatch page I fetched does not name it, so not recorded. Genius AI $44M Series D (Jul 2026) and Cafeteria (2025) appear only in aggregator snippets.",
+    "Alec's date is the Newhope publication date; other outlets give Oct 1-13, 2025. Pulse.bot pages failed to load.",
+    "Fund III ($500M, April 2022, ~$1B AUM) is the likely latest fund per a Business Wire title in search results, but that release returned 403 and nothing was read; funds left empty. $75M first fund is April 2018 (not recorded as latest).",
+    "HQ (NYC / UK), check size ('$1.5M') and 'Consumer; SaaS' leads not confirmed on any fetched page. Stages recorded from the Series A lead only; Imaginary often leads seed and Series A per aggregators. Website and application URL not captured."
+  ]
+}

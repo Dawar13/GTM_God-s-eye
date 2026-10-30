@@ -1,0 +1,108 @@
+{
+  "key": "fika-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Fika Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as fika.vc, the Los Angeles B2B-focused early-stage fund (founded 2016 per Pulse 2.0) that announced a $160M Fund IV on 2024-09-11. Not Fika (the Swedish coffee break) or any other 'Fika' brand.",
+  "pages": [
+    { "url": "https://www.fika.vc", "title": "Fika Ventures", "publisher": "Fika Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://www.silicon.co.uk/press-release/fika-ventures-announces-160-million-fund-iv-to-back-b2b-software-founders-and-continue-providing-tireless-support", "title": "Fika Ventures Announces $160 Million Fund IV to Back B2B Software Founders", "publisher": "Silicon UK (press release)", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/fika-ventures-b2b-focused-early-stage-fund-raises-160-million-fund-iv/amp/", "title": "Fika Ventures: B2B-Focused Early-Stage Fund Raises $160 Million Fund IV", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.artificiallawyer.com/2026/01/20/ivo-raises-55m-for-contract-ai-5xs-arr/", "title": "Ivo Raises $55m for Contract AI + 5Xs ARR", "publisher": "Artificial Lawyer", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.payabli.com/news/payabli-is-building-payment-management-tools-for-software-startups", "title": "Payabli raises $20M Series A", "publisher": "Payabli", "retrieved_at": "2026-10-30", "kind": "primary" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Fika Ventures, a B2B-focused early-stage fund" },
+    "website": { "value": "https://www.fika.vc", "pages": [0], "snippet": "Fika invests across the US and Canada." },
+    "hq_city": { "value": "Los Angeles", "pages": [1], "snippet": "Los Angeles-based fund" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "Los Angeles-based fund" },
+    "stages": { "value": ["pre_seed", "seed"], "pages": [1], "snippet": "leading pre-seed and seed rounds in B2B software companies" },
+    "leads": { "value": true, "pages": [1], "snippet": "leading pre-seed and seed rounds in B2B software companies" },
+    "thesis_text": {
+      "value": "Early-stage investor in B2B software backing subject matter experts building new businesses, with hands-on support for founders.",
+      "pages": [0],
+      "snippet": "subject matter experts shaping the future of their industries"
+    },
+    "stated_sectors": { "value": ["enterprise_saas"], "pages": [1], "snippet": "leading pre-seed and seed rounds in B2B software companies" }
+  },
+  "funds": [
+    {
+      "name": "Fika Ventures Fund IV",
+      "number": "IV",
+      "size_original": 160000000,
+      "currency_original": "USD",
+      "close_date": "2024-09-11",
+      "date_precision": "day",
+      "pages": [1],
+      "snippet": "Fika Ventures, a B2B-focused early-stage fund, today announced the close of its $160 million Fund IV."
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "Ivo",
+        "website": "https://www.ivo.ai",
+        "description": "Contract intelligence platform for in-house legal teams.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "enterprise_saas",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B",
+      "date": "2026-01-20",
+      "date_precision": "day",
+      "amount_original": 55000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Blackbird"],
+      "participants": ["Costanoa Ventures", "Uncork Capital", "Fika Ventures", "GD1", "Icehouse Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "Other investors in this round included Costanoa Ventures, Uncork Capital, Fika Ventures, GD1 and Icehouse Ventures."
+    },
+    {
+      "company": {
+        "name": "Payabli",
+        "website": "https://www.payabli.com",
+        "description": "Payment management tools for software companies.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "fintech",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2024-06-25",
+      "date_precision": "day",
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["QED Investors"],
+      "participants": ["TTV Capital", "Fika Ventures", "Bling Capital"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "with participation from existing investors TTV Capital, Fika Ventures and Bling Capital"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "funds.close_date",
+      "values": ["2024-09-11 (Silicon UK copy of the release)", "2024-09-20 (Pulse 2.0)"],
+      "chosen": "2024-09-11",
+      "reason": "Matches the release text and the lead list; Pulse 2.0 cites the same release."
+    }
+  ],
+  "open_items": [
+    "Lead's $40M 2017 debut fund not confirmed on a fetched page (TechCrunch result seen in search only); only Fund IV recorded.",
+    "Check size ($1-6M) appears only in a fetch-tool summary of fika.vc, not as quotable text; not recorded.",
+    "Medium Fund IV post, Forbes Ivo article and BusinessWire release returned HTTP 403.",
+    "Only two rounds recorded with pages naming Fika. Search results suggest Payabli Series B (June 2025, Fika co-led) and a Chowbus Series E (2026) but no page was fetched for them.",
+    "Homepage lists no application route or pitch email; cold-inbound unknown."
+  ]
+}

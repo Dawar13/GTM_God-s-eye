@@ -1,0 +1,51 @@
+{
+  "key": "infity-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Infinity Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Confirmed as infinityvc.capital, the early-stage B2B fintech and commerce-enablement firm (the lead list spells it 'Infity'; the firm writes 'Infinity Ventures'). Site lists Rainforest, Mendel, Pagos, Kanmon. Not Infinity Fincorp Solutions, not Infinity VC (other firms with similar names).",
+  "pages": [
+    { "url": "https://infinityvc.capital", "title": "Infinity Ventures", "publisher": "Infinity Ventures", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://parsers.vc/fund/infinityvc.capital/", "title": "Infinity Ventures (Parsers VC)", "publisher": "Parsers VC", "retrieved_at": "2026-10-30", "kind": "database" },
+    { "url": "https://deck.co/blog/deck-raises-12m-series-a-to-open-the-webs-data", "title": "Deck raises $12M Series A to open the web's data", "publisher": "Deck", "retrieved_at": "2026-10-30", "kind": "primary" },
+    { "url": "https://fintech.global/2026/06/17/flagrights-series-a-bets-on-ai-led-compliance-shift/", "title": "Flagright's Series A bets on AI-led compliance shift", "publisher": "Fintech Global", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "Early-stage venture firm focused on fintech & commerce infrastructure investments" },
+    "website": { "value": "https://infinityvc.capital", "pages": [0], "snippet": "The catalyst for the future of fintech." },
+    "hq_city": { "value": "San Francisco", "pages": [1], "snippet": "United States, California, San Francisco" },
+    "hq_country": { "value": "US", "pages": [1], "snippet": "United States, California, San Francisco" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0], "snippet": "Pre-Seed through Series A" },
+    "leads": { "value": true, "pages": [2, 3], "snippet": "Deck announced a $12 million Series A funding round led by Infinity Ventures." },
+    "thesis_text": { "value": "Early-stage investor backing founders building modern, accessible, lower-cost financial services, with a focus on B2B fintech and commerce enablement.", "pages": [0], "snippet": "B2B Fintech & Commerce Enablement" },
+    "stated_sectors": { "value": ["fintech"], "pages": [0], "snippet": "B2B Fintech & Commerce Enablement" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [
+    {
+      "company": { "name": "Flagright", "website": null, "description": "AI-powered financial crime compliance platform.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2026-06-17", "date_precision": "day",
+      "amount_original": 12500000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Infinity Ventures"], "participants": ["Sella", "Frontline", "Y Combinator"], "unspecified": [],
+      "pages": [3], "snippet": "led by Infinity Ventures"
+    },
+    {
+      "company": { "name": "Deck", "website": "https://deck.co", "description": "Infrastructure for accessing user-permissioned data from websites.", "hq_country": null, "founded_year": null, "sector": "fintech", "sector_classified_by": "model", "layer": null },
+      "stage": "series_a", "stage_raw": "Series A", "date": "2025-04-22", "date_precision": "day",
+      "amount_original": 12000000, "currency_original": "USD", "valuation_post_original": null,
+      "leads": ["Infinity Ventures", "Intact"], "participants": [], "unspecified": [],
+      "pages": [2], "snippet": "Deck announced a $12 million Series A funding round led by Infinity Ventures."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Only 2 rounds recorded. Fintary Series A (LinkedIn snippet, undated) not verified on a fetched page.",
+    "Fund II ($184M, 2024-10-22) and Fund I ($158M) seen only in search summaries; Business Wire, Finextra and Pulse 2.0 fetches failed (403/404). No fund recorded. Cooley and TechCrunch disagree on Fund I date per search summary.",
+    "HQ San Francisco from a database page only; Business Wire summary mentioned San Francisco and New York. Check size not found.",
+    "Deck blog structured data shows datePublished 2026-02-27 but dateline reads April 22, 2025; dateline used. Deck co-lead 'Intact' per page wording.",
+    "Contact page not usable: site contact links are placeholders; application_url not recorded."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "key": "oncology-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Oncology Ventures",
+  "status": "active",
+  "researched_at": "2026-10-30",
+  "identity_check": "Oncology Ventures, the cancer-care venture firm (Pulse 2.0 Fund II article: founder Ben Freeberg's firm, Texas Oncology as anchor investor; portfolio Risa, IgniteData, Tono, Concr). The lead's '$30M, 2024-08-26' is Fund I, not Fund II; Fund II ($62M) is the latest. Texas Oncology is the physician practice and anchor LP, not the investor (see texas-oncology.json). HCI Innovation Group calls the firm New York-based while Pulse 2.0 says Austin, Texas.",
+  "pages": [
+    { "url": "https://pulse2.com/oncology-ventures-62-million-fund-ii-closes-oversubscribed-nearly-double-the-size-of-fund-i/", "title": "Oncology Ventures: $62 Million Fund II Closes Oversubscribed, Nearly Double The Size Of Fund I", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.hcinnovationgroup.com/finance-revenue-cycle/news/55136523/oncology-focused-venture-capital-firm-closes-30m-fund", "title": "Oncology-Focused Venture Capital Firm Closes $30M Fund", "publisher": "Healthcare Innovation", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/risa-labs-11-1-million-series-a-raised-to-scale-ai-operating-system-for-oncology-workflows-nationwide", "title": "RISA Labs: $11.1 Million Series A Raised To Scale AI Operating System For Oncology Workflows Nationwide", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://pulse2.com/ignitedata-series-a-funding-closed-to-advance-clinical-trial-data-automation", "title": "IgniteData: Series A Funding Closed To Advance Clinical Trial Data Automation", "publisher": "Pulse 2.0", "retrieved_at": "2026-10-30", "kind": "press" },
+    { "url": "https://www.cooley.com/news/coverage/2025/2025-11-19-wellbeam-secures-$10-million-series-a", "title": "WellBeam Secures $10 Million Series A", "publisher": "Cooley (law firm news coverage)", "retrieved_at": "2026-10-30", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "invest in data-driven startups improving cancer care and research" },
+    "thesis_text": {
+      "value": "Backs commercially validated startups in cancer care delivery, aiming at the infrastructure that helps oncology reach patients.",
+      "pages": [0],
+      "snippet": "picks-and-shovels infrastructure of a $225 billion oncology market"
+    },
+    "stated_sectors": {
+      "value": ["health_bio"],
+      "pages": [0, 1],
+      "snippet": "invest in data-driven startups improving cancer care and research"
+    }
+  },
+  "funds": [
+    {
+      "name": "Oncology Ventures Fund II",
+      "number": "II",
+      "size_original": 62000000,
+      "currency_original": "USD",
+      "close_date": "2026-04-24",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "nearly double the size of its $32 million Fund I"
+    }
+  ],
+  "partners": [],
+  "rounds": [
+    {
+      "company": {
+        "name": "RISA Labs",
+        "website": null,
+        "description": "AI agents that automate administrative work for cancer care providers, such as pre-approvals, coverage checks and intake.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2026-01-13",
+      "date_precision": "day",
+      "amount_original": 11100000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Cencora Ventures", "Optum Ventures"],
+      "participants": ["Oncology Ventures", "Z21 Ventures", "John Simon"],
+      "unspecified": [],
+      "pages": [2],
+      "snippet": "co-led by Cencora Ventures and Optum Ventures, with participation from Oncology Ventures, Z21 Ventures and John Simon."
+    },
+    {
+      "company": {
+        "name": "WellBeam",
+        "website": null,
+        "description": "Interoperability and EMR integration to coordinate care between acute and post-acute providers.",
+        "hq_country": "US",
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-11-19",
+      "date_precision": "day",
+      "amount_original": 10000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Wittington Ventures"],
+      "participants": ["F-Prime Capital", "Advocate Health", "Oncology Ventures"],
+      "unspecified": [],
+      "pages": [4],
+      "snippet": "with additional participation from F-Prime Capital, Advocate Health and Oncology Ventures."
+    },
+    {
+      "company": {
+        "name": "IgniteData",
+        "website": null,
+        "description": "Automates clinical trial data movement from health records into trial data systems (Archer platform).",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "health_bio",
+        "sector_classified_by": "model",
+        "layer": null
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A",
+      "date": "2025-08-14",
+      "date_precision": "day",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": ["FCA Venture Partners"],
+      "participants": ["SpringTide", "Oncology Ventures"],
+      "unspecified": [],
+      "pages": [3],
+      "snippet": "led by FCA Venture Partners, with participation from SpringTide and Oncology Ventures"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "funds.Fund II close_date",
+      "values": ["2026-04-24 (Pulse 2.0 page text)", "2026-04-22 (release dateline per search summary and fund list)"],
+      "chosen": "2026-04-24",
+      "reason": "Only Pulse 2.0 was fetched; the BusinessWire original is unfetched. Likely announcement 2026-04-22."
+    },
+    {
+      "field": "Fund I size",
+      "values": ["$30M (Healthcare Innovation, 2024-08-29)", "$32M (Pulse 2.0, 2026)"],
+      "chosen": "not recorded (Fund I is not the latest fund)",
+      "reason": "Lead's $30M is Fund I; later reporting says $32M."
+    },
+    {
+      "field": "hq_city",
+      "values": ["New York (Healthcare Innovation)", "Austin, Texas (Pulse 2.0 per fetch summary)"],
+      "chosen": "none recorded",
+      "reason": "No quotable HQ text on a fetched page; sources disagree."
+    }
+  ],
+  "open_items": [
+    "HQ not recorded (conflict above); firm website (oncologyventures.com) not fetched, so website, stages, check size and application route are missing.",
+    "IgniteData Series A amount not stated on the Pulse 2.0 page (search summary says about $11M); left null. Company websites not fetched.",
+    "WellBeam source is a Cooley (law firm) news page; the HIT Consultant release returned HTTP 403."
+  ]
+}
