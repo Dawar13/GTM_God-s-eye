@@ -10,9 +10,10 @@ import { applyFilters } from "@/lib/filters";
 import { useFilters } from "@/lib/filters/use-filters";
 import { setWeight } from "@/lib/fit/weights";
 import { DEFAULT_FIT_WEIGHTS, type FitFeatureName } from "@/lib/fit/score";
-import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
+import { INSTRUMENT_PHRASES } from "@/lib/round";
+import { useRound } from "@/lib/round/use-round";
 import { useTierOverrides } from "@/lib/strategy/overrides";
-import { clampRaise, strategyParsers, strategyUrlOptions } from "@/lib/strategy/url";
+import { strategyParsers, strategyUrlOptions } from "@/lib/strategy/url";
 import type { Benchmark } from "@/lib/schema";
 import { splitBackers, type CompetitorBacker } from "@/lib/viz/transforms/competitorInvestors";
 import { rankStrategy, targetTable, type StrategyRow } from "@/lib/viz/transforms/strategy";
@@ -78,8 +79,9 @@ export function StrategyView({
   noteCounts: Partial<Record<LegalTopic, number>>;
 }) {
   const { filters } = useFilters();
-  const [{ w: weights, raise }, setQs] = useQueryStates(strategyParsers, strategyUrlOptions);
-  const raiseUsd = clampRaise(raise);
+  const [{ w: weights }, setQs] = useQueryStates(strategyParsers, strategyUrlOptions);
+  // Our round (raise and instrument) is app-wide: set in the top bar, read from the URL.
+  const { raise: raiseUsd, inst } = useRound();
   const { overrides, move, reset } = useTierOverrides();
   const loaded = useLoaded("strategy-rows", loadStrategyRows);
   const rows = loaded.status === "ready" ? loaded.data : NO_ROWS;
@@ -108,9 +110,8 @@ export function StrategyView({
     [setQs],
   );
   const onReset = useCallback(() => {
-    void setQs({ w: { ...DEFAULT_FIT_WEIGHTS }, raise: EXAMPLE_RAISE_USD });
+    void setQs({ w: { ...DEFAULT_FIT_WEIGHTS } });
   }, [setQs]);
-  const onRaise = useCallback((v: number) => void setQs({ raise: v }), [setQs]);
 
   const onExport = useCallback(() => {
     const t = targetTable(ranked, weights, raiseUsd, overrides);
@@ -124,7 +125,7 @@ export function StrategyView({
         onWeight={onWeight}
         onReset={onReset}
         raiseUsd={raiseUsd}
-        onRaise={onRaise}
+        instrumentLabel={INSTRUMENT_PHRASES[inst]}
       />
       {failed ? (
         <RowsPending title="Ranked targets" height={0} failed />
@@ -146,13 +147,13 @@ export function StrategyView({
       ) : (
         <RowsPending title="Outreach tiers" height={360} failed={failed} />
       )}
-      <RaiseBenchmarks benchmarks={benchmarks} raiseUsd={raiseUsd} />
+      <RaiseBenchmarks benchmarks={benchmarks} raiseUsd={raiseUsd} instrument={inst} />
       {loaded.status === "ready" ? (
         <CompetitorSplit split={split} sources={competitorSources} />
       ) : (
         <RowsPending title="Investors who backed a competitor" height={240} failed={failed} />
       )}
-      <StructuralQuestions noteCounts={noteCounts} />
+      <StructuralQuestions noteCounts={noteCounts} raiseUsd={raiseUsd} instrument={inst} />
     </div>
   );
 }

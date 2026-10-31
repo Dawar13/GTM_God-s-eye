@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { parseAsInteger, parseAsStringLiteral, useQueryStates } from "nuqs";
+import { parseAsFloat, parseAsInteger, parseAsStringLiteral, useQueryStates } from "nuqs";
 import {
   Bar,
   BarChart,
@@ -30,6 +30,9 @@ import {
   Stat,
   VizTooltip,
 } from "@/components/ui-atlas";
+import { Button } from "@/components/ui/button";
+import { startingAmount } from "@/lib/round/seed";
+import { useRound } from "@/lib/round/use-round";
 import { NOTE_DEFAULTS as D } from "@/lib/calculators/examples";
 import { CALC_URL_OPTIONS, matchesDefaults, numberParam } from "@/lib/calculators/url";
 import { useLastValid } from "@/lib/calculators/useLastValid";
@@ -46,7 +49,8 @@ import {
 } from "@/lib/viz/transforms/calcNote";
 
 const parsers = {
-  amt: numberParam(D.amt),
+  // No default: absent means "start from our raise" (src/lib/round/seed.ts).
+  amt: parseAsFloat,
   rate: numberParam(D.rate),
   cmp: parseAsStringLiteral(["simple", "annual", "monthly"] as const).withDefault(D.cmp),
   mo: parseAsInteger.withDefault(D.mo),
@@ -107,9 +111,11 @@ const METHOD_LABEL = {
 
 export function NoteCalculator() {
   const [v, setV] = useQueryStates(parsers, CALC_URL_OPTIONS);
+  const round = useRound();
+  const amt = startingAmount(v.amt, round.raise);
   const inputs = useMemo<Inputs>(
     () => ({
-      amt: v.amt,
+      amt,
       rate: v.rate,
       cmp: v.cmp,
       mo: v.mo,
@@ -121,7 +127,7 @@ export function NoteCalculator() {
       rinv: v.rinv,
       fd: v.fd,
     }),
-    [v.amt, v.rate, v.cmp, v.mo, v.cap, v.nc, v.cb, v.disc, v.rpre, v.rinv, v.fd],
+    [amt, v.rate, v.cmp, v.mo, v.cap, v.nc, v.cb, v.disc, v.rpre, v.rinv, v.fd],
   );
   const { result, error, stale } = useLastValid(inputs, compute);
   const s = result?.scenario;
@@ -133,20 +139,45 @@ export function NoteCalculator() {
   return (
     <CalculatorLayout
       isExample={matchesDefaults(inputs, D)}
-      onReset={() => void setV(null)}
+      onReset={() =>
+        void setV({
+          rate: null,
+          cmp: null,
+          mo: null,
+          cap: null,
+          nc: null,
+          cb: null,
+          disc: null,
+          rpre: null,
+          rinv: null,
+          fd: null,
+          // Written explicitly, so the example stays the example whatever our round is.
+          amt: D.amt,
+        })
+      }
       error={error}
       stale={stale}
       inputs={
         <>
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="self-start"
+            onClick={() => void setV({ amt: round.raise })}
+            disabled={amt === round.raise}
+          >
+            Use our round
+          </Button>
           <NumberField
             label="Note amount"
             kind="usd"
             min={10_000}
             max={50_000_000}
             slider="log"
-            value={v.amt}
+            value={amt}
             onChange={(amt) => void setV({ amt })}
-            hint="The principal the note holder lent. Interest accrues on this until the note converts."
+            hint="The principal the note holder lent. Interest accrues on this until the note converts. Without an amount in the link this starts from our raise (top bar); the example is $500K."
           />
           <NumberField
             label="Interest rate"
@@ -280,7 +311,7 @@ export function NoteCalculator() {
             <div className="flex flex-col gap-2">
               <p className="font-medium text-ink">Worked example, with the current inputs</p>
               <FormulaLine>
-                Accrued value: {formatUsd(v.amt)} + {formatUsd(s.interest)} interest ={" "}
+                Accrued value: {formatUsd(amt)} + {formatUsd(s.interest)} interest ={" "}
                 {formatUsd(s.accrued)} after {v.mo} months
               </FormulaLine>
               <FormulaLine>

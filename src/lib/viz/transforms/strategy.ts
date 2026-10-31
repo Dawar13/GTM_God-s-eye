@@ -8,7 +8,7 @@
  * record are not ranked. The check feature is re-scored for the raise (src/lib/fit/check.ts);
  * the other five features are as stored.
  */
-import { withRaise } from "@/lib/fit/check";
+import { compactFit } from "@/lib/round/fit";
 import { fitScore, type FitFeatureName, type FitScore, type FitWeights } from "@/lib/fit/score";
 import { toFilterable } from "@/lib/data/directory";
 import type { FilterableInvestor } from "@/lib/filters";
@@ -80,21 +80,7 @@ export function toStrategyRows(
 
 /** The row's fit record with the check feature re-scored for `raiseUsd`; null with no record. */
 export function rowFit(row: StrategyRow, raiseUsd: number): FitFeatures | null {
-  if (!row.features) return null;
-  const features = Object.fromEntries(
-    FIT_FEATURE_ORDER.map((n, i) => {
-      const v = row.features![i] ?? null;
-      return [n, v === null ? null : { value: v, method: "stored by the pipeline", inputs: [] }];
-    }),
-  ) as FitFeatures["features"];
-  const base: FitFeatures = {
-    id: `fit_${row.id.slice(4)}`,
-    investor_id: row.id,
-    features,
-    flags: row.flags,
-    raise_size_usd: raiseUsd,
-  };
-  return withRaise(base, row, raiseUsd);
+  return compactFit(row, raiseUsd);
 }
 
 export type Ranked = {

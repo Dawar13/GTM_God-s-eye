@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { parseAsInteger, parseAsStringLiteral, useQueryStates } from "nuqs";
+import { parseAsFloat, parseAsInteger, parseAsStringLiteral, useQueryStates } from "nuqs";
 import {
   Bar,
   BarChart,
@@ -26,6 +26,10 @@ import {
   Stat,
   VizTooltip,
 } from "@/components/ui-atlas";
+import { Button } from "@/components/ui/button";
+import { safeTabFor } from "@/lib/round";
+import { startingAmount, startingSafeTab } from "@/lib/round/seed";
+import { useRound } from "@/lib/round/use-round";
 import { SAFE_DEFAULTS as D } from "@/lib/calculators/examples";
 import { CALC_URL_OPTIONS, matchesDefaults, numberParam } from "@/lib/calculators/url";
 import { useLastValid } from "@/lib/calculators/useLastValid";
@@ -46,8 +50,9 @@ import {
 } from "@/lib/viz/transforms/calcSafe";
 
 const parsers = {
-  st: parseAsStringLiteral(["post", "pre", "both"] as const).withDefault(D.st),
-  amt: numberParam(D.amt),
+  // No defaults for these two: absent means "start from our round" (src/lib/round/seed.ts).
+  st: parseAsStringLiteral(["post", "pre", "both"] as const),
+  amt: parseAsFloat,
   cap: numberParam(D.cap),
   nc: parseAsInteger.withDefault(D.nc),
   disc: numberParam(D.disc),
@@ -92,9 +97,13 @@ const KIND_LABEL = { post_money: "Post-money cap", pre_money: "Pre-money cap" } 
 
 export function SafeCalculator() {
   const [v, setV] = useQueryStates(parsers, CALC_URL_OPTIONS);
+  const round = useRound();
+  const st = startingSafeTab(v.st, round.inst);
+  const amt = startingAmount(v.amt, round.raise);
+  const ourTab = safeTabFor(round.inst);
   const inputs = useMemo<Inputs>(
     () => ({
-      amt: v.amt,
+      amt,
       cap: v.cap,
       nc: v.nc,
       disc: v.disc,
@@ -104,14 +113,14 @@ export function SafeCalculator() {
       pool: v.pool,
       ptgt: v.ptgt,
     }),
-    [v.amt, v.cap, v.nc, v.disc, v.rpre, v.rinv, v.fsh, v.pool, v.ptgt],
+    [amt, v.cap, v.nc, v.disc, v.rpre, v.rinv, v.fsh, v.pool, v.ptgt],
   );
   const { result, error, stale } = useLastValid(inputs, compute);
 
   const scenarios: SafeScenario[] = result
-    ? v.st === "both"
+    ? st === "both"
       ? [result.post, result.pre]
-      : [v.st === "post" ? result.post : result.pre]
+      : [st === "post" ? result.post : result.pre]
     : [];
   const main = scenarios[0];
 
@@ -133,17 +142,41 @@ export function SafeCalculator() {
 
   return (
     <CalculatorLayout
-      isExample={matchesDefaults({ ...inputs, st: v.st }, D)}
-      onReset={() => void setV(null)}
+      isExample={matchesDefaults({ ...inputs, st }, D)}
+      onReset={() =>
+        void setV({
+          cap: null,
+          nc: null,
+          disc: null,
+          rpre: null,
+          rinv: null,
+          fsh: null,
+          pool: null,
+          ptgt: null,
+          // Written explicitly, so the example stays the example whatever our round is.
+          st: D.st,
+          amt: D.amt,
+        })
+      }
       error={error}
       stale={stale}
       inputs={
         <>
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="self-start"
+            onClick={() => void setV({ amt: round.raise, ...(ourTab ? { st: ourTab } : {}) })}
+            disabled={amt === round.raise && (ourTab === null || st === ourTab)}
+          >
+            Use our round
+          </Button>
           <div className="flex flex-col gap-1.5">
             <span className="text-sm font-medium">SAFE type</span>
             <Segmented
               label="SAFE type"
-              value={v.st}
+              value={st}
               onChange={(st) => void setV({ st })}
               options={[
                 { value: "post", label: "Post-money" },
@@ -158,9 +191,9 @@ export function SafeCalculator() {
             min={10_000}
             max={100_000_000}
             slider="log"
-            value={v.amt}
+            value={amt}
             onChange={(amt) => void setV({ amt })}
-            hint="Money the SAFE holder pays now. The example is the app's assumed $1.0M post-money SAFE."
+            hint="Money the SAFE holder pays now. Without an amount in the link this starts from our round (top bar); the example is $1.0M."
           />
           {!v.nc && (
             <NumberField
@@ -288,7 +321,7 @@ export function SafeCalculator() {
     >
       {result && main && (
         <>
-          {v.st !== "both" ? (
+          {st !== "both" ? (
             <>
               <div className="grid grid-cols-2 gap-6 rounded-xl border border-rule bg-panel p-4 md:grid-cols-4">
                 <Stat label="SAFE converts at" value={formatPricePerShare(main.conversion.price)} />

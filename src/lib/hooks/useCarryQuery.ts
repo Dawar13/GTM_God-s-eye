@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { FILTER_KEYS } from "@/lib/filters";
+import { ROUND_KEYS } from "@/lib/round/url";
 
 /**
  * Appends the current filter query string to an internal href, so filters
@@ -10,7 +11,7 @@ import { FILTER_KEYS } from "@/lib/filters";
 export function useCarryQuery(): (href: string) => string {
   const params = useSearchParams();
   const carried = new URLSearchParams();
-  for (const key of FILTER_KEYS) {
+  for (const key of [...FILTER_KEYS, ...ROUND_KEYS]) {
     for (const v of params.getAll(key)) carried.append(key, v);
   }
   const q = carried.toString();

@@ -250,7 +250,16 @@ const FEATURE_LABEL: Record<FitFeatureName, string> = {
 
 const points = (v: number | null) => (v === null ? UNKNOWN : `${v.toFixed(1)} pts`);
 
-export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
+export function TopFitTile({
+  data,
+  href,
+  raiseUsd,
+}: {
+  data: TopByFit;
+  href: string;
+  /** Our raise, which the check size feature was scored for. */
+  raiseUsd: number;
+}) {
   const { open } = useInspector();
   const rows = data.bars.map((b) => ({
     ...b,
@@ -265,7 +274,7 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
   return (
     <ChartFrame
       title="Top 10 by fit score"
-      subtitle="Score out of 100 with default weights; segments are points per feature. Unknown features are left out and the rest rescaled."
+      subtitle={`Score out of 100 with default weights, for a ${formatUsd(raiseUsd)} raise; segments are points per feature. Unknown features are left out and the rest rescaled.`}
       legend={
         <div className="flex flex-col gap-1">
           <Legend

@@ -8,7 +8,6 @@ import { INVESTOR_STAGE_LABELS, SECTOR_LABELS } from "@/lib/format/labels";
 import type { Company, Competitor, FitFeatures, Fund, Investor, Round } from "@/lib/schema";
 import type { Confidence } from "@/lib/schema";
 import { provenanceOf } from "@/lib/viz/transforms/common";
-import { fitBreakdown, type FitBreakdown } from "@/lib/viz/transforms/fitBreakdown";
 import { fundsTimeline, type FundsTimeline } from "@/lib/viz/transforms/fundsTimeline";
 import { investorDeals, type InvestorDeals } from "@/lib/viz/transforms/investorDeals";
 import { sectorBars, type SectorBars } from "@/lib/viz/transforms/sectorBars";
@@ -33,7 +32,11 @@ export type InvestorProfile = {
   thesis: { text: string | null; sourceDomain: string | null };
   /** Roll-up of the investor's own sources, for tooltips on its marks. */
   provenance: { sourceDomain: string | null; confidence: Confidence | null };
-  fit: FitBreakdown | null;
+  /**
+   * The stored fit record. The Inspector scores it for our round (fitForRound, then
+   * fitBreakdown), so the profile stays cacheable for every raise.
+   */
+  fit: FitFeatures | null;
   sectors: SectorBars;
   funds: FundsTimeline;
   partners: ProfilePartner[];
@@ -74,7 +77,7 @@ export function buildInvestorProfile(input: ProfileInputs): InvestorProfile {
       sourceDomain: thesisSource ? sourceDomain(thesisSource.url) : null,
     },
     provenance: provenanceOf([inv]),
-    fit: fitBreakdown(input.fit),
+    fit: input.fit,
     sectors: sectorBars(inv.sector_weights),
     funds: fundsTimeline(input.funds.filter((f) => f.investor_id === inv.id)),
     partners: input.partners

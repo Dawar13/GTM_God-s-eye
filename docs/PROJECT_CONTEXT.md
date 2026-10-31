@@ -236,7 +236,7 @@ Phase 1 and Phase 2 instruction files are written at the end of the previous pha
 ## 11. Open questions (track answers in DECISIONS.md)
 
 1. Target raise size and instrument for pre-seed (post-money SAFE assumed default for US).
-2. Which entity raises: Delaware C-Corp only, or flip India under it?
+2. Which entity raises: Delaware C-Corp only, or flip India under it? Decided by the user on 2026-10-31: investors put money into the Delaware C-Corp (the US parent), not the Indian Pvt Ltd.
 3. Is the company leaning to design-intent tooling or plant-ops agents for the pitch? Changes fit weights.
 4. Who on the team uses this, and is any of it shared outside (e.g. with advisors)?
 5. Contents of the two incoming investor spreadsheets.

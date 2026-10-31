@@ -1,4 +1,6 @@
-import { fitScore } from "@/lib/fit/score";
+import { DEFAULT_FIT_WEIGHTS, fitScore } from "@/lib/fit/score";
+import { scoreCompact } from "@/lib/round/fit";
+import { FIT_FEATURE_ORDER } from "@/lib/viz/transforms/topByFit";
 import { SECTOR_MATCH_MIN, type FilterableInvestor } from "@/lib/filters";
 import { inArea, type Area } from "@/lib/filters/area";
 import type { BubblePoint, FitFeatures, Fund, Investor, ThesisPoint } from "@/lib/schema";
@@ -29,7 +31,14 @@ export type DirectoryRow = FilterableInvestor & {
   latestFundSizeUsd: number | null;
   latestFundYear: number | null;
   seedListCount: number;
-  /** Fit score with the default weights, 0–100; null when no feature is known. */
+  /** Stored `leads`; the check size fit adds to the score for investors that lead. */
+  leads: boolean | null;
+  /** Stored feature values in FIT_FEATURE_ORDER (null = unknown); null with no fit record. */
+  features: (number | null)[] | null;
+  /**
+   * Fit score with the default weights, 0–100; null when no feature is known. It is computed
+   * from `features` for our raise (`withRoundFit`); the route does not send it.
+   */
   fit: number | null;
   /** Share of fit weight whose feature is known. */
   fitCoverage: number | null;
@@ -50,12 +59,18 @@ export const DIRECTORY_DETAIL_KEYS = [
   "latestFundSizeUsd",
   "latestFundYear",
   "seedListCount",
-  "fit",
-  "fitCoverage",
+  "leads",
+  "features",
   "fitFlags",
   "sourceCount",
   "confidence",
 ] as const satisfies readonly (keyof DirectoryRow)[];
+
+/** The row with its fit score and coverage computed for our raise (default weights). */
+export function withRoundFit(row: DirectoryRow, raiseUsd: number): DirectoryRow {
+  const score = scoreCompact({ ...row, flags: row.fitFlags as FitFeatures["flags"] }, DEFAULT_FIT_WEIGHTS, raiseUsd);
+  return { ...row, fit: score ? score.total : null, fitCoverage: score ? score.coverage : null };
+}
 
 /** The most recent fund by vintage year, then close date. */
 export function latestFund(funds: readonly Fund[]): Fund | null {
@@ -97,6 +112,8 @@ export function toDirectoryRows(
       latestFundSizeUsd: latest?.size_usd ?? null,
       latestFundYear: latest?.vintage_year ?? null,
       seedListCount: inv.seed_list_count,
+      leads: inv.leads,
+      features: fit ? FIT_FEATURE_ORDER.map((n) => fit.features[n]?.value ?? null) : null,
       fit: score ? score.total : null,
       fitCoverage: score ? score.coverage : null,
       fitFlags: fit?.flags ?? [],

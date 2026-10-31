@@ -14,6 +14,7 @@ import { ChartFrame, Legend, VizTooltip } from "@/components/ui-atlas";
 import type { InvestorProfile } from "@/lib/data/profile";
 import { formatCount, formatPartialDate, formatPercent, formatUsd } from "@/lib/format";
 import { CATEGORICAL, markStyle } from "@/lib/viz";
+import type { FitBreakdown } from "@/lib/viz/transforms/fitBreakdown";
 import { FIT_FEATURE_ORDER } from "@/lib/viz/transforms/topByFit";
 import { ChartTable } from "./ChartTable";
 
@@ -36,7 +37,7 @@ export function FitBreakdownChart({
   fit,
   provenance,
 }: {
-  fit: NonNullable<InvestorProfile["fit"]>;
+  fit: FitBreakdown;
   provenance: InvestorProfile["provenance"];
 }) {
   const datum = {
@@ -63,7 +64,7 @@ export function FitBreakdownChart({
       <ChartFrame
         compact
         title="Fit score by feature"
-        subtitle="Points each known feature adds to the score, default weights. Unknown features add nothing and the rest are rescaled."
+        subtitle={`Points each known feature adds to the score, default weights, with the check size fit for a ${formatUsd(fit.raiseSizeUsd)} raise. Unknown features add nothing and the rest are rescaled.`}
         legend={
           <Legend
             kind="categorical"

@@ -19,6 +19,7 @@ import { useUi } from "@/store/ui";
 import { Segmented } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
+import { RoundControl } from "./RoundControl";
 import { ThemeToggle } from "./ThemeToggle";
 
 const noopSubscribe = () => () => {};
@@ -141,6 +142,7 @@ export function TopBar() {
             <span className="hidden truncate xl:inline">{summary}</span>
           </Button>
         )}
+        <RoundControl />
         <Button
           variant="outline"
           size="sm"

@@ -7,7 +7,7 @@ import { ChartTable } from "@/components/charts/ChartTable";
 import { ChartFrame, ContributionBar, HoverTip, Legend, VizTooltip } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import type { FitWeights } from "@/lib/fit/score";
-import { formatCount, formatPercent } from "@/lib/format";
+import { formatCount, formatPercent, formatUsd } from "@/lib/format";
 import { FIT_FEATURE_LABELS } from "@/lib/viz/transforms/fitBreakdown";
 import {
   breakdownOf,
@@ -90,7 +90,7 @@ export function RankedList({
   return (
     <ChartFrame
       title="Ranked targets"
-      subtitle="Best fit first. Each bar is the fit score split by feature, on one 0 to 100 scale."
+      subtitle={`Best fit first, with the check size fit scored for a ${formatUsd(raiseUsd)} raise. Each bar is the fit score split by feature, on one 0 to 100 scale.`}
       legend={
         <div className="flex flex-col gap-2">
           <Legend

@@ -14,6 +14,13 @@ import { ChartTable } from "@/components/charts/ChartTable";
 import { ChartFrame, Legend, VizTooltip } from "@/components/ui-atlas";
 import { formatCount, formatUsd, UNKNOWN } from "@/lib/format";
 import { GEOGRAPHY_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
+import { INSTRUMENT_PHRASES, type Instrument } from "@/lib/round";
+import {
+  countByInstrument,
+  instrumentSummary,
+  matchInstrument,
+  type InstrumentMatch,
+} from "@/lib/round/instrument";
 import type { Benchmark } from "@/lib/schema";
 import { CATEGORICAL, darken, logAxisTitle, markStyle, SEQUENTIAL } from "@/lib/viz";
 import {
@@ -26,6 +33,9 @@ const TICK = { fontSize: 12, fill: "var(--muted)" } as const;
 const PRE_SEED = CATEGORICAL[0];
 const SEED = CATEGORICAL[1];
 const OURS = SEQUENTIAL.high;
+const MUTED = "#B9BFC9";
+
+type Marked = BenchmarkPoint & { match: InstrumentMatch };
 
 type Mark = { x: number; y: number };
 
@@ -38,6 +48,9 @@ type TableRow = {
   period: string;
   geography: BenchmarkPoint["geography"] | null;
   sampleSize: number | null;
+  instrument: string | null;
+  /** Whether the benchmark is for our instrument; null for our own mark. */
+  match: InstrumentMatch | null;
   sourceDomain: string | null;
 };
 
@@ -52,13 +65,21 @@ function hovered<T>(p: { active?: boolean; payload?: readonly { payload?: unknow
 export function RaiseBenchmarks({
   benchmarks,
   raiseUsd,
+  instrument,
 }: {
   benchmarks: readonly Benchmark[];
   raiseUsd: number;
+  /** Our instrument: benchmarks for it are highlighted, the rest muted. */
+  instrument: Instrument;
 }) {
   const data = useMemo(() => raiseBenchmarks(benchmarks, raiseUsd), [benchmarks, raiseUsd]);
+  const marked = useMemo<Marked[]>(
+    () => data.points.map((p) => ({ ...p, match: matchInstrument(p.instrument, instrument) })),
+    [data.points, instrument],
+  );
+  const counts = useMemo(() => countByInstrument(data.points, instrument), [data.points, instrument]);
   const tableRows: TableRow[] = [
-    ...data.points,
+    ...marked,
     {
       id: "ours",
       rowLabel: "Our planned raise",
@@ -68,15 +89,21 @@ export function RaiseBenchmarks({
       period: UNKNOWN,
       geography: null,
       sampleSize: null,
+      instrument: INSTRUMENT_PHRASES[instrument],
+      match: null,
       sourceDomain: null,
     },
   ];
-  const byStage = (stage: BenchmarkPoint["stage"]) => data.points.filter((p) => p.stage === stage);
+  const byStage = (stage: BenchmarkPoint["stage"]) => marked.filter((p) => p.stage === stage);
   const dot = (color: string) =>
-    function Dot(p: { cx?: number; cy?: number }) {
+    function Dot(p: { cx?: number; cy?: number; payload?: Marked }) {
       if (p.cx === undefined || p.cy === undefined) return <g />;
+      if (p.payload?.match !== "match") {
+        // Not our instrument (or none stated): a small, pale mark so ours stand out.
+        return <circle cx={p.cx} cy={p.cy} r={4.5} fill={MUTED} fillOpacity={0.55} stroke="none" />;
+      }
       const m = markStyle(color);
-      return <circle cx={p.cx} cy={p.cy} r={6} fill={m.fill} stroke={m.stroke} strokeWidth={1} />;
+      return <circle cx={p.cx} cy={p.cy} r={7} fill={m.fill} stroke={m.stroke} strokeWidth={1.5} />;
     };
   const ring = (p: { cx?: number; cy?: number }) =>
     p.cx === undefined || p.cy === undefined ? (
@@ -95,14 +122,15 @@ export function RaiseBenchmarks({
   return (
     <ChartFrame
       title="Our raise against published benchmarks"
-      subtitle="One mark per published figure; the ring is our planned raise, on the round-size row only."
+      subtitle={`One mark per published figure; the ring is our planned raise, on the round-size row only. ${instrumentSummary(counts, instrument)}`}
       legend={
         <Legend
           kind="categorical"
           items={[
             { label: "Pre-seed benchmark", color: PRE_SEED },
             { label: "Seed benchmark", color: SEED },
-            { label: "Our planned raise (from the input above)", color: OURS, hollow: true },
+            { label: `Our planned raise (${formatUsd(raiseUsd)}, from the top bar)`, color: OURS, hollow: true },
+            { label: "Other instrument or none stated (muted)", color: MUTED },
           ]}
         />
       }
@@ -134,6 +162,15 @@ export function RaiseBenchmarks({
             { header: "Publisher", cell: (p) => p.publisher },
             { header: "Period", cell: (p) => p.period },
             { header: "Geography", cell: (p) => (p.geography ? GEOGRAPHY_LABELS[p.geography] : UNKNOWN) },
+            {
+              header: "Instrument",
+              cell: (p) => p.instrument ?? "Instrument not stated",
+            },
+            {
+              header: "Our instrument",
+              cell: (p) =>
+                p.match === null ? "Ours" : p.match === "match" ? "Matches" : p.match === "other" ? "Other" : "Not stated",
+            },
             {
               header: "Sample size",
               numeric: true,
@@ -209,7 +246,7 @@ export function RaiseBenchmarks({
                       ? "Sample size not stated"
                       : `Sample size ${formatCount(d.sampleSize)}`}
                   </p>
-                  {d.instrument && <p>{d.instrument}</p>}
+                  <p>{d.instrument ?? "Instrument not stated"}</p>
                 </VizTooltip>
               );
             }}

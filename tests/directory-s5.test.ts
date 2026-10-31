@@ -19,6 +19,8 @@ function row(overrides: Partial<DirectoryRow> & { id: string; name: string }): D
     latestFundSizeUsd: null,
     latestFundYear: null,
     seedListCount: 0,
+    leads: null,
+    features: null,
     fit: null,
     fitCoverage: null,
     fitFlags: [],

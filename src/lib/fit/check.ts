@@ -45,7 +45,7 @@ export function withRaise(fit: FitFeatures, inv: CheckInput, raiseUsd: number): 
       ? null
       : {
           value,
-          method: `check range vs raise of ${formatUsd(raiseUsd)} (editable here); leads +0.2`,
+          method: `check range vs raise of ${formatUsd(raiseUsd)} (our round, set in the top bar); leads +0.2`,
           inputs: [
             `check ${money(inv.checkMinUsd)}–${money(inv.checkMaxUsd)}`,
             `leads ${inv.leads === null ? "unknown" : String(inv.leads)}`,

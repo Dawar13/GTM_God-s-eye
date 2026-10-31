@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { parseAsStringLiteral, useQueryStates } from "nuqs";
+import { parseAsFloat, parseAsStringLiteral, useQueryStates } from "nuqs";
 import { ChartTable } from "@/components/charts/ChartTable";
 import {
   CalculatorLayout,
@@ -12,6 +12,9 @@ import {
   ShareBar,
   Stat,
 } from "@/components/ui-atlas";
+import { Button } from "@/components/ui/button";
+import { startingAmount } from "@/lib/round/seed";
+import { useRound } from "@/lib/round/use-round";
 import { ROUND_BUILDER_DEFAULTS as D } from "@/lib/calculators/examples";
 import { CALC_URL_OPTIONS, matchesDefaults, numberParam } from "@/lib/calculators/url";
 import { useLastValid } from "@/lib/calculators/useLastValid";
@@ -22,7 +25,8 @@ import { roundOwnership } from "@/lib/viz/transforms/calcOwnership";
 const parsers = {
   mode: parseAsStringLiteral(["pre", "post"] as const).withDefault(D.mode),
   val: numberParam(D.val),
-  inv: numberParam(D.inv),
+  // No default: absent means "new money is our raise" (src/lib/round/seed.ts).
+  inv: parseAsFloat,
   fd: numberParam(D.fd),
 };
 
@@ -39,9 +43,11 @@ function compute(i: Inputs) {
 
 export function RoundBuilder() {
   const [v, setV] = useQueryStates(parsers, CALC_URL_OPTIONS);
+  const round = useRound();
+  const inv = startingAmount(v.inv, round.raise);
   const inputs = useMemo<Inputs>(
-    () => ({ mode: v.mode, val: v.val, inv: v.inv, fd: v.fd }),
-    [v.mode, v.val, v.inv, v.fd],
+    () => ({ mode: v.mode, val: v.val, inv, fd: v.fd }),
+    [v.mode, v.val, inv, v.fd],
   );
   const { result, error, stale } = useLastValid(inputs, compute);
   const own = useMemo(() => (result ? roundOwnership(result) : null), [result]);
@@ -58,11 +64,29 @@ export function RoundBuilder() {
   return (
     <CalculatorLayout
       isExample={matchesDefaults(inputs, D)}
-      onReset={() => void setV(null)}
+      onReset={() =>
+        void setV({
+          mode: null,
+          val: null,
+          fd: null,
+          // Written explicitly, so the example stays the example whatever our round is.
+          inv: D.inv,
+        })
+      }
       error={error}
       stale={stale}
       inputs={
         <>
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="self-start"
+            onClick={() => void setV({ inv: round.raise })}
+            disabled={inv === round.raise}
+          >
+            Use our round
+          </Button>
           <div className="flex flex-col gap-1.5">
             <span id="valuation-basis" className="text-sm font-medium">
               Valuation basis
@@ -93,9 +117,9 @@ export function RoundBuilder() {
             min={10_000}
             max={1_000_000_000}
             slider="log"
-            value={v.inv}
+            value={inv}
             onChange={(inv) => void setV({ inv })}
-            hint="Total new money in the round. The example is the app's assumed $1.0M raise."
+            hint="Total new money in the round. Without an amount in the link this is our raise (top bar); the example is $1.0M."
           />
           <NumberField
             label="Fully diluted shares before the round"

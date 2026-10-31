@@ -94,10 +94,10 @@ Not done, by the user's choice: the user will deploy it themselves. `docs/RUNBOO
 
 ## Phase 1 open questions still open
 
-None of the questions in `docs/PHASE_1_REPORT.md` §7 has been answered; Phase 2 ran on the stated defaults.
+Two of the questions in `docs/PHASE_1_REPORT.md` §7 are now settled (items 1 and 2); the rest are open and Phase 2 ran on the stated defaults.
 
-1. Raise size and instrument. The app assumes a $1.0M post-money SAFE, labelled as an assumption and editable on Strategy.
-2. Which entity raises (Delaware C-Corp alone, or a flip of the Indian company). Strategy lists it as a structural question with links to the India legal notes.
+1. Raise size and instrument: now an app-wide variable ("Our round" in the top bar, in the link as `?raise=` and `?inst=`), defaulting to a $1.0M post-money SAFE. The raise re-scores every fit score; the instrument highlights matching benchmarks and sets the SAFE calculator's tab, but no fit feature depends on it.
+2. Which entity raises: answered by the user on 2026-10-31. Investors put money into the Delaware C-Corp (the US parent), not the Indian Pvt Ltd. Strategy shows it as decided, with links to the India legal notes on that route.
 3. Pitch direction (design-intent tooling or plant-ops agents). The fit weights use the defaults; Strategy's sliders let you try either.
 4. Who uses the app and whether anything is shared outside. This decides deployment protection and whether partner names show; the RUNBOOK keeps everything private until it is answered.
 5. The two incoming investor spreadsheets have not arrived, so nothing was ingested.

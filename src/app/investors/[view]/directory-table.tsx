@@ -10,7 +10,8 @@ import { Chip, Segmented, Skeleton } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { loadDirectoryRows, useLoaded } from "@/lib/client-index";
-import { rowsInArea, type AreaCoords, type DirectoryRow } from "@/lib/data/directory";
+import { rowsInArea, withRoundFit, type AreaCoords, type DirectoryRow } from "@/lib/data/directory";
+import { useRound } from "@/lib/round/use-round";
 import { DEFAULT_VISIBLE, DIRECTORY_COLUMNS } from "@/lib/directory/columns";
 import { csvFilename, toCsv } from "@/lib/directory/csv";
 import {
@@ -205,7 +206,7 @@ export function DirectoryTable({ areaCoords }: { areaCoords: AreaCoords }) {
 }
 
 function DirectoryView({
-  rows,
+  rows: loadedRows,
   areaCoords,
 }: {
   rows: DirectoryRow[];
@@ -214,6 +215,9 @@ function DirectoryView({
 }) {
   // The same applyFilters the filter bar's chip counts use, so the two always agree.
   const { filters, toggle } = useFilters();
+  // The fit column, its sort and the CSV all use the fit scored for our round (top bar).
+  const { raise } = useRound();
+  const rows = useMemo(() => loadedRows.map((r) => withRoundFit(r, raise)), [loadedRows, raise]);
   const [sort, setSort] = useQueryState(
     SORT_PARAM,
     parseAsStringLiteral(SORT_KEYS).withDefault(DEFAULT_SORT).withOptions(filterUrlOptions),

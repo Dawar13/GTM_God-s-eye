@@ -12,7 +12,13 @@ import {
   type Columns,
   type Detail,
 } from "@/lib/data/columns";
-import { DIRECTORY_DETAIL_KEYS, toDirectoryRows, type DirectoryRow } from "@/lib/data/directory";
+import {
+  DIRECTORY_DETAIL_KEYS,
+  toDirectoryRows,
+  withRoundFit,
+  type DirectoryRow,
+} from "@/lib/data/directory";
+import { DEFAULT_RAISE_USD } from "@/lib/round";
 import type { FilterableInvestor } from "@/lib/filters";
 import {
   STRATEGY_DETAIL_KEYS,
@@ -89,9 +95,11 @@ describe("route payloads on the real data", () => {
     ]);
     const expected = toDirectoryRows(investors, funds, fits);
     const rows = await viaRoutes<DirectoryRow>(directoryGet);
-    expect(rows).toEqual(expected);
-    // Every field a Directory row has travels in one of the two payloads.
-    expect(new Set([...FILTERABLE_KEYS, ...DIRECTORY_DETAIL_KEYS])).toEqual(
+    // The route sends the stored features, not the score; the client scores them for our raise.
+    expect(rows.map((r) => withRoundFit(r, DEFAULT_RAISE_USD))).toEqual(expected);
+    // Every field a Directory row has travels in one of the two payloads, except the two the
+    // client computes from the features (fit and its coverage).
+    expect(new Set([...FILTERABLE_KEYS, ...DIRECTORY_DETAIL_KEYS, "fit", "fitCoverage"])).toEqual(
       new Set(Object.keys(expected[0]!)),
     );
   });

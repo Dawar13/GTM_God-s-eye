@@ -11,6 +11,9 @@ import {
 import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
 import { loadProfile, useLoaded } from "@/lib/client-index";
 import type { InvestorProfile } from "@/lib/data/profile";
+import { fitForRound } from "@/lib/round/fit";
+import { useRound } from "@/lib/round/use-round";
+import { fitBreakdown } from "@/lib/viz/transforms/fitBreakdown";
 import { formatCount, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
 import { LAYER_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import {
@@ -65,6 +68,7 @@ export function InvestorProfileSections({
   onOpen: (id: string) => void;
 }) {
   const state = useLoaded(id, () => loadProfile(id));
+  const { raise } = useRound();
   if (state.status === "loading") {
     return (
       <div className="flex flex-col gap-3 py-4" aria-busy="true">
@@ -83,6 +87,16 @@ export function InvestorProfileSections({
   }
   const p = state.data;
   const d = p.deals;
+  // The check size fit is scored for our round (top bar); the other features are as stored.
+  const fit = p.fit
+    ? fitBreakdown(
+        fitForRound(
+          p.fit,
+          { checkMinUsd: p.checkMinUsd, checkMaxUsd: p.checkMaxUsd, leads: p.leads },
+          raise,
+        ),
+      )
+    : null;
   return (
     <>
       <InspectorSection title="Focus">
@@ -102,8 +116,8 @@ export function InvestorProfileSections({
       </InspectorSection>
 
       <InspectorSection title="Fit score">
-        {p.fit ? (
-          <FitBreakdownChart fit={p.fit} provenance={p.provenance} />
+        {fit ? (
+          <FitBreakdownChart fit={fit} provenance={p.provenance} />
         ) : (
           <p className="text-sm text-ink-2">No fit features are on record for this investor.</p>
         )}

@@ -4,7 +4,8 @@ import { startTransition, useEffect, useState } from "react";
 import { API } from "@/lib/api-routes";
 import type { FilterableInvestor } from "@/lib/filters";
 import { fromColumns, joinFilterable, type Columns, type Detail } from "@/lib/data/columns";
-import type { DirectoryRow } from "@/lib/data/directory";
+import { withRoundFit, type DirectoryRow } from "@/lib/data/directory";
+import { DEFAULT_RAISE_USD } from "@/lib/round";
 import type { EntityHeader, PaletteEntry } from "@/lib/data/entities";
 import type { StrategyRow } from "@/lib/viz/transforms/strategy";
 import type { InvestorProfile } from "@/lib/data/profile";
@@ -38,10 +39,16 @@ export const loadFilterIndex = memo(() => loadFilterColumns().then(fromColumns))
 
 const loadDirectoryDetail = memoJson<Columns<Detail<DirectoryRow>>>(API.directoryRows);
 
-/** The Directory's rows, kept out of page HTML and route prefetches: detail joined to the filter index. */
+/**
+ * The Directory's rows, kept out of page HTML and route prefetches: detail joined to the filter
+ * index. The route sends the stored feature values, not the score; the rows here are scored at
+ * the default raise and the Directory re-scores them for our round (`withRoundFit`).
+ */
 export const loadDirectoryRows = memo(() =>
   Promise.all([loadFilterIndex(), loadDirectoryDetail()]).then(([index, detail]) =>
-    joinFilterable<DirectoryRow>(index, fromColumns(detail)),
+    joinFilterable<DirectoryRow>(index, fromColumns(detail)).map((r) =>
+      withRoundFit(r, DEFAULT_RAISE_USD),
+    ),
   ),
 );
 

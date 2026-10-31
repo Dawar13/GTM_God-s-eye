@@ -1,12 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { NumberField, Panel } from "@/components/ui-atlas";
+import { Panel } from "@/components/ui-atlas";
 import { isDefaultWeights, WEIGHT_TOTAL } from "@/lib/fit/weights";
 import type { FitWeights } from "@/lib/fit/score";
 import { formatUsd } from "@/lib/format";
-import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
-import { RAISE_MAX_USD, RAISE_MIN_USD } from "@/lib/strategy/url";
 import { FIT_FEATURE_LABELS } from "@/lib/viz/transforms/fitBreakdown";
 import { fitFeatureColor } from "@/lib/viz/transforms/strategy";
 import { FIT_FEATURE_ORDER } from "@/lib/viz/transforms/topByFit";
@@ -21,27 +19,27 @@ const FEATURE_HELP: Record<(typeof FIT_FEATURE_ORDER)[number], string> = {
   dry_powder: "Fresh fund, sized for a pre-seed round",
 };
 
-/** The six fit weights (always summing to 100) and our raise size, which feeds the check feature. */
+/** The six fit weights (always summing to 100). Our round, set in the top bar, feeds the check feature. */
 export function WeightPanel({
   weights,
   onWeight,
   onReset,
   raiseUsd,
-  onRaise,
+  instrumentLabel,
 }: {
   weights: FitWeights;
   onWeight: (name: (typeof FIT_FEATURE_ORDER)[number], value: number) => void;
   onReset: () => void;
   raiseUsd: number;
-  onRaise: (value: number) => void;
+  instrumentLabel: string;
 }) {
-  const atDefaults = isDefaultWeights(weights) && raiseUsd === EXAMPLE_RAISE_USD;
+  const atDefaults = isDefaultWeights(weights);
   return (
     <Panel className="flex flex-col gap-4" aria-labelledby="weights-title">
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h3 id="weights-title" className="text-lg font-semibold">
-            Fit weights and our raise
+            Fit weights
           </h3>
           <p className="text-sm text-ink-2">
             Drag a weight and the others share what is left, so the six always add to{" "}
@@ -89,24 +87,12 @@ export function WeightPanel({
           );
         })}
       </div>
-      <div className="max-w-sm border-t border-rule pt-4">
-        <NumberField
-          label="Our raise"
-          kind="usd"
-          value={raiseUsd}
-          onChange={onRaise}
-          min={RAISE_MIN_USD}
-          max={RAISE_MAX_USD}
-          slider="log"
-          hint={
-            <>
-              The check size fit compares this with each investor&apos;s check range. The pipeline
-              assumed {formatUsd(EXAMPLE_RAISE_USD)} (a post-money SAFE); the other five features
-              do not depend on it.
-            </>
-          }
-        />
-      </div>
+      <p className="border-t border-rule pt-3 text-sm text-ink-2">
+        Our round: <span className="tabular-nums text-ink">{formatUsd(raiseUsd)}</span>,{" "}
+        {instrumentLabel}. Change it in the top bar; the check size fit compares the
+        raise with each investor&apos;s check range, and the other five features do not depend on
+        it.
+      </p>
     </Panel>
   );
 }
