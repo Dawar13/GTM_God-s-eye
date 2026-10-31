@@ -1,0 +1,71 @@
+row_index,fund_name_raw,field,raw_value,reason,resolution
+9,Bridgewest Ventrues,fund_name,Bridgewest Ventrues,possible typo 'ventrues',kept as written; matched as 'ventures'
+unindexed-1,Hyperstition,row_index,,row has no index number,kept as an extra row
+unindexed-2,BBG Ventures,row_index,,row has no index number,kept as an extra row
+unindexed-2,BBG Ventures,amount,,no amount listed,size left null
+38,Crystal Ventture Partners,fund_name,Crystal Ventture Partners,possible typo 'ventture',kept as written; matched as 'ventures'
+42,Flybridge Ventures,date,9/10/2925,date is in the future,used year column (2025)
+44,Deciens Capital,amount,93/3,amount is not a number,size left null
+46,Verified,date,715/2025,date is malformed,used year column (2025)
+55,Scribble Ventrues,fund_name,Scribble Ventrues,possible typo 'ventrues',kept as written; matched as 'ventures'
+77,Divergent Ventrues,fund_name,Divergent Ventrues,possible typo 'ventrues',kept as written; matched as 'ventures'
+84,Diagram Venturesq,fund_name,Diagram Venturesq,possible typo 'venturesq',kept as written; matched as 'ventures'
+100,Anthology Fund,amount,"$4,100",implausible for a list of funds ≤ $200M,size left null
+129,Prudence,year,2023,year column disagrees with date 3/7/2024,kept both as listed
+140,Beta Boom,date,213/2024,date is malformed,used year column (2024)
+141,AIX Ventures,amount,$202,above the list's $200M ceiling,kept as listed
+171,Uncork,date,6/27/0203,year 203 is before 2000,used year column (2023)
+190,Tenzing Capital,year,2023,year column disagrees with date 12/31/2022,kept both as listed
+212,C2 Ventures,date,7/30/32022,date is malformed,used year column (2022)
+242,Burnt Island Ventrues,fund_name,Burnt Island Ventrues,possible typo 'ventrues',kept as written; matched as 'ventures'
+277,Stellation Capital,date,78/2021,date does not exist,used year column (2021)
+313,Future Value Fund,fund_number,1,Arabic numeral,read as Fund I
+344,Impact America Fund,date,10/272020,date is malformed,used year column (2020)
+365,Founder Collective,notes,"previous fund was $75M, so assumption is that it is a similar size",notes say the amount may not be a final close,confidence low
+408,ATX Seed Ventrues,fund_name,ATX Seed Ventrues,possible typo 'ventrues',kept as written; matched as 'ventures'
+410,Sorenson Capital Ventues,fund_name,Sorenson Capital Ventues,possible typo 'ventues',kept as written; matched as 'ventures'
+411,Blossom Capial,fund_name,Blossom Capial,possible typo 'capial',kept as written; matched as 'capital'
+445,Primary Venure Partners,fund_name,Primary Venure Partners,possible typo 'venure',kept as written; matched as 'ventures'
+451,Contrary Captal,fund_name,Contrary Captal,possible typo 'captal',kept as written; matched as 'capital'
+458,Golden Ventures,date,5/2/22018,date is malformed,used year column (2018)
+475,Blockchain Capital,amount,$250,above the list's $200M ceiling,kept as listed
+503,Sequoia Ventues - Scout Fund,fund_name,Sequoia Ventues - Scout Fund,possible typo 'ventues',kept as written; matched as 'ventures'
+525,Maryland Innovation Opportuniy Fund,fund_name,Maryland Innovation Opportuniy Fund,possible typo 'opportuniy',kept as written; matched as 'opportunity'
+540,Point Judith Capital,notes,targeting $100M fund,notes say the amount may not be a final close,confidence low
+557,Moment Ventures,notes,raising $50M,notes say the amount may not be a final close,confidence low
+561,Crowberry Capial,notes,crowberrycapital.com,link without a scheme,read as https://
+561,Crowberry Capial,fund_name,Crowberry Capial,possible typo 'capial',kept as written; matched as 'capital'
+569,Benhamou Global Ventures,amount,$480,above the list's $200M ceiling,kept as listed
+611,SAP.iO,notes,SAP.io,link without a scheme,read as https://
+641,PivotNorth,amount,,no amount listed,size left null
+641,PivotNorth,notes,fund size not disclosed but likely sub $100M based on previous funds,notes say the amount may not be a final close,confidence low
+652,Algebra Ventures,date,12/23/2106,date is in the future,used year column (2016)
+658,Caffeinated Capital,notes,$75M target - per Term Sheet,notes say the amount may not be a final close,confidence low
+667,Chicago Ventues,fund_name,Chicago Ventues,possible typo 'ventues',kept as written; matched as 'ventures'
+669,Questa Capital,notes,"1st close was $100M, target is $250M",notes say the amount may not be a final close,confidence low
+685,Long Ventures Partners,notes,"targeting $50M, have $20M already commited",notes say the amount may not be a final close,confidence low
+699,Commerce Ventures,notes,1st close per SEC,notes say the amount may not be a final close,confidence low
+762,Illuminate,notes,raising Fund II per SEC filing,notes say the amount may not be a final close,confidence low
+766,Structure Capital,notes,"raised $50M, not closed",notes say the amount may not be a final close,confidence low
+767,Ignition Partners,notes,"raising up to $200M, not clear if has closed yet",notes say the amount may not be a final close,confidence low
+772,Homebrew Ventures,fund_number,Opp Fund,not a fund number,number left null; text kept in notes
+792,Primary Venture Partners,notes,1st close - $60M target,notes say the amount may not be a final close,confidence low
+799,Indicator Ventues,fund_name,Indicator Ventues,possible typo 'ventues',kept as written; matched as 'ventures'
+847,Real Ventures,notes,targeting $100M,notes say the amount may not be a final close,confidence low
+857,Alpha Ventures Partnes,fund_name,Alpha Ventures Partnes,possible typo 'partnes',kept as written; matched as 'partners'
+857,Alpha Ventures Partnes,notes,"$10M first close, $20M target",notes say the amount may not be a final close,confidence low
+871,Union Square Ventures,notes,unconfirmed - per Fortune article,notes say the amount may not be a final close,confidence low
+872,Union Square Ventures Opportunity,notes,unconfirmed - per Fortune article,notes say the amount may not be a final close,confidence low
+880,Haywire,amount,,no amount listed,size left null
+898,Blackbird Ventures,notes,Targeting $30M,notes say the amount may not be a final close,confidence low
+902,Velos Capital,notes,"according to Fortune, they are having a 1st close soon",notes say the amount may not be a final close,confidence low
+912,Ludlow Ventures,notes,"Targeting $15M, not clear how much they have raised so far",notes say the amount may not be a final close,confidence low
+913,Amplify Partners,notes,"Looks like the target is $40M, unclear how much they have raised to date",notes say the amount may not be a final close,confidence low
+916,Raptor Ventures,notes,"First close, targeting $75M",notes say the amount may not be a final close,confidence low
+917,Tribeca Venture Partners,notes,"First close, targeting $100M",notes say the amount may not be a final close,confidence low
+926,Cowboy Ventures,notes,Targeting $40M,notes say the amount may not be a final close,confidence low
+931,Bullpen,notes,Targeting $35M,notes say the amount may not be a final close,confidence low
+933,Merus Capital,notes,Targeting $100M,notes say the amount may not be a final close,confidence low
+934,Connect Ventures,notes,"First close, targeting $57M",notes say the amount may not be a final close,confidence low
+948,Nya Ventures,notes,"First close, targeting $50M",notes say the amount may not be a final close,confidence low
+959,I2A,notes,Targeting $40M,notes say the amount may not be a final close,confidence low
