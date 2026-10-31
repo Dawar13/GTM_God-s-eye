@@ -276,9 +276,9 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
             }))}
           />
           <p className="text-xs text-muted">
-            {data.sparse.toLocaleString("en-US")} investors with too few known features
-            (sparse) are not ranked. Conflict = sources disagree. Click a bar to open the
-            investor.
+            {data.sparse.toLocaleString("en-US")} investors with too few known features (sparse) are
+            not ranked. Conflict = backed a direct competitor in the last 24 months. Click a bar to
+            open the investor.
           </p>
         </div>
       }
