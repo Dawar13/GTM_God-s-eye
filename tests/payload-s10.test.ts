@@ -86,7 +86,8 @@ async function viaRoutes<T extends FilterableInvestor>(
   return joinFilterable<T>(index, detail);
 }
 
-describe("route payloads on the real data", () => {
+// Builds every investor row from the real data; slow when the full suite runs in parallel.
+describe("route payloads on the real data", { timeout: 30_000 }, () => {
   it("rebuild the Directory rows exactly", async () => {
     const [investors, funds, fits] = await Promise.all([
       getInvestors(),

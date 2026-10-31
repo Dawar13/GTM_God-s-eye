@@ -6,7 +6,7 @@
  */
 import Plotly from "plotly.js-dist-min";
 import createPlotlyComponent from "react-plotly.js/factory";
-import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useEffectEvent, useMemo, useRef, useState, type MouseEvent } from "react";
 import { formatUsd } from "@/lib/format";
 import { darken, withOpacity } from "@/lib/viz";
 import {
@@ -22,6 +22,15 @@ import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { useUi } from "@/store/ui";
 import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
 import { clampZoom, ZOOM_STEP } from "@/lib/viz/zoom";
+import {
+  dragOrbit,
+  eyeAtDistance,
+  orbitCamera,
+  orbitFromEye,
+  pinchLevel,
+  type Vec3,
+} from "@/lib/viz/orbit";
+import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { BubbleTooltip } from "./BubbleTooltip";
 
 const Plot = createPlotlyComponent(Plotly);
@@ -46,6 +55,28 @@ const Z_MIN = 0.4;
 const Z_MAX = 6;
 const norm = (e: { x: number; y: number; z: number }) => Math.hypot(e.x, e.y, e.z);
 const UNIT_TICKS = [0, 0.25, 0.5, 0.75, 1];
+/** Touch: midpoint travel (px) before two fingers rotate, so a pinch alone doesn't wobble. */
+const ROTATE_SLOP = 10;
+const TAP_SLOP = 24;
+const TAP_MS = 300;
+const DOUBLE_TAP_MS = 320;
+
+type PlotDiv = HTMLElement & { _fullLayout?: { scene?: { camera?: Partial<Camera> } } };
+type Gesture = {
+  span: number;
+  mid: { x: number; y: number };
+  level: number;
+  eye: Vec3;
+  up: Vec3;
+  rotating: boolean;
+};
+const fingers = (e: TouchEvent) => {
+  const [a, b] = [e.touches[0]!, e.touches[1]!];
+  return {
+    span: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY),
+    mid: { x: (a.clientX + b.clientX) / 2, y: (a.clientY + b.clientY) / 2 },
+  };
+};
 
 type PlotEvent = { points?: { customdata?: unknown }[] };
 const idOf = (e: PlotEvent) => {
@@ -96,6 +127,9 @@ export default function Bubbles3D({
   const presetRef = useRef<CameraPreset>("reset");
   const eyeRef = useRef(CAMERAS.reset.eye);
   const [level, setLevel] = useState(1);
+  // Touch screens: Plotly's own touch drag rotates freely and tips the scene over, so it is
+  // off and the touch handlers below orbit the camera with z kept up.
+  const coarse = useMediaQuery("(pointer: coarse)");
   const [hover, setHover] = useState<{ id: string; x: number; y: number; flip: boolean } | null>(
     null,
   );
@@ -180,7 +214,8 @@ export default function Bubbles3D({
       uirevision: "capital",
       scene: {
         aspectmode: "cube",
-        dragmode: "turntable",
+        // Turntable keeps z up under the mouse; false hands touch gestures to our handlers.
+        dragmode: coarse ? false : "turntable",
         camera: CAMERAS.reset,
         xaxis: axis("Typical check (USD, log scale)", {
           type: "log",
@@ -192,7 +227,7 @@ export default function Bubbles3D({
         zaxis: axis("Industrial affinity (0–1)", { range: [0, 1.02], tickvals: UNIT_TICKS }),
       },
     };
-  }, [checkExtent, colors, height]);
+  }, [checkExtent, colors, height, coarse]);
 
   // Camera presets: relayout directly, so pressing the same preset after rotating still applies.
   useEffect(() => {
@@ -252,6 +287,122 @@ export default function Bubbles3D({
     setLevel(lv);
   };
 
+  // Touch gestures. Two fingers are ours: pinch zooms through the same level and clamps as the
+  // buttons, moving both fingers orbits (turntable, elevation clamped). One finger is left to the
+  // page (scroll) and to Plotly's tap, which picks a bubble and opens it. Double-tap zooms in.
+  const gesture = useRef<Gesture | null>(null);
+  const tap = useRef<{ t: number; x: number; y: number; moved: boolean } | null>(null);
+  const lastTap = useRef<{ t: number; x: number; y: number } | null>(null);
+  const lastTapZoom = useRef(-Infinity);
+  const frame = useRef(0);
+  const queued = useRef<{ cam: Camera; level: number } | null>(null);
+
+  const startGesture = (e: TouchEvent) => {
+    const eye = eyeRef.current;
+    const up = (graphDiv.current as PlotDiv | null)?._fullLayout?.scene?.camera?.up;
+    gesture.current = {
+      ...fingers(e),
+      level: norm(CAMERAS[presetRef.current].eye) / norm(eye),
+      eye,
+      up: up ?? CAMERAS[presetRef.current].up,
+      rotating: false,
+    };
+  };
+  // At most one relayout per frame.
+  const queueCamera = (cam: Camera, lv: number) => {
+    queued.current = { cam, level: lv };
+    if (frame.current) return;
+    frame.current = requestAnimationFrame(() => {
+      frame.current = 0;
+      const q = queued.current;
+      queued.current = null;
+      if (!q || !graphDiv.current?.isConnected) return;
+      eyeRef.current = q.cam.eye;
+      setLevel(q.level);
+      void Plotly.relayout(graphDiv.current, { "scene.camera": q.cam });
+    });
+  };
+  const onTouchStart = useEffectEvent((e: TouchEvent) => {
+    if (e.touches.length >= 2) {
+      // Plotly never sees a two-finger gesture, and the page doesn't zoom.
+      e.stopPropagation();
+      if (e.cancelable) e.preventDefault();
+      tap.current = null;
+      startGesture(e);
+      return;
+    }
+    const t = e.touches[0];
+    tap.current = t ? { t: e.timeStamp, x: t.clientX, y: t.clientY, moved: false } : null;
+  });
+  const onTouchMove = useEffectEvent((e: TouchEvent) => {
+    // Plotly's touchmove listener cancels every move, which would block one-finger scrolling.
+    e.stopPropagation();
+    const g = gesture.current;
+    if (!g || e.touches.length < 2) {
+      const t = e.touches[0];
+      const d = tap.current;
+      if (d && t && Math.hypot(t.clientX - d.x, t.clientY - d.y) > TAP_SLOP) d.moved = true;
+      return;
+    }
+    if (e.cancelable) e.preventDefault();
+    const f = fingers(e);
+    const base = norm(CAMERAS[presetRef.current].eye);
+    const lv = pinchLevel(g.level, g.span, f.span, Z_MIN, Z_MAX);
+    if (!g.rotating && Math.hypot(f.mid.x - g.mid.x, f.mid.y - g.mid.y) > ROTATE_SLOP) {
+      // Rotation starts from here, so crossing the slop doesn't jump.
+      g.rotating = true;
+      g.mid = f.mid;
+    }
+    const cam: Camera = g.rotating
+      ? orbitCamera(
+          dragOrbit(
+            { ...orbitFromEye(g.eye, g.up), distance: base / lv },
+            f.mid.x - g.mid.x,
+            f.mid.y - g.mid.y,
+            Math.PI / Math.max(1, wrap.current?.clientHeight ?? height),
+          ),
+        )
+      : { eye: eyeAtDistance(g.eye, base / lv), up: g.up, center: CENTER };
+    queueCamera(cam, lv);
+  });
+  const onTouchEnd = useEffectEvent((e: TouchEvent) => {
+    if (gesture.current) {
+      e.stopPropagation();
+      if (e.touches.length >= 2) startGesture(e);
+      else gesture.current = null;
+      return;
+    }
+    const d = tap.current;
+    tap.current = null;
+    if (!d || d.moved || e.type === "touchcancel" || e.timeStamp - d.t > TAP_MS) return;
+    const last = lastTap.current;
+    if (last && d.t - last.t < DOUBLE_TAP_MS && Math.hypot(d.x - last.x, d.y - last.y) < TAP_SLOP) {
+      lastTap.current = null;
+      lastTapZoom.current = performance.now();
+      zoomBy(1);
+    } else lastTap.current = { t: e.timeStamp, x: d.x, y: d.y };
+  });
+  useEffect(() => {
+    const el = wrap.current;
+    if (!el) return;
+    // Capture phase, so these run before Plotly's listeners on the canvas; not passive, so
+    // two-finger moves can be cancelled.
+    const opts = { capture: true, passive: false } as const;
+    const start = (e: TouchEvent) => onTouchStart(e);
+    const move = (e: TouchEvent) => onTouchMove(e);
+    const end = (e: TouchEvent) => onTouchEnd(e);
+    el.addEventListener("touchstart", start, opts);
+    el.addEventListener("touchmove", move, opts);
+    el.addEventListener("touchend", end, opts);
+    el.addEventListener("touchcancel", end, opts);
+    return () => {
+      el.removeEventListener("touchstart", start, opts);
+      el.removeEventListener("touchmove", move, opts);
+      el.removeEventListener("touchend", end, opts);
+      el.removeEventListener("touchcancel", end, opts);
+    };
+  }, []);
+
   const onMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const r = wrap.current?.getBoundingClientRect();
     if (r) mouse.current = { x: e.clientX - r.left, y: e.clientY - r.top };
@@ -263,7 +414,7 @@ export default function Bubbles3D({
     <div
       ref={wrap}
       className="relative"
-      style={{ height }}
+      style={{ height, touchAction: "pan-y" }}
       onMouseMove={onMouseMove}
       onMouseLeave={() => setHover(null)}
       tabIndex={0}
@@ -289,7 +440,10 @@ export default function Bubbles3D({
           graphDiv.current = el;
         }}
         onRelayout={onRelayout}
-        onDoubleClick={() => zoomBy(1)}
+        onDoubleClick={() => {
+          // A double tap already zoomed through the touch handler.
+          if (performance.now() - lastTapZoom.current > 600) zoomBy(1);
+        }}
         onHover={(e: PlotEvent) => {
           const id = idOf(e);
           const { x, y } = mouse.current;
