@@ -44,3 +44,12 @@ export function notesForTopic<T extends { topic: LegalTopic; last_verified: stri
     .filter((n) => n.topic === topic)
     .sort((a, b) => b.last_verified.localeCompare(a.last_verified));
 }
+
+/** Notes grouped by topic in `INDIA_TOPICS` order; a topic with no notes is left out. */
+export function groupNotesByTopic<T extends { topic: LegalTopic; last_verified: string }>(
+  notes: readonly T[],
+): { topic: LegalTopic; notes: T[] }[] {
+  return INDIA_TOPICS.map((topic) => ({ topic, notes: notesForTopic(notes, topic) })).filter(
+    (g) => g.notes.length > 0,
+  );
+}

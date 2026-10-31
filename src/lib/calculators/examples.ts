@@ -96,3 +96,16 @@ export const FUND_MATH_DEFAULTS = {
   mult: 1,
   ex: 500_000_000,
 };
+
+export const POWER_LAW_DEFAULTS = {
+  /** Companies in the portfolio. */
+  pn: 25,
+  /** Share of companies that return nothing. */
+  loss: 0.5,
+  /** Pareto shape; lower is a fatter tail. */
+  alpha: 1.6,
+  /** Minimum multiple for a company that does not fail. */
+  xm: 1,
+  trials: 20_000,
+  seed: 42,
+};

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { filtersApply } from "@/lib/nav";
 import { useUi } from "@/store/ui";
 
 function isEditable(target: EventTarget | null): boolean {
@@ -39,7 +40,7 @@ export function Shortcuts() {
         e.preventDefault();
         if (window.matchMedia("(min-width: 1024px)").matches) ui.toggleRail();
         else ui.setMobileNavOpen(!ui.mobileNavOpen);
-      } else if (e.key === "f" || e.key === "F") {
+      } else if ((e.key === "f" || e.key === "F") && filtersApply(window.location.pathname)) {
         e.preventDefault();
         ui.toggleFilters();
       }

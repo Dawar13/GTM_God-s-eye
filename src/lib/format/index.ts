@@ -58,6 +58,22 @@ export function formatMonthYear(iso: string | null | undefined): string {
   return month ? `${month} ${m[1]}` : UNKNOWN;
 }
 
+/**
+ * A schema date of any precision: 2026 stays "2026", 2026-Q1 is "Q1 2026", 2026-03 is
+ * "Mar 2026", 2026-03-12 is "12 Mar 2026". Anything else is the unknown dash.
+ */
+export function formatPartialDate(value: string | null | undefined): string {
+  if (!value) return UNKNOWN;
+  const q = /^(\d{4})-Q([1-4])$/.exec(value);
+  if (q) return `Q${q[2]} ${q[1]}`;
+  const d = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+  if (d) {
+    const month = MONTHS[Number(d[2]) - 1];
+    return month ? `${Number(d[3])} ${month} ${d[1]}` : UNKNOWN;
+  }
+  return formatMonthYear(value);
+}
+
 export function formatCount(value: number | null | undefined): string {
   if (value === null || value === undefined || !Number.isFinite(value)) return UNKNOWN;
   return value.toLocaleString("en-US");

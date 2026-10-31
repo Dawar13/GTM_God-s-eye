@@ -11,3 +11,5 @@ export * from "./fund-math";
 export * from "./pro-rata";
 export * from "./power-law";
 export * from "./india";
+export * from "./scenario";
+export * from "./practice";

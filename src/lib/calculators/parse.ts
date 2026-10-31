@@ -2,7 +2,7 @@
  * Parsing for calculator number fields. Returns null for anything that is not a
  * finite number, so NaN and Infinity can never reach a calculation.
  */
-export type NumberKind = "usd" | "percent" | "count";
+export type NumberKind = "usd" | "percent" | "count" | "decimal";
 
 const SUFFIX: Record<string, number> = { k: 1e3, m: 1e6, b: 1e9 };
 
@@ -25,6 +25,7 @@ export function parseNumberInput(text: string, kind: NumberKind): number | null 
 export function formatFieldValue(value: number, kind: NumberKind): string {
   if (!Number.isFinite(value)) return "";
   if (kind === "percent") return (value * 100).toFixed(1);
+  if (kind === "decimal") return String(Number(value.toFixed(2)));
   const s = Math.round(value).toLocaleString("en-US");
   return kind === "usd" ? `$${s}` : s;
 }

@@ -3,12 +3,14 @@ import type {
   Freshness,
   InvestorStage,
   InvestorType,
+  LegalTopic,
   Maturity,
   Region,
   ResearchTier,
   RoundStage,
   Sector,
 } from "@/lib/schema/enums";
+import type { LegalNote } from "@/lib/schema";
 
 export const SECTOR_LABELS: Record<Sector, string> = {
   ai_infra: "AI infrastructure",
@@ -89,4 +91,21 @@ export const LAYER_LABELS: Record<CompetitorLayer, string> = {
   autonomy_tooling: "Autonomy tooling",
   robotics: "Robotics",
   full_stack_factory: "Full-stack factory",
+};
+
+export const LEGAL_TOPIC_LABELS: Record<LegalTopic, string> = {
+  ccps: "CCPS (compulsorily convertible preference shares)",
+  isafe: "iSAFE",
+  india_convertible_note: "Convertible notes in India",
+  fema_pricing: "FEMA pricing rules",
+  angel_tax: "Angel tax",
+  india_flip: "India flip",
+  reverse_flip: "Reverse flip",
+  delaware_requirement: "Delaware requirement",
+};
+
+export const JURISDICTION_LABELS: Record<LegalNote["jurisdiction"], string> = {
+  india: "India",
+  us: "United States",
+  us_delaware: "Delaware, United States",
 };

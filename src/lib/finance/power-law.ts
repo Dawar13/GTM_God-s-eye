@@ -1,4 +1,4 @@
-import { assertPositive } from "./rounding";
+import { assertFraction, assertPositive } from "./rounding";
 
 /** mulberry32: a small, fast, seedable PRNG returning floats in [0, 1). */
 export function mulberry32(seed: number): () => number {
@@ -83,6 +83,7 @@ export function simulatePortfolio(args: {
   } else {
     assertPositive("alpha", d.alpha);
     assertPositive("xm", d.xm);
+    assertFraction("lossRate", d.lossRate);
   }
   const rand = mulberry32(args.seed);
   const fundMultiples: number[] = [];

@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { ChevronDown, RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { filtersApply } from "@/lib/nav";
 import {
   FILTER_DEFS,
   facetCounts,
@@ -20,6 +22,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 /** Collapsible row under the top bar. Each filter opens a chip list with counts. */
 export function FilterBar() {
   const open = useUi((s) => s.filtersOpen);
+  const applies = filtersApply(usePathname());
   const { filters, toggle, setValues, reset, clearAll } = useFilters();
   const [index, setIndex] = useState<FilterableInvestor[] | null>(null);
 
@@ -35,6 +38,10 @@ export function FilterBar() {
   }, []);
 
   const counts = index ? facetCounts(index, filters) : null;
+
+  // Filters do not apply to the VC math calculators. The URL keeps them, so they are
+  // still there when you go back to an investor view.
+  if (!applies) return null;
 
   return (
     <div
@@ -57,10 +64,8 @@ export function FilterBar() {
       <div className="ml-auto flex shrink-0 items-center gap-2 pl-2">
         {index && (
           <span className="text-xs text-ink-2">
-            <span className="num">
-              {index.length.toLocaleString("en-US")}
-            </span>{" "}
-            investors in the data
+            <span className="num">{index.length.toLocaleString("en-US")}</span> investors in the
+            data
           </span>
         )}
         {!isDefaultState(filters) && (

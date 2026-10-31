@@ -3,13 +3,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FundMathCalculator } from "@/components/calculators/FundMathCalculator";
 import { LiquidationCalculator } from "@/components/calculators/LiquidationCalculator";
+import { PowerLawCalculator } from "@/components/calculators/PowerLawCalculator";
+import { IndiaInstruments } from "@/components/india/IndiaInstruments";
 import { NoteCalculator } from "@/components/calculators/NoteCalculator";
 import { VcMethodCalculator } from "@/components/calculators/VcMethodCalculator";
 import { CapTable } from "@/components/calculators/CapTable";
 import { SafeCalculator } from "@/components/calculators/SafeCalculator";
 import { OptionPool } from "@/components/calculators/OptionPool";
 import { RoundBuilder } from "@/components/calculators/RoundBuilder";
-import { CanvasPlaceholder, EmptyState } from "@/components/shell/EmptyState";
+import { CanvasPlaceholder } from "@/components/shell/EmptyState";
 import { VC_MATH_TOOLS, findSubView } from "@/lib/nav";
 
 type Params = PageProps<"/vc-math/[tool]">["params"];
@@ -45,5 +47,6 @@ async function ToolView({ params }: { params: Params }) {
   if (tool.slug === "liquidation") return <LiquidationCalculator />;
   if (tool.slug === "vc-method") return <VcMethodCalculator />;
   if (tool.slug === "fund-math") return <FundMathCalculator />;
-  return <EmptyState phaseNote={tool.phaseNote}>{tool.summary}</EmptyState>;
+  if (tool.slug === "power-law") return <PowerLawCalculator />;
+  return <IndiaInstruments />;
 }

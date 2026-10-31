@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { ListFilter, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { getPageMeta } from "@/lib/nav";
+import { filtersApply, getPageMeta } from "@/lib/nav";
 import { isDefaultState, summarizeFilters } from "@/lib/filters";
 import { useFilters } from "@/lib/filters/use-filters";
 import { useCarryQuery } from "@/lib/hooks/useCarryQuery";
@@ -34,6 +34,7 @@ export function TopBar() {
   const setPaletteOpen = useUi((s) => s.setPaletteOpen);
   const mac = useIsMac();
 
+  const showFilters = filtersApply(pathname);
   const summary = summarizeFilters(filters);
   const activeTab = tabs.find((t) => t.href === pathname)?.href ?? "";
 
@@ -55,22 +56,24 @@ export function TopBar() {
       )}
 
       <div className="ml-auto flex shrink-0 items-center gap-1">
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={toggleFilters}
-          aria-expanded={filtersOpen}
-          aria-controls="filter-bar"
-          aria-label={`Filters: ${summary}`}
-          title="Toggle filters (F)"
-          className={cn(
-            "h-8 max-w-[22rem] gap-1.5 text-ink-2",
-            !isDefaultState(filters) && "text-ink",
-          )}
-        >
-          <ListFilter aria-hidden />
-          <span className="hidden truncate xl:inline">{summary}</span>
-        </Button>
+        {showFilters && (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toggleFilters}
+            aria-expanded={filtersOpen}
+            aria-controls="filter-bar"
+            aria-label={`Filters: ${summary}`}
+            title="Toggle filters (F)"
+            className={cn(
+              "h-8 max-w-[22rem] gap-1.5 text-ink-2",
+              !isDefaultState(filters) && "text-ink",
+            )}
+          >
+            <ListFilter aria-hidden />
+            <span className="hidden truncate xl:inline">{summary}</span>
+          </Button>
+        )}
         <Button
           variant="outline"
           size="sm"

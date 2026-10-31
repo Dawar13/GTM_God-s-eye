@@ -150,6 +150,11 @@ export const SECTION_CHILDREN: Record<SectionKey, readonly NavChild[]> = {
   strategy: [],
 };
 
+/** The investor filters apply to investor views only; the VC math calculators ignore them. */
+export function filtersApply(pathname: string): boolean {
+  return !(pathname === "/vc-math" || pathname.startsWith("/vc-math/"));
+}
+
 export function activeSection(pathname: string): (typeof SECTIONS)[number] | undefined {
   return SECTIONS.find((s) => isSectionActive(s, pathname));
 }
@@ -163,7 +168,13 @@ export function getPageMeta(pathname: string): { title: string; tabs: readonly N
   return { title: EXTRA_TITLES[pathname] ?? "Capital Atlas", tabs: [] };
 }
 
-export type PaletteAction = { id: string; label: string; href: string; group: string; keywords: string };
+export type PaletteAction = {
+  id: string;
+  label: string;
+  href: string;
+  group: string;
+  keywords: string;
+};
 
 /** Every page the palette can jump to, with the verbs people type. */
 export const PALETTE_PAGES: readonly PaletteAction[] = [

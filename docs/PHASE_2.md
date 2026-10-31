@@ -103,7 +103,7 @@ Common layout: inputs panel left (sliders + number fields kept in sync, ⓘ hint
 - Option pool: side-by-side bars "headline pre-money" vs "effective pre-money"; the gap labelled in dollars.
 - SAFE: post-money vs pre-money tabs plus "compare both" view; conversion table; dilution waterfall bar.
 
-### S4 — VC Math II + game layer ☐
+### S4 — VC Math II + game layer ☑
 - Convertible note: accrued value line over time, conversion marker at the round date; cap vs discount price comparison.
 - Liquidation: payout curve per class across exit values (x log toggle); breakpoints as dashed verticals with labels ("investor converts above $20M").
 - VC method and Fund math: required-exit gauge ("$781M exit returns the fund"), and a fund-size slider showing why a $50M and a $1B fund want different outcomes.
