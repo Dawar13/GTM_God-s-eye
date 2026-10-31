@@ -506,3 +506,8 @@ Second half of S10. Not deployed: the user deploys it themselves, following `doc
 - One `ZoomControls` (`src/components/ui-atlas`, pure math in `src/lib/viz/zoom.ts`: step 1.4, clamped, percent label) now serves the thesis map (d3-zoom), the network (Sigma camera, readout from camera ratio over the first framed view), the 3D bubbles (Plotly camera eye scaled, 40% to 600%) and the 2D projections (one shared level, per-panel pan). Keys + / - / 0 work when the chart has focus.
 - Gestures share the same state and clamps: wheel, pinch and double-click zoom on all four; Plotly `doubleClick` is off (double-click zooms in, the button resets); Sigma ignores double-clicks on nodes. On touch, one finger scrolls the page until zoomed (`touch-action: pan-y`, then `none`); reduced motion skips transitions.
 - Unlike before, the 2D panels zoom by re-projecting positions (marks keep their size) and axes only show ticks inside the plot.
+
+## 2026-10-31 — Link preview
+- The user's banner (`Utopian_Banner.png`, 4252×2126) is the link preview: `src/app/opengraph-image.jpg` (1200×630, 59 KB) and `twitter-image.jpg` (1200×600, 57 KB), centre-cropped and compressed so WhatsApp and others accept them, with alt text files. `layout.tsx` sets Open Graph and Twitter titles and description (`summary_large_image`).
+- No `metadataBase`: on Vercel, Next resolves the image URLs from `VERCEL_BRANCH_URL`/`VERCEL_URL` on previews and `VERCEL_PROJECT_PRODUCTION_URL` in production (`next/dist/lib/metadata/resolvers/resolve-url.js`); locally they point at localhost, which is the build warning.
+- Previews only render for links the fetching app can open: a deployment behind Vercel Authentication returns 401 to WhatsApp, Slack and LinkedIn, so no preview appears there.

@@ -23,10 +23,18 @@ const plexCondensed = IBM_Plex_Sans_Condensed({
   weight: ["400", "500"],
 });
 
+const DESCRIPTION = "Internal fundraising console: investors, VC math, competitors and raise strategy.";
+
+/**
+ * The link preview images are src/app/opengraph-image.jpg and twitter-image.jpg (Next file
+ * conventions). On Vercel, Next resolves them to absolute URLs from the deployment's own domain.
+ */
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: `%s · ${APP_NAME}` },
-  description: "Internal fundraising console: investors, VC math, competitors and raise strategy.",
+  description: DESCRIPTION,
   robots: { index: false, follow: false },
+  openGraph: { type: "website", siteName: APP_NAME, title: APP_NAME, description: DESCRIPTION },
+  twitter: { card: "summary_large_image", title: APP_NAME, description: DESCRIPTION },
 };
 
 /**
