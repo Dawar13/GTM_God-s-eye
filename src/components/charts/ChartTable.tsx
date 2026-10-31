@@ -6,6 +6,8 @@ export type TableColumn<T> = {
   cell: (row: T) => ReactNode;
   /** Right-align numbers. */
   numeric?: boolean;
+  /** Emphasise the column (used for founder ownership). */
+  highlight?: boolean;
 };
 
 /** The accessible table behind a chart's "View as table" toggle. Numbers are tabular. */
@@ -30,7 +32,11 @@ export function ChartTable<T>({
               <th
                 key={c.header}
                 scope="col"
-                className={cn("p-2 font-medium", c.numeric && "text-right")}
+                className={cn(
+                  "p-2 font-medium",
+                  c.numeric && "text-right",
+                  c.highlight && "bg-accent-soft",
+                )}
               >
                 {c.header}
               </th>
@@ -43,7 +49,11 @@ export function ChartTable<T>({
               {columns.map((c) => (
                 <td
                   key={c.header}
-                  className={cn("p-2", c.numeric && "text-right font-condensed tabular-nums")}
+                  className={cn(
+                    "p-2",
+                    c.numeric && "text-right font-condensed tabular-nums",
+                    c.highlight && "bg-accent-soft font-semibold",
+                  )}
                 >
                   {c.cell(r)}
                 </td>

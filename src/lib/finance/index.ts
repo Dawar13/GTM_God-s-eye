@@ -2,6 +2,7 @@ export * from "./rounding";
 export * from "./priced-round";
 export * from "./option-pool";
 export * from "./safe";
+export * from "./safe-scenario";
 export * from "./note";
 export * from "./cap-table";
 export * from "./waterfall";

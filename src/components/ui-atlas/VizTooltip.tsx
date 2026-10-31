@@ -12,6 +12,7 @@ export function VizTooltip({
   period,
   confidence,
   sourceDomain,
+  computed = false,
   children,
   className,
 }: {
@@ -22,6 +23,8 @@ export function VizTooltip({
   period?: string | null;
   confidence: ConfidenceLevel | null | undefined;
   sourceDomain: string | null | undefined;
+  /** Calculator marks: say the value comes from the inputs instead of a source. */
+  computed?: boolean;
   /** Extra rows, such as the size encoding. */
   children?: ReactNode;
   className?: string;
@@ -39,7 +42,9 @@ export function VizTooltip({
       {period && <p className="text-ink-2 tabular-nums">{period}</p>}
       {children && <div className="mt-1 text-ink-2">{children}</div>}
       <div className="mt-2 border-t border-rule pt-2">
-        {sourceDomain ? (
+        {computed ? (
+          <span className="text-xs text-muted">Computed from your inputs</span>
+        ) : sourceDomain ? (
           <SourceBadge domain={sourceDomain} confidence={confidence} />
         ) : (
           <span className="text-xs text-muted">No source on record</span>

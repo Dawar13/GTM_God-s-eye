@@ -96,7 +96,7 @@ Tick each box when its checks pass.
 - Small multiples (2×2): funds closed by year (bar, stacked fresh/older), fresh capital by region (bar), top 10 by fit score (ranked bar with feature-contribution segments), recent deals in our layers (dot timeline).
 - Every tile links to the full view with matching filters.
 
-### S3 — VC Math I: Round builder, Cap table, Option pool, SAFE ☐
+### S3 — VC Math I: Round builder, Cap table, Option pool, SAFE ☑
 Common layout: inputs panel left (sliders + number fields kept in sync, ⓘ hints), visual centre, "How this is calculated" collapsible with the formula and the worked example, "Reset to example" button. All math from `src/lib/finance` only.
 - Round builder: pre ↔ post toggle; ownership donut is not allowed — use a horizontal 100% bar; price per share as a big `Stat`.
 - Cap table: add / remove rounds (SAFE, note, priced, pool top-up) as a step list; **step chart** of ownership by class across rounds; table under it; founder % at each step highlighted.

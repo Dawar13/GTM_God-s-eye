@@ -53,6 +53,18 @@ export type Snapshot = {
 
 export const POOL = "pool";
 
+/** The cap table before any step: the starting holdings, fully diluted, nothing pending. */
+export function initialSnapshot(holdings: Record<string, number>, label = "Start"): Snapshot {
+  const totalFD = Object.values(holdings).reduce((a, b) => a + b, 0);
+  return {
+    label,
+    holdings: { ...holdings },
+    totalFD,
+    ownership: ownershipOf(holdings),
+    pendingConvertibles: 0,
+  };
+}
+
 /**
  * Applies SAFEs, notes, pool top-ups and priced rounds in order; outstanding
  * SAFEs and notes convert at the next priced round. Returns one snapshot per

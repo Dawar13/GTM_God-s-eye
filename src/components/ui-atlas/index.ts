@@ -1,11 +1,14 @@
 export { ChartFrame, type ChartState } from "./ChartFrame";
+export { CalculatorLayout, FormulaLine } from "./CalculatorLayout";
 export { Chip } from "./Chip";
 export { EmptyState } from "./EmptyState";
 export { InspectorSection } from "./InspectorSection";
 export { Legend, type LegendProps } from "./Legend";
 export { Metric, type MetricKind } from "./Metric";
+export { NumberField } from "./NumberField";
 export { Panel } from "./Panel";
 export { Segmented, type SegmentedOption } from "./Segmented";
+export { ShareBar, type ShareSegment } from "./ShareBar";
 export { Skeleton } from "./Skeleton";
 export { ConfidenceDot, SourceBadge, type ConfidenceLevel } from "./SourceBadge";
 export { Stat } from "./Stat";

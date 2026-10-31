@@ -50,6 +50,8 @@ export type PoolShuffleResult = {
   postFDShares: number;
   /** Headline pre-money less the value of the new pool: what existing holders really get. */
   effectivePreMoney: number;
+  /** Headline less effective pre-money: the dollar value of the pool top-up, taken from existing holders. */
+  gap: number;
   capTable: { existing: number; pool: number; investors: number };
   ownership: { existing: number; pool: number; investors: number };
 };
@@ -78,6 +80,7 @@ export function poolShuffle(input: PoolShuffleInput): PoolShuffleResult {
   );
   const preMoneyShares = fdBefore + poolIncrease;
   const pricePerShare = roundPrice(pre / preMoneyShares, rounding);
+  assertPositive("pricePerShare", pricePerShare);
   const newShares = roundShares(investment / pricePerShare, rounding);
   const postFDShares = preMoneyShares + newShares;
   const pool = existingPool + poolIncrease;
@@ -87,6 +90,7 @@ export function poolShuffle(input: PoolShuffleInput): PoolShuffleResult {
     newShares,
     postFDShares,
     effectivePreMoney: pre - poolIncrease * pricePerShare,
+    gap: poolIncrease * pricePerShare,
     capTable: { existing: existingShares, pool, investors: newShares },
     ownership: {
       existing: existingShares / postFDShares,

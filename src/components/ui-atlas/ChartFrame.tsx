@@ -29,6 +29,7 @@ export function ChartFrame({
   state = { status: "ready" },
   tableAlternative,
   action,
+  computed,
   height = 280,
   children,
   className,
@@ -45,6 +46,11 @@ export function ChartFrame({
   tableAlternative?: ReactNode;
   /** A link or button to the full view, shown at the top right. */
   action?: ReactNode;
+  /**
+   * For calculator visuals: the marks come from the inputs, not from records, so the footnote
+   * says that (this text) instead of listing sources and a not-shown count.
+   */
+  computed?: string;
   height?: number;
   children: ReactNode;
   className?: string;
@@ -94,10 +100,16 @@ export function ChartFrame({
       </div>
 
       <footer className="border-t border-rule pt-2 text-xs text-muted">
-        <span>Sources: {sources.length ? sources.join(", ") : "none on record"}.</span>{" "}
-        <span className="tabular-nums">
-          {formatCount(notShown.count)} not shown (missing {notShown.field}).
-        </span>
+        {computed !== undefined ? (
+          <span>{computed}</span>
+        ) : (
+          <>
+            <span>Sources: {sources.length ? sources.join(", ") : "none on record"}.</span>{" "}
+            <span className="tabular-nums">
+              {formatCount(notShown.count)} not shown (missing {notShown.field}).
+            </span>
+          </>
+        )}
       </footer>
     </Panel>
   );

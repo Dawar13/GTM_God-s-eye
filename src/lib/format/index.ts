@@ -19,6 +19,20 @@ export function formatUsd(value: number | null | undefined): string {
   return `${sign}$${trimmed(abs, 0)}`;
 }
 
+/** A per-share price to four decimals, as cap tables quote it: $0.9000. */
+export function formatPricePerShare(value: number | null | undefined): string {
+  if (value === null || value === undefined || !Number.isFinite(value)) return UNKNOWN;
+  return `$${value.toFixed(4)}`;
+}
+
+/** A change in ownership as signed percentage points: -0.09 → "−9.0 pts". */
+export function formatPoints(fraction: number | null | undefined): string {
+  if (fraction === null || fraction === undefined || !Number.isFinite(fraction)) return UNKNOWN;
+  const pts = Math.abs(fraction * 100).toFixed(1);
+  if (Number(pts) === 0) return "0.0 pts";
+  return `${fraction < 0 ? "−" : "+"}${pts} pts`;
+}
+
 /** Indian rupees in crore (1 Cr = 10,000,000): ₹1.5 Cr. */
 export function formatInrCrore(rupees: number | null | undefined): string {
   if (rupees === null || rupees === undefined || !Number.isFinite(rupees)) return UNKNOWN;

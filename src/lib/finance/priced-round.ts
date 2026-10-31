@@ -39,6 +39,8 @@ export function pricedRound(input: PricedRoundInput): PricedRoundResult {
   assertPositive("preMoney", preMoney);
   const postMoney = preMoney + investment;
   const pricePerShare = roundPrice(preMoney / preMoneyFDShares, rounding);
+  // A price that rounds to zero would issue infinite shares.
+  assertPositive("pricePerShare", pricePerShare);
   const newShares = roundShares(investment / pricePerShare, rounding);
   const postMoneyFDShares = preMoneyFDShares + newShares;
   return {
