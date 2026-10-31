@@ -4,7 +4,7 @@
  */
 
 /** The app's name: rail header, page titles and the top bar's fallback title. */
-export const APP_NAME = "GTM God's Eye";
+export const APP_NAME = "Utopian Autonomy";
 
 export type SubView = {
   slug: string;

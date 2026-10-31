@@ -1,6 +1,6 @@
-# GTM God's Eye runbook
+# Utopian Autonomy runbook
 
-How to run, check, update and deploy GTM God's Eye. For what the app is and why it is built this way, read `docs/PROJECT_CONTEXT.md` and `docs/DECISIONS.md`.
+How to run, check, update and deploy Utopian Autonomy. For what the app is and why it is built this way, read `docs/PROJECT_CONTEXT.md` and `docs/DECISIONS.md`.
 
 ## Prerequisites
 

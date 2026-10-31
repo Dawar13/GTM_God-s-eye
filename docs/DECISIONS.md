@@ -497,3 +497,6 @@ Second half of S10. Not deployed: the user deploys it themselves, following `doc
 - **URL precedence.** Weights and investor filters are remembered when the person changes them. A page opened without them applies the stored ones (round, filters, weights per group); a URL that carries a group wins and stored values are not overwritten. After a profile switch the URL is ignored and the new person's settings replace it, with no reload (`ProfileViewSync`, pure rule in `src/lib/user/view.ts`). Not yet exercised in a browser session.
 - **Not auth.** Ids are labels, not secrets and not access control. Access stays with the deployment's sign-in.
 - **Later (saved work and history).** Add an auth provider, map the account to a profile, then supply a server-backed `UserStore`; callers stay unchanged.
+
+## 2026-10-31 — App name: Utopian Autonomy
+- The user asked for the company name in place of "GTM God's Eye". `APP_NAME` (`src/lib/nav.ts`) drives the rail header, the mobile menu and the page titles; CSV exports are now `utopian-autonomy-*.csv`. The logo and icons are unchanged.

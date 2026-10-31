@@ -41,12 +41,12 @@ export function buildCsv(
   return `﻿${lines.join("\r\n")}\r\n`;
 }
 
-/** gtm-gods-eye-targets-2026-10-31.csv */
+/** utopian-autonomy-targets-2026-10-31.csv */
 export function targetsFilename(date: Date = new Date()): string {
-  return `gtm-gods-eye-targets-${date.toISOString().slice(0, 10)}.csv`;
+  return `utopian-autonomy-targets-${date.toISOString().slice(0, 10)}.csv`;
 }
 
-/** gtm-gods-eye-investors-2026-10-31.csv */
+/** utopian-autonomy-investors-2026-10-31.csv */
 export function csvFilename(date: Date = new Date()): string {
-  return `gtm-gods-eye-investors-${date.toISOString().slice(0, 10)}.csv`;
+  return `utopian-autonomy-investors-${date.toISOString().slice(0, 10)}.csv`;
 }
