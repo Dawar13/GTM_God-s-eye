@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { FilterableInvestor } from "@/lib/filters";
 import type { EntityHeader, PaletteEntry } from "@/lib/data/entities";
 import type { InvestorProfile } from "@/lib/data/profile";
+import type { GraphPayload } from "@/lib/viz/transforms/graphPayload";
 
 /** Fetch once per page load and share the promise. A failed fetch is retried on next use. */
 function memoJson<T>(url: string): () => Promise<T> {
@@ -25,6 +26,9 @@ export const loadFilterIndex = memoJson<FilterableInvestor[]>("/api/filter-index
 
 /** About 4,400 names; loaded the first time the palette opens, never in page HTML. */
 export const loadPaletteIndex = memoJson<PaletteEntry[]>("/api/palette-index");
+
+/** The network graph (about 3,900 nodes); loaded by the Network view only. */
+export const loadGraph = memoJson<GraphPayload>("/api/graph");
 
 const entityCache = new Map<string, Promise<EntityHeader>>();
 export function loadEntity(id: string): Promise<EntityHeader> {

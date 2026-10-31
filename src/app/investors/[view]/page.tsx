@@ -1,11 +1,12 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CanvasPlaceholder, EmptyState } from "@/components/shell/EmptyState";
+import { CanvasPlaceholder } from "@/components/shell/EmptyState";
 import { INVESTOR_VIEWS, findSubView } from "@/lib/nav";
 import { Accelerators } from "./accelerators";
 import { CapitalView } from "./capital";
 import { Directory } from "./directory";
+import { NetworkView } from "./network";
 import { ThesisMapView } from "./thesis-map";
 
 type Params = PageProps<"/investors/[view]">["params"];
@@ -37,5 +38,7 @@ async function InvestorView({ params }: { params: Params }) {
   if (view.slug === "accelerators") return <Accelerators />;
   if (view.slug === "thesis-map") return <ThesisMapView />;
   if (view.slug === "capital") return <CapitalView />;
-  return <EmptyState phaseNote={view.phaseNote}>{view.summary}</EmptyState>;
+  if (view.slug === "network") return <NetworkView />;
+  // Every investor view is built; an unknown slug was already sent to notFound().
+  return notFound();
 }

@@ -6,9 +6,11 @@
 import { beforeAll, describe, expect, it } from "vitest";
 import {
   getBubbleLayout,
+  getCompanies,
   getCompetitors,
   getFitFeatures,
   getFunds,
+  getGraph,
   getInvestors,
   getRounds,
   getThesisLayout,
@@ -29,6 +31,15 @@ import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
 import { bubbleView, toBubbleData, type BubbleData } from "@/lib/viz/transforms/capitalBubbles";
 import { thesisView, toThesisRows, type ThesisRow } from "@/lib/viz/transforms/thesisMap";
 import { topByFit } from "@/lib/viz/transforms/topByFit";
+import { toGraphPayload } from "@/lib/viz/transforms/graphPayload";
+import {
+  ALL_ROUNDS,
+  investorPassMask,
+  investorsWithoutRounds,
+  networkView,
+  toGraphData,
+  type GraphData,
+} from "@/lib/viz/transforms/networkGraph";
 
 type Loaded = {
   investors: Awaited<ReturnType<typeof getInvestors>>;
@@ -41,19 +52,23 @@ type Loaded = {
   coords: AreaCoords;
   bubbles: Awaited<ReturnType<typeof getBubbleLayout>>;
   bubbleData: BubbleData;
+  graph: GraphData;
 };
 let d: Loaded;
 
 beforeAll(async () => {
-  const [investors, funds, fits, rounds, competitors, layout, bubbles] = await Promise.all([
-    getInvestors(),
-    getFunds(),
-    getFitFeatures(),
-    getRounds(),
-    getCompetitors(),
-    getThesisLayout(),
-    getBubbleLayout(),
-  ]);
+  const [investors, funds, fits, rounds, competitors, layout, bubbles, graph, companies] =
+    await Promise.all([
+      getInvestors(),
+      getFunds(),
+      getFitFeatures(),
+      getRounds(),
+      getCompetitors(),
+      getThesisLayout(),
+      getBubbleLayout(),
+      getGraph(),
+      getCompanies(),
+    ]);
   d = {
     investors,
     funds,
@@ -65,6 +80,9 @@ beforeAll(async () => {
     coords: toAreaCoords(layout, bubbles),
     bubbles,
     bubbleData: toBubbleData(investors, bubbles, funds),
+    graph: toGraphData(
+      toGraphPayload({ graph, investors, companies, competitors, rounds, thesis: layout }),
+    ),
   };
 });
 
@@ -199,6 +217,29 @@ describe.each(COMBOS)("capital bubbles match the Directory: %s", (_name, filters
       expect(Math.abs(p.check - expected!)).toBeLessThanOrEqual(0.5);
       expect(p.fundUsd).toBe(r.latestFundSizeUsd);
     }
+  });
+});
+
+describe.each(COMBOS)("network graph matches the Directory: %s", (_name, filters) => {
+  it("investor nodes = Directory investors present in the graph; the rest are counted", () => {
+    const shown = applyFilters(d.rows, filters);
+    const inGraph = shown.filter((r) => d.graph.index.has(r.id));
+    const pass = investorPassMask(d.graph, filters, d.rows);
+    const view = networkView(d.graph, {
+      mode: "full",
+      investorPass: pass,
+      rounds: ALL_ROUNDS,
+      centre: null,
+      hops: 1,
+    });
+    expect(view.counts.investors).toBe(inGraph.length);
+    const nodeIds = d.graph.nodes
+      .filter((v) => v.kind === "investor" && view.node[v.i])
+      .map((v) => v.id);
+    expect(new Set(nodeIds)).toEqual(new Set(inGraph.map((r) => r.id)));
+    expect(view.counts.investors + investorsWithoutRounds(d.graph, filters, d.rows)).toBe(
+      shown.length,
+    );
   });
 });
 

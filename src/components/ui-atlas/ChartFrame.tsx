@@ -16,8 +16,11 @@ export type ChartState =
 
 type View = "chart" | "table";
 
-/** Records left out because a field is unknown. A null count is still being computed. */
-export type NotShown = { count: number | null; field: string };
+/**
+ * Records left out because a field is unknown. A null count is still being computed. `noun`
+ * names what is counted when a chart counts several kinds ("investors", "companies").
+ */
+export type NotShown = { count: number | null; field: string; noun?: string };
 
 const isList = (n: NotShown | readonly NotShown[]): n is readonly NotShown[] => Array.isArray(n);
 
@@ -29,6 +32,7 @@ export function ChartFrame({
   title,
   subtitle,
   legend,
+  legendPosition = "top",
   sources,
   notShown,
   filteredOut,
@@ -44,6 +48,11 @@ export function ChartFrame({
   title: string;
   subtitle: string;
   legend?: ReactNode;
+  /**
+   * "side" puts the legend in a column right of the chart on wide screens (below it on
+   * narrow ones), for tall canvases that should start above the fold.
+   */
+  legendPosition?: "top" | "side";
   /** Source domains behind the marks. */
   sources: readonly string[];
   /**
@@ -100,7 +109,7 @@ export function ChartFrame({
         </div>
       </header>
 
-      {legend && !showTable && <div>{legend}</div>}
+      {legend && !showTable && legendPosition === "top" && <div>{legend}</div>}
 
       <div style={{ minHeight: height }} aria-busy={state.status === "loading"}>
         {state.status === "loading" && <Skeleton className="w-full" style={{ height }} />}
@@ -115,7 +124,17 @@ export function ChartFrame({
               "Reload the page. If it keeps failing, check the data validation output."}
           </EmptyState>
         )}
-        {state.status === "ready" && (showTable ? tableAlternative : children)}
+        {state.status === "ready" &&
+          (showTable ? (
+            tableAlternative
+          ) : legend && legendPosition === "side" ? (
+            <div className="flex flex-col gap-4 xl:flex-row">
+              <div className="min-w-0 flex-1">{children}</div>
+              <div className="xl:w-72 xl:shrink-0">{legend}</div>
+            </div>
+          ) : (
+            children
+          ))}
       </div>
 
       <footer className="border-t border-rule pt-2 text-xs text-muted">
@@ -128,10 +147,10 @@ export function ChartFrame({
               <span className="tabular-nums">{formatCount(filteredOut)} hidden by filters. </span>
             )}
             {(isList(notShown) ? notShown : [notShown]).map((n) => (
-              <span key={n.field} className="tabular-nums">
+              <span key={`${n.noun ?? ""}${n.field}`} className="tabular-nums">
                 {n.count === null
-                  ? `Counting records missing ${n.field}. `
-                  : `${formatCount(n.count)} not shown (missing ${n.field}). `}
+                  ? `Counting ${n.noun ?? "records"} missing ${n.field}. `
+                  : `${formatCount(n.count)} ${n.noun ? `${n.noun} ` : ""}not shown (missing ${n.field}). `}
               </span>
             ))}
           </>

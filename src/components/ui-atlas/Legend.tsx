@@ -6,13 +6,21 @@ import { cn } from "@/lib/utils";
 export type LegendProps =
   | {
       kind: "categorical";
-      /** `hollow` draws a ring (generalists); `shape: "square"` marks accelerators and incubators. */
+      /**
+       * `hollow` draws a ring (generalists); `shape: "square"` marks accelerators and
+       * incubators; `ring` adds a 2px outline in that colour (competitors); `shape: "line"`
+       * is an edge, `lineWidth` px thick.
+       */
       items: readonly {
         label: string;
         color: string;
         hollow?: boolean;
-        shape?: "circle" | "square";
+        shape?: "circle" | "square" | "line";
+        ring?: string;
+        lineWidth?: number;
       }[];
+      /** Optional heading for the group, e.g. "Companies". */
+      title?: string;
       className?: string;
     }
   | {
@@ -35,10 +43,38 @@ export type LegendProps =
 /** Categorical swatches, a size key that states the area encoding, or a sequential ramp. */
 export function Legend(props: LegendProps) {
   if (props.kind === "categorical") {
-    return (
+    const list = (
       <ul className={cn("flex flex-wrap gap-x-4 gap-y-1 text-sm text-ink-2", props.className)}>
         {props.items.map((it) => {
           const m = markStyle(it.color);
+          if (it.shape === "line") {
+            return (
+              <li key={it.label} className="flex items-center gap-1.5">
+                <svg width="18" height="10" aria-hidden>
+                  <line
+                    x1="1"
+                    x2="17"
+                    y1="5"
+                    y2="5"
+                    stroke={it.color}
+                    strokeWidth={it.lineWidth ?? 1.5}
+                    strokeLinecap="round"
+                  />
+                </svg>
+                {it.label}
+              </li>
+            );
+          }
+          if (it.ring) {
+            return (
+              <li key={it.label} className="flex items-center gap-1.5">
+                <svg width="12" height="12" aria-hidden>
+                  <circle cx="6" cy="6" r="4" fill={it.color} stroke={it.ring} strokeWidth={2} />
+                </svg>
+                {it.label}
+              </li>
+            );
+          }
           return (
             <li key={it.label} className="flex items-center gap-1.5">
               <svg width="10" height="10" aria-hidden>
@@ -68,6 +104,13 @@ export function Legend(props: LegendProps) {
           );
         })}
       </ul>
+    );
+    if (!props.title) return list;
+    return (
+      <div className="flex flex-col gap-1">
+        <p className="text-xs text-muted">{props.title}</p>
+        {list}
+      </div>
     );
   }
 

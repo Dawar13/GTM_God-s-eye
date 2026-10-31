@@ -126,7 +126,7 @@ Common layout: inputs panel left (sliders + number fields kept in sync, ⓘ hint
   - Hover = tooltip; click = Inspector; brushing a region filters the Directory.
 - **Capital bubbles** (Plotly `scatter3d`, dynamic import, client-only): x = typical check (log), y = stage earliness, z = industrial affinity, size = latest fund size (area), colour = cluster. Camera presets (front, top, side), reset, and **"Show as 2D"** toggle with three linked 2D projections, because 3D distorts perceived position. Hover card matches `VizTooltip`; click opens Inspector.
 
-### S7 — Network graph (use Opus) ☐
+### S7 — Network graph (use Opus) ☑
 Sigma.js with precomputed ForceAtlas2 positions from `graph.json`.
 - Nodes: investors coloured by cluster (or by type via toggle), size = √weighted degree; companies grey by capital raised; competitors grey + accent ring; accelerators/incubators drawn with a square marker.
 - Edges: participation; lead edges darker; alpha 0.15 default; hidden while panning/zooming for smoothness.

@@ -8,6 +8,7 @@ export { Legend, type LegendProps } from "./Legend";
 export { Metric, type MetricKind } from "./Metric";
 export { NumberField } from "./NumberField";
 export { Panel } from "./Panel";
+export { SearchBox, type SearchItem } from "./SearchBox";
 export { Segmented, type SegmentedOption } from "./Segmented";
 export { ShareBar, type ShareSegment } from "./ShareBar";
 export { Skeleton } from "./Skeleton";
