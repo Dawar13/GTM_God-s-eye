@@ -106,7 +106,7 @@ export function RankedList({
             the six features are unknown, so the score is rescaled over a few and ranks after the{" "}
             {!loading && <span className="tabular-nums">{formatCount(reliable)} </span>}reliable
             ones. Fresh fund:
-            latest fund closed since 29 Oct 2024.
+            latest fund closed on or after Oct 29, 2024.
           </p>
         </div>
       }

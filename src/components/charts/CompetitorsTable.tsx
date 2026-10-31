@@ -66,7 +66,7 @@ export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorR
         const l = r.lastRound;
         if (!l) return UNKNOWN;
         return (
-          <span className="flex flex-col">
+          <span className="flex min-w-56 flex-col">
             <span className="tabular-nums">
               {formatPartialDate(l.date)} · {ROUND_STAGE_LABELS[l.stage]} · {formatUsd(l.amountUsd)}
             </span>

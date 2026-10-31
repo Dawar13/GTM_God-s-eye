@@ -54,7 +54,7 @@ function StatCell({
   scope: "filtered" | "all";
 }) {
   return (
-    <div className="flex flex-col gap-2 px-4 first:pl-0 last:pr-0">
+    <div className="flex flex-col gap-2 max-lg:odd:pr-3 max-lg:even:pl-3 lg:px-4 lg:first:pl-0 lg:last:pr-0">
       <Stat label={label} value={value} />
       <p className="text-xs text-muted">
         <span className="text-ink-2">

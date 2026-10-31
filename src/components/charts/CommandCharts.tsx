@@ -8,7 +8,6 @@ import {
   CartesianGrid,
   Cell,
   LabelList,
-  ResponsiveContainer,
   Scatter,
   ScatterChart,
   Tooltip,
@@ -27,6 +26,7 @@ import type { RecentDeals } from "@/lib/viz/transforms/recentDeals";
 import { LAYER_ORDER } from "@/lib/viz/transforms/recentDeals";
 import { FIT_FEATURE_ORDER, type TopByFit } from "@/lib/viz/transforms/topByFit";
 import { ChartTable } from "./ChartTable";
+import { StaggeredContainer } from "./StaggeredContainer";
 
 const TICK = { fontSize: 12, fill: "var(--muted)" } as const;
 const AXIS_LINE = { stroke: "var(--rule)" } as const;
@@ -54,7 +54,7 @@ const pluralFunds = (n: number) => `${formatCount(n)} ${n === 1 ? "fund" : "fund
 
 export function FundsByYearTile({ data, href }: { data: FundsByYear; href: string }) {
   const chart = (
-    <ResponsiveContainer width="100%" height={260}>
+    <StaggeredContainer height={260}>
       <BarChart data={data.bars} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
         <CartesianGrid vertical={false} stroke={GRID} />
         <XAxis
@@ -103,7 +103,7 @@ export function FundsByYearTile({ data, href }: { data: FundsByYear; href: strin
           isAnimationActive={false}
         />
       </BarChart>
-    </ResponsiveContainer>
+    </StaggeredContainer>
   );
   return (
     <ChartFrame
@@ -185,7 +185,7 @@ export function FreshCapitalTile({ data, href }: { data: FreshCapitalByRegion; h
       }
       height={260}
     >
-      <ResponsiveContainer width="100%" height={260}>
+      <StaggeredContainer height={260}>
         <BarChart data={bars} margin={{ top: 20, right: 8, bottom: 0, left: 0 }}>
           <CartesianGrid vertical={false} stroke={GRID} />
           <XAxis dataKey="label" tick={TICK} axisLine={AXIS_LINE} tickLine={false} />
@@ -232,7 +232,7 @@ export function FreshCapitalTile({ data, href }: { data: FreshCapitalByRegion; h
             />
           </Bar>
         </BarChart>
-      </ResponsiveContainer>
+      </StaggeredContainer>
     </ChartFrame>
   );
 }
@@ -317,7 +317,7 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
       }
       height={320}
     >
-      <ResponsiveContainer width="100%" height={320}>
+      <StaggeredContainer height={320}>
         <BarChart
           data={rows}
           layout="vertical"
@@ -383,7 +383,7 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
             );
           })}
         </BarChart>
-      </ResponsiveContainer>
+      </StaggeredContainer>
     </ChartFrame>
   );
 }
@@ -500,7 +500,7 @@ export function RecentDealsTile({ data, href }: { data: RecentDeals; href: strin
       }
       height={320}
     >
-      <ResponsiveContainer width="100%" height={320}>
+      <StaggeredContainer height={320}>
         <ScatterChart margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
           <CartesianGrid stroke={GRID} />
           <XAxis
@@ -548,7 +548,7 @@ export function RecentDealsTile({ data, href }: { data: RecentDeals; href: strin
           />
           <Scatter data={dots} shape={shape as never} isAnimationActive={false} onClick={open1} />
         </ScatterChart>
-      </ResponsiveContainer>
+      </StaggeredContainer>
     </ChartFrame>
   );
 }

@@ -370,7 +370,7 @@ function DirectoryView({
             />
           ))}
         </div>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="ml-auto flex flex-wrap items-center gap-2">
           <Segmented
             label="Row density"
             value={density}

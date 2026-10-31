@@ -36,6 +36,8 @@ Feel: a calm, bright analyst's workspace. Light surfaces, generous whitespace, c
 | `--accent-soft` | `#EEF0FB` | `#262A45` | active nav bg, selected rows |
 | `--positive` / `--negative` | `#2F9E6F` / `#D1495B` | same | up/down only, never decoration |
 
+`--muted`, `--positive` and `--negative` were adjusted in S10a so text in them passes AA; the values in use are in `src/styles/tokens.css` (see DECISIONS, S10a).
+
 Data palette (categorical, Tableau 10, colour-blind-checked with Coblis or Viz Palette): `#4E79A7 #F28E2B #59A14F #E15759 #76B7B2 #EDC948 #B07AA1 #9C755F`. On light backgrounds use fills at 85% opacity with a 1px stroke of the same hue darkened 15%.
 Companies: greys `#C4C9D1 → #8A919C` (darker = more capital raised). Competitors: grey fill + 2px `--accent` ring.
 Sequential (heatmaps): single-hue `#EEF0FB → #4F5BD5`. Never rainbow.
@@ -147,7 +149,7 @@ Sigma.js with precomputed ForceAtlas2 positions from `graph.json`.
 - Open structural questions panel (India flip etc.) linking to the legal notes.
 - Export: target list CSV with fit breakdown and application URLs.
 
-### S10 — Polish, performance, accessibility, deploy ☐
+### S10 — Polish, performance, accessibility, deploy ☑ (deploy left to the user; Network performance 64 against 85, see `PHASE_2_REPORT.md`)
 - Performance: dynamic import Plotly and Sigma; route-level code split; Lighthouse ≥ 90 performance on Command and Directory, ≥ 85 on Network; no layout shift on load.
 - Accessibility: AA contrast in both themes; every chart has an accessible table alternative ("View as table" toggle in `ChartFrame`); focus visible; screen-reader labels on icon buttons.
 - Consistency sweep: copy is sentence case and plain; every empty state says what to do; units everywhere; same formatting across views.
@@ -163,9 +165,9 @@ Sigma.js with precomputed ForceAtlas2 positions from `graph.json`.
 
 ## 5. Exit criteria
 
-- [ ] S0–S10 ticked
-- [ ] All tests pass, including the viz transform and consistency tests
-- [ ] Every chart has a source footnote, a not-shown count and a table alternative
-- [ ] Light and dark themes both pass AA
-- [ ] Protected deployment live; RUNBOOK written
-- [ ] `docs/PHASE_2_REPORT.md`: what shipped, known data gaps, and next steps toward real-time data (API behind `src/lib/data/`)
+- [x] S0–S10 ticked
+- [x] All tests pass, including the viz transform and consistency tests
+- [x] Every chart has a source footnote, a not-shown count and a table alternative
+- [x] Light and dark themes both pass AA
+- [ ] Protected deployment live; RUNBOOK written — RUNBOOK written; the deployment is left to the user by their choice (2026-10-31)
+- [x] `docs/PHASE_2_REPORT.md`: what shipped, known data gaps, and next steps toward real-time data (API behind `src/lib/data/`)

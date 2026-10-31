@@ -5,9 +5,10 @@
  * and @react-sigma/core; NetworkGraph loads it with next/dynamic (ssr: false), so none of them
  * reach another route's bundle.
  *
- * The graphology graph is built once per payload. Filters, modes, colours and highlights never
- * touch it: they live in refs that Sigma's node and edge reducers read, and a change calls
- * `sigma.refresh()`.
+ * The graphology graph is built once per payload, in slices that yield to the browser, while a
+ * skeleton holds the canvas's place; Sigma is created once it is complete. Filters, modes,
+ * colours and highlights never touch it: they live in refs that Sigma's node and edge reducers
+ * read, and a change calls `sigma.scheduleRefresh()`.
  */
 import Graph from "graphology";
 import { SigmaContainer, useRegisterEvents, useSigma } from "@react-sigma/core";
@@ -25,8 +26,10 @@ import {
 import { sdfCircle, sdfSquare } from "sigma/rendering";
 import type { Settings } from "sigma/settings";
 import type { EdgeDisplayData, NodeDisplayData, SigmaOptions } from "sigma/types";
+import { Skeleton } from "@/components/ui-atlas";
 import type { ThemeColors } from "@/lib/hooks/useThemeColors";
 import { LABEL_LEVELS } from "@/lib/network/url";
+import { yieldToMain } from "@/lib/scheduling";
 import {
   neighbourhood,
   nodeRadius,
@@ -86,24 +89,52 @@ type Refs = {
 type NodeAttrs = { i: number; x: number; y: number; size: number; shape: string; label: string };
 type EdgeAttrs = { i: number; k: 0 | 1 };
 
-function buildGraph(data: GraphData): Graph<NodeAttrs, EdgeAttrs> {
+/** Items added per slice: each slice stays well under the 50 ms long-task line. */
+const SLICE = 1000;
+
+/**
+ * The whole graph (every node, participation and co-investment edge), built in slices with a
+ * yield between them. Resolves null if `cancelled()` turns true between slices.
+ */
+async function buildGraph(
+  data: GraphData,
+  cancelled: () => boolean,
+): Promise<Graph<NodeAttrs, EdgeAttrs> | null> {
   const g = new Graph<NodeAttrs, EdgeAttrs>({ type: "undirected", multi: false });
-  for (const v of data.nodes) {
-    const r = nodeRadius(v.wd);
-    g.addNode(v.id, {
-      i: v.i,
-      x: v.x,
-      y: v.y,
-      size: v.marker === "square" ? squareHalfSide(r) : r,
-      shape: v.marker,
-      label: v.label,
+  const steps: (() => void)[] = [];
+  for (let from = 0; from < data.nodes.length; from += SLICE) {
+    steps.push(() => {
+      for (const v of data.nodes.slice(from, from + SLICE)) {
+        const r = nodeRadius(v.wd);
+        g.addNode(v.id, {
+          i: v.i,
+          x: v.x,
+          y: v.y,
+          size: v.marker === "square" ? squareHalfSide(r) : r,
+          shape: v.marker,
+          label: v.label,
+        });
+      }
     });
   }
-  for (const e of data.edges) {
-    g.addEdgeWithKey(`p${e.i}`, data.nodes[e.inv]!.id, data.nodes[e.co]!.id, { i: e.i, k: 0 });
+  for (let from = 0; from < data.edges.length; from += SLICE) {
+    steps.push(() => {
+      for (const e of data.edges.slice(from, from + SLICE)) {
+        g.addEdgeWithKey(`p${e.i}`, data.nodes[e.inv]!.id, data.nodes[e.co]!.id, { i: e.i, k: 0 });
+      }
+    });
   }
-  for (const c of data.coEdges) {
-    g.addEdgeWithKey(`c${c.i}`, data.nodes[c.a]!.id, data.nodes[c.b]!.id, { i: c.i, k: 1 });
+  for (let from = 0; from < data.coEdges.length; from += SLICE) {
+    steps.push(() => {
+      for (const c of data.coEdges.slice(from, from + SLICE)) {
+        g.addEdgeWithKey(`c${c.i}`, data.nodes[c.a]!.id, data.nodes[c.b]!.id, { i: c.i, k: 1 });
+      }
+    });
+  }
+  for (const step of steps) {
+    await yieldToMain();
+    if (cancelled()) return null;
+    step();
   }
   return g;
 }
@@ -139,7 +170,20 @@ export default function NetworkCanvas({
   renderTooltip: (i: number) => ReactNode;
   className?: string;
 }) {
-  const graph = useMemo(() => buildGraph(data), [data]);
+  const [built, setBuilt] = useState<{
+    data: GraphData;
+    graph: Graph<NodeAttrs, EdgeAttrs>;
+  } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    void buildGraph(data, () => cancelled).then((graph) => {
+      if (graph && !cancelled) setBuilt({ data, graph });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [data]);
+  const graph = built && built.data === data ? built.graph : null;
   // Labels use the page font (next/font's generated family); read once, in the browser.
   const [fontFamily] = useState(() => getComputedStyle(document.body).fontFamily || "sans-serif");
   const [hover, setHover] = useState<{ i: number; x: number; y: number } | null>(null);
@@ -283,30 +327,34 @@ export default function NetworkCanvas({
 
   return (
     <div ref={measureRef} className={className}>
-      <SigmaContainer
-        graph={graph}
-        options={options}
-        className="h-full w-full bg-transparent [&_.sigma-container]:h-full [&_.sigma-container]:w-full"
-      >
-        <Behaviour
-          ref={ref}
-          stateRef={stateRef}
-          data={data}
-          view={view}
-          colours={colours}
-          theme={theme}
-          active={active}
-          locked={locked}
-          selected={selected}
-          labelLevel={labelLevel}
-          reduced={reduced}
-          onSelect={onSelect}
-          onUnlock={onUnlock}
-          onHover={setHover}
-          width={box.width}
-          height={box.height}
-        />
-      </SigmaContainer>
+      {graph === null ? (
+        <Skeleton className="h-full w-full" />
+      ) : (
+        <SigmaContainer
+          graph={graph}
+          options={options}
+          className="h-full w-full bg-transparent [&_.sigma-container]:h-full [&_.sigma-container]:w-full"
+        >
+          <Behaviour
+            ref={ref}
+            stateRef={stateRef}
+            data={data}
+            view={view}
+            colours={colours}
+            theme={theme}
+            active={active}
+            locked={locked}
+            selected={selected}
+            labelLevel={labelLevel}
+            reduced={reduced}
+            onSelect={onSelect}
+            onUnlock={onUnlock}
+            onHover={setHover}
+            width={box.width}
+            height={box.height}
+          />
+        </SigmaContainer>
+      )}
       {hover && (
         <TooltipOverlay x={hover.x} y={hover.y} width={box.width} height={box.height}>
           {renderTooltip(hover.i)}
@@ -413,9 +461,17 @@ function Behaviour({
     if (target) sigma.getCamera().setState(target);
   }, [sigma, data, view]);
 
-  // The box changed size (fullscreen, panel resize): Sigma only listens to the window.
+  // The box changed size (fullscreen, panel resize): Sigma only listens to the window. Sigma
+  // sized itself from the box when it was created, so the first size seen needs no resize (a
+  // forced resize reallocates the canvas and draws the whole graph again).
+  const sizedTo = useRef<string | null>(null);
   useEffect(() => {
-    if (width > 0 && height > 0) sigma.resize(true);
+    if (width <= 0 || height <= 0) return;
+    const key = `${Math.round(width)}x${Math.round(height)}`;
+    const first = sizedTo.current === null;
+    if (sizedTo.current === key) return;
+    sizedTo.current = key;
+    if (!first) sigma.resize(true);
   }, [sigma, width, height]);
 
   // The mount-time values are already in Sigma's options; setSettings refreshes in full.
