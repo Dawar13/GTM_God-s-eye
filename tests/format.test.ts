@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   formatCount,
+  formatMultiple,
   formatInrCrore,
   formatMonthYear,
   formatPercent,
@@ -74,5 +75,14 @@ describe("formatMonthYear", () => {
     expect(formatMonthYear(null)).toBe(UNKNOWN);
     expect(formatMonthYear("soon")).toBe(UNKNOWN);
     expect(formatMonthYear("2026-13")).toBe(UNKNOWN);
+  });
+});
+
+describe("formatMultiple", () => {
+  it("shows two decimals and a times sign", () => {
+    expect(formatMultiple(0.64)).toBe("0.64×");
+    expect(formatMultiple(10)).toBe("10.00×");
+    expect(formatMultiple(null)).toBe("—");
+    expect(formatMultiple(Number.NaN)).toBe("—");
   });
 });

@@ -24,3 +24,38 @@ export function exitNeededToReturnFund(
   assertPositive("multiple", multiple);
   return (fundSize * multiple) / ownershipAtExit;
 }
+
+export type FundScenario = {
+  ownershipAtExit: number;
+  /** Exit value at which one company returns `multiple` × the fund. */
+  exitNeeded: number;
+  /** What the fund gets back from `assumedExit`, as a multiple of the fund. */
+  returnAtAssumedExit: number;
+};
+
+/**
+ * One company's effect on a fund: entry ownership diluted by `laterRounds` rounds of
+ * `dilutionPerRound` each (`exitOwnership`), the exit that returns the fund
+ * (`exitNeededToReturnFund`), and the fund multiple from an assumed exit.
+ */
+export function fundScenario(args: {
+  fundSize: number;
+  entryOwnership: number;
+  laterRounds: number;
+  dilutionPerRound: number;
+  multiple: number;
+  assumedExit: number;
+}): FundScenario {
+  assertPositive("assumedExit", args.assumedExit);
+  if (!Number.isInteger(args.laterRounds) || args.laterRounds < 0)
+    throw new RangeError("laterRounds must be a whole number, 0 or more");
+  const ownershipAtExit = exitOwnership(
+    args.entryOwnership,
+    Array.from({ length: args.laterRounds }, () => args.dilutionPerRound),
+  );
+  return {
+    ownershipAtExit,
+    exitNeeded: exitNeededToReturnFund(args.fundSize, ownershipAtExit, args.multiple),
+    returnAtAssumedExit: (args.assumedExit * ownershipAtExit) / args.fundSize,
+  };
+}

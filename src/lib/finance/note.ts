@@ -98,3 +98,71 @@ export function convertNote(args: {
     method: args.discount ? "discount" : "round_price",
   };
 }
+
+export type NoteScenario = {
+  accrued: number;
+  interest: number;
+  roundPrice: number;
+  conversion: NoteConversion;
+  newInvestorShares: number;
+  /** Shares outstanding after the note converts and the new money comes in. */
+  totalShares: number;
+  ownership: { existing: number; note: number; newInvestors: number };
+};
+
+/**
+ * A convertible note converting at a priced round: principal plus accrued interest
+ * (`accrue`), converted at the lower of the cap price and the discounted round price
+ * (`convertNote`).
+ *
+ * Round price = headline pre-money ÷ capitalization, so the conversion shares come on top
+ * of the pre-money share count (the note dilutes everyone, the new investors included).
+ * New investors buy investment ÷ round price. Ownership is fully diluted after both.
+ */
+export function noteScenario(args: {
+  principal: number;
+  rate: number;
+  compounding: Compounding;
+  years: number;
+  cap: number | null;
+  capBasis: "pre_money" | "post_money";
+  discount: number | null;
+  roundPreMoney: number;
+  roundInvestment: number;
+  /** Fully diluted shares before the note converts. */
+  capitalization: number;
+}): NoteScenario {
+  assertPositive("roundPreMoney", args.roundPreMoney);
+  assertPositive("roundInvestment", args.roundInvestment);
+  assertPositive("capitalization", args.capitalization);
+  const accrued = accrue({
+    principal: args.principal,
+    rate: args.rate,
+    compounding: args.compounding,
+    years: args.years,
+  });
+  const roundPrice = args.roundPreMoney / args.capitalization;
+  const conversion = convertNote({
+    accrued,
+    cap: args.cap,
+    capBasis: args.capBasis,
+    discount: args.discount,
+    roundPrice,
+    capitalization: args.capitalization,
+  });
+  const newInvestorShares = args.roundInvestment / roundPrice;
+  const totalShares = args.capitalization + conversion.shares + newInvestorShares;
+  return {
+    accrued,
+    interest: accrued - args.principal,
+    roundPrice,
+    conversion,
+    newInvestorShares,
+    totalShares,
+    ownership: {
+      existing: args.capitalization / totalShares,
+      note: conversion.shares / totalShares,
+      newInvestors: newInvestorShares / totalShares,
+    },
+  };
+}

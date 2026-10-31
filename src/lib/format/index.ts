@@ -63,6 +63,12 @@ export function formatCount(value: number | null | undefined): string {
   return value.toLocaleString("en-US");
 }
 
+/** A return multiple to two decimals: 0.64 → "0.64×", 10 → "10.00×". */
+export function formatMultiple(value: number | null | undefined): string {
+  if (value === null || value === undefined || !Number.isFinite(value)) return UNKNOWN;
+  return `${value.toFixed(2)}×`;
+}
+
 export function orUnknown<T>(value: T | null | undefined, format: (v: T) => string = String) {
   return value === null || value === undefined ? UNKNOWN : format(value);
 }

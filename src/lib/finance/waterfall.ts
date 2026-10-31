@@ -176,3 +176,66 @@ export function conversionPoint(
   }
   return hi;
 }
+
+export type Breakpoint = {
+  className: string;
+  /**
+   * preference_covered: the class's full preference is paid from this exit up.
+   * converts: the class is better off converting to common above this exit.
+   * cap_reached: a capped participant hits its total-return cap here.
+   */
+  kind: "preference_covered" | "converts" | "cap_reached";
+  exit: number;
+};
+
+/**
+ * The exit values where the payout curves change slope, found by bisection on the
+ * same `distribute` the curves use, so a breakpoint can never disagree with a curve.
+ * Each test is monotone in the exit value up to the point the class converts, so
+ * bisection is safe. Classes that never reach a point below `maxExit` get none.
+ */
+export function liquidationBreakpoints(
+  base: Omit<DistributeInput, "exitValue">,
+  maxExit: number,
+): Breakpoint[] {
+  assertPositive("maxExit", maxExit);
+  const out: Breakpoint[] = [];
+  const at = (x: number, name: string) =>
+    distribute({ ...base, exitValue: x }).classes.find((c) => c.name === name) as ClassPayout;
+  const firstTrue = (test: (x: number) => boolean): number | null => {
+    if (!test(maxExit)) return null;
+    let lo = 0;
+    let hi = maxExit;
+    for (let i = 0; i < 80 && hi - lo > 0.01; i++) {
+      const mid = (lo + hi) / 2;
+      if (test(mid)) hi = mid;
+      else lo = mid;
+    }
+    return hi;
+  };
+  for (const c of base.classes) {
+    const owed = c.multiple * c.invested;
+    const eps = 1e-9 * Math.max(1, owed);
+    const covered = firstTrue((x) => {
+      const p = at(x, c.name);
+      return p.converted || p.preference >= owed - eps;
+    });
+    if (covered !== null && !at(covered, c.name).converted)
+      out.push({ className: c.name, kind: "preference_covered", exit: covered });
+
+    const conv = conversionPoint(base, c.name, maxExit);
+    if (conv !== null) out.push({ className: c.name, kind: "converts", exit: conv });
+
+    if (c.participation === "capped") {
+      const capTotal = (c.capMultiple as number) * c.invested;
+      const capEps = 1e-9 * Math.max(1, capTotal);
+      const capped = firstTrue((x) => {
+        const p = at(x, c.name);
+        return p.converted || p.total >= capTotal - capEps;
+      });
+      if (capped !== null && !at(capped, c.name).converted)
+        out.push({ className: c.name, kind: "cap_reached", exit: capped });
+    }
+  }
+  return out.sort((a, b) => a.exit - b.exit);
+}

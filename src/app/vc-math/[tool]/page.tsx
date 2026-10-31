@@ -1,6 +1,10 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { FundMathCalculator } from "@/components/calculators/FundMathCalculator";
+import { LiquidationCalculator } from "@/components/calculators/LiquidationCalculator";
+import { NoteCalculator } from "@/components/calculators/NoteCalculator";
+import { VcMethodCalculator } from "@/components/calculators/VcMethodCalculator";
 import { CapTable } from "@/components/calculators/CapTable";
 import { SafeCalculator } from "@/components/calculators/SafeCalculator";
 import { OptionPool } from "@/components/calculators/OptionPool";
@@ -37,5 +41,9 @@ async function ToolView({ params }: { params: Params }) {
   if (tool.slug === "cap-table") return <CapTable />;
   if (tool.slug === "safe") return <SafeCalculator />;
   if (tool.slug === "option-pool") return <OptionPool />;
+  if (tool.slug === "convertible-note") return <NoteCalculator />;
+  if (tool.slug === "liquidation") return <LiquidationCalculator />;
+  if (tool.slug === "vc-method") return <VcMethodCalculator />;
+  if (tool.slug === "fund-math") return <FundMathCalculator />;
   return <EmptyState phaseNote={tool.phaseNote}>{tool.summary}</EmptyState>;
 }
