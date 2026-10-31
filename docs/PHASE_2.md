@@ -120,7 +120,7 @@ Common layout: inputs panel left (sliders + number fields kept in sync, ⓘ hint
 - Inspector profile: header (name, type, HQ, website), fit score breakdown (horizontal stacked bar + flags), thesis (paraphrased), sector-weight bars, funds timeline, partners, portfolio list (sortable), co-investors (top 10), competitor exposure, sources list with confidence.
 - Accelerators and incubators get their own filter chips and a distinct marker shape in later charts.
 
-### S6 — Thesis map + Capital bubbles (use Opus) ☐
+### S6 — Thesis map + Capital bubbles (use Opus) ☑
 - **Thesis map** (D3 + SVG, or canvas if > 2,000 points): positions from `layout_thesis.json`; colour = cluster; generalists = hollow rings; cluster hulls as 8%-opacity fills with the cluster name at the centroid; zoom/pan; labels only for top 30 by fit plus hovered/selected.
   - Toggle **Fit view**: x = industrial affinity, y = stage earliness, light quadrant guides, labelled corner "Sweet spot".
   - Hover = tooltip; click = Inspector; brushing a region filters the Directory.

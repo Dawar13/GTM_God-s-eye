@@ -4,13 +4,30 @@
  * between the transforms and the Directory's row model.
  */
 import { beforeAll, describe, expect, it } from "vitest";
-import { getCompetitors, getFitFeatures, getFunds, getInvestors, getRounds } from "@/lib/data";
-import { toDirectoryRows, type DirectoryRow } from "@/lib/data/directory";
+import {
+  getBubbleLayout,
+  getCompetitors,
+  getFitFeatures,
+  getFunds,
+  getInvestors,
+  getRounds,
+  getThesisLayout,
+} from "@/lib/data";
+import {
+  rowsInArea,
+  toAreaCoords,
+  toDirectoryRows,
+  type AreaCoords,
+  type DirectoryRow,
+} from "@/lib/data/directory";
+import { inArea, parseArea, type Area } from "@/lib/filters/area";
 import { applyFilters, DEFAULT_FILTER_STATE, type FilterState } from "@/lib/filters";
 import { parseFilters } from "@/lib/filters/url";
 import { commandStats } from "@/lib/viz/transforms/commandStats";
 import { freshCapitalByRegion } from "@/lib/viz/transforms/freshCapitalByRegion";
 import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
+import { bubbleView, toBubbleData, type BubbleData } from "@/lib/viz/transforms/capitalBubbles";
+import { thesisView, toThesisRows, type ThesisRow } from "@/lib/viz/transforms/thesisMap";
 import { topByFit } from "@/lib/viz/transforms/topByFit";
 
 type Loaded = {
@@ -20,16 +37,22 @@ type Loaded = {
   rounds: Awaited<ReturnType<typeof getRounds>>;
   competitors: Awaited<ReturnType<typeof getCompetitors>>;
   rows: DirectoryRow[];
+  thesisRows: ThesisRow[];
+  coords: AreaCoords;
+  bubbles: Awaited<ReturnType<typeof getBubbleLayout>>;
+  bubbleData: BubbleData;
 };
 let d: Loaded;
 
 beforeAll(async () => {
-  const [investors, funds, fits, rounds, competitors] = await Promise.all([
+  const [investors, funds, fits, rounds, competitors, layout, bubbles] = await Promise.all([
     getInvestors(),
     getFunds(),
     getFitFeatures(),
     getRounds(),
     getCompetitors(),
+    getThesisLayout(),
+    getBubbleLayout(),
   ]);
   d = {
     investors,
@@ -38,6 +61,10 @@ beforeAll(async () => {
     rounds,
     competitors,
     rows: toDirectoryRows(investors, funds, fits),
+    thesisRows: toThesisRows(investors, layout, bubbles, fits),
+    coords: toAreaCoords(layout, bubbles),
+    bubbles,
+    bubbleData: toBubbleData(investors, bubbles, funds),
   };
 });
 
@@ -107,6 +134,71 @@ describe.each(COMBOS)("chart totals match the Directory: %s", (_name, filters) =
     expect(chart.sparse).toBe(scored.length - ranked.length);
     const best = Math.max(...ranked.map((r) => r.fit ?? 0));
     if (chart.bars.length) expect(chart.bars[0]!.total).toBeCloseTo(best, 9);
+  });
+});
+
+describe.each(COMBOS)("thesis map matches the Directory: %s", (_name, filters) => {
+  it.each(["thesis", "fit"] as const)(
+    "%s layout: marks = Directory rows with coordinates",
+    (layout) => {
+      const shown = applyFilters(d.rows, filters);
+      const placed = shown.filter((r) => d.coords[r.id]?.[layout]);
+      const view = thesisView(d.thesisRows, filters, layout, d.rows);
+      expect(view.points.length).toBe(placed.length);
+      expect(new Set(view.points.map((p) => p.id))).toEqual(new Set(placed.map((r) => r.id)));
+      const missing = view.notShown!.reduce((s, n) => s + n.count, 0);
+      expect(view.points.length + missing).toBe(shown.length);
+      for (const p of view.points) {
+        const c = d.coords[p.id]![layout]!;
+        expect([p.px, p.py]).toEqual(c);
+      }
+    },
+  );
+
+  it("a brushed region lists the same investors on the map and in the Directory", () => {
+    const areas: Area[] = [
+      parseArea("thesis:-2,-2,6,4")!,
+      parseArea("fit:0.5,0.5,1,1")!,
+      parseArea("fit:0,0,0.333,0.9")!,
+    ];
+    for (const area of areas) {
+      const map = thesisView(d.thesisRows, filters, area.layout, null).points.filter((p) =>
+        inArea([p.px, p.py], area),
+      );
+      const directory = applyFilters(rowsInArea(d.rows, d.coords, area), filters);
+      expect(map.map((p) => p.id).sort()).toEqual(directory.map((r) => r.id).sort());
+    }
+  });
+});
+
+describe.each(COMBOS)("capital bubbles match the Directory: %s", (_name, filters) => {
+  it("bubbles = Directory rows with check, earliness and affinity; the rest are counted", () => {
+    const shown = applyFilters(d.rows, filters);
+    const axes = new Map(d.bubbles.map((b) => [b.id, b]));
+    const placed = shown.filter((r) => {
+      const b = axes.get(r.id);
+      return (
+        b &&
+        b.typical_check_usd !== null &&
+        b.stage_earliness !== null &&
+        b.industrial_affinity !== null
+      );
+    });
+    const view = bubbleView(d.bubbleData, filters, d.rows);
+    expect(view.points.length).toBe(placed.length);
+    const missing = view.notShown!.reduce((s, n) => s + n.count, 0);
+    expect(view.points.length + missing).toBe(shown.length);
+  });
+
+  it("x is the Directory's check range (geometric mean) and size is the latest fund", () => {
+    const rowById = new Map(d.rows.map((r) => [r.id, r]));
+    for (const p of bubbleView(d.bubbleData, filters).points) {
+      const r = rowById.get(p.id)!;
+      const { checkMinUsd: lo, checkMaxUsd: hi } = r;
+      const expected = lo !== null && hi !== null ? Math.sqrt(lo * hi) : (lo ?? hi);
+      expect(Math.abs(p.check - expected!)).toBeLessThanOrEqual(0.5);
+      expect(p.fundUsd).toBe(r.latestFundSizeUsd);
+    }
   });
 });
 

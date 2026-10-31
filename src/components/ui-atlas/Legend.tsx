@@ -6,7 +6,13 @@ import { cn } from "@/lib/utils";
 export type LegendProps =
   | {
       kind: "categorical";
-      items: readonly { label: string; color: string; hollow?: boolean }[];
+      /** `hollow` draws a ring (generalists); `shape: "square"` marks accelerators and incubators. */
+      items: readonly {
+        label: string;
+        color: string;
+        hollow?: boolean;
+        shape?: "circle" | "square";
+      }[];
       className?: string;
     }
   | {
@@ -36,14 +42,26 @@ export function Legend(props: LegendProps) {
           return (
             <li key={it.label} className="flex items-center gap-1.5">
               <svg width="10" height="10" aria-hidden>
-                <circle
-                  cx="5"
-                  cy="5"
-                  r="4.5"
-                  fill={it.hollow ? "none" : m.fill}
-                  stroke={m.stroke}
-                  strokeWidth={it.hollow ? 1.5 : 1}
-                />
+                {it.shape === "square" ? (
+                  <rect
+                    x="1"
+                    y="1"
+                    width="8"
+                    height="8"
+                    fill={it.hollow ? "none" : m.fill}
+                    stroke={m.stroke}
+                    strokeWidth={it.hollow ? 1.5 : 1}
+                  />
+                ) : (
+                  <circle
+                    cx="5"
+                    cy="5"
+                    r="4.5"
+                    fill={it.hollow ? "none" : m.fill}
+                    stroke={m.stroke}
+                    strokeWidth={it.hollow ? 1.5 : 1}
+                  />
+                )}
               </svg>
               {it.label}
             </li>

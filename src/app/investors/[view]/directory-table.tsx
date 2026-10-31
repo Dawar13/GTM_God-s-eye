@@ -9,7 +9,7 @@ import { cn } from "cn";
 import { Chip, Segmented } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import type { DirectoryRow } from "@/lib/data/directory";
+import { rowsInArea, type AreaCoords, type DirectoryRow } from "@/lib/data/directory";
 import { DEFAULT_VISIBLE, DIRECTORY_COLUMNS } from "@/lib/directory/columns";
 import { csvFilename, toCsv } from "@/lib/directory/csv";
 import {
@@ -22,6 +22,7 @@ import {
   type SortColumn,
 } from "@/lib/directory/sort";
 import { applyFilters, facetCounts, summarizeStages } from "@/lib/filters";
+import { AREA_LABELS, AREA_PARAM, parseAsArea } from "@/lib/filters/area";
 import { useFilters } from "@/lib/filters/use-filters";
 import { filterUrlOptions } from "@/lib/filters/url";
 import { formatCount, formatUsd, UNKNOWN } from "@/lib/format";
@@ -176,13 +177,21 @@ function Cell({ id, row }: { id: SortColumn; row: DirectoryRow }) {
   }
 }
 
-export function DirectoryTable({ rows }: { rows: DirectoryRow[] }) {
+export function DirectoryTable({
+  rows,
+  areaCoords,
+}: {
+  rows: DirectoryRow[];
+  /** Thesis map positions, to resolve a region brushed on the map (`?area=`). */
+  areaCoords: AreaCoords;
+}) {
   // The same applyFilters the filter bar's chip counts use, so the two always agree.
   const { filters, toggle } = useFilters();
   const [sort, setSort] = useQueryState(
     SORT_PARAM,
     parseAsStringLiteral(SORT_KEYS).withDefault(DEFAULT_SORT).withOptions(filterUrlOptions),
   );
+  const [area, setArea] = useQueryState(AREA_PARAM, parseAsArea.withOptions(filterUrlOptions));
   const { id: selectedId, open: openInspector } = useInspector();
 
   const [density, setDensity] = useState<Density>("comfortable");
@@ -204,8 +213,13 @@ export function DirectoryTable({ rows }: { rows: DirectoryRow[] }) {
     }
   }, []);
 
-  const shown = useMemo(() => sortRows(applyFilters(rows, filters), sort), [rows, filters, sort]);
-  const counts = useMemo(() => facetCounts(rows, filters).type, [rows, filters]);
+  // A brushed map region narrows the rows before the filters, so chip counts include it too.
+  const inRegion = useMemo(() => rowsInArea(rows, areaCoords, area), [rows, areaCoords, area]);
+  const shown = useMemo(
+    () => sortRows(applyFilters(inRegion, filters), sort),
+    [inRegion, filters, sort],
+  );
+  const counts = useMemo(() => facetCounts(inRegion, filters).type, [inRegion, filters]);
 
   const table = useTable({
     features,
@@ -304,8 +318,20 @@ export function DirectoryTable({ rows }: { rows: DirectoryRow[] }) {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm text-ink-2">
           <span className="num">{formatCount(shown.length)}</span> of{" "}
-          <span className="num">{formatCount(rows.length)}</span> investors match the filters.
+          <span className="num">{formatCount(rows.length)}</span> investors match the filters
+          {area ? " and the map region" : ""}.
         </p>
+        {area && (
+          <Chip
+            label={AREA_LABELS[area.layout]}
+            count={shown.length}
+            selected
+            removable
+            aria-label={`Remove the ${AREA_LABELS[area.layout].toLowerCase()} filter`}
+            title="Brushed on the thesis map. Remove to list every investor again."
+            onClick={() => void setArea(null)}
+          />
+        )}
         <div className="flex items-center gap-2" role="group" aria-label="Programme types">
           {typeChips.map((c) => (
             <Chip

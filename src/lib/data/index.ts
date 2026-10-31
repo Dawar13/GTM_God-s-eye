@@ -112,6 +112,12 @@ export async function getBubbleLayout(): Promise<DatasetRecord<"layout_bubbles">
   return (await loadDataset("layout_bubbles")).records;
 }
 
+/** When the pipeline wrote a dataset (ISO date-time): the "as of" date for computed marks. */
+export async function getDatasetGeneratedAt(name: DatasetName): Promise<string> {
+  "use cache";
+  return (await loadDataset(name)).generated_at;
+}
+
 async function loadDocument<K extends DocumentName>(name: K): Promise<z.infer<(typeof DOCUMENTS)[K]>> {
   const raw: unknown = JSON.parse(await readFile(path.join(DATA_DIR, `${name}.json`), "utf8"));
   return DOCUMENTS[name].parse(raw) as z.infer<(typeof DOCUMENTS)[K]>;

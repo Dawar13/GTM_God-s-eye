@@ -1,6 +1,7 @@
 import { fitScore } from "@/lib/fit/score";
 import { SECTOR_MATCH_MIN, type FilterableInvestor } from "@/lib/filters";
-import type { FitFeatures, Fund, Investor } from "@/lib/schema";
+import { inArea, type Area } from "@/lib/filters/area";
+import type { BubblePoint, FitFeatures, Fund, Investor, ThesisPoint } from "@/lib/schema";
 import type { Sector } from "@/lib/schema/enums";
 
 /** The fields the global filters read, from one investor record. Used by the Directory and the filter bar. */
@@ -84,4 +85,39 @@ export function toDirectoryRows(
       confidence: inv.confidence,
     };
   });
+}
+
+/**
+ * Each placed investor's position in the thesis map's two layouts, so the Directory can
+ * resolve a brushed `?area=` to rows. Thesis = layout_thesis x/y; fit = industrial affinity
+ * and stage earliness from layout_bubbles, for investors on the thesis map with both known.
+ * Only investors on the map are listed (about 560), which keeps the page payload small.
+ */
+export type AreaCoords = Record<string, { thesis: [number, number]; fit: [number, number] | null }>;
+
+export function toAreaCoords(
+  layout: readonly ThesisPoint[],
+  bubbles: readonly BubblePoint[],
+): AreaCoords {
+  const axes = new Map(bubbles.map((b) => [b.id, b]));
+  const out: AreaCoords = {};
+  for (const p of layout) {
+    const b = axes.get(p.id);
+    const fit: [number, number] | null =
+      b && b.industrial_affinity !== null && b.stage_earliness !== null
+        ? [b.industrial_affinity, b.stage_earliness]
+        : null;
+    out[p.id] = { thesis: [p.x, p.y], fit };
+  }
+  return out;
+}
+
+/** Rows inside a brushed map region; every row when there is no region. */
+export function rowsInArea<T extends { id: string }>(
+  rows: readonly T[],
+  coords: AreaCoords,
+  area: Area | null,
+): T[] {
+  if (!area) return [...rows];
+  return rows.filter((r) => inArea(coords[r.id]?.[area.layout], area));
 }

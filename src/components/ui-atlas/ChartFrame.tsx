@@ -16,6 +16,11 @@ export type ChartState =
 
 type View = "chart" | "table";
 
+/** Records left out because a field is unknown. A null count is still being computed. */
+export type NotShown = { count: number | null; field: string };
+
+const isList = (n: NotShown | readonly NotShown[]): n is readonly NotShown[] => Array.isArray(n);
+
 /**
  * Every chart sits in this frame (PHASE_2 §2.8): title, one-line subtitle, legend,
  * footnote with sources and the not-shown count, state handling, and a table alternative.
@@ -26,6 +31,7 @@ export function ChartFrame({
   legend,
   sources,
   notShown,
+  filteredOut,
   state = { status: "ready" },
   tableAlternative,
   action,
@@ -40,8 +46,13 @@ export function ChartFrame({
   legend?: ReactNode;
   /** Source domains behind the marks. */
   sources: readonly string[];
-  /** Records left out because a field is unknown. Pass 0 to say none were dropped. */
-  notShown: { count: number; field: string };
+  /**
+   * Records left out because a field is unknown. Pass 0 to say none were dropped. A list
+   * counts each record once, under its first missing field.
+   */
+  notShown: NotShown | readonly NotShown[];
+  /** Marks that exist but are hidden by the URL filters; counted apart from missing fields. */
+  filteredOut?: number;
   state?: ChartState;
   /** The same data as an accessible table; enables "View as table". */
   tableAlternative?: ReactNode;
@@ -113,9 +124,16 @@ export function ChartFrame({
         ) : (
           <>
             <span>Sources: {sources.length ? sources.join(", ") : "none on record"}.</span>{" "}
-            <span className="tabular-nums">
-              {formatCount(notShown.count)} not shown (missing {notShown.field}).
-            </span>
+            {filteredOut !== undefined && (
+              <span className="tabular-nums">{formatCount(filteredOut)} hidden by filters. </span>
+            )}
+            {(isList(notShown) ? notShown : [notShown]).map((n) => (
+              <span key={n.field} className="tabular-nums">
+                {n.count === null
+                  ? `Counting records missing ${n.field}. `
+                  : `${formatCount(n.count)} not shown (missing ${n.field}). `}
+              </span>
+            ))}
           </>
         )}
       </footer>

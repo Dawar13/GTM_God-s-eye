@@ -43,6 +43,19 @@ export function categoricalColor(index: number): string {
   return CATEGORICAL[((Math.trunc(index) % n) + n) % n] ?? CATEGORICAL[0];
 }
 
+/**
+ * Tableau 10's remaining two hues, used only when a chart needs more than eight categories
+ * (the pipeline picks k from 4 to 10 thesis clusters). Same palette family, so it stays
+ * colour-blind-checked; wrapping to the first hue would make two clusters look the same.
+ */
+export const CATEGORICAL_EXTENDED = [...CATEGORICAL, "#FF9DA7", "#BAB0AC"] as const;
+
+/** Colour for thesis cluster `index` (0-based); distinct for up to ten clusters. */
+export function clusterColor(index: number): string {
+  const n = CATEGORICAL_EXTENDED.length;
+  return CATEGORICAL_EXTENDED[((Math.trunc(index) % n) + n) % n] ?? CATEGORICAL[0];
+}
+
 /** Mark style on a light surface: 85% fill, 1px stroke of the same hue darkened 15%. */
 export function markStyle(hex: string): { fill: string; stroke: string; strokeWidth: 1 } {
   return { fill: withOpacity(hex, FILL_OPACITY), stroke: darken(hex), strokeWidth: 1 };

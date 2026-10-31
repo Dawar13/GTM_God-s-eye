@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { CanvasPlaceholder, EmptyState } from "@/components/shell/EmptyState";
 import { INVESTOR_VIEWS, findSubView } from "@/lib/nav";
 import { Accelerators } from "./accelerators";
+import { CapitalView } from "./capital";
 import { Directory } from "./directory";
+import { ThesisMapView } from "./thesis-map";
 
 type Params = PageProps<"/investors/[view]">["params"];
 
@@ -33,5 +35,7 @@ async function InvestorView({ params }: { params: Params }) {
   if (!view) notFound();
   if (view.slug === "directory") return <Directory />;
   if (view.slug === "accelerators") return <Accelerators />;
+  if (view.slug === "thesis-map") return <ThesisMapView />;
+  if (view.slug === "capital") return <CapitalView />;
   return <EmptyState phaseNote={view.phaseNote}>{view.summary}</EmptyState>;
 }
