@@ -93,6 +93,20 @@ export const CATEGORICAL_WIDE = [
 /** Neutral grey for an "everything else" group, such as the Sankey's Other investors. */
 export const OTHER_GREY = COMPANY_GREY.high;
 
+/**
+ * Competitor category hues for the Sankey overview's right half (category blocks, competitor
+ * bars and the bands between them): mauve #B07AA1 direct, deep teal #499894 adjacent, olive
+ * #B6992D remote. All three come from CATEGORICAL_WIDE and are calm, mid-light hues; they were
+ * picked away from the four largest investors' blue, orange, green and red so a category band
+ * does not read as one of them. Checked in tests/competitor-sankey.test.ts: at least ΔE 40
+ * apart, ΔE 20 from OTHER_GREY, 3:1 against the dark panel.
+ */
+export const CATEGORY_HUES = {
+  direct: "#B07AA1",
+  adjacent: "#499894",
+  remote: "#B6992D",
+} as const satisfies Record<"direct" | "adjacent" | "remote", string>;
+
 /** Colour for thesis cluster `index` (0-based); distinct for up to ten clusters. */
 export function clusterColor(index: number): string {
   const n = CATEGORICAL_EXTENDED.length;

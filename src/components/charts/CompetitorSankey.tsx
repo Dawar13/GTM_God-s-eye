@@ -9,11 +9,11 @@ import {
   type MouseEvent,
   type ReactNode,
 } from "react";
-import { ChartFrame, Legend, Segmented, VizTooltip } from "@/components/ui-atlas";
+import { ChartFrame, Legend, VizTooltip } from "@/components/ui-atlas";
 import { formatCount, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
-import { COMPETITOR_CATEGORY_LABELS, LAYER_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
+import { COMPETITOR_CATEGORY_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
-import { CATEGORICAL_WIDE, COMPANY_GREY, OTHER_GREY, markStyle, withOpacity } from "@/lib/viz";
+import { CATEGORICAL_WIDE, COMPANY_GREY, OTHER_GREY, markStyle } from "@/lib/viz";
 import {
   OTHER_ID,
   UNNAMED_ID,
@@ -24,14 +24,26 @@ import {
   type CompetitorFlows,
   type FlowLink,
   type FlowPair,
-  type FlowRound,
   type FlowSource,
   type FlowTarget,
   type SankeyMode,
   type SankeyNode,
 } from "@/lib/viz/transforms/competitorSankey";
+import type { CompetitorOverview } from "@/lib/viz/transforms/competitorOverview";
 import type { CompetitorCategory } from "@/lib/schema/enums";
 import { ChartTable } from "./ChartTable";
+import { OverviewSankey } from "./CompetitorSankeyOverview";
+import {
+  HatchPattern,
+  SankeyControls,
+  clip,
+  competitorTip,
+  dateSpan,
+  moneyText,
+  plural,
+  share,
+  type SankeyView,
+} from "./sankeyShared";
 
 /** Space above the first node for the first group's label, and below the last. */
 const TOP = 26;
@@ -52,35 +64,57 @@ type Active = { kind: "node"; id: string } | { kind: "link"; key: string } | nul
 type Tip = { x: number; y: number; flip: boolean };
 
 const linkKey = (l: Pick<FlowLink, "source" | "target">) => `${l.source}|${l.target}`;
-const plural = (n: number, one: string, many = `${one}s`) =>
-  `${formatCount(n)} ${n === 1 ? one : many}`;
-const clip = (s: string, max: number) =>
-  s.length > max ? `${s.slice(0, Math.max(1, max - 1))}…` : s;
-/** Money behind a node or band: split among named investors it is an estimate, "not named" is whole. */
-const moneyText = (usd: number | null, exact: boolean, long = false) =>
-  exact
-    ? `${formatUsd(usd)}${long ? " disclosed" : ""}`
-    : `~${formatUsd(usd)}${long ? " estimated" : ""}`;
-/** Rounds as drawn in the rounds view: whole numbers plain, splits to one decimal. */
-const share = (v: number) =>
-  Math.abs(v - Math.round(v)) < 1e-9 ? formatCount(Math.round(v)) : v.toFixed(1);
 
-function dateSpan(rounds: readonly FlowRound[]): string | null {
-  const dated = rounds.map((r) => r.date).filter((d): d is string => d !== null);
-  if (dated.length === 0) return rounds.length ? "Dates not recorded" : null;
-  const first = formatPartialDate(dated[0]);
-  const last = formatPartialDate(dated[dated.length - 1]);
-  return first === last ? first : `${first} to ${last}`;
+/**
+ * "Who funds our competitors", the Competitors page's first chart. Two views share the band
+ * width toggle: the three-stage Overview (investors, categories, competitors; the default) and
+ * "Investor → competitor" (every named investor's band to every competitor it backed).
+ */
+export function CompetitorSankey({
+  data,
+  overview,
+}: {
+  data: CompetitorFlows;
+  overview: CompetitorOverview;
+}) {
+  const [view, setView] = useState<SankeyView>("overview");
+  const [mode, setMode] = useState<SankeyMode>("money");
+  const controls = (moneyLabel: string) => (
+    <SankeyControls
+      view={view}
+      onView={setView}
+      mode={mode}
+      onMode={setMode}
+      moneyLabel={moneyLabel}
+    />
+  );
+  return view === "overview" ? (
+    <OverviewSankey
+      data={data}
+      overview={overview}
+      mode={mode}
+      controls={controls("Disclosed money")}
+    />
+  ) : (
+    <PairSankey data={data} mode={mode} controls={controls("Estimated money (equal split)")} />
+  );
 }
 
 /**
- * "Who funds our competitors": investors on the left, competitors on the right, band width =
+ * "Investor → competitor": investors on the left, competitors on the right, band width =
  * estimated money (equal split) or rounds. Layout and every number come from
  * `competitorSankey.ts`; this only draws and handles hover, focus and clicks.
  */
-export function CompetitorSankey({ data }: { data: CompetitorFlows }) {
+function PairSankey({
+  data,
+  mode,
+  controls,
+}: {
+  data: CompetitorFlows;
+  mode: SankeyMode;
+  controls: ReactNode;
+}) {
   const { open } = useInspector();
-  const [mode, setMode] = useState<SankeyMode>("money");
   const [outer, setOuter] = useState<HTMLDivElement | null>(null);
   const inner = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState<number | null>(null);
@@ -302,40 +336,7 @@ export function CompetitorSankey({ data }: { data: CompetitorFlows }) {
     </VizTooltip>
   );
 
-  const targetTip = (t: FlowTarget): ReactNode => {
-    const differs =
-      t.totalRaisedUsd !== null &&
-      t.disclosedUsd !== null &&
-      Math.abs(t.totalRaisedUsd - t.disclosedUsd) >= 1;
-    return (
-      <VizTooltip
-        className="max-w-80"
-        title={t.name}
-        value={
-          mode === "money"
-            ? `${formatUsd(t.disclosedUsd)} in disclosed rounds`
-            : plural(t.rounds, "round")
-        }
-        period={`${COMPETITOR_CATEGORY_LABELS[t.category]} · ${LAYER_LABELS[t.layer]}`}
-        confidence={t.confidence}
-        sourceDomain={t.sourceDomain}
-      >
-        <p className="tabular-nums">
-          {formatCount(t.roundsWithAmount)} of {plural(t.rounds, "round")} with a disclosed amount.
-        </p>
-        {differs && (
-          <p className="tabular-nums">
-            The table&apos;s total raised is {formatUsd(t.totalRaisedUsd)}, not the{" "}
-            {formatUsd(t.disclosedUsd)} these rounds add up to.
-          </p>
-        )}
-        {t.totalRaisedUsd === null && t.disclosedUsd !== null && (
-          <p>The table has no stored total raised for it ({UNKNOWN}).</p>
-        )}
-        <p>Click to open the competitor.</p>
-      </VizTooltip>
-    );
-  };
+  const targetTip = (t: FlowTarget): ReactNode => competitorTip(t, mode);
 
   let tipBody: ReactNode = null;
   if (active && tip) {
@@ -531,20 +532,7 @@ export function CompetitorSankey({ data }: { data: CompetitorFlows }) {
           ? "Each band runs from an investor to a competitor it backed. Band width is estimated money: each round's disclosed amount split equally among the round's named investors."
           : "Each band runs from an investor to a competitor it backed. Band width is rounds: each round counts once, split equally among the round's named investors."
       }
-      action={
-        <Segmented
-          label="Band width"
-          value={mode}
-          onChange={(m) => {
-            setMode(m);
-            clear();
-          }}
-          options={[
-            { value: "money", label: "Estimated money (equal split)" },
-            { value: "rounds", label: "Number of rounds" },
-          ]}
-        />
-      }
+      action={controls}
       legend={
         <div className="flex flex-col gap-2">
           <div className="flex flex-wrap items-start gap-x-6 gap-y-2">
@@ -585,16 +573,7 @@ export function CompetitorSankey({ data }: { data: CompetitorFlows }) {
               <span className="flex items-center gap-1.5 text-sm text-ink-2">
                 <svg width="10" height="10" aria-hidden>
                   <defs>
-                    <pattern
-                      id={`${HATCH}-key`}
-                      width="4"
-                      height="4"
-                      patternUnits="userSpaceOnUse"
-                      patternTransform="rotate(45)"
-                    >
-                      <rect width="4" height="4" fill={withOpacity(OTHER_GREY, 0.2)} />
-                      <line x1="0" y1="0" x2="0" y2="4" stroke={OTHER_GREY} strokeWidth="2" />
-                    </pattern>
+                    <HatchPattern id={`${HATCH}-key`} size={4} />
                   </defs>
                   <rect
                     x="0.5"
@@ -659,16 +638,7 @@ export function CompetitorSankey({ data }: { data: CompetitorFlows }) {
               className="block"
             >
               <defs>
-                <pattern
-                  id={HATCH}
-                  width="6"
-                  height="6"
-                  patternUnits="userSpaceOnUse"
-                  patternTransform="rotate(45)"
-                >
-                  <rect width="6" height="6" fill={withOpacity(OTHER_GREY, 0.25)} />
-                  <line x1="0" y1="0" x2="0" y2="6" stroke={OTHER_GREY} strokeWidth="2.5" />
-                </pattern>
+                <HatchPattern id={HATCH} />
               </defs>
               <g transform={`translate(0, ${TOP})`}>
                 <g aria-hidden>

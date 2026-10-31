@@ -10,10 +10,11 @@
  * way, so a competitor's node is its number of rounds; rounds with no amount carry width only
  * there. A band or node with no value in a view is left out, never drawn at zero.
  *
- * The layout is a small two-column version of the d3-sankey idea, kept here so it is pure and
- * tested: node height = scale × value with one scale for both columns (so every node's height
- * is the sum of its band widths), nodes ordered by the barycentre of their partners to cut
- * crossings, and bands stacked at each node in the order of the node at their other end.
+ * The layout is a small N-column version of the d3-sankey idea, kept here so it is pure and
+ * tested (`layoutSankeyColumns`; the overview in `competitorOverview.ts` uses three columns,
+ * this view two): node height = scale × value with one scale for every column (so every node's
+ * height is the sum of its band widths), nodes ordered by the barycentre of their partners to
+ * cut crossings, and bands stacked at each node in the order of the node at their other end.
  */
 import type { Competitor, Confidence, Investor, Round } from "@/lib/schema";
 import type { CompetitorCategory, CompetitorLayer, RoundStage } from "@/lib/schema/enums";
@@ -389,6 +390,323 @@ export function competitorFlows(
 export type SankeyNodeIn = { id: string; group?: string };
 export type SankeyLinkIn = { source: string; target: string; value: number };
 
+/** One column of an N-column Sankey, left to right. */
+export type SankeyColumn = {
+  /** x of the column's left edge. */
+  x: number;
+  /** Nodes in their starting order; the sweeps reorder free nodes inside their group. */
+  nodes: readonly SankeyNodeIn[];
+  /** Smallest gap between two nodes, px. */
+  pad: number;
+  /** Extra gap between groups, px. */
+  groupGap?: number;
+  /** Groups top to bottom; groups not listed follow in order of appearance. */
+  groupOrder?: readonly string[];
+  /** Nodes kept at the bottom, in this order (Other investors, Investors not named). */
+  pinned?: readonly string[];
+  /** Keep the given order (no crossing sweeps), for columns whose order means something. */
+  fixed?: boolean;
+  /** Room kept free above the column, px (for labels drawn above its nodes). */
+  reserveTop?: number;
+  /**
+   * Height of the labels beside the column's nodes, px. When the column has room to spare, the
+   * spare goes first to the gaps whose two nodes are too close for both labels, so fewer labels
+   * have to move off their node; without it the spare is spread evenly.
+   */
+  labelHeight?: number;
+};
+
+export type SankeyColumnsOptions = {
+  /** Height of the node area, px. */
+  height: number;
+  nodeWidth: number;
+  /**
+   * A column with room to spare spreads its gaps up to this (never below a column's own pad);
+   * the rest goes above and below.
+   */
+  maxPad?: number;
+  /** Ordering sweeps (each one right to left, then left to right); 0 keeps the input order. */
+  iterations?: number;
+};
+
+export type SankeyColumnNode = {
+  id: string;
+  column: number;
+  /** The node's group; "" when it has none. */
+  group: string;
+  /** Height in value units: the larger of what enters and what leaves. */
+  value: number;
+  valueIn: number;
+  valueOut: number;
+  x0: number;
+  x1: number;
+  y0: number;
+  y1: number;
+};
+
+export type SankeyLink = {
+  /** Index into the input links. */
+  index: number;
+  source: string;
+  target: string;
+  /** The source's column: the band runs from it to the next one. */
+  column: number;
+  value: number;
+  /** Band width, px. */
+  width: number;
+  /** Top of the band at the source node and at the target node. */
+  sy: number;
+  ty: number;
+};
+
+export type SankeyGroup = { group: string; y0: number; y1: number; count: number };
+
+export type SankeyColumnsLayout = {
+  /** Column by column, each top to bottom. */
+  nodes: SankeyColumnNode[];
+  /** The drawn links, in input order. */
+  links: SankeyLink[];
+  groups: (SankeyGroup & { column: number })[];
+  /** px per unit of value, one scale for every column. */
+  scale: number;
+  /** The largest column total. */
+  total: number;
+};
+
+type Pos = { y0: number; y1: number };
+
+/**
+ * N-column Sankey layout, a small pure version of the d3-sankey idea. Links run from one column
+ * to the next; links with no positive value, or between columns that are not neighbours, are
+ * dropped, and so are nodes left with no value. A node's height is scale × its value (the larger
+ * of its in- and outflow, so a conserving node is exactly as tall as the bands on each side),
+ * with one scale for every column: the column that needs the most room for its gaps sets it and
+ * fills the height, the others spread their gaps (up to `maxPad`) and are centred.
+ *
+ * Order: each sweep sorts every column right to left by the barycentre of its outflows, then
+ * left to right by the barycentre of its inflows, inside groups, which keep their order; pinned
+ * nodes stay at the bottom and fixed columns keep the input order. Bands leave a node in the
+ * order of their targets and enter it in the order of their sources, so no two bands cross at a
+ * node.
+ */
+export function layoutSankeyColumns(
+  columns: readonly SankeyColumn[],
+  linksIn: readonly SankeyLinkIn[],
+  o: SankeyColumnsOptions,
+): SankeyColumnsLayout {
+  const colOf = new Map<string, number>();
+  columns.forEach((c, ci) => c.nodes.forEach((n) => colOf.set(n.id, ci)));
+  const kept = linksIn
+    .map((l, index) => ({ ...l, index }))
+    .filter(
+      (l) =>
+        Number.isFinite(l.value) &&
+        l.value > 0 &&
+        colOf.has(l.source) &&
+        colOf.get(l.target) === colOf.get(l.source)! + 1,
+    );
+  type Kept = (typeof kept)[number];
+  const vin = new Map<string, number>();
+  const vout = new Map<string, number>();
+  const outgoing = new Map<string, Kept[]>();
+  const incoming = new Map<string, Kept[]>();
+  for (const l of kept) {
+    vout.set(l.source, (vout.get(l.source) ?? 0) + l.value);
+    vin.set(l.target, (vin.get(l.target) ?? 0) + l.value);
+    outgoing.set(l.source, [...(outgoing.get(l.source) ?? []), l]);
+    incoming.set(l.target, [...(incoming.get(l.target) ?? []), l]);
+  }
+  const value = new Map<string, number>();
+  for (const id of colOf.keys()) {
+    const v = Math.max(vin.get(id) ?? 0, vout.get(id) ?? 0);
+    if (v > 0) value.set(id, v);
+  }
+  if (value.size === 0) return { nodes: [], links: [], groups: [], scale: 0, total: 0 };
+
+  const groupOf = new Map<string, string>();
+  const cols = columns.map((spec) => {
+    const nodes = spec.nodes.filter((n) => value.has(n.id));
+    for (const n of nodes) groupOf.set(n.id, n.group ?? "");
+    const pinned = (spec.pinned ?? []).filter((id) => nodes.some((n) => n.id === id));
+    const free = nodes.filter((n) => !pinned.includes(n.id));
+    const groupNames = [
+      ...new Set([...(spec.groupOrder ?? []), ...free.map((n) => n.group ?? "")]),
+    ].filter((g) => free.some((n) => (n.group ?? "") === g));
+    return {
+      spec,
+      groupNames,
+      groups: groupNames.map((g) => free.filter((n) => (n.group ?? "") === g).map((n) => n.id)),
+      pinned,
+    };
+  });
+  type Col = (typeof cols)[number];
+  const idsOf = (c: Col) => [...c.groups.flat(), ...c.pinned];
+  const breaksOf = (c: Col) => Math.max(0, c.groups.length - 1);
+
+  let scale = Number.POSITIVE_INFINITY;
+  let total = 0;
+  for (const c of cols) {
+    const ids = idsOf(c);
+    if (ids.length === 0) continue;
+    const sum = ids.reduce((a, id) => a + value.get(id)!, 0);
+    total = Math.max(total, sum);
+    const avail =
+      o.height -
+      (c.spec.reserveTop ?? 0) -
+      (ids.length - 1) * c.spec.pad -
+      breaksOf(c) * (c.spec.groupGap ?? 0);
+    scale = Math.min(scale, avail / sum);
+  }
+  scale = Math.max(0, scale);
+  const maxPad = Math.max(o.maxPad ?? Number.POSITIVE_INFINITY, ...columns.map((c) => c.pad));
+
+  const stack = (c: Col): Map<string, Pos> => {
+    const pos = new Map<string, Pos>();
+    const ids = idsOf(c);
+    const breaks = new Set<number>();
+    let k = 0;
+    c.groups.forEach((g, gi) => {
+      if (gi > 0) breaks.add(k);
+      k += g.length;
+    });
+    const gg = c.spec.groupGap ?? 0;
+    const top = c.spec.reserveTop ?? 0;
+    const avail = o.height - top;
+    const n = ids.length;
+    const pad = c.spec.pad;
+    const hs = ids.map((id) => scale * value.get(id)!);
+    const nodeSum = hs.reduce((a, h) => a + h, 0);
+    let spare = Math.max(0, avail - nodeSum - Math.max(0, n - 1) * pad - breaks.size * gg);
+    // gaps[i] sits above node i (gaps[0] unused).
+    const gaps = ids.map(() => pad);
+    const lh = c.spec.labelHeight ?? 0;
+    if (lh > 0 && spare > 0) {
+      const need = hs.map((h, i) =>
+        i === 0 ? 0 : Math.max(0, lh - (h + hs[i - 1]!) / 2 - pad - (breaks.has(i) ? gg : 0)),
+      );
+      const wanted = need.reduce((a, x) => a + x, 0);
+      const k = wanted > 0 ? Math.min(1, spare / wanted) : 0;
+      need.forEach((x, i) => (gaps[i] = gaps[i]! + x * k));
+      spare -= wanted * k;
+    }
+    const even = n > 1 ? Math.min(spare / (n - 1), Math.max(0, maxPad - pad)) : 0;
+    const used =
+      nodeSum + gaps.slice(1).reduce((a, g) => a + g + even, 0) + breaks.size * gg;
+    let y = top + Math.max(0, (avail - used) / 2);
+    ids.forEach((id, i) => {
+      if (i > 0) y += gaps[i]! + even + (breaks.has(i) ? gg : 0);
+      pos.set(id, { y0: y, y1: y + hs[i]! });
+      y += hs[i]!;
+    });
+    return pos;
+  };
+  const mid = (p: Pos) => (p.y0 + p.y1) / 2;
+  const barycentre = (
+    ls: readonly Kept[] | undefined,
+    at: Map<string, Pos>,
+    end: "source" | "target",
+    self: Pos,
+  ) => {
+    let w = 0;
+    let s = 0;
+    for (const l of ls ?? []) {
+      const p = at.get(l[end]);
+      if (!p) continue;
+      w += l.value;
+      s += l.value * mid(p);
+    }
+    return w > 0 ? s / w : mid(self);
+  };
+  const sortColumn = (ci: number, by: "out" | "in") => {
+    const c = cols[ci]!;
+    if (c.spec.fixed) return;
+    const self = stack(c);
+    const other = stack(cols[by === "out" ? ci + 1 : ci - 1]!);
+    const key = new Map(
+      idsOf(c).map((id) => [
+        id,
+        by === "out"
+          ? barycentre(outgoing.get(id), other, "target", self.get(id)!)
+          : barycentre(incoming.get(id), other, "source", self.get(id)!),
+      ]),
+    );
+    c.groups = c.groups.map((g) => {
+      const before = new Map(g.map((id, i) => [id, i]));
+      return [...g].sort((a, b) => key.get(a)! - key.get(b)! || before.get(a)! - before.get(b)!);
+    });
+  };
+  for (let it = 0; it < (o.iterations ?? 0); it++) {
+    for (let ci = cols.length - 2; ci >= 0; ci--) sortColumn(ci, "out");
+    for (let ci = 1; ci < cols.length; ci++) sortColumn(ci, "in");
+  }
+
+  const pos = cols.map(stack);
+  const at = (id: string) => pos[colOf.get(id)!]!.get(id)!;
+  const placed = new Map<number, { sy: number; ty: number }>();
+  for (const [id, ls] of outgoing) {
+    let y = at(id).y0;
+    const order = [...ls].sort(
+      (a, b) =>
+        mid(at(a.target)) - mid(at(b.target)) ||
+        a.target.localeCompare(b.target) ||
+        a.index - b.index,
+    );
+    for (const l of order) {
+      placed.set(l.index, { sy: y, ty: 0 });
+      y += scale * l.value;
+    }
+  }
+  for (const [id, ls] of incoming) {
+    let y = at(id).y0;
+    const order = [...ls].sort(
+      (a, b) =>
+        mid(at(a.source)) - mid(at(b.source)) ||
+        a.source.localeCompare(b.source) ||
+        a.index - b.index,
+    );
+    for (const l of order) {
+      placed.get(l.index)!.ty = y;
+      y += scale * l.value;
+    }
+  }
+
+  return {
+    nodes: cols.flatMap((c, ci) =>
+      idsOf(c).map((id) => ({
+        id,
+        column: ci,
+        group: groupOf.get(id) ?? "",
+        value: value.get(id)!,
+        valueIn: vin.get(id) ?? 0,
+        valueOut: vout.get(id) ?? 0,
+        x0: c.spec.x,
+        x1: c.spec.x + o.nodeWidth,
+        ...pos[ci]!.get(id)!,
+      })),
+    ),
+    links: kept.map((l) => ({
+      index: l.index,
+      source: l.source,
+      target: l.target,
+      column: colOf.get(l.source)!,
+      value: l.value,
+      width: scale * l.value,
+      ...placed.get(l.index)!,
+    })),
+    groups: cols.flatMap((c, ci) =>
+      c.groups.map((g, gi) => ({
+        column: ci,
+        group: c.groupNames[gi]!,
+        y0: pos[ci]!.get(g[0]!)!.y0,
+        y1: pos[ci]!.get(g[g.length - 1]!)!.y1,
+        count: g.length,
+      })),
+    ),
+    scale,
+    total,
+  };
+}
+
 export type SankeyLayoutOptions = {
   /** Height of the node area, px. */
   height: number;
@@ -423,21 +741,6 @@ export type SankeyNode = {
   y1: number;
 };
 
-export type SankeyLink = {
-  /** Index into the input links. */
-  index: number;
-  source: string;
-  target: string;
-  value: number;
-  /** Band width, px. */
-  width: number;
-  /** Top of the band at the source node and at the target node. */
-  sy: number;
-  ty: number;
-};
-
-export type SankeyGroup = { group: string; y0: number; y1: number; count: number };
-
 export type SankeyLayout = {
   /** Left column top to bottom, then the right column top to bottom. */
   nodes: SankeyNode[];
@@ -449,12 +752,9 @@ export type SankeyLayout = {
   total: number;
 };
 
-type Pos = { y0: number; y1: number };
-
 /**
- * Two-column Sankey layout. Links with no positive value and nodes left with none are dropped.
- * Node heights are scale × value; the column that needs more room for its gaps sets the scale
- * and fills the height, the other spreads its gaps (up to `maxPad`) and is centred.
+ * Two-column Sankey layout (the "Investor → competitor" view): `layoutSankeyColumns` with an
+ * ungrouped left column, pinned at the bottom, and a grouped right column.
  */
 export function layoutSankey(
   leftIn: readonly SankeyNodeIn[],
@@ -462,178 +762,49 @@ export function layoutSankey(
   linksIn: readonly SankeyLinkIn[],
   o: SankeyLayoutOptions,
 ): SankeyLayout {
-  const leftIds = new Set(leftIn.map((n) => n.id));
-  const rightIds = new Set(rightIn.map((n) => n.id));
-  const kept = linksIn
-    .map((l, index) => ({ ...l, index }))
-    .filter(
-      (l) =>
-        Number.isFinite(l.value) && l.value > 0 && leftIds.has(l.source) && rightIds.has(l.target),
-    );
-  const lv = new Map<string, number>();
-  const rv = new Map<string, number>();
-  for (const l of kept) {
-    lv.set(l.source, (lv.get(l.source) ?? 0) + l.value);
-    rv.set(l.target, (rv.get(l.target) ?? 0) + l.value);
-  }
-  const total = kept.reduce((a, l) => a + l.value, 0);
-  if (!(total > 0)) return { nodes: [], links: [], groups: [], scale: 0, total: 0 };
-
-  const pinned = (o.pinnedLeft ?? []).filter((id) => lv.has(id));
-  let free = leftIn.map((n) => n.id).filter((id) => lv.has(id) && !pinned.includes(id));
-  const groupOf = new Map(rightIn.map((n) => [n.id, n.group ?? ""]));
-  const rightKept = rightIn.filter((n) => rv.has(n.id));
-  const groupNames = [
-    ...new Set([...(o.groupOrder ?? []), ...rightKept.map((n) => n.group ?? "")]),
-  ].filter((g) => rightKept.some((n) => (n.group ?? "") === g));
-  let groups = groupNames.map((g) =>
-    rightKept.filter((n) => (n.group ?? "") === g).map((n) => n.id),
+  const L = layoutSankeyColumns(
+    [
+      { x: o.leftX, nodes: leftIn.map((n) => ({ id: n.id })), pad: o.padLeft, pinned: o.pinnedLeft },
+      {
+        x: o.rightX - o.nodeWidth,
+        nodes: rightIn,
+        pad: o.padRight,
+        groupGap: o.groupGap,
+        groupOrder: o.groupOrder,
+      },
+    ],
+    linksIn,
+    { height: o.height, nodeWidth: o.nodeWidth, maxPad: o.maxPad, iterations: o.iterations },
   );
-
-  const nL = free.length + pinned.length;
-  const nR = rightKept.length;
-  const gg = o.groupGap ?? 0;
-  const availL = o.height - Math.max(0, nL - 1) * o.padLeft;
-  const availR = o.height - Math.max(0, nR - 1) * o.padRight - Math.max(0, groups.length - 1) * gg;
-  const scale = Math.max(0, Math.min(availL, availR)) / total;
-  const maxPad = Math.max(o.maxPad ?? Number.POSITIVE_INFINITY, o.padLeft, o.padRight);
-
-  /** Stacks a column; `breaks` holds the indexes that start a new group. */
-  const stack = (ids: string[], values: Map<string, number>, pad: number, breaks: Set<number>) => {
-    const pos = new Map<string, Pos>();
-    const n = ids.length;
-    const nodeSum = ids.reduce((a, id) => a + scale * values.get(id)!, 0);
-    const spare = o.height - nodeSum - Math.max(0, n - 1) * pad - breaks.size * gg;
-    const gap = n > 1 ? Math.min(pad + Math.max(0, spare) / (n - 1), maxPad) : 0;
-    const used = nodeSum + Math.max(0, n - 1) * gap + breaks.size * gg;
-    let y = Math.max(0, (o.height - used) / 2);
-    ids.forEach((id, i) => {
-      if (breaks.has(i)) y += gg;
-      const h = scale * values.get(id)!;
-      pos.set(id, { y0: y, y1: y + h });
-      y += h + gap;
-    });
-    return pos;
-  };
-  const leftPos = () => stack([...free, ...pinned], lv, o.padLeft, new Set());
-  const rightPos = () => {
-    const breaks = new Set<number>();
-    let i = 0;
-    groups.forEach((g, gi) => {
-      if (gi > 0) breaks.add(i);
-      i += g.length;
-    });
-    return stack(groups.flat(), rv, o.padRight, breaks);
-  };
-  const mid = (p: Pos) => (p.y0 + p.y1) / 2;
-
-  const outgoing = new Map<string, typeof kept>();
-  const incoming = new Map<string, typeof kept>();
-  for (const l of kept) {
-    outgoing.set(l.source, [...(outgoing.get(l.source) ?? []), l]);
-    incoming.set(l.target, [...(incoming.get(l.target) ?? []), l]);
-  }
-  const barycentre = (ls: typeof kept, at: Map<string, Pos>, end: "source" | "target") => {
-    let w = 0;
-    let s = 0;
-    for (const l of ls) {
-      w += l.value;
-      s += l.value * mid(at.get(l[end])!);
-    }
-    return w > 0 ? s / w : 0;
-  };
-  const sortBy = (ids: string[], key: (id: string) => number) => {
-    const before = new Map(ids.map((id, i) => [id, i]));
-    return [...ids].sort((a, b) => key(a) - key(b) || before.get(a)! - before.get(b)!);
-  };
-
-  for (let it = 0; it < (o.iterations ?? 0); it++) {
-    const r = rightPos();
-    free = sortBy(free, (id) => barycentre(outgoing.get(id)!, r, "target"));
-    const l = leftPos();
-    groups = groups.map((g) => sortBy(g, (id) => barycentre(incoming.get(id)!, l, "source")));
-  }
-  const lp = leftPos();
-  const rp = rightPos();
-
-  // Bands leave a node in the order of their target and arrive in the order of their source.
-  const placed = new Map<number, { sy: number; ty: number }>();
-  for (const [id, ls] of outgoing) {
-    let y = lp.get(id)!.y0;
-    const order = [...ls].sort(
-      (a, b) =>
-        mid(rp.get(a.target)!) - mid(rp.get(b.target)!) ||
-        a.target.localeCompare(b.target) ||
-        a.index - b.index,
-    );
-    for (const l of order) {
-      placed.set(l.index, { sy: y, ty: 0 });
-      y += scale * l.value;
-    }
-  }
-  for (const [id, ls] of incoming) {
-    let y = rp.get(id)!.y0;
-    const order = [...ls].sort(
-      (a, b) =>
-        mid(lp.get(a.source)!) - mid(lp.get(b.source)!) ||
-        a.source.localeCompare(b.source) ||
-        a.index - b.index,
-    );
-    for (const l of order) {
-      placed.get(l.index)!.ty = y;
-      y += scale * l.value;
-    }
-  }
-
-  const leftX1 = o.leftX + o.nodeWidth;
-  const rightX0 = o.rightX - o.nodeWidth;
-  const nodes: SankeyNode[] = [
-    ...[...free, ...pinned].map((id) => ({
-      id,
-      side: "left" as const,
-      group: null,
-      value: lv.get(id)!,
-      x0: o.leftX,
-      x1: leftX1,
-      ...lp.get(id)!,
-    })),
-    ...groups.flat().map((id) => ({
-      id,
-      side: "right" as const,
-      group: groupOf.get(id) ?? null,
-      value: rv.get(id)!,
-      x0: rightX0,
-      x1: o.rightX,
-      ...rp.get(id)!,
-    })),
-  ];
   return {
-    nodes,
-    links: kept.map((l) => ({
-      index: l.index,
-      source: l.source,
-      target: l.target,
-      value: l.value,
-      width: scale * l.value,
-      ...placed.get(l.index)!,
-    })),
-    groups: groups.map((g, i) => ({
-      group: groupNames[i]!,
-      y0: rp.get(g[0]!)!.y0,
-      y1: rp.get(g[g.length - 1]!)!.y1,
-      count: g.length,
-    })),
-    scale,
-    total,
+    nodes: L.nodes.map(({ id, column, group, value, x0, x1, y0, y1 }) =>
+      column === 0
+        ? { id, side: "left" as const, group: null, value, x0, x1, y0, y1 }
+        : { id, side: "right" as const, group, value, x0, x1: o.rightX, y0, y1 },
+    ),
+    links: L.links,
+    groups: L.groups
+      .filter((g) => g.column === 1)
+      .map((g) => ({ group: g.group, y0: g.y0, y1: g.y1, count: g.count })),
+    scale: L.scale,
+    total: L.links.reduce((a, l) => a + l.value, 0),
   };
 }
 
-/** Pairs of bands that cross between the columns (judged at their centre lines). */
+/**
+ * Pairs of bands that cross between the same two columns (judged at their centre lines). Bands
+ * between different columns never meet.
+ */
 export function countCrossings(layout: Pick<SankeyLayout, "links">): number {
-  const c = layout.links.map((l) => ({ s: l.sy + l.width / 2, t: l.ty + l.width / 2 }));
+  const c = layout.links.map((l) => ({
+    col: l.column,
+    s: l.sy + l.width / 2,
+    t: l.ty + l.width / 2,
+  }));
   let n = 0;
   for (let i = 0; i < c.length; i++) {
     for (let j = i + 1; j < c.length; j++) {
+      if (c[i]!.col !== c[j]!.col) continue;
       if ((c[i]!.s - c[j]!.s) * (c[i]!.t - c[j]!.t) < 0) n += 1;
     }
   }
@@ -679,6 +850,59 @@ export function placeLabels(
     if (kept.some((k) => a < k.b + gap && b > k.a - gap)) continue;
     kept.push({ a, b });
     out.add(it.id);
+  }
+  return out;
+}
+
+/**
+ * Labels of one column placed without overlaps, as close to their marks as the room allows (the
+ * classic one-dimensional label dodge). Each label is a box `height` px tall that wants to be
+ * centred on `y`; boxes keep their top-to-bottom order, stay inside [top, bottom] and clear each
+ * other by `gap` px. Runs that would overlap are merged and centred on the mean of their wishes,
+ * the least-squares position, then kept inside the bounds. When the boxes cannot all fit, the
+ * lowest-priority labels are left out (the chart shows them on hover). Returns each placed
+ * label's centre.
+ */
+export function dodgeLabels(
+  items: readonly LabelCandidate[],
+  top: number,
+  bottom: number,
+  gap = 2,
+): Map<string, number> {
+  const pool = [...items].sort((a, b) => a.y - b.y || a.id.localeCompare(b.id));
+  const need = () => pool.reduce((a, x) => a + x.height, 0) + Math.max(0, pool.length - 1) * gap;
+  while (pool.length > 0 && need() > bottom - top) {
+    let k = 0;
+    for (let i = 1; i < pool.length; i++) if (pool[i]!.priority <= pool[k]!.priority) k = i;
+    pool.splice(k, 1);
+  }
+  type Block = { items: LabelCandidate[]; h: number; want: number; n: number; top: number };
+  const settle = (b: Omit<Block, "top">): Block => ({
+    ...b,
+    top: Math.min(Math.max(b.want / b.n, top), bottom - b.h),
+  });
+  const blocks: Block[] = [];
+  for (const it of pool) {
+    let b = settle({ items: [it], h: it.height, want: it.y - it.height / 2, n: 1 });
+    for (let p = blocks.at(-1); p && p.top + p.h + gap > b.top + 1e-9; p = blocks.at(-1)) {
+      blocks.pop();
+      // Merged, each of b's labels sits p.h + gap lower in the block than it did in b.
+      b = settle({
+        items: [...p.items, ...b.items],
+        h: p.h + gap + b.h,
+        want: p.want + b.want - b.n * (p.h + gap),
+        n: p.n + b.n,
+      });
+    }
+    blocks.push(b);
+  }
+  const out = new Map<string, number>();
+  for (const b of blocks) {
+    let y = b.top;
+    for (const it of b.items) {
+      out.set(it.id, y + it.height / 2);
+      y += it.height + gap;
+    }
   }
   return out;
 }
