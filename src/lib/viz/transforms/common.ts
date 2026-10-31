@@ -33,14 +33,22 @@ type Provenanced = { sources: readonly Source[]; confidence: Confidence };
 
 /** Most-cited source domains across records (each record counts a domain once), most common first. */
 export function topDomains(items: readonly Provenanced[], n: number): string[] {
-  const counts = new Map<string, number>();
+  // Ranked by how many records cite the domain, then by how many pages; with one record
+  // the most-cited domain wins instead of the alphabetically first.
+  const counts = new Map<string, { records: number; pages: number }>();
   for (const it of items) {
-    for (const d of new Set(it.sources.map((s) => domainOf(s.url)))) {
-      counts.set(d, (counts.get(d) ?? 0) + 1);
+    const domains = it.sources.map((s) => domainOf(s.url));
+    for (const d of new Set(domains)) {
+      const c = counts.get(d) ?? { records: 0, pages: 0 };
+      c.records += 1;
+      c.pages += domains.filter((x) => x === d).length;
+      counts.set(d, c);
     }
   }
   return [...counts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .sort(
+      (a, b) => b[1].records - a[1].records || b[1].pages - a[1].pages || a[0].localeCompare(b[0]),
+    )
     .slice(0, n)
     .map(([d]) => d);
 }

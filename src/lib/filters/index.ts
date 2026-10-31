@@ -174,7 +174,7 @@ const STAGE_SHORT: Record<InvestorStage, string> = {
 };
 
 /** "Seed–A" for a contiguous run of stages, otherwise a count. */
-function summarizeStages(stages: readonly InvestorStage[]): string {
+export function summarizeStages(stages: readonly InvestorStage[]): string {
   if (stages.length === 1) return INVESTOR_STAGE_LABELS[stages[0]!];
   const idx = stages.map((s) => INVESTOR_STAGES.indexOf(s)).sort((a, b) => a - b);
   const contiguous = idx.every((v, i) => i === 0 || v === idx[i - 1]! + 1);

@@ -8,6 +8,6 @@ export async function Directory() {
     getFunds(),
     getFitFeatures(),
   ]);
-  const rows = toDirectoryRows(investors, funds, fits).sort((a, b) => a.name.localeCompare(b.name));
+  const rows = toDirectoryRows(investors, funds, fits);
   return <DirectoryTable rows={rows} />;
 }

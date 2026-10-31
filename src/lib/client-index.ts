@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { FilterableInvestor } from "@/lib/filters";
 import type { EntityHeader, PaletteEntry } from "@/lib/data/entities";
+import type { InvestorProfile } from "@/lib/data/profile";
 
 /** Fetch once per page load and share the promise. A failed fetch is retried on next use. */
 function memoJson<T>(url: string): () => Promise<T> {
@@ -39,7 +40,22 @@ export function loadEntity(id: string): Promise<EntityHeader> {
   return p;
 }
 
-export type Loaded<T> = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; data: T };
+const profileCache = new Map<string, Promise<InvestorProfile>>();
+export function loadProfile(id: string): Promise<InvestorProfile> {
+  let p = profileCache.get(id);
+  if (!p) {
+    p = fetch(`/api/entity/${encodeURIComponent(id)}/profile`).then((r) => {
+      if (!r.ok) throw new Error(r.status === 404 ? "not-found" : `profile ${r.status}`);
+      return r.json() as Promise<InvestorProfile>;
+    });
+    p.catch(() => profileCache.delete(id));
+    profileCache.set(id, p);
+  }
+  return p;
+}
+
+export type Loaded<T> =
+  { status: "loading" } | { status: "error"; message: string } | { status: "ready"; data: T };
 
 /** Runs a loader whenever `key` changes. State is tagged with its key, so a stale result is never shown. */
 export function useLoaded<T>(key: string | null, load: () => Promise<T>): Loaded<T> {

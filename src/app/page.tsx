@@ -16,6 +16,7 @@ import {
   getInvestors,
   getRounds,
 } from "@/lib/data";
+import { SORT_PARAM, type SortKey } from "@/lib/directory/sort";
 import { toFilterable } from "@/lib/data/directory";
 import { applyFilters } from "@/lib/filters";
 import { parseFilters, serializeFilters } from "@/lib/filters/url";
@@ -100,8 +101,10 @@ async function Overview({ searchParams }: { searchParams: SearchParams }) {
   const fit = topByFit(shownInvestors, fits, 10);
   const deals = recentDeals(rounds, companies, competitors);
 
-  const directory = (override: Partial<typeof filters> = {}) => {
-    const q = serializeFilters({ ...filters, ...override });
+  const directory = (override: Partial<typeof filters> = {}, sort?: SortKey) => {
+    const q = [serializeFilters({ ...filters, ...override }), sort ? `${SORT_PARAM}=${sort}` : ""]
+      .filter(Boolean)
+      .join("&");
     return `/investors/directory${q ? `?${q}` : ""}`;
   };
 
@@ -151,7 +154,7 @@ async function Overview({ searchParams }: { searchParams: SearchParams }) {
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <FundsByYearTile data={byYear} href={directory()} />
         <FreshCapitalTile data={capital} href={directory({ freshness: ["fresh"], region: [] })} />
-        <TopFitTile data={fit} href={directory()} />
+        <TopFitTile data={fit} href={directory({}, "fit-desc")} />
         <RecentDealsTile data={deals} href="/competitors" />
       </div>
     </div>

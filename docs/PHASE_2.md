@@ -114,7 +114,7 @@ Common layout: inputs panel left (sliders + number fields kept in sync, ⓘ hint
   - Challenges: "Guess the post-money ownership" style prompts generated from the finance engine; answer within ±1 point to score; streak counter in `localStorage`.
   - Shareable scenario via URL.
 
-### S5 — Investors: Directory + Inspector profile ☐
+### S5 — Investors: Directory + Inspector profile ☑
 - TanStack table, virtualised (`@tanstack/react-virtual`), sticky header, column chooser, density toggle, CSV export of the current view.
 - Default columns: name, type, region, stages, check range, latest fund (size, year), freshness chip, tier, fit score (mini bar), sources count.
 - Inspector profile: header (name, type, HQ, website), fit score breakdown (horizontal stacked bar + flags), thesis (paraphrased), sector-weight bars, funds timeline, partners, portfolio list (sortable), co-investors (top 10), competitor exposure, sources list with confidence.

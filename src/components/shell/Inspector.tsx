@@ -14,6 +14,7 @@ import { DESKTOP_QUERY, useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { loadEntity, useLoaded } from "@/lib/client-index";
 import type { EntityHeader } from "@/lib/data/entities";
 import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
+import { InvestorProfileSections } from "@/components/shell/InvestorProfile";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
@@ -23,7 +24,8 @@ const KEY_STEP = 16;
 
 /**
  * Right drawer (420px, 360 to 640) on desktop, bottom sheet below 1024px.
- * S1 shows the header facts only; S5 builds the full profile inside `InspectorBody`.
+ * Every record shows header facts and sources; investors add the full profile (S5), companies
+ * and competitors list who backed them (S8 extends competitors).
  */
 export function Inspector() {
   const inspector = useInspector();
@@ -53,7 +55,7 @@ export function Inspector() {
           side="bottom"
           showCloseButton={false}
           aria-describedby={undefined}
-          className="data-[side=bottom]:h-[75dvh] gap-0 rounded-t-xl p-0"
+          className="gap-0 rounded-t-xl p-0 data-[side=bottom]:h-[75dvh]"
         >
           <SheetTitle className="sr-only">Inspector</SheetTitle>
           <SheetDescription className="sr-only">Details for the selected record</SheetDescription>
@@ -237,6 +239,8 @@ function EntityHeaderView({
         ))}
       </dl>
 
+      {entity.kind === "investor" && <InvestorProfileSections id={entity.id} onOpen={onOpen} />}
+
       {entity.backers && (
         <InspectorSection title="Backed by" meta={String(entity.backers.total)}>
           {entity.backers.list.length === 0 ? (
@@ -282,7 +286,7 @@ function EntityHeaderView({
               ) : (
                 <SourceBadge domain={g.domain} confidence={entity.confidence} />
               )}
-              <span className="num shrink-0 text-xs text-ink-2">
+              <span className="shrink-0 num text-xs text-ink-2">
                 {g.count > 1 && <span className="mr-2">{g.count} pages</span>}
                 {g.latest}
               </span>

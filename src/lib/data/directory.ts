@@ -23,6 +23,8 @@ export function toFilterable(inv: Investor): FilterableInvestor {
 
 export type DirectoryRow = FilterableInvestor & {
   name: string;
+  checkMinUsd: number | null;
+  checkMaxUsd: number | null;
   latestFundSizeUsd: number | null;
   latestFundYear: number | null;
   seedListCount: number;
@@ -70,6 +72,8 @@ export function toDirectoryRows(
     return {
       ...toFilterable(inv),
       name: inv.name,
+      checkMinUsd: inv.check_min_usd,
+      checkMaxUsd: inv.check_max_usd,
       latestFundSizeUsd: latest?.size_usd ?? null,
       latestFundYear: latest?.vintage_year ?? null,
       seedListCount: inv.seed_list_count,

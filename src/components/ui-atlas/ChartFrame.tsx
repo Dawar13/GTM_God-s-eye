@@ -31,6 +31,7 @@ export function ChartFrame({
   action,
   computed,
   height = 280,
+  compact = false,
   children,
   className,
 }: {
@@ -52,18 +53,25 @@ export function ChartFrame({
    */
   computed?: string;
   height?: number;
+  /** For narrow hosts such as the Inspector: no panel border or padding, smaller title. */
+  compact?: boolean;
   children: ReactNode;
   className?: string;
 }) {
   const [view, setView] = useState<View>("chart");
+  const Wrapper = compact ? "section" : Panel;
   const showTable = view === "table" && tableAlternative !== undefined && state.status === "ready";
 
   return (
-    <Panel className={cn("flex flex-col gap-3", className)}>
+    <Wrapper className={cn("flex flex-col gap-3", className)}>
       <header className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="text-sm text-ink-2">{subtitle}</p>
+          {compact ? (
+            <h4 className="text-sm font-medium">{title}</h4>
+          ) : (
+            <h3 className="text-lg font-semibold">{title}</h3>
+          )}
+          <p className={cn("text-ink-2", compact ? "text-xs" : "text-sm")}>{subtitle}</p>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-2">
           {action}
@@ -111,6 +119,6 @@ export function ChartFrame({
           </>
         )}
       </footer>
-    </Panel>
+    </Wrapper>
   );
 }

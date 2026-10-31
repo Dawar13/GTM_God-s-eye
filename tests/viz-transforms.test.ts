@@ -2,7 +2,12 @@ import { describe, expect, it } from "vitest";
 import { DEFAULT_FILTER_STATE } from "@/lib/filters";
 import type { FitFeatures } from "@/lib/schema";
 import { commandStats } from "@/lib/viz/transforms/commandStats";
-import { FRESHNESS_CUTOFF, isFreshFund, provenanceOf } from "@/lib/viz/transforms/common";
+import {
+  FRESHNESS_CUTOFF,
+  isFreshFund,
+  provenanceOf,
+  topDomains,
+} from "@/lib/viz/transforms/common";
 import { freshCapitalByRegion } from "@/lib/viz/transforms/freshCapitalByRegion";
 import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
 import { periodOf, recentDeals } from "@/lib/viz/transforms/recentDeals";
@@ -308,5 +313,31 @@ describe("commandStats", () => {
     });
     expect(s.westernShare).toBeNull();
     expect(s.dryPowderUsd).toBeNull();
+  });
+});
+
+describe("topDomains", () => {
+  const at = (url: string) => ({ ...source, url, kind: "secondary" as const });
+
+  it("picks the most-cited domain of a single record, not the alphabetically first", () => {
+    const one = investor({
+      sources: [
+        at("https://www.8vc.com/a"),
+        at("https://luxcapital.com/x"),
+        at("https://luxcapital.com/y"),
+      ],
+    });
+    expect(topDomains([one], 1)).toEqual(["luxcapital.com"]);
+    expect(provenanceOf([one]).sourceDomain).toBe("luxcapital.com +1 more");
+  });
+
+  it("ranks by records first, so one record's many pages do not dominate", () => {
+    const a = investor({
+      id: "inv_a",
+      sources: [at("https://x.com/1"), at("https://x.com/2"), at("https://x.com/3")],
+    });
+    const b = investor({ id: "inv_b", sources: [at("https://y.com/1")] });
+    const c = investor({ id: "inv_c", sources: [at("https://y.com/2")] });
+    expect(topDomains([a, b, c], 2)).toEqual(["y.com", "x.com"]);
   });
 });
