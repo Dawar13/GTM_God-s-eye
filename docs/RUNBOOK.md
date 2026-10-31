@@ -1,6 +1,6 @@
-# Runbook
+# GTM God's Eye runbook
 
-How to run, check, update and deploy Capital Atlas. For what the app is and why it is built this way, read `docs/PROJECT_CONTEXT.md` and `docs/DECISIONS.md`.
+How to run, check, update and deploy GTM God's Eye. For what the app is and why it is built this way, read `docs/PROJECT_CONTEXT.md` and `docs/DECISIONS.md`.
 
 ## Prerequisites
 

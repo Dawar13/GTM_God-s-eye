@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T17:42:10+00:00",
+  "generated_at": "2026-10-31T15:15:33+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -204,6 +204,44 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "A procurement platform pitched as a 'Spend Operating System': specialised AI agents and a chat assistant handle intake, supplier discovery and onboarding, sourcing events, bid evaluation, negotiation, purchasing and invoice processing, with configurable approval workflows and ERP and payment integrations for large enterprises.",
+      "pricing": null
+    },
+    {
+      "id": "co_allude",
+      "name": "Allude",
+      "website": "https://www.allude.cc/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Films factory experts at work and turns the footage into SOPs; an assistant ranks likely root causes of problems.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.allude.cc/",
+          "title": "Allude",
+          "publisher": "Allude",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Expert-video-to-SOP agent and a root-cause ranking assistant for shop-floor staff; deployments cited in semiconductor, food, luxury, automotive and pharma (self-reported).",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Records an expert performing a task and converts it to a structured SOP; an assistant (Sam) ranks probable root causes for operators.",
       "pricing": null
     },
     {
@@ -813,6 +851,60 @@
       "pricing": null
     },
     {
+      "id": "co_converge",
+      "name": "Converge",
+      "website": "https://www.converge.io/",
+      "hq_country": "GB",
+      "founded_year": 2019,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "London construction-tech company selling embedded concrete sensors and software for strength, curing and mix design.",
+      "total_raised_usd": 22573363,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.converge.io/",
+          "title": "Converge",
+          "publisher": "Converge",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2025/05/21/converge-raises-eur20m-to-decarbonise-concrete/",
+          "title": "Converge raises EUR20M to decarbonise concrete",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "Concrete sensors (Signal, Helix, Mesh) and software (ConcreteDNA, Cure, Data Hub, Mix AI, FieldAtlas, precast logistics) for construction; layer enum has no construction value.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Raphael Scheps (CEO and co-founder, per Tech.eu)"
+      ],
+      "named_customers": [
+        "Laing O'Rourke",
+        "Costain",
+        "Vinci",
+        "Skanska",
+        "Balfour Beatty",
+        "Turner Construction"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Wireless concrete sensors with software and AI to monitor strength and temperature in real time and optimise mix design for contractors.",
+      "pricing": null
+    },
+    {
       "id": "co_covalent",
       "name": "Covalent",
       "website": "https://www.covalentnetworks.com",
@@ -1303,6 +1395,51 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Faclon Intelligence Platform: modular industrial IoT and AI software that connects machines over industrial protocols, provides dashboards, reports and alerts (I/O Sense), no-code forecasting models (I/O DeepSense) and a conversational copilot (Bruce AI) for diagnostics and root-cause analysis, applied to energy, maintenance, production and safety in plants.",
+      "pricing": null
+    },
+    {
+      "id": "co_faction",
+      "name": "Faction",
+      "website": "https://www.faction.ai/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "enterprise_saas",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "AI platform for industrial distributors and manufacturers covering quoting, order entry, pricing, procurement, AP/AR and voice agents.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.faction.ai/",
+          "title": "Faction",
+          "publisher": "Faction",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.faction.ai/about",
+          "title": "Faction about",
+          "publisher": "Faction",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Modules for quoting, order entry, pricing, chatbot, product-data cleanup, procurement, AP/AR and voice agents; customers are anonymised distributors and a manufacturer.",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI agents automating quoting, order entry, pricing, procurement and payables for industrial distributors and manufacturers, integrated with ERPs.",
       "pricing": null
     },
     {
@@ -1950,6 +2087,51 @@
       "pricing": null
     },
     {
+      "id": "co_hanomi",
+      "name": "Hanomi",
+      "website": "https://www.hanomi.ai/",
+      "hq_country": "US",
+      "founded_year": 2024,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Generates production-ready 2D technical drawings with GD&T from 3D CAD models.",
+      "total_raised_usd": 3000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.hanomi.ai/",
+          "title": "Hanomi",
+          "publisher": "Hanomi",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://portfolio.joinef.com/companies/hanomi-2",
+          "title": "Hanomi (Entrepreneur First portfolio)",
+          "publisher": "Entrepreneur First",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "CAD-to-drawing automation (ASME Y14.5 and ISO 1101 GD&T).",
+      "size_class": "under_5m",
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Turns 3D CAD parts and assemblies into compliant 2D technical drawings with GD&T, with native CAD output.",
+      "pricing": null
+    },
+    {
       "id": "co_ifs",
       "name": "IFS",
       "website": "https://www.ifs.com",
@@ -2216,6 +2398,92 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Industrial IoT machine-health platform: in-house sensors (IntelliVIBE, IntelliAMP) feed a cloud analytics layer that monitors rotating equipment 24x7, detects anomalies, diagnoses likely faults and suggests corrective action, alongside production-monitoring and energy-analytics modules for heavy-industry plants.",
+      "pricing": null
+    },
+    {
+      "id": "co_interface",
+      "name": "Interface",
+      "website": "https://getinterface.ai/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "AI-native operations platform for energy operators: planning, field operations and compliance around a digital twin.",
+      "total_raised_usd": 3500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://getinterface.ai/",
+          "title": "Interface",
+          "publisher": "Interface",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/interface-3-5-million-seed-funding/",
+          "title": "Interface: $3.5 Million Seed Funding Raised To Build AI Operations Layer For Energy Companies",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Planning, Field Operations and Compliance products for energy operators (safety and compliance) on a connected digital twin.",
+      "size_class": "under_5m",
+      "founders": [
+        "Thomas Lee Young (CEO)",
+        "Aaryan Mehta"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI operations platform for energy operators covering planning, field operations and compliance, built on a connected digital twin.",
+      "pricing": null
+    },
+    {
+      "id": "co_lynceus",
+      "name": "Lynceus",
+      "website": "https://www.lynceus.ai/",
+      "hq_country": "FR",
+      "founded_year": 2020,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Paris AI company for manufacturing productivity: real-time visibility and predictive insights to catch failures early.",
+      "total_raised_usd": 4500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/lynceus",
+          "title": "Lynceus (CB Insights profile)",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "low",
+      "category": "adjacent",
+      "layer_detail": "Manufacturing productivity AI (failure detection, troubleshooting) per CB Insights description only; the product site could not be read.",
+      "size_class": "under_5m",
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Manufacturing productivity AI giving real-time visibility and predictive insights, per a database summary; no first-party page was readable.",
       "pricing": null
     },
     {
@@ -3287,6 +3555,60 @@
       "pricing": "Zero Risk Policy: $0 until the robot does the task at KPIs agreed in writing; no pilot fees and no upfront hardware cost; deployment, 24/7 support and maintenance billed at a single hourly rate (rate not published)."
     },
     {
+      "id": "co_phasio",
+      "name": "Phasio",
+      "website": "https://www.phas.io/",
+      "hq_country": "SG",
+      "founded_year": 2021,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "process_planning",
+      "description_short": "Quoting and production software for contract manufacturers, popular with 3D-printing service bureaus.",
+      "total_raised_usd": 2500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.phas.io/",
+          "title": "Phasio",
+          "publisher": "Phasio",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2023/10/11/phasio",
+          "title": "Phasio",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Instant quoting, order management and production tracking for contract manufacturers.",
+      "size_class": "under_5m",
+      "founders": [
+        "Harry Conor Lucas",
+        "Sudharshan Raman"
+      ],
+      "named_customers": [
+        "Ryse3D",
+        "AZ3D Print",
+        "SGD3D",
+        "Binder3D",
+        "KIT3D"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Quoting, order management and production-tracking software for contract manufacturers, with automated CAD file analysis.",
+      "pricing": null
+    },
+    {
       "id": "co_procol",
       "name": "Procol",
       "website": "https://www.procol.ai",
@@ -3780,6 +4102,60 @@
       "pricing": null
     },
     {
+      "id": "co_samp",
+      "name": "Samp",
+      "website": "https://samp.ai/",
+      "hq_country": "FR",
+      "founded_year": 2019,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Paris startup whose 'Shared Reality' workspace turns 3D scans of industrial sites into AI-built models linked to P&ID and CMMS data.",
+      "total_raised_usd": 6493506,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://samp.ai/",
+          "title": "Samp",
+          "publisher": "Samp",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2024/09/16/samp-closes-eur6m-round-for-ai-generated-industrial-digital-twin-solution/",
+          "title": "Samp closes EUR6M round for AI-generated industrial digital twin solution",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "3D scan to reality model reconciled with P&ID and CMMS data for distributed industrial teams.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Shivani Shah",
+        "Laurent Bourgouin (CEO)"
+      ],
+      "named_customers": [
+        "Teréga",
+        "SUEZ",
+        "Storengy",
+        "Elengy",
+        "TRAPIL"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Web workspace combining AI-processed 3D scans with technical documentation and CMMS data for industrial sites.",
+      "pricing": null
+    },
+    {
       "id": "co_sea12",
       "name": "Sea12",
       "website": "https://www.sea12.co/",
@@ -4029,6 +4405,59 @@
       "pricing": null
     },
     {
+      "id": "co_sensmore",
+      "name": "sensmore",
+      "website": "https://www.sensmore.ai/",
+      "hq_country": "DE",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics",
+      "description_short": "Berlin/Potsdam startup building automation and embodied-AI systems for heavy machinery in mining and aggregates.",
+      "total_raised_usd": 7300000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.sensmore.ai/",
+          "title": "sensmore",
+          "publisher": "sensmore",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://tech.eu/2025/05/20/sensmore-raises-7-3m-to-fuel-the-next-generation-of-autonomous-industrial-vehicles/",
+          "title": "sensmore raises $7.3M to fuel the next generation of autonomous industrial vehicles",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "Machine autonomy and site intelligence for mining, aggregates and defense; assist and loader automation.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Maximilian Rolf (CEO)",
+        "Bjarne Johannsen (CTO)"
+      ],
+      "named_customers": [
+        "Heidelberg Materials",
+        "Cemex",
+        "Lhoist",
+        "Paus"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Automation and AI for heavy machinery in raw-material operations: site intelligence, machine assist, live mapping, loader automation.",
+      "pricing": null
+    },
+    {
       "id": "co_sima-ai",
       "name": "SiMa.ai",
       "website": "https://sima.ai",
@@ -4173,6 +4602,59 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Sells the Modalix family of machine-learning systems-on-chip and development kits, paired with Palette, a software suite (now with an agentic environment, Palette Neat) that compiles and deploys AI models on the chip. Pitched as low-power on-device inference for robotics, automotive, drones, aerospace, industrial automation and smart vision.",
+      "pricing": null
+    },
+    {
+      "id": "co_sixsense",
+      "name": "SixSense",
+      "website": "https://sixsense.ai/",
+      "hq_country": "SG",
+      "founded_year": 2018,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": "quality_vision",
+      "description_short": "Singapore / San Francisco AI company for semiconductor fabs and OSATs: automated defect classification, root-cause analysis and predictive AI.",
+      "total_raised_usd": 8500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://sixsense.ai/",
+          "title": "SixSense",
+          "publisher": "SixSense",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2025/07/31/female-founded-semiconductor-ai-startup-sixsense-raises-funding/",
+          "title": "Female-founded semiconductor AI startup SixSense raises funding",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "AI-ADC defect classification, lot disposition and root-cause analysis, Predict AI; customers in chip fabs and OSATs.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Akanksha Jagwani (CEO)",
+        "Avni Agrawal (CTO)"
+      ],
+      "named_customers": [
+        "GlobalFoundries",
+        "Wavetek Microelectronics",
+        "Tong Hsing Electronic",
+        "STATS ChipPAC"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Deep-learning defect classification and root-cause tools for semiconductor fabs and OSATs; models deployable in days without code.",
       "pricing": null
     },
     {
@@ -4379,6 +4861,44 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "A unified data engine connects IT, OT and edge data for an industrial AI platform offering asset performance management, plant-wide process optimization, connected-worker tools and natural-language copilots, plus prebuilt agents for factory operations, data investigation, digital twins, warranty claims, oil and gas operations and utilities.",
+      "pricing": null
+    },
+    {
+      "id": "co_syn2core",
+      "name": "Syn2core",
+      "website": "https://syn2core.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Stealth startup building an AI co-pilot for frontline workers in the automotive industry to minimise human errors.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://syn2core.com/",
+          "title": "Syn2core",
+          "publisher": "Syn2core",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Frontline-worker AI co-pilot for automotive; stealth, no detail.",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI co-pilot for automotive frontline workers aimed at reducing human error; stealth, a holding page only.",
       "pricing": null
     },
     {

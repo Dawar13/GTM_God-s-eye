@@ -112,7 +112,7 @@ describe("csv", () => {
 
   it("names the file by date", () => {
     expect(csvFilename(new Date("2026-10-31T12:00:00Z"))).toBe(
-      "capital-atlas-investors-2026-10-31.csv",
+      "gtm-gods-eye-investors-2026-10-31.csv",
     );
   });
 });

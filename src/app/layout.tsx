@@ -7,6 +7,7 @@ import { Inspector } from "@/components/shell/Inspector";
 import { LeftRail } from "@/components/shell/LeftRail";
 import { TopBar } from "@/components/shell/TopBar";
 import { Providers } from "@/components/shell/Providers";
+import { APP_NAME } from "@/lib/nav";
 import { DEFAULT_THEME, THEME_INIT_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
@@ -23,7 +24,7 @@ const plexCondensed = IBM_Plex_Sans_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Capital Atlas", template: "%s · Capital Atlas" },
+  title: { default: APP_NAME, template: `%s · ${APP_NAME}` },
   description: "Internal fundraising console: investors, VC math, competitors and raise strategy.",
   robots: { index: false, follow: false },
 };

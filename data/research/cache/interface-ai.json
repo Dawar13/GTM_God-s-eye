@@ -1,0 +1,85 @@
+{
+  "key": "interface-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain getinterface.ai (Interface, AI operations layer for energy operators) and Pulse 2.0 (seed Nov 2025). Not other companies named Interface (e.g. the carpet maker Interface Inc; a 2023 'Interface' seed on another site is a different firm). User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio, with the note 'close to us'. Category adjacent: the user rates it close, and its planning, field-operations and compliance agents overlap plant_ops, but it serves energy operators, not discrete manufacturing. No fetched page states HQ.",
+  "pages": [
+    {
+      "url": "https://getinterface.ai/",
+      "title": "Interface",
+      "publisher": "Interface",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://pulse2.com/interface-3-5-million-seed-funding/",
+      "title": "Interface: $3.5 Million Seed Funding Raised To Build AI Operations Layer For Energy Companies",
+      "publisher": "Pulse 2.0",
+      "retrieved_at": "2026-10-31",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Interface",
+    "website": "https://getinterface.ai/",
+    "description": "AI-native operations platform for energy operators: planning, field operations and compliance around a digital twin.",
+    "hq_country": null,
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Planning, Field Operations and Compliance products for energy operators (safety and compliance) on a connected digital twin.",
+  "founders": [
+    "Thomas Lee Young (CEO)",
+    "Aaryan Mehta"
+  ],
+  "named_customers": [],
+  "product_summary": "AI operations platform for energy operators covering planning, field operations and compliance, built on a connected digital twin.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Interface",
+        "website": "https://getinterface.ai/",
+        "description": "AI-native operations platform for energy operators: planning, field operations and compliance around a digital twin.",
+        "hq_country": null,
+        "founded_year": null,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "$3.5M seed led by Defy.vc; article dated 2025-11-26 (closing date not given)",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 3500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Defy.vc"
+      ],
+      "participants": [
+        "Precursor Ventures",
+        "Rock Yard Ventures",
+        "Entrepreneurs First",
+        "Transpose Platform"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "Defy.vc led; Precursor Ventures, Rock Yard Ventures, Entrepreneurs First, Transpose Platform and angels participated"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "HQ, founded year, headcount not stated on pages read.",
+    "No customers named (press says multiple Fortune 500 North American energy operators).",
+    "Category is adjacent, not direct, because the evidence shows energy operations rather than factory functions; the user's 'close to us' is recorded here."
+  ]
+}

@@ -32,16 +32,17 @@ import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
 import { bubbleView, toBubbleData, type BubbleData } from "@/lib/viz/transforms/capitalBubbles";
 import { thesisView, toThesisRows, type ThesisRow } from "@/lib/viz/transforms/thesisMap";
 import { topByFit } from "@/lib/viz/transforms/topByFit";
-import {
-  competitorTotals,
-  layerMap,
-  toCompetitorRows,
-} from "@/lib/viz/transforms/competitors";
+import { competitorTotals, layerMap, toCompetitorRows } from "@/lib/viz/transforms/competitors";
 import {
   foundedVsRaised,
   fundingTimeline,
   overlapMatrix,
 } from "@/lib/viz/transforms/competitorCharts";
+import {
+  competitorFlows,
+  competitorSankeyLayout,
+  sankeyHeight,
+} from "@/lib/viz/transforms/competitorSankey";
 import { sortRows } from "@/lib/directory/sort";
 import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
 import { DEFAULT_FIT_WEIGHTS } from "@/lib/fit/score";
@@ -327,7 +328,9 @@ describe("Competitors page: charts match the table (S8)", () => {
     expect(tl.dots.length + tl.undatedRounds).toBe(t.rounds);
     expect(tl.dots.length).toBe(t.datedRounds);
     expect(tl.undatedRounds).toBe(t.undatedRounds);
-    expect(tl.dots.length - tl.unknownAmount).toBe(fromFile.filter((r) => r.date && r.amount_usd !== null).length);
+    expect(tl.dots.length - tl.unknownAmount).toBe(
+      fromFile.filter((r) => r.date && r.amount_usd !== null).length,
+    );
   });
 
   it("total raised: the stored totals equal the sum of the rounds, and the scatter adds up to the table", () => {
@@ -337,7 +340,9 @@ describe("Competitors page: charts match the table (S8)", () => {
     expect(tl.drawnAmountUsd + tl.undatedAmountUsd).toBe(t.totalRaisedUsd ?? 0);
     const sc = foundedVsRaised(rows);
     const notPlotted = rows.filter((r) => !sc.points.some((p) => p.id === r.id));
-    expect(sc.totalRaisedUsd + sum(notPlotted.map((r) => r.totalRaisedUsd))).toBe(t.totalRaisedUsd ?? 0);
+    expect(sc.totalRaisedUsd + sum(notPlotted.map((r) => r.totalRaisedUsd))).toBe(
+      t.totalRaisedUsd ?? 0,
+    );
     expect(sc.points.length + sc.missingFounded + sc.missingRaised).toBe(rows.length);
   });
 
@@ -353,6 +358,43 @@ describe("Competitors page: charts match the table (S8)", () => {
     }
   });
 
+  it("Sankey: money view adds up to the disclosed round amounts, rounds view to the round count", () => {
+    const own = new Set(d.competitors.map((c) => c.id));
+    const fromFile = d.rounds.filter((r) => own.has(r.company_id));
+    const withAmount = fromFile.filter((r) => r.amount_usd !== null);
+    const flows = competitorFlows(d.competitors, d.rounds, d.investors);
+    const frame = { height: sankeyHeight(flows), leftX: 200, rightX: 1000 };
+    const right = (mode: "money" | "rounds") =>
+      competitorSankeyLayout(flows, mode, frame).nodes.filter((n) => n.side === "right");
+    const drawn = (mode: "money" | "rounds") =>
+      new Set(
+        flows.links
+          .filter((l) => (mode === "money" ? l.money !== null : true))
+          .flatMap((l) => l.roundIds)
+          .filter((id) => mode === "rounds" || flows.rounds[id]!.amountUsd !== null),
+      );
+
+    const money = right("money");
+    expect(sum(money.map((n) => n.value))).toBeCloseTo(sum(withAmount.map((r) => r.amount_usd)), 2);
+    expect(drawn("money").size).toBe(withAmount.length);
+    expect(money.length + flows.competitorsWithoutAmount).toBe(rows.length);
+    // A competitor's node is its disclosed round amounts (the tooltip notes a different stored total).
+    for (const n of money) {
+      const disclosed = sum(
+        withAmount.filter((r) => r.company_id === n.id).map((r) => r.amount_usd),
+      );
+      expect(n.value).toBeCloseTo(disclosed, 2);
+    }
+
+    const rounds = right("rounds");
+    expect(sum(rounds.map((n) => n.value))).toBeCloseTo(competitorTotals(rows).rounds, 9);
+    expect(drawn("rounds").size).toBe(fromFile.length);
+    expect(rounds.length + flows.competitorsWithoutRounds).toBe(rows.length);
+    for (const n of rounds)
+      expect(n.value).toBeCloseTo(rows.find((r) => r.id === n.id)!.roundCount, 9);
+    expect(flows.roundsWithoutAmount).toBe(fromFile.length - withAmount.length);
+  });
+
   it("heatmap: every filled cell is a table investor, with at least one round", () => {
     const m = overlapMatrix(overlap, rows, d.investors, thesis, d.rounds);
     expect(m.rows.length + m.hiddenInvestors).toBe(overlap.rows.length);
@@ -361,7 +403,9 @@ describe("Competitors page: charts match the table (S8)", () => {
       expect(r.overlap).toBeGreaterThanOrEqual(m.minCompetitors);
       for (const [cid, cell] of Object.entries(r.cells)) {
         expect(cell.rounds).toBeGreaterThanOrEqual(1);
-        expect(rows.find((x) => x.id === cid)!.investors.some((i) => i.id === r.investorId)).toBe(true);
+        expect(rows.find((x) => x.id === cid)!.investors.some((i) => i.id === r.investorId)).toBe(
+          true,
+        );
       }
     }
   });

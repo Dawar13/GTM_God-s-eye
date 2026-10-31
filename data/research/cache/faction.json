@@ -1,0 +1,57 @@
+{
+  "key": "faction",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain faction.ai (AI platform for the industrial economy; integrations with Epicor, SAP, NetSuite, Infor). Not the London software startup 'Faction' (a Nordic9 profile, different business) and not other Faction firms; do not merge by name. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio, with the notes 'closer too' and 'in fact this one is full-stack'. Category direct: quoting, order entry and procurement agents overlap Utopian Autonomy's procurement and RFQ functions. Layer plant_ops, not full_stack_factory: the site describes software only, no physical production; the user's 'full-stack' is recorded as likely meaning full-stack software.",
+  "pages": [
+    {
+      "url": "https://www.faction.ai/",
+      "title": "Faction",
+      "publisher": "Faction",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.faction.ai/about",
+      "title": "Faction about",
+      "publisher": "Faction",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    }
+  ],
+  "company": {
+    "name": "Faction",
+    "website": "https://www.faction.ai/",
+    "description": "AI platform for industrial distributors and manufacturers covering quoting, order entry, pricing, procurement, AP/AR and voice agents.",
+    "hq_country": null,
+    "founded_year": null,
+    "sector": "enterprise_saas",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Modules for quoting, order entry, pricing, chatbot, product-data cleanup, procurement, AP/AR and voice agents; customers are anonymised distributors and a manufacturer.",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "AI agents automating quoting, order entry, pricing, procurement and payables for industrial distributors and manufacturers, integrated with ERPs.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [],
+  "conflicts": [
+    {
+      "field": "layer",
+      "values": [
+        "full_stack_factory (user: 'this one is full-stack')",
+        "plant_ops (the site describes software only)"
+      ],
+      "chosen": "plant_ops",
+      "reason": "No page read shows physical production; the user's note is kept in identity_check."
+    }
+  ],
+  "open_items": [
+    "Funding: a trade-press search result (Modern Distribution Management; URL slug $3.5M, headline $4M) and PitchBook list a seed and name Entrepreneurs First, 640 Oxford and Transpose Platform Management as investors, but the article returned 403 and no round is recorded because no page was read. Amount (3.5 vs 4M) and date unresolved.",
+    "Founders, HQ, founded year, headcount not found; no dated news on the site."
+  ]
+}

@@ -65,3 +65,27 @@ Candidates beyond PROJECT_CONTEXT §7, found during investor research or by disc
 **Channel.** None of the agent-based competitors profiled delivers through WhatsApp: they work inside the ERP, email, Teams or their own web apps.
 
 **Paraphrased snippets (review finding).** The page-fetch tool can return a summary instead of the page text, and one Tier B file (pillar-vc) recorded a paraphrase as its snippet for a round the page did not support; the round was removed. Prompts from batch 8 on require quoting only text seen verbatim and dropping a fact whose wording can't be quoted. The self-audit re-checks snippets against the live pages.
+
+## EF portfolio additions (2026-10-31)
+
+Eleven companies from the user's list "companies similar to Utopian Autonomy from EF's portfolio" (user-supplied source `ef_portfolio_list_2026_10_31`). Cache files hold the page-backed facts; the user's notes (EF membership, founded years, "most likely dead", "stealth", closeness) sit in each file's `identity_check` because research pages must be http(s) URLs. Research was lean: the company's own site plus one or two press or database pages.
+
+| Company | Category | Layer | Why |
+|---|---|---|---|
+| Faction | direct | plant_ops | Quoting, order entry and procurement agents for distributors and manufacturers; software only, so not full_stack_factory despite the user's "full-stack" |
+| Allude | direct | plant_ops | Expert video to SOPs plus a root-cause assistant for shop-floor staff (user: "seems closer") |
+| Interface | adjacent | plant_ops | Planning, field-ops and compliance AI, but for energy operators (user: "close to us") |
+| Phasio | adjacent | process_planning | Quoting and production software for contract manufacturers |
+| Samp | adjacent | plant_ops | 3D-scan digital twin linked to P&ID and CMMS data |
+| SixSense | adjacent | quality_vision | Defect classification and root cause for chip fabs; not 6sense.com |
+| Syn2core | adjacent | plant_ops | Stealth; frontline AI co-pilot for automotive, holding page only |
+| Lynceus | adjacent | plant_ops | Manufacturing KPI AI; product site unreachable, no first-party page read |
+| Hanomi | remote | design_intent | CAD-to-drawing generation (user: "not at all close") |
+| sensmore | remote | robotics | Autonomy for mining machinery |
+| Converge | remote | plant_ops | Concrete sensors for construction; layer enum has no construction value |
+
+**Status.** Lynceus: lynceus.ai refused connections twice on 2026-10-31; CB Insights shows the last round around 2023 and last news Jan 2024. Not confirmed closed. Converge: user said "most likely dead", but the site is live with news dated 2026-10-23.
+
+**EF as investor.** Sourced by a page read: sensmore (Tech.eu), Interface (Pulse 2.0), Hanomi (EF portfolio page), Phasio (TechCrunch), Lynceus (CB Insights, database). User-supplied only: Converge, Faction (PitchBook and trade press name EF, but those pages were not readable), Allude, Samp, SixSense, Syn2core. A competitor round needs a stage, so EF is recorded only in sourced rounds; no round was invented.
+
+**Not found.** Faction round (MDM article 403; $3.5M vs $4M unresolved); Allude and Syn2core funding; Hanomi seed date; founders for Hanomi, Faction, Allude, Syn2core; headcount for all eleven; HQ for several (see each file's open_items).

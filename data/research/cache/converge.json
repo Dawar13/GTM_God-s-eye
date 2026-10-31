@@ -1,0 +1,92 @@
+{
+  "key": "converge",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain converge.io: London (Mermaid House), concrete sensors and software (ConcreteDNA, Mix AI), customers include Laing O'Rourke and Skanska. Not any other firm named Converge. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio, with the notes 'founded 2019' and 'most likely dead'. The user's 'most likely dead' is contradicted: the site is live with a news item dated 2026-10-23 and 2026 copyright. Category remote: construction concrete monitoring hardware, no overlap with factory-function agents; layer set to plant_ops as the closest enum value (precast logistics, data).",
+  "pages": [
+    {
+      "url": "https://www.converge.io/",
+      "title": "Converge",
+      "publisher": "Converge",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://tech.eu/2025/05/21/converge-raises-eur20m-to-decarbonise-concrete/",
+      "title": "Converge raises EUR20M to decarbonise concrete",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-31",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Converge",
+    "website": "https://www.converge.io/",
+    "description": "London construction-tech company selling embedded concrete sensors and software for strength, curing and mix design.",
+    "hq_country": "GB",
+    "founded_year": 2019,
+    "sector": "hardware_deeptech",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "remote",
+  "layer": "plant_ops",
+  "layer_detail": "Concrete sensors (Signal, Helix, Mesh) and software (ConcreteDNA, Cure, Data Hub, Mix AI, FieldAtlas, precast logistics) for construction; layer enum has no construction value.",
+  "founders": [
+    "Raphael Scheps (CEO and co-founder, per Tech.eu)"
+  ],
+  "named_customers": [
+    "Laing O'Rourke",
+    "Costain",
+    "Vinci",
+    "Skanska",
+    "Balfour Beatty",
+    "Turner Construction"
+  ],
+  "product_summary": "Wireless concrete sensors with software and AI to monitor strength and temperature in real time and optimise mix design for contractors.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Converge",
+        "website": "https://www.converge.io/",
+        "description": "London construction-tech company selling embedded concrete sensors and software for strength, curing and mix design.",
+        "hq_country": "GB",
+        "founded_year": 2019,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "EUR 20M round (21 May 2025) led by ABN AMRO Sustainable Impact Fund; Tech.eu does not state the stage",
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "amount_original": 20000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [
+        "ABN AMRO Sustainable Impact Fund"
+      ],
+      "participants": [
+        "Climate Investment",
+        "Move Energy",
+        "PI Impact",
+        "J-Impact"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "ABN AMRO Sustainable Impact Fund (SIF) led the round"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "STATUS: not dead on current evidence (live site, news dated 2026-10-23). The user's note says 'most likely dead'; flagged as contradicted.",
+    "Earlier rounds not read (search snippets mention a 2022 Series A of about $15M led by OGCI Climate Investments, unverified). Total raised not stated by any page read.",
+    "Entrepreneur First backing: user-supplied only; Tech.eu does not name EF and the EF page could not be opened for this company.",
+    "Founded year 2019 is user-supplied only."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T17:42:10+00:00",
+  "generated_at": "2026-10-31T15:15:33+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -6071,6 +6071,15 @@
     {
       "id": "anom_research_0675",
       "source_id": "research",
+      "row_ref": "faction",
+      "field": "layer",
+      "raw_value": "full_stack_factory (user: 'this one is full-stack') | plant_ops (the site describes software only)",
+      "reason": "sources disagree: No page read shows physical production; the user's note is kept in identity_check.",
+      "resolution": "chose plant_ops"
+    },
+    {
+      "id": "anom_research_0676",
+      "source_id": "research",
       "row_ref": "factostack",
       "field": "company HQ city",
       "raw_value": "Kaveripattinam, Krishnagiri, Tamil Nadu (registered address on factostack.com/terms) | Bengaluru (SoftwareSuggest listing)",
@@ -6078,7 +6087,7 @@
       "resolution": "chose IN (city not recorded in the schema)"
     },
     {
-      "id": "anom_research_0676",
+      "id": "anom_research_0677",
       "source_id": "research",
       "row_ref": "factostack",
       "field": "pricing",
@@ -6087,7 +6096,7 @@
       "resolution": "chose The company site's prices"
     },
     {
-      "id": "anom_research_0677",
+      "id": "anom_research_0678",
       "source_id": "research",
       "row_ref": "flow-engineering",
       "field": "rounds[0].amount_original",
@@ -6096,7 +6105,7 @@
       "resolution": "chose 8500000 USD"
     },
     {
-      "id": "anom_research_0678",
+      "id": "anom_research_0679",
       "source_id": "research",
       "row_ref": "flow-engineering",
       "field": "rounds[1].date",
@@ -6105,7 +6114,7 @@
       "resolution": "chose 2025-10"
     },
     {
-      "id": "anom_research_0679",
+      "id": "anom_research_0680",
       "source_id": "research",
       "row_ref": "flow-engineering",
       "field": "rounds[0].participants",
@@ -6114,7 +6123,7 @@
       "resolution": "chose David Helgason"
     },
     {
-      "id": "anom_research_0680",
+      "id": "anom_research_0681",
       "source_id": "research",
       "row_ref": "flow-engineering",
       "field": "rounds[2].leads",
@@ -6123,7 +6132,7 @@
       "resolution": "chose Valor Equity Partners, Atreides Management"
     },
     {
-      "id": "anom_research_0681",
+      "id": "anom_research_0682",
       "source_id": "research",
       "row_ref": "forgepoint",
       "field": "company.hq city",
@@ -6132,7 +6141,7 @@
       "resolution": "chose US (city not a schema field); New York preferred"
     },
     {
-      "id": "anom_research_0682",
+      "id": "anom_research_0683",
       "source_id": "research",
       "row_ref": "forgepoint",
       "field": "rounds[seed].participants",
@@ -6141,7 +6150,7 @@
       "resolution": "chose No individual angels recorded; affiliations kept in stage_raw"
     },
     {
-      "id": "anom_research_0683",
+      "id": "anom_research_0684",
       "source_id": "research",
       "row_ref": "hadrian",
       "field": "rounds[series_b].date",
@@ -6150,7 +6159,7 @@
       "resolution": "chose 2023-12"
     },
     {
-      "id": "anom_research_0684",
+      "id": "anom_research_0685",
       "source_id": "research",
       "row_ref": "hadrian",
       "field": "rounds[2026-01].participants",
@@ -6159,7 +6168,7 @@
       "resolution": "chose Union of both lists"
     },
     {
-      "id": "anom_research_0685",
+      "id": "anom_research_0686",
       "source_id": "research",
       "row_ref": "hadrian",
       "field": "rounds[series_c].leads",
@@ -6168,7 +6177,7 @@
       "resolution": "chose Founders Fund and Lux Capital"
     },
     {
-      "id": "anom_research_0686",
+      "id": "anom_research_0687",
       "source_id": "research",
       "row_ref": "hadrian",
       "field": "company.hq",
@@ -6177,7 +6186,7 @@
       "resolution": "chose Torrance, California (US)"
     },
     {
-      "id": "anom_research_0687",
+      "id": "anom_research_0688",
       "source_id": "research",
       "row_ref": "hadrian",
       "field": "rounds[seed].stage",
@@ -6186,7 +6195,7 @@
       "resolution": "chose seed"
     },
     {
-      "id": "anom_research_0688",
+      "id": "anom_research_0689",
       "source_id": "research",
       "row_ref": "ifs",
       "field": "company.hq_country",
@@ -6195,7 +6204,7 @@
       "resolution": "chose SE"
     },
     {
-      "id": "anom_research_0689",
+      "id": "anom_research_0690",
       "source_id": "research",
       "row_ref": "ifs",
       "field": "rounds[2015].stake",
@@ -6204,7 +6213,7 @@
       "resolution": "chose Described both in stage_raw"
     },
     {
-      "id": "anom_research_0690",
+      "id": "anom_research_0691",
       "source_id": "research",
       "row_ref": "ifs",
       "field": "headcount_est",
@@ -6213,7 +6222,7 @@
       "resolution": "chose 7000"
     },
     {
-      "id": "anom_research_0691",
+      "id": "anom_research_0692",
       "source_id": "research",
       "row_ref": "industrialmind-ai",
       "field": "company.hq_country",
@@ -6222,7 +6231,7 @@
       "resolution": "chose US"
     },
     {
-      "id": "anom_research_0692",
+      "id": "anom_research_0693",
       "source_id": "research",
       "row_ref": "industrialmind-ai",
       "field": "rounds[pre-seed].date",
@@ -6231,7 +6240,7 @@
       "resolution": "chose 2025-10 (month precision)"
     },
     {
-      "id": "anom_research_0693",
+      "id": "anom_research_0694",
       "source_id": "research",
       "row_ref": "intellithink",
       "field": "rounds[2026-04].date",
@@ -6240,7 +6249,7 @@
       "resolution": "chose 2026-04-16"
     },
     {
-      "id": "anom_research_0694",
+      "id": "anom_research_0695",
       "source_id": "research",
       "row_ref": "machina-labs",
       "field": "rounds[series_b].amount",
@@ -6249,7 +6258,7 @@
       "resolution": "chose $32M"
     },
     {
-      "id": "anom_research_0695",
+      "id": "anom_research_0696",
       "source_id": "research",
       "row_ref": "machina-labs",
       "field": "total raised",
@@ -6258,7 +6267,7 @@
       "resolution": "chose $170M disclosed across recorded rounds; true total higher"
     },
     {
-      "id": "anom_research_0696",
+      "id": "anom_research_0697",
       "source_id": "research",
       "row_ref": "machina-labs",
       "field": "rounds[series_c].investors",
@@ -6267,7 +6276,7 @@
       "resolution": "chose Company release list"
     },
     {
-      "id": "anom_research_0697",
+      "id": "anom_research_0698",
       "source_id": "research",
       "row_ref": "machina-labs",
       "field": "rounds[2025-09].investors",
@@ -6276,7 +6285,7 @@
       "resolution": "chose Woven Capital"
     },
     {
-      "id": "anom_research_0698",
+      "id": "anom_research_0699",
       "source_id": "research",
       "row_ref": "magentic",
       "field": "rounds[seed].date",
@@ -6285,7 +6294,7 @@
       "resolution": "chose 2025-07-22"
     },
     {
-      "id": "anom_research_0699",
+      "id": "anom_research_0700",
       "source_id": "research",
       "row_ref": "magentic",
       "field": "rounds[series_a].date",
@@ -6294,7 +6303,7 @@
       "resolution": "chose 2026-09-17"
     },
     {
-      "id": "anom_research_0700",
+      "id": "anom_research_0701",
       "source_id": "research",
       "row_ref": "maneva",
       "field": "company.hq_country",
@@ -6303,7 +6312,7 @@
       "resolution": "chose US"
     },
     {
-      "id": "anom_research_0701",
+      "id": "anom_research_0702",
       "source_id": "research",
       "row_ref": "maneva",
       "field": "rounds[seed].date",
@@ -6312,7 +6321,7 @@
       "resolution": "chose 2026-03-07"
     },
     {
-      "id": "anom_research_0702",
+      "id": "anom_research_0703",
       "source_id": "research",
       "row_ref": "maneva",
       "field": "rounds[series_a].participants (Gokul Rajaram)",
@@ -6321,7 +6330,7 @@
       "resolution": "chose Not listed in either round"
     },
     {
-      "id": "anom_research_0703",
+      "id": "anom_research_0704",
       "source_id": "research",
       "row_ref": "matta",
       "field": "rounds[seed].leads",
@@ -6330,7 +6339,7 @@
       "resolution": "chose Lakestar as sole lead; Giant Ventures as participant"
     },
     {
-      "id": "anom_research_0704",
+      "id": "anom_research_0705",
       "source_id": "research",
       "row_ref": "matta",
       "field": "rounds[seed].date",
@@ -6339,7 +6348,7 @@
       "resolution": "chose 2025-12-05"
     },
     {
-      "id": "anom_research_0705",
+      "id": "anom_research_0706",
       "source_id": "research",
       "row_ref": "matta",
       "field": "company.founded_year",
@@ -6348,7 +6357,7 @@
       "resolution": "chose 2021"
     },
     {
-      "id": "anom_research_0706",
+      "id": "anom_research_0707",
       "source_id": "research",
       "row_ref": "matta",
       "field": "headcount_est",
@@ -6357,7 +6366,7 @@
       "resolution": "chose 22"
     },
     {
-      "id": "anom_research_0707",
+      "id": "anom_research_0708",
       "source_id": "research",
       "row_ref": "nexxa-ai",
       "field": "total_raised",
@@ -6366,7 +6375,7 @@
       "resolution": "chose Rounds recorded as announced; no total field"
     },
     {
-      "id": "anom_research_0708",
+      "id": "anom_research_0709",
       "source_id": "research",
       "row_ref": "nexxa-ai",
       "field": "rounds[pre_seed].leads",
@@ -6375,7 +6384,7 @@
       "resolution": "chose a16z speedrun"
     },
     {
-      "id": "anom_research_0709",
+      "id": "anom_research_0710",
       "source_id": "research",
       "row_ref": "nexxa-ai",
       "field": "rounds[pre_seed].date",
@@ -6384,7 +6393,7 @@
       "resolution": "chose 2025-07-21"
     },
     {
-      "id": "anom_research_0710",
+      "id": "anom_research_0711",
       "source_id": "research",
       "row_ref": "nexxa-ai",
       "field": "rounds[seed].participants",
@@ -6393,7 +6402,7 @@
       "resolution": "chose a16z speedrun"
     },
     {
-      "id": "anom_research_0711",
+      "id": "anom_research_0712",
       "source_id": "research",
       "row_ref": "noetive",
       "field": "design-partner industries",
@@ -6402,7 +6411,7 @@
       "resolution": "chose manufacturing, logistics and construction, with energy and data centers named as further industries"
     },
     {
-      "id": "anom_research_0712",
+      "id": "anom_research_0713",
       "source_id": "research",
       "row_ref": "nowpurchase",
       "field": "founders",
@@ -6411,7 +6420,7 @@
       "resolution": "chose Naman Shah, Aakash Shah, Ankan Adhikari"
     },
     {
-      "id": "anom_research_0713",
+      "id": "anom_research_0714",
       "source_id": "research",
       "row_ref": "nowpurchase",
       "field": "rounds[seed 2022].leads",
@@ -6420,7 +6429,7 @@
       "resolution": "chose Orios and InfoEdge Ventures as co-leads"
     },
     {
-      "id": "anom_research_0714",
+      "id": "anom_research_0715",
       "source_id": "research",
       "row_ref": "nowpurchase",
       "field": "rounds[2026].date",
@@ -6429,7 +6438,7 @@
       "resolution": "chose 2026-04-01"
     },
     {
-      "id": "anom_research_0715",
+      "id": "anom_research_0716",
       "source_id": "research",
       "row_ref": "nowpurchase",
       "field": "rounds[2024].amount INR equivalent",
@@ -6438,7 +6447,7 @@
       "resolution": "chose USD 6,000,000 as announced"
     },
     {
-      "id": "anom_research_0716",
+      "id": "anom_research_0717",
       "source_id": "research",
       "row_ref": "nowpurchase",
       "field": "headcount_est",
@@ -6447,7 +6456,25 @@
       "resolution": "chose 150"
     },
     {
-      "id": "anom_research_0717",
+      "id": "anom_research_0718",
+      "source_id": "research",
+      "row_ref": "phasio",
+      "field": "company.hq_country",
+      "raw_value": "SG (TechCrunch: Singapore) | US (site address: San Francisco; legal name Phasio Foundries Inc.)",
+      "reason": "sources disagree: 2023 press says Singapore; the current site lists San Francisco. Revisit if a filing settles it.",
+      "resolution": "chose SG"
+    },
+    {
+      "id": "anom_research_0719",
+      "source_id": "research",
+      "row_ref": "phasio",
+      "field": "rounds[seed].amount",
+      "raw_value": "$2.5M (TechCrunch) | $3.8M (search results from Dealroom / Startup Daily, not opened)",
+      "reason": "sources disagree: Only the TechCrunch article was read.",
+      "resolution": "chose $2.5M"
+    },
+    {
+      "id": "anom_research_0720",
       "source_id": "research",
       "row_ref": "procol",
       "field": "rounds[seed 2019].leads",
@@ -6456,7 +6483,7 @@
       "resolution": "chose Lead Blume Ventures; Rainmatter as participant"
     },
     {
-      "id": "anom_research_0718",
+      "id": "anom_research_0721",
       "source_id": "research",
       "row_ref": "procol",
       "field": "rounds[Series A 2022]",
@@ -6465,7 +6492,7 @@
       "resolution": "chose One Series A of ₹51 crore, September 2022"
     },
     {
-      "id": "anom_research_0719",
+      "id": "anom_research_0722",
       "source_id": "research",
       "row_ref": "procol",
       "field": "total raised",
@@ -6474,7 +6501,7 @@
       "resolution": "chose Rounds recorded individually; roughly $11M+ in total"
     },
     {
-      "id": "anom_research_0720",
+      "id": "anom_research_0723",
       "source_id": "research",
       "row_ref": "procol",
       "field": "headcount_est",
@@ -6483,7 +6510,7 @@
       "resolution": "chose 245"
     },
     {
-      "id": "anom_research_0721",
+      "id": "anom_research_0724",
       "source_id": "research",
       "row_ref": "procol",
       "field": "rounds[2020 round].date",
@@ -6492,7 +6519,7 @@
       "resolution": "chose 2020-07"
     },
     {
-      "id": "anom_research_0722",
+      "id": "anom_research_0725",
       "source_id": "research",
       "row_ref": "project-prometheus",
       "field": "rounds[series_b].amount_and_valuation",
@@ -6501,7 +6528,7 @@
       "resolution": "chose $12B at $41B, dated 2026-06-11"
     },
     {
-      "id": "anom_research_0723",
+      "id": "anom_research_0726",
       "source_id": "research",
       "row_ref": "project-prometheus",
       "field": "rounds[2025-11].stage",
@@ -6510,7 +6537,7 @@
       "resolution": "chose undisclosed"
     },
     {
-      "id": "anom_research_0724",
+      "id": "anom_research_0727",
       "source_id": "research",
       "row_ref": "project-prometheus",
       "field": "rounds[2025-11].valuation_post_original",
@@ -6519,7 +6546,7 @@
       "resolution": "chose 30000000000"
     },
     {
-      "id": "anom_research_0725",
+      "id": "anom_research_0728",
       "source_id": "research",
       "row_ref": "project-prometheus",
       "field": "company.name",
@@ -6528,7 +6555,7 @@
       "resolution": "chose Prometheus"
     },
     {
-      "id": "anom_research_0726",
+      "id": "anom_research_0729",
       "source_id": "research",
       "row_ref": "qualitas-technologies",
       "field": "headcount_est",
@@ -6537,7 +6564,7 @@
       "resolution": "chose 30"
     },
     {
-      "id": "anom_research_0727",
+      "id": "anom_research_0730",
       "source_id": "research",
       "row_ref": "salespatriot",
       "field": "headcount_est",
@@ -6546,7 +6573,7 @@
       "resolution": "chose 26"
     },
     {
-      "id": "anom_research_0728",
+      "id": "anom_research_0731",
       "source_id": "research",
       "row_ref": "sea12",
       "field": "rounds[series_a].amount",
@@ -6555,7 +6582,7 @@
       "resolution": "chose $25M"
     },
     {
-      "id": "anom_research_0729",
+      "id": "anom_research_0732",
       "source_id": "research",
       "row_ref": "sea12",
       "field": "rounds[series_a].date",
@@ -6564,7 +6591,7 @@
       "resolution": "chose 2026-03 (month precision)"
     },
     {
-      "id": "anom_research_0730",
+      "id": "anom_research_0733",
       "source_id": "research",
       "row_ref": "seeq",
       "field": "total raised",
@@ -6573,7 +6600,7 @@
       "resolution": "chose $157.2M recorded"
     },
     {
-      "id": "anom_research_0731",
+      "id": "anom_research_0734",
       "source_id": "research",
       "row_ref": "seeq",
       "field": "rounds[series_b].leads",
@@ -6582,7 +6609,7 @@
       "resolution": "chose Altira for the 2018 close, Saudi Aramco Energy Ventures for the 2020 second close"
     },
     {
-      "id": "anom_research_0732",
+      "id": "anom_research_0735",
       "source_id": "research",
       "row_ref": "seeq",
       "field": "rounds[series_b 2nd close].expected size",
@@ -6591,7 +6618,7 @@
       "resolution": "chose Seeq's Sept 2020 figures"
     },
     {
-      "id": "anom_research_0733",
+      "id": "anom_research_0736",
       "source_id": "research",
       "row_ref": "sima-ai",
       "field": "rounds[series_b1].amount_original",
@@ -6600,7 +6627,7 @@
       "resolution": "chose 67000000 (whole B1 round)"
     },
     {
-      "id": "anom_research_0734",
+      "id": "anom_research_0737",
       "source_id": "research",
       "row_ref": "sima-ai",
       "field": "total_raised",
@@ -6609,7 +6636,16 @@
       "resolution": "chose $500M as stated by the company"
     },
     {
-      "id": "anom_research_0735",
+      "id": "anom_research_0738",
+      "source_id": "research",
+      "row_ref": "sixsense",
+      "field": "company.hq_country",
+      "raw_value": "SG (TechCrunch: Singapore) | US (site address 535 Mission St, San Francisco)",
+      "reason": "sources disagree: Press states Singapore-based; the site lists a San Francisco address and a +65 phone.",
+      "resolution": "chose SG"
+    },
+    {
+      "id": "anom_research_0739",
       "source_id": "research",
       "row_ref": "spector-ai",
       "field": "company.founded_year",
@@ -6618,7 +6654,7 @@
       "resolution": "chose 2024"
     },
     {
-      "id": "anom_research_0736",
+      "id": "anom_research_0740",
       "source_id": "research",
       "row_ref": "spector-ai",
       "field": "company.hq_country",
@@ -6627,7 +6663,7 @@
       "resolution": "chose US"
     },
     {
-      "id": "anom_research_0737",
+      "id": "anom_research_0741",
       "source_id": "research",
       "row_ref": "spector-ai",
       "field": "rounds[2026-01] amount",
@@ -6636,7 +6672,7 @@
       "resolution": "chose INR 58 crore"
     },
     {
-      "id": "anom_research_0738",
+      "id": "anom_research_0742",
       "source_id": "research",
       "row_ref": "symphonyai-industrial",
       "field": "rounds[2019-05-15].acquired company",
@@ -6645,7 +6681,7 @@
       "resolution": "chose Industrial Global (company's own page)"
     },
     {
-      "id": "anom_research_0739",
+      "id": "anom_research_0743",
       "source_id": "research",
       "row_ref": "symphonyai-industrial",
       "field": "company.hq_city",
@@ -6654,7 +6690,7 @@
       "resolution": "chose US (city not recorded)"
     },
     {
-      "id": "anom_research_0740",
+      "id": "anom_research_0744",
       "source_id": "research",
       "row_ref": "tandem",
       "field": "rounds[0].amount_original",
@@ -6663,7 +6699,7 @@
       "resolution": "chose 4900000"
     },
     {
-      "id": "anom_research_0741",
+      "id": "anom_research_0745",
       "source_id": "research",
       "row_ref": "tandem",
       "field": "rounds[0].stage",
@@ -6672,7 +6708,7 @@
       "resolution": "chose seed"
     },
     {
-      "id": "anom_research_0742",
+      "id": "anom_research_0746",
       "source_id": "research",
       "row_ref": "thirdai-automation",
       "field": "company.hq_country / HQ city",
@@ -6681,7 +6717,7 @@
       "resolution": "chose US (San Jose address from the company site)"
     },
     {
-      "id": "anom_research_0743",
+      "id": "anom_research_0747",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "headcount_est",
@@ -6690,7 +6726,7 @@
       "resolution": "chose 700"
     },
     {
-      "id": "anom_research_0744",
+      "id": "anom_research_0748",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "founders",
@@ -6699,7 +6735,7 @@
       "resolution": "chose Igor Marinelli, Gabriel Lameirinhas, Leonardo Vieira"
     },
     {
-      "id": "anom_research_0745",
+      "id": "anom_research_0749",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[series_c].date / amount",
@@ -6708,7 +6744,7 @@
       "resolution": "chose 2024-12-05, $120M"
     },
     {
-      "id": "anom_research_0746",
+      "id": "anom_research_0750",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[seed 2021].source",
@@ -6717,7 +6753,7 @@
       "resolution": "chose $3M, 2021-04 (database only, low confidence)"
     },
     {
-      "id": "anom_research_0747",
+      "id": "anom_research_0751",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "total raised",
@@ -6726,7 +6762,7 @@
       "resolution": "chose $313.5M equity across six rounds"
     },
     {
-      "id": "anom_research_0748",
+      "id": "anom_research_0752",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[series_d].participants",
@@ -6735,7 +6771,7 @@
       "resolution": "chose 53 Stations"
     },
     {
-      "id": "anom_research_0749",
+      "id": "anom_research_0753",
       "source_id": "research",
       "row_ref": "ugx-ai",
       "field": "rounds[seed].date",
@@ -6744,7 +6780,7 @@
       "resolution": "chose 2025-09"
     },
     {
-      "id": "anom_research_0750",
+      "id": "anom_research_0754",
       "source_id": "research",
       "row_ref": "uptool",
       "field": "founders",
@@ -6753,7 +6789,7 @@
       "resolution": "chose All three"
     },
     {
-      "id": "anom_research_0751",
+      "id": "anom_research_0755",
       "source_id": "research",
       "row_ref": "uptool",
       "field": "rounds[seed].date",
@@ -6762,7 +6798,7 @@
       "resolution": "chose 2026-02-04"
     },
     {
-      "id": "anom_research_0752",
+      "id": "anom_research_0756",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "rounds[seed + series_a].amount",
@@ -6771,7 +6807,7 @@
       "resolution": "chose Series A $36M; seed amount null"
     },
     {
-      "id": "anom_research_0753",
+      "id": "anom_research_0757",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "rounds[seed, series_a].date",
@@ -6780,7 +6816,7 @@
       "resolution": "chose 2025-12-02"
     },
     {
-      "id": "anom_research_0754",
+      "id": "anom_research_0758",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "founders",
@@ -6789,7 +6825,7 @@
       "resolution": "chose All three listed"
     },
     {
-      "id": "anom_research_0755",
+      "id": "anom_research_0759",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "round.amount",
@@ -6798,7 +6834,7 @@
       "resolution": "kept first; marked contested"
     },
     {
-      "id": "anom_research_0756",
+      "id": "anom_research_0760",
       "source_id": "research",
       "row_ref": "workroom-automation",
       "field": "rounds[seed].date",

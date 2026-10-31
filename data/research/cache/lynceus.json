@@ -1,0 +1,72 @@
+{
+  "key": "lynceus",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain lynceus.ai and the CB Insights profile (Paris, founded 2020, manufacturing productivity AI). Not any other 'Lynceus'. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio, with the notes 'founded 2020' and 'most likely dead'. The site lynceus.ai (and www) refused connections (ECONNREFUSED) on 2026-10-31 from the research machine; that is not proof the company is closed. CB Insights lists status 'Alive' with latest news Jan 30, 2024. Category adjacent: plant-floor AI for manufacturing KPIs overlaps plant_ops, but no procurement / RFQ / WhatsApp features seen.",
+  "pages": [
+    {
+      "url": "https://www.cbinsights.com/company/lynceus",
+      "title": "Lynceus (CB Insights profile)",
+      "publisher": "CB Insights",
+      "retrieved_at": "2026-10-31",
+      "kind": "database"
+    }
+  ],
+  "company": {
+    "name": "Lynceus",
+    "website": "https://www.lynceus.ai/",
+    "description": "Paris AI company for manufacturing productivity: real-time visibility and predictive insights to catch failures early.",
+    "hq_country": "FR",
+    "founded_year": 2020,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "Manufacturing productivity AI (failure detection, troubleshooting) per CB Insights description only; the product site could not be read.",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "Manufacturing productivity AI giving real-time visibility and predictive insights, per a database summary; no first-party page was readable.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Lynceus",
+        "website": "https://www.lynceus.ai/",
+        "description": "Paris AI company for manufacturing productivity: real-time visibility and predictive insights to catch failures early.",
+        "hq_country": "FR",
+        "founded_year": 2020,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "seed",
+      "stage_raw": "CB Insights lists a 'Seed VC - III' round of $4.5M dated '3 yrs ago' (exact date not shown); total raised $6M",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Acequia Capital",
+        "Creative Destruction Lab",
+        "Entrepreneurs First"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "Investors: Acequia Capital, Creative Destruction Lab, Entrepreneurs First"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "STATUS: user says 'most likely dead'. Evidence found: lynceus.ai refused connections on 2026-10-31 (two attempts); CB Insights shows last round about 2023 and last news Jan 2024. Shutdown is NOT confirmed by any source.",
+    "Round date, co-investors beyond three named, and the 13 further investors not named on the page.",
+    "Founders, headcount, customers not found. Entrepreneurs First backing rests on CB Insights (database) plus the user-supplied list."
+  ]
+}

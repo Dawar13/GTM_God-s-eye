@@ -41,12 +41,12 @@ export function buildCsv(
   return `﻿${lines.join("\r\n")}\r\n`;
 }
 
-/** capital-atlas-targets-2026-10-31.csv */
+/** gtm-gods-eye-targets-2026-10-31.csv */
 export function targetsFilename(date: Date = new Date()): string {
-  return `capital-atlas-targets-${date.toISOString().slice(0, 10)}.csv`;
+  return `gtm-gods-eye-targets-${date.toISOString().slice(0, 10)}.csv`;
 }
 
-/** capital-atlas-investors-2026-10-31.csv */
+/** gtm-gods-eye-investors-2026-10-31.csv */
 export function csvFilename(date: Date = new Date()): string {
-  return `capital-atlas-investors-${date.toISOString().slice(0, 10)}.csv`;
+  return `gtm-gods-eye-investors-${date.toISOString().slice(0, 10)}.csv`;
 }

@@ -50,7 +50,7 @@ export function FilterBar() {
       role="group"
       aria-label="Filters"
       hidden={!open}
-      className="shrink-0 border-b border-rule bg-canvas px-3 py-2 lg:px-4 [&:not([hidden])]:flex [&:not([hidden])]:items-center [&:not([hidden])]:gap-2 [&:not([hidden])]:overflow-x-auto"
+      className="scrollbar-subtle shrink-0 border-b border-rule bg-canvas px-3 py-2 lg:px-4 [&:not([hidden])]:flex [&:not([hidden])]:items-center [&:not([hidden])]:gap-2 [&:not([hidden])]:overflow-x-auto"
     >
       {FILTER_DEFS.map((def) => (
         <FilterMenu
@@ -65,8 +65,7 @@ export function FilterBar() {
       <div className="ml-auto flex shrink-0 items-center gap-2 pl-2">
         {index && (
           <span className="text-xs text-ink-2">
-            <span className="num">{formatCount(index.length)}</span> investors in the
-            data
+            <span className="num">{formatCount(index.length)}</span> investors in the data
           </span>
         )}
         {!isDefaultState(filters) && (

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-30T17:42:10+00:00",
+  "generated_at": "2026-10-31T15:15:33+00:00",
   "records": [
     {
       "id": "rnd_1849-bio_2024-12_pre_seed",
@@ -14681,6 +14681,53 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_converge_2025-05_undisclosed",
+      "company_id": "co_converge",
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "EUR 20M round (21 May 2025) led by ABN AMRO Sustainable Impact Fund; Tech.eu does not state the stage",
+      "amount_usd": 22573363,
+      "amount_original": 20000000,
+      "currency_original": "EUR",
+      "fx": {
+        "rate_to_usd": 1.1286681715575622,
+        "rate_period": "2025",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_abn-amro-sustainable-impact-fund"
+      ],
+      "participant_investor_ids": [
+        "inv_climate-capital",
+        "inv_j-impact",
+        "inv_move-energy",
+        "inv_pi-impact"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/05/21/converge-raises-eur20m-to-decarbonise-concrete/",
+          "title": "Converge raises EUR20M to decarbonise concrete",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_copia-automation_2026-06_undisclosed",
       "company_id": "co_copia-automation",
       "date": "2026-06-16",
@@ -26195,6 +26242,56 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_hanomi_undated_seed",
+      "company_id": "co_hanomi",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "$3M seed per Hanomi's own headline; date not stated on pages read",
+      "amount_usd": 3000000,
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_bessemer-venture-partners",
+        "inv_entrepreneur-first",
+        "inv_hof-capital",
+        "inv_tinyvc"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.hanomi.ai/",
+          "title": "Hanomi",
+          "publisher": "Hanomi",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://portfolio.joinef.com/companies/hanomi-2",
+          "title": "Hanomi (Entrepreneur First portfolio)",
+          "publisher": "Entrepreneur First",
+          "retrieved_at": "2026-10-31",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
+    },
+    {
       "id": "rnd_harbinger-motors_2025-11_series_c_plus",
       "company_id": "co_harbinger-motors",
       "date": "2025-11-13",
@@ -29478,6 +29575,49 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_interface_2025-11_seed",
+      "company_id": "co_interface",
+      "date": "2025-11",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "$3.5M seed led by Defy.vc; article dated 2025-11-26 (closing date not given)",
+      "amount_usd": 3500000,
+      "amount_original": 3500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_defy-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_entrepreneur-first",
+        "inv_precursor-ventures",
+        "inv_rock-yard-ventures",
+        "inv_transpose-platform"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://pulse2.com/interface-3-5-million-seed-funding/",
+          "title": "Interface: $3.5 Million Seed Funding Raised To Build AI Operations Layer For Energy Companies",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_interfere_2026-10_seed",
       "company_id": "co_interfere",
       "date": "2026-10-13",
@@ -32738,6 +32878,46 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_lynceus_undated_seed",
+      "company_id": "co_lynceus",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "CB Insights lists a 'Seed VC - III' round of $4.5M dated '3 yrs ago' (exact date not shown); total raised $6M",
+      "amount_usd": 4500000,
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_acequia-capital",
+        "inv_creative-destruction-lab",
+        "inv_entrepreneur-first"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.cbinsights.com/company/lynceus",
+          "title": "Lynceus (CB Insights profile)",
+          "publisher": "CB Insights",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "low"
     },
     {
       "id": "rnd_lynk_2025-12_pre_seed",
@@ -43143,6 +43323,49 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_phasio_2023-10_seed",
+      "company_id": "co_phasio",
+      "date": "2023-10-11",
+      "date_precision": "day",
+      "stage": "seed",
+      "stage_raw": "$2.5M seed led by Airtree Ventures (other sources report $3.8M; not reconciled)",
+      "amount_usd": 2500000,
+      "amount_original": 2500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_airtree"
+      ],
+      "participant_investor_ids": [
+        "inv_500-global",
+        "inv_entrepreneur-first",
+        "inv_gattaca-ventures",
+        "inv_tan-teik-guan"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/10/11/phasio",
+          "title": "Phasio",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_photon_2026-10_seed",
       "company_id": "co_photon",
       "date": "2026-10-01",
@@ -50768,6 +50991,50 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_samp_2024-09_undisclosed",
+      "company_id": "co_samp",
+      "date": "2024-09-16",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "EUR 6M round led by Promus Ventures with Kvanted; stage not stated in the article",
+      "amount_usd": 6493506,
+      "amount_original": 6000000,
+      "currency_original": "EUR",
+      "fx": {
+        "rate_to_usd": 1.0822510822510822,
+        "rate_period": "2024",
+        "source_url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates"
+      },
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_promus-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_kvanted"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tech.eu/2024/09/16/samp-closes-eur6m-round-for-ai-generated-industrial-digital-twin-solution/",
+          "title": "Samp closes EUR6M round for AI-generated industrial digital twin solution",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_sandbar_2026-03_series_a",
       "company_id": "co_sandbar",
       "date": "2026-03-10",
@@ -52319,6 +52586,49 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_sensmore_2025-05_undisclosed",
+      "company_id": "co_sensmore",
+      "date": "2025-05-20",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "$7.3M round led by Point Nine Capital; stage not stated in the article read",
+      "amount_usd": 7300000,
+      "amount_original": 7300000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_point-nine-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_acequia-capital",
+        "inv_entrepreneur-first",
+        "inv_prototype-capital",
+        "inv_tiny-supercomputer"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/05/20/sensmore-raises-7-3m-to-fuel-the-next-generation-of-autonomous-industrial-vehicles/",
+          "title": "sensmore raises $7.3M to fuel the next generation of autonomous industrial vehicles",
+          "publisher": "Tech.eu",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_sequen_2026-03_series_a",
       "company_id": "co_sequen",
       "date": "2026-03-18",
@@ -53365,6 +53675,47 @@
         ]
       },
       "confidence": "high"
+    },
+    {
+      "id": "rnd_sixsense_2025-07_series_a",
+      "company_id": "co_sixsense",
+      "date": "2025-07-31",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "$8.5M Series A led by Peak XV's Surge; total about $12M including this round",
+      "amount_usd": 8500000,
+      "amount_original": 8500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_peak-xv-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_alpha-intelligence-capital",
+        "inv_febe"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/07/31/female-founded-semiconductor-ai-startup-sixsense-raises-funding/",
+          "title": "Female-founded semiconductor AI startup SixSense raises funding",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-10-31",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
     },
     {
       "id": "rnd_sizable-energy_2025-10_undisclosed",

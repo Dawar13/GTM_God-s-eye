@@ -191,6 +191,7 @@ INVESTOR_TYPES = (
     "sovereign",
     "asset_manager",
     "accelerator",
+    "incubator",
     "strategic",
     "individual",
 )

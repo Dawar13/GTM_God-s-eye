@@ -1,0 +1,80 @@
+{
+  "key": "hanomi",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain hanomi.ai and the EF portfolio page (San Francisco, founded 2024, seed). Not any other 'Hanomi'. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio, with the note 'not at all close'. Category remote follows the user's judgment. Note: automated drawings from CAD do touch the engineering-drawings area Utopian Autonomy's agents handle, but Hanomi sells drawing generation to design teams, not factory-function agents.",
+  "pages": [
+    {
+      "url": "https://www.hanomi.ai/",
+      "title": "Hanomi",
+      "publisher": "Hanomi",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://portfolio.joinef.com/companies/hanomi-2",
+      "title": "Hanomi (Entrepreneur First portfolio)",
+      "publisher": "Entrepreneur First",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    }
+  ],
+  "company": {
+    "name": "Hanomi",
+    "website": "https://www.hanomi.ai/",
+    "description": "Generates production-ready 2D technical drawings with GD&T from 3D CAD models.",
+    "hq_country": "US",
+    "founded_year": 2024,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "remote",
+  "layer": "design_intent",
+  "layer_detail": "CAD-to-drawing automation (ASME Y14.5 and ISO 1101 GD&T).",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "Turns 3D CAD parts and assemblies into compliant 2D technical drawings with GD&T, with native CAD output.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Hanomi",
+        "website": "https://www.hanomi.ai/",
+        "description": "Generates production-ready 2D technical drawings with GD&T from 3D CAD models.",
+        "hq_country": "US",
+        "founded_year": 2024,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "seed",
+      "stage_raw": "$3M seed per Hanomi's own headline; date not stated on pages read",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 3000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": [
+        "Bessemer Venture Partners",
+        "HOF Capital",
+        "TinyVC",
+        "Entrepreneur First"
+      ],
+      "pages": [
+        0,
+        1
+      ],
+      "snippet": "Backed by Bessemer Venture Partners, HOF Capital, TinyVC, and Entrepreneur First."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Seed date not found on pages read (a search snippet suggested March 2025; unverified).",
+    "Founders, headcount, customers not found."
+  ]
+}

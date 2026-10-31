@@ -187,7 +187,7 @@ export function DirectoryTable({ areaCoords }: { areaCoords: AreaCoords }) {
   const rows = useLoaded("directory-rows", loadDirectoryRows);
   if (rows.status === "ready") return <DirectoryView rows={rows.data} areaCoords={areaCoords} />;
   return (
-    <div className="flex min-h-0 flex-1 flex-col gap-3">
+    <div className="flex flex-[1_1_0px] flex-col gap-3">
       <div className="flex min-h-[30px] items-center">
         <p className="text-sm text-ink-2" role={rows.status === "error" ? "alert" : undefined}>
           {rows.status === "error"
@@ -197,7 +197,7 @@ export function DirectoryTable({ areaCoords }: { areaCoords: AreaCoords }) {
       </div>
       <div
         aria-busy={rows.status === "loading"}
-        className="h-[calc(100dvh-19.5rem)] min-h-80 rounded-xl border border-rule bg-panel p-3"
+        className="min-h-[420px] flex-[1_1_0px] rounded-xl border border-rule bg-panel p-3"
       >
         {rows.status === "loading" && <Skeleton className="h-full w-full" />}
       </div>
@@ -345,7 +345,7 @@ function DirectoryView({
   ] as const;
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col gap-3">
+    <div className="flex flex-[1_1_0px] flex-col gap-3">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm text-ink-2">
           <span className="num">{formatCount(shown.length)}</span> of{" "}
@@ -419,7 +419,7 @@ function DirectoryView({
 
       <div
         ref={scrollRef}
-        className="relative h-[calc(100dvh-19.5rem)] min-h-80 overflow-auto rounded-xl border border-rule bg-panel"
+        className="relative min-h-[420px] flex-[1_1_0px] overflow-auto rounded-xl border border-rule bg-panel"
       >
         <div
           role="table"

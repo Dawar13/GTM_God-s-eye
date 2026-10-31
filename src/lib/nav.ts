@@ -3,6 +3,9 @@
  * sub-tab navigation; the left rail uses the section list.
  */
 
+/** The app's name: rail header, page titles and the top bar's fallback title. */
+export const APP_NAME = "GTM God's Eye";
+
 export type SubView = {
   slug: string;
   label: string;
@@ -168,7 +171,7 @@ const EXTRA_TITLES: Record<string, string> = { "/lab": "Lab", "/debug": "Debug" 
 export function getPageMeta(pathname: string): { title: string; tabs: readonly NavChild[] } {
   const section = activeSection(pathname);
   if (section) return { title: section.label, tabs: SECTION_CHILDREN[section.key] };
-  return { title: EXTRA_TITLES[pathname] ?? "Capital Atlas", tabs: [] };
+  return { title: EXTRA_TITLES[pathname] ?? APP_NAME, tabs: [] };
 }
 
 export type PaletteAction = {

@@ -1,0 +1,87 @@
+{
+  "key": "samp-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain samp.ai (Samp SAS; Shared Reality digital twin) and Tech.eu (EUR 6M, Sept 2024, founded 2019). Not other Samp or SAMP companies. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio. Category adjacent: industrial digital-twin / documentation reconciliation overlaps plant-ops data work but is not agents for procurement or maintenance.",
+  "pages": [
+    {
+      "url": "https://samp.ai/",
+      "title": "Samp",
+      "publisher": "Samp",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://tech.eu/2024/09/16/samp-closes-eur6m-round-for-ai-generated-industrial-digital-twin-solution/",
+      "title": "Samp closes EUR6M round for AI-generated industrial digital twin solution",
+      "publisher": "Tech.eu",
+      "retrieved_at": "2026-10-31",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Samp",
+    "website": "https://samp.ai/",
+    "description": "Paris startup whose 'Shared Reality' workspace turns 3D scans of industrial sites into AI-built models linked to P&ID and CMMS data.",
+    "hq_country": "FR",
+    "founded_year": 2019,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "3D scan to reality model reconciled with P&ID and CMMS data for distributed industrial teams.",
+  "founders": [
+    "Shivani Shah",
+    "Laurent Bourgouin (CEO)"
+  ],
+  "named_customers": [
+    "Teréga",
+    "SUEZ",
+    "Storengy",
+    "Elengy",
+    "TRAPIL"
+  ],
+  "product_summary": "Web workspace combining AI-processed 3D scans with technical documentation and CMMS data for industrial sites.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Samp",
+        "website": "https://samp.ai/",
+        "description": "Paris startup whose 'Shared Reality' workspace turns 3D scans of industrial sites into AI-built models linked to P&ID and CMMS data.",
+        "hq_country": "FR",
+        "founded_year": 2019,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "undisclosed",
+      "stage_raw": "EUR 6M round led by Promus Ventures with Kvanted; stage not stated in the article",
+      "date": "2024-09-16",
+      "date_precision": "day",
+      "amount_original": 6000000,
+      "currency_original": "EUR",
+      "valuation_post_original": null,
+      "leads": [
+        "Promus Ventures"
+      ],
+      "participants": [
+        "Kvanted"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "Promus Ventures led the round"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Entrepreneur First backing not sourced: Tech.eu does not name EF; user-supplied only. An earlier EUR 4M round (HTGF) appeared in search results but no page was read.",
+    "HQ (site footer only says Samp SAS), headcount not found."
+  ]
+}

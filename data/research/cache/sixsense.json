@@ -1,0 +1,97 @@
+{
+  "key": "sixsense",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain sixsense.ai (semiconductor defect AI, co-founders Akanksha Jagwani and Avni Agrawal) and TechCrunch (Singapore, founded 2018, Series A July 2025). NOT 6sense (6sense.com, B2B revenue-intelligence software) and unrelated to other 'Six Sense' firms; the site never mentions 6sense. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio. Category adjacent: defect classification and root-cause analysis overlap quality / process stability but only for chip fabs and via computer vision.",
+  "pages": [
+    {
+      "url": "https://sixsense.ai/",
+      "title": "SixSense",
+      "publisher": "SixSense",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techcrunch.com/2025/07/31/female-founded-semiconductor-ai-startup-sixsense-raises-funding/",
+      "title": "Female-founded semiconductor AI startup SixSense raises funding",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-31",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "SixSense",
+    "website": "https://sixsense.ai/",
+    "description": "Singapore / San Francisco AI company for semiconductor fabs and OSATs: automated defect classification, root-cause analysis and predictive AI.",
+    "hq_country": "SG",
+    "founded_year": 2018,
+    "sector": "hardware_deeptech",
+    "sector_classified_by": "model",
+    "layer": "quality_vision"
+  },
+  "category": "adjacent",
+  "layer": "quality_vision",
+  "layer_detail": "AI-ADC defect classification, lot disposition and root-cause analysis, Predict AI; customers in chip fabs and OSATs.",
+  "founders": [
+    "Akanksha Jagwani (CEO)",
+    "Avni Agrawal (CTO)"
+  ],
+  "named_customers": [
+    "GlobalFoundries",
+    "Wavetek Microelectronics",
+    "Tong Hsing Electronic",
+    "STATS ChipPAC"
+  ],
+  "product_summary": "Deep-learning defect classification and root-cause tools for semiconductor fabs and OSATs; models deployable in days without code.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "SixSense",
+        "website": "https://sixsense.ai/",
+        "description": "Singapore / San Francisco AI company for semiconductor fabs and OSATs: automated defect classification, root-cause analysis and predictive AI.",
+        "hq_country": "SG",
+        "founded_year": 2018,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "quality_vision"
+      },
+      "stage": "series_a",
+      "stage_raw": "$8.5M Series A led by Peak XV's Surge; total about $12M including this round",
+      "date": "2025-07-31",
+      "date_precision": "day",
+      "amount_original": 8500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Peak XV Partners (Surge)"
+      ],
+      "participants": [
+        "Alpha Intelligence Capital",
+        "FEBE"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "Peak XV's Surge led; Alpha Intelligence Capital and FEBE participated"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": [
+        "SG (TechCrunch: Singapore)",
+        "US (site address 535 Mission St, San Francisco)"
+      ],
+      "chosen": "SG",
+      "reason": "Press states Singapore-based; the site lists a San Francisco address and a +65 phone."
+    }
+  ],
+  "open_items": [
+    "Entrepreneur First backing not sourced: TechCrunch does not name EF; user-supplied only.",
+    "Headcount not found; earlier seed round not read."
+  ]
+}

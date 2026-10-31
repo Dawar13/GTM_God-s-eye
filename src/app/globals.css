@@ -121,6 +121,30 @@
   font-variant-numeric: tabular-nums;
 }
 
+/*
+ * Thin, quiet scrollbars for rows that scroll sideways (filter bar, sub-tabs). Firefox and
+ * Chrome 121+ use the standard properties; Safari and older Chromium use the WebKit ones.
+ * The track stays transparent so no grey bar sits under the row; the thumb darkens on hover.
+ */
+@utility scrollbar-subtle {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--muted) 45%, transparent) transparent;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background-color: color-mix(in srgb, var(--muted) 45%, transparent);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--muted);
+  }
+}
+
 /* Quiet dot grid for canvases that are waiting for content. */
 @utility canvas-grid {
   background-image: radial-gradient(var(--rule) 1px, transparent 1px);

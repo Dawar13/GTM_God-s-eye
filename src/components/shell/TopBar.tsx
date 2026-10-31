@@ -84,7 +84,7 @@ function ScrollingTabs({ active, children }: { active: string; children: ReactNo
       ref={ref}
       onWheel={onWheel}
       style={{ maskImage: mask, WebkitMaskImage: mask }}
-      className="order-last w-full min-w-0 overflow-x-auto py-0.5 [scrollbar-width:thin] lg:order-none lg:w-auto lg:flex-1"
+      className="order-last scrollbar-subtle w-full min-w-0 overflow-x-auto py-0.5 lg:order-none lg:w-auto lg:flex-1"
     >
       {children}
     </div>

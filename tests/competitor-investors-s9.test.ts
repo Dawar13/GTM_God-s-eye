@@ -163,7 +163,8 @@ describe("benchmark strip plot", () => {
   });
 
   it("uses every competitor in the data (sanity)", () => {
-    expect(competitors.length).toBe(44);
+    expect(competitors.length).toBeGreaterThanOrEqual(44);
+    expect(new Set(competitors.map((c) => c.id)).size).toBe(competitors.length);
     expect(rounds.length).toBeGreaterThan(0);
   });
 });

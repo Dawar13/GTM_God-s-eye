@@ -1,0 +1,108 @@
+{
+  "key": "phasio",
+  "entity_type": "competitor",
+  "researched_at": "2026-10-31",
+  "identity_check": "Identified by domain phas.io (Phasio Foundries Inc.; quoting and production software for contract manufacturers) and TechCrunch (Oct 2023 seed). Not other 'Phasio' firms. User-supplied source user_supplied:ef_portfolio_list_2026_10_31 (the user's list of companies similar to Utopian Autonomy from Entrepreneur First's portfolio) puts it in EF's portfolio. EF is also named as a seed participant by TechCrunch, so EF backing is sourced. Category adjacent: automated CAD-file analysis and quoting overlap RFQ handling but target contract manufacturers and print bureaus via a web app, not plant staff via chat.",
+  "pages": [
+    {
+      "url": "https://www.phas.io/",
+      "title": "Phasio",
+      "publisher": "Phasio",
+      "retrieved_at": "2026-10-31",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techcrunch.com/2023/10/11/phasio",
+      "title": "Phasio",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-10-31",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Phasio",
+    "website": "https://www.phas.io/",
+    "description": "Quoting and production software for contract manufacturers, popular with 3D-printing service bureaus.",
+    "hq_country": "SG",
+    "founded_year": 2021,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "process_planning"
+  },
+  "category": "adjacent",
+  "layer": "process_planning",
+  "layer_detail": "Instant quoting, order management and production tracking for contract manufacturers.",
+  "founders": [
+    "Harry Conor Lucas",
+    "Sudharshan Raman"
+  ],
+  "named_customers": [
+    "Ryse3D",
+    "AZ3D Print",
+    "SGD3D",
+    "Binder3D",
+    "KIT3D"
+  ],
+  "product_summary": "Quoting, order management and production-tracking software for contract manufacturers, with automated CAD file analysis.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Phasio",
+        "website": "https://www.phas.io/",
+        "description": "Quoting and production software for contract manufacturers, popular with 3D-printing service bureaus.",
+        "hq_country": "SG",
+        "founded_year": 2021,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "process_planning"
+      },
+      "stage": "seed",
+      "stage_raw": "$2.5M seed led by Airtree Ventures (other sources report $3.8M; not reconciled)",
+      "date": "2023-10-11",
+      "date_precision": "day",
+      "amount_original": 2500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Airtree Ventures"
+      ],
+      "participants": [
+        "500 Global",
+        "Entrepreneur First",
+        "Gattaca Ventures",
+        "Tan Teik Guan"
+      ],
+      "unspecified": [],
+      "pages": [
+        1
+      ],
+      "snippet": "participation from 500 Global, Entrepreneur First, Michael Sorkin's Gattaca Ventures, and Tan Teik Guan"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "company.hq_country",
+      "values": [
+        "SG (TechCrunch: Singapore)",
+        "US (site address: San Francisco; legal name Phasio Foundries Inc.)"
+      ],
+      "chosen": "SG",
+      "reason": "2023 press says Singapore; the current site lists San Francisco. Revisit if a filing settles it."
+    },
+    {
+      "field": "rounds[seed].amount",
+      "values": [
+        "$2.5M (TechCrunch)",
+        "$3.8M (search results from Dealroom / Startup Daily, not opened)"
+      ],
+      "chosen": "$2.5M",
+      "reason": "Only the TechCrunch article was read."
+    }
+  ],
+  "open_items": [
+    "Headcount not found; any 2024-2026 round not found (a search result mentioned none)."
+  ]
+}
