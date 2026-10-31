@@ -42,6 +42,10 @@ import {
   fundingTimeline,
   overlapMatrix,
 } from "@/lib/viz/transforms/competitorCharts";
+import { sortRows } from "@/lib/directory/sort";
+import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
+import { DEFAULT_FIT_WEIGHTS } from "@/lib/fit/score";
+import { rankStrategy, toStrategyRows, type StrategyRow } from "@/lib/viz/transforms/strategy";
 import { toGraphPayload } from "@/lib/viz/transforms/graphPayload";
 import {
   ALL_ROUNDS,
@@ -59,6 +63,7 @@ type Loaded = {
   rounds: Awaited<ReturnType<typeof getRounds>>;
   competitors: Awaited<ReturnType<typeof getCompetitors>>;
   rows: DirectoryRow[];
+  strategyRows: StrategyRow[];
   thesisRows: ThesisRow[];
   coords: AreaCoords;
   bubbles: Awaited<ReturnType<typeof getBubbleLayout>>;
@@ -87,6 +92,7 @@ beforeAll(async () => {
     rounds,
     competitors,
     rows: toDirectoryRows(investors, funds, fits),
+    strategyRows: toStrategyRows(investors, fits),
     thesisRows: toThesisRows(investors, layout, bubbles, fits),
     coords: toAreaCoords(layout, bubbles),
     bubbles,
@@ -163,6 +169,24 @@ describe.each(COMBOS)("chart totals match the Directory: %s", (_name, filters) =
     expect(chart.sparse).toBe(scored.length - ranked.length);
     const best = Math.max(...ranked.map((r) => r.fit ?? 0));
     if (chart.bars.length) expect(chart.bars[0]!.total).toBeCloseTo(best, 9);
+  });
+});
+
+describe.each(COMBOS)("strategy ranking matches the Directory: %s", (_name, filters) => {
+  it("default weights and a $1M raise give the Directory's fit-desc order, sparse last", () => {
+    const directory = sortRows(applyFilters(d.rows, filters), "fit-desc")
+      .filter((r) => r.fit !== null)
+      .map((r) => r.id);
+    const ranked = rankStrategy(
+      applyFilters(d.strategyRows, filters),
+      DEFAULT_FIT_WEIGHTS,
+      EXAMPLE_RAISE_USD,
+    );
+    expect(ranked.map((r) => r.row.id)).toEqual(directory);
+    const dirFit = new Map(applyFilters(d.rows, filters).map((r) => [r.id, r.fit]));
+    for (const r of ranked) expect(r.score.total).toBeCloseTo(dirFit.get(r.row.id) ?? NaN, 9);
+    const firstSparse = ranked.findIndex((r) => !r.reliable);
+    if (firstSparse >= 0) expect(ranked.slice(firstSparse).every((r) => !r.reliable)).toBe(true);
   });
 });
 

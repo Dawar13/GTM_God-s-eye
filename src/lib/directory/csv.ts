@@ -32,6 +32,20 @@ export function toCsv(
   return `﻿${lines.join("\r\n")}\r\n`;
 }
 
+/** A header and rows as CSV text, same rules as `toCsv` (BOM, CRLF, quoting, formula guard). */
+export function buildCsv(
+  header: readonly string[],
+  rows: readonly (string | number | null)[][],
+): string {
+  const lines = [header.map(csvCell).join(","), ...rows.map((r) => r.map(csvCell).join(","))];
+  return `﻿${lines.join("\r\n")}\r\n`;
+}
+
+/** capital-atlas-targets-2026-10-31.csv */
+export function targetsFilename(date: Date = new Date()): string {
+  return `capital-atlas-targets-${date.toISOString().slice(0, 10)}.csv`;
+}
+
 /** capital-atlas-investors-2026-10-31.csv */
 export function csvFilename(date: Date = new Date()): string {
   return `capital-atlas-investors-${date.toISOString().slice(0, 10)}.csv`;

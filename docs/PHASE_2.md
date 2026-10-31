@@ -139,7 +139,7 @@ Sigma.js with precomputed ForceAtlas2 positions from `graph.json`.
 - Table: name, category, layer, founded, HQ, total raised, last round (date, amount, lead), headcount (approx.), revenue (reported only, else "—"), investors.
 - Charts: founded year vs total raised (scatter, log y, size = headcount when known); funding timeline (dot per round, size = amount, row per company); investor × competitor overlap heatmap (sequential palette, rows sorted by cluster); layer map (horizontal bands: design intent → process planning → plant ops → quality vision → autonomy tooling → robotics → full-stack factory) with companies placed in their band.
 
-### S9 — Strategy ☐
+### S9 — Strategy ☑
 - Weight sliders for the six fit features (normalised to 100, live). Ranked list reorders with a 220ms layout animation; each row shows a stacked contribution bar, flags (conflict, sparse data), fresh-fund chip.
 - Tier columns A / B / C with counts; drag to override a tier (stored locally, marked "manual").
 - Our raise vs benchmarks: strip plot of median pre-seed and seed round sizes / valuations with our planned raise as a marker; raise size input here feeds the check-fit feature.

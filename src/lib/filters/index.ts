@@ -96,7 +96,7 @@ export const FILTER_DEFS: readonly FilterDef[] = [
   { key: "freshness", label: "Fund age", options: opts(FRESHNESS, FRESHNESS_LABELS) },
   { key: "maturity", label: "Maturity", options: opts(MATURITY, MATURITY_LABELS) },
   { key: "sector", label: "Sector", options: opts(SECTORS, SECTOR_LABELS) },
-  { key: "tier", label: "Tier", options: opts(RESEARCH_TIERS, TIER_LABELS) },
+  { key: "tier", label: "Research tier", options: opts(RESEARCH_TIERS, TIER_LABELS) },
 ];
 
 /** The values a row has for one filter. Several for stages and sectors; none when unknown. */

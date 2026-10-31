@@ -1,6 +1,7 @@
 export { ChartFrame, type ChartState } from "./ChartFrame";
 export { CalculatorLayout, FormulaLine } from "./CalculatorLayout";
 export { BulletGauge } from "./BulletGauge";
+export { ContributionBar, type ContributionSegment } from "./ContributionBar";
 export { Chip } from "./Chip";
 export { EmptyState } from "./EmptyState";
 export { InspectorSection } from "./InspectorSection";

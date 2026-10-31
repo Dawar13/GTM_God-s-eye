@@ -101,10 +101,10 @@ export const DIRECTORY_COLUMNS: readonly DirectoryColumn[] = [
   },
   {
     id: "tier",
-    header: "Tier",
-    width: 60,
+    header: "Research tier",
+    width: 96,
     defaultVisible: true,
-    csv: [{ header: "Tier", value: (r) => (r.tier ? TIER_LABELS[r.tier] : null) }],
+    csv: [{ header: "Research tier", value: (r) => (r.tier ? TIER_LABELS[r.tier] : null) }],
   },
   {
     id: "fit",

@@ -2,6 +2,7 @@ import type {
   CompetitorCategory,
   CompetitorLayer,
   Freshness,
+  Geography,
   InvestorStage,
   InvestorType,
   LegalTopic,
@@ -115,4 +116,11 @@ export const JURISDICTION_LABELS: Record<LegalNote["jurisdiction"], string> = {
   india: "India",
   us: "United States",
   us_delaware: "Delaware, United States",
+};
+
+export const GEOGRAPHY_LABELS: Record<Geography, string> = {
+  us: "United States",
+  india: "India",
+  europe: "Europe",
+  global: "Global",
 };
