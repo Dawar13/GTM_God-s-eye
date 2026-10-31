@@ -7,6 +7,7 @@ import { beforeAll, describe, expect, it } from "vitest";
 import {
   getBubbleLayout,
   getCompanies,
+  getCompetitorOverlap,
   getCompetitors,
   getFitFeatures,
   getFunds,
@@ -31,6 +32,16 @@ import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
 import { bubbleView, toBubbleData, type BubbleData } from "@/lib/viz/transforms/capitalBubbles";
 import { thesisView, toThesisRows, type ThesisRow } from "@/lib/viz/transforms/thesisMap";
 import { topByFit } from "@/lib/viz/transforms/topByFit";
+import {
+  competitorTotals,
+  layerMap,
+  toCompetitorRows,
+} from "@/lib/viz/transforms/competitors";
+import {
+  foundedVsRaised,
+  fundingTimeline,
+  overlapMatrix,
+} from "@/lib/viz/transforms/competitorCharts";
 import { toGraphPayload } from "@/lib/viz/transforms/graphPayload";
 import {
   ALL_ROUNDS,
@@ -262,5 +273,72 @@ describe("unfiltered stats", () => {
     const a = commandStats(d.investors, d.funds, d.rounds, 0, DEFAULT_FILTER_STATE);
     const b = commandStats(d.investors, d.funds, d.rounds, 0, parseFilters("region=india"));
     expect(a.westernShare).toBe(b.westernShare);
+  });
+});
+
+describe("Competitors page: charts match the table (S8)", () => {
+  let rows: ReturnType<typeof toCompetitorRows>;
+  let overlap: Awaited<ReturnType<typeof getCompetitorOverlap>>;
+  let thesis: Awaited<ReturnType<typeof getThesisLayout>>;
+  beforeAll(async () => {
+    [overlap, thesis] = await Promise.all([getCompetitorOverlap(), getThesisLayout()]);
+    rows = toCompetitorRows(d.competitors, d.rounds, d.investors);
+  });
+
+  const sum = (xs: (number | null)[]) => xs.reduce<number>((a, b) => a + (b ?? 0), 0);
+
+  it("one table row per competitor, in every chart's scope", () => {
+    expect(rows.length).toBe(d.competitors.length);
+    const placed = layerMap(rows);
+    expect(placed.placed + placed.unplaced).toBe(rows.length);
+    expect(placed.bands.reduce((n, b) => n + b.items.length, 0)).toBe(placed.placed);
+  });
+
+  it("round counts: table, timeline and the rounds file agree", () => {
+    const own = new Set(d.competitors.map((c) => c.id));
+    const fromFile = d.rounds.filter((r) => own.has(r.company_id));
+    const t = competitorTotals(rows);
+    expect(t.rounds).toBe(fromFile.length);
+    const tl = fundingTimeline(rows, d.rounds);
+    expect(tl.dots.length + tl.undatedRounds).toBe(t.rounds);
+    expect(tl.dots.length).toBe(t.datedRounds);
+    expect(tl.undatedRounds).toBe(t.undatedRounds);
+    expect(tl.dots.length - tl.unknownAmount).toBe(fromFile.filter((r) => r.date && r.amount_usd !== null).length);
+  });
+
+  it("total raised: the stored totals equal the sum of the rounds, and the scatter adds up to the table", () => {
+    const t = competitorTotals(rows);
+    const tl = fundingTimeline(rows, d.rounds);
+    // Drawn plus undated round amounts is every known round amount of the competitors.
+    expect(tl.drawnAmountUsd + tl.undatedAmountUsd).toBe(t.totalRaisedUsd ?? 0);
+    const sc = foundedVsRaised(rows);
+    const notPlotted = rows.filter((r) => !sc.points.some((p) => p.id === r.id));
+    expect(sc.totalRaisedUsd + sum(notPlotted.map((r) => r.totalRaisedUsd))).toBe(t.totalRaisedUsd ?? 0);
+    expect(sc.points.length + sc.missingFounded + sc.missingRaised).toBe(rows.length);
+  });
+
+  it("investor counts: the table's pairs are the overlap file's pairs", () => {
+    const t = competitorTotals(rows);
+    const pairs = overlap.rows.reduce((n, r) => n + r.competitor_ids.length, 0);
+    expect(t.investorPairs).toBe(pairs);
+    for (const r of overlap.rows) {
+      for (const cid of r.competitor_ids) {
+        const row = rows.find((x) => x.id === cid)!;
+        expect(row.investors.some((i) => i.id === r.investor_id)).toBe(true);
+      }
+    }
+  });
+
+  it("heatmap: every filled cell is a table investor, with at least one round", () => {
+    const m = overlapMatrix(overlap, rows, d.investors, thesis, d.rounds);
+    expect(m.rows.length + m.hiddenInvestors).toBe(overlap.rows.length);
+    expect(m.cells).toBe(m.rows.reduce((n, r) => n + Object.keys(r.cells).length, 0));
+    for (const r of m.rows) {
+      expect(r.overlap).toBeGreaterThanOrEqual(m.minCompetitors);
+      for (const [cid, cell] of Object.entries(r.cells)) {
+        expect(cell.rounds).toBeGreaterThanOrEqual(1);
+        expect(rows.find((x) => x.id === cid)!.investors.some((i) => i.id === r.investorId)).toBe(true);
+      }
+    }
   });
 });

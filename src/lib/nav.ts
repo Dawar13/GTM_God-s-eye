@@ -150,9 +150,12 @@ export const SECTION_CHILDREN: Record<SectionKey, readonly NavChild[]> = {
   strategy: [],
 };
 
-/** The investor filters apply to investor views only; the VC math calculators ignore them. */
+/** Pages the investor filters do nothing on: the VC math calculators and Competitors (S8). */
+const FILTER_FREE = ["/vc-math", "/competitors"];
+
+/** The investor filters apply to investor views only, so the filter bar is hidden elsewhere. */
 export function filtersApply(pathname: string): boolean {
-  return !(pathname === "/vc-math" || pathname.startsWith("/vc-math/"));
+  return !FILTER_FREE.some((p) => pathname === p || pathname.startsWith(`${p}/`));
 }
 
 export function activeSection(pathname: string): (typeof SECTIONS)[number] | undefined {

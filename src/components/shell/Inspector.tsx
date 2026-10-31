@@ -13,6 +13,8 @@ import { useInspector } from "@/lib/hooks/useInspector";
 import { DESKTOP_QUERY, useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { loadEntity, useLoaded } from "@/lib/client-index";
 import type { EntityHeader } from "@/lib/data/entities";
+import { formatCount, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
+import { ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
 import { InvestorProfileSections } from "@/components/shell/InvestorProfile";
 import { Button } from "@/components/ui/button";
@@ -226,6 +228,22 @@ function EntityHeaderView({
         </a>
       ) : null,
     },
+    ...(entity.competitor
+      ? [
+          { label: "Layer", value: entity.competitor.layer },
+          { label: "Category", value: entity.competitor.category },
+          { label: "Founded", value: entity.competitor.foundedYear },
+          { label: "Total raised", value: formatUsd(entity.competitor.totalRaisedUsd) },
+          {
+            label: "Headcount (approx.)",
+            value:
+              entity.competitor.headcount === null
+                ? UNKNOWN
+                : `~${formatCount(entity.competitor.headcount)}`,
+          },
+          { label: "Revenue (reported)", value: formatUsd(entity.competitor.revenueUsd) },
+        ]
+      : []),
   ];
 
   return (
@@ -241,8 +259,50 @@ function EntityHeaderView({
 
       {entity.kind === "investor" && <InvestorProfileSections id={entity.id} onOpen={onOpen} />}
 
+      {entity.competitor && (
+        <InspectorSection title="Rounds" meta={String(entity.competitor.rounds.length)}>
+          {entity.competitor.rounds.length === 0 ? (
+            <p className="text-sm text-ink-2">No rounds recorded for this competitor.</p>
+          ) : (
+            <ol className="flex flex-col gap-2 text-sm">
+              {entity.competitor.rounds.map((r) => (
+                <li key={r.id} className="flex flex-col">
+                  <span className="flex items-baseline justify-between gap-3">
+                    <span>
+                      <span className="num">{formatPartialDate(r.date)}</span> ·{" "}
+                      {ROUND_STAGE_LABELS[r.stage]}
+                    </span>
+                    <span className="num">{formatUsd(r.amountUsd)}</span>
+                  </span>
+                  <span className="text-xs text-ink-2">
+                    Lead:{" "}
+                    {r.leads.length === 0
+                      ? UNKNOWN
+                      : r.leads.map((l, i) => (
+                          <span key={l.id}>
+                            {i > 0 && ", "}
+                            <button
+                              type="button"
+                              onClick={() => onOpen(l.id)}
+                              className="hover:text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
+                            >
+                              {l.name}
+                            </button>
+                          </span>
+                        ))}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          )}
+        </InspectorSection>
+      )}
+
       {entity.backers && (
-        <InspectorSection title="Backed by" meta={String(entity.backers.total)}>
+        <InspectorSection
+          title={entity.competitor ? "Investors" : "Backed by"}
+          meta={String(entity.backers.total)}
+        >
           {entity.backers.list.length === 0 ? (
             <p className="text-sm text-ink-2">No investors recorded for this company.</p>
           ) : (

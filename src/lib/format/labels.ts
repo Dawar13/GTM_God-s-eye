@@ -1,4 +1,5 @@
 import type {
+  CompetitorCategory,
   CompetitorLayer,
   Freshness,
   InvestorStage,
@@ -91,6 +92,12 @@ export const LAYER_LABELS: Record<CompetitorLayer, string> = {
   autonomy_tooling: "Autonomy tooling",
   robotics: "Robotics",
   full_stack_factory: "Full-stack factory",
+};
+
+export const COMPETITOR_CATEGORY_LABELS: Record<CompetitorCategory, string> = {
+  direct: "Direct",
+  adjacent: "Adjacent",
+  remote: "Remote",
 };
 
 export const LEGAL_TOPIC_LABELS: Record<LegalTopic, string> = {

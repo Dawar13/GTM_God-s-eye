@@ -88,3 +88,15 @@ export function formatMultiple(value: number | null | undefined): string {
 export function orUnknown<T>(value: T | null | undefined, format: (v: T) => string = String) {
   return value === null || value === undefined ? UNKNOWN : format(value);
 }
+
+const COUNTRY_NAMES = new Intl.DisplayNames(["en"], { type: "region" });
+
+/** An ISO 3166-1 alpha-2 code as an English country name; unknown or unrecognised codes stay as given. */
+export function formatCountry(code: string | null | undefined): string {
+  if (!code) return UNKNOWN;
+  try {
+    return COUNTRY_NAMES.of(code) ?? code;
+  } catch {
+    return code;
+  }
+}

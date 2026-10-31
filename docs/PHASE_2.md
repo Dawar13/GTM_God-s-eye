@@ -135,7 +135,7 @@ Sigma.js with precomputed ForceAtlas2 positions from `graph.json`.
 - Controls: search-to-focus (camera animates to node), date range slider for rounds, stage filter, label density slider, legend, fullscreen.
 - Performance target: 60fps pan/zoom on the full dataset on a mid-range laptop. Use node reducers, not re-creating the graph on filter change.
 
-### S8 — Competitors ☐
+### S8 — Competitors ☑
 - Table: name, category, layer, founded, HQ, total raised, last round (date, amount, lead), headcount (approx.), revenue (reported only, else "—"), investors.
 - Charts: founded year vs total raised (scatter, log y, size = headcount when known); funding timeline (dot per round, size = amount, row per company); investor × competitor overlap heatmap (sequential palette, rows sorted by cluster); layer map (horizontal bands: design intent → process planning → plant ops → quality vision → autonomy tooling → robotics → full-stack factory) with companies placed in their band.
 

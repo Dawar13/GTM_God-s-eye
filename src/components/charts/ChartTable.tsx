@@ -30,6 +30,8 @@ export function ChartTable<T>({
   rowKey,
   initialSort,
   limit,
+  onRowClick,
+  scrollClassName = "max-h-80",
 }: {
   caption: string;
   columns: readonly TableColumn<T>[];
@@ -37,6 +39,10 @@ export function ChartTable<T>({
   rowKey: (row: T) => string;
   initialSort?: Sort;
   limit?: number;
+  /** Makes each row clickable (mouse); put a button in a cell too so keyboards can do the same. */
+  onRowClick?: (row: T) => void;
+  /** Height cap of the scrolling area. */
+  scrollClassName?: string;
 }) {
   const [sort, setSort] = useState<Sort | null>(initialSort ?? null);
   const [showAll, setShowAll] = useState(false);
@@ -69,7 +75,7 @@ export function ChartTable<T>({
   }
 
   return (
-    <div className="max-h-80 overflow-auto">
+    <div className={cn("overflow-auto", scrollClassName)}>
       <table className="w-full text-sm">
         <caption className="sr-only">{caption}</caption>
         <thead className="sticky top-0 bg-panel-sunk text-left text-ink-2">
@@ -122,7 +128,19 @@ export function ChartTable<T>({
         </thead>
         <tbody>
           {shown.map((r) => (
-            <tr key={rowKey(r)} className="border-t border-rule">
+            <tr
+              key={rowKey(r)}
+              className={cn("border-t border-rule", onRowClick && "cursor-pointer hover:bg-panel-sunk")}
+              onClick={
+                onRowClick
+                  ? (e) => {
+                      // Buttons, links and disclosure widgets inside a row keep their own action.
+                      if ((e.target as HTMLElement).closest("button, a, summary, details")) return;
+                      onRowClick(r);
+                    }
+                  : undefined
+              }
+            >
               {columns.map((c) => (
                 <td
                   key={c.header}

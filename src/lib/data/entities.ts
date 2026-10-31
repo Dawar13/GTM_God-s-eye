@@ -3,7 +3,9 @@
  * whole datasets in page HTML: the palette name index, the filter index and the
  * inspector header. Served by cached route handlers under /api.
  */
-import { INVESTOR_TYPE_LABELS } from "@/lib/format/labels";
+import { formatCountry } from "@/lib/format";
+import { COMPETITOR_CATEGORY_LABELS, INVESTOR_TYPE_LABELS, LAYER_LABELS } from "@/lib/format/labels";
+import { roundInvestorIds, roundList, type RoundListItem } from "@/lib/viz/transforms/competitors";
 import type { FilterableInvestor } from "@/lib/filters";
 import type { Source } from "@/lib/schema";
 import { getCompanies, getCompetitors, getInvestors, getRounds } from "./index";
@@ -37,6 +39,19 @@ export async function getFilterIndex(): Promise<FilterableInvestor[]> {
 
 export type EntitySource = { url: string; domain: string; kind: Source["kind"]; retrievedAt: string };
 
+/** What the Inspector adds for a competitor (S8): the stored facts and its rounds. */
+export type CompetitorDetail = {
+  layer: string;
+  category: string;
+  foundedYear: number | null;
+  totalRaisedUsd: number | null;
+  /** Approximate headcount as stored. */
+  headcount: number | null;
+  /** Reported revenue in USD, as stored. */
+  revenueUsd: number | null;
+  rounds: RoundListItem[];
+};
+
 export type EntityHeader = {
   id: string;
   kind: EntityKind;
@@ -48,18 +63,10 @@ export type EntityHeader = {
   sources: EntitySource[];
   /** Investors in this company's rounds (companies and competitors only). */
   backers?: { total: number; list: { id: string; name: string }[] };
+  competitor?: CompetitorDetail;
 };
 
-const COUNTRY = new Intl.DisplayNames(["en"], { type: "region" });
-
-function country(code: string | null): string | null {
-  if (!code) return null;
-  try {
-    return COUNTRY.of(code) ?? code;
-  } catch {
-    return code;
-  }
-}
+const country = (code: string | null) => (code ? formatCountry(code) : null);
 
 export function sourceDomain(url: string): string {
   if (url.startsWith("user_supplied:")) return "Your list";
@@ -105,7 +112,8 @@ export async function getEntityHeader(id: string): Promise<EntityHeader | null> 
     const backerIds = new Set<string>();
     for (const r of rounds) {
       if (r.company_id !== id) continue;
-      for (const b of [...r.lead_investor_ids, ...r.participant_investor_ids]) backerIds.add(b);
+      // Every role counts, as in the Competitors table and the overlap matrix.
+      for (const b of roundInvestorIds(r)) backerIds.add(b);
     }
     const names = new Map(investors.map((i) => [i.id, i.name]));
     const list = [...backerIds]
@@ -121,7 +129,18 @@ export async function getEntityHeader(id: string): Promise<EntityHeader | null> 
       website: company.website,
       confidence: company.confidence,
       sources: toSources(company.sources),
-      backers: { total: list.length, list: list.slice(0, BACKER_LIMIT) },
+      backers: { total: list.length, list: competitor ? list : list.slice(0, BACKER_LIMIT) },
+      competitor: competitor
+        ? {
+            layer: LAYER_LABELS[competitor.layer],
+            category: COMPETITOR_CATEGORY_LABELS[competitor.category],
+            foundedYear: competitor.founded_year,
+            totalRaisedUsd: competitor.total_raised_usd,
+            headcount: competitor.headcount_est?.value ?? null,
+            revenueUsd: competitor.revenue_usd,
+            rounds: roundList(id, rounds, names),
+          }
+        : undefined,
     };
   }
   return null;

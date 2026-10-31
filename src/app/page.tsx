@@ -155,7 +155,7 @@ async function Overview({ searchParams }: { searchParams: SearchParams }) {
         <FundsByYearTile data={byYear} href={directory()} />
         <FreshCapitalTile data={capital} href={directory({ freshness: ["fresh"], region: [] })} />
         <TopFitTile data={fit} href={directory({}, "fit-desc")} />
-        <RecentDealsTile data={deals} href="/competitors" />
+        <RecentDealsTile data={deals} href="/competitors#funding-timeline" />
       </div>
     </div>
   );

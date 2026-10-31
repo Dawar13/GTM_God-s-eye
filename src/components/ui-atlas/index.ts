@@ -4,6 +4,7 @@ export { BulletGauge } from "./BulletGauge";
 export { Chip } from "./Chip";
 export { EmptyState } from "./EmptyState";
 export { InspectorSection } from "./InspectorSection";
+export { HoverTip } from "./HoverTip";
 export { Legend, type LegendProps } from "./Legend";
 export { Metric, type MetricKind } from "./Metric";
 export { NumberField } from "./NumberField";
