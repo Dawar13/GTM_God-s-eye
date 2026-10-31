@@ -590,8 +590,7 @@ export function layoutSankeyColumns(
       spare -= wanted * k;
     }
     const even = n > 1 ? Math.min(spare / (n - 1), Math.max(0, maxPad - pad)) : 0;
-    const used =
-      nodeSum + gaps.slice(1).reduce((a, g) => a + g + even, 0) + breaks.size * gg;
+    const used = nodeSum + gaps.slice(1).reduce((a, g) => a + g + even, 0) + breaks.size * gg;
     let y = top + Math.max(0, (avail - used) / 2);
     ids.forEach((id, i) => {
       if (i > 0) y += gaps[i]! + even + (breaks.has(i) ? gg : 0);
@@ -764,7 +763,12 @@ export function layoutSankey(
 ): SankeyLayout {
   const L = layoutSankeyColumns(
     [
-      { x: o.leftX, nodes: leftIn.map((n) => ({ id: n.id })), pad: o.padLeft, pinned: o.pinnedLeft },
+      {
+        x: o.leftX,
+        nodes: leftIn.map((n) => ({ id: n.id })),
+        pad: o.padLeft,
+        pinned: o.pinnedLeft,
+      },
       {
         x: o.rightX - o.nodeWidth,
         nodes: rightIn,

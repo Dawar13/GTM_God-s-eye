@@ -124,7 +124,10 @@ export const overviewValue = (x: { money: number | null; roundShare: number }, m
   mode === "money" ? (x.money ?? 0) : x.roundShare;
 
 /** A node's name in a view: "19 other adjacent competitors" counts the members drawn there. */
-export function overviewName(n: Pick<OverviewNode, "kind" | "name" | "category" | "members" | "membersWithMoney">, mode: SankeyMode): string {
+export function overviewName(
+  n: Pick<OverviewNode, "kind" | "name" | "category" | "members" | "membersWithMoney">,
+  mode: SankeyMode,
+): string {
   if (n.kind !== "rest" || n.category === null) return n.name;
   const k = mode === "money" ? n.membersWithMoney : n.members.length;
   const label = COMPETITOR_CATEGORY_LABELS[n.category].toLowerCase();
@@ -132,7 +135,9 @@ export function overviewName(n: Pick<OverviewNode, "kind" | "name" | "category" 
 }
 
 const byDisclosed = (a: FlowTarget, b: FlowTarget) =>
-  (b.disclosedUsd ?? 0) - (a.disclosedUsd ?? 0) || b.rounds - a.rounds || a.name.localeCompare(b.name);
+  (b.disclosedUsd ?? 0) - (a.disclosedUsd ?? 0) ||
+  b.rounds - a.rounds ||
+  a.name.localeCompare(b.name);
 
 /** Builds the overview from the flows; `rounds` only supplies sources and confidence. */
 export function competitorOverview(
@@ -140,8 +145,7 @@ export function competitorOverview(
   rounds: readonly Round[],
 ): CompetitorOverview {
   const roundById = new Map(rounds.map((r) => [r.id, r]));
-  const start = (r: FlowRound | undefined) =>
-    r?.date ? (periodOf(r.date)?.start ?? null) : null;
+  const start = (r: FlowRound | undefined) => (r?.date ? (periodOf(r.date)?.start ?? null) : null);
   const ordered = (ids: Iterable<string>) =>
     [...new Set(ids)].sort((a, b) => {
       const x = start(flows.rounds[a]);
@@ -165,7 +169,8 @@ export function competitorOverview(
     const ranked = flows.targets
       .filter((t) => t.category === c && (t.disclosedUsd ?? 0) > 0)
       .sort(byDisclosed);
-    const keep = ranked.length <= OVERVIEW_PER_CATEGORY + 1 ? ranked : ranked.slice(0, OVERVIEW_PER_CATEGORY);
+    const keep =
+      ranked.length <= OVERVIEW_PER_CATEGORY + 1 ? ranked : ranked.slice(0, OVERVIEW_PER_CATEGORY);
     for (const t of keep) shown.add(t.id);
   }
   const targetOf = (t: FlowTarget) => (shown.has(t.id) ? t.id : restNodeId(t.category));
@@ -202,7 +207,13 @@ export function competitorOverview(
   const stage0 = new Map<string, PathAcc>();
   for (const p of pathAcc.values()) {
     const key = `${p.source}|${p.category}`;
-    const a = stage0.get(key) ?? { ...p, money: null, roundShare: 0, roundIds: [], investorIds: [] };
+    const a = stage0.get(key) ?? {
+      ...p,
+      money: null,
+      roundShare: 0,
+      roundIds: [],
+      investorIds: [],
+    };
     if (p.money !== null) a.money = (a.money ?? 0) + p.money;
     a.roundShare += p.roundShare;
     a.roundIds.push(...p.roundIds);
@@ -295,7 +306,9 @@ export function competitorOverview(
     if (mine.length === 0) return null;
     const ids = ordered(mine.flatMap((p) => p.roundIds));
     const members =
-      kind === "other" ? [...new Set(mine.flatMap((p) => p.investorIds))].sort(byInvestorMoney) : [];
+      kind === "other"
+        ? [...new Set(mine.flatMap((p) => p.investorIds))].sort(byInvestorMoney)
+        : [];
     return {
       id,
       column: 0,
@@ -429,7 +442,9 @@ export function overviewLayout(
   },
 ): SankeyColumnsLayout {
   const col = (c: 0 | 1 | 2) =>
-    o.nodes.filter((n) => n.column === c).map((n) => ({ id: n.id, group: n.category ?? undefined }));
+    o.nodes
+      .filter((n) => n.column === c)
+      .map((n) => ({ id: n.id, group: n.category ?? undefined }));
   return layoutSankeyColumns(
     [
       {
@@ -463,8 +478,7 @@ export function overviewLayout(
 /* ------------------------------------------------------------------------ highlight */
 
 export type OverviewFocus =
-  | { kind: "node"; id: string }
-  | { kind: "link"; source: string; target: string };
+  { kind: "node"; id: string } | { kind: "link"; source: string; target: string };
 
 export type OverviewLit = {
   nodes: Set<string>;
@@ -485,12 +499,13 @@ export function overviewHighlight(
   focus: OverviewFocus,
   mode: SankeyMode,
 ): OverviewLit {
-  const on = o.paths.filter((p) =>
-    overviewValue(p, mode) > 0 &&
-    (focus.kind === "node"
-      ? p.source === focus.id || p.category === focus.id || p.target === focus.id
-      : (p.source === focus.source && p.category === focus.target) ||
-        (p.category === focus.source && p.target === focus.target)),
+  const on = o.paths.filter(
+    (p) =>
+      overviewValue(p, mode) > 0 &&
+      (focus.kind === "node"
+        ? p.source === focus.id || p.category === focus.id || p.target === focus.id
+        : (p.source === focus.source && p.category === focus.target) ||
+          (p.category === focus.source && p.target === focus.target)),
   );
   const nodes = new Set<string>();
   const links = new Map<string, number>();

@@ -43,6 +43,7 @@ import {
   competitorSankeyLayout,
   sankeyHeight,
 } from "@/lib/viz/transforms/competitorSankey";
+import { competitorOverview, overviewLayout } from "@/lib/viz/transforms/competitorOverview";
 import { sortRows } from "@/lib/directory/sort";
 import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
 import { DEFAULT_FIT_WEIGHTS } from "@/lib/fit/score";
@@ -393,6 +394,47 @@ describe("Competitors page: charts match the table (S8)", () => {
     for (const n of rounds)
       expect(n.value).toBeCloseTo(rows.find((r) => r.id === n.id)!.roundCount, 9);
     expect(flows.roundsWithoutAmount).toBe(fromFile.length - withAmount.length);
+  });
+
+  it("Sankey overview: every column adds up to the disclosed amounts or the round count", () => {
+    const own = new Set(d.competitors.map((c) => c.id));
+    const withAmount = d.rounds.filter((r) => own.has(r.company_id) && r.amount_usd !== null);
+    const flows = competitorFlows(d.competitors, d.rounds, d.investors);
+    const o = competitorOverview(flows, d.rounds);
+    const frame = {
+      height: 780,
+      x: [220, 600, 980] as const,
+      midTop: 56,
+      midPad: 64,
+      labelHeight: 44,
+    };
+    const want = {
+      money: sum(withAmount.map((r) => r.amount_usd)),
+      rounds: competitorTotals(rows).rounds,
+    };
+    for (const mode of ["money", "rounds"] as const) {
+      const L = overviewLayout(o, mode, frame);
+      for (const c of [0, 1, 2]) {
+        const col = L.nodes.filter((n) => n.column === c);
+        expect(sum(col.map((n) => n.value))).toBeCloseTo(want[mode], 2);
+      }
+      // Categories are exact: the table rows of that category, summed.
+      for (const n of L.nodes.filter((x) => x.column === 1)) {
+        const cat = o.nodes.find((x) => x.id === n.id)!.category;
+        const mine = rows.filter((r) => r.category === cat);
+        const exact =
+          mode === "money"
+            ? sum(
+                withAmount
+                  .filter((r) => mine.some((m) => m.id === r.company_id))
+                  .map((r) => r.amount_usd),
+              )
+            : sum(mine.map((r) => r.roundCount));
+        expect(n.valueOut).toBeCloseTo(exact, 2);
+        expect(n.valueIn).toBeCloseTo(exact, 2);
+      }
+    }
+    expect(o.totals.competitorsWithAmount + flows.competitorsWithoutAmount).toBe(rows.length);
   });
 
   it("heatmap: every filled cell is a table investor, with at least one round", () => {

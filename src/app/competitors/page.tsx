@@ -21,6 +21,7 @@ import {
   fundingTimeline,
   overlapMatrix,
 } from "@/lib/viz/transforms/competitorCharts";
+import { competitorOverview } from "@/lib/viz/transforms/competitorOverview";
 import { competitorFlows } from "@/lib/viz/transforms/competitorSankey";
 import { toClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { competitorSources, layerMap, toCompetitorRows } from "@/lib/viz/transforms/competitors";
@@ -38,13 +39,14 @@ export default async function CompetitorsPage() {
   ]);
   const rows = toCompetitorRows(competitors, rounds, investors);
   const sources = competitorSources(competitors, rounds);
+  const flows = competitorFlows(competitors, rounds, investors);
   return (
     <PageCanvas
       title="Competitors"
       description={`All ${rows.length} competitors: where each sits, what it has raised and who backs it. Investor filters don't apply on this page, so every competitor is always shown.`}
     >
       <div className="flex flex-col gap-6">
-        <CompetitorSankey data={competitorFlows(competitors, rounds, investors)} />
+        <CompetitorSankey data={flows} overview={competitorOverview(flows, rounds)} />
         <CompetitorsTable rows={rows} sources={sources} />
         <FoundedVsRaisedChart data={foundedVsRaised(rows)} sources={sources} />
         <div id="funding-timeline" className="scroll-mt-4">
