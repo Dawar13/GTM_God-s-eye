@@ -17,3 +17,4 @@ export { Skeleton } from "./Skeleton";
 export { ConfidenceDot, SourceBadge, type ConfidenceLevel } from "./SourceBadge";
 export { Stat } from "./Stat";
 export { VizTooltip } from "./VizTooltip";
+export { ZoomControls, handleZoomKey } from "./ZoomControls";

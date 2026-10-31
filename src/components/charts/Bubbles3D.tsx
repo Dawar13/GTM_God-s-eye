@@ -20,6 +20,8 @@ import {
 } from "@/lib/viz/transforms/capitalBubbles";
 import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { useUi } from "@/store/ui";
+import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import { clampZoom, ZOOM_STEP } from "@/lib/viz/zoom";
 import { BubbleTooltip } from "./BubbleTooltip";
 
 const Plot = createPlotlyComponent(Plotly);
@@ -40,6 +42,9 @@ const CAMERAS: Record<CameraPreset, Camera> = {
   side: { eye: { x: 2.3, y: 0, z: 0 }, up: UP_Z, center: CENTER },
 };
 const NEUTRAL = "#8A919C";
+const Z_MIN = 0.4;
+const Z_MAX = 6;
+const norm = (e: { x: number; y: number; z: number }) => Math.hypot(e.x, e.y, e.z);
 const UNIT_TICKS = [0, 0.25, 0.5, 0.75, 1];
 
 type PlotEvent = { points?: { customdata?: unknown }[] };
@@ -88,6 +93,9 @@ export default function Bubbles3D({
   const graphDiv = useRef<HTMLElement | null>(null);
   const wrap = useRef<HTMLDivElement>(null);
   const mouse = useRef({ x: 0, y: 0 });
+  const presetRef = useRef<CameraPreset>("reset");
+  const eyeRef = useRef(CAMERAS.reset.eye);
+  const [level, setLevel] = useState(1);
   const [hover, setHover] = useState<{ id: string; x: number; y: number; flip: boolean } | null>(
     null,
   );
@@ -189,8 +197,60 @@ export default function Bubbles3D({
   // Camera presets: relayout directly, so pressing the same preset after rotating still applies.
   useEffect(() => {
     if (camera.n === 0 || !graphDiv.current) return;
+    presetRef.current = camera.preset;
     void Plotly.relayout(graphDiv.current, { "scene.camera": CAMERAS[camera.preset] });
   }, [camera]);
+
+  // Zoom scales the eye vector (dividing by the factor zooms in), clamped around the preset's distance.
+  const zoomBy = (dir: 1 | -1) => {
+    if (!graphDiv.current) return;
+    const eye = eyeRef.current;
+    const base = norm(CAMERAS[presetRef.current].eye);
+    const next = clampZoom(
+      (base / norm(eye)) * (dir === 1 ? ZOOM_STEP : 1 / ZOOM_STEP),
+      Z_MIN,
+      Z_MAX,
+    );
+    const f = base / next / norm(eye);
+    const cam = {
+      ...CAMERAS[presetRef.current],
+      eye: { x: eye.x * f, y: eye.y * f, z: eye.z * f },
+    };
+    eyeRef.current = cam.eye;
+    setLevel(next);
+    void Plotly.relayout(graphDiv.current, { "scene.camera": cam });
+  };
+  const resetZoom = () => {
+    if (!graphDiv.current) return;
+    const cam = CAMERAS[presetRef.current];
+    eyeRef.current = cam.eye;
+    setLevel(1);
+    void Plotly.relayout(graphDiv.current, { "scene.camera": cam });
+  };
+  const zoomHandlers = {
+    onZoomIn: () => zoomBy(1),
+    onZoomOut: () => zoomBy(-1),
+    onReset: resetZoom,
+  };
+  // Wheel and drag also move the camera; keep the readout and eye in step.
+  const onRelayout = (e: Record<string, unknown>) => {
+    const cam = e["scene.camera"] as Camera | undefined;
+    if (!cam?.eye) return;
+    const base = norm(CAMERAS[presetRef.current].eye);
+    const lv = base / norm(cam.eye);
+    if (lv < Z_MIN - 1e-6 || lv > Z_MAX + 1e-6) {
+      // Wheel went past the limit: pull the camera back to it.
+      const f = lv < Z_MIN ? lv / Z_MIN : lv / Z_MAX;
+      const eye = { x: cam.eye.x * f, y: cam.eye.y * f, z: cam.eye.z * f };
+      eyeRef.current = eye;
+      setLevel(clampZoom(lv, Z_MIN, Z_MAX));
+      if (graphDiv.current)
+        void Plotly.relayout(graphDiv.current, { "scene.camera": { ...cam, eye } });
+      return;
+    }
+    eyeRef.current = cam.eye;
+    setLevel(lv);
+  };
 
   const onMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const r = wrap.current?.getBoundingClientRect();
@@ -206,6 +266,8 @@ export default function Bubbles3D({
       style={{ height }}
       onMouseMove={onMouseMove}
       onMouseLeave={() => setHover(null)}
+      tabIndex={0}
+      onKeyDown={(e) => void handleZoomKey(e, zoomHandlers)}
       role="img"
       aria-label={`3D bubble chart of ${points.length} investors. Use Show as 2D or the table view for exact values.`}
     >
@@ -214,6 +276,8 @@ export default function Bubbles3D({
         layout={layout}
         config={{
           displayModeBar: false,
+          scrollZoom: true,
+          doubleClick: false,
           responsive: true,
           displaylogo: false,
           // Fixed so the glyph size factor (GL_PX_PER_SIZE) holds on every screen.
@@ -224,6 +288,8 @@ export default function Bubbles3D({
         onInitialized={(_figure, el) => {
           graphDiv.current = el;
         }}
+        onRelayout={onRelayout}
+        onDoubleClick={() => zoomBy(1)}
         onHover={(e: PlotEvent) => {
           const id = idOf(e);
           const { x, y } = mouse.current;
@@ -235,6 +301,13 @@ export default function Bubbles3D({
           const id = idOf(e);
           if (id) onOpen(id);
         }}
+      />
+      <ZoomControls
+        level={level}
+        onZoomIn={() => zoomBy(1)}
+        onZoomOut={() => zoomBy(-1)}
+        onReset={resetZoom}
+        className="absolute right-2 bottom-2 z-10"
       />
       {hovered && hover && (
         <div

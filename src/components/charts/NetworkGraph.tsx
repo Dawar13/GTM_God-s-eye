@@ -3,7 +3,8 @@
 import dynamic from "next/dynamic";
 import { useQueryStates } from "nuqs";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { Maximize2, Minimize2, Minus, Plus, RotateCcw } from "lucide-react";
+import { Maximize2, Minimize2 } from "lucide-react";
+import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
 import {
   ChartFrame,
   Chip,
@@ -78,6 +79,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
   const reduced = useMediaQuery("(prefers-reduced-motion: reduce)");
   const theme = useThemeColors();
   const canvas = useRef<CanvasHandle | null>(null);
+  const [zoomLevel, setZoomLevel] = useState(1);
   const frameRef = useRef<HTMLDivElement | null>(null);
   const [locked, setLocked] = useState<number | null>(null);
   const [fullscreen, setFullscreen] = useState(false);
@@ -366,8 +368,17 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
               ` ${plural(view.counts.undatedHidden, "undated round")} left out by the date range.`}
           </p>
           <div
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.target === e.currentTarget)
+                handleZoomKey(e, {
+                  onZoomIn: () => canvas.current?.zoomIn(),
+                  onZoomOut: () => canvas.current?.zoomOut(),
+                  onReset: () => canvas.current?.reset(),
+                });
+            }}
             className={cn(
-              "relative overflow-hidden rounded-md border border-rule",
+              "relative overflow-hidden rounded-md border border-rule outline-none focus-visible:ring-2 focus-visible:ring-accent",
               fullscreen && "min-h-[480px] flex-1",
             )}
             style={fullscreen ? undefined : { height: HEIGHT }}
@@ -389,6 +400,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
                 onUnlock={unlock}
                 labelLevel={labelLevel}
                 reduced={reduced}
+                onZoom={setZoomLevel}
                 renderTooltip={renderTooltip}
                 className="relative h-full w-full"
               />
@@ -405,17 +417,13 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
                 )}
               </CanvasButton>
             </div>
-            <div className="absolute right-2 bottom-2 flex flex-col gap-1">
-              <CanvasButton label="Zoom in" onClick={() => canvas.current?.zoomIn()}>
-                <Plus aria-hidden className="size-4" />
-              </CanvasButton>
-              <CanvasButton label="Zoom out" onClick={() => canvas.current?.zoomOut()}>
-                <Minus aria-hidden className="size-4" />
-              </CanvasButton>
-              <CanvasButton label="Reset view" onClick={() => canvas.current?.reset()}>
-                <RotateCcw aria-hidden className="size-4" />
-              </CanvasButton>
-            </div>
+            <ZoomControls
+              level={zoomLevel}
+              onZoomIn={() => canvas.current?.zoomIn()}
+              onZoomOut={() => canvas.current?.zoomOut()}
+              onReset={() => canvas.current?.reset()}
+              className="absolute right-2 bottom-2"
+            />
           </div>
         </div>
       )}

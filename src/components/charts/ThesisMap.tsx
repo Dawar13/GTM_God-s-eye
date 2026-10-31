@@ -1,5 +1,7 @@
 "use client";
 
+import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import { ZOOM_STEP } from "@/lib/viz/zoom";
 import Link from "next/link";
 import {
   useCallback,
@@ -24,9 +26,7 @@ import {
   type ZoomTransform,
 } from "d3";
 import { useQueryState } from "nuqs";
-import { RotateCcw } from "lucide-react";
 import { ChartFrame, Legend, Segmented, VizTooltip } from "@/components/ui-atlas";
-import { Button } from "@/components/ui/button";
 import { loadFilterIndex, useLoaded } from "@/lib/client-index";
 import {
   AREA_PARAM,
@@ -399,7 +399,7 @@ function MapCanvas({
       ])
       .translateExtent(world)
       .filter((event: Event) => {
-        if (event.type === "wheel") return true;
+        if (event.type === "wheel" || event.type === "dblclick") return true;
         if (toolRef.current === "select") return false;
         const e = event as MouseEvent;
         return !e.ctrlKey && !e.button;
@@ -410,7 +410,7 @@ function MapCanvas({
       });
     zoomRef.current = z;
     const sel = select(svgEl);
-    sel.call(z).on("dblclick.zoom", null);
+    sel.call(z);
     z.transform(sel, transformRef.current);
     return () => {
       sel.on(".zoom", null);
@@ -584,19 +584,29 @@ function MapCanvas({
     window.addEventListener("pointerup", up);
   };
 
-  const onKeyDown = (e: KeyboardEvent<SVGSVGElement>) => {
+  const zoomBy = (dir: 1 | -1) => {
     const z = zoomRef.current;
     if (!z || !svgEl) return;
     const sel = select(svgEl);
-    if (e.key === "+" || e.key === "=") z.scaleBy(sel, 1.5);
-    else if (e.key === "-" || e.key === "_") z.scaleBy(sel, 1 / 1.5);
-    else if (e.key === "0") z.transform(sel, zoomIdentity);
-    else return;
-    e.preventDefault();
+    const factor = dir === 1 ? ZOOM_STEP : 1 / ZOOM_STEP;
+    // Scale around the centre of the view.
+    const target = reduced ? sel : sel.transition().duration(160);
+    z.scaleBy(target as typeof sel, factor, [width / 2, HEIGHT / 2]);
   };
-
   const resetZoom = () => {
-    if (svgEl && zoomRef.current) zoomRef.current.transform(select(svgEl), zoomIdentity);
+    const z = zoomRef.current;
+    if (!z || !svgEl) return;
+    const sel = select(svgEl);
+    const target = reduced ? sel : sel.transition().duration(160);
+    z.transform(target as typeof sel, zoomIdentity);
+  };
+  const zoomHandlers = {
+    onZoomIn: () => zoomBy(1),
+    onZoomOut: () => zoomBy(-1),
+    onReset: resetZoom,
+  };
+  const onKeyDown = (e: KeyboardEvent<SVGSVGElement>) => {
+    handleZoomKey(e, zoomHandlers);
   };
 
   const fitTicks = layout === "fit" ? [0, 0.25, 0.5, 0.75, 1] : [];
@@ -619,7 +629,8 @@ function MapCanvas({
         aria-label={`Thesis map, ${layout === "thesis" ? "thesis layout" : "fit view"}: ${formatCount(points.length)} investors. Plus and minus zoom, 0 resets; the table view lists every investor.`}
         onKeyDown={onKeyDown}
         onPointerDown={onPointerDown}
-        className={`block touch-none rounded-md outline-none focus-visible:ring-2 focus-visible:ring-accent ${tool === "select" ? "cursor-crosshair" : "cursor-grab active:cursor-grabbing"}`}
+        style={{ touchAction: transform.k > 1 ? "none" : "pan-y" }}
+        className={`block rounded-md outline-none focus-visible:ring-2 focus-visible:ring-accent ${tool === "select" ? "cursor-crosshair" : "cursor-grab active:cursor-grabbing"}`}
       >
         <defs>
           <clipPath id={clipId}>
@@ -835,11 +846,13 @@ function MapCanvas({
         )}
       </svg>
 
-      {transform.k !== 1 || transform.x !== 0 || transform.y !== 0 ? (
-        <Button variant="outline" size="sm" className="absolute top-2 right-2" onClick={resetZoom}>
-          <RotateCcw aria-hidden /> Reset zoom
-        </Button>
-      ) : null}
+      <ZoomControls
+        level={transform.k}
+        onZoomIn={() => zoomBy(1)}
+        onZoomOut={() => zoomBy(-1)}
+        onReset={resetZoom}
+        className="absolute right-2 bottom-2"
+      />
 
       {outside > 0 && (
         <p className="pointer-events-none absolute bottom-1 left-3 rounded-md bg-panel/80 px-1 text-xs text-ink-2">

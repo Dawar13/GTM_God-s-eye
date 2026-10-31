@@ -149,6 +149,7 @@ export default function NetworkCanvas({
   locked,
   onSelect,
   onUnlock,
+  onZoom,
   labelLevel,
   reduced,
   renderTooltip,
@@ -165,6 +166,8 @@ export default function NetworkCanvas({
   locked: number | null;
   onSelect: (i: number) => void;
   onUnlock: () => void;
+  /** Zoom level relative to the first framed view (1 = first view). */
+  onZoom?: (level: number) => void;
   labelLevel: number;
   reduced: boolean;
   renderTooltip: (i: number) => ReactNode;
@@ -349,6 +352,7 @@ export default function NetworkCanvas({
             reduced={reduced}
             onSelect={onSelect}
             onUnlock={onUnlock}
+            onZoom={onZoom}
             onHover={setHover}
             width={box.width}
             height={box.height}
@@ -401,6 +405,7 @@ function Behaviour({
   reduced,
   onSelect,
   onUnlock,
+  onZoom,
   onHover,
   width,
   height,
@@ -418,6 +423,8 @@ function Behaviour({
   reduced: boolean;
   onSelect: (i: number) => void;
   onUnlock: () => void;
+  /** Zoom level relative to the first framed view (1 = first view). */
+  onZoom?: (level: number) => void;
   onHover: (h: { i: number; x: number; y: number } | null) => void;
   width: number;
   height: number;
@@ -454,12 +461,25 @@ function Behaviour({
   // First view: frame the nodes in view, not the whole graph, so a narrow filter does not
   // leave them small in one corner. Later filter changes keep the user's camera.
   const framed = useRef(false);
+  const baseRatio = useRef(1);
   useEffect(() => {
     if (framed.current) return;
     framed.current = true;
     const target = frameView(sigma, data, view);
     if (target) sigma.getCamera().setState(target);
-  }, [sigma, data, view]);
+    baseRatio.current = target?.ratio ?? sigma.getCamera().ratio;
+    onZoom?.(1);
+  }, [sigma, data, view, onZoom]);
+
+  // Every zoom path (wheel, pinch, double-click, buttons) reports one level.
+  useEffect(() => {
+    const camera = sigma.getCamera();
+    const report = () => onZoom?.(baseRatio.current / camera.ratio);
+    camera.on("updated", report);
+    return () => {
+      camera.off("updated", report);
+    };
+  }, [sigma, onZoom]);
 
   // The box changed size (fullscreen, panel resize): Sigma only listens to the window. Sigma
   // sized itself from the box when it was created, so the first size seen needs no resize (a
@@ -496,6 +516,8 @@ function Behaviour({
         const i = data.index.get(node);
         if (i !== undefined) onSelect(i);
       },
+      // A node double-click must not also zoom: the click already opened the Inspector.
+      doubleClickNode: (e) => e.preventSigmaDefault(),
       clickStage: () => {
         if (locked !== null) onUnlock();
       },
