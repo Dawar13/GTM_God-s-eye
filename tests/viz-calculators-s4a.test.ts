@@ -4,6 +4,7 @@ import { formatUsd } from "@/lib/format";
 import { exitByFundSize, exitGauge, postMoneyByMultiple } from "@/lib/viz/transforms/calcFund";
 import {
   breakpointLabels,
+  labelledBreakpoints,
   payoutSeries,
   payoutSeriesKeys,
   payoutTable,
@@ -108,6 +109,28 @@ describe("liquidation transforms", () => {
     const rows = payoutTable(base, 100e6, bps);
     expect(rows.length).toBe(8 + bps.length);
     expect(payoutSeriesKeys(base).map((k) => k.key)).toEqual(["common", "c0", "c1"]);
+  });
+});
+
+describe("breakpoint label crowding (S10a)", () => {
+  const at = (exit: number) => ({ exit, label: String(exit), kind: "converts" as const });
+
+  it("drops a label whose line sits within the gap of the last drawn one", () => {
+    // 0-100 on 500 px: 5 px per unit, so 2 units apart is 10 px (too close), 4 is 20 px.
+    const labels = [at(10), at(12), at(14), at(50)];
+    expect([...labelledBreakpoints(labels, [0, 100], false, 500)].sort()).toEqual([0, 2, 3]);
+  });
+
+  it("walks in x order whatever the input order, and skips lines outside the axis", () => {
+    const labels = [at(50), at(10), at(500), at(11)];
+    expect([...labelledBreakpoints(labels, [0, 100], false, 500)].sort()).toEqual([0, 1]);
+  });
+
+  it("spaces by position on a log axis", () => {
+    // 1e5 to 1e8 over 300 px: 100 px per decade. 1e6 and 1.2e6 are about 8 px apart.
+    const labels = [at(1e6), at(1.2e6), at(1e7)];
+    expect([...labelledBreakpoints(labels, [1e5, 1e8], true, 300)].sort()).toEqual([0, 2]);
+    expect(labelledBreakpoints(labels, [1e5, 1e8], true, 3000).size).toBe(3);
   });
 });
 

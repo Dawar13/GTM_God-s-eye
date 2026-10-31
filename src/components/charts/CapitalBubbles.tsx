@@ -73,7 +73,7 @@ export function CapitalBubbles({
         kind="categorical"
         className="max-w-3xl"
         items={[
-          ...clusters.map((c) => ({ label: c.shortLabel, color: c.color })),
+          ...clusters.map((c) => ({ label: c.label, color: c.color })),
           { label: "Accelerator or incubator", color: NEUTRAL, shape: "square" as const },
           { label: "Fund size unknown (ring, not to scale)", color: NEUTRAL, hollow: true },
         ]}
@@ -179,7 +179,7 @@ export function CapitalBubbles({
             {
               header: "Cluster",
               cell: (p) =>
-                p.cluster === null ? UNKNOWN : (clusterById.get(p.cluster)?.shortLabel ?? UNKNOWN),
+                p.cluster === null ? UNKNOWN : (clusterById.get(p.cluster)?.label ?? UNKNOWN),
             },
             { header: "Type", cell: (p) => (p.type ? INVESTOR_TYPE_LABELS[p.type] : UNKNOWN) },
           ]}

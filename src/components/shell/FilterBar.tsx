@@ -14,6 +14,7 @@ import {
 } from "@/lib/filters";
 import { useFilters } from "@/lib/filters/use-filters";
 import { loadFilterIndex } from "@/lib/client-index";
+import { formatCount } from "@/lib/format";
 import { useUi } from "@/store/ui";
 import { Chip } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
@@ -64,7 +65,7 @@ export function FilterBar() {
       <div className="ml-auto flex shrink-0 items-center gap-2 pl-2">
         {index && (
           <span className="text-xs text-ink-2">
-            <span className="num">{index.length.toLocaleString("en-US")}</span> investors in the
+            <span className="num">{formatCount(index.length)}</span> investors in the
             data
           </span>
         )}

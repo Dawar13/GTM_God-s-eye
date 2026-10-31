@@ -506,7 +506,7 @@ function NetworkLegend({
   const types = typeColours(data.typesPresent);
   const groups =
     colourBy === "cluster"
-      ? clusters.map((c) => ({ label: c.shortLabel, color: c.color }))
+      ? clusters.map((c) => ({ label: c.label, color: c.color }))
       : data.typesPresent.map((t) => ({ label: INVESTOR_TYPE_LABELS[t], color: types.get(t)! }));
   const missing = colourBy === "cluster" ? view.counts.noCluster : view.counts.noType;
   const samples = [1, 10, 50];
@@ -688,9 +688,9 @@ function NetworkTable({
         {
           header: "Cluster",
           sortValue: (r) =>
-            r.cluster === null ? null : (clusterById.get(r.cluster)?.shortLabel ?? null),
+            r.cluster === null ? null : (clusterById.get(r.cluster)?.label ?? null),
           cell: (r) =>
-            r.cluster === null ? UNKNOWN : (clusterById.get(r.cluster)?.shortLabel ?? UNKNOWN),
+            r.cluster === null ? UNKNOWN : (clusterById.get(r.cluster)?.label ?? UNKNOWN),
         },
         {
           header: "Weighted degree",

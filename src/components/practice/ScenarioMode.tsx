@@ -8,7 +8,7 @@ import { NumberField, ShareBar, Stat } from "@/components/ui-atlas";
 import { CALC_URL_OPTIONS } from "@/lib/calculators/url";
 import { useLastValid } from "@/lib/calculators/useLastValid";
 import { scenarioOutcome, type ScenarioRound } from "@/lib/finance";
-import { formatPercent, formatPricePerShare, formatUsd } from "@/lib/format";
+import { formatCount, formatPercent, formatPricePerShare, formatUsd } from "@/lib/format";
 import {
   EXIT_COUNT,
   MAX_SAVED,
@@ -107,8 +107,8 @@ export function ScenarioMode() {
       <div className="grid gap-6 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)]">
         <div className="flex flex-col gap-4">
           <p className="text-sm text-ink-2">
-            Founders start with {SCENARIO_START.founderShares.toLocaleString("en-US")} shares and an
-            unissued pool of {SCENARIO_START.poolShares.toLocaleString("en-US")}. Each round&apos;s
+            Founders start with {formatCount(SCENARIO_START.founderShares)} shares and an
+            unissued pool of {formatCount(SCENARIO_START.poolShares)}. Each round&apos;s
             investors hold 1× non-participating preferred, and the latest round is paid first.
           </p>
           {v.prr.map((r, i) => (

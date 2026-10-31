@@ -1,5 +1,6 @@
-import { Suspense } from "react";
+import { Suspense, type ReactNode } from "react";
 import type { Metadata } from "next";
+import { connection } from "next/server";
 import { IBM_Plex_Sans, IBM_Plex_Sans_Condensed } from "next/font/google";
 import { FilterBar } from "@/components/shell/FilterBar";
 import { Inspector } from "@/components/shell/Inspector";
@@ -27,6 +28,38 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+/**
+ * The shell reads the URL (filters, sort and views live in it). On a prerendered route that
+ * makes Next render the whole boundary in the browser instead (useSearchParams bails out to
+ * client rendering), so the HTML showed nothing until every script had run. Waiting for the
+ * request renders it on the server with the real URL; the data loaders stay cached.
+ */
+async function RequestShell({ children }: { children: ReactNode }) {
+  await connection();
+  return (
+    <Providers>
+      <div className="flex h-dvh overflow-hidden">
+        <LeftRail />
+        <div className="flex min-w-0 flex-1 flex-col">
+          <TopBar />
+          <FilterBar />
+          <div className="flex min-h-0 flex-1">
+            <main
+              id="main"
+              tabIndex={-1}
+              // relative: absolutely placed children (sr-only text) scroll with main, not the page.
+              className="relative min-w-0 flex-1 overflow-y-auto outline-none"
+            >
+              {children}
+            </main>
+            <Inspector />
+          </div>
+        </div>
+      </div>
+    </Providers>
+  );
+}
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -45,27 +78,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        {/* nuqs and the shell read the URL, so they sit under one Suspense boundary. */}
+        {/* nuqs and the shell read the URL, so they render per request under one Suspense boundary. */}
         <Suspense fallback={<div aria-hidden className="h-dvh bg-canvas" />}>
-          <Providers>
-            <div className="flex h-dvh overflow-hidden">
-              <LeftRail />
-              <div className="flex min-w-0 flex-1 flex-col">
-                <TopBar />
-                <FilterBar />
-                <div className="flex min-h-0 flex-1">
-                  <main
-                    id="main"
-                    tabIndex={-1}
-                    className="min-w-0 flex-1 overflow-y-auto outline-none"
-                  >
-                    {children}
-                  </main>
-                  <Inspector />
-                </div>
-              </div>
-            </div>
-          </Providers>
+          <RequestShell>{children}</RequestShell>
         </Suspense>
       </body>
     </html>

@@ -253,8 +253,8 @@ describe("clusters and area coordinates", () => {
       ],
     };
     const [info] = toClusterInfo([cl]);
-    expect(info!.label).toBe("Enterprise SaaS · Fintech · AI infrastructure");
-    expect(info!.shortLabel).toBe("Enterprise SaaS · Fintech");
+    // One name per cluster in every view (S10a): the top two sectors.
+    expect(info!.label).toBe("Enterprise SaaS · Fintech");
     expect(info!.color).not.toBe(CATEGORICAL[0]);
     expect(new Set(Array.from({ length: 10 }, (_, i) => clusterColor(i))).size).toBe(10);
   });

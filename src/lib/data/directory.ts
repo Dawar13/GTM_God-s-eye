@@ -38,6 +38,25 @@ export type DirectoryRow = FilterableInvestor & {
   confidence: Investor["confidence"];
 };
 
+/**
+ * The Directory's own fields, sent by /api/directory-rows. The filter fields come from the
+ * filter index, which every investor view already loads (`joinFilterable`).
+ */
+export const DIRECTORY_DETAIL_KEYS = [
+  "id",
+  "name",
+  "checkMinUsd",
+  "checkMaxUsd",
+  "latestFundSizeUsd",
+  "latestFundYear",
+  "seedListCount",
+  "fit",
+  "fitCoverage",
+  "fitFlags",
+  "sourceCount",
+  "confidence",
+] as const satisfies readonly (keyof DirectoryRow)[];
+
 /** The most recent fund by vintage year, then close date. */
 export function latestFund(funds: readonly Fund[]): Fund | null {
   let best: Fund | null = null;

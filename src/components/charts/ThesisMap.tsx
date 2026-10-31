@@ -188,7 +188,7 @@ export function ThesisMap({
 
   const fallbackField = layout === "thesis" ? "thesis vector" : "stage earliness";
   const legendItems = [
-    ...clusters.map((c) => ({ label: c.shortLabel, color: c.color })),
+    ...clusters.map((c) => ({ label: c.label, color: c.color })),
     { label: "Generalist (ring in its nearest cluster's colour)", color: NEUTRAL, hollow: true },
     { label: "Accelerator or incubator", color: NEUTRAL, shape: "square" as const },
   ];
@@ -498,7 +498,7 @@ function MapCanvas({
       if (!c) continue;
       const x = zx(h.centroid[0]);
       const y = zy(h.centroid[1]);
-      const { w, h: th } = textSize(c.shortLabel, CLUSTER_FONT, 0.55);
+      const { w, h: th } = textSize(c.label, CLUSTER_FONT, 0.55);
       const box = {
         x0: x - w / 2 - plot.x0,
         y0: y - th / 2 - plot.y0,
@@ -799,7 +799,7 @@ function MapCanvas({
               strokeLinejoin="round"
               paintOrder="stroke"
             >
-              {l.cluster.shortLabel}
+              {l.cluster.label}
             </text>
           ))}
           {labels.map((l) => (

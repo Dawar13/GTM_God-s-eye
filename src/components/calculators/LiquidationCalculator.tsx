@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { parseAsStringLiteral, useQueryStates } from "nuqs";
 import {
   CartesianGrid,
@@ -36,6 +36,7 @@ import { formatCount, formatUsd } from "@/lib/format";
 import { CATEGORICAL, logAxisTitle } from "@/lib/viz";
 import {
   breakpointLabels,
+  labelledBreakpoints,
   payoutSeries,
   payoutSeriesKeys,
   payoutTable,
@@ -155,6 +156,19 @@ export function LiquidationCalculator() {
   const { result, error, stale } = useLastValid(inputs, compute);
   const log = v.sc === "log";
   const min = log ? v.max / 1000 : 0;
+  // Plot width (chart width less the y axis and right margin), for spacing breakpoint labels.
+  const [plotWidth, setPlotWidth] = useState(600);
+  const labelled = result
+    ? labelledBreakpoints(result.labels, [min, v.max], log, plotWidth)
+    : new Set<number>();
+  const crowded = result
+    ? result.labels.filter((b) => b.exit >= min && b.exit <= v.max).length - labelled.size
+    : 0;
+  const labelAt = new Map<number, string>();
+  for (const b of result?.labels ?? []) {
+    const prev = labelAt.get(b.exit);
+    labelAt.set(b.exit, prev ? `${prev}; ${b.label}` : b.label);
+  }
 
   const tableAlt = result && (
     <ChartTable
@@ -168,6 +182,7 @@ export function LiquidationCalculator() {
           numeric: true,
           cell: (r: PayoutRow) => formatUsd(r[k.key]),
         })),
+        { header: "Breakpoint", cell: (r: PayoutRow) => labelAt.get(r.exit) ?? "" },
       ]}
     />
   );
@@ -338,7 +353,11 @@ export function LiquidationCalculator() {
             height={420}
             tableAlternative={tableAlt}
           >
-            <ResponsiveContainer width="100%" height={420}>
+            <ResponsiveContainer
+              width="100%"
+              height={420}
+              onResize={(w) => setPlotWidth(Math.max(0, w - 64 - 24))}
+            >
               <LineChart data={result.rows} margin={{ top: 12, right: 24, bottom: 28, left: 0 }}>
                 <CartesianGrid vertical={false} stroke="var(--rule)" />
                 <XAxis
@@ -393,14 +412,17 @@ export function LiquidationCalculator() {
                   }}
                 />
                 {result.labels
-                  .filter((b) => b.exit >= min && b.exit <= v.max)
-                  .map((b) => (
+                  .map((b, i) => ({ b, i }))
+                  .filter(({ b }) => b.exit >= min && b.exit <= v.max)
+                  .map(({ b, i }) => (
                     <ReferenceLine
                       key={`${b.kind}-${b.label}`}
                       x={b.exit}
                       stroke="var(--muted)"
                       strokeDasharray="5 4"
                       label={(p: { viewBox?: { x?: number; y?: number } }) => {
+                        // Too close to the last drawn label: keep the line, leave the words to the table.
+                        if (!labelled.has(i)) return null;
                         const x = (p.viewBox?.x ?? 0) - 5;
                         const y = (p.viewBox?.y ?? 0) + 6;
                         return (
@@ -438,6 +460,14 @@ export function LiquidationCalculator() {
           {result.labels.length === 0 && (
             <p className="text-sm text-ink-2">
               No breakpoints fall inside this exit range. Widen the range to see them.
+            </p>
+          )}
+          {crowded > 0 && (
+            <p className="text-sm text-ink-2">
+              {crowded === 1
+                ? "One breakpoint line has no label because it sits close to another."
+                : `${crowded} breakpoint lines have no label because they sit close to others.`}{" "}
+              Switch to View as table to read every breakpoint.
             </p>
           )}
         </>

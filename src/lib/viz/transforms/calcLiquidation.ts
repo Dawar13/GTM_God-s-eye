@@ -70,6 +70,36 @@ export function breakpointLabels(breakpoints: readonly Breakpoint[]): Breakpoint
   });
 }
 
+/**
+ * Which breakpoint labels the chart draws. Labels run along their dashed lines, so two lines
+ * closer than `minGapPx` would print on top of each other: walking left to right, a label is
+ * drawn only when its line is at least that far from the last drawn one. Every line is still
+ * drawn, and the table lists every breakpoint with its label. Returns the indexes to label.
+ */
+export function labelledBreakpoints(
+  labels: readonly BreakpointLabel[],
+  domain: readonly [number, number],
+  log: boolean,
+  plotWidthPx: number,
+  minGapPx = 16,
+): Set<number> {
+  const [a, b] = domain;
+  const t = (x: number) =>
+    log ? (Math.log10(x) - Math.log10(a)) / (Math.log10(b) - Math.log10(a)) : (x - a) / (b - a);
+  const order = labels
+    .map((l, i) => ({ i, px: t(l.exit) * plotWidthPx }))
+    .filter((p) => Number.isFinite(p.px) && p.px >= 0 && p.px <= plotWidthPx)
+    .sort((p, q) => p.px - q.px || p.i - q.i);
+  const shown = new Set<number>();
+  let last = -Infinity;
+  for (const p of order) {
+    if (p.px - last < minGapPx) continue;
+    shown.add(p.i);
+    last = p.px;
+  }
+  return shown;
+}
+
 /** Rows for the table alternative: eight evenly spaced exits plus every breakpoint. */
 export function payoutTable(
   base: Base,

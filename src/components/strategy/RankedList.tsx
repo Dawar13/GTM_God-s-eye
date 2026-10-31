@@ -68,6 +68,7 @@ export function RankedList({
   unscored,
   filteredOut,
   onExport,
+  loading = false,
 }: {
   ranked: readonly Ranked[];
   weights: FitWeights;
@@ -78,6 +79,8 @@ export function RankedList({
   unscored: number;
   filteredOut: number;
   onExport: () => void;
+  /** The rows are still loading: the frame, legend and note show, the list is a placeholder. */
+  loading?: boolean;
 }) {
   const { open } = useInspector();
   const [limit, setLimit] = useState(PAGE);
@@ -101,23 +104,27 @@ export function RankedList({
           <p className="max-w-[90ch] text-xs text-muted">
             Conflict: backed a direct competitor in the last 24 months. Sparse: more than 40% of
             the six features are unknown, so the score is rescaled over a few and ranks after the{" "}
-            <span className="tabular-nums">{formatCount(reliable)}</span> reliable ones. Fresh fund:
+            {!loading && <span className="tabular-nums">{formatCount(reliable)} </span>}reliable
+            ones. Fresh fund:
             latest fund closed since 29 Oct 2024.
           </p>
         </div>
       }
       sources={sources}
-      filteredOut={filteredOut}
-      notShown={{ count: unscored, field: "fit features", noun: "investors" }}
-      height={160}
+      filteredOut={loading ? undefined : filteredOut}
+      notShown={{ count: loading ? null : unscored, field: "fit features", noun: "investors" }}
+      // While loading, hold about the list's first screen so nothing below moves in view.
+      height={loading ? 640 : 160}
       action={
         <Button variant="outline" size="sm" onClick={onExport} disabled={ranked.length === 0}>
           <Download aria-hidden /> Export target list (CSV)
         </Button>
       }
       state={
-        ranked.length === 0
-          ? { status: "empty", message: "No investor with fit data matches the current filters." }
+        loading
+          ? { status: "loading" }
+          : ranked.length === 0
+          ? { status: "empty", message: "No investor with fit data matches the current filters. Widen a filter to rank more investors." }
           : { status: "ready" }
       }
       tableAlternative={

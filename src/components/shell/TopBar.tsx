@@ -1,6 +1,13 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type ReactNode,
+  type WheelEvent,
+} from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { ListFilter, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -20,6 +27,66 @@ function useIsMac() {
     noopSubscribe,
     () => /Mac|iPhone|iPad/.test(navigator.platform),
     () => false,
+  );
+}
+
+const FADE_PX = 24;
+
+/**
+ * Sub-tabs that do not fit (VC math has ten) scroll sideways: an edge that hides tabs fades
+ * out, a mouse wheel scrolls them, and the active tab is kept in view. Arrow keys still move
+ * through every tab, and the focused one scrolls into view.
+ */
+function ScrollingTabs({ active, children }: { active: string; children: ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [edges, setEdges] = useState({ left: false, right: false });
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () =>
+      setEdges({
+        left: el.scrollLeft > 1,
+        right: el.scrollLeft + el.clientWidth < el.scrollWidth - 1,
+      });
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => {
+      el.removeEventListener("scroll", update);
+      ro.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    ref.current
+      ?.querySelector('[aria-checked="true"]')
+      ?.scrollIntoView({ block: "nearest", inline: "nearest" });
+  }, [active]);
+
+  const onWheel = (e: WheelEvent<HTMLDivElement>) => {
+    const el = e.currentTarget;
+    if (el.scrollWidth > el.clientWidth && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      el.scrollLeft += e.deltaY;
+    }
+  };
+
+  const stop = (hidden: boolean) => (hidden ? "transparent" : "#000");
+  const mask =
+    edges.left || edges.right
+      ? `linear-gradient(to right, ${stop(edges.left)}, #000 ${FADE_PX}px, #000 calc(100% - ${FADE_PX}px), ${stop(edges.right)})`
+      : undefined;
+
+  return (
+    <div
+      ref={ref}
+      onWheel={onWheel}
+      style={{ maskImage: mask, WebkitMaskImage: mask }}
+      className="order-last w-full min-w-0 overflow-x-auto py-0.5 [scrollbar-width:thin] lg:order-none lg:w-auto lg:flex-1"
+    >
+      {children}
+    </div>
   );
 }
 
@@ -44,7 +111,7 @@ export function TopBar() {
       <h1 className="min-h-9 shrink-0 text-lg leading-9 font-semibold">{title}</h1>
 
       {tabs.length > 0 && (
-        <div className="order-last w-full min-w-0 overflow-x-auto pb-0.5 lg:order-none lg:w-auto lg:flex-1">
+        <ScrollingTabs active={activeTab}>
           <Segmented
             label={`${title} views`}
             options={tabs.map((t) => ({ value: t.href, label: t.label }))}
@@ -52,7 +119,7 @@ export function TopBar() {
             onChange={(href) => router.push(carry(href))}
             className="min-w-max"
           />
-        </div>
+        </ScrollingTabs>
       )}
 
       <div className="ml-auto flex shrink-0 items-center gap-1">

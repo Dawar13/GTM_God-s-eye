@@ -44,6 +44,19 @@ export type StrategyRow = FilterableInvestor & {
   applicationUrl: string | null;
 };
 
+/** Strategy's own fields, sent by /api/strategy-rows; filter fields come from the filter index. */
+export const STRATEGY_DETAIL_KEYS = [
+  "id",
+  "name",
+  "checkMinUsd",
+  "checkMaxUsd",
+  "leads",
+  "features",
+  "flags",
+  "website",
+  "applicationUrl",
+] as const satisfies readonly (keyof StrategyRow)[];
+
 export function toStrategyRows(
   investors: readonly Investor[],
   fits: readonly FitFeatures[],

@@ -27,7 +27,7 @@ export function LayerMap({ data, sources }: { data: LayerMapData; sources: reado
       }
       sources={sources}
       notShown={{ count: data.unplaced, field: "layer", noun: "competitors" }}
-      state={rows.length === 0 ? { status: "empty", message: "No competitors to place." } : { status: "ready" }}
+      state={rows.length === 0 ? { status: "empty", message: "No competitors are in the data yet. Run the pipeline to load them." } : { status: "ready" }}
       height={0}
       tableAlternative={
         <ChartTable

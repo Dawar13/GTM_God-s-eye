@@ -107,7 +107,7 @@ export function CompetitorSplit({
       height={120}
       state={
         total === 0
-          ? { status: "empty", message: "No investor who backed a tracked competitor matches the filters." }
+          ? { status: "empty", message: "No investor who backed a tracked competitor matches the filters. Widen a filter to see them." }
           : { status: "ready" }
       }
     >
@@ -116,13 +116,13 @@ export function CompetitorSplit({
           title="Likely conflict"
           note="Backed a direct competitor in the last 24 months"
           list={split.conflict}
-          empty="None match the current filters."
+          empty="None match the current filters. Widen a filter to see more."
         />
         <Column
           title="Thesis signal"
           note="Backed a tracked competitor, not flagged as a conflict"
           list={split.signal}
-          empty="None match the current filters."
+          empty="None match the current filters. Widen a filter to see more."
         />
       </div>
     </ChartFrame>

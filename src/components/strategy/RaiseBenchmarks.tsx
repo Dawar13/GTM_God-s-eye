@@ -115,7 +115,7 @@ export function RaiseBenchmarks({
       height={300}
       state={
         data.points.length === 0
-          ? { status: "empty", message: "No stored benchmark matches these measures." }
+          ? { status: "empty", message: "No stored benchmark has a pre-seed or seed size, valuation or SAFE cap in dollars. Add benchmark records and rerun the pipeline." }
           : { status: "ready" }
       }
       tableAlternative={

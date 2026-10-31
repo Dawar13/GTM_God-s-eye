@@ -6,9 +6,10 @@ import { useVirtualizer } from "@tanstack/react-virtual";
 import { parseAsStringLiteral, useQueryState } from "nuqs";
 import { ChevronDown, ChevronUp, Columns3, Download } from "lucide-react";
 import { cn } from "cn";
-import { Chip, Segmented } from "@/components/ui-atlas";
+import { Chip, Segmented, Skeleton } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { loadDirectoryRows, useLoaded } from "@/lib/client-index";
 import { rowsInArea, type AreaCoords, type DirectoryRow } from "@/lib/data/directory";
 import { DEFAULT_VISIBLE, DIRECTORY_COLUMNS } from "@/lib/directory/columns";
 import { csvFilename, toCsv } from "@/lib/directory/csv";
@@ -153,7 +154,7 @@ function Cell({ id, row }: { id: SortColumn; row: DirectoryRow }) {
           ))}
           <span
             role="img"
-            aria-label={`Fit ${row.fit.toFixed(1)} out of 100`}
+            aria-label={`Fit ${row.fit.toFixed(1)} of 100`}
             className="h-1.5 w-14 shrink-0 overflow-hidden rounded-sm bg-panel-sunk"
           >
             <span
@@ -177,7 +178,33 @@ function Cell({ id, row }: { id: SortColumn; row: DirectoryRow }) {
   }
 }
 
-export function DirectoryTable({
+/**
+ * Loads the rows from /api/directory-rows (they are not in the page HTML), holding the
+ * table's footprint while they arrive so nothing below moves.
+ */
+export function DirectoryTable({ areaCoords }: { areaCoords: AreaCoords }) {
+  const rows = useLoaded("directory-rows", loadDirectoryRows);
+  if (rows.status === "ready") return <DirectoryView rows={rows.data} areaCoords={areaCoords} />;
+  return (
+    <div className="flex min-h-0 flex-1 flex-col gap-3">
+      <div className="flex min-h-[30px] items-center">
+        <p className="text-sm text-ink-2" role={rows.status === "error" ? "alert" : undefined}>
+          {rows.status === "error"
+            ? "The investor list could not load. Reload the page to try again."
+            : "Loading investors"}
+        </p>
+      </div>
+      <div
+        aria-busy={rows.status === "loading"}
+        className="h-[calc(100dvh-19.5rem)] min-h-80 rounded-xl border border-rule bg-panel p-3"
+      >
+        {rows.status === "loading" && <Skeleton className="h-full w-full" />}
+      </div>
+    </div>
+  );
+}
+
+function DirectoryView({
   rows,
   areaCoords,
 }: {
@@ -388,7 +415,7 @@ export function DirectoryTable({
 
       <div
         ref={scrollRef}
-        className="relative h-[calc(100dvh-17rem)] min-h-80 overflow-auto rounded-xl border border-rule bg-panel"
+        className="relative h-[calc(100dvh-19.5rem)] min-h-80 overflow-auto rounded-xl border border-rule bg-panel"
       >
         <div
           role="table"

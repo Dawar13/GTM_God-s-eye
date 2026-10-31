@@ -7,6 +7,7 @@ import {
   type PointerEvent,
   type ReactNode,
 } from "react";
+import dynamic from "next/dynamic";
 import { ArrowLeft, ArrowRight, ExternalLink, X } from "lucide-react";
 import { INSPECTOR_WIDTH, useInspectorStore } from "@/store/inspector";
 import { useInspector } from "@/lib/hooks/useInspector";
@@ -16,10 +17,16 @@ import type { EntityHeader } from "@/lib/data/entities";
 import { formatCount, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
 import { ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
-import { InvestorProfileSections } from "@/components/shell/InvestorProfile";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
+
+// The profile draws Recharts charts; load it when an investor is first opened, so pages
+// without charts of their own do not ship Recharts.
+const InvestorProfileSections = dynamic(
+  () => import("@/components/shell/InvestorProfile").then((m) => m.InvestorProfileSections),
+  { ssr: false, loading: () => <Skeleton className="mt-4 h-40 w-full" /> },
+);
 
 const KIND_LABELS = { investor: "Investor", company: "Company", competitor: "Competitor" } as const;
 const KEY_STEP = 16;

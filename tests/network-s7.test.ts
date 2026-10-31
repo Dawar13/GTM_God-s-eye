@@ -26,6 +26,7 @@ import {
   squareHalfSide,
   stageCounts,
   toGraphData,
+  viewBounds,
   type GraphData,
   type ViewOptions,
 } from "@/lib/viz/transforms/networkGraph";
@@ -276,6 +277,24 @@ describe("network view", () => {
     );
     const western = view({ filters: DEFAULT_FILTER_STATE });
     expect(neighbourhood(data, western, at("co_x")).has(at("inv_c"))).toBe(false);
+  });
+});
+
+describe("first view framing (S10a)", () => {
+  it("bounds only the nodes in view", () => {
+    const narrow = view({ rounds: { years: [2024, 2025], stages: [] } });
+    const shown = data.nodes.filter((v) => narrow.node[v.i]);
+    const b = viewBounds(data, narrow)!;
+    expect(b.x).toEqual([Math.min(...shown.map((v) => v.x)), Math.max(...shown.map((v) => v.x))]);
+    expect(b.y).toEqual([Math.min(...shown.map((v) => v.y)), Math.max(...shown.map((v) => v.y))]);
+    const whole = viewBounds(data, view())!;
+    expect(whole.x[0]).toBeLessThanOrEqual(b.x[0]);
+    expect(whole.x[1]).toBeGreaterThanOrEqual(b.x[1]);
+  });
+
+  it("is null when nothing is shown", () => {
+    const none = view();
+    expect(viewBounds(data, { ...none, node: new Uint8Array(none.node.length) })).toBeNull();
   });
 });
 

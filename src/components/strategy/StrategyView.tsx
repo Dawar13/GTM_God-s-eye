@@ -4,6 +4,8 @@ import { useCallback, useMemo } from "react";
 import { useQueryStates } from "nuqs";
 import type { LegalTopic } from "@/lib/schema/enums";
 import { buildCsv, targetsFilename } from "@/lib/directory/csv";
+import { Panel, Skeleton } from "@/components/ui-atlas";
+import { loadStrategyRows, useLoaded } from "@/lib/client-index";
 import { applyFilters } from "@/lib/filters";
 import { useFilters } from "@/lib/filters/use-filters";
 import { setWeight } from "@/lib/fit/weights";
@@ -12,10 +14,7 @@ import { EXAMPLE_RAISE_USD } from "@/lib/calculators/examples";
 import { useTierOverrides } from "@/lib/strategy/overrides";
 import { clampRaise, strategyParsers, strategyUrlOptions } from "@/lib/strategy/url";
 import type { Benchmark } from "@/lib/schema";
-import {
-  splitBackers,
-  type CompetitorBacker,
-} from "@/lib/viz/transforms/competitorInvestors";
+import { splitBackers, type CompetitorBacker } from "@/lib/viz/transforms/competitorInvestors";
 import { rankStrategy, targetTable, type StrategyRow } from "@/lib/viz/transforms/strategy";
 import { CompetitorSplit } from "./CompetitorSplit";
 import { RaiseBenchmarks } from "./RaiseBenchmarks";
@@ -35,16 +34,43 @@ function download(text: string, filename: string) {
   URL.revokeObjectURL(url);
 }
 
-/** The Strategy page: weights and raise from the URL, the filtered ranking, tiers and export. */
+const NO_ROWS: readonly StrategyRow[] = [];
+
+/** Stands in for a section that needs the investor rows while they load (or failed to). */
+function RowsPending({
+  title,
+  height,
+  failed,
+}: {
+  title: string;
+  height: number;
+  failed: boolean;
+}) {
+  return (
+    <Panel className="flex flex-col gap-3" aria-busy={!failed}>
+      <h3 className="text-lg font-semibold">{title}</h3>
+      {failed ? (
+        <p role="alert" className="text-sm text-ink-2">
+          The investor list could not load. Reload the page to try again.
+        </p>
+      ) : (
+        <Skeleton className="w-full" style={{ height }} />
+      )}
+    </Panel>
+  );
+}
+
+/**
+ * The Strategy page: weights and raise from the URL, the filtered ranking, tiers and export.
+ * The investor rows load from /api/strategy-rows, so they are not in the page HTML.
+ */
 export function StrategyView({
-  rows,
   sources,
   benchmarks,
   backers,
   competitorSources,
   noteCounts,
 }: {
-  rows: readonly StrategyRow[];
   sources: readonly string[];
   benchmarks: readonly Benchmark[];
   backers: readonly CompetitorBacker[];
@@ -55,6 +81,9 @@ export function StrategyView({
   const [{ w: weights, raise }, setQs] = useQueryStates(strategyParsers, strategyUrlOptions);
   const raiseUsd = clampRaise(raise);
   const { overrides, move, reset } = useTierOverrides();
+  const loaded = useLoaded("strategy-rows", loadStrategyRows);
+  const rows = loaded.status === "ready" ? loaded.data : NO_ROWS;
+  const failed = loaded.status === "error";
 
   const filtered = useMemo(() => applyFilters(rows, filters), [rows, filters]);
   const ranked = useMemo(
@@ -97,19 +126,32 @@ export function StrategyView({
         raiseUsd={raiseUsd}
         onRaise={onRaise}
       />
-      <RankedList
-        ranked={ranked}
-        weights={weights}
-        raiseUsd={raiseUsd}
-        overrides={overrides}
-        sources={sources}
-        unscored={unscored}
-        filteredOut={rows.length - filtered.length}
-        onExport={onExport}
-      />
-      <TierBoard ranked={ranked} overrides={overrides} onMove={move} onReset={reset} />
+      {failed ? (
+        <RowsPending title="Ranked targets" height={0} failed />
+      ) : (
+        <RankedList
+          ranked={ranked}
+          weights={weights}
+          raiseUsd={raiseUsd}
+          overrides={overrides}
+          sources={sources}
+          unscored={unscored}
+          filteredOut={rows.length - filtered.length}
+          onExport={onExport}
+          loading={loaded.status === "loading"}
+        />
+      )}
+      {loaded.status === "ready" ? (
+        <TierBoard ranked={ranked} overrides={overrides} onMove={move} onReset={reset} />
+      ) : (
+        <RowsPending title="Outreach tiers" height={360} failed={failed} />
+      )}
       <RaiseBenchmarks benchmarks={benchmarks} raiseUsd={raiseUsd} />
-      <CompetitorSplit split={split} sources={competitorSources} />
+      {loaded.status === "ready" ? (
+        <CompetitorSplit split={split} sources={competitorSources} />
+      ) : (
+        <RowsPending title="Investors who backed a competitor" height={240} failed={failed} />
+      )}
       <StructuralQuestions noteCounts={noteCounts} />
     </div>
   );

@@ -127,7 +127,7 @@ export function FoundedVsRaisedChart({
       height={380}
       state={
         points.length === 0
-          ? { status: "empty", message: "No competitor has both a founded year and a total raised." }
+          ? { status: "empty", message: "No competitor has both a founded year and a total raised. The table above lists what is known for each." }
           : { status: "ready" }
       }
       tableAlternative={
@@ -314,7 +314,7 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
       height={Math.min(height, 400)}
       state={
         dots.length === 0
-          ? { status: "empty", message: "No competitor round has a date." }
+          ? { status: "empty", message: "No competitor round has a date. The table above lists each competitor's last round." }
           : { status: "ready" }
       }
       tableAlternative={
@@ -475,7 +475,7 @@ export function OverlapHeatmap({
       height={400}
       state={
         data.rows.length === 0
-          ? { status: "empty", message: "No investor backs two or more competitors." }
+          ? { status: "empty", message: "No investor backs two or more competitors. Open a competitor in the table above to see who backs it." }
           : { status: "ready" }
       }
       tableAlternative={

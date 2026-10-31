@@ -15,12 +15,14 @@
   --rule: #e3e6eb;
   --ink: #1a1f29;
   --ink-2: #4a5160;
-  --muted: #8a919c;
+  /* muted, positive and negative carry text, so each is at least 4.5:1 on every surface
+     (S10a; tests/contrast.test.ts). They were #8a919c, #2f9e6f and #d1495b. */
+  --muted: #676c74;
   --accent: #4f5bd5;
   --accent-soft: #eef0fb;
   --on-accent: #ffffff;
-  --positive: #2f9e6f;
-  --negative: #d1495b;
+  --positive: #257b57;
+  --negative: #b94151;
 }
 
 [data-theme="dark"] {
@@ -32,12 +34,12 @@
   --rule: #2c3038;
   --ink: #e6e8eb;
   --ink-2: #b4bac4;
-  --muted: #8a919c;
+  --muted: #8e959f;
   --accent: #8b94f0;
   --accent-soft: #262a45;
   --on-accent: #16181d;
   --positive: #2f9e6f;
-  --negative: #d1495b;
+  --negative: #dc7381;
 }
 
 /* Elements that carry a data-theme paint their own surface, so a wrapper re-themes its subtree. */

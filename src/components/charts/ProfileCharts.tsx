@@ -176,7 +176,7 @@ export function SectorWeightsChart({
       notShown={{ count: sectors.unknown ? 1 : 0, field: "sector weights" }}
       state={
         sectors.unknown
-          ? { status: "empty", message: "No sector weights are on record for this investor." }
+          ? { status: "empty", message: "No sector weights are on record for this investor. The sources below show what is known." }
           : { status: "ready" }
       }
       height={height}
@@ -275,8 +275,8 @@ export function FundsTimelineChart({ funds }: { funds: InvestorProfile["funds"] 
                 status: "empty",
                 message:
                   funds.notPlotted.length > 0
-                    ? "No fund has both a size and a date on record."
-                    : "No funds are on record for this investor.",
+                    ? "No fund has both a size and a date on record. The funds without them are listed below."
+                    : "No funds are on record for this investor. The sources below show what is known.",
               }
             : { status: "ready" }
         }

@@ -15,7 +15,7 @@ export type ThemeColors = {
 const LIGHT: ThemeColors = {
   ink: "#1a1f29",
   ink2: "#4a5160",
-  muted: "#8a919c",
+  muted: "#676c74",
   rule: "#e3e6eb",
   panel: "#ffffff",
   accent: "#4f5bd5",

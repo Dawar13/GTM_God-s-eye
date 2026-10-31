@@ -44,10 +44,11 @@ export type ThesisRow = FilterableInvestor & {
 export type ClusterInfo = {
   index: number;
   id: string;
-  /** Top three sectors, e.g. "Robotics and physical AI · AI infrastructure · …". */
+  /**
+   * The cluster's name in every view (map, legends, tooltips, the competitor heatmap, the
+   * network): its top two sectors, e.g. "Robotics and physical AI · AI infrastructure".
+   */
   label: string;
-  /** Top two sectors, for the map and the legend. */
-  shortLabel: string;
   size: number;
   color: string;
 };
@@ -60,8 +61,7 @@ export function toClusterInfo(clusters: readonly Cluster[]): ClusterInfo[] {
       return {
         index: c.index,
         id: c.id,
-        label: names.length ? names.slice(0, 3).join(" · ") : c.name,
-        shortLabel: names.length ? names.slice(0, 2).join(" · ") : c.name,
+        label: names.length ? names.slice(0, 2).join(" · ") : c.name,
         size: c.size,
         color: clusterColor(c.index),
       };

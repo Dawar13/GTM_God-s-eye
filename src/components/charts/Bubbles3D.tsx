@@ -54,7 +54,7 @@ function readColors(dark: boolean) {
     css.getPropertyValue(name).trim() || (dark ? darkFallback : light);
   return {
     rule: v("--rule", "#E3E6EB", "#2C3038"),
-    muted: v("--muted", "#8A919C", "#8A919C"),
+    muted: v("--muted", "#676C74", "#8E959F"),
     ink2: v("--ink-2", "#4A5160", "#B4BAC4"),
     sunk: v("--panel-sunk", "#F0F2F5", "#191C21"),
     accent: v("--accent", "#4F5BD5", "#8B94F0"),

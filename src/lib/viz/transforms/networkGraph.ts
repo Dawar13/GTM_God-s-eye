@@ -529,6 +529,28 @@ export function networkView(data: GraphData, opts: ViewOptions): NetworkView {
   };
 }
 
+/**
+ * Layout extent of the nodes shown in this view, so the first camera view can frame them
+ * rather than the whole graph. Null when no node is shown.
+ */
+export function viewBounds(
+  data: GraphData,
+  view: NetworkView,
+): { x: [number, number]; y: [number, number] } | null {
+  let x0 = Infinity;
+  let x1 = -Infinity;
+  let y0 = Infinity;
+  let y1 = -Infinity;
+  for (const v of data.nodes) {
+    if (!view.node[v.i]) continue;
+    x0 = Math.min(x0, v.x);
+    x1 = Math.max(x1, v.x);
+    y0 = Math.min(y0, v.y);
+    y1 = Math.max(y1, v.y);
+  }
+  return x0 === Infinity ? null : { x: [x0, x1], y: [y0, y1] };
+}
+
 /** The node and its neighbours through edges shown in this view. */
 export function neighbourhood(data: GraphData, view: NetworkView, v: number): Set<number> {
   const out = new Set([v]);

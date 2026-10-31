@@ -11,6 +11,7 @@
  */
 import Graph from "graphology";
 import { SigmaContainer, useRegisterEvents, useSigma } from "@react-sigma/core";
+import type Sigma from "sigma";
 import {
   useCallback,
   useEffect,
@@ -30,6 +31,7 @@ import {
   neighbourhood,
   nodeRadius,
   squareHalfSide,
+  viewBounds,
   type GraphData,
   type NetworkView,
 } from "@/lib/viz/transforms/networkGraph";
@@ -45,6 +47,31 @@ export type CanvasHandle = {
 const EDGE_ALPHA = 0.15;
 const FADED = 0.1;
 const MOTION_MS = 300;
+
+/** Label density and camera motion settings for a label level and the motion preference. */
+function liveSettings(labelLevel: number, reduced: boolean): Partial<Settings> {
+  const level = LABEL_LEVELS[labelLevel] ?? LABEL_LEVELS[2];
+  const motion: Partial<Settings> = reduced
+    ? { zoomDuration: 0, inertiaDuration: 0, doubleClickZoomingDuration: 0 }
+    : { zoomDuration: 250, inertiaDuration: 200, doubleClickZoomingDuration: 200 };
+  return { ...motion, labelDensity: level.density, labelRenderedSizeThreshold: level.threshold };
+}
+
+/** Camera state that frames the nodes shown in this view (the whole graph is ratio 1). */
+function frameView(sigma: Sigma, data: GraphData, view: NetworkView) {
+  const b = viewBounds(data, view);
+  if (!b) return null;
+  const p0 = sigma.graphToFramedGraph({ x: b.x[0], y: b.y[0] });
+  const p1 = sigma.graphToFramedGraph({ x: b.x[1], y: b.y[1] });
+  const extent = Math.max(Math.abs(p1.x - p0.x), Math.abs(p1.y - p0.y));
+  return {
+    x: (p0.x + p1.x) / 2,
+    y: (p0.y + p1.y) / 2,
+    // A margin round the shown nodes; never tighter than a small cluster, never wider than all.
+    ratio: Math.min(1, Math.max(0.08, extent * 1.15)),
+    angle: 0,
+  };
+}
 
 type Refs = {
   view: NetworkView;
@@ -128,6 +155,8 @@ export default function NetworkCanvas({
   }, []);
 
   const active = locked ?? hover?.i ?? null;
+  // Mount-time label and motion settings go into Sigma's options, so mounting re-indexes once.
+  const [initialSettings] = useState(() => liveSettings(labelLevel, reduced));
   const stateRef = useRef<Refs>({
     view,
     colours,
@@ -183,6 +212,7 @@ export default function NetworkCanvas({
         minCameraRatio: 0.03,
         maxCameraRatio: 2,
         labelGridCellSize: 120,
+        ...initialSettings,
       },
       nodeReducer: (_key, _data, attrs) => {
         const r = stateRef.current;
@@ -247,8 +277,8 @@ export default function NetworkCanvas({
         return out;
       },
     }),
-    // `data` is fixed for the life of the graph; the font is read once at mount.
-    [data, fontFamily],
+    // `data` is fixed for the life of the graph; the font and settings are read once at mount.
+    [data, fontFamily, initialSettings],
   );
 
   return (
@@ -350,32 +380,51 @@ function Behaviour({
   // Filters, mode, colours or the highlight changed: new state for the reducers, then one
   // refresh, batched to the next frame so a fast hover sweep costs one pass per frame. The
   // graph and its positions are untouched.
+  // A full refresh re-indexes every node and edge at once (about 10,000 here), so nothing
+  // calls it when the reducers' inputs are unchanged, as on mount.
   useEffect(() => {
-    stateRef.current.view = view;
-    stateRef.current.colours = colours;
-    stateRef.current.theme = theme;
-    stateRef.current.selected = selected;
+    const r = stateRef.current;
     const a = active !== null && view.node[active] ? active : null;
-    stateRef.current.active = a;
-    stateRef.current.highlight = a === null ? null : neighbourhood(data, view, a);
+    if (
+      r.view === view &&
+      r.colours === colours &&
+      r.theme === theme &&
+      r.selected === selected &&
+      r.active === a
+    ) {
+      return;
+    }
+    r.view = view;
+    r.colours = colours;
+    r.theme = theme;
+    r.selected = selected;
+    r.active = a;
+    r.highlight = a === null ? null : neighbourhood(data, view, a);
     sigma.scheduleRefresh();
   }, [sigma, stateRef, data, view, colours, theme, selected, active]);
+
+  // First view: frame the nodes in view, not the whole graph, so a narrow filter does not
+  // leave them small in one corner. Later filter changes keep the user's camera.
+  const framed = useRef(false);
+  useEffect(() => {
+    if (framed.current) return;
+    framed.current = true;
+    const target = frameView(sigma, data, view);
+    if (target) sigma.getCamera().setState(target);
+  }, [sigma, data, view]);
 
   // The box changed size (fullscreen, panel resize): Sigma only listens to the window.
   useEffect(() => {
     if (width > 0 && height > 0) sigma.resize(true);
   }, [sigma, width, height]);
 
+  // The mount-time values are already in Sigma's options; setSettings refreshes in full.
+  const appliedSettings = useRef(`${labelLevel}:${reduced}`);
   useEffect(() => {
-    const level = LABEL_LEVELS[labelLevel] ?? LABEL_LEVELS[2];
-    const motion: Partial<Settings> = reduced
-      ? { zoomDuration: 0, inertiaDuration: 0, doubleClickZoomingDuration: 0 }
-      : { zoomDuration: 250, inertiaDuration: 200, doubleClickZoomingDuration: 200 };
-    sigma.setSettings({
-      ...motion,
-      labelDensity: level.density,
-      labelRenderedSizeThreshold: level.threshold,
-    });
+    const key = `${labelLevel}:${reduced}`;
+    if (appliedSettings.current === key) return;
+    appliedSettings.current = key;
+    sigma.setSettings(liveSettings(labelLevel, reduced));
   }, [sigma, labelLevel, reduced]);
 
   useEffect(() => {
@@ -411,9 +460,15 @@ function Behaviour({
       },
       zoomIn: () => void camera().zoomIn({ duration }),
       zoomOut: () => void camera().zoomOut({ duration }),
-      reset: () => void camera().reset({ duration }),
+      // Back to the first view: the nodes in view, framed.
+      reset: () => {
+        const target = frameView(sigma, data, view);
+        if (!target) void camera().reset({ duration });
+        else if (duration === 0) camera().setState(target);
+        else void camera().animate(target, { duration });
+      },
     };
-  }, [sigma, data, reduced]);
+  }, [sigma, data, view, reduced]);
 
   return null;
 }

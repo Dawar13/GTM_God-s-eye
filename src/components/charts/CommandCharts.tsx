@@ -16,7 +16,7 @@ import {
   YAxis,
 } from "recharts";
 import { ChartFrame, Legend, VizTooltip } from "@/components/ui-atlas";
-import { formatCount, formatMonthYear, formatUsd, UNKNOWN } from "@/lib/format";
+import { formatCount, formatMonthYear, formatPercent, formatUsd, UNKNOWN } from "@/lib/format";
 import { LAYER_LABELS, REGION_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
 import { CATEGORICAL, COMPANY_GREY, darken, markStyle } from "@/lib/viz";
@@ -276,7 +276,7 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
             }))}
           />
           <p className="text-xs text-muted">
-            {data.sparse.toLocaleString("en-US")} investors with too few known features (sparse) are
+            {formatCount(data.sparse)} investors with too few known features (sparse) are
             not ranked. Conflict = backed a direct competitor in the last 24 months. Click a bar to
             open the investor.
           </p>
@@ -350,7 +350,7 @@ export function TopFitTile({ data, href }: { data: TopByFit; href: string }) {
                 <VizTooltip
                   title={b.name}
                   value={`${b.total.toFixed(1)} of 100`}
-                  period={`${(b.coverage * 100).toFixed(0)}% of weight known`}
+                  period={`${formatPercent(b.coverage)} of weight known`}
                   confidence={b.confidence}
                   sourceDomain={b.sourceDomain}
                 >
@@ -468,7 +468,7 @@ export function RecentDealsTile({ data, href }: { data: RecentDeals; href: strin
       notShown={{ count: data.notShown, field: "round date" }}
       state={
         dots.length === 0
-          ? { status: "empty", message: "No dated rounds in these layers in the window." }
+          ? { status: "empty", message: "No dated round in our layers falls in this window. Open Competitors to see every round." }
           : { status: "ready" }
       }
       action={<TileLink href={href}>Open Competitors</TileLink>}

@@ -5,7 +5,7 @@
  * the palette and closes it with Esc, and fails on any console error, uncaught
  * exception or failed request.
  *
- * Usage: pnpm exec tsx scripts/keyboard-walkthrough.ts   (dev server on ATLAS_URL, default http://localhost:3000)
+ * Usage: pnpm exec tsx scripts/keyboard-walkthrough.ts   (dev or production server on ATLAS_URL, default http://localhost:3000)
  */
 import { chromium, type Page } from "@playwright/test";
 import { SECTIONS, SECTION_CHILDREN } from "../src/lib/nav";
@@ -39,6 +39,16 @@ async function railLinksReachedByTab(page: Page): Promise<number> {
   return seen.size;
 }
 
+/**
+ * Load the route and let React settle. Not "networkidle": against a production server (S10a) it
+ * may never settle, because Chrome revalidates cached JSON in the background (stale-while-
+ * revalidate) and Playwright counts those requests as open.
+ */
+async function open(page: Page, route: string) {
+  await page.goto(new URL(route, base).toString(), { waitUntil: "load" });
+  await page.waitForTimeout(600);
+}
+
 async function main() {
   const browser = await chromium.launch();
   const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
@@ -54,7 +64,7 @@ async function main() {
 
   for (const route of routes) {
     current = route;
-    await page.goto(new URL(route, base).toString(), { waitUntil: "networkidle" });
+    await open(page, route);
     check((await page.locator("h1").count()) === 1, `${route}: exactly one h1`);
 
     // Rail: every link is reachable with Tab, and the arrow keys move between them.
@@ -79,7 +89,7 @@ async function main() {
 
   // Palette: open with Ctrl+K, find a tool action, close with Esc.
   current = "/ (palette)";
-  await page.goto(new URL("/", base).toString(), { waitUntil: "networkidle" });
+  await open(page, "/");
   await page.keyboard.press("Control+k");
   const dialog = page.getByRole("dialog");
   await dialog.waitFor({ state: "visible", timeout: 5000 });

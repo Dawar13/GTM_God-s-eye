@@ -1,15 +1,24 @@
 /**
  * Lean, serialisable views of the data for client features that must not ship
- * whole datasets in page HTML: the palette name index, the filter index and the
- * inspector header. Served by cached route handlers under /api.
+ * whole datasets in page HTML: the palette name index, the filter index, the Directory
+ * and Strategy rows and the inspector header. Served by cached route handlers under /api
+ * (prerendered at build time, since none reads the request).
  */
 import { formatCountry } from "@/lib/format";
 import { COMPETITOR_CATEGORY_LABELS, INVESTOR_TYPE_LABELS, LAYER_LABELS } from "@/lib/format/labels";
 import { roundInvestorIds, roundList, type RoundListItem } from "@/lib/viz/transforms/competitors";
 import type { FilterableInvestor } from "@/lib/filters";
+import { toStrategyRows, type StrategyRow } from "@/lib/viz/transforms/strategy";
 import type { Source } from "@/lib/schema";
-import { getCompanies, getCompetitors, getInvestors, getRounds } from "./index";
-import { toFilterable } from "./directory";
+import {
+  getCompanies,
+  getCompetitors,
+  getFitFeatures,
+  getFunds,
+  getInvestors,
+  getRounds,
+} from "./index";
+import { toDirectoryRows, toFilterable, type DirectoryRow } from "./directory";
 
 export type EntityKind = "investor" | "company" | "competitor";
 
@@ -35,6 +44,20 @@ export async function getPaletteIndex(): Promise<PaletteEntry[]> {
 export async function getFilterIndex(): Promise<FilterableInvestor[]> {
   "use cache";
   return (await getInvestors()).map(toFilterable);
+}
+
+/** Directory rows for every investor (the table filters them in the browser). */
+export async function getDirectoryRows(): Promise<DirectoryRow[]> {
+  "use cache";
+  const [investors, funds, fits] = await Promise.all([getInvestors(), getFunds(), getFitFeatures()]);
+  return toDirectoryRows(investors, funds, fits);
+}
+
+/** Strategy rows for every investor (ranking and tiers run in the browser). */
+export async function getStrategyRows(): Promise<StrategyRow[]> {
+  "use cache";
+  const [investors, fits] = await Promise.all([getInvestors(), getFitFeatures()]);
+  return toStrategyRows(investors, fits);
 }
 
 export type EntitySource = { url: string; domain: string; kind: Source["kind"]; retrievedAt: string };
