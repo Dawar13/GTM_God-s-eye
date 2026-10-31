@@ -9,6 +9,7 @@ import { loadStrategyRows, useLoaded } from "@/lib/client-index";
 import { applyFilters } from "@/lib/filters";
 import { useFilters } from "@/lib/filters/use-filters";
 import { setWeight } from "@/lib/fit/weights";
+import { rememberWeights } from "@/lib/user/view-store";
 import { DEFAULT_FIT_WEIGHTS, type FitFeatureName } from "@/lib/fit/score";
 import { INSTRUMENT_PHRASES } from "@/lib/round";
 import { useRound } from "@/lib/round/use-round";
@@ -105,12 +106,12 @@ export function StrategyView({
 
   const onWeight = useCallback(
     (name: FitFeatureName, value: number) => {
-      void setQs((prev) => ({ w: setWeight(prev.w, name, value) }));
+      void setQs((prev) => ({ w: setWeight(prev.w, name, value) })).then(rememberWeights);
     },
     [setQs],
   );
   const onReset = useCallback(() => {
-    void setQs({ w: { ...DEFAULT_FIT_WEIGHTS } });
+    void setQs({ w: { ...DEFAULT_FIT_WEIGHTS } }).then(rememberWeights);
   }, [setQs]);
 
   const onExport = useCallback(() => {

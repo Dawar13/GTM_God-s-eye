@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useId } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useId } from "react";
 import { Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -16,37 +15,12 @@ import {
   RAISE_MAX_USD,
   RAISE_MIN_USD,
 } from "@/lib/round";
-import { readStoredRound, useRound } from "@/lib/round/use-round";
-
-/**
- * A page that opens without `?raise=` or `?inst=` starts from the round the user last set
- * (remembered in localStorage). Writing the params into the URL lets the server-rendered
- * Command page and every link see the same round.
- */
-function useRestoreRound() {
-  const params = useSearchParams();
-  const pathname = usePathname();
-  const { setRound } = useRound();
-  const hasRaise = params.has("raise");
-  const hasInst = params.has("inst");
-  useEffect(() => {
-    if (hasRaise && hasInst) return;
-    const stored = readStoredRound();
-    if (!stored) return;
-    const patch: Partial<typeof stored> = {};
-    if (!hasRaise && stored.raise !== DEFAULT_ROUND.raise) patch.raise = stored.raise;
-    if (!hasInst && stored.inst !== DEFAULT_ROUND.inst) patch.inst = stored.inst;
-    if (Object.keys(patch).length) setRound(patch, { remember: false });
-    // Runs when the page or the presence of the params changes, not on every edit.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hasRaise, hasInst, pathname]);
-}
+import { useRound } from "@/lib/round/use-round";
 
 /** "Our round: $1.0M · Post-money SAFE", in the top bar of every page; opens the editor. */
 export function RoundControl() {
   const round = useRound();
   const selectId = useId();
-  useRestoreRound();
   const label = formatRound(round);
 
   return (
@@ -68,7 +42,7 @@ export function RoundControl() {
         <div>
           <h2 className="text-base font-semibold">Our round</h2>
           <p className="text-xs text-muted">
-            Used across the app and kept in the link. The raise moves every investor&apos;s check
+            Used across the app and kept in the link; your last round is remembered for you. The raise moves every investor&apos;s check
             size fit. The instrument does not change any fit score, because no fit feature depends
             on it; it highlights matching benchmarks on Strategy and sets where the SAFE, note and
             round builder calculators start.

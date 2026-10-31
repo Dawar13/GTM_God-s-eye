@@ -19,6 +19,8 @@ import { useUi } from "@/store/ui";
 import { Segmented } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
+import { ProfileControl } from "./ProfileControl";
+import { ProfileViewSync } from "./ProfileViewSync";
 import { RoundControl } from "./RoundControl";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -158,6 +160,8 @@ export function TopBar() {
           </kbd>
         </Button>
         <ThemeToggle />
+        <ProfileControl />
+        <ProfileViewSync />
       </div>
     </header>
   );

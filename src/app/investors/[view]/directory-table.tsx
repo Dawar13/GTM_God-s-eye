@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
+import { useCallback, useEffect, useMemo, useRef, type KeyboardEvent } from "react";
 import { columnVisibilityFeature, tableFeatures, useTable } from "@tanstack/react-table";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { parseAsStringLiteral, useQueryState } from "nuqs";
@@ -12,6 +12,8 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { loadDirectoryRows, useLoaded } from "@/lib/client-index";
 import { rowsInArea, withRoundFit, type AreaCoords, type DirectoryRow } from "@/lib/data/directory";
 import { useRound } from "@/lib/round/use-round";
+import { userStore } from "@/lib/user/manager";
+import { useUserRaw } from "@/lib/user/use-profile";
 import { DEFAULT_VISIBLE, DIRECTORY_COLUMNS } from "@/lib/directory/columns";
 import { csvFilename, toCsv } from "@/lib/directory/csv";
 import {
@@ -48,21 +50,24 @@ const META = new Map(DIRECTORY_COLUMNS.map((c) => [c.id, c]));
 
 type Density = "comfortable" | "compact";
 const ROW_HEIGHT: Record<Density, number> = { comfortable: 40, compact: 28 };
-const DENSITY_KEY = "atlas.directory.density";
-const COLUMNS_KEY = "atlas.directory.columns";
+/** Per-profile keys (see src/lib/user) for the table's density and column choices. */
+const DENSITY_KEY = "directory.density";
+const COLUMNS_KEY = "directory.columns";
 
-function readStored(key: string): string | null {
-  try {
-    return window.localStorage.getItem(key);
-  } catch {
-    return null;
-  }
+function parseDensity(raw: string | null): Density {
+  return raw === "compact" ? "compact" : "comfortable";
 }
-function writeStored(key: string, value: string) {
+
+function parseColumns(raw: string | null): SortColumn[] {
+  if (!raw) return DEFAULT_VISIBLE;
   try {
-    window.localStorage.setItem(key, value);
+    const ids = (JSON.parse(raw) as unknown[]).filter((v): v is SortColumn =>
+      META.has(v as SortColumn),
+    );
+    if (!ids.length) return DEFAULT_VISIBLE;
+    return ids.includes("name") ? ids : ["name", ...ids];
   } catch {
-    /* storage blocked: the choice lasts for this visit only */
+    return DEFAULT_VISIBLE; // a corrupt value
   }
 }
 
@@ -225,24 +230,11 @@ function DirectoryView({
   const [area, setArea] = useQueryState(AREA_PARAM, parseAsArea.withOptions(filterUrlOptions));
   const { id: selectedId, open: openInspector } = useInspector();
 
-  const [density, setDensity] = useState<Density>("comfortable");
-  const [visible, setVisible] = useState<SortColumn[]>(DEFAULT_VISIBLE);
-  // Stored choices are read after mount so server and first client render agree.
-  useEffect(() => {
-    const d = readStored(DENSITY_KEY);
-    if (d === "comfortable" || d === "compact") setDensity(d);
-    const c = readStored(COLUMNS_KEY);
-    if (c) {
-      try {
-        const ids = (JSON.parse(c) as unknown[]).filter((v): v is SortColumn =>
-          META.has(v as SortColumn),
-        );
-        if (ids.length) setVisible(ids.includes("name") ? ids : ["name", ...ids]);
-      } catch {
-        /* ignore a corrupt value */
-      }
-    }
-  }, []);
+  // Stored choices are read after mount (the server and first client render use the defaults).
+  const densityRaw = useUserRaw(DENSITY_KEY);
+  const columnsRaw = useUserRaw(COLUMNS_KEY);
+  const density = parseDensity(densityRaw);
+  const visible = useMemo(() => parseColumns(columnsRaw), [columnsRaw]);
 
   // A brushed map region narrows the rows before the filters, so chip counts include it too.
   const inRegion = useMemo(() => rowsInArea(rows, areaCoords, area), [rows, areaCoords, area]);
@@ -294,12 +286,10 @@ function DirectoryView({
   const toggleColumn = (id: SortColumn) => {
     const next = visible.includes(id) ? visible.filter((v) => v !== id) : [...visible, id];
     const ordered = DIRECTORY_COLUMNS.map((c) => c.id).filter((c) => next.includes(c));
-    setVisible(ordered);
-    writeStored(COLUMNS_KEY, JSON.stringify(ordered));
+    userStore.set(COLUMNS_KEY, JSON.stringify(ordered));
   };
   const changeDensity = (d: Density) => {
-    setDensity(d);
-    writeStored(DENSITY_KEY, d);
+    userStore.set(DENSITY_KEY, d);
   };
 
   const exportCsv = useCallback(() => {

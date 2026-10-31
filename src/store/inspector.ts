@@ -1,7 +1,12 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
+import { userStateStorage } from "@/lib/user/state-storage";
+import { userStore } from "@/lib/user/manager";
 
 export const INSPECTOR_WIDTH = { min: 360, max: 640, initial: 420 } as const;
+
+/** Per-profile key for the drawer width (see src/lib/user). */
+export const INSPECTOR_STORAGE_KEY = "inspector";
 
 const clampWidth = (w: number) => Math.min(INSPECTOR_WIDTH.max, Math.max(INSPECTOR_WIDTH.min, w));
 
@@ -11,6 +16,8 @@ type InspectorState = {
   history: string[];
   index: number;
   setWidth: (width: number) => void;
+  /** Applies the active person's saved width (after a profile switch). */
+  applyProfile: () => void;
   /** Open an entity: drops any forward entries, then appends it. */
   push: (id: string) => void;
   /** Start a fresh history, for a selection that arrived from the URL. */
@@ -26,6 +33,17 @@ export const useInspectorStore = create<InspectorState>()(
       history: [],
       index: -1,
       setWidth: (width) => set({ width: clampWidth(width) }),
+      applyProfile: () => {
+        let width: number = INSPECTOR_WIDTH.initial;
+        try {
+          const raw = userStore.get(INSPECTOR_STORAGE_KEY);
+          const saved = raw ? (JSON.parse(raw) as { state?: { width?: unknown } }).state?.width : null;
+          if (typeof saved === "number" && Number.isFinite(saved)) width = clampWidth(saved);
+        } catch {
+          /* corrupt value: use the default */
+        }
+        set({ width });
+      },
       push: (id) => {
         const { history, index } = get();
         if (history[index] === id) return;
@@ -47,7 +65,8 @@ export const useInspectorStore = create<InspectorState>()(
       },
     }),
     {
-      name: "atlas-inspector",
+      name: INSPECTOR_STORAGE_KEY,
+      storage: createJSONStorage(() => userStateStorage),
       skipHydration: true,
       partialize: (s) => ({ width: s.width }),
     },

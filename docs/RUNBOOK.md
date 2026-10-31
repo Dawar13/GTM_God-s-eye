@@ -87,3 +87,7 @@ The Lighthouse numbers in `docs/PHASE_2_REPORT.md` were taken on a laptop agains
 - A `next dev` started in the background can outlive its shell, and killing only the child makes the parent start it again. Find the parent with `powershell -NoProfile -c "Get-CimInstance Win32_Process -Filter \"Name='node.exe'\" | ? CommandLine -like '*pnpm.cjs dev*' | select ProcessId,CommandLine"` and stop the whole tree with `taskkill //PID <id> //T //F` (Git Bash; in PowerShell use single slashes). Use `pnpm.cjs start` in the filter for a production server.
 - `netstat -ano` can miss a live Next server on port 3000. Check with `curl --max-time 3 http://localhost:3000/` instead.
 - Stop any dev or production server before `pnpm build`, since the build rewrites `.next`.
+
+## People and profiles
+
+Each person on a browser picks a profile from the chip in the top bar (initials and name). Their round, theme, tier changes, Practice, Directory choices and last-used Strategy weights and filters are kept apart. Profiles live in this browser only; they are not passwords, and sign-in is the deployment's. Clearing site data removes them. To start someone fresh, add a person; to remove one, use the bin icon next to their name (the last profile cannot be removed).

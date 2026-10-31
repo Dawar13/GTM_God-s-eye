@@ -81,7 +81,7 @@ export function safeTabFor(inst: Instrument): "post" | "pre" | null {
   return inst === "post_money_safe" ? "post" : inst === "pre_money_safe" ? "pre" : null;
 }
 
-/** The last round the user set, as stored in localStorage; null when absent or invalid. */
+/** The last round the user set, as stored for the active person (src/lib/user); null when absent or invalid. */
 export function parseStoredRound(text: string | null): Round | null {
   if (!text) return null;
   try {

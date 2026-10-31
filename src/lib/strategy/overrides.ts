@@ -1,10 +1,12 @@
 "use client";
 
-import { useCallback, useMemo, useSyncExternalStore } from "react";
+import { useCallback, useMemo } from "react";
+import { userStore } from "@/lib/user/manager";
+import { useUserRaw } from "@/lib/user/use-profile";
 import { OUTREACH_TIERS, type OutreachTier, type TierOverrides } from "@/lib/viz/transforms/strategy";
 
-/** localStorage key for manual tier changes: a JSON object of investor id to "A" | "B" | "C". */
-export const TIER_OVERRIDES_KEY = "atlas.strategy.tierOverrides";
+/** Per-profile key (see src/lib/user) for manual tier changes: a JSON object of investor id to "A" | "B" | "C". */
+export const TIER_OVERRIDES_KEY = "strategy.tierOverrides";
 
 /** Reads the stored JSON; anything malformed or with an unknown tier is dropped. */
 export function parseOverrides(text: string | null): TierOverrides {
@@ -24,50 +26,21 @@ export function parseOverrides(text: string | null): TierOverrides {
   }
 }
 
-/** Text last written this visit; used when storage is blocked, and as the live value after a write. */
-let memory: string | null | undefined;
-const listeners = new Set<() => void>();
-
-function snapshot(): string | null {
-  if (memory !== undefined) return memory;
-  try {
-    return window.localStorage.getItem(TIER_OVERRIDES_KEY);
-  } catch {
-    return null;
-  }
-}
-
-function subscribe(onChange: () => void) {
-  listeners.add(onChange);
-  window.addEventListener("storage", onChange);
-  return () => {
-    listeners.delete(onChange);
-    window.removeEventListener("storage", onChange);
-  };
-}
-
 function write(value: TierOverrides) {
-  const text = Object.keys(value).length === 0 ? null : JSON.stringify(value);
-  memory = text;
-  try {
-    if (text === null) window.localStorage.removeItem(TIER_OVERRIDES_KEY);
-    else window.localStorage.setItem(TIER_OVERRIDES_KEY, text);
-  } catch {
-    /* storage blocked: the changes last for this visit only */
-  }
-  listeners.forEach((l) => l());
+  if (Object.keys(value).length === 0) userStore.remove(TIER_OVERRIDES_KEY);
+  else userStore.set(TIER_OVERRIDES_KEY, JSON.stringify(value));
 }
 
 /**
- * Manual tier changes. Stored in this browser only (never written to data). The server render
+ * Manual tier changes. Stored for the active person in this browser only (never written to data). The server render
  * and the first client render see none; the stored ones appear after hydration.
  */
 export function useTierOverrides() {
-  const text = useSyncExternalStore(subscribe, snapshot, () => null);
+  const text = useUserRaw(TIER_OVERRIDES_KEY);
   const overrides = useMemo(() => parseOverrides(text), [text]);
 
   const move = useCallback((id: string, tier: OutreachTier | null) => {
-    const next = { ...parseOverrides(snapshot()) };
+    const next = { ...parseOverrides(userStore.get(TIER_OVERRIDES_KEY)) };
     if (tier === null) delete next[id];
     else next[id] = tier;
     write(next);

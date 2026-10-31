@@ -11,28 +11,22 @@ import {
   type Round,
 } from "./index";
 import { roundParsers, roundUrlOptions } from "./url";
+import { userStore } from "@/lib/user/manager";
 
-const STORAGE_KEY = "atlas.round";
+/** Per-profile key (see src/lib/user) for the last round the person set. */
+export const ROUND_STORAGE_KEY = "round";
 
 export function readStoredRound(): Round | null {
-  try {
-    return parseStoredRound(window.localStorage.getItem(STORAGE_KEY));
-  } catch {
-    return null;
-  }
+  return parseStoredRound(userStore.get(ROUND_STORAGE_KEY));
 }
 
 function writeStoredRound(round: Round) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, serializeStoredRound(round));
-  } catch {
-    /* storage blocked: the choice lasts for this visit only */
-  }
+  userStore.set(ROUND_STORAGE_KEY, serializeStoredRound(round));
 }
 
 /**
  * Our round from the URL (nuqs is the source of truth; `?raise=` and `?inst=`). Edits are also
- * remembered in localStorage, which the top bar applies when a page opens without the params.
+ * remembered for the active person, which the top bar applies when a page opens without the params.
  * Command renders on the server from the URL, so edits there refetch it (debounced).
  */
 export function useRound() {

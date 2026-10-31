@@ -3,6 +3,7 @@
 import { useCallback } from "react";
 import { useQueryStates } from "nuqs";
 import { DEFAULT_FILTER_STATE, type FilterKey, type FilterState } from "./index";
+import { rememberFilters } from "@/lib/user/view-store";
 import { filterParsers, filterUrlOptions } from "./url";
 
 /**
@@ -11,7 +12,16 @@ import { filterParsers, filterUrlOptions } from "./url";
  * `setValues`. Call it under a Suspense boundary (the root layout has one).
  */
 export function useFilters() {
-  const [filters, setFilters] = useQueryStates(filterParsers, filterUrlOptions);
+  const [filters, setFiltersRaw] = useQueryStates(filterParsers, filterUrlOptions);
+  // The person's own edit: remember it as their last-used filters (a link they open is not remembered).
+  const setFilters = useCallback(
+    (...args: Parameters<typeof setFiltersRaw>) =>
+      setFiltersRaw(...args).then((search) => {
+        rememberFilters(search);
+        return search;
+      }),
+    [setFiltersRaw],
+  );
 
   const setValues = useCallback(
     <K extends FilterKey>(key: K, values: FilterState[K]) => {
