@@ -500,3 +500,4 @@ Second half of S10. Not deployed: the user deploys it themselves, following `doc
 
 ## 2026-10-31 — App name: Utopian Autonomy
 - The user asked for the company name in place of "GTM God's Eye". `APP_NAME` (`src/lib/nav.ts`) drives the rail header, the mobile menu and the page titles; CSV exports are now `utopian-autonomy-*.csv`. The logo and icons are unchanged.
+- **Phones: chart headers wrap.** Checked every top-level page at 390×844, 820×1180 and 1280×800 with Playwright: no page-level sideways scroll and no console errors at any size; phones and tablets use the menu button and bottom-sheet Inspector, laptops the rail. One bug found and fixed: `ChartFrame` kept its view controls beside the title on phones, squeezing the title to one word per line and pushing the controls off the card (worst on the competitor Sankey). Below 640 px the controls now wrap under the title. Wide charts (the Sankey, the network) scroll sideways inside their frame on phones.

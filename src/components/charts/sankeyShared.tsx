@@ -99,7 +99,7 @@ export function SankeyControls({
   moneyLabel: string;
 }) {
   return (
-    <div className="flex flex-wrap justify-end gap-2">
+    <div className="flex flex-wrap gap-2 sm:justify-end">
       <Segmented
         label="Sankey view"
         value={view}

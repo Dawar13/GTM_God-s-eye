@@ -84,8 +84,9 @@ export function ChartFrame({
 
   return (
     <Wrapper className={cn("flex flex-col gap-3", className)}>
-      <header className="flex items-start justify-between gap-4">
-        <div>
+      {/* On narrow screens the view controls wrap under the title instead of squeezing it. */}
+      <header className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+        <div className="min-w-0">
           {compact ? (
             <h4 className="text-sm font-medium">{title}</h4>
           ) : (
@@ -93,7 +94,7 @@ export function ChartFrame({
           )}
           <p className={cn("text-ink-2", compact ? "text-xs" : "text-sm")}>{subtitle}</p>
         </div>
-        <div className="flex shrink-0 flex-col items-end gap-2">
+        <div className="flex max-w-full flex-wrap items-start gap-2 sm:shrink-0 sm:flex-col sm:items-end">
           {action}
           {tableAlternative !== undefined && state.status === "ready" && (
             <Segmented
