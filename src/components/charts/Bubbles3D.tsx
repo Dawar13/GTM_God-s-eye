@@ -93,8 +93,8 @@ const idOf = (e: PlotEvent) => {
  */
 const HALO_SCALE = [1.25, 1.5, 1.8, 2.15, 2.55, 3.0] as const;
 const HALO_OPACITY = {
-  dark: [0.3, 0.2, 0.13, 0.08, 0.05, 0.03],
-  light: [0.2, 0.13, 0.08, 0.05, 0.03, 0.018],
+  dark: [0.42, 0.3, 0.2, 0.12, 0.07, 0.04],
+  light: [0.26, 0.18, 0.12, 0.075, 0.045, 0.025],
 } as const;
 const HALO_TRACES = HALO_SCALE.length + 1;
 const OUTLINE_WIDTH = 2;
