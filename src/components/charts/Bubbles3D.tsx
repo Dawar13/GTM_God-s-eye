@@ -87,13 +87,14 @@ const idOf = (e: PlotEvent) => {
 
 /**
  * Hover glow: WebGL markers can't take a CSS filter, so the hovered point is drawn again in
- * three halo traces (one concentric marker each) plus an outline trace. They sit at the end of
+ * six faint halo traces (one concentric marker each, so the falloff reads as a soft glow rather
+ * than rings) plus an outline trace. They sit at the end of
  * `data`, always present and empty, and are filled and cleared with Plotly.restyle.
  */
-const HALO_SCALE = [1.5, 2.1, 2.8] as const;
+const HALO_SCALE = [1.25, 1.5, 1.8, 2.15, 2.55, 3.0] as const;
 const HALO_OPACITY = {
-  dark: [0.45, 0.22, 0.1],
-  light: [0.3, 0.14, 0.06],
+  dark: [0.3, 0.2, 0.13, 0.08, 0.05, 0.03],
+  light: [0.2, 0.13, 0.08, 0.05, 0.03, 0.018],
 } as const;
 const HALO_TRACES = HALO_SCALE.length + 1;
 const OUTLINE_WIDTH = 2;
