@@ -197,6 +197,7 @@ export function investorPassMask(
         maturity: null,
         sectors: [],
         tier: null,
+        tags: [],
       },
     );
   }

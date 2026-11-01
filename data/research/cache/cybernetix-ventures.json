@@ -1,0 +1,33 @@
+{
+  "key": "cybernetix-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Cybernetix Ventures",
+  "status": "active",
+  "researched_at": "2026-11-01",
+  "identity_check": "Confirmed by domain cybernetix.vc: Boston robotics, automation and industrial AI venture firm; portfolio lists Verve Motion, Cambrian Robotics, Enigma Aerospace, Dash Bio, Openshelf, Corsha. Not a same-named software or crypto company.",
+  "pages": [
+    { "url": "https://cybernetix.vc", "title": "Cybernetix Ventures", "publisher": "Cybernetix Ventures", "retrieved_at": "2026-11-01", "kind": "primary" },
+    { "url": "https://pulse2.com/cybernetix-ventures-100-million-fund-closed-for-investing-in-robotics", "title": "Cybernetix Ventures: $100 Million Fund Closed For Investing In Robotics", "publisher": "Pulse 2.0", "retrieved_at": "2026-11-01", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [1], "snippet": "leading US early-stage venture capital firm" },
+    "website": { "value": "https://cybernetix.vc", "pages": [0], "snippet": "Pioneering investments in robotics, automation & industrial AI." },
+    "hq_city": { "value": "Boston", "pages": [0, 1], "snippet": "Boston-based Cybernetix Ventures" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "Boston-based Cybernetix Ventures" },
+    "stages": { "value": ["pre_seed", "seed", "series_a"], "pages": [0], "snippet": "Pre-seed, seed, and Series A" },
+    "thesis_text": { "value": "Market-driven investing in robotics, automation and industrial AI, backed by a network of executives, suppliers and customers plus hands-on support.", "pages": [0], "snippet": "Pioneering investments in robotics, automation & industrial AI." },
+    "stated_sectors": { "value": ["robotics_physical_ai", "industrial_manufacturing", "supply_chain_logistics", "health_bio", "climate_energy"], "pages": [0, 1], "snippet": "robotics, automation, and physical AI technology companies" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "funds", "values": ["Second fund $100M closed (Pulse 2.0 headline, June 2025)", "Raising $100M Fund (firm site news, June 2025)"], "chosen": "none recorded", "reason": "Sources disagree on closed versus raising and the article body gives no amount or close date." }
+  ],
+  "open_items": [
+    "Fund size and close date not confirmed on fetched pages; second fund status unclear.",
+    "Check size not stated on the firm site.",
+    "Cambrian Robotics $3.5M Seed+ round led by Cybernetix is mentioned on the site without a date; no round recorded."
+  ]
+}

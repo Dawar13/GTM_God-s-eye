@@ -14,7 +14,7 @@ import {
   RESEARCH_TIERS,
   SECTORS,
 } from "@/lib/schema/enums";
-import { DEFAULT_FILTER_STATE, type FilterState } from "./index";
+import { DEFAULT_FILTER_STATE, USER_TAGS, type FilterState } from "./index";
 
 const list = <T extends string>(values: readonly T[]) =>
   parseAsArrayOf(parseAsStringLiteral(values));
@@ -27,6 +27,7 @@ export const filterParsers = {
   maturity: list(MATURITY).withDefault([]),
   sector: list(SECTORS).withDefault([]),
   tier: list(RESEARCH_TIERS).withDefault([]),
+  tag: list(USER_TAGS).withDefault([]),
 };
 
 export const filterUrlOptions = { clearOnDefault: true, history: "replace", scroll: false } as const;

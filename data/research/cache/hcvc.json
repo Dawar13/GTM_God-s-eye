@@ -1,0 +1,122 @@
+{
+  "key": "hcvc",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "HCVC",
+  "status": "active",
+  "researched_at": "2026-11-01",
+  "identity_check": "Confirmed by domain hcvc.co (hardware.club did not resolve): Paris / London / San Francisco fund formerly Hardware Club; TechCrunch (Oct 2023) reports HCVC Fund II $75M, Paris-based. Not any other firm with the letters HCVC.",
+  "pages": [
+    {
+      "url": "https://hcvc.co",
+      "title": "HCVC",
+      "publisher": "HCVC",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    },
+    {
+      "url": "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/",
+      "title": "HCVC is back with a new $75 million deep tech fund",
+      "publisher": "TechCrunch",
+      "retrieved_at": "2026-11-01",
+      "kind": "press"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "vc",
+      "pages": [
+        0
+      ],
+      "snippet": "HCVC backs founders on a mission to industrialize scientific and technological progress."
+    },
+    "website": {
+      "value": "https://hcvc.co",
+      "pages": [
+        0
+      ],
+      "snippet": "HCVC backs founders on a mission to industrialize scientific and technological progress."
+    },
+    "hq_city": {
+      "value": "Paris",
+      "pages": [
+        1
+      ],
+      "snippet": "Paris-based"
+    },
+    "hq_country": {
+      "value": "FR",
+      "pages": [
+        1
+      ],
+      "snippet": "Paris-based"
+    },
+    "stages": {
+      "value": [
+        "pre_seed",
+        "seed"
+      ],
+      "pages": [
+        0
+      ],
+      "snippet": "Today we back pre-seed and seed founders across Europe and the US."
+    },
+    "check_min_usd": {
+      "value": 260000,
+      "pages": [
+        1
+      ],
+      "snippet": "$260,000 to $2.6 million"
+    },
+    "check_max_usd": {
+      "value": 2600000,
+      "pages": [
+        1
+      ],
+      "snippet": "$260,000 to $2.6 million"
+    },
+    "thesis_text": {
+      "value": "Seed-stage deep tech fund, rooted in hardware, backing founders who aim to industrialize scientific and technological progress in Europe and North America.",
+      "pages": [
+        0
+      ],
+      "snippet": "HCVC backs founders on a mission to industrialize scientific and technological progress."
+    },
+    "stated_sectors": {
+      "value": [
+        "hardware_deeptech",
+        "climate_energy",
+        "health_bio",
+        "robotics_physical_ai",
+        "space"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "clean energy, more powerful computing, more context-aware robots"
+    }
+  },
+  "funds": [
+    {
+      "name": "HCVC Fund II",
+      "number": "II",
+      "size_original": 75000000,
+      "currency_original": "USD",
+      "close_date": "2023-10-03",
+      "date_precision": "day",
+      "pages": [
+        1
+      ],
+      "snippet": "a new $75 million deep tech fund"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "Fund II close date taken from TechCrunch publication date 2023-10-03 (final close announcement).",
+    "Check size converted by the article: EUR 250k-2.5M = $260k-$2.6M.",
+    "No rounds recorded: article names Cowboy, Renaissance Fusion, Span, Caper, Automata, Radia, Augmenta as portfolio without round details.",
+    "No newer fund than Fund II found on fetched pages."
+  ]
+}

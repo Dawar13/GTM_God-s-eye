@@ -21,6 +21,7 @@ const none: FilterState = {
   maturity: [],
   sector: [],
   tier: [],
+  tag: [],
 };
 
 function row(id: string, over: Partial<FilterableInvestor> = {}): FilterableInvestor {
@@ -33,6 +34,7 @@ function row(id: string, over: Partial<FilterableInvestor> = {}): FilterableInve
     maturity: null,
     sectors: [],
     tier: null,
+    tags: [],
     ...over,
   };
 }
@@ -119,6 +121,27 @@ describe("the Directory and the filter bar agree", () => {
   });
 });
 
+describe("tag filter", () => {
+  const tagged = [
+    row("t1", { tags: ["Big names"] }),
+    row("t2", { tags: ["Strategic and corporate", "Big names"] }),
+    row("t3", { tags: [] }),
+  ];
+
+  it("keeps rows with any selected tag and drops untagged rows", () => {
+    expect(applyFilters(tagged, { ...none, tag: ["Big names"] }).map((r) => r.id)).toEqual(["t1", "t2"]);
+    expect(applyFilters(tagged, { ...none, tag: ["Strategic and corporate"] }).map((r) => r.id)).toEqual(["t2"]);
+  });
+
+  it("counts tags in the facets and parses them from the URL", () => {
+    const counts = facetCounts(tagged, none).tag;
+    expect(counts["Big names"]).toBe(2);
+    expect(counts["Robotics and hard-tech"]).toBe(0);
+    expect(parseFilters("region=&tag=Big names,Nope").tag).toEqual(["Big names"]);
+    expect(summarizeFilters({ ...none, tag: ["Big names"] })).toBe("Big names");
+  });
+});
+
 describe("summarizeFilters", () => {
   it("lists up to three active filters then counts the rest", () => {
     const state: FilterState = {
@@ -170,6 +193,7 @@ describe("URL filters", () => {
       maturity: ["debut"],
       sector: ["ai_infra", "fintech"],
       tier: ["A", "B"],
+      tag: ["Big names", "Strategic and corporate"],
     };
     expect(parseFilters(serializeFilters(state))).toEqual(state);
   });

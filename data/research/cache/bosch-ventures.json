@@ -1,0 +1,96 @@
+{
+  "key": "bosch-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Bosch Ventures",
+  "status": "active",
+  "researched_at": "2026-11-01",
+  "identity_check": "Confirmed by domain bosch.ventures (boschventures.com redirects there): the page is headed Robert Bosch Venture Capital GmbH, the venture arm of Bosch with offices in Stuttgart, Frankfurt, Sunnyvale, Tel Aviv, Shanghai, Boston and London. Not Robert Bosch GmbH the manufacturer, which is the parent and not an investor entity here. The firm's own pages write 'Robert Bosch Venture Capital' (bosch.ventures); recorded here as Bosch Ventures to match the name users know it by.",
+  "pages": [
+    {
+      "url": "https://bosch.ventures/",
+      "title": "Robert Bosch Venture Capital: Shaping the future",
+      "publisher": "Robert Bosch Venture Capital",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    },
+    {
+      "url": "https://bosch.ventures/investment-strategy",
+      "title": "Investment strategy",
+      "publisher": "Robert Bosch Venture Capital",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    }
+  ],
+  "facts": {
+    "type": {
+      "value": "cvc",
+      "pages": [
+        0
+      ],
+      "snippet": "Robert Bosch Venture Capital: Shaping the future"
+    },
+    "website": {
+      "value": "https://bosch.ventures",
+      "pages": [
+        0
+      ],
+      "snippet": "Robert Bosch Venture Capital: Shaping the future"
+    },
+    "stages": {
+      "value": [
+        "seed",
+        "series_a",
+        "series_b",
+        "series_c_plus"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "Early stage is the focus; also later-stage and, in selected cases, seed-stage companies"
+    },
+    "check_range": {
+      "value": {
+        "min": null,
+        "max": 25000000,
+        "currency": "EUR"
+      },
+      "pages": [
+        1
+      ],
+      "snippet": "Up to EUR 25m per company"
+    },
+    "thesis_text": {
+      "value": "Backs entrepreneurs shaping the future of living space across home, work and mobility, spanning AI, automation, semiconductors, climate tech and healthcare.",
+      "pages": [
+        1
+      ],
+      "snippet": "shape the future of human living space"
+    },
+    "stated_sectors": {
+      "value": [
+        "ai_infra",
+        "industrial_manufacturing",
+        "robotics_physical_ai",
+        "hardware_deeptech",
+        "mobility_ev",
+        "climate_energy",
+        "health_bio",
+        "enterprise_saas"
+      ],
+      "pages": [
+        1
+      ],
+      "snippet": "AI / deep learning; automation; semiconductors; advanced manufacturing; mobility; robotics; climate tech; healthcare"
+    }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "HQ not labelled on the fetched page (Stuttgart is the first listed office); hq_city and hq_country not recorded.",
+    "Fund size not disclosed on fetched pages.",
+    "Portfolio page not fetched; no rounds recorded. Stage wording is paraphrased from the strategy page, so the stage list is a best mapping."
+  ]
+}

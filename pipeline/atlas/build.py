@@ -8,7 +8,7 @@ from atlas.config import RESEARCH_SOURCE_ID
 from atlas.geo import region_for_location
 from atlas.ingest.goldman_pdf import SOURCE_ID as GOLDMAN_ID
 from atlas.ingest.goldman_pdf import GoldmanFund
-from atlas.ingest.seeds import LIST_SECTOR, SeedRound
+from atlas.ingest.seeds import LIST_RETRIEVED, LIST_SECTOR, SeedRound
 from atlas.model import Store, add_source, new_company, new_investor, new_round, user_source
 from atlas.resolve import Group, InvestorResolver
 
@@ -35,7 +35,7 @@ def investor_from_group(group: Group, fund_regions: set[str]) -> dict:
     for sid in group.source_ids:
         # Research names are not a user list: they cite their pages when research is applied.
         if sid not in (GOLDMAN_ID, RESEARCH_SOURCE_ID):
-            sources.append(user_source(sid))
+            sources.append(user_source(sid, retrieved_at=LIST_RETRIEVED.get(sid)))
 
     # A regional arm's own name is a location: "Accel (India)" -> india.
     arm_region = region_for_location(", ".join(names.region_words(group.display_name)))
@@ -57,6 +57,8 @@ def investor_from_group(group: Group, fund_regions: set[str]) -> dict:
     inv["seed_list_count"] = len(seed_ids)
     inv["seed_source_ids"] = seed_ids
     inv["seed_hints"] = group.seed_hints
+    if group.user_tags:
+        inv["user_tags"] = sorted(set(group.user_tags))
     # Frontier-lab backers are late-stage by default, unless the fund list shows
     # them running a fund of $200M or less.
     if group.on_frontier_list and "fund_list" not in origins:

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-01T07:39:14+00:00",
+  "generated_at": "2026-11-01T14:21:50+00:00",
   "records": [
     {
       "id": "fund_100x-vc_undated",
@@ -14902,8 +14902,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_felicis-ventures_iii",
-      "investor_id": "inv_felicis-ventures",
+      "id": "fund_felicis_iii",
+      "investor_id": "inv_felicis",
       "name": "Felicis Ventures",
       "number": "III",
       "size_usd": 70000000,
@@ -14928,8 +14928,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_felicis-ventures_iv",
-      "investor_id": "inv_felicis-ventures",
+      "id": "fund_felicis_iv",
+      "investor_id": "inv_felicis",
       "name": "Felicis Ventures",
       "number": "IV",
       "size_usd": 94000000,
@@ -14954,8 +14954,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_felicis-ventures_v",
-      "investor_id": "inv_felicis-ventures",
+      "id": "fund_felicis_v",
+      "investor_id": "inv_felicis",
       "name": "Felicis Ventures",
       "number": "V",
       "size_usd": 200000000,
@@ -18446,6 +18446,39 @@
         }
       ],
       "field_sources": {},
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_hcvc_ii",
+      "investor_id": "inv_hcvc",
+      "name": "HCVC Fund II",
+      "number": "II",
+      "size_usd": 75000000,
+      "currency_original": "USD",
+      "size_original": 75000000,
+      "fx": null,
+      "close_date": "2023-10-03",
+      "close_date_precision": "day",
+      "vintage_year": 2023,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/",
+          "title": "HCVC is back with a new $75 million deep tech fund",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -22241,6 +22274,39 @@
       "confidence": "medium"
     },
     {
+      "id": "fund_lemnos_iii",
+      "investor_id": "inv_lemnos",
+      "name": "Lemnos Fund III",
+      "number": "III",
+      "size_usd": 50000000,
+      "currency_original": "USD",
+      "size_original": 50000000,
+      "fx": null,
+      "close_date": "2017-03-07",
+      "close_date_precision": "day",
+      "vintage_year": 2017,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2017/03/07/lemnos-labs-raises-50-million-third-fund-to-mostly-focus-on-hardware/",
+          "title": "Lemnos just raised a $50 million third fund to (mostly) focus on hardware",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ],
+        "close_date": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "fund_lerer-hippeau_iv",
       "investor_id": "inv_lerer-hippeau",
       "name": "Lerer Hippeau Ventures",
@@ -24427,6 +24493,36 @@
         }
       ],
       "field_sources": {},
+      "confidence": "medium"
+    },
+    {
+      "id": "fund_misumi-ventures_i",
+      "investor_id": "inv_misumi-ventures",
+      "name": "MISUMI Ventures inaugural fund",
+      "number": "I",
+      "size_usd": 50000000,
+      "currency_original": "USD",
+      "size_original": 50000000,
+      "fx": null,
+      "close_date": null,
+      "close_date_precision": null,
+      "vintage_year": null,
+      "location": null,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.robotics247.com/article/misumi-americas-launches-50m-misumi-ventures-fund",
+          "title": "MISUMI Americas launches $50M MISUMI Ventures fund",
+          "publisher": "Robotics 24/7",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "size_usd": [
+          0
+        ]
+      },
       "confidence": "medium"
     },
     {
@@ -33458,8 +33554,8 @@
       "confidence": "medium"
     },
     {
-      "id": "fund_sosv-investments_iii",
-      "investor_id": "inv_sosv-investments",
+      "id": "fund_sosv_iii",
+      "investor_id": "inv_sosv",
       "name": "SOSV Investments",
       "number": "III",
       "size_usd": 150000000,

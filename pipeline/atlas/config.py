@@ -28,6 +28,7 @@ GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
 SEED_ROUNDS_CSV = SEED_DIR / "seed_rounds.csv"
 ACCELERATORS_CSV = SEED_DIR / "accelerators_2026.csv"
+PHYSICAL_AI_CSV = SEED_DIR / "physical_ai_investors_2026-11-01.csv"
 
 SCHEMA_VERSION = 2
 
@@ -159,6 +160,10 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("gsr ventures", "gsr"),
         ("valkyrie", "valkyrie ventures"),
         ("daybreak", "daybreak ventures"),  # research ruled out a Hague "Daybreak Ventures"
+        # Physical-AI list (2026-11-01): fund arm vs parent, and a fuzzy clash.
+        ("bosch", "bosch ventures"),
+        ("samsung", "samsung ventures"),
+        ("momenta ventures", "moment ventures"),  # industrial-IoT fund vs Moment Ventures (fuzzy)
     ]
 )
 

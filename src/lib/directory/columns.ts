@@ -122,6 +122,13 @@ export const DIRECTORY_COLUMNS: readonly DirectoryColumn[] = [
     ],
   },
   {
+    id: "tags",
+    header: "Tags",
+    width: 190,
+    defaultVisible: false,
+    csv: [{ header: "Tags", value: (r) => (r.tags.length ? r.tags.join("; ") : null) }],
+  },
+  {
     id: "sources",
     header: "Sources",
     width: 70,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-01T07:39:14+00:00",
+  "generated_at": "2026-11-01T14:21:50+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -14001,21 +14001,14 @@
       "id": "fit_bosch",
       "investor_id": "inv_bosch",
       "features": {
-        "thesis": {
-          "value": 1.0,
-          "method": "industrial affinity + 0.5 × AI weight",
-          "inputs": [
-            "industrial_affinity 1.00",
-            "ai weight 0.00"
-          ]
-        },
+        "thesis": null,
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.486583,
+          "value": 0.283469,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "2 adjacent companies in 3 rounds"
+            "1 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -14024,6 +14017,46 @@
       "flags": [
         "sparse"
       ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_bosch-ventures",
+      "investor_id": "inv_bosch-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.4375,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.38",
+            "ai weight 0.12"
+          ]
+        },
+        "stage": {
+          "value": 0.8,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: seed, series_a, series_b, series_c_plus"
+          ]
+        },
+        "check": {
+          "value": 0.8,
+          "method": "check range vs raise of $1,000,000 (assumption); leads +0.2",
+          "inputs": [
+            "check None–27997500",
+            "leads None"
+          ]
+        },
+        "adjacency": {
+          "value": 0.283469,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [],
       "raise_size_usd": 1000000
     },
     {
@@ -21986,6 +22019,42 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_cybernetix-ventures",
+      "investor_id": "inv_cybernetix-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.5,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.50",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": {
+          "value": 1.0,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: pre_seed, seed, series_a"
+          ]
+        },
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_cybersecurity-angels",
       "investor_id": "inv_cybersecurity-angels",
       "features": {
@@ -23043,11 +23112,11 @@
       "investor_id": "inv_dcvc",
       "features": {
         "thesis": {
-          "value": 0.681818,
+          "value": 0.840909,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.64",
-            "ai weight 0.09"
+            "industrial_affinity 0.82",
+            "ai weight 0.05"
           ]
         },
         "stage": null,
@@ -28334,11 +28403,11 @@
       "investor_id": "inv_f-prime",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.749999,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.33",
-            "ai weight 0.33"
+            "industrial_affinity 0.67",
+            "ai weight 0.17"
           ]
         },
         "stage": null,
@@ -28827,8 +28896,8 @@
       "raise_size_usd": 1000000
     },
     {
-      "id": "fit_felicis-ventures",
-      "investor_id": "inv_felicis-ventures",
+      "id": "fit_felicis",
+      "investor_id": "inv_felicis",
       "features": {
         "thesis": {
           "value": 0.310346,
@@ -29031,7 +29100,14 @@
       "id": "fit_ff-venture-capital",
       "investor_id": "inv_ff-venture-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 1.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 1.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -35812,6 +35888,54 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_hcvc",
+      "investor_id": "inv_hcvc",
+      "features": {
+        "thesis": {
+          "value": 0.3,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.30",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": {
+          "value": 1.0,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: pre_seed, seed"
+          ]
+        },
+        "check": {
+          "value": 0.8,
+          "method": "check range vs raise of $1,000,000 (assumption); leads +0.2",
+          "inputs": [
+            "check 260000–2600000",
+            "leads None"
+          ]
+        },
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": {
+          "value": 0.4,
+          "method": "freshness × fund-size fit for pre-seed",
+          "inputs": [
+            "freshness older",
+            "latest fund 75000000"
+          ]
+        }
+      },
+      "flags": [],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_hdfc-bank",
       "investor_id": "inv_hdfc-bank",
       "features": {
@@ -42150,6 +42274,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_jmoon-ventures",
+      "investor_id": "inv_jmoon-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.75,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.75",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_jobsohio-growth-capital-fund",
       "investor_id": "inv_jobsohio-growth-capital-fund",
       "features": {
@@ -45272,6 +45426,47 @@
       "flags": [
         "sparse"
       ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_lemnos",
+      "investor_id": "inv_lemnos",
+      "features": {
+        "thesis": {
+          "value": 0.500001,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.50",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": {
+          "value": 0.8,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: seed"
+          ]
+        },
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": {
+          "value": 0.4,
+          "method": "freshness × fund-size fit for pre-seed",
+          "inputs": [
+            "freshness older",
+            "latest fund 50000000"
+          ]
+        }
+      },
+      "flags": [],
       "raise_size_usd": 1000000
     },
     {
@@ -51023,6 +51218,42 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_misumi-ventures",
+      "investor_id": "inv_misumi-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.416668,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.42",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": {
+          "value": 1.0,
+          "method": "earliest stage vs our pre-seed",
+          "inputs": [
+            "stages: pre_seed, seed"
+          ]
+        },
+        "check": {
+          "value": 0.8,
+          "method": "check range vs raise of $1,000,000 (assumption); leads +0.2",
+          "inputs": [
+            "check 500000–1500000",
+            "leads None"
+          ]
+        },
+        "adjacency": null,
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_mit-and-northwestern-university-chapters-of-alumni-venture-group",
       "investor_id": "inv_mit-and-northwestern-university-chapters-of-alumni-venture-group",
       "features": {
@@ -51282,6 +51513,36 @@
             "latest fund 13000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_momenta-ventures",
+      "investor_id": "inv_momenta-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.625,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.62",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -66641,28 +66902,6 @@
       "raise_size_usd": 1000000
     },
     {
-      "id": "fit_samsung",
-      "investor_id": "inv_samsung",
-      "features": {
-        "thesis": null,
-        "stage": null,
-        "check": null,
-        "adjacency": {
-          "value": 0.0,
-          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
-          "inputs": [
-            "0 adjacent companies in 2 rounds"
-          ]
-        },
-        "geography": null,
-        "dry_powder": null
-      },
-      "flags": [
-        "sparse"
-      ],
-      "raise_size_usd": 1000000
-    },
-    {
       "id": "fit_samsung-catalyst-fund",
       "investor_id": "inv_samsung-catalyst-fund",
       "features": {
@@ -66745,6 +66984,28 @@
         }
       },
       "flags": [],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_samsung-ventures",
+      "investor_id": "inv_samsung-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.0,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "0 adjacent companies in 2 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
       "raise_size_usd": 1000000
     },
     {
@@ -71484,14 +71745,14 @@
       "raise_size_usd": 1000000
     },
     {
-      "id": "fit_sosv-investments",
-      "investor_id": "inv_sosv-investments",
+      "id": "fit_sosv",
+      "investor_id": "inv_sosv",
       "features": {
         "thesis": {
-          "value": 0.285714,
+          "value": 0.642857,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.29",
+            "industrial_affinity 0.64",
             "ai weight 0.00"
           ]
         },
@@ -77640,10 +77901,10 @@
       "investor_id": "inv_toyota-ventures",
       "features": {
         "thesis": {
-          "value": 0.3,
+          "value": 0.65,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.30",
+            "industrial_affinity 0.65",
             "ai weight 0.00"
           ]
         },
@@ -78228,7 +78489,14 @@
       "id": "fit_trucks-venture-capital",
       "investor_id": "inv_trucks-venture-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 1.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 1.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -83916,7 +84184,14 @@
       "id": "fit_woven-capital",
       "investor_id": "inv_woven-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 1.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 1.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {

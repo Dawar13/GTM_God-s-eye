@@ -43,6 +43,7 @@ File: `data/processed/investors.json`. A firm, fund manager or individual that i
 | `seed_list_count` | integer | yes | How many user seed lists named this investor |
 | `seed_source_ids` | array of string | yes | Seed lists that named this investor |
 | `seed_hints` | array of [SeedHint](#seedhint) | yes |  |
+| `user_tags` | array of string | no | Short sentence-case tags from the user's own lists, e.g. a list's group; filterable |
 | `flags` | array of `not_early_stage_target_by_default`, `inactive` | yes |  |
 
 ## Partner

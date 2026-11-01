@@ -255,6 +255,15 @@ function EntityHeaderView({
 
   return (
     <div>
+      {entity.tags && entity.tags.length > 0 && (
+        <ul aria-label="Tags" className="flex flex-wrap gap-1.5 pb-2">
+          {entity.tags.map((t) => (
+            <li key={t} className="rounded-md bg-panel-sunk px-1.5 py-0.5 text-xs text-ink-2">
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
       <dl className="divide-y divide-rule border-b border-rule">
         {facts.map((f) => (
           <div key={f.label} className="flex items-baseline justify-between gap-4 py-2 text-sm">

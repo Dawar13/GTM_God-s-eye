@@ -53,6 +53,7 @@ export function useFilters() {
       maturity: [],
       sector: [],
       tier: [],
+      tag: [],
     });
   }, [setFilters]);
 

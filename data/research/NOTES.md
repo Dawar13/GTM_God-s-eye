@@ -101,3 +101,20 @@ Three competitors added from user pastes (`user_supplied:frinks_site_paste_2026_
 | Machenta | remote | robotics | Robot foundation model (robotics rule). $40M seed, co-led by Creandum and USV, Oct 2026 (day unresolved, 27 vs 28). |
 
 **Robotics rule (user, 2026-11-01).** Companies whose core product is robots get category `remote`, with a note in `identity_check` citing `user_supplied:robotics_not_direct_2026_11_01`. Changed: Machina Labs adjacent to remote (robots are the product). Hadrian stays adjacent: it is a parts manufacturer selling Opus factory-autonomy software, and its file does not describe robots as the product. Note added only: Atoms, Parallax Worlds, sensmore (already remote). Revisit all if Utopian moves into robotics.
+
+## Physical-AI investor list (2026-11-01)
+
+User list of 57 investors in four groups (`data/seed/physical_ai_investors_2026-11-01.csv`, source `user_supplied:physical_ai_investor_list_2026_11_01`, retrieved 2026-11-01, low confidence). The groups are kept as `user_tags` and filterable ("Tag" in the filter bar). The user's framing (robotics sits at the intersection of physical AI, foundation models, sensing, edge computing, autonomy and advanced manufacturing) is a list note, not a fact about any firm.
+
+**Matching.** Names go through the normal resolver (exact key, then fuzzy), not loose matching. "SOSV / SOSV HAX" is fed as SOSV; "M12 (Microsoft's venture fund)" as M12; "MISUMI Americas (the new MISUMI Ventures fund)" as MISUMI Ventures. No source was read that says HAX is SOSV's programme, so no HAX alias was added. New DO_NOT_MERGE pairs: bosch / bosch ventures, samsung / samsung ventures (the bare names are the parent companies and stay separate records), momenta ventures / moment ventures (fuzzy merge caught in the dry run). Toyota, Intel, Bain Capital and Samsung NEXT were already separate. Eclipse resolves to the existing Eclipse record (eclipse.capital, the Palo Alto hard-tech fund, researched earlier). Felicis Ventures and SOSV Investments are now displayed as Felicis and SOSV (list names win), so their ids changed; neither was in the research queue.
+
+**New records and what was found** (lean research, 3 to 4 fetches each; cache files in `data/research/cache/`):
+- Cybernetix Ventures: confirmed on cybernetix.vc; Boston; pre-seed to A; no check or fund size recorded (sources conflict on whether Fund II is closed).
+- Momenta Ventures: confirmed on momenta.vc; Switzerland (one press page); thesis only; no check, stages or fund size.
+- Lemnos: site unreachable (certificate error), so domain unverified; San Francisco, seed, Fund III $50M (2017, TechCrunch); check size conflicts, left null.
+- MISUMI Ventures: one press article (Robotics247): $50M inaugural fund, pre-seed and seed, $0.5M to $1.5M checks; own site not fetched.
+- HCVC (Hardware Club): hcvc.co and TechCrunch; Paris; pre-seed and seed, $260k to $2.6M; Fund II $75M (2023-10).
+- JMoon Ventures: Toronto, physical-AI thesis; jmoon.vc gave only a title; stages, checks and funds null; a $20M fund listing is unverified.
+- Bosch Ventures: bosch.ventures (writes itself Robert Bosch Venture Capital); cvc; up to EUR 25M checks; HQ and fund size null.
+- Physical Fund: not_found (physical.fund is a coming-soon page). Samsung Ventures: not_found (samsungventures.com returned 502 three times); both are tagged records with no profile.
+Added to `queue.json` as Tier B (score 0, no computed score) for the seven active firms.

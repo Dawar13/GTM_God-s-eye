@@ -175,6 +175,14 @@ function Cell({ id, row }: { id: SortColumn; row: DirectoryRow }) {
         </span>
       );
     }
+    case "tags":
+      return row.tags.length ? (
+        <span className="truncate" title={row.tags.join("; ")}>
+          {row.tags.join(" · ")}
+        </span>
+      ) : (
+        UNKNOWN
+      );
     case "sources":
       return formatCount(row.sourceCount);
     case "seedLists":

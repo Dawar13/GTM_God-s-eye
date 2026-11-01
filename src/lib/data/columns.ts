@@ -44,6 +44,7 @@ export const FILTERABLE_KEYS = [
   "maturity",
   "sectors",
   "tier",
+  "tags",
 ] as const satisfies readonly (keyof FilterableInvestor)[];
 
 /** A view's row without the filter fields, which the client takes from the filter index. */
@@ -69,6 +70,7 @@ export function joinFilterable<T extends FilterableInvestor>(
       maturity: null,
       sectors: [],
       tier: null,
+      tags: [],
     };
     return { ...f, ...d } as T;
   });

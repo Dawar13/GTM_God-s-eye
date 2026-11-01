@@ -20,6 +20,7 @@ export const SORT_COLUMNS = [
   "tier",
   "fit",
   "sources",
+  "tags",
   "seedLists",
   "confidence",
 ] as const;
@@ -72,6 +73,8 @@ function sortValue(row: DirectoryRow, column: SortColumn): number | string | nul
       return row.tier === null ? null : TIER_ORDER[row.tier];
     case "fit":
       return row.fit;
+    case "tags":
+      return row.tags.length ? row.tags.join("; ") : null;
     case "sources":
       return row.sourceCount;
     case "seedLists":

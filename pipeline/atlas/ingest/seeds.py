@@ -11,8 +11,8 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from atlas.config import SEED_INVESTORS_CSV, SEED_ROUNDS_CSV
-from atlas.names import clean
+from atlas.config import PHYSICAL_AI_CSV, SEED_INVESTORS_CSV, SEED_ROUNDS_CSV
+from atlas.names import clean, investing_name
 
 FRONTIER_LIST = "multiples_frontier_lab_investors_2026-10-28"
 
@@ -113,6 +113,53 @@ def read_seed_investors(path: Path = SEED_INVESTORS_CSV) -> list[SeedInvestorRow
             for row in csv.DictReader(fh)
             if clean(row["name_as_listed"])
         ]
+
+
+# --- Physical-AI investor list (user, 2026-11-01) ------------------------------------------
+
+PHYSICAL_AI_LIST = "physical_ai_investor_list_2026_11_01"
+PHYSICAL_AI_RETRIEVED = "2026-11-01"
+# When a list was received, if not the Phase 0 date (see atlas.model.user_source).
+LIST_RETRIEVED = {PHYSICAL_AI_LIST: PHYSICAL_AI_RETRIEVED}
+# The list's four groups, kept as `user_tags` (short, sentence case).
+PHYSICAL_AI_TAGS = (
+    "Robotics and hard-tech",
+    "Emerging and specialist",
+    "Big names",
+    "Strategic and corporate",
+)
+# Names written with a note that the generic bracket rule would not turn into the firm.
+PHYSICAL_AI_NAMES = {
+    "MISUMI Americas (the new MISUMI Ventures fund)": "MISUMI Ventures",  # the fund, not MISUMI
+}
+
+
+@dataclass
+class PhysicalAiRow:
+    name_as_listed: str
+    name: str  # the investing firm, as fed to the resolver
+    tag: str
+
+
+def physical_ai_name(raw: str) -> str:
+    """'SOSV / SOSV HAX' -> SOSV; "M12 (Microsoft's venture fund)" -> M12."""
+    raw = clean(raw)
+    if raw in PHYSICAL_AI_NAMES:
+        return PHYSICAL_AI_NAMES[raw]
+    return investing_name(raw.split(" / ")[0]).name
+
+
+def read_physical_ai(path: Path = PHYSICAL_AI_CSV) -> list[PhysicalAiRow]:
+    with path.open(encoding="utf-8", newline="") as fh:
+        rows = [
+            PhysicalAiRow(clean(r["name"]), physical_ai_name(r["name"]), clean(r["group"]))
+            for r in csv.DictReader(fh)
+            if clean(r["name"])
+        ]
+    for r in rows:
+        if r.tag not in PHYSICAL_AI_TAGS:
+            raise ValueError(f"unknown group {r.tag!r} for {r.name_as_listed!r}")
+    return rows
 
 
 def parse_amount(raw: str) -> int | None:

@@ -1,7 +1,7 @@
 import { DEFAULT_FIT_WEIGHTS, fitScore } from "@/lib/fit/score";
 import { scoreCompact } from "@/lib/round/fit";
 import { FIT_FEATURE_ORDER } from "@/lib/viz/transforms/topByFit";
-import { SECTOR_MATCH_MIN, type FilterableInvestor } from "@/lib/filters";
+import { SECTOR_MATCH_MIN, USER_TAGS, type FilterableInvestor, type UserTag } from "@/lib/filters";
 import { inArea, type Area } from "@/lib/filters/area";
 import type { BubblePoint, FitFeatures, Fund, Investor, ThesisPoint } from "@/lib/schema";
 import type { Sector } from "@/lib/schema/enums";
@@ -21,6 +21,7 @@ export function toFilterable(inv: Investor): FilterableInvestor {
     maturity: inv.category.maturity,
     sectors,
     tier: inv.tier,
+    tags: (inv.user_tags ?? []).filter((t): t is UserTag => (USER_TAGS as readonly string[]).includes(t)),
   };
 }
 

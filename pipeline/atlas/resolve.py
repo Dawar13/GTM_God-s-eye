@@ -44,6 +44,7 @@ class Group:
     type_guess: str | None = None
     region_hints: set[str] = field(default_factory=set)
     on_frontier_list: bool = False
+    user_tags: list[str] = field(default_factory=list)
 
     def choose_display_name(self) -> str:
         """Research and seed lists name firms, so they win. Among fund-list and

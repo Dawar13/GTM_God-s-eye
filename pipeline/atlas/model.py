@@ -22,9 +22,16 @@ def source(
     }
 
 
-def user_source(source_id: str, link: str | None = None) -> dict:
+def user_source(
+    source_id: str, link: str | None = None, retrieved_at: str | None = None
+) -> dict:
     """A user-supplied list. With a link, the link is the URL; without, a pseudo-URL."""
-    return source(link or f"user_supplied:{source_id}", "user_supplied", title=source_id)
+    return source(
+        link or f"user_supplied:{source_id}",
+        "user_supplied",
+        title=source_id,
+        retrieved_at=retrieved_at or USER_SOURCES_RECEIVED,
+    )
 
 
 def empty_category() -> dict:

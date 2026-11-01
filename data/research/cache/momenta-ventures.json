@@ -1,0 +1,30 @@
+{
+  "key": "momenta-ventures",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Momenta Ventures",
+  "status": "active",
+  "researched_at": "2026-11-01",
+  "identity_check": "Confirmed by domain momenta.vc: industrial IoT / Physical AI investor with five funds over 15 years; portfolio lists Litmus, Highbyte, Agtonomy, Freewire, WasteHero. Search found no separate Momenta Partners entity. Not the Chinese self-driving company Momenta, not Moment Ventures.",
+  "pages": [
+    { "url": "https://momenta.vc", "title": "Momenta Ventures", "publisher": "Momenta Ventures", "retrieved_at": "2026-11-01", "kind": "primary" },
+    { "url": "https://manufacturingtomorrow.com/news/2025/02/19/ns-solutions-invests-in-momenta-industrial-impact-fund-advancing-industry-50/24336", "title": "NS Solutions invests in Momenta Industrial Impact fund, advancing Industry 5.0", "publisher": "Manufacturing Tomorrow", "retrieved_at": "2026-11-01", "kind": "press" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0, 1], "snippet": "early growth stage industrial innovators" },
+    "website": { "value": "https://momenta.vc", "pages": [0], "snippet": "transforming industry through Physical AI" },
+    "hq_country": { "value": "CH", "pages": [1], "snippet": "Momenta is based in Switzerland" },
+    "thesis_text": { "value": "Invests where the physical world becomes digital: sensing, industrial data, AI, secure compute and edge hardware, focused on Physical AI, IIoT and edge intelligence.", "pages": [0], "snippet": "Physical AI, IIoT, and Edge Intelligence" },
+    "stated_sectors": { "value": ["industrial_manufacturing", "robotics_physical_ai", "climate_energy", "supply_chain_logistics"], "pages": [0, 1], "snippet": "Energy & Infrastructure, Manufacturing & Robotics, Supply Chain & Logistics, and Smart Spaces & Buildings" }
+  },
+  "funds": [],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "HQ city not stated on fetched pages (site shows Swiss and US entities); country CH comes from one press page.",
+    "Stages and check size not stated; press says early growth stage.",
+    "Digital Industry Fund IV (launched 2023) size and close date not disclosed on fetched pages.",
+    "No dated portfolio round fetched; portfolio names on site: Litmus, Highbyte, Agtonomy, AICA, Atym, Datahow."
+  ]
+}

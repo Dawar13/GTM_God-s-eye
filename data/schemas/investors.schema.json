@@ -600,6 +600,13 @@
               "description": "What a user-supplied list claims; Phase 1 verifies before it becomes a fact"
             }
           },
+          "user_tags": {
+            "description": "Short sentence-case tags from the user's own lists, e.g. a list's group; filterable",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "flags": {
             "type": "array",
             "items": {

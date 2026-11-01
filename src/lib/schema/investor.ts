@@ -112,6 +112,10 @@ export const Investor = z
       .describe("How many user seed lists named this investor"),
     seed_source_ids: z.array(z.string()).describe("Seed lists that named this investor"),
     seed_hints: z.array(SeedHint),
+    user_tags: z
+      .array(z.string())
+      .optional()
+      .describe("Short sentence-case tags from the user's own lists, e.g. a list's group; filterable"),
     flags: z.array(InvestorFlag),
   })
   .refine(

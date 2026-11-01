@@ -64,6 +64,7 @@ describe("joinFilterable", () => {
         maturity: null,
         sectors: [],
         tier: null,
+        tags: [],
       },
     ];
     const joined = joinFilterable<FilterableInvestor & { name: string }>(index, [

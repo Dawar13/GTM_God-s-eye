@@ -14,6 +14,7 @@ function row(overrides: Partial<DirectoryRow> & { id: string; name: string }): D
     maturity: null,
     sectors: [],
     tier: null,
+    tags: [],
     checkMinUsd: null,
     checkMaxUsd: null,
     latestFundSizeUsd: null,

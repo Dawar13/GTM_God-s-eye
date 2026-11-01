@@ -84,6 +84,8 @@ export type EntityHeader = {
   website: string | null;
   confidence: "high" | "medium" | "low" | null;
   sources: EntitySource[];
+  /** The user's own tags (investors only). */
+  tags?: string[];
   /** Investors in this company's rounds (companies and competitors only). */
   backers?: { total: number; list: { id: string; name: string }[] };
   competitor?: CompetitorDetail;
@@ -124,6 +126,7 @@ export async function getEntityHeader(id: string): Promise<EntityHeader | null> 
       website: inv.website,
       confidence: inv.confidence,
       sources: toSources(inv.sources),
+      tags: inv.user_tags ?? [],
     };
   }
   if (id.startsWith("co_")) {

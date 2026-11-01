@@ -1,0 +1,44 @@
+{
+  "key": "lemnos",
+  "entity_type": "investor",
+  "tier": "B",
+  "name": "Lemnos",
+  "status": "active",
+  "researched_at": "2026-11-01",
+  "identity_check": "Lemnos Labs, San Francisco seed-stage hardware venture firm, confirmed via TechCrunch (2017 third fund) and NFX Signal profile. Firm domain lemnos.com could not be fetched (certificate error), so the domain is unverified. Not an unrelated same-named company.",
+  "pages": [
+    { "url": "https://techcrunch.com/2017/03/07/lemnos-labs-raises-50-million-third-fund-to-mostly-focus-on-hardware/", "title": "Lemnos just raised a $50 million third fund to (mostly) focus on hardware", "publisher": "TechCrunch", "retrieved_at": "2026-11-01", "kind": "press" },
+    { "url": "https://signal.nfx.com/firms/lemnos-labs", "title": "Lemnos Labs", "publisher": "NFX Signal", "retrieved_at": "2026-11-01", "kind": "database" }
+  ],
+  "facts": {
+    "type": { "value": "vc", "pages": [0], "snippet": "seed-stage, hardware-focused venture firm" },
+    "hq_city": { "value": "San Francisco", "pages": [0, 1], "snippet": "San Francisco" },
+    "hq_country": { "value": "US", "pages": [0, 1], "snippet": "San Francisco" },
+    "stages": { "value": ["seed"], "pages": [0], "snippet": "seed-stage, hardware-focused venture firm" },
+    "thesis_text": { "value": "Early-stage backer of hardware and embedded-systems startups, prioritising robotics, sensors, aerospace, manufacturing and medical devices.", "pages": [1], "snippet": "moving atoms or electrons" },
+    "stated_sectors": { "value": ["hardware_deeptech", "robotics_physical_ai", "defense_dual_use", "mobility_ev", "industrial_manufacturing", "health_bio"], "pages": [1], "snippet": "aerospace, automotive, consumer electronics, consumer goods, defense, embedded hardware and software" }
+  },
+  "funds": [
+    {
+      "name": "Lemnos Fund III",
+      "number": "III",
+      "size_original": 50000000,
+      "currency_original": "USD",
+      "close_date": "2017-03-07",
+      "date_precision": "day",
+      "pages": [0],
+      "snippet": "third fund with $50 million in commitments"
+    }
+  ],
+  "partners": [],
+  "rounds": [],
+  "conflicts": [
+    { "field": "check_size", "values": ["up to $200K, typical $100K (NFX, undated)", "open with $100K, up to $1.5M in a $3M round (TechCrunch 2017)"], "chosen": "none recorded", "reason": "Sources disagree and both are dated or undated; not recorded." }
+  ],
+  "open_items": [
+    "Website lemnos.com not fetched (certificate error); website and domain unverified.",
+    "No fund newer than the 2017 $50M third fund found on fetched pages.",
+    "Check size conflicting between sources; not recorded.",
+    "No dated portfolio round fetched; search snippets named Built Robotics, Ceres Imaging, Petra (unverified)."
+  ]
+}

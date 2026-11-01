@@ -110,3 +110,13 @@ def test_round_investors_resolve_to_existing_investors(store):
 
 def test_india_seed(store):
     assert investor(store, "ajvc")["region"] == "india"
+
+
+def test_physical_ai_list_names_and_tags():
+    rows = seeds.read_physical_ai()
+    by_listed = {r.name_as_listed: r for r in rows}
+    assert len(rows) == 57
+    assert by_listed["SOSV / SOSV HAX"].name == "SOSV"
+    assert by_listed["M12 (Microsoft's venture fund)"].name == "M12"
+    assert by_listed["MISUMI Americas (the new MISUMI Ventures fund)"].name == "MISUMI Ventures"
+    assert {r.tag for r in rows} == set(seeds.PHYSICAL_AI_TAGS)

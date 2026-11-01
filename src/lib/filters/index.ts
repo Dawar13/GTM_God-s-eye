@@ -32,6 +32,15 @@ import {
   TIER_LABELS,
 } from "@/lib/format/labels";
 
+/** Tag values the pipeline writes to `user_tags` today (one per group of the 2026-11-01 list). */
+export const USER_TAGS = [
+  "Robotics and hard-tech",
+  "Emerging and specialist",
+  "Big names",
+  "Strategic and corporate",
+] as const;
+export type UserTag = (typeof USER_TAGS)[number];
+
 export const FILTER_KEYS = [
   "region",
   "stage",
@@ -40,6 +49,7 @@ export const FILTER_KEYS = [
   "maturity",
   "sector",
   "tier",
+  "tag",
 ] as const;
 export type FilterKey = (typeof FILTER_KEYS)[number];
 
@@ -52,6 +62,7 @@ export type FilterState = {
   maturity: Maturity[];
   sector: Sector[];
   tier: ResearchTier[];
+  tag: UserTag[];
 };
 
 /** Western is the default view; India is one click away, not hidden (PROJECT_CONTEXT §2). */
@@ -63,6 +74,7 @@ export const DEFAULT_FILTER_STATE: FilterState = {
   maturity: [],
   sector: [],
   tier: [],
+  tag: [],
 };
 
 /** An investor sector counts toward the sector filter at this thesis weight or higher. */
@@ -78,6 +90,8 @@ export type FilterableInvestor = {
   maturity: Maturity | null;
   sectors: Sector[];
   tier: ResearchTier | null;
+  /** The user's own tags (a list's group); empty when untagged. */
+  tags: UserTag[];
 };
 
 export type FilterDef = {
@@ -97,6 +111,7 @@ export const FILTER_DEFS: readonly FilterDef[] = [
   { key: "maturity", label: "Maturity", options: opts(MATURITY, MATURITY_LABELS) },
   { key: "sector", label: "Sector", options: opts(SECTORS, SECTOR_LABELS) },
   { key: "tier", label: "Research tier", options: opts(RESEARCH_TIERS, TIER_LABELS) },
+  { key: "tag", label: "Tag", options: USER_TAGS.map((t) => ({ value: t, label: t })) },
 ];
 
 /** The values a row has for one filter. Several for stages and sectors; none when unknown. */
@@ -116,6 +131,8 @@ export function valuesOf(row: FilterableInvestor, key: FilterKey): readonly stri
       return row.sectors;
     case "tier":
       return row.tier ? [row.tier] : [];
+    case "tag":
+      return row.tags;
   }
 }
 
@@ -192,6 +209,7 @@ const PLURAL: Record<FilterKey, string> = {
   maturity: "maturities",
   sector: "sectors",
   tier: "tiers",
+  tag: "tags",
 };
 
 function summarizeKey(key: FilterKey, state: FilterState): string {

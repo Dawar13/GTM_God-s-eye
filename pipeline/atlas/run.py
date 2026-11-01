@@ -47,6 +47,22 @@ def ingest_seed_investors(resolver: InvestorResolver) -> int:
     return len(rows)
 
 
+def ingest_physical_ai(resolver: InvestorResolver) -> int:
+    rows = seeds.read_physical_ai()
+    for row in rows:
+        group = resolver.add(row.name, "seed_list", seeds.PHYSICAL_AI_LIST)
+        group.user_tags.append(row.tag)
+        group.seed_hints.append(
+            {
+                "source_id": seeds.PHYSICAL_AI_LIST,
+                "listed_focus": row.tag,
+                "listed_check_or_fund": None,
+                "notes": row.name_as_listed if row.name_as_listed != row.name else None,
+            }
+        )
+    return len(rows)
+
+
 def ingest_seed_rounds(resolver: InvestorResolver) -> list[build.RoundInput]:
     inputs = []
     for r in seeds.read_seed_rounds():
@@ -79,6 +95,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         goldman.append((fund, group))
 
     seed_rows = ingest_seed_investors(resolver)
+    physical_ai_rows = ingest_physical_ai(resolver)
     round_inputs = ingest_seed_rounds(resolver)
 
     loaded = research_files.load() if research else research_files.Loaded()
@@ -96,6 +113,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         "goldman rows": len(funds),
         "goldman text-fallback pages": len(fallbacks),
         "seed investor rows": seed_rows,
+        "physical-AI list rows": physical_ai_rows,
         "seed round rows": len(round_inputs),
         "round listings merged": duplicate_rounds,
         "investors on 2+ seed lists": sum(1 for i in investors if i["seed_list_count"] >= 2),
