@@ -92,6 +92,11 @@ export async function getAcceleratorPrograms(): Promise<
   return (await loadDataset("accelerator_programs")).records;
 }
 
+export async function getLandscapeCompanies(): Promise<DatasetRecord<"landscape_companies">[]> {
+  "use cache";
+  return (await loadDataset("landscape_companies")).records;
+}
+
 export async function getFitFeatures(): Promise<DatasetRecord<"fit_features">[]> {
   "use cache";
   return (await loadDataset("fit_features")).records;

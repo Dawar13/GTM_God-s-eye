@@ -7,12 +7,14 @@ import {
 import { CompetitorSankey } from "@/components/charts/CompetitorSankey";
 import { CompetitorsTable } from "@/components/charts/CompetitorsTable";
 import { LayerMap } from "@/components/charts/LayerMap";
+import { PhysicalAiLandscape } from "@/components/charts/PhysicalAiLandscape";
 import { PageCanvas } from "@/components/shell/PageCanvas";
 import {
   getClusters,
   getCompetitorOverlap,
   getCompetitors,
   getInvestors,
+  getLandscapeCompanies,
   getRounds,
   getThesisLayout,
 } from "@/lib/data";
@@ -23,19 +25,21 @@ import {
 } from "@/lib/viz/transforms/competitorCharts";
 import { competitorOverview } from "@/lib/viz/transforms/competitorOverview";
 import { competitorFlows } from "@/lib/viz/transforms/competitorSankey";
+import { marketMapSegments, ycEntries } from "@/lib/viz/transforms/landscape";
 import { toClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { competitorSources, layerMap, toCompetitorRows } from "@/lib/viz/transforms/competitors";
 
 export const metadata: Metadata = { title: "Competitors" };
 
 export default async function CompetitorsPage() {
-  const [competitors, rounds, investors, overlap, thesis, clusters] = await Promise.all([
+  const [competitors, rounds, investors, overlap, thesis, clusters, landscape] = await Promise.all([
     getCompetitors(),
     getRounds(),
     getInvestors(),
     getCompetitorOverlap(),
     getThesisLayout(),
     getClusters(),
+    getLandscapeCompanies(),
   ]);
   const rows = toCompetitorRows(competitors, rounds, investors);
   const sources = competitorSources(competitors, rounds);
@@ -57,6 +61,7 @@ export default async function CompetitorsPage() {
           clusters={toClusterInfo(clusters)}
         />
         <LayerMap data={layerMap(rows)} sources={sources} />
+        <PhysicalAiLandscape segments={marketMapSegments(landscape)} yc={ycEntries(landscape)} />
       </div>
     </PageCanvas>
   );

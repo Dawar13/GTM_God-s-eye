@@ -20,6 +20,7 @@ DATASET_NAMES = (
     "legal_notes",
     "accelerator_programs",
     "fit_features",
+    "landscape_companies",
     "layout_thesis",
     "clusters",
     "layout_bubbles",

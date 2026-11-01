@@ -75,6 +75,12 @@ export function checkIntegrity(data: AllRecords): IntegrityIssue[] {
       add("accelerator_programs", prog.id, `investor_id ${prog.investor_id} does not exist`);
   }
 
+  indexById("landscape_companies");
+  for (const co of data.landscape_companies) {
+    if (co.matched_id !== null && !companies.has(co.matched_id) && !competitors.has(co.matched_id))
+      add("landscape_companies", co.id, `matched_id ${co.matched_id} does not exist`);
+  }
+
   for (const id of companies.keys()) {
     if (competitors.has(id)) add("competitors", id, "id is also used in companies.json");
   }

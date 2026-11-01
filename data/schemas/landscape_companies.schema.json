@@ -1,0 +1,185 @@
+{
+  "$id": "capital-atlas/landscape_companies.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^land_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `land_<slug>`"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lists": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "market_map",
+                "yc_physical_ai"
+              ]
+            },
+            "description": "Every user-supplied list that names it"
+          },
+          "segment": {
+            "description": "Market-map segment, as the map groups it",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "india",
+                  "global"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Market-map group; null off the map"
+          },
+          "yc_batch": {
+            "description": "Batch label as the YC post shows it; unverified",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description_as_listed": {
+            "description": "The YC post's one-liner, exactly as listed; unverified",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "note": {
+            "description": "Transcription note, e.g. a name read from a logo",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "matched_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+                "description": "Stable id, `co_<slug>`"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "An existing company or competitor, only on a unique exact name-key match"
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "pattern": "^(https?:\\/\\/\\S+|user_supplied:[a-z0-9_.-]+)$",
+                  "description": "Where the fact came from: an http(s) URL, or `user_supplied:<source_id>` for a user list with no link"
+                },
+                "title": {
+                  "description": "Page or document title, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "publisher": {
+                  "description": "Publisher or site, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "retrieved_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+                  "description": "Date the source was read"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "user_supplied"
+                  ],
+                  "description": "primary, secondary or user_supplied (PROJECT_CONTEXT §5)"
+                }
+              },
+              "required": [
+                "url",
+                "title",
+                "publisher",
+                "retrieved_at",
+                "kind"
+              ],
+              "additionalProperties": false,
+              "description": "Provenance for a record or a single fact"
+            },
+            "description": "At least one source; first is primary"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "high: primary source or two independent secondaries agree; medium: one reputable secondary; low: user-supplied list or database page only"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "lists",
+          "segment",
+          "region",
+          "yc_batch",
+          "description_as_listed",
+          "note",
+          "matched_id",
+          "sources",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "description": "A physical-AI or robotics company from a user-supplied list; shown for context, never a competitor"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

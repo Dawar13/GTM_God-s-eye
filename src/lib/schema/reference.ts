@@ -9,6 +9,7 @@ import {
   RoundStage,
 } from "./enums";
 import {
+  CompanyId,
   FxUsed,
   InvestorId,
   IsoDate,
@@ -117,3 +118,31 @@ export const FitFeatures = z
   })
   .describe("Fit features, each 0–1; the weighted total is computed in the app");
 export type FitFeatures = z.infer<typeof FitFeatures>;
+
+export const LANDSCAPE_LISTS = ["market_map", "yc_physical_ai"] as const;
+export const LandscapeList = z.enum(LANDSCAPE_LISTS);
+export type LandscapeList = z.infer<typeof LandscapeList>;
+
+export const LandscapeCompany = z
+  .strictObject({
+    id: idOf("land"),
+    name: z.string().min(1),
+    lists: z.array(LandscapeList).min(1).describe("Every user-supplied list that names it"),
+    segment: z.string().nullable().describe("Market-map segment, as the map groups it"),
+    region: z.enum(["india", "global"]).nullable().describe("Market-map group; null off the map"),
+    yc_batch: z.string().nullable().describe("Batch label as the YC post shows it; unverified"),
+    description_as_listed: z
+      .string()
+      .nullable()
+      .describe("The YC post's one-liner, exactly as listed; unverified"),
+    note: z.string().nullable().describe("Transcription note, e.g. a name read from a logo"),
+    matched_id: CompanyId.nullable().describe(
+      "An existing company or competitor, only on a unique exact name-key match",
+    ),
+    sources: Sources,
+    confidence: RecordConfidence,
+  })
+  .describe(
+    "A physical-AI or robotics company from a user-supplied list; shown for context, never a competitor",
+  );
+export type LandscapeCompany = z.infer<typeof LandscapeCompany>;

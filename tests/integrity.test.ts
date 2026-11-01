@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { checkIntegrity, type AllRecords } from "@/lib/schema";
-import { company, competitor, fund, investor, program, round } from "./fixtures";
+import { company, competitor, fund, investor, landscapeCompany, program, round } from "./fixtures";
 
 function data(overrides: Partial<AllRecords> = {}): AllRecords {
   return {
@@ -15,6 +15,7 @@ function data(overrides: Partial<AllRecords> = {}): AllRecords {
     benchmarks: [],
     legal_notes: [],
     accelerator_programs: [],
+    landscape_companies: [],
     fit_features: [],
     layout_thesis: [],
     clusters: [],
@@ -31,6 +32,14 @@ describe("checkIntegrity", () => {
     const unlinked = program({ id: "prog_unlinked", investor_id: null });
     expect(messages(data({ accelerator_programs: [linked, unlinked] }))).toEqual([
       "prog_y-combinator: investor_id inv_ghost does not exist",
+    ]);
+  });
+
+  it("flags a landscape company whose match does not exist", () => {
+    const bad = landscapeCompany({ matched_id: "co_ghost" });
+    const ok = landscapeCompany({ id: "land_ok", matched_id: competitor().id });
+    expect(messages(data({ landscape_companies: [bad, ok] }))).toEqual([
+      "land_ati-robotics: matched_id co_ghost does not exist",
     ]);
   });
 

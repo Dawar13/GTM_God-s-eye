@@ -4,6 +4,7 @@ import type {
   Competitor,
   Fund,
   Investor,
+  LandscapeCompany,
   Round,
   Source,
 } from "@/lib/schema";
@@ -179,6 +180,29 @@ export const program = (over: Partial<AcceleratorProgram> = {}): AcceleratorProg
       title: "accelerators_2026_list",
       publisher: null,
       retrieved_at: "2026-10-30",
+      kind: "user_supplied",
+    },
+  ],
+  confidence: "low",
+  ...over,
+});
+
+export const landscapeCompany = (over: Partial<LandscapeCompany> = {}): LandscapeCompany => ({
+  id: "land_ati-robotics",
+  name: "Ati Robotics",
+  lists: ["market_map"],
+  segment: "Factories and manufacturing",
+  region: "india",
+  yc_batch: null,
+  description_as_listed: null,
+  note: null,
+  matched_id: null,
+  sources: [
+    {
+      url: "user_supplied:physical_ai_market_map_2026_11_01",
+      title: "physical_ai_market_map_2026_11_01",
+      publisher: null,
+      retrieved_at: "2026-11-01",
       kind: "user_supplied",
     },
   ],

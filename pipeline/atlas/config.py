@@ -28,6 +28,8 @@ GOLDMAN_PDF = RAW_SOURCES / "goldman_sub200m_funds.pdf"
 SEED_INVESTORS_CSV = SEED_DIR / "seed_investors.csv"
 SEED_ROUNDS_CSV = SEED_DIR / "seed_rounds.csv"
 ACCELERATORS_CSV = SEED_DIR / "accelerators_2026.csv"
+LANDSCAPE_MAP_CSV = SEED_DIR / "physical_ai_market_map_2026-11-01.csv"
+LANDSCAPE_YC_CSV = SEED_DIR / "yc_physical_ai_2026-11-01.csv"
 PHYSICAL_AI_CSV = SEED_DIR / "physical_ai_investors_2026-11-01.csv"
 
 SCHEMA_VERSION = 2
