@@ -1,8 +1,19 @@
 "use client";
 
 import { select, zoom as d3zoom, zoomIdentity, type ZoomBehavior, type ZoomTransform } from "d3";
-import { useCallback, type CSSProperties, useEffect, useId, useMemo, useRef, useState } from "react";
-import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import {
+  useCallback,
+  type CSSProperties,
+  useEffect,
+  useEffectEvent,
+  useId,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
+import { paintZoom, setZoomTouchAction, ZOOM_SETTLE_MS } from "@/lib/viz/paintZoom";
 import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { ZOOM_MAX, ZOOM_STEP } from "@/lib/viz/zoom";
 import { formatUsd } from "@/lib/format";
@@ -69,6 +80,51 @@ export function BubbleProjections({
   const svgs = useRef(new Map<string, SVGSVGElement>());
   const zooms = useRef(new Map<string, ZoomBehavior<SVGSVGElement, unknown>>());
   const kRef = useRef(1);
+  const readout = useZoomReadout();
+
+  // While a zoom is under way React stays out: `view` is the zoom last rendered, `kRef` and
+  // `live` hold the live one, and paintZoom moves each panel's marks and ticks between them once
+  // per frame. The panels render again (ticks, hover) once the zoom has been idle.
+  const live = useRef<Record<string, { x: number; y: number }>>({});
+  const zooming = useRef(false);
+  const settle = useRef(0);
+  const frame = useRef(0);
+  const paintAll = useEffectEvent(() => {
+    for (const panel of PANELS) {
+      const el = svgs.current.get(panel.key);
+      if (!el) continue;
+      const from = view.t[panel.key] ?? { x: 0, y: 0 };
+      const to = live.current[panel.key] ?? { x: 0, y: 0 };
+      paintZoom(el, { k: view.k, ...from }, { k: kRef.current, ...to });
+      setZoomTouchAction(el, kRef.current);
+    }
+  });
+  const onZoom = useEffectEvent(() => {
+    readout.set(kRef.current);
+    if (!zooming.current) {
+      zooming.current = true;
+      setHover(null);
+    }
+    if (!frame.current) {
+      frame.current = requestAnimationFrame(() => {
+        frame.current = 0;
+        paintAll();
+      });
+    }
+    window.clearTimeout(settle.current);
+    settle.current = window.setTimeout(() => {
+      zooming.current = false;
+      setView({ k: kRef.current, t: { ...live.current } });
+    }, ZOOM_SETTLE_MS);
+  });
+  useLayoutEffect(() => paintAll());
+  useEffect(
+    () => () => {
+      cancelAnimationFrame(frame.current);
+      window.clearTimeout(settle.current);
+    },
+    [],
+  );
   const measureRef = useCallback((el: HTMLDivElement | null) => {
     if (!el) return;
     const ro = new ResizeObserver(([entry]) => {
@@ -120,7 +176,8 @@ export function BubbleProjections({
           const { k, x, y } = e.transform;
           const prevK = kRef.current;
           kRef.current = k;
-          setView((v) => ({ k, t: { ...v.t, [panel.key]: { x, y } } }));
+          live.current[panel.key] = { x, y };
+          onZoom();
           if (!e.sourceEvent || k === prevK) return;
           // A gesture changed the level: bring the other panels to it, around their centres.
           const cx = (rect[0][0] + rect[1][0]) / 2;
@@ -231,7 +288,7 @@ export function BubbleProjections({
                       const x = sx(t);
                       if (x < M.left - 0.5 || x > panelWidth - M.right + 0.5) return null;
                       return (
-                        <g key={`x${t}`}>
+                        <g key={`x${t}`} data-zx={x}>
                           <line
                             x1={x}
                             x2={x}
@@ -249,7 +306,7 @@ export function BubbleProjections({
                       const y = sy(t);
                       if (y < M.top - 0.5 || y > PANEL_HEIGHT - M.bottom + 0.5) return null;
                       return (
-                        <g key={`y${t}`}>
+                        <g key={`y${t}`} data-zy={y}>
                           <line
                             x1={M.left}
                             x2={panelWidth - M.right}
@@ -287,6 +344,7 @@ export function BubbleProjections({
                   <g
                     clipPath={`url(#${clipId})`}
                     onPointerOver={(e) => {
+                      if (zooming.current) return;
                       const id = (e.target as Element)
                         .closest?.("[data-id]")
                         ?.getAttribute("data-id");
@@ -322,6 +380,8 @@ export function BubbleProjections({
                         <g
                           key={p.id}
                           data-id={p.id}
+                          data-zx={x}
+                          data-zy={y}
                           className="mark-glow cursor-pointer"
                           data-glow={p.id === hover?.id ? "on" : "off"}
                           style={{ "--glow": color } as CSSProperties}
@@ -376,7 +436,7 @@ export function BubbleProjections({
           })}
       </div>
       <ZoomControls
-        level={view.k}
+        readout={readout}
         onZoomIn={() => zoomBy(1)}
         onZoomOut={() => zoomBy(-1)}
         onReset={resetZoom}

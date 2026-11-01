@@ -25,11 +25,12 @@ import {
 } from "react";
 import { sdfCircle, sdfSquare } from "sigma/rendering";
 import type { Settings } from "sigma/settings";
-import type { EdgeDisplayData, NodeDisplayData, SigmaOptions } from "sigma/types";
+import type { EdgeDisplayData, NodeDisplayData, SigmaOptions, WheelCoords } from "sigma/types";
 import { Skeleton } from "@/components/ui-atlas";
 import type { ThemeColors } from "@/lib/hooks/useThemeColors";
 import { LABEL_LEVELS } from "@/lib/network/url";
 import { yieldToMain } from "@/lib/scheduling";
+import { wheelZoomFactor } from "@/lib/viz/zoom";
 import {
   neighbourhood,
   nodeRadius,
@@ -50,6 +51,8 @@ export type CanvasHandle = {
 const EDGE_ALPHA = 0.15;
 const FADED = 0.1;
 const MOTION_MS = 300;
+
+const WHEEL_IDLE_MS = 150;
 
 /** Label density and camera motion settings for a label level and the motion preference. */
 function liveSettings(labelLevel: number, reduced: boolean): Partial<Settings> {
@@ -481,6 +484,49 @@ function Behaviour({
     };
   }, [sigma, onZoom]);
 
+  // Wheel and trackpad zoom are ours, not Sigma's: Sigma zooms a fixed ×1.7 per event (a
+  // trackpad's many small deltas jump) through a camera animation, and each animation start and
+  // end flips its `isZooming` graph state, which re-runs both reducers over every node and edge
+  // (about 100 ms per wheel event). Here deltas add up and apply once per frame, proportionally
+  // and without animation, so Sigma only redraws. Hover pauses until the wheel has been idle for
+  // WHEEL_IDLE_MS: a node sliding under the cursor would re-run the reducers for its highlight.
+  const wheeling = useRef(false);
+  useEffect(() => {
+    const captor = sigma.getMouseCaptor();
+    let idle = 0;
+    let frame = 0;
+    let factor = 1;
+    let at = { x: 0, y: 0 };
+    const apply = () => {
+      frame = 0;
+      const camera = sigma.getCamera();
+      const ratio = camera.getBoundedRatio(camera.ratio / factor);
+      factor = 1;
+      if (ratio !== camera.ratio && !camera.isAnimating()) {
+        camera.setState(sigma.getViewportZoomedState(at, ratio));
+      }
+    };
+    const onWheel = (e: WheelCoords) => {
+      e.preventSigmaDefault();
+      const w = e.original as WheelEvent;
+      if (w.cancelable) w.preventDefault();
+      wheeling.current = true;
+      window.clearTimeout(idle);
+      idle = window.setTimeout(() => {
+        wheeling.current = false;
+      }, WHEEL_IDLE_MS);
+      factor *= wheelZoomFactor(w.deltaY, w.deltaMode, w.ctrlKey);
+      at = { x: e.x, y: e.y };
+      if (!frame) frame = requestAnimationFrame(apply);
+    };
+    captor.on("wheel", onWheel);
+    return () => {
+      captor.off("wheel", onWheel);
+      cancelAnimationFrame(frame);
+      window.clearTimeout(idle);
+    };
+  }, [sigma]);
+
   // The box changed size (fullscreen, panel resize): Sigma only listens to the window. Sigma
   // sized itself from the box when it was created, so the first size seen needs no resize (a
   // forced resize reallocates the canvas and draws the whole graph again).
@@ -506,10 +552,12 @@ function Behaviour({
   useEffect(() => {
     registerEvents({
       enterNode: ({ node, event }) => {
+        if (wheeling.current) return;
         const i = data.index.get(node);
         if (i !== undefined) onHover({ i, x: event.x, y: event.y });
       },
       leaveNode: () => {
+        if (wheeling.current) return;
         onHover(null);
       },
       clickNode: ({ node }) => {

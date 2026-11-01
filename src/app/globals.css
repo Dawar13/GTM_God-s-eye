@@ -162,12 +162,13 @@
   }
 }
 
-/* Hover glow for SVG marks (2D bubbles, thesis map). --glow is the mark's own colour; the
-   shadow is always present (transparent when off) so filter can fade; stronger in dark. */
+/* Hover glow for SVG marks (2D bubbles, thesis map). --glow is the mark's own colour; stronger
+   in dark. No filter when off: a filter on every mark, even a transparent one, made each zoom
+   frame re-rasterise hundreds of filtered layers. `none` still fades (it interpolates from the
+   other list's initial values). */
 .mark-glow {
   --glow-a: 0.5;
   --glow-b: 0.28;
-  filter: drop-shadow(0 0 0 transparent);
   transition: filter 120ms ease-out;
 }
 [data-theme="dark"] .mark-glow {

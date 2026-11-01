@@ -21,7 +21,7 @@ import {
 } from "@/lib/viz/transforms/capitalBubbles";
 import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { useUi } from "@/store/ui";
-import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
 import { clampZoom, ZOOM_STEP } from "@/lib/viz/zoom";
 import {
   dragOrbit,
@@ -61,8 +61,22 @@ const ROTATE_SLOP = 10;
 const TAP_SLOP = 24;
 const TAP_MS = 300;
 const DOUBLE_TAP_MS = 320;
+/** Idle time that ends a wheel gesture: hover and its glow resume, the zoom clamp applies. */
+const WHEEL_IDLE_MS = 150;
+/** Stable, so a re-render never makes react-plotly call Plotly.react. */
+const PLOT_CONFIG = {
+  displayModeBar: false,
+  scrollZoom: true,
+  doubleClick: false as const,
+  responsive: true,
+  displaylogo: false,
+  // Fixed so the glyph size factor (GL_PX_PER_SIZE) holds on every screen.
+  plotGlPixelRatio: 2,
+};
 
-type PlotDiv = HTMLElement & { _fullLayout?: { scene?: { camera?: Partial<Camera> } } };
+type PlotDiv = HTMLElement & {
+  _fullLayout?: { scene?: { camera?: Partial<Camera>; _scene?: { getCamera?: () => Camera } } };
+};
 type Gesture = {
   span: number;
   mid: { x: number; y: number };
@@ -142,7 +156,8 @@ export default function Bubbles3D({
   const mouse = useRef({ x: 0, y: 0 });
   const presetRef = useRef<CameraPreset>("reset");
   const eyeRef = useRef(CAMERAS.reset.eye);
-  const [level, setLevel] = useState(1);
+  // The readout re-renders itself; camera moves never re-render this component.
+  const readout = useZoomReadout();
   // Touch screens: Plotly's own touch drag rotates freely and tips the scene over, so it is
   // off and the touch handlers below orbit the camera with z kept up.
   const coarse = useMediaQuery("(pointer: coarse)");
@@ -347,14 +362,14 @@ export default function Bubbles3D({
       eye: { x: eye.x * f, y: eye.y * f, z: eye.z * f },
     };
     eyeRef.current = cam.eye;
-    setLevel(next);
+    readout.set(next);
     void Plotly.relayout(graphDiv.current, { "scene.camera": cam });
   };
   const resetZoom = () => {
     if (!graphDiv.current) return;
     const cam = CAMERAS[presetRef.current];
     eyeRef.current = cam.eye;
-    setLevel(1);
+    readout.set(1);
     void Plotly.relayout(graphDiv.current, { "scene.camera": cam });
   };
   const zoomHandlers = {
@@ -362,24 +377,59 @@ export default function Bubbles3D({
     onZoomOut: () => zoomBy(-1),
     onReset: resetZoom,
   };
+  // Plotly's own scroll zoom drives the camera during a wheel gesture. Hover (tooltip and glow
+  // restyles) pauses until the wheel has been idle for WHEEL_IDLE_MS, and a camera past the zoom
+  // limits is pulled back once, then, instead of fighting Plotly on every event.
+  const lastCam = useRef<Camera | null>(null);
+  const wheeling = useRef(false);
+  const wheelIdle = useRef(0);
+  const clampCamera = () => {
+    // Plotly's last relayout event can trail its damped scroll zoom; the scene has the camera.
+    const now = (graphDiv.current as PlotDiv | null)?._fullLayout?.scene?._scene?.getCamera?.();
+    if (now?.eye) lastCam.current = now;
+    const cam = lastCam.current;
+    if (!cam || !graphDiv.current?.isConnected) return;
+    const lv = norm(CAMERAS[presetRef.current].eye) / norm(cam.eye);
+    const k = clampZoom(lv, Z_MIN, Z_MAX);
+    eyeRef.current = cam.eye;
+    readout.set(k);
+    if (Math.abs(k - lv) < 1e-6) return;
+    const f = lv / k;
+    const eye = { x: cam.eye.x * f, y: cam.eye.y * f, z: cam.eye.z * f };
+    eyeRef.current = eye;
+    void Plotly.relayout(graphDiv.current, { "scene.camera": { ...cam, eye } });
+  };
+  const onWheel = useEffectEvent(() => {
+    if (!wheeling.current) {
+      wheeling.current = true;
+      setHover(null);
+      setHalo(null);
+    }
+    window.clearTimeout(wheelIdle.current);
+    wheelIdle.current = window.setTimeout(() => {
+      wheeling.current = false;
+      clampCamera();
+    }, WHEEL_IDLE_MS);
+  });
+  useEffect(() => {
+    const el = wrap.current;
+    if (!el) return;
+    // Capture, so it runs before Plotly's own listener; passive, so it never delays the zoom.
+    const opts = { capture: true, passive: true } as const;
+    const wheel = () => onWheel();
+    el.addEventListener("wheel", wheel, opts);
+    return () => {
+      el.removeEventListener("wheel", wheel, opts);
+      window.clearTimeout(wheelIdle.current);
+    };
+  }, []);
   // Wheel and drag also move the camera; keep the readout and eye in step.
   const onRelayout = (e: Record<string, unknown>) => {
     const cam = e["scene.camera"] as Camera | undefined;
     if (!cam?.eye) return;
-    const base = norm(CAMERAS[presetRef.current].eye);
-    const lv = base / norm(cam.eye);
-    if (lv < Z_MIN - 1e-6 || lv > Z_MAX + 1e-6) {
-      // Wheel went past the limit: pull the camera back to it.
-      const f = lv < Z_MIN ? lv / Z_MIN : lv / Z_MAX;
-      const eye = { x: cam.eye.x * f, y: cam.eye.y * f, z: cam.eye.z * f };
-      eyeRef.current = eye;
-      setLevel(clampZoom(lv, Z_MIN, Z_MAX));
-      if (graphDiv.current)
-        void Plotly.relayout(graphDiv.current, { "scene.camera": { ...cam, eye } });
-      return;
-    }
+    lastCam.current = cam;
     eyeRef.current = cam.eye;
-    setLevel(lv);
+    readout.set(clampZoom(norm(CAMERAS[presetRef.current].eye) / norm(cam.eye), Z_MIN, Z_MAX));
   };
 
   // Touch gestures. Two fingers are ours: pinch zooms through the same level and clamps as the
@@ -413,7 +463,7 @@ export default function Bubbles3D({
       queued.current = null;
       if (!q || !graphDiv.current?.isConnected) return;
       eyeRef.current = q.cam.eye;
-      setLevel(q.level);
+      readout.set(q.level);
       void Plotly.relayout(graphDiv.current, { "scene.camera": q.cam });
     });
   };
@@ -523,15 +573,7 @@ export default function Bubbles3D({
       <Plot
         data={data}
         layout={layout}
-        config={{
-          displayModeBar: false,
-          scrollZoom: true,
-          doubleClick: false,
-          responsive: true,
-          displaylogo: false,
-          // Fixed so the glyph size factor (GL_PX_PER_SIZE) holds on every screen.
-          plotGlPixelRatio: 2,
-        }}
+        config={PLOT_CONFIG}
         useResizeHandler
         style={{ width: "100%", height }}
         onInitialized={(_figure, el) => {
@@ -543,6 +585,8 @@ export default function Bubbles3D({
           if (performance.now() - lastTapZoom.current > 600) zoomBy(1);
         }}
         onHover={(e: PlotEvent) => {
+          // No tooltip or glow restyle while a wheel or pinch zoom is under way.
+          if (wheeling.current || gesture.current) return;
           const id = idOf(e);
           const { x, y } = mouse.current;
           const flip = x + 16 + 256 > (wrap.current?.clientWidth ?? Infinity);
@@ -559,7 +603,7 @@ export default function Bubbles3D({
         }}
       />
       <ZoomControls
-        level={level}
+        readout={readout}
         onZoomIn={() => zoomBy(1)}
         onZoomOut={() => zoomBy(-1)}
         onReset={resetZoom}

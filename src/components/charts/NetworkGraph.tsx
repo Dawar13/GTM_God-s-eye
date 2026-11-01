@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { useQueryStates } from "nuqs";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Maximize2, Minimize2 } from "lucide-react";
-import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
 import {
   ChartFrame,
   Chip,
@@ -79,7 +79,8 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
   const reduced = useMediaQuery("(prefers-reduced-motion: reduce)");
   const theme = useThemeColors();
   const canvas = useRef<CanvasHandle | null>(null);
-  const [zoomLevel, setZoomLevel] = useState(1);
+  // The readout updates on its own; camera frames never re-render this component.
+  const zoomReadout = useZoomReadout();
   const frameRef = useRef<HTMLDivElement | null>(null);
   const [locked, setLocked] = useState<number | null>(null);
   const [fullscreen, setFullscreen] = useState(false);
@@ -400,7 +401,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
                 onUnlock={unlock}
                 labelLevel={labelLevel}
                 reduced={reduced}
-                onZoom={setZoomLevel}
+                onZoom={zoomReadout.set}
                 renderTooltip={renderTooltip}
                 className="relative h-full w-full"
               />
@@ -418,7 +419,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
               </CanvasButton>
             </div>
             <ZoomControls
-              level={zoomLevel}
+              readout={zoomReadout}
               onZoomIn={() => canvas.current?.zoomIn()}
               onZoomOut={() => canvas.current?.zoomOut()}
               onReset={() => canvas.current?.reset()}

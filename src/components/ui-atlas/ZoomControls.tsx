@@ -1,9 +1,28 @@
 "use client";
 
 import { Minus, Plus, RotateCcw } from "lucide-react";
-import type { KeyboardEvent, ReactNode } from "react";
+import { useState, useSyncExternalStore, type KeyboardEvent, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { zoomPercent } from "@/lib/viz/zoom";
+import { createZoomReadout, type ZoomReadout } from "@/lib/viz/zoom";
+
+/** One readout per chart, stable for its life; the chart calls `readout.set(level)` freely. */
+export function useZoomReadout(): ZoomReadout {
+  return useState(() => createZoomReadout())[0];
+}
+
+/** Only this span re-renders while zooming, at most once per frame. */
+function ZoomLevel({ readout }: { readout: ZoomReadout }) {
+  const pct = useSyncExternalStore(readout.subscribe, readout.get, readout.get);
+  return (
+    <span
+      aria-live="polite"
+      data-testid="zoom-level"
+      className="px-1 pb-0.5 text-xs text-ink-2 tabular-nums"
+    >
+      {pct}%
+    </span>
+  );
+}
 
 /**
  * Keyboard handler for a focusable chart area: + or = zooms in, - zooms out, 0 resets.
@@ -44,15 +63,15 @@ function Btn({
   );
 }
 
-/** A small vertical zoom group for a chart corner. `level` is 1 at the first view. */
+/** A small vertical zoom group for a chart corner. The readout's level is 1 at the first view. */
 export function ZoomControls({
-  level,
+  readout,
   onZoomIn,
   onZoomOut,
   onReset,
   className,
 }: {
-  level: number;
+  readout: ZoomReadout;
   onZoomIn: () => void;
   onZoomOut: () => void;
   onReset: () => void;
@@ -76,13 +95,7 @@ export function ZoomControls({
       <Btn label="Reset view" onClick={onReset}>
         <RotateCcw aria-hidden className="size-4" />
       </Btn>
-      <span
-        aria-live="polite"
-        data-testid="zoom-level"
-        className="px-1 pb-0.5 text-xs text-ink-2 tabular-nums"
-      >
-        {zoomPercent(level)}
-      </span>
+      <ZoomLevel readout={readout} />
     </div>
   );
 }

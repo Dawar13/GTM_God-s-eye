@@ -1,13 +1,16 @@
 "use client";
 
-import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
+import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
+import { paintZoom, setZoomTouchAction, ZOOM_SETTLE_MS } from "@/lib/viz/paintZoom";
 import { ZOOM_STEP } from "@/lib/viz/zoom";
 import Link from "next/link";
 import {
   useCallback,
   useEffect,
   useId,
+  useEffectEvent,
   useImperativeHandle,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -366,6 +369,46 @@ function MapCanvas({
   const transformRef = useRef<ZoomTransform>(zoomIdentity);
   const toolRef = useRef<Tool>(tool);
   const shownRef = useRef<Mark[]>([]);
+  const readout = useZoomReadout();
+
+  // While a zoom is under way React stays out: `transform` is the view last rendered, and
+  // paintZoom moves marks, labels and shapes from it to the live view (transformRef) once per
+  // frame. The map renders again, with labels, collisions, counts and hover, once the zoom has
+  // been idle for ZOOM_SETTLE_MS.
+  const zooming = useRef(false);
+  const settle = useRef(0);
+  const frame = useRef(0);
+  const paintLive = useEffectEvent(() => {
+    frame.current = 0;
+    if (!svgEl) return;
+    paintZoom(svgEl, transform, transformRef.current);
+    setZoomTouchAction(svgEl, transformRef.current.k);
+  });
+  const onZoom = useEffectEvent((t: ZoomTransform) => {
+    transformRef.current = t;
+    readout.set(t.k);
+    if (!zooming.current) {
+      zooming.current = true;
+      setHoverId(null);
+    }
+    if (!frame.current) frame.current = requestAnimationFrame(() => paintLive());
+    window.clearTimeout(settle.current);
+    settle.current = window.setTimeout(() => {
+      zooming.current = false;
+      setTransform(transformRef.current);
+    }, ZOOM_SETTLE_MS);
+  });
+  // Every render lays marks out at `transform`; carry on from there to the live view.
+  useLayoutEffect(() => {
+    if (svgEl) paintZoom(svgEl, transform, transformRef.current);
+  });
+  useEffect(
+    () => () => {
+      cancelAnimationFrame(frame.current);
+      window.clearTimeout(settle.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     toolRef.current = tool;
@@ -405,10 +448,7 @@ function MapCanvas({
         const e = event as MouseEvent;
         return !e.ctrlKey && !e.button;
       })
-      .on("zoom", (e: { transform: ZoomTransform }) => {
-        transformRef.current = e.transform;
-        setTransform(e.transform);
-      });
+      .on("zoom", (e: { transform: ZoomTransform }) => onZoom(e.transform));
     zoomRef.current = z;
     const sel = select(svgEl);
     sel.call(z);
@@ -643,6 +683,7 @@ function MapCanvas({
           <g aria-hidden>
             <g clipPath={`url(#${clipId})`}>
               <rect
+                data-zaffine
                 x={zx(0.5)}
                 y={zy(1)}
                 width={Math.max(0, zx(1) - zx(0.5))}
@@ -651,6 +692,7 @@ function MapCanvas({
                 opacity={0.7}
               />
               <line
+                data-zx={zx(0.5)}
                 x1={zx(0.5)}
                 x2={zx(0.5)}
                 y1={plot.y0}
@@ -659,6 +701,7 @@ function MapCanvas({
                 strokeDasharray="4 4"
               />
               <line
+                data-zy={zy(0.5)}
                 x1={plot.x0}
                 x2={plot.x1}
                 y1={zy(0.5)}
@@ -667,6 +710,8 @@ function MapCanvas({
                 strokeDasharray="4 4"
               />
               <text
+                data-zx={zx(1)}
+                data-zy={zy(1)}
                 x={zx(1) - 8}
                 y={zy(1) + 18}
                 textAnchor="end"
@@ -690,12 +735,12 @@ function MapCanvas({
                   fill="var(--muted)"
                 >
                   {x >= plot.x0 && x <= plot.x1 && (
-                    <text x={x} y={plot.y1 + 16} textAnchor="middle">
+                    <text data-zx={x} x={x} y={plot.y1 + 16} textAnchor="middle">
                       {tick(t)}
                     </text>
                   )}
                   {y >= plot.y0 && y <= plot.y1 && (
-                    <text x={plot.x0 - 8} y={y + 4} textAnchor="end">
+                    <text data-zy={y} x={plot.x0 - 8} y={y + 4} textAnchor="end">
                       {tick(t)}
                     </text>
                   )}
@@ -728,11 +773,21 @@ function MapCanvas({
               const c = clusterById.get(h.cluster);
               if (!c) return null;
               const d = `M${h.polygon.map(([x, y]) => `${zx(x)},${zy(y)}`).join("L")}Z`;
-              return <path key={h.cluster} d={d} fill={c.color} fillOpacity={0.08} aria-hidden />;
+              return (
+                <path
+                  key={h.cluster}
+                  data-zaffine
+                  d={d}
+                  fill={c.color}
+                  fillOpacity={0.08}
+                  aria-hidden
+                />
+              );
             })}
 
           {area && (
             <rect
+              data-zaffine
               x={zx(area.x0)}
               y={zy(area.y1)}
               width={Math.max(0, zx(area.x1) - zx(area.x0))}
@@ -741,13 +796,14 @@ function MapCanvas({
               fillOpacity={0.5}
               stroke="var(--accent)"
               strokeDasharray="4 3"
+              vectorEffect="non-scaling-stroke"
               aria-hidden
             />
           )}
 
           <g
             onPointerOver={(e) => {
-              if (!drag) setHoverId(idFrom(e.target));
+              if (!drag && !zooming.current) setHoverId(idFrom(e.target));
             }}
             onPointerOut={() => setHoverId(null)}
             onClick={(e) => {
@@ -772,6 +828,8 @@ function MapCanvas({
                 <g
                   key={p.id}
                   data-id={p.id}
+                  data-zx={x}
+                  data-zy={y}
                   opacity={opacity * (dim ? 0.2 : 1)}
                   className="mark-glow cursor-pointer"
                   data-glow={active ? "on" : "off"}
@@ -802,6 +860,8 @@ function MapCanvas({
           {clusterLabels.map((l) => (
             <text
               key={l.cluster.index}
+              data-zx={l.x}
+              data-zy={l.y}
               x={l.x}
               y={l.y + CLUSTER_FONT * 0.35}
               textAnchor="middle"
@@ -819,6 +879,8 @@ function MapCanvas({
           {labels.map((l) => (
             <text
               key={l.id}
+              data-zx={markById.get(l.id)?.x ?? l.x + plot.x0}
+              data-zy={markById.get(l.id)?.y ?? l.y + plot.y0}
               x={l.x + plot.x0}
               y={l.y + plot.y0}
               textAnchor={l.anchor}
@@ -850,7 +912,7 @@ function MapCanvas({
       </svg>
 
       <ZoomControls
-        level={transform.k}
+        readout={readout}
         onZoomIn={() => zoomBy(1)}
         onZoomOut={() => zoomBy(-1)}
         onReset={resetZoom}
