@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-01T15:10:57+00:00",
+  "generated_at": "2026-11-01T16:39:47+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -1796,6 +1796,62 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Frank, an AI inside sales rep for manufacturers: reads incoming RFQs and drawings, asks buyers for missing details, drafts a BOM and prices it with the shop's own cost rules, holds the quote for human approval, then sends it, tracks buyer engagement and follows up, logging activity into the ERP / CRM.",
+      "pricing": null
+    },
+    {
+      "id": "co_forgis",
+      "name": "Forgis",
+      "website": "https://forgis.com/",
+      "hq_country": "CH",
+      "founded_year": 2025,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Zurich startup selling an edge orchestration platform (Hyperion) with AI agents that configure and validate manufacturing lines, predict failures and guide operators.",
+      "total_raised_usd": 4500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://forgis.com/",
+          "title": "Forgis",
+          "publisher": "Forgis",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.unisg.ch/en/newsdetail/news/hsg-startup-forgis-has-raised-45-million-dollars-in-pre-seed-funding/",
+          "title": "HSG startup Forgis has raised 4.5 million dollars in pre-seed funding",
+          "publisher": "University of St. Gallen",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://nordic9.com/news/forgis-in-a-45-million-pre-seed-financing-round-led-by-redalpine-joined-by-swiss-angel-investors/",
+          "title": "Forgis in a $4.5 million pre-seed financing round led by redalpine, joined by Swiss angel investors",
+          "publisher": "Nordic 9",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Edge AI agents that configure and validate manufacturing lines, predict failures and guide operators across machines, PLCs and sensors.",
+      "size_class": "under_5m",
+      "founders": [
+        "Federico Martelli",
+        "Camilla Mazzoleni",
+        "Riccardo Maggioni"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Hyperion, an orchestration platform that connects factory machines and runs AI agents on the factory floor to configure and validate lines, predict failures and guide operators.",
       "pricing": null
     },
     {

@@ -1,0 +1,100 @@
+{
+  "key": "forgis",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-01",
+  "identity_check": "Identified by domain forgis.com ('industrial intelligence company'; orchestration platform Hyperion; Zurich HQ per its job listings) and by the University of St. Gallen release 'HSG startup Forgis has raised 4.5 million dollars in pre-seed funding'. User-supplied source user_supplied:forgis_site_paste_2026_11_01 (the user's paste of the homepage) adds the pitch 'making Western manufacturing competitive through industrial intelligence', causal AI agents on the edge ('digital engineers'), PLC/robot/sensor connectivity, the HEPA, TEMPO, FactoryNet and FactoryBench research, and award or press claims (ABB Startup Challenge, Venture Kick Stage 3, Sifted x3, Swiss Deep Tech Report 2025, Forbes 30 Under 30 Europe AI); those paste-only claims are not stored as facts. Not any other 'Forge'/'Forgis' firm. Category direct: AI agents on the factory floor that configure and validate lines, predict failures and guide operators sit in plant_ops, next to Horizontal, Allude, Didero, Faction and Galvant, and overlap Utopian's agents for factory functions. Software over PLCs, robots and sensors, not a robot maker, so the robotics rule (remote) does not apply. Founded year 2025 and founders from a web-search summary of the St. Gallen release; not read on the page itself.",
+  "pages": [
+    {
+      "url": "https://forgis.com/",
+      "title": "Forgis",
+      "publisher": "Forgis",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.unisg.ch/en/newsdetail/news/hsg-startup-forgis-has-raised-45-million-dollars-in-pre-seed-funding/",
+      "title": "HSG startup Forgis has raised 4.5 million dollars in pre-seed funding",
+      "publisher": "University of St. Gallen",
+      "retrieved_at": "2026-11-01",
+      "kind": "press"
+    },
+    {
+      "url": "https://nordic9.com/news/forgis-in-a-45-million-pre-seed-financing-round-led-by-redalpine-joined-by-swiss-angel-investors/",
+      "title": "Forgis in a $4.5 million pre-seed financing round led by redalpine, joined by Swiss angel investors",
+      "publisher": "Nordic 9",
+      "retrieved_at": "2026-11-01",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Forgis",
+    "website": "https://forgis.com/",
+    "description": "Zurich startup selling an edge orchestration platform (Hyperion) with AI agents that configure and validate manufacturing lines, predict failures and guide operators.",
+    "hq_country": "CH",
+    "founded_year": 2025,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Edge AI agents that configure and validate manufacturing lines, predict failures and guide operators across machines, PLCs and sensors.",
+  "founders": [
+    "Federico Martelli",
+    "Camilla Mazzoleni",
+    "Riccardo Maggioni"
+  ],
+  "named_customers": [],
+  "product_summary": "Hyperion, an orchestration platform that connects factory machines and runs AI agents on the factory floor to configure and validate lines, predict failures and guide operators.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Forgis",
+        "website": "https://forgis.com/",
+        "description": "Zurich startup selling an edge orchestration platform (Hyperion) with AI agents that configure and validate manufacturing lines, predict failures and guide operators.",
+        "hq_country": "CH",
+        "founded_year": 2025,
+        "sector": "industrial_manufacturing",
+        "sector_classified_by": "model",
+        "layer": "plant_ops"
+      },
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed (about $4.5M, reported as EUR 3.8M by other outlets; announced mid-November 2025)",
+      "date": "2025-11",
+      "date_precision": "month",
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "redalpine"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        1,
+        2
+      ],
+      "snippet": "Forgis in a $4.5 million pre-seed financing round led by redalpine, joined by Swiss angel investors"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "round lead",
+      "values": [
+        "redalpine",
+        "Massimo Banzi"
+      ],
+      "chosen": "redalpine",
+      "reason": "Most sources name redalpine as lead; only Seedtable lists Banzi (an angel), so he is not stored."
+    }
+  ],
+  "open_items": [
+    "Day of announcement not confirmed (11-13 to 11-14 per outlet dates), so month precision.",
+    "Swiss angels unnamed except Massimo Banzi (Arduino), whose role conflicts; not stored.",
+    "Venture Kick CHF 150k is a separate grant, not part of the round; Venture Kick page returned 503.",
+    "Headcount, revenue and customers not found."
+  ]
+}

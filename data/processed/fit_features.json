@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-01T15:10:57+00:00",
+  "generated_at": "2026-11-01T16:39:47+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -63523,16 +63523,17 @@
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.283469,
+          "value": 0.486583,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "1 adjacent companies in 2 rounds"
+            "2 adjacent companies in 3 rounds"
           ]
         },
         "geography": null,
         "dry_powder": null
       },
       "flags": [
+        "conflict",
         "sparse"
       ],
       "raise_size_usd": 1000000

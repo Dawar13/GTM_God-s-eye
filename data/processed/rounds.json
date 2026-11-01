@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-01T15:10:57+00:00",
+  "generated_at": "2026-11-01T16:39:47+00:00",
   "records": [
     {
       "id": "rnd_1849-bio_2024-12_pre_seed",
@@ -23338,6 +23338,53 @@
           4,
           5,
           6
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_forgis_2025-11_pre_seed",
+      "company_id": "co_forgis",
+      "date": "2025-11",
+      "date_precision": "month",
+      "stage": "pre_seed",
+      "stage_raw": "Pre-seed (about $4.5M, reported as EUR 3.8M by other outlets; announced mid-November 2025)",
+      "amount_usd": 4500000,
+      "amount_original": 4500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_redalpine"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.unisg.ch/en/newsdetail/news/hsg-startup-forgis-has-raised-45-million-dollars-in-pre-seed-funding/",
+          "title": "HSG startup Forgis has raised 4.5 million dollars in pre-seed funding",
+          "publisher": "University of St. Gallen",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://nordic9.com/news/forgis-in-a-45-million-pre-seed-financing-round-led-by-redalpine-joined-by-swiss-angel-investors/",
+          "title": "Forgis in a $4.5 million pre-seed financing round led by redalpine, joined by Swiss angel investors",
+          "publisher": "Nordic 9",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"

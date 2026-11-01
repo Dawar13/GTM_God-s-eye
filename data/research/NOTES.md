@@ -99,6 +99,7 @@ Three competitors added from user pastes (`user_supplied:frinks_site_paste_2026_
 | Frinks AI | adjacent | quality_vision | Inspection vision for quality teams; no sourced root-cause diagnosis (Matta is direct because it adds it). Raised $5.4M pre-Series A (May 2025, Prime Venture Partners lead) per a PR release; its accuracy and savings claims are not stored. frinks.ai is script-rendered and gave no readable text. |
 | Horizontal | direct | plant_ops | Multi-agent platform that executes plant operations over ERP/MES/QMS; domain horizontal-tech.com, YC page confirmed. No funding round or founders found. |
 | Machenta | remote | robotics | Robot foundation model (robotics rule). $40M seed, co-led by Creandum and USV, Oct 2026 (day unresolved, 27 vs 28). |
+| Forgis | direct | plant_ops | Zurich edge AI agents that configure and validate lines and predict failures (`user_supplied:forgis_site_paste_2026_11_01`); forgis.com. Pre-seed $4.5M, 2025-11 (month), led by redalpine (St. Gallen release, Nordic 9). |
 
 **Robotics rule (user, 2026-11-01).** Companies whose core product is robots get category `remote`, with a note in `identity_check` citing `user_supplied:robotics_not_direct_2026_11_01`. Changed: Machina Labs adjacent to remote (robots are the product). Hadrian stays adjacent: it is a parts manufacturer selling Opus factory-autonomy software, and its file does not describe robots as the product. Note added only: Atoms, Parallax Worlds, sensmore (already remote). Revisit all if Utopian moves into robotics.
 
