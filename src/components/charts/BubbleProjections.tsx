@@ -1,7 +1,7 @@
 "use client";
 
 import { select, zoom as d3zoom, zoomIdentity, type ZoomBehavior, type ZoomTransform } from "d3";
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { useCallback, type CSSProperties, useEffect, useId, useMemo, useRef, useState } from "react";
 import { ZoomControls, handleZoomKey } from "@/components/ui-atlas/ZoomControls";
 import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { ZOOM_MAX, ZOOM_STEP } from "@/lib/viz/zoom";
@@ -319,7 +319,13 @@ export function BubbleProjections({
                       };
                       const side = r * SQUARE_SIDE;
                       return (
-                        <g key={p.id} data-id={p.id} className="cursor-pointer">
+                        <g
+                          key={p.id}
+                          data-id={p.id}
+                          className="mark-glow cursor-pointer"
+                          data-glow={p.id === hover?.id ? "on" : "off"}
+                          style={{ "--glow": color } as CSSProperties}
+                        >
                           {p.marker === "square" ? (
                             <rect
                               x={x - side / 2}

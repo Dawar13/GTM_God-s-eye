@@ -8,12 +8,13 @@ import Plotly from "plotly.js-dist-min";
 import createPlotlyComponent from "react-plotly.js/factory";
 import { useEffect, useEffectEvent, useMemo, useRef, useState, type MouseEvent } from "react";
 import { formatUsd } from "@/lib/format";
-import { darken, withOpacity } from "@/lib/viz";
+import { darken, lighten, withOpacity } from "@/lib/viz";
 import {
   bubbleDiameter,
   checkDomain,
   glMarkerSize,
   logTicks,
+  plotlyDiameter,
   UNSIZED_DIAMETER,
   type BubbleRow,
   type BubbleSizing,
@@ -84,6 +85,19 @@ const idOf = (e: PlotEvent) => {
   return typeof id === "string" ? id : null;
 };
 
+/**
+ * Hover glow: WebGL markers can't take a CSS filter, so the hovered point is drawn again in
+ * three halo traces (one concentric marker each) plus an outline trace. They sit at the end of
+ * `data`, always present and empty, and are filled and cleared with Plotly.restyle.
+ */
+const HALO_SCALE = [1.5, 2.1, 2.8] as const;
+const HALO_OPACITY = {
+  dark: [0.45, 0.22, 0.1],
+  light: [0.3, 0.14, 0.06],
+} as const;
+const HALO_TRACES = HALO_SCALE.length + 1;
+const OUTLINE_WIDTH = 2;
+
 function readColors(dark: boolean) {
   const css = getComputedStyle(document.documentElement);
   const v = (name: string, light: string, darkFallback: string) =>
@@ -120,7 +134,8 @@ export default function Bubbles3D({
   height: number;
 }) {
   const theme = useUi((s) => s.theme);
-  const colors = useMemo(() => readColors(theme === "dark"), [theme]);
+  const dark = theme === "dark";
+  const colors = useMemo(() => readColors(dark), [dark]);
   const graphDiv = useRef<HTMLElement | null>(null);
   const wrap = useRef<HTMLDivElement>(null);
   const mouse = useRef({ x: 0, y: 0 });
@@ -184,8 +199,87 @@ export default function Bubbles3D({
         marker: { size: glMarkerSize(d + 10), symbol: "circle-open", color: colors.accent },
       });
     }
+    // Hover glow traces: empty until a point is hovered. Never hoverable, never in a legend.
+    const empty = { x: [], y: [], z: [], hoverinfo: "none", showlegend: false };
+    HALO_SCALE.forEach((_, i) =>
+      traces.push({
+        ...empty,
+        type: "scatter3d",
+        mode: "markers",
+        name: "Glow",
+        marker: { size: 1, color: NEUTRAL, opacity: HALO_OPACITY[dark ? "dark" : "light"][i] },
+      }),
+    );
+    traces.push({
+      ...empty,
+      type: "scatter3d",
+      mode: "markers",
+      name: "Hover outline",
+      marker: { size: 1, symbol: "circle-open", color: NEUTRAL, line: { width: OUTLINE_WIDTH } },
+    });
     return traces;
-  }, [points, sizing, clusterById, selectedId, byId, colors.accent]);
+  }, [points, sizing, clusterById, selectedId, byId, colors.accent, dark]);
+
+  // Draws (or clears) the glow for one point. At most one restyle per frame; the last id wins.
+  const haloId = useRef<string | null>(null);
+  const haloFrame = useRef(0);
+  const haloShown = useRef(false);
+  const setHalo = (id: string | null) => {
+    haloId.current = id;
+    if (haloFrame.current) return;
+    haloFrame.current = requestAnimationFrame(() => {
+      haloFrame.current = 0;
+      const gd = graphDiv.current as (HTMLElement & { data?: unknown[] }) | null;
+      if (!gd?.isConnected || !gd.data) return;
+      const first = gd.data.length - HALO_TRACES;
+      if (first < 0) return;
+      const idx = Array.from({ length: HALO_TRACES }, (_, i) => first + i);
+      const p = haloId.current ? byId.get(haloId.current) : undefined;
+      if (!p) {
+        if (!haloShown.current) return;
+        haloShown.current = false;
+        void Plotly.restyle(
+          gd,
+          {
+            x: idx.map(() => []),
+            y: idx.map(() => []),
+            z: idx.map(() => []),
+            customdata: idx.map(() => []),
+          },
+          idx,
+        );
+        return;
+      }
+      const color = p.cluster === null ? NEUTRAL : (clusterById.get(p.cluster)?.color ?? NEUTRAL);
+      const d =
+        (sizing && p.fundUsd !== null && plotlyDiameter(p.fundUsd, sizing)) || UNSIZED_DIAMETER;
+      const halo = dark ? lighten(color, 0.25) : color;
+      const outline = dark ? lighten(color, 0.4) : darken(color, 0.4);
+      haloShown.current = true;
+      void Plotly.restyle(
+        gd,
+        {
+          x: idx.map(() => [p.check]),
+          y: idx.map(() => [p.earliness]),
+          z: idx.map(() => [p.affinity]),
+          customdata: idx.map(() => [p.id]),
+          "marker.size": [...HALO_SCALE.map((k) => glMarkerSize(d * k)), glMarkerSize(d)],
+          "marker.color": [halo, halo, halo, outline],
+          "marker.symbol": [
+            ...HALO_SCALE.map(() => "circle"),
+            p.marker === "square" ? "square-open" : "circle-open",
+          ],
+        },
+        idx,
+      );
+    });
+  };
+  useEffect(
+    () => () => {
+      if (haloFrame.current) cancelAnimationFrame(haloFrame.current);
+    },
+    [],
+  );
 
   const layout = useMemo(() => {
     const domain = checkDomain(checkExtent);
@@ -416,7 +510,10 @@ export default function Bubbles3D({
       className="relative"
       style={{ height, touchAction: "pan-y" }}
       onMouseMove={onMouseMove}
-      onMouseLeave={() => setHover(null)}
+      onMouseLeave={() => {
+        setHover(null);
+        setHalo(null);
+      }}
       tabIndex={0}
       onKeyDown={(e) => void handleZoomKey(e, zoomHandlers)}
       role="img"
@@ -449,8 +546,12 @@ export default function Bubbles3D({
           const { x, y } = mouse.current;
           const flip = x + 16 + 256 > (wrap.current?.clientWidth ?? Infinity);
           setHover(id ? { id, x, y, flip } : null);
+          setHalo(id);
         }}
-        onUnhover={() => setHover(null)}
+        onUnhover={() => {
+          setHover(null);
+          setHalo(null);
+        }}
         onClick={(e: PlotEvent) => {
           const id = idOf(e);
           if (id) onOpen(id);

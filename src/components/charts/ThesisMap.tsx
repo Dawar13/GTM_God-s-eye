@@ -11,6 +11,7 @@ import {
   useMemo,
   useRef,
   useState,
+  type CSSProperties,
   type KeyboardEvent,
   type PointerEvent as ReactPointerEvent,
   type Ref,
@@ -772,7 +773,9 @@ function MapCanvas({
                   key={p.id}
                   data-id={p.id}
                   opacity={opacity * (dim ? 0.2 : 1)}
-                  className="cursor-pointer"
+                  className="mark-glow cursor-pointer"
+                  data-glow={active ? "on" : "off"}
+                  style={{ "--glow": color } as CSSProperties}
                 >
                   {p.id === selectedId && (
                     <circle

@@ -161,3 +161,25 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Hover glow for SVG marks (2D bubbles, thesis map). --glow is the mark's own colour; the
+   shadow is always present (transparent when off) so filter can fade; stronger in dark. */
+.mark-glow {
+  --glow-a: 0.5;
+  --glow-b: 0.28;
+  filter: drop-shadow(0 0 0 transparent);
+  transition: filter 120ms ease-out;
+}
+[data-theme="dark"] .mark-glow {
+  --glow-a: 0.95;
+  --glow-b: 0.55;
+}
+.mark-glow[data-glow="on"] {
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--glow) calc(var(--glow-a) * 100%), transparent))
+    drop-shadow(0 0 9px color-mix(in srgb, var(--glow) calc(var(--glow-b) * 100%), transparent));
+}
+@media (prefers-reduced-motion: reduce) {
+  .mark-glow {
+    transition: none;
+  }
+}

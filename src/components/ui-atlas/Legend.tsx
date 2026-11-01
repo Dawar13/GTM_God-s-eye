@@ -45,11 +45,12 @@ export function Legend(props: LegendProps) {
   if (props.kind === "categorical") {
     const list = (
       <ul className={cn("flex flex-wrap gap-x-4 gap-y-1 text-sm text-ink-2", props.className)}>
-        {props.items.map((it) => {
+        {/* Keyed by position: two clusters can share a two-sector label. */}
+        {props.items.map((it, i) => {
           const m = markStyle(it.color);
           if (it.shape === "line") {
             return (
-              <li key={it.label} className="flex items-center gap-1.5">
+              <li key={`${i}-${it.label}`} className="flex items-center gap-1.5">
                 <svg width="18" height="10" aria-hidden>
                   <line
                     x1="1"
@@ -67,7 +68,7 @@ export function Legend(props: LegendProps) {
           }
           if (it.ring) {
             return (
-              <li key={it.label} className="flex items-center gap-1.5">
+              <li key={`${i}-${it.label}`} className="flex items-center gap-1.5">
                 <svg width="12" height="12" aria-hidden>
                   <circle cx="6" cy="6" r="4" fill={it.color} stroke={it.ring} strokeWidth={2} />
                 </svg>
@@ -76,7 +77,7 @@ export function Legend(props: LegendProps) {
             );
           }
           return (
-            <li key={it.label} className="flex items-center gap-1.5">
+            <li key={`${i}-${it.label}`} className="flex items-center gap-1.5">
               <svg width="10" height="10" aria-hidden>
                 {it.shape === "square" ? (
                   <rect

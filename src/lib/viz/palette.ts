@@ -32,6 +32,11 @@ export function darken(hex: string, amount: number = STROKE_DARKEN): string {
   return toHex(parseHex(hex).map((c) => c * (1 - amount)));
 }
 
+/** Mixes each RGB channel toward white by `amount` (0.4 moves 40% of the way). */
+export function lighten(hex: string, amount: number): string {
+  return toHex(parseHex(hex).map((c) => c + (255 - c) * amount));
+}
+
 /** Hex colour as rgba() at the given opacity. */
 export function withOpacity(hex: string, opacity: number): string {
   const [r, g, b] = parseHex(hex);
