@@ -1,0 +1,48 @@
+{
+  "key": "horizontal",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-01",
+  "identity_check": "Identified by domain horizontal-tech.com ('The modular multi-agent operations platform for manufacturing'; backers Y Combinator and UnternehmerTUM Incubator) and by its Y Combinator company page ycombinator.com/companies/horizontal ('AI agents that run factory operations end-to-end'). User-supplied source user_supplied:horizontal_site_paste_2026_11_01 (the user's paste of the homepage) adds scheduling, maintenance and check-and-release agents, ERP/MES/CMMS/QMS integration, the Stanford, ETH Zurich and TUM team, San Francisco and Munich offices, ISO 27001 and cloud or on-prem deployment; those paste-only details are not stored as facts. Not any other firm called Horizontal (many exist, e.g. horizontal staffing and software firms), not Manex AI. Category direct: agents that execute plant operations (scheduling, maintenance, quality release) across a plant, targeted at enterprise manufacturers, overlap Utopian's agents for factory functions as closely as Allude, Didero, Faction and Galvant; it differs by selling to enterprises in Europe and the US with no sourced chat or WhatsApp interface. HQ country not stated on either page; the paste lists San Francisco and Munich, so left null.",
+  "pages": [
+    {
+      "url": "https://horizontal-tech.com/",
+      "title": "horizontal.",
+      "publisher": "Horizontal",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/horizontal",
+      "title": "horizontal. | Y Combinator",
+      "publisher": "Y Combinator",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    }
+  ],
+  "company": {
+    "name": "Horizontal",
+    "website": "https://horizontal-tech.com/",
+    "description": "Modular multi-agent operations platform that runs plant operational work end to end on top of existing ERP, MES and quality systems.",
+    "hq_country": null,
+    "founded_year": null,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "model",
+    "layer": "plant_ops"
+  },
+  "category": "direct",
+  "layer": "plant_ops",
+  "layer_detail": "Multi-agent orchestration of plant operational work across existing ERP, MES, automation and quality systems.",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "A modular multi-agent platform that orchestrates and executes operational work across a manufacturing plant, running on top of existing ERP, MES and quality tools; customers are enterprise manufacturers in Europe and the US.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No funding round found in public sources (YC and UnternehmerTUM backing is stated by the site; no amounts).",
+    "Founders, YC batch, HQ and headcount not stated on the pages read.",
+    "No named customers."
+  ]
+}

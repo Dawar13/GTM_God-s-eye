@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-31T15:15:33+00:00",
+  "generated_at": "2026-11-01T07:39:14+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -8704,6 +8704,28 @@
         "check": null,
         "adjacency": {
           "value": 0.153518,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_ashok-atluri",
+      "investor_id": "inv_ashok-atluri",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.283469,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
             "1 adjacent companies in 1 rounds"
@@ -17915,14 +17937,21 @@
       "id": "fit_chiratae-ventures",
       "investor_id": "inv_chiratae-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.7,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.60",
+            "ai weight 0.20"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.0,
+          "value": 0.283469,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 2 rounds"
+            "1 adjacent companies in 3 rounds"
           ]
         },
         "geography": null,
@@ -21131,20 +21160,20 @@
       "investor_id": "inv_creandum",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.583333,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.20",
-            "ai weight 0.60"
+            "industrial_affinity 0.33",
+            "ai weight 0.50"
           ]
         },
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.283469,
+          "value": 0.486583,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "1 adjacent companies in 5 rounds"
+            "2 adjacent companies in 6 rounds"
           ]
         },
         "geography": null,
@@ -52821,6 +52850,28 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_navam-capital",
+      "investor_id": "inv_navam-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.283469,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_nd-capital",
       "investor_id": "inv_nd-capital",
       "features": {
@@ -60938,10 +60989,10 @@
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.0,
+          "value": 0.283469,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 1 rounds"
+            "1 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -79319,11 +79370,11 @@
       "investor_id": "inv_union-square-ventures",
       "features": {
         "thesis": {
-          "value": 0.263157,
+          "value": 0.333334,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.21",
-            "ai weight 0.11"
+            "industrial_affinity 0.29",
+            "ai weight 0.10"
           ]
         },
         "stage": {
@@ -79335,10 +79386,10 @@
         },
         "check": null,
         "adjacency": {
-          "value": 0.283469,
+          "value": 0.486583,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "1 adjacent companies in 11 rounds"
+            "2 adjacent companies in 12 rounds"
           ]
         },
         "geography": {

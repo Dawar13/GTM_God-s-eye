@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-31T15:15:33+00:00",
+  "generated_at": "2026-11-01T07:39:14+00:00",
   "records": [
     {
       "id": "rnd_1849-bio_2024-12_pre_seed",
@@ -23645,6 +23645,48 @@
       "confidence": "high"
     },
     {
+      "id": "rnd_frinks-ai_2025-05_undisclosed",
+      "company_id": "co_frinks-ai",
+      "date": "2025-05-28",
+      "date_precision": "day",
+      "stage": "undisclosed",
+      "stage_raw": "Pre-Series A",
+      "amount_usd": 5400000,
+      "amount_original": 5400000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_prime-venture-partners"
+      ],
+      "participant_investor_ids": [
+        "inv_ashok-atluri",
+        "inv_chiratae-ventures",
+        "inv_navam-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.tribuneindia.com/news/business/frinks-ai-a-manufacturing-ai-startup-by-iit-hyderabad-alumni-raises-5-4m-led-by-prime-ventures",
+          "title": "Frinks AI, a Manufacturing AI Startup by IIT Hyderabad Alumni, Raises $5.4M Led by Prime Ventures",
+          "publisher": "Tribune India (PR Newswire / ANI release)",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
       "id": "rnd_fuse_2026-03_series_a",
       "company_id": "co_fuse",
       "date": "2026-03-17",
@@ -33244,6 +33286,45 @@
         ]
       },
       "confidence": "medium"
+    },
+    {
+      "id": "rnd_machenta_2026-10_seed",
+      "company_id": "co_machenta",
+      "date": "2026-10",
+      "date_precision": "month",
+      "stage": "seed",
+      "stage_raw": "$40M Seed co-led by Creandum and USV",
+      "amount_usd": 40000000,
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_creandum",
+        "inv_union-square-ventures"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://machenta.com/",
+          "title": "Machenta",
+          "publisher": "Machenta",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0
+        ],
+        "investors": [
+          0
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_machina-labs_2021-11_series_a",

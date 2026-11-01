@@ -89,3 +89,15 @@ Eleven companies from the user's list "companies similar to Utopian Autonomy fro
 **EF as investor.** Sourced by a page read: sensmore (Tech.eu), Interface (Pulse 2.0), Hanomi (EF portfolio page), Phasio (TechCrunch), Lynceus (CB Insights, database). User-supplied only: Converge, Faction (PitchBook and trade press name EF, but those pages were not readable), Allude, Samp, SixSense, Syn2core. A competitor round needs a stage, so EF is recorded only in sourced rounds; no round was invented.
 
 **Not found.** Faction round (MDM article 403; $3.5M vs $4M unresolved); Allude and Syn2core funding; Hanomi seed date; founders for Hanomi, Faction, Allude, Syn2core; headcount for all eleven; HQ for several (see each file's open_items).
+
+## Additions and robotics rule (2026-11-01)
+
+Three competitors added from user pastes (`user_supplied:frinks_site_paste_2026_11_01`, `user_supplied:horizontal_site_paste_2026_11_01`, `user_supplied:machenta_seed_post_2026_11_01`); research stayed lean (the company site plus one or two other pages each).
+
+| Company | Category | Layer | Why |
+|---|---|---|---|
+| Frinks AI | adjacent | quality_vision | Inspection vision for quality teams; no sourced root-cause diagnosis (Matta is direct because it adds it). Raised $5.4M pre-Series A (May 2025, Prime Venture Partners lead) per a PR release; its accuracy and savings claims are not stored. frinks.ai is script-rendered and gave no readable text. |
+| Horizontal | direct | plant_ops | Multi-agent platform that executes plant operations over ERP/MES/QMS; domain horizontal-tech.com, YC page confirmed. No funding round or founders found. |
+| Machenta | remote | robotics | Robot foundation model (robotics rule). $40M seed, co-led by Creandum and USV, Oct 2026 (day unresolved, 27 vs 28). |
+
+**Robotics rule (user, 2026-11-01).** Companies whose core product is robots get category `remote`, with a note in `identity_check` citing `user_supplied:robotics_not_direct_2026_11_01`. Changed: Machina Labs adjacent to remote (robots are the product). Hadrian stays adjacent: it is a parts manufacturer selling Opus factory-autonomy software, and its file does not describe robots as the product. Note added only: Atoms, Parallax Worlds, sensmore (already remote). Revisit all if Utopian moves into robotics.

@@ -1,44 +1,44 @@
 {
   "version": 2,
-  "generated_at": "2026-10-31T15:15:33+00:00",
+  "generated_at": "2026-11-01T07:39:14+00:00",
   "records": [
     {
       "id": "cl_0",
       "index": 0,
-      "name": "defense dual use · space · industrial manufacturing",
-      "size": 56,
+      "name": "defense dual use · consumer · space",
+      "size": 30,
       "top_sectors": [
         {
           "sector": "defense_dual_use",
-          "weight": 0.3535
+          "weight": 0.4025
+        },
+        {
+          "sector": "consumer",
+          "weight": 0.2658
         },
         {
           "sector": "space",
-          "weight": 0.143
-        },
-        {
-          "sector": "industrial_manufacturing",
-          "weight": 0.0738
+          "weight": 0.0888
         }
       ]
     },
     {
       "id": "cl_1",
       "index": 1,
-      "name": "industrial manufacturing · mobility ev · ai apps agents",
-      "size": 65,
+      "name": "enterprise saas · fintech · consumer",
+      "size": 14,
       "top_sectors": [
         {
-          "sector": "industrial_manufacturing",
-          "weight": 0.4831
+          "sector": "enterprise_saas",
+          "weight": 0.8333
         },
         {
-          "sector": "mobility_ev",
-          "weight": 0.0581
+          "sector": "fintech",
+          "weight": 0.0769
         },
         {
-          "sector": "ai_apps_agents",
-          "weight": 0.0576
+          "sector": "consumer",
+          "weight": 0.0513
         }
       ]
     },
@@ -46,39 +46,39 @@
       "id": "cl_2",
       "index": 2,
       "name": "robotics physical ai · ai infra · ai apps agents",
-      "size": 133,
+      "size": 78,
       "top_sectors": [
         {
           "sector": "robotics_physical_ai",
-          "weight": 0.28
+          "weight": 0.4224
         },
         {
           "sector": "ai_infra",
-          "weight": 0.1448
+          "weight": 0.1234
         },
         {
           "sector": "ai_apps_agents",
-          "weight": 0.0844
+          "weight": 0.1152
         }
       ]
     },
     {
       "id": "cl_3",
       "index": 3,
-      "name": "hardware deeptech · ai infra · climate energy",
-      "size": 21,
+      "name": "climate energy · industrial manufacturing · robotics physical ai",
+      "size": 31,
       "top_sectors": [
         {
-          "sector": "hardware_deeptech",
-          "weight": 0.6671
-        },
-        {
-          "sector": "ai_infra",
-          "weight": 0.0547
-        },
-        {
           "sector": "climate_energy",
-          "weight": 0.0455
+          "weight": 0.518
+        },
+        {
+          "sector": "industrial_manufacturing",
+          "weight": 0.1021
+        },
+        {
+          "sector": "robotics_physical_ai",
+          "weight": 0.075
         }
       ]
     },
@@ -86,119 +86,119 @@
       "id": "cl_4",
       "index": 4,
       "name": "health bio · enterprise saas · ai apps agents",
-      "size": 61,
+      "size": 46,
       "top_sectors": [
         {
           "sector": "health_bio",
-          "weight": 0.5023
+          "weight": 0.5723
         },
         {
           "sector": "enterprise_saas",
-          "weight": 0.0866
+          "weight": 0.0953
         },
         {
           "sector": "ai_apps_agents",
-          "weight": 0.0704
+          "weight": 0.0548
         }
       ]
     },
     {
       "id": "cl_5",
       "index": 5,
-      "name": "fintech · ai apps agents · enterprise saas",
+      "name": "hardware deeptech · health bio · ai infra",
       "size": 25,
       "top_sectors": [
         {
-          "sector": "fintech",
-          "weight": 0.7931
+          "sector": "hardware_deeptech",
+          "weight": 0.6204
         },
         {
-          "sector": "ai_apps_agents",
-          "weight": 0.0463
+          "sector": "health_bio",
+          "weight": 0.0694
         },
         {
-          "sector": "enterprise_saas",
-          "weight": 0.0386
+          "sector": "ai_infra",
+          "weight": 0.0622
         }
       ]
     },
     {
       "id": "cl_6",
       "index": 6,
-      "name": "consumer · enterprise saas · ai infra",
-      "size": 13,
+      "name": "ai apps agents · ai infra · enterprise saas",
+      "size": 57,
       "top_sectors": [
         {
-          "sector": "consumer",
-          "weight": 0.7265
-        },
-        {
-          "sector": "enterprise_saas",
-          "weight": 0.0737
+          "sector": "ai_apps_agents",
+          "weight": 0.6054
         },
         {
           "sector": "ai_infra",
-          "weight": 0.0481
+          "weight": 0.0753
+        },
+        {
+          "sector": "enterprise_saas",
+          "weight": 0.072
         }
       ]
     },
     {
       "id": "cl_7",
       "index": 7,
-      "name": "enterprise saas · fintech · ai infra",
-      "size": 12,
+      "name": "ai apps agents · ai infra · fintech",
+      "size": 185,
       "top_sectors": [
         {
-          "sector": "enterprise_saas",
-          "weight": 0.8939
-        },
-        {
-          "sector": "fintech",
-          "weight": 0.0455
+          "sector": "ai_apps_agents",
+          "weight": 0.174
         },
         {
           "sector": "ai_infra",
-          "weight": 0.0227
+          "weight": 0.1132
+        },
+        {
+          "sector": "fintech",
+          "weight": 0.0981
         }
       ]
     },
     {
       "id": "cl_8",
       "index": 8,
-      "name": "ai apps agents · ai infra · enterprise saas",
-      "size": 150,
+      "name": "industrial manufacturing · ai apps agents · robotics physical ai",
+      "size": 74,
       "top_sectors": [
         {
+          "sector": "industrial_manufacturing",
+          "weight": 0.4626
+        },
+        {
           "sector": "ai_apps_agents",
-          "weight": 0.4124
+          "weight": 0.0635
         },
         {
-          "sector": "ai_infra",
-          "weight": 0.094
-        },
-        {
-          "sector": "enterprise_saas",
-          "weight": 0.0812
+          "sector": "robotics_physical_ai",
+          "weight": 0.0557
         }
       ]
     },
     {
       "id": "cl_9",
       "index": 9,
-      "name": "climate energy · industrial manufacturing · robotics physical ai",
-      "size": 26,
+      "name": "fintech · ai apps agents · consumer",
+      "size": 23,
       "top_sectors": [
         {
-          "sector": "climate_energy",
-          "weight": 0.5562
+          "sector": "fintech",
+          "weight": 0.823
         },
         {
-          "sector": "industrial_manufacturing",
-          "weight": 0.0775
+          "sector": "ai_apps_agents",
+          "weight": 0.0503
         },
         {
-          "sector": "robotics_physical_ai",
-          "weight": 0.075
+          "sector": "consumer",
+          "weight": 0.0322
         }
       ]
     }

@@ -1,0 +1,77 @@
+{
+  "key": "machenta",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-01",
+  "identity_check": "Identified by domain machenta.com ('a frontier AI company, building a new kind of robot foundation model'; Seed co-led by Creandum and USV) and by Inforcapital (London robotics start-up, $40M seed, 28 Oct 2026). User-supplied source user_supplied:machenta_seed_post_2026_11_01 (the user's quote of the post: Creandum co-led Machenta's $40M Seed alongside Union Square Ventures) matches the company site. Not other firms named Machenta. Category remote: its core product is robot AI. Not a direct competitor while Utopian Autonomy stays out of robotics (user decision 2026-11-01); revisit if it moves into robotics. Cited as user_supplied:robotics_not_direct_2026_11_01. Round date: Inforcapital's article is dated 2026-10-28 and a search result said 2026-10-27 (not opened), so month precision is used. Inforcapital names no investors; the leads come from machenta.com and the user's post.",
+  "pages": [
+    {
+      "url": "https://machenta.com/",
+      "title": "Machenta",
+      "publisher": "Machenta",
+      "retrieved_at": "2026-11-01",
+      "kind": "primary"
+    },
+    {
+      "url": "https://inforcapital.com/news/london-robotics-startup-machenta-raises-40m-seed-investment/",
+      "title": "London robotics startup Machenta raises $40M seed investment",
+      "publisher": "Inforcapital",
+      "retrieved_at": "2026-11-01",
+      "kind": "press"
+    }
+  ],
+  "company": {
+    "name": "Machenta",
+    "website": "https://machenta.com/",
+    "description": "London robotics AI company building a robot foundation model that learns new tasks from one demonstration.",
+    "hq_country": "GB",
+    "founded_year": null,
+    "sector": "robotics_physical_ai",
+    "sector_classified_by": "model",
+    "layer": "robotics"
+  },
+  "category": "remote",
+  "layer": "robotics",
+  "layer_detail": "Robot foundation model (instant robot learning from a single demonstration, trained in simulation).",
+  "founders": [],
+  "named_customers": [],
+  "product_summary": "A robot foundation model, trained in simulation, that learns new tasks from a single demonstration without further training.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Machenta",
+        "website": "https://machenta.com/",
+        "description": "London robotics AI company building a robot foundation model that learns new tasks from one demonstration.",
+        "hq_country": "GB",
+        "founded_year": null,
+        "sector": "robotics_physical_ai",
+        "sector_classified_by": "model",
+        "layer": "robotics"
+      },
+      "stage": "seed",
+      "stage_raw": "$40M Seed co-led by Creandum and USV",
+      "date": "2026-10",
+      "date_precision": "month",
+      "amount_original": 40000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": [
+        "Creandum",
+        "Union Square Ventures"
+      ],
+      "participants": [],
+      "unspecified": [],
+      "pages": [
+        0
+      ],
+      "snippet": "The $40M Seed round was co-led by Creandum and USV."
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "Founders and founded year not read from a fetched page.",
+    "Exact announcement day (27 vs 28 Oct 2026) unresolved; other press (Traded, Nordic9) returned 403."
+  ]
+}

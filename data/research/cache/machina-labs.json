@@ -2,7 +2,7 @@
   "key": "machina-labs",
   "entity_type": "competitor",
   "researched_at": "2026-10-30",
-  "identity_check": "Confirmed as Machina Labs (machinalabs.ai; also styled 'Machina' on its 2026 site and releases), founded in 2019 and based in Los Angeles (site address Chatsworth, CA), CEO and co-founder Edward Mehr; it builds software-defined factories where AI-guided robots form sheet metal (RoboCraftsman). Every round page (company releases, TechCrunch 2021 and 2023, socaltech) names the same company and CEO. Not other companies using the 'Machina' name. Category kept adjacent and layer full_stack_factory (PROJECT_CONTEXT §7 had remote): Machina runs its own factories and also deploys on-site Edge Factories in customer facilities (Warner Robins Air Logistics Complex, University of Dayton Research Institute), selling AI-driven production into plants; but its AI plans a single forming process from CAD and it sells no procurement, maintenance or RFQ tooling to plant staff, so the overlap with Utopian is thinner than Hadrian's.",
+  "identity_check": "Confirmed as Machina Labs (machinalabs.ai; also styled 'Machina' on its 2026 site and releases), founded in 2019 and based in Los Angeles (site address Chatsworth, CA), CEO and co-founder Edward Mehr; it builds software-defined factories where AI-guided robots form sheet metal (RoboCraftsman). Every round page (company releases, TechCrunch 2021 and 2023, socaltech) names the same company and CEO. Not other companies using the 'Machina' name. Category kept adjacent and layer full_stack_factory (PROJECT_CONTEXT §7 had remote): Machina runs its own factories and also deploys on-site Edge Factories in customer facilities (Warner Robins Air Logistics Complex, University of Dayton Research Institute), selling AI-driven production into plants; but its AI plans a single forming process from CAD and it sells no procurement, maintenance or RFQ tooling to plant staff, so the overlap with Utopian is thinner than Hadrian's. Robotics rule: robots are the core product. Not a direct competitor while Utopian Autonomy stays out of robotics (user decision 2026-11-01); revisit if it moves into robotics. Cited as user_supplied:robotics_not_direct_2026_11_01.",
   "pages": [
     { "url": "https://machinalabs.ai", "title": "Machina Labs", "publisher": "Machina Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
     { "url": "https://machinalabs.ai/resources", "title": "Resources | Machina Labs", "publisher": "Machina Labs", "retrieved_at": "2026-10-30", "kind": "primary" },
@@ -30,7 +30,7 @@
     "sector_classified_by": "source",
     "layer": "full_stack_factory"
   },
-  "category": "adjacent",
+  "category": "remote",
   "layer": "full_stack_factory",
   "layer_detail": "Robotic incremental sheet-metal forming (RoboCraftsman) in Machina-run factories and on-site Edge Factories; defence work via subsidiary Machina Bellator (Jul 2026)",
   "founders": ["Edward Mehr"],

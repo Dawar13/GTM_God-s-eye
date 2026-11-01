@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-31T15:15:33+00:00",
+  "generated_at": "2026-11-01T07:39:14+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -1799,6 +1799,55 @@
       "pricing": null
     },
     {
+      "id": "co_frinks-ai",
+      "name": "Frinks AI",
+      "website": "https://frinks.ai/",
+      "hq_country": "IN",
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "quality_vision",
+      "description_short": "AI machine-vision inspection for manufacturing quality control, sold to automotive, battery, electronics and other plants.",
+      "total_raised_usd": 5400000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://frinks.ai/",
+          "title": "Frinks.AI",
+          "publisher": "Frinks AI",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.tribuneindia.com/news/business/frinks-ai-a-manufacturing-ai-startup-by-iit-hyderabad-alumni-raises-5-4m-led-by-prime-ventures",
+          "title": "Frinks AI, a Manufacturing AI Startup by IIT Hyderabad Alumni, Raises $5.4M Led by Prime Ventures",
+          "publisher": "Tribune India (PR Newswire / ANI release)",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Machine-vision visual inspection and quality control on production lines.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Aditya Agrawal",
+        "Dharmgya Sharma",
+        "Subhra S. Bhattacherjee"
+      ],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "AI machine-vision inspection for manufacturing lines, aimed at defect detection and quality control in automotive, battery/EV, electronics and similar plants.",
+      "pricing": null
+    },
+    {
       "id": "co_galvant",
       "name": "Galvant",
       "website": "https://galvant.ai",
@@ -2129,6 +2178,51 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Turns 3D CAD parts and assemblies into compliant 2D technical drawings with GD&T, with native CAD output.",
+      "pricing": null
+    },
+    {
+      "id": "co_horizontal",
+      "name": "Horizontal",
+      "website": "https://horizontal-tech.com/",
+      "hq_country": null,
+      "founded_year": null,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "model",
+      "layer": "plant_ops",
+      "description_short": "Modular multi-agent operations platform that runs plant operational work end to end on top of existing ERP, MES and quality systems.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://horizontal-tech.com/",
+          "title": "horizontal.",
+          "publisher": "Horizontal",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/horizontal",
+          "title": "horizontal. | Y Combinator",
+          "publisher": "Y Combinator",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "direct",
+      "layer_detail": "Multi-agent orchestration of plant operational work across existing ERP, MES, automation and quality systems.",
+      "size_class": null,
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "A modular multi-agent platform that orchestrates and executes operational work across a manufacturing plant, running on top of existing ERP, MES and quality tools; customers are enterprise manufacturers in Europe and the US.",
       "pricing": null
     },
     {
@@ -2487,6 +2581,51 @@
       "pricing": null
     },
     {
+      "id": "co_machenta",
+      "name": "Machenta",
+      "website": "https://machenta.com/",
+      "hq_country": "GB",
+      "founded_year": null,
+      "sector": "robotics_physical_ai",
+      "sector_classified_by": "model",
+      "layer": "robotics",
+      "description_short": "London robotics AI company building a robot foundation model that learns new tasks from one demonstration.",
+      "total_raised_usd": 40000000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://machenta.com/",
+          "title": "Machenta",
+          "publisher": "Machenta",
+          "retrieved_at": "2026-11-01",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inforcapital.com/news/london-robotics-startup-machenta-raises-40m-seed-investment/",
+          "title": "London robotics startup Machenta raises $40M seed investment",
+          "publisher": "Inforcapital",
+          "retrieved_at": "2026-11-01",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "remote",
+      "layer_detail": "Robot foundation model (instant robot learning from a single demonstration, trained in simulation).",
+      "size_class": "from_25m_to_100m",
+      "founders": [],
+      "named_customers": [],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "A robot foundation model, trained in simulation, that learns new tasks from a single demonstration without further training.",
+      "pricing": null
+    },
+    {
       "id": "co_machina-labs",
       "name": "Machina Labs",
       "website": "https://machinalabs.ai",
@@ -2653,7 +2792,7 @@
         ]
       },
       "confidence": "high",
-      "category": "adjacent",
+      "category": "remote",
       "layer_detail": "Robotic incremental sheet-metal forming (RoboCraftsman) in Machina-run factories and on-site Edge Factories; defence work via subsidiary Machina Bellator (Jul 2026)",
       "size_class": "from_100m_to_1b",
       "founders": [
