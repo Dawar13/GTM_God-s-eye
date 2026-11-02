@@ -1,4 +1,4 @@
-# Capital Atlas
+# GTM_God's Eye_Utopian Autonomy
 
 Internal fundraising console for Utopian Autonomy: who has money, what they back, who they co-invest with, the VC math, our competitors, and which investors to raise from. Start with [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md).
 
