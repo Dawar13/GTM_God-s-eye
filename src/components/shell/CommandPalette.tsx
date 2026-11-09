@@ -7,6 +7,7 @@ import { Dialog } from "radix-ui";
 import {
   Bot,
   Building2,
+  Factory,
   Crosshair,
   FileText,
   Landmark,
@@ -33,9 +34,17 @@ const KIND: Record<PaletteKind, { label: string; Icon: typeof Landmark; hint: st
   competitor: { label: "Competitors", Icon: Crosshair, hint: "Competitor, see who backed it" },
   landscape: { label: "Physical AI landscape", Icon: Bot, hint: "Physical AI landscape" },
   accelerator: { label: "Accelerator programmes", Icon: Rocket, hint: "Accelerator programme" },
+  customer: { label: "Target customers", Icon: Factory, hint: "Target customer" },
 };
 
-const KINDS = ["investor", "company", "competitor", "landscape", "accelerator"] as const;
+const KINDS = [
+  "investor",
+  "company",
+  "competitor",
+  "landscape",
+  "accelerator",
+  "customer",
+] as const;
 
 const itemClass =
   "flex h-9 cursor-pointer items-center gap-3 rounded-md px-3 text-sm text-ink-2 data-[selected=true]:bg-accent-soft data-[selected=true]:text-ink";

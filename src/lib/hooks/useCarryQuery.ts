@@ -14,6 +14,15 @@ export function useCarryQuery(): (href: string) => string {
   for (const key of [...FILTER_KEYS, ...ROUND_KEYS]) {
     for (const v of params.getAll(key)) carried.append(key, v);
   }
-  const q = carried.toString();
-  return (href) => (q ? `${href}?${q}` : href);
+  return carryInto(carried.toString());
+}
+
+/** Adds query `q` to `href`, after any query it has and before any #hash. */
+export function carryInto(q: string): (href: string) => string {
+  return (href) => {
+    if (!q) return href;
+    const at = href.indexOf("#");
+    const [path, hash] = at < 0 ? [href, ""] : [href.slice(0, at), href.slice(at)];
+    return `${path}${path.includes("?") ? "&" : "?"}${q}${hash}`;
+  };
 }

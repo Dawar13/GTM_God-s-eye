@@ -434,3 +434,8 @@ FX rate applied (pipeline/atlas/fx.py)
 - **Geography**: `us`, `india`, `europe`, `global`
 - **LegalTopic**: `india_flip`, `reverse_flip`, `fema_pricing`, `angel_tax`, `india_convertible_note`, `isafe`, `ccps`, `delaware_requirement`
 - **Jurisdiction**: `india`, `us`, `us_delaware`
+- **CustomerList**: `mumbai_pune`, `bengaluru`
+- **CustomerRevenueBand**: `lt_100`, `100_500`, `500_2000`, `2000_10000`, `10000_50000`, `gt_50000`
+- **CustomerTeamBand**: `lt_500`, `500_2000`, `2000_10000`, `10000_50000`, `gt_50000`
+- **CustomerSector**: `defence_aerospace`, `automotive`, `ev_batteries`, `metals_machining`, `machinery`, `electrical_electronics`, `appliances_durables`, `chemicals`, `pharma_life_sciences`, `packaging_plastics`, `food_fmcg`, `textiles`, `power_utilities`, `contract_manufacturing`
+- **CustomerArea**: `mumbai`, `navi_mumbai`, `thane`, `palghar`, `raigad`, `pune`, `satara`, `nashik`, `ahmednagar`, `aurangabad`, `kolhapur`, `sangli`, `solapur`, `ratnagiri`, `bengaluru_metro`, `tumakuru`, `mysuru`, `hassan`, `kolar`, `hosur`, `krishnagiri`, `gujarat`

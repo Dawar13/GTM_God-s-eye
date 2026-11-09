@@ -17,6 +17,11 @@ ENUMS = json.loads((config.SCHEMAS / "enums.schema.json").read_text(encoding="ut
         ("InvestorType", config.INVESTOR_TYPES),
         ("RoundStage", config.ROUND_STAGES),
         ("SourceKind", config.SOURCE_KINDS),
+        ("CustomerList", config.CUSTOMER_LISTS),
+        ("CustomerRevenueBand", config.CUSTOMER_REVENUE_BANDS),
+        ("CustomerTeamBand", config.CUSTOMER_TEAM_BANDS),
+        ("CustomerSector", config.CUSTOMER_SECTORS),
+        ("CustomerArea", config.CUSTOMER_AREAS),
     ],
 )
 def test_enum_matches_typescript(ts_name, py_values):

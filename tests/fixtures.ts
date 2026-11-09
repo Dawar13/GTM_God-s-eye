@@ -7,6 +7,7 @@ import type {
   LandscapeCompany,
   Round,
   Source,
+  TargetCustomer,
 } from "@/lib/schema";
 
 export const source: Source = {
@@ -203,6 +204,32 @@ export const landscapeCompany = (over: Partial<LandscapeCompany> = {}): Landscap
       title: "physical_ai_market_map_2026_11_01",
       publisher: null,
       retrieved_at: "2026-11-01",
+      kind: "user_supplied",
+    },
+  ],
+  confidence: "low",
+  ...over,
+});
+
+export const targetCustomer = (over: Partial<TargetCustomer> = {}): TargetCustomer => ({
+  id: "cust_mp-bosch-ltd",
+  name: "Bosch Ltd",
+  list: "mumbai_pune",
+  tier: 3,
+  category: "Auto components and tyres (MNC/large)",
+  sectors: ["automotive"],
+  revenue_band: "10000_50000",
+  team_band: "2000_10000",
+  address: "Chakan, Nashik",
+  areas: ["pune", "nashik"],
+  also_listed_ids: [],
+  competitor_ids: [],
+  sources: [
+    {
+      url: "user_supplied:customer_list_mumbai_pune_2026_10_15",
+      title: "Industrial_AI_Target_List.xlsx",
+      publisher: null,
+      retrieved_at: "2026-10-29",
       kind: "user_supplied",
     },
   ],

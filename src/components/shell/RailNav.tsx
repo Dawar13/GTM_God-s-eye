@@ -3,7 +3,15 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Calculator, Crosshair, Gauge, Landmark, Target, type LucideIcon } from "lucide-react";
+import {
+  Calculator,
+  Crosshair,
+  Factory,
+  Gauge,
+  Landmark,
+  Target,
+  type LucideIcon,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SECTIONS, SECTION_CHILDREN, activeSection, type SectionKey } from "@/lib/nav";
 import { useCarryQuery } from "@/lib/hooks/useCarryQuery";
@@ -14,6 +22,7 @@ const ICONS: Record<SectionKey, LucideIcon> = {
   "vc-math": Calculator,
   investors: Landmark,
   competitors: Crosshair,
+  customers: Factory,
   strategy: Target,
 };
 

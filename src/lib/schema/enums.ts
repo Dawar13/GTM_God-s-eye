@@ -183,3 +183,86 @@ export type LegalTopic = z.infer<typeof LegalTopic>;
 
 export const JURISDICTIONS = ["india", "us", "us_delaware"] as const;
 export const Jurisdiction = z.enum(JURISDICTIONS);
+
+/** The user's target-customer workbooks in data/raw/customers/, one per region. */
+export const CUSTOMER_LISTS = ["mumbai_pune", "bengaluru"] as const;
+export const CustomerList = z.enum(CUSTOMER_LISTS);
+export type CustomerList = z.infer<typeof CustomerList>;
+
+/** Revenue bands as the lists give them, in ₹ crore a year (approximate). */
+export const CUSTOMER_REVENUE_BANDS = [
+  "lt_100",
+  "100_500",
+  "500_2000",
+  "2000_10000",
+  "10000_50000",
+  "gt_50000",
+] as const;
+export const CustomerRevenueBand = z.enum(CUSTOMER_REVENUE_BANDS);
+export type CustomerRevenueBand = z.infer<typeof CustomerRevenueBand>;
+
+/** Team-size bands as the lists give them, in employees (approximate). */
+export const CUSTOMER_TEAM_BANDS = [
+  "lt_500",
+  "500_2000",
+  "2000_10000",
+  "10000_50000",
+  "gt_50000",
+] as const;
+export const CustomerTeamBand = z.enum(CUSTOMER_TEAM_BANDS);
+export type CustomerTeamBand = z.infer<typeof CustomerTeamBand>;
+
+/**
+ * Industry groups for filtering. The two lists word their categories differently, so each
+ * category maps to one or more groups (pipeline/atlas/config.py CUSTOMER_CATEGORY_SECTORS).
+ */
+export const CUSTOMER_SECTORS = [
+  "defence_aerospace",
+  "automotive",
+  "ev_batteries",
+  "metals_machining",
+  "machinery",
+  "electrical_electronics",
+  "appliances_durables",
+  "chemicals",
+  "pharma_life_sciences",
+  "packaging_plastics",
+  "food_fmcg",
+  "textiles",
+  "power_utilities",
+  "contract_manufacturing",
+] as const;
+export const CustomerSector = z.enum(CUSTOMER_SECTORS);
+export type CustomerSector = z.infer<typeof CustomerSector>;
+
+/**
+ * Places named in the lists' address column, grouped to the area a visit would plan by
+ * (pipeline/atlas/config.py CUSTOMER_PLACES). Ordered by state, then roughly by distance
+ * from the list's hub city.
+ */
+export const CUSTOMER_AREAS = [
+  "mumbai",
+  "navi_mumbai",
+  "thane",
+  "palghar",
+  "raigad",
+  "pune",
+  "satara",
+  "nashik",
+  "ahmednagar",
+  "aurangabad",
+  "kolhapur",
+  "sangli",
+  "solapur",
+  "ratnagiri",
+  "bengaluru_metro",
+  "tumakuru",
+  "mysuru",
+  "hassan",
+  "kolar",
+  "hosur",
+  "krishnagiri",
+  "gujarat",
+] as const;
+export const CustomerArea = z.enum(CUSTOMER_AREAS);
+export type CustomerArea = z.infer<typeof CustomerArea>;

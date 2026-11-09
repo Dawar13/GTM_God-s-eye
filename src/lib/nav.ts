@@ -133,6 +133,7 @@ export const SECTIONS = [
   { key: "vc-math", label: "VC math", href: "/vc-math/round-builder", prefix: "/vc-math" },
   { key: "investors", label: "Investors", href: "/investors/directory", prefix: "/investors" },
   { key: "competitors", label: "Competitors", href: "/competitors", prefix: "/competitors" },
+  { key: "customers", label: "Customers", href: "/customers", prefix: "/customers" },
   { key: "strategy", label: "Strategy", href: "/strategy", prefix: "/strategy" },
 ] as const;
 
@@ -144,17 +145,18 @@ export function isSectionActive(section: (typeof SECTIONS)[number], pathname: st
 
 export type NavChild = { href: string; label: string };
 
-/** Sub-items per section, in menu order. Command, Competitors and Strategy have none. */
+/** Sub-items per section, in menu order. Command, Competitors, Customers and Strategy have none. */
 export const SECTION_CHILDREN: Record<SectionKey, readonly NavChild[]> = {
   command: [],
   "vc-math": VC_MATH_TOOLS.map((t) => ({ href: `/vc-math/${t.slug}`, label: t.label })),
   investors: INVESTOR_VIEWS.map((v) => ({ href: `/investors/${v.slug}`, label: v.label })),
   competitors: [],
+  customers: [],
   strategy: [],
 };
 
-/** Pages the investor filters do nothing on: the VC math calculators and Competitors (S8). */
-const FILTER_FREE = ["/vc-math", "/competitors"];
+/** Pages the investor filters do nothing on: the VC math calculators, Competitors (S8) and Customers. */
+const FILTER_FREE = ["/vc-math", "/competitors", "/customers"];
 
 /** The investor filters apply to investor views only, so the filter bar is hidden elsewhere. */
 export function filtersApply(pathname: string): boolean {

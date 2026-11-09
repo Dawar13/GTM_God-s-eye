@@ -1,6 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { checkIntegrity, type AllRecords } from "@/lib/schema";
-import { company, competitor, fund, investor, landscapeCompany, program, round } from "./fixtures";
+import {
+  company,
+  competitor,
+  fund,
+  investor,
+  landscapeCompany,
+  program,
+  round,
+  targetCustomer,
+} from "./fixtures";
 
 function data(overrides: Partial<AllRecords> = {}): AllRecords {
   return {
@@ -16,6 +25,7 @@ function data(overrides: Partial<AllRecords> = {}): AllRecords {
     legal_notes: [],
     accelerator_programs: [],
     landscape_companies: [],
+    target_customers: [],
     fit_features: [],
     layout_thesis: [],
     clusters: [],
@@ -27,6 +37,15 @@ function data(overrides: Partial<AllRecords> = {}): AllRecords {
 const messages = (d: AllRecords) => checkIntegrity(d).map((i) => `${i.id}: ${i.message}`);
 
 describe("checkIntegrity", () => {
+  it("flags a target customer whose competitor or twin does not exist", () => {
+    const bad = targetCustomer({ competitor_ids: ["co_ghost"], also_listed_ids: ["cust_ghost"] });
+    const ok = targetCustomer({ id: "cust_blr-ok", competitor_ids: [competitor().id] });
+    expect(messages(data({ target_customers: [bad, ok] }))).toEqual([
+      "cust_mp-bosch-ltd: also_listed_ids cust_ghost does not exist",
+      "cust_mp-bosch-ltd: competitor_ids co_ghost does not exist",
+    ]);
+  });
+
   it("flags a programme whose firm does not exist, and allows an unlinked one", () => {
     const linked = program({ investor_id: "inv_ghost" });
     const unlinked = program({ id: "prog_unlinked", investor_id: null });

@@ -18,7 +18,7 @@ from atlas.export.write_json import (
     write_document,
 )
 from atlas.geo import region_for_location
-from atlas.ingest import accelerators, goldman_pdf, landscape, seeds
+from atlas.ingest import accelerators, customers, goldman_pdf, landscape, seeds
 from atlas.model import Store
 from atlas.names import firm_from_fund_name
 from atlas.resolve import InvestorResolver
@@ -107,6 +107,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         set_tiers(store, loaded)
     store.programs = accelerators.build(store)
     store.landscape = landscape.build(store)
+    store.customers = customers.build(store)
 
     regions = build.region_counts(store)
     investors = store.investors.values()
@@ -161,6 +162,7 @@ def export(store: Store, generated_at: str, analytics: dict) -> dict[str, int]:
         "accelerator_programs": store.programs,
         "fit_features": store.fit_features,
         "landscape_companies": store.landscape,
+        "target_customers": store.customers,
         "layout_thesis": analytics["layout_thesis"],
         "clusters": analytics["clusters"],
         "layout_bubbles": analytics["layout_bubbles"],

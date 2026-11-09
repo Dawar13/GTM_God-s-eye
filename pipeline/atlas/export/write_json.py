@@ -21,6 +21,7 @@ DATASET_NAMES = (
     "accelerator_programs",
     "fit_features",
     "landscape_companies",
+    "target_customers",
     "layout_thesis",
     "clusters",
     "layout_bubbles",

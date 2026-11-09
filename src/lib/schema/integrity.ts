@@ -81,6 +81,16 @@ export function checkIntegrity(data: AllRecords): IntegrityIssue[] {
       add("landscape_companies", co.id, `matched_id ${co.matched_id} does not exist`);
   }
 
+  const customers = indexById("target_customers");
+  for (const cust of data.target_customers) {
+    for (const id of cust.also_listed_ids)
+      if (!customers.has(id))
+        add("target_customers", cust.id, `also_listed_ids ${id} does not exist`);
+    for (const id of cust.competitor_ids)
+      if (!competitors.has(id))
+        add("target_customers", cust.id, `competitor_ids ${id} does not exist`);
+  }
+
   for (const id of companies.keys()) {
     if (competitors.has(id)) add("competitors", id, "id is also used in companies.json");
   }

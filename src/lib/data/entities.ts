@@ -19,13 +19,18 @@ import {
   getInvestors,
   getLandscapeCompanies,
   getRounds,
+  getTargetCustomers,
 } from "./index";
 import { toDirectoryRows, toFilterable, type DirectoryRow } from "./directory";
+import { customerHref } from "@/lib/customers/url";
 
 export type EntityKind = "investor" | "company" | "competitor";
 
-/** What the palette lists: entities, plus Physical AI landscape names and accelerator programmes. */
-export type PaletteKind = EntityKind | "landscape" | "accelerator";
+/**
+ * What the palette lists: entities, plus Physical AI landscape names, accelerator programmes
+ * and target customers.
+ */
+export type PaletteKind = EntityKind | "landscape" | "accelerator" | "customer";
 
 /**
  * One palette name. `inspect` is the record the Inspector opens (an entity id); a name with
@@ -41,12 +46,13 @@ export type PaletteEntry = {
 
 export async function getPaletteIndex(): Promise<PaletteEntry[]> {
   "use cache";
-  const [investors, companies, competitors, landscape, programmes] = await Promise.all([
+  const [investors, companies, competitors, landscape, programmes, customers] = await Promise.all([
     getInvestors(),
     getCompanies(),
     getCompetitors(),
     getLandscapeCompanies(),
     getAcceleratorPrograms(),
+    getTargetCustomers(),
   ]);
   const competitorIds = new Set(competitors.map((c) => c.id));
   return [
@@ -65,6 +71,13 @@ export async function getPaletteIndex(): Promise<PaletteEntry[]> {
       name: p.name,
       kind: "accelerator" as const,
       href: "/investors/accelerators",
+    })),
+    // A company on both lists (Bosch, ABB) is one palette name; the page shows both rows.
+    ...[...new Map(customers.map((c) => [c.name, c])).values()].map((c) => ({
+      id: c.id,
+      name: c.name,
+      kind: "customer" as const,
+      href: customerHref(c.name),
     })),
   ];
 }

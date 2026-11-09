@@ -6,6 +6,7 @@ export * from "./company";
 export * from "./round";
 export * from "./review";
 export * from "./reference";
+export * from "./customer";
 export * from "./datasets";
 export * from "./analytics";
 export * from "./research";

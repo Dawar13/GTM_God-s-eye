@@ -97,6 +97,12 @@ export async function getLandscapeCompanies(): Promise<DatasetRecord<"landscape_
   return (await loadDataset("landscape_companies")).records;
 }
 
+/** Target customers from the user's Mumbai–Pune and Bengaluru lists. */
+export async function getTargetCustomers(): Promise<DatasetRecord<"target_customers">[]> {
+  "use cache";
+  return (await loadDataset("target_customers")).records;
+}
+
 export async function getFitFeatures(): Promise<DatasetRecord<"fit_features">[]> {
   "use cache";
   return (await loadDataset("fit_features")).records;

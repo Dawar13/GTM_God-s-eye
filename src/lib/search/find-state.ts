@@ -7,11 +7,11 @@ export const FIND_DEBOUNCE_MS = 120;
 
 /**
  * The text in a find box and the query applied from it, `delay` ms after the last keystroke.
- * Clearing applies at once.
+ * Clearing applies at once. `initial` pre-fills both (a link that opens a page on a match).
  */
-export function useFindQuery(delay = FIND_DEBOUNCE_MS) {
-  const [input, setInput] = useState("");
-  const [query, setQuery] = useState("");
+export function useFindQuery(delay = FIND_DEBOUNCE_MS, initial = "") {
+  const [input, setInput] = useState(initial);
+  const [query, setQuery] = useState(initial);
   useEffect(() => {
     if (!input.trim()) {
       // Clearing should restore the view at once, without waiting for the debounce.
@@ -34,7 +34,11 @@ export function useFindSteps<T>(
   matches: readonly T[],
   handlers: { focus: (item: T) => void; open: (item: T) => void },
 ) {
-  const [state, setState] = useState<{ list: readonly T[]; active: number; focused: number | null }>({
+  const [state, setState] = useState<{
+    list: readonly T[];
+    active: number;
+    focused: number | null;
+  }>({
     list: matches,
     active: 0,
     focused: null,

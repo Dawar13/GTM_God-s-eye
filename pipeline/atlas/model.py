@@ -22,9 +22,7 @@ def source(
     }
 
 
-def user_source(
-    source_id: str, link: str | None = None, retrieved_at: str | None = None
-) -> dict:
+def user_source(source_id: str, link: str | None = None, retrieved_at: str | None = None) -> dict:
     """A user-supplied list. With a link, the link is the URL; without, a pseudo-URL."""
     return source(
         link or f"user_supplied:{source_id}",
@@ -176,6 +174,7 @@ class Store:
     programs: list[dict] = field(default_factory=list)
     fit_features: list[dict] = field(default_factory=list)
     landscape: list[dict] = field(default_factory=list)
+    customers: list[dict] = field(default_factory=list)
     # Not exported: inputs the analytics need (investor id -> sectors the firm states).
     stated_sectors: dict[str, list[str]] = field(default_factory=dict)
     anomalies: list[dict] = field(default_factory=list)

@@ -1,6 +1,11 @@
 import type {
   CompetitorCategory,
   CompetitorLayer,
+  CustomerArea,
+  CustomerList,
+  CustomerRevenueBand,
+  CustomerSector,
+  CustomerTeamBand,
   Freshness,
   Geography,
   InvestorStage,
@@ -123,4 +128,108 @@ export const GEOGRAPHY_LABELS: Record<Geography, string> = {
   india: "India",
   europe: "Europe",
   global: "Global",
+};
+
+export const CUSTOMER_LIST_LABELS: Record<CustomerList, string> = {
+  mumbai_pune: "Mumbai–Pune",
+  bengaluru: "Bengaluru",
+};
+
+/** Tiers as the lists define them (the Bengaluru list's notes; the Mumbai–Pune list uses the same tiers). */
+export const CUSTOMER_TIER_LABELS = {
+  "1": "Tier 1",
+  "2": "Tier 2",
+  "3": "Tier 3",
+} as const;
+export const CUSTOMER_TIER_NOTES = {
+  "1": "Most feasible: startups and promoter-led mid-size firms",
+  "2": "Larger companies, longer sales cycles",
+  "3": "OEMs, MNCs and PSUs",
+} as const;
+
+/** ₹ crore a year, as the lists give the bands. */
+export const CUSTOMER_REVENUE_LABELS: Record<CustomerRevenueBand, string> = {
+  lt_100: "<100",
+  "100_500": "100–500",
+  "500_2000": "500–2,000",
+  "2000_10000": "2,000–10,000",
+  "10000_50000": "10,000–50,000",
+  gt_50000: ">50,000",
+};
+
+/** Employees, as the lists give the bands. */
+export const CUSTOMER_TEAM_LABELS: Record<CustomerTeamBand, string> = {
+  lt_500: "<500",
+  "500_2000": "500–2,000",
+  "2000_10000": "2,000–10,000",
+  "10000_50000": "10,000–50,000",
+  gt_50000: ">50,000",
+};
+
+export const CUSTOMER_SECTOR_LABELS: Record<CustomerSector, string> = {
+  defence_aerospace: "Defence and aerospace",
+  automotive: "Automotive",
+  ev_batteries: "EV and batteries",
+  metals_machining: "Metals and machining",
+  machinery: "Machinery",
+  electrical_electronics: "Electrical and electronics",
+  appliances_durables: "Appliances and durables",
+  chemicals: "Chemicals",
+  pharma_life_sciences: "Pharma and life sciences",
+  packaging_plastics: "Packaging and plastics",
+  food_fmcg: "Food and FMCG",
+  textiles: "Textiles and apparel",
+  power_utilities: "Power and utilities",
+  contract_manufacturing: "Contract manufacturing",
+};
+
+export const CUSTOMER_AREA_LABELS: Record<CustomerArea, string> = {
+  mumbai: "Mumbai",
+  navi_mumbai: "Navi Mumbai",
+  thane: "Thane",
+  palghar: "Palghar",
+  raigad: "Raigad",
+  pune: "Pune",
+  satara: "Satara",
+  nashik: "Nashik",
+  ahmednagar: "Ahmednagar",
+  aurangabad: "Aurangabad",
+  kolhapur: "Kolhapur",
+  sangli: "Sangli",
+  solapur: "Solapur",
+  ratnagiri: "Ratnagiri",
+  bengaluru_metro: "Bengaluru metro",
+  tumakuru: "Tumakuru",
+  mysuru: "Mysuru",
+  hassan: "Hassan",
+  kolar: "Kolar (KGF)",
+  hosur: "Hosur",
+  krishnagiri: "Krishnagiri",
+  gujarat: "Gujarat",
+};
+
+/** The state each area is in, for grouping the area filter. */
+export const CUSTOMER_AREA_STATE: Record<CustomerArea, string> = {
+  mumbai: "Maharashtra",
+  navi_mumbai: "Maharashtra",
+  thane: "Maharashtra",
+  palghar: "Maharashtra",
+  raigad: "Maharashtra",
+  pune: "Maharashtra",
+  satara: "Maharashtra",
+  nashik: "Maharashtra",
+  ahmednagar: "Maharashtra",
+  aurangabad: "Maharashtra",
+  kolhapur: "Maharashtra",
+  sangli: "Maharashtra",
+  solapur: "Maharashtra",
+  ratnagiri: "Maharashtra",
+  bengaluru_metro: "Karnataka",
+  tumakuru: "Karnataka",
+  mysuru: "Karnataka",
+  hassan: "Karnataka",
+  kolar: "Karnataka",
+  hosur: "Tamil Nadu",
+  krishnagiri: "Tamil Nadu",
+  gujarat: "Gujarat",
 };

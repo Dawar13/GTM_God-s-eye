@@ -1,0 +1,257 @@
+{
+  "$id": "capital-atlas/target_customers.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 2
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$",
+      "description": "When the pipeline wrote the file"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^cust_[a-z0-9][a-z0-9_-]*$",
+            "description": "Stable id, `cust_<slug>`"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Company name exactly as the list gives it"
+          },
+          "list": {
+            "type": "string",
+            "enum": [
+              "mumbai_pune",
+              "bengaluru"
+            ],
+            "description": "The workbook (region) the row comes from"
+          },
+          "tier": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3,
+            "description": "The list's tier: 1 most feasible (startups, promoter-led mid-size), 3 OEMs, MNCs and PSUs"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Category exactly as the list words it"
+          },
+          "sectors": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "defence_aerospace",
+                "automotive",
+                "ev_batteries",
+                "metals_machining",
+                "machinery",
+                "electrical_electronics",
+                "appliances_durables",
+                "chemicals",
+                "pharma_life_sciences",
+                "packaging_plastics",
+                "food_fmcg",
+                "textiles",
+                "power_utilities",
+                "contract_manufacturing"
+              ]
+            },
+            "description": "Industry groups the category maps to, for filtering across both lists"
+          },
+          "revenue_band": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "lt_100",
+                  "100_500",
+                  "500_2000",
+                  "2000_10000",
+                  "10000_50000",
+                  "gt_50000"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Revenue band in ₹ crore a year as listed; the list says approximate, not looked up per company"
+          },
+          "team_band": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "lt_500",
+                  "500_2000",
+                  "2000_10000",
+                  "10000_50000",
+                  "gt_50000"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Employee band as listed; approximate, and group-wide for large groups"
+          },
+          "address": {
+            "description": "HQ and main plant area, as listed; not a street address",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "areas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "mumbai",
+                "navi_mumbai",
+                "thane",
+                "palghar",
+                "raigad",
+                "pune",
+                "satara",
+                "nashik",
+                "ahmednagar",
+                "aurangabad",
+                "kolhapur",
+                "sangli",
+                "solapur",
+                "ratnagiri",
+                "bengaluru_metro",
+                "tumakuru",
+                "mysuru",
+                "hassan",
+                "kolar",
+                "hosur",
+                "krishnagiri",
+                "gujarat"
+              ]
+            },
+            "description": "Areas the address names, from a fixed place list; empty when it names none we map"
+          },
+          "also_listed_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^cust_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `cust_<slug>`"
+            },
+            "description": "The same company on the other list (another region's plant), by exact name key"
+          },
+          "competitor_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^co_[a-z0-9][a-z0-9_-]*$",
+              "description": "Stable id, `co_<slug>`"
+            },
+            "description": "Competitors that publicly name this company (or its group, e.g. Bosch) as a customer, by exact name key"
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "pattern": "^(https?:\\/\\/\\S+|user_supplied:[a-z0-9_.-]+)$",
+                  "description": "Where the fact came from: an http(s) URL, or `user_supplied:<source_id>` for a user list with no link"
+                },
+                "title": {
+                  "description": "Page or document title, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "publisher": {
+                  "description": "Publisher or site, if known",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "retrieved_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+                  "description": "Date the source was read"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "user_supplied"
+                  ],
+                  "description": "primary, secondary or user_supplied (PROJECT_CONTEXT §5)"
+                }
+              },
+              "required": [
+                "url",
+                "title",
+                "publisher",
+                "retrieved_at",
+                "kind"
+              ],
+              "additionalProperties": false,
+              "description": "Provenance for a record or a single fact"
+            },
+            "description": "At least one source; first is primary"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "high: primary source or two independent secondaries agree; medium: one reputable secondary; low: user-supplied list or database page only"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "list",
+          "tier",
+          "category",
+          "sectors",
+          "revenue_band",
+          "team_band",
+          "address",
+          "areas",
+          "also_listed_ids",
+          "competitor_ids",
+          "sources",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "description": "A target customer from the user's lists: an industrial company we might sell to"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "generated_at",
+    "records"
+  ],
+  "additionalProperties": false
+}

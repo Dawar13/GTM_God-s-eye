@@ -57,6 +57,11 @@ const ENUMS = {
   Geography: S.GEOGRAPHIES,
   LegalTopic: S.LEGAL_TOPICS,
   Jurisdiction: S.JURISDICTIONS,
+  CustomerList: S.CUSTOMER_LISTS,
+  CustomerRevenueBand: S.CUSTOMER_REVENUE_BANDS,
+  CustomerTeamBand: S.CUSTOMER_TEAM_BANDS,
+  CustomerSector: S.CUSTOMER_SECTORS,
+  CustomerArea: S.CUSTOMER_AREAS,
 } as const;
 
 /** Nested objects documented once under their own name. */

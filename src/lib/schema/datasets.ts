@@ -1,8 +1,15 @@
 import { z } from "zod";
 import { Company, Competitor } from "./company";
+import { TargetCustomer } from "./customer";
 import { Fund } from "./fund";
 import { Investor, Partner } from "./investor";
-import { AcceleratorProgram, Benchmark, FitFeatures, LandscapeCompany, LegalNote } from "./reference";
+import {
+  AcceleratorProgram,
+  Benchmark,
+  FitFeatures,
+  LandscapeCompany,
+  LegalNote,
+} from "./reference";
 import { Anomaly, Merge } from "./review";
 import { Round } from "./round";
 
@@ -32,6 +39,7 @@ export const DATASETS = {
   accelerator_programs: AcceleratorProgram,
   fit_features: FitFeatures,
   landscape_companies: LandscapeCompany,
+  target_customers: TargetCustomer,
   layout_thesis: ThesisPoint,
   clusters: Cluster,
   layout_bubbles: BubblePoint,
