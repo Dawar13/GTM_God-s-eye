@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { ChartFrame, Legend, Segmented, Skeleton } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { loadFilterIndex, useLoaded } from "@/lib/client-index";
@@ -15,11 +15,13 @@ import {
   BUBBLE_FIELDS,
   sizeSamples,
   type BubbleData,
+  type BubbleRow,
 } from "@/lib/viz/transforms/capitalBubbles";
 import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import type { CameraPreset } from "./Bubbles3D";
-import { BubbleProjections } from "./BubbleProjections";
+import { BubbleProjections, type ProjectionsHandle } from "./BubbleProjections";
 import { ChartTable } from "./ChartTable";
+import { FindForMarks, NO_FIND, sameFind, type MarkFindState } from "./FindForMarks";
 
 const HEIGHT = 560;
 const NEUTRAL = "#8A919C";
@@ -31,6 +33,8 @@ const Bubbles3D = dynamic(() => import("./Bubbles3D"), {
 });
 
 type Mode = "3d" | "2d";
+const pointId = (p: BubbleRow) => p.id;
+const pointName = (p: BubbleRow) => p.name;
 const CAMERA_BUTTONS: readonly { preset: CameraPreset; label: string; hint: string }[] = [
   { preset: "front", label: "Front", hint: "Check across, industrial affinity up" },
   { preset: "top", label: "Top", hint: "Check across, stage earliness up" },
@@ -56,6 +60,8 @@ export function CapitalBubbles({
     preset: "reset",
     n: 0,
   });
+  const [find, setFind] = useState<MarkFindState>(NO_FIND);
+  const projections = useRef<ProjectionsHandle | null>(null);
 
   const view = useMemo(
     () => bubbleView(data, filters, universe.status === "ready" ? universe.data : null),
@@ -118,6 +124,18 @@ export function CapitalBubbles({
           : { status: "ready" }
       }
       height={mode === "3d" ? HEIGHT : 380}
+      find={
+        <FindForMarks
+          label="Find investors"
+          items={view.points}
+          getId={pointId}
+          toSearchable={pointName}
+          // 3D: the active match glows (no camera move); 2D: every panel pans to it.
+          onFocus={(id) => projections.current?.focusPoint(id)}
+          onOpen={open}
+          onChange={(next) => setFind((prev) => sameFind(prev, next))}
+        />
+      }
       action={
         <div className="flex flex-wrap items-center justify-end gap-2">
           <Segmented
@@ -197,9 +215,14 @@ export function CapitalBubbles({
           onOpen={open}
           computedLabel={computedLabel}
           height={HEIGHT}
+          found={find.found}
+          findActiveId={find.activeId}
         />
       ) : (
         <BubbleProjections
+          ref={projections}
+          found={find.found}
+          findActiveId={find.activeId}
           points={view.points}
           clusterById={clusterById}
           sizing={sizing}

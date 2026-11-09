@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import {
   CartesianGrid,
   ResponsiveContainer,
@@ -25,6 +25,7 @@ import {
   type TimelineDot,
 } from "@/lib/viz/transforms/competitorCharts";
 import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
+import { ChartFind } from "./ChartFind";
 import { ChartTable } from "./ChartTable";
 
 const TICK = { fontSize: 12, fill: "var(--muted)" } as const;
@@ -66,6 +67,9 @@ export function FoundedVsRaisedChart({
         .sort((a, b) => (b.headcount ?? 0) - (a.headcount ?? 0)),
     [data],
   );
+  const entities = useMemo(() => data.points.map((p) => ({ id: p.id, name: p.name })), [data.points]);
+  // State from a callback ref, so the marks repaint after "View as table" remounts them.
+  const [root, setRoot] = useState<HTMLDivElement | null>(null);
   const [x0, x1] = data.xDomain ?? [2000, 2026];
   const [y0, y1] = data.yDomain ?? [1e6, 1e9];
   const yTicks: number[] = [];
@@ -86,6 +90,7 @@ export function FoundedVsRaisedChart({
         stroke={unknown ? darken(GREY) : m.stroke}
         strokeWidth={unknown ? 1.5 : 1}
         style={{ cursor: "pointer" }}
+        data-find-id={d.id}
       />
     );
   };
@@ -93,6 +98,7 @@ export function FoundedVsRaisedChart({
   return (
     <ChartFrame
       title="Founded year against total raised"
+      find={<ChartFind label="Find competitors in the scatter" entities={entities} root={root} />}
       subtitle="One mark per competitor: older companies sit left, bigger raisers higher. Mark area shows approximate headcount."
       legend={
         <div className="flex flex-wrap items-start gap-x-8 gap-y-2">
@@ -158,6 +164,7 @@ export function FoundedVsRaisedChart({
         />
       }
     >
+      <div ref={setRoot}>
       <ResponsiveContainer width="100%" height={380}>
         <ScatterChart margin={{ top: 12, right: 24, bottom: 16, left: 8 }}>
           <CartesianGrid stroke={GRID} />
@@ -228,6 +235,7 @@ export function FoundedVsRaisedChart({
           />
         </ScatterChart>
       </ResponsiveContainer>
+      </div>
     </ChartFrame>
   );
 }
@@ -255,6 +263,8 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
         .sort((a, b) => (b.amountUsd ?? 0) - (a.amountUsd ?? 0)),
     [data],
   );
+  const entities = useMemo(() => data.lanes.map((l) => ({ id: l.id, name: l.name })), [data.lanes]);
+  const [root, setRoot] = useState<HTMLDivElement | null>(null);
   const minYear = data.xMin === null ? 2015 : new Date(data.xMin).getUTCFullYear();
   const maxYear = data.xMax === null ? 2026 : new Date(data.xMax).getUTCFullYear() + 1;
   const xDomain: [number, number] = [Date.UTC(minYear, 0, 1), Date.UTC(maxYear, 0, 1)];
@@ -277,6 +287,7 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
         strokeWidth={unknown ? 1.5 : 1}
         strokeDasharray={approx(d) ? "2 2" : undefined}
         style={{ cursor: "pointer" }}
+        data-find-id={d.companyId}
       />
     );
   };
@@ -289,6 +300,7 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
   return (
     <ChartFrame
       title="Funding timeline"
+      find={<ChartFind label="Find competitors in the timeline" entities={entities} root={root} />}
       subtitle="One row per competitor, one dot per dated round; area shows the amount raised. Dates known only to a year or quarter sit at the start of that period (dashed outline)."
       legend={
         <div className="flex flex-wrap items-start gap-x-8 gap-y-2">
@@ -339,6 +351,7 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
         />
       }
     >
+      <div ref={setRoot}>
       <ResponsiveContainer width="100%" height={height}>
         <ScatterChart margin={{ top: 8, right: 24, bottom: 0, left: 0 }}>
           <CartesianGrid stroke={GRID} />
@@ -397,6 +410,7 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
           />
         </ScatterChart>
       </ResponsiveContainer>
+      </div>
     </ChartFrame>
   );
 }
@@ -418,7 +432,13 @@ export function OverlapHeatmap({
   clusters: readonly ClusterInfo[];
 }) {
   const { open } = useInspector();
-  const box = useRef<HTMLDivElement>(null);
+  const box = useRef<HTMLDivElement | null>(null);
+  const [root, setRoot] = useState<HTMLDivElement | null>(null);
+  // One stable callback ref: the box for tooltips, and state so a remount repaints the find.
+  const boxRef = useCallback((el: HTMLDivElement | null) => {
+    box.current = el;
+    setRoot(el);
+  }, []);
   const [tip, setTip] = useState<Tip | null>(null);
   const clusterBy = new Map(clusters.map((c) => [c.index, c]));
 
@@ -446,10 +466,26 @@ export function OverlapHeatmap({
     c === null ? "No cluster" : (clusterBy.get(c)?.label ?? `Cluster ${c + 1}`);
   const present = [...new Set(data.rows.map((r) => r.cluster))];
   const columnNames = new Map(data.columns.map((c) => [c.id, c.name]));
+  const entities = useMemo(
+    () => [
+      ...data.rows.map((r) => ({ id: r.investorId, name: r.name })),
+      ...data.columns.map((c) => ({ id: c.id, name: c.name })),
+    ],
+    [data.rows, data.columns],
+  );
+  // Find ids: a cell is in its row and column; a row label also lights for the competitors it
+  // backs, and a column label for the investors in it, so a match reads as a cross.
+  const backersOf = useMemo(() => {
+    const m = new Map<string, string[]>();
+    for (const r of data.rows)
+      for (const cid of Object.keys(r.cells)) m.set(cid, [...(m.get(cid) ?? []), r.investorId]);
+    return m;
+  }, [data.rows]);
 
   return (
     <ChartFrame
       title="Investor and competitor overlap"
+      find={<ChartFind label="Find investors or competitors in the heatmap" entities={entities} root={root} />}
       subtitle={`Investors backing ${data.minCompetitors} or more competitors (${formatCount(data.rows.length)} of ${formatCount(data.totalInvestors)} investors in the overlap file); the other ${formatCount(data.hiddenInvestors)} back one competitor each and are left out. Rows are grouped by thesis cluster, then by how many competitors they back. The investor filters do not apply here.`}
       legend={
         <div className="flex flex-col gap-2">
@@ -516,7 +552,7 @@ export function OverlapHeatmap({
         />
       }
     >
-      <div ref={box} className="relative overflow-x-auto">
+      <div ref={boxRef} className="relative overflow-x-auto">
         <svg
           role="img"
           aria-label={`Heatmap of ${data.rows.length} investors by ${data.columns.length} competitors. Use View as table for the keyboard-accessible version.`}
@@ -533,6 +569,8 @@ export function OverlapHeatmap({
               fill="var(--ink-2)"
               style={{ cursor: "pointer" }}
               onClick={() => open(c.id)}
+              data-find-id={[c.id, ...(backersOf.get(c.id) ?? [])].join(" ")}
+              data-find-anchor={c.id}
             >
               {c.name}
             </text>
@@ -544,8 +582,10 @@ export function OverlapHeatmap({
           ))}
           {layout.rows.map(({ row, y, color }) => (
             <g key={row.investorId}>
-              <rect x={0} y={y + 2} width={4} height={CELL - 4} fill={color} />
+              <rect x={0} y={y + 2} width={4} height={CELL - 4} fill={color} data-find-id={row.investorId} />
               <text
+                data-find-id={[row.investorId, ...Object.keys(row.cells)].join(" ")}
+                data-find-anchor={row.investorId}
                 x={10}
                 y={y + CELL - 5}
                 fontSize="12"
@@ -565,6 +605,7 @@ export function OverlapHeatmap({
                     width={CELL - 2}
                     height={CELL - 2}
                     rx={2}
+                    data-find-id={`${row.investorId} ${c.id}`}
                     fill={cell ? sequentialColor(heatPosition(cell.rounds, data.maxRounds)) : "var(--panel-sunk)"}
                     style={cell ? { cursor: "pointer" } : undefined}
                     onClick={cell ? () => open(c.id) : undefined}

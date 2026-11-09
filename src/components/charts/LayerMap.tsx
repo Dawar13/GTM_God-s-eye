@@ -1,11 +1,13 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import { ChartFrame, HoverTip, Legend, VizTooltip } from "@/components/ui-atlas";
 import { formatCount, formatUsd, UNKNOWN } from "@/lib/format";
 import { LAYER_LABELS } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
 import { COMPANY_GREY, markStyle } from "@/lib/viz";
 import type { CompetitorRow, LayerMapData } from "@/lib/viz/transforms/competitors";
+import { ChartFind } from "./ChartFind";
 import { ChartTable } from "./ChartTable";
 
 const GREY = COMPANY_GREY.high;
@@ -13,8 +15,10 @@ const GREY = COMPANY_GREY.high;
 /** Competitors placed in horizontal bands, design intent to full-stack factory (S8). */
 export function LayerMap({ data, sources }: { data: LayerMapData; sources: readonly string[] }) {
   const { open } = useInspector();
-  const rows = data.bands.flatMap((b) => b.items);
+  const rows = useMemo(() => data.bands.flatMap((b) => b.items), [data.bands]);
   const m = markStyle(GREY);
+  // State, not a ref: the bands remount after "View as table", and the find box repaints them.
+  const [root, setRoot] = useState<HTMLOListElement | null>(null);
   return (
     <ChartFrame
       title="Layer map"
@@ -29,6 +33,7 @@ export function LayerMap({ data, sources }: { data: LayerMapData; sources: reado
       notShown={{ count: data.unplaced, field: "layer", noun: "competitors" }}
       state={rows.length === 0 ? { status: "empty", message: "No competitors are in the data yet. Run the pipeline to load them." } : { status: "ready" }}
       height={0}
+      find={<ChartFind label="Find competitors in the layer map" entities={rows} root={root} />}
       tableAlternative={
         <ChartTable
           caption="Competitors by layer"
@@ -49,7 +54,7 @@ export function LayerMap({ data, sources }: { data: LayerMapData; sources: reado
         />
       }
     >
-      <ol aria-label="Layer bands" className="flex flex-col border-y border-rule">
+      <ol ref={setRoot} aria-label="Layer bands" className="flex flex-col border-y border-rule">
         {data.bands.map((band, i) => (
           <li
             key={band.layer}
@@ -62,7 +67,7 @@ export function LayerMap({ data, sources }: { data: LayerMapData; sources: reado
             </div>
             <ul className="flex flex-wrap gap-1.5 pr-2">
               {band.items.map((r) => (
-                <li key={r.id}>
+                <li key={r.id} data-find-id={r.id}>
                   <HoverTip content={<ChipTip r={r} />}>
                     <button
                       type="button"

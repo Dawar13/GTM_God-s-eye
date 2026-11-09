@@ -15,6 +15,9 @@ import { COMPETITOR_CATEGORIES } from "@/lib/schema/enums";
 import { LAYER_BANDS, type CompetitorRow } from "@/lib/viz/transforms/competitors";
 import { ChartTable, type TableColumn } from "./ChartTable";
 
+/** Competitors have no aliases on record, so the find box matches names only. */
+const findName = (r: CompetitorRow) => r.name;
+
 /** The Competitors table (S8): every competitor, sortable, a row click opens the Inspector. */
 export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorRow[]; sources: readonly string[] }) {
   const { open } = useInspector();
@@ -139,6 +142,8 @@ export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorR
         initialSort={{ column: "Total raised", dir: "desc" }}
         onRowClick={(r) => open(r.id)}
         scrollClassName="max-h-[34rem]"
+        findLabel="Find competitors"
+        findText={findName}
       />
       <footer className="border-t border-rule pt-2 text-xs text-muted">
         Sources: {sources.length ? sources.join(", ") : "none on record"}. Total raised is the stored total

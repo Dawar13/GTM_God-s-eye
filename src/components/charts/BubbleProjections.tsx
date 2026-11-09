@@ -7,12 +7,15 @@ import {
   useEffect,
   useEffectEvent,
   useId,
+  useImperativeHandle,
   useLayoutEffect,
   useMemo,
   useRef,
   useState,
+  type Ref,
 } from "react";
 import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
+import { paintFind } from "@/lib/viz/paintFind";
 import { paintZoom, setZoomTouchAction, ZOOM_SETTLE_MS } from "@/lib/viz/paintZoom";
 import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { ZOOM_MAX, ZOOM_STEP } from "@/lib/viz/zoom";
@@ -46,12 +49,18 @@ const NEUTRAL = "#8A919C";
 const UNIT_TICKS = [0, 0.25, 0.5, 0.75, 1];
 /** A square of side r·√π has the same area as the circle of radius r, so squares stay area-true. */
 const SQUARE_SIDE = Math.sqrt(Math.PI);
+/** Zoom level a find match is brought to in every panel, unless they are already closer. */
+const FIND_ZOOM = 2.5;
+
+/** Brings a find match to the centre of all three panels. */
+export type ProjectionsHandle = { focusPoint: (id: string) => void };
 
 /**
  * Three linked 2D projections of the capital bubbles (x–y, x–z, y–z). Hovering a bubble
  * highlights it in all three; clicking opens the Inspector.
  */
 export function BubbleProjections({
+  ref,
   points,
   clusterById,
   sizing,
@@ -59,7 +68,10 @@ export function BubbleProjections({
   selectedId,
   onOpen,
   computedLabel,
+  found,
+  findActiveId,
 }: {
+  ref?: Ref<ProjectionsHandle>;
   points: BubbleRow[];
   clusterById: Map<number, ClusterInfo>;
   sizing: BubbleSizing | null;
@@ -67,8 +79,13 @@ export function BubbleProjections({
   selectedId: string | null;
   onOpen: (id: string) => void;
   computedLabel: string;
+  /** Find matches (null: no query); the rest fade in all three panels, painted without a render. */
+  found: ReadonlySet<string> | null;
+  /** The active find match glows and wears the accent ring in all three panels. */
+  findActiveId: string | null;
 }) {
   const [width, setWidth] = useState(0);
+  const root = useRef<HTMLDivElement>(null);
   const [hover, setHover] = useState<{ id: string; panel: string } | null>(null);
   const clipBase = useId();
   const reduced = useMediaQuery("(prefers-reduced-motion: reduce)");
@@ -118,6 +135,13 @@ export function BubbleProjections({
     }, ZOOM_SETTLE_MS);
   });
   useLayoutEffect(() => paintAll());
+  // Find: new marks start unpainted, so paint after every render while a query is active.
+  const findPainted = useRef(false);
+  useLayoutEffect(() => {
+    if (!found && !findPainted.current) return;
+    findPainted.current = found !== null;
+    paintFind(root.current, found, findActiveId);
+  });
   useEffect(
     () => () => {
       cancelAnimationFrame(frame.current);
@@ -221,6 +245,27 @@ export function BubbleProjections({
       z.scaleBy((reduced ? sel : sel.transition().duration(160)) as typeof sel, f, c);
     });
   };
+  useImperativeHandle(ref, () => ({
+    focusPoint: (id: string) => {
+      const p = points.find((q) => q.id === id);
+      if (!p) return;
+      const k = Math.min(ZOOM_MAX, Math.max(kRef.current, FIND_ZOOM));
+      const cx = (M.left + pw - M.right) / 2;
+      const cy = (M.top + PANEL_HEIGHT - M.bottom) / 2;
+      for (const panel of PANELS) {
+        const el = svgs.current.get(panel.key);
+        const z = zooms.current.get(panel.key);
+        if (!el || !z) continue;
+        const px = scaleFor(panel.x, [M.left, panelWidth - M.right])(p[panel.x]) ?? cx;
+        const py = scaleFor(panel.y, [PANEL_HEIGHT - M.bottom, M.top])(p[panel.y]) ?? cy;
+        const sel = select(el);
+        z.transform(
+          (reduced ? sel : sel.transition().duration(300)) as typeof sel,
+          zoomIdentity.translate(cx - k * px, cy - k * py).scale(k),
+        );
+      }
+    },
+  }));
   const resetZoom = () =>
     applyAll((z, el) => {
       const sel = select(el);
@@ -235,7 +280,7 @@ export function BubbleProjections({
   const hovered = hover ? points.find((p) => p.id === hover.id) : undefined;
 
   return (
-    <div className="relative">
+    <div ref={root} className="relative">
       <div
         ref={measureRef}
         tabIndex={0}
@@ -380,10 +425,13 @@ export function BubbleProjections({
                         <g
                           key={p.id}
                           data-id={p.id}
+                          data-find-id={p.id}
                           data-zx={x}
                           data-zy={y}
                           className="mark-glow cursor-pointer"
-                          data-glow={p.id === hover?.id ? "on" : "off"}
+                          data-glow={
+                            p.id === hover?.id || (!hover && p.id === findActiveId) ? "on" : "off"
+                          }
                           style={{ "--glow": color } as CSSProperties}
                         >
                           {p.marker === "square" ? (
@@ -397,7 +445,9 @@ export function BubbleProjections({
                           ) : (
                             <circle cx={x} cy={y} r={r} {...common} />
                           )}
-                          {(p.id === selectedId || p.id === hover?.id) && (
+                          {(p.id === selectedId ||
+                            p.id === hover?.id ||
+                            p.id === findActiveId) && (
                             <circle
                               cx={x}
                               cy={y}

@@ -1,9 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { Chip, Panel, Segmented } from "@/components/ui-atlas";
+import { useMemo, useState } from "react";
+import { Chip, FindBox, FindMark, Panel, Segmented } from "@/components/ui-atlas";
 import { formatCount } from "@/lib/format";
 import { useInspector } from "@/lib/hooks/useInspector";
+import { useFindQuery } from "@/lib/search/find-state";
+import { matchRecord } from "@/lib/search/match";
+import { cn } from "@/lib/utils";
 import type { LandscapeName, LandscapeSegment, YcEntry } from "@/lib/viz/transforms/landscape";
 
 type View = "market_map" | "yc_physical_ai";
@@ -13,9 +16,23 @@ const VIEWS = [
   { value: "yc_physical_ai", label: "YC physical AI" },
 ] as const;
 
-/** A name: a button into the Inspector when it links to a record, otherwise plain text. */
-function NameChip({ item }: { item: LandscapeName }) {
+/** "yes" or "no" while a find query is applied; undefined without one. */
+type Hit = "yes" | "no" | undefined;
+const hitOf = (q: string, name: string): Hit =>
+  q ? (matchRecord(q, name) !== null ? "yes" : "no") : undefined;
+
+/**
+ * A name: a button into the Inspector when it links to a record, otherwise plain text. While a
+ * find query is applied, non-matching names grey out (they stay in place, so the layout holds).
+ */
+function NameChip({ item, q }: { item: LandscapeName; q: string }) {
   const { open } = useInspector();
+  const hit = hitOf(q, item.name);
+  const fade = cn(
+    "transition-opacity duration-(--dur-open)",
+    hit === "no" && "opacity-30",
+    hit === "yes" && "border-accent bg-accent-soft",
+  );
   if (item.matchedId) {
     const id = item.matchedId;
     return (
@@ -23,22 +40,27 @@ function NameChip({ item }: { item: LandscapeName }) {
         label={item.name}
         onClick={() => open(id)}
         title="Open in the Inspector"
-        className="border-accent/50 text-accent hover:bg-accent-soft hover:text-accent"
+        data-find-match={hit}
+        className={cn("border-accent/50 text-accent hover:bg-accent-soft hover:text-accent", fade)}
       />
     );
   }
   return (
     <span
-      className="inline-flex h-7 items-center rounded-md border border-rule px-2.5 text-sm text-ink-2"
+      data-find-match={hit}
+      className={cn(
+        "inline-flex h-7 items-center rounded-md border border-rule px-2.5 text-sm text-ink-2",
+        fade,
+      )}
       title={item.note ?? undefined}
     >
-      {item.name}
+      <FindMark text={item.name} query={q} />
       {item.note ? <span aria-label="read from a logo">*</span> : null}
     </span>
   );
 }
 
-function Group({ label, items }: { label: string; items: LandscapeName[] }) {
+function Group({ label, items, q }: { label: string; items: LandscapeName[]; q: string }) {
   if (items.length === 0) return null;
   return (
     <div className="flex flex-col gap-1.5">
@@ -48,7 +70,7 @@ function Group({ label, items }: { label: string; items: LandscapeName[] }) {
       <ul className="flex flex-wrap gap-1.5">
         {items.map((i) => (
           <li key={i.id}>
-            <NameChip item={i} />
+            <NameChip item={i} q={q} />
           </li>
         ))}
       </ul>
@@ -56,7 +78,7 @@ function Group({ label, items }: { label: string; items: LandscapeName[] }) {
   );
 }
 
-function MarketMap({ segments }: { segments: readonly LandscapeSegment[] }) {
+function MarketMap({ segments, q }: { segments: readonly LandscapeSegment[]; q: string }) {
   return (
     <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
       {segments.map((s) => (
@@ -65,15 +87,15 @@ function MarketMap({ segments }: { segments: readonly LandscapeSegment[] }) {
             {s.segment}{" "}
             <span className="font-normal text-ink-2 tabular-nums">({formatCount(s.count)})</span>
           </h4>
-          <Group label="India" items={s.india} />
-          <Group label="Global" items={s.global} />
+          <Group label="India" items={s.india} q={q} />
+          <Group label="Global" items={s.global} q={q} />
         </Panel>
       ))}
     </div>
   );
 }
 
-function YcList({ entries }: { entries: readonly YcEntry[] }) {
+function YcList({ entries, q }: { entries: readonly YcEntry[]; q: string }) {
   return (
     <ul className="flex flex-col divide-y divide-rule rounded-xl border border-rule bg-panel">
       {entries.map((e) => (
@@ -82,7 +104,7 @@ function YcList({ entries }: { entries: readonly YcEntry[] }) {
           className="flex flex-col gap-1 px-4 py-2 sm:flex-row sm:items-center sm:gap-4"
         >
           <span className="sm:w-52 sm:shrink-0">
-            <NameChip item={e} />
+            <NameChip item={e} q={q} />
           </span>
           <span className="sm:w-12 sm:shrink-0">
             {e.batch ? (
@@ -112,6 +134,20 @@ export function PhysicalAiLandscape({
   const [view, setView] = useState<View>("market_map");
   const mapCount = segments.reduce((n, s) => n + s.count, 0);
   const ycBatched = yc.filter((e) => e.batch).length;
+  const find = useFindQuery();
+  const q = find.query.trim();
+  // Names in the current view, and how many match the find query.
+  const names = useMemo(
+    () =>
+      view === "market_map"
+        ? segments.flatMap((s) => [...s.india, ...s.global]).map((n) => n.name)
+        : yc.map((e) => e.name),
+    [view, segments, yc],
+  );
+  const matches = useMemo(
+    () => (q ? names.filter((n) => matchRecord(q, n) !== null).length : names.length),
+    [names, q],
+  );
   return (
     <section aria-labelledby="landscape-title" className="flex flex-col gap-3">
       <header className="flex flex-col gap-2">
@@ -126,7 +162,16 @@ export function PhysicalAiLandscape({
               exhaustive.
             </p>
           </div>
-          <Segmented label="Physical AI list" options={VIEWS} value={view} onChange={setView} />
+          <div className="flex flex-wrap items-center gap-2">
+            <FindBox
+              label="Find in the landscape"
+              value={find.input}
+              onValueChange={find.setInput}
+              matches={matches}
+              total={names.length}
+            />
+            <Segmented label="Physical AI list" options={VIEWS} value={view} onChange={setView} />
+          </div>
         </div>
         <p className="text-sm text-ink-2 tabular-nums">
           {view === "market_map"
@@ -134,7 +179,11 @@ export function PhysicalAiLandscape({
             : `${formatCount(yc.length)} startups, ${formatCount(ycBatched)} with a batch label`}
         </p>
       </header>
-      {view === "market_map" ? <MarketMap segments={segments} /> : <YcList entries={yc} />}
+      {view === "market_map" ? (
+        <MarketMap segments={segments} q={q} />
+      ) : (
+        <YcList entries={yc} q={q} />
+      )}
       <p className="max-w-3xl text-xs text-ink-2">
         Sources: the market map &ldquo;Physical AI (Indian Startups &amp; Global Leaders)&rdquo; by
         Kalaiarsi Periasamy (zpisignal.com/insights), and a LinkedIn post listing YC-backed

@@ -1,10 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { ChartTable } from "@/components/charts/ChartTable";
-import { ChartFrame, ContributionBar, HoverTip, Legend, VizTooltip } from "@/components/ui-atlas";
+import {
+  ChartFrame,
+  ContributionBar,
+  FindBox,
+  FindMark,
+  HoverTip,
+  Legend,
+  VizTooltip,
+} from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import type { FitWeights } from "@/lib/fit/score";
 import { formatCount, formatPercent, formatUsd } from "@/lib/format";
@@ -19,6 +27,8 @@ import {
 } from "@/lib/viz/transforms/strategy";
 import { FIT_FEATURE_ORDER } from "@/lib/viz/transforms/topByFit";
 import { useInspector } from "@/lib/hooks/useInspector";
+import { useFindQuery } from "@/lib/search/find-state";
+import { matchRecord } from "@/lib/search/match";
 import { cn } from "@/lib/utils";
 
 const PAGE = 50;
@@ -84,7 +94,14 @@ export function RankedList({
 }) {
   const { open } = useInspector();
   const [limit, setLimit] = useState(PAGE);
-  const visible = ranked.slice(0, limit);
+  // The find box narrows the list by name; ranks stay those of the full list.
+  const find = useFindQuery();
+  const q = find.query.trim();
+  const found = useMemo(
+    () => (q ? ranked.filter((r) => matchRecord(q, r.row.name) !== null) : ranked),
+    [ranked, q],
+  );
+  const visible = found.slice(0, limit);
   const reliable = ranked.filter((r) => r.reliable).length;
 
   return (
@@ -115,6 +132,17 @@ export function RankedList({
       notShown={{ count: loading ? null : unscored, field: "fit features", noun: "investors" }}
       // While loading, hold about the list's first screen so nothing below moves in view.
       height={loading ? 640 : 160}
+      find={
+        loading ? undefined : (
+          <FindBox
+            label="Find ranked investors"
+            value={find.input}
+            onValueChange={find.setInput}
+            matches={found.length}
+            total={ranked.length}
+          />
+        )
+      }
       action={
         <Button variant="outline" size="sm" onClick={onExport} disabled={ranked.length === 0}>
           <Download aria-hidden /> Export target list (CSV)
@@ -198,7 +226,7 @@ export function RankedList({
                     open(r.row.id);
                   }}
                 >
-                  {r.row.name}
+                  <FindMark text={r.row.name} query={q} />
                 </button>
                 <FlagChips row={r.row} />
                 <TierChip tier={tier} manual={overrides[r.row.id] !== undefined} />
@@ -249,13 +277,16 @@ export function RankedList({
           );
         })}
       </ol>
+      {q && found.length === 0 && (
+        <p className="py-4 text-sm text-ink-2">No ranked investor name matches “{q}”.</p>
+      )}
       <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-ink-2">
         <span className="tabular-nums" role="status">
-          Showing {formatCount(visible.length)} of {formatCount(ranked.length)}
+          Showing {formatCount(visible.length)} of {formatCount(found.length)}
         </span>
-        {visible.length < ranked.length && (
+        {visible.length < found.length && (
           <Button variant="outline" size="sm" onClick={() => setLimit((n) => n + PAGE)}>
-            Show {formatCount(Math.min(PAGE, ranked.length - visible.length))} more
+            Show {formatCount(Math.min(PAGE, found.length - visible.length))} more
           </Button>
         )}
       </div>

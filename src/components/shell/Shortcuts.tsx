@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { filtersApply } from "@/lib/nav";
+import { focusFindBox } from "@/lib/search/find-state";
 import { useUi } from "@/store/ui";
 
 function isEditable(target: EventTarget | null): boolean {
@@ -15,7 +16,8 @@ function isEditable(target: EventTarget | null): boolean {
 }
 
 /**
- * Global shortcuts: Ctrl/Cmd+K palette, / search, [ rail, F filters.
+ * Global shortcuts: Ctrl/Cmd+K palette, / the view's find box (else the palette), [ rail,
+ * F filters.
  * Escape is handled by whatever is open (palette, popover, inspector).
  * Plain keys are ignored while typing; Ctrl/Cmd+K still works there, since it
  * is not a typing key and people expect it in a text field.
@@ -35,7 +37,7 @@ export function Shortcuts() {
 
       if (e.key === "/") {
         e.preventDefault();
-        ui.setPaletteOpen(true);
+        if (!focusFindBox()) ui.setPaletteOpen(true);
       } else if (e.key === "[") {
         e.preventDefault();
         if (window.matchMedia("(min-width: 1024px)").matches) ui.toggleRail();

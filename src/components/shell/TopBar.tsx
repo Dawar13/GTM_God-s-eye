@@ -145,20 +145,21 @@ export function TopBar() {
           </Button>
         )}
         <RoundControl />
-        <Button
-          variant="outline"
-          size="sm"
+        {/* Same compact look as the find boxes: 28 px, radius 6, no shadow, accent ring. */}
+        <button
+          type="button"
           onClick={() => setPaletteOpen(true)}
           aria-label="Search and jump to"
           aria-keyshortcuts="Control+K Meta+K"
-          className="h-8 gap-2 border-rule bg-panel-sunk text-ink-2 sm:min-w-44 sm:justify-start"
+          title="Search and jump to"
+          className="flex h-7 items-center gap-1.5 rounded-md border border-rule bg-panel px-2 text-[13px] text-muted transition-colors duration-(--dur-open) hover:border-ink-2/40 hover:text-ink-2 focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent/25 focus-visible:outline-none sm:w-44"
         >
-          <Search aria-hidden />
+          <Search aria-hidden className="size-3.5 shrink-0" />
           <span className="hidden sm:inline">Search</span>
-          <kbd className="ml-auto hidden font-sans text-xs text-muted sm:inline">
+          <kbd className="ml-auto hidden rounded-[4px] border border-rule px-1 font-sans text-[11px] leading-4 text-muted sm:inline">
             {mac ? "⌘K" : "Ctrl K"}
           </kbd>
-        </Button>
+        </button>
         <ThemeToggle />
         <ProfileControl />
         <ProfileViewSync />

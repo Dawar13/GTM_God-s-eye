@@ -31,6 +31,7 @@ import {
 } from "@/lib/viz/transforms/competitorSankey";
 import type { CompetitorOverview } from "@/lib/viz/transforms/competitorOverview";
 import type { CompetitorCategory } from "@/lib/schema/enums";
+import { ChartFind } from "./ChartFind";
 import { ChartTable } from "./ChartTable";
 import { OverviewSankey } from "./CompetitorSankeyOverview";
 import {
@@ -39,6 +40,7 @@ import {
   clip,
   competitorTip,
   dateSpan,
+  findIds,
   moneyText,
   plural,
   share,
@@ -155,6 +157,38 @@ function PairSankey({
     for (const t of data.targets) m.set(t.id, t.name);
     return m;
   }, [data.sources, data.targets]);
+
+  /**
+   * Find: each node and band carries the investors and competitors whose paths run through it
+   * (`data-find-id`), so a match keeps its own bands and the nodes at both ends.
+   */
+  const find = useMemo(() => {
+    const backers = new Map<string, Set<string>>();
+    const backed = new Map<string, Set<string>>();
+    for (const p of data.pairs) {
+      if (p.investorId === null) continue;
+      backers.set(p.competitorId, (backers.get(p.competitorId) ?? new Set()).add(p.investorId));
+      backed.set(p.investorId, (backed.get(p.investorId) ?? new Set()).add(p.competitorId));
+    }
+    const ids = new Map<string, string>();
+    const anchors = new Map<string, string>();
+    const entities: { id: string; name: string }[] = [];
+    for (const s of data.sources) {
+      if (s.kind === "unnamed") continue;
+      const own = s.kind === "investor" ? [s.id] : s.members.map((m) => m.id);
+      ids.set(s.id, findIds([...own, ...own.flatMap((id) => [...(backed.get(id) ?? [])])]));
+      anchors.set(s.id, own.join(" "));
+      if (s.kind === "investor") entities.push({ id: s.id, name: s.name });
+      else for (const m of s.members) entities.push({ id: m.id, name: m.name });
+    }
+    const drawn = new Set(data.links.map((l) => l.target));
+    for (const t of data.targets) {
+      if (!drawn.has(t.id)) continue;
+      ids.set(t.id, findIds([t.id, ...(backers.get(t.id) ?? [])]));
+      entities.push({ id: t.id, name: t.name });
+    }
+    return { ids, anchors, entities };
+  }, [data]);
 
   const nodeById = new Map(layout.nodes.map((n) => [n.id, n]));
   const other = sources.get(OTHER_ID);
@@ -467,47 +501,53 @@ function PairSankey({
     }
     const hitX = n.side === "left" ? 0 : n.x0;
     const hitW = n.side === "left" ? n.x1 : W - n.x0;
+    // The find fade sits on a wrapper: the node's own inline opacity is the hover dim.
     return (
       <g
         key={n.id}
-        tabIndex={0}
-        role={openable(n.id) ? "button" : "img"}
-        aria-label={ariaFor(n)}
-        className="cursor-pointer transition-opacity duration-(--dur-open) ease-(--ease-out) outline-none"
-        style={{ opacity: nodeDim(n.id) }}
-        onMouseEnter={(e) => {
-          setActive({ kind: "node", id: n.id });
-          place(e);
-        }}
-        onMouseMove={place}
-        onMouseLeave={clear}
-        onFocus={(e) => {
-          if (!e.currentTarget.matches(":focus-visible")) return;
-          setFocusId(n.id);
-          focusNode(n);
-        }}
-        onBlur={() => {
-          setFocusId(null);
-          clear();
-        }}
-        onClick={() => openable(n.id) && open(n.id)}
-        onKeyDown={(e) => onNodeKey(e, n.id)}
+        data-find-id={find.ids.get(n.id) ?? n.id}
+        data-find-anchor={find.anchors.get(n.id) ?? n.id}
       >
-        <rect x={hitX} y={mid(n) - hitH / 2} width={hitW} height={hitH} fill="transparent" />
-        {mark}
-        {focused && (
-          <rect
-            x={n.x0 - 3}
-            y={y - 3}
-            width={n.x1 - n.x0 + 6}
-            height={h + 6}
-            rx={3}
-            fill="none"
-            stroke="var(--accent)"
-            strokeWidth={2}
-          />
-        )}
-        {labelled && nodeLabel(n, false)}
+        <g
+          tabIndex={0}
+          role={openable(n.id) ? "button" : "img"}
+          aria-label={ariaFor(n)}
+          className="cursor-pointer transition-opacity duration-(--dur-open) ease-(--ease-out) outline-none"
+          style={{ opacity: nodeDim(n.id) }}
+          onMouseEnter={(e) => {
+            setActive({ kind: "node", id: n.id });
+            place(e);
+          }}
+          onMouseMove={place}
+          onMouseLeave={clear}
+          onFocus={(e) => {
+            if (!e.currentTarget.matches(":focus-visible")) return;
+            setFocusId(n.id);
+            focusNode(n);
+          }}
+          onBlur={() => {
+            setFocusId(null);
+            clear();
+          }}
+          onClick={() => openable(n.id) && open(n.id)}
+          onKeyDown={(e) => onNodeKey(e, n.id)}
+        >
+          <rect x={hitX} y={mid(n) - hitH / 2} width={hitW} height={hitH} fill="transparent" />
+          {mark}
+          {focused && (
+            <rect
+              x={n.x0 - 3}
+              y={y - 3}
+              width={n.x1 - n.x0 + 6}
+              height={h + 6}
+              rx={3}
+              fill="none"
+              stroke="var(--accent)"
+              strokeWidth={2}
+            />
+          )}
+          {labelled && nodeLabel(n, false)}
+        </g>
       </g>
     );
   };
@@ -533,6 +573,13 @@ function PairSankey({
           : "Each band runs from an investor to a competitor it backed. Band width is rounds: each round counts once, split equally among the round's named investors."
       }
       action={controls}
+      find={
+        <ChartFind
+          label="Find investors or competitors in the Sankey"
+          entities={find.entities}
+          root={outer}
+        />
+      }
       legend={
         <div className="flex flex-col gap-2">
           <div className="flex flex-wrap items-start gap-x-6 gap-y-2">
@@ -647,21 +694,29 @@ function PairSankey({
                     const s = sources.get(l.source)!;
                     const a = nodeById.get(l.source)!;
                     const b = nodeById.get(l.target)!;
+                    const fl = links.get(key);
                     return (
-                      <path
+                      <g
                         key={key}
-                        d={ribbonPath(a.x1, l.sy, b.x0, l.ty, l.width)}
-                        fill={bandFill(s)}
-                        fillOpacity={opacityFor(key)}
-                        className="cursor-pointer transition-[fill-opacity] duration-(--dur-open) ease-(--ease-out)"
-                        onMouseEnter={(e) => {
-                          setActive({ kind: "link", key });
-                          place(e);
-                        }}
-                        onMouseMove={place}
-                        onMouseLeave={clear}
-                        onClick={() => open(l.target)}
-                      />
+                        data-find-id={findIds([
+                          l.target,
+                          ...(s.kind === "investor" ? [l.source] : (fl?.investorIds ?? [])),
+                        ])}
+                      >
+                        <path
+                          d={ribbonPath(a.x1, l.sy, b.x0, l.ty, l.width)}
+                          fill={bandFill(s)}
+                          fillOpacity={opacityFor(key)}
+                          className="cursor-pointer transition-[fill-opacity] duration-(--dur-open) ease-(--ease-out)"
+                          onMouseEnter={(e) => {
+                            setActive({ kind: "link", key });
+                            place(e);
+                          }}
+                          onMouseMove={place}
+                          onMouseLeave={clear}
+                          onClick={() => open(l.target)}
+                        />
+                      </g>
                     );
                   })}
                 </g>

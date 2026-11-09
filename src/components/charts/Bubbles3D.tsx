@@ -112,6 +112,10 @@ const HALO_OPACITY = {
 } as const;
 const HALO_TRACES = HALO_SCALE.length + 1;
 const OUTLINE_WIDTH = 2;
+/** Find: fill and outline alpha of bubbles that do not match the query. */
+const FIND_FADE_FILL = 0.08;
+const FIND_FADE_LINE = 0.12;
+type GraphDiv = HTMLElement & { data?: unknown[] };
 
 function readColors(dark: boolean) {
   const css = getComputedStyle(document.documentElement);
@@ -137,6 +141,8 @@ export default function Bubbles3D({
   onOpen,
   computedLabel,
   height,
+  found,
+  findActiveId,
 }: {
   points: BubbleRow[];
   clusterById: Map<number, ClusterInfo>;
@@ -147,6 +153,10 @@ export default function Bubbles3D({
   onOpen: (id: string) => void;
   computedLabel: string;
   height: number;
+  /** Find matches (null: no query). The rest are faded with one restyle per change. */
+  found: ReadonlySet<string> | null;
+  /** The active find match wears the hover glow while nothing is hovered. */
+  findActiveId: string | null;
 }) {
   const theme = useUi((s) => s.theme);
   const dark = theme === "dark";
@@ -166,6 +176,8 @@ export default function Bubbles3D({
   );
 
   const byId = useMemo(() => new Map(points.map((p) => [p.id, p])), [points]);
+  const clusterColor = (p: BubbleRow) =>
+    p.cluster === null ? NEUTRAL : (clusterById.get(p.cluster)?.color ?? NEUTRAL);
 
   const data = useMemo(() => {
     const colorOf = (p: BubbleRow) =>
@@ -250,7 +262,9 @@ export default function Bubbles3D({
       const first = gd.data.length - HALO_TRACES;
       if (first < 0) return;
       const idx = Array.from({ length: HALO_TRACES }, (_, i) => first + i);
-      const p = haloId.current ? byId.get(haloId.current) : undefined;
+      // Hover wins; otherwise the active find match keeps the glow.
+      const id = haloId.current ?? findRef.current.activeId;
+      const p = id ? byId.get(id) : undefined;
       if (!p) {
         if (!haloShown.current) return;
         haloShown.current = false;
@@ -296,6 +310,77 @@ export default function Bubbles3D({
     },
     [],
   );
+
+  // Find: one restyle per match change fades the bubbles that do not match (per-point rgba,
+  // since scatter3d takes no per-point opacity). Plotly.react (new data: filters, selection,
+  // theme) restores the default colours, so onInitialized/onUpdate repaint a fresh figure; the
+  // check below makes the repeat calls from restyle and relayout events free.
+  const findRef = useRef<{ found: ReadonlySet<string> | null; activeId: string | null }>({
+    found: null,
+    activeId: null,
+  });
+  const painted = useRef<{ trace: unknown; found: ReadonlySet<string> | null }>({
+    trace: null,
+    found: null,
+  });
+  const paintFind3D = () => {
+    const { found: f } = findRef.current;
+    const el = wrap.current;
+    if (el && el.getAttribute("data-find-count") !== (f ? String(f.size) : null)) {
+      if (f) {
+        el.setAttribute("data-finding", "");
+        el.setAttribute("data-find-count", String(f.size));
+      } else {
+        el.removeAttribute("data-finding");
+        el.removeAttribute("data-find-count");
+      }
+    }
+    const gd = graphDiv.current as GraphDiv | null;
+    if (!gd?.isConnected || !gd.data?.length) return;
+    const first = gd.data[0];
+    const fresh = painted.current.trace !== first;
+    if (!fresh && painted.current.found === f) return;
+    painted.current = { trace: first, found: f };
+    if (fresh) {
+      // Plotly.react emptied the glow traces; draw the glow again if one is due.
+      haloShown.current = false;
+      setHalo(haloId.current);
+      if (!f) return;
+    }
+    const sized = sizing ? points.filter((p) => p.fundUsd !== null) : [];
+    const unsized = sizing ? points.filter((p) => p.fundUsd === null) : points;
+    const fade = (p: BubbleRow) => f !== null && !f.has(p.id);
+    const colors: unknown[] = [];
+    const lines: unknown[] = [];
+    if (sizing && sized.length) {
+      colors.push(
+        sized.map((p) => withOpacity(clusterColor(p), fade(p) ? FIND_FADE_FILL : 0.85)),
+      );
+      lines.push(
+        sized.map((p) =>
+          fade(p) ? withOpacity(darken(clusterColor(p)), FIND_FADE_LINE) : darken(clusterColor(p)),
+        ),
+      );
+    }
+    if (unsized.length) {
+      // Open symbols are drawn in marker.color; their line colour is unused, kept in step.
+      const ring = unsized.map((p) =>
+        fade(p) ? withOpacity(darken(clusterColor(p)), FIND_FADE_LINE) : darken(clusterColor(p)),
+      );
+      colors.push(ring);
+      lines.push(ring);
+    }
+    if (!colors.length) return;
+    const idx = colors.map((_, i) => i);
+    void Plotly.restyle(gd, { "marker.color": colors, "marker.line.color": lines }, idx);
+  };
+  useEffect(() => {
+    findRef.current = { found, activeId: findActiveId };
+    paintFind3D();
+    setHalo(haloId.current);
+    // paintFind3D and setHalo read refs and this render's data; they run per find change only.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [found, findActiveId]);
 
   const layout = useMemo(() => {
     const domain = checkDomain(checkExtent);
@@ -578,7 +663,9 @@ export default function Bubbles3D({
         style={{ width: "100%", height }}
         onInitialized={(_figure, el) => {
           graphDiv.current = el;
+          paintFind3D();
         }}
+        onUpdate={() => paintFind3D()}
         onRelayout={onRelayout}
         onDoubleClick={() => {
           // A double tap already zoomed through the touch handler.

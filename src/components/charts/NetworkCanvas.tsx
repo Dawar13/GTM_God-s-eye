@@ -46,7 +46,19 @@ export type CanvasHandle = {
   zoomIn: () => void;
   zoomOut: () => void;
   reset: () => void;
+  /** Re-run the reducers once, next frame (after the find state changed). */
+  refresh: () => void;
 };
+
+/**
+ * Find-box matches, shared by reference with NetworkGraph's find box: it writes here and calls
+ * `refresh`, so a query never re-renders this component. Matches stay lit, the rest fade; the
+ * active match keeps its label.
+ */
+export type CanvasFind = { found: ReadonlySet<number>; active: number | null };
+
+/** Up to this many matches all show their labels; beyond it only the active one does. */
+const FIND_LABELS_MAX = 12;
 
 const EDGE_ALPHA = 0.15;
 const FADED = 0.1;
@@ -156,9 +168,12 @@ export default function NetworkCanvas({
   labelLevel,
   reduced,
   renderTooltip,
+  findRef,
   className,
 }: {
   ref?: Ref<CanvasHandle>;
+  /** Live find state (see `CanvasFind`); read by the reducers, never a render input. */
+  findRef?: { current: CanvasFind | null };
   data: GraphData;
   view: NetworkView;
   colours: string[];
@@ -270,13 +285,27 @@ export default function NetworkCanvas({
         if (!r.view.node[i]) return { visibility: "hidden", labelVisibility: "hidden" };
         const out: Partial<NodeDisplayData> = { color: r.colours[i], labelColor: r.theme.ink };
         const node = data.nodes[i]!;
-        const lit = r.highlight ? r.highlight.has(i) : true;
+        const find = findRef?.current ?? null;
+        const found = find ? find.found.has(i) : false;
+        const lit = find
+          ? found || (r.highlight?.has(i) ?? false)
+          : r.highlight
+            ? r.highlight.has(i)
+            : true;
         if (!lit) {
           out.opacity = FADED;
           out.labelVisibility = "hidden";
-        } else if (r.highlight) {
+        } else if (r.highlight || find) {
           out.depth = "topNodes";
           if (i === r.active) out.labelVisibility = "visible";
+        }
+        if (find && found && (i === find.active || find.found.size <= FIND_LABELS_MAX)) {
+          out.labelVisibility = "visible";
+        }
+        if (find && i === find.active) {
+          out.backdropVisibility = "visible";
+          out.backdropColor = r.theme.accent;
+          out.backdropPadding = 3;
         }
         if (node.kind === "competitor" && lit) {
           out.depth = "topNodes";
@@ -316,7 +345,15 @@ export default function NetworkCanvas({
           out.color = r.theme.ink2;
           out.size = 1 + (w - 2) * 0.8;
         }
-        if (r.active === null) {
+        const find = findRef?.current ?? null;
+        if (r.active === null && find) {
+          if (find.found.has(a) || find.found.has(b)) {
+            out.opacity = 0.5;
+            out.depth = "topEdges";
+          } else {
+            out.opacity = EDGE_ALPHA * FADED;
+          }
+        } else if (r.active === null) {
           out.opacity = EDGE_ALPHA;
         } else if (a === r.active || b === r.active) {
           out.opacity = 0.7;
@@ -328,7 +365,7 @@ export default function NetworkCanvas({
       },
     }),
     // `data` is fixed for the life of the graph; the font and settings are read once at mount.
-    [data, fontFamily, initialSettings],
+    [data, fontFamily, initialSettings, findRef],
   );
 
   return (
@@ -593,6 +630,7 @@ function Behaviour({
         else if (duration === 0) camera().setState(target);
         else void camera().animate(target, { duration });
       },
+      refresh: () => sigma.scheduleRefresh(),
     };
   }, [sigma, data, view, reduced]);
 

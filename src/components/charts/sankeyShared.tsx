@@ -21,6 +21,9 @@ export const moneyText = (usd: number | null, exact: boolean, long = false) =>
     : `~${formatUsd(usd)}${long ? " estimated" : ""}`;
 
 /** Rounds as drawn in the rounds view: whole numbers plain, splits to one decimal. */
+/** A `data-find-id` value: distinct ids, space-separated (see `paintFind`). */
+export const findIds = (ids: Iterable<string>) => [...new Set(ids)].join(" ");
+
 export const share = (v: number) =>
   Math.abs(v - Math.round(v)) < 1e-9 ? formatCount(Math.round(v)) : v.toFixed(1);
 

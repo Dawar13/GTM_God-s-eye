@@ -6,7 +6,7 @@ import { useVirtualizer } from "@tanstack/react-virtual";
 import { parseAsStringLiteral, useQueryState } from "nuqs";
 import { ChevronDown, ChevronUp, Columns3, Download } from "lucide-react";
 import { cn } from "cn";
-import { Chip, Segmented, Skeleton } from "@/components/ui-atlas";
+import { Chip, FindBox, FindMark, Segmented, Skeleton } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { loadDirectoryRows, useLoaded } from "@/lib/client-index";
@@ -37,6 +37,8 @@ import {
   TIER_LABELS,
 } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
+import { useFindQuery } from "@/lib/search/find-state";
+import { matchRecord } from "@/lib/search/match";
 import { CATEGORICAL, markerShapeFor, markStyle } from "@/lib/viz";
 
 const features = tableFeatures({ columnVisibilityFeature });
@@ -97,10 +99,14 @@ function TypeMarker({ type }: { type: DirectoryRow["type"] }) {
   );
 }
 
-function Cell({ id, row }: { id: SortColumn; row: DirectoryRow }) {
+function Cell({ id, row, query }: { id: SortColumn; row: DirectoryRow; query: string }) {
   switch (id) {
     case "name":
-      return <span className="truncate font-medium">{row.name}</span>;
+      return (
+        <span className="truncate font-medium">
+          <FindMark text={row.name} query={query} />
+        </span>
+      );
     case "type":
       return row.type ? (
         <span className="flex items-center gap-1.5 truncate">
@@ -246,9 +252,18 @@ function DirectoryView({
 
   // A brushed map region narrows the rows before the filters, so chip counts include it too.
   const inRegion = useMemo(() => rowsInArea(rows, areaCoords, area), [rows, areaCoords, area]);
-  const shown = useMemo(
+  const filtered = useMemo(
     () => sortRows(applyFilters(inRegion, filters), sort),
     [inRegion, filters, sort],
+  );
+  // The find box narrows the filtered rows by name; the URL filters stay as they are.
+  const find = useFindQuery();
+  const shown = useMemo(
+    () =>
+      find.query.trim()
+        ? filtered.filter((r) => matchRecord(find.query, r.name) !== null)
+        : filtered,
+    [filtered, find.query],
   );
   const counts = useMemo(() => facetCounts(inRegion, filters).type, [inRegion, filters]);
 
@@ -346,7 +361,7 @@ function DirectoryView({
     <div className="flex flex-[1_1_0px] flex-col gap-3">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm text-ink-2">
-          <span className="num">{formatCount(shown.length)}</span> of{" "}
+          <span className="num">{formatCount(filtered.length)}</span> of{" "}
           <span className="num">{formatCount(rows.length)}</span> investors match the filters
           {area ? " and the map region" : ""}.
         </p>
@@ -373,6 +388,13 @@ function DirectoryView({
           ))}
         </div>
         <div className="ml-auto flex flex-wrap items-center gap-2">
+          <FindBox
+            label="Find investors"
+            value={find.input}
+            onValueChange={find.setInput}
+            matches={shown.length}
+            total={filtered.length}
+          />
           <Segmented
             label="Row density"
             value={density}
@@ -464,7 +486,9 @@ function DirectoryView({
 
           {shown.length === 0 ? (
             <p className="p-6 text-sm text-ink-2">
-              No investors match the current filters. Widen a filter to see more.
+              {filtered.length && find.query.trim()
+                ? `No investor name matches “${find.query.trim()}”. Clear the find box to see all ${formatCount(filtered.length)}.`
+                : "No investors match the current filters. Widen a filter to see more."}
             </p>
           ) : (
             <div
@@ -503,7 +527,7 @@ function DirectoryView({
                           META.get(id)?.numeric && "text-right num",
                         )}
                       >
-                        <Cell id={id} row={row} />
+                        <Cell id={id} row={row} query={find.query} />
                       </div>
                     ))}
                   </div>

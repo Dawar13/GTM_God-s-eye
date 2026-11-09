@@ -39,6 +39,7 @@ export function ChartFrame({
   state = { status: "ready" },
   tableAlternative,
   action,
+  find,
   computed,
   height = 280,
   compact = false,
@@ -68,6 +69,11 @@ export function ChartFrame({
   /** A link or button to the full view, shown at the top right. */
   action?: ReactNode;
   /**
+   * The chart's find box (`FindBox`), placed with the view controls so every chart puts it in
+   * the same spot. Hidden, keeping its space, while the table view (which has its own) shows.
+   */
+  find?: ReactNode;
+  /**
    * For calculator visuals: the marks come from the inputs, not from records, so the footnote
    * says that (this text) instead of listing sources and a not-shown count.
    */
@@ -96,16 +102,25 @@ export function ChartFrame({
         </div>
         <div className="flex max-w-full flex-wrap items-start gap-2 sm:shrink-0 sm:flex-col sm:items-end">
           {action}
-          {tableAlternative !== undefined && state.status === "ready" && (
-            <Segmented
-              label={`${title} view`}
-              value={view}
-              onChange={setView}
-              options={[
-                { value: "chart", label: "Chart" },
-                { value: "table", label: "View as table" },
-              ]}
-            />
+          {(find || (tableAlternative !== undefined && state.status === "ready")) && (
+            <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+              {find && (
+                <div className={cn(showTable && "invisible")} inert={showTable || undefined}>
+                  {find}
+                </div>
+              )}
+              {tableAlternative !== undefined && state.status === "ready" && (
+                <Segmented
+                  label={`${title} view`}
+                  value={view}
+                  onChange={setView}
+                  options={[
+                    { value: "chart", label: "Chart" },
+                    { value: "table", label: "View as table" },
+                  ]}
+                />
+              )}
+            </div>
           )}
         </div>
       </header>

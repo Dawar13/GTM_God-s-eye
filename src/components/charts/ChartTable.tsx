@@ -1,8 +1,19 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
+import {
+  cloneElement,
+  Fragment,
+  isValidElement,
+  useMemo,
+  useState,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { FindBox, FindMark } from "@/components/ui-atlas/FindBox";
 import { formatCount } from "@/lib/format";
+import { useFindQuery } from "@/lib/search/find-state";
+import { matchRecord, type Searchable } from "@/lib/search/match";
 import { cn } from "@/lib/utils";
 
 export type TableColumn<T> = {
@@ -18,6 +29,36 @@ export type TableColumn<T> = {
 
 type Sort = { column: string; dir: "asc" | "desc" };
 
+type Walkable = ReactElement<{ children?: ReactNode }>;
+/** Host elements and fragments: their text children can be read and marked. */
+const walkable = (node: ReactNode): node is Walkable =>
+  isValidElement(node) && (typeof node.type === "string" || node.type === Fragment);
+
+/** "Find in capital bubbles"; long captions read "Find in table". */
+function defaultFindLabel(caption: string): string {
+  if (caption.length > 40) return "Find in table";
+  const lower = /^[A-Z][a-z]/.test(caption) ? caption[0]!.toLowerCase() + caption.slice(1) : caption;
+  return `Find in ${lower}`;
+}
+
+/** The plain text a cell renders (host elements only; components contribute nothing). */
+function nodeText(node: ReactNode): string {
+  if (node === null || node === undefined || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(nodeText).join("");
+  return walkable(node) ? nodeText(node.props.children) : "";
+}
+
+/** The cell with the find query marked in its text, keeping its elements and handlers. */
+function markNode(node: ReactNode, query: string): ReactNode {
+  if (typeof node === "string") return <FindMark text={node} query={query} />;
+  if (Array.isArray(node))
+    return node.map((n, k) => <Fragment key={k}>{markNode(n, query)}</Fragment>);
+  if (walkable(node) && node.props.children !== undefined)
+    return cloneElement(node, undefined, markNode(node.props.children, query));
+  return node;
+}
+
 /**
  * The accessible table behind a chart's "View as table" toggle. Numbers are tabular.
  * Columns with a `sortValue` get a sort button in their header (`aria-sort` on the header
@@ -32,6 +73,8 @@ export function ChartTable<T>({
   limit,
   onRowClick,
   scrollClassName = "max-h-80",
+  findLabel,
+  findText,
 }: {
   caption: string;
   columns: readonly TableColumn<T>[];
@@ -43,16 +86,41 @@ export function ChartTable<T>({
   onRowClick?: (row: T) => void;
   /** Height cap of the scrolling area. */
   scrollClassName?: string;
+  /** Accessible name of the find box; defaults to "Find in <caption>" (short captions). */
+  findLabel?: string;
+  /**
+   * What the find box matches per row (a name and aliases). By default the text of every
+   * non-numeric column, the first one counting as the name.
+   */
+  findText?: (row: T) => Searchable;
 }) {
   const [sort, setSort] = useState<Sort | null>(initialSort ?? null);
   const [showAll, setShowAll] = useState(false);
+  const find = useFindQuery();
+  const q = find.query.trim();
+  const textCols = columns.filter((c) => !c.numeric);
+  // A find box only where there is text to find in and more than one row.
+  const findable = textCols.length > 0 && rows.length > 1;
+
+  const found = useMemo(() => {
+    if (!q) return rows;
+    const text =
+      findText ??
+      ((r: T) => {
+        const [name = "", ...rest] = textCols.map((c) => nodeText(c.cell(r)));
+        return { name, aliases: rest };
+      });
+    return rows.filter((r) => matchRecord(q, text(r)) !== null);
+    // textCols derives from columns.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rows, columns, q, findText]);
 
   const sorted = useMemo(() => {
     const col = sort ? columns.find((c) => c.header === sort.column) : undefined;
-    if (!sort || !col?.sortValue) return rows;
+    if (!sort || !col?.sortValue) return found;
     const value = col.sortValue;
     const sign = sort.dir === "asc" ? 1 : -1;
-    return [...rows].sort((a, b) => {
+    return [...found].sort((a, b) => {
       const va = value(a);
       const vb = value(b);
       if (va === null || vb === null) return va === vb ? 0 : va === null ? 1 : -1;
@@ -62,7 +130,7 @@ export function ChartTable<T>({
           : String(va).localeCompare(String(vb));
       return c * sign;
     });
-  }, [rows, columns, sort]);
+  }, [found, columns, sort]);
 
   const shown = limit !== undefined && !showAll ? sorted.slice(0, limit) : sorted;
 
@@ -74,7 +142,7 @@ export function ChartTable<T>({
     );
   }
 
-  return (
+  const table = (
     <div className={cn("overflow-auto", scrollClassName)}>
       <table className="w-full text-sm">
         <caption className="sr-only">{caption}</caption>
@@ -150,7 +218,7 @@ export function ChartTable<T>({
                     c.highlight && "bg-accent-soft font-semibold",
                   )}
                 >
-                  {c.cell(r)}
+                  {q && !c.numeric ? markNode(c.cell(r), q) : c.cell(r)}
                 </td>
               ))}
             </tr>
@@ -166,6 +234,25 @@ export function ChartTable<T>({
           Show all <span className="tabular-nums">{formatCount(sorted.length)}</span> rows
         </button>
       )}
+      {q && found.length === 0 && (
+        <p className="p-3 text-sm text-ink-2">Nothing in this table matches “{q}”.</p>
+      )}
+    </div>
+  );
+
+  if (!findable) return table;
+  return (
+    <div className="flex min-w-0 flex-col gap-2">
+      <div className="flex justify-end">
+        <FindBox
+          label={findLabel ?? defaultFindLabel(caption)}
+          value={find.input}
+          onValueChange={find.setInput}
+          matches={found.length}
+          total={rows.length}
+        />
+      </div>
+      {table}
     </div>
   );
 }

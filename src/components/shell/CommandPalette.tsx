@@ -4,22 +4,38 @@ import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { Dialog } from "radix-ui";
-import { Building2, Crosshair, FileText, Landmark, Moon, PanelLeft, RotateCcw, Search } from "lucide-react";
+import {
+  Bot,
+  Building2,
+  Crosshair,
+  FileText,
+  Landmark,
+  Moon,
+  PanelLeft,
+  Rocket,
+  RotateCcw,
+  Search,
+} from "lucide-react";
 import { PALETTE_PAGES, PALETTE_TOOL_ACTIONS } from "@/lib/nav";
 import { useFilters } from "@/lib/filters/use-filters";
 import { useInspector } from "@/lib/hooks/useInspector";
 import { useCarryQuery } from "@/lib/hooks/useCarryQuery";
 import { loadPaletteIndex, useLoaded } from "@/lib/client-index";
-import type { EntityKind, PaletteEntry } from "@/lib/data/entities";
+import type { PaletteEntry, PaletteKind } from "@/lib/data/entities";
+import { rankMatches } from "@/lib/search/match";
 import { useUi } from "@/store/ui";
 
 const ENTITY_LIMIT = 6;
 
-const KIND: Record<EntityKind, { label: string; Icon: typeof Landmark; hint: string }> = {
+const KIND: Record<PaletteKind, { label: string; Icon: typeof Landmark; hint: string }> = {
   investor: { label: "Investors", Icon: Landmark, hint: "Investor" },
   company: { label: "Companies", Icon: Building2, hint: "Company, see who backed it" },
   competitor: { label: "Competitors", Icon: Crosshair, hint: "Competitor, see who backed it" },
+  landscape: { label: "Physical AI landscape", Icon: Bot, hint: "Physical AI landscape" },
+  accelerator: { label: "Accelerator programmes", Icon: Rocket, hint: "Accelerator programme" },
 };
+
+const KINDS = ["investor", "company", "competitor", "landscape", "accelerator"] as const;
 
 const itemClass =
   "flex h-9 cursor-pointer items-center gap-3 rounded-md px-3 text-sm text-ink-2 data-[selected=true]:bg-accent-soft data-[selected=true]:text-ink";
@@ -28,20 +44,16 @@ function norm(s: string) {
   return s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "");
 }
 
-/** Names that start with the query first, then names containing it. */
-function searchEntries(entries: readonly PaletteEntry[], query: string, kind: EntityKind) {
-  const q = norm(query.trim());
-  if (q.length < 2) return [];
-  const starts: PaletteEntry[] = [];
-  const contains: PaletteEntry[] = [];
-  for (const e of entries) {
-    if (e.kind !== kind) continue;
-    const n = norm(e.name);
-    if (n.startsWith(q)) starts.push(e);
-    else if (n.includes(q)) contains.push(e);
-    if (starts.length >= ENTITY_LIMIT) break;
-  }
-  return [...starts, ...contains].slice(0, ENTITY_LIMIT);
+/** Best matches of one kind: prefix, then word start, then substring (src/lib/search). */
+function searchEntries(entries: readonly PaletteEntry[], query: string, kind: PaletteKind) {
+  if (norm(query.trim()).length < 2) return [];
+  return rankMatches(
+    entries.filter((e) => e.kind === kind),
+    query,
+    (e) => e.name,
+  )
+    .slice(0, ENTITY_LIMIT)
+    .map((r) => r.item);
 }
 
 function matches(text: string, query: string) {
@@ -89,9 +101,10 @@ export function CommandPalette() {
     close();
     router.push(carry(href));
   };
-  const openEntity = (id: string) => {
+  const openEntry = (e: PaletteEntry) => {
     close();
-    inspect(id);
+    if (e.href) router.push(carry(e.href));
+    else inspect(e.inspect ?? e.id);
   };
 
   const pages = useMemo(
@@ -119,7 +132,7 @@ export function CommandPalette() {
   ].filter((c) => matches(c.label, query));
 
   const entries = index.status === "ready" ? index.data : [];
-  const found = (["investor", "company", "competitor"] as const).map((kind) => ({
+  const found = KINDS.map((kind) => ({
     kind,
     items: searchEntries(entries, query, kind),
   }));
@@ -141,7 +154,7 @@ export function CommandPalette() {
               <Command.Input
                 value={query}
                 onValueChange={setQuery}
-                placeholder="Search investors, companies, pages and actions"
+                placeholder="Search names, pages and actions"
                 className="h-11 w-full bg-transparent text-base outline-none placeholder:text-muted"
               />
             </div>
@@ -166,7 +179,7 @@ export function CommandPalette() {
                           <Command.Item
                             key={e.id}
                             value={e.id}
-                            onSelect={() => openEntity(e.id)}
+                            onSelect={() => openEntry(e)}
                             className={itemClass}
                           >
                             <Icon aria-hidden className="size-4 shrink-0" />

@@ -1,6 +1,7 @@
 "use client";
 
 import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
+import { paintFind } from "@/lib/viz/paintFind";
 import { paintZoom, setZoomTouchAction, ZOOM_SETTLE_MS } from "@/lib/viz/paintZoom";
 import { ZOOM_STEP } from "@/lib/viz/zoom";
 import Link from "next/link";
@@ -60,6 +61,7 @@ import {
   type ThesisRow,
 } from "@/lib/viz/transforms/thesisMap";
 import { ChartTable } from "./ChartTable";
+import { FindForMarks, NO_FIND, sameFind, type MarkFindState } from "./FindForMarks";
 
 const HEIGHT = 560;
 const R = 4.5;
@@ -86,8 +88,15 @@ type Scales = {
 };
 type Ghost = { x: number; y: number; point: MapPoint };
 type Mark = { p: MapPoint; x: number; y: number; opacity: number };
-/** Lets the frame start the layout move from where the marks are now. */
-type CanvasHandle = { beginLayoutChange: () => void };
+/**
+ * Lets the frame start the layout move from where the marks are now, and bring a find match
+ * into view.
+ */
+type CanvasHandle = { beginLayoutChange: () => void; focusPoint: (id: string) => void };
+const pointId = (p: MapPoint) => p.id;
+const pointName = (p: MapPoint) => p.name;
+/** Zoom level a find match is brought to, unless the map is already closer. */
+const FIND_ZOOM = 3;
 
 const decimal = (v: number | null) => (v === null ? UNKNOWN : v.toFixed(2));
 const tick = (v: number) => String(Number(v.toFixed(2)));
@@ -163,6 +172,7 @@ export function ThesisMap({
   const universe = useLoaded("filter-index", loadFilterIndex);
   const reduced = useMediaQuery("(prefers-reduced-motion: reduce)");
   const canvas = useRef<CanvasHandle | null>(null);
+  const [find, setFind] = useState<MarkFindState>(NO_FIND);
 
   const view = useMemo(
     () => thesisView(rows, filters, layout, universe.status === "ready" ? universe.data : null),
@@ -223,6 +233,17 @@ export function ThesisMap({
           : { status: "ready" }
       }
       height={HEIGHT + 40}
+      find={
+        <FindForMarks
+          label="Find investors"
+          items={view.points}
+          getId={pointId}
+          toSearchable={pointName}
+          onFocus={(id) => canvas.current?.focusPoint(id)}
+          onOpen={open}
+          onChange={(next) => setFind((prev) => sameFind(prev, next))}
+        />
+      }
       tableAlternative={
         <ChartTable
           caption={`Thesis map, ${layout === "thesis" ? "thesis layout" : "fit view"}`}
@@ -327,6 +348,8 @@ export function ThesisMap({
         onArea={(a) => void setArea(a)}
         reduced={reduced}
         computedAt={computedAt}
+        found={find.found}
+        findActiveId={find.activeId}
       />
     </ChartFrame>
   );
@@ -344,6 +367,8 @@ function MapCanvas({
   onArea,
   reduced,
   computedAt,
+  found,
+  findActiveId,
 }: {
   ref: Ref<CanvasHandle>;
   points: MapPoint[];
@@ -356,6 +381,10 @@ function MapCanvas({
   onArea: (area: Area) => void;
   reduced: boolean;
   computedAt: string;
+  /** Find matches (null: no query); the rest fade, painted without a render. */
+  found: ReadonlySet<string> | null;
+  /** The active find match: labelled and glowing. */
+  findActiveId: string | null;
 }) {
   const clipId = useId();
   const [width, setWidth] = useState(0);
@@ -409,6 +438,13 @@ function MapCanvas({
     },
     [],
   );
+  // Find: new marks start unpainted, so paint after every render while a query is active.
+  const findPainted = useRef(false);
+  useLayoutEffect(() => {
+    if (!found && !findPainted.current) return;
+    findPainted.current = found !== null;
+    paintFind(svgEl, found, findActiveId);
+  });
 
   useEffect(() => {
     toolRef.current = tool;
@@ -463,6 +499,17 @@ function MapCanvas({
   useImperativeHandle(
     ref,
     () => ({
+      focusPoint: (id: string) => {
+        const p = points.find((q) => q.id === id);
+        const z = zoomRef.current;
+        if (!p || !base || !z || !svgEl) return;
+        const k = Math.max(transformRef.current.k, FIND_ZOOM);
+        const t = zoomIdentity
+          .translate(width / 2 - k * base.x(p.px), HEIGHT / 2 - k * base.y(p.py))
+          .scale(k);
+        const sel = select(svgEl);
+        z.transform((reduced ? sel : sel.transition().duration(300)) as typeof sel, t);
+      },
       beginLayoutChange: () => {
         setHoverId(null);
         if (!reduced) {
@@ -477,7 +524,7 @@ function MapCanvas({
         if (svgEl && zoomRef.current) zoomRef.current.transform(select(svgEl), zoomIdentity);
       },
     }),
-    [reduced, svgEl],
+    [reduced, svgEl, points, base, width],
   );
   useEffect(() => {
     if (!anim) return;
@@ -557,7 +604,7 @@ function MapCanvas({
   const labels = settled
     ? placeLabels(
         [
-          ...[selectedId, hoverId].flatMap((id) => {
+          ...[findActiveId, selectedId, hoverId].flatMap((id) => {
             const m = id ? markById.get(id) : undefined;
             return m
               ? [
@@ -815,7 +862,7 @@ function MapCanvas({
               const color =
                 p.cluster === null ? NEUTRAL : (clusterById.get(p.cluster)?.color ?? NEUTRAL);
               const style = markStyle(color);
-              const active = p.id === hoverId || p.id === selectedId;
+              const active = p.id === hoverId || p.id === selectedId || p.id === findActiveId;
               const r = active ? R_ACTIVE : R;
               const dim = area !== null && !inArea([p.px, p.py], area);
               const common = {
@@ -828,6 +875,7 @@ function MapCanvas({
                 <g
                   key={p.id}
                   data-id={p.id}
+                  data-find-id={p.id}
                   data-zx={x}
                   data-zy={y}
                   opacity={opacity * (dim ? 0.2 : 1)}
@@ -879,6 +927,7 @@ function MapCanvas({
           {labels.map((l) => (
             <text
               key={l.id}
+              data-find-id={l.id}
               data-zx={markById.get(l.id)?.x ?? l.x + plot.x0}
               data-zy={markById.get(l.id)?.y ?? l.y + plot.y0}
               x={l.x + plot.x0}

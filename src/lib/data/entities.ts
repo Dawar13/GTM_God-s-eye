@@ -11,25 +11,42 @@ import type { FilterableInvestor } from "@/lib/filters";
 import { toStrategyRows, type StrategyRow } from "@/lib/viz/transforms/strategy";
 import type { Source } from "@/lib/schema";
 import {
+  getAcceleratorPrograms,
   getCompanies,
   getCompetitors,
   getFitFeatures,
   getFunds,
   getInvestors,
+  getLandscapeCompanies,
   getRounds,
 } from "./index";
 import { toDirectoryRows, toFilterable, type DirectoryRow } from "./directory";
 
 export type EntityKind = "investor" | "company" | "competitor";
 
-export type PaletteEntry = { id: string; name: string; kind: EntityKind };
+/** What the palette lists: entities, plus Physical AI landscape names and accelerator programmes. */
+export type PaletteKind = EntityKind | "landscape" | "accelerator";
+
+/**
+ * One palette name. `inspect` is the record the Inspector opens (an entity id); a name with
+ * no record to inspect carries `href` instead, the page that lists it.
+ */
+export type PaletteEntry = {
+  id: string;
+  name: string;
+  kind: PaletteKind;
+  inspect?: string;
+  href?: string;
+};
 
 export async function getPaletteIndex(): Promise<PaletteEntry[]> {
   "use cache";
-  const [investors, companies, competitors] = await Promise.all([
+  const [investors, companies, competitors, landscape, programmes] = await Promise.all([
     getInvestors(),
     getCompanies(),
     getCompetitors(),
+    getLandscapeCompanies(),
+    getAcceleratorPrograms(),
   ]);
   const competitorIds = new Set(competitors.map((c) => c.id));
   return [
@@ -38,6 +55,17 @@ export async function getPaletteIndex(): Promise<PaletteEntry[]> {
     ...companies
       .filter((c) => !competitorIds.has(c.id))
       .map((c) => ({ id: c.id, name: c.name, kind: "company" as const })),
+    ...landscape.map((l) =>
+      l.matched_id
+        ? { id: l.id, name: l.name, kind: "landscape" as const, inspect: l.matched_id }
+        : { id: l.id, name: l.name, kind: "landscape" as const, href: "/competitors#landscape-title" },
+    ),
+    ...programmes.map((p) => ({
+      id: p.id,
+      name: p.name,
+      kind: "accelerator" as const,
+      href: "/investors/accelerators",
+    })),
   ];
 }
 

@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Panel } from "@/components/ui-atlas";
+import { FindBox, FindMark, Panel } from "@/components/ui-atlas";
 import { formatCount } from "@/lib/format";
 import { useInspector } from "@/lib/hooks/useInspector";
+import { useFindQuery } from "@/lib/search/find-state";
+import { matchRecord } from "@/lib/search/match";
 import {
   liveOverrides,
   OUTREACH_TIERS,
@@ -50,6 +52,11 @@ export function TierBoard({
   const [over, setOver] = useState<OutreachTier | null>(null);
   const [announce, setAnnounce] = useState("");
   const byId = new Map(ranked.map((r) => [r.row.id, r]));
+  // The find box narrows each column by name; tiers and overrides are unchanged.
+  const find = useFindQuery();
+  const q = find.query.trim();
+  const keep = (r: Ranked) => !q || matchRecord(q, r.row.name) !== null;
+  const found = q ? ranked.filter(keep).length : ranked.length;
 
   function move(id: string, tier: OutreachTier) {
     const r = byId.get(id);
@@ -72,16 +79,25 @@ export function TierBoard({
             this browser and marked manual.
           </p>
         </div>
-        <Button variant="outline" size="sm" onClick={onReset} disabled={manual === 0}>
-          Reset manual tiers{manual > 0 ? ` (${formatCount(manual)})` : ""}
-        </Button>
+        <div className="flex flex-wrap items-center gap-2">
+          <FindBox
+            label="Find in tiers"
+            value={find.input}
+            onValueChange={find.setInput}
+            matches={found}
+            total={ranked.length}
+          />
+          <Button variant="outline" size="sm" onClick={onReset} disabled={manual === 0}>
+            Reset manual tiers{manual > 0 ? ` (${formatCount(manual)})` : ""}
+          </Button>
+        </div>
       </header>
       <p className="sr-only" role="status" aria-live="polite">
         {announce}
       </p>
       <div className="grid gap-3 md:grid-cols-3">
         {OUTREACH_TIERS.map((tier) => {
-          const list = board[tier];
+          const list = q ? board[tier].filter(keep) : board[tier];
           const visible = list.slice(0, shown[tier]);
           return (
             <section
@@ -129,7 +145,7 @@ export function TierBoard({
                           className="min-w-0 truncate rounded-sm text-left text-sm font-medium hover:underline focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-hidden"
                           onClick={() => open(r.row.id)}
                         >
-                          {r.row.name}
+                          <FindMark text={r.row.name} query={q} />
                         </button>
                         <span className="text-sm tabular-nums">{r.score.total.toFixed(1)}</span>
                       </div>
@@ -172,7 +188,9 @@ export function TierBoard({
                 </Button>
               )}
               {list.length === 0 && (
-                <p className="px-1 text-sm text-ink-2">Nobody here. Drag a card in.</p>
+                <p className="px-1 text-sm text-ink-2">
+                  {q ? "No name here matches." : "Nobody here. Drag a card in."}
+                </p>
               )}
             </section>
           );

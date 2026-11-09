@@ -2,18 +2,25 @@
 
 import dynamic from "next/dynamic";
 import { useQueryStates } from "nuqs";
-import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+  type RefObject,
+} from "react";
 import { Maximize2, Minimize2 } from "lucide-react";
 import { ZoomControls, handleZoomKey, useZoomReadout } from "@/components/ui-atlas/ZoomControls";
 import {
   ChartFrame,
   Chip,
+  FindBox,
   Legend,
-  SearchBox,
   Segmented,
   Skeleton,
   VizTooltip,
-  type SearchItem,
 } from "@/components/ui-atlas";
 import { Slider } from "@/components/ui/slider";
 import { loadFilterIndex, loadGraph, useLoaded } from "@/lib/client-index";
@@ -30,6 +37,8 @@ import {
   networkUrlOptions,
 } from "@/lib/network/url";
 import { ROUND_STAGES } from "@/lib/schema/enums";
+import { useFindQuery, useFindSteps } from "@/lib/search/find-state";
+import { rankMatches } from "@/lib/search/match";
 import { cn } from "@/lib/utils";
 import { COMPANY_GREY } from "@/lib/viz/palette";
 import {
@@ -41,7 +50,6 @@ import {
   NO_GROUP_COLOR,
   nodeColours,
   nodeRadius,
-  searchNodes,
   stageCounts,
   typeColours,
   viewSources,
@@ -55,7 +63,7 @@ import {
 import { toGraphData } from "@/lib/viz/transforms/networkGraph";
 import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { ChartTable } from "./ChartTable";
-import type { CanvasHandle } from "./NetworkCanvas";
+import type { CanvasFind, CanvasHandle } from "./NetworkCanvas";
 
 const HEIGHT = 620;
 const NEUTRAL = "#8A919C";
@@ -79,6 +87,9 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
   const reduced = useMediaQuery("(prefers-reduced-motion: reduce)");
   const theme = useThemeColors();
   const canvas = useRef<CanvasHandle | null>(null);
+  // Find-box state, shared by reference with the canvas reducers (no render per query).
+  const findRef = useRef<CanvasFind | null>(null);
+  const canvasBoxRef = useRef<HTMLDivElement | null>(null);
   // The readout updates on its own; camera frames never re-render this component.
   const zoomReadout = useZoomReadout();
   const frameRef = useRef<HTMLDivElement | null>(null);
@@ -129,20 +140,15 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
   const unlock = useCallback(() => setLocked(null), []);
 
   // Esc unlocks a locked highlight first; the next Esc reaches the Inspector and closes it.
-  // A filled search box takes Esc first, to clear itself.
+  // A filled find box takes Esc first, to clear itself.
   useEffect(() => {
     if (lockedShown === null) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== "Escape" || e.defaultPrevented) return;
       const t = e.target as HTMLElement | null;
       if (t?.closest?.("textarea, select, [role=dialog]")) return;
-      // A text field with something in it (or an open list) uses this Esc itself.
-      if (
-        t instanceof HTMLInputElement &&
-        (t.value || t.getAttribute("aria-expanded") === "true")
-      ) {
-        return;
-      }
+      // A text field with something in it uses this Esc itself.
+      if (t instanceof HTMLInputElement && t.value) return;
       e.preventDefault();
       setLocked(null);
     };
@@ -162,19 +168,17 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
     else void el.requestFullscreen?.();
   };
 
-  const search = useCallback(
-    (q: string): SearchItem[] =>
-      data && view
-        ? searchNodes(data, view, q).map((v) => ({ id: v.id, label: v.label, hint: kindLabel(v) }))
-        : [],
-    [data, view],
-  );
-  const focusNode = (item: SearchItem) => {
-    const i = data?.index.get(item.id);
-    if (i === undefined) return;
-    canvas.current?.focus(i);
-    select(i);
-  };
+  const findBox =
+    data && view ? (
+      <NetworkFind
+        data={data}
+        view={view}
+        canvas={canvas}
+        findRef={findRef}
+        boxRef={canvasBoxRef}
+        onOpen={select}
+      />
+    ) : null;
 
   const renderTooltip = useCallback(
     (i: number) =>
@@ -245,6 +249,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
       notShown={notShown}
       state={state}
       height={HEIGHT}
+      find={fullscreen ? undefined : findBox}
       action={
         <div className="flex flex-wrap items-center justify-end gap-2">
           <Segmented
@@ -276,14 +281,8 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
           className={cn("flex flex-col gap-3", fullscreen && "h-full overflow-auto bg-panel p-4")}
         >
           <div className="flex flex-wrap items-end gap-x-6 gap-y-3">
-            <SearchBox
-              label="Find a node"
-              placeholder="Find an investor or company"
-              search={search}
-              onSelect={focusNode}
-              emptyText="No shown node matches. Widen the filters or switch mode."
-              className="w-72"
-            />
+            {/* In fullscreen the frame's header is off screen, so the find box moves in here. */}
+            {fullscreen && findBox}
             {extent && yearValue && (
               <div className="flex w-64 flex-col gap-1.5">
                 <span className="flex justify-between text-xs text-ink-2">
@@ -369,6 +368,8 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
               ` ${plural(view.counts.undatedHidden, "undated round")} left out by the date range.`}
           </p>
           <div
+            ref={canvasBoxRef}
+            data-testid="network-canvas"
             tabIndex={0}
             onKeyDown={(e) => {
               if (e.target === e.currentTarget)
@@ -403,6 +404,7 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
                 reduced={reduced}
                 onZoom={zoomReadout.set}
                 renderTooltip={renderTooltip}
+                findRef={findRef}
                 className="relative h-full w-full"
               />
             </div>
@@ -584,6 +586,84 @@ function NetworkLegend({
         maxRadius={nodeRadius(samples[samples.length - 1]!)}
       />
     </div>
+  );
+}
+
+/**
+ * The network's find box. Its own component so typing re-renders only the box: matches go to
+ * the canvas through `findRef` plus one refresh per change. Typing lights matches and fades
+ * the rest; Enter or an arrow centres the camera on the active match; Enter again opens it
+ * (locks its neighbourhood and opens the Inspector). While a query is active the canvas box
+ * carries `data-finding` and `data-find-count`.
+ */
+function NetworkFind({
+  data,
+  view,
+  canvas,
+  findRef,
+  boxRef,
+  onOpen,
+}: {
+  data: GraphData;
+  view: NetworkView;
+  canvas: RefObject<CanvasHandle | null>;
+  findRef: RefObject<CanvasFind | null>;
+  boxRef: RefObject<HTMLDivElement | null>;
+  onOpen: (i: number) => void;
+}) {
+  const { input, setInput, query } = useFindQuery();
+  // Shown nodes, heaviest first, so equal-rank matches put the busiest node first.
+  const shown = useMemo(
+    () => data.nodes.filter((v) => view.node[v.i]).sort((a, b) => b.wd - a.wd),
+    [data, view],
+  );
+  const matches = useMemo(
+    () => rankMatches(shown, query, (v) => v.label).map((m) => m.item),
+    [shown, query],
+  );
+  const steps = useFindSteps(matches, {
+    focus: (v) => canvas.current?.focus(v.i),
+    open: (v) => onOpen(v.i),
+  });
+  const activeI = steps.activeItem?.i ?? null;
+  const applied = query.trim() !== "";
+  const found = useMemo(() => new Set(matches.map((v) => v.i)), [matches]);
+
+  useEffect(() => {
+    findRef.current = applied ? { found, active: activeI } : null;
+    canvas.current?.refresh();
+    const box = boxRef.current;
+    if (!box) return;
+    if (applied) {
+      box.setAttribute("data-finding", "");
+      box.setAttribute("data-find-count", String(found.size));
+    } else {
+      box.removeAttribute("data-finding");
+      box.removeAttribute("data-find-count");
+    }
+  }, [applied, found, activeI, findRef, canvas, boxRef]);
+
+  // Unmounting (fullscreen moves the box) clears the canvas's find state.
+  useEffect(
+    () => () => {
+      findRef.current = null;
+      canvas.current?.refresh();
+      boxRef.current?.removeAttribute("data-finding");
+      boxRef.current?.removeAttribute("data-find-count");
+    },
+    [findRef, canvas, boxRef],
+  );
+
+  return (
+    <FindBox
+      label="Find a node"
+      value={input}
+      onValueChange={setInput}
+      matches={applied ? matches.length : null}
+      active={steps.active}
+      onStep={steps.step}
+      onSubmit={steps.submit}
+    />
   );
 }
 
