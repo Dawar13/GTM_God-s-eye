@@ -32,11 +32,18 @@ LANDSCAPE_MAP_CSV = SEED_DIR / "physical_ai_market_map_2026-11-01.csv"
 LANDSCAPE_YC_CSV = SEED_DIR / "yc_physical_ai_2026-11-01.csv"
 PHYSICAL_AI_CSV = SEED_DIR / "physical_ai_investors_2026-11-01.csv"
 CUSTOMERS_DIR = DATA / "raw" / "customers"
-# Target-customer workbooks (one "Targets" sheet each), keyed by list. Both were prepared
-# 2026-10-15 and handed over with the Phase 0 sources.
-CUSTOMER_WORKBOOKS = {
-    "mumbai_pune": "Industrial_AI_Target_List.xlsx",
-    "bengaluru": "Industrial_AI_Target_List_Bangalore.xlsx",
+# Target-customer workbooks keyed by list: (file, received, ((sheet, archetype fit), ...)).
+# Mumbai–Pune and Bengaluru (prepared 2026-10-15) came with the Phase 0 sources and do not
+# grade fit. Hyderabad (prepared 2026-11-09) holds the high-fit archetypes on "Targets" and
+# the medium and medium-high ones on "Adjacent (medium fit)".
+CUSTOMER_WORKBOOKS: dict[str, tuple[str, str, tuple[tuple[str, str | None], ...]]] = {
+    "mumbai_pune": ("Industrial_AI_Target_List.xlsx", "2026-10-29", (("Targets", None),)),
+    "bengaluru": ("Industrial_AI_Target_List_Bangalore.xlsx", "2026-10-29", (("Targets", None),)),
+    "hyderabad": (
+        "Industrial_AI_Target_List_Hyderabad.xlsx",
+        "2026-11-09",
+        (("Targets", "high"), ("Adjacent (medium fit)", "medium")),
+    ),
 }
 
 SCHEMA_VERSION = 2
@@ -319,7 +326,8 @@ AGNOSTIC_PHRASES = (
 # --- Target customers (data/raw/customers) ------------------------------------------
 # Enums mirror src/lib/schema/enums.ts (tests/test_config.py checks them).
 
-CUSTOMER_LISTS = ("mumbai_pune", "bengaluru")
+CUSTOMER_LISTS = ("mumbai_pune", "bengaluru", "hyderabad")
+CUSTOMER_FITS = ("high", "medium")
 CUSTOMER_REVENUE_BANDS = ("lt_100", "100_500", "500_2000", "2000_10000", "10000_50000", "gt_50000")
 CUSTOMER_TEAM_BANDS = ("lt_500", "500_2000", "2000_10000", "10000_50000", "gt_50000")
 CUSTOMER_SECTORS = (
@@ -329,10 +337,12 @@ CUSTOMER_SECTORS = (
     "metals_machining",
     "machinery",
     "electrical_electronics",
+    "hardware_devices",
     "appliances_durables",
     "chemicals",
     "pharma_life_sciences",
     "packaging_plastics",
+    "cement_building",
     "food_fmcg",
     "textiles",
     "power_utilities",
@@ -360,6 +370,9 @@ CUSTOMER_AREAS = (
     "kolar",
     "hosur",
     "krishnagiri",
+    "hyderabad_metro",
+    "telangana_outer",
+    "andhra_pradesh",
     "gujarat",
 )
 
@@ -410,14 +423,38 @@ CUSTOMER_CATEGORY_SECTORS: dict[str, tuple[str, ...]] = {
     "textiles and apparel": ("textiles",),
     "power and utilities": ("power_utilities",),
     "contract manufacturing": ("contract_manufacturing",),
+    # Hyderabad list: archetype names (the Adjacent sheet's leading number is dropped).
+    "auto and ev components and vehicles": ("automotive", "ev_batteries"),
+    "precision engineering, aerospace and defence suppliers": (
+        "defence_aerospace",
+        "metals_machining",
+    ),
+    "foundries and forgings": ("metals_machining",),
+    "electronics manufacturing (ems, defence, power, solar, batteries)": (
+        "electrical_electronics",
+    ),
+    "specialty and batch chemicals (incl. api intermediates)": (
+        "chemicals",
+        "pharma_life_sciences",
+    ),
+    "hardware oems (drones, space, medical devices)": ("hardware_devices",),
+    "cement and building materials": ("cement_building",),
+    "fmcg, food and beverage": ("food_fmcg",),
+    "pharma formulations, injectables, biologics": ("pharma_life_sciences",),
+    "plastics, rubber and packaging": ("packaging_plastics",),
+    "steel and metals processing": ("metals_machining",),
 }
 
 # Place names the address column uses -> area. Only unambiguous names are listed (Khandala,
 # for one, is both a Satara MIDC and a Pune hill town, so it maps to nothing). Longer names
-# win, so "Navi Mumbai" is not also read as "Mumbai". HQs outside both regions (Chennai,
-# Hyderabad, Kolkata, Noida, Faridabad) are left out: the lists are about plants to visit.
+# win, so "Navi Mumbai" is not also read as "Mumbai". HQs outside the lists' regions (Chennai,
+# Kolkata, Noida, Faridabad, Goa) are left out: the lists are about plants to visit.
 # The Bengaluru list's notes count Bidadi, Hoskote, Devanahalli, Doddaballapur and
-# Narasapura as Bengaluru metro.
+# Narasapura as Bengaluru metro. The Hyderabad list's notes name Hyderabad metro's
+# industrial belt (Balanagar to Medchal) and the Telangana sites within about 150 km
+# (Choutuppal to the Suryapet cement belt); those two groups are its areas, plus Andhra
+# Pradesh. District names that span both (Sangareddy, Rangareddy) and names with a
+# namesake elsewhere (Ibrahimpatnam, Gandhinagar) map to nothing.
 CUSTOMER_PLACES: dict[str, str] = {
     # Mumbai–Pune list
     "mumbai": "mumbai",
@@ -520,4 +557,104 @@ CUSTOMER_PLACES: dict[str, str] = {
     "hosur": "hosur",
     "shoolagiri": "hosur",
     "krishnagiri": "krishnagiri",
+    # Hyderabad list: the city and its industrial belt
+    "hyderabad": "hyderabad_metro",
+    "secunderabad": "hyderabad_metro",
+    "begumpet": "hyderabad_metro",
+    "gachibowli": "hyderabad_metro",
+    "raidurg": "hyderabad_metro",
+    "kondapur": "hyderabad_metro",
+    "banjara hills": "hyderabad_metro",
+    "jubilee hills": "hyderabad_metro",
+    "somajiguda": "hyderabad_metro",
+    "red hills": "hyderabad_metro",
+    "kavuri hills": "hyderabad_metro",
+    "kukatpally": "hyderabad_metro",
+    "balanagar": "hyderabad_metro",
+    "sanathnagar": "hyderabad_metro",
+    "azamabad": "hyderabad_metro",
+    "kanchanbagh": "hyderabad_metro",
+    "lalapet": "hyderabad_metro",
+    "moula ali": "hyderabad_metro",
+    "kushaiguda": "hyderabad_metro",
+    "ecil": "hyderabad_metro",
+    "nacharam": "hyderabad_metro",
+    "mallapur": "hyderabad_metro",
+    "uppal": "hyderabad_metro",
+    "cherlapally": "hyderabad_metro",
+    "jeedimetla": "hyderabad_metro",
+    "quthbullapur": "hyderabad_metro",
+    "petbasheerabad": "hyderabad_metro",
+    "bahadurpally": "hyderabad_metro",
+    "dundigal": "hyderabad_metro",
+    "bachupally": "hyderabad_metro",
+    "gagillapur": "hyderabad_metro",
+    "medchal": "hyderabad_metro",
+    "genome valley": "hyderabad_metro",
+    "turkapally": "hyderabad_metro",
+    "bollaram": "hyderabad_metro",
+    "jinnaram": "hyderabad_metro",
+    "kazipally": "hyderabad_metro",
+    "gaddapotharam": "hyderabad_metro",
+    "bonthapally": "hyderabad_metro",
+    "gummadidala": "hyderabad_metro",
+    "pashamylaram": "hyderabad_metro",
+    "patancheru": "hyderabad_metro",
+    "isnapur": "hyderabad_metro",
+    "rudraram": "hyderabad_metro",
+    "ameenpur": "hyderabad_metro",
+    "sultanpur": "hyderabad_metro",
+    "shamshabad": "hyderabad_metro",
+    "mamidipally": "hyderabad_metro",
+    "adibatla": "hyderabad_metro",
+    "kongara kalan": "hyderabad_metro",
+    "maheshwaram": "hyderabad_metro",
+    "mankhal": "hyderabad_metro",
+    "raviryal": "hyderabad_metro",
+    "fab city": "hyderabad_metro",
+    "hardware park": "hyderabad_metro",
+    "ramachandrapuram": "hyderabad_metro",  # BHEL township; the only one in the list
+    # Hyderabad list: Telangana sites within about 150 km, and their districts
+    "choutuppal": "telangana_outer",
+    "bibinagar": "telangana_outer",
+    "pochampally": "telangana_outer",
+    "bommalaramaram": "telangana_outer",
+    "yadagirigutta": "telangana_outer",
+    "yadadri": "telangana_outer",
+    "chityal": "telangana_outer",
+    "nalgonda": "telangana_outer",
+    "suryapet": "telangana_outer",
+    "mellacheruvu": "telangana_outer",
+    "sadasivpet": "telangana_outer",
+    "zaheerabad": "telangana_outer",
+    "hathnoor": "telangana_outer",
+    "digwal": "telangana_outer",
+    "kandi": "telangana_outer",
+    "yeddumailaram": "telangana_outer",
+    "toopran": "telangana_outer",
+    "kothur": "telangana_outer",
+    "mekaguda": "telangana_outer",
+    "shadnagar": "telangana_outer",
+    "divitipally": "telangana_outer",
+    "mahabubnagar": "telangana_outer",
+    "siddipet": "telangana_outer",
+    "medak": "telangana_outer",
+    "kamareddy": "telangana_outer",
+    "vikarabad": "telangana_outer",
+    "tandur": "telangana_outer",
+    "mancherial": "telangana_outer",
+    "peddapalli": "telangana_outer",
+    "ramagundam": "telangana_outer",
+    "paloncha": "telangana_outer",
+    "nandigama": "telangana_outer",  # Rangareddy, as the list says; not the Andhra town
+    # Hyderabad list: Andhra Pradesh plants of Hyderabad firms
+    "ap": "andhra_pradesh",
+    "andhra pradesh": "andhra_pradesh",
+    "visakhapatnam": "andhra_pradesh",
+    "srikakulam": "andhra_pradesh",
+    "ongole": "andhra_pradesh",
+    "kurnool": "andhra_pradesh",
+    "tuni": "andhra_pradesh",
+    "gujarat": "gujarat",
+    "ankleshwar": "gujarat",
 }

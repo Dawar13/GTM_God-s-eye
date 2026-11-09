@@ -223,7 +223,8 @@
     "CustomerList": {
       "enum": [
         "mumbai_pune",
-        "bengaluru"
+        "bengaluru",
+        "hyderabad"
       ]
     },
     "CustomerRevenueBand": {
@@ -253,10 +254,12 @@
         "metals_machining",
         "machinery",
         "electrical_electronics",
+        "hardware_devices",
         "appliances_durables",
         "chemicals",
         "pharma_life_sciences",
         "packaging_plastics",
+        "cement_building",
         "food_fmcg",
         "textiles",
         "power_utilities",
@@ -286,7 +289,16 @@
         "kolar",
         "hosur",
         "krishnagiri",
+        "hyderabad_metro",
+        "telangana_outer",
+        "andhra_pradesh",
         "gujarat"
+      ]
+    },
+    "CustomerFit": {
+      "enum": [
+        "high",
+        "medium"
       ]
     }
   }

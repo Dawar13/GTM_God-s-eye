@@ -32,7 +32,8 @@
             "type": "string",
             "enum": [
               "mumbai_pune",
-              "bengaluru"
+              "bengaluru",
+              "hyderabad"
             ],
             "description": "The workbook (region) the row comes from"
           },
@@ -59,10 +60,12 @@
                 "metals_machining",
                 "machinery",
                 "electrical_electronics",
+                "hardware_devices",
                 "appliances_durables",
                 "chemicals",
                 "pharma_life_sciences",
                 "packaging_plastics",
+                "cement_building",
                 "food_fmcg",
                 "textiles",
                 "power_utilities",
@@ -108,6 +111,75 @@
             ],
             "description": "Employee band as listed; approximate, and group-wide for large groups"
           },
+          "revenue_as_listed": {
+            "description": "The revenue cell as written, with its qualifier, e.g. '500–2,000 (₹603 Cr FY26)' or 'Not public'",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "team_as_listed": {
+            "description": "The team-size cell as written, with its qualifier",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "size_basis": {
+            "description": "Where the size figures come from, as the list says (e.g. 'Est. (private)'); null if not given",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "archetype": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Archetype number from the Customer Archetypes & ROI Map, where the list gives one"
+          },
+          "archetype_fit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "high: the list's Targets sheet; medium: its Adjacent sheet; null where the list does not grade fit"
+          },
+          "sub_segment": {
+            "description": "Sub-segment as listed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "what_they_make": {
+            "description": "What the company makes, as listed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "why_fit": {
+            "description": "The list's reason it fits and the first wedge to pitch, as written",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "address": {
             "description": "HQ and main plant area, as listed; not a street address",
             "type": [
@@ -141,6 +213,9 @@
                 "kolar",
                 "hosur",
                 "krishnagiri",
+                "hyderabad_metro",
+                "telangana_outer",
+                "andhra_pradesh",
                 "gujarat"
               ]
             },
@@ -236,6 +311,14 @@
           "sectors",
           "revenue_band",
           "team_band",
+          "revenue_as_listed",
+          "team_as_listed",
+          "size_basis",
+          "archetype",
+          "archetype_fit",
+          "sub_segment",
+          "what_they_make",
+          "why_fit",
           "address",
           "areas",
           "also_listed_ids",

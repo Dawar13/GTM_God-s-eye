@@ -62,6 +62,7 @@ const ENUMS = {
   CustomerTeamBand: S.CUSTOMER_TEAM_BANDS,
   CustomerSector: S.CUSTOMER_SECTORS,
   CustomerArea: S.CUSTOMER_AREAS,
+  CustomerFit: S.CUSTOMER_FITS,
 } as const;
 
 /** Nested objects documented once under their own name. */

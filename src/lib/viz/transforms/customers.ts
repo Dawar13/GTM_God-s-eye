@@ -4,6 +4,7 @@
  */
 import {
   CUSTOMER_AREAS,
+  CUSTOMER_LISTS,
   CUSTOMER_REVENUE_BANDS,
   CUSTOMER_SECTORS,
   CUSTOMER_TEAM_BANDS,
@@ -18,6 +19,10 @@ import type { Competitor, TargetCustomer } from "@/lib/schema";
 export const CUSTOMER_TIERS = ["1", "2", "3"] as const;
 export type CustomerTier = (typeof CUSTOMER_TIERS)[number];
 
+/** Archetype fit as a filter value: lists that do not grade fit read "ungraded". */
+export const CUSTOMER_FIT_VALUES = ["high", "medium", "ungraded"] as const;
+export type CustomerFitValue = (typeof CUSTOMER_FIT_VALUES)[number];
+
 export type CustomerRow = {
   id: string;
   name: string;
@@ -27,13 +32,33 @@ export type CustomerRow = {
   sectors: readonly CustomerSector[];
   revenueBand: CustomerRevenueBand | null;
   teamBand: CustomerTeamBand | null;
+  /**
+   * What the cell says beyond its band: the bracketed qualifier ("est.", "₹603 Cr FY26"), or
+   * the whole cell when there is no band ("Not public"). Null when the band says it all.
+   */
+  revenueNote: string | null;
+  teamNote: string | null;
   address: string | null;
   areas: readonly CustomerArea[];
-  /** The same company on the other list. */
+  fit: CustomerFitValue;
+  archetype: string | null;
+  subSegment: string | null;
+  whatTheyMake: string | null;
+  whyFit: string | null;
+  sizeBasis: string | null;
+  /** The same company on another list. */
   alsoListed: readonly { id: string; list: CustomerList }[];
   /** Competitors that publicly name this company (or its group) as a customer. */
   competitors: readonly { id: string; name: string }[];
 };
+
+/** The part of a size cell the band does not carry. */
+export function sizeNote(asListed: string | null, band: string | null): string | null {
+  if (!asListed) return null;
+  if (!band) return asListed;
+  const bracket = /\((.*)\)\s*$/.exec(asListed);
+  return bracket ? bracket[1]!.trim() : null;
+}
 
 export function toCustomerRows(
   customers: readonly TargetCustomer[],
@@ -50,8 +75,16 @@ export function toCustomerRows(
     sectors: c.sectors,
     revenueBand: c.revenue_band,
     teamBand: c.team_band,
+    revenueNote: sizeNote(c.revenue_as_listed, c.revenue_band),
+    teamNote: sizeNote(c.team_as_listed, c.team_band),
     address: c.address,
     areas: c.areas,
+    fit: c.archetype_fit ?? "ungraded",
+    archetype: c.archetype,
+    subSegment: c.sub_segment,
+    whatTheyMake: c.what_they_make,
+    whyFit: c.why_fit,
+    sizeBasis: c.size_basis,
     alsoListed: c.also_listed_ids.flatMap((id) => {
       const list = listOf.get(id);
       return list ? [{ id, list }] : [];
@@ -62,10 +95,15 @@ export function toCustomerRows(
   }));
 }
 
+/** Whether a row has anything for its details panel. */
+export const hasCustomerDetails = (r: CustomerRow) =>
+  Boolean(r.whatTheyMake || r.whyFit || r.subSegment || r.sizeBasis);
+
 /** Within a filter any selected value passes (OR); across filters all must pass (AND). */
 export type CustomerFilters = {
   list: CustomerList | null;
   tier: readonly CustomerTier[];
+  fit: readonly CustomerFitValue[];
   area: readonly CustomerArea[];
   sector: readonly CustomerSector[];
   revenue: readonly CustomerRevenueBand[];
@@ -77,6 +115,7 @@ export type CustomerFilters = {
 export const NO_CUSTOMER_FILTERS: CustomerFilters = {
   list: null,
   tier: [],
+  fit: [],
   area: [],
   sector: [],
   revenue: [],
@@ -91,6 +130,7 @@ export function hasCustomerFilters(f: CustomerFilters): boolean {
     f.list !== null ||
     f.rivals ||
     f.tier.length > 0 ||
+    f.fit.length > 0 ||
     f.area.length > 0 ||
     f.sector.length > 0 ||
     f.revenue.length > 0 ||
@@ -105,6 +145,7 @@ function passes(r: CustomerRow, f: CustomerFilters, skip?: keyof CustomerFilters
   return (
     (skip === "list" || f.list === null || r.list === f.list) &&
     (skip === "tier" || anyOf(f.tier, [r.tier])) &&
+    (skip === "fit" || anyOf(f.fit, [r.fit])) &&
     (skip === "area" || anyOf(f.area, r.areas)) &&
     (skip === "sector" || anyOf(f.sector, r.sectors)) &&
     (skip === "revenue" || anyOf(f.revenue, r.revenueBand ? [r.revenueBand] : [])) &&
@@ -119,6 +160,7 @@ export function filterCustomers(rows: readonly CustomerRow[], f: CustomerFilters
 
 const FACET_VALUES = {
   tier: CUSTOMER_TIERS,
+  fit: CUSTOMER_FIT_VALUES,
   area: CUSTOMER_AREAS,
   sector: CUSTOMER_SECTORS,
   revenue: CUSTOMER_REVENUE_BANDS,
@@ -129,6 +171,8 @@ function valuesOf(r: CustomerRow, facet: CustomerFacet): readonly string[] {
   switch (facet) {
     case "tier":
       return [r.tier];
+    case "fit":
+      return [r.fit];
     case "area":
       return r.areas;
     case "sector":
@@ -166,17 +210,27 @@ export function customerFacetCounts(
   const byList = rows.filter((r) => passes(r, f, "list"));
   out.list = {
     all: byList.length,
-    mumbai_pune: byList.filter((r) => r.list === "mumbai_pune").length,
-    bengaluru: byList.filter((r) => r.list === "bengaluru").length,
+    ...(Object.fromEntries(
+      CUSTOMER_LISTS.map((l) => [l, byList.filter((r) => r.list === l).length]),
+    ) as Record<CustomerList, number>),
   };
   out.rivals = rows.filter((r) => passes(r, { ...f, rivals: true })).length;
   return out;
 }
 
-/** What the find box matches: the name, with category, address and competitor names as aliases. */
+/**
+ * What the find box matches: the name, then (as aliases) category, sub-segment, what the
+ * company makes, address and competitor names.
+ */
 export function customerSearchText(r: CustomerRow) {
   return {
     name: r.name,
-    aliases: [r.category, r.address, ...r.competitors.map((c) => c.name)],
+    aliases: [
+      r.category,
+      r.subSegment,
+      r.whatTheyMake,
+      r.address,
+      ...r.competitors.map((c) => c.name),
+    ],
   };
 }

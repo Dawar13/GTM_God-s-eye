@@ -2,6 +2,7 @@ import { z } from "zod";
 import { CompanyId, idOf, RecordConfidence, Sources } from "./common";
 import {
   CustomerArea,
+  CustomerFit,
   CustomerList,
   CustomerRevenueBand,
   CustomerSector,
@@ -34,6 +35,38 @@ export const TargetCustomer = z
     team_band: CustomerTeamBand.nullable().describe(
       "Employee band as listed; approximate, and group-wide for large groups",
     ),
+    revenue_as_listed: z
+      .string()
+      .nullable()
+      .describe(
+        "The revenue cell as written, with its qualifier, e.g. '500–2,000 (₹603 Cr FY26)' or 'Not public'",
+      ),
+    team_as_listed: z
+      .string()
+      .nullable()
+      .describe("The team-size cell as written, with its qualifier"),
+    size_basis: z
+      .string()
+      .nullable()
+      .describe(
+        "Where the size figures come from, as the list says (e.g. 'Est. (private)'); null if not given",
+      ),
+    archetype: z
+      .string()
+      .regex(/^\d{2}$/)
+      .nullable()
+      .describe(
+        "Archetype number from the Customer Archetypes & ROI Map, where the list gives one",
+      ),
+    archetype_fit: CustomerFit.nullable().describe(
+      "high: the list's Targets sheet; medium: its Adjacent sheet; null where the list does not grade fit",
+    ),
+    sub_segment: z.string().nullable().describe("Sub-segment as listed"),
+    what_they_make: z.string().nullable().describe("What the company makes, as listed"),
+    why_fit: z
+      .string()
+      .nullable()
+      .describe("The list's reason it fits and the first wedge to pitch, as written"),
     address: z
       .string()
       .nullable()

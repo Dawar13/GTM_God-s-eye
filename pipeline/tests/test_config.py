@@ -22,6 +22,7 @@ ENUMS = json.loads((config.SCHEMAS / "enums.schema.json").read_text(encoding="ut
         ("CustomerTeamBand", config.CUSTOMER_TEAM_BANDS),
         ("CustomerSector", config.CUSTOMER_SECTORS),
         ("CustomerArea", config.CUSTOMER_AREAS),
+        ("CustomerFit", config.CUSTOMER_FITS),
     ],
 )
 def test_enum_matches_typescript(ts_name, py_values):

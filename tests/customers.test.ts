@@ -6,7 +6,9 @@ import {
   customerSearchText,
   filterCustomers,
   hasCustomerFilters,
+  hasCustomerDetails,
   NO_CUSTOMER_FILTERS,
+  sizeNote,
   toCustomerRows,
   type CustomerFilters,
 } from "@/lib/viz/transforms/customers";
@@ -99,7 +101,8 @@ describe("customerFacetCounts", () => {
     expect(c.area.navi_mumbai).toBe(1);
     expect(c.area.palghar).toBe(1);
     expect(c.area.nashik).toBe(0);
-    expect(c.list).toEqual({ all: 2, mumbai_pune: 2, bengaluru: 0 });
+    expect(c.list).toEqual({ all: 2, mumbai_pune: 2, bengaluru: 0, hyderabad: 0 });
+    expect(c.fit).toEqual({ high: 0, medium: 0, ungraded: 2 });
     expect(c.rivals).toBe(0);
   });
 });
@@ -141,5 +144,60 @@ describe("carryInto", () => {
     expect(carry("/competitors#landscape-title")).toBe("/competitors?region=india#landscape-title");
     expect(carry("/strategy")).toBe("/strategy?region=india");
     expect(carryInto("")("/strategy")).toBe("/strategy");
+  });
+});
+
+describe("Hyderabad rows", () => {
+  const hyd = toCustomerRows(
+    [
+      targetCustomer({
+        id: "cust_hyd-lokesh-machines",
+        name: "Lokesh Machines",
+        list: "hyderabad",
+        tier: 1,
+        category: "Auto and EV components and vehicles",
+        sectors: ["automotive", "ev_batteries"],
+        revenue_band: "100_500",
+        revenue_as_listed: "100–500 (approx.)",
+        team_band: null,
+        team_as_listed: "Not public",
+        address: "Hyderabad HQ and plants; new defence plant at Toopran",
+        areas: ["hyderabad_metro", "telangana_outer"],
+        archetype: "01",
+        archetype_fit: "high",
+        sub_segment: "Engine components, machine tools, small arms",
+        what_they_make: "CNC and special-purpose machine tools, cylinder blocks and heads",
+        why_fit: "Complaint/8D agent on past OEM complaints",
+        size_basis: "Public, approx.",
+      }),
+      targetCustomer({ id: "cust_hyd-adjacent", list: "hyderabad", archetype_fit: "medium" }),
+    ],
+    [],
+  );
+
+  it("keeps the qualifier a size cell adds, or the whole cell when there is no band", () => {
+    expect(hyd[0]!.revenueNote).toBe("approx.");
+    expect(hyd[0]!.teamNote).toBe("Not public");
+    expect(sizeNote("500–2,000", "500_2000")).toBeNull();
+    expect(sizeNote(null, null)).toBeNull();
+  });
+
+  it("filters by archetype fit, with older lists as not graded", () => {
+    const all = [...hyd, ...rows];
+    const ids = (fit: ("high" | "medium" | "ungraded")[]) =>
+      filterCustomers(all, { ...NO_CUSTOMER_FILTERS, fit }).map((r) => r.id);
+    expect(ids(["high"])).toEqual(["cust_hyd-lokesh-machines"]);
+    expect(ids(["medium"])).toEqual(["cust_hyd-adjacent"]);
+    expect(ids(["ungraded"])).toHaveLength(4);
+  });
+
+  it("opens details only where the list has them, and finds by what they make", () => {
+    expect(hasCustomerDetails(hyd[0]!)).toBe(true);
+    expect(hasCustomerDetails(rows[0]!)).toBe(false);
+    expect(matchRecord("cylinder", customerSearchText(hyd[0]!))).not.toBeNull();
+  });
+
+  it("reads the fit filter from the URL", () => {
+    expect(toCustomerFilters(parseCustomerUrl("?c_fit=high,bogus")).fit).toEqual(["high"]);
   });
 });

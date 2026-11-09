@@ -133,7 +133,15 @@ export const GEOGRAPHY_LABELS: Record<Geography, string> = {
 export const CUSTOMER_LIST_LABELS: Record<CustomerList, string> = {
   mumbai_pune: "Mumbai–Pune",
   bengaluru: "Bengaluru",
+  hyderabad: "Hyderabad",
 };
+
+/** Archetype fit (the Hyderabad list grades it by sheet; the older lists do not). */
+export const CUSTOMER_FIT_LABELS = {
+  high: "High fit",
+  medium: "Adjacent (medium fit)",
+  ungraded: "Not graded",
+} as const;
 
 /** Tiers as the lists define them (the Bengaluru list's notes; the Mumbai–Pune list uses the same tiers). */
 export const CUSTOMER_TIER_LABELS = {
@@ -173,10 +181,12 @@ export const CUSTOMER_SECTOR_LABELS: Record<CustomerSector, string> = {
   metals_machining: "Metals and machining",
   machinery: "Machinery",
   electrical_electronics: "Electrical and electronics",
+  hardware_devices: "Hardware OEMs and devices",
   appliances_durables: "Appliances and durables",
   chemicals: "Chemicals",
   pharma_life_sciences: "Pharma and life sciences",
   packaging_plastics: "Packaging and plastics",
+  cement_building: "Cement and building materials",
   food_fmcg: "Food and FMCG",
   textiles: "Textiles and apparel",
   power_utilities: "Power and utilities",
@@ -205,6 +215,9 @@ export const CUSTOMER_AREA_LABELS: Record<CustomerArea, string> = {
   kolar: "Kolar (KGF)",
   hosur: "Hosur",
   krishnagiri: "Krishnagiri",
+  hyderabad_metro: "Hyderabad metro",
+  telangana_outer: "Rest of Telangana",
+  andhra_pradesh: "Andhra Pradesh",
   gujarat: "Gujarat",
 };
 
@@ -231,5 +244,8 @@ export const CUSTOMER_AREA_STATE: Record<CustomerArea, string> = {
   kolar: "Karnataka",
   hosur: "Tamil Nadu",
   krishnagiri: "Tamil Nadu",
+  hyderabad_metro: "Telangana",
+  telangana_outer: "Telangana",
+  andhra_pradesh: "Andhra Pradesh",
   gujarat: "Gujarat",
 };

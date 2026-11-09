@@ -148,7 +148,7 @@ Put originals in `data/raw/sources/`. Transcribed seeds are in `data/seed/`.
 | one_way_summit_sf_2026_list2 | 24 early-stage VCs at One Way Summit SF (Oct 28–29) incl. Supply Change Capital (physical AI), Mavka (embodied AI), Riceberg, OneSixOne (deep tech) | Seeds; list 1 of 2 missing |
 | ny_venture_summit_2026_30_firms | 30 early-stage firms, NY Venture Summit Nov 18–19 2026 | Seeds + event to attend |
 | li_ajvc_post | ajvc (India): ₹1.5 Cr for 9% pre-seed, AI/defence/consumer | India seed |
-| Industrial_AI_Target_List*.xlsx | **Customer** target lists (Mumbai/Pune, Bangalore). Not investors | `target_customers` dataset and the Customers page (2026-11-09); not used for VC data |
+| Industrial_AI_Target_List*.xlsx | **Customer** target lists (Mumbai/Pune, Bangalore, Hyderabad). Not investors | `target_customers` dataset and the Customers page (2026-11-09); not used for VC data |
 | incoming spreadsheets | Two more investor spreadsheets to come | Drop in `data/raw/incoming/`; ingest in Phase 1 |
 
 ---

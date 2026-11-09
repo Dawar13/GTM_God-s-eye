@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import { useQueryStates } from "nuqs";
-import { ChevronDown, ChevronUp, RotateCcw } from "lucide-react";
+import { ChevronDown, ChevronRight, ChevronUp, RotateCcw } from "lucide-react";
 import { Chip, FindBox, FindMark, Panel, Segmented } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -11,6 +11,7 @@ import { formatCount, UNKNOWN } from "@/lib/format";
 import {
   CUSTOMER_AREA_LABELS,
   CUSTOMER_AREA_STATE,
+  CUSTOMER_FIT_LABELS,
   CUSTOMER_LIST_LABELS,
   CUSTOMER_REVENUE_LABELS,
   CUSTOMER_SECTOR_LABELS,
@@ -31,13 +32,56 @@ import { useFindQuery } from "@/lib/search/find-state";
 import { matchRecord } from "@/lib/search/match";
 import { cn } from "@/lib/utils";
 import {
+  CUSTOMER_FIT_VALUES,
   CUSTOMER_TIERS,
   customerFacetCounts,
   customerSearchText,
   filterCustomers,
+  hasCustomerDetails,
   hasCustomerFilters,
   type CustomerRow,
 } from "@/lib/viz/transforms/customers";
+
+/** A size cell: the band, and under it what the list adds ("est.", "₹603 Cr FY26", "Not public"). */
+function SizeCell({ band, note }: { band: string | null; note: string | null }) {
+  if (!band) return <span className="text-muted">{note ?? UNKNOWN}</span>;
+  return (
+    <>
+      {band}
+      {note && <span className="block text-xs text-muted">{note}</span>}
+    </>
+  );
+}
+
+/** The list's own words on a company, under its row. */
+function Details({ r, q }: { r: CustomerRow; q: string }) {
+  const items: [string, string | null][] = [
+    ["What they make", r.whatTheyMake],
+    ["Why a fit, first wedge", r.whyFit],
+    ["Sub-segment", r.subSegment],
+    [
+      "Archetype",
+      r.archetype
+        ? `${r.archetype} · ${r.category}${r.fit !== "ungraded" ? ` · ${CUSTOMER_FIT_LABELS[r.fit]}` : ""}`
+        : null,
+    ],
+    ["Size basis", r.sizeBasis],
+  ];
+  return (
+    <dl className="grid gap-x-6 gap-y-2 py-1 sm:grid-cols-[10rem_1fr]">
+      {items
+        .filter(([, v]) => v)
+        .map(([k, v]) => (
+          <Fragment key={k}>
+            <dt className="text-xs text-ink-2">{k}</dt>
+            <dd className="max-w-prose text-sm">
+              <FindMark text={v} query={q} />
+            </dd>
+          </Fragment>
+        ))}
+    </dl>
+  );
+}
 
 type Option = { value: string; label: string; group?: string };
 
@@ -142,6 +186,11 @@ const TEAM_OPTIONS: Option[] = CUSTOMER_TEAM_BANDS.map((b) => ({
   label: CUSTOMER_TEAM_LABELS[b],
 }));
 
+const FIT_OPTIONS: Option[] = CUSTOMER_FIT_VALUES.map((f) => ({
+  value: f,
+  label: CUSTOMER_FIT_LABELS[f],
+}));
+
 type SortKey = "name" | "tier" | "revenue" | "team" | "location" | "rivals";
 type Sort = { key: SortKey; dir: "asc" | "desc" };
 
@@ -194,6 +243,13 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
   const find = useFindQuery(undefined, url.q);
   const q = find.query.trim();
   const [sort, setSort] = useState<Sort>({ key: "tier", dir: "asc" });
+  const [expanded, setExpanded] = useState<ReadonlySet<string>>(() => new Set());
+  const toggleRow = (id: string) =>
+    setExpanded((s) => {
+      const next = new Set(s);
+      if (!next.delete(id)) next.add(id);
+      return next;
+    });
 
   // The find text lives in the URL (`?q=`) so a link can open the page on a company. `written`
   // is the last value both sides agree on, so neither effect echoes the other's change.
@@ -225,6 +281,7 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
     void setUrl({
       c_list: null,
       c_tier: [],
+      c_fit: [],
       c_area: [],
       c_sector: [],
       c_rev: [],
@@ -246,8 +303,8 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
             {formatCount(rows.length)} target customers
           </h3>
           <p className="max-w-prose text-sm text-ink-2">
-            Your two lists in one table. Filter by list, tier, area, industry and size; competitor
-            names open the Inspector.
+            Your three lists in one table. Filter by list, tier, fit, area, industry and size; open
+            a row for what the company makes and why it fits.
           </p>
         </div>
         <FindBox
@@ -263,6 +320,7 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
       <div role="group" aria-label="Customer filters" className="flex flex-wrap items-center gap-2">
         <Segmented
           label="List"
+          className="max-w-full overflow-x-auto"
           value={filters.list ?? "all"}
           onChange={(v) => set({ c_list: v === "all" ? null : v })}
           options={[
@@ -291,6 +349,14 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
           />
         ))}
         <span aria-hidden className="mx-1 hidden h-5 w-px bg-rule sm:block" />
+        <FacetMenu
+          label="Fit"
+          options={FIT_OPTIONS}
+          selected={filters.fit}
+          counts={counts.fit}
+          onChange={(v) => set({ c_fit: v as (typeof filters.fit)[number][] })}
+          note="The Hyderabad list grades archetype fit: its Targets sheet holds the high-fit archetypes, its Adjacent sheet the medium ones, to approach after references. The other lists are not graded."
+        />
         <FacetMenu
           label="Area"
           options={AREA_OPTIONS}
@@ -389,64 +455,119 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
             </tr>
           </thead>
           <tbody>
-            {shown.map((r) => (
-              <tr key={r.id} className="border-t border-rule align-top hover:bg-panel-sunk/60">
-                <td className="min-w-48 p-2">
-                  <span className="font-medium">
-                    <FindMark text={r.name} query={q} />
-                  </span>
-                  <span className="block text-xs text-ink-2">
-                    {CUSTOMER_LIST_LABELS[r.list]} list
-                    {r.alsoListed.length > 0 &&
-                      ` · also on the ${r.alsoListed.map((a) => otherList(a.list)).join(", ")} list`}
-                  </span>
-                  <span className="block text-xs text-ink-2 md:hidden">
-                    <FindMark text={r.category} query={q} />
-                  </span>
-                </td>
-                <td className="p-2 whitespace-nowrap">
-                  <span
-                    title={CUSTOMER_TIER_NOTES[r.tier]}
+            {shown.map((r) => {
+              const detail = hasCustomerDetails(r);
+              const isOpen = detail && expanded.has(r.id);
+              return (
+                <Fragment key={r.id}>
+                  <tr
                     className={cn(
-                      "inline-flex h-5 items-center rounded px-1.5 text-xs",
-                      r.tier === "1" ? "bg-accent-soft text-ink" : "bg-panel-sunk text-ink-2",
+                      "border-t border-rule align-top hover:bg-panel-sunk/60",
+                      detail && "cursor-pointer",
+                      isOpen && "bg-panel-sunk/60",
                     )}
+                    onClick={
+                      detail
+                        ? (e) => {
+                            // Competitor buttons keep their own action.
+                            if ((e.target as HTMLElement).closest("button:not([data-row-toggle])"))
+                              return;
+                            toggleRow(r.id);
+                          }
+                        : undefined
+                    }
                   >
-                    {CUSTOMER_TIER_LABELS[r.tier]}
-                  </span>
-                </td>
-                <td className="hidden max-w-60 p-2 text-ink-2 md:table-cell">
-                  <FindMark text={r.category} query={q} />
-                </td>
-                <td className="p-2 text-right font-condensed whitespace-nowrap tabular-nums">
-                  {r.revenueBand ? CUSTOMER_REVENUE_LABELS[r.revenueBand] : UNKNOWN}
-                </td>
-                <td className="p-2 text-right font-condensed whitespace-nowrap tabular-nums">
-                  {r.teamBand ? CUSTOMER_TEAM_LABELS[r.teamBand] : UNKNOWN}
-                </td>
-                <td className="min-w-48 p-2">
-                  <FindMark text={r.address ?? UNKNOWN} query={q} />
-                </td>
-                <td className="p-2">
-                  {r.competitors.length === 0 ? (
-                    <span className="text-muted">None named</span>
-                  ) : (
-                    <span className="flex flex-wrap gap-1">
-                      {r.competitors.map((c) => (
-                        <button
-                          key={c.id}
-                          type="button"
-                          onClick={() => open(c.id)}
-                          className="rounded border border-rule px-1.5 text-xs whitespace-nowrap text-accent hover:bg-accent-soft"
-                        >
-                          <FindMark text={c.name} query={q} />
-                        </button>
-                      ))}
-                    </span>
+                    <td className="min-w-48 p-2">
+                      <span className="flex items-start gap-1">
+                        {detail && (
+                          <button
+                            type="button"
+                            data-row-toggle
+                            aria-expanded={isOpen}
+                            aria-label={`${isOpen ? "Hide" : "Show"} details for ${r.name}`}
+                            className="mt-0.5 -ml-1 rounded-sm text-ink-2 hover:text-ink"
+                          >
+                            <ChevronRight
+                              aria-hidden
+                              className={cn(
+                                "size-4 transition-transform duration-(--dur-open)",
+                                isOpen && "rotate-90",
+                              )}
+                            />
+                          </button>
+                        )}
+                        <span className="font-medium">
+                          <FindMark text={r.name} query={q} />
+                        </span>
+                      </span>
+                      <span className="block text-xs text-ink-2">
+                        {CUSTOMER_LIST_LABELS[r.list]} list
+                        {r.fit === "medium" && ` · ${CUSTOMER_FIT_LABELS.medium}`}
+                        {r.alsoListed.length > 0 &&
+                          ` · also on the ${[...new Set(r.alsoListed.map((a) => otherList(a.list)))].join(", ")} list`}
+                      </span>
+                      <span className="block text-xs text-ink-2 md:hidden">
+                        <FindMark text={r.category} query={q} />
+                      </span>
+                    </td>
+                    <td className="p-2 whitespace-nowrap">
+                      <span
+                        title={CUSTOMER_TIER_NOTES[r.tier]}
+                        className={cn(
+                          "inline-flex h-5 items-center rounded px-1.5 text-xs",
+                          r.tier === "1" ? "bg-accent-soft text-ink" : "bg-panel-sunk text-ink-2",
+                        )}
+                      >
+                        {CUSTOMER_TIER_LABELS[r.tier]}
+                      </span>
+                    </td>
+                    <td className="hidden max-w-60 p-2 text-ink-2 md:table-cell">
+                      <FindMark text={r.category} query={q} />
+                    </td>
+                    <td className="p-2 text-right font-condensed whitespace-nowrap tabular-nums">
+                      <SizeCell
+                        band={r.revenueBand ? CUSTOMER_REVENUE_LABELS[r.revenueBand] : null}
+                        note={r.revenueNote}
+                      />
+                    </td>
+                    <td className="p-2 text-right font-condensed whitespace-nowrap tabular-nums">
+                      <SizeCell
+                        band={r.teamBand ? CUSTOMER_TEAM_LABELS[r.teamBand] : null}
+                        note={r.teamNote}
+                      />
+                    </td>
+                    <td className="min-w-48 p-2">
+                      <FindMark text={r.address ?? UNKNOWN} query={q} />
+                    </td>
+                    <td className="p-2">
+                      {r.competitors.length === 0 ? (
+                        <span className="text-muted">None named</span>
+                      ) : (
+                        <span className="flex flex-wrap gap-1">
+                          {r.competitors.map((c) => (
+                            <button
+                              key={c.id}
+                              type="button"
+                              onClick={() => open(c.id)}
+                              className="rounded border border-rule px-1.5 text-xs whitespace-nowrap text-accent hover:bg-accent-soft"
+                            >
+                              <FindMark text={c.name} query={q} />
+                            </button>
+                          ))}
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                  {isOpen && (
+                    <tr className="bg-panel-sunk/60">
+                      <td colSpan={COLUMNS.length} className="px-8 pt-0 pb-3">
+                        <Details r={r} q={q} />
+                      </td>
+                    </tr>
                   )}
-                </td>
-              </tr>
-            ))}
+                </Fragment>
+              );
+            })}
           </tbody>
         </table>
         {shown.length === 0 && (
@@ -467,11 +588,15 @@ export function CustomersView({ rows }: { rows: readonly CustomerRow[] }) {
         </p>
         <p>
           Sources: Industrial_AI_Target_List.xlsx (Mumbai–Pune) and
-          Industrial_AI_Target_List_Bangalore.xlsx, both prepared 15 October 2026. Their notes say
-          revenue and team bands are approximate and not looked up per company, large groups show
-          group figures, and addresses are HQ and main plant areas to verify before a visit.
-          “Competitors there” matches a competitor&rsquo;s public customer list by name; a group
-          name such as Bosch or Siemens counts, so it may be another unit or country.
+          Industrial_AI_Target_List_Bangalore.xlsx, both prepared 15 October 2026, and
+          Industrial_AI_Target_List_Hyderabad.xlsx, prepared 9 November 2026. Their notes say sizes
+          are approximate or estimated (the Hyderabad list gives the basis per company, open a row),
+          large groups show group figures, and addresses are HQ and main plant areas to verify
+          before a visit; Hyderabad rows from the pollution-board or trade-directory lists confirm a
+          plant existed, not its current status. For pharma and API plants under GMP, the Hyderabad
+          notes advise draft-only agents on past records, outside the validated system. “Competitors
+          there” matches a competitor&rsquo;s public customer list by name; a group name such as
+          Bosch or Siemens counts, so it may be another unit or country.
         </p>
       </footer>
     </Panel>

@@ -12,7 +12,7 @@ export default async function CustomersPage() {
   return (
     <PageCanvas
       title="Customers"
-      description="Industrial companies to sell to in India, from your Mumbai–Pune and Bengaluru target lists. Investor filters don't apply here."
+      description="Industrial companies to sell to in India, from your Mumbai–Pune, Bengaluru and Hyderabad target lists. Investor filters don't apply here."
     >
       <CustomersView rows={rows} />
     </PageCanvas>

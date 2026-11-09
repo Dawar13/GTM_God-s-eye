@@ -185,7 +185,7 @@ export const JURISDICTIONS = ["india", "us", "us_delaware"] as const;
 export const Jurisdiction = z.enum(JURISDICTIONS);
 
 /** The user's target-customer workbooks in data/raw/customers/, one per region. */
-export const CUSTOMER_LISTS = ["mumbai_pune", "bengaluru"] as const;
+export const CUSTOMER_LISTS = ["mumbai_pune", "bengaluru", "hyderabad"] as const;
 export const CustomerList = z.enum(CUSTOMER_LISTS);
 export type CustomerList = z.infer<typeof CustomerList>;
 
@@ -223,10 +223,12 @@ export const CUSTOMER_SECTORS = [
   "metals_machining",
   "machinery",
   "electrical_electronics",
+  "hardware_devices",
   "appliances_durables",
   "chemicals",
   "pharma_life_sciences",
   "packaging_plastics",
+  "cement_building",
   "food_fmcg",
   "textiles",
   "power_utilities",
@@ -262,7 +264,18 @@ export const CUSTOMER_AREAS = [
   "kolar",
   "hosur",
   "krishnagiri",
+  "hyderabad_metro",
+  "telangana_outer",
+  "andhra_pradesh",
   "gujarat",
 ] as const;
 export const CustomerArea = z.enum(CUSTOMER_AREAS);
 export type CustomerArea = z.infer<typeof CustomerArea>;
+
+/**
+ * How well a company's archetype fits, where a list grades it (the Hyderabad list: its Targets
+ * sheet holds the high-fit archetypes, its Adjacent sheet the medium and medium-high ones).
+ */
+export const CUSTOMER_FITS = ["high", "medium"] as const;
+export const CustomerFit = z.enum(CUSTOMER_FITS);
+export type CustomerFit = z.infer<typeof CustomerFit>;
