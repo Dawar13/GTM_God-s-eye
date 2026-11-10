@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-09T16:44:32+00:00",
+  "generated_at": "2026-11-10T04:41:53+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -3527,6 +3527,171 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "Self-improving AI agents sit on a firm's existing systems, fuse their data with Noetive's multimodal sensing pods into a live model of the operation, and run core planning work: dynamic production planning (manufacturing), manifest consolidation (logistics) and plan-versus-site tracking (construction).",
+      "pricing": null
+    },
+    {
+      "id": "co_nominal",
+      "name": "Nominal",
+      "website": "https://nominal.io",
+      "hq_country": "US",
+      "founded_year": 2022,
+      "sector": "hardware_deeptech",
+      "sector_classified_by": "model",
+      "layer": "design_intent",
+      "description_short": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+      "total_raised_usd": 422500000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://nominalinc.substack.com/p/nominal-raises-75m-series-b",
+          "title": "Nominal raises $75M Series B",
+          "publisher": "Nominal (company Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://haystack.vc/about-us",
+          "title": "Haystack | About Us",
+          "publisher": "Haystack",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://pulse2.com/nominal-75-million-raised-for-real-time-test-stack-for-physical-systems/amp/",
+          "title": "Nominal: $75 Million Raised For Real-Time Test Stack For Physical Systems",
+          "publisher": "Pulse 2.0",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/03/05/hardware-testing-startup-nominal-raises-80m-1b-valuation/",
+          "title": "Hardware testing startup Nominal raises $80M at $1B valuation",
+          "publisher": "SiliconANGLE",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://aashay.substack.com/p/haystack-new-funds-new-era",
+          "title": "Haystack: New Funds, New Era",
+          "publisher": "Aashay Sanghvi (Substack)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://semilshah.com/2024/04/22/the-story-behind-haystacks-investment-in-nominal/",
+          "title": "The Story Behind Haystack's Investment in Nominal",
+          "publisher": "Semil Shah (semilshah.com)",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.silicon.co.uk/press-release/nominal-emerges-from-stealth-with-backing-from-general-catalyst-lux-capital-founders-fund-for-navigating-mission-critical-data-analytics",
+          "title": "Nominal Emerges From Stealth With Backing From General Catalyst, Lux Capital, Founders Fund for Navigating Mission-Critical Data Analytics",
+          "publisher": "Silicon UK (press release)",
+          "retrieved_at": "2026-10-30",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://pax.vc",
+          "title": "Pax",
+          "publisher": "Pax",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io",
+          "title": "Nominal | The hardware intelligence platform",
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io/blog/series-c",
+          "title": "We raised $240M to build the intelligence platform for hardware",
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io/about",
+          "title": null,
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io/customers",
+          "title": null,
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/05/hardware-testing-startup-nominal-hits-1b-valuation-raises-155m-in-10-months/",
+          "title": "Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+          "title": "AI hardware startup Nominal triples valuation to $3B in 8 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.tectonicdefense.com/?p=24635",
+          "title": "Nominal Secures $71M to Expand Across Collaborative Combat Aircraft Testing",
+          "publisher": "Tectonic Defense",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          8
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Test and evaluation data for hardware programs: ingest, storage, search and video sync of telemetry; live monitoring of streaming channels during tests; procedures, monitors, trending and reports; the Analyst AI agent and investigations; MCP, API and SDKs (Python, MATLAB, LabVIEW, Rust and others) for custom tools, plus connected control of test hardware. Deploys in Nominal cloud, BYOC, AWS GovCloud, on-premises, air-gapped or disconnected; ITAR (U.S. only), NIST SP 800-171 and SOC 2 Type II.",
+      "size_class": "from_100m_to_1b",
+      "founders": [
+        "Cameron McCord",
+        "Bryce Strauss",
+        "Jason Hoch"
+      ],
+      "named_customers": [
+        "Anduril",
+        "Lockheed Martin",
+        "AV (AeroVironment)",
+        "Lux Aeterna",
+        "Antares",
+        "Mach Industries",
+        "Scout AI",
+        "Forterra",
+        "Hermeus",
+        "VATN",
+        "Odys",
+        "REGENT",
+        "Vital Lyfe",
+        "Wisk Aero",
+        "Shinkei",
+        "Pratt Miller",
+        "HII",
+        "Chariot Defense",
+        "Valinor Enterprises",
+        "Helsing",
+        "Muon Space",
+        "Varda Space",
+        "Radiant Nuclear",
+        "U.S. Air Force"
+      ],
+      "headcount_est": null,
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Data platform where hardware teams capture test telemetry and context, then analyse it live, run procedures, monitors, trending and reports, and build custom tools via SDKs, MCP and API. The Analyst AI agent helps engineers investigate data. Deploys in Nominal's cloud, customer cloud, GovCloud, on-premises or air-gapped.",
       "pricing": null
     },
     {

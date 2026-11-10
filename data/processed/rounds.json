@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-09T16:44:32+00:00",
+  "generated_at": "2026-11-10T04:41:53+00:00",
   "records": [
     {
       "id": "rnd_1849-bio_2024-12_pre_seed",
@@ -38413,10 +38413,11 @@
       "lead_investor_ids": [
         "inv_general-catalyst"
       ],
-      "participant_investor_ids": [],
+      "participant_investor_ids": [
+        "inv_haystack"
+      ],
       "unspecified_investor_ids": [
         "inv_box-group",
-        "inv_haystack",
         "inv_human-capital",
         "inv_overmatch-ventures",
         "inv_xyz-venture-capital"
@@ -38485,21 +38486,20 @@
         "inv_sequoia-capital"
       ],
       "participant_investor_ids": [
-        "inv_founders-fund",
-        "inv_general-catalyst",
-        "inv_lightspeed-venture-partners",
-        "inv_lux-capital"
-      ],
-      "unspecified_investor_ids": [
         "inv_audacious-ventures",
         "inv_avenir",
+        "inv_founders-fund",
+        "inv_general-catalyst",
         "inv_haystack",
+        "inv_lightspeed-venture-partners",
+        "inv_lux-capital",
         "inv_overmatch-ventures",
         "inv_pax",
         "inv_psp-partners",
         "inv_red-glass-ventures",
         "inv_xyz-venture-capital"
       ],
+      "unspecified_investor_ids": [],
       "contested": false,
       "notes": null,
       "sources": [
@@ -38544,6 +38544,13 @@
           "publisher": "Pax",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/05/hardware-testing-startup-nominal-hits-1b-valuation-raises-155m-in-10-months/",
+          "title": "Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
@@ -38553,7 +38560,8 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "investors": [
           0,
@@ -38561,7 +38569,8 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ]
       },
       "confidence": "high"
@@ -38598,17 +38607,151 @@
           "publisher": "SiliconANGLE",
           "retrieved_at": "2026-10-30",
           "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/05/hardware-testing-startup-nominal-hits-1b-valuation-raises-155m-in-10-months/",
+          "title": "Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+          "title": "AI hardware startup Nominal triples valuation to $3B in 8 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
         }
       ],
       "field_sources": {
         "amount_usd": [
-          0
+          0,
+          1,
+          2
         ],
         "investors": [
-          0
+          0,
+          1,
+          2
         ]
       },
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_nominal_2026-11_series_c_plus",
+      "company_id": "co_nominal",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "stage": "series_c_plus",
+      "stage_raw": "Series C at a $3B valuation, led by Lightspeed Venture Partners and co-led by Insight Partners",
+      "amount_usd": 240000000,
+      "amount_original": 240000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": 3000000000,
+      "lead_investor_ids": [
+        "inv_insight-partners",
+        "inv_lightspeed-venture-partners"
+      ],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://nominal.io/blog/series-c",
+          "title": "We raised $240M to build the intelligence platform for hardware",
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io",
+          "title": "Nominal | The hardware intelligence platform",
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://nominal.io/about",
+          "title": null,
+          "publisher": "Nominal",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+          "title": "AI hardware startup Nominal triples valuation to $3B in 8 months",
+          "publisher": "TechCrunch",
+          "retrieved_at": "2026-11-10",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_nominal_undated_seed",
+      "company_id": "co_nominal",
+      "date": null,
+      "date_precision": null,
+      "stage": "seed",
+      "stage_raw": "Seed funding led by Lux Capital (disclosed in the April 2024 stealth-exit release; date of the round not given)",
+      "amount_usd": 7500000,
+      "amount_original": 7500000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_lux-capital"
+      ],
+      "participant_investor_ids": [
+        "inv_founders-fund",
+        "inv_haystack"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://www.silicon.co.uk/press-release/nominal-emerges-from-stealth-with-backing-from-general-catalyst-lux-capital-founders-fund-for-navigating-mission-critical-data-analytics",
+          "title": "Nominal Emerges From Stealth With Backing From General Catalyst, Lux Capital, Founders Fund, for Navigating Mission-Critical Data Analytics",
+          "publisher": "Silicon UK (Nominal release via Business Wire)",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        },
+        {
+          "url": "https://semilshah.com/2024/04/22/the-story-behind-haystacks-investment-in-nominal/",
+          "title": "The Story Behind Haystack's Investment in Nominal",
+          "publisher": "Haystack (Semil Shah)",
+          "retrieved_at": "2026-11-10",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1
+        ],
+        "investors": [
+          0,
+          1
+        ]
+      },
+      "confidence": "high"
     },
     {
       "id": "rnd_nopan_2026-07_undisclosed",

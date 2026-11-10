@@ -1,0 +1,230 @@
+{
+  "key": "nominal",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-10",
+  "identity_check": "Confirmed as Nominal, Inc. at nominal.io (page title 'Nominal | The hardware intelligence platform'; footer 'Since 2022'), a data platform with AI agents for hardware test and evaluation. Its about page names co-founders Cameron McCord (CEO), Bryce Strauss and Jason Hoch, matching the 2024 stealth-exit release and Haystack's post. HQ city is unsettled: TechCrunch (2026-03-05) and SiliconANGLE call it Los Angeles-based, TechCrunch (2026-11-09) says Austin, Texas, and the about page lists offices in Los Angeles, New York, Austin, Seattle, Washington, D.C. and London without naming an HQ; the country is US either way. Not any of the unrelated companies that use the name 'Nominal' (for example finance or accounting software startups); confirmed by the nominal.io domain, the hardware test-data product and the named founders. Category adjacent, layer design_intent: Nominal sells a data platform plus AI agents ('Analyst') to hardware engineering teams for test and evaluation (telemetry, test stands, flight tests). That overlaps the hardware-team tooling half of Utopian Autonomy (requirements / design-intent tooling for hardware teams) but not its factory-floor agents for plant staff, the same reasoning that filed Vinci (simulation) as adjacent / design_intent. The two 2026 raises are separate rounds: an $80M Series B extension at a $1B valuation led by Founders Fund (March) and a $240M Series C at a $3B valuation led by Lightspeed Venture Partners and co-led by Insight Partners (November). The $71.2M AFWERX STRATFI award of October 2026 is a government contract, not equity, and is not recorded as a round.",
+  "pages": [
+    { "url": "https://nominal.io", "title": "Nominal | The hardware intelligence platform", "publisher": "Nominal", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://nominal.io/blog/series-c", "title": "We raised $240M to build the intelligence platform for hardware", "publisher": "Nominal", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://nominal.io/about", "title": null, "publisher": "Nominal", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://nominal.io/customers", "title": null, "publisher": "Nominal", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://nominalinc.substack.com/p/nominal-raises-75m-series-b", "title": "Nominal raises $75M Series B", "publisher": "Nominal (Substack)", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://www.silicon.co.uk/press-release/nominal-emerges-from-stealth-with-backing-from-general-catalyst-lux-capital-founders-fund-for-navigating-mission-critical-data-analytics", "title": "Nominal Emerges From Stealth With Backing From General Catalyst, Lux Capital, Founders Fund, for Navigating Mission-Critical Data Analytics", "publisher": "Silicon UK (Nominal release via Business Wire)", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://semilshah.com/2024/04/22/the-story-behind-haystacks-investment-in-nominal/", "title": "The Story Behind Haystack's Investment in Nominal", "publisher": "Haystack (Semil Shah)", "retrieved_at": "2026-11-10", "kind": "primary" },
+    { "url": "https://pulse2.com/nominal-75-million-raised-for-real-time-test-stack-for-physical-systems/amp/", "title": "Nominal: $75 Million Raised For Real-Time Test Stack For Physical Systems", "publisher": "Pulse 2.0", "retrieved_at": "2026-11-10", "kind": "press" },
+    { "url": "https://siliconangle.com/2026/03/05/hardware-testing-startup-nominal-raises-80m-1b-valuation/", "title": "Hardware testing startup Nominal raises $80M at $1B valuation", "publisher": "SiliconANGLE", "retrieved_at": "2026-11-10", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/03/05/hardware-testing-startup-nominal-hits-1b-valuation-raises-155m-in-10-months/", "title": "Hardware testing startup Nominal hits $1B valuation, raises $155M in 10 months", "publisher": "TechCrunch", "retrieved_at": "2026-11-10", "kind": "press" },
+    { "url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/", "title": "AI hardware startup Nominal triples valuation to $3B in 8 months", "publisher": "TechCrunch", "retrieved_at": "2026-11-10", "kind": "press" },
+    { "url": "https://www.tectonicdefense.com/?p=24635", "title": "Nominal Secures $71M to Expand Across Collaborative Combat Aircraft Testing", "publisher": "Tectonic Defense", "retrieved_at": "2026-11-10", "kind": "press" }
+  ],
+  "company": {
+    "name": "Nominal",
+    "website": "https://nominal.io",
+    "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+    "hq_country": "US",
+    "founded_year": 2022,
+    "sector": "hardware_deeptech",
+    "sector_classified_by": "model",
+    "layer": "design_intent"
+  },
+  "category": "adjacent",
+  "layer": "design_intent",
+  "layer_detail": "Test and evaluation data for hardware programs: ingest, storage, search and video sync of telemetry; live monitoring of streaming channels during tests; procedures, monitors, trending and reports; the Analyst AI agent and investigations; MCP, API and SDKs (Python, MATLAB, LabVIEW, Rust and others) for custom tools, plus connected control of test hardware. Deploys in Nominal cloud, BYOC, AWS GovCloud, on-premises, air-gapped or disconnected; ITAR (U.S. only), NIST SP 800-171 and SOC 2 Type II.",
+  "founders": ["Cameron McCord", "Bryce Strauss", "Jason Hoch"],
+  "named_customers": [
+    "Anduril",
+    "Lockheed Martin",
+    "AV (AeroVironment)",
+    "Lux Aeterna",
+    "Antares",
+    "Mach Industries",
+    "Scout AI",
+    "Forterra",
+    "Hermeus",
+    "VATN",
+    "Odys",
+    "REGENT",
+    "Vital Lyfe",
+    "Wisk Aero",
+    "Shinkei",
+    "Pratt Miller",
+    "HII",
+    "Chariot Defense",
+    "Valinor Enterprises",
+    "Helsing",
+    "Muon Space",
+    "Varda Space",
+    "Radiant Nuclear",
+    "U.S. Air Force"
+  ],
+  "product_summary": "Data platform where hardware teams capture test telemetry and context, then analyse it live, run procedures, monitors, trending and reports, and build custom tools via SDKs, MCP and API. The Analyst AI agent helps engineers investigate data. Deploys in Nominal's cloud, customer cloud, GovCloud, on-premises or air-gapped.",
+  "pricing": null,
+  "headcount_est": null,
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "seed",
+      "stage_raw": "Seed funding led by Lux Capital (disclosed in the April 2024 stealth-exit release; date of the round not given)",
+      "date": null,
+      "date_precision": null,
+      "amount_original": 7500000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Lux Capital"],
+      "participants": ["Founders Fund", "Haystack"],
+      "unspecified": [],
+      "pages": [5, 6],
+      "snippet": "The startup raised $7.5M in Seed funding led by Lux Capital with support from Founders Fund"
+    },
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_a",
+      "stage_raw": "Series A led by General Catalyst (announced with the exit from stealth)",
+      "date": "2024-04-22",
+      "date_precision": "day",
+      "amount_original": 20000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["General Catalyst"],
+      "participants": ["Haystack"],
+      "unspecified": ["XYZ Ventures", "Human Capital", "Box Group", "Overmatch"],
+      "pages": [5, 6],
+      "snippet": "$20M in their Series A led by General Catalyst"
+    },
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B led by Sequoia Capital",
+      "date": "2025-06-12",
+      "date_precision": "day",
+      "amount_original": 75000000,
+      "currency_original": "USD",
+      "valuation_post_original": null,
+      "leads": ["Sequoia Capital"],
+      "participants": ["Lightspeed Venture Partners", "General Catalyst", "Lux Capital", "Founders Fund", "Avenir", "XYZ Venture Capital", "Haystack", "Overmatch Ventures", "PAX Venture Capital", "PSP Growth", "Audacious Ventures", "Red Glass Ventures"],
+      "unspecified": [],
+      "pages": [4, 7, 9],
+      "snippet": "Sequoia Capital leads Nominal's $75M Series B to modernize hardware testing"
+    },
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_b",
+      "stage_raw": "Series B extension (TechCrunch) / Series B-2 (SiliconANGLE), preemptive, led by Founders Fund, at a $1 billion valuation",
+      "date": "2026-03-05",
+      "date_precision": "day",
+      "amount_original": 80000000,
+      "currency_original": "USD",
+      "valuation_post_original": 1000000000,
+      "leads": ["Founders Fund"],
+      "participants": ["Sequoia Capital", "General Catalyst", "Lux Capital", "Red Glass", "Lightspeed"],
+      "unspecified": [],
+      "pages": [9, 8, 10],
+      "snippet": "announced a fresh $80 million Series B extension round at a $1 billion valuation, led by Founders Fund."
+    },
+    {
+      "company": {
+        "name": "Nominal",
+        "website": "https://nominal.io",
+        "description": "Data and AI-agent platform where hardware engineering teams capture, monitor and analyse test telemetry, used across aerospace, defense and energy.",
+        "hq_country": "US",
+        "founded_year": 2022,
+        "sector": "hardware_deeptech",
+        "sector_classified_by": "model",
+        "layer": "design_intent"
+      },
+      "stage": "series_c_plus",
+      "stage_raw": "Series C at a $3B valuation, led by Lightspeed Venture Partners and co-led by Insight Partners",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "amount_original": 240000000,
+      "currency_original": "USD",
+      "valuation_post_original": 3000000000,
+      "leads": ["Lightspeed Venture Partners", "Insight Partners"],
+      "participants": [],
+      "unspecified": [],
+      "pages": [1, 0, 2, 10],
+      "snippet": "Today, we're announcing a $240 million Series C at a $3B valuation."
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "rounds[2].date",
+      "values": [
+        "2025-06-12: Nominal's Substack post 'Nominal raises $75M Series B' is dated Jun 12, 2025",
+        "2025-06-23: publication date of the Pulse 2.0 write-up",
+        "September (year not given): TechCrunch 2026-03-05 ('$75 million Series B round led by Sequoia in September')"
+      ],
+      "chosen": "2025-06-12",
+      "reason": "The company's own post is the announcement; Pulse 2.0 reported it later. TechCrunch's 'September' contradicts both, and its own headline ('$155M in 10 months' to March 2026) fits June 2025 better than September."
+    },
+    {
+      "field": "rounds[3].amount_original",
+      "values": [
+        "80000000 USD: TechCrunch 2026-03-05 and SiliconANGLE 2026-03-05",
+        "155000000 USD: TechCrunch 2026-11-09 describes the March round as a $155 million Series B extension"
+      ],
+      "chosen": "80000000 USD",
+      "reason": "Both March articles give $80M. $155M is the $75M Series B plus the $80M extension, as the March TechCrunch headline ('raises $155M in 10 months') shows. The March extension and the November Series C are separate rounds."
+    },
+    {
+      "field": "hq_city (identity_check; hq_country unaffected)",
+      "values": [
+        "Los Angeles: TechCrunch 2026-03-05 ('L.A.-based') and SiliconANGLE 2026-03-05",
+        "Austin, Texas: TechCrunch 2026-11-09"
+      ],
+      "chosen": "hq_country US; city left open",
+      "reason": "Nominal's about page lists offices in Los Angeles, New York, Austin, Seattle, Washington, D.C. and London but names no HQ. The November article may reflect a move. Both cities are in the US."
+    }
+  ],
+  "open_items": [
+    "Seed round date not published on the pages read (the April 2024 release and Haystack's post only say it came before the Series A; Haystack: 'a few years ago').",
+    "Seed and Series A valuations not disclosed; Series B ($75M) valuation not disclosed.",
+    "Series B extension ($1B) and Series C ($3B) valuations are not stated as pre- or post-money; recorded as post-money.",
+    "Series A: XYZ Ventures, Human Capital, Box Group and Overmatch are named in the 2024 release as 'additional investors' without a round; recorded as unspecified on the Series A. Haystack is recorded in seed and Series A because its post says it invested in every round to date.",
+    "Series C: no participants beyond the leads are named. TechCrunch (2026-11-09) says other investors in the company include Sequoia, General Catalyst and Lux Capital, without saying they joined the Series C.",
+    "The $71.2M AFWERX STRATFI award (Tectonic Defense, 2026-10-27: $41.2M government funding plus $30M of Nominal's own cash) is a government contract, not an equity round; not recorded in rounds.",
+    "Total raised not stated by any page read.",
+    "HQ city unresolved (Los Angeles vs Austin, Texas); see conflicts.",
+    "Headcount: no public figure found; LinkedIn not consulted.",
+    "Revenue not publicly reported; only growth multiples (Pulse 2.0: 10x year-over-year at the Series B; SiliconANGLE: sevenfold in the year before the March 2026 round). Customer count: about 80 commercial and government organisations per TechCrunch 2026-11-09.",
+    "Pricing not published; nominal.io offers demos and a sales contact only.",
+    "Shield AI is named as a customer by Pulse 2.0 and Tectonic Defense but not on Nominal's own pages read; left out of named_customers. 'AV' is the logo text on nominal.io; Tectonic Defense identifies it as AeroVironment."
+  ]
+}

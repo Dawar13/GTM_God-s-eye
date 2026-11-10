@@ -14,7 +14,7 @@ import { useInspector } from "@/lib/hooks/useInspector";
 import { DESKTOP_QUERY, useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { loadEntity, useLoaded } from "@/lib/client-index";
 import type { EntityHeader } from "@/lib/data/entities";
-import { formatCount, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
+import { formatCount, formatPartialDate, formatUsd, formatWebsite, UNKNOWN } from "@/lib/format";
 import { ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { InspectorSection, Skeleton, SourceBadge } from "@/components/ui-atlas";
 import { Button } from "@/components/ui/button";
@@ -230,7 +230,7 @@ function EntityHeaderView({
           rel="noreferrer"
           className="inline-flex items-center gap-1 text-accent hover:underline"
         >
-          {entity.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+          {formatWebsite(entity.website)}
           <ExternalLink aria-hidden className="size-3" />
         </a>
       ) : null,

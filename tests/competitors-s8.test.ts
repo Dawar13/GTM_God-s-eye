@@ -103,6 +103,12 @@ describe("toCompetitorRows", () => {
     expect(rows[1]!.investors).toEqual([]);
   });
 
+  it("carries the stored website, null when unknown", () => {
+    const [withSite] = toCompetitorRows([comp("co_9", { website: "https://www.acme.com" })], [], investors);
+    expect(withSite!.website).toBe("https://www.acme.com");
+    expect(rows[1]!.website).toBeNull();
+  });
+
   it("keeps unknown values null, never zero", () => {
     expect(rows[1]!.totalRaisedUsd).toBeNull();
     expect(rows[1]!.headcount).toBeNull();

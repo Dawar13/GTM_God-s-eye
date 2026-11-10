@@ -30,6 +30,8 @@ export type LastRound = {
 export type CompetitorRow = {
   id: string;
   name: string;
+  /** The company's own site, as stored. */
+  website: string | null;
   category: CompetitorCategory;
   layer: CompetitorLayer;
   foundedYear: number | null;
@@ -100,6 +102,7 @@ export function toCompetitorRows(
     return {
       id: c.id,
       name: c.name,
+      website: c.website,
       category: c.category,
       layer: c.layer,
       foundedYear: c.founded_year,

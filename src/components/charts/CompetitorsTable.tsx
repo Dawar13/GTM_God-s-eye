@@ -1,11 +1,13 @@
 "use client";
 
+import { ExternalLink } from "lucide-react";
 import { Panel } from "@/components/ui-atlas";
 import {
   formatCount,
   formatCountry,
   formatPartialDate,
   formatUsd,
+  formatWebsite,
   orUnknown,
   UNKNOWN,
 } from "@/lib/format";
@@ -15,8 +17,11 @@ import { COMPETITOR_CATEGORIES } from "@/lib/schema/enums";
 import { LAYER_BANDS, type CompetitorRow } from "@/lib/viz/transforms/competitors";
 import { ChartTable, type TableColumn } from "./ChartTable";
 
-/** Competitors have no aliases on record, so the find box matches names only. */
-const findName = (r: CompetitorRow) => r.name;
+/** Competitors have no aliases on record; the find box matches the name and the website. */
+const findCompetitor = (r: CompetitorRow) => ({
+  name: r.name,
+  aliases: r.website ? [formatWebsite(r.website)] : [],
+});
 
 /** The Competitors table (S8): every competitor, sortable, a row click opens the Inspector. */
 export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorRow[]; sources: readonly string[] }) {
@@ -34,6 +39,26 @@ export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorR
           {r.name}
         </button>
       ),
+    },
+    {
+      header: "Website",
+      sortValue: (r) => (r.website ? formatWebsite(r.website) : null),
+      cell: (r) =>
+        r.website ? (
+          <a
+            href={r.website}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 whitespace-nowrap text-accent hover:underline"
+          >
+            {/* One flex item, so a find highlight inside the domain doesn't split it with a gap. */}
+            <span>{formatWebsite(r.website)}</span>
+            <ExternalLink aria-hidden className="size-3 shrink-0" />
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        ) : (
+          UNKNOWN
+        ),
     },
     {
       header: "Category",
@@ -143,12 +168,13 @@ export function CompetitorsTable({ rows, sources }: { rows: readonly CompetitorR
         onRowClick={(r) => open(r.id)}
         scrollClassName="max-h-[34rem]"
         findLabel="Find competitors"
-        findText={findName}
+        findText={findCompetitor}
       />
       <footer className="border-t border-rule pt-2 text-xs text-muted">
         Sources: {sources.length ? sources.join(", ") : "none on record"}. Total raised is the stored total
         for each competitor; last round is the latest dated round. Shown as {UNKNOWN} for{" "}
         <span className="tabular-nums">
+          {formatCount(rows.filter((r) => r.website === null).length)} website,{" "}
           {formatCount(rows.filter((r) => r.foundedYear === null).length)} founded year,{" "}
           {formatCount(rows.filter((r) => r.totalRaisedUsd === null).length)} total raised,{" "}
           {formatCount(rows.filter((r) => r.lastRound === null).length)} last round,{" "}

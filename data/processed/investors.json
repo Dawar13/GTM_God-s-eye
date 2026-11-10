@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-09T16:44:32+00:00",
+  "generated_at": "2026-11-10T04:41:53+00:00",
   "records": [
     {
       "id": "inv_01a",
@@ -23428,7 +23428,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -26762,7 +26762,7 @@
         "value": {
           "ai_apps_agents": 0.2,
           "fintech": 0.4,
-          "industrial_manufacturing": 0.4
+          "hardware_deeptech": 0.4
         },
         "method": "portfolio_only",
         "inputs": [
@@ -26810,9 +26810,9 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 4,
         "industrial_affinity": {
-          "value": 0.4,
+          "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -39550,8 +39550,8 @@
           "ai_infra": 0.285714,
           "climate_energy": 0.142857,
           "fintech": 0.142857,
+          "hardware_deeptech": 0.071429,
           "health_bio": 0.142857,
-          "industrial_manufacturing": 0.071429,
           "supply_chain_logistics": 0.071429
         },
         "method": "portfolio_only",
@@ -39598,7 +39598,7 @@
         "is_generalist": false,
         "cluster_id": 2,
         "industrial_affinity": {
-          "value": 0.107144,
+          "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -41105,7 +41105,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -45330,7 +45330,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -63626,7 +63626,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.035715,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -86738,18 +86738,18 @@
       "thesis_text": null,
       "sector_weights": {
         "value": {
-          "ai_infra": 0.058824,
-          "climate_energy": 0.176471,
-          "consumer": 0.029412,
-          "defense_dual_use": 0.117647,
-          "hardware_deeptech": 0.058824,
-          "industrial_manufacturing": 0.411763,
-          "mobility_ev": 0.058824,
-          "space": 0.088235
+          "ai_infra": 0.057143,
+          "climate_energy": 0.171429,
+          "consumer": 0.028571,
+          "defense_dual_use": 0.114286,
+          "hardware_deeptech": 0.2,
+          "industrial_manufacturing": 0.285714,
+          "mobility_ev": 0.057143,
+          "space": 0.085714
         },
         "method": "portfolio_only",
         "inputs": [
-          "portfolio: 20 rounds with a known sector"
+          "portfolio: 21 rounds with a known sector"
         ]
       },
       "website": null,
@@ -86779,7 +86779,7 @@
         "is_generalist": false,
         "cluster_id": 1,
         "industrial_affinity": {
-          "value": 0.470587,
+          "value": 0.414286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -91205,9 +91205,9 @@
           "ai_infra": 0.156863,
           "defense_dual_use": 0.078431,
           "fintech": 0.039216,
-          "hardware_deeptech": 0.039216,
-          "health_bio": 0.176471,
-          "industrial_manufacturing": 0.2549,
+          "hardware_deeptech": 0.137255,
+          "health_bio": 0.176469,
+          "industrial_manufacturing": 0.156863,
           "robotics_physical_ai": 0.176471,
           "supply_chain_logistics": 0.039216
         },
@@ -91255,9 +91255,9 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 2,
         "industrial_affinity": {
-          "value": 0.470587,
+          "value": 0.42157,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -99181,21 +99181,21 @@
       "thesis_text": "Pre-seed and seed fund that backs outlier founders at the very start, often before the idea is clear, choosing people over predefined themes. Writes $1-3M initial checks in a company's first or second raise, can lead or co-lead, takes no board seats, and helps with later financings. Portfolio spans consumer, software, AI, dev tools, hardware/frontier and healthcare.",
       "sector_weights": {
         "value": {
-          "ai_apps_agents": 0.170291,
-          "ai_infra": 0.043478,
+          "ai_apps_agents": 0.166667,
+          "ai_infra": 0.041667,
           "consumer": 0.083333,
-          "defense_dual_use": 0.043478,
-          "dev_tools": 0.148551,
+          "defense_dual_use": 0.041667,
+          "dev_tools": 0.145833,
           "enterprise_saas": 0.083333,
-          "hardware_deeptech": 0.083333,
-          "health_bio": 0.148551,
-          "industrial_manufacturing": 0.152174,
-          "space": 0.043478
+          "hardware_deeptech": 0.166667,
+          "health_bio": 0.145833,
+          "industrial_manufacturing": 0.083333,
+          "space": 0.041667
         },
         "method": "stated_and_portfolio",
         "inputs": [
           "stated_sectors: consumer, ai_apps_agents, enterprise_saas, hardware_deeptech, dev_tools, health_bio",
-          "portfolio: 14 rounds with a known sector"
+          "portfolio: 15 rounds with a known sector"
         ]
       },
       "website": "https://haystack.vc",
@@ -99355,7 +99355,7 @@
         "is_generalist": false,
         "cluster_id": 2,
         "industrial_affinity": {
-          "value": 0.19384,
+          "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (stated_and_portfolio)"
@@ -103223,7 +103223,8 @@
       "thesis_text": null,
       "sector_weights": {
         "value": {
-          "industrial_manufacturing": 0.75,
+          "hardware_deeptech": 0.25,
+          "industrial_manufacturing": 0.5,
           "robotics_physical_ai": 0.25
         },
         "method": "portfolio_only",
@@ -103286,7 +103287,7 @@
         "is_generalist": false,
         "cluster_id": 1,
         "industrial_affinity": {
-          "value": 1.0,
+          "value": 0.875,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -111005,16 +111006,17 @@
       "thesis_text": null,
       "sector_weights": {
         "value": {
-          "ai_apps_agents": 0.153846,
-          "dev_tools": 0.076923,
-          "enterprise_saas": 0.153846,
-          "health_bio": 0.076923,
-          "industrial_manufacturing": 0.384616,
-          "supply_chain_logistics": 0.153846
+          "ai_apps_agents": 0.142857,
+          "dev_tools": 0.071429,
+          "enterprise_saas": 0.142857,
+          "hardware_deeptech": 0.071429,
+          "health_bio": 0.071429,
+          "industrial_manufacturing": 0.357142,
+          "supply_chain_logistics": 0.142857
         },
         "method": "portfolio_only",
         "inputs": [
-          "portfolio: 17 rounds with a known sector"
+          "portfolio: 18 rounds with a known sector"
         ]
       },
       "website": null,
@@ -111048,7 +111050,7 @@
         "is_generalist": false,
         "cluster_id": 1,
         "industrial_affinity": {
-          "value": 0.461539,
+          "value": 0.464285,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -116928,7 +116930,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.75,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -119907,7 +119909,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -127520,19 +127522,18 @@
       "thesis_text": null,
       "sector_weights": {
         "value": {
-          "ai_apps_agents": 0.116279,
-          "ai_infra": 0.255814,
-          "consumer": 0.046512,
-          "dev_tools": 0.046512,
-          "fintech": 0.232558,
-          "hardware_deeptech": 0.046512,
-          "health_bio": 0.093023,
-          "industrial_manufacturing": 0.093023,
-          "robotics_physical_ai": 0.069767
+          "ai_apps_agents": 0.111111,
+          "ai_infra": 0.244445,
+          "consumer": 0.044444,
+          "dev_tools": 0.044444,
+          "fintech": 0.222222,
+          "hardware_deeptech": 0.177778,
+          "health_bio": 0.088889,
+          "robotics_physical_ai": 0.066667
         },
         "method": "portfolio_only",
         "inputs": [
-          "portfolio: 23 rounds with a known sector"
+          "portfolio: 24 rounds with a known sector"
         ]
       },
       "website": null,
@@ -127576,7 +127577,7 @@
         "is_generalist": false,
         "cluster_id": 2,
         "industrial_affinity": {
-          "value": 0.186046,
+          "value": 0.155556,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -130578,20 +130579,20 @@
         "value": {
           "ai_apps_agents": 0.05,
           "ai_infra": 0.05,
-          "climate_energy": 0.07381,
-          "defense_dual_use": 0.169048,
-          "dev_tools": 0.02381,
-          "hardware_deeptech": 0.07381,
+          "climate_energy": 0.073256,
+          "defense_dual_use": 0.166279,
+          "dev_tools": 0.023256,
+          "hardware_deeptech": 0.131395,
           "health_bio": 0.05,
-          "industrial_manufacturing": 0.22857,
+          "industrial_manufacturing": 0.177907,
           "mobility_ev": 0.05,
-          "robotics_physical_ai": 0.180952,
+          "robotics_physical_ai": 0.177907,
           "space": 0.05
         },
         "method": "stated_and_portfolio",
         "inputs": [
           "stated_sectors: ai_infra, ai_apps_agents, robotics_physical_ai, defense_dual_use, industrial_manufacturing, hardware_deeptech, space, climate_energy, mobility_ev, health_bio",
-          "portfolio: 25 rounds with a known sector"
+          "portfolio: 26 rounds with a known sector"
         ]
       },
       "website": "https://www.luxcapital.com",
@@ -130803,7 +130804,7 @@
         "is_generalist": false,
         "cluster_id": 6,
         "industrial_affinity": {
-          "value": 0.471427,
+          "value": 0.446512,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (stated_and_portfolio)"
@@ -132981,7 +132982,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.190476,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -147037,7 +147038,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.176471,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -158605,7 +158606,7 @@
           "ai_infra": 0.153846,
           "climate_energy": 0.153846,
           "defense_dual_use": 0.461539,
-          "industrial_manufacturing": 0.230769
+          "hardware_deeptech": 0.230769
         },
         "method": "portfolio_only",
         "inputs": [
@@ -158651,7 +158652,7 @@
         "is_generalist": false,
         "cluster_id": 6,
         "industrial_affinity": {
-          "value": 0.230769,
+          "value": 0.115385,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -161895,7 +161896,8 @@
         "value": {
           "climate_energy": 0.083333,
           "defense_dual_use": 0.333335,
-          "industrial_manufacturing": 0.333333,
+          "hardware_deeptech": 0.125,
+          "industrial_manufacturing": 0.208333,
           "robotics_physical_ai": 0.083333,
           "space": 0.083333,
           "supply_chain_logistics": 0.083333
@@ -161983,7 +161985,7 @@
         "is_generalist": false,
         "cluster_id": 6,
         "industrial_affinity": {
-          "value": 0.458332,
+          "value": 0.395832,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (stated_and_portfolio)"
@@ -166265,7 +166267,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.398496,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170093,7 +170095,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -171250,7 +171252,7 @@
       "sector_weights": {
         "value": {
           "enterprise_saas": 0.2,
-          "industrial_manufacturing": 0.4,
+          "hardware_deeptech": 0.4,
           "supply_chain_logistics": 0.4
         },
         "method": "portfolio_only",
@@ -171319,9 +171321,9 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 4,
         "industrial_affinity": {
-          "value": 0.6,
+          "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -178450,7 +178452,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -190675,9 +190677,9 @@
           "dev_tools": 0.05,
           "enterprise_saas": 0.092254,
           "fintech": 0.078169,
-          "hardware_deeptech": 0.078169,
+          "hardware_deeptech": 0.106338,
           "health_bio": 0.05,
-          "industrial_manufacturing": 0.070423,
+          "industrial_manufacturing": 0.042254,
           "robotics_physical_ai": 0.071127,
           "supply_chain_logistics": 0.028169
         },
@@ -191009,7 +191011,7 @@
         "is_generalist": true,
         "cluster_id": 2,
         "industrial_affinity": {
-          "value": 0.194719,
+          "value": 0.180634,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (stated_and_portfolio)"
@@ -203225,7 +203227,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.409091,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -230602,7 +230604,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.35,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -233001,7 +233003,8 @@
         "value": {
           "defense_dual_use": 0.181818,
           "enterprise_saas": 0.181818,
-          "industrial_manufacturing": 0.454546,
+          "hardware_deeptech": 0.272728,
+          "industrial_manufacturing": 0.181818,
           "supply_chain_logistics": 0.181818
         },
         "method": "portfolio_only",
@@ -233036,9 +233039,9 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 6,
         "industrial_affinity": {
-          "value": 0.545455,
+          "value": 0.409091,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"

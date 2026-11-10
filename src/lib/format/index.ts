@@ -100,3 +100,9 @@ export function formatCountry(code: string | null | undefined): string {
     return code;
   }
 }
+
+/** A website URL as its bare host and path ("https://www.acme.com/" → "acme.com"). */
+export function formatWebsite(url: string | null | undefined): string {
+  if (!url) return UNKNOWN;
+  return url.replace(/^https?:\/\/(www\.)?/i, "").replace(/\/$/, "");
+}

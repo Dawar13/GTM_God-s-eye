@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-09T16:44:32+00:00",
+  "generated_at": "2026-11-10T04:41:53+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -9509,10 +9509,10 @@
       "investor_id": "inv_audacious-ventures",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.3,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.40",
+            "industrial_affinity 0.20",
             "ai weight 0.20"
           ]
         },
@@ -14193,10 +14193,10 @@
       "investor_id": "inv_box-group",
       "features": {
         "thesis": {
-          "value": 0.32143,
+          "value": 0.285715,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.11",
+            "industrial_affinity 0.07",
             "ai weight 0.43"
           ]
         },
@@ -31165,10 +31165,10 @@
       "investor_id": "inv_founders-fund",
       "features": {
         "thesis": {
-          "value": 0.499999,
+          "value": 0.442858,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.47",
+            "industrial_affinity 0.41",
             "ai weight 0.06"
           ]
         },
@@ -31178,7 +31178,7 @@
           "value": 0.565402,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "3 adjacent companies in 20 rounds"
+            "3 adjacent companies in 21 rounds"
           ]
         },
         "geography": null,
@@ -32745,10 +32745,10 @@
       "investor_id": "inv_general-catalyst",
       "features": {
         "thesis": {
-          "value": 0.568626,
+          "value": 0.51961,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.47",
+            "industrial_affinity 0.42",
             "ai weight 0.20"
           ]
         },
@@ -35786,10 +35786,10 @@
       "investor_id": "inv_haystack",
       "features": {
         "thesis": {
-          "value": 0.300725,
+          "value": 0.270833,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.19",
+            "industrial_affinity 0.17",
             "ai weight 0.21"
           ]
         },
@@ -35812,7 +35812,7 @@
           "value": 0.632121,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "4 adjacent companies in 15 rounds"
+            "4 adjacent companies in 16 rounds"
           ]
         },
         "geography": {
@@ -37305,10 +37305,10 @@
       "investor_id": "inv_human-capital",
       "features": {
         "thesis": {
-          "value": 1.0,
+          "value": 0.875,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 1.00",
+            "industrial_affinity 0.88",
             "ai weight 0.00"
           ]
         },
@@ -40136,20 +40136,20 @@
       "investor_id": "inv_insight-partners",
       "features": {
         "thesis": {
-          "value": 0.538462,
+          "value": 0.535713,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
             "industrial_affinity 0.46",
-            "ai weight 0.15"
+            "ai weight 0.14"
           ]
         },
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.565402,
+          "value": 0.688597,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "4 adjacent companies in 17 rounds"
+            "5 adjacent companies in 18 rounds"
           ]
         },
         "geography": null,
@@ -46016,11 +46016,11 @@
       "investor_id": "inv_lightspeed-venture-partners",
       "features": {
         "thesis": {
-          "value": 0.372092,
+          "value": 0.333334,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.19",
-            "ai weight 0.37"
+            "industrial_affinity 0.16",
+            "ai weight 0.36"
           ]
         },
         "stage": null,
@@ -46029,7 +46029,7 @@
           "value": 0.486583,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "2 adjacent companies in 27 rounds"
+            "2 adjacent companies in 28 rounds"
           ]
         },
         "geography": null,
@@ -47222,10 +47222,10 @@
       "investor_id": "inv_lux-capital",
       "features": {
         "thesis": {
-          "value": 0.521427,
+          "value": 0.496512,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.47",
+            "industrial_affinity 0.45",
             "ai weight 0.10"
           ]
         },
@@ -47248,7 +47248,7 @@
           "value": 0.84012,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "6 adjacent companies in 25 rounds"
+            "6 adjacent companies in 26 rounds"
           ]
         },
         "geography": {
@@ -57490,10 +57490,10 @@
       "investor_id": "inv_overmatch-ventures",
       "features": {
         "thesis": {
-          "value": 0.307692,
+          "value": 0.192308,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.23",
+            "industrial_affinity 0.12",
             "ai weight 0.15"
           ]
         },
@@ -58735,10 +58735,10 @@
       "investor_id": "inv_pax",
       "features": {
         "thesis": {
-          "value": 0.458332,
+          "value": 0.395832,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.46",
+            "industrial_affinity 0.40",
             "ai weight 0.00"
           ]
         },
@@ -61946,10 +61946,10 @@
       "investor_id": "inv_psp-partners",
       "features": {
         "thesis": {
-          "value": 0.6,
+          "value": 0.4,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.60",
+            "industrial_affinity 0.40",
             "ai weight 0.00"
           ]
         },
@@ -68960,10 +68960,10 @@
       "investor_id": "inv_sequoia-capital",
       "features": {
         "thesis": {
-          "value": 0.350352,
+          "value": 0.336267,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.19",
+            "industrial_affinity 0.18",
             "ai weight 0.31"
           ]
         },
@@ -84580,10 +84580,10 @@
       "investor_id": "inv_xyz-venture-capital",
       "features": {
         "thesis": {
-          "value": 0.545455,
+          "value": 0.409091,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.55",
+            "industrial_affinity 0.41",
             "ai weight 0.00"
           ]
         },

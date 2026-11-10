@@ -6,6 +6,7 @@ import {
   formatMonthYear,
   formatPercent,
   formatUsd,
+  formatWebsite,
   UNKNOWN,
 } from "@/lib/format";
 
@@ -84,5 +85,13 @@ describe("formatMultiple", () => {
     expect(formatMultiple(10)).toBe("10.00×");
     expect(formatMultiple(null)).toBe("—");
     expect(formatMultiple(Number.NaN)).toBe("—");
+  });
+});
+
+describe("formatWebsite", () => {
+  it("drops the scheme, www and a trailing slash, and keeps a path", () => {
+    expect(formatWebsite("https://www.nominal.io/")).toBe("nominal.io");
+    expect(formatWebsite("http://acme.com/products")).toBe("acme.com/products");
+    expect(formatWebsite(null)).toBe(UNKNOWN);
   });
 });
