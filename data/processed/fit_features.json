@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T04:41:53+00:00",
+  "generated_at": "2026-11-11T07:20:11+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -7534,6 +7534,28 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_anuj-bihani",
+      "investor_id": "inv_anuj-bihani",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.153518,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_anzu-partners",
       "investor_id": "inv_anzu-partners",
       "features": {
@@ -9985,6 +10007,28 @@
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
             "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_axilor-ventures",
+      "investor_id": "inv_axilor-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.153518,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -17699,10 +17743,10 @@
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.0,
+          "value": 0.153518,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "0 adjacent companies in 1 rounds"
+            "1 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -41201,14 +41245,21 @@
       "id": "fit_ivycap-ventures",
       "investor_id": "inv_ivycap-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.666667,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.67",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.486583,
+          "value": 0.632121,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "2 adjacent companies in 2 rounds"
+            "3 adjacent companies in 3 rounds"
           ]
         },
         "geography": null,
@@ -45129,6 +45180,28 @@
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
             "0 adjacent companies in 4 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_laxmi-narayan",
+      "investor_id": "inv_laxmi-narayan",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.153518,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
           ]
         },
         "geography": null,
@@ -59682,10 +59755,10 @@
       "investor_id": "inv_pi-ventures",
       "features": {
         "thesis": {
-          "value": 0.363757,
+          "value": 0.375,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.27",
+            "industrial_affinity 0.29",
             "ai weight 0.18"
           ]
         },
@@ -59708,7 +59781,7 @@
           "value": 0.393469,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "2 adjacent companies in 14 rounds"
+            "2 adjacent companies in 15 rounds"
           ]
         },
         "geography": {
@@ -70250,6 +70323,28 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_sig-tattva",
+      "investor_id": "inv_sig-tattva",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": {
+          "value": 0.283469,
+          "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
+          "inputs": [
+            "1 adjacent companies in 1 rounds"
+          ]
+        },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_sigma",
       "investor_id": "inv_sigma",
       "features": {
@@ -78311,10 +78406,10 @@
         "stage": null,
         "check": null,
         "adjacency": {
-          "value": 0.283469,
+          "value": 0.486583,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "1 adjacent companies in 1 rounds"
+            "2 adjacent companies in 2 rounds"
           ]
         },
         "geography": null,
@@ -84623,11 +84718,11 @@
       "investor_id": "inv_y-combinator",
       "features": {
         "thesis": {
-          "value": 0.346154,
+          "value": 0.360215,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.18",
-            "ai weight 0.34"
+            "industrial_affinity 0.19",
+            "ai weight 0.33"
           ]
         },
         "stage": {
@@ -84646,10 +84741,10 @@
           ]
         },
         "adjacency": {
-          "value": 0.811124,
+          "value": 0.864665,
           "method": "1 − exp(−n/3), n = recency-weighted adjacent companies",
           "inputs": [
-            "5 adjacent companies in 51 rounds"
+            "6 adjacent companies in 52 rounds"
           ]
         },
         "geography": {

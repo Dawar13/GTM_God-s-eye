@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T04:41:53+00:00",
+  "generated_at": "2026-11-11T07:20:11+00:00",
   "records": [
     {
       "id": "inv_01a",
@@ -356,7 +356,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.095238,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -626,7 +626,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -888,7 +888,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -1106,7 +1106,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -1245,7 +1245,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -1777,7 +1777,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -2232,7 +2232,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.31681,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -2437,7 +2437,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -3270,7 +3270,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -3801,7 +3801,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.416666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -3972,7 +3972,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.035715,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -4563,7 +4563,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.232142,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -4763,7 +4763,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -4848,7 +4848,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -4920,7 +4920,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.1,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -4999,7 +4999,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -5496,7 +5496,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.583333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -6132,7 +6132,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.473685,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -6470,7 +6470,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -6615,7 +6615,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.195653,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -6991,7 +6991,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.232144,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -7601,7 +7601,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -9142,7 +9142,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -9720,7 +9720,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.086957,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -9860,7 +9860,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.833333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -10101,7 +10101,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -10441,7 +10441,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -11220,7 +11220,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -11618,7 +11618,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.119048,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -11786,7 +11786,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -11880,7 +11880,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -12177,7 +12177,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.03125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -13447,7 +13447,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -14021,7 +14021,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.1,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -14227,7 +14227,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -14597,7 +14597,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -14906,7 +14906,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.319445,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -15146,7 +15146,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -15561,7 +15561,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -15701,7 +15701,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -15780,7 +15780,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -16139,7 +16139,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.549108,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -16466,7 +16466,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -16543,7 +16543,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -16621,7 +16621,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -17597,7 +17597,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -18224,7 +18224,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.268518,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -19286,7 +19286,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -20191,7 +20191,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -20453,7 +20453,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -20699,7 +20699,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.102272,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -21076,7 +21076,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.055556,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -21272,7 +21272,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -21302,6 +21302,93 @@
           "notes": null
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "inv_anuj-bihani",
+      "name": "Anuj Bihani",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/switchon-a-vision-ai-company-raises-42-million-to-bring/449801",
+          "title": "SwitchOn, a Vision AI Company Raises $4.2 Million To Bring AI Into Manufacturing",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "name": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "low",
+      "category": {
+        "freshness": "unknown",
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
       "flags": []
     },
     {
@@ -22957,7 +23044,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -23223,7 +23310,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -23428,7 +23515,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -23707,7 +23794,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -24526,7 +24613,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -24913,7 +25000,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.566666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -26357,7 +26444,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.250001,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -26473,7 +26560,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -26810,7 +26897,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -27668,7 +27755,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -28102,6 +28189,77 @@
       "flags": []
     },
     {
+      "id": "inv_axilor-ventures",
+      "name": "Axilor Ventures",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "https://www.piventures.in/blog-article/our-seed-investment-in-switchon",
+          "title": "Our Seed Investment in SwitchOn",
+          "publisher": "pi Ventures",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        }
+      ],
+      "field_sources": {
+        "name": [
+          0,
+          1,
+          2
+        ]
+      },
+      "confidence": "low",
+      "category": {
+        "freshness": "unknown",
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_azolla",
       "name": "Azolla",
       "aliases": [],
@@ -28267,7 +28425,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.05,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -29027,7 +29185,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -29393,7 +29551,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -29885,7 +30043,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -30033,7 +30191,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -30209,7 +30367,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -30603,7 +30761,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -30857,7 +31015,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -31006,7 +31164,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -31532,7 +31690,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.484375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -31788,7 +31946,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -31934,7 +32092,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -32526,7 +32684,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.249999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -32653,7 +32811,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -32784,7 +32942,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -32911,7 +33069,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -33268,7 +33426,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.763157,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -35363,7 +35521,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.101562,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -35522,7 +35680,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.666666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -35783,7 +35941,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -35853,7 +36011,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -36208,7 +36366,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -37186,7 +37344,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -37258,7 +37416,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -37884,7 +38042,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.161666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -38094,7 +38252,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -38342,7 +38500,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -38484,7 +38642,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.636364,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -38699,7 +38857,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.464284,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -39237,7 +39395,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -39458,7 +39616,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -39596,7 +39754,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -39681,7 +39839,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.137932,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -40206,7 +40364,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -40277,7 +40435,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -40449,7 +40607,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.083334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -40600,7 +40758,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -41105,7 +41263,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -43165,7 +43323,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.454545,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -43269,7 +43427,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -43341,7 +43499,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -43711,7 +43869,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -44028,7 +44186,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.4375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -44345,7 +44503,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.277778,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -45064,7 +45222,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -45330,7 +45488,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -46926,7 +47084,7 @@
         "maturity": "debut",
         "is_early_stage": false,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.403846,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -48989,7 +49147,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -49203,7 +49361,9 @@
     {
       "id": "inv_chennai-angels",
       "name": "Chennai Angels",
-      "aliases": [],
+      "aliases": [
+        "The Chennai Angels"
+      ],
       "parent_brand": null,
       "type": null,
       "region": null,
@@ -49315,7 +49475,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -49442,7 +49602,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -49597,7 +49757,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -49983,7 +50143,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.6,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -50560,7 +50720,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -50919,7 +51079,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.833333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -51307,7 +51467,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -51817,7 +51977,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -51995,7 +52155,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.45,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -52083,7 +52243,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.272727,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -52344,7 +52504,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -52467,7 +52627,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -52695,7 +52855,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.315789,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -53044,7 +53204,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -53395,7 +53555,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -53639,7 +53799,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -53767,7 +53927,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.083333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -54084,7 +54244,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.107954,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -54517,7 +54677,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -55137,7 +55297,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.454546,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -55398,7 +55558,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.242106,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -56032,7 +56192,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.500001,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -56170,7 +56330,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -56527,7 +56687,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.3875,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -56874,7 +57034,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.121429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -57487,7 +57647,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.214286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -57808,7 +57968,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -58095,7 +58255,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -58219,7 +58379,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -58508,7 +58668,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -58865,7 +59025,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.140046,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -59030,7 +59190,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -59269,7 +59429,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -59340,7 +59500,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -59725,7 +59885,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -60004,7 +60164,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -60186,7 +60346,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -60439,7 +60599,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -60581,7 +60741,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -60834,7 +60994,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.144181,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -61268,7 +61428,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -61457,7 +61617,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -61645,7 +61805,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -62908,7 +63068,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -62985,7 +63145,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -63832,7 +63992,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.033333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -64199,7 +64359,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.818181,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -64617,7 +64777,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -64704,7 +64864,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.083334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -64927,7 +65087,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -64992,7 +65152,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -65140,7 +65300,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -65571,7 +65731,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -66099,7 +66259,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -66277,7 +66437,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -66346,7 +66506,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -66598,7 +66758,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -67059,7 +67219,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -67630,7 +67790,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.3125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -68004,7 +68164,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -68598,7 +68758,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.131868,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -68704,7 +68864,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -69161,7 +69321,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -69617,7 +69777,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.583333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -70053,7 +70213,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.425,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -70324,7 +70484,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -70398,7 +70558,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.416666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -70859,7 +71019,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.226852,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -71776,7 +71936,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5425,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -72627,7 +72787,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.454545,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -73347,7 +73507,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.201417,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -73762,7 +73922,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -73884,7 +74044,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -74379,7 +74539,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -74513,7 +74673,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -74859,7 +75019,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -74995,7 +75155,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.291666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -75104,7 +75264,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -75342,7 +75502,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -75969,7 +76129,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.666666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -76152,7 +76312,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -76710,7 +76870,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -78108,7 +78268,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -78709,7 +78869,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -79318,7 +79478,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -79425,7 +79585,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -79616,7 +79776,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -79817,7 +79977,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -80777,7 +80937,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -80996,7 +81156,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.275863,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -81227,7 +81387,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -81381,7 +81541,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -81507,7 +81667,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -81834,7 +81994,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.642857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -82034,7 +82194,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.222222,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -82292,7 +82452,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.041667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -82698,7 +82858,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -83152,7 +83312,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.382352,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -83398,7 +83558,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -83745,7 +83905,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.109649,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -83887,7 +84047,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -83986,7 +84146,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -84135,7 +84295,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -84624,7 +84784,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -85058,7 +85218,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.203125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -85322,7 +85482,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -85630,7 +85790,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -85866,7 +86026,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.15,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -86154,7 +86314,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.142857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -86278,7 +86438,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -86699,7 +86859,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -86777,7 +86937,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.414286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -87073,7 +87233,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -87468,7 +87628,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.188596,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -88177,7 +88337,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -88864,7 +89024,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -89817,7 +89977,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.107144,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -90499,7 +90659,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -90570,7 +90730,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -90912,7 +91072,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -91255,7 +91415,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.42157,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -91763,7 +91923,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -92205,7 +92365,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -92499,7 +92659,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -92657,7 +92817,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -92729,7 +92889,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.428571,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -92849,7 +93009,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -93407,7 +93567,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -93745,7 +93905,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -93944,7 +94104,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.1,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -94129,7 +94289,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -94573,7 +94733,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.192858,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -94761,7 +94921,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -94947,7 +95107,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -95506,7 +95666,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.75,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -95835,7 +95995,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.44,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -95904,7 +96064,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -96624,7 +96784,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -97246,7 +97406,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.066667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -97337,7 +97497,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.105263,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -98005,7 +98165,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -98579,7 +98739,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -99353,7 +99513,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -99592,7 +99752,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -101261,7 +101421,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -101723,7 +101883,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -101945,7 +102105,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.444445,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -102277,7 +102437,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103285,7 +103445,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.875,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103378,7 +103538,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103528,7 +103688,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103641,7 +103801,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103716,7 +103876,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.555556,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -103938,7 +104098,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.071429,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -104229,7 +104389,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -104556,7 +104716,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -105037,7 +105197,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -105332,7 +105492,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -105518,7 +105678,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.142857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -105645,7 +105805,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.1,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -106028,7 +106188,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.170673,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -106203,7 +106363,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -106477,7 +106637,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -106776,7 +106936,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -106956,7 +107116,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.6,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -107489,7 +107649,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.257937,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -108072,7 +108232,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.127659,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -108239,7 +108399,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -108636,7 +108796,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.20614,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -109263,7 +109423,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -109917,7 +110077,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -110325,7 +110485,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.277778,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -110726,7 +110886,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.250001,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -111048,7 +111208,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.464285,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -111408,7 +111568,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.444445,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -112825,7 +112985,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -113478,7 +113638,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.114584,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -113688,7 +113848,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -113719,7 +113879,16 @@
       "check_max_usd": null,
       "leads": null,
       "thesis_text": null,
-      "sector_weights": null,
+      "sector_weights": {
+        "value": {
+          "dev_tools": 0.333333,
+          "industrial_manufacturing": 0.666667
+        },
+        "method": "portfolio_only",
+        "inputs": [
+          "portfolio: 3 rounds with a known sector"
+        ]
+      },
       "website": null,
       "linkedin": null,
       "application_url": null,
@@ -113748,9 +113917,15 @@
         "freshness": "unknown",
         "maturity": null,
         "is_early_stage": null,
-        "is_generalist": null,
-        "cluster_id": null,
-        "industrial_affinity": null,
+        "is_generalist": false,
+        "cluster_id": 5,
+        "industrial_affinity": {
+          "value": 0.666667,
+          "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
+          "inputs": [
+            "sector_weights (portfolio_only)"
+          ]
+        },
         "stage_earliness": null
       },
       "tier": "C",
@@ -115656,7 +115831,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.785714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -115798,7 +115973,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.083334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -116076,7 +116251,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -116930,7 +117105,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.75,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -119094,7 +119269,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.029412,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -119613,7 +119788,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -119909,7 +120084,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -120369,7 +120544,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.166668,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -120614,7 +120789,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -120692,7 +120867,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -121942,7 +122117,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.36,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -122576,7 +122751,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.3125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -122793,7 +122968,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.642857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -122990,7 +123165,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -123230,7 +123405,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125091,7 +125266,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125099,6 +125274,93 @@
             "sector_weights (portfolio_only)"
           ]
         },
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
+      "id": "inv_laxmi-narayan",
+      "name": "Laxmi Narayan",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/switchon-a-vision-ai-company-raises-42-million-to-bring/449801",
+          "title": "SwitchOn, a Vision AI Company Raises $4.2 Million To Bring AI Into Manufacturing",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "name": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "low",
+      "category": {
+        "freshness": "unknown",
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
         "stage_earliness": null
       },
       "tier": "C",
@@ -125199,7 +125461,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125516,7 +125778,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125658,7 +125920,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125869,7 +126131,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -125979,7 +126241,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.500001,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -126295,7 +126557,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.1,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -126561,7 +126823,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -126961,7 +127223,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -127164,7 +127426,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -127371,7 +127633,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.666666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -127575,7 +127837,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.155556,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -128055,7 +128317,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -128252,7 +128514,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -128325,7 +128587,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.363636,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -128458,7 +128720,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -128934,7 +129196,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.36218,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -129137,7 +129399,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -129914,7 +130176,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.076923,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -130802,7 +131064,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.446512,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -131529,7 +131791,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -131668,7 +131930,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.285714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -131979,7 +132241,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.222222,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -132249,7 +132511,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.428572,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -132982,7 +133244,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.190476,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -133864,7 +134126,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.42647,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -134015,7 +134277,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -135369,7 +135631,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -136778,7 +137040,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -136855,7 +137117,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -136925,7 +137187,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -137211,7 +137473,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.500001,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -137595,7 +137857,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -137851,7 +138113,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -138480,7 +138742,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -138816,7 +139078,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.368422,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -139326,7 +139588,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.256537,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -140148,7 +140410,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -141958,7 +142220,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.416668,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -142440,7 +142702,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -142842,7 +143104,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -142980,7 +143242,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -144136,7 +144398,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -144543,7 +144805,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -145443,7 +145705,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -145750,7 +146012,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -145821,7 +146083,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -146245,7 +146507,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -146968,7 +147230,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -147038,7 +147300,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.176471,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -147227,7 +147489,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -147798,7 +148060,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -148036,7 +148298,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -148476,7 +148738,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -148914,7 +149176,7 @@
         "maturity": "debut",
         "is_early_stage": false,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -149217,7 +149479,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -149417,7 +149679,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -149612,7 +149874,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -149751,7 +150013,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.083334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -150121,7 +150383,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -151345,7 +151607,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -151654,7 +151916,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.111111,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -151744,7 +152006,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -152129,7 +152391,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -152649,7 +152911,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.561764,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -152797,7 +153059,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.644737,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -152919,7 +153181,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.266667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -154203,7 +154465,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.75,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -154651,7 +154913,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -155046,7 +155308,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -155259,7 +155521,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -155530,7 +155792,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.038462,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -156146,7 +156408,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -156280,7 +156542,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -156405,7 +156667,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -157031,7 +157293,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -157133,7 +157395,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -157499,7 +157761,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.583333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -158069,7 +158331,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -158650,7 +158912,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.115385,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -158824,7 +159086,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.365385,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -158943,7 +159205,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -160098,7 +160360,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -160585,7 +160847,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -161081,7 +161343,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.6,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -161501,7 +161763,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -161983,7 +162245,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.395832,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -162461,7 +162723,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.036585,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -162801,7 +163063,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.195715,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -163487,7 +163749,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -164639,19 +164901,19 @@
       "sector_weights": {
         "value": {
           "ai_apps_agents": 0.071429,
-          "ai_infra": 0.108466,
-          "climate_energy": 0.108466,
-          "hardware_deeptech": 0.256611,
-          "health_bio": 0.145503,
-          "industrial_manufacturing": 0.018519,
-          "mobility_ev": 0.037037,
-          "robotics_physical_ai": 0.108466,
-          "space": 0.145503
+          "ai_infra": 0.107143,
+          "climate_energy": 0.107143,
+          "hardware_deeptech": 0.25,
+          "health_bio": 0.142857,
+          "industrial_manufacturing": 0.035714,
+          "mobility_ev": 0.035714,
+          "robotics_physical_ai": 0.107143,
+          "space": 0.142857
         },
         "method": "stated_and_portfolio",
         "inputs": [
           "stated_sectors: ai_apps_agents, ai_infra, robotics_physical_ai, climate_energy, health_bio, hardware_deeptech, space",
-          "portfolio: 14 rounds with a known sector"
+          "portfolio: 15 rounds with a known sector"
         ]
       },
       "website": "https://www.piventures.in",
@@ -164858,9 +165120,9 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
-          "value": 0.273809,
+          "value": 0.285714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (stated_and_portfolio)"
@@ -164990,7 +165252,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -165310,7 +165572,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -166267,7 +166529,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.398496,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -166422,7 +166684,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.583333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -166493,7 +166755,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.222222,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -166735,7 +166997,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -166884,7 +167146,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -167026,7 +167288,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -167634,7 +167896,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -168308,7 +168570,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.1875,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -168769,7 +169031,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.440474,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -168849,7 +169111,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -169105,7 +169367,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.276786,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -169399,7 +169661,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.339286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -169793,7 +170055,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.431818,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170095,7 +170357,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170223,7 +170485,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170346,7 +170608,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170423,7 +170685,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170507,7 +170769,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.1875,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -170849,7 +171111,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -171321,7 +171583,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -171770,7 +172032,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.666667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -171858,7 +172120,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -172232,7 +172494,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -172626,7 +172888,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -172745,7 +173007,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -173260,7 +173522,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -173348,7 +173610,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -175024,7 +175286,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -176218,7 +176480,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.187499,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -177238,7 +177500,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -177755,7 +178017,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -177915,7 +178177,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -178452,7 +178714,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -178769,7 +179031,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.17381,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -179083,7 +179345,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -179233,7 +179495,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.285714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -179754,7 +180016,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -179908,7 +180170,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.090909,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -181828,7 +182090,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.383333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -181995,7 +182257,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -182504,7 +182766,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -183773,7 +184035,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.2,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -184148,7 +184410,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -184442,7 +184704,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.086957,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -184537,7 +184799,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -185052,7 +185314,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -186084,7 +186346,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -186745,7 +187007,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -187236,7 +187498,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.714286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -187670,7 +187932,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -188118,7 +188380,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.211539,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -188252,7 +188514,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -188328,7 +188590,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -188941,7 +189203,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -189113,7 +189375,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -189500,7 +189762,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.190476,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -189691,7 +189953,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.235294,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -190560,7 +190822,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -191009,7 +191271,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.180634,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -191622,7 +191884,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -192036,7 +192298,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -193040,7 +193302,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -193627,7 +193889,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -193826,7 +194088,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -194189,7 +194451,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -194626,6 +194888,85 @@
       "flags": []
     },
     {
+      "id": "inv_sig-tattva",
+      "name": "SIG Tattva",
+      "aliases": [],
+      "parent_brand": null,
+      "type": null,
+      "region": null,
+      "hq_country": null,
+      "hq_city": null,
+      "stages": [],
+      "check_min_usd": null,
+      "check_max_usd": null,
+      "leads": null,
+      "thesis_text": null,
+      "sector_weights": null,
+      "website": null,
+      "linkedin": null,
+      "application_url": null,
+      "accepts_cold_inbound": "unknown",
+      "invests_in_indian_founders": "unknown",
+      "requires_us_entity": "unknown",
+      "portfolio_count_reported": null,
+      "funds": [],
+      "partners": [],
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/",
+          "title": "SwitchOn- AI Powered Quality Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/company/switchon/financials/",
+          "title": "SwitchOn — Funding, Revenue & Investors (2026) | Inc42",
+          "publisher": "Inc42 (company profile)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "name": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "confidence": "low",
+      "category": {
+        "freshness": "unknown",
+        "maturity": null,
+        "is_early_stage": null,
+        "is_generalist": null,
+        "cluster_id": null,
+        "industrial_affinity": null,
+        "stage_earliness": null
+      },
+      "tier": "C",
+      "tier_score": null,
+      "seed_list_count": 0,
+      "seed_source_ids": [],
+      "seed_hints": [],
+      "flags": []
+    },
+    {
       "id": "inv_sigma",
       "name": "Sigma",
       "aliases": [],
@@ -194741,7 +195082,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -194884,7 +195225,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.142857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -195194,7 +195535,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -195981,7 +196322,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -196133,7 +196474,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -196305,7 +196646,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -196416,7 +196757,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.178573,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -196913,7 +197254,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.675,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -197340,7 +197681,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -197530,7 +197871,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -197720,7 +198061,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.383333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -198140,7 +198481,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.214286,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -198519,7 +198860,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.642857,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -199106,7 +199447,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.095,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -199588,7 +199929,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -199778,7 +200119,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -199994,7 +200335,7 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -200379,7 +200720,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -200543,7 +200884,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -200923,7 +201264,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -200994,7 +201335,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -201062,7 +201403,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -202119,7 +202460,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -203018,7 +203359,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -203227,7 +203568,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.409091,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -203354,7 +203695,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.285714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -203774,7 +204115,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.833333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -204159,7 +204500,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -204236,7 +204577,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -204809,7 +205150,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.285714,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -205084,7 +205425,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.34091,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -205666,7 +206007,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.301137,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -205946,7 +206287,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.05,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -206241,7 +206582,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.26087,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -206581,7 +206922,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.166667,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -206681,7 +207022,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -206785,7 +207126,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -207031,7 +207372,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -207232,7 +207573,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -207430,7 +207771,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -208179,7 +208520,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": true,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.2125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -208457,7 +208798,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -208528,7 +208869,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.4,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -208894,7 +209235,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.555556,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -209285,7 +209626,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.5625,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -209606,7 +209947,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -209684,7 +210025,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -210482,7 +210823,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 3,
+        "cluster_id": 0,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -210690,7 +211031,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -211406,7 +211747,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.55,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -211477,7 +211818,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -211659,7 +212000,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -211788,7 +212129,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -212333,7 +212674,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.499999,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -212431,7 +212772,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -212717,7 +213058,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.545455,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -213095,7 +213436,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.444445,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -213373,7 +213714,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -214944,7 +215285,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.65,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -215142,7 +215483,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -215552,7 +215893,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.444445,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -215710,7 +216051,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.5,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -216599,7 +216940,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.8,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -216665,7 +217006,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -216857,7 +217198,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -217402,7 +217743,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.25,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -217471,7 +217812,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -218269,7 +218610,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.268421,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -218803,7 +219144,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -219065,7 +219406,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -219316,7 +219657,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -219784,7 +220125,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.285715,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -220269,7 +220610,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.6,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -220500,7 +220841,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -221668,7 +222009,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -222033,7 +222374,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.391305,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -222295,7 +222636,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -223668,7 +224009,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -224184,7 +224525,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.453125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -224392,7 +224733,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -224914,7 +225255,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -225057,7 +225398,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -225608,7 +225949,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.3,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -225734,7 +226075,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -226325,7 +226666,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -227628,7 +227969,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.375,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -228229,7 +228570,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 1,
+        "cluster_id": 5,
         "industrial_affinity": {
           "value": 0.75,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -229974,7 +230315,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.105978,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -230195,7 +230536,7 @@
         "maturity": "emerging",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -230604,7 +230945,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.35,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -230736,7 +231077,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -230832,7 +231173,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": true,
-        "cluster_id": 7,
+        "cluster_id": 6,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -231032,7 +231373,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 0,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -231173,7 +231514,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -231456,7 +231797,7 @@
         "maturity": "established",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 4,
+        "cluster_id": 8,
         "industrial_affinity": {
           "value": 0.333334,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -231594,7 +231935,7 @@
         "maturity": "established",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -231938,7 +232279,7 @@
         "maturity": "debut",
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
           "value": 0.125,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -232017,7 +232358,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -232722,7 +233063,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 5,
+        "cluster_id": 9,
         "industrial_affinity": {
           "value": 1.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -233039,7 +233380,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.409091,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -233074,22 +233415,22 @@
       "thesis_text": "Invests $500k per startup: a $125k post-money SAFE for 7% plus a $375k uncapped MFN SAFE, with a three-month San Francisco programme ending in Demo Day.",
       "sector_weights": {
         "value": {
-          "ai_apps_agents": 0.285715,
-          "ai_infra": 0.054945,
-          "climate_energy": 0.021978,
-          "dev_tools": 0.10989,
-          "enterprise_saas": 0.065934,
-          "fintech": 0.098901,
-          "hardware_deeptech": 0.010989,
-          "health_bio": 0.131868,
-          "industrial_manufacturing": 0.032967,
-          "mobility_ev": 0.021978,
-          "robotics_physical_ai": 0.087912,
-          "supply_chain_logistics": 0.076923
+          "ai_apps_agents": 0.279571,
+          "ai_infra": 0.053763,
+          "climate_energy": 0.021505,
+          "dev_tools": 0.107527,
+          "enterprise_saas": 0.064516,
+          "fintech": 0.096774,
+          "hardware_deeptech": 0.010753,
+          "health_bio": 0.129032,
+          "industrial_manufacturing": 0.053763,
+          "mobility_ev": 0.021505,
+          "robotics_physical_ai": 0.086022,
+          "supply_chain_logistics": 0.075269
         },
         "method": "portfolio_only",
         "inputs": [
-          "portfolio: 49 rounds with a known sector"
+          "portfolio: 50 rounds with a known sector"
         ]
       },
       "website": "https://www.ycombinator.com",
@@ -233163,9 +233504,9 @@
         "maturity": null,
         "is_early_stage": true,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 1,
         "industrial_affinity": {
-          "value": 0.175824,
+          "value": 0.193548,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
           "inputs": [
             "sector_weights (portfolio_only)"
@@ -234083,7 +234424,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -234154,7 +234495,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -234446,7 +234787,7 @@
         "maturity": "debut",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 2,
+        "cluster_id": 3,
         "industrial_affinity": {
           "value": 0.166666,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -234829,7 +235170,7 @@
         "maturity": "emerging",
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 9,
+        "cluster_id": 2,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -234917,7 +235258,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 6,
+        "cluster_id": 7,
         "industrial_affinity": {
           "value": 0.333333,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",
@@ -235391,7 +235732,7 @@
         "maturity": null,
         "is_early_stage": null,
         "is_generalist": false,
-        "cluster_id": 8,
+        "cluster_id": 4,
         "industrial_affinity": {
           "value": 0.0,
           "method": "core + 0.5 × adjacent sector weights, clamped 0–1",

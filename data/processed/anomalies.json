@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T04:41:53+00:00",
+  "generated_at": "2026-11-11T07:20:11+00:00",
   "records": [
     {
       "id": "anom_goldman_sub200m_funds_0001",
@@ -6728,6 +6728,60 @@
     {
       "id": "anom_research_0748",
       "source_id": "research",
+      "row_ref": "switchon",
+      "field": "company.founded_year",
+      "raw_value": "2017: Inc42 (17 Apr 2023 and 16 Jul 2026, 'Founded in 2017 by Aniruddha Banerjee and Avra Banerjee') and Inc42 company profile; the CIN in SwitchOn's footer (U72100KA2017PTC104814) also carries 2017 | 2020: Entrepreneur India, 17 Apr 2023 ('Founded in 2020 by Aniruddha Banerjee and Avra Banerjee') | The about-page timeline starts in 2018 ('Identified a Critical Gap') and states no founding year",
+      "reason": "sources disagree: Two Inc42 articles and the incorporation year in the CIN agree, and pi Ventures announced a seed investment in July 2019, so a 2020 founding is impossible.",
+      "resolution": "chose 2017"
+    },
+    {
+      "id": "anom_research_0749",
+      "source_id": "research",
+      "row_ref": "switchon",
+      "field": "rounds[0].amount_original",
+      "raw_value": "1000000 USD: Inc42, 17 Apr 2023 ('a $1 Mn seed funding round led by pi Ventures'); SwitchOn about page ('$1M from DeepTech investors & angels') | 1100000 USD: Entrepreneur India, 16 Jul 2026 ('$1.1 million seed round')",
+      "reason": "sources disagree: SwitchOn's own about page and the contemporaneous Inc42 article agree. The pi Ventures post states no amount.",
+      "resolution": "chose 1000000 USD"
+    },
+    {
+      "id": "anom_research_0750",
+      "source_id": "research",
+      "row_ref": "switchon",
+      "field": "rounds[1].leads",
+      "raw_value": "Entrepreneur India, 17 Apr 2023: 'led by a Singapore-based fund, Axilor Ventures, Pi Ventures, and prominent angels such as Anuj Bihani,' (continues with Laxmi Narayan) | Inc42, 17 Apr 2023: '$4.2 Mn in a Series-A funding round from Axilor Ventures and pi Ventures' (no lead named); Inc42, 16 Jul 2026, likewise names no lead",
+      "reason": "sources disagree: The Entrepreneur sentence is ambiguous. It may mean an unnamed Singapore-based fund led the round, or it may be a garbled investor list. No fetched page names a Singapore-based fund.",
+      "resolution": "chose No lead; Axilor Ventures, pi Ventures, Anuj Bihani and Laxmi Narayan recorded as unspecified"
+    },
+    {
+      "id": "anom_research_0751",
+      "source_id": "research",
+      "row_ref": "switchon",
+      "field": "rounds[2].date",
+      "raw_value": "2026-07-16: Inc42 article and Entrepreneur India (both 16 Jul 2026); Inc42 profile FAQ (last round 16 July 2026) | 2026-07-15: Inc42 company profile ('Last funding: 15/07/2026')",
+      "reason": "sources disagree: Both press articles and the profile's own FAQ give 16 July.",
+      "resolution": "chose 2026-07-16"
+    },
+    {
+      "id": "anom_research_0752",
+      "source_id": "research",
+      "row_ref": "switchon",
+      "field": "rounds[2].amount_original",
+      "raw_value": "8000000 USD, 'about ₹ 77 Cr' (Inc42, 16 Jul 2026) | 8000000 USD, 'approximately ₹78 crore' (Entrepreneur India, 16 Jul 2026)",
+      "reason": "sources disagree: The round was announced in dollars; the rupee figures are the outlets' own conversions.",
+      "resolution": "chose 8000000 USD"
+    },
+    {
+      "id": "anom_research_0753",
+      "source_id": "research",
+      "row_ref": "switchon",
+      "field": "company.hq_country",
+      "raw_value": "US: page headers use 'SwitchOn, Inc.' and the office list starts with Lewes, Delaware | IN: footer entity Abee Research Labs Pvt Ltd (Karnataka CIN); offices in Bengaluru, Gurugram and Pune; press says 'Bengaluru-based'; Inc42 profile says headquartered in Bengaluru",
+      "reason": "sources disagree: The operating company, offices and team are in India; the Delaware entity shows only an address.",
+      "resolution": "chose IN"
+    },
+    {
+      "id": "anom_research_0754",
+      "source_id": "research",
       "row_ref": "symphonyai-industrial",
       "field": "rounds[2019-05-15].acquired company",
       "raw_value": "Industrial Global, renamed SymphonyAI Industrial (SymphonyAI release dated 15 May 2019, as it reads today) | Azima Global, renamed Symphony AzimaAI (BINDT news, 30 Sept 2019)",
@@ -6735,7 +6789,7 @@
       "resolution": "chose Industrial Global (company's own page)"
     },
     {
-      "id": "anom_research_0749",
+      "id": "anom_research_0755",
       "source_id": "research",
       "row_ref": "symphonyai-industrial",
       "field": "company.hq_city",
@@ -6744,7 +6798,7 @@
       "resolution": "chose US (city not recorded)"
     },
     {
-      "id": "anom_research_0750",
+      "id": "anom_research_0756",
       "source_id": "research",
       "row_ref": "tandem",
       "field": "rounds[0].amount_original",
@@ -6753,7 +6807,7 @@
       "resolution": "chose 4900000"
     },
     {
-      "id": "anom_research_0751",
+      "id": "anom_research_0757",
       "source_id": "research",
       "row_ref": "tandem",
       "field": "rounds[0].stage",
@@ -6762,7 +6816,7 @@
       "resolution": "chose seed"
     },
     {
-      "id": "anom_research_0752",
+      "id": "anom_research_0758",
       "source_id": "research",
       "row_ref": "thirdai-automation",
       "field": "company.hq_country / HQ city",
@@ -6771,7 +6825,7 @@
       "resolution": "chose US (San Jose address from the company site)"
     },
     {
-      "id": "anom_research_0753",
+      "id": "anom_research_0759",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "headcount_est",
@@ -6780,7 +6834,7 @@
       "resolution": "chose 700"
     },
     {
-      "id": "anom_research_0754",
+      "id": "anom_research_0760",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "founders",
@@ -6789,7 +6843,7 @@
       "resolution": "chose Igor Marinelli, Gabriel Lameirinhas, Leonardo Vieira"
     },
     {
-      "id": "anom_research_0755",
+      "id": "anom_research_0761",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[series_c].date / amount",
@@ -6798,7 +6852,7 @@
       "resolution": "chose 2024-12-05, $120M"
     },
     {
-      "id": "anom_research_0756",
+      "id": "anom_research_0762",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[seed 2021].source",
@@ -6807,7 +6861,7 @@
       "resolution": "chose $3M, 2021-04 (database only, low confidence)"
     },
     {
-      "id": "anom_research_0757",
+      "id": "anom_research_0763",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "total raised",
@@ -6816,7 +6870,7 @@
       "resolution": "chose $313.5M equity across six rounds"
     },
     {
-      "id": "anom_research_0758",
+      "id": "anom_research_0764",
       "source_id": "research",
       "row_ref": "tractian",
       "field": "rounds[series_d].participants",
@@ -6825,7 +6879,7 @@
       "resolution": "chose 53 Stations"
     },
     {
-      "id": "anom_research_0759",
+      "id": "anom_research_0765",
       "source_id": "research",
       "row_ref": "ugx-ai",
       "field": "rounds[seed].date",
@@ -6834,7 +6888,7 @@
       "resolution": "chose 2025-09"
     },
     {
-      "id": "anom_research_0760",
+      "id": "anom_research_0766",
       "source_id": "research",
       "row_ref": "uptool",
       "field": "founders",
@@ -6843,7 +6897,7 @@
       "resolution": "chose All three"
     },
     {
-      "id": "anom_research_0761",
+      "id": "anom_research_0767",
       "source_id": "research",
       "row_ref": "uptool",
       "field": "rounds[seed].date",
@@ -6852,7 +6906,7 @@
       "resolution": "chose 2026-02-04"
     },
     {
-      "id": "anom_research_0762",
+      "id": "anom_research_0768",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "rounds[seed + series_a].amount",
@@ -6861,7 +6915,7 @@
       "resolution": "chose Series A $36M; seed amount null"
     },
     {
-      "id": "anom_research_0763",
+      "id": "anom_research_0769",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "rounds[seed, series_a].date",
@@ -6870,7 +6924,7 @@
       "resolution": "chose 2025-12-02"
     },
     {
-      "id": "anom_research_0764",
+      "id": "anom_research_0770",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "founders",
@@ -6879,7 +6933,7 @@
       "resolution": "chose All three listed"
     },
     {
-      "id": "anom_research_0765",
+      "id": "anom_research_0771",
       "source_id": "research",
       "row_ref": "vinci",
       "field": "round.amount",
@@ -6888,7 +6942,7 @@
       "resolution": "kept first; marked contested"
     },
     {
-      "id": "anom_research_0766",
+      "id": "anom_research_0772",
       "source_id": "research",
       "row_ref": "workroom-automation",
       "field": "rounds[seed].date",

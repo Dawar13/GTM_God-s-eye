@@ -1,0 +1,64 @@
+{
+  "key": "hundred",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-11",
+  "identity_check": "Confirmed as Hundred (hundred.systems; http://hundred.systems and www.hundred.systems both 308-redirect to https://hundred.systems, which serves the site), maker of a benchtop station that images every incoming part in its shipping tray to find cosmetic defects under 100 µm at incoming quality control (IQC). The About page and Y Combinator's directory page (which links http://hundred.systems/) name the same three founders: Erica Diaz (CEO), Iris Liao (CTO) and Imani Gosserand (CPO). YC lists the company in its Fall 2026 batch, founded 2026, team size 3, location 'San Francisco' (no country shown; recorded as US); the company's own site gives no location or founding year (footer only '© 2026'). Not HundredX, Hundred5, hundred.co or consultancies called Hundred, and not the many '100'-branded companies: none of them is at the hundred.systems domain or sells incoming-part inspection. Category adjacent, layer quality_vision: Hundred sells camera-based incoming-part inspection (hardware station plus software, per-part photo record) to quality teams at IQC; it overlaps Utopian Autonomy's quality / process-stability and supplier-quality side only through inspection, with no plant-staff agents for procurement or maintenance; same call as Qualitas Technologies and Frinks AI (adjacent / quality_vision). Sector industrial_manufacturing classified from its own words: the homepage title reads 'AI visual inspection for contract manufacturers'.",
+  "pages": [
+    { "url": "https://hundred.systems", "title": "Hundred | AI visual inspection for contract manufacturers", "publisher": "Hundred", "retrieved_at": "2026-11-11", "kind": "primary" },
+    { "url": "https://hundred.systems/about", "title": "About | Hundred", "publisher": "Hundred", "retrieved_at": "2026-11-11", "kind": "primary" },
+    { "url": "https://hundred.systems/how-it-works", "title": "How it works | Hundred", "publisher": "Hundred", "retrieved_at": "2026-11-11", "kind": "primary" },
+    { "url": "https://hundred.systems/compare", "title": "Compare | Hundred", "publisher": "Hundred", "retrieved_at": "2026-11-11", "kind": "primary" },
+    { "url": "https://www.ycombinator.com/companies/hundred", "title": "Hundred: 100% automated inspection for precision hardware parts | Y Combinator", "publisher": "Y Combinator (company directory)", "retrieved_at": "2026-11-11", "kind": "database" }
+  ],
+  "company": {
+    "name": "Hundred",
+    "website": "https://hundred.systems",
+    "description": "Early-stage San Francisco startup building a benchtop station that images whole trays of incoming parts to catch sub-100 µm cosmetic defects before assembly.",
+    "hq_country": "US",
+    "founded_year": 2026,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "quality_vision"
+  },
+  "category": "adjacent",
+  "layer": "quality_vision",
+  "layer_detail": "Tray-level visual inspection of incoming (and outgoing) parts at IQC / OQC: one-shot anomaly detection against a single golden sample, batch 'sibling consensus', and checks for known molding defects (flash, short shots); pass / fail grading to the customer's existing cosmetic spec with defect heat maps, quarantine flags and a per-part photo record for later failure analysis. Own inspection station plus software; positions itself against Keyence VS in-line cameras, Instrumental line stations and manual visual inspection.",
+  "founders": ["Erica Diaz", "Iris Liao", "Imani Gosserand"],
+  "named_customers": [],
+  "product_summary": "Benchtop inspection station for incoming quality checks: an operator calibrates it from one known-good sample, loads a full shipping tray, and the system flags cosmetic defects under 100 µm with heat maps, grades each part pass or fail against existing cosmetic specs, and keeps a photo record per part.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 3,
+    "pages": [4],
+    "snippet": "Approximate (YC directory field): Team Size 3"
+  },
+  "revenue_reported": null,
+  "rounds": [
+    {
+      "company": { "name": "Hundred", "website": "https://hundred.systems", "description": "Early-stage San Francisco startup building a benchtop station that images whole trays of incoming parts to catch sub-100 µm cosmetic defects before assembly.", "hq_country": "US", "founded_year": 2026, "sector": "industrial_manufacturing", "sector_classified_by": "source", "layer": "quality_vision" },
+      "stage": "pre_seed",
+      "stage_raw": "Y Combinator Fall 2026 batch (YC directory; homepage 'Backed by Y Combinator'); no amount or terms stated. Dated to the year: the pages give only the batch season, which spans Q3 and Q4.",
+      "date": "2026",
+      "date_precision": "year",
+      "amount_original": null,
+      "currency_original": null,
+      "valuation_post_original": null,
+      "leads": [],
+      "participants": [],
+      "unspecified": ["Y Combinator"],
+      "pages": [0, 4],
+      "snippet": "Backed by Y Combinator"
+    }
+  ],
+  "conflicts": [],
+  "open_items": [
+    "YC investment amount and terms not stated on any fetched page (YC directory or company site); amount left null. Investment date not published; only the batch label 'Fall 2026' is given.",
+    "No other funding round found; no press coverage found in one web search, so a post-batch seed announcement could be missed.",
+    "Founded year (2026), team size (3) and location (San Francisco) come only from YC's directory page; the company site states none of them. HQ country inferred as US from 'San Francisco'.",
+    "No named customers: the site invites design partners ('Build with Hundred') and names none.",
+    "No public pricing; revenue not publicly reported.",
+    "Hardware specifics (cameras, lighting, throughput per tray) are not published; How it works gives only sub-100 µm defect size and under-10-second golden-sample calibration.",
+    "Homepage title targets contract manufacturers while How it works and the YC description point at consumer-electronics part makers (phones, smartwatches, laptops); target segment beyond that not stated.",
+    "LinkedIn company page not consulted for headcount."
+  ]
+}

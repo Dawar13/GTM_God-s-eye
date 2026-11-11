@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T04:41:53+00:00",
+  "generated_at": "2026-11-11T07:20:11+00:00",
   "records": [
     {
       "id": "rnd_1849-bio_2024-12_pre_seed",
@@ -28109,6 +28109,49 @@
           0,
           1,
           2
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_hundred_2026_pre_seed",
+      "company_id": "co_hundred",
+      "date": "2026",
+      "date_precision": "year",
+      "stage": "pre_seed",
+      "stage_raw": "Y Combinator Fall 2026 batch (YC directory; homepage 'Backed by Y Combinator'); no amount or terms stated. Dated to the year: the pages give only the batch season, which spans Q3 and Q4.",
+      "amount_usd": null,
+      "amount_original": null,
+      "currency_original": null,
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_y-combinator"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://hundred.systems",
+          "title": "Hundred | AI visual inspection for contract manufacturers",
+          "publisher": "Hundred",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/hundred",
+          "title": "Hundred: 100% automated inspection for precision hardware parts | Y Combinator",
+          "publisher": "Y Combinator (company directory)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "investors": [
+          0,
+          1
         ]
       },
       "confidence": "high"
@@ -56771,16 +56814,19 @@
       "date_precision": "day",
       "stage": "seed",
       "stage_raw": "Seed Investment",
-      "amount_usd": null,
-      "amount_original": null,
-      "currency_original": null,
+      "amount_usd": 1000000,
+      "amount_original": 1000000,
+      "currency_original": "USD",
       "fx": null,
       "valuation_post_usd": null,
-      "lead_investor_ids": [],
-      "participant_investor_ids": [],
-      "unspecified_investor_ids": [
+      "lead_investor_ids": [
         "inv_pi-ventures"
       ],
+      "participant_investor_ids": [
+        "inv_axilor-ventures",
+        "inv_chennai-angels"
+      ],
+      "unspecified_investor_ids": [],
       "contested": false,
       "notes": null,
       "sources": [
@@ -56804,13 +56850,179 @@
           "publisher": "pi Ventures",
           "retrieved_at": "2026-10-30",
           "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
         }
       ],
       "field_sources": {
         "investors": [
           0,
           1,
-          2
+          2,
+          3,
+          4
+        ],
+        "amount_usd": [
+          0,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_switchon_2023-04_series_a",
+      "company_id": "co_switchon",
+      "date": "2023-04-17",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Series-A funding round",
+      "amount_usd": 4200000,
+      "amount_original": 4200000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [],
+      "participant_investor_ids": [],
+      "unspecified_investor_ids": [
+        "inv_anuj-bihani",
+        "inv_axilor-ventures",
+        "inv_laxmi-narayan",
+        "inv_pi-ventures"
+      ],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/switchon-a-vision-ai-company-raises-42-million-to-bring/449801",
+          "title": "SwitchOn, a Vision AI Company Raises $4.2 Million To Bring AI Into Manufacturing",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "rnd_switchon_2026-07_series_a",
+      "company_id": "co_switchon",
+      "date": "2026-07-16",
+      "date_precision": "day",
+      "stage": "series_a",
+      "stage_raw": "Pre-Series B (no stage id; recorded as series_a), mix of equity and debt per Inc42",
+      "amount_usd": 8000000,
+      "amount_original": 8000000,
+      "currency_original": "USD",
+      "fx": null,
+      "valuation_post_usd": null,
+      "lead_investor_ids": [
+        "inv_ivycap-ventures"
+      ],
+      "participant_investor_ids": [
+        "inv_sig-tattva",
+        "inv_trifecta-capital"
+      ],
+      "unspecified_investor_ids": [],
+      "contested": false,
+      "notes": null,
+      "sources": [
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://switchon.io/",
+          "title": "SwitchOn- AI Powered Quality Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/company/switchon/financials/",
+          "title": "SwitchOn — Funding, Revenue & Investors (2026) | Inc42",
+          "publisher": "Inc42 (company profile)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "amount_usd": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "investors": [
+          0,
+          1,
+          2,
+          3
         ]
       },
       "confidence": "high"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T04:41:53+00:00",
+  "generated_at": "2026-11-11T07:20:11+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -2279,6 +2279,85 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "A modular multi-agent platform that orchestrates and executes operational work across a manufacturing plant, running on top of existing ERP, MES and quality tools; customers are enterprise manufacturers in Europe and the US.",
+      "pricing": null
+    },
+    {
+      "id": "co_hundred",
+      "name": "Hundred",
+      "website": "https://hundred.systems",
+      "hq_country": "US",
+      "founded_year": 2026,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "quality_vision",
+      "description_short": "Early-stage San Francisco startup building a benchtop station that images whole trays of incoming parts to catch sub-100 µm cosmetic defects before assembly.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://hundred.systems",
+          "title": "Hundred | AI visual inspection for contract manufacturers",
+          "publisher": "Hundred",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://hundred.systems/about",
+          "title": "About | Hundred",
+          "publisher": "Hundred",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://hundred.systems/how-it-works",
+          "title": "How it works | Hundred",
+          "publisher": "Hundred",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://hundred.systems/compare",
+          "title": "Compare | Hundred",
+          "publisher": "Hundred",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/hundred",
+          "title": "Hundred: 100% automated inspection for precision hardware parts | Y Combinator",
+          "publisher": "Y Combinator (company directory)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "Tray-level visual inspection of incoming (and outgoing) parts at IQC / OQC: one-shot anomaly detection against a single golden sample, batch 'sibling consensus', and checks for known molding defects (flash, short shots); pass / fail grading to the customer's existing cosmetic spec with defect heat maps, quarantine flags and a per-part photo record for later failure analysis. Own inspection station plus software; positions itself against Keyence VS in-line cameras, Instrumental line stations and manual visual inspection.",
+      "size_class": null,
+      "founders": [
+        "Erica Diaz",
+        "Iris Liao",
+        "Imani Gosserand"
+      ],
+      "named_customers": [],
+      "headcount_est": {
+        "value": 3,
+        "source": {
+          "url": "https://www.ycombinator.com/companies/hundred",
+          "title": "Hundred: 100% automated inspection for precision hardware parts | Y Combinator",
+          "publisher": "Y Combinator (company directory)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Benchtop inspection station for incoming quality checks: an operator calibrates it from one known-good sample, loads a full shipping tray, and the system flags cosmetic defects under 100 µm with heat maps, grades each part pass or fail against existing cosmetic specs, and keeps a photo record per part.",
       "pricing": null
     },
     {
@@ -5124,6 +5203,135 @@
       "revenue_basis": "none",
       "product_summary": "Agentic Twin: an AI model of each asset and process built from equipment knowledge, physics and plant data, which watches live signals, forecasts failures and process upsets, explains root causes and recommends energy- and yield-optimal set points, delivered as reliability agents for heavy-industry plants.",
       "pricing": "No prices published. The manufacturing page describes a pilot on 2-6 assets over 4-12 weeks with the implementation fee at cost, then a 12-36 month scale-up on an annual SaaS subscription."
+    },
+    {
+      "id": "co_switchon",
+      "name": "SwitchOn",
+      "website": "https://switchon.io",
+      "hq_country": "IN",
+      "founded_year": 2017,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "quality_vision",
+      "description_short": "Bengaluru computer-vision company whose DeepInspect platform automates visual defect inspection on factory production lines.",
+      "total_raised_usd": 13200000,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.piventures.in/blog-article/our-seed-investment-in-switchon",
+          "title": "Our Seed Investment in SwitchOn",
+          "publisher": "pi Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.piventures.in/portfolio",
+          "title": "Portfolio",
+          "publisher": "pi Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.piventures.in/portfolio/switchon",
+          "title": "SwitchOn",
+          "publisher": "pi Ventures",
+          "retrieved_at": "2026-10-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://switchon.io/",
+          "title": "SwitchOn- AI Powered Quality Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://switchon.io/about-us/",
+          "title": "About SwitchOn | AI Vision Inspection for Manufacturers",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://switchon.io/industries/",
+          "title": "Industries We Serve | AI Inspection | SwitchOn",
+          "publisher": "SwitchOn (Abee Research Labs Pvt Ltd)",
+          "retrieved_at": "2026-11-11",
+          "kind": "primary"
+        },
+        {
+          "url": "https://inc42.com/?p=394637",
+          "title": "Vision AI Startup SwitchOn Bags Funding To Help Companies Reduce Manufacturing Defects",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/news-and-trends/switchon-a-vision-ai-company-raises-42-million-to-bring/449801",
+          "title": "SwitchOn, a Vision AI Company Raises $4.2 Million To Bring AI Into Manufacturing",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/buzz/physical-ai-startup-switchon-raises-8-mn-to-scale-manufacturing-inspection/",
+          "title": "Physical AI Startup SwitchOn Raises $8 Mn To Scale Manufacturing Inspection",
+          "publisher": "Inc42",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://india.entrepreneur.com/business-news/switchon-raises-78-crore-in-pre-series-b-round-led-by-ivycap-ventures",
+          "title": "SwitchOn Raises ₹78 Crore in Pre-Series B Round Led by IvyCap Ventures",
+          "publisher": "Entrepreneur India",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://inc42.com/company/switchon/financials/",
+          "title": "SwitchOn — Funding, Revenue & Investors (2026) | Inc42",
+          "publisher": "Inc42 (company profile)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          3
+        ],
+        "revenue_usd": [
+          10
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "AI visual quality inspection. DeepInspect is edge computer vision for surface and visual defects, and the homepage claims new models can be trained and inspection set up in under 45 minutes. An 'Analyze' offer sits alongside it under 'Zero Line-Stop'. The about page says the product became hardware-agnostic in 2024 and is 'evolving from defect detection to automating quality workflows'. Parts shown on the industries page include connecting rods, batteries, bearings, tyres and pistons. Verticals: automotive, pharma, consumer goods / FMCG and electronics. Machine monitoring and predictive maintenance are not offered on today's pages. They were the 2019 product, per pi Ventures: an edge device on machines that used vibration and electrical data to build a digital twin. Programs shown on the site: Google's AI-first accelerator, Hexagon Catalyst winner (T-Hub Lab32), Maruti Suzuki Innovation incubation (cohort 2) and the Intel startup showcase; the about page also lists NVIDIA. Footer badges: CE, ISO, FDA and AICPA SOC.",
+      "size_class": "from_5m_to_25m",
+      "founders": [
+        "Aniruddha Banerjee",
+        "Avra Banerjee"
+      ],
+      "named_customers": [
+        "Unilever",
+        "Hindustan Unilever",
+        "Diageo",
+        "Sansera Engineering",
+        "ITC"
+      ],
+      "headcount_est": {
+        "value": 91,
+        "source": {
+          "url": "https://inc42.com/company/switchon/financials/",
+          "title": "SwitchOn — Funding, Revenue & Investors (2026) | Inc42",
+          "publisher": "Inc42 (company profile)",
+          "retrieved_at": "2026-11-11",
+          "kind": "secondary"
+        }
+      },
+      "revenue_usd": 322669,
+      "revenue_basis": "reported",
+      "product_summary": "DeepInspect, an edge computer-vision platform that inspects products on production lines for visual and surface defects. It trains new models and sets up inspection in under 45 minutes and is hardware-agnostic. It serves automotive, pharma, consumer-goods and electronics manufacturers and is extending from defect detection into automated quality workflows.",
+      "pricing": null
     },
     {
       "id": "co_symphonyai-industrial",
