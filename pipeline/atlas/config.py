@@ -30,6 +30,8 @@ SEED_ROUNDS_CSV = SEED_DIR / "seed_rounds.csv"
 ACCELERATORS_CSV = SEED_DIR / "accelerators_2026.csv"
 LANDSCAPE_MAP_CSV = SEED_DIR / "physical_ai_market_map_2026-11-01.csv"
 LANDSCAPE_YC_CSV = SEED_DIR / "yc_physical_ai_2026-11-01.csv"
+LANDSCAPE_SF_CSV = SEED_DIR / "sf_robotics_industrial_ai_2026-11-11.csv"
+LANDSCAPE_ROBOTICS_MAP_CSV = SEED_DIR / "robotics_market_map_q4_2026_2026-11-12.csv"
 PHYSICAL_AI_CSV = SEED_DIR / "physical_ai_investors_2026-11-01.csv"
 CUSTOMERS_DIR = DATA / "raw" / "customers"
 # Target-customer workbooks keyed by list: (file, received, ((sheet, archetype fit), ...)).

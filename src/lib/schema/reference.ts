@@ -119,7 +119,12 @@ export const FitFeatures = z
   .describe("Fit features, each 0–1; the weighted total is computed in the app");
 export type FitFeatures = z.infer<typeof FitFeatures>;
 
-export const LANDSCAPE_LISTS = ["market_map", "yc_physical_ai"] as const;
+export const LANDSCAPE_LISTS = [
+  "market_map",
+  "yc_physical_ai",
+  "sf_robotics_industrial_ai",
+  "robotics_market_map",
+] as const;
 export const LandscapeList = z.enum(LANDSCAPE_LISTS);
 export type LandscapeList = z.infer<typeof LandscapeList>;
 
@@ -131,11 +136,35 @@ export const LandscapeCompany = z
     segment: z.string().nullable().describe("Market-map segment, as the map groups it"),
     region: z.enum(["india", "global"]).nullable().describe("Market-map group; null off the map"),
     yc_batch: z.string().nullable().describe("Batch label as the YC post shows it; unverified"),
+    stage_as_listed: z
+      .string()
+      .nullable()
+      .describe("Funding stage the San Francisco post groups it under; unverified"),
+    robotics_map_segment: z
+      .string()
+      .nullable()
+      .describe("Segment on the Q4 2026 robotics market map (Crustdata), as the map groups it"),
+    founded_as_listed: z
+      .string()
+      .nullable()
+      .describe('Founding period on the robotics market map, e.g. "2023+"; unverified'),
     description_as_listed: z
       .string()
       .nullable()
-      .describe("The YC post's one-liner, exactly as listed; unverified"),
-    note: z.string().nullable().describe("Transcription note, e.g. a name read from a logo"),
+      .describe(
+        "A post's one-liner (YC post, or the robotics map's teams to watch), as listed; unverified",
+      ),
+    founders_as_listed: z
+      .array(z.string().min(1))
+      .describe(
+        "Founders as the robotics map's post names its teams to watch; unverified, else empty",
+      ),
+    note: z
+      .string()
+      .nullable()
+      .describe(
+        "Transcription note: a name read from a logo, or why a same-name match is not linked",
+      ),
     matched_id: CompanyId.nullable().describe(
       "An existing company or competitor, only on a unique exact name-key match",
     ),

@@ -25,7 +25,13 @@ import {
 } from "@/lib/viz/transforms/competitorCharts";
 import { competitorOverview } from "@/lib/viz/transforms/competitorOverview";
 import { competitorFlows } from "@/lib/viz/transforms/competitorSankey";
-import { marketMapSegments, ycEntries } from "@/lib/viz/transforms/landscape";
+import {
+  marketMapSegments,
+  roboticsMapSegments,
+  sfStageGroups,
+  watchEntries,
+  ycEntries,
+} from "@/lib/viz/transforms/landscape";
 import { toClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { competitorSources, layerMap, toCompetitorRows } from "@/lib/viz/transforms/competitors";
 
@@ -61,7 +67,13 @@ export default async function CompetitorsPage() {
           clusters={toClusterInfo(clusters)}
         />
         <LayerMap data={layerMap(rows)} sources={sources} />
-        <PhysicalAiLandscape segments={marketMapSegments(landscape)} yc={ycEntries(landscape)} />
+        <PhysicalAiLandscape
+          segments={marketMapSegments(landscape)}
+          yc={ycEntries(landscape)}
+          sf={sfStageGroups(landscape)}
+          robotics={roboticsMapSegments(landscape)}
+          watch={watchEntries(landscape)}
+        />
       </div>
     </PageCanvas>
   );

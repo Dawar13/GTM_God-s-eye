@@ -34,7 +34,9 @@
               "type": "string",
               "enum": [
                 "market_map",
-                "yc_physical_ai"
+                "yc_physical_ai",
+                "sf_robotics_industrial_ai",
+                "robotics_market_map"
               ]
             },
             "description": "Every user-supplied list that names it"
@@ -68,15 +70,44 @@
               "null"
             ]
           },
-          "description_as_listed": {
-            "description": "The YC post's one-liner, exactly as listed; unverified",
+          "stage_as_listed": {
+            "description": "Funding stage the San Francisco post groups it under; unverified",
             "type": [
               "string",
               "null"
             ]
           },
+          "robotics_map_segment": {
+            "description": "Segment on the Q4 2026 robotics market map (Crustdata), as the map groups it",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "founded_as_listed": {
+            "description": "Founding period on the robotics market map, e.g. \"2023+\"; unverified",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description_as_listed": {
+            "description": "A post's one-liner (YC post, or the robotics map's teams to watch), as listed; unverified",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "founders_as_listed": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "Founders as the robotics map's post names its teams to watch; unverified, else empty"
+          },
           "note": {
-            "description": "Transcription note, e.g. a name read from a logo",
+            "description": "Transcription note: a name read from a logo, or why a same-name match is not linked",
             "type": [
               "string",
               "null"
@@ -165,7 +196,11 @@
           "segment",
           "region",
           "yc_batch",
+          "stage_as_listed",
+          "robotics_map_segment",
+          "founded_as_listed",
           "description_as_listed",
+          "founders_as_listed",
           "note",
           "matched_id",
           "sources",

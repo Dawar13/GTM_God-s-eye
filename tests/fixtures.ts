@@ -195,7 +195,11 @@ export const landscapeCompany = (over: Partial<LandscapeCompany> = {}): Landscap
   segment: "Factories and manufacturing",
   region: "india",
   yc_batch: null,
+  stage_as_listed: null,
   description_as_listed: null,
+  robotics_map_segment: null,
+  founded_as_listed: null,
+  founders_as_listed: [],
   note: null,
   matched_id: null,
   sources: [
