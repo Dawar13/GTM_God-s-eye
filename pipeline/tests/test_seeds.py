@@ -186,3 +186,120 @@ def test_vc_india_list_through_the_pipeline(store):
     assert page["linkedin"] == "https://www.linkedin.com/company/exitfund"
     # A list address only fills a gap: the Bangalore address does not blank the fund-list region.
     assert investor(store, "Unitus Seed Fund")["region"] == "western"
+
+
+# --- Investor lists of 2026-11-12 in the shared layout -------------------------------------
+
+
+def listed_rows() -> dict[str, list[seeds.ListedInvestor]]:
+    return {spec.tag: seeds.read_listed(spec) for spec in seeds.LISTED}
+
+
+def test_listed_lists_rows_types_and_hints():
+    rows = listed_rows()
+    assert {tag: len(r) for tag, r in rows.items()} == {
+        "New York seed funds": 84,
+        "750+ seed funds list": 786,
+        "DocSend early-stage list": 361,
+        "Australia and New Zealand": 146,
+        "US angels": 382,
+    }
+    assert {r.type for r in rows["US angels"]} == {"angel"}  # the list's kind
+    assert {r.type for r in rows["Australia and New Zealand"]} == {"vc"}  # its Type column
+    assert {r.type for r in rows["DocSend early-stage list"]} == {None}
+
+    angel = next(r for r in rows["US angels"] if r.name == "Jared Hecht")
+    hint = angel.hint()
+    assert hint["listed_focus"] is None  # a day job is not an investment focus
+    assert hint["notes"].startswith("Co-Founder & Chief Executive Officer at Fundera")
+    assert "Location as listed: New York, New York" in hint["notes"]
+
+    au = next(r for r in rows["Australia and New Zealand"] if r.name == "Blackbird Ventures")
+    assert "Type as listed" not in (au.hint()["notes"] or "")  # it became the type field
+
+    docsend = {r.name: r for r in rows["DocSend early-stage list"]}
+    assert "Female founders focus" in docsend["406 Ventures"].tags
+    assert docsend["Equation Angels"].name_as_listed == "Equation Angels | Southwestern …"
+
+
+@pytest.mark.parametrize(
+    "location, region",
+    [
+        ("Sydney", "western"),
+        ("Auckland", "western"),
+        ("Boston, Massachusetts", "western"),
+        ("Washington, District of Columbia", "western"),
+        ("Georgia", None),  # a state and a country
+    ],
+)
+def test_places_named_by_the_new_lists(location, region):
+    assert seeds.region_from_address(location) == region
+
+
+def test_listed_names_stay_apart_from_similar_firms():
+    from atlas.resolve import InvestorResolver
+
+    for existing, listed in [
+        ("Revolution Ventures", "Evolution VC Partners"),
+        ("NVentures", "Inventures"),
+        ("Tomorrow Capital", "Tomorrow Ventures"),
+        ("iSeed", "iSeed Ventures"),
+        ("Next Wave Ventures", "NextWave Ventures"),
+        ("NextGen Venture Partners", "NextGen Ventures"),
+    ]:
+        r = InvestorResolver()
+        assert r.add(existing, "fund_list", "a") is not r.add(listed, "seed_list", "b")
+    # Canberra's ACTivate Capital carries its city, so a round naming the US firm
+    # "Activate Capital" still finds it.
+    r = InvestorResolver()
+    us = r.add("Activate", "seed_list", "a")
+    assert r.add("ACTivate Capital (Canberra)", "seed_list", "b") is not us
+    assert r.add("Activate Capital", "round_list", "c") is us
+
+
+def test_a_large_list_never_renames_a_known_firm():
+    from atlas.resolve import InvestorResolver
+
+    r = InvestorResolver()
+    group = r.add("Alpine Meridian Ventures", "round_list", "rounds")
+    assert r.add("Alpine Meridien", "seed_list", "big_list") is group
+    assert group.choose_display_name() == "Alpine Meridien"  # a seed list names firms...
+    assert group.choose_display_name(frozenset({"big_list"})) == "Alpine Meridian Ventures"
+
+
+def test_listed_lists_through_the_pipeline(store):
+    angel = investor(store, "Jared Hecht")
+    assert angel["type"] == "angel"
+    assert angel["user_tags"] == ["US angels"]
+    assert angel["linkedin"] == "http://www.linkedin.com/in/jaredhecht"
+    assert angel["region"] == "western"
+    cited = angel["sources"][angel["field_sources"]["type"][0]]
+    assert cited["url"] == "user_supplied:us_angel_investors_list_2026_11_12"
+    assert cited["retrieved_at"].startswith("2026-11-12")
+    assert angel["check_min_usd"] is None and angel["stages"] == []  # hints only
+
+    tagged = investor(store, ".406 Ventures")  # the Goldman name stays
+    assert {"DocSend early-stage list", "Female founders focus"} <= set(tagged["user_tags"])
+    assert investor(store, "ACTivate Capital (Canberra)")["region"] == "western"
+    # A city on a large list never blanks a region a street address gave (Boston vs
+    # the Australia list's "Singapore").
+    assert investor(store, "MassMutual Ventures")["region"] == "western"
+    # Both lists' hints are kept on one record.
+    melt = investor(store, "Melt Ventures")
+    assert (
+        sum(h["source_id"] == "australia_nz_investors_list_2026_11_12" for h in melt["seed_hints"])
+        == 2
+    )
+
+
+def test_listed_tags_and_list_ids_are_known_to_the_app():
+    """Every tag is a Tag filter option (USER_TAGS) and every list has a label."""
+    from atlas.config import REPO_ROOT
+
+    filters = (REPO_ROOT / "src/lib/filters/index.ts").read_text(encoding="utf-8")
+    labels = (REPO_ROOT / "src/lib/format/labels.ts").read_text(encoding="utf-8")
+    for spec in seeds.LISTED:
+        assert f'"{spec.tag}"' in filters, spec.tag
+        assert f"{spec.source_id}:" in labels, spec.source_id
+    for tag in seeds.FOUNDER_FOCUS_TAGS:
+        assert f'"{tag}"' in filters, tag

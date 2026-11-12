@@ -76,6 +76,25 @@ def ingest_vc_india(resolver: InvestorResolver) -> int:
     return len(rows)
 
 
+def ingest_listed(resolver: InvestorResolver) -> dict[str, int]:
+    """The 2026-11-12 lists in the shared layout. Returns rows read per list tag."""
+    counts = {}
+    for spec in seeds.LISTED:
+        rows = seeds.read_listed(spec)
+        for row in rows:
+            group = resolver.add(row.name, "seed_list", spec.source_id)
+            group.user_tags.extend([spec.tag, *row.tags])
+            group.seed_hints.append(row.hint())
+            if region := seeds.region_from_address(row.location):
+                group.listed_regions.add(region)
+            for field_name, url in row.links.items():
+                group.listed_links.setdefault(field_name, (url, spec.source_id))
+            if row.type and group.listed_type is None:
+                group.listed_type = (row.type, spec.source_id)
+        counts[f"list rows: {spec.tag}"] = len(rows)
+    return counts
+
+
 def ingest_seed_rounds(resolver: InvestorResolver) -> list[build.RoundInput]:
     inputs = []
     for r in seeds.read_seed_rounds():
@@ -110,6 +129,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
     seed_rows = ingest_seed_investors(resolver)
     physical_ai_rows = ingest_physical_ai(resolver)
     vc_india_rows = ingest_vc_india(resolver)
+    listed_rows = ingest_listed(resolver)
     round_inputs = ingest_seed_rounds(resolver)
 
     loaded = research_files.load() if research else research_files.Loaded()
@@ -117,7 +137,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
 
     duplicate_rounds = build.build(store, resolver, goldman, round_inputs)
     research_stats = research_files.apply(store, loaded, {})
-    listed_links = build.apply_listed_links(store, resolver)
+    listed_fields = build.apply_listed_fields(store, resolver)
     if research:
         set_tiers(store, loaded)
     store.programs = accelerators.build(store)
@@ -132,7 +152,9 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         "seed investor rows": seed_rows,
         "physical-AI list rows": physical_ai_rows,
         "VC-in-India list rows": vc_india_rows,
-        "links filled from a list": listed_links,
+        **listed_rows,
+        "links filled from a list": listed_fields["links filled from a list"],
+        "types filled from a list": listed_fields["types filled from a list"],
         "seed round rows": len(round_inputs),
         "round listings merged": duplicate_rounds,
         "investors on 2+ seed lists": sum(1 for i in investors if i["seed_list_count"] >= 2),

@@ -11,7 +11,17 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from atlas.config import PHYSICAL_AI_CSV, SEED_INVESTORS_CSV, SEED_ROUNDS_CSV, VC_INDIA_CSV
+from atlas.config import (
+    AUSTRALIA_NZ_CSV,
+    DOCSEND_EARLY_CSV,
+    ESTES_SEED_FUNDS_CSV,
+    NYC_SEED_VC_CSV,
+    PHYSICAL_AI_CSV,
+    SEED_INVESTORS_CSV,
+    SEED_ROUNDS_CSV,
+    US_ANGELS_CSV,
+    VC_INDIA_CSV,
+)
 from atlas.geo import region_for_country, region_for_location
 from atlas.names import clean, investing_name
 
@@ -218,6 +228,138 @@ def read_vc_india(path: Path = VC_INDIA_CSV) -> list[VcIndiaRow]:
             for r in csv.DictReader(fh)
             if clean(r["name"])
         ]
+
+
+# --- Investor lists of 2026-11-12 in one shared layout (atlas.ingest.transcribe_lists) ----
+
+
+@dataclass(frozen=True)
+class ListSpec:
+    source_id: str
+    path: Path
+    tag: str  # every name on the list gets this tag
+    retrieved: str
+    # The investor type of every name on the list, when the list is all of one kind.
+    default_type: str | None = None
+
+
+LISTED = (
+    ListSpec("nyc_seed_vc_list_2026_11_12", NYC_SEED_VC_CSV, "New York seed funds", "2026-11-12"),
+    ListSpec(
+        "estes_750_seed_funds_list_2026_11_12",
+        ESTES_SEED_FUNDS_CSV,
+        "750+ seed funds list",
+        "2026-11-12",
+    ),
+    ListSpec(
+        "docsend_early_investors_list_2026_11_12",
+        DOCSEND_EARLY_CSV,
+        "DocSend early-stage list",
+        "2026-11-12",
+    ),
+    ListSpec(
+        "australia_nz_investors_list_2026_11_12",
+        AUSTRALIA_NZ_CSV,
+        "Australia and New Zealand",
+        "2026-11-12",
+    ),
+    # A list of people; the user describes it as angel investors.
+    ListSpec(
+        "us_angel_investors_list_2026_11_12",
+        US_ANGELS_CSV,
+        "US angels",
+        "2026-11-12",
+        default_type="angel",
+    ),
+)
+LIST_RETRIEVED.update({spec.source_id: spec.retrieved for spec in LISTED})
+# Tags a row carries when the list's own words state a founder focus.
+FOUNDER_FOCUS_TAGS = ("Female founders focus", "Minority founders focus")
+# A list's type words -> InvestorType. Other words stay in the hint only.
+LISTED_TYPES = {
+    "vc": "vc",
+    "angel": "angel",
+    "cvc": "cvc",
+    "corporate vc": "cvc",
+    "family office": "family_office",
+    "accelerator": "accelerator",
+    "incubator": "incubator",
+    "syndicate": "syndicate",
+}
+
+
+@dataclass
+class ListedInvestor:
+    source_id: str
+    name: str
+    name_as_listed: str | None
+    type: str | None  # InvestorType: the list's own word for it, or the list's kind
+    type_as_listed: str | None
+    stages: str | None
+    location: str | None
+    focus: str | None
+    check: str | None
+    about: str | None
+    website: str | None
+    linkedin: str | None
+    note: str | None
+    tags: list[str] = field(default_factory=list)
+
+    @property
+    def links(self) -> dict[str, str]:
+        return {k: v for k, v in (("website", self.website), ("linkedin", self.linkedin)) if v}
+
+    def hint(self) -> dict:
+        # `about` is never the focus: on the angel list it is the person's day job.
+        notes = [
+            self.about,
+            f"Stages as listed: {self.stages}" if self.stages else None,
+            # A type word that became the type field is not repeated.
+            f"Type as listed: {self.type_as_listed}"
+            if self.type_as_listed and self.type_as_listed.lower() not in LISTED_TYPES
+            else None,
+            f"Location as listed: {self.location}" if self.location else None,
+            f"Listed as: {self.name_as_listed}" if self.name_as_listed else None,
+            self.note,
+        ]
+        return {
+            "source_id": self.source_id,
+            "listed_focus": self.focus,
+            "listed_check_or_fund": self.check,
+            "notes": "; ".join(n for n in notes if n) or None,
+        }
+
+
+def read_listed(spec: ListSpec) -> list[ListedInvestor]:
+    rows = []
+    with spec.path.open(encoding="utf-8", newline="") as fh:
+        for r in csv.DictReader(fh):
+            name = clean(r["name"])
+            if not name:
+                continue
+            tags = [t for t in (clean(x) for x in r["tags"].split(";")) if t]
+            if unknown := set(tags) - set(FOUNDER_FOCUS_TAGS):
+                raise ValueError(f"unknown tags {sorted(unknown)} for {name!r}")
+            type_raw = _blank_to_none(r["type_as_listed"])
+            rows.append(
+                ListedInvestor(
+                    source_id=spec.source_id,
+                    name=name,
+                    name_as_listed=_blank_to_none(r["name_as_listed"]),
+                    type=LISTED_TYPES.get(type_raw.lower()) if type_raw else spec.default_type,
+                    type_as_listed=type_raw,
+                    stages=_blank_to_none(r["stages_as_listed"]),
+                    location=_blank_to_none(r["location_as_listed"]),
+                    focus=_blank_to_none(r["focus_as_listed"]),
+                    check=_blank_to_none(r["check_as_listed"]),
+                    about=_blank_to_none(r["about_as_listed"]),
+                    website=_blank_to_none(r["website"]),
+                    linkedin=_blank_to_none(r["linkedin"]),
+                    note=_blank_to_none(r["note"]),
+                    tags=tags,
+                )
+            )
+    return rows
 
 
 # Country codes that end an address on the list. US state codes ("NY", "MA") look the

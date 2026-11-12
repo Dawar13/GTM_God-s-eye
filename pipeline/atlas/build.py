@@ -8,7 +8,7 @@ from atlas.config import RESEARCH_SOURCE_ID
 from atlas.geo import region_for_location
 from atlas.ingest.goldman_pdf import SOURCE_ID as GOLDMAN_ID
 from atlas.ingest.goldman_pdf import GoldmanFund
-from atlas.ingest.seeds import LIST_RETRIEVED, LIST_SECTOR, SeedRound
+from atlas.ingest.seeds import LIST_RETRIEVED, LIST_SECTOR, LISTED, SeedRound
 from atlas.model import (
     Store,
     add_source,
@@ -30,10 +30,15 @@ class RoundInput:
     roles: list[tuple[str, Group]]  # (lead | participant | unspecified, investor group)
 
 
+# Large lists that join firms already known: they never rename them (see
+# Group.choose_display_name).
+NAMED_LAST = frozenset(spec.source_id for spec in LISTED)
+
+
 def assign_investor_ids(resolver: InvestorResolver) -> None:
     registry = ids.IdRegistry()
     for group in resolver.groups:
-        group.display_name = group.choose_display_name()
+        group.display_name = group.choose_display_name(NAMED_LAST)
         group.investor_id = registry.claim(ids.investor_id(group.display_name))
 
 
@@ -49,7 +54,8 @@ def investor_from_group(group: Group, fund_regions: set[str]) -> dict:
     arm_region = region_for_location(", ".join(names.region_words(group.display_name)))
     regions = fund_regions | group.region_hints | ({arm_region} if arm_region else set())
     # A list's street address only fills a gap; it never overrules or blanks another source.
-    regions = regions or set(group.address_regions)
+    # A city on a large list fills only what is still empty after that.
+    regions = regions or set(group.address_regions) or set(group.listed_regions)
     inv = new_investor(
         group.investor_id,
         group.display_name,
@@ -102,21 +108,29 @@ def fund_record(fund: GoldmanFund, investor_id: str, fund_id: str) -> dict:
     }
 
 
-def apply_listed_links(store: Store, resolver: InvestorResolver) -> int:
-    """A list's web address for a firm fills `website` / `linkedin` only where research
-    left the field empty, and the field cites that list. Returns the number filled."""
-    filled = 0
+def apply_listed_fields(store: Store, resolver: InvestorResolver) -> Counter:
+    """A list's web address for a firm fills `website` / `linkedin`, and a list's stated
+    investor type fills `type`, only where research left the field empty; the field
+    cites that list. Returns how many links and types were filled."""
+    filled: Counter = Counter()
     for group in resolver.groups:
         inv = store.investors.get(group.investor_id or "")
         if inv is None:
             continue
-        for field_name, (url, source_id) in group.listed_links.items():
+        listed = dict(group.listed_links)
+        if group.listed_type:
+            listed["type"] = group.listed_type
+        for field_name, (value, source_id) in listed.items():
             if inv[field_name] is not None:
                 continue
             src = user_source(source_id, retrieved_at=LIST_RETRIEVED.get(source_id))
-            inv[field_name] = url.rstrip("/") if url.count("/") > 3 else url
+            if field_name == "type":
+                inv["type"] = value
+                filled["types filled from a list"] += 1
+            else:
+                inv[field_name] = value.rstrip("/") if value.count("/") > 3 else value
+                filled["links filled from a list"] += 1
             cite(inv, field_name, [add_source(inv, src)])
-            filled += 1
     return filled
 
 

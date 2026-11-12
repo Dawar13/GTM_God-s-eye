@@ -136,7 +136,7 @@ Put originals in `data/raw/sources/`. Transcribed seeds are in `data/seed/`.
 
 | source_id | What | Use |
 |---|---|---|
-| goldman_sub200m_funds | Shai Goldman (Brex) list of ~971 VC funds ≤$200M, 2011–2026, with size, date, fund number, location, link | Parse fully → Fund + Investor records. Best source for vintage & emerging managers |
+| goldman_sub200m_funds | Shai Goldman (Brex) list of ~971 VC funds ≤$200M, 2011–2026, with size, date, fund number, location, link (the same rows also arrived as `goldman_sub200m_funds.xlsx` on 2026-11-12; the PDF stays the parsed source) | Parse fully → Fund + Investor records. Best source for vintage & emerging managers |
 | freesbee_q3_2026_fund_closes | Treemap: who raised $19.9B in Q3 2026 (103 funds; 22 debut, $774M) + stats text | Fresh-capital funds |
 | freesbee_ai_megaseeds_2026 | 30 AI mega-seed rounds 2026, leads + strategic co-investors | Rounds + edges |
 | startupriders_robotics_20m_plus_2026 | Top 20 of 40 robotics rounds ≥$20M in 2026 with investors | Rounds + edges (high relevance) |
@@ -148,6 +148,13 @@ Put originals in `data/raw/sources/`. Transcribed seeds are in `data/seed/`.
 | one_way_summit_sf_2026_list2 | 24 early-stage VCs at One Way Summit SF (Oct 28–29) incl. Supply Change Capital (physical AI), Mavka (embodied AI), Riceberg, OneSixOne (deep tech) | Seeds; list 1 of 2 missing |
 | ny_venture_summit_2026_30_firms | 30 early-stage firms, NY Venture Summit Nov 18–19 2026 | Seeds + event to attend |
 | li_ajvc_post | ajvc (India): ₹1.5 Cr for 9% pre-seed, AI/defence/consumer | India seed |
+| physical_ai_investor_list_2026_11_01 | 57 physical-AI investors in four groups | Seeds + tags (DECISIONS 2026-11-01) |
+| vc_investing_in_india_list_2026_11_12 | "VC investing in India" (folk list, pasted; also `vc_investing_in_india.xlsx` and `vc_investing_in_india_folk.pdf`): 145 firms, no name column | Seeds + tag |
+| nyc_seed_vc_list_2026_11_12 | `nyc_seed_vc_list.xlsx` (was "VC Lists (1).xlsx"): 84 New York seed funds with stage, focus, thesis, traction asked | Seeds + tag |
+| estes_750_seed_funds_list_2026_11_12 | `estes_750_seed_funds.xlsx` (was "Untitled spreadsheet.xlsx"): Matt Estes' "Ultimate List of 750+ Seed Funds" (786; HQ, stages, funds raised, investments by category) | Seeds + tag |
+| docsend_early_investors_list_2026_11_12 | `docsend_early_investors_airtable.pdf` (was "Airtable - Grid view_early investors.pdf"): DocSend's user-generated list of 361 early-stage firms, edited 2020–21 | Seeds + tag |
+| australia_nz_investors_list_2026_11_12 | `australia_nz_investors_airtable.pdf` (was "Airtable - Investors_Australia.pdf"): 146 Australian and NZ investors | Seeds + tag |
+| us_angel_investors_list_2026_11_12 | `us_angel_investors_grid_view.csv` (was "Grid view.csv"): 382 angels (people: role, city, LinkedIn) | Seeds + tag, type angel |
 | Industrial_AI_Target_List*.xlsx | **Customer** target lists (Mumbai/Pune, Bangalore, Hyderabad). Not investors | `target_customers` dataset and the Customers page (2026-11-09); not used for VC data |
 | incoming spreadsheets | Two more investor spreadsheets to come | Drop in `data/raw/incoming/`; ingest in Phase 1 |
 

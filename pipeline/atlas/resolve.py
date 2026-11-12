@@ -45,22 +45,32 @@ class Group:
     region_hints: set[str] = field(default_factory=set)
     # Regions from a list's street address: used only when nothing else gives one.
     address_regions: set[str] = field(default_factory=set)
+    # Regions from a city named on a large list (seeds.LISTED): used only when neither
+    # the sources above nor a street address give one.
+    listed_regions: set[str] = field(default_factory=set)
     on_frontier_list: bool = False
     user_tags: list[str] = field(default_factory=list)
     # Investor field -> (URL, list source id): a list's own web address for the firm,
     # used only where research left the field empty.
     listed_links: dict[str, tuple[str, str]] = field(default_factory=dict)
+    # (InvestorType, list source id): a list's stated type, used only where research left
+    # the type empty.
+    listed_type: tuple[str, str] | None = None
 
-    def choose_display_name(self) -> str:
+    def choose_display_name(self, named_last: frozenset[str] = frozenset()) -> str:
         """Research and seed lists name firms, so they win. Among fund-list and
         round names, a name without vehicle words or typos beats one with them
         ("Intel Capital" over "Intel Capital Diversity Fund"); then fund list
-        over rounds; then the earliest read (the Goldman list runs newest first)."""
+        over rounds; then the earliest read (the Goldman list runs newest first).
+
+        Lists in `named_last` name a firm only when no other source names it, so a
+        large list joining known firms never renames them (or changes their ids)."""
         order = {id(m): i for i, m in enumerate(self.members)}
 
         def rank(m: Member) -> tuple:
             names_firms = m.origin in ("research", "seed_list")
             return (
+                1 if m.source_id in named_last else 0,
                 ORIGIN_RANK[m.origin] if names_firms else len(ORIGIN_RANK),
                 1 if names.has_vehicle_words(m.name) else 0,
                 1 if names.typo_tokens(m.name) else 0,
