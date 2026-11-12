@@ -33,6 +33,7 @@ LANDSCAPE_YC_CSV = SEED_DIR / "yc_physical_ai_2026-11-01.csv"
 LANDSCAPE_SF_CSV = SEED_DIR / "sf_robotics_industrial_ai_2026-11-11.csv"
 LANDSCAPE_ROBOTICS_MAP_CSV = SEED_DIR / "robotics_market_map_q4_2026_2026-11-12.csv"
 PHYSICAL_AI_CSV = SEED_DIR / "physical_ai_investors_2026-11-01.csv"
+VC_INDIA_CSV = SEED_DIR / "vc_investing_in_india_2026-11-12.csv"
 CUSTOMERS_DIR = DATA / "raw" / "customers"
 # Target-customer workbooks keyed by list: (file, received, ((sheet, archetype fit), ...)).
 # Mumbai–Pune and Bengaluru (prepared 2026-10-15) came with the Phase 0 sources and do not
@@ -182,6 +183,15 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("bosch", "bosch ventures"),
         ("samsung", "samsung ventures"),
         ("momenta ventures", "moment ventures"),  # industrial-IoT fund vs Moment Ventures (fuzzy)
+        # VC investing in India list (2026-11-12).
+        ("henkel", "henkel ventures"),  # parent vs its venture arm
+        ("super capital", "super ventures"),  # Paris vs the Goldman-list fund
+        ("founder partners", "founders fund"),  # fuzzy 93.3 on the shared key
+        ("founder partners", "founders capital"),
+        (
+            "vertex ventures southeast asia & india",
+            "vertex ventures",
+        ),  # vertexventures.sg vs another Vertex fund
     ]
 )
 

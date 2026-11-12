@@ -1,4016 +1,4380 @@
 {
   "version": 2,
-  "generated_at": "2026-11-12T08:42:47+00:00",
+  "generated_at": "2026-11-12T13:10:01+00:00",
   "records": [
     {
       "id": "inv_100x-vc",
-      "x": 0.727463,
-      "y": 3.920148,
-      "cluster_id": 1,
+      "x": 7.926535,
+      "y": 14.079014,
+      "cluster_id": 5,
       "is_generalist": true
     },
     {
       "id": "inv_10vc",
-      "x": -1.447232,
-      "y": 3.292137,
-      "cluster_id": 1,
+      "x": 7.862416,
+      "y": 12.104424,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_137-ventures",
-      "x": -2.426424,
-      "y": -1.681088,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_1616-ventures",
-      "x": -1.909719,
-      "y": -3.762968,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_1789-capital",
-      "x": -2.533684,
-      "y": -1.756593,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_1kx",
-      "x": -0.50165,
-      "y": 1.178799,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_2048-ventures",
-      "x": 0.113256,
-      "y": 2.179725,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_20vc",
-      "x": 1.458747,
-      "y": 2.654649,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_468-capital",
-      "x": -1.487513,
-      "y": 4.697846,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_53-stations",
-      "x": -1.190917,
-      "y": 2.66087,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_645-ventures",
-      "x": -1.010747,
-      "y": 4.577841,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_8vc",
-      "x": -0.622739,
-      "y": 2.623039,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_97212-ventures",
-      "x": -1.480964,
-      "y": 3.860661,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_9unicorns",
-      "x": -1.793108,
-      "y": 2.545371,
+      "x": 5.880275,
+      "y": 9.617919,
       "cluster_id": 7,
       "is_generalist": false
     },
     {
-      "id": "inv_9yards",
-      "x": 2.517835,
-      "y": 4.874614,
-      "cluster_id": 4,
+      "id": "inv_1616-ventures",
+      "x": 13.119114,
+      "y": 7.20983,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
-      "id": "inv_a",
-      "x": 2.228867,
-      "y": 0.731964,
+      "id": "inv_1789-capital",
+      "x": 5.609073,
+      "y": 9.479879,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_1kx",
+      "x": 9.883277,
+      "y": 2.625266,
       "cluster_id": 9,
       "is_generalist": false
     },
     {
-      "id": "inv_a16z-speedrun",
-      "x": -1.712301,
-      "y": -0.639408,
+      "id": "inv_2048-ventures",
+      "x": 9.837241,
+      "y": 12.118214,
       "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_20vc",
+      "x": 8.452043,
+      "y": 13.173316,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_468-capital",
+      "x": 7.40026,
+      "y": 13.832639,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_53-stations",
+      "x": 8.204393,
+      "y": 11.247247,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_645-ventures",
+      "x": 7.941601,
+      "y": 13.48647,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_8vc",
+      "x": 8.989819,
+      "y": 11.942976,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_97212-ventures",
+      "x": 7.589305,
+      "y": 12.746376,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_9unicorns",
+      "x": 8.136008,
+      "y": 11.225102,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_9yards",
+      "x": 11.402986,
+      "y": 14.849753,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_a",
+      "x": 11.881328,
+      "y": 11.260275,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_a16z-speedrun",
+      "x": 7.384882,
+      "y": 9.996018,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_abstract-ventures",
-      "x": -0.695724,
-      "y": 0.251108,
-      "cluster_id": 2,
+      "x": 9.638285,
+      "y": 9.717626,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_acadian-ventures",
-      "x": 1.629066,
-      "y": 4.220471,
-      "cluster_id": 4,
+      "x": 10.592732,
+      "y": 14.203087,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_accel",
-      "x": 0.133985,
-      "y": 2.946074,
-      "cluster_id": 1,
+      "x": 9.390632,
+      "y": 12.710295,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_accel-india",
-      "x": -0.123108,
-      "y": 3.40266,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_acme-capital",
-      "x": -1.747981,
-      "y": -3.816816,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_advance-venture-partners",
-      "x": -1.905684,
-      "y": -4.025503,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_adverb-ventures",
-      "x": 0.533673,
-      "y": 4.212237,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ae-ventures",
-      "x": -2.279738,
-      "y": 2.134304,
+      "x": 9.296631,
+      "y": 13.154401,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
+      "id": "inv_accion-venture-lab",
+      "x": 3.260188,
+      "y": 19.190456,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_acme-capital",
+      "x": 13.065177,
+      "y": 7.171699,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_advance-venture-partners",
+      "x": 13.269287,
+      "y": 6.975532,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_adverb-ventures",
+      "x": 9.925943,
+      "y": 13.952274,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ae-ventures",
+      "x": 7.900671,
+      "y": 10.388309,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
       "id": "inv_afore-capital",
-      "x": 0.6883,
-      "y": 4.963205,
-      "cluster_id": 4,
+      "x": 10.076145,
+      "y": 14.542591,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_aglae-ventures",
-      "x": -8.734112,
-      "y": -4.53475,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ai-seed",
-      "x": 2.766506,
-      "y": 5.04476,
+      "x": 7.194794,
+      "y": -0.509483,
       "cluster_id": 4,
       "is_generalist": false
     },
     {
+      "id": "inv_ai-seed",
+      "x": 11.5876,
+      "y": 15.055186,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
       "id": "inv_air-street-capital",
-      "x": -0.023361,
-      "y": 2.458785,
+      "x": 9.334149,
+      "y": 12.077758,
       "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_airtree",
-      "x": 2.778535,
-      "y": -0.219393,
-      "cluster_id": 9,
+      "x": 12.643712,
+      "y": 10.683201,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_aix-ventures",
-      "x": 2.332685,
-      "y": 4.488903,
-      "cluster_id": 4,
+      "x": 11.245744,
+      "y": 14.389946,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_ajvc",
-      "x": 0.083504,
-      "y": 4.410593,
-      "cluster_id": 1,
+      "x": 9.547097,
+      "y": 13.960255,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_alleycorp",
-      "x": 1.573229,
-      "y": 1.3994,
+      "x": 11.243427,
+      "y": 11.545608,
       "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_alpaca",
-      "x": -0.971654,
-      "y": 1.65967,
-      "cluster_id": 2,
+      "x": 9.387693,
+      "y": 10.864557,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_alpha-square",
-      "x": 2.534499,
-      "y": 0.084048,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_alpine-space-ventures",
-      "x": -2.779533,
-      "y": 0.996398,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_also-capital",
-      "x": -1.654778,
-      "y": 0.660566,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_alt-capital",
-      "x": 2.354209,
-      "y": 4.648584,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_alter-venture-partners",
-      "x": 0.638263,
-      "y": -1.177362,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_altimeter",
-      "x": 0.484136,
-      "y": 1.633764,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_altira",
-      "x": -2.558473,
-      "y": -1.771924,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_alumni-ventures",
-      "x": 2.118561,
-      "y": 0.340917,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_amazon",
-      "x": 2.765222,
-      "y": -0.196912,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_amazon-industrial-innovation-fund",
-      "x": 2.883133,
-      "y": -0.304029,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_amd-ventures",
-      "x": 0.80738,
-      "y": 1.071115,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_amplify-partners",
-      "x": 0.591729,
-      "y": -1.211176,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_andreessen-horowitz",
-      "x": -0.274929,
-      "y": 2.104365,
-      "cluster_id": 1,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_angular-ventures",
-      "x": -1.779442,
-      "y": 1.828893,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_anthology-fund",
-      "x": 0.416002,
-      "y": 2.541493,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_anti-fund",
-      "x": 2.77749,
-      "y": 1.944102,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_antler",
-      "x": 2.321228,
-      "y": 4.621593,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_antler-india",
-      "x": -0.544446,
-      "y": 3.886374,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_antler-us",
-      "x": -0.473173,
-      "y": 3.461386,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_arkam-ventures",
-      "x": 0.075347,
-      "y": 4.190887,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_array-ventures",
-      "x": -1.507434,
-      "y": 3.352814,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_artesian",
-      "x": 0.871615,
-      "y": 0.098038,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_artis-ventures",
-      "x": 2.765509,
-      "y": 3.97302,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ashish-kacholia",
-      "x": -2.70666,
-      "y": 1.017469,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_asimov-ventures",
-      "x": -1.294623,
-      "y": 0.360636,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_atreides-management",
-      "x": 1.197169,
-      "y": 1.798068,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_atria-ventures",
-      "x": -0.349327,
-      "y": 1.957701,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_audacious-ventures",
-      "x": -0.393141,
-      "y": 3.976612,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_avid-ventures",
-      "x": -1.172278,
-      "y": 5.139705,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_b-capital",
-      "x": -0.711976,
-      "y": 1.915223,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bain-capital-ventures",
-      "x": 1.886585,
-      "y": 0.369679,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_balerion-space-ventures",
-      "x": -2.571686,
-      "y": 0.849519,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_banktech-ventures",
-      "x": -1.707441,
-      "y": 9.789943,
+      "x": 12.191871,
+      "y": 10.798607,
       "cluster_id": 0,
       "is_generalist": false
     },
     {
-      "id": "inv_banter",
-      "x": -1.450998,
-      "y": 1.343852,
+      "id": "inv_alpine-space-ventures",
+      "x": 8.741928,
+      "y": 8.327488,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_alpine-venture-capital",
+      "x": 9.617714,
+      "y": 2.387673,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_also-capital",
+      "x": 8.530215,
+      "y": 9.552896,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_alt-capital",
+      "x": 11.23229,
+      "y": 14.514231,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_alter-venture-partners",
+      "x": 11.52252,
+      "y": 8.556232,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_altimeter",
+      "x": 10.110562,
+      "y": 11.881322,
       "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_altira",
+      "x": 5.531506,
+      "y": 9.433774,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_alumni-ventures",
+      "x": 11.888038,
+      "y": 10.852778,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_amazon",
+      "x": 12.606384,
+      "y": 10.674262,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_amazon-industrial-innovation-fund",
+      "x": 12.747341,
+      "y": 10.689969,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_amd-ventures",
+      "x": 10.536157,
+      "y": 11.390026,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_amplify-partners",
+      "x": 11.524111,
+      "y": 8.549899,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_andreessen-horowitz",
+      "x": 9.103422,
+      "y": 11.836544,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_angular-ventures",
+      "x": 8.400904,
+      "y": 10.619583,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_anthill-ventures",
+      "x": 10.867046,
+      "y": 5.188481,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_anthology-fund",
+      "x": 9.464504,
+      "y": 12.61568,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_anti-fund",
+      "x": 12.098439,
+      "y": 12.411793,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_antler",
+      "x": 11.27805,
+      "y": 14.542303,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_antler-india",
+      "x": 8.932141,
+      "y": 13.224918,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_antler-us",
+      "x": 8.544572,
+      "y": 12.419074,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_arali-ventures",
+      "x": -4.925879,
+      "y": -0.897665,
+      "cluster_id": 3,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_arkam-ventures",
+      "x": 9.475225,
+      "y": 13.633272,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_array-ventures",
+      "x": 7.732093,
+      "y": 12.290629,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_artesian",
+      "x": 10.743307,
+      "y": 10.45837,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_artis-ventures",
+      "x": 11.739895,
+      "y": 13.807197,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ashish-kacholia",
+      "x": 8.778546,
+      "y": 8.392226,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_asimov-ventures",
+      "x": 7.804875,
+      "y": 9.979358,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_atreides-management",
+      "x": 10.665112,
+      "y": 12.243299,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_atria-ventures",
+      "x": 9.54285,
+      "y": 11.514002,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_audacious-ventures",
+      "x": 7.731571,
+      "y": 13.624648,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_avid-ventures",
+      "x": 7.978583,
+      "y": 14.473649,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_axilor-ventures",
+      "x": 7.267413,
+      "y": 12.760938,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_b-capital",
+      "x": 9.231783,
+      "y": 11.303623,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bain-capital-ventures",
+      "x": 11.640763,
+      "y": 10.855186,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_balerion-space-ventures",
+      "x": 8.580609,
+      "y": 8.675759,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_banana-capital",
+      "x": 6.877375,
+      "y": 12.591988,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_banktech-ventures",
+      "x": 3.174541,
+      "y": 19.142303,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_banter",
+      "x": 9.083392,
+      "y": 10.994171,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_baobab-ventures",
-      "x": 2.711713,
-      "y": 2.140898,
-      "cluster_id": 7,
+      "x": 11.899823,
+      "y": 12.319825,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_base10-partners",
-      "x": 1.71501,
-      "y": 3.862957,
-      "cluster_id": 4,
+      "x": 10.693781,
+      "y": 13.978382,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_battery-ventures",
-      "x": 1.24419,
-      "y": 2.748953,
-      "cluster_id": 1,
+      "x": 10.522223,
+      "y": 12.942545,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_bbg-ventures",
-      "x": -1.226205,
-      "y": 3.332287,
-      "cluster_id": 1,
+      "x": 8.073842,
+      "y": 12.238621,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_bee-partners",
-      "x": -0.060189,
-      "y": 2.271214,
-      "cluster_id": 1,
+      "x": 9.919993,
+      "y": 11.977594,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_belief-capital",
-      "x": 1.770431,
-      "y": 0.628721,
-      "cluster_id": 9,
+      "x": 11.487112,
+      "y": 11.047158,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_benchmark",
-      "x": 2.38204,
-      "y": 1.967537,
-      "cluster_id": 4,
+      "x": 11.700667,
+      "y": 12.373927,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_benhamou-global-ventures",
+      "x": 7.582907,
+      "y": 13.973595,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_bessemer-venture-partners",
-      "x": 0.167105,
-      "y": 3.216352,
+      "x": 9.14321,
+      "y": 13.227704,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_best-nights-vc",
+      "x": 7.246132,
+      "y": -0.449412,
       "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_beta-boom",
-      "x": 1.528278,
-      "y": -4.098113,
-      "cluster_id": 3,
+      "x": 6.087293,
+      "y": 15.599475,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_better-capital",
-      "x": 0.480463,
-      "y": 4.910296,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_better-tomorrow-ventures",
-      "x": -1.477376,
-      "y": 9.381502,
-      "cluster_id": 0,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bezos-expeditions",
-      "x": 2.478523,
-      "y": -0.104776,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_blackbird-ventures",
-      "x": -2.636683,
-      "y": 1.052604,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_blackrock",
-      "x": 0.872675,
-      "y": 1.098699,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_blank-ventures",
-      "x": -1.541615,
-      "y": 9.492882,
-      "cluster_id": 0,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bling-capital",
-      "x": -2.103478,
-      "y": -1.062513,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bloomberg-beta",
-      "x": 1.624221,
-      "y": 3.809041,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bluestein-ventures",
-      "x": -1.904231,
-      "y": -4.218292,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bluetree-venture-fund",
-      "x": 1.51314,
-      "y": -4.08333,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_blume-ventures",
-      "x": -0.055029,
-      "y": 4.009489,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_boardman-bay-capital-management",
-      "x": -2.396975,
-      "y": -0.065536,
+      "x": 9.817279,
+      "y": 14.405326,
       "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_boldstart-ventures",
-      "x": 1.736224,
-      "y": 2.228096,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bond-capital",
-      "x": 1.147203,
-      "y": 0.278936,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_boost-vc",
-      "x": -1.18839,
-      "y": 1.029599,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bosch-ventures",
-      "x": -1.340536,
-      "y": 0.797736,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_boulder-ventures",
-      "x": 1.530368,
-      "y": -4.099047,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_box-group",
-      "x": 0.730631,
-      "y": 2.656623,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_boxgroup",
-      "x": 0.016984,
-      "y": 2.534508,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_brave-capital",
-      "x": -2.21018,
-      "y": 0.725052,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bravo-victor-venture-capital",
-      "x": -1.004299,
-      "y": 3.28216,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_breakout-ventures",
-      "x": -0.619463,
-      "y": 1.672587,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_breakwater-ventures",
-      "x": -0.395609,
-      "y": 3.023143,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_bridgewest-ventures",
-      "x": -0.533947,
-      "y": 1.931336,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_caffeinated-capital",
-      "x": -0.104118,
-      "y": 2.688131,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_cake-ventures",
-      "x": -1.792987,
-      "y": -4.877846,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_calibrate-ventures",
-      "x": -3.213971,
-      "y": 0.159635,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_cambrian-ventures",
-      "x": -1.715936,
-      "y": 9.717253,
-      "cluster_id": 0,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_canaan-partners",
-      "x": -0.220599,
-      "y": 2.882436,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_cantos",
-      "x": -0.593246,
-      "y": -0.278093,
+      "id": "inv_better-tomorrow-ventures",
+      "x": 3.061773,
+      "y": 19.336346,
       "cluster_id": 2,
       "is_generalist": false
     },
     {
+      "id": "inv_bezos-expeditions",
+      "x": 12.180854,
+      "y": 10.712443,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_blackbird-ventures",
+      "x": 8.856093,
+      "y": 8.570378,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_blackrock",
+      "x": 10.83899,
+      "y": 11.338173,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_blank-ventures",
+      "x": 3.014968,
+      "y": 19.376158,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bling-capital",
+      "x": 6.713183,
+      "y": 10.04394,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bloomberg-beta",
+      "x": 10.630751,
+      "y": 13.994823,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bluestein-ventures",
+      "x": 13.304017,
+      "y": 6.893304,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bluetree-venture-fund",
+      "x": 6.10144,
+      "y": 15.599791,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_blume-ventures",
+      "x": 9.385427,
+      "y": 13.540849,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_boardman-bay-capital-management",
+      "x": 8.411188,
+      "y": 8.729549,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_boldstart-ventures",
+      "x": 11.104139,
+      "y": 12.134189,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bond-capital",
+      "x": 10.754744,
+      "y": 10.65477,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_boost-vc",
+      "x": 8.901817,
+      "y": 10.49488,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bosch-ventures",
+      "x": 8.712266,
+      "y": 9.93942,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_boulder-ventures",
+      "x": 6.089835,
+      "y": 15.611255,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_box-group",
+      "x": 8.809216,
+      "y": 12.842265,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_boxgroup",
+      "x": 9.346459,
+      "y": 12.170084,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_brand-capital",
+      "x": 7.147671,
+      "y": -0.556514,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_brave-capital",
+      "x": 8.047399,
+      "y": 8.978563,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bravo-victor-venture-capital",
+      "x": 8.344468,
+      "y": 12.373605,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_breakout-ventures",
+      "x": 9.467658,
+      "y": 11.131714,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_breakwater-ventures",
+      "x": 9.688715,
+      "y": 12.942882,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_bridgewest-ventures",
+      "x": 9.367056,
+      "y": 11.30327,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_caffeinated-capital",
+      "x": 9.922159,
+      "y": 12.497902,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_cake-ventures",
+      "x": 10.870778,
+      "y": 5.184955,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_calibrate-ventures",
+      "x": 7.687165,
+      "y": 8.224232,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_cambrian-ventures",
+      "x": 3.189342,
+      "y": 19.198143,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_canaan-partners",
+      "x": 9.616946,
+      "y": 12.721813,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_cantos",
+      "x": 9.879914,
+      "y": 9.284021,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
       "id": "inv_capitalg",
-      "x": 1.813954,
-      "y": 0.528377,
-      "cluster_id": 9,
+      "x": 11.46001,
+      "y": 10.946399,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_capricorn-investment-group",
-      "x": 0.926448,
-      "y": 0.157766,
-      "cluster_id": 9,
+      "x": 10.502806,
+      "y": 10.456267,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_catamaran-ventures",
-      "x": -0.431516,
-      "y": 3.228596,
+      "x": 8.993953,
+      "y": 12.27967,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ce-ventures",
+      "x": 7.044317,
+      "y": 12.494196,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_charlie-songhurst",
-      "x": 1.081048,
-      "y": 2.437404,
-      "cluster_id": 1,
+      "x": 8.597594,
+      "y": 12.773562,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_cherry-ventures",
-      "x": -1.330981,
-      "y": 5.005857,
-      "cluster_id": 1,
+      "x": 7.646281,
+      "y": 14.180368,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_cherryrock-capital",
-      "x": 0.223627,
-      "y": 3.061118,
-      "cluster_id": 4,
+      "x": 9.496389,
+      "y": 13.209495,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_chevron-technology-ventures",
-      "x": -2.28285,
-      "y": -1.349373,
-      "cluster_id": 5,
+      "x": 5.965945,
+      "y": 9.553247,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_chiratae-ventures",
-      "x": -1.52521,
-      "y": -0.669768,
-      "cluster_id": 5,
+      "x": 7.479532,
+      "y": 9.912913,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_chroma-ventures",
-      "x": 12.976482,
-      "y": -5.527238,
-      "cluster_id": 6,
+      "x": -4.930536,
+      "y": -0.902416,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_cisco-investments",
-      "x": -1.744994,
-      "y": -0.883667,
-      "cluster_id": 5,
+      "x": 7.206579,
+      "y": 9.774734,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_claypond-capital",
-      "x": 0.436868,
-      "y": -0.810545,
-      "cluster_id": 8,
+      "x": 11.21413,
+      "y": 9.027608,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_cleo-ventures",
-      "x": 1.984817,
-      "y": 2.910368,
-      "cluster_id": 4,
+      "x": 10.981764,
+      "y": 13.194898,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_climactic",
-      "x": -0.398923,
-      "y": -0.132238,
-      "cluster_id": 2,
+      "x": 10.06686,
+      "y": 9.439415,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_climate-capital",
-      "x": -0.688044,
-      "y": -0.719447,
-      "cluster_id": 2,
+      "x": 9.905613,
+      "y": 8.966333,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_clocktower",
-      "x": -0.686514,
-      "y": 4.836246,
-      "cluster_id": 0,
+      "x": 7.156909,
+      "y": 14.420612,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_cmt-digital",
-      "x": -0.475514,
-      "y": 1.150812,
-      "cluster_id": 1,
+      "x": 9.800965,
+      "y": 2.77402,
+      "cluster_id": 9,
       "is_generalist": false
     },
     {
       "id": "inv_coatue-management",
-      "x": 2.663327,
-      "y": 1.960866,
-      "cluster_id": 4,
+      "x": 11.893626,
+      "y": 12.425425,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_coelius-capital",
-      "x": -1.026337,
-      "y": 5.13149,
-      "cluster_id": 1,
+      "x": 8.033698,
+      "y": 14.467991,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_coinbase-ventures",
-      "x": -0.440387,
-      "y": 1.024088,
-      "cluster_id": 2,
+      "x": 9.526544,
+      "y": 10.117447,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_collab-capital",
-      "x": -1.042261,
-      "y": 2.36451,
-      "cluster_id": 2,
+      "x": 8.678018,
+      "y": 11.457472,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_collaborative-fund",
-      "x": -0.738648,
-      "y": 2.219705,
-      "cluster_id": 2,
+      "x": 8.982912,
+      "y": 11.632225,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_collide-capital",
-      "x": -1.020981,
-      "y": 4.033213,
-      "cluster_id": 1,
+      "x": 7.901052,
+      "y": 13.052434,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_commerce-ventures",
-      "x": -0.677718,
-      "y": 4.781573,
-      "cluster_id": 0,
+      "x": 7.191081,
+      "y": 14.409227,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_congruent-ventures",
-      "x": 1.832756,
-      "y": 1.027496,
-      "cluster_id": 9,
+      "x": 11.452302,
+      "y": 11.176991,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_connect-ventures",
-      "x": 0.792279,
-      "y": 2.670271,
-      "cluster_id": 1,
+      "x": 8.79735,
+      "y": 12.852022,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_construct-capital",
-      "x": -1.827526,
-      "y": 1.962599,
-      "cluster_id": 5,
+      "x": 8.239371,
+      "y": 10.708418,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_contour-venture-partners",
-      "x": -1.457355,
-      "y": 4.930285,
-      "cluster_id": 0,
+      "x": 7.408675,
+      "y": 14.29741,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_convective-capital",
-      "x": -0.709447,
-      "y": -0.10721,
-      "cluster_id": 2,
+      "x": 9.690583,
+      "y": 9.480734,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_conviction-partners",
-      "x": 1.328317,
-      "y": 2.780774,
-      "cluster_id": 1,
+      "x": 10.561148,
+      "y": 12.895979,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_cornerstone-vc",
-      "x": 0.204495,
-      "y": 4.664231,
-      "cluster_id": 4,
+      "x": 9.596713,
+      "y": 14.083005,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_costanoa-ventures",
-      "x": 0.833298,
-      "y": 3.02743,
-      "cluster_id": 1,
+      "x": 9.170341,
+      "y": 12.481976,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_counterpart-ventures",
-      "x": 12.996222,
-      "y": -5.546879,
-      "cluster_id": 6,
+      "x": -4.894929,
+      "y": -0.866719,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_courtside-ventures",
-      "x": -8.735754,
-      "y": -4.518932,
-      "cluster_id": 1,
+      "x": 7.122652,
+      "y": -0.581136,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_craft-ventures",
-      "x": -1.235268,
-      "y": 2.536368,
-      "cluster_id": 5,
+      "x": 7.912761,
+      "y": 11.598658,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_crane-venture-partners",
-      "x": 0.942197,
-      "y": 2.801517,
-      "cluster_id": 1,
+      "x": 8.660995,
+      "y": 13.138334,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_creandum",
-      "x": 2.074653,
-      "y": 1.711694,
-      "cluster_id": 1,
+      "x": 11.539923,
+      "y": 12.084698,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_creator-ventures",
-      "x": 0.09579,
-      "y": 4.638957,
-      "cluster_id": 4,
+      "x": 9.359787,
+      "y": 14.082645,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_crestone-venture-capital",
-      "x": -1.752788,
-      "y": 9.801369,
-      "cluster_id": 0,
+      "x": 3.207344,
+      "y": 19.162804,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_crosslink-capital",
-      "x": 2.48812,
-      "y": 4.844092,
-      "cluster_id": 4,
+      "x": 11.314695,
+      "y": 14.654303,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_crucible-capital",
-      "x": -0.15716,
-      "y": 0.318564,
-      "cluster_id": 2,
+      "x": 9.900167,
+      "y": 9.914383,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_crv",
-      "x": 1.213574,
-      "y": 2.521069,
-      "cluster_id": 1,
+      "x": 10.503668,
+      "y": 12.907265,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_crystal-venture-partners",
-      "x": -1.665229,
-      "y": 9.710195,
-      "cluster_id": 0,
+      "x": 2.96929,
+      "y": 19.439114,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_cubit-capital",
-      "x": -2.34719,
-      "y": 0.29165,
-      "cluster_id": 7,
+      "x": 8.039078,
+      "y": 8.877586,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_curiosity",
-      "x": -0.043474,
-      "y": 3.562228,
-      "cluster_id": 1,
+      "x": 8.548965,
+      "y": 13.430123,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_cybernetix-ventures",
-      "x": -1.516323,
-      "y": 1.644734,
-      "cluster_id": 2,
+      "x": 8.728944,
+      "y": 10.499916,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_cyberstarts",
-      "x": 2.280887,
-      "y": 4.461195,
-      "cluster_id": 4,
+      "x": 11.228001,
+      "y": 14.475546,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_d-e-shaw",
-      "x": 2.201066,
-      "y": 1.836704,
-      "cluster_id": 1,
+      "x": 11.564685,
+      "y": 12.200514,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_databricks",
-      "x": 1.726049,
-      "y": 4.312537,
-      "cluster_id": 4,
+      "x": 10.707737,
+      "y": 14.286777,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_datadog",
-      "x": 0.698413,
-      "y": 3.44634,
-      "cluster_id": 1,
+      "x": 8.677751,
+      "y": 13.754271,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_day-one-ventures",
-      "x": -0.248693,
-      "y": 3.328116,
-      "cluster_id": 2,
+      "x": 9.256038,
+      "y": 12.916135,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_daybreak",
-      "x": 0.364576,
-      "y": 3.415318,
-      "cluster_id": 3,
+      "x": 9.316401,
+      "y": 13.335734,
+      "cluster_id": 8,
       "is_generalist": true
     },
     {
       "id": "inv_dcvc",
-      "x": 2.50624,
-      "y": -0.131934,
-      "cluster_id": 9,
+      "x": 12.312647,
+      "y": 10.638946,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_deciens-capital",
-      "x": -1.690473,
-      "y": 9.750089,
-      "cluster_id": 0,
+      "x": 3.213654,
+      "y": 19.146734,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_decisive-point",
-      "x": -2.68743,
-      "y": 0.312289,
-      "cluster_id": 7,
+      "x": 7.909915,
+      "y": 8.609107,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_deep33",
-      "x": -0.1128,
-      "y": 0.21414,
-      "cluster_id": 2,
+      "x": 9.990327,
+      "y": 9.811116,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_deepstart-ventures",
-      "x": -2.040511,
-      "y": -4.25412,
-      "cluster_id": 3,
+      "x": 13.477137,
+      "y": 6.75355,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_deepwork-capital",
-      "x": 1.409512,
-      "y": 4.114701,
-      "cluster_id": 2,
+      "x": 10.408497,
+      "y": 14.145943,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_dell-technologies-capital",
-      "x": 0.347475,
-      "y": -0.838807,
-      "cluster_id": 8,
+      "x": 11.150854,
+      "y": 8.795771,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_denver-ventures",
-      "x": -1.257729,
-      "y": 1.09164,
-      "cluster_id": 1,
+      "x": 7.22423,
+      "y": 12.169332,
+      "cluster_id": 5,
       "is_generalist": true
     },
     {
       "id": "inv_dept-of-xyz",
-      "x": -1.737717,
-      "y": 9.769963,
-      "cluster_id": 0,
+      "x": 3.204718,
+      "y": 19.122341,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_designer-fund",
-      "x": 0.568164,
-      "y": 3.416289,
-      "cluster_id": 3,
+      "x": 8.130998,
+      "y": 13.797615,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_devc",
-      "x": -1.813555,
-      "y": -0.464838,
-      "cluster_id": 5,
+      "x": 7.313384,
+      "y": 10.093376,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_diagram-ventures",
-      "x": -1.443004,
-      "y": 9.021977,
-      "cluster_id": 0,
+      "x": 9.551244,
+      "y": 10.046311,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_discipulus-ventures",
-      "x": -1.857134,
-      "y": 0.237429,
-      "cluster_id": 7,
+      "x": 8.325887,
+      "y": 9.383162,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_divergent-capital",
-      "x": -0.638321,
-      "y": -1.175606,
-      "cluster_id": 2,
+      "x": 9.989532,
+      "y": 8.481089,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_dorm-room-fund",
-      "x": -0.762241,
-      "y": 2.367921,
-      "cluster_id": 1,
+      "x": 8.686924,
+      "y": 11.908613,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_double-down",
-      "x": -0.54552,
-      "y": 4.078219,
-      "cluster_id": 1,
+      "x": 9.554177,
+      "y": 2.328666,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_draper-associates",
-      "x": -0.874722,
-      "y": 1.837285,
-      "cluster_id": 3,
+      "x": 9.0766,
+      "y": 11.137886,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_dst-global",
-      "x": 0.463435,
-      "y": 1.25252,
-      "cluster_id": 5,
+      "x": 10.262359,
+      "y": 11.590251,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_dynamo-ventures",
-      "x": -1.919259,
-      "y": 1.523895,
-      "cluster_id": 1,
+      "x": 8.682658,
+      "y": 10.470158,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_e1-ventures",
-      "x": 0.260101,
-      "y": -0.751863,
-      "cluster_id": 8,
+      "x": 11.254442,
+      "y": 8.686585,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_e14-fund",
-      "x": -2.300952,
-      "y": 0.328364,
-      "cluster_id": 7,
+      "x": 8.394684,
+      "y": 9.089238,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_earlybird",
-      "x": 0.12428,
-      "y": 3.119699,
-      "cluster_id": 1,
+      "x": 9.209687,
+      "y": 12.878899,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_eclipse",
-      "x": -1.560657,
-      "y": 1.214826,
-      "cluster_id": 5,
+      "x": 8.671611,
+      "y": 10.215368,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_elad-gil",
-      "x": 2.754692,
-      "y": 1.867417,
-      "cluster_id": 4,
+      "x": 11.98756,
+      "y": 12.304533,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_elevation-capital",
-      "x": 0.02573,
-      "y": 3.098557,
-      "cluster_id": 1,
+      "x": 9.34105,
+      "y": 12.839265,
+      "cluster_id": 5,
       "is_generalist": true
     },
     {
+      "id": "inv_em-vc",
+      "x": 7.22743,
+      "y": 14.365119,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
       "id": "inv_emergence-capital",
-      "x": 2.106884,
-      "y": 1.185113,
-      "cluster_id": 9,
+      "x": 11.510284,
+      "y": 11.32223,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_emerson-collective",
-      "x": -0.814403,
-      "y": 1.653579,
-      "cluster_id": 3,
+      "x": 9.440158,
+      "y": 10.946297,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_endeavor-catalyst",
-      "x": -1.855475,
-      "y": 2.202918,
-      "cluster_id": 2,
+      "x": 8.262212,
+      "y": 10.909634,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_endiya-partners",
-      "x": -0.446869,
-      "y": 2.7526,
-      "cluster_id": 5,
+      "x": 10.196035,
+      "y": 12.748177,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_engineering-capital",
-      "x": 0.550439,
-      "y": 3.605399,
-      "cluster_id": 1,
+      "x": 8.337743,
+      "y": 13.833508,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_eniac-ventures",
-      "x": 1.914536,
-      "y": 1.713529,
-      "cluster_id": 1,
+      "x": 11.449475,
+      "y": 12.001624,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_ensemble",
-      "x": -1.107201,
-      "y": 2.248864,
-      "cluster_id": 7,
+      "x": 8.635704,
+      "y": 11.513318,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_entrepreneur-first",
-      "x": 0.511447,
-      "y": 1.808378,
-      "cluster_id": 5,
+      "x": 10.256279,
+      "y": 12.304424,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_eqt",
-      "x": 1.295609,
-      "y": 1.483357,
-      "cluster_id": 5,
+      "x": 10.769714,
+      "y": 11.682542,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_equal-ventures",
-      "x": -0.715089,
-      "y": -0.418689,
-      "cluster_id": 2,
+      "x": 9.811574,
+      "y": 9.221448,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_eric-schmidt",
-      "x": -2.378221,
-      "y": -0.00703,
-      "cluster_id": 7,
+      "x": 8.303909,
+      "y": 9.069539,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_everywhere-ventures",
-      "x": -1.574854,
-      "y": 4.513163,
-      "cluster_id": 1,
+      "x": 7.370201,
+      "y": 13.558044,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_ex-ante",
-      "x": 0.135244,
-      "y": 3.684205,
-      "cluster_id": 1,
+      "x": 8.251457,
+      "y": 13.951715,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_exit-fund",
+      "x": 9.846509,
+      "y": 2.651922,
+      "cluster_id": 9,
       "is_generalist": false
     },
     {
       "id": "inv_explorer-1-fund",
-      "x": 1.49775,
-      "y": -4.066647,
-      "cluster_id": 3,
+      "x": 6.105287,
+      "y": 15.597656,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_exponent-founders-capital",
-      "x": -1.132186,
-      "y": 5.198464,
-      "cluster_id": 1,
+      "x": 8.012165,
+      "y": 14.510708,
+      "cluster_id": 8,
       "is_generalist": true
     },
     {
+      "id": "inv_exponential-impact",
+      "x": 10.356879,
+      "y": 9.361294,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
       "id": "inv_f-prime",
-      "x": 2.337292,
-      "y": 0.005193,
-      "cluster_id": 9,
+      "x": 12.20207,
+      "y": 10.678381,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_factor-e-ventures",
+      "x": 8.07641,
+      "y": 10.551392,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_factorial-funds",
-      "x": 0.035594,
-      "y": 4.045156,
-      "cluster_id": 1,
+      "x": 8.730226,
+      "y": 13.244313,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_fedex",
-      "x": -2.288012,
-      "y": 2.460398,
-      "cluster_id": 2,
+      "x": 7.770482,
+      "y": 10.694523,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_felicis",
-      "x": -1.215737,
-      "y": 1.116478,
-      "cluster_id": 1,
+      "x": 7.794743,
+      "y": 11.967201,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_fellows-fund",
-      "x": -0.714026,
-      "y": 5.323007,
-      "cluster_id": 4,
+      "x": 8.456017,
+      "y": 14.704274,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_female-founders-fund",
-      "x": 0.023959,
-      "y": 3.905532,
-      "cluster_id": 1,
+      "x": 9.423653,
+      "y": 13.472002,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_ff-venture-capital",
-      "x": 2.854499,
-      "y": -0.273734,
-      "cluster_id": 9,
+      "x": 12.686016,
+      "y": 10.681453,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_fidelity-management-research-company",
-      "x": 0.630604,
-      "y": -0.852947,
-      "cluster_id": 8,
+      "x": 11.338978,
+      "y": 8.764051,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_fifth-wall",
-      "x": -0.622562,
-      "y": -0.324137,
-      "cluster_id": 2,
+      "x": 9.827312,
+      "y": 9.295249,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_fika-ventures",
-      "x": -1.28041,
-      "y": 5.047649,
-      "cluster_id": 6,
+      "x": 7.689462,
+      "y": 14.260078,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_firework-ventures",
-      "x": -0.532167,
-      "y": 4.116086,
-      "cluster_id": 6,
+      "x": 6.859576,
+      "y": 12.586708,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_first-round-capital",
-      "x": -1.125258,
-      "y": 2.549048,
-      "cluster_id": 1,
+      "x": 8.338717,
+      "y": 11.81839,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_firstmark-capital",
-      "x": -1.360622,
-      "y": 4.969367,
-      "cluster_id": 6,
+      "x": 7.651911,
+      "y": 14.196841,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_fj-labs",
-      "x": -0.944193,
-      "y": 3.975461,
-      "cluster_id": 1,
+      "x": 8.068789,
+      "y": 12.906626,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_flex-capital",
-      "x": 0.935024,
-      "y": 3.262583,
-      "cluster_id": 1,
+      "x": 8.462604,
+      "y": 13.506529,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_flint-capital",
-      "x": -1.601433,
-      "y": 4.413434,
-      "cluster_id": 3,
+      "x": 7.379892,
+      "y": 13.062457,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_floodgate",
-      "x": -1.247822,
-      "y": 3.967454,
-      "cluster_id": 1,
+      "x": 7.953471,
+      "y": 12.87333,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_flucas-ventures",
+      "x": 3.180223,
+      "y": 19.142492,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_flybridge",
-      "x": 1.05865,
-      "y": 3.00139,
-      "cluster_id": 1,
+      "x": 10.294011,
+      "y": 13.093475,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_folklore-ventures",
-      "x": -0.098232,
-      "y": 2.275534,
-      "cluster_id": 1,
+      "x": 9.303893,
+      "y": 11.969991,
+      "cluster_id": 5,
       "is_generalist": true
     },
     {
       "id": "inv_forerunner-ventures",
-      "x": 0.26996,
-      "y": 4.73597,
+      "x": 9.54555,
+      "y": 14.12492,
       "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_forster-chase-ventures",
+      "x": 7.208716,
+      "y": 14.381124,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_fortino-ventures",
-      "x": 1.85623,
-      "y": 4.415337,
-      "cluster_id": 4,
+      "x": 10.819558,
+      "y": 14.388016,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_forward-deployed-vc",
-      "x": -3.214403,
-      "y": 0.082151,
-      "cluster_id": 7,
+      "x": 7.678291,
+      "y": 8.223244,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_foundamental",
+      "x": 7.840585,
+      "y": 12.093725,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_foundation-capital",
-      "x": -0.824308,
-      "y": 5.375128,
-      "cluster_id": 0,
+      "x": 8.231846,
+      "y": 14.854917,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_founder-collective",
-      "x": -0.449718,
-      "y": 2.706798,
-      "cluster_id": 5,
+      "x": 10.202722,
+      "y": 12.825223,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_founder-partners",
+      "x": 9.570915,
+      "y": 2.342613,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_founders-co-op",
-      "x": 12.962914,
-      "y": -5.513576,
-      "cluster_id": 6,
+      "x": -4.875035,
+      "y": -0.846812,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_founders-fund",
-      "x": -1.68908,
-      "y": 0.033649,
-      "cluster_id": 5,
+      "x": 8.19114,
+      "y": 9.599241,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_foundry-group",
-      "x": 2.327158,
-      "y": 4.77084,
-      "cluster_id": 4,
+      "x": 11.254332,
+      "y": 14.753181,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_framework-ventures",
-      "x": -0.382615,
-      "y": 1.027516,
-      "cluster_id": 1,
+      "x": 9.556754,
+      "y": 10.213032,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_frontline-ventures",
-      "x": -1.699228,
-      "y": 9.761064,
-      "cluster_id": 0,
+      "x": 3.264971,
+      "y": 19.092041,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_fusion-fund",
-      "x": 0.662912,
-      "y": 2.357731,
-      "cluster_id": 1,
+      "x": 9.587281,
+      "y": 12.272686,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_gaingels",
-      "x": -0.90728,
-      "y": 1.999068,
-      "cluster_id": 3,
+      "x": 8.902138,
+      "y": 11.496411,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_gamerforce-ventures",
+      "x": 7.133757,
+      "y": -0.569152,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_garage-capital",
-      "x": 2.511077,
-      "y": 0.21698,
-      "cluster_id": 9,
+      "x": 12.066563,
+      "y": 10.895239,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_garuda-ventures",
-      "x": 1.888935,
-      "y": 1.505235,
-      "cluster_id": 4,
+      "x": 11.194186,
+      "y": 11.813128,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_geek-ventures",
-      "x": 1.221858,
-      "y": 0.918551,
-      "cluster_id": 1,
+      "x": 10.745348,
+      "y": 11.225983,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_general-catalyst",
-      "x": -1.227319,
-      "y": 0.698474,
-      "cluster_id": 1,
+      "x": 8.626752,
+      "y": 10.013841,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_geodesic-capital",
-      "x": -3.221455,
-      "y": 0.105229,
-      "cluster_id": 7,
+      "x": 7.69153,
+      "y": 8.236264,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_getvantage",
+      "x": 6.866909,
+      "y": 12.587863,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_giant-ventures",
-      "x": -1.682943,
-      "y": -0.735913,
-      "cluster_id": 5,
+      "x": 7.382999,
+      "y": 9.840118,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_gilgamesh-ventures",
-      "x": -1.654795,
-      "y": 9.714565,
-      "cluster_id": 0,
+      "x": 3.174071,
+      "y": 19.075079,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_glade-brook-capital-partners",
-      "x": -0.381484,
-      "y": 3.932739,
-      "cluster_id": 1,
+      "x": 9.673451,
+      "y": 13.082114,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_glasswing-ventures",
-      "x": 1.72355,
-      "y": 1.548424,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_global-bridge-capital",
-      "x": 12.964149,
-      "y": -5.514801,
-      "cluster_id": 6,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_gokul-rajaram",
-      "x": 0.834014,
-      "y": 3.169854,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_golden-ventures",
-      "x": 0.492697,
-      "y": 2.239301,
-      "cluster_id": 3,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_goodwater-capital",
-      "x": -0.706928,
-      "y": 3.533685,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_google-ventures",
-      "x": 2.60364,
-      "y": 4.123632,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_gradient",
-      "x": 0.980818,
-      "y": 2.806506,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_grand-ventures",
-      "x": 0.554369,
-      "y": 3.596104,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_graph-ventures",
-      "x": 2.483568,
-      "y": 4.74306,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_greenoaks",
-      "x": 2.214253,
-      "y": 0.534506,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_greycroft-partners",
-      "x": 1.095212,
-      "y": 1.205773,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_greylock-partners",
-      "x": 1.655983,
-      "y": 3.217492,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_gsbackers",
-      "x": -1.258191,
-      "y": 3.998046,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_gutter-capital",
-      "x": 1.421824,
-      "y": 4.041572,
-      "cluster_id": 4,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_gv",
-      "x": 0.166366,
-      "y": 2.471822,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hanwha",
-      "x": -3.174872,
-      "y": 0.052572,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_harpoon-ventures",
-      "x": 0.477861,
-      "y": 2.690465,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_haystack",
-      "x": 0.018628,
-      "y": 3.248229,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hcvc",
-      "x": -1.098033,
-      "y": 0.565439,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_high-alpha",
-      "x": 12.989148,
-      "y": -5.543392,
-      "cluster_id": 6,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hipstr",
-      "x": -8.764029,
-      "y": -4.5085,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hitachi-ventures",
-      "x": -1.20446,
-      "y": -0.397416,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_homebrew",
-      "x": -1.127839,
-      "y": 2.160368,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_human-capital",
-      "x": -1.595917,
-      "y": -0.801683,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_human-ventures",
-      "x": -1.76949,
-      "y": -4.866528,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_humba-ventures",
-      "x": -2.580266,
-      "y": 0.570768,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_humbition",
-      "x": -2.127345,
-      "y": 0.483731,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hummingbird",
-      "x": 2.017766,
-      "y": 0.284005,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hustle-fund",
-      "x": -0.785934,
-      "y": 4.380155,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hyde-park-venture-partners",
-      "x": 1.500971,
-      "y": 2.666964,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_hyperstition-research",
-      "x": -0.946025,
-      "y": 0.56488,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_iag-capital-partners",
-      "x": 0.616444,
-      "y": -1.143623,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ibex-investors",
-      "x": -2.223994,
-      "y": 2.412377,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_icehouse-ventures",
-      "x": -0.490327,
-      "y": 1.797495,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_iconiq-capital",
-      "x": 1.647792,
-      "y": 3.581066,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ideaspring-capital",
-      "x": -0.716396,
-      "y": 2.067411,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_idg-capital",
-      "x": 0.368159,
-      "y": 0.784954,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_iima-ventures",
-      "x": -1.390339,
-      "y": 0.554228,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_imaginary-ventures",
-      "x": -8.721419,
-      "y": -4.550102,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_immad-akhund",
-      "x": 2.475519,
-      "y": 0.172291,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_in-q-tel",
-      "x": -1.740514,
-      "y": 0.772028,
-      "cluster_id": 7,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_index-ventures",
-      "x": 0.521412,
-      "y": 2.873761,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_indiamart",
-      "x": 2.807374,
-      "y": 5.101429,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_indicator-ventures",
-      "x": -0.824369,
-      "y": 2.317455,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_infinity-ventures",
-      "x": -1.637106,
-      "y": 9.648921,
+      "x": 11.068529,
+      "y": 11.779091,
       "cluster_id": 0,
       "is_generalist": false
     },
     {
-      "id": "inv_initiate-ventures",
-      "x": 2.713302,
-      "y": 4.004451,
+      "id": "inv_global-bridge-capital",
+      "x": -4.90268,
+      "y": -0.874467,
       "cluster_id": 3,
       "is_generalist": false
     },
     {
-      "id": "inv_innovation-endeavors",
-      "x": 2.331769,
-      "y": 4.507182,
+      "id": "inv_gokul-rajaram",
+      "x": 9.191513,
+      "y": 12.183516,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_golden-ventures",
+      "x": 9.519366,
+      "y": 12.172068,
+      "cluster_id": 6,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_goodwater-capital",
+      "x": 8.663449,
+      "y": 12.474051,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_google-ventures",
+      "x": 11.565577,
+      "y": 13.932172,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_gradient",
+      "x": 8.959218,
+      "y": 13.009428,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_grand-ventures",
+      "x": 8.118892,
+      "y": 13.806765,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_graph-ventures",
+      "x": 11.383681,
+      "y": 14.682127,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_greenoaks",
+      "x": 11.971661,
+      "y": 11.273719,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_greycroft-partners",
+      "x": 10.808811,
+      "y": 11.389764,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_greylock-partners",
+      "x": 10.660271,
+      "y": 13.452289,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_gsbackers",
+      "x": 7.954222,
+      "y": 12.898218,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_gutter-capital",
+      "x": 10.423331,
+      "y": 14.060582,
+      "cluster_id": 8,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_gv",
+      "x": 9.609119,
+      "y": 12.513482,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hanwha",
+      "x": 7.667951,
+      "y": 8.20161,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_harpoon-ventures",
+      "x": 9.131753,
+      "y": 12.414682,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_haystack",
+      "x": 9.296333,
+      "y": 12.954934,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hcvc",
+      "x": 9.149414,
+      "y": 9.673196,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_henkel-ventures",
+      "x": 5.476331,
+      "y": 9.39178,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_high-alpha",
+      "x": -4.871614,
+      "y": -0.843161,
+      "cluster_id": 3,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hipstr",
+      "x": 7.261314,
+      "y": -0.443506,
       "cluster_id": 4,
       "is_generalist": false
     },
     {
-      "id": "inv_inovia-capital",
-      "x": -1.357608,
-      "y": 3.242882,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_insight-partners",
-      "x": -1.323655,
-      "y": 2.584067,
+      "id": "inv_hitachi-ventures",
+      "x": 8.028484,
+      "y": 9.927423,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
-      "id": "inv_intel-capital",
-      "x": 1.300339,
-      "y": 0.927388,
+      "id": "inv_homebrew",
+      "x": 8.610488,
+      "y": 11.298023,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_horseshoe-vc",
+      "x": 9.863254,
+      "y": 2.646214,
       "cluster_id": 9,
       "is_generalist": false
     },
     {
-      "id": "inv_ironspring-ventures",
-      "x": -2.230669,
-      "y": 2.209016,
+      "id": "inv_human-capital",
+      "x": 7.267916,
+      "y": 9.77153,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_human-ventures",
+      "x": 10.902013,
+      "y": 5.152744,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_humba-ventures",
+      "x": 8.298393,
+      "y": 8.778285,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_humbition",
+      "x": 8.455449,
+      "y": 9.2077,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hummingbird",
+      "x": 11.720387,
+      "y": 10.956388,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hustle-fund",
+      "x": 8.095179,
+      "y": 13.17452,
       "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hyde-park-venture-partners",
+      "x": 8.635715,
+      "y": 13.514314,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_hyperstition-research",
+      "x": 9.240208,
+      "y": 9.97136,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_iag-capital-partners",
+      "x": 11.390208,
+      "y": 8.671664,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ibex-investors",
+      "x": 7.823929,
+      "y": 10.718582,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_icehouse-ventures",
+      "x": 9.457432,
+      "y": 11.395769,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_iconiq-capital",
+      "x": 10.635024,
+      "y": 13.756169,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ideaspring-capital",
+      "x": 8.993929,
+      "y": 11.64401,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_idg-capital",
+      "x": 11.199979,
+      "y": 10.734876,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_iima-ventures",
+      "x": 8.988094,
+      "y": 9.477429,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_imaginary-ventures",
+      "x": 7.175098,
+      "y": -0.529215,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_immad-akhund",
+      "x": 12.085277,
+      "y": 10.886068,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_in-q-tel",
+      "x": 8.394543,
+      "y": 9.481268,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_index-ventures",
+      "x": 9.020758,
+      "y": 12.937886,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_indiamart",
+      "x": 11.606351,
+      "y": 15.090232,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_indicator-ventures",
+      "x": 8.675636,
+      "y": 11.681103,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_infinity-ventures",
+      "x": 3.026559,
+      "y": 19.367907,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_initiate-ventures",
+      "x": 11.624092,
+      "y": 13.885869,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_innopact",
+      "x": 10.52113,
+      "y": 5.595153,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_innovation-endeavors",
+      "x": 11.24751,
+      "y": 14.448085,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_inovia-capital",
+      "x": 7.754424,
+      "y": 12.337398,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_insight-partners",
+      "x": 8.175833,
+      "y": 11.367516,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_intel-capital",
+      "x": 10.835071,
+      "y": 11.281844,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_investo-monk",
+      "x": 7.197097,
+      "y": -0.507249,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ironspring-ventures",
+      "x": 7.882431,
+      "y": 10.567843,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_italian-founders-fund",
-      "x": -0.443804,
-      "y": 3.672118,
-      "cluster_id": 1,
+      "x": 8.105291,
+      "y": 13.129656,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_ivp",
-      "x": 1.9251,
-      "y": 2.841608,
-      "cluster_id": 1,
+      "x": 10.941998,
+      "y": 13.120236,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_ivycap-ventures",
-      "x": -2.351985,
-      "y": -1.447866,
-      "cluster_id": 5,
+      "x": 6.087233,
+      "y": 9.767504,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_jeff-bezos",
-      "x": 0.418863,
-      "y": 0.895814,
-      "cluster_id": 5,
+      "x": 7.642612,
+      "y": 9.939707,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_jeff-dean",
-      "x": 1.809171,
-      "y": 2.604001,
-      "cluster_id": 1,
+      "x": 10.928529,
+      "y": 13.027513,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_jefferson-river-capital",
-      "x": -2.063146,
-      "y": -4.244403,
-      "cluster_id": 3,
+      "x": 13.505642,
+      "y": 6.724132,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_jmoon-ventures",
-      "x": 1.034648,
-      "y": 0.030674,
+      "x": 10.705032,
+      "y": 10.495914,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_jpin",
+      "x": 9.860364,
+      "y": 2.60371,
       "cluster_id": 9,
       "is_generalist": false
     },
     {
       "id": "inv_jump-capital",
-      "x": 1.244358,
-      "y": 3.302981,
-      "cluster_id": 1,
+      "x": 8.534001,
+      "y": 13.653486,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_k5-global",
-      "x": 2.454267,
-      "y": 1.991241,
-      "cluster_id": 4,
+      "x": 11.700894,
+      "y": 12.397745,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_kadmos-capital",
-      "x": -0.599254,
-      "y": 1.883116,
-      "cluster_id": 3,
+      "x": 9.340549,
+      "y": 11.468059,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_kalaari-capital",
-      "x": 0.056071,
-      "y": 4.051517,
-      "cluster_id": 4,
+      "x": 9.48569,
+      "y": 13.643826,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_karman-ventures",
-      "x": 0.53114,
-      "y": 2.74319,
-      "cluster_id": 1,
+      "x": 9.217781,
+      "y": 12.658205,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_kas-venture-partners",
-      "x": -2.428249,
-      "y": -1.653184,
-      "cluster_id": 5,
+      "x": 5.745286,
+      "y": 9.548196,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_khosla-ventures",
-      "x": -0.025311,
-      "y": 2.990945,
-      "cluster_id": 1,
+      "x": 9.837021,
+      "y": 12.650768,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_kindred-ventures",
-      "x": -2.253102,
-      "y": 2.554322,
-      "cluster_id": 1,
+      "x": 7.801455,
+      "y": 10.73573,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_kleiner-perkins",
-      "x": 2.065737,
-      "y": 0.900834,
-      "cluster_id": 9,
+      "x": 11.744109,
+      "y": 11.473044,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_kompas-vc",
-      "x": -1.652905,
-      "y": -0.615232,
-      "cluster_id": 5,
+      "x": 7.249969,
+      "y": 10.012278,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_korea-investment-partners-us",
-      "x": -1.732418,
-      "y": 9.831728,
-      "cluster_id": 0,
+      "x": 3.171264,
+      "y": 19.181486,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_lavrock-ventures",
-      "x": -2.365819,
-      "y": 0.852746,
-      "cluster_id": 8,
+      "x": 8.836276,
+      "y": 8.946797,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_ldv-capital",
-      "x": 2.735855,
-      "y": 4.013378,
-      "cluster_id": 3,
+      "x": 11.672169,
+      "y": 13.87947,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_leblon-capital",
-      "x": -1.07924,
-      "y": 4.38324,
-      "cluster_id": 0,
+      "x": 8.059743,
+      "y": 13.354191,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_left-lane-capital",
-      "x": -1.857876,
-      "y": 3.054533,
-      "cluster_id": 1,
+      "x": 8.441974,
+      "y": 12.229243,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_leitmotif",
-      "x": -2.327617,
-      "y": 2.463938,
-      "cluster_id": 1,
+      "x": 7.781062,
+      "y": 10.672334,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_lemnos",
-      "x": -1.656932,
-      "y": 0.89464,
-      "cluster_id": 7,
+      "x": 8.527639,
+      "y": 9.908163,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_lerer-hippeau",
-      "x": 0.076908,
-      "y": 4.305027,
-      "cluster_id": 1,
+      "x": 9.612967,
+      "y": 13.929098,
+      "cluster_id": 8,
       "is_generalist": true
     },
     {
       "id": "inv_level-one-fund",
-      "x": 12.941189,
-      "y": -5.491884,
-      "cluster_id": 6,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_life-extension-ventures",
-      "x": 2.702184,
-      "y": 4.029285,
+      "x": -4.894325,
+      "y": -0.866095,
       "cluster_id": 3,
       "is_generalist": false
     },
     {
+      "id": "inv_life-extension-ventures",
+      "x": 11.69292,
+      "y": 13.833551,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
       "id": "inv_lightbank",
-      "x": 2.778495,
-      "y": 5.071708,
-      "cluster_id": 4,
+      "x": 11.612373,
+      "y": 15.106846,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_lightscape",
-      "x": 1.00641,
-      "y": 0.980884,
-      "cluster_id": 5,
+      "x": 11.136642,
+      "y": 11.239317,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_lightspeed-venture-partners",
-      "x": 0.776235,
-      "y": 2.821861,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_link-ventures",
-      "x": 1.33768,
-      "y": 2.340345,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_lip-bu-tan",
-      "x": 0.569229,
-      "y": -0.765411,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_liquid-2-ventures",
-      "x": 0.333995,
-      "y": 2.215827,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_litquidity-ventures",
-      "x": -2.265262,
-      "y": 2.563092,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_lockheed-martin-ventures",
-      "x": -2.091394,
-      "y": 0.53349,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_long-journey-ventures",
-      "x": -1.152992,
-      "y": 1.720375,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_lowercarbon",
-      "x": -0.684972,
-      "y": -1.091127,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_lux-capital",
-      "x": -1.805155,
-      "y": 0.585188,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_m-x-v-capital",
-      "x": 12.973648,
-      "y": -5.52438,
-      "cluster_id": 6,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_m12",
-      "x": -0.768275,
-      "y": 3.377689,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_mac-venture-capital",
-      "x": 0.211104,
-      "y": -0.022901,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_madrona",
-      "x": 0.687491,
-      "y": 3.725473,
+      "x": 8.707174,
+      "y": 13.098311,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
-      "id": "inv_mana-ventures",
-      "x": -0.921102,
-      "y": 2.491777,
+      "id": "inv_link-ventures",
+      "x": 10.664221,
+      "y": 12.818082,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_lip-bu-tan",
+      "x": 11.287182,
+      "y": 8.805553,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_liquid-2-ventures",
+      "x": 10.028075,
+      "y": 12.173501,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_litquidity-ventures",
+      "x": 7.738416,
+      "y": 10.750646,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_lockheed-martin-ventures",
+      "x": 8.329783,
+      "y": 9.205667,
       "cluster_id": 1,
       "is_generalist": false
     },
     {
+      "id": "inv_long-journey-ventures",
+      "x": 8.929173,
+      "y": 11.283607,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_lowercarbon",
+      "x": 9.998425,
+      "y": 8.550752,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_lux-capital",
+      "x": 8.48076,
+      "y": 9.621227,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_m-x-v-capital",
+      "x": -4.925842,
+      "y": -0.897622,
+      "cluster_id": 3,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_m12",
+      "x": 7.809714,
+      "y": 14.022313,
+      "cluster_id": 3,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_mac-venture-capital",
+      "x": 10.362557,
+      "y": 9.648881,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_madrona",
+      "x": 10.170458,
+      "y": 13.289638,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_magnivia",
+      "x": -4.917559,
+      "y": -0.889326,
+      "cluster_id": 3,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_malpani-ventures",
+      "x": 6.029934,
+      "y": 15.671344,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_mana-ventures",
+      "x": 8.711837,
+      "y": 11.944857,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
       "id": "inv_maniv",
-      "x": -2.039352,
-      "y": 1.965136,
-      "cluster_id": 2,
+      "x": 8.194839,
+      "y": 10.557185,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_mantis",
-      "x": -0.283333,
-      "y": 3.141853,
+      "x": 9.435102,
+      "y": 13.197417,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_marc-group",
+      "x": 10.875796,
+      "y": 5.173518,
       "cluster_id": 4,
       "is_generalist": false
     },
     {
+      "id": "inv_marl-accelerator",
+      "x": 8.546247,
+      "y": 10.360343,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
       "id": "inv_martial-eagle-fund",
-      "x": -0.648076,
-      "y": 1.121903,
+      "x": 12.96123,
+      "y": 7.048468,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_massmutual-ventures",
+      "x": 6.125145,
+      "y": 15.577371,
       "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_maven-ventures",
-      "x": -0.668795,
-      "y": 3.376285,
-      "cluster_id": 1,
+      "x": 8.74494,
+      "y": 12.31,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_maverick-capital",
-      "x": 0.591533,
-      "y": -1.216528,
-      "cluster_id": 8,
+      "x": 11.557854,
+      "y": 8.516928,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_maverick-silicon",
-      "x": 0.86308,
-      "y": 0.517982,
-      "cluster_id": 8,
+      "x": 10.561398,
+      "y": 10.724852,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_mavka-ventures",
-      "x": -1.61518,
-      "y": 1.281805,
-      "cluster_id": 7,
+      "x": 8.453116,
+      "y": 10.338711,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_maximum-frequency-ventures",
-      "x": -0.480825,
-      "y": 1.155322,
-      "cluster_id": 1,
+      "x": 9.82532,
+      "y": 2.5695,
+      "cluster_id": 9,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_mayfield",
+      "x": 7.478222,
+      "y": 12.837914,
+      "cluster_id": 6,
       "is_generalist": false
     },
     {
       "id": "inv_mcj",
-      "x": -0.626117,
-      "y": -1.157165,
-      "cluster_id": 2,
+      "x": 9.991105,
+      "y": 8.492172,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_mdr-lab",
+      "x": 8.730397,
+      "y": 8.300654,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_mehdi-ghissassi",
-      "x": 2.853283,
-      "y": 2.043334,
-      "cluster_id": 4,
+      "x": 12.068057,
+      "y": 12.549459,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_menlo-ventures",
-      "x": 1.020249,
-      "y": 1.378649,
-      "cluster_id": 1,
+      "x": 10.56237,
+      "y": 11.763534,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_merantix-capital",
-      "x": -0.87853,
-      "y": 2.414868,
-      "cluster_id": 1,
+      "x": 8.566096,
+      "y": 11.785382,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_metaprop",
-      "x": 2.653129,
-      "y": 4.973514,
-      "cluster_id": 4,
+      "x": 11.553457,
+      "y": 15.026232,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_misumi-ventures",
-      "x": -1.08518,
-      "y": 0.606365,
-      "cluster_id": 2,
+      "x": 9.067131,
+      "y": 9.704915,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_modern-technical-fund",
-      "x": 0.909453,
-      "y": 3.188543,
-      "cluster_id": 1,
+      "x": 8.486942,
+      "y": 13.646553,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_momenta-ventures",
-      "x": -1.720732,
-      "y": 1.700525,
-      "cluster_id": 2,
+      "x": 8.58422,
+      "y": 10.533199,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_monashees",
-      "x": -1.904804,
-      "y": 2.362201,
-      "cluster_id": 5,
+      "x": 8.028208,
+      "y": 10.993274,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_mousse-partners",
-      "x": 12.954301,
-      "y": -5.50499,
-      "cluster_id": 6,
+      "x": -4.961812,
+      "y": -0.933575,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_ms-ad-ventures",
-      "x": -1.771361,
-      "y": 9.727097,
-      "cluster_id": 0,
+      "x": 3.190788,
+      "y": 19.151766,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_mvp-ventures",
-      "x": -0.085259,
-      "y": 4.756966,
-      "cluster_id": 4,
+      "x": 9.327978,
+      "y": 14.205703,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_n47",
-      "x": 0.412674,
-      "y": 1.851115,
-      "cluster_id": 5,
+      "x": 9.976386,
+      "y": 12.055219,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_n49p",
-      "x": -2.049306,
-      "y": -1.00343,
-      "cluster_id": 5,
+      "x": 6.824729,
+      "y": 10.063745,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_nat-friedman",
-      "x": 2.850567,
-      "y": 2.337786,
-      "cluster_id": 4,
+      "x": 12.044153,
+      "y": 12.789054,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_nd-capital",
-      "x": 0.639715,
-      "y": -1.231992,
-      "cluster_id": 8,
+      "x": 11.573913,
+      "y": 8.503201,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_nea",
-      "x": 0.179254,
-      "y": 3.068567,
-      "cluster_id": 4,
+      "x": 9.619976,
+      "y": 13.054596,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_neo",
-      "x": -8.792736,
-      "y": -4.576235,
-      "cluster_id": 1,
+      "x": 7.090499,
+      "y": -0.613961,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_new-climate-ventures",
-      "x": -0.771581,
-      "y": -0.820248,
-      "cluster_id": 2,
+      "x": 9.806805,
+      "y": 8.896358,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_new-north-ventures",
-      "x": -3.176265,
-      "y": 0.130622,
-      "cluster_id": 7,
+      "x": 7.711332,
+      "y": 8.271732,
+      "cluster_id": 1,
       "is_generalist": false
     },
     {
       "id": "inv_newbuild-venture-capital",
-      "x": 12.956225,
-      "y": -5.506913,
-      "cluster_id": 6,
+      "x": -4.879202,
+      "y": -0.850957,
+      "cluster_id": 3,
       "is_generalist": false
     },
     {
       "id": "inv_newvale-capital",
-      "x": -2.028346,
-      "y": -4.246089,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_next47",
-      "x": -2.634178,
-      "y": -1.856749,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nextview",
-      "x": 2.051102,
-      "y": 1.106188,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nfdg-ventures",
-      "x": 2.77601,
-      "y": 2.11377,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nfx",
-      "x": 0.235246,
-      "y": 3.672523,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nico-rosberg",
-      "x": 2.556995,
-      "y": 0.082288,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_norte-ventures",
-      "x": -1.446841,
-      "y": 2.93357,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_northzone",
-      "x": 0.931553,
-      "y": 2.930628,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_norwest",
-      "x": 1.632173,
-      "y": 2.482263,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nova-global",
-      "x": -3.24722,
-      "y": 0.134572,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nventures",
-      "x": 1.440068,
-      "y": 0.533048,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nvidia",
-      "x": 2.101588,
-      "y": 0.257312,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_nvp-capital",
-      "x": -1.50802,
-      "y": 4.668159,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_offline-ventures",
-      "x": 2.4281,
-      "y": 0.292241,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_oliver-jung",
-      "x": -0.793897,
-      "y": 5.471986,
-      "cluster_id": 0,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_oncology-ventures",
-      "x": -2.016725,
-      "y": -4.254666,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_one-way-ventures",
-      "x": -1.11059,
-      "y": 5.153745,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_onesixone-ventures",
-      "x": 1.117699,
-      "y": 3.233812,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_operator-partners",
-      "x": 2.546188,
-      "y": 4.046938,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_operators-studio",
-      "x": -2.642664,
-      "y": 1.730111,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_optum-ventures",
-      "x": -1.881399,
-      "y": -3.904954,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_orion-vc",
-      "x": 2.184914,
-      "y": 1.829969,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_orios",
-      "x": -2.596821,
-      "y": -1.814433,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_osage-university-partners",
-      "x": -2.039124,
-      "y": -0.128042,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_outlander-ventures",
-      "x": -3.284375,
-      "y": 0.097326,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_overmatch-ventures",
-      "x": -2.784902,
-      "y": -0.0255,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_overture-vc",
-      "x": -0.789222,
-      "y": -0.834053,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ovni-capital",
-      "x": 0.382433,
-      "y": -0.875325,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pangaea-ventures",
-      "x": -0.117033,
-      "y": -0.252749,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_park-rangers-capital",
-      "x": -0.110838,
-      "y": 4.83108,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pathbreaker-ventures",
-      "x": 1.818027,
-      "y": -0.037566,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_patron",
-      "x": -8.717224,
-      "y": -4.542135,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pax",
-      "x": -2.001098,
-      "y": 0.293383,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_peak-xv-partners",
-      "x": 0.015349,
-      "y": 4.726109,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pear-vc",
-      "x": -0.197021,
-      "y": 3.624521,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_permanent-capital",
-      "x": -1.160789,
-      "y": 3.347278,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pi-ventures",
-      "x": -1.209345,
-      "y": 0.611396,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_picus-capital",
-      "x": -1.175916,
-      "y": 3.877497,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pillar-vc",
-      "x": 0.285994,
-      "y": 2.765272,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_playground-global",
-      "x": -0.564986,
-      "y": 0.053424,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_plug-and-play",
-      "x": -1.872697,
-      "y": -0.676797,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_plural",
-      "x": 2.458247,
-      "y": 2.08769,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_point-nine-capital",
-      "x": 2.371098,
-      "y": -0.084739,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_point72",
-      "x": -0.066963,
-      "y": -0.313247,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_point72-ventures",
-      "x": -2.582197,
-      "y": 0.335685,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_possible-ventures",
-      "x": -0.918358,
-      "y": 1.674435,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_precursor-ventures",
-      "x": 0.961455,
-      "y": 2.570859,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_premji-invest",
-      "x": 1.513282,
-      "y": 0.742572,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_presence-capital",
-      "x": -8.737055,
-      "y": -4.537541,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_primary-venture-partners",
-      "x": -0.61117,
-      "y": 3.284453,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_prime-movers-lab",
-      "x": -1.129312,
-      "y": 0.717184,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_pritzker-group-venture-capital",
-      "x": -0.893238,
-      "y": 3.887794,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_promus-ventures",
-      "x": 0.980056,
-      "y": 0.08676,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_propel-venture-partners",
-      "x": 1.32255,
-      "y": 2.747766,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_propeller-ventures",
-      "x": -0.724044,
-      "y": -0.475451,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_prosperity7-ventures",
-      "x": 0.944416,
-      "y": 0.95375,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_prosus-ventures",
-      "x": -2.558102,
-      "y": 1.139648,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_prudence",
-      "x": -1.78061,
-      "y": 1.775513,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_psp-partners",
-      "x": -1.39657,
-      "y": 0.951826,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_qatar-investment-authority",
-      "x": 1.989834,
-      "y": 0.360777,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_qed",
-      "x": -1.678138,
-      "y": 9.809719,
-      "cluster_id": 0,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_qualcomm-ventures",
-      "x": -0.745866,
-      "y": 2.659002,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_quiet-capital",
-      "x": -2.058319,
-      "y": -4.286832,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_qventures",
-      "x": -1.422668,
-      "y": 4.968769,
+      "x": 13.424245,
+      "y": 6.76698,
       "cluster_id": 6,
       "is_generalist": false
     },
     {
-      "id": "inv_radical-ventures",
-      "x": 1.182768,
-      "y": 0.919824,
+      "id": "inv_next47",
+      "x": 5.536131,
+      "y": 9.419118,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nextview",
+      "x": 11.554913,
+      "y": 11.366539,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nfdg-ventures",
+      "x": 11.965247,
+      "y": 12.546634,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nfx",
+      "x": 9.250386,
+      "y": 13.472855,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nico-rosberg",
+      "x": 12.238488,
+      "y": 10.991423,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_norte-ventures",
+      "x": 8.073826,
+      "y": 11.377733,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_northzone",
+      "x": 8.531786,
+      "y": 13.19113,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_norwest",
+      "x": 8.232429,
+      "y": 13.418478,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nova-global",
+      "x": 7.689326,
+      "y": 8.230852,
       "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nventures",
+      "x": 11.139999,
+      "y": 10.907841,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nvidia",
+      "x": 11.707617,
+      "y": 10.869043,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_nvp-capital",
+      "x": 7.444039,
+      "y": 13.884524,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_offline-ventures",
+      "x": 12.124309,
+      "y": 10.984486,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_oliver-jung",
+      "x": 8.223818,
+      "y": 14.923928,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_oncology-ventures",
+      "x": 13.498653,
+      "y": 6.728057,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_one-way-ventures",
+      "x": 7.946251,
+      "y": 14.521432,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_onesixone-ventures",
+      "x": 8.746847,
+      "y": 13.369412,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_operator-partners",
+      "x": 11.33445,
+      "y": 13.808098,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_operators-studio",
+      "x": 8.912522,
+      "y": 13.872385,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_optum-ventures",
+      "x": 13.202121,
+      "y": 7.149498,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_orion-vc",
+      "x": 11.554517,
+      "y": 12.154339,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_orios",
+      "x": 5.537701,
+      "y": 9.437513,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_osage-university-partners",
+      "x": 7.754594,
+      "y": 9.505132,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_outlander-ventures",
+      "x": 7.719014,
+      "y": 8.205521,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_overmatch-ventures",
+      "x": 7.989961,
+      "y": 8.697989,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_overture-vc",
+      "x": 9.731276,
+      "y": 8.862579,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ovni-capital",
+      "x": 11.214521,
+      "y": 8.764812,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pangaea-ventures",
+      "x": 10.412609,
+      "y": 9.336025,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_park-rangers-capital",
+      "x": 9.308926,
+      "y": 14.216982,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pathbreaker-ventures",
+      "x": 11.669128,
+      "y": 10.296795,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_patron",
+      "x": 7.114401,
+      "y": -0.589423,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pax",
+      "x": 8.123056,
+      "y": 9.262186,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_peak-xv-partners",
+      "x": 9.354501,
+      "y": 14.13186,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pear-vc",
+      "x": 8.973695,
+      "y": 13.099571,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_permanent-capital",
+      "x": 8.209121,
+      "y": 12.40341,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pesu-venture-labs",
+      "x": 7.109929,
+      "y": 12.195448,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pi-ventures",
+      "x": 9.0515,
+      "y": 9.591731,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_picus-capital",
+      "x": 7.973764,
+      "y": 12.97928,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pillar-vc",
+      "x": 9.598792,
+      "y": 12.874503,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_playground-global",
+      "x": 9.600163,
+      "y": 9.580931,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_plug-and-play",
+      "x": 8.266104,
+      "y": 10.950525,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_plural",
+      "x": 11.761051,
+      "y": 12.537283,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_point-nine-capital",
+      "x": 12.230497,
+      "y": 10.613582,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_point72",
+      "x": 10.462434,
+      "y": 9.332212,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_point72-ventures",
+      "x": 7.906227,
+      "y": 8.835897,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_possible-ventures",
+      "x": 9.068609,
+      "y": 11.071358,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_precursor-ventures",
+      "x": 8.543025,
+      "y": 13.011947,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_premji-invest",
+      "x": 11.224678,
+      "y": 11.072824,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_presence-capital",
+      "x": 7.21622,
+      "y": -0.488249,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_primary-venture-partners",
+      "x": 8.793396,
+      "y": 12.533116,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_prime-movers-lab",
+      "x": 9.089706,
+      "y": 9.916532,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_pritzker-group-venture-capital",
+      "x": 7.650995,
+      "y": 12.51439,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_promus-ventures",
+      "x": 10.693148,
+      "y": 10.514501,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_propel-venture-partners",
+      "x": 8.517606,
+      "y": 12.998469,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_propeller-ventures",
+      "x": 9.792322,
+      "y": 9.054455,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_prosperity7-ventures",
+      "x": 10.505644,
+      "y": 11.272804,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_prosus-ventures",
+      "x": 8.945412,
+      "y": 8.876449,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_prudence",
+      "x": 8.314365,
+      "y": 10.700884,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_psp-partners",
+      "x": 7.40232,
+      "y": 11.929588,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_qatar-investment-authority",
+      "x": 11.729937,
+      "y": 10.865283,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_qed",
+      "x": 3.22042,
+      "y": 19.105961,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_qualcomm-ventures",
+      "x": 10.151857,
+      "y": 12.566221,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_quiet-capital",
+      "x": 13.148244,
+      "y": 7.121985,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_qventures",
+      "x": 7.518302,
+      "y": 14.236172,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_radical-ventures",
+      "x": 10.646167,
+      "y": 11.263365,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_radius-capital",
-      "x": -3.135785,
-      "y": -0.00272,
-      "cluster_id": 7,
+      "x": 7.594257,
+      "y": 8.157648,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_rally-cap-ventures",
+      "x": 3.243942,
+      "y": 19.108807,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_red-beard-ventures",
-      "x": -0.632922,
-      "y": 0.917954,
-      "cluster_id": 2,
+      "x": 9.413649,
+      "y": 10.071172,
+      "cluster_id": 5,
       "is_generalist": true
     },
     {
       "id": "inv_refactor-capital",
-      "x": -0.61398,
-      "y": -0.329067,
-      "cluster_id": 2,
+      "x": 9.932646,
+      "y": 9.183683,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_renegade-partners",
-      "x": -0.074831,
-      "y": 3.178983,
-      "cluster_id": 1,
+      "x": 9.812655,
+      "y": 12.955826,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_resiliencevc",
-      "x": -1.676336,
-      "y": 9.643853,
-      "cluster_id": 0,
+      "x": 3.025763,
+      "y": 19.366283,
+      "cluster_id": 2,
       "is_generalist": false
     },
     {
       "id": "inv_restive-ventures",
-      "x": -1.00948,
-      "y": 5.028807,
-      "cluster_id": 1,
+      "x": 8.036303,
+      "y": 14.17896,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_ribbit-capital",
-      "x": 1.463372,
-      "y": 0.922658,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_riceberg-ventures",
-      "x": -1.320098,
-      "y": 0.768533,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ridge-ventures",
-      "x": 1.882426,
-      "y": 4.451239,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_riot-ventures",
-      "x": -0.14286,
-      "y": 0.34772,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ritual-capital",
-      "x": 1.49549,
-      "y": 4.143254,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_riverpark-ventures",
-      "x": -0.928068,
-      "y": 2.165102,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_root-ventures",
-      "x": 0.64344,
-      "y": 1.152118,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_rosecliff-ventures",
-      "x": 2.190101,
-      "y": 4.693854,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_rtx-ventures",
-      "x": 0.595477,
-      "y": 1.656935,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_saas-ventures",
-      "x": 1.181076,
-      "y": 4.081787,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_saga-ventures",
-      "x": -0.353653,
-      "y": 3.283188,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_salesforce-ventures",
-      "x": 1.222541,
-      "y": 3.321466,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_salus-ventures",
-      "x": -3.063533,
-      "y": 0.008692,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_samsung-next",
-      "x": 1.675885,
-      "y": 1.32845,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_saudi-aramco-energy-ventures",
-      "x": -2.623313,
-      "y": -1.838275,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_scale-venture-partners",
-      "x": 0.057368,
-      "y": 2.526092,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_schematic-ventures",
-      "x": -2.2938,
-      "y": 2.328793,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_scott-belsky",
-      "x": 2.654904,
-      "y": 4.064359,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_scout-ventures",
-      "x": -2.121791,
-      "y": 0.449656,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_scribble-ventures",
-      "x": -2.417813,
-      "y": 1.379536,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_script-capital",
-      "x": 1.231554,
-      "y": 2.635411,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_second-avenue-partners",
-      "x": -2.615978,
-      "y": -1.829183,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_seed-capital",
-      "x": -1.10358,
-      "y": 5.169612,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_seed-speed-ventures",
-      "x": 1.584362,
-      "y": 3.508879,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_seedcamp",
-      "x": 0.307809,
-      "y": 2.849488,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sempervirens-venture-capital",
-      "x": -1.828101,
-      "y": -3.932967,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sequoia-capital",
-      "x": -0.128685,
-      "y": 3.520944,
-      "cluster_id": 1,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_service-provider-capital",
-      "x": -1.417841,
-      "y": 3.316577,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_seven-stars",
-      "x": 0.320647,
-      "y": 2.929414,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_shastra-vc",
-      "x": -2.833265,
-      "y": 1.085572,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_shield-capital",
-      "x": -2.142218,
-      "y": 0.687375,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_shine-capital",
-      "x": 2.191048,
-      "y": 1.797922,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_shuckervc",
-      "x": 2.751761,
-      "y": 5.046482,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_signalfire",
-      "x": 0.815001,
-      "y": 2.46508,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_silent-ventures",
-      "x": -3.273331,
-      "y": 0.077385,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_silverton-partners",
-      "x": -0.407467,
-      "y": 2.747968,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sk-telecom-ventures",
-      "x": -0.352224,
-      "y": 4.126237,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_skip-capital",
-      "x": 2.1056,
-      "y": 0.915723,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_slauson-co",
-      "x": -0.788946,
-      "y": 3.862683,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_slow-ventures",
-      "x": -0.767171,
-      "y": 4.010685,
-      "cluster_id": 1,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_snak-venture-partners",
-      "x": -1.723776,
-      "y": 2.215455,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_social-venture-fund",
-      "x": -1.772388,
-      "y": -4.862274,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_softbank",
-      "x": 2.900009,
-      "y": -0.316184,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_softbank-vision-fund",
-      "x": 1.241452,
-      "y": 0.964527,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_soma-capital",
-      "x": -1.144945,
-      "y": 3.975636,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sosv",
-      "x": 1.917145,
-      "y": 0.083314,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_south-park-commons",
-      "x": 0.509641,
-      "y": 2.849526,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_spacecadet-ventures",
-      "x": -1.204528,
-      "y": 1.751347,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_spark-capital",
-      "x": 0.252839,
-      "y": 2.836873,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_spark-growth-ventures",
-      "x": -0.77153,
-      "y": -0.599372,
-      "cluster_id": 2,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_speciale-invest",
-      "x": -2.686848,
-      "y": 0.962654,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_speedinvest",
-      "x": 0.331351,
-      "y": 1.663052,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_springtide-ventures",
-      "x": -2.09336,
-      "y": -4.321177,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_squadra-ventures",
-      "x": -1.926466,
-      "y": 0.06168,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_square-peg",
-      "x": 2.834543,
-      "y": 2.048215,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_starshot-capital",
-      "x": -0.702474,
-      "y": -0.96918,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_stellaris-venture-partners",
-      "x": 0.201203,
-      "y": 4.556625,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_stepstone-group",
-      "x": -1.632653,
-      "y": 0.248828,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_steve-blank",
-      "x": -0.867369,
-      "y": 3.136214,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_strategic-development-fund",
-      "x": -2.540546,
-      "y": -1.605776,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_striker-venture-partners",
-      "x": 1.66071,
-      "y": 3.431861,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_stripes",
-      "x": -2.295277,
-      "y": 0.322391,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sunflower-capital",
-      "x": -0.133913,
-      "y": 2.686225,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_sunna-ventures",
-      "x": -0.707194,
-      "y": -0.694252,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_supply-change-capital",
-      "x": -1.431531,
-      "y": 3.29898,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_susa-ventures",
-      "x": 1.582622,
-      "y": 3.565569,
-      "cluster_id": 1,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_sv-angel",
-      "x": 0.096108,
-      "y": 2.589777,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_swell-vc",
-      "x": -1.112781,
-      "y": 1.83677,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_swift-ventures",
-      "x": 2.061438,
-      "y": 3.01147,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_swish-ventures",
-      "x": 0.904303,
-      "y": 3.947425,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_symphonic-capital",
-      "x": -1.930636,
-      "y": -4.041745,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_syn-ventures",
-      "x": 0.619405,
-      "y": 3.570929,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_t-rowe-price",
-      "x": -2.32869,
-      "y": -1.600935,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tapestry-vc",
-      "x": -1.383965,
-      "y": 4.6722,
-      "cluster_id": 1,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_tcv",
-      "x": 0.278504,
-      "y": 1.905447,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tdk-ventures",
-      "x": -2.21421,
-      "y": 0.692949,
-      "cluster_id": 8,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_techstars",
-      "x": -2.182359,
-      "y": -1.121926,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_temasek",
-      "x": 1.50576,
-      "y": 0.683249,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tenoneten",
-      "x": -2.612836,
-      "y": 1.431127,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tensor-ventures",
-      "x": -2.569293,
-      "y": -1.769695,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_the-fintech-fund",
-      "x": -1.685718,
-      "y": 9.747326,
+      "x": 11.010179,
+      "y": 11.411591,
       "cluster_id": 0,
       "is_generalist": false
     },
     {
-      "id": "inv_the-general-partnership",
-      "x": 1.510009,
-      "y": -4.084118,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_the-westly-group",
-      "x": -1.859878,
-      "y": 1.88632,
+      "id": "inv_riceberg-ventures",
+      "x": 8.911463,
+      "y": 9.424617,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
-      "id": "inv_the-yield-lab-latam",
-      "x": -0.668471,
-      "y": -1.124987,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_thefoundervc",
-      "x": 2.751061,
-      "y": 5.042246,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_theory-ventures",
-      "x": -1.56404,
-      "y": 3.256364,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_thomas-wolf",
-      "x": -1.642727,
-      "y": -0.594363,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_thomson-reuters-ventures",
-      "x": -1.093978,
-      "y": 5.134264,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_thrive",
-      "x": 1.24604,
-      "y": 0.406966,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tiger-global",
-      "x": -2.211048,
-      "y": 1.898337,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_timeless",
-      "x": 0.212219,
-      "y": 4.287838,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_toyota-ventures",
-      "x": 2.179467,
-      "y": -0.047819,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tq-ventures",
-      "x": 1.360268,
-      "y": 1.99056,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_transition",
-      "x": -0.681745,
-      "y": 0.037246,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_translink-capital",
-      "x": 2.830351,
-      "y": 1.914968,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_transpose-platform",
-      "x": 0.67476,
-      "y": 1.901609,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tru-arrow-partners",
-      "x": -1.64917,
-      "y": -0.78121,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_trucks-venture-capital",
-      "x": 2.83604,
-      "y": -0.251405,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_true-ventures",
-      "x": -0.722886,
-      "y": -0.519589,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_tusk-ventures",
-      "x": 0.181143,
-      "y": -0.632556,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_twelve-below",
-      "x": -0.810662,
-      "y": -0.738775,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ubiquity-ventures",
-      "x": -1.96946,
-      "y": 0.486441,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_ulu-ventures",
-      "x": -0.680444,
-      "y": 1.630499,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_uncorrelated-ventures",
-      "x": -0.770108,
-      "y": 3.493705,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_underscore-vc",
-      "x": 0.352694,
-      "y": 3.648813,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_union-square-ventures",
-      "x": -0.406238,
-      "y": 0.743078,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_unruly-capital",
-      "x": -2.043643,
-      "y": -1.050014,
-      "cluster_id": 5,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_unusual-ventures",
-      "x": -1.519412,
-      "y": 4.658378,
-      "cluster_id": 9,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_valkyrie",
-      "x": -0.134283,
-      "y": 0.28903,
-      "cluster_id": 2,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_valor-equity-partners",
-      "x": -1.818721,
-      "y": 0.31304,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_vanderbilt-university",
-      "x": -3.155484,
-      "y": 0.049996,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_venture-catalysts",
-      "x": -1.861484,
-      "y": 2.373946,
-      "cluster_id": 7,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_venturetech-alliance",
-      "x": 0.622603,
-      "y": -1.17716,
+      "id": "inv_ridge-ventures",
+      "x": 10.86649,
+      "y": 14.415075,
       "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_verified-capital",
-      "x": 1.550817,
-      "y": 2.610602,
-      "cluster_id": 1,
+      "id": "inv_riot-ventures",
+      "x": 9.997,
+      "y": 9.936234,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
-      "id": "inv_verve-ventures",
-      "x": -0.739887,
-      "y": -0.859312,
-      "cluster_id": 2,
+      "id": "inv_ritual-capital",
+      "x": 10.532761,
+      "y": 14.137273,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_veteran-ventures-capital",
-      "x": -3.088452,
-      "y": 0.173243,
+      "id": "inv_riverpark-ventures",
+      "x": 8.50514,
+      "y": 11.799725,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_romulus-capital",
+      "x": 10.377962,
+      "y": 9.358,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_root-ventures",
+      "x": 10.157778,
+      "y": 11.394372,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_rosecliff-ventures",
+      "x": 11.116064,
+      "y": 14.571346,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_rtx-ventures",
+      "x": 10.208388,
+      "y": 11.94904,
       "cluster_id": 7,
       "is_generalist": false
     },
     {
-      "id": "inv_village-global",
-      "x": -0.047344,
-      "y": 3.335301,
-      "cluster_id": 1,
+      "id": "inv_saas-ventures",
+      "x": 10.308756,
+      "y": 13.998227,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_vine-ventures",
-      "x": 0.371636,
-      "y": 2.599672,
-      "cluster_id": 1,
+      "id": "inv_saga-ventures",
+      "x": 9.102565,
+      "y": 13.385303,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_virtue",
-      "x": -2.006297,
-      "y": -4.179307,
+      "id": "inv_salesforce-ventures",
+      "x": 7.776412,
+      "y": 14.067627,
       "cluster_id": 3,
       "is_generalist": false
     },
     {
-      "id": "inv_voyager-ventures",
-      "x": -1.640211,
-      "y": 2.188742,
+      "id": "inv_salus-ventures",
+      "x": 7.799368,
+      "y": 8.342032,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_samsung-next",
+      "x": 11.166949,
+      "y": 11.65053,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_saudi-aramco-energy-ventures",
+      "x": 5.497908,
+      "y": 9.405913,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_scale-venture-partners",
+      "x": 9.630739,
+      "y": 12.43594,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_schematic-ventures",
+      "x": 7.770469,
+      "y": 10.636744,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_scor-ventures",
+      "x": 13.504442,
+      "y": 6.733968,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_scott-belsky",
+      "x": 11.612062,
+      "y": 13.873134,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_scout-ventures",
+      "x": 8.217638,
+      "y": 9.07525,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_scribble-ventures",
+      "x": 9.683706,
+      "y": 10.519817,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_script-capital",
+      "x": 8.290153,
+      "y": 12.921696,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_second-avenue-partners",
+      "x": 5.464864,
+      "y": 9.397268,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_seed-capital",
+      "x": 7.965751,
+      "y": 14.448546,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_seed-speed-ventures",
+      "x": 10.57349,
+      "y": 13.610759,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_seedcamp",
+      "x": 9.863541,
+      "y": 12.826146,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sempervirens-venture-capital",
+      "x": 13.145318,
+      "y": 7.109372,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sente",
+      "x": 8.15026,
+      "y": 10.842486,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sequoia-capital",
+      "x": 9.187717,
+      "y": 12.929228,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_service-provider-capital",
+      "x": 7.854905,
+      "y": 12.167586,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_seven-stars",
+      "x": 9.22872,
+      "y": 13.005312,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_shastra-vc",
+      "x": 8.810312,
+      "y": 8.385672,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sheesha-finance",
+      "x": 9.774146,
+      "y": 2.514984,
+      "cluster_id": 9,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_shield-capital",
+      "x": 8.040395,
+      "y": 9.089646,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_shine-capital",
+      "x": 11.543432,
+      "y": 12.172581,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_shuckervc",
+      "x": 11.588458,
+      "y": 15.075081,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sierra-ventures",
+      "x": 7.554357,
+      "y": 13.8076,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_signalfire",
+      "x": 8.619256,
+      "y": 12.939913,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_silent-ventures",
+      "x": 7.666904,
+      "y": 8.196191,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_silverton-partners",
+      "x": 10.244255,
+      "y": 12.843436,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_simsan",
+      "x": 11.269671,
+      "y": 9.076118,
       "cluster_id": 2,
       "is_generalist": false
     },
     {
+      "id": "inv_sk-telecom-ventures",
+      "x": 7.312276,
+      "y": 12.776519,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_skip-capital",
+      "x": 11.642852,
+      "y": 11.309895,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_slauson-co",
+      "x": 7.538784,
+      "y": 12.725907,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_slow-ventures",
+      "x": 7.49235,
+      "y": 12.878604,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_snak-venture-partners",
+      "x": 8.042213,
+      "y": 11.223527,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_social-venture-fund",
+      "x": 10.901081,
+      "y": 5.153259,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_softbank",
+      "x": 12.7337,
+      "y": 10.653014,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_softbank-vision-fund",
+      "x": 10.655793,
+      "y": 11.340023,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_soma-capital",
+      "x": 7.941954,
+      "y": 12.906351,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sosv",
+      "x": 11.789323,
+      "y": 10.660349,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_south-park-commons",
+      "x": 8.977659,
+      "y": 12.821307,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_spacecadet-ventures",
+      "x": 9.247719,
+      "y": 10.673056,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_spark-capital",
+      "x": 9.599106,
+      "y": 12.728415,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_spark-growth-ventures",
+      "x": 9.773067,
+      "y": 9.106853,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_speciale-invest",
+      "x": 8.73263,
+      "y": 8.441118,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_speedinvest",
+      "x": 9.777028,
+      "y": 11.816327,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_springtide-ventures",
+      "x": 13.529742,
+      "y": 6.697959,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_squadra-ventures",
+      "x": 8.218066,
+      "y": 9.098742,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_square-peg",
+      "x": 12.095815,
+      "y": 12.542506,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_stadia-ventures",
+      "x": 9.897327,
+      "y": 2.592158,
+      "cluster_id": 9,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_starshot-capital",
+      "x": 9.918362,
+      "y": 8.680479,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_startup-o",
+      "x": 8.737123,
+      "y": 8.328018,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_stellaris-venture-partners",
+      "x": 9.445434,
+      "y": 14.016973,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_stepstone-group",
+      "x": 8.526826,
+      "y": 9.654322,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_steve-blank",
+      "x": 8.694833,
+      "y": 12.282854,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_strategic-development-fund",
+      "x": 5.724131,
+      "y": 9.534948,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_striker-venture-partners",
+      "x": 10.595996,
+      "y": 13.689608,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_stripes",
+      "x": 8.476375,
+      "y": 9.094582,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sunflower-capital",
+      "x": 9.537259,
+      "y": 12.226961,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_sunna-ventures",
+      "x": 9.79848,
+      "y": 8.918033,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_supercharger-ventures",
+      "x": 7.128425,
+      "y": -0.575812,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_supply-change-capital",
+      "x": 7.884881,
+      "y": 12.202547,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_susa-ventures",
+      "x": 10.62967,
+      "y": 13.76622,
+      "cluster_id": 8,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_sv-angel",
+      "x": 9.523134,
+      "y": 12.238232,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_swell-vc",
+      "x": 8.999781,
+      "y": 11.392519,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_swift-ventures",
+      "x": 11.074298,
+      "y": 13.305488,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_swish-ventures",
+      "x": 10.223429,
+      "y": 13.490336,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_symphonic-capital",
+      "x": 13.24904,
+      "y": 7.009865,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_syn-ventures",
+      "x": 8.675838,
+      "y": 13.731752,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_systema",
+      "x": 3.208145,
+      "y": 19.142998,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_t-rowe-price",
+      "x": 5.902414,
+      "y": 9.696455,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tapestry-vc",
+      "x": 7.499001,
+      "y": 13.788783,
+      "cluster_id": 5,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_tcg",
+      "x": 7.097537,
+      "y": -0.607268,
+      "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tcv",
+      "x": 9.768867,
+      "y": 12.087539,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tdk-ventures",
+      "x": 8.832656,
+      "y": 9.006053,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_techstars",
+      "x": 6.225541,
+      "y": 9.589507,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_temasek",
+      "x": 11.08183,
+      "y": 11.047962,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tenoneten",
+      "x": 9.08737,
+      "y": 13.598913,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tensor-ventures",
+      "x": 5.52867,
+      "y": 9.427112,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_the-fintech-fund",
+      "x": 3.282727,
+      "y": 19.094065,
+      "cluster_id": 2,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_the-general-partnership",
+      "x": 6.062299,
+      "y": 15.639895,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_the-westly-group",
+      "x": 8.40369,
+      "y": 10.683146,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_the-yield-lab-latam",
+      "x": 9.995597,
+      "y": 8.489801,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_thefoundervc",
+      "x": 11.62125,
+      "y": 15.111817,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_theory-ventures",
+      "x": 7.739509,
+      "y": 12.139001,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_thomas-wolf",
+      "x": 7.456181,
+      "y": 9.96125,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_thomson-reuters-ventures",
+      "x": 7.920133,
+      "y": 14.378804,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_thrive",
+      "x": 10.919433,
+      "y": 10.52638,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tiger-global",
+      "x": 8.456311,
+      "y": 10.171444,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_timeless",
+      "x": 9.448479,
+      "y": 13.860895,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_toyota-ventures",
+      "x": 12.147244,
+      "y": 10.567117,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tq-ventures",
+      "x": 10.813003,
+      "y": 12.433063,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_transition",
+      "x": 9.674536,
+      "y": 9.595633,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_translink-capital",
+      "x": 12.098515,
+      "y": 12.400896,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_transpose-platform",
+      "x": 10.34647,
+      "y": 12.347863,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_trgc",
+      "x": 9.850889,
+      "y": 2.594733,
+      "cluster_id": 9,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tru-arrow-partners",
+      "x": 7.325418,
+      "y": 9.843493,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_trucks-venture-capital",
+      "x": 12.709637,
+      "y": 10.679252,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_true-ventures",
+      "x": 9.81566,
+      "y": 9.100546,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_tusk-ventures",
+      "x": 11.098074,
+      "y": 8.853681,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_twelve-below",
+      "x": 9.87323,
+      "y": 8.97292,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ubiquity-ventures",
+      "x": 8.513464,
+      "y": 9.393473,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_ulu-ventures",
+      "x": 9.42797,
+      "y": 11.078511,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_uncorrelated-ventures",
+      "x": 8.347886,
+      "y": 12.76199,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_underscore-vc",
+      "x": 8.588141,
+      "y": 13.832079,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_union-square-ventures",
+      "x": 9.780599,
+      "y": 10.303395,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_unitus-seed-fund",
+      "x": 13.125394,
+      "y": 7.209097,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_unruly-capital",
+      "x": 6.326869,
+      "y": 9.581905,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_unusual-ventures",
+      "x": 7.349926,
+      "y": 13.756557,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_utec",
+      "x": 13.531006,
+      "y": 6.696034,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_valkyrie",
+      "x": 10.036379,
+      "y": 9.959804,
+      "cluster_id": 0,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_valor-equity-partners",
+      "x": 8.268826,
+      "y": 9.547572,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_vanderbilt-university",
+      "x": 7.73317,
+      "y": 8.277317,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_venture-catalysts",
+      "x": 8.094176,
+      "y": 11.073215,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_venturetech-alliance",
+      "x": 11.508321,
+      "y": 8.560126,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_verified-capital",
+      "x": 8.381174,
+      "y": 13.177205,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_verve-ventures",
+      "x": 9.950455,
+      "y": 8.695065,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_veteran-ventures-capital",
+      "x": 7.727684,
+      "y": 8.297921,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_village-global",
+      "x": 9.734117,
+      "y": 12.979808,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_vine-ventures",
+      "x": 9.471058,
+      "y": 12.60626,
+      "cluster_id": 8,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_virtue",
+      "x": 13.443691,
+      "y": 6.789312,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_voyager-ventures",
+      "x": 8.449956,
+      "y": 10.737071,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_vu-venture-partners",
+      "x": 7.226126,
+      "y": 12.983768,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
       "id": "inv_washington-harbour-partners",
-      "x": -2.492796,
-      "y": -1.626971,
+      "x": 5.720707,
+      "y": 9.518532,
+      "cluster_id": 7,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_wavelaunch",
+      "x": 10.79219,
+      "y": 5.267838,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_wavemaker-partners",
+      "x": 7.144258,
+      "y": 12.189285,
       "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_wellington",
-      "x": 0.767688,
-      "y": 1.800798,
-      "cluster_id": 1,
+      "x": 10.499267,
+      "y": 12.189499,
+      "cluster_id": 7,
       "is_generalist": false
     },
     {
       "id": "inv_white-star-capital",
-      "x": -0.090414,
-      "y": 3.591251,
-      "cluster_id": 1,
+      "x": 8.192069,
+      "y": 13.611798,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_will-ventures",
-      "x": -1.742942,
-      "y": -4.904855,
-      "cluster_id": 3,
+      "x": 10.857546,
+      "y": 5.186851,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_wing-venture-partners",
-      "x": 1.102555,
-      "y": 0.700432,
-      "cluster_id": 1,
+      "x": 10.75311,
+      "y": 10.967012,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_wipro-ventures",
-      "x": 2.836062,
-      "y": 5.128721,
-      "cluster_id": 4,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_wischoff-ventures",
-      "x": -1.191856,
-      "y": 4.909928,
-      "cluster_id": 6,
-      "is_generalist": true
-    },
-    {
-      "id": "inv_wittington-ventures",
-      "x": -2.06445,
-      "y": -4.288218,
-      "cluster_id": 3,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_wndrco",
-      "x": -0.525024,
-      "y": 4.128987,
-      "cluster_id": 1,
-      "is_generalist": false
-    },
-    {
-      "id": "inv_wonder-ventures",
-      "x": 0.521896,
-      "y": -0.911923,
+      "x": 11.628256,
+      "y": 15.119935,
       "cluster_id": 8,
       "is_generalist": false
     },
     {
-      "id": "inv_work-bench",
-      "x": 1.815877,
-      "y": 3.325183,
+      "id": "inv_wischoff-ventures",
+      "x": 7.652933,
+      "y": 14.223905,
+      "cluster_id": 3,
+      "is_generalist": true
+    },
+    {
+      "id": "inv_wittington-ventures",
+      "x": 13.537877,
+      "y": 6.695407,
+      "cluster_id": 6,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_wndrco",
+      "x": 6.877413,
+      "y": 12.590844,
       "cluster_id": 4,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_wonder-ventures",
+      "x": 11.349962,
+      "y": 8.881169,
+      "cluster_id": 5,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_work-bench",
+      "x": 10.769955,
+      "y": 13.588291,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_worldbuild",
-      "x": 0.502469,
-      "y": 0.59654,
-      "cluster_id": 1,
+      "x": 10.282858,
+      "y": 10.895206,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_woven-capital",
-      "x": 2.909839,
-      "y": -0.328102,
-      "cluster_id": 9,
+      "x": 12.745599,
+      "y": 10.636062,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_xora",
-      "x": 2.652062,
-      "y": -0.097329,
-      "cluster_id": 9,
+      "x": 12.4654,
+      "y": 10.81483,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_xyz-venture-capital",
-      "x": -1.652765,
-      "y": 0.578074,
-      "cluster_id": 7,
+      "x": 7.472759,
+      "y": 11.650422,
+      "cluster_id": 5,
       "is_generalist": false
     },
     {
       "id": "inv_y-combinator",
-      "x": -0.160815,
-      "y": 3.043658,
-      "cluster_id": 1,
+      "x": 9.29328,
+      "y": 12.840737,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_z21",
-      "x": 0.078441,
-      "y": 2.141016,
-      "cluster_id": 3,
+      "x": 9.941387,
+      "y": 12.1226,
+      "cluster_id": 0,
       "is_generalist": false
     },
     {
       "id": "inv_z47",
-      "x": 0.096735,
-      "y": 4.832615,
-      "cluster_id": 4,
+      "x": 9.415606,
+      "y": 14.299765,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_zeal-capital-partners",
-      "x": -1.074326,
-      "y": 3.284601,
-      "cluster_id": 3,
+      "x": 8.243581,
+      "y": 12.334267,
+      "cluster_id": 8,
       "is_generalist": false
     },
     {
       "id": "inv_zelkova-ventures",
-      "x": -0.713869,
-      "y": -0.46099,
-      "cluster_id": 2,
+      "x": 9.820066,
+      "y": 9.17092,
+      "cluster_id": 4,
       "is_generalist": false
     },
     {
       "id": "inv_zero-infinity-partners",
-      "x": -1.916687,
-      "y": 0.21123,
-      "cluster_id": 7,
+      "x": 8.230008,
+      "y": 9.450376,
+      "cluster_id": 1,
+      "is_generalist": false
+    },
+    {
+      "id": "inv_zilhive-ventures",
+      "x": 9.906169,
+      "y": 2.650788,
+      "cluster_id": 9,
       "is_generalist": false
     },
     {
       "id": "inv_zvc",
-      "x": 0.515746,
-      "y": 4.934143,
-      "cluster_id": 4,
+      "x": 9.811328,
+      "y": 14.43599,
+      "cluster_id": 8,
       "is_generalist": false
     }
   ]

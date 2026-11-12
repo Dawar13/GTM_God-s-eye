@@ -63,6 +63,19 @@ def ingest_physical_ai(resolver: InvestorResolver) -> int:
     return len(rows)
 
 
+def ingest_vc_india(resolver: InvestorResolver) -> int:
+    rows = seeds.read_vc_india()
+    for row in rows:
+        group = resolver.add(row.name, "seed_list", seeds.VC_INDIA_LIST)
+        group.user_tags.append(seeds.VC_INDIA_TAG)
+        group.seed_hints.append(row.hint())
+        if region := seeds.region_from_address(row.location):
+            group.address_regions.add(region)
+        if row.link_field and row.url:
+            group.listed_links.setdefault(row.link_field, (row.url, seeds.VC_INDIA_LIST))
+    return len(rows)
+
+
 def ingest_seed_rounds(resolver: InvestorResolver) -> list[build.RoundInput]:
     inputs = []
     for r in seeds.read_seed_rounds():
@@ -96,6 +109,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
 
     seed_rows = ingest_seed_investors(resolver)
     physical_ai_rows = ingest_physical_ai(resolver)
+    vc_india_rows = ingest_vc_india(resolver)
     round_inputs = ingest_seed_rounds(resolver)
 
     loaded = research_files.load() if research else research_files.Loaded()
@@ -103,6 +117,7 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
 
     duplicate_rounds = build.build(store, resolver, goldman, round_inputs)
     research_stats = research_files.apply(store, loaded, {})
+    listed_links = build.apply_listed_links(store, resolver)
     if research:
         set_tiers(store, loaded)
     store.programs = accelerators.build(store)
@@ -116,6 +131,8 @@ def run(store: Store, research: bool = True) -> dict[str, int]:
         "goldman text-fallback pages": len(fallbacks),
         "seed investor rows": seed_rows,
         "physical-AI list rows": physical_ai_rows,
+        "VC-in-India list rows": vc_india_rows,
+        "links filled from a list": listed_links,
         "seed round rows": len(round_inputs),
         "round listings merged": duplicate_rounds,
         "investors on 2+ seed lists": sum(1 for i in investors if i["seed_list_count"] >= 2),

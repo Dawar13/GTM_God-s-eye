@@ -9,7 +9,15 @@ from atlas.geo import region_for_location
 from atlas.ingest.goldman_pdf import SOURCE_ID as GOLDMAN_ID
 from atlas.ingest.goldman_pdf import GoldmanFund
 from atlas.ingest.seeds import LIST_RETRIEVED, LIST_SECTOR, SeedRound
-from atlas.model import Store, add_source, new_company, new_investor, new_round, user_source
+from atlas.model import (
+    Store,
+    add_source,
+    cite,
+    new_company,
+    new_investor,
+    new_round,
+    user_source,
+)
 from atlas.resolve import Group, InvestorResolver
 
 ROLE_RANK = {"lead": 0, "participant": 1, "unspecified": 2}
@@ -40,6 +48,8 @@ def investor_from_group(group: Group, fund_regions: set[str]) -> dict:
     # A regional arm's own name is a location: "Accel (India)" -> india.
     arm_region = region_for_location(", ".join(names.region_words(group.display_name)))
     regions = fund_regions | group.region_hints | ({arm_region} if arm_region else set())
+    # A list's street address only fills a gap; it never overrules or blanks another source.
+    regions = regions or set(group.address_regions)
     inv = new_investor(
         group.investor_id,
         group.display_name,
@@ -90,6 +100,24 @@ def fund_record(fund: GoldmanFund, investor_id: str, fund_id: str) -> dict:
         "field_sources": {},
         "confidence": fund.confidence,
     }
+
+
+def apply_listed_links(store: Store, resolver: InvestorResolver) -> int:
+    """A list's web address for a firm fills `website` / `linkedin` only where research
+    left the field empty, and the field cites that list. Returns the number filled."""
+    filled = 0
+    for group in resolver.groups:
+        inv = store.investors.get(group.investor_id or "")
+        if inv is None:
+            continue
+        for field_name, (url, source_id) in group.listed_links.items():
+            if inv[field_name] is not None:
+                continue
+            src = user_source(source_id, retrieved_at=LIST_RETRIEVED.get(source_id))
+            inv[field_name] = url.rstrip("/") if url.count("/") > 3 else url
+            cite(inv, field_name, [add_source(inv, src)])
+            filled += 1
+    return filled
 
 
 def build_investors_and_funds(

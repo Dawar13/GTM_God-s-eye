@@ -4,7 +4,7 @@
  * feed charts come from the tested transforms in src/lib/viz/transforms; this file only
  * joins records. Served by /api/entity/[id]/profile.
  */
-import { INVESTOR_STAGE_LABELS, SECTOR_LABELS } from "@/lib/format/labels";
+import { INVESTOR_STAGE_LABELS, SECTOR_LABELS, SEED_LIST_LABELS } from "@/lib/format/labels";
 import type { Company, Competitor, FitFeatures, Fund, Investor, Round } from "@/lib/schema";
 import type { Confidence } from "@/lib/schema";
 import { provenanceOf } from "@/lib/viz/transforms/common";
@@ -13,6 +13,26 @@ import { investorDeals, type InvestorDeals } from "@/lib/viz/transforms/investor
 import { sectorBars, type SectorBars } from "@/lib/viz/transforms/sectorBars";
 import { sourceDomain } from "./entities";
 import { getCompanies, getCompetitors, getFitFeatures, getFunds, getInvestors, getPartners, getRounds } from "./index";
+
+/** What one of the user's lists says about the investor, as written; never verified. */
+export type ListedHint = {
+  list: string;
+  focus: string | null;
+  check: string | null;
+  notes: string | null;
+};
+
+/** Seed hints that say something, in the investor's order, with readable list names. */
+export function listedHints(inv: Pick<Investor, "seed_hints">): ListedHint[] {
+  return inv.seed_hints
+    .filter((h) => h.listed_focus || h.listed_check_or_fund || h.notes)
+    .map((h) => ({
+      list: SEED_LIST_LABELS[h.source_id] ?? h.source_id,
+      focus: h.listed_focus,
+      check: h.listed_check_or_fund,
+      notes: h.notes,
+    }));
+}
 
 export type ProfilePartner = {
   id: string;
@@ -30,6 +50,8 @@ export type InvestorProfile = {
   leads: boolean | null;
   portfolioCountReported: number | null;
   thesis: { text: string | null; sourceDomain: string | null };
+  /** What the user's lists say (focus, check size), unverified. */
+  listed: ListedHint[];
   /** Roll-up of the investor's own sources, for tooltips on its marks. */
   provenance: { sourceDomain: string | null; confidence: Confidence | null };
   /**
@@ -76,6 +98,7 @@ export function buildInvestorProfile(input: ProfileInputs): InvestorProfile {
       text: inv.thesis_text,
       sourceDomain: thesisSource ? sourceDomain(thesisSource.url) : null,
     },
+    listed: listedHints(inv),
     provenance: provenanceOf([inv]),
     fit: input.fit,
     sectors: sectorBars(inv.sector_weights),

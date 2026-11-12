@@ -130,6 +130,21 @@ export const GEOGRAPHY_LABELS: Record<Geography, string> = {
   global: "Global",
 };
 
+/** The user's investor lists (PROJECT_CONTEXT §6), by source id; unknown ids show as they are. */
+export const SEED_LIST_LABELS: Record<string, string> = {
+  freesbee_q3_2026_fund_closes: "Q3 2026 fund closes (Freesbee)",
+  "multiples_frontier_lab_investors_2026-10-28": "Frontier-lab investors (Multiples)",
+  "4dev_us_robotics_map": "US robotics map (4dev)",
+  li_sheetventure_30_funds: "30 early-stage funds (Sheet Venture)",
+  cremades_ai_relevant_investors: "AI-relevant investors (Cremades)",
+  li_20_b2b_ai_funds_2026: "20 B2B AI funds of 2026",
+  one_way_summit_sf_2026_list2: "One Way Summit SF 2026",
+  ny_venture_summit_2026_30_firms: "NY Venture Summit 2026",
+  li_ajvc_post: "ajvc post",
+  physical_ai_investor_list_2026_11_01: "Physical-AI investor list",
+  vc_investing_in_india_list_2026_11_12: "VC investing in India",
+};
+
 export const CUSTOMER_LIST_LABELS: Record<CustomerList, string> = {
   mumbai_pune: "Mumbai–Pune",
   bengaluru: "Bengaluru",

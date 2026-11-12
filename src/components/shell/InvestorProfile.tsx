@@ -145,6 +145,24 @@ export function InvestorProfileSections({
         )}
       </InspectorSection>
 
+      {p.listed.length > 0 && (
+        <InspectorSection title="From your lists" meta={String(p.listed.length)}>
+          <ul className="flex flex-col gap-3 text-sm">
+            {p.listed.map((h, i) => (
+              <li key={`${h.list}-${i}`} className="flex flex-col gap-1">
+                <span className="flex items-baseline justify-between gap-3">
+                  <span className="font-medium">{h.list}</span>
+                  {h.check && <span className="text-right num text-ink-2">{h.check}</span>}
+                </span>
+                {h.focus && <p className="leading-relaxed">{h.focus}</p>}
+                {h.notes && <p className="text-xs break-words text-ink-2">{h.notes}</p>}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-xs text-ink-2">As the lists state them; not verified.</p>
+        </InspectorSection>
+      )}
+
       <InspectorSection title="Sector weights">
         <SectorWeightsChart sectors={p.sectors} provenance={p.provenance} />
       </InspectorSection>

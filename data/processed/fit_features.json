@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-12T08:42:47+00:00",
+  "generated_at": "2026-11-12T13:10:01+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -2502,6 +2502,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_accion-venture-lab",
+      "investor_id": "inv_accion-venture-lab",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_accion-ventures",
       "investor_id": "inv_accion-ventures",
       "features": {
@@ -3802,6 +3832,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_agya-ventures",
+      "investor_id": "inv_agya-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -5182,7 +5235,14 @@
       "id": "fit_alpine-venture-capital",
       "investor_id": "inv_alpine-venture-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -5192,7 +5252,14 @@
             "0 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -6036,6 +6103,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_amicus-capital",
+      "investor_id": "inv_amicus-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -7015,7 +7105,14 @@
             "1 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -7143,6 +7240,36 @@
             "latest fund 200000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_anthill-ventures",
+      "investor_id": "inv_anthill-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -7862,7 +7989,14 @@
       "id": "fit_arali-ventures",
       "investor_id": "inv_arali-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -7872,7 +8006,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -8615,6 +8756,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_asha-impact",
+      "investor_id": "inv_asha-impact",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -9531,11 +9695,11 @@
       "investor_id": "inv_audacious-ventures",
       "features": {
         "thesis": {
-          "value": 0.3,
+          "value": 0.15,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.20",
-            "ai weight 0.20"
+            "industrial_affinity 0.10",
+            "ai weight 0.10"
           ]
         },
         "stage": null,
@@ -10021,7 +10185,14 @@
       "id": "fit_axilor-ventures",
       "investor_id": "inv_axilor-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.1,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.10",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -10031,7 +10202,14 @@
             "1 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -10563,7 +10741,14 @@
       "id": "fit_banana-capital",
       "investor_id": "inv_banana-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": {
           "value": 1.0,
           "method": "earliest stage vs our pre-seed",
@@ -11520,7 +11705,14 @@
       "id": "fit_benhamou-global-ventures",
       "investor_id": "inv_benhamou-global-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.375,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.31",
+            "ai weight 0.12"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": null,
@@ -11726,11 +11918,11 @@
       "investor_id": "inv_bessemer-venture-partners",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.250001,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.25",
-            "ai weight 0.50"
+            "industrial_affinity 0.13",
+            "ai weight 0.25"
           ]
         },
         "stage": null,
@@ -11742,11 +11934,41 @@
             "3 adjacent companies in 17 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
         "conflict",
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_best-nights-vc",
+      "investor_id": "inv_best-nights-vc",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
         "sparse"
       ],
       "raise_size_usd": 1000000
@@ -12054,6 +12276,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_bharat-fund",
+      "investor_id": "inv_bharat-fund",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -13344,6 +13589,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_bluesky-equities",
+      "investor_id": "inv_bluesky-equities",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_bluestein-ventures",
       "investor_id": "inv_bluestein-ventures",
       "features": {
@@ -14379,6 +14647,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_brand-capital",
+      "investor_id": "inv_brand-capital",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_brandproject",
       "investor_id": "inv_brandproject",
       "features": {
@@ -14670,7 +14968,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -17199,6 +17504,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_ce-ventures",
+      "investor_id": "inv_ce-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.166666,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.17",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_ceas",
       "investor_id": "inv_ceas",
       "features": {
@@ -18031,7 +18366,14 @@
             "1 adjacent companies in 3 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -18371,7 +18713,14 @@
             "1 adjacent companies in 3 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -18954,6 +19303,29 @@
             "latest fund 54000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_cloud-capital",
+      "investor_id": "inv_cloud-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -20506,6 +20878,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_convivialite-ventures",
+      "investor_id": "inv_convivialite-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_convoi-ventures",
       "investor_id": "inv_convoi-ventures",
       "features": {
@@ -20520,6 +20915,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_convrtx",
+      "investor_id": "inv_convrtx",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -21090,6 +21508,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_cp-ventures",
+      "investor_id": "inv_cp-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -24068,6 +24509,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_dexter-angels",
+      "investor_id": "inv_dexter-angels",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_dff-ventures",
       "investor_id": "inv_dff-ventures",
       "features": {
@@ -24548,6 +25012,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_doha-tech-angels",
+      "investor_id": "inv_doha-tech-angels",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -25509,6 +25996,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_earnest-capital",
+      "investor_id": "inv_earnest-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_earth-venture-capital",
       "investor_id": "inv_earth-venture-capital",
       "features": {
@@ -25888,6 +26398,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_eight-roads",
+      "investor_id": "inv_eight-roads",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -26325,6 +26858,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_em-vc",
+      "investor_id": "inv_em-vc",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_embark-ventures",
       "investor_id": "inv_embark-ventures",
       "features": {
@@ -26339,6 +26902,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_emerald-media",
+      "investor_id": "inv_emerald-media",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -28255,6 +28841,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_exit-fund",
+      "investor_id": "inv_exit-fund",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_exitfund",
       "investor_id": "inv_exitfund",
       "features": {
@@ -28357,6 +28973,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_expert-dojo",
+      "investor_id": "inv_expert-dojo",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_explorer-1-fund",
       "investor_id": "inv_explorer-1-fund",
       "features": {
@@ -28418,6 +29057,36 @@
         }
       },
       "flags": [],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_exponential-impact",
+      "investor_id": "inv_exponential-impact",
+      "features": {
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
       "raise_size_usd": 1000000
     },
     {
@@ -28522,6 +29191,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_factor-e-ventures",
+      "investor_id": "inv_factor-e-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -29627,7 +30326,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -30026,6 +30732,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_fl4sh",
+      "investor_id": "inv_fl4sh",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_flare-capital-partners",
       "investor_id": "inv_flare-capital-partners",
       "features": {
@@ -30261,6 +30990,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_flucas-ventures",
+      "investor_id": "inv_flucas-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -30768,6 +31527,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_forster-chase-ventures",
+      "investor_id": "inv_forster-chase-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_fortino-ventures",
       "investor_id": "inv_fortino-ventures",
       "features": {
@@ -30970,6 +31752,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_foundamental",
+      "investor_id": "inv_foundamental",
+      "features": {
+        "thesis": {
+          "value": 0.5,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.50",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_foundation-capital",
       "investor_id": "inv_foundation-capital",
       "features": {
@@ -31084,6 +31896,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_founder-partners",
+      "investor_id": "inv_founder-partners",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -32444,6 +33286,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_gamerforce-ventures",
+      "investor_id": "inv_gamerforce-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_gandel-invest",
       "investor_id": "inv_gandel-invest",
       "features": {
@@ -33033,6 +33905,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_getvantage",
+      "investor_id": "inv_getvantage",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -33877,6 +34779,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_gpi",
+      "investor_id": "inv_gpi",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_gpo-fund",
       "investor_id": "inv_gpo-fund",
       "features": {
@@ -33890,7 +34815,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -34701,6 +35633,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_growx-ventures",
+      "investor_id": "inv_growx-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_gruhas",
       "investor_id": "inv_gruhas",
       "features": {
@@ -34863,6 +35818,29 @@
             "latest fund 180000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_gsv-ventures",
+      "investor_id": "inv_gsv-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -36283,6 +37261,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_henkel-ventures",
+      "investor_id": "inv_henkel-ventures",
+      "features": {
+        "thesis": {
+          "value": 1.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 1.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_henrik-bohman",
       "investor_id": "inv_henrik-bohman",
       "features": {
@@ -37103,6 +38111,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_horseshoe-vc",
+      "investor_id": "inv_horseshoe-vc",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_hostplus",
       "investor_id": "inv_hostplus",
       "features": {
@@ -37117,6 +38155,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_houghton-street-ventures",
+      "investor_id": "inv_houghton-street-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -37293,6 +38354,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_hubraum",
+      "investor_id": "inv_hubraum",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -37534,7 +38618,14 @@
             "2 adjacent companies in 6 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -38115,6 +39206,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_ian-fund",
+      "investor_id": "inv_ian-fund",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_iangels",
       "investor_id": "inv_iangels",
       "features": {
@@ -38253,6 +39367,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_ibos-ventures",
+      "investor_id": "inv_ibos-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -38531,6 +39668,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_idg-ventures-india",
+      "investor_id": "inv_idg-ventures-india",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_ignia-vc",
       "investor_id": "inv_ignia-vc",
       "features": {
@@ -38776,6 +39936,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_immeasurable",
+      "investor_id": "inv_immeasurable",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -39192,7 +40375,14 @@
             "0 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -39878,6 +41068,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_innopact",
+      "investor_id": "inv_innopact",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -40733,6 +41953,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_investec-emerging-companies",
+      "investor_id": "inv_investec-emerging-companies",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_investee",
       "investor_id": "inv_investee",
       "features": {
@@ -40791,6 +42034,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_investo-monk",
+      "investor_id": "inv_investo-monk",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -40988,7 +42261,14 @@
             "1 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -41813,7 +43093,14 @@
             "0 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -42864,6 +44151,36 @@
             "latest fund 23000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_jpin",
+      "investor_id": "inv_jpin",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -43974,6 +45291,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_khoob-group",
+      "investor_id": "inv_khoob-group",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -45729,7 +47069,14 @@
             "1 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -47610,11 +48957,11 @@
       "investor_id": "inv_m12",
       "features": {
         "thesis": {
-          "value": 0.428571,
+          "value": 0.214287,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.29",
-            "ai weight 0.29"
+            "industrial_affinity 0.14",
+            "ai weight 0.14"
           ]
         },
         "stage": null,
@@ -47626,7 +48973,14 @@
             "2 adjacent companies in 5 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -47956,6 +49310,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_magnivia",
+      "investor_id": "inv_magnivia",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_magnolia-capital",
       "investor_id": "inv_magnolia-capital",
       "features": {
@@ -47970,6 +49354,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_mahindra-partners",
+      "investor_id": "inv_mahindra-partners",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -48155,6 +49562,36 @@
             "latest fund 180000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_malpani-ventures",
+      "investor_id": "inv_malpani-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -48626,6 +50063,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_marc-group",
+      "investor_id": "inv_marc-group",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_marc-tarpenning",
       "investor_id": "inv_marc-tarpenning",
       "features": {
@@ -48860,6 +50327,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_marl-accelerator",
+      "investor_id": "inv_marl-accelerator",
+      "features": {
+        "thesis": {
+          "value": 0.666667,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.67",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_marlinspike-partners",
       "investor_id": "inv_marlinspike-partners",
       "features": {
@@ -49067,6 +50564,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_masawa",
+      "investor_id": "inv_masawa",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_massachusetts-institute-of-technology",
       "investor_id": "inv_massachusetts-institute-of-technology",
       "features": {
@@ -49125,6 +50645,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_massmutual-ventures",
+      "investor_id": "inv_massmutual-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -49234,7 +50784,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -49779,7 +51336,14 @@
       "id": "fit_mayfield",
       "investor_id": "inv_mayfield",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": {
@@ -49789,7 +51353,14 @@
             "1 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -49929,6 +51500,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_mdr-lab",
+      "investor_id": "inv_mdr-lab",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -54341,7 +55942,14 @@
             "2 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -55008,11 +56616,11 @@
       "investor_id": "inv_norwest",
       "features": {
         "thesis": {
-          "value": 0.5,
+          "value": 0.25,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.20",
-            "ai weight 0.60"
+            "industrial_affinity 0.10",
+            "ai weight 0.30"
           ]
         },
         "stage": null,
@@ -55024,7 +56632,14 @@
             "1 adjacent companies in 5 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -56250,7 +57865,14 @@
             "1 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -56814,6 +58436,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_orange-corp",
+      "investor_id": "inv_orange-corp",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -59479,6 +61124,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_pesu-venture-labs",
+      "investor_id": "inv_pesu-venture-labs",
+      "features": {
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_peter-brown",
       "investor_id": "inv_peter-brown",
       "features": {
@@ -60307,10 +61982,10 @@
       "investor_id": "inv_plug-and-play",
       "features": {
         "thesis": {
-          "value": 0.583333,
+          "value": 0.39881,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.58",
+            "industrial_affinity 0.40",
             "ai weight 0.00"
           ]
         },
@@ -60323,7 +61998,14 @@
             "3 adjacent companies in 6 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -60960,7 +62642,14 @@
             "0 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -62467,7 +64156,14 @@
             "0 adjacent companies in 3 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -62967,6 +64663,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_rally-cap-ventures",
+      "investor_id": "inv_rally-cap-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -63922,7 +65648,14 @@
             "1 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -64049,6 +65782,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_reliance-ventures",
+      "investor_id": "inv_reliance-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_remagine-ventures",
       "investor_id": "inv_remagine-ventures",
       "features": {
@@ -64093,6 +65849,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_remote-first-capital",
+      "investor_id": "inv_remote-first-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -65659,7 +67438,14 @@
       "id": "fit_romulus-capital",
       "investor_id": "inv_romulus-capital",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": null,
@@ -66822,11 +68608,11 @@
       "investor_id": "inv_salesforce-ventures",
       "features": {
         "thesis": {
-          "value": 0.326087,
+          "value": 0.163044,
           "method": "industrial affinity + 0.5 × AI weight",
           "inputs": [
-            "industrial_affinity 0.09",
-            "ai weight 0.48"
+            "industrial_affinity 0.04",
+            "ai weight 0.24"
           ]
         },
         "stage": null,
@@ -66976,6 +68762,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_samrat-financial-banking",
+      "investor_id": "inv_samrat-financial-banking",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_samsung-catalyst-fund",
       "investor_id": "inv_samsung-catalyst-fund",
       "features": {
@@ -67083,6 +68892,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_samyakth-capital",
+      "investor_id": "inv_samyakth-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_sand-hill-angels",
       "investor_id": "inv_sand-hill-angels",
       "features": {
@@ -67141,6 +68973,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_sangam-ventures",
+      "investor_id": "inv_sangam-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -67379,7 +69234,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -68005,6 +69867,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_scor-ventures",
+      "investor_id": "inv_scor-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_scott-belsky",
       "investor_id": "inv_scott-belsky",
       "features": {
@@ -68332,6 +70224,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_seafund",
+      "investor_id": "inv_seafund",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_sean-henry",
       "investor_id": "inv_sean-henry",
       "features": {
@@ -68441,6 +70356,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_secureoctane",
+      "investor_id": "inv_secureoctane",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -69007,6 +70945,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_sente",
+      "investor_id": "inv_sente",
+      "features": {
+        "thesis": {
+          "value": 0.666667,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.67",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_sentinel-global",
       "investor_id": "inv_sentinel-global",
       "features": {
@@ -69550,6 +71518,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_sgh-capital",
+      "investor_id": "inv_sgh-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_shadow-ventures",
       "investor_id": "inv_shadow-ventures",
       "features": {
@@ -69791,6 +71782,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_sheesha-finance",
+      "investor_id": "inv_sheesha-finance",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -70296,7 +72317,14 @@
       "id": "fit_sierra-ventures",
       "investor_id": "inv_sierra-ventures",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.1875,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.19",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": null,
@@ -70616,6 +72644,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_simsan",
+      "investor_id": "inv_simsan",
+      "features": {
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -72148,6 +74206,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_space-cadet-ventures",
+      "investor_id": "inv_space-cadet-ventures",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_space-capital",
       "investor_id": "inv_space-capital",
       "features": {
@@ -72845,6 +74926,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_stadia-ventures",
+      "investor_id": "inv_stadia-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_stage-2-capital",
       "investor_id": "inv_stage-2-capital",
       "features": {
@@ -73258,6 +75369,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_startup-o",
+      "investor_id": "inv_startup-o",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -74355,6 +76496,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_super-capital",
+      "investor_id": "inv_super-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_super-ventures",
       "investor_id": "inv_super-ventures",
       "features": {
@@ -74378,6 +76542,36 @@
             "latest fund 10000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_supercharger-ventures",
+      "investor_id": "inv_supercharger-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"
@@ -75155,6 +77349,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_systema",
+      "investor_id": "inv_systema",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_t-rowe-price",
       "investor_id": "inv_t-rowe-price",
       "features": {
@@ -75442,6 +77666,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_tcg",
+      "investor_id": "inv_tcg",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -77108,7 +79362,14 @@
             "0 adjacent companies in 4 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": {
           "value": 1.0,
           "method": "freshness × fund-size fit for pre-seed",
@@ -77803,6 +80064,29 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_tomorrow-capital",
+      "investor_id": "inv_tomorrow-capital",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_top-tier-capital-partners",
       "investor_id": "inv_top-tier-capital-partners",
       "features": {
@@ -78294,6 +80578,29 @@
             "1 adjacent companies in 3 rounds"
           ]
         },
+        "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_trgc",
+      "investor_id": "inv_trgc",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
         "geography": null,
         "dry_powder": null
       },
@@ -79824,7 +82131,14 @@
       "id": "fit_unitus-seed-fund",
       "investor_id": "inv_unitus-seed-fund",
       "features": {
-        "thesis": null,
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
         "stage": null,
         "check": null,
         "adjacency": null,
@@ -79887,7 +82201,37 @@
             "0 adjacent companies in 2 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_unrest",
+      "investor_id": "inv_unrest",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -80277,6 +82621,36 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_utec",
+      "investor_id": "inv_utec",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -81331,7 +83705,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -81690,6 +84071,29 @@
           "method": "region, + cross-border signal",
           "inputs": [
             "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_vertex-ventures-southeast-asia-india",
+      "investor_id": "inv_vertex-ventures-southeast-asia-india",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
             "Indian founders unknown"
           ]
         },
@@ -82801,6 +85205,36 @@
       "raise_size_usd": 1000000
     },
     {
+      "id": "fit_vu-venture-partners",
+      "investor_id": "inv_vu-venture-partners",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.7,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region western",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
       "id": "fit_vvg",
       "investor_id": "inv_vvg",
       "features": {
@@ -83072,6 +85506,66 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_wavelaunch",
+      "investor_id": "inv_wavelaunch",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_wavemaker-partners",
+      "investor_id": "inv_wavemaker-partners",
+      "features": {
+        "thesis": {
+          "value": 0.25,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.25",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -83466,6 +85960,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_wgc",
+      "investor_id": "inv_wgc",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -85016,7 +87533,14 @@
             "0 adjacent companies in 1 rounds"
           ]
         },
-        "geography": null,
+        "geography": {
+          "value": 0.6,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region india",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [
@@ -85457,6 +87981,36 @@
             "latest fund 108000000"
           ]
         }
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_zilhive-ventures",
+      "investor_id": "inv_zilhive-ventures",
+      "features": {
+        "thesis": {
+          "value": 0.0,
+          "method": "industrial affinity + 0.5 × AI weight",
+          "inputs": [
+            "industrial_affinity 0.00",
+            "ai weight 0.00"
+          ]
+        },
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
+        "dry_powder": null
       },
       "flags": [
         "sparse"

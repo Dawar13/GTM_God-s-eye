@@ -11,7 +11,8 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from atlas.config import PHYSICAL_AI_CSV, SEED_INVESTORS_CSV, SEED_ROUNDS_CSV
+from atlas.config import PHYSICAL_AI_CSV, SEED_INVESTORS_CSV, SEED_ROUNDS_CSV, VC_INDIA_CSV
+from atlas.geo import region_for_country, region_for_location
 from atlas.names import clean, investing_name
 
 FRONTIER_LIST = "multiples_frontier_lab_investors_2026-10-28"
@@ -119,8 +120,10 @@ def read_seed_investors(path: Path = SEED_INVESTORS_CSV) -> list[SeedInvestorRow
 
 PHYSICAL_AI_LIST = "physical_ai_investor_list_2026_11_01"
 PHYSICAL_AI_RETRIEVED = "2026-11-01"
+VC_INDIA_LIST = "vc_investing_in_india_list_2026_11_12"
+VC_INDIA_RETRIEVED = "2026-11-12"
 # When a list was received, if not the Phase 0 date (see atlas.model.user_source).
-LIST_RETRIEVED = {PHYSICAL_AI_LIST: PHYSICAL_AI_RETRIEVED}
+LIST_RETRIEVED = {PHYSICAL_AI_LIST: PHYSICAL_AI_RETRIEVED, VC_INDIA_LIST: VC_INDIA_RETRIEVED}
 # The list's four groups, kept as `user_tags` (short, sentence case).
 PHYSICAL_AI_TAGS = (
     "Robotics and hard-tech",
@@ -160,6 +163,87 @@ def read_physical_ai(path: Path = PHYSICAL_AI_CSV) -> list[PhysicalAiRow]:
         if r.tag not in PHYSICAL_AI_TAGS:
             raise ValueError(f"unknown group {r.tag!r} for {r.name_as_listed!r}")
     return rows
+
+
+# --- "VC investing in India" list (user, 2026-11-12) ---------------------------------------
+
+# The list has no name column: names are read from each web address (see the CSV notes).
+VC_INDIA_TAG = "VC investing in India"
+
+
+@dataclass
+class VcIndiaRow:
+    name: str
+    url: str | None  # the firm's site, or a LinkedIn company page
+    location: str | None
+    focus: str | None
+    about: str | None
+    check: str | None
+    note: str | None
+
+    @property
+    def link_field(self) -> str | None:
+        """Investor field the listed URL fills: a LinkedIn page is not a website."""
+        if not self.url:
+            return None
+        return "linkedin" if "linkedin.com/" in self.url else "website"
+
+    def hint(self) -> dict:
+        notes = [
+            self.about if self.focus else None,
+            f"Address as listed: {self.location}" if self.location else None,
+            f"Web address as listed: {self.url}" if self.url else None,
+            self.note,
+        ]
+        return {
+            "source_id": VC_INDIA_LIST,
+            "listed_focus": self.focus or self.about,
+            "listed_check_or_fund": self.check,
+            "notes": "; ".join(n for n in notes if n) or None,
+        }
+
+
+def read_vc_india(path: Path = VC_INDIA_CSV) -> list[VcIndiaRow]:
+    with path.open(encoding="utf-8", newline="") as fh:
+        return [
+            VcIndiaRow(
+                name=clean(r["name"]),
+                url=_blank_to_none(r["website"]),
+                location=_blank_to_none(r["location_as_listed"]),
+                focus=_blank_to_none(r["focus_as_listed"]),
+                about=_blank_to_none(r["about_as_listed"]),
+                check=_blank_to_none(r["check_as_listed"]),
+                note=_blank_to_none(r["note"]),
+            )
+            for r in csv.DictReader(fh)
+            if clean(r["name"])
+        ]
+
+
+# Country codes that end an address on the list. US state codes ("NY", "MA") look the
+# same, so only these are read as countries.
+ADDRESS_COUNTRY_CODES = {"US", "GB", "CA", "AU", "LU", "DE", "IN", "SG", "AE", "QA"}
+
+
+def region_from_address(address: str | None) -> str | None:
+    """Region of the places a street address names, when they agree.
+
+    Street parts and postcodes match no place and are skipped; a trailing two-letter
+    part is a country code ("..., Mumbai, IN"). Places in several regions give None.
+    """
+    parts = [re.sub(r"[\d#]+", " ", p).strip(" -.") for p in (address or "").split(",")]
+    regions = set()
+    for i, part in enumerate(parts):
+        if i == len(parts) - 1 and part in ADDRESS_COUNTRY_CODES:
+            regions.add(region_for_country(part))
+            continue
+        # "London W S HR" (postcode letters), "California US", "Ontario M B B".
+        part = re.sub(r"(\s+[A-Z]{1,3})+$", "", part)
+        if region := region_for_location(part) or region_for_location(
+            part.replace("United Kingdom", "UK")
+        ):
+            regions.add(region)
+    return regions.pop() if len(regions) == 1 else None
 
 
 def parse_amount(raw: str) -> int | None:

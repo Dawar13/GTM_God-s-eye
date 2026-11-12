@@ -32,12 +32,16 @@ import {
   TIER_LABELS,
 } from "@/lib/format/labels";
 
-/** Tag values the pipeline writes to `user_tags` today (one per group of the 2026-11-01 list). */
+/**
+ * Tag values the pipeline writes to `user_tags` today: one per group of the 2026-11-01
+ * physical-AI list, and one for the 2026-11-12 "VC investing in India" list.
+ */
 export const USER_TAGS = [
   "Robotics and hard-tech",
   "Emerging and specialist",
   "Big names",
   "Strategic and corporate",
+  "VC investing in India",
 ] as const;
 export type UserTag = (typeof USER_TAGS)[number];
 

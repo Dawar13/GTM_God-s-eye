@@ -43,8 +43,13 @@ class Group:
     seed_hints: list[dict] = field(default_factory=list)
     type_guess: str | None = None
     region_hints: set[str] = field(default_factory=set)
+    # Regions from a list's street address: used only when nothing else gives one.
+    address_regions: set[str] = field(default_factory=set)
     on_frontier_list: bool = False
     user_tags: list[str] = field(default_factory=list)
+    # Investor field -> (URL, list source id): a list's own web address for the firm,
+    # used only where research left the field empty.
+    listed_links: dict[str, tuple[str, str]] = field(default_factory=dict)
 
     def choose_display_name(self) -> str:
         """Research and seed lists name firms, so they win. Among fund-list and

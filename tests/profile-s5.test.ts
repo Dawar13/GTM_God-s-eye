@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildInvestorProfile } from "@/lib/data/profile";
+import { buildInvestorProfile, listedHints } from "@/lib/data/profile";
 import { fitScore } from "@/lib/fit/score";
 import type { FitFeatures } from "@/lib/schema";
 import { fitBreakdown } from "@/lib/viz/transforms/fitBreakdown";
@@ -259,5 +259,31 @@ describe("buildInvestorProfile", () => {
     expect(p.funds.points).toHaveLength(1);
     expect(p.partners.map((x) => x.name)).toEqual(["Ann"]);
     expect(p.deals.portfolio).toEqual([]);
+  });
+});
+
+describe("listedHints", () => {
+  it("keeps hints that say something, with the list's readable name", () => {
+    const inv = investor({
+      seed_hints: [
+        {
+          source_id: "vc_investing_in_india_list_2026_11_12",
+          listed_focus: "We invest in tech.",
+          listed_check_or_fund: "$50,000 to $300,000",
+          notes: "Address as listed: Paris",
+        },
+        { source_id: "li_ajvc_post", listed_focus: null, listed_check_or_fund: null, notes: null },
+        { source_id: "unknown_list", listed_focus: null, listed_check_or_fund: "$1M", notes: null },
+      ],
+    });
+    expect(listedHints(inv)).toEqual([
+      {
+        list: "VC investing in India",
+        focus: "We invest in tech.",
+        check: "$50,000 to $300,000",
+        notes: "Address as listed: Paris",
+      },
+      { list: "unknown_list", focus: null, check: "$1M", notes: null },
+    ]);
   });
 });
