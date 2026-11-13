@@ -50,7 +50,7 @@ export function FilterBar() {
       role="group"
       aria-label="Filters"
       hidden={!open}
-      className="scrollbar-subtle shrink-0 border-b border-rule bg-canvas px-3 py-2 lg:px-4 [&:not([hidden])]:flex [&:not([hidden])]:items-center [&:not([hidden])]:gap-2 [&:not([hidden])]:overflow-x-auto"
+      className="scrollbar-subtle shrink-0 border-b border-rule bg-canvas px-3 py-2 lg:px-4 [&:not([hidden])]:flex [&:not([hidden])]:items-center [&:not([hidden])]:gap-2 [&:not([hidden])]:overflow-x-auto md:[&:not([hidden])]:flex-wrap md:[&:not([hidden])]:overflow-x-visible"
     >
       {FILTER_DEFS.map((def) => (
         <FilterMenu
@@ -116,7 +116,11 @@ function FilterMenu({
           )}
         >
           <span>{def.label}</span>
-          {shown && <span className="text-ink">{shown}</span>}
+          {shown && (
+            <span className="max-w-44 truncate text-ink" title={shown}>
+              {shown}
+            </span>
+          )}
           <ChevronDown aria-hidden className="size-3.5 text-muted" />
         </button>
       </PopoverTrigger>

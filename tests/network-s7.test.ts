@@ -389,10 +389,18 @@ describe("encoding", () => {
   });
 
   it("investors without a cluster or type get the neutral colour", () => {
-    const byCluster = nodeColours(data, "cluster");
+    const byCluster = nodeColours(
+      data,
+      "cluster",
+      new Map([
+        [0, "#D9731A"],
+        [1, "#2A78D6"],
+        [2, "#9AA1AB"],
+      ]),
+    );
     expect(byCluster[at("inv_b")]).toBe(NO_GROUP_COLOR);
     expect(byCluster[at("inv_a")]).not.toBe(byCluster[at("inv_d")]);
-    const byType = nodeColours(data, "type");
+    const byType = nodeColours(data, "type", new Map());
     expect(byType[at("inv_d")]).toBe(NO_GROUP_COLOR);
     expect(byType[at("co_y")]).toBe(capitalGrey(0));
   });

@@ -3,10 +3,11 @@
  * layout_thesis (UMAP or PCA position, cluster, generalist flag) and layout_bubbles (the fit
  * view axes); the view function runs on the client whenever the URL filters change.
  */
-import { polygonArea, polygonCentroid, polygonHull } from "d3";
+import { polygonArea, polygonCentroid, polygonHull, polygonLength } from "d3";
 import { fitScore } from "@/lib/fit/score";
 import { applyFilters, type FilterableInvestor, type FilterState } from "@/lib/filters";
 import { toFilterable } from "@/lib/data/directory";
+import { formatCount } from "@/lib/format";
 import { SECTOR_LABELS } from "@/lib/format/labels";
 import type {
   BubblePoint,
@@ -16,7 +17,8 @@ import type {
   Investor,
   ThesisPoint,
 } from "@/lib/schema";
-import { clusterColor } from "../palette";
+import { compactLayout } from "../compactLayout";
+import { CONTEXT_GREY, FOCUS_HUES } from "../palette";
 import { markerShapeFor, type MarkerShape } from "../markers";
 import { provenanceOf } from "./common";
 
@@ -46,26 +48,90 @@ export type ClusterInfo = {
   id: string;
   /**
    * The cluster's name in every view (map, legends, tooltips, the competitor heatmap, the
-   * network): its top two sectors, e.g. "Robotics and physical AI · AI infrastructure".
+   * network): its top sector, and the second when it carries real weight, e.g.
+   * "Robotics and physical AI · AI infrastructure".
    */
   label: string;
   size: number;
   color: string;
+  /** Close to an industrial AI raise, so it gets a hue; the rest are grey context. */
+  focus: boolean;
 };
 
+/** A second sector names a cluster only when it holds at least this share of its weight. */
+export const SECOND_SECTOR_MIN = 0.15;
+/** Clusters below this relevance are context (grey). */
+export const FOCUS_MIN = 0.1;
+
+/**
+ * How close a cluster's thesis is to an industrial AI raise, from its top sectors: the
+ * industrial affinity formula (PROJECT_CONTEXT §4: industrial and robotics in full; hardware,
+ * logistics and mobility at half) plus half the AI weight, as the fit score's thesis feature.
+ */
+const RELEVANCE: Partial<Record<Cluster["top_sectors"][number]["sector"], number>> = {
+  industrial_manufacturing: 1,
+  robotics_physical_ai: 1,
+  hardware_deeptech: 0.5,
+  supply_chain_logistics: 0.5,
+  mobility_ev: 0.5,
+  ai_infra: 0.5,
+  ai_apps_agents: 0.5,
+};
+
+export function clusterRelevance(cluster: Pick<Cluster, "top_sectors">): number {
+  return cluster.top_sectors.reduce((sum, s) => sum + (RELEVANCE[s.sector] ?? 0) * s.weight, 0);
+}
+
+export function clusterLabel(cluster: Pick<Cluster, "top_sectors" | "name">): string {
+  const [first, second] = cluster.top_sectors;
+  if (!first) return cluster.name;
+  const names = [first, ...(second && second.weight >= SECOND_SECTOR_MIN ? [second] : [])];
+  return names.map((s) => SECTOR_LABELS[s.sector]).join(" · ");
+}
+
+/**
+ * Cluster names and colours. The most relevant clusters (relevance ≥ FOCUS_MIN, then size)
+ * take FOCUS_HUES in order; every other cluster is CONTEXT_GREY. Colours come from the whole
+ * cluster list, never the filtered view, so a cluster keeps its colour under any filter.
+ */
 export function toClusterInfo(clusters: readonly Cluster[]): ClusterInfo[] {
+  const ranked = [...clusters]
+    .map((c) => ({ c, r: clusterRelevance(c) }))
+    .filter(({ r }) => r >= FOCUS_MIN)
+    .sort((a, b) => b.r - a.r || b.c.size - a.c.size || a.c.index - b.c.index)
+    .slice(0, FOCUS_HUES.length);
+  const hue = new Map(ranked.map(({ c }, i) => [c.index, FOCUS_HUES[i]!]));
   return [...clusters]
     .sort((a, b) => a.index - b.index)
-    .map((c) => {
-      const names = c.top_sectors.map((s) => SECTOR_LABELS[s.sector]);
-      return {
-        index: c.index,
-        id: c.id,
-        label: names.length ? names.slice(0, 2).join(" · ") : c.name,
-        size: c.size,
-        color: clusterColor(c.index),
-      };
-    });
+    .map((c) => ({
+      index: c.index,
+      id: c.id,
+      label: clusterLabel(c),
+      size: c.size,
+      color: hue.get(c.index) ?? CONTEXT_GREY,
+      focus: hue.has(c.index),
+    }));
+}
+
+/** Legend entries: each focus cluster, most relevant first, then one entry for the rest. */
+export function clusterLegendItems(
+  clusters: readonly ClusterInfo[],
+): { label: string; color: string }[] {
+  const focus = clusters
+    .filter((c) => c.focus)
+    .sort((a, b) => FOCUS_HUES.indexOf(a.color as never) - FOCUS_HUES.indexOf(b.color as never));
+  const rest = clusters.filter((c) => !c.focus);
+  return [
+    ...focus.map((c) => ({ label: c.label, color: c.color })),
+    ...(rest.length
+      ? [
+          {
+            label: `Other theses (${formatCount(rest.length)}, named on the map)`,
+            color: CONTEXT_GREY,
+          },
+        ]
+      : []),
+  ];
 }
 
 /** One row per layout_thesis point whose investor exists, with the filter fields and the fit score. */
@@ -79,7 +145,8 @@ export function toThesisRows(
   const axes = new Map(bubbles.map((b) => [b.id, b]));
   const fitById = new Map(fits.map((f) => [f.investor_id, f]));
   const rows: ThesisRow[] = [];
-  for (const p of layout) {
+  // Far single-sector islands drawn closer in (compactLayout); the Directory uses the same.
+  for (const p of compactLayout(layout)) {
     const inv = byId.get(p.id);
     if (!inv) continue;
     const b = axes.get(p.id);
@@ -222,6 +289,9 @@ const median = (vs: number[]) => {
  * cluster's median position (always the closest three), so a few far-flung members do not
  * stretch it across the map. They keep their cluster colour.
  */
+/** Hull roundness (4πA / P², 1 for a circle) below which a hull is a sliver and is not drawn. */
+export const MIN_ROUNDNESS = 0.15;
+
 export function clusterHulls(points: readonly MapPoint[], spread = 2.5): ClusterHull[] {
   const groups = new Map<number, MapPoint[]>();
   for (const p of points) {
@@ -243,7 +313,11 @@ export function clusterHulls(points: readonly MapPoint[], spread = 2.5): Cluster
       .filter((r, i) => i < 3 || r.d <= limit)
       .map(({ m }): [number, number] => [m.px, m.py]);
     const polygon = polygonHull(core);
-    if (!polygon || polygon.length < 3 || Math.abs(polygonArea(polygon)) < 1e-12) continue; // collinear: no area to fill
+    if (!polygon || polygon.length < 3) continue;
+    // Collinear, or a thin sliver between far-apart members: no shape worth filling.
+    const area = Math.abs(polygonArea(polygon));
+    if (area < 1e-12 || (4 * Math.PI * area) / polygonLength(polygon) ** 2 < MIN_ROUNDNESS)
+      continue;
     hulls.push({
       cluster,
       polygon,
@@ -298,4 +372,9 @@ export function layoutExtent(
     y1 = Math.max(y1, r.y);
   }
   return { x: [x0, x1], y: [y0, y1] };
+}
+
+/** Map height follows its width: 0.62 of it, between 360px (phones) and 640px. */
+export function mapHeight(width: number): number {
+  return Math.round(Math.min(640, Math.max(360, width * 0.62)));
 }

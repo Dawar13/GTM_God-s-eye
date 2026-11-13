@@ -4,7 +4,7 @@ import { fitScore } from "@/lib/fit/score";
 import { DEFAULT_FILTER_STATE, type FilterState } from "@/lib/filters";
 import { inArea, normalizeArea, parseArea, serializeArea } from "@/lib/filters/area";
 import type { BubblePoint, Cluster, FitFeatures, ThesisPoint } from "@/lib/schema";
-import { CATEGORICAL, clusterColor } from "@/lib/viz";
+import { CONTEXT_GREY, FOCUS_HUES, seriesColor } from "@/lib/viz";
 import { overlaps, placeLabels } from "@/lib/viz/labels";
 import {
   clusterHulls,
@@ -12,6 +12,9 @@ import {
   robustExtent,
   thesisView,
   toClusterInfo,
+  clusterLegendItems,
+  clusterRelevance,
+  mapHeight,
   toThesisRows,
   topFitIds,
   type MapPoint,
@@ -187,6 +190,14 @@ describe("clusterHulls", () => {
   it("skips collinear clusters (no area to fill)", () => {
     expect(clusterHulls([p("a", 0, 0, 0), p("b", 1, 1, 0), p("c", 2, 2, 0)])).toEqual([]);
   });
+
+  it("skips a thin sliver between far-apart members (the long streak across the map)", () => {
+    // Two members side by side and one far below: a triangle with almost no width.
+    const sliver = [p("a", 0, 0, 5), p("b", 0.05, 0, 5), p("c", -2, -20, 5)];
+    expect(clusterHulls(sliver)).toEqual([]);
+    const round = [p("a", 0, 0, 5), p("b", 1, 0, 5), p("c", 0.5, 0.9, 5)];
+    expect(clusterHulls(round)).toHaveLength(1);
+  });
 });
 
 describe("robustExtent", () => {
@@ -240,23 +251,84 @@ describe("placeLabels", () => {
 });
 
 describe("clusters and area coordinates", () => {
-  it("names clusters from their top sectors and gives a ninth cluster its own colour", () => {
-    const cl: Cluster = {
-      id: "cl_8",
-      index: 8,
-      name: "enterprise saas · fintech · ai infra",
-      size: 12,
-      top_sectors: [
-        { sector: "enterprise_saas", weight: 0.4 },
-        { sector: "fintech", weight: 0.3 },
-        { sector: "ai_infra", weight: 0.1 },
-      ],
-    };
-    const [info] = toClusterInfo([cl]);
-    // One name per cluster in every view (S10a): the top two sectors.
-    expect(info!.label).toBe("Enterprise SaaS · Fintech");
-    expect(info!.color).not.toBe(CATEGORICAL[0]);
-    expect(new Set(Array.from({ length: 10 }, (_, i) => clusterColor(i))).size).toBe(10);
+  const cluster = (
+    index: number,
+    size: number,
+    top: [Cluster["top_sectors"][number]["sector"], number][],
+  ): Cluster => ({
+    id: `cl_${index}`,
+    index,
+    name: top.map(([s]) => s).join(" · "),
+    size,
+    top_sectors: top.map(([sector, weight]) => ({ sector, weight })),
+  });
+
+  it("names a cluster by its top sector, and the second only when it carries weight", () => {
+    const [both, one] = toClusterInfo([
+      cluster(0, 12, [
+        ["enterprise_saas", 0.4],
+        ["fintech", 0.3],
+        ["ai_infra", 0.1],
+      ]),
+      // A 0.3% second sector is not part of the name ("Enterprise SaaS · Fintech" misled).
+      cluster(1, 160, [
+        ["enterprise_saas", 0.99],
+        ["fintech", 0.003],
+      ]),
+    ]);
+    expect(both!.label).toBe("Enterprise SaaS · Fintech");
+    expect(one!.label).toBe("Enterprise SaaS");
+  });
+
+  it("colours the clusters closest to an industrial AI raise, most relevant first; the rest are grey", () => {
+    const info = toClusterInfo([
+      cluster(0, 236, [["enterprise_saas", 0.51]]),
+      cluster(1, 107, [
+        ["hardware_deeptech", 0.34],
+        ["robotics_physical_ai", 0.34],
+      ]),
+      cluster(2, 166, [
+        ["ai_apps_agents", 0.38],
+        ["ai_infra", 0.16],
+      ]),
+      cluster(8, 79, [
+        ["industrial_manufacturing", 0.53],
+        ["robotics_physical_ai", 0.2],
+      ]),
+      cluster(6, 91, [
+        ["consumer", 0.92],
+        ["ai_infra", 0.03],
+      ]),
+    ]);
+    const by = new Map(info.map((c) => [c.index, c]));
+    expect(
+      clusterRelevance({ top_sectors: [{ sector: "industrial_manufacturing", weight: 0.5 }] }),
+    ).toBe(0.5);
+    expect(by.get(8)!.color).toBe(FOCUS_HUES[0]);
+    expect(by.get(1)!.color).toBe(FOCUS_HUES[1]);
+    expect(by.get(2)!.color).toBe(FOCUS_HUES[2]);
+    expect([by.get(0)!.color, by.get(6)!.color]).toEqual([CONTEXT_GREY, CONTEXT_GREY]);
+    expect(info.filter((c) => c.focus).map((c) => c.index)).toEqual([1, 2, 8]);
+    // Legend: focus clusters in hue order, then one grey entry for the rest.
+    expect(clusterLegendItems(info).map((i) => i.color)).toEqual([
+      FOCUS_HUES[0],
+      FOCUS_HUES[1],
+      FOCUS_HUES[2],
+      CONTEXT_GREY,
+    ]);
+    expect(clusterLegendItems(info).at(-1)!.label).toBe("Other theses (2, named on the map)");
+  });
+
+  it("gives at most four clusters a hue and keeps series colours distinct", () => {
+    const many = Array.from({ length: 6 }, (_, i) =>
+      cluster(i, 10 + i, [["robotics_physical_ai", 0.5]]),
+    );
+    expect(toClusterInfo(many).filter((c) => c.focus)).toHaveLength(FOCUS_HUES.length);
+    expect(new Set(Array.from({ length: 10 }, (_, i) => seriesColor(i))).size).toBe(10);
+  });
+
+  it("sizes the map from its width, within 360 to 640px", () => {
+    expect([mapHeight(340), mapHeight(800), mapHeight(1600)]).toEqual([360, 496, 640]);
   });
 
   it("resolves a brushed area to Directory rows with the same coordinates as the map", () => {

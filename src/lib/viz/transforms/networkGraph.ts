@@ -19,7 +19,7 @@ import {
   type InvestorType,
   type RoundStage,
 } from "@/lib/schema/enums";
-import { clusterColor, COMPANY_GREY, companyGrey } from "../palette";
+import { COMPANY_GREY, companyGrey, seriesColor } from "../palette";
 import { markerShapeFor, type MarkerShape } from "../markers";
 import { BASIS_CODES, KIND_CODES, ROLE_CODES, type GraphPayload } from "./graphPayload";
 
@@ -609,15 +609,26 @@ export type ColourBy = "cluster" | "type";
 
 /** Colour per investor type that occurs, in schema order. */
 export function typeColours(types: readonly InvestorType[]): Map<InvestorType, string> {
-  return new Map(types.map((t, k) => [t, clusterColor(k)]));
+  return new Map(types.map((t, k) => [t, seriesColor(k)]));
 }
 
-/** Base fill per node for a colouring. */
-export function nodeColours(data: GraphData, by: ColourBy): string[] {
+/**
+ * Base fill per node for a colouring. Cluster colours come from the cluster list
+ * (`toClusterInfo`), so the network matches the thesis map and its legend.
+ */
+export function nodeColours(
+  data: GraphData,
+  by: ColourBy,
+  clusterColours: ReadonlyMap<number, string>,
+): string[] {
   const byType = typeColours(data.typesPresent);
   return data.nodes.map((v) => {
     if (v.kind !== "investor") return capitalGrey(capitalBin(v.raised));
-    if (by === "cluster") return v.cluster === null ? NO_GROUP_COLOR : clusterColor(v.cluster);
+    if (by === "cluster") {
+      return v.cluster === null
+        ? NO_GROUP_COLOR
+        : (clusterColours.get(v.cluster) ?? NO_GROUP_COLOR);
+    }
     return v.type === null ? NO_GROUP_COLOR : (byType.get(v.type) ?? NO_GROUP_COLOR);
   });
 }

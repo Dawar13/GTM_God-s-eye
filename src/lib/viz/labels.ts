@@ -107,3 +107,35 @@ export function placeLabels(
   }
   return placed;
 }
+
+export type NameCandidate = { id: string; x: number; y: number; w: number; h: number };
+export type PlacedName = { id: string; x: number; y: number; box: Box };
+
+/**
+ * Names centred on a point, such as cluster names at their centroids, in priority order. Each
+ * tries its own spot, then steps of one line above and below it; a name with no free spot
+ * inside the plot is dropped. Coordinates are plot pixels; `y` is the name's middle.
+ */
+export function placeNames(
+  candidates: readonly NameCandidate[],
+  {
+    width,
+    height,
+    steps = [0, -1, 1, -2, 2],
+    gap = 2,
+  }: { width: number; height: number; steps?: readonly number[]; gap?: number },
+): PlacedName[] {
+  const placed: PlacedName[] = [];
+  for (const c of candidates) {
+    for (const s of steps) {
+      const y = c.y + s * (c.h + gap);
+      const box = { x0: c.x - c.w / 2, y0: y - c.h / 2, x1: c.x + c.w / 2, y1: y + c.h / 2 };
+      const inside = box.x0 >= 0 && box.y0 >= 0 && box.x1 <= width && box.y1 <= height;
+      if (inside && !placed.some((p) => overlaps(p.box, box))) {
+        placed.push({ id: c.id, x: c.x, y, box });
+        break;
+      }
+    }
+  }
+  return placed;
+}

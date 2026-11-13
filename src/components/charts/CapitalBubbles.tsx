@@ -17,7 +17,7 @@ import {
   type BubbleData,
   type BubbleRow,
 } from "@/lib/viz/transforms/capitalBubbles";
-import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
+import { clusterLegendItems, type ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import type { CameraPreset } from "./Bubbles3D";
 import { BubbleProjections, type ProjectionsHandle } from "./BubbleProjections";
 import { ChartTable } from "./ChartTable";
@@ -79,7 +79,7 @@ export function CapitalBubbles({
         kind="categorical"
         className="max-w-3xl"
         items={[
-          ...clusters.map((c) => ({ label: c.label, color: c.color })),
+          ...clusterLegendItems(clusters),
           { label: "Accelerator or incubator", color: NEUTRAL, shape: "square" as const },
           { label: "Fund size unknown (ring, not to scale)", color: NEUTRAL, hollow: true },
         ]}

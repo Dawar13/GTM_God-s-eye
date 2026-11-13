@@ -47,11 +47,13 @@ import { formatCount, formatMonthYear, UNKNOWN } from "@/lib/format";
 import { INVESTOR_TYPE_LABELS } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
 import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
-import { darken, markStyle } from "@/lib/viz";
-import { overlaps, placeLabels, textSize, type Box } from "@/lib/viz/labels";
+import { darken, FOCUS_HUES, markStyle, withOpacity } from "@/lib/viz";
+import { placeLabels, placeNames, textSize, type Box } from "@/lib/viz/labels";
 import {
   clusterHulls,
+  clusterLegendItems,
   layoutExtent,
+  mapHeight,
   robustExtent,
   thesisView,
   topFitIds,
@@ -63,7 +65,6 @@ import {
 import { ChartTable } from "./ChartTable";
 import { FindForMarks, NO_FIND, sameFind, type MarkFindState } from "./FindForMarks";
 
-const HEIGHT = 560;
 const R = 4.5;
 const R_ACTIVE = 6.5;
 const MOVE_MS = 220;
@@ -71,6 +72,12 @@ const LABEL_COUNT = 30;
 const NEUTRAL = "#8A919C";
 const LABEL_FONT = 11;
 const CLUSTER_FONT = 12;
+/** Room for the colour dot before a focus cluster's name. */
+const SWATCH_SPACE = 14;
+/** The first thesis view frames the focus clusters when at least this many are shown. */
+const FRAME_MIN = 10;
+/** Grey context marks are drawn lighter so the focus clusters stand out. */
+const CONTEXT_FILL = 0.5;
 const MARGIN: Record<MapLayout, { top: number; right: number; bottom: number; left: number }> = {
   thesis: { top: 12, right: 12, bottom: 12, left: 12 },
   fit: { top: 12, right: 16, bottom: 44, left: 56 },
@@ -105,9 +112,16 @@ const tick = (v: number) => String(Number(v.toFixed(2)));
  * Unzoomed scales. The thesis layout keeps one unit per pixel on both axes (UMAP distances
  * are isotropic) and fits the marks shown under the current filters.
  */
-function baseScales(rows: readonly ThesisRow[], layout: MapLayout, width: number): Scales {
+function baseScales(
+  rows: readonly ThesisRow[],
+  layout: MapLayout,
+  width: number,
+  height: number,
+  /** Marks of the focus clusters: the first view frames them when there are enough. */
+  focus: readonly ThesisRow[] = [],
+): Scales {
   const m = MARGIN[layout];
-  const plot = { x0: m.left, y0: m.top, x1: width - m.right, y1: HEIGHT - m.bottom };
+  const plot = { x0: m.left, y0: m.top, x1: width - m.right, y1: height - m.bottom };
   const pw = plot.x1 - plot.x0;
   const ph = plot.y1 - plot.y0;
   if (layout === "fit") {
@@ -123,12 +137,15 @@ function baseScales(rows: readonly ThesisRow[], layout: MapLayout, width: number
       minK: 1,
       world: [
         [0, 0],
-        [width, HEIGHT],
+        [width, height],
       ],
     };
   }
-  // The first view fits the 1st–99th percentile; the few UMAP outliers are a zoom-out away.
-  const ext = robustExtent(rows);
+  // The first view frames the focus clusters (the industrial and AI theses this raise is
+  // after) with room for the grey context around them; with few or none shown it fits the
+  // shown marks' robust extent. Everything else is a zoom-out away (minK reaches it all).
+  const framed = focus.length >= FRAME_MIN;
+  const ext = framed ? robustExtent(focus, { pad: 0.3 }) : robustExtent(rows);
   const dx = ext.x[1] - ext.x[0] || 1;
   const dy = ext.y[1] - ext.y[0] || 1;
   const k = Math.min(pw / (dx * 1.04), ph / (dy * 1.04));
@@ -144,12 +161,12 @@ function baseScales(rows: readonly ThesisRow[], layout: MapLayout, width: number
   const pad = 24;
   const world: [[number, number], [number, number]] = [
     [Math.min(0, x(full.x[0]) - pad), Math.min(0, y(full.y[1]) - pad)],
-    [Math.max(width, x(full.x[1]) + pad), Math.max(HEIGHT, y(full.y[0]) + pad)],
+    [Math.max(width, x(full.x[1]) + pad), Math.max(height, y(full.y[0]) + pad)],
   ];
   const minK = Math.min(
     1,
     width / (world[1][0] - world[0][0]),
-    HEIGHT / (world[1][1] - world[0][1]),
+    height / (world[1][1] - world[0][1]),
   );
   return { plot, x, y, minK, world };
 }
@@ -197,12 +214,12 @@ export function ThesisMap({
 
   const subtitle =
     layout === "thesis"
-      ? "Investors placed by how alike their sector weights are (UMAP): near means a similar thesis. The axes have no units. Scroll to zoom, drag to pan."
-      : "x = industrial affinity, y = stage earliness, both 0 to 1. The top right is the sweet spot for an early industrial raise.";
+      ? "Investors placed by how alike their sector weights are (UMAP): near means a similar thesis. The axes have no units, and far single-sector islands are drawn closer in. Colour marks the clusters closest to an industrial AI raise, grey the rest. Scroll or pinch to zoom, drag to pan."
+      : "x = industrial affinity, y = stage earliness, both 0 to 1. The top right is the sweet spot for an early industrial raise. Colour marks the clusters closest to it.";
 
   const fallbackField = layout === "thesis" ? "thesis vector" : "stage earliness";
   const legendItems = [
-    ...clusters.map((c) => ({ label: c.label, color: c.color })),
+    ...clusterLegendItems(clusters),
     { label: "Generalist (ring in its nearest cluster's colour)", color: NEUTRAL, hollow: true },
     { label: "Accelerator or incubator", color: NEUTRAL, shape: "square" as const },
   ];
@@ -232,7 +249,7 @@ export function ThesisMap({
             }
           : { status: "ready" }
       }
-      height={HEIGHT + 40}
+      height={420}
       find={
         <FindForMarks
           label="Find investors"
@@ -388,6 +405,8 @@ function MapCanvas({
 }) {
   const clipId = useId();
   const [width, setWidth] = useState(0);
+  // Height follows the width, so a phone gets a shorter map instead of a tall thin strip.
+  const height = width > 0 ? mapHeight(width) : 520;
   const [svgEl, setSvgEl] = useState<SVGSVGElement | null>(null);
   const [transform, setTransform] = useState<ZoomTransform>(zoomIdentity);
   const [hoverId, setHoverId] = useState<string | null>(null);
@@ -463,9 +482,18 @@ function MapCanvas({
   // d3-zoom owns wheel and drag; marks are re-projected through the zoomed scales, so mark,
   // stroke and label sizes stay constant at every zoom level.
   // Fitted to the shown marks, so a filtered subset fills the view instead of a corner of it.
+  const focusPoints = useMemo(
+    () =>
+      layout === "thesis"
+        ? points.filter(
+            (p) => !p.generalist && p.cluster !== null && clusterById.get(p.cluster)?.focus,
+          )
+        : [],
+    [points, layout, clusterById],
+  );
   const base = useMemo(
-    () => (width > 0 ? baseScales(points, layout, width) : null),
-    [points, layout, width],
+    () => (width > 0 ? baseScales(points, layout, width, height, focusPoints) : null),
+    [points, layout, width, height, focusPoints],
   );
   const minK = base?.minK ?? 1;
   const world = base?.world;
@@ -475,7 +503,7 @@ function MapCanvas({
       .scaleExtent([minK, 20])
       .extent([
         [0, 0],
-        [width, HEIGHT],
+        [width, height],
       ])
       .translateExtent(world)
       .filter((event: Event) => {
@@ -492,7 +520,7 @@ function MapCanvas({
     return () => {
       sel.on(".zoom", null);
     };
-  }, [svgEl, width, minK, world]);
+  }, [svgEl, width, height, minK, world]);
 
   // A layout switch (called in the same event as the parent's setLayout, so one render
   // follows): reset the zoom and move every shared mark from where it is now (220ms).
@@ -505,7 +533,7 @@ function MapCanvas({
         if (!p || !base || !z || !svgEl) return;
         const k = Math.max(transformRef.current.k, FIND_ZOOM);
         const t = zoomIdentity
-          .translate(width / 2 - k * base.x(p.px), HEIGHT / 2 - k * base.y(p.py))
+          .translate(width / 2 - k * base.x(p.px), height / 2 - k * base.y(p.py))
           .scale(k);
         const sel = select(svgEl);
         z.transform((reduced ? sel : sel.transition().duration(300)) as typeof sel, t);
@@ -524,7 +552,7 @@ function MapCanvas({
         if (svgEl && zoomRef.current) zoomRef.current.transform(select(svgEl), zoomIdentity);
       },
     }),
-    [reduced, svgEl, points, base, width],
+    [reduced, svgEl, points, base, width, height],
   );
   useEffect(() => {
     if (!anim) return;
@@ -572,31 +600,50 @@ function MapCanvas({
     shownRef.current = marks;
   });
 
-  if (!base || !zx || !zy) return <div ref={measureRef} style={{ height: HEIGHT }} />;
+  if (!base || !zx || !zy) return <div ref={measureRef} style={{ height: height }} />;
   const { plot } = base;
   const pw = plot.x1 - plot.x0;
   const ph = plot.y1 - plot.y0;
   const settled = anim === null;
+  const isFocus = (p: MapPoint) =>
+    (p.cluster !== null && clusterById.get(p.cluster)?.focus) === true;
 
-  // Cluster names at hull centroids; a name that would overlap a larger cluster's is dropped.
-  const clusterLabels: { cluster: ClusterInfo; x: number; y: number; box: Box }[] = [];
+  // Cluster names at hull centroids, in ink (colour stays on the marks); a focus cluster's
+  // name carries its colour as a dot. Focus names go first, most relevant first, then larger
+  // clusters; a name steps a line up or down to clear one already placed, else it is dropped.
+  const clusterLabels: { cluster: ClusterInfo; x: number; y: number; w: number; box: Box }[] = [];
   if (settled) {
-    for (const h of [...hulls].sort((a, b) => b.members - a.members)) {
-      const c = clusterById.get(h.cluster);
-      if (!c) continue;
-      const x = zx(h.centroid[0]);
-      const y = zy(h.centroid[1]);
-      const { w, h: th } = textSize(c.label, CLUSTER_FONT, 0.55);
-      const box = {
-        x0: x - w / 2 - plot.x0,
-        y0: y - th / 2 - plot.y0,
-        x1: x + w / 2 - plot.x0,
-        y1: y + th / 2 - plot.y0,
-      };
-      const inside = box.x0 >= 0 && box.y0 >= 0 && box.x1 <= pw && box.y1 <= ph;
-      if (inside && !clusterLabels.some((l) => overlaps(l.box, box))) {
-        clusterLabels.push({ cluster: c, x, y, box });
-      }
+    const rank = (c: ClusterInfo) =>
+      c.focus ? FOCUS_HUES.indexOf(c.color as (typeof FOCUS_HUES)[number]) : FOCUS_HUES.length;
+    const ordered = hulls
+      .map((h) => ({ h, c: clusterById.get(h.cluster) }))
+      .filter((e): e is { h: (typeof hulls)[number]; c: ClusterInfo } => e.c !== undefined)
+      .sort((a, b) => rank(a.c) - rank(b.c) || b.h.members - a.h.members);
+    const byIndex = new Map(ordered.map(({ c }) => [String(c.index), c]));
+    const widths = new Map<string, number>();
+    const names = placeNames(
+      ordered.map(({ h, c }) => {
+        const text = textSize(c.label, CLUSTER_FONT, 0.55);
+        const w = text.w + (c.focus ? SWATCH_SPACE : 0);
+        widths.set(String(c.index), w);
+        return {
+          id: String(c.index),
+          x: zx(h.centroid[0]) - plot.x0,
+          y: zy(h.centroid[1]) - plot.y0,
+          w,
+          h: text.h,
+        };
+      }),
+      { width: pw, height: ph },
+    );
+    for (const n of names) {
+      clusterLabels.push({
+        cluster: byIndex.get(n.id)!,
+        x: n.x + plot.x0,
+        y: n.y + plot.y0,
+        w: widths.get(n.id)!,
+        box: n.box,
+      });
     }
   }
 
@@ -628,7 +675,17 @@ function MapCanvas({
           width: pw,
           height: ph,
           fontSize: LABEL_FONT,
-          obstacles: clusterLabels.map((l) => l.box),
+          // Names stay off cluster names and off the other labelled dots.
+          obstacles: [
+            ...clusterLabels.map((l) => l.box),
+            ...labelIds.flatMap((id) => {
+              const m = markById.get(id);
+              if (!m) return [];
+              const x = m.x - plot.x0;
+              const y = m.y - plot.y0;
+              return [{ x0: x - R, y0: y - R, x1: x + R, y1: y + R }];
+            }),
+          ],
         },
       )
     : [];
@@ -679,7 +736,7 @@ function MapCanvas({
     const factor = dir === 1 ? ZOOM_STEP : 1 / ZOOM_STEP;
     // Scale around the centre of the view.
     const target = reduced ? sel : sel.transition().duration(160);
-    z.scaleBy(target as typeof sel, factor, [width / 2, HEIGHT / 2]);
+    z.scaleBy(target as typeof sel, factor, [width / 2, height / 2]);
   };
   const resetZoom = () => {
     const z = zoomRef.current;
@@ -703,14 +760,14 @@ function MapCanvas({
       ? hovered.x - 16 - 256
       : hovered.x + 16
     : 0;
-  const tooltipTop = hovered ? Math.min(hovered.y + 12, HEIGHT - 190) : 0;
+  const tooltipTop = hovered ? Math.min(hovered.y + 12, height - 190) : 0;
 
   return (
-    <div ref={measureRef} className="relative" style={{ height: HEIGHT }}>
+    <div ref={measureRef} className="relative" style={{ height: height }}>
       <svg
         ref={setSvgEl}
         width={width}
-        height={HEIGHT}
+        height={height}
         tabIndex={0}
         role="group"
         aria-roledescription="map"
@@ -796,7 +853,7 @@ function MapCanvas({
             })}
             <text
               x={(plot.x0 + plot.x1) / 2}
-              y={HEIGHT - 6}
+              y={height - 6}
               textAnchor="middle"
               fontSize={12}
               fill="var(--ink-2)"
@@ -815,10 +872,11 @@ function MapCanvas({
         )}
 
         <g clipPath={`url(#${clipId})`}>
+          {/* Outlines for the focus clusters only; grey context clusters are just named. */}
           {settled &&
             hulls.map((h) => {
               const c = clusterById.get(h.cluster);
-              if (!c) return null;
+              if (!c?.focus) return null;
               const d = `M${h.polygon.map(([x, y]) => `${zx(x)},${zy(y)}`).join("L")}Z`;
               return (
                 <path
@@ -826,7 +884,12 @@ function MapCanvas({
                   data-zaffine
                   d={d}
                   fill={c.color}
-                  fillOpacity={0.08}
+                  fillOpacity={0.06}
+                  stroke={c.color}
+                  strokeOpacity={0.45}
+                  strokeWidth={1}
+                  strokeLinejoin="round"
+                  vectorEffect="non-scaling-stroke"
                   aria-hidden
                 />
               );
@@ -858,72 +921,92 @@ function MapCanvas({
               if (id) onOpen(id);
             }}
           >
-            {marks.map(({ p, x, y, opacity }) => {
-              const color =
-                p.cluster === null ? NEUTRAL : (clusterById.get(p.cluster)?.color ?? NEUTRAL);
-              const style = markStyle(color);
-              const active = p.id === hoverId || p.id === selectedId || p.id === findActiveId;
-              const r = active ? R_ACTIVE : R;
-              const dim = area !== null && !inArea([p.px, p.py], area);
-              const common = {
-                fill: p.generalist ? "none" : style.fill,
-                stroke: p.generalist ? darken(color, 0.1) : style.stroke,
-                strokeWidth: p.generalist ? 1.5 : 1,
-                pointerEvents: "all" as const,
-              };
-              return (
-                <g
-                  key={p.id}
-                  data-id={p.id}
-                  data-find-id={p.id}
-                  data-zx={x}
-                  data-zy={y}
-                  opacity={opacity * (dim ? 0.2 : 1)}
-                  className="mark-glow cursor-pointer"
-                  data-glow={active ? "on" : "off"}
-                  style={{ "--glow": color } as CSSProperties}
-                >
-                  {p.id === selectedId && (
-                    <circle
-                      cx={x}
-                      cy={y}
-                      r={r + 3}
-                      fill="none"
-                      stroke="var(--accent)"
-                      strokeWidth={2}
-                    />
-                  )}
-                  {p.marker === "square" ? (
-                    <rect x={x - r} y={y - r} width={r * 2} height={r * 2} {...common} />
-                  ) : (
-                    <circle cx={x} cy={y} r={r} {...common} />
-                  )}
-                </g>
-              );
-            })}
+            {/* Grey context first, so focus marks sit on top where clusters overlap. */}
+            {[...marks]
+              .sort((a, b) => Number(isFocus(a.p)) - Number(isFocus(b.p)))
+              .map(({ p, x, y, opacity }) => {
+                const info = p.cluster === null ? undefined : clusterById.get(p.cluster);
+                const color = info?.color ?? NEUTRAL;
+                const focus = info?.focus ?? false;
+                const style = markStyle(color);
+                const active = p.id === hoverId || p.id === selectedId || p.id === findActiveId;
+                const r = active ? R_ACTIVE : R;
+                const dim = area !== null && !inArea([p.px, p.py], area);
+                const common = {
+                  fill: p.generalist
+                    ? "none"
+                    : focus
+                      ? style.fill
+                      : withOpacity(color, CONTEXT_FILL),
+                  stroke: p.generalist ? darken(color, 0.1) : style.stroke,
+                  strokeWidth: p.generalist ? 1.5 : 1,
+                  pointerEvents: "all" as const,
+                };
+                return (
+                  <g
+                    key={p.id}
+                    data-id={p.id}
+                    data-find-id={p.id}
+                    data-zx={x}
+                    data-zy={y}
+                    opacity={opacity * (dim ? 0.2 : 1)}
+                    className="mark-glow cursor-pointer"
+                    data-glow={active ? "on" : "off"}
+                    style={{ "--glow": color } as CSSProperties}
+                  >
+                    {p.id === selectedId && (
+                      <circle
+                        cx={x}
+                        cy={y}
+                        r={r + 3}
+                        fill="none"
+                        stroke="var(--accent)"
+                        strokeWidth={2}
+                      />
+                    )}
+                    {p.marker === "square" ? (
+                      <rect x={x - r} y={y - r} width={r * 2} height={r * 2} {...common} />
+                    ) : (
+                      <circle cx={x} cy={y} r={r} {...common} />
+                    )}
+                  </g>
+                );
+              })}
           </g>
         </g>
 
         <g pointerEvents="none" className="font-condensed">
-          {clusterLabels.map((l) => (
-            <text
-              key={l.cluster.index}
-              data-zx={l.x}
-              data-zy={l.y}
-              x={l.x}
-              y={l.y + CLUSTER_FONT * 0.35}
-              textAnchor="middle"
-              fontSize={CLUSTER_FONT}
-              fontWeight={600}
-              fill={darken(l.cluster.color, 0.35)}
-              stroke="var(--panel)"
-              strokeWidth={3}
-              strokeLinejoin="round"
-              paintOrder="stroke"
-            >
-              {l.cluster.label}
-            </text>
-          ))}
+          {clusterLabels.map((l) => {
+            const left = l.x - l.w / 2;
+            return (
+              <g key={l.cluster.index} data-zx={l.x} data-zy={l.y}>
+                {l.cluster.focus && (
+                  <circle
+                    cx={left + 5}
+                    cy={l.y}
+                    r={5}
+                    fill={l.cluster.color}
+                    stroke="var(--panel)"
+                    strokeWidth={1.5}
+                  />
+                )}
+                <text
+                  x={l.cluster.focus ? left + SWATCH_SPACE : l.x}
+                  y={l.y + CLUSTER_FONT * 0.35}
+                  textAnchor={l.cluster.focus ? "start" : "middle"}
+                  fontSize={CLUSTER_FONT}
+                  fontWeight={l.cluster.focus ? 600 : 500}
+                  fill={l.cluster.focus ? "var(--ink)" : "var(--ink-2)"}
+                  stroke="var(--panel)"
+                  strokeWidth={3}
+                  strokeLinejoin="round"
+                  paintOrder="stroke"
+                >
+                  {l.cluster.label}
+                </text>
+              </g>
+            );
+          })}
           {labels.map((l) => (
             <text
               key={l.id}

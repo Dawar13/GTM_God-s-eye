@@ -112,8 +112,19 @@ export const CATEGORY_HUES = {
   remote: "#B6992D",
 } as const satisfies Record<"direct" | "adjacent" | "remote", string>;
 
-/** Colour for thesis cluster `index` (0-based); distinct for up to ten clusters. */
-export function clusterColor(index: number): string {
+/**
+ * Thesis clusters (2026-11-13): the clusters closest to an industrial AI raise get these
+ * hues, most relevant first; every other cluster is CONTEXT_GREY and named on the map.
+ * Validated with the dataviz palette script against both panels, all pairs: the first three
+ * pass every check; the fourth (teal vs magenta, deutan ΔE 6.8) is allowed only because
+ * cluster names label the map and the legend. The old ten-hue cycle failed the chroma floor
+ * for five hues and put red and green at ΔE 0.7 for deutan readers.
+ */
+export const FOCUS_HUES = ["#D9731A", "#2A78D6", "#C2378E", "#1B9E77"] as const;
+export const CONTEXT_GREY = "#9AA1AB";
+
+/** Colour for series `index` (0-based), such as investor types; distinct for up to ten. */
+export function seriesColor(index: number): string {
   const n = CATEGORICAL_EXTENDED.length;
   return CATEGORICAL_EXTENDED[((Math.trunc(index) % n) + n) % n] ?? CATEGORICAL[0];
 }

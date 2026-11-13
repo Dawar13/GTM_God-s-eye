@@ -5,6 +5,7 @@ import { SECTOR_MATCH_MIN, USER_TAGS, type FilterableInvestor, type UserTag } fr
 import { inArea, type Area } from "@/lib/filters/area";
 import type { BubblePoint, FitFeatures, Fund, Investor, ThesisPoint } from "@/lib/schema";
 import type { Sector } from "@/lib/schema/enums";
+import { compactLayout } from "@/lib/viz/compactLayout";
 
 /** The fields the global filters read, from one investor record. Used by the Directory and the filter bar. */
 export function toFilterable(inv: Investor): FilterableInvestor {
@@ -138,7 +139,8 @@ export function toAreaCoords(
 ): AreaCoords {
   const axes = new Map(bubbles.map((b) => [b.id, b]));
   const out: AreaCoords = {};
-  for (const p of layout) {
+  // The map's coordinates: islands drawn closer in, so a brushed region means the same rows.
+  for (const p of compactLayout(layout)) {
     const b = axes.get(p.id);
     const fit: [number, number] | null =
       b && b.industrial_affinity !== null && b.stage_earliness !== null

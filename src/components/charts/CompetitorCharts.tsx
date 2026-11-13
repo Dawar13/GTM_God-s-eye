@@ -14,7 +14,7 @@ import { ChartFrame, Legend, VizTooltip } from "@/components/ui-atlas";
 import { formatCount, formatMonthYear, formatPartialDate, formatUsd, UNKNOWN } from "@/lib/format";
 import { LAYER_LABELS, ROUND_STAGE_LABELS } from "@/lib/format/labels";
 import { useInspector } from "@/lib/hooks/useInspector";
-import { COMPANY_GREY, clusterColor, darken, markStyle, sequentialColor } from "@/lib/viz";
+import { COMPANY_GREY, darken, markStyle, sequentialColor } from "@/lib/viz";
 import {
   areaRadius,
   heatPosition,
@@ -67,7 +67,10 @@ export function FoundedVsRaisedChart({
         .sort((a, b) => (b.headcount ?? 0) - (a.headcount ?? 0)),
     [data],
   );
-  const entities = useMemo(() => data.points.map((p) => ({ id: p.id, name: p.name })), [data.points]);
+  const entities = useMemo(
+    () => data.points.map((p) => ({ id: p.id, name: p.name })),
+    [data.points],
+  );
   // State from a callback ref, so the marks repaint after "View as table" remounts them.
   const [root, setRoot] = useState<HTMLDivElement | null>(null);
   const [x0, x1] = data.xDomain ?? [2000, 2026];
@@ -107,7 +110,10 @@ export function FoundedVsRaisedChart({
               kind="size"
               title="Headcount (approx.), area-proportional"
               samples={[
-                { value: Math.max(1, Math.round(maxH / 16)), label: formatCount(Math.max(1, Math.round(maxH / 16))) },
+                {
+                  value: Math.max(1, Math.round(maxH / 16)),
+                  label: formatCount(Math.max(1, Math.round(maxH / 16))),
+                },
                 { value: Math.round(maxH / 4), label: formatCount(Math.round(maxH / 4)) },
                 { value: maxH, label: formatCount(maxH) },
               ]}
@@ -118,9 +124,17 @@ export function FoundedVsRaisedChart({
             <p className="text-xs text-muted">Headcount unknown</p>
             <span className="flex items-center gap-1.5 text-sm text-ink-2">
               <svg width="14" height="14" aria-hidden>
-                <circle cx="7" cy="7" r={RING_R} fill="none" stroke={darken(GREY)} strokeWidth="1.5" />
+                <circle
+                  cx="7"
+                  cy="7"
+                  r={RING_R}
+                  fill="none"
+                  stroke={darken(GREY)}
+                  strokeWidth="1.5"
+                />
               </svg>
-              Fixed ring, not to scale ({formatCount(data.unknownHeadcount)} of {formatCount(points.length)})
+              Fixed ring, not to scale ({formatCount(data.unknownHeadcount)} of{" "}
+              {formatCount(points.length)})
             </span>
           </div>
         </div>
@@ -133,7 +147,11 @@ export function FoundedVsRaisedChart({
       height={380}
       state={
         points.length === 0
-          ? { status: "empty", message: "No competitor has both a founded year and a total raised. The table above lists what is known for each." }
+          ? {
+              status: "empty",
+              message:
+                "No competitor has both a founded year and a total raised. The table above lists what is known for each.",
+            }
           : { status: "ready" }
       }
       tableAlternative={
@@ -147,13 +165,22 @@ export function FoundedVsRaisedChart({
               header: "Competitor",
               sortValue: (p) => p.name.toLowerCase(),
               cell: (p) => (
-                <button type="button" className="text-accent hover:underline" onClick={() => open(p.id)}>
+                <button
+                  type="button"
+                  className="text-accent hover:underline"
+                  onClick={() => open(p.id)}
+                >
                   {p.name}
                 </button>
               ),
             },
             { header: "Founded", numeric: true, sortValue: (p) => p.x, cell: (p) => String(p.x) },
-            { header: "Total raised", numeric: true, sortValue: (p) => p.y, cell: (p) => formatUsd(p.y) },
+            {
+              header: "Total raised",
+              numeric: true,
+              sortValue: (p) => p.y,
+              cell: (p) => formatUsd(p.y),
+            },
             {
               header: "Headcount (approx.)",
               numeric: true,
@@ -165,76 +192,83 @@ export function FoundedVsRaisedChart({
       }
     >
       <div ref={setRoot}>
-      <ResponsiveContainer width="100%" height={380}>
-        <ScatterChart margin={{ top: 12, right: 24, bottom: 16, left: 8 }}>
-          <CartesianGrid stroke={GRID} />
-          <XAxis
-            type="number"
-            dataKey="x"
-            domain={[x0, x1]}
-            ticks={xTicks}
-            tick={TICK}
-            axisLine={AXIS_LINE}
-            tickLine={false}
-            tickFormatter={(v: number) => String(v)}
-            label={{ value: "Founded", position: "insideBottom", offset: -8, fill: "var(--ink-2)", fontSize: 12 }}
-          />
-          <YAxis
-            type="number"
-            dataKey="y"
-            scale="log"
-            domain={[y0, y1]}
-            ticks={yTicks}
-            width={84}
-            tick={TICK}
-            axisLine={false}
-            tickLine={false}
-            tickFormatter={(v: number) => formatUsd(v)}
-            label={{
-              value: "Total raised (log scale)",
-              angle: -90,
-              position: "insideLeft",
-              offset: 4,
-              fill: "var(--ink-2)",
-              fontSize: 12,
-              style: { textAnchor: "middle" },
-            }}
-          />
-          <Tooltip
-            cursor={{ stroke: "var(--rule)", strokeDasharray: "3 3" }}
-            content={(p) => {
-              const d = hovered<Pt>(p);
-              if (!d) return null;
-              return (
-                <VizTooltip
-                  title={d.name}
-                  value={`${formatUsd(d.y)} raised`}
-                  period={`Founded ${d.x}`}
-                  confidence={d.confidence}
-                  sourceDomain={d.sourceDomain}
-                >
-                  <p>{LAYER_LABELS[d.layer]}</p>
-                  <p className="tabular-nums">
-                    {d.headcount === null
-                      ? "Headcount unknown (ring, not to scale)"
-                      : `Headcount ~${formatCount(d.headcount)} (approx.)`}
-                  </p>
-                </VizTooltip>
-              );
-            }}
-          />
-          <Scatter
-            data={points}
-            shape={shape as never}
-            isAnimationActive={false}
-            onClick={(e: unknown) => {
-              const id = (e as { id?: string; payload?: { id?: string } } | null)?.id ??
-                (e as { payload?: { id?: string } } | null)?.payload?.id;
-              if (id) open(id);
-            }}
-          />
-        </ScatterChart>
-      </ResponsiveContainer>
+        <ResponsiveContainer width="100%" height={380}>
+          <ScatterChart margin={{ top: 12, right: 24, bottom: 16, left: 8 }}>
+            <CartesianGrid stroke={GRID} />
+            <XAxis
+              type="number"
+              dataKey="x"
+              domain={[x0, x1]}
+              ticks={xTicks}
+              tick={TICK}
+              axisLine={AXIS_LINE}
+              tickLine={false}
+              tickFormatter={(v: number) => String(v)}
+              label={{
+                value: "Founded",
+                position: "insideBottom",
+                offset: -8,
+                fill: "var(--ink-2)",
+                fontSize: 12,
+              }}
+            />
+            <YAxis
+              type="number"
+              dataKey="y"
+              scale="log"
+              domain={[y0, y1]}
+              ticks={yTicks}
+              width={84}
+              tick={TICK}
+              axisLine={false}
+              tickLine={false}
+              tickFormatter={(v: number) => formatUsd(v)}
+              label={{
+                value: "Total raised (log scale)",
+                angle: -90,
+                position: "insideLeft",
+                offset: 4,
+                fill: "var(--ink-2)",
+                fontSize: 12,
+                style: { textAnchor: "middle" },
+              }}
+            />
+            <Tooltip
+              cursor={{ stroke: "var(--rule)", strokeDasharray: "3 3" }}
+              content={(p) => {
+                const d = hovered<Pt>(p);
+                if (!d) return null;
+                return (
+                  <VizTooltip
+                    title={d.name}
+                    value={`${formatUsd(d.y)} raised`}
+                    period={`Founded ${d.x}`}
+                    confidence={d.confidence}
+                    sourceDomain={d.sourceDomain}
+                  >
+                    <p>{LAYER_LABELS[d.layer]}</p>
+                    <p className="tabular-nums">
+                      {d.headcount === null
+                        ? "Headcount unknown (ring, not to scale)"
+                        : `Headcount ~${formatCount(d.headcount)} (approx.)`}
+                    </p>
+                  </VizTooltip>
+                );
+              }}
+            />
+            <Scatter
+              data={points}
+              shape={shape as never}
+              isAnimationActive={false}
+              onClick={(e: unknown) => {
+                const id =
+                  (e as { id?: string; payload?: { id?: string } } | null)?.id ??
+                  (e as { payload?: { id?: string } } | null)?.payload?.id;
+                if (id) open(id);
+              }}
+            />
+          </ScatterChart>
+        </ResponsiveContainer>
       </div>
     </ChartFrame>
   );
@@ -305,15 +339,28 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
       legend={
         <div className="flex flex-wrap items-start gap-x-8 gap-y-2">
           {sizeSamples.length > 0 && (
-            <Legend kind="size" title="Round amount, area-proportional" samples={sizeSamples} maxRadius={MAX_R} />
+            <Legend
+              kind="size"
+              title="Round amount, area-proportional"
+              samples={sizeSamples}
+              maxRadius={MAX_R}
+            />
           )}
           <div className="flex flex-col gap-1">
             <p className="text-xs text-muted">Amount unknown</p>
             <span className="flex items-center gap-1.5 text-sm text-ink-2">
               <svg width="14" height="14" aria-hidden>
-                <circle cx="7" cy="7" r={RING_R} fill="none" stroke={darken(GREY)} strokeWidth="1.5" />
+                <circle
+                  cx="7"
+                  cy="7"
+                  r={RING_R}
+                  fill="none"
+                  stroke={darken(GREY)}
+                  strokeWidth="1.5"
+                />
               </svg>
-              Fixed ring, not to scale ({formatCount(data.unknownAmount)} of {formatCount(data.dots.length)} rounds)
+              Fixed ring, not to scale ({formatCount(data.unknownAmount)} of{" "}
+              {formatCount(data.dots.length)} rounds)
             </span>
           </div>
         </div>
@@ -326,7 +373,11 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
       height={Math.min(height, 400)}
       state={
         dots.length === 0
-          ? { status: "empty", message: "No competitor round has a date. The table above lists each competitor's last round." }
+          ? {
+              status: "empty",
+              message:
+                "No competitor round has a date. The table above lists each competitor's last round.",
+            }
           : { status: "ready" }
       }
       tableAlternative={
@@ -340,76 +391,85 @@ export function FundingTimelineChart({ data }: { data: FundingTimeline }) {
               header: "Competitor",
               sortValue: (d) => d.name.toLowerCase(),
               cell: (d) => (
-                <button type="button" className="text-accent hover:underline" onClick={() => open(d.companyId)}>
+                <button
+                  type="button"
+                  className="text-accent hover:underline"
+                  onClick={() => open(d.companyId)}
+                >
                   {d.name}
                 </button>
               ),
             },
             { header: "Stage", cell: (d) => ROUND_STAGE_LABELS[d.stage] },
-            { header: "Amount", numeric: true, sortValue: (d) => d.amountUsd, cell: (d) => formatUsd(d.amountUsd) },
+            {
+              header: "Amount",
+              numeric: true,
+              sortValue: (d) => d.amountUsd,
+              cell: (d) => formatUsd(d.amountUsd),
+            },
           ]}
         />
       }
     >
       <div ref={setRoot}>
-      <ResponsiveContainer width="100%" height={height}>
-        <ScatterChart margin={{ top: 8, right: 24, bottom: 0, left: 0 }}>
-          <CartesianGrid stroke={GRID} />
-          <XAxis
-            type="number"
-            dataKey="x"
-            scale="time"
-            domain={xDomain}
-            ticks={xTicks}
-            tick={TICK}
-            axisLine={AXIS_LINE}
-            tickLine={false}
-            tickFormatter={(t: number) => String(new Date(t).getUTCFullYear())}
-          />
-          <YAxis
-            type="number"
-            dataKey="y"
-            reversed
-            domain={[-0.5, data.lanes.length - 0.5]}
-            ticks={data.lanes.map((_, i) => i)}
-            interval={0}
-            width={130}
-            tick={{ ...TICK, fill: "var(--ink-2)" }}
-            axisLine={false}
-            tickLine={false}
-            tickFormatter={(i: number) => data.lanes[i]?.name ?? ""}
-          />
-          <Tooltip
-            cursor={{ stroke: "var(--rule)" }}
-            content={(p) => {
-              const d = hovered<Dot>(p);
-              if (!d) return null;
-              return (
-                <VizTooltip
-                  title={d.name}
-                  value={d.amountUsd === null ? "Amount unknown" : formatUsd(d.amountUsd)}
-                  period={`${ROUND_STAGE_LABELS[d.stage]}, ${formatPartialDate(d.date)}`}
-                  confidence={d.confidence}
-                  sourceDomain={d.sourceDomain}
-                >
-                  <p>{LAYER_LABELS[d.layer]}</p>
-                  {d.contested && <p>Sources disagree on this round.</p>}
-                </VizTooltip>
-              );
-            }}
-          />
-          <Scatter
-            data={dots}
-            shape={shape as never}
-            isAnimationActive={false}
-            onClick={(e: unknown) => {
-              const x = e as { companyId?: string; payload?: { companyId?: string } } | null;
-              const id = x?.companyId ?? x?.payload?.companyId;
-              if (id) open(id);
-            }}
-          />
-        </ScatterChart>
-      </ResponsiveContainer>
+        <ResponsiveContainer width="100%" height={height}>
+          <ScatterChart margin={{ top: 8, right: 24, bottom: 0, left: 0 }}>
+            <CartesianGrid stroke={GRID} />
+            <XAxis
+              type="number"
+              dataKey="x"
+              scale="time"
+              domain={xDomain}
+              ticks={xTicks}
+              tick={TICK}
+              axisLine={AXIS_LINE}
+              tickLine={false}
+              tickFormatter={(t: number) => String(new Date(t).getUTCFullYear())}
+            />
+            <YAxis
+              type="number"
+              dataKey="y"
+              reversed
+              domain={[-0.5, data.lanes.length - 0.5]}
+              ticks={data.lanes.map((_, i) => i)}
+              interval={0}
+              width={130}
+              tick={{ ...TICK, fill: "var(--ink-2)" }}
+              axisLine={false}
+              tickLine={false}
+              tickFormatter={(i: number) => data.lanes[i]?.name ?? ""}
+            />
+            <Tooltip
+              cursor={{ stroke: "var(--rule)" }}
+              content={(p) => {
+                const d = hovered<Dot>(p);
+                if (!d) return null;
+                return (
+                  <VizTooltip
+                    title={d.name}
+                    value={d.amountUsd === null ? "Amount unknown" : formatUsd(d.amountUsd)}
+                    period={`${ROUND_STAGE_LABELS[d.stage]}, ${formatPartialDate(d.date)}`}
+                    confidence={d.confidence}
+                    sourceDomain={d.sourceDomain}
+                  >
+                    <p>{LAYER_LABELS[d.layer]}</p>
+                    {d.contested && <p>Sources disagree on this round.</p>}
+                  </VizTooltip>
+                );
+              }}
+            />
+            <Scatter
+              data={dots}
+              shape={shape as never}
+              isAnimationActive={false}
+              onClick={(e: unknown) => {
+                const x = e as { companyId?: string; payload?: { companyId?: string } } | null;
+                const id = x?.companyId ?? x?.payload?.companyId;
+                if (id) open(id);
+              }}
+            />
+          </ScatterChart>
+        </ResponsiveContainer>
       </div>
     </ChartFrame>
   );
@@ -422,7 +482,12 @@ const NAME_W = 200;
 const HEAD_H = 132;
 const GROUP_H = 20;
 
-type Tip = { x: number; y: number; row: OverlapMatrix["rows"][number]; col: OverlapMatrix["columns"][number] };
+type Tip = {
+  x: number;
+  y: number;
+  row: OverlapMatrix["rows"][number];
+  col: OverlapMatrix["columns"][number];
+};
 
 export function OverlapHeatmap({
   data,
@@ -440,7 +505,11 @@ export function OverlapHeatmap({
     setRoot(el);
   }, []);
   const [tip, setTip] = useState<Tip | null>(null);
-  const clusterBy = new Map(clusters.map((c) => [c.index, c]));
+  const clusterBy = useMemo(() => new Map(clusters.map((c) => [c.index, c])), [clusters]);
+  const clusterColour = useCallback(
+    (c: number | null) => (c === null ? "#4A5160" : (clusterBy.get(c)?.color ?? "#4A5160")),
+    [clusterBy],
+  );
 
   // Layout: a header line before each cluster group, then its investors.
   const layout = useMemo(() => {
@@ -454,11 +523,11 @@ export function OverlapHeatmap({
         y += GROUP_H;
         current = row.cluster;
       }
-      rows.push({ row, y, color: row.cluster === null ? "#4A5160" : clusterColor(row.cluster) });
+      rows.push({ row, y, color: clusterColour(row.cluster) });
       y += CELL;
     }
     return { items, rows, height: y + 8 };
-  }, [data.rows]);
+  }, [data.rows, clusterColour]);
 
   const width = NAME_W + data.columns.length * CELL + 60;
   const colX = (i: number) => NAME_W + i * CELL;
@@ -485,7 +554,13 @@ export function OverlapHeatmap({
   return (
     <ChartFrame
       title="Investor and competitor overlap"
-      find={<ChartFind label="Find investors or competitors in the heatmap" entities={entities} root={root} />}
+      find={
+        <ChartFind
+          label="Find investors or competitors in the heatmap"
+          entities={entities}
+          root={root}
+        />
+      }
       subtitle={`Investors backing ${data.minCompetitors} or more competitors (${formatCount(data.rows.length)} of ${formatCount(data.totalInvestors)} investors in the overlap file); the other ${formatCount(data.hiddenInvestors)} back one competitor each and are left out. Rows are grouped by thesis cluster, then by how many competitors they back. The investor filters do not apply here.`}
       legend={
         <div className="flex flex-col gap-2">
@@ -500,7 +575,7 @@ export function OverlapHeatmap({
             title="Thesis cluster (row group)"
             items={present.map((c) => ({
               label: clusterLabel(c),
-              color: c === null ? "#4A5160" : clusterColor(c),
+              color: clusterColour(c),
               shape: "square" as const,
             }))}
           />
@@ -511,7 +586,11 @@ export function OverlapHeatmap({
       height={400}
       state={
         data.rows.length === 0
-          ? { status: "empty", message: "No investor backs two or more competitors. Open a competitor in the table above to see who backs it." }
+          ? {
+              status: "empty",
+              message:
+                "No investor backs two or more competitors. Open a competitor in the table above to see who backs it.",
+            }
           : { status: "ready" }
       }
       tableAlternative={
@@ -524,13 +603,22 @@ export function OverlapHeatmap({
               header: "Investor",
               sortValue: (r) => r.name.toLowerCase(),
               cell: (r) => (
-                <button type="button" className="text-accent hover:underline" onClick={() => open(r.investorId)}>
+                <button
+                  type="button"
+                  className="text-accent hover:underline"
+                  onClick={() => open(r.investorId)}
+                >
                   {r.name}
                 </button>
               ),
             },
             { header: "Cluster", cell: (r) => clusterLabel(r.cluster) },
-            { header: "Competitors backed", numeric: true, sortValue: (r) => r.overlap, cell: (r) => String(r.overlap) },
+            {
+              header: "Competitors backed",
+              numeric: true,
+              sortValue: (r) => r.overlap,
+              cell: (r) => String(r.overlap),
+            },
             {
               header: "Competitors",
               cell: (r) => (
@@ -576,13 +664,27 @@ export function OverlapHeatmap({
             </text>
           ))}
           {layout.items.map((g) => (
-            <text key={`g${g.y}`} x={4} y={g.y + 14} fontSize="11" fontWeight="600" fill="var(--ink)">
+            <text
+              key={`g${g.y}`}
+              x={4}
+              y={g.y + 14}
+              fontSize="11"
+              fontWeight="600"
+              fill="var(--ink)"
+            >
               {clusterLabel(g.cluster)}
             </text>
           ))}
           {layout.rows.map(({ row, y, color }) => (
             <g key={row.investorId}>
-              <rect x={0} y={y + 2} width={4} height={CELL - 4} fill={color} data-find-id={row.investorId} />
+              <rect
+                x={0}
+                y={y + 2}
+                width={4}
+                height={CELL - 4}
+                fill={color}
+                data-find-id={row.investorId}
+              />
               <text
                 data-find-id={[row.investorId, ...Object.keys(row.cells)].join(" ")}
                 data-find-anchor={row.investorId}
@@ -606,14 +708,19 @@ export function OverlapHeatmap({
                     height={CELL - 2}
                     rx={2}
                     data-find-id={`${row.investorId} ${c.id}`}
-                    fill={cell ? sequentialColor(heatPosition(cell.rounds, data.maxRounds)) : "var(--panel-sunk)"}
+                    fill={
+                      cell
+                        ? sequentialColor(heatPosition(cell.rounds, data.maxRounds))
+                        : "var(--panel-sunk)"
+                    }
                     style={cell ? { cursor: "pointer" } : undefined}
                     onClick={cell ? () => open(c.id) : undefined}
                     onMouseMove={
                       cell
                         ? (e) => {
                             const b = box.current?.getBoundingClientRect();
-                            if (b) setTip({ x: e.clientX - b.left, y: e.clientY - b.top, row, col: c });
+                            if (b)
+                              setTip({ x: e.clientX - b.left, y: e.clientY - b.top, row, col: c });
                           }
                         : undefined
                     }
@@ -625,7 +732,10 @@ export function OverlapHeatmap({
           ))}
         </svg>
         {tip && (
-          <div className="pointer-events-none absolute z-20" style={{ left: tip.x + 14, top: tip.y + 14 }}>
+          <div
+            className="pointer-events-none absolute z-20"
+            style={{ left: tip.x + 14, top: tip.y + 14 }}
+          >
             <VizTooltip
               title={tip.row.name}
               value={`${tip.row.cells[tip.col.id]!.rounds} ${tip.row.cells[tip.col.id]!.rounds === 1 ? "round" : "rounds"} at ${tip.col.name}`}

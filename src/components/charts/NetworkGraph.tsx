@@ -61,7 +61,7 @@ import {
   type RoundFilter,
 } from "@/lib/viz/transforms/networkGraph";
 import { toGraphData } from "@/lib/viz/transforms/networkGraph";
-import type { ClusterInfo } from "@/lib/viz/transforms/thesisMap";
+import { clusterLegendItems, type ClusterInfo } from "@/lib/viz/transforms/thesisMap";
 import { ChartTable } from "./ChartTable";
 import type { CanvasFind, CanvasHandle } from "./NetworkCanvas";
 
@@ -98,6 +98,10 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
 
   const data = useMemo(() => (graph.status === "ready" ? toGraphData(graph.data) : null), [graph]);
   const clusterById = useMemo(() => new Map(clusters.map((c) => [c.index, c])), [clusters]);
+  const clusterColours = useMemo(
+    () => new Map(clusters.map((c) => [c.index, c.color])),
+    [clusters],
+  );
   const universeRows = universe.status === "ready" ? universe.data : null;
   const investorPass = useMemo(
     () => (data ? investorPassMask(data, filters, universeRows) : null),
@@ -119,8 +123,8 @@ export function NetworkGraph({ clusters }: { clusters: ClusterInfo[] }) {
     [data, investorPass, mode, rounds, selected, hops],
   );
   const colours = useMemo(
-    () => (data ? nodeColours(data, params.colour) : []),
-    [data, params.colour],
+    () => (data ? nodeColours(data, params.colour, clusterColours) : []),
+    [data, params.colour, clusterColours],
   );
   const stages = useMemo(
     () => (data && investorPass ? stageCounts(data, investorPass, params.years) : null),
@@ -517,7 +521,7 @@ function NetworkLegend({
   const types = typeColours(data.typesPresent);
   const groups =
     colourBy === "cluster"
-      ? clusters.map((c) => ({ label: c.label, color: c.color }))
+      ? clusterLegendItems(clusters)
       : data.typesPresent.map((t) => ({ label: INVESTOR_TYPE_LABELS[t], color: types.get(t)! }));
   const missing = colourBy === "cluster" ? view.counts.noCluster : view.counts.noType;
   const samples = [1, 10, 50];
