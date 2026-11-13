@@ -23,6 +23,9 @@
   --on-accent: #ffffff;
   --positive: #257b57;
   --negative: #b94151;
+  /* Check sizes chart: researched vs as a list states it (validated pair, 2026-11-13). */
+  --viz-researched: #4f5bd5;
+  --viz-listed: #d9731a;
 }
 
 [data-theme="dark"] {
@@ -40,6 +43,8 @@
   --on-accent: #16181d;
   --positive: #2f9e6f;
   --negative: #dc7381;
+  --viz-researched: #7c86ee;
+  --viz-listed: #d9731a;
 }
 
 /* Elements that carry a data-theme paint their own surface, so a wrapper re-themes its subtree. */

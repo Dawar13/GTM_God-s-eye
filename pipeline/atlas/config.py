@@ -41,6 +41,8 @@ ESTES_SEED_FUNDS_CSV = SEED_DIR / "estes_750_seed_funds_2026-11-12.csv"
 DOCSEND_EARLY_CSV = SEED_DIR / "docsend_early_investors_2026-11-12.csv"
 AUSTRALIA_NZ_CSV = SEED_DIR / "australia_nz_investors_2026-11-12.csv"
 US_ANGELS_CSV = SEED_DIR / "us_angel_investors_2026-11-12.csv"
+# Map of the Money (Singapore), read from its site's data file on 2026-11-13.
+MAP_OF_THE_MONEY_CSV = SEED_DIR / "map_of_the_money_singapore_2026-11-13.csv"
 CUSTOMERS_DIR = DATA / "raw" / "customers"
 # Target-customer workbooks keyed by list: (file, received, ((sheet, archetype fit), ...)).
 # Mumbai–Pune and Bengaluru (prepared 2026-10-15) came with the Phase 0 sources and do not
@@ -206,6 +208,11 @@ DO_NOT_MERGE: frozenset[frozenset[str]] = frozenset(
         ("iseed ventures", "iseed"),  # iseedvc.com vs iseed.vc (New Delhi)
         ("nextwave ventures", "next wave ventures"),  # Carlsbad vs Longmont
         ("nextgen ventures", "nextgen venture partners"),  # Melbourne vs Washington DC
+        # Map of the Money (Singapore, 2026-11-13).
+        ("atlas ventures", "atlas"),  # atlasam.com.sg vs Atlas Venture (Boston)
+        ("atlas ventures", "atlas venture"),
+        ("quest ventures", "quest venture partners"),  # questventures.com vs questvp.com
+        ("vertex", "vertex ventures"),  # vertexmgt.com (the Singapore parent) vs one fund
     ]
 )
 

@@ -15,6 +15,7 @@ from atlas.config import (
     AUSTRALIA_NZ_CSV,
     DOCSEND_EARLY_CSV,
     ESTES_SEED_FUNDS_CSV,
+    MAP_OF_THE_MONEY_CSV,
     NYC_SEED_VC_CSV,
     PHYSICAL_AI_CSV,
     SEED_INVESTORS_CSV,
@@ -205,12 +206,17 @@ class VcIndiaRow:
             f"Web address as listed: {self.url}" if self.url else None,
             self.note,
         ]
-        return {
-            "source_id": VC_INDIA_LIST,
-            "listed_focus": self.focus or self.about,
-            "listed_check_or_fund": self.check,
-            "notes": "; ".join(n for n in notes if n) or None,
-        }
+        low, high = parse_check_range(self.check) or (None, None)
+        return with_numbers(
+            {
+                "source_id": VC_INDIA_LIST,
+                "listed_focus": self.focus or self.about,
+                "listed_check_or_fund": self.check,
+                "notes": "; ".join(n for n in notes if n) or None,
+            },
+            {"min": low, "p25": None, "p75": None, "max": high},
+            None,
+        )
 
 
 def read_vc_india(path: Path = VC_INDIA_CSV) -> list[VcIndiaRow]:
@@ -271,6 +277,13 @@ LISTED = (
         "2026-11-12",
         default_type="angel",
     ),
+    # Its cheque figures are first cheques in US$ (the map's own axis title).
+    ListSpec(
+        "map_of_the_money_singapore_list_2026_11_13",
+        MAP_OF_THE_MONEY_CSV,
+        "Singapore (Map of the Money)",
+        "2026-11-13",
+    ),
 )
 LIST_RETRIEVED.update({spec.source_id: spec.retrieved for spec in LISTED})
 # Tags a row carries when the list's own words state a founder focus.
@@ -281,6 +294,8 @@ LISTED_TYPES = {
     "angel": "angel",
     "cvc": "cvc",
     "corporate vc": "cvc",
+    "super angel": "angel",
+    "corporate accelerator": "accelerator",
     "family office": "family_office",
     "accelerator": "accelerator",
     "incubator": "incubator",
@@ -304,6 +319,9 @@ class ListedInvestor:
     linkedin: str | None
     note: str | None
     tags: list[str] = field(default_factory=list)
+    # The listed check range ({min, p25, p75, max}) and fund size, whole US$; still hints.
+    check_usd: dict[str, int | None] | None = None
+    fund_size_usd: int | None = None
 
     @property
     def links(self) -> dict[str, str]:
@@ -322,12 +340,31 @@ class ListedInvestor:
             f"Listed as: {self.name_as_listed}" if self.name_as_listed else None,
             self.note,
         ]
-        return {
-            "source_id": self.source_id,
-            "listed_focus": self.focus,
-            "listed_check_or_fund": self.check,
-            "notes": "; ".join(n for n in notes if n) or None,
-        }
+        return with_numbers(
+            {
+                "source_id": self.source_id,
+                "listed_focus": self.focus,
+                "listed_check_or_fund": self.check,
+                "notes": "; ".join(n for n in notes if n) or None,
+            },
+            self.check_usd,
+            self.fund_size_usd,
+        )
+
+
+def with_numbers(
+    hint: dict, check_usd: dict[str, int | None] | None, fund_size_usd: int | None
+) -> dict:
+    """Add the listed figures to a hint only when there are some (both keys are optional)."""
+    if check_usd and any(v is not None for v in check_usd.values()):
+        hint["listed_check_usd"] = check_usd
+    if fund_size_usd:
+        hint["listed_fund_size_usd"] = fund_size_usd
+    return hint
+
+
+def _whole(value: str) -> int | None:
+    return int(value) if clean(value) else None
 
 
 def read_listed(spec: ListSpec) -> list[ListedInvestor]:
@@ -357,6 +394,10 @@ def read_listed(spec: ListSpec) -> list[ListedInvestor]:
                     linkedin=_blank_to_none(r["linkedin"]),
                     note=_blank_to_none(r["note"]),
                     tags=tags,
+                    check_usd={
+                        k: _whole(r[f"check_{k}_usd"]) for k in ("min", "p25", "p75", "max")
+                    },
+                    fund_size_usd=_whole(r["fund_size_usd"]),
                 )
             )
     return rows
@@ -386,6 +427,47 @@ def region_from_address(address: str | None) -> str | None:
         ):
             regions.add(region)
     return regions.pop() if len(regions) == 1 else None
+
+
+# --- Check ranges as numbers (still hints) --------------------------------------------------
+
+_UNITS = {"k": 1_000, "m": 1_000_000, "b": 1_000_000_000}
+_AMOUNT = r"\$\s*(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)\s*([kmb])?"
+
+
+def _usd(number: str, unit: str | None) -> float:
+    return float(number.replace(",", "")) * _UNITS.get((unit or "").lower(), 1)
+
+
+def parse_check_range(text: str | None) -> tuple[int | None, int | None] | None:
+    """A listed US$ check range as (smallest, largest); None when the text is not clearly one.
+
+    "$100K-$5M", "$1M-2.5M", "$100,000 to $300,000" -> both ends; "$5M-$10M+" -> the
+    largest as written; "$10M+" and "from $5,000,000 …" -> smallest only; "up to $1M" ->
+    largest only. A bare first figure takes the second's unit only if that keeps the range
+    in order ("$50-500K" -> $50K-$500K; "$50-$5M" is $50K or $50M, so skipped). Single
+    figures, other currencies and several ranges are skipped.
+    """
+    t = clean(text or "").lower()
+    if not t.startswith(("$", "from $", "up to $")):
+        return None  # other currencies, or no figure
+    if m := re.fullmatch(rf"from {_AMOUNT}(?: \(.*\))?", t):
+        return round(_usd(*m.groups())), None
+    if m := re.fullmatch(rf"up to {_AMOUNT}", t):
+        return None, round(_usd(*m.groups()))
+    if m := re.fullmatch(rf"{_AMOUNT}\s*\+", t):
+        return round(_usd(*m.groups())), None
+    second = _AMOUNT.replace(r"\$", r"\$?")  # "$1M-2.5M": the second "$" may be left out
+    m = re.fullmatch(rf"{_AMOUNT}\s*(?:-|–|to)\s*{second}\s*\+?", t)
+    if not m:
+        return None
+    a_num, a_unit, b_num, b_unit = m.groups()
+    if a_unit is None and b_unit is not None:
+        a_unit = b_unit  # "$1-3M"; checked against the order below
+    elif a_unit is not None and b_unit is None:
+        return None
+    low, high = round(_usd(a_num, a_unit)), round(_usd(b_num, b_unit))
+    return (low, high) if 0 < low <= high else None
 
 
 def parse_amount(raw: str) -> int | None:

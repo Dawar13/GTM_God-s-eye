@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-12T18:34:36+00:00",
+  "generated_at": "2026-11-13T07:04:31+00:00",
   "records": [
     {
       "id": "fit_01a",
@@ -56056,6 +56056,29 @@
           ]
         },
         "geography": null,
+        "dry_powder": null
+      },
+      "flags": [
+        "sparse"
+      ],
+      "raise_size_usd": 1000000
+    },
+    {
+      "id": "fit_jafco-asia",
+      "investor_id": "inv_jafco-asia",
+      "features": {
+        "thesis": null,
+        "stage": null,
+        "check": null,
+        "adjacency": null,
+        "geography": {
+          "value": 0.2,
+          "method": "region, + cross-border signal",
+          "inputs": [
+            "region other",
+            "Indian founders unknown"
+          ]
+        },
         "dry_powder": null
       },
       "flags": [

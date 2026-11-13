@@ -20,6 +20,7 @@ import openpyxl
 import pdfplumber
 
 from atlas.config import RAW_SOURCES, SEED_DIR
+from atlas.ingest.seeds import parse_check_range
 
 
 @dataclass
@@ -36,6 +37,13 @@ class ListedRow:
     linkedin: str = ""
     tags: str = ""  # "; "-separated extra tags drawn from the list's own words
     note: str = ""
+    # The listed check range and fund size as whole US$, where the list gives them as
+    # figures in US$ (still hints; empty otherwise).
+    check_min_usd: str = ""
+    check_p25_usd: str = ""
+    check_p75_usd: str = ""
+    check_max_usd: str = ""
+    fund_size_usd: str = ""
 
 
 COLUMNS = [f.name for f in fields(ListedRow)]
@@ -271,6 +279,7 @@ def docsend_early_investors(path: Path) -> list[ListedRow]:
         )
         areas = r.get("Areas of Interest", "")
         shown = [r.get("Stage", ""), areas, r.get("Check Size", ""), status]
+        low, high = parse_check_range(shown[2]) or (None, None)
         out.append(
             ListedRow(
                 name=name,
@@ -281,6 +290,8 @@ def docsend_early_investors(path: Path) -> list[ListedRow]:
                 about_as_listed=status,
                 tags=join(founder_tags(areas, r.get("Notes", ""))),
                 note=cut_note(*shown),
+                check_min_usd=whole(low),
+                check_max_usd=whole(high),
             )
         )
     return out
@@ -358,6 +369,89 @@ def us_angels(path: Path) -> list[ListedRow]:
     return out
 
 
+# --- Map of the Money (Singapore; mapofthemoney.com, js/data.js) ---------------------------
+
+# Its vehicle codes, in words; seeds.LISTED_TYPES maps the ones that are an investor type.
+VEHICLES = {
+    "vc": "VC",
+    "angel": "Angel",
+    "superangel": "Super angel",
+    "corporatevc": "Corporate VC",
+    "accelerator": "Accelerator",
+    "corporateaccelerator": "Corporate accelerator",
+    "governmentvc": "Government VC",
+    "spv": "SPV (special purpose vehicle)",
+    "privateequity": "Private equity",
+    "venturedebt": "Venture debt",
+}
+MOTM_FIELD = re.compile(r"'(\w+)'\s*:\s*(?:'((?:[^'\\]|\\.)*)'|(true|false|-?\d+(?:\.\d+)?))")
+
+
+def whole(value: float | None) -> str:
+    return str(round(value)) if value else ""
+
+
+def short_usd(value: int) -> str:
+    """50000 -> "$50K", 1500000 -> "$1.5M" (the list's figures, in words for the hint)."""
+    for size, unit in ((1_000_000_000, "B"), (1_000_000, "M"), (1_000, "K")):
+        if value >= size:
+            return f"${value / size:,.2f}".rstrip("0").rstrip(".") + unit
+    return f"${value}"
+
+
+def map_of_the_money(path: Path) -> list[ListedRow]:
+    """One entry per line of the site's data file. 0 means not given. The About page's
+    statuses: verified (percentiles from recent deals), declared (the investor's own
+    figures) and estimated (no answer from the investor)."""
+    out = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        f = {
+            m.group(1): m.group(2) if m.group(2) is not None else m.group(3)
+            for m in MOTM_FIELD.finditer(line)
+        }
+        if not f.get("name"):
+            continue
+        n = {
+            k: round(float(f[k])) if float(f.get(k) or 0) > 0 else None
+            for k in ("min", "percentile25", "percentile75", "max", "size")
+        }
+        if f["verified"] != "true":
+            status = "estimated by Map of the Money"
+        elif n["percentile25"] and n["percentile75"]:
+            status = "verified (the investor shared recent cheque sizes)"
+        else:
+            status = "declared by the investor"
+        first = (
+            f"first cheque {short_usd(n['min'])} to {short_usd(n['max'])}"
+            if n["min"] and n["max"]
+            else ""
+        )
+        p25, p75 = n["percentile25"], n["percentile75"]
+        middle = (
+            f"middle half of recent cheques {short_usd(p25)} to {short_usd(p75)}"
+            if p25 and p75
+            else ""
+        )
+        out.append(
+            ListedRow(
+                name=f["name"].replace("\\'", "'"),
+                type_as_listed=VEHICLES.get(f["vehicle"], f["vehicle"]),
+                stages_as_listed=", ".join(x.strip() for x in f["stage"].split(",") if x.strip()),
+                check_as_listed=join(
+                    [first, middle, f"capital {short_usd(n['size'])}" if n["size"] else ""]
+                ),
+                about_as_listed=f"active in Singapore; Map of the Money status: {status}",
+                website=url_in(f.get("url") or ""),
+                check_min_usd=whole(n["min"]),
+                check_p25_usd=whole(n["percentile25"]),
+                check_p75_usd=whole(n["percentile75"]),
+                check_max_usd=whole(n["max"]),
+                fund_size_usd=whole(n["size"]),
+            )
+        )
+    return out
+
+
 # --- Writing -------------------------------------------------------------------------------
 
 # Names shortened to the firm's own name. The cut-off ones keep only the visible text,
@@ -400,6 +494,10 @@ LISTS = {
         "australia_nz_investors_airtable.pdf",
     ),
     "us_angel_investors_2026-11-12.csv": (us_angels, "us_angel_investors_grid_view.csv"),
+    "map_of_the_money_singapore_2026-11-13.csv": (
+        map_of_the_money,
+        "map_of_the_money_data_2026-11-13.js.txt",
+    ),
 }
 
 

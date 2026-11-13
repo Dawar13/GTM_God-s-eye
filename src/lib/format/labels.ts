@@ -148,6 +148,7 @@ export const SEED_LIST_LABELS: Record<string, string> = {
   docsend_early_investors_list_2026_11_12: "DocSend early-stage investors (2020–21)",
   australia_nz_investors_list_2026_11_12: "Australia and New Zealand investors",
   us_angel_investors_list_2026_11_12: "US angels",
+  map_of_the_money_singapore_list_2026_11_13: "Map of the Money (Singapore)",
 };
 
 export const CUSTOMER_LIST_LABELS: Record<CustomerList, string> = {

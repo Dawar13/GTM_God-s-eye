@@ -203,6 +203,7 @@ def test_listed_lists_rows_types_and_hints():
         "DocSend early-stage list": 361,
         "Australia and New Zealand": 146,
         "US angels": 382,
+        "Singapore (Map of the Money)": 111,
     }
     assert {r.type for r in rows["US angels"]} == {"angel"}  # the list's kind
     assert {r.type for r in rows["Australia and New Zealand"]} == {"vc"}  # its Type column
@@ -246,6 +247,9 @@ def test_listed_names_stay_apart_from_similar_firms():
         ("iSeed", "iSeed Ventures"),
         ("Next Wave Ventures", "NextWave Ventures"),
         ("NextGen Venture Partners", "NextGen Ventures"),
+        ("Atlas Venture", "Atlas Ventures"),
+        ("Quest Venture Partners", "Quest Ventures"),
+        ("Vertex Ventures", "Vertex"),
     ]:
         r = InvestorResolver()
         assert r.add(existing, "fund_list", "a") is not r.add(listed, "seed_list", "b")
@@ -303,3 +307,68 @@ def test_listed_tags_and_list_ids_are_known_to_the_app():
         assert f"{spec.source_id}:" in labels, spec.source_id
     for tag in seeds.FOUNDER_FOCUS_TAGS:
         assert f'"{tag}"' in filters, tag
+
+
+@pytest.mark.parametrize(
+    "text, parsed",
+    [
+        ("$100K-$10M+", (100_000, 10_000_000)),
+        ("$1M-2.5M", (1_000_000, 2_500_000)),
+        ("$50-500K", (50_000, 500_000)),
+        ("$50-$5M", None),  # $50K or $50M: not clear
+        ("$100,000 to $1,500,000", (100_000, 1_500_000)),
+        ("from $5,000,000 (no largest check listed)", (5_000_000, None)),
+        ("$10M+", (10_000_000, None)),
+        ("up to $1M", (None, 1_000_000)),
+        ("$500K-1M, $1M-5M", None),
+        ("$100k", None),
+        ("€1-3M", None),
+        ("$2,000,000 (the list does not say whether this is the smallest or largest check)", None),
+        ("$150,000 then $50,000 (the smallest-check figure is the larger one as listed)", None),
+        (None, None),
+    ],
+)
+def test_parse_check_range(text, parsed):
+    assert seeds.parse_check_range(text) == parsed
+
+
+def test_map_of_the_money_rows_and_figures():
+    rows = {r.name: r for r in listed_rows()["Singapore (Map of the Money)"]}
+    durians = rows["500 Startups (Durians)"]
+    assert durians.type == "vc"
+    assert durians.check_usd == {"min": 25_000, "p25": 100_000, "p75": 160_000, "max": 290_000}
+    assert durians.fund_size_usd == 25_000_000
+    hint = durians.hint()
+    assert hint["listed_check_usd"]["p25"] == 100_000
+    assert hint["listed_fund_size_usd"] == 25_000_000
+    assert "verified (the investor shared recent cheque sizes)" in hint["notes"]
+    assert rows["Monk's Hill"].check_usd["max"] == 5_000_000  # escaped quote in the source
+    # Size 0 on the map means not given.
+    assert (
+        rows["Burda"].fund_size_usd is None and "listed_fund_size_usd" not in rows["Burda"].hint()
+    )
+    assert rows["Cap Vista"].type is None  # "Government VC" is not an investor type
+    assert "Type as listed: Government VC" in rows["Cap Vista"].hint()["notes"]
+
+
+def test_vc_india_hints_carry_figures():
+    hints = {r.name: r.hint() for r in seeds.read_vc_india()}
+    assert hints["SecureOctane"]["listed_check_usd"] == {
+        "min": 250_000,
+        "p25": None,
+        "p75": None,
+        "max": 500_000,
+    }
+    lone = [
+        h for h in hints.values() if "does not say whether" in (h["listed_check_or_fund"] or "")
+    ]
+    assert lone and all("listed_check_usd" not in h for h in lone)
+
+
+def test_map_of_the_money_through_the_pipeline(store):
+    durians = investor(store, "500 Startups (Durians)")
+    assert durians["user_tags"] == ["Singapore (Map of the Money)"]
+    assert durians["seed_hints"][0]["listed_check_usd"]["max"] == 290_000
+    assert durians["check_min_usd"] is None  # list figures stay hints
+    assert durians["region"] is None  # "active in Singapore" is not an HQ
+    assert investor(store, "Atlas Ventures")["website"] == "http://atlasam.com.sg"

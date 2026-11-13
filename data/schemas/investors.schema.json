@@ -588,6 +588,74 @@
                     "string",
                     "null"
                   ]
+                },
+                "listed_check_usd": {
+                  "description": "The listed check range as US$ figures, when the list states them; unverified",
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0,
+                          "description": "US dollars (not millions)"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "p25": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0,
+                          "description": "US dollars (not millions)"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "25th percentile of recent checks, when the list gives it"
+                    },
+                    "p75": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0,
+                          "description": "US dollars (not millions)"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "description": "75th percentile of recent checks, when the list gives it"
+                    },
+                    "max": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0,
+                          "description": "US dollars (not millions)"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "min",
+                    "p25",
+                    "p75",
+                    "max"
+                  ],
+                  "additionalProperties": false
+                },
+                "listed_fund_size_usd": {
+                  "description": "Fund or capital size as listed, US$; unverified",
+                  "type": "number",
+                  "minimum": 0
                 }
               },
               "required": [

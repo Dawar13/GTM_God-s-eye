@@ -285,6 +285,8 @@ What a user-supplied list claims; Phase 1 verifies before it becomes a fact
 | `listed_focus` | string \| null | yes | Focus as the list states it; unverified |
 | `listed_check_or_fund` | string \| null | yes | Check or fund size as listed; unverified |
 | `notes` | string \| null | yes |  |
+| `listed_check_usd` | [SeedHint.listed_check_usd](#seedhint-listed-check-usd) | no | The listed check range as US$ figures, when the list states them; unverified |
+| `listed_fund_size_usd` | number | no | Fund or capital size as listed, US$; unverified |
 
 ## Fund.fx
 
@@ -347,6 +349,17 @@ FX rate applied (pipeline/atlas/fx.py)
 | `value` | number | yes |  |
 | `method` | string | yes | How it was computed, e.g. stated_and_portfolio |
 | `inputs` | array of string | yes | Which inputs existed, e.g. thesis_text, 12 rounds |
+
+## SeedHint.listed_check_usd
+
+The listed check range as US$ figures, when the list states them; unverified
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `min` | number \| null | yes | US dollars (not millions) |
+| `p25` | number \| null | yes | 25th percentile of recent checks, when the list gives it |
+| `p75` | number \| null | yes | 75th percentile of recent checks, when the list gives it |
+| `max` | number \| null | yes | US dollars (not millions) |
 
 ## FitFeatures.features.thesis
 

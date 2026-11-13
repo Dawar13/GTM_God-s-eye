@@ -109,6 +109,13 @@ export const INVESTOR_VIEWS = [
     phaseNote: "Phase 1 computes the axes; Phase 2 draws the chart.",
   },
   {
+    slug: "check-sizes",
+    label: "Check sizes",
+    summary:
+      "Each investor's smallest to largest check on a log scale: researched ranges, and the ranges your lists state.",
+    phaseNote: "Added 2026-11-13 with the Map of the Money list.",
+  },
+  {
     slug: "network",
     label: "Network",
     summary:

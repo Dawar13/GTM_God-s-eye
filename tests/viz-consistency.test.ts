@@ -30,6 +30,7 @@ import { commandStats } from "@/lib/viz/transforms/commandStats";
 import { freshCapitalByRegion } from "@/lib/viz/transforms/freshCapitalByRegion";
 import { fundsByYear } from "@/lib/viz/transforms/fundsByYear";
 import { bubbleView, toBubbleData, type BubbleData } from "@/lib/viz/transforms/capitalBubbles";
+import { checkView, toCheckRows, type CheckData } from "@/lib/viz/transforms/checkSizes";
 import { thesisView, toThesisRows, type ThesisRow } from "@/lib/viz/transforms/thesisMap";
 import { topByFit } from "@/lib/viz/transforms/topByFit";
 import { competitorTotals, layerMap, toCompetitorRows } from "@/lib/viz/transforms/competitors";
@@ -70,6 +71,7 @@ type Loaded = {
   coords: AreaCoords;
   bubbles: Awaited<ReturnType<typeof getBubbleLayout>>;
   bubbleData: BubbleData;
+  checkData: CheckData;
   graph: GraphData;
 };
 let d: Loaded;
@@ -99,6 +101,7 @@ beforeAll(async () => {
     coords: toAreaCoords(layout, bubbles),
     bubbles,
     bubbleData: toBubbleData(investors, bubbles, funds),
+    checkData: toCheckRows(investors, funds),
     graph: toGraphData(
       toGraphPayload({ graph, investors, companies, competitors, rounds, thesis: layout }),
     ),
@@ -253,6 +256,24 @@ describe.each(COMBOS)("capital bubbles match the Directory: %s", (_name, filters
       const expected = lo !== null && hi !== null ? Math.sqrt(lo * hi) : (lo ?? hi);
       expect(Math.abs(p.check - expected!)).toBeLessThanOrEqual(0.5);
       expect(p.fundUsd).toBe(r.latestFundSizeUsd);
+    }
+  });
+});
+
+describe.each(COMBOS)("check sizes match the Directory: %s", (_name, filters) => {
+  it("rows plus investors without a check size = the Directory's rows", () => {
+    const shown = applyFilters(d.rows, filters);
+    const view = checkView(d.checkData, filters, "all", "smallest", d.rows);
+    expect(view.rows.length + view.notShown!).toBe(shown.length);
+    expect(view.counts.researched + view.counts.listed).toBe(view.rows.length);
+  });
+
+  it("researched rows carry the Directory's check range and latest fund", () => {
+    const rowById = new Map(d.rows.map((r) => [r.id, r]));
+    for (const c of checkView(d.checkData, filters, "researched", "name").rows) {
+      const r = rowById.get(c.id)!;
+      expect([c.min, c.max]).toEqual([r.checkMinUsd, r.checkMaxUsd]);
+      if (!c.fundListed) expect(c.fundUsd).toBe(r.latestFundSizeUsd);
     }
   });
 });

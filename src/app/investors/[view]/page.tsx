@@ -5,6 +5,7 @@ import { CanvasPlaceholder } from "@/components/shell/EmptyState";
 import { INVESTOR_VIEWS, findSubView } from "@/lib/nav";
 import { Accelerators } from "./accelerators";
 import { CapitalView } from "./capital";
+import { CheckSizesView } from "./check-sizes";
 import { Directory } from "./directory";
 import { NetworkView } from "./network";
 import { ThesisMapView } from "./thesis-map";
@@ -38,6 +39,7 @@ async function InvestorView({ params }: { params: Params }) {
   if (view.slug === "accelerators") return <Accelerators />;
   if (view.slug === "thesis-map") return <ThesisMapView />;
   if (view.slug === "capital") return <CapitalView />;
+  if (view.slug === "check-sizes") return <CheckSizesView />;
   if (view.slug === "network") return <NetworkView />;
   // Every investor view is built; an unknown slug was already sent to notFound().
   return notFound();

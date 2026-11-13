@@ -34,7 +34,7 @@ import {
 
 /**
  * Tag values the pipeline writes to `user_tags` today: one per group of the 2026-11-01
- * physical-AI list, one per list received 2026-11-12, and two founder-focus tags set where
+ * physical-AI list, one per list received 2026-11-12 or 13, and two founder-focus tags set where
  * a 2026-11-12 list's own words state that focus (pipeline/atlas/ingest/seeds.py LISTED).
  */
 export const USER_TAGS = [
@@ -48,6 +48,7 @@ export const USER_TAGS = [
   "DocSend early-stage list",
   "Australia and New Zealand",
   "US angels",
+  "Singapore (Map of the Money)",
   "Female founders focus",
   "Minority founders focus",
 ] as const;

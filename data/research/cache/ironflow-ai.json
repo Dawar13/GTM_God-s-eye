@@ -1,0 +1,44 @@
+{
+  "key": "ironflow-ai",
+  "entity_type": "competitor",
+  "researched_at": "2026-11-13",
+  "identity_check": "Confirmed as Ironflow AI (www.ironflow.ai; http://ironflow.ai and https://ironflow.ai both 301-redirect to https://www.ironflow.ai/, which serves the site), maker of Flow, 'The AI native ERP for modern manufacturing'. The homepage founder's note is signed 'Andrew Dimitruk, Founder & CEO, Ironflow AI' and says he was COO of Shield AI; the About page lists him as 'CEO, Co-founder' with Jim Carlson as 'President, Co-founder'. The company's own pages give no HQ, founding year or legal entity (footer only '© Ironflow AI'); Shield Capital's portfolio job board lists 'Founded: 2025' and 'Locations: San Diego, CA, USA', and the homepage says 'Built in the USA', so HQ country is recorded as US. Not Ironflow Technologies Inc. (IT / HR software, Dieppe, New Brunswick), IronFlight AI (UAV autonomy) or IronPlate AI: none of them is at the ironflow.ai domain or sells a manufacturing ERP. Category adjacent, layer plant_ops: Flow replaces the ERP itself (demand, MRP and procurement, inventory, production execution, contract flowdowns) for US defense, aerospace, space and energy manufacturers, hosted in AWS GovCloud for ITAR / CUI work; its agents draft supplier emails, attach purchase orders and work MRP exceptions, which touches Utopian Autonomy's procurement wedge, but it is sold as a system of record to a different market rather than as agents on top of a plant's existing ERP. Same call as Aerchain and 1Buy (adjacent / plant_ops); IFS, the incumbent ERP, stays remote. Sector industrial_manufacturing classified from its own words: 'The AI native ERP for modern manufacturing'.",
+  "pages": [
+    { "url": "https://www.ironflow.ai/", "title": "Ironflow AI", "publisher": "Ironflow AI", "retrieved_at": "2026-11-13", "kind": "primary" },
+    { "url": "https://www.ironflow.ai/about", "title": "About Ironflow AI", "publisher": "Ironflow AI", "retrieved_at": "2026-11-13", "kind": "primary" },
+    { "url": "https://portfoliocareers.shieldcap.com/companies/ironflow-ai-2", "title": "Ironflow Ai | SHIELD Job Board", "publisher": "Shield Capital (portfolio job board)", "retrieved_at": "2026-11-13", "kind": "database" }
+  ],
+  "company": {
+    "name": "Ironflow AI",
+    "website": "https://www.ironflow.ai",
+    "description": "US startup founded in 2025 by ex-Shield AI COO Andrew Dimitruk, building Flow, an AI-native ERP with agents for planning, procurement, inventory and production, hosted in AWS GovCloud for defense and aerospace manufacturers.",
+    "hq_country": "US",
+    "founded_year": 2025,
+    "sector": "industrial_manufacturing",
+    "sector_classified_by": "source",
+    "layer": "plant_ops"
+  },
+  "category": "adjacent",
+  "layer": "plant_ops",
+  "layer_detail": "AI-native ERP for discrete manufacturers in defense, aerospace, space, energy and advanced manufacturing. Modules: demand and fulfillment, planning and procurement (MRP and supplier management), inventory across sites with traceability, manufacturing execution (work orders, BOMs, labor, routing, kitting, shop-floor status) and contract intelligence (FAR / DFARS requirements and flowdowns); finance and accounting 'coming soon'. Agents work MRP messages, draft supplier emails with purchase orders attached and monitor replies. Hosted in AWS GovCloud (US) for CUI and ITAR data; the FedRAMP claim is about the hosting environment, not an authorization of Flow itself.",
+  "founders": ["Andrew Dimitruk", "Jim Carlson"],
+  "named_customers": [],
+  "product_summary": "Flow, an ERP replacement for defense and aerospace manufacturers in which users state an outcome and AI agents act: planning and MRP, procurement with agent-drafted supplier emails and purchase orders, multi-site inventory, production execution and FAR / DFARS contract flowdowns, hosted in AWS GovCloud for ITAR and CUI data.",
+  "pricing": null,
+  "headcount_est": {
+    "value": 9,
+    "pages": [1, 2],
+    "snippet": "Approximate: the About page names nine team members; Shield Capital's portfolio board gives '1 - 10 employees'"
+  },
+  "revenue_reported": null,
+  "rounds": [],
+  "conflicts": [],
+  "open_items": [
+    "No funding round confirmed by a primary source: no press release or company page names one. A PitchBook search snippet (page returned 403) shows an early-stage VC deal on 21 Mar 2025 with Context Ventures; unverified, so not stored as a round.",
+    "Shield Capital lists Ironflow AI on its portfolio job board ('Stage: Other') but states no investment, amount or date; not stored as a round.",
+    "Founding year (2025) and San Diego location come only from Shield Capital's board; the company site states neither. Legal entity and state of incorporation not found.",
+    "Andrew Dimitruk's title differs by page: 'Founder & CEO' (homepage) vs 'CEO, Co-founder' (About).",
+    "No named customers or pricing published; revenue not publicly reported.",
+    "The homepage's 'Flow Agents' section still carries placeholder text; the Lever careers board was not read."
+  ]
+}

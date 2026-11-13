@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-12T18:34:36+00:00",
+  "generated_at": "2026-11-13T07:04:31+00:00",
   "records": [
     {
       "id": "co_1buy-ai",
@@ -2675,6 +2675,70 @@
       "revenue_usd": null,
       "revenue_basis": "none",
       "product_summary": "AI operations platform for energy operators covering planning, field operations and compliance, built on a connected digital twin.",
+      "pricing": null
+    },
+    {
+      "id": "co_ironflow-ai",
+      "name": "Ironflow AI",
+      "website": "https://www.ironflow.ai",
+      "hq_country": "US",
+      "founded_year": 2025,
+      "sector": "industrial_manufacturing",
+      "sector_classified_by": "source",
+      "layer": "plant_ops",
+      "description_short": "US startup founded in 2025 by ex-Shield AI COO Andrew Dimitruk, building Flow, an AI-native ERP with agents for planning, procurement, inventory and production, hosted in AWS GovCloud for defense and aerospace manufacturers.",
+      "total_raised_usd": null,
+      "is_competitor": true,
+      "sources": [
+        {
+          "url": "https://www.ironflow.ai/",
+          "title": "Ironflow AI",
+          "publisher": "Ironflow AI",
+          "retrieved_at": "2026-11-13",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.ironflow.ai/about",
+          "title": "About Ironflow AI",
+          "publisher": "Ironflow AI",
+          "retrieved_at": "2026-11-13",
+          "kind": "primary"
+        },
+        {
+          "url": "https://portfoliocareers.shieldcap.com/companies/ironflow-ai-2",
+          "title": "Ironflow Ai | SHIELD Job Board",
+          "publisher": "Shield Capital (portfolio job board)",
+          "retrieved_at": "2026-11-13",
+          "kind": "secondary"
+        }
+      ],
+      "field_sources": {
+        "website": [
+          0
+        ]
+      },
+      "confidence": "high",
+      "category": "adjacent",
+      "layer_detail": "AI-native ERP for discrete manufacturers in defense, aerospace, space, energy and advanced manufacturing. Modules: demand and fulfillment, planning and procurement (MRP and supplier management), inventory across sites with traceability, manufacturing execution (work orders, BOMs, labor, routing, kitting, shop-floor status) and contract intelligence (FAR / DFARS requirements and flowdowns); finance and accounting 'coming soon'. Agents work MRP messages, draft supplier emails with purchase orders attached and monitor replies. Hosted in AWS GovCloud (US) for CUI and ITAR data; the FedRAMP claim is about the hosting environment, not an authorization of Flow itself.",
+      "size_class": null,
+      "founders": [
+        "Andrew Dimitruk",
+        "Jim Carlson"
+      ],
+      "named_customers": [],
+      "headcount_est": {
+        "value": 9,
+        "source": {
+          "url": "https://www.ironflow.ai/about",
+          "title": "About Ironflow AI",
+          "publisher": "Ironflow AI",
+          "retrieved_at": "2026-11-13",
+          "kind": "primary"
+        }
+      },
+      "revenue_usd": null,
+      "revenue_basis": "none",
+      "product_summary": "Flow, an ERP replacement for defense and aerospace manufacturers in which users state an outcome and AI agents act: planning and MRP, procurement with agent-drafted supplier emails and purchase orders, multi-site inventory, production execution and FAR / DFARS contract flowdowns, hosted in AWS GovCloud for ITAR and CUI data.",
       "pricing": null
     },
     {

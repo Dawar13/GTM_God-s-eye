@@ -62,6 +62,18 @@ export const SeedHint = z
       .nullable()
       .describe("Check or fund size as listed; unverified"),
     notes: z.string().nullable(),
+    listed_check_usd: z
+      .strictObject({
+        min: Usd.nullable(),
+        p25: Usd.nullable().describe("25th percentile of recent checks, when the list gives it"),
+        p75: Usd.nullable().describe("75th percentile of recent checks, when the list gives it"),
+        max: Usd.nullable(),
+      })
+      .optional()
+      .describe("The listed check range as US$ figures, when the list states them; unverified"),
+    listed_fund_size_usd: Usd.optional().describe(
+      "Fund or capital size as listed, US$; unverified",
+    ),
   })
   .describe("What a user-supplied list claims; Phase 1 verifies before it becomes a fact");
 export type SeedHint = z.infer<typeof SeedHint>;
@@ -115,7 +127,9 @@ export const Investor = z
     user_tags: z
       .array(z.string())
       .optional()
-      .describe("Short sentence-case tags from the user's own lists, e.g. a list's group; filterable"),
+      .describe(
+        "Short sentence-case tags from the user's own lists, e.g. a list's group; filterable",
+      ),
     flags: z.array(InvestorFlag),
   })
   .refine(

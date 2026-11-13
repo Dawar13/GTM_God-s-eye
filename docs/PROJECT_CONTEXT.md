@@ -155,6 +155,7 @@ Put originals in `data/raw/sources/`. Transcribed seeds are in `data/seed/`.
 | docsend_early_investors_list_2026_11_12 | `docsend_early_investors_airtable.pdf` (was "Airtable - Grid view_early investors.pdf"): DocSend's user-generated list of 361 early-stage firms, edited 2020–21 | Seeds + tag |
 | australia_nz_investors_list_2026_11_12 | `australia_nz_investors_airtable.pdf` (was "Airtable - Investors_Australia.pdf"): 146 Australian and NZ investors | Seeds + tag |
 | us_angel_investors_list_2026_11_12 | `us_angel_investors_grid_view.csv` (was "Grid view.csv"): 382 angels (people: role, city, LinkedIn) | Seeds + tag, type angel |
+| map_of_the_money_singapore_list_2026_11_13 | mapofthemoney.com (Arnaud Bonzom and Florian Cornu): 111 investors active in Singapore with first-cheque range, percentiles for verified ones, fund size, vehicle and stage; copied from the site's `js/data.js` to `map_of_the_money_data_2026-11-13.js.txt` (About page alongside); undated, no licence stated | Seeds + tag; figures drawn on Investors → Check sizes |
 | Industrial_AI_Target_List*.xlsx | **Customer** target lists (Mumbai/Pune, Bangalore, Hyderabad). Not investors | `target_customers` dataset and the Customers page (2026-11-09); not used for VC data |
 | incoming spreadsheets | Two more investor spreadsheets to come | Drop in `data/raw/incoming/`; ingest in Phase 1 |
 
